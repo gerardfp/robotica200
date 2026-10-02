@@ -613,6 +613,78 @@ body {
   color: var(--text-muted);
 }
 
+/* Pàgina dedicada del Robot */
+.robot-profile {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  margin-bottom: 2.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.robot-profile-top {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.robot-big-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.robot-profile-title {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.robot-profile-sub {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.robot-profile-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.robot-specs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.robot-spec-pill {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: var(--radius-full);
+  background: var(--bg-card-subtle);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+}
+
+.robot-tutorials-heading {
+  margin-bottom: 1.5rem;
+}
+
+.robot-tutorials-heading h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.robot-tutorials-heading p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
 /* Responsivitat */
 @media (max-width: 860px) {
   .three-pillars {

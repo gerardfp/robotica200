@@ -91,7 +91,7 @@
 
       <div class="view-header">
         <h2>Robòtica Educativa</h2>
-        <p>Guies ràpides de funcionament, codis de colors i propostes de sessió per als robots de l'aula.</p>
+        <p>Selecciona un robot per accedir a la seva pàgina d'aprenentatge i tutorials específics.</p>
       </div>
 
       <div class="clean-grid" id="robotics-grid">
@@ -99,7 +99,30 @@
       </div>
     </section>
 
-    <!-- 4. VISTA SITUACIONS D'APRENENTATGE (CATÀLEG AMB FILTRES) -->
+    <!-- 4. VISTA DEDICADA D'UN ROBOT (AMB ELS SEUS TUTORIALS) -->
+    <section id="view-robot-detail" class="view-section">
+      <div class="section-nav-back">
+        <button class="btn-back" onclick="navigateTo('robotica')">← Tornar a Robòtica</button>
+      </div>
+
+      <!-- Capçalera del Robot -->
+      <div class="robot-profile" id="robot-profile-container">
+        <!-- Renderitzat dinàmicament via js/app.js -->
+      </div>
+
+      <!-- Encapçalat de Tutorials del Robot -->
+      <div class="robot-tutorials-heading">
+        <h3 id="robot-tutorials-title">Tutorials disponibles</h3>
+        <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
+      </div>
+
+      <!-- Graella de Tutorials del Robot -->
+      <div class="clean-grid" id="robot-tutorials-grid">
+        <!-- Renderitzat dinàmicament via js/app.js -->
+      </div>
+    </section>
+
+    <!-- 5. VISTA SITUACIONS D'APRENENTATGE (CATÀLEG AMB FILTRES) -->
     <section id="view-situacions" class="view-section">
       <div class="section-nav-back">
         <button class="btn-back" onclick="navigateTo('home')">← Tornar a l'inici</button>

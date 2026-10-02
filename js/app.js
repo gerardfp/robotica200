@@ -37,13 +37,14 @@ function updateThemeIcon(theme) {
 }
 
 // ==========================================
-// NAVEGACIÓ ENTRE ELS 3 APARTATS
+// NAVEGACIÓ ENTRE ELS APARTATS
 // ==========================================
 function initRouter() {
   const views = {
     home: document.getElementById('view-home'),
     pc: document.getElementById('view-pc'),
     robotica: document.getElementById('view-robotica'),
+    robotDetail: document.getElementById('view-robot-detail'),
     situacions: document.getElementById('view-situacions')
   };
 
@@ -59,9 +60,11 @@ function initRouter() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Actualitzar estats de botons
+    // Actualitzar estats de botons de la capçalera
     navButtons.forEach(btn => {
-      btn.classList.toggle('active', btn.getAttribute('data-route') === route);
+      const btnRoute = btn.getAttribute('data-route');
+      const isActive = btnRoute === route || (route === 'robotDetail' && btnRoute === 'robotica');
+      btn.classList.toggle('active', isActive);
     });
   };
 
@@ -149,23 +152,23 @@ function openUnpluggedModal(act) {
 }
 
 // ==========================================
-// 2. ROBÒTICA (ELS 6 ROBOTS DEMANATS)
+// 2. ROBÒTICA (ELS 6 ROBOTS AMB PÀGINA DEDICADA)
 // ==========================================
 function renderRobotics() {
   const container = document.getElementById('robotics-grid');
-  if (!container || !window.ROBOTICS_TUTORIALS) return;
+  if (!container || !window.ROBOTS_DATA) return;
 
-  container.innerHTML = window.ROBOTICS_TUTORIALS.map(bot => `
+  container.innerHTML = window.ROBOTS_DATA.map(bot => `
     <article class="item-card" data-robot-id="${bot.id}">
       <div class="card-top">
-        <span class="tag-badge primary">${bot.robot}</span>
-        <span class="tag-badge">${bot.badge}</span>
+        <span class="tag-badge primary">${bot.badge}</span>
+        <span style="font-size: 1.5rem;">${bot.icon}</span>
       </div>
-      <h3 class="item-title">${bot.title}</h3>
+      <h3 class="item-title">${bot.name}</h3>
       <p class="item-desc">${bot.subtitle}</p>
       <div class="item-footer">
-        <span>Guia i codis</span>
-        <span>Explorar tutorial →</span>
+        <span>${bot.tutorials.length} tutorials</span>
+        <span>Entrar a la pàgina →</span>
       </div>
     </article>
   `).join('');
@@ -173,58 +176,108 @@ function renderRobotics() {
   container.querySelectorAll('[data-robot-id]').forEach(card => {
     card.addEventListener('click', () => {
       const id = card.getAttribute('data-robot-id');
-      const bot = window.ROBOTICS_TUTORIALS.find(b => b.id === id);
-      if (bot) openRoboticsModal(bot);
+      openRobotDetailPage(id);
     });
   });
 }
 
-function openRoboticsModal(bot) {
+function openRobotDetailPage(robotId) {
+  const bot = (window.ROBOTS_DATA || []).find(b => b.id === robotId);
+  if (!bot) return;
+
+  const profileContainer = document.getElementById('robot-profile-container');
+  const tutorialsTitle = document.getElementById('robot-tutorials-title');
+  const tutorialsGrid = document.getElementById('robot-tutorials-grid');
+
+  if (profileContainer) {
+    profileContainer.innerHTML = `
+      <div class="robot-profile-top">
+        <div class="robot-big-icon">${bot.icon}</div>
+        <div>
+          <span class="tag-badge primary" style="margin-bottom: 0.35rem; display: inline-block;">${bot.badge}</span>
+          <h2 class="robot-profile-title">${bot.name}</h2>
+        </div>
+      </div>
+      <p class="robot-profile-sub">${bot.subtitle}</p>
+      <p class="robot-profile-desc">${bot.description}</p>
+      <div class="robot-specs-list">
+        ${bot.specs.map(s => `<span class="robot-spec-pill">✓ ${s}</span>`).join('')}
+      </div>
+    `;
+  }
+
+  if (tutorialsTitle) {
+    tutorialsTitle.textContent = `Tutorials de ${bot.name}`;
+  }
+
+  if (tutorialsGrid) {
+    tutorialsGrid.innerHTML = bot.tutorials.map(tut => `
+      <article class="item-card" data-tut-id="${tut.id}">
+        <div class="card-top">
+          <span class="tag-badge primary">${tut.difficulty}</span>
+          <span class="tag-badge">⏱️ ${tut.duration}</span>
+        </div>
+        <h4 class="item-title">${tut.title}</h4>
+        <p class="item-desc">${tut.summary}</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </article>
+    `).join('');
+
+    tutorialsGrid.querySelectorAll('[data-tut-id]').forEach(card => {
+      card.addEventListener('click', () => {
+        const tutId = card.getAttribute('data-tut-id');
+        const tut = bot.tutorials.find(t => t.id === tutId);
+        if (tut) openTutorialModal(tut, bot.name);
+      });
+    });
+  }
+
+  window.navigateTo('robotDetail');
+}
+
+function openTutorialModal(tut, robotName) {
   const title = document.getElementById('modal-title');
   const body = document.getElementById('modal-body');
 
-  title.textContent = `${bot.robot}: ${bot.title}`;
+  title.textContent = `${robotName}: ${tut.title}`;
   body.innerHTML = `
     <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-      <span class="tag-badge primary">${bot.robot}</span>
-      <span class="tag-badge">${bot.badge}</span>
+      <span class="tag-badge primary">${tut.difficulty}</span>
+      <span class="tag-badge">⏱️ ${tut.duration}</span>
+      <span class="tag-badge">${robotName}</span>
     </div>
 
     <div class="detail-section">
-      <p style="font-size: 1.05rem; line-height: 1.6; margin-bottom: 1rem;">${bot.description}</p>
-      <div style="display: flex; gap: 0.4rem; flex-wrap: wrap;">
-        ${bot.keyConcepts.map(c => `<span class="tag-badge" style="font-size: 0.8rem;"># ${c}</span>`).join('')}
-      </div>
+      <h4>🎯 Objectius d'aprenentatge</h4>
+      <ul style="padding-left: 1.25rem;">
+        ${tut.goals.map(g => `<li style="margin-bottom: 0.25rem;">${g}</li>`).join('')}
+      </ul>
     </div>
 
     <div class="detail-section">
-      <h4>🕹️ Comandaments i codificació de colors</h4>
-      <div class="color-pills-grid">
-        ${bot.colorCodes.map(c => `
-          <div class="color-pill-item">
-            <span class="color-dot" style="background: ${c.color};"></span>
-            <div>
-              <strong>${c.name}:</strong> <span style="color: var(--text-muted);">${c.action}</span>
-            </div>
-          </div>
-        `).join('')}
-      </div>
+      <h4>📦 Materials recomanats</h4>
+      <ul style="padding-left: 1.25rem;">
+        ${tut.materials.map(m => `<li style="margin-bottom: 0.25rem;">${m}</li>`).join('')}
+      </ul>
     </div>
 
     <div class="detail-section">
-      <h4>📅 Proposta de sessions d'aula</h4>
+      <h4>👣 Pas a pas del tutorial</h4>
       <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;">
-        ${bot.activityGuide.map(s => `
+        ${tut.steps.map(s => `
           <div style="background: var(--bg-card-subtle); padding: 0.85rem 1rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
-            <strong>${s.session}</strong>
-            <p style="margin-top: 0.25rem; font-size: 0.92rem;">${s.goal}</p>
+            <strong style="display: block; margin-bottom: 0.25rem;">${s.title}</strong>
+            <p style="font-size: 0.92rem; margin: 0;">${s.desc}</p>
           </div>
         `).join('')}
       </div>
     </div>
 
     <div class="teacher-tip-box">
-      <strong>💡 Consell pràctic de gestió:</strong> ${bot.classroomTip}
+      <strong>💡 Consell per al docent:</strong> ${tut.teacherTip}
     </div>
   `;
 
