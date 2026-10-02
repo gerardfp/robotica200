@@ -1,61 +1,69 @@
-// js/filters.js - Filtratge interactiu del catàleg de Situacions d'Aprenentatge
+// Filters travel in the URL: shared links and the visible back button keep state,
+// including when the generated website is opened directly via file://.
 (function () {
-  const selectRobot = document.getElementById('filter-robot');
-  const selectCicle = document.getElementById('filter-cicle');
-  const selectTematica = document.getElementById('filter-tematica');
-  const selectMateria = document.getElementById('filter-materia');
-  const btnReset = document.getElementById('btn-reset-sa');
-  const counter = document.getElementById('situations-count');
+  const keys = ['robot', 'cicle', 'tematica', 'materia'];
+  const params = new URLSearchParams(window.location.search);
   const cards = Array.from(document.querySelectorAll('.sa-card'));
+  const back = document.querySelector('.btn-back');
 
-  if (!cards.length) return;
+  if (!document.getElementById('filter-robot')) {
+    if (back && back.getAttribute('href') === 'situacions-aprenentatge.html') {
+      const filters = new URLSearchParams();
+      keys.forEach(key => {
+        if (params.has(key)) filters.set(key, params.get(key));
+      });
+      const slug = window.location.pathname.split('/').pop().replace(/\.html$/, '');
+      back.href = 'situacions-aprenentatge.html' + (filters.size ? '?' + filters : '') + '#' + slug;
+    }
+    return;
+  }
 
-  function filterCards() {
-    const rVal = selectRobot ? selectRobot.value : 'all';
-    const cVal = selectCicle ? selectCicle.value : 'all';
-    const tVal = selectTematica ? selectTematica.value : 'all';
-    const mVal = selectMateria ? selectMateria.value : 'all';
+  const selects = Object.fromEntries(keys.map(key => [key, document.getElementById('filter-' + key)]));
+  const counter = document.getElementById('situations-count');
+  const empty = document.getElementById('situations-empty');
+  const originalLinks = cards.map(card => card.getAttribute('href'));
 
-    let visibleCount = 0;
+  keys.forEach(key => {
+    const value = params.get(key);
+    if (Array.from(selects[key].options).some(option => option.value === value)) {
+      selects[key].value = value;
+    }
+  });
 
-    cards.forEach(card => {
-      const cardRobot = card.getAttribute('data-robot') || '';
-      const cardCicle = card.getAttribute('data-cicle') || '';
-      const cardTematica = card.getAttribute('data-tematica') || '';
-      const cardMateria = card.getAttribute('data-materia') || '';
-
-      const matchRobot = (rVal === 'all' || cardRobot === rVal);
-      const matchCicle = (cVal === 'all' || cardCicle.includes(cVal) || cardCicle === 'tots');
-      const matchTematica = (tVal === 'all' || cardTematica === tVal);
-      const matchMateria = (mVal === 'all' || cardMateria === mVal);
-
-      if (matchRobot && matchCicle && matchTematica && matchMateria) {
-        card.style.display = '';
-        visibleCount++;
-      } else {
-        card.style.display = 'none';
-      }
+  function filterCards(updateURL) {
+    const active = new URLSearchParams();
+    keys.forEach(key => {
+      if (selects[key].value !== 'all') active.set(key, selects[key].value);
     });
-
-    if (counter) {
-      counter.textContent = `Mostrant ${visibleCount} de ${cards.length} situacions`;
+    const query = active.size ? '?' + active : '';
+    let count = 0;
+    cards.forEach((card, index) => {
+      const matches = keys.every(key => {
+        const wanted = selects[key].value;
+        const values = (card.getAttribute('data-' + key) || '').split(/\s+/);
+        return wanted === 'all' || values.includes(wanted) || (key === 'cicle' && values.includes('tots'));
+      });
+      card.hidden = !matches;
+      if (matches) count++;
+      card.href = originalLinks[index] + query;
+    });
+    if (counter) counter.textContent = `Mostrant ${count} de ${cards.length} situacions`;
+    if (empty) empty.hidden = count !== 0;
+    if (updateURL) {
+      try {
+        window.history.replaceState(null, '', window.location.pathname + query);
+      } catch (_) {
+        // Some file:// browsers restrict History; detail links still carry filters.
+      }
     }
   }
 
-  [selectRobot, selectCicle, selectTematica, selectMateria].forEach(sel => {
-    if (sel) sel.addEventListener('change', filterCards);
+  keys.forEach(key => selects[key].addEventListener('change', () => filterCards(true)));
+  document.getElementById('btn-reset-sa').addEventListener('click', () => {
+    keys.forEach(key => { selects[key].value = 'all'; });
+    filterCards(true);
   });
-
-  if (btnReset) {
-    btnReset.addEventListener('click', function () {
-      if (selectRobot) selectRobot.value = 'all';
-      if (selectCicle) selectCicle.value = 'all';
-      if (selectTematica) selectTematica.value = 'all';
-      if (selectMateria) selectMateria.value = 'all';
-      filterCards();
-    });
-  }
-
-  // Estat inicial
-  filterCards();
+  filterCards(false);
+  const returnedCard = cards.find(card => '#' + card.id === window.location.hash);
+  if (returnedCard && !returnedCard.hidden) returnedCard.focus({preventScroll: true});
 })();

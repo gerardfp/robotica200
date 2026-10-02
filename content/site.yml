@@ -1,0 +1,67 @@
+name: Robòtica200
+subtitle: Robòtica per a docents
+language: ca
+navigation:
+- href: index.html
+  label: Inici
+- href: pensament-computacional.html
+  label: Pensament computacional
+- href: robotica.html
+  label: Robòtica
+- href: situacions-aprenentatge.html
+  label: Situacions d'aprenentatge
+filters:
+  robot:
+    label: Robot
+    options:
+    - value: all
+      label: Tots els robots
+    - value: desendollat
+      label: Desendollat (Sense robot)
+  cicle:
+    label: Cicle
+    options:
+    - value: all
+      label: Tots els cicles
+    - value: infantil
+      label: Educació Infantil
+    - value: cicle-inicial
+      label: Cicle Inicial
+    - value: cicle-mitja
+      label: Cicle Mitjà
+    - value: cicle-superior
+      label: Cicle Superior
+    - value: eso
+      label: ESO
+  tematica:
+    label: Temàtica
+    options:
+    - value: all
+      label: Totes les temàtiques
+    - value: sostenibilitat
+      label: Medi ambient i sostenibilitat
+    - value: ciutat
+      label: Ciutat intel·ligent i accessibilitat
+    - value: salut
+      label: Salut, hàbits i benestar
+    - value: art
+      label: Art, música i expressió
+    - value: espai
+      label: Exploració espacial
+    - value: societat
+      label: Convivència i ciutadania
+  materia:
+    label: Matèria
+    options:
+    - value: all
+      label: Totes les matèries
+    - value: medi
+      label: Coneixement del Medi / Ciències
+    - value: matematiques
+      label: Matemàtiques
+    - value: llengua
+      label: Llengua i Literatura
+    - value: artistica
+      label: Educació Artística
+    - value: tecnologia
+      label: Tecnologia i Digitalització

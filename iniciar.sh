@@ -1,18 +1,16 @@
 #!/usr/bin/env bash
-# Script para iniciar el servidor local de Robòtica200 (Robòtica per a docents)
-
-PORT=3000
-echo "=========================================================="
-echo "🤖 Iniciando Robòtica200 en http://localhost:$PORT"
-echo "=========================================================="
-echo "Presiona Ctrl + C para detener el servidor en cualquier momento."
-echo ""
-
-# Intenta abrir el navegador automáticamente si está disponible
-if command -v xdg-open > /dev/null; then
-  (sleep 1 && xdg-open "http://localhost:$PORT") &
-elif command -v open > /dev/null; then
-  (sleep 1 && open "http://localhost:$PORT") &
+# Ejecutar desde cualquier directorio; no instala dependencias automáticamente.
+set -euo pipefail
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+if [[ -x .venv/bin/python ]]; then
+  PYTHON_BIN=.venv/bin/python
+else
+  PYTHON_BIN=python3
 fi
-
-python3 -m http.server $PORT
+if ! "$PYTHON_BIN" -c 'import jinja2, markdown, yaml' 2>/dev/null; then
+  echo 'Primero instala las dependencias:' >&2
+  echo '  python3 -m venv .venv' >&2
+  echo '  .venv/bin/python -m pip install -r requirements.txt' >&2
+  exit 1
+fi
+exec "$PYTHON_BIN" scripts/build.py --serve "$@"

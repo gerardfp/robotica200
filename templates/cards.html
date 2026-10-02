@@ -1,0 +1,20 @@
+{% macro card(item, heading='h3') %}
+<a id="{{ item.slug }}" href="{{ item.url }}" class="item-card{% if item.collection == 'robots' %} robot-card{% elif item.collection == 'situacions' %} sa-card{% endif %}"{% if item.collection == 'situacions' %} data-robot="{{ item.robot }}" data-cicle="{{ item.cycles|join(' ') }}" data-tematica="{{ item.theme }}" data-materia="{{ item.subject }}"{% endif %}>
+  {% if item.collection == 'robots' %}
+  <div class="robot-card-media">
+    <img src="{{ item.image }}" alt="{{ item.name }}" width="600" height="448" loading="lazy" class="robot-card-img">
+  </div>
+  {% endif %}
+  <div class="card-top">
+    {% for badge in item.card_badges %}<span class="tag-badge{% if loop.first %} primary{% endif %}">{{ badge }}</span>{% endfor %}
+    {% if item.collection == 'robots' %}<span class="robot-icon-small">{{ item.icon }}</span>{% endif %}
+  </div>
+  <{{ heading }} class="item-title">{{ item.title }}</{{ heading }}>
+  {% if item.collection == 'situacions' %}
+  <div class="sa-challenge">"{{ item.description }}"</div>
+  {% else %}
+  <p class="item-desc">{{ item.summary|default(item.description) }}</p>
+  {% endif %}
+  <div class="item-footer"><span>{{ item.card_footer }}</span><span>{{ item.card_action }}</span></div>
+</a>
+{% endmacro %}

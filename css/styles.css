@@ -309,7 +309,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.view-header h2 {
+.view-header h1 {
   font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -697,7 +697,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.robot-tutorials-heading h3 {
+.robot-tutorials-heading h2 {
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 0.25rem;
@@ -735,3 +735,45 @@ body {
     display: none !important;
   }
 }
+
+/* Markdown content uses the same lesson layout as the original pages. */
+[hidden] { display: none !important; }
+.detail-page-title { margin-top: 0.75rem; }
+.detail-intro { font-size: 1.05rem; color: var(--text-muted); }
+.robot-age { margin-bottom: 0.35rem; display: inline-block; }
+.prose .detail-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+.prose ul, .prose ol { padding-left: 1.25rem; }
+.prose li { margin-bottom: 0.35rem; }
+.prose p + p { margin-top: 0.75rem; }
+.prose .lesson-step {
+  background: var(--bg-card-subtle);
+  padding: 1.15rem 1.35rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+  margin-top: 0.95rem;
+}
+.prose .lesson-step h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+.prose .lesson-sessions { padding: 0; list-style: none; }
+.prose .lesson-sessions li {
+  background: var(--bg-card-subtle);
+  padding: 0.85rem 1.15rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+  margin-bottom: 0.65rem;
+}
+.prose .assessment {
+  background: var(--bg-card-subtle);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--border-color);
+}
+.prose .sa-challenge { font-size: 1.05rem; padding: 1rem 1.25rem; }
+.prose img { max-width: 100%; height: auto; }
+.prose pre { overflow-x: auto; padding: 1rem; background: var(--bg-card-subtle); }
+.prose table { display: block; overflow-x: auto; border-collapse: collapse; }
+.prose th, .prose td { padding: 0.5rem; border: 1px solid var(--border-color); }
+.sa-card { scroll-margin-top: 7rem; }

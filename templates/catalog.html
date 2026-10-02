@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% from 'cards.html' import card %}
+{% block content %}
+<div class="view-header">
+  <h1>{{ page.title }}</h1>
+  {{ page.body }}
+</div>
+{% if page.catalog == 'situacions' %}
+<div class="filters-bar">
+  {% for key, filter in site.filters.items() %}
+  <div class="filter-group">
+    <label class="filter-label" for="filter-{{ key }}">{{ filter.label }}</label>
+    <select id="filter-{{ key }}" class="filter-select">
+      {% for option in filter.options %}<option value="{{ option.value }}">{{ option.label }}</option>{% endfor %}
+    </select>
+  </div>
+  {% endfor %}
+  <div class="filter-count">
+    <span id="situations-count" role="status" aria-live="polite">Mostrant {{ entries|length }} de {{ entries|length }} situacions</span>
+    <button type="button" class="btn-reset-filters" id="btn-reset-sa">Restablir filtres</button>
+  </div>
+</div>
+{% endif %}
+<div class="clean-grid"{% if page.catalog == 'situacions' %} id="situations-grid"{% endif %}>
+  {% for item in entries %}{{ card(item) }}{% endfor %}
+</div>
+{% if page.catalog == 'situacions' %}<p id="situations-empty" hidden>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>{% endif %}
+{% endblock %}

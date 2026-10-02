@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% from 'cards.html' import card %}
+{% block content %}
+<div class="robot-profile">
+  <div class="robot-profile-top">
+    <div class="robot-profile-media"><img src="{{ page.image }}" alt="{{ page.name }}" width="600" height="448" class="robot-profile-avatar"></div>
+    <div>
+      <span class="tag-badge primary robot-age">{{ page.age }}</span>
+      <h1 class="robot-profile-title">{{ page.icon }} {{ page.name }}</h1>
+    </div>
+  </div>
+  <p class="robot-profile-sub">{{ page.description }}</p>
+  <div class="robot-profile-desc">{{ page.body }}</div>
+  <div class="robot-specs-list">{% for spec in page.specs %}<span class="robot-spec-pill">{{ spec }}</span>{% endfor %}</div>
+</div>
+<div class="robot-tutorials-heading">
+  <h2>Tutorials de {{ page.name }}</h2>
+  <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
+</div>
+<div class="clean-grid">{% for item in entries %}{{ card(item) }}{% endfor %}</div>
+{% endblock %}

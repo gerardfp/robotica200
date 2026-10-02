@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="home-intro">
+  <h1 class="home-title">{{ page.title }}</h1>
+  <div class="home-desc">{{ page.body }}</div>
+</div>
+<div class="three-pillars">
+  {% for pillar in page.pillars %}
+  <a href="{{ pillar.href }}" class="pillar-card">
+    <div class="pillar-icon">{{ pillar.icon }}</div>
+    <h2 class="pillar-title">{{ pillar.title }}</h2>
+    <p class="pillar-desc">{{ pillar.description }}</p>
+    <div class="pillar-action">{{ pillar.action }}</div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}
