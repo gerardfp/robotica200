@@ -1,468 +1,207 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="ca" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduRobótica Docente | Portal STEAM de Robótica Educativa y Guías Didácticas</title>
-  <meta name="description" content="Plataforma de recursos de robótica educativa para profesores: tutoriales paso a paso (micro:bit, Arduino, mBot, Scratch, LEGO), situaciones de aprendizaje, rúbricas y materiales imprimibles.">
+  <title>EduRobòtica | Recursos per a Docents</title>
+  <meta name="description" content="Recursos de robòtica educativa i pensament computacional per a mestres i professors.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
 </head>
 <body>
 
-  <!-- Alerta de Modo Proyector / Pizarra Digital Activa -->
-  <aside class="banner-projector" role="region" aria-label="Aviso de Modo Proyector">
-    <span>📽️ Modo Proyector de Aula Activado (Alto contraste y tipografía ampliada para PDI)</span>
-    <button type="button" id="btn-exit-projector-banner">Restablecer Normal</button>
-  </aside>
-
-  <!-- Cabecera y Navegación Principal -->
-  <header class="site-header">
+  <!-- Capçalera Minimalista -->
+  <header class="header">
     <div class="container header-inner">
-      <a href="#" class="logo-group" aria-label="EduRobótica Docente Inicio">
-        <div class="logo-icon">🤖</div>
-        <div class="logo-text">
-          <span class="logo-title">EduRobótica</span>
-          <span class="logo-subtitle">Portal Docente STEAM</span>
-        </div>
+      <a href="#" class="logo" onclick="navigateTo('home'); return false;">
+        <span class="logo-badge">🤖</span>
+        <span>EduRobòtica</span>
       </a>
 
-      <nav class="nav-desktop" aria-label="Navegación Principal">
-        <a href="#tutoriales" class="nav-link">Tutoriales</a>
-        <a href="#guias" class="nav-link">Guías Didácticas</a>
-        <a href="#generador" class="nav-link">Generador STEAM</a>
-        <a href="#simulador" class="nav-link">Simulador PDI</a>
-        <a href="#calculadora" class="nav-link">Calculadora de Aula</a>
-        <a href="#recursos" class="nav-link">Recursos Imprimibles</a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <button class="nav-btn active" data-route="home">Inici</button>
+        <button class="nav-btn" data-route="pc">Pensament computacional</button>
+        <button class="nav-btn" data-route="robotica">Robòtica</button>
+        <button class="nav-btn" data-route="situacions">Situacions d'aprenentatge</button>
       </nav>
 
-      <div class="header-actions">
-        <button type="button" class="btn btn-outline btn-sm" id="btn-projector-toggle" title="Optimizar para Pizarra Digital o Proyector">
-          📽️ Modo PDI
-        </button>
-        <button type="button" class="btn-icon" id="theme-toggle" aria-label="Alternar modo oscuro y claro" title="Cambiar tema claro/oscuro">
-          <span id="theme-toggle-icon">🌙</span>
-        </button>
-      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
+        <span id="theme-icon">🌙</span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <!-- Portada / Hero -->
-    <section class="hero">
-      <div class="container hero-content">
-        <div class="badge-hero">
-          <span>✨ 100% Abierto y Gratuito para la Comunidad Docente</span>
-        </div>
-        <h1 class="hero-title">
-          Robótica Educativa Realista para el <span>Aula STEAM</span>
-        </h1>
-        <p class="hero-description">
-          Facilitamos la labor pedagógica con tutoriales paso a paso probados en clase, 
-          situaciones de aprendizaje curriculares, rúbricas de evaluación analítica y adaptaciones DUA 
-          para Infantil, Primaria, Secundaria y Formación Profesional.
-        </p>
+  <main class="container">
 
-        <div class="hero-cta-group">
-          <a href="#tutoriales" class="btn btn-primary">
-            Explorar Tutoriales con Código 🚀
-          </a>
-          <a href="#generador" class="btn btn-outline">
-            Crear Situación de Aprendizaje 📋
-          </a>
+    <!-- 1. VISTA D'INICI: ELS 3 APARTATS PRINCIPALS -->
+    <section id="view-home" class="view-section active">
+      <div class="home-intro">
+        <h1 class="home-title">Robòtica i Pensament Computacional a l'Aula</h1>
+        <p class="home-desc">Eines i propostes didàctiques netes, pràctiques i directes per a docents.</p>
+      </div>
+
+      <div class="three-pillars">
+        <!-- Apartat 1 -->
+        <div class="pillar-card" onclick="navigateTo('pc')">
+          <div class="pillar-icon">💡</div>
+          <h2 class="pillar-title">Pensament computacional</h2>
+          <p class="pillar-desc">Activitats desendollades de PC per treballar la lògica, els algorismes i la resolució de problemes sense pantalles.</p>
+          <div class="pillar-action">Explorar activitats →</div>
         </div>
 
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-icon">🎓</span>
-            <div>
-              <div class="stat-num">Infantil a FP</div>
-              <div class="stat-label">Adaptado a todas las etapas</div>
-            </div>
-          </div>
-          <div class="stat-item">
-            <span class="stat-icon">🧩</span>
-            <div>
-              <div class="stat-num">6+ Plataformas</div>
-              <div class="stat-label">micro:bit, Arduino, mBot, LEGO...</div>
-            </div>
-          </div>
-          <div class="stat-item">
-            <span class="stat-icon">📊</span>
-            <div>
-              <div class="stat-num">Rúbricas DUA</div>
-              <div class="stat-label">Evaluación competencial formativa</div>
-            </div>
-          </div>
-          <div class="stat-item">
-            <span class="stat-icon">🖨️</span>
-            <div>
-              <div class="stat-num">Listas para Imprimir</div>
-              <div class="stat-label">Formato A4 sin distracciones</div>
-            </div>
-          </div>
+        <!-- Apartat 2 -->
+        <div class="pillar-card" onclick="navigateTo('robotica')">
+          <div class="pillar-icon">🤖</div>
+          <h2 class="pillar-title">Robòtica</h2>
+          <p class="pillar-desc">Tutorials i guies dels 6 robots d'aula: Lego Coding Express, TaleBot, CodingSet, CodeyRocky, Spike i Microbit.</p>
+          <div class="pillar-action">Veure els 6 robots →</div>
+        </div>
+
+        <!-- Apartat 3 -->
+        <div class="pillar-card" onclick="navigateTo('situacions')">
+          <div class="pillar-icon">📑</div>
+          <h2 class="pillar-title">Situacions d'aprenentatge</h2>
+          <p class="pillar-desc">Catàleg curricular filtrable per robot, cicle educatiu, temàtica transversal i matèria d'aprenentatge.</p>
+          <div class="pillar-action">Obrir catàleg →</div>
         </div>
       </div>
     </section>
 
-    <!-- Banco de Tutoriales Paso a Paso -->
-    <section class="section" id="tutoriales">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Banco Práctico de Aula</span>
-          <h2 class="section-title">Tutoriales de Robótica Paso a Paso</h2>
-          <p class="section-desc">
-            Proyectos listos para trabajar en clase con diagramas de conexión, bloques visuales, código descargable y consejos para resolver los fallos típicos del alumnado.
-          </p>
-        </div>
+    <!-- 2. VISTA PENSAMENT COMPUTACIONAL (DESENDOLLADES) -->
+    <section id="view-pc" class="view-section">
+      <div class="section-nav-back">
+        <button class="btn-back" onclick="navigateTo('home')">← Tornar a l'inici</button>
+      </div>
 
-        <!-- Filtros y Búsqueda -->
-        <div class="filter-section">
-          <div class="filter-bar">
-            <div class="search-input-wrapper">
-              <span class="search-icon">🔍</span>
-              <input type="text" id="search-tutorials" placeholder="Buscar por temática (ej: semáforo, humedad, música, ultrasonidos)..." aria-label="Buscar tutoriales">
-            </div>
+      <div class="view-header">
+        <h2>Pensament Computacional</h2>
+        <p>Activitats desendollades (unplugged) dissenyades per experimentar amb conceptes computacionals a través del moviment, el joc i el material tangible.</p>
+      </div>
 
-            <div class="filter-row">
-              <div class="filter-chips">
-                <button class="chip active" data-platform="all">Todas las Tecnologías</button>
-                <button class="chip" data-platform="microbit">BBC micro:bit</button>
-                <button class="chip" data-platform="arduino">Arduino</button>
-                <button class="chip" data-platform="mbot">mBot</button>
-                <button class="chip" data-platform="scratch">Scratch + Makey</button>
-                <button class="chip" data-platform="beebot">Bee-Bot / Infantil</button>
-                <button class="chip" data-platform="lego">LEGO SPIKE</button>
-              </div>
-
-              <div class="filter-selects">
-                <select class="select-filter" id="filter-level" aria-label="Filtrar por nivel educativo">
-                  <option value="all">Cualquier Nivel Educativo</option>
-                  <option value="infantil">Educación Infantil (3-6 años)</option>
-                  <option value="primaria-ini">Primaria Inicial (1º a 3º)</option>
-                  <option value="primaria-sup">Primaria Superior (4º a 6º)</option>
-                  <option value="secundaria-1">Secundaria Obligatoria (ESO)</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Grid de tarjetas de tutoriales -->
-        <div class="grid-cards" id="tutorials-grid">
-          <!-- Renderizado dinámico vía js/app.js -->
-        </div>
+      <div class="clean-grid" id="unplugged-grid">
+        <!-- Renderitzat via js/app.js -->
       </div>
     </section>
 
-    <!-- Guías Didácticas y Proyectos STEAM -->
-    <section class="section section-alt" id="guias">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Programación de Aula</span>
-          <h2 class="section-title">Guías Didácticas y Situaciones de Aprendizaje</h2>
-          <p class="section-desc">
-            Diseñadas bajo el marco competencial (LOMLOE / STEAM) y Aprendizaje Basado en Proyectos (ABP). Cada propuesta incluye justificación, secuencia temporal, roles y rúbricas.
-          </p>
-        </div>
+    <!-- 3. VISTA ROBÒTICA (ELS 6 ROBOTS) -->
+    <section id="view-robotica" class="view-section">
+      <div class="section-nav-back">
+        <button class="btn-back" onclick="navigateTo('home')">← Tornar a l'inici</button>
+      </div>
 
-        <div class="grid-cards" id="guides-grid">
-          <!-- Renderizado dinámico vía js/app.js -->
-        </div>
+      <div class="view-header">
+        <h2>Robòtica Educativa</h2>
+        <p>Guies ràpides de funcionament, codis de colors i propostes de sessió per als robots de l'aula.</p>
+      </div>
+
+      <div class="clean-grid" id="robotics-grid">
+        <!-- Renderitzat via js/app.js -->
       </div>
     </section>
 
-    <!-- Generador Interactivo de Situaciones de Aprendizaje STEAM -->
-    <section class="section" id="generador">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Herramienta Docente Automatizada</span>
-          <h2 class="section-title">Generador de Unidades Didácticas STEAM</h2>
-          <p class="section-desc">
-            Configura las variables de tu aula y obtén al instante una Situación de Aprendizaje completa estructurada por sesiones y alineada curricularmente.
-          </p>
+    <!-- 4. VISTA SITUACIONS D'APRENENTATGE (CATÀLEG AMB FILTRES) -->
+    <section id="view-situacions" class="view-section">
+      <div class="section-nav-back">
+        <button class="btn-back" onclick="navigateTo('home')">← Tornar a l'inici</button>
+      </div>
+
+      <div class="view-header">
+        <h2>Situacions d'Aprenentatge</h2>
+        <p>Filtra les situacions per trobar la proposta que millor s'adapti al teu cicle, al robot disponible i a l'àrea d'aprenentatge.</p>
+      </div>
+
+      <!-- Barra de Filtres (Robot, Cicle, Temàtica, Matèria) -->
+      <div class="filters-bar">
+        <div class="filter-group">
+          <label class="filter-label" for="filter-robot">Robot</label>
+          <select id="filter-robot" class="filter-select">
+            <option value="all">Tots els robots</option>
+            <option value="lego-coding-express">Lego Coding Express</option>
+            <option value="talebot">TaleBot</option>
+            <option value="codingset">CodingSet</option>
+            <option value="codeyrocky">CodeyRocky</option>
+            <option value="spike">Spike</option>
+            <option value="microbit">Microbit</option>
+            <option value="desendollat">Desendollat (Sense robot)</option>
+          </select>
         </div>
 
-        <div class="generator-card">
-          <div class="generator-form-grid">
-            <div class="form-group">
-              <label for="gen-level">Etapa Educativa</label>
-              <select id="gen-level">
-                <option value="infantil">Educación Infantil (4-5 años)</option>
-                <option value="primaria-ini">Educación Primaria (1º - 3º)</option>
-                <option value="primaria-sup" selected>Educación Primaria (4º - 6º)</option>
-                <option value="secundaria-1">Educación Secundaria (1º - 3º ESO)</option>
-                <option value="secundaria-2">Secundaria (4º ESO / Bachillerato / FP)</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="gen-tech">Plataforma Tecnológica</label>
-              <select id="gen-tech">
-                <option value="microbit" selected>BBC micro:bit (MakeCode / Python)</option>
-                <option value="arduino">Arduino UNO / C++</option>
-                <option value="mbot">Makeblock mBot / mBlock</option>
-                <option value="scratch">Scratch 3.0 + Makey Makey</option>
-                <option value="beebot">Bee-Bot / Desconectada</option>
-                <option value="lego">LEGO Education SPIKE</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="gen-topic">Eje Temático del Reto</label>
-              <select id="gen-topic">
-                <option value="sostenibilidad" selected>Sostenibilidad y Reciclaje Automatizado</option>
-                <option value="smartcity">Ciudad Inteligente y Accesibilidad Inclusiva</option>
-                <option value="espacio">Misión Espacial y Rover Autónomo</option>
-                <option value="agricultura">Huerto Escolar y Riego Inteligente</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="gen-sessions">Duración (Sesiones de 50 min)</label>
-              <select id="gen-sessions">
-                <option value="3">3 Sesiones (Proyecto Corto / Taller)</option>
-                <option value="4">4 Sesiones (Unidad Estándar)</option>
-                <option value="5" selected>5 Sesiones (Unidad Completa STEAM)</option>
-                <option value="8">8 Sesiones (Proyecto Trimestral Extenso)</option>
-              </select>
-            </div>
-          </div>
-
-          <button type="button" class="btn btn-primary" id="btn-generate-situation">
-            ⚡ Generar Situación de Aprendizaje
-          </button>
-
-          <!-- Vista Previa de la Guía Generada -->
-          <div class="generated-preview" id="generator-preview-container">
-            <div id="generator-preview-content">
-              <!-- Relleno dinámico -->
-            </div>
-          </div>
+        <div class="filter-group">
+          <label class="filter-label" for="filter-cicle">Cicle</label>
+          <select id="filter-cicle" class="filter-select">
+            <option value="all">Tots els cicles</option>
+            <option value="infantil">Educació Infantil</option>
+            <option value="cicle-inicial">Cicle Inicial</option>
+            <option value="cicle-mitja">Cicle Mitjà</option>
+            <option value="cicle-superior">Cicle Superior</option>
+            <option value="eso">ESO</option>
+          </select>
         </div>
+
+        <div class="filter-group">
+          <label class="filter-label" for="filter-tematica">Temàtica</label>
+          <select id="filter-tematica" class="filter-select">
+            <option value="all">Totes les temàtiques</option>
+            <option value="sostenibilitat">Medi ambient i sostenibilitat</option>
+            <option value="ciutat">Ciutat intel·ligent i accessibilitat</option>
+            <option value="salut">Salut, hàbits i benestar</option>
+            <option value="art">Art, música i expressió</option>
+            <option value="espai">Exploració espacial</option>
+            <option value="societat">Convivència i ciutadania</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label class="filter-label" for="filter-materia">Matèria</label>
+          <select id="filter-materia" class="filter-select">
+            <option value="all">Totes les matèries</option>
+            <option value="medi">Coneixement del Medi / Ciències</option>
+            <option value="matematiques">Matemàtiques</option>
+            <option value="llengua">Llengua i Literatura</option>
+            <option value="artistica">Educació Artística</option>
+            <option value="tecnologia">Tecnologia i Digitalització</option>
+          </select>
+        </div>
+
+        <div class="filter-count">
+          <span id="situations-count">Carregant catàleg...</span>
+          <button type="button" class="btn-reset-filters" id="btn-reset-sa">Restablir filtres</button>
+        </div>
+      </div>
+
+      <div class="clean-grid" id="situations-grid">
+        <!-- Renderitzat via js/app.js -->
       </div>
     </section>
 
-    <!-- Simulador Visual Interactivo para PDI / Proyector -->
-    <section class="section section-alt" id="simulador">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Demostrador en Pizarra Digital</span>
-          <h2 class="section-title">Simulador de Algoritmos Robóticos</h2>
-          <p class="section-desc">
-            Usa este simulador en la pizarra interactiva del aula para mostrar a los alumnos cómo el bucle <strong>Sensar → Decidir → Actuar</strong> previene colisiones en tiempo real.
-          </p>
-        </div>
-
-        <div class="simulator-card">
-          <div class="sim-display-area" aria-label="Área de simulación robótica">
-            <div class="sim-track"></div>
-            <div class="sim-robot" id="sim-robot" title="Robot móvil con sensor de ultrasonidos">
-              🤖
-            </div>
-            <div class="sim-obstacle" id="sim-obstacle" title="Obstáculo">
-              🧱
-            </div>
-          </div>
-
-          <div class="sim-controls">
-            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <button class="btn btn-primary btn-sm" id="btn-sim-step">
-                👣 Paso a Paso (1 Iteración)
-              </button>
-              <button class="btn btn-outline btn-sm" id="btn-sim-run">
-                ▶️ Iniciar Bucle Continuo
-              </button>
-              <button class="btn btn-outline btn-sm" id="btn-sim-reset">
-                🔄 Reiniciar Posición
-              </button>
-            </div>
-
-            <div class="sim-log" id="sim-status-log">
-              Esperando inicio...
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Calculadora de Kits para Aulas STEAM -->
-    <section class="section" id="calculadora">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Planificación y Presupuesto Escolar</span>
-          <h2 class="section-title">Calculadora de Materiales y Ratios de Aula</h2>
-          <p class="section-desc">
-            Calcula exactamente cuántos kits robóticos necesita tu centro, cómo agrupar a los alumnos para garantizar la participación equitativa y el kit de repuestos recomendado.
-          </p>
-        </div>
-
-        <div class="calc-card">
-          <div class="calc-grid">
-            <div>
-              <div class="form-group" style="margin-bottom: 1.25rem;">
-                <label for="calc-students">Número de alumnos en el grupo:</label>
-                <input type="number" id="calc-students" value="24" min="4" max="40" step="1">
-              </div>
-
-              <div class="form-group" style="margin-bottom: 1.25rem;">
-                <label for="calc-kit-type">Tecnología seleccionada:</label>
-                <select id="calc-kit-type">
-                  <option value="microbit" selected>BBC micro:bit (Recomendado 2 alumnos/placa)</option>
-                  <option value="arduino">Arduino Starter Kit (Recomendado 2 alumnos/kit)</option>
-                  <option value="mbot">Makeblock mBot 2 (Recomendado 3 alumnos/robot)</option>
-                  <option value="lego">LEGO SPIKE Prime (Recomendado 3-4 alumnos/caja)</option>
-                  <option value="beebot">Bee-Bot Infantil (Recomendado 4 alumnos/rincón)</option>
-                </select>
-              </div>
-
-              <p style="font-size: 0.88rem; color: var(--text-muted); line-height: 1.5;">
-                Nota metodológica: Las ratios superiores a 3 alumnos por kit provocan que uno o dos integrantes asuman un rol pasivo. Para grupos grandes, la asignación formal de roles (hardware, software, portavoz, calidad) es imprescindible.
-              </p>
-            </div>
-
-            <div class="calc-results-panel">
-              <h4 style="font-weight: 700; margin-bottom: 1rem; color: var(--primary);">Resumen de Dotación Recomendada</h4>
-              
-              <div style="margin-bottom: 1rem;">
-                <div style="font-size: 0.85rem; color: var(--text-muted);">Kits Robóticos Necesarios:</div>
-                <div class="calc-stat-big" id="res-total-kits">--</div>
-              </div>
-
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
-                <div>
-                  <div style="font-size: 0.85rem; color: var(--text-muted);">Organización del Aula:</div>
-                  <strong id="res-groups" style="font-size: 1rem;">--</strong>
-                </div>
-                <div>
-                  <div style="font-size: 0.85rem; color: var(--text-muted);">Coste Estimado:</div>
-                  <strong id="res-cost" style="font-size: 1.1rem; color: var(--primary);">--</strong>
-                </div>
-              </div>
-
-              <div id="res-advice" style="font-size: 0.88rem; background: var(--bg-card); padding: 0.75rem; border-radius: var(--radius-sm); border: 1px solid var(--border-color);">
-                Cargando recomendaciones pedagógicas...
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recursos Descargables e Imprimibles -->
-    <section class="section section-alt" id="recursos">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-tag">Material Fungible y Gestión</span>
-          <h2 class="section-title">Recursos Imprimibles y Comparativas</h2>
-          <p class="section-desc">
-            Plantillas preparadas para imprimir directamente en papel: credenciales de roles cooperativos, dianas de coevaluación y comparativas técnicas para equipos directivos.
-          </p>
-        </div>
-
-        <div class="grid-cards" id="resources-container">
-          <!-- Renderizado dinámico vía js/app.js -->
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- Pie de Página -->
-  <footer class="site-footer">
+  <!-- Modal Net de Detall -->
+  <div class="modal-overlay" id="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Detall del recurs</h3>
+        <button class="btn-close" id="modal-close-btn" aria-label="Tancar">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Contingut dinàmic -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-primary" id="modal-action-close">Tancar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="logo-group" style="margin-bottom: 1rem;">
-            <div class="logo-icon">🤖</div>
-            <span class="logo-title">EduRobótica Docente</span>
-          </div>
-          <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; max-width: 320px;">
-            Plataforma educativa abierta concebida por y para docentes. Fomentando el pensamiento computacional, la creatividad técnica y la inclusión en las aulas.
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Plataformas</h4>
-          <ul class="footer-links">
-            <li><a href="#tutoriales">BBC micro:bit</a></li>
-            <li><a href="#tutoriales">Arduino UNO</a></li>
-            <li><a href="#tutoriales">Makeblock mBot</a></li>
-            <li><a href="#tutoriales">Scratch & Makey</a></li>
-            <li><a href="#tutoriales">LEGO Education</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Herramientas</h4>
-          <ul class="footer-links">
-            <li><a href="#generador">Generador STEAM</a></li>
-            <li><a href="#simulador">Simulador en Pizarra</a></li>
-            <li><a href="#calculadora">Calculadora de Kits</a></li>
-            <li><a href="#recursos">Tarjetas de Roles</a></li>
-            <li><a href="#recursos">Dianas de Evaluación</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Pedagogía</h4>
-          <ul class="footer-links">
-            <li><a href="#guias">Marco LOMLOE / STEAM</a></li>
-            <li><a href="#guias">Pautas DUA e Inclusión</a></li>
-            <li><a href="#guias">Aprendizaje Cooperativo</a></li>
-            <li><a href="#guias">Rúbricas Analíticas</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div>
-          Contenido bajo licencia abierta educativa <strong>CC BY-NC-SA 4.0</strong>. Libre para uso en centros educativos.
-        </div>
-        <div>
-          EduRobótica • Pensamiento Computacional para un Mundo Mejor
-        </div>
-      </div>
+      <p>EduRobòtica • Recursos oberts per a la comunitat educativa</p>
     </div>
   </footer>
 
-  <!-- Modal para Tutorial Detallado -->
-  <div class="modal-overlay" id="tutorial-modal" role="dialog" aria-modal="true" aria-labelledby="tut-modal-title">
-    <div class="modal-box">
-      <div class="modal-header">
-        <h3 class="modal-title" id="tut-modal-title">Título del Tutorial</h3>
-        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
-      </div>
-      <div class="modal-content-scroll" id="tut-modal-content">
-        <!-- Relleno dinámico -->
-      </div>
-      <div class="modal-footer">
-        <span style="font-size: 0.85rem; color: var(--text-muted);">EduRobótica Docente • Material de Aula</span>
-        <button class="btn btn-outline btn-sm modal-close">Cerrar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal para Guías Didácticas y Recursos -->
-  <div class="modal-overlay" id="guide-modal" role="dialog" aria-modal="true" aria-labelledby="guide-modal-title">
-    <div class="modal-box">
-      <div class="modal-header">
-        <h3 class="modal-title" id="guide-modal-title">Guía Didáctica Oficial</h3>
-        <button class="modal-close" aria-label="Cerrar modal">&times;</button>
-      </div>
-      <div class="modal-content-scroll" id="guide-modal-content">
-        <!-- Relleno dinámico -->
-      </div>
-      <div class="modal-footer">
-        <span style="font-size: 0.85rem; color: var(--text-muted);">Formato curricular estandarizado</span>
-        <button class="btn btn-outline btn-sm modal-close">Cerrar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Carga de Datos y Lógica (Compatible tanto con protocolo file:// como con servidores HTTP) -->
-  <script src="data/tutorials.js"></script>
-  <script src="data/guides.js"></script>
-  <script src="data/resources.js"></script>
+  <!-- Scripts de dades i aplicació -->
+  <script src="data/unplugged.js"></script>
+  <script src="data/robotics.js"></script>
+  <script src="data/learningSituations.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
