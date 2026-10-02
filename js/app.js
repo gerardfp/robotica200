@@ -168,10 +168,13 @@ function renderRobotics() {
   if (!container || !window.ROBOTS_DATA) return;
 
   container.innerHTML = window.ROBOTS_DATA.map(bot => `
-    <article class="item-card" data-robot-id="${bot.id}">
+    <article class="item-card robot-card" data-robot-id="${bot.id}">
+      <div class="robot-card-media">
+        <img src="${bot.image}" alt="${bot.name}" loading="lazy" class="robot-card-img">
+      </div>
       <div class="card-top">
         <span class="tag-badge primary">${bot.badge}</span>
-        <span style="font-size: 1.6rem;">${bot.icon}</span>
+        <span style="font-size: 1.4rem;">${bot.icon}</span>
       </div>
       <h3 class="item-title">${bot.name}</h3>
       <p class="item-desc">${bot.subtitle}</p>
@@ -201,10 +204,12 @@ function openRobotDetailPage(robotId) {
   if (profileContainer) {
     profileContainer.innerHTML = `
       <div class="robot-profile-top">
-        <div class="robot-big-icon">${bot.icon}</div>
+        <div class="robot-profile-media">
+          <img src="${bot.image}" alt="${bot.name}" class="robot-profile-avatar">
+        </div>
         <div>
           <span class="tag-badge primary" style="margin-bottom: 0.35rem; display: inline-block;">${bot.badge}</span>
-          <h2 class="robot-profile-title">${bot.name}</h2>
+          <h2 class="robot-profile-title">${bot.icon} ${bot.name}</h2>
         </div>
       </div>
       <p class="robot-profile-sub">${bot.subtitle}</p>
