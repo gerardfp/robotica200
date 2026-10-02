@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodingSet - Robòtica Educativa | EduRobòtica</title>
+  <meta name="description" content="Programació tangible sense pantalles amb Matatalab">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">🤖</span>
+        <span>EduRobòtica</span>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-btn ">Inici</a>
+        <a href="pensament-computacional.html" class="nav-btn ">Pensament computacional</a>
+        <a href="robotica.html" class="nav-btn active">Robòtica</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <div class="section-nav-back">
+      <a href="robotica.html" class="btn-back">← Tornar a Robòtica</a>
+    </div>
+
+    <div class="robot-profile">
+      <div class="robot-profile-top">
+        <div class="robot-profile-media">
+          <img src="assets/robots/codingset.jpg" alt="CodingSet" class="robot-profile-avatar">
+        </div>
+        <div>
+          <span class="tag-badge primary" style="margin-bottom: 0.35rem; display: inline-block;">Infantil i Primària (4-9 anys)</span>
+          <h1 class="robot-profile-title">🧩 CodingSet</h1>
+        </div>
+      </div>
+      <p class="robot-profile-sub">Programació tangible sense pantalles amb Matatalab</p>
+      <p class="robot-profile-desc">El Coding Set de Matatalab elimina la necessitat d'ordinadors o tauletes mitjançant un tauler físic on els alumnes col·loquen fitxes de plàstic dures. Una torre amb càmera escaneja els blocs i envia les instruccions al robot mòbil MatataBot per Bluetooth.</p>
+      <div class="robot-specs-list">
+        <span class="robot-spec-pill">✓ Torre de reconeixement visual</span>
+        <span class="robot-spec-pill">✓ Tauler de programació matricial</span>
+        <span class="robot-spec-pill">✓ Blocs físics de moviment, números i bucles</span>
+        <span class="robot-spec-pill">✓ Robot mòbil amb ulls expressius</span>
+      </div>
+    </div>
+
+    <div class="robot-tutorials-heading">
+      <h3>Tutorials de CodingSet</h3>
+      <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
+    </div>
+
+    <div class="clean-grid">
+      <a href="tutorial-cs-primeres-passes.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Iniciació</span>
+          <span class="tag-badge">⏱️ 30 min</span>
+        </div>
+        <h4 class="item-title">Primeres passes: La torre de lectura i el tauler físic</h4>
+        <p class="item-desc">Descobrir la connexió entre la torre d'escaneig i el MatataBot, i l'ordre seqüencial d'esquerra a dreta.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+      <a href="tutorial-cs-motors-sensors.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Intermedi</span>
+          <span class="tag-badge">⏱️ 40 min</span>
+        </div>
+        <h4 class="item-title">Motors i paràmetres numèrics</h4>
+        <p class="item-desc">Optimitzar el codi combinant les fitxes direccionals amb blocs de números (1, 2, 3, 4, 5) per estalviar espai al tauler.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+      <a href="tutorial-cs-bucles.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Intermedi</span>
+          <span class="tag-badge">⏱️ 45 min</span>
+        </div>
+        <h4 class="item-title">Bucles de repetició i estructures de control</h4>
+        <p class="item-desc">Empaquetar conjunts d'instruccions dins de blocs de bucle per crear figures regulars i camins repetitius.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>EduRobòtica • Recursos oberts per a la comunitat educativa</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

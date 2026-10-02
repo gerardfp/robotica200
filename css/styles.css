@@ -133,6 +133,9 @@ body {
   border-radius: var(--radius-sm);
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-btn:hover {
@@ -164,15 +167,15 @@ body {
   border-color: var(--border-hover);
 }
 
-/* Vistes principals */
-.view-section {
-  display: none;
-  padding: 3rem 0 5rem;
+/* Contingut de les pàgines */
+.page-content {
+  padding: 2.75rem 0 5rem;
   animation: fadeIn 0.25s ease-out;
 }
 
-.view-section.active {
-  display: block;
+.view-section {
+  padding: 2.75rem 0 5rem;
+  animation: fadeIn 0.25s ease-out;
 }
 
 @keyframes fadeIn {
@@ -275,6 +278,7 @@ body {
   padding: 0.4rem 0.8rem;
   border-radius: var(--radius-sm);
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .btn-back:hover {
@@ -317,6 +321,8 @@ body {
   flex-direction: column;
   transition: var(--transition);
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 .item-card:hover {
