@@ -445,81 +445,33 @@ body {
   color: var(--text-main);
 }
 
-/* Modals i vistes detallades */
-.modal-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.6);
-  backdrop-filter: blur(4px);
-  z-index: 100;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  overflow-y: auto;
-}
-
-.modal-overlay.active {
-  display: flex;
-}
-
-.modal-sheet {
+/* Vistes de detall en línia (prohibició total de modals i overlays) */
+.detail-page-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  width: 100%;
-  max-width: 760px;
-  max-height: 88vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  box-shadow: var(--shadow-hover);
-  animation: modalIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
 }
 
-@keyframes modalIn {
-  from { opacity: 0; transform: scale(0.97) translateY(8px); }
-  to { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-.modal-header {
-  padding: 1.5rem 2rem;
+.detail-page-header {
   border-bottom: 1px solid var(--border-color);
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 1rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.modal-title {
-  font-size: 1.5rem;
+.detail-page-title {
+  font-size: 2.1rem;
   font-weight: 800;
   line-height: 1.25;
+  margin-bottom: 0.85rem;
 }
 
-.btn-close {
-  background: none;
-  border: none;
-  font-size: 1.6rem;
-  color: var(--text-muted);
-  cursor: pointer;
-  width: 2.2rem;
-  height: 2.2rem;
-  border-radius: var(--radius-full);
+.detail-page-badges {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-close:hover {
-  background: var(--bg-card-subtle);
-  color: var(--text-main);
-}
-
-.modal-body {
-  padding: 2rem;
-  overflow-y: auto;
-  flex: 1;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .detail-section {
@@ -579,13 +531,6 @@ body {
   color: #fde68a;
 }
 
-.modal-footer {
-  padding: 1rem 2rem;
-  border-top: 1px solid var(--border-color);
-  display: flex;
-  justify-content: flex-end;
-  background: var(--bg-card-subtle);
-}
 
 .btn-primary {
   background: var(--primary);
@@ -708,11 +653,7 @@ body {
 }
 
 @media print {
-  .header, .btn-back, .btn-close, .modal-footer, .footer {
+  .header, .btn-back, .footer {
     display: none !important;
-  }
-  .modal-sheet {
-    border: none;
-    box-shadow: none;
   }
 }

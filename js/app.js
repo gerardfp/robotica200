@@ -1,4 +1,4 @@
-// js/app.js - Lògica minimalista i neta per a EduRobòtica
+// js/app.js - Lògica minimalista i neta per a EduRobòtica (sense cap modal)
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderUnplugged();
   renderRobotics();
   initLearningSituations();
-  setupModalHandlers();
 });
 
 // ==========================================
@@ -37,15 +36,18 @@ function updateThemeIcon(theme) {
 }
 
 // ==========================================
-// NAVEGACIÓ ENTRE ELS APARTATS
+// NAVEGACIÓ ENTRE VISTES EN LÍNIA (SENSE MODALS)
 // ==========================================
 function initRouter() {
   const views = {
     home: document.getElementById('view-home'),
     pc: document.getElementById('view-pc'),
+    pcDetail: document.getElementById('view-pc-detail'),
     robotica: document.getElementById('view-robotica'),
     robotDetail: document.getElementById('view-robot-detail'),
-    situacions: document.getElementById('view-situacions')
+    tutorialDetail: document.getElementById('view-tutorial-detail'),
+    situacions: document.getElementById('view-situacions'),
+    saDetail: document.getElementById('view-sa-detail')
   };
 
   const navButtons = document.querySelectorAll('[data-route]');
@@ -60,10 +62,15 @@ function initRouter() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    // Actualitzar estats de botons de la capçalera
+    // Actualitzar estats dels botons de la barra de navegació superior
     navButtons.forEach(btn => {
       const btnRoute = btn.getAttribute('data-route');
-      const isActive = btnRoute === route || (route === 'robotDetail' && btnRoute === 'robotica');
+      const isActive =
+        btnRoute === route ||
+        (btnRoute === 'pc' && route === 'pcDetail') ||
+        (btnRoute === 'robotica' && (route === 'robotDetail' || route === 'tutorialDetail')) ||
+        (btnRoute === 'situacions' && route === 'saDetail');
+
       btn.classList.toggle('active', isActive);
     });
   };
@@ -102,21 +109,23 @@ function renderUnplugged() {
     card.addEventListener('click', () => {
       const id = card.getAttribute('data-unplugged-id');
       const act = window.UNPLUGGED_ACTIVITIES.find(a => a.id === id);
-      if (act) openUnpluggedModal(act);
+      if (act) openUnpluggedDetail(act);
     });
   });
 }
 
-function openUnpluggedModal(act) {
-  const title = document.getElementById('modal-title');
-  const body = document.getElementById('modal-body');
+function openUnpluggedDetail(act) {
+  const container = document.getElementById('pc-detail-container');
+  if (!container) return;
 
-  title.textContent = act.title;
-  body.innerHTML = `
-    <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-      <span class="tag-badge primary">${act.concept}</span>
-      <span class="tag-badge">${act.cicleLabel}</span>
-      <span class="tag-badge">⏱️ ${act.duration}</span>
+  container.innerHTML = `
+    <div class="detail-page-header">
+      <div class="detail-page-badges">
+        <span class="tag-badge primary">${act.concept}</span>
+        <span class="tag-badge">${act.cicleLabel}</span>
+        <span class="tag-badge">⏱️ ${act.duration}</span>
+      </div>
+      <h2 class="detail-page-title" style="margin-top: 0.75rem;">${act.title}</h2>
     </div>
 
     <div class="detail-section">
@@ -133,11 +142,11 @@ function openUnpluggedModal(act) {
 
     <div class="detail-section">
       <h4>👣 Desenvolupament pas a pas</h4>
-      <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+      <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.5rem;">
         ${act.steps.map(s => `
-          <div style="background: var(--bg-card-subtle); padding: 0.85rem 1rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
-            <strong style="display:block; margin-bottom: 0.25rem;">${s.title}</strong>
-            <p style="font-size: 0.92rem; margin: 0;">${s.desc}</p>
+          <div style="background: var(--bg-card-subtle); padding: 1rem 1.25rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">${s.title}</strong>
+            <p style="font-size: 0.95rem; margin: 0;">${s.desc}</p>
           </div>
         `).join('')}
       </div>
@@ -148,7 +157,7 @@ function openUnpluggedModal(act) {
     </div>
   `;
 
-  openModal();
+  window.navigateTo('pcDetail');
 }
 
 // ==========================================
@@ -162,7 +171,7 @@ function renderRobotics() {
     <article class="item-card" data-robot-id="${bot.id}">
       <div class="card-top">
         <span class="tag-badge primary">${bot.badge}</span>
-        <span style="font-size: 1.5rem;">${bot.icon}</span>
+        <span style="font-size: 1.6rem;">${bot.icon}</span>
       </div>
       <h3 class="item-title">${bot.name}</h3>
       <p class="item-desc">${bot.subtitle}</p>
@@ -230,7 +239,7 @@ function openRobotDetailPage(robotId) {
       card.addEventListener('click', () => {
         const tutId = card.getAttribute('data-tut-id');
         const tut = bot.tutorials.find(t => t.id === tutId);
-        if (tut) openTutorialModal(tut, bot.name);
+        if (tut) openTutorialDetail(tut, bot);
       });
     });
   }
@@ -238,50 +247,60 @@ function openRobotDetailPage(robotId) {
   window.navigateTo('robotDetail');
 }
 
-function openTutorialModal(tut, robotName) {
-  const title = document.getElementById('modal-title');
-  const body = document.getElementById('modal-body');
+function openTutorialDetail(tut, bot) {
+  const container = document.getElementById('tutorial-detail-container');
+  const backBtn = document.getElementById('btn-back-to-robot');
 
-  title.textContent = `${robotName}: ${tut.title}`;
-  body.innerHTML = `
-    <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-      <span class="tag-badge primary">${tut.difficulty}</span>
-      <span class="tag-badge">⏱️ ${tut.duration}</span>
-      <span class="tag-badge">${robotName}</span>
-    </div>
+  if (backBtn) {
+    backBtn.textContent = `← Tornar a ${bot.name}`;
+    backBtn.onclick = () => openRobotDetailPage(bot.id);
+  }
 
-    <div class="detail-section">
-      <h4>🎯 Objectius d'aprenentatge</h4>
-      <ul style="padding-left: 1.25rem;">
-        ${tut.goals.map(g => `<li style="margin-bottom: 0.25rem;">${g}</li>`).join('')}
-      </ul>
-    </div>
-
-    <div class="detail-section">
-      <h4>📦 Materials recomanats</h4>
-      <ul style="padding-left: 1.25rem;">
-        ${tut.materials.map(m => `<li style="margin-bottom: 0.25rem;">${m}</li>`).join('')}
-      </ul>
-    </div>
-
-    <div class="detail-section">
-      <h4>👣 Pas a pas del tutorial</h4>
-      <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;">
-        ${tut.steps.map(s => `
-          <div style="background: var(--bg-card-subtle); padding: 0.85rem 1rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
-            <strong style="display: block; margin-bottom: 0.25rem;">${s.title}</strong>
-            <p style="font-size: 0.92rem; margin: 0;">${s.desc}</p>
-          </div>
-        `).join('')}
+  if (container) {
+    container.innerHTML = `
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+          <span class="tag-badge primary">${tut.difficulty}</span>
+          <span class="tag-badge">⏱️ ${tut.duration}</span>
+          <span class="tag-badge">${bot.name}</span>
+        </div>
+        <h2 class="detail-page-title" style="margin-top: 0.75rem;">${tut.title}</h2>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">${tut.summary}</p>
       </div>
-    </div>
 
-    <div class="teacher-tip-box">
-      <strong>💡 Consell per al docent:</strong> ${tut.teacherTip}
-    </div>
-  `;
+      <div class="detail-section">
+        <h4>🎯 Objectius d'aprenentatge</h4>
+        <ul style="padding-left: 1.25rem;">
+          ${tut.goals.map(g => `<li style="margin-bottom: 0.35rem;">${g}</li>`).join('')}
+        </ul>
+      </div>
 
-  openModal();
+      <div class="detail-section">
+        <h4>📦 Materials recomanats</h4>
+        <ul style="padding-left: 1.25rem;">
+          ${tut.materials.map(m => `<li style="margin-bottom: 0.35rem;">${m}</li>`).join('')}
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h4>👣 Pas a pas del tutorial</h4>
+        <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.5rem;">
+          ${tut.steps.map(s => `
+            <div style="background: var(--bg-card-subtle); padding: 1rem 1.25rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+              <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">${s.title}</strong>
+              <p style="font-size: 0.95rem; margin: 0;">${s.desc}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+
+      <div class="teacher-tip-box">
+        <strong>💡 Consell per al docent:</strong> ${tut.teacherTip}
+      </div>
+    `;
+  }
+
+  window.navigateTo('tutorialDetail');
 }
 
 // ==========================================
@@ -354,7 +373,7 @@ function initLearningSituations() {
       card.addEventListener('click', () => {
         const id = card.getAttribute('data-sa-id');
         const sa = window.LEARNING_SITUATIONS.find(s => s.id === id);
-        if (sa) openLearningSituationModal(sa);
+        if (sa) openLearningSituationDetail(sa);
       });
     });
   };
@@ -376,20 +395,22 @@ function initLearningSituations() {
   render();
 }
 
-function openLearningSituationModal(sa) {
-  const title = document.getElementById('modal-title');
-  const body = document.getElementById('modal-body');
+function openLearningSituationDetail(sa) {
+  const container = document.getElementById('sa-detail-container');
+  if (!container) return;
 
-  title.textContent = sa.title;
-  body.innerHTML = `
-    <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-      <span class="tag-badge primary">${sa.robotName}</span>
-      <span class="tag-badge">${sa.cicleLabel}</span>
-      <span class="tag-badge">⏱️ ${sa.duration}</span>
-      <span class="tag-badge">${sa.materiaLabel}</span>
+  container.innerHTML = `
+    <div class="detail-page-header">
+      <div class="detail-page-badges">
+        <span class="tag-badge primary">${sa.robotName}</span>
+        <span class="tag-badge">${sa.cicleLabel}</span>
+        <span class="tag-badge">⏱️ ${sa.duration}</span>
+        <span class="tag-badge">${sa.materiaLabel}</span>
+      </div>
+      <h2 class="detail-page-title" style="margin-top: 0.75rem;">${sa.title}</h2>
     </div>
 
-    <div class="sa-challenge" style="font-size: 1rem; padding: 1rem; margin-bottom: 1.75rem;">
+    <div class="sa-challenge" style="font-size: 1.05rem; padding: 1.25rem; margin-bottom: 1.75rem;">
       <strong>Repte / Pregunta guia:</strong> "${sa.challenge}"
     </div>
 
@@ -402,9 +423,9 @@ function openLearningSituationModal(sa) {
 
     <div class="detail-section">
       <h4>📅 Seqüència d'activitats de les sessions</h4>
-      <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.5rem;">
+      <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.5rem;">
         ${sa.sessions.map(sess => `
-          <div style="background: var(--bg-card-subtle); padding: 0.75rem 1rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); font-size: 0.92rem;">
+          <div style="background: var(--bg-card-subtle); padding: 0.85rem 1.25rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary); font-size: 0.95rem;">
             ${sess}
           </div>
         `).join('')}
@@ -413,41 +434,11 @@ function openLearningSituationModal(sa) {
 
     <div class="detail-section">
       <h4>📊 Criteri d'avaluació principal</h4>
-      <p style="background: var(--bg-card-subtle); padding: 1rem; border-radius: var(--radius-sm); font-size: 0.95rem;">
+      <p style="background: var(--bg-card-subtle); padding: 1rem 1.25rem; border-radius: var(--radius-sm); font-size: 0.95rem;">
         ${sa.evaluationCriteria}
       </p>
     </div>
   `;
 
-  openModal();
-}
-
-// ==========================================
-// CONTROL DEL MODAL
-// ==========================================
-function setupModalHandlers() {
-  const modal = document.getElementById('detail-modal');
-  const closeBtn = document.getElementById('modal-close-btn');
-  const actionCloseBtn = document.getElementById('modal-action-close');
-
-  window.openModal = function() {
-    if (modal) modal.classList.add('active');
-  };
-
-  window.closeModal = function() {
-    if (modal) modal.classList.remove('active');
-  };
-
-  if (closeBtn) closeBtn.addEventListener('click', window.closeModal);
-  if (actionCloseBtn) actionCloseBtn.addEventListener('click', window.closeModal);
-
-  if (modal) {
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) window.closeModal();
-    });
-  }
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') window.closeModal();
-  });
+  window.navigateTo('saDetail');
 }
