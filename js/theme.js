@@ -1,6 +1,6 @@
 // js/theme.js - Gestió del mode clar / fosc
 (function () {
-  const STORAGE_KEY = 'edurobotica_theme';
+  const STORAGE_KEY = 'robotica200_theme';
   const html = document.documentElement;
   const toggleBtn = document.getElementById('theme-toggle');
   const icon = document.getElementById('theme-icon');

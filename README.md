@@ -1,4 +1,4 @@
-# 🤖 EduRobòtica — Recursos per a Docents
+# 🤖 Robòtica200 — Robòtica per a docents
 
 Portal web educatiu net, espaiós i de **baixa densitat d'informació**, enfocat a facilitar la tasca dels mestres i professors a l'aula.
 
