@@ -34,3 +34,19 @@ Afegeix un bloc 'per sempre' amb un 'si llavors: atura els motors i gira 90 grau
 Col·loca el robot dins un passadís de llibres i observa com navega de forma autònoma.
 
 > **💡 Consell docent per a la sessió:** Si el sensor reflecteix superfícies negres o miralls, la lectura pot variar; utilitza obstacles de colors clars.
+
+## 🎯 Planifica l'observació
+
+Compara la resposta d'un circuit curt amb obstacles a diferents posicions; ajusta el programa només després de predir quin cas canviarà.
+
+### Preguntes per a la parella
+
+El valor registrat continua sent útil si varies la distància a l'obstacle? Què hauria de fer Rocky si la lectura no és clara?
+
+## ♿ Suport i extensió
+
+Comença amb un obstacle ample i un recorregut buit; després afegeix una corba o una segona superfície.
+
+## ✅ Evidències que pots recollir
+
+La predicció, la condició provada i la modificació justificada. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

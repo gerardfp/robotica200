@@ -34,3 +34,19 @@ Arrossega el bloc blau 'Mostra la imatge [ ] durant 2 segons' i fes clic per pin
 Programa: 'Quan es prem el botó A' → Mostra cara feliç; 'Quan es prem el botó B' → Mostra text 'Hola'.
 
 > **💡 Consell docent per a la sessió:** En mode 'En viu', el codi s'executa a l'instant sense haver de carregar el programa cada vegada a la memòria.
+
+## 🎯 Planifica l'observació
+
+Dibuixa una expressió de cinc píxels a la matriu i lliga una segona expressió a un botó. Prova en mode en viu abans de pensar en desar el programa al dispositiu.
+
+### Preguntes per a la parella
+
+Quina acció comença el programa? La cara es mostra durant el temps esperat?
+
+## ♿ Suport i extensió
+
+Proporciona una plantilla de 16 × 8 i deixa triar símbol, seqüència o missatge a cada equip.
+
+## ✅ Evidències que pots recollir
+
+El programa de l'alumne, una predicció abans de prémer el botó i el resultat observat. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

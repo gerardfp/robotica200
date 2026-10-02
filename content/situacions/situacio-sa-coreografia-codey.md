@@ -39,3 +39,21 @@ subject_label: Educació Artística i Plàstica
 
 Combina llenguatges artístics plàstics i musicals amb el moviment robòtic per expressar idees i sentiments de forma col·laborativa.
 {: .assessment }
+
+## Abans de començar
+
+Dividiu l'escena en frases breus de música i definiu una consigna que cada robot pugui provar per separat. Feu que el grup triï la música o creeu una base amb percussió corporal: per a una actuació pública, feu servir àudio que el centre tingui permís d'utilitzar.
+
+## 🧭 Evidències que recollirem
+
+- Un guió temporal que relacioni moviments i fragments de música.
+- Una predicció sobre què es desajustarà si el ritme s'accelera.
+- Una actuació final i una explicació de com el grup ha sincronitzat les accions.
+
+## ♿ Variants per repartir la participació
+
+Els robots, les targetes de llum, les figures o un narrador poden tenir rols equivalents a l'escena. Permeteu presentar el resultat amb una seqüència dibuixada, una demostració en directe o una explicació enregistrada; assegureu-vos que el registre de veu sigui voluntari.
+
+## 🔁 Depuració de la coreografia
+
+No canvieu alhora la melodia, el moviment i la pausa. Manteniu dos elements i canvieu-ne un; proveu un robot, anoteu-ne el temps i només després incorporeu-ne d'altres.

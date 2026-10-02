@@ -1,0 +1,48 @@
+---
+title: Receptes amb Instruccions de Robot
+description: Descomposeu una tasca quotidiana en instruccions precises i proveu què passa si en canvieu l'ordre.
+topic: Descomposició i Algorismes
+cycle_label: Cicle Inicial, Mitjà, Superior i ESO
+duration: 50 min
+order: 9
+---
+
+## 🎯 Què aprendrem?
+
+Un algorisme és una seqüència d'instruccions que porta d'una situació inicial a un resultat. Abans de provar-lo, aprendrem a dividir una tasca en passos observables i a detectar quan una instrucció és ambigua.
+
+## 🧺 Material
+
+- Targetes en blanc, llapis i un joc de peces de construcció per equip.
+- Dues imatges: la situació inicial i el resultat que volem aconseguir.
+- Una plantilla amb tres columnes: ordre, acció, què ha passat?
+
+## 👣 Desenvolupament
+
+### 1. Trieu una tasca
+
+L'equip escull una activitat segura i familiar: construir una torre de cinc peces o ordenar targetes de formes per mida. Evitem receptes que requereixin menjar o eines.
+
+### 2. Escriviu les instruccions
+
+Una persona dicta els passos i una altra els escriu tal com els sent. El grup prova si expressions com «posa-ho aquí» o «agafa una peça» permeten obtenir un resultat inequívoc.
+
+### 3. Executeu literalment
+
+Un equip diferent fa d'autòmat: només pot seguir les targetes, sense inferir què volia dir el primer equip. L'observador anota el primer pas en què s'allunyen del resultat.
+
+### 4. Depureu l'algorisme
+
+Canvieu una instrucció, executeu de nou i anoteu si ha resolt l'ambigüitat. Guardeu les dues versions per explicar què ha millorat.
+
+## ♿ Variants i inclusió
+
+Les instruccions es poden dibuixar amb pictogrames o fotografiar peça per peça. En reptes avançats, afegiu una bifurcació: «si la peça és rodona, col·loca-la al cercle; si no, al quadrat».
+
+## ✅ Evidències d'aprenentatge
+
+- Divideix la tasca en accions que es poden veure o comprovar.
+- Identifica una instrucció amb més d'una interpretació possible.
+- Pot explicar quin canvi ha resolt l'error i per què.
+
+> **💡 Consell docent:** No corregiu de seguida l'equip que ha escrit les ordres. La diferència entre el que volien dir i el que s'ha executat és la informació més útil del repte.

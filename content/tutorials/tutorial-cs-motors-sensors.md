@@ -35,3 +35,19 @@ Col·loca 1 fletxa d'avançar i encaixa just a sota el número '4'. El robot ava
 Fes el mateix amb els blocs de gir angular (90º, 45º, 30º).
 
 > **💡 Consell docent per a la sessió:** És la millor manera per entendre que un programa eficient és aquell que fa el mateix amb menys línies de codi.
+
+## 🎯 Planifica l'observació
+
+Prova una seqüència de moviments amb una variable que l'alumnat pugui observar i anotar, com el nombre d'avançaments o els girs.
+
+### Preguntes per a la parella
+
+Què representa aquest paràmetre al repte? Quin és el canvi mínim que podem provar?
+
+## ♿ Suport i extensió
+
+Dona valors marcats a la graella, deixa variar un valor cada vegada i afegeix una comparació de dues rutes per als equips avançats.
+
+## ✅ Evidències que pots recollir
+
+Una taula breu amb el valor d'entrada, la previsió i el recorregut observat. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

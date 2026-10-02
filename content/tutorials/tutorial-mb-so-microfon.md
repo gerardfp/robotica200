@@ -33,3 +33,19 @@ Fes que una barra de LEDs s'ompli proporcionalment al nivell de so ambiental (0 
 Si el so supera el llindar 180 durant més de 3 segons, fes sonar un to greu per recordar baixar el to de veu.
 
 > **💡 Consell docent per a la sessió:** Els nens i nenes aprendran a autoregular el volum de treball cooperatiu mirant el semàfor.
+
+## 🎯 Planifica l'observació
+
+Identifica primer si les plaques són V2 i comprova el micròfon i el bloc disponible al programari. A continuació, tria sons voluntaris i mesura'n la resposta per separat.
+
+### Preguntes per a la parella
+
+La placa detecta parla o només nivells de so? Què passa si varia el soroll de fons?
+
+## ♿ Suport i extensió
+
+La sessió no necessita enregistrar veus ni reconèixer paraules. Permet que qui ho prefereixi activi la prova amb un senyal visual o un so generat per l'adult.
+
+## ✅ Evidències que pots recollir
+
+Dues mesures de so en condicions definides i una explicació de què pot detectar aquest muntatge. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

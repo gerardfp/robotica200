@@ -31,3 +31,21 @@ Exemple: Si el teu nom comença per vocal, toca't el nas; si no, toca't els geno
 Per cicles mitjà i superior: 'Si el teu mes de naixement és parell I portes sabates fosques...'
 
 > **💡 Consell per a l'aula:** Permet interioritzar com les màquines prenen decisions lògiques a partir de l'estat dels seus sensors.
+
+## 🪜 Una seqüència d'experiments
+
+Primer treballa amb una condició fàcil de comprovar, com ara «la targeta és vermella». Abans de fer cap gest, cada participant prediu la branca que seguirà. Només després d'aquesta versió introduïu un «si no» i, per a l'alumnat que ja domina els dos camins, una condició composta.
+
+## 🗣️ Preguntes per fer pensar
+
+- Com pot comprovar una altra persona si la condició és certa?
+- Què passa quan la targeta no és ni vermella ni blava?
+- A partir del mateix senyal, poden dues persones decidir accions diferents? Quina regla ho faria explícit?
+
+## ♿ Adaptacions i aprofundiment
+
+Doneu targetes de dues categories amb símbols i colors contrastats, deixant respondre amb un moviment adaptat o una targeta de resposta. Com a ampliació, expliqueu la diferència entre `i` i `o` amb objectes: provem cada cas abans de combinar-los.
+
+## ✅ Evidències observables
+
+Recolliu la regla escrita, una predicció i un exemple que vagi per cada branca. L'alumne hauria de poder completar la frase: «Si la condició és..., llavors faig...; si no, faig...».

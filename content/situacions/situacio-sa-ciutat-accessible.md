@@ -41,3 +41,21 @@ order: 1
 
 Avalua la capacitat d'analitzar problemes de l'entorn proper i crear solucions digitals inclusives que responguin a necessitats reals.
 {: .assessment }
+
+## Abans de començar
+
+Delimita el repte amb necessitats que el grup pugui observar sense posar ningú a prova ni parlar en nom d'altres persones. Analitzeu l'entorn caminant pel recorregut amb permís del centre; consulteu persones usuàries o personal de l'escola només si hi volen participar. Una maqueta no substitueix l'experiència de les persones amb discapacitat.
+
+## 🧭 Evidències que recollirem
+
+- Una anotació del problema concret i de qui ha explicat aquesta necessitat.
+- Una seqüència de senyals del semàfor amb distàncies i durades justificades.
+- Una prova amb tres observadors i un canvi al disseny derivat dels seus comentaris.
+
+## ♿ Disseny accessible i ampliació
+
+No confieu només en una llum o només en un so: proposeu almenys dues formes complementàries d'informar i feu que el prototip funcioni a distància sense instruccions orals. Com a ampliació, compareu com es percep l'avís des de punts diferents de la maqueta.
+
+## 🔁 Revisió i transferència
+
+Al final de la sessió, cada equip completa «El canvi que hem fet és..., perquè l'evidència ens ha mostrat...». Abans d'instal·lar res a l'espai públic, caldria contrastar el disseny amb les persones destinatàries i les normes aplicables.

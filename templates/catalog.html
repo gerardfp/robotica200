@@ -4,6 +4,13 @@
 <div class="view-header">
   <h1>{{ page.title }}</h1>
   {{ page.body }}
+  {% if page.hero_image %}
+  <figure class="catalog-diagram">
+    <img src="{{ page.hero_image }}" alt="{{ page.hero_alt }}" loading="eager" width="960" height="320">
+    <figcaption>{{ page.hero_caption }}</figcaption>
+  </figure>
+  {% endif %}
+  {% if page.callout %}<p class="catalog-callout"><strong>{{ page.callout_title }}</strong> {{ page.callout }}</p>{% endif %}
 </div>
 {% if page.catalog == 'situacions' %}
 <div class="filters-bar">
@@ -24,5 +31,37 @@
 <div class="clean-grid"{% if page.catalog == 'situacions' %} id="situations-grid"{% endif %}>
   {% for item in entries %}{{ card(item) }}{% endfor %}
 </div>
+{% if page.guides %}
+<section class="catalog-guides" aria-label="Orientacions per començar">
+  {% for guide in page.guides %}
+  <article class="catalog-guide">
+    <span class="guide-number" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>
+    <h2>{{ guide['title'] }}</h2>
+    <p>{{ guide['text'] }}</p>
+    {% if guide['items'] %}<ul>{% for item in guide['items'] %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}
+  </article>
+  {% endfor %}
+</section>
+{% endif %}
+{% for section in page.get('deep_sections', []) %}
+<section class="catalog-deep-section" aria-labelledby="deep-section-{{ loop.index }}">
+  <div class="catalog-deep-heading">
+    <span class="catalog-section-kicker">{{ section['kicker'] }}</span>
+    <h2 id="deep-section-{{ loop.index }}">{{ section['heading'] }}</h2>
+    <p>{{ section['intro'] }}</p>
+  </div>
+  <div class="catalog-deep-grid">
+    {% for block in section['blocks'] %}
+    <article class="catalog-deep-card">
+      <span class="catalog-deep-icon" aria-hidden="true">{{ block['icon'] }}</span>
+      <h3>{{ block['title'] }}</h3>
+      <p>{{ block['text'] }}</p>
+      {% if block['items'] %}<ul>{% for item in block['items'] %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}
+      {% if block.get('href') %}<a class="catalog-deep-link" href="{{ block['href'] }}">{{ block['link_label'] }} <span aria-hidden="true">→</span></a>{% endif %}
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
 {% if page.catalog == 'situacions' %}<p id="situations-empty" hidden>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>{% endif %}
 {% endblock %}

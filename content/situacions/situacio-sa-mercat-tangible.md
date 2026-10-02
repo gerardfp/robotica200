@@ -37,3 +37,21 @@ order: 4
 
 Aplica estratègies de càlcul bàsic i orientació espacial per resoldre problemes de la vida quotidiana en entorns manipulatius.
 {: .assessment }
+
+## Abans de començar
+
+Utilitzeu una carta de mercat de ficció amb una llista curta de productes, unitats i preus. Decidiu si el pressupost ha d'incloure tots els articles o si cal prioritzar-ne alguns; l'objectiu és raonar sobre cost i seqüència, no fer valoracions sobre l'alimentació familiar.
+
+## 🧭 Evidències que recollirem
+
+- Una taula amb quantitat, preu i suma calculada, comprovada per un altre equip.
+- Una ruta de peces justificada i provada sobre el mapa.
+- Una explicació de com ha resolt una compra que superava el pressupost inicial.
+
+## ♿ Matemàtiques amb més d'una entrada
+
+Ofereix preus amb xifres i representació visual, monedes de joguina i una recta numèrica. Permet ordenar peces sobre el mapa sense competició temporal. Per aprofundir, comparen dues cistelles possibles i argumenten quina s'ajusta millor a les condicions acordades.
+
+## 🔁 Retorn al repte
+
+Al final, contrasteu la ruta prevista amb la recorreguda i el cost previst amb el càlcul real. Demana quin pas de la planificació evitarien improvisar la pròxima vegada.

@@ -35,3 +35,19 @@ Posa les fletxes sobre les caselles buides del tauler seguint una línia horitzo
 Prem el botó gran taronja de la torre. La càmera escaneja les fitxes i el robot comença a moure's immediatament pel tapís.
 
 > **💡 Consell docent per a la sessió:** Si la torre no llegeix una fitxa, comprova que la il·luminació no creï ombres intenses sobre el tauler.
+
+## 🎯 Planifica l'observació
+
+Presenta el tauler, la torre i dues peces de moviment: demana a cada parella ordenar un recorregut al mapa abans de fer-lo interpretar pel set.
+
+### Preguntes per a la parella
+
+Quina peça creus que es llegeix primer? Com pots saber si el robot ha seguit l'ordre del tauler?
+
+## ♿ Suport i extensió
+
+Fotografia una seqüència curta per recordar-ne l'ordre i comença amb dues peces diferents abans d'allargar-la.
+
+## ✅ Evidències que pots recollir
+
+Una ruta dibuixada, la seqüència de peces i una predicció individual. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

@@ -36,3 +36,19 @@ Programa: 'per sempre' → 'guarda a la variable [humitat] el valor de lectura a
 Si la humitat és inferior a 300, gira el servomotor a 90 graus per obrir la comporta d'aigua.
 
 > **💡 Consell docent per a la sessió:** Perquè no s'oxidin els claus ràpidament per electròlisi, alimenta el sensor només el mil·lisegon que fas la lectura.
+
+## 🎯 Planifica l'observació
+
+La placa micro:bit no és per si sola una font adequada per alimentar qualsevol servomotor. Comprova el motor, l'alimentació externa, la connexió de terra comuna i la guia de la placa d'expansió abans de connectar-lo.
+
+### Preguntes per a la parella
+
+Quina lectura fas servir com a entrada? El servomotor rep energia de la placa o d'una alimentació apropiada? Com has confirmat la connexió comuna?
+
+## ♿ Suport i extensió
+
+Simula primer l'entrada de la humitat amb nombres en pantalla. Reserva la connexió del motor per a grups que segueixin l'esquema de la placa auxiliar del centre.
+
+## ✅ Evidències que pots recollir
+
+L'esquema etiquetat, dues lectures repetides i una explicació de la relació entre lectura i moviment. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

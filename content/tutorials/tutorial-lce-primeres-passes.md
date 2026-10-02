@@ -35,3 +35,19 @@ Dóna una petita empenta suau cap endavant: el tren continuarà en marxa tot sol
 En equips de 3 o 4 infants, cadascú afegeix un tram de via fins a tancar el cercle.
 
 > **💡 Consell docent per a la sessió:** Assegura't que les vies estiguin sobre una superfície plana (terra o taula baixa) perquè les rodes motrius tinguin bona tracció.
+
+## 🎯 Planifica l'observació
+
+Dibuixa el contorn del circuit abans de muntar-lo i compta les peces emprades. Quan tanquis la via, comprova sense pressa que el tren hi passa sense empènyer-lo.
+
+### Preguntes per a la parella
+
+Per què el circuit ha de tancar-se? Què canvia si girem una peça corba?
+
+## ♿ Suport i extensió
+
+Treballa amb equips petits i deixa que cada infant afegeixi una peça; introdueix un segon disseny només després que la via original funcioni.
+
+## ✅ Evidències que pots recollir
+
+Un dibuix del circuit, el nombre de peces i una comprovació del trajecte. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

@@ -53,7 +53,7 @@ Todos los archivos requieren `title`, `description` y un cuerpo Markdown. `order
 | Página de catálogo | `layout: catalog`, `collection` (`robots`, `activitats` o `situacions`); el cuerpo es la introducción |
 | Inicio | `layout: home`, `pillars` (lista de enlaces con `href`, `icon`, `title`, `description` y `action`) |
 
-Para añadir un robot, copia una ficha de `content/robots/` y usa un nombre `robot-identificador.md`. Su identificador es la parte posterior a `robot-`; por ejemplo, `robot-codeyrocky.md` se referencia como `robot: codeyrocky`. El robot entra automáticamente en el catálogo y en el filtro de situaciones. Usa `title` y `name` con el mismo nombre corto; `name` también aparece en las referencias desde tutoriales y situaciones. La lista `specs` conserva el prefijo visible `✓` si se incluye.
+Para añadir un robot, copia una ficha de `content/robots/` y usa un nombre `robot-identificador.md`. Su identificador es la parte posterior a `robot-`; por ejemplo, `robot-codeyrocky.md` se referencia como `robot: codeyrocky`. El robot entra automáticamente en el catálogo y en el filtro de situaciones. Usa `title` como nombre corto; se utiliza también en las referencias desde tutoriales y situaciones. La lista `specs` conserva el prefijo visible `✓` si se incluye.
 
 Las actividades y situaciones se añaden copiando una ficha de su colección. Mantén las convenciones `activitat-…`, `situacio-…` y `tutorial-…`. Los nombres deben ser únicos en todas las colecciones, con minúsculas, números y guiones. **El nombre determina la URL**: no lo cambies si quieres conservar enlaces ya publicados.
 

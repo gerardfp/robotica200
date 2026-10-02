@@ -1,6 +1,6 @@
 ---
 title: 'Missió Mart: El Rover de Rescat'
-description: Com programar un vehicle no tripulat per explorar un cràter marcià, esquivar roques per ultrasons i
+description: Com programar un vehicle no tripulat per explorar un cràter marcià, esquivar roques per sensor de distància i
   agafar una mostra mineral sense intervenció humana directa?
 robot: spike
 cycles:
@@ -15,7 +15,7 @@ theme_label: Exploració espacial i viatges
 
 ## ❓ Repte o Pregunta Guia
 
-"Com programar un vehicle no tripulat per explorar un cràter marcià, esquivar roques per ultrasons i agafar una mostra mineral sense intervenció humana directa?"
+"Com programar un vehicle no tripulat per explorar un cràter marcià, esquivar roques per sensor de distància i agafar una mostra mineral sense intervenció humana directa?"
 {: .sa-challenge }
 
 ## 🏆 Competències Clau Treballades
@@ -32,7 +32,7 @@ theme_label: Exploració espacial i viatges
 
 - S3: Muntatge de la pinça articulada amb sensor de pressió.
 
-- S4: Algorisme de navegació amb ultrasons i comprovació de perill.
+- S4: Algorisme de navegació amb sensor de distància i comprovació de perill.
 
 - S5: Proves a la pista de sorra i roques (simulació marciana).
 
@@ -42,3 +42,21 @@ theme_label: Exploració espacial i viatges
 
 Dissenya solucions d'enginyeria complexes que integren múltiples sensors i actuadors per navegar autònomament en entorns desafiants.
 {: .assessment }
+
+## Abans de començar
+
+Construïu una pista plana amb punts de sortida, destinació i zones prohibides marcats. Proveu primer un trajecte curt amb el mateix model i les mateixes condicions que farà servir l'alumnat; fixeu els paràmetres i la convenció de gir abans de mesurar res.
+
+## 🧭 Evidències que recollirem
+
+- Un pla en graella amb seqüència d'ordres i punts de decisió.
+- Un registre de cada prova amb obstable detectat, distància i ajust realitzat.
+- Una demostració del recorregut final i un límit conegut del disseny.
+
+## ♿ Comparteix el repte
+
+L'enginyeria, la programació i el registre poden ser funcions rotatives. Mostreu el recorregut amb una maqueta elevada, instruccions visuals i llegendes d'alt contrast. La ruta ha de poder explicar-se encara que el motor no arrenqui.
+
+## 🔁 Rigor experimental
+
+Canvieu un paràmetre cada vegada i repetiu cada prova. Les diferències entre muntatges, bateria, superfície i programari poden canviar els resultats; compareu els recorreguts en les mateixes condicions.

@@ -40,3 +40,21 @@ order: 8
 
 Aplica el mètode científic mitjançant la recollida de dades amb sensors i automatitza respostes per conservar recursos naturals.
 {: .assessment }
+
+## Abans de començar
+
+Busqueu una planta del centre que es pugui observar durant unes setmanes i definiu quina dada voleu relacionar amb el seu creixement. Abans d'automatitzar el reg, compareu què necessita aquesta espècie i mesureu el punt de partida; no hi ha un llindar universal per a totes les plantes.
+
+## 🧭 Evidències que recollirem
+
+- Un quadern amb data, unitat i condicions de cada observació.
+- Una predicció sobre com canviarà una dada i un gràfic que la contrasti.
+- Un programa que diferenciï lectura, decisió i avís, provat amb més d'una situació.
+
+## ♿ Dades fiables i cura de l'equip
+
+Compareu dos punts de mesura i repetiu lectures abans d'extreure una conclusió. Manteniu les plaques, els cables i les connexions elèctriques fora de l'aigua; feu lectures controlades abans de deixar qualsevol prototip a l'hort.
+
+## 🔁 Extensió
+
+En comptes de regar automàticament, comenceu amb un avís que una persona interpreta. L'equip presenta la seva recomanació amb les dades, i l'adult responsable decideix si i quan regar.

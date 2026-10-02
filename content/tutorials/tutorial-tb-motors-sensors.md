@@ -34,3 +34,19 @@ Planifica el codi: (Endavant → Gira 90º) repetit 4 vegades. En prémer Play, 
 Combina girs repetits per crear mandales i estrelles geomètriques.
 
 > **💡 Consell docent per a la sessió:** Posa una cartolina gruixuda a sota per evitar que els retoladors traspassin a la taula.
+
+## 🎯 Planifica l'observació
+
+Assegura el retolador dins del suport i prova sobre paper fixat a una taula plana. Comença amb un segment recte i un gir per calibrar el comportament del model.
+
+### Preguntes per a la parella
+
+Es tanca la forma? El punt d'inici i el final coincideixen? Quin factor de fricció o de muntatge pot explicar una diferència?
+
+## ♿ Suport i extensió
+
+Dona formes retallades com a model de partida o permet una successió de moviments fets amb botons. Canvia només el traç, la superfície o la ruta a cada intent.
+
+## ✅ Evidències que pots recollir
+
+El recorregut inicial i final, amb una nota sobre l'únic ajust que han fet. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

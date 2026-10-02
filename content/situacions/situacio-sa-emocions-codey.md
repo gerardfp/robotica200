@@ -37,3 +37,21 @@ order: 3
 
 Reconeix estats emocionals propis i aliens, traduint-los a un llenguatge simbòlic i digital comunicatiu.
 {: .assessment }
+
+## Abans de començar
+
+Presenta la mascota com un artefacte expressiu del grup, no com una eina per diagnosticar o resoldre el malestar d'una persona. Utilitza situacions fictícies de personatges inventats; ningú no ha de compartir una experiència privada per participar.
+
+## 🧭 Evidències que recollirem
+
+- Una taula que relacioni situacions fictícies amb diferents senyals escollits pel grup.
+- Una seqüència de blocs que mostri la resposta de la mascota i el límit d'aquesta resposta.
+- Una presentació que expliqui per què una mateixa situació pot provocar emocions diferents.
+
+## ♿ Expressió amb opcions
+
+Permeteu expressar una idea mitjançant color, gest, paraula, dibuix o selecció de targeta. Reviseu les metàfores perquè no associïn de manera fixa un color amb una sola emoció i oferiu als infants l'opció de no enregistrar la seva veu.
+
+## 💬 Conversa de tancament
+
+Debateu quin tipus d'ajuda sí que pot oferir un robot i en quins moments cal parlar amb un adult de confiança. Una resposta programada no substitueix la conversa ni l'acompanyament humà.

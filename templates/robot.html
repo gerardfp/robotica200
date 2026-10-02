@@ -11,8 +11,15 @@
   </div>
   <p class="robot-profile-sub">{{ page.description }}</p>
   <div class="robot-profile-desc">{{ page.body }}</div>
+  {% if page.get('status_note') %}
+  <p class="robot-status-note"><strong>Estat i disponibilitat del kit:</strong> {{ page.get('status_note') }} <a href="{{ page.get('status_source') }}">{{ page.get('status_source_label') }}</a></p>
+  {% endif %}
   <div class="robot-specs-list">{% for spec in page.specs %}<span class="robot-spec-pill">{{ spec }}</span>{% endfor %}</div>
 </div>
+<figure class="robot-learning-loop">
+  <img src="assets/imatges/robotica-aula.webp" alt="Dos infants proven un robot educatiu amb una peça de color mentre la mestra els acompanya." width="1440" height="480">
+  <figcaption>Una bona sessió deixa temps per predir, provar i explicar què s'ha après.</figcaption>
+</figure>
 <div class="robot-tutorials-heading">
   <h2>Tutorials de {{ page.name }}</h2>
   <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>

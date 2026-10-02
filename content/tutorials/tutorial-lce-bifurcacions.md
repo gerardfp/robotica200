@@ -34,3 +34,19 @@ La via dreta porta al bosc (animals) i la via esquerra a la ciutat (persones). E
 Col·loca un maó verd al final de cada via morta perquè el tren canviï de marxa i torni a la via principal.
 
 > **💡 Consell docent per a la sessió:** És la introducció perfecta a l'estructura condicional ('SI la palanca està a l'esquerra, LLAVORS el tren va a la ciutat').
+
+## 🎯 Planifica l'observació
+
+Abans de col·locar la via en Y, fes que els equips marquin les dues destinacions i prediuin quin itinerari seguirà la figura del passatger.
+
+### Preguntes per a la parella
+
+Quina part de la via crea una bifurcació? Quin recorregut alternatiu es pot provar de manera segura?
+
+## ♿ Suport i extensió
+
+Demostra primer un canvi de ruta a escala de la maqueta. Mantingues aturadors i peces fora de la zona on circulen les mans.
+
+## ✅ Evidències que pots recollir
+
+El mapa amb els itineraris i l'explicació de quina decisió ha canviat el trajecte. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

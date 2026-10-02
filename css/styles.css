@@ -736,6 +736,78 @@ body {
   }
 }
 
+/* Visual guides and teacher planning cards shared by the three sections. */
+.catalog-diagram, .robot-learning-loop {
+  margin: 1.5rem 0 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 0.75rem 1rem 0.65rem;
+}
+.catalog-diagram img, .robot-learning-loop img { display: block; width: 100%; height: auto; }
+.catalog-diagram figcaption, .robot-learning-loop figcaption {
+  padding: 0.45rem 0.35rem 0.15rem;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+.catalog-callout {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--primary-subtle);
+  color: var(--text-main) !important;
+  font-size: 0.95rem !important;
+}
+.catalog-guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+.catalog-guide {
+  padding: 1.25rem 1.35rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+.guide-number { color: var(--primary); font-size: 0.8rem; font-weight: 800; letter-spacing: 0.1em; }
+.catalog-guide h2 { margin: 0.3rem 0 0.5rem; font-size: 1.1rem; line-height: 1.35; }
+.catalog-guide p, .catalog-guide li { color: var(--text-muted); font-size: 0.92rem; line-height: 1.55; }
+.catalog-guide ul { margin: 0.55rem 0 0; padding-left: 1.15rem; }
+.catalog-deep-section { max-width: 1200px; margin: 5rem auto; padding: 0 1.5rem; }
+.catalog-deep-heading { max-width: 760px; margin: 0 auto 2rem; text-align: center; }
+.catalog-section-kicker { color: var(--color-primary, #246b72); font-size: .78rem; font-weight: 800; letter-spacing: .12em; }
+.catalog-deep-heading h2 { margin: .45rem 0 .75rem; font-size: clamp(1.65rem, 3vw, 2.35rem); }
+.catalog-deep-heading p { color: var(--text-muted); font-size: 1.06rem; line-height: 1.7; }
+.catalog-deep-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.1rem; }
+.catalog-deep-card { display: flex; flex-direction: column; align-items: flex-start; padding: 1.5rem; border: 1px solid #dce7e6; border-radius: 1rem; background: #fff; box-shadow: 0 5px 20px rgb(31 67 71 / 5%); }
+.catalog-deep-icon { display: grid; width: 2.8rem; height: 2.8rem; place-items: center; border-radius: .85rem; background: #edf6f4; font-size: 1.35rem; }
+.catalog-deep-card h3 { margin: 1rem 0 .45rem; font-size: 1.2rem; }
+.catalog-deep-card p, .catalog-deep-card li { color: #45545c; line-height: 1.65; }
+.catalog-deep-card p { margin: 0; }
+.catalog-deep-card ul { margin: .85rem 0 1rem; padding-left: 1.2rem; }
+.catalog-deep-card li + li { margin-top: .35rem; }
+.catalog-deep-link { margin-top: auto; padding-top: .5rem; color: #17656c; font-weight: 750; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+.catalog-deep-link:focus-visible { outline: 3px solid #e0a92f; outline-offset: 4px; border-radius: 2px; }
+@media (max-width: 850px) { .catalog-deep-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .catalog-deep-grid { grid-template-columns: 1fr; } .catalog-deep-section { margin: 3.5rem auto; padding: 0 1rem; } .catalog-deep-card { padding: 1.2rem; } }
+.robot-learning-loop { margin: 0 0 2.5rem; }
+.robot-profile-desc h2 { margin: 1.25rem 0 0.35rem; font-size: 1rem; }
+.robot-profile-desc p + p { margin-top: 0.65rem; }
+.robot-status-note {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid #f59e0b;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: var(--bg-card-subtle);
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+.robot-status-note a { color: var(--primary); font-weight: 650; }
+.detail-section { scroll-margin-top: 6rem; }
+
 /* Markdown content uses the same lesson layout as the original pages. */
 [hidden] { display: none !important; }
 .detail-page-title { margin-top: 0.75rem; }

@@ -34,3 +34,19 @@ Posa a dins: Avança 1 pas → Gira 90 graus a la dreta.
 Posa la fitxa morada de tancament. En prémer Play, el robot repetirà 4 cops el patró completant el quadrat.
 
 > **💡 Consell docent per a la sessió:** Fes que els alumnes comparin el tauler sense bucles (8 fitxes) amb el tauler amb bucles (4 fitxes) per veure la diferència d'elegància.
+
+## 🎯 Planifica l'observació
+
+Escriu la ruta sencera primer com una seqüència de moviments i després agrupa'n una part amb el bucle físic. Compara quantes peces necessites i si la sortida és idèntica.
+
+### Preguntes per a la parella
+
+On comença i acaba la repetició? Què canviaria si el nombre de vegades fos diferent?
+
+## ♿ Suport i extensió
+
+En grups inicials, treballa amb un sol bucle curt. Quan estigui clar, combina'l amb una funció reutilitzada.
+
+## ✅ Evidències que pots recollir
+
+El codi físic, una ruta prevista i una explicació de quines ordres s'estalvia el bucle. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

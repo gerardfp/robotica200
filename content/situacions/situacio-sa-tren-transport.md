@@ -1,7 +1,7 @@
 ---
 title: La Línia Verda del Tren Sostenible
-description: Com transportem les mercaderies del camp a la ciutat utilitzant un tren elèctric que no contamina i
-  respecta els senyals de trànsit?
+description: Com podem crear una línia de tren que connecti les parades i ajudi a comparar distàncies i recorreguts
+  entre el camp i la ciutat?
 robot: lego-coding-express
 cycles:
 - infantil
@@ -14,7 +14,7 @@ order: 6
 
 ## ❓ Repte o Pregunta Guia
 
-"Com transportem les mercaderies del camp a la ciutat utilitzant un tren elèctric que no contamina i respecta els senyals de trànsit?"
+"Com transportem les mercaderies del camp a la ciutat escollint recorreguts i senyals que facin el viatge segur i fàcil de seguir?"
 {: .sa-challenge }
 
 ## 🏆 Competències Clau Treballades
@@ -35,3 +35,21 @@ order: 6
 
 Reconeix elements del transport públic sostenible i relaciona codis de color amb accions mecàniques coordinades.
 {: .assessment }
+
+## Abans de començar
+
+Dissenyeu una xarxa de destinacions amb trams visibles, estacions i un punt de partida. Acordeu com s'aturarà el tren i quin recorregut cal verificar. Feu una prova sense càrrega i després amb una peça de càrrega gran i estable.
+
+## 🧭 Evidències que recollirem
+
+- Un mapa amb les parades i els maons d'acció col·locats en l'ordre previst.
+- Una comparació entre la ruta més curta i la que té menys transbordaments o més serveis accessibles.
+- Una explicació de quin criteri ha fet preferir un recorregut.
+
+## ♿ Variants a escala d'infantil
+
+Representa el recorregut amb edificis de construcció i figures que el grup ha inventat. Es poden fer prediccions movent una fitxa abans d'engegar el tren i anotar-les amb dibuixos o pictogrames.
+
+## 🌱 Pensament sostenible
+
+Utilitzeu la maqueta per comparar distància, capacitat i trajectes, no per afirmar que cap vehicle és «sense impacte». Parleu de les variables que la maqueta no representa. El fabricant proposa activitats amb seqüències, bucles, prediccions i mapes en el [manual oficial de Coding Express](https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/).

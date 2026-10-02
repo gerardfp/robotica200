@@ -35,3 +35,19 @@ A la categoria 'Entrada', agafa 'si es sacseja' i a dins posa 'mostra el número
 Connecta la micro:bit per USB i prem el botó 'Descarregar'. En pocs segons el dau funcionarà de manera autònoma.
 
 > **💡 Consell docent per a la sessió:** Recorda als alumnes que el simulador de l'esquerra permet provar el programa abans fins i tot de tenir la placa connectada.
+
+## 🎯 Planifica l'observació
+
+Escriu un símbol de 5 × 5, vincula'l a un polsador i transfereix el codi a la placa. Mantingues la sessió de creació independent de l'activitat opcional de ràdio.
+
+### Preguntes per a la parella
+
+Quina entrada activa el programa? El resultat apareix amb cada pulsació o un sol cop?
+
+## ♿ Suport i extensió
+
+Dona una icona impresa com a referència; deixa que cada parella triï com modificar-la i anoti la diferència.
+
+## ✅ Evidències que pots recollir
+
+El codi guardat, el símbol personalitzat i una demostració dels dos polsadors. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

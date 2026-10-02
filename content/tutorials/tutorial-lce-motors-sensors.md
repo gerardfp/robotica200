@@ -35,3 +35,19 @@ El maó groc fa sonar el xiulet del tren; el blau reprodueix el so de carregar a
 El maó verd inverteix la rotació del motor i fa recular el tren.
 
 > **💡 Consell docent per a la sessió:** Fes que els infants cantin o verbalitzin l'acció abans que passi: 'Arriba al blau... xip-xap, aigua!'.
+
+## 🎯 Planifica l'observació
+
+Presenta els maons d'acció un per un, sense donar les respostes de seguida: cada equip anota primer el que creu que passarà quan hi passi el tren.
+
+### Preguntes per a la parella
+
+Què ha observat el grup quan el tren ha passat per aquest maó? Podem repetir la prova en la mateixa pista?
+
+## ♿ Suport i extensió
+
+Usa una fitxa de registre amb dibuixos i poques paraules. No pressuposis que tots els kits contenen exactament els mateixos accessoris.
+
+## ✅ Evidències que pots recollir
+
+La predicció inicial, la resposta observada i una frase o dibuix que relacioni ambdues coses. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

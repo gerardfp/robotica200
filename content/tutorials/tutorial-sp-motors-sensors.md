@@ -36,3 +36,19 @@ Connecta els motors als ports B i D, i el sensor de color al port C apuntant cap
 Programa: 'Inicia el moviment dels motors' → 'Espera fins que el sensor C sigui [Vermell]' → 'Atura el moviment'.
 
 > **💡 Consell docent per a la sessió:** Pregunta socràtica: 'Gira més ràpid la roda o el motor?' (El motor gira 3 vegades per cada volta de roda).
+
+## 🎯 Planifica l'observació
+
+Prova el sensor de color amb targetes del mateix material i distància fixos; relaciona la detecció amb un únic canvi de moviment.
+
+### Preguntes per a la parella
+
+Quins colors s'han detectat en les mateixes condicions? Què passa quan canviem llum o distància?
+
+## ♿ Suport i extensió
+
+Deixa una targeta de prova de cada color i afegeix un registre de falses lectures. Treballa amb les peces del conjunt que s'utilitza al centre.
+
+## ✅ Evidències que pots recollir
+
+La taula d'assaigs i la condició del programa triada pel grup. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.

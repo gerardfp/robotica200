@@ -40,3 +40,21 @@ order: 2
 
 Dissenya i programa prototips mecatrònics que apliquen relacions de transmissió mecànica per resoldre problemes de gestió ambiental.
 {: .assessment }
+
+## Abans de començar
+
+Consulteu la separació de residus vigent al municipi o al centre: el contenidor correcte depèn del sistema local. Prepareu únicament envasos buits, nets i no tallants, identificats amb targetes; no demaneu que l'alumnat manipuli residus reals del menjador.
+
+## 🧭 Evidències que recollirem
+
+- Una taula de materials amb el contenidor escollit i la justificació.
+- Un model de sensor amb proves d'objectes de diverses formes i colors.
+- Un resultat comparatiu: elements classificats correctament i casos amb dubte.
+
+## ♿ Un sistema amb validació humana
+
+El color o la forma de l'envàs no sempre n'identifica el material. Incloeu un estat «no ho sé» per demanar revisió, amplieu el conjunt de proves i mesureu en quins casos el criteri falla. No presenteu una maqueta com una classificació universal de tots els residus.
+
+## 🔁 Revisió
+
+Compareu la taxa d'encerts de la primera i la segona versió amb la mateixa col·lecció de proves. Cada equip explica quina classe encara costa de distingir i què necessitaria per resoldre el dubte.

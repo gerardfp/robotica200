@@ -34,3 +34,19 @@ Crea un projecte nou i arrossega: 'Quan comenci el programa' → 'Mostra a la pa
 Programa: 'Quan s'inclini cap a l'esquerra' → Mostra fletxa esquerra.
 
 > **💡 Consell docent per a la sessió:** Posa una etiqueta de color o número a cada Hub perquè els alumnes no es connectin per Bluetooth al robot del grup del costat.
+
+## 🎯 Planifica l'observació
+
+Identifica quin port s'utilitza per al motor abans d'executar la seqüència. Prepara un moviment curt, una pausa i una icona de hub que ajudi a veure quan comença i acaba.
+
+### Preguntes per a la parella
+
+Què diu la icona durant l'execució? Quin valor de motor has triat? Què fa la pausa en la seqüència?
+
+## ♿ Suport i extensió
+
+Segueix el procediment del hub concret i de la versió de l'aplicació disponible; practica sense connexions addicionals abans de muntar el repte.
+
+## ✅ Evidències que pots recollir
+
+Un programa executat, el registre de ports i una predicció verbal del moviment. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
