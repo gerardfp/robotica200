@@ -3,7 +3,8 @@
 Este documento establece el estándar visual obligatorio para todas las imágenes de portada de robots y elementos ilustrados de la web.
 
 ## 1. Reglas Fundamentales de las Ilustraciones
-- **Estilo Gráfico:** Ilustración digital vectorial estilizada, diseño moderno de tecnología educativa para niños, formas limpias y redondeadas, estética de juguete tecnológico amigable (inspirado en el estilo de *CodeyRocky*).
+- **Estilo Gráfico:** Ilustración digital estilizada (3D suave / vectorial limpio), diseño moderno de tecnología educativa para niños, formas limpias y redondeadas, estética de juguete tecnológico amigable (inspirado exactamente en el estilo de *CodeyRocky*).
+- **🚫 Estricto Estilo Sin Líneas (Lineless):** **Sin líneas de contorno (outlines), sin trazos negros, sin rebordes oscuros ni entintado.** Las formas, piezas y límites se definen exclusivamente a través del contraste de color, luz y sombreado suave de volumen, exactamente igual que en *CodeyRocky*.
 - **Fondo Bicolor Dividido (Mesa y Pared):**
   - El fondo está dividido horizontalmente en dos mitades limpias por una línea de horizonte detrás de la parte media del robot.
   - **Mitad superior (Pared):** Color pastel plano suave que armoniza con los colores primarios del robot.
@@ -33,7 +34,7 @@ Este documento establece el estándar visual obligatorio para todas las imágene
 
 ---
 
-## 3. Plantilla de Prompt para Generación
+## 3. Plantilla de Prompt Obligatoria para Generación
 ```text
-Digital stylized vector art illustration of [Robot Name] from the reference image, matching the clean modern educational tech drawing style of CodeyRocky. Modern vector-style educational tech illustration, smooth clean shapes, friendly toy design, bright cheerful colors matching the device. Centered composition, 3/4 front isometric perspective view. The background is divided horizontally into two flat two-tone halves like a clean studio room: upper half is a solid [Color Superior] wall, and lower half is a solid [Color Inferior] flat table surface, with a crisp clean horizontal horizon line dividing them behind the middle of the robot. Strictly NO shadow beneath the robot, no drop shadow, no ground shadow, no contact shadow. Completely textless, strictly no text, no words, no numbers, no letters, no labels, no watermarks.
+3D digital stylized illustration of [Robot Name] from the reference image, in the exact smooth lineless 3D toy style of Codey Rocky. Smooth curved plastic surfaces, soft volume shading, friendly toy tech design, completely lineless without any black outlines, stroke lines, or ink contours. Centered composition, 3/4 front isometric perspective view. The background is divided horizontally into two flat two-tone halves like a clean studio room: upper half is a solid [Color Superior] wall, and lower half is a solid [Color Inferior] flat table surface, with a clean horizontal horizon line dividing them behind the robot. Strictly NO shadow beneath the robot, no drop shadow, no ground shadow, no contact shadow on the table. Completely textless, strictly no text, no words, no numbers, no letters, no labels, no watermarks.
 ```

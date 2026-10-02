@@ -7,7 +7,8 @@
 - La web ha de mantenir en tot moment una **baixa densitat d'informació**, espaiat generós i netedat visual.
 
 ## 🎨 Guia d'Estil de les Imatges de Portada dels Robots
-- **Estil visual:** Il·lustració digital vectorial estilitzada, joguina tecnològica educativa amable, línies i formes suaus i netes, idèntic a l'estil de referència de *CodeyRocky*.
+- **Estil visual:** Il·lustració digital 3D/vectorial estilitzada, joguina tecnològica educativa amable, superfícies suaus i arrodonides, idèntic a l'estil de referència de *CodeyRocky*.
+- **🚫 Sense contorns ni línies (Lineless estricte):** **Completament sense línies de contorn (sense outlines, sense traçats negres ni línies de tinta).** Les formes, peces i volums s'han de definir exclusivament mitjançant el contrast de colors, llum i volum, exactament com a *CodeyRocky*.
 - **Composició de fons bicolor (2 meitats):**
   - Fons dividit horitzontalment en dues meitats netes (efecte paret i taula).
   - Meitat superior: color pastís pla que harmonitzi amb els tons del robot.
