@@ -27,4 +27,9 @@
 - **Fons Transparent:** Format PNG amb canal alfa transparent completament net, sense halos ni vores d'adhesiu.
 - **Mida i Ubicació:** `assets/icons/[robot].png` a 512 × 512 px.
 
+## 🚩 Banners i Icones de Seccions Temàtiques
+- **Seccions:** *Pensament computacional*, *Robòtica* i *Situacions d'aprenentatge*.
+- **Banners:** `assets/banners/[seccio].jpg` a format 4:3 (800x600 px), amb fons bicolor pla (paret pastís i taula clara), lineless, acabat mat i sense ombres al terra.
+- **Icones:** `assets/icons/[seccio].png` a 512 × 512 px, fons transparent, síntesi geomètrica i lineless.
+
 
