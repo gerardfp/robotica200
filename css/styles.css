@@ -233,7 +233,7 @@ body {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 1.25rem 1.25rem 1.75rem;
   text-decoration: none;
   color: var(--text-main);
   box-shadow: var(--shadow-sm);
@@ -250,18 +250,29 @@ body {
   box-shadow: var(--shadow-hover);
 }
 
-.pillar-icon {
-  font-size: 2.5rem;
+.pillar-media {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-md);
+  overflow: hidden;
   margin-bottom: 1.25rem;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card-subtle);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.pillar-icon-img {
-  width: 3.5rem;
-  height: 3.5rem;
-  object-fit: contain;
+.pillar-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pillar-card:hover .pillar-banner-img {
+  transform: scale(1.02);
 }
 
 .pillar-title {
@@ -316,6 +327,21 @@ body {
 
 .view-header {
   margin-bottom: 2.5rem;
+}
+
+.view-header-top {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.view-header-icon {
+  width: 4.75rem;
+  height: 4.75rem;
+  min-width: 4.75rem;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
 }
 
 .view-header h2 {
@@ -746,6 +772,18 @@ body {
 }
 
 @media (max-width: 580px) {
+  .view-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .view-header-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    min-width: 3.5rem;
+  }
+
   .filters-bar {
     grid-template-columns: 1fr;
   }
