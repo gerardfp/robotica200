@@ -135,7 +135,7 @@ def load_content(root):
             if group == 'pages':
                 data['catalog'] = data.pop('collection', None)
             data.update(collection=group, url=url, slug=path.stem, source=source,
-                        body=render_markdown(match[2]), back=None)
+                        body=render_markdown(match[2]), back=data.get('back'))
             data.setdefault('order', 100)
             groups[group].append(data)
         groups[group].sort(key=lambda item: (item['order'], item['slug']))
@@ -190,8 +190,8 @@ def load_content(root):
         for item in entries:
             source = item['source']
             if group == 'pages':
-                if item.get('layout') not in ('home', 'catalog'):
-                    raise ContentError(f'{source}: layout debe ser home o catalog.')
+                if item.get('layout') not in ('home', 'catalog', 'article'):
+                    raise ContentError(f'{source}: layout debe ser home, catalog o article.')
                 if item['layout'] == 'catalog' and item['catalog'] not in CATALOGS:
                     raise ContentError(f'{source}: collection debe ser robots, activitats o situacions.')
                 if item['layout'] == 'home':
@@ -201,8 +201,8 @@ def load_content(root):
                         require(pillar, ('href', 'icon', 'title', 'description', 'action'), source)
                         for field in ('description', 'action'):
                             pillar[field] = pillar[field].replace('{robot_count}', str(len(robots)))
-                item['active'] = item['url']
-                if item['url'] != 'index.html':
+                item['active'] = item.get('active', item['url'])
+                if not item.get('back') and item['url'] != 'index.html':
                     item['back'] = {'href': 'index.html', 'label': "← Tornar a l'inici"}
                 continue
             if group == 'tutorials':

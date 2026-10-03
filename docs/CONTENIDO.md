@@ -50,7 +50,8 @@ Todos los archivos requieren `title`, `description` y un cuerpo Markdown. `order
 | Tutorial | `robot`, `level`, `duration`; `summary` opcional para una descripción de tarjeta distinta de `description` |
 | Actividad | `topic`, `cycle_label`, `duration` |
 | Situación | `robot`, `cycles` (lista), `cycle_label`, `theme`, `subject`, `duration` |
-| Página de catálogo | `layout: catalog`, `collection` (`robots`, `activitats` o `situacions`); el cuerpo es la introducción |
+| Página de catálogo | `layout: catalog`, `collection` (`robots`, `activitats` o `situacions`); el cuerpo es la introducción. `supporting_page` opcional enlaza una guía complementaria con `href` y `label` |
+| Página editorial | layout article; admite active para resaltar la sección del menú y back con href y label para definir el retorno |
 | Inicio | `layout: home`, `pillars` (lista de enlaces con `href`, `icon`, `title`, `description` y `action`) |
 
 Para añadir un robot, copia una ficha de `content/robots/` y usa un nombre `robot-identificador.md`. Su identificador es la parte posterior a `robot-`; por ejemplo, `robot-codeyrocky.md` se referencia como `robot: codeyrocky`. El robot entra automáticamente en el catálogo y en el filtro de situaciones. Usa `title` como nombre corto; se utiliza también en las referencias desde tutoriales y situaciones. La lista `specs` conserva el prefijo visible `✓` si se incluye.
@@ -108,7 +109,7 @@ El Markdown admite HTML de los colaboradores del repositorio, pero no se necesit
 - `base.html`: documento, navegación, cabecera, pie y scripts.
 - `cards.html`: tarjetas de los catálogos y tutoriales.
 - `home.html` y `catalog.html`: inicio y listados.
-- `robot.html` y `detail.html`: fichas.
+- `robot.html` y `detail.html`: fichas; `article.html`: páginas editoriales.
 
 Los cambios se aplican a toda la web en la próxima generación. En `scripts/build.py` están la lectura, las relaciones, el renderizado de Markdown, la validación y el servidor local. No hace falta tocar Python para añadir contenido de los tipos existentes.
 

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<article class="detail-page-card info-page">
+  <div class="detail-page-header">
+    <span class="tag-badge primary">Guia docent</span>
+    <h1 class="detail-page-title">{{ page.title }}</h1>
+    <p class="detail-intro">{{ page.description }}</p>
+  </div>
+  <div class="prose">{{ page.body }}</div>
+</article>
+{% endblock %}

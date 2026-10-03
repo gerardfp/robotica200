@@ -31,7 +31,10 @@
 <div class="clean-grid"{% if page.catalog == 'situacions' %} id="situations-grid"{% endif %}>
   {% for item in entries %}{{ card(item) }}{% endfor %}
 </div>
-{% if page.guides %}
+{% if page.get('supporting_page') %}
+<p class="catalog-supporting-link"><a href="{{ page.supporting_page.href }}">{{ page.supporting_page.label }} <span aria-hidden="true">→</span></a></p>
+{% endif %}
+{% if page.get('guides') %}
 <section class="catalog-guides" aria-label="Orientacions per començar">
   {% for guide in page.guides %}
   <article class="catalog-guide">

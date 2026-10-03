@@ -1,55 +1,86 @@
 ---
-title: El Joc dels Condicionals (Si... Llavors... Si no...)
-description: 'Joc d''acció corporal on el docent o un alumne estableix regles lògiques d''execució: ''SI portes
-  cordons a les sabates, LLAVORS fes 3 salts; SI NO, pica de mans''.'
+title: 'El joc dels condicionals: si... llavors... si no...'
+description: Practiqueu les decisions amb targetes inventades i representeu què passa quan una condició és certa o falsa.
 topic: Estructures de Control Condicional
-cycle_label: Tots els Cicles
-duration: 30 min
+cycle_label: Tots els cicles
+duration: 35 min
 order: 5
 ---
 
-## 🎯 Objectiu de l'activitat
+![Una targeta amb una estrela es divideix en dos camins que acaben en fitxes diferents.](assets/imatges/condicionals-ramificacions.webp)
 
-Joc d'acció corporal on el docent o un alumne estableix regles lògiques d'execució: 'SI portes cordons a les sabates, LLAVORS fes 3 salts; SI NO, pica de mans'.
+## 🎯 Què aprendrem?
+
+Un programa pot comprovar una condició i triar què fa després. En aquesta activitat, l’alumnat interpreta una regla «si... llavors... si no...», prediu la resposta abans d’actuar i comprova què passa amb entrades diferents. Les dades són símbols inventats, no característiques personals.
 
 ## 📦 Material necessari
 
-- Cap material necessari (o targetes amb regles escrites)
+- Targetes grans amb tres símbols: estrela, cercle i triangle. Es poden dibuixar o retallar.
+- Una fitxa per equip i dues zones de resposta, una amb un cercle blau i una altra amb un quadrat coral.
+- Targetes amb les regles, o pissarra per escriure-les en lletra gran.
+- Una graella senzilla per registrar entrada, condició, decisió i resultat.
+
+## 🧑‍🤝‍🧑 Rols de l’equip
+
+Repartiu quatre rols i canvieu-los després de cada ronda:
+
+- **Qui proposa la regla** llig la condició sense afegir pistes.
+- **Qui interpreta** rep la targeta d’entrada i diu si la condició és certa o falsa.
+- **Qui executa** col·loca una fitxa a la zona corresponent; també pot assenyalar-la si prefereix no moure’s.
+- **Qui observa** registra la predicció i comprova si s’ha seguit la regla.
 
 ## 👣 Desenvolupament pas a pas
 
-### 1. Condició simple: SI (Condició) LLAVORS (Acció)
+### 1. Acordeu els símbols
 
-Exemple: Si portes jersei vermell, llavors aixeca la mà dreta. Els que no en portin es queden quiets.
+Mostreu les targetes i comproveu que tot el grup pot distingir l’estrela, el cercle i el triangle. Si el color també ajuda, manteniu forma i color perquè la regla no depenga només de percebre un to.
 
-### 2. Condició completa: SI ... LLAVORS ... SI NO ...
+### 2. Proveu una condició senzilla
 
-Exemple: Si el teu nom comença per vocal, toca't el nas; si no, toca't els genolls.
+Llegiu aquesta regla: **si la targeta té una estrela, posa la fitxa al cercle blau**. Presenteu una estrela, demaneu una predicció i executeu. Després proveu el cercle i el triangle. En aquests dos casos, la condició no s’acompleix; deixeu la fitxa quieta i parleu del que significa que no hi haja cap acció alternativa.
 
-### 3. Condicionals compostos (I / O)
+### 3. Afegiu «si no»
 
-Per cicles mitjà i superior: 'Si el teu mes de naixement és parell I portes sabates fosques...'
+Ara completeu la regla: **si la targeta té una estrela, posa la fitxa al cercle blau; si no, posa-la al quadrat coral**. Abans de mostrar el resultat, cada persona indica quina branca espera. Barregeu les targetes i feu diverses proves.
 
-> **💡 Consell per a l'aula:** Permet interioritzar com les màquines prenen decisions lògiques a partir de l'estat dels seus sensors.
+| Targeta d’entrada | «Té una estrela»? | Acció prevista |
+| --- | --- | --- |
+| Estrela | Sí | Cercle blau |
+| Cercle | No | Quadrat coral |
+| Triangle | No | Quadrat coral |
 
-## 🪜 Una seqüència d'experiments
+Comproveu que l’opció «si no» cobreix tots els casos que no compleixen la condició, no només el cercle.
 
-Primer treballa amb una condició fàcil de comprovar, com ara «la targeta és vermella». Abans de fer cap gest, cada participant prediu la branca que seguirà. Només després d'aquesta versió introduïu un «si no» i, per a l'alumnat que ja domina els dos camins, una condició composta.
+### 4. Canvieu la regla sense canviar les peces
+
+Una altra parella tria una condició que es puga verificar amb les targetes, com ara «la targeta és redona». Abans de provar, ha d’escriure les dues branques i comprovar que cada símbol té una resposta. Si dues persones interpreten la regla de manera diferent, feu-la més precisa.
+
+### 5. Exploreu «i» i «o» (ampliació)
+
+Afegiu targetes amb dues propietats visibles —per exemple, forma i marc— i acordeu què vol dir cada propietat abans de combinar-les:
+
+- **I:** s’han de complir les dues condicions. «Té estrela **i** marc blau».
+- **O:** n’hi ha prou que se’n complisca una. «Té estrela **o** marc blau».
+
+Feu servir primer dues targetes d’exemple per a cada combinació i anoteu quines entren a cada branca. No cal memoritzar una taula formal: l’objectiu és justificar la decisió a partir de la regla acordada.
+
+> **💡 Connexió amb la robòtica:** una targeta fa de senyal d’entrada i la fitxa mostra la resposta. En un robot, un sensor aporta dades; el programa les compara amb una condició i tria una acció.
 
 ## 🗣️ Preguntes per fer pensar
 
-- Com pot comprovar una altra persona si la condició és certa?
-- Què passa quan la targeta no és ni vermella ni blava?
-- A partir del mateix senyal, poden dues persones decidir accions diferents? Quina regla ho faria explícit?
+- Com podem comprovar que la condició és certa o falsa?
+- Què passa amb el triangle si la regla només parla de l’estrela?
+- Quina diferència hi ha entre deixar la fitxa quieta i definir una acció «si no»?
+- En la regla amb **i**, què passa si només una de les dues propietats coincideix? I amb **o**?
 
-## ♿ Adaptacions i aprofundiment
+## ♿ Variants i inclusió
 
-Doneu targetes de dues categories amb símbols i colors contrastats, deixant respondre amb un moviment adaptat o una targeta de resposta. Com a ampliació, expliqueu la diferència entre `i` i `o` amb objectes: provem cada cas abans de combinar-los.
+Manteniu les targetes visibles i llegiu la regla en veu alta. Oferiu símbols grans d’alt contrast i permeteu respondre parlant, assenyalant, mirant la zona triada o col·locant una fitxa. El moviment corporal és opcional i es pot fer des de la cadira. Comenceu amb dues formes i una sola condició; afegiu una tercera forma quan el grup ja puga explicar les dues branques.
 
 ## ✅ Evidències observables
 
-Recolliu la regla escrita, una predicció i un exemple que vagi per cada branca. L'alumne hauria de poder completar la frase: «Si la condició és..., llavors faig...; si no, faig...».
+Recolliu la regla escrita o enregistrada amb pictogrames, una predicció i els resultats de tres targetes. L’alumnat ha de poder explicar quina dada ha comprovat, per què ha triat aquella branca i què faria amb un exemple nou. Valoreu també que detecte una regla ambigua i propose una manera d’aclarir-la.
 
 ## 🔗 Referent consultat
 
-Per preparar una progressió entre joc desendollat i codi, consulta el curs de Makeblock [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery). El joc d’aquesta pàgina té regles, exemples i materials originals; no cal tenir cap kit per dur-lo a terme.
+El curs de Makeblock [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery) inclou activitats desendollades per introduir conceptes abans de programar. Aquest joc i els seus materials són propis, no requereixen cap robot ni el mòdul Neuron.

@@ -798,6 +798,14 @@ body {
 .catalog-deep-card li + li { margin-top: .35rem; }
 .catalog-deep-link { margin-top: auto; padding-top: .5rem; color: #17656c; font-weight: 750; text-decoration-thickness: 1px; text-underline-offset: .2em; }
 .catalog-deep-link:focus-visible { outline: 3px solid #e0a92f; outline-offset: 4px; border-radius: 2px; }
+.catalog-supporting-link { max-width: 1200px; margin: 1.5rem auto 0; text-align: center; }
+.catalog-supporting-link a { display: inline-flex; gap: .5rem; align-items: center; padding: .75rem 1rem; border: 1px solid #dce7e6; border-radius: .75rem; color: #17656c; background: #fff; font-weight: 750; text-decoration: none; }
+.catalog-supporting-link a:hover { background: #edf6f4; }
+.catalog-supporting-link a:focus-visible { outline: 3px solid #e0a92f; outline-offset: 3px; }
+.info-page { max-width: 960px; margin-inline: auto; }
+.info-page .detail-page-header { display: block; }
+.info-page .prose h2 { margin-top: 2.5rem; }
+.info-page .prose h3 { margin-top: 1.5rem; }
 @media (max-width: 850px) { .catalog-deep-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .catalog-deep-grid { grid-template-columns: 1fr; } .catalog-deep-section { margin: 3.5rem auto; padding: 0 1rem; } .catalog-deep-card { padding: 1.2rem; } }
 .robot-learning-loop { margin: 0 0 2.5rem; }
