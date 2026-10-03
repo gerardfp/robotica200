@@ -91,10 +91,10 @@ Para las 3 secciones principales de la web (*Pensament computacional*, *Robòtic
 ## 7. Identidad Corporativa Oficial ("Robòtica per a docents")
 
 - **Concepto:** Síntesis geométrica abstracta ("El Bot Modular STEAM"), que equilibra el diseño lúdico/educativo con la sobriedad tecnológica y la madurez corporativa.
-- **Isotipo / Logotipo Vectorial (`assets/icons/logo.svg`, `assets/icons/brand.svg`):**
+- **Isotipo / Logotipo Vectorial (`assets/icons/logo.svg`):**
   - **Barra superior:** Se muestra como imagen estática limpia (`.logo-badge-img`) en la cabecera de todas las páginas.
   - **Favicon:** Icono oficial del navegador en formato SVG vectorial (`<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">`).
-  - **Portada (`index.html`):** Integrado inline (`.home-hero-svg`), con animación CSS de micro-glitches robóticos repentinos y sutiles en el visor (`rect#face`) que simulan la recalibración digital de la pantalla.
+  - **Portada (`index.html`):** Integrado inline (`.home-hero-svg`), con animaciones CSS: parpadeo orgánico desfasado (`#right_eye`, `#left_eye`), microinterferencia robótica de color y desplazamiento (`eye-glitch`), oscilación de la antena (`#antenna`) y micro-glitch de pantalla (`#face`).
 - **Ilustración Corporativa (`assets/banners/robotica-docents.jpg`, `assets/banners/corporativa.jpg`):** Formato 4:3 (800 × 600 px), fondo bicolor dividido (pared azul cielo pastel suave `#e0f2fe` y mesa clara `#f8fafc`), lineless y estrictamente sin sombras en el suelo.
 
 
