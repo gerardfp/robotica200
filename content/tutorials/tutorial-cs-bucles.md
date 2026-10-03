@@ -50,3 +50,7 @@ En grups inicials, treballa amb un sol bucle curt. Quan estigui clar, combina'l 
 ## ✅ Evidències que pots recollir
 
 El codi físic, una ruta prevista i una explicació de quines ordres s'estalvia el bucle. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+
+## 🔗 Referent consultat
+
+La combinació de blocs de moviment, angles i repeticions s’ha contrastat amb l’activitat oficial [MatataBot’s Cozy House](https://matatalab.com/en/node/85). Aquesta fitxa proposa un repte geomètric propi amb les peces del Coding Set; no utilitza les instruccions ni les imatges del fabricant.

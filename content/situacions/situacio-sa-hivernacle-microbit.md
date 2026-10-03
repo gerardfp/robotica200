@@ -58,3 +58,7 @@ Compareu dos punts de mesura i repetiu lectures abans d'extreure una conclusió.
 ## 🔁 Extensió
 
 En comptes de regar automàticament, comenceu amb un avís que una persona interpreta. L'equip presenta la seva recomanació amb les dades, i l'adult responsable decideix si i quan regar.
+
+## 🔗 Referent consultat
+
+La proposta s’alinea amb preguntes sobre dades ambientals i cultiu que apareixen a les lliçons de micro:bit [Helping plants grow](https://microbit.org/teach/lessons/?selected=helping-plants-grow) i [Energy awareness](https://microbit.org/teach/lessons/?selected=energy-awareness). El nostre hivernacle escolar es defineix a partir de les plantes i les condicions del centre; cal comprovar la versió de la placa i els sensors abans de construir-lo.

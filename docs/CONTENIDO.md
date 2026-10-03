@@ -46,7 +46,7 @@ Todos los archivos requieren `title`, `description` y un cuerpo Markdown. `order
 
 | Tipo | Campos propios |
 | --- | --- |
-| Robot | `icon`, `age`, `image`, `specs` (lista de textos); `title` es su nombre corto y el cuerpo es la descripción larga |
+| Robot | `icon`, `age`, `image`, `specs` (lista de textos); `title` es su nombre corto y el cuerpo es la descripción larga. `official_resources` es opcional y lista `title`, `href` y `description` de los recursos oficiales verificados |
 | Tutorial | `robot`, `level`, `duration`; `summary` opcional para una descripción de tarjeta distinta de `description` |
 | Actividad | `topic`, `cycle_label`, `duration` |
 | Situación | `robot`, `cycles` (lista), `cycle_label`, `theme`, `subject`, `duration` |
@@ -77,6 +77,8 @@ duration: 5 sessions
 Los valores aceptados de `cycles`, `theme` y `subject` están en `content/site.yml`, en los filtros `cicle`, `tematica` y `materia`. Para ampliar un vocabulario, añade allí su valor y etiqueta antes de usarlo. Las opciones de robots se crean desde las fichas, salvo `all` y `desendollat`, que se definen en YAML.
 
 Las etiquetas largas se toman del vocabulario. En casos especiales puedes usar `theme_label` o `subject_label` para una etiqueta visible propia sin cambiar el filtro. La página de inicio sustituye `{robot_count}` en la descripción y la acción del acceso a robótica por la cantidad actual de fichas.
+
+La selección y clasificación de los materiales de los fabricantes se documenta en [RECURSOS-OFICIALS.md](RECURSOS-OFICIALS.md). Enlazamos recursos útiles y creamos adaptaciones propias; no copiamos sus imágenes ni instrucciones.
 
 ## Markdown y diseño
 

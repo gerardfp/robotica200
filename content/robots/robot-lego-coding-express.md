@@ -10,10 +10,20 @@ specs:
 - ✓ Altaveu amb sons reals de tren
 - ✓ Motor elèctric suau Push & Go
 image: assets/robots/lego-coding-express.jpg
-status_note: El fabricant marca Coding Express com a producte retirat. Les propostes són per als centres que ja
-  tenen el tren; comprova l’estat de l’app i els recursos disponibles per al teu dispositiu.
+status_note: El fabricant marca Coding Express com a producte retirat. Les propostes són per als centres
+  que ja tenen el tren; comprova l’estat de l’app i els recursos disponibles per al teu dispositiu.
 status_source: https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/
 status_source_label: Fitxa oficial de Coding Express
+official_resources:
+- title: Unitat Coding Express (castellà)
+  href: https://education.lego.com/es-es/lessons/preschool-coding-express/
+  description: Vuit lliçons de primeres proves, seqüències, bucles, bifurcacions i distàncies.
+- title: Vies en forma d’O i bucles
+  href: https://education.lego.com/es-es/lessons/preschool-coding-express/o-shaped-track-looping/
+  description: Lliçó oficial sobre repetició i recorreguts tancats.
+- title: Vies en forma de Y i condicions
+  href: https://education.lego.com/es-es/lessons/preschool-coding-express/y-shaped-track/
+  description: Lliçó sobre rutes alternatives i decisions.
 ---
 
 Coding Express combina les clàssiques vies i peces DUPLO amb una locomotora intel·ligent equipada amb un sensor de llum inferior. Mitjançant maons d'acció de colors col·locats a la via, els infants controlen parades, canvis de sentit, xiulets i llums sense necessitat de pantalles.

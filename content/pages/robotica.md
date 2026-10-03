@@ -4,9 +4,11 @@ seo_title: Robòtica Educativa - Els {robot_count} Robots d'Aula | Robòtica200
 description: Guies didàctiques i tutorials dels {robot_count} robots educatius d'aula.
 layout: catalog
 collection: robots
+hero_width: 1440
+hero_height: 480
 hero_image: assets/imatges/robotica-aula.webp
-hero_alt: "Dos infants proven un robot educatiu amb una peça de color mentre la mestra els acompanya."
-hero_caption: "El robot fa visible la relació entre el programa, allò que detecta i la resposta."
+hero_alt: "El robot Codey Rocky, blanc i amb erugues turquesa, al costat de blocs de colors que pot detectar."
+hero_caption: "Codey Rocky fa visible la relació entre les instruccions, l’entrada del sensor i la resposta."
 callout_title: Quin robot triar?
 callout: Comença pel concepte que vols treballar i els materials disponibles. Un tren que reacciona a peces,
   un robot de terra i una placa amb sensors proposen maneres diferents de fer visible el codi.

@@ -41,7 +41,7 @@ Ara fan el procés invers: dibuixen la seva icona i escriuen el codi numèric pe
 
 Comenceu amb una graella de 5 × 5. Acordeu la convenció «0 és buit, 1 és pintat» i marqueu clarament el punt d'inici de cada fila. Una seqüència curta podria ser `1 1 1 0 0`; llegiu-la d'esquerra a dreta abans de passar a la fila següent.
 
-![Cada casella de la fila es converteix en un bit segons la convenció acordada; aquesta fila és 0 1 1 0 1.](assets/imatges/pixels-binaris.webp)
+![El robot Codey Rocky al costat d’una graella física de cinc per cinc amb caselles blaves i grogues que formen un cor.](assets/imatges/pixels-binaris.webp)
 
 ## 🗣️ Preguntes per fer pensar
 

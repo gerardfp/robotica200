@@ -52,3 +52,7 @@ Es pot fer la coreografia asseguts o representar-la només amb pictogrames i ges
 - Simplifica una llista llarga d'ordres sense alterar la seqüència.
 
 > **💡 Per anar més enllà:** Demaneu a un altre equip que interpreti les targetes sense cap explicació oral. Les instruccions han de ser prou clares per funcionar per si soles.
+
+## 🔗 Referent consultat
+
+El curs oficial [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery) descriu activitats desendollades com una manera d’introduir conceptes abans de programar. Aquesta coreografia és una activitat pròpia i es pot fer sense Codey Rocky ni el mòdul Neuron.

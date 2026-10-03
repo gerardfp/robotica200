@@ -4,9 +4,11 @@ seo_title: Pensament Computacional Desendollat | Robòtica200
 description: Activitats desendollades de pensament computacional per a l'aula.
 layout: catalog
 collection: activitats
+hero_width: 1440
+hero_height: 720
 hero_image: assets/imatges/pensament-computacional-aula.webp
-hero_alt: "Infants col·laboren en una graella i ordenen targetes de colors per guiar un petit robot."
-hero_caption: "Una escena d’aula per obrir la conversa: quin pla permetrà arribar al destí?"
+hero_alt: "Tale-Bot, el robot blau amb panell blanc i lateral taronja, al costat de targetes de direcció i una graella de recorregut."
+hero_caption: "Les targetes representen instruccions que podem ordenar, provar i revisar."
 callout_title: Idea clau.
 callout: Una activitat desendollada té un objectiu observable i un moment perquè l’alumnat expliqui com ha
   resolt el repte. El joc és el context; el raonament és l’aprenentatge.

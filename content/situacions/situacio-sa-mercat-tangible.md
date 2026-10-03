@@ -17,6 +17,8 @@ order: 4
 "Com podem planificar la compra de fruites i verdures de temporada al mercat gastant el pressupost just i fent el camí més curt?"
 {: .sa-challenge }
 
+![El MatataBot real del Coding Set i la torre de comandes al centre d’un mapa amb tres parades de fruita i verdura.](assets/imatges/mercat-coding-set.webp)
+
 ## 🏆 Competències Clau Treballades
 
 - Competència Matemàtica: Càlcul de distàncies, diners senzills i geometria en graella.
@@ -55,3 +57,7 @@ Ofereix preus amb xifres i representació visual, monedes de joguina i una recta
 ## 🔁 Retorn al repte
 
 Al final, contrasteu la ruta prevista amb la recorreguda i el cost previst amb el càlcul real. Demana quin pas de la planificació evitarien improvisar la pròxima vegada.
+
+## 🔗 Referent i adaptació
+
+La idea de programar un robot perquè arribi a destinacions diferents i explicar la ruta es pot veure a [Deliver Animals de Matatalab](https://matatalab.com/en/node/86). Aquesta situació la transformem en una ruta de compra saludable al mercat de proximitat, amb decisions de pressupost, temporada i recorregut; els materials i visuals d’aquesta proposta són propis.

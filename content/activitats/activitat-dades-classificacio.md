@@ -46,3 +46,7 @@ Comenceu amb dues categories clarament visibles i peces manipulables. Com a ampl
 - Distingeix dades fictícies d'informació personal que cal protegir.
 
 > **💡 Connexió amb ciutadania digital:** La qualitat d'una decisió automàtica depèn de les dades i de la regla que nosaltres triem. Debatem qui podria quedar fora d'una classificació i com ho podríem detectar.
+
+## 🔗 Referent consultat
+
+Les lliçons oficials de [Data handling amb micro:bit](https://microbit.org/teach/lessons/?selected=data-handling-unit-summary) combinen exploració de dades, sensors i activitats desendollades. El museu d’aquesta pàgina utilitza registres inventats i una activitat pròpia sense dispositius ni dades personals.

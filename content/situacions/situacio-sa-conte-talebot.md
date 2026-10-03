@@ -53,3 +53,7 @@ Distribuïu tasques de narració, ordenació de targetes, enregistrament i obser
 ## 🔁 Variació entre sessions
 
 Quan una ruta ja funciona, canvieu-ne una sola part —el destí o l'ordre d'una instrucció— i pregunteu si l'argument continua tenint sentit.
+
+## 🔗 Recursos del fabricant
+
+Per explorar com es dissenyen targetes i activitats per al Tale-Bot Pro, consulta el [curs oficial per a docents de Matatalab](https://matatalab.com/en/node/808). Aquesta situació proposa un conte original per a l’aula; no reprodueix les targetes ni els recursos visuals del fabricant.

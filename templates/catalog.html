@@ -6,7 +6,7 @@
   {{ page.body }}
   {% if page.hero_image %}
   <figure class="catalog-diagram">
-    <img src="{{ page.hero_image }}" alt="{{ page.hero_alt }}" loading="eager" width="960" height="320">
+    <img src="{{ page.hero_image }}" alt="{{ page.hero_alt }}" loading="eager" width="{{ page.hero_width }}" height="{{ page.hero_height }}">
     <figcaption>{{ page.hero_caption }}</figcaption>
   </figure>
   {% endif %}

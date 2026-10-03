@@ -53,3 +53,7 @@ Representa el recorregut amb edificis de construcció i figures que el grup ha i
 ## 🌱 Pensament sostenible
 
 Utilitzeu la maqueta per comparar distància, capacitat i trajectes, no per afirmar que cap vehicle és «sense impacte». Parleu de les variables que la maqueta no representa. El fabricant proposa activitats amb seqüències, bucles, prediccions i mapes en el [manual oficial de Coding Express](https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/).
+
+## 🔗 Referents consultats
+
+Hem contrastat la proposta amb les lliçons oficials de [bucles amb una via en O](https://education.lego.com/es-es/lessons/preschool-coding-express/o-shaped-track-looping/), [rutes alternatives amb una via en Y](https://education.lego.com/es-es/lessons/preschool-coding-express/y-shaped-track/) i [comparació de distàncies](https://education.lego.com/es-es/lessons/preschool-coding-express/math-distance/). La situació de la línia verda és una adaptació pròpia, amb una pregunta sobre el transport del barri; no reutilitza les imatges oficials.

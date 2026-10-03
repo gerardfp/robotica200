@@ -60,3 +60,7 @@ L'enginyeria, la programació i el registre poden ser funcions rotatives. Mostre
 ## 🔁 Rigor experimental
 
 Canvieu un paràmetre cada vegada i repetiu cada prova. Les diferències entre muntatges, bateria, superfície i programari poden canviar els resultats; compareu els recorreguts en les mateixes condicions.
+
+## 🔗 Referent consultat
+
+El cicle de disseny, prova curta i millora s’ha contrastat amb la unitat oficial de LEGO Education [Competition Ready per a SPIKE Prime](https://education.lego.com/en-us/lessons/prime-competition-ready/). La missió Mart és un repte local diferent, pensat per comparar prediccions i respostes del sensor, no per reproduir missions ni muntatges de competició.

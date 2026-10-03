@@ -11,6 +11,16 @@ specs:
 - ✓ Antena de ràdio 2.4GHz
 - ✓ Pins d’entrada/sortida i connexió a circuits
 image: assets/robots/microbit.jpg
+official_resources:
+- title: Lliçons de micro:bit
+  href: https://microbit.org/teach/lessons/
+  description: Unitats i reptes de disseny filtrables per edat, matèria i eina.
+- title: Primers projectes amb MakeCode
+  href: https://microbit.org/teach/lessons/first-lessons-with-makecode-and-the-microbit/
+  description: Itinerari per practicar seqüències, bucles, entrades, sortides i sensors.
+- title: 'Make it: code it'
+  href: https://www.microbit.org/projects/make-it-code-it/
+  description: Projectes filtrables per nivell, tema, llenguatge i característica de la placa.
 ---
 
 La BBC micro:bit és una petita placa programable amb una matriu de 25 LEDs, dos polsadors, acceleròmetre, brúixola i ràdio. Les funcions de maquinari depenen de la revisió: la V2 incorpora logotip tàctil, micròfon i altaveu; altres funcions i connexions poden variar. Identifica la versió abans de dissenyar una activitat.

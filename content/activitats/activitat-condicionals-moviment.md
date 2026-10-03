@@ -49,3 +49,7 @@ Doneu targetes de dues categories amb símbols i colors contrastats, deixant res
 ## ✅ Evidències observables
 
 Recolliu la regla escrita, una predicció i un exemple que vagi per cada branca. L'alumne hauria de poder completar la frase: «Si la condició és..., llavors faig...; si no, faig...».
+
+## 🔗 Referent consultat
+
+Per preparar una progressió entre joc desendollat i codi, consulta el curs de Makeblock [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery). El joc d’aquesta pàgina té regles, exemples i materials originals; no cal tenir cap kit per dur-lo a terme.

@@ -676,6 +676,13 @@ body {
   margin-bottom: 1.5rem;
   color: var(--text-main);
 }
+.robot-official-resources { margin: 1.4rem 0; padding: 1.25rem 1.4rem; border: 1px solid #dce7e6; border-radius: 1rem; background: #f7faf9; }
+.robot-official-resources h2 { margin: 0 0 .35rem; font-size: 1.1rem; }
+.robot-official-resources > p { margin: 0 0 .8rem; color: var(--text-muted); font-size: .92rem; line-height: 1.55; }
+.robot-official-resources ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.robot-official-resources li { display: flex; flex-direction: column; gap: .25rem; padding: .8rem; border-radius: .7rem; background: white; }
+.robot-official-resources a { color: #17656c; font-weight: 750; text-underline-offset: .18em; }
+.robot-official-resources li span { color: var(--text-muted); font-size: .86rem; line-height: 1.5; }
 
 .robot-specs-list {
   display: flex;

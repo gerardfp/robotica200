@@ -4,9 +4,11 @@ seo_title: Situacions d'Aprenentatge Curriculars | Robòtica200
 description: Catàleg de situacions d'aprenentatge curriculars de robòtica i pensament computacional.
 layout: catalog
 collection: situacions
+hero_width: 1440
+hero_height: 480
 hero_image: assets/imatges/situacions-aula.webp
-hero_alt: "Un grup divers dissenya una maqueta de barri accessible amb camins tàctils, sensors i un robot."
-hero_caption: "Una situació d’aprenentatge connecta preguntes reals, prototips i proves amb altres persones."
+hero_alt: "Tale-Bot i Codey Rocky al costat d’una maqueta simple de barri amb edificis, arbres i un camí accessible."
+hero_caption: "Els dos robots de la dotació apareixen en un escenari de disseny i exploració del barri."
 callout_title: Orientació curricular.
 callout: Els filtres orienten la cerca; ajusta els sabers i criteris al nivell, a la programació del centre
   i al projecte del grup.

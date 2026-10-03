@@ -50,3 +50,7 @@ Demostra primer un canvi de ruta a escala de la maqueta. Mantingues aturadors i 
 ## ✅ Evidències que pots recollir
 
 El mapa amb els itineraris i l'explicació de quina decisió ha canviat el trajecte. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+
+## 🔗 Referent consultat
+
+Aquesta pràctica pròpia parteix del concepte de rutes alternatives tractat a la [lliçó oficial de la via en forma de Y](https://education.lego.com/es-es/lessons/preschool-coding-express/y-shaped-track/). El repte local fa servir una xarxa de destinacions inventada per l’aula i criteris de prova propis.

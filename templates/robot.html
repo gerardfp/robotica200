@@ -11,13 +11,20 @@
   </div>
   <p class="robot-profile-sub">{{ page.description }}</p>
   <div class="robot-profile-desc">{{ page.body }}</div>
+  {% if page.get('official_resources') %}
+  <section class="robot-official-resources" aria-labelledby="official-resources-heading">
+    <h2 id="official-resources-heading">Recursos oficials del fabricant</h2>
+    <p>Per consultar materials, compatibilitat i instruccions actualitzades. Les activitats de Robòtica200 són adaptacions pròpies.</p>
+    <ul>{% for resource in page.get('official_resources') %}<li><a href="{{ resource['href'] }}">{{ resource['title'] }}</a><span>{{ resource['description'] }}</span></li>{% endfor %}</ul>
+  </section>
+  {% endif %}
   {% if page.get('status_note') %}
   <p class="robot-status-note"><strong>Estat i disponibilitat del kit:</strong> {{ page.get('status_note') }} <a href="{{ page.get('status_source') }}">{{ page.get('status_source_label') }}</a></p>
   {% endif %}
   <div class="robot-specs-list">{% for spec in page.specs %}<span class="robot-spec-pill">{{ spec }}</span>{% endfor %}</div>
 </div>
 <figure class="robot-learning-loop">
-  <img src="assets/imatges/robotica-aula.webp" alt="Dos infants proven un robot educatiu amb una peça de color mentre la mestra els acompanya." width="1440" height="480">
+  <img src="assets/imatges/robotica-aula.webp" alt="El robot Codey Rocky, blanc i amb erugues turquesa, al costat de blocs de colors." width="1440" height="480">
   <figcaption>Una bona sessió deixa temps per predir, provar i explicar què s'ha après.</figcaption>
 </figure>
 <div class="robot-tutorials-heading">
