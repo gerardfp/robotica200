@@ -86,4 +86,13 @@ Para las 3 secciones principales de la web (*Pensament computacional*, *Robòtic
 - **Títulos y Encabezados:** **"Sora"** (`font-family: var(--font-heading)`). Tipografía sans-serif geométrica con gran personalidad y legibilidad para todos los niveles de encabezado (`h1-h6`), marca (`.logo-name`), tarjetas (`.pillar-title`, `.item-title`) y cabeceras de página.
 - **Cuerpo de Texto e Interfaz (UI):** **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`). Tipografía sans-serif moderna, equilibrada y limpia para párrafos, botones, menús de navegación, insignias/etiquetas y elementos de formulario.
 
+---
+
+## 7. Identidad Corporativa Oficial ("Robòtica per a docents")
+
+- **Concepto:** Composición geométrica limpia que armoniza un rostro de robot docente afable con piezas modulares de aprendizaje (bloque de construcción STEAM amarillo/coral, engranaje mecánico violeta y ficha direccional algorítmica esmeralda).
+- **Isotipo / Icono de Marca (`assets/icons/brand.png`, `assets/icons/logo.png`):** Resolución 512 × 512 px, formato PNG con fondo transparente, lineless, acabado mate y cel-shaded. Utilizado en la cabecera (`.logo-badge-img`), en la portada (`.home-hero-icon`) y como favicon.
+- **Ilustración Corporativa (`assets/banners/robotica-docents.jpg`, `assets/banners/corporativa.jpg`):** Formato 4:3 (800 × 600 px), fondo bicolor dividido (pared azul cielo pastel suave `#e0f2fe` y mesa crema/pizarra clara `#f8fafc`), lineless y estrictamente sin sombras en el suelo.
+
+
 

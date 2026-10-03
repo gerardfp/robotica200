@@ -36,5 +36,11 @@
 - **Títols i encapçalaments:** Font **"Sora"** (`font-family: var(--font-heading)`). S'aplica a tots els `h1-h6`, nom de marca (`.logo-name`), títols de targetes (`.pillar-title`, `.item-title`), capçaleres de detall (`.detail-page-title`, `.detail-section h4`, `.robot-profile-title`, `.robot-tutorials-heading h3`).
 - **Text continu i interfície (UI):** Font **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`). S'aplica a tot el cos (`body`), botons (`.btn-primary`, `.btn-back`, `.nav-btn`), controls de filtratge (`.filter-select`), etiquetes (`.tag-badge`, `.robot-spec-pill`), textos i descripcions.
 
+## 🏷️ Identitat Corporativa Oficial ("Robòtica per a docents")
+- **Concepte:** Síntesi geomètrica neta que uneix un rostre de robot educatiu amable amb peces modulars d'aprenentatge (bloc de construcció STEAM groc/coral, engranatge mecànic violeta i fitxa algorítmica maragda).
+- **Logotip / Isotip de marca:** `assets/icons/brand.png` (i `assets/icons/logo.png`) a 512 × 512 px, fons transparent, integrat a la capçalera de totes les pàgines (`.logo-badge-img`), a la portada (`.home-hero-icon`) i com a favicon del lloc web.
+- **Il·lustració corporativa:** `assets/banners/robotica-docents.jpg` (i `assets/banners/corporativa.jpg`) a format 4:3 (800 × 600 px), amb fons bicolor pla (paret blau cel pastís i taula clara), lineless, acabat mat i sense ombres al terra.
+
+
 
 

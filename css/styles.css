@@ -127,12 +127,21 @@ body {
 .logo-badge {
   background: var(--primary-subtle);
   color: var(--primary);
-  padding: 0.35rem 0.65rem;
+  padding: 0.25rem;
   border-radius: var(--radius-sm);
-  font-size: 1.15rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  min-width: 2.25rem;
+}
+
+.logo-badge-img {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+  display: block;
 }
 
 .logo-text {
@@ -224,6 +233,19 @@ body {
   text-align: center;
   max-width: 680px;
   margin: 1.5rem auto 3.5rem;
+}
+
+.home-hero-icon {
+  width: 5.25rem;
+  height: 5.25rem;
+  object-fit: contain;
+  margin: 0 auto 1.25rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.home-hero-icon:hover {
+  transform: scale(1.06);
 }
 
 .home-title {
