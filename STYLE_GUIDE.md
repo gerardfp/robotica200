@@ -94,7 +94,7 @@ Para las 3 secciones principales de la web (*Pensament computacional*, *Robòtic
 - **Isotipo / Logotipo Vectorial (`assets/icons/logo.svg`):**
   - **Barra superior:** Se muestra como imagen estática limpia (`.logo-badge-img`) en la cabecera de todas las páginas.
   - **Favicon:** Icono oficial del navegador en formato SVG vectorial (`<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">`).
-  - **Portada (`index.html`):** Integrado inline (`.home-hero-svg`), con animaciones CSS: parpadeo orgánico desfasado (`#right_eye`, `#left_eye`), microinterferencia robótica de color y desplazamiento (`eye-glitch`), oscilación de la antena (`#antenna`) y micro-glitch de pantalla (`#face`).
+  - **Portada (`index.html`):** Integrado inline (`.home-hero-svg`), con suite dinámica de 8 microanimaciones robóticas activadas cada 2-4 segundos (`js/robot-animation.js`): parpadeo rápido de ojos (`robot-anim-blink`), oscilación de antena (`robot-anim-antenna`), alerta de sensor/radar (`robot-anim-alert`), micro-glitch de pantalla (`robot-anim-glitch`), mirada a los lados (`robot-anim-look`), salto alegre/hop (`robot-anim-happy`), inclinación de cabeza curiosa (`robot-anim-tilt`) y escaneo cromático modo matrix (`robot-anim-scan`). Reactivo además al clic del usuario.
 - **Ilustración Corporativa (`assets/banners/robotica-docents.jpg`, `assets/banners/corporativa.jpg`):** Formato 4:3 (800 × 600 px), fondo bicolor dividido (pared azul cielo pastel suave `#e0f2fe` y mesa clara `#f8fafc`), lineless y estrictamente sin sombras en el suelo.
 
 

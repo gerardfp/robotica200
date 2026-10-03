@@ -38,109 +38,7 @@
   <main class="container page-content">
     <div class="home-intro">
       <div class="home-hero-icon" aria-label="Logotip Robòtica per a docents">
-        <svg viewBox="0 0 73.025 75.142" class="home-hero-svg" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-          <style>
-            #right_eye,
-            #left_eye {
-              transform-box: fill-box;
-              transform-origin: center;
-              animation: blink 6s infinite, eye-glitch 9s infinite;
-            }
-
-            #left_eye {
-              animation-delay: 0.08s, 0s;
-            }
-
-            #antenna {
-              transform-box: fill-box;
-              transform-origin: center bottom;
-              animation: antenna 4s ease-in-out infinite;
-            }
-
-            #face {
-              animation: glitch 9s infinite;
-            }
-
-            @keyframes blink {
-              0%, 93%, 100% {
-                transform: scaleY(1);
-                scale: 1 1;
-              }
-
-              94% {
-                transform: scaleY(0.08);
-                scale: 1 0.08;
-              }
-
-              95.5% {
-                transform: scaleY(1);
-                scale: 1 1;
-              }
-            }
-
-            @keyframes antenna {
-              0%, 85%, 100% {
-                transform: rotate(0deg);
-              }
-
-              87% {
-                transform: rotate(-3deg);
-              }
-
-              89% {
-                transform: rotate(3deg);
-              }
-
-              91% {
-                transform: rotate(0deg);
-              }
-            }
-
-            @keyframes glitch {
-              0%, 94%, 100% {
-                opacity: 1;
-              }
-
-              95% {
-                opacity: 0.85;
-              }
-
-              95.5% {
-                opacity: 1;
-              }
-            }
-
-            @keyframes eye-glitch {
-              0%, 91%, 100% {
-                fill: #38bdf8;
-                translate: 0 0;
-              }
-
-              92% {
-                fill: #ffffff;
-                translate: -1px 0;
-              }
-
-              92.5% {
-                fill: #22d3ee;
-                translate: 1px 0;
-              }
-
-              93% {
-                fill: #38bdf8;
-                translate: 0 0;
-              }
-            }
-
-            @media (prefers-reduced-motion: reduce) {
-              #right_eye,
-              #left_eye,
-              #antenna,
-              #face {
-                animation: none;
-              }
-            }
-          </style>
+        <svg viewBox="0 0 73.025 75.142" class="home-hero-svg" role="img" aria-label="Robot Robòtica200" xmlns="http://www.w3.org/2000/svg">
           <rect id="antenna" x="27.252" y="-1.7007e-6" width="18.521" height="7.4083" rx="3.175" ry="3.175" fill="#f59e0b" stroke-width=".26458"/>
           <rect id="head" x="-1.8914e-6" y="8.9958" width="73.025" height="66.146" rx="22.49" ry="22.49" fill="#2563eb" stroke-width=".26458"/>
           <rect id="face" x="7.9375" y="21.431" width="57.15" height="41.275" rx="14.552" ry="14.552" fill="#0f172a" stroke-width=".26458"/>
@@ -190,5 +88,6 @@
   </footer>
 
   <script src="js/theme.js"></script>
+  <script src="js/robot-animation.js"></script>
 </body>
 </html>

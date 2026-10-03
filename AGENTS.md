@@ -41,7 +41,7 @@
 - **Logotip / Isotip Vectorial (`assets/icons/logo.svg`):**
   - **Barra superior:** Es mostra de manera estàtica i neta a la capçalera de totes les pàgines (`.logo-badge-img`).
   - **Favicon:** Utilitzat com a favicon oficial en format SVG (`<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">`).
-  - **Portada (`index.html`):** Inserit en línia (`.home-hero-svg`) amb animacions CSS integrades: parpelleig orgànic (`#right_eye`, `#left_eye` amb lleuger desfase), microinterferència de color i translació cibernètica (`eye-glitch`), oscil·lació periòdica de l'antena (`#antenna`) i micro-glitch de pantalla (`#face`).
+  - **Portada (`index.html`):** Inserit en línia (`.home-hero-svg`) amb suite dinàmica de 8 micro-animacions robòtiques executades cada 2-4 segons (`js/robot-animation.js`): parpelleig ràpid d'ulls (`robot-anim-blink`), oscil·lació ràpida d'antena (`robot-anim-antenna`), alerta de sensor i radar (`robot-anim-alert`), micro-glitch de pantalla (`robot-anim-glitch`), mirada curiosa als costats (`robot-anim-look`), salt alegre/hop (`robot-anim-happy`), inclinació de cap pensant (`robot-anim-tilt`) i escaneig cromàtic de mode matrix (`robot-anim-scan`). També reactiu al clic/interacció de l'usuari.
 - **Il·lustració corporativa:** `assets/banners/robotica-docents.jpg` (i `assets/banners/corporativa.jpg`) a format 4:3 (800 × 600 px), amb fons bicolor pla (paret blau cel pastís i taula clara), lineless, acabat mat i sense ombres al terra.
 
 
