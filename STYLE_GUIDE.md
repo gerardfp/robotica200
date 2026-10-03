@@ -38,3 +38,24 @@ Este documento establece el estándar visual obligatorio para todas las imágene
 ```text
 3D digital stylized illustration of [Robot Name] from the reference image, in the exact smooth lineless 3D toy style of Codey Rocky. Smooth curved plastic surfaces, soft volume shading, friendly toy tech design, completely lineless without any black outlines, stroke lines, or ink contours. Centered composition, 3/4 front isometric perspective view. The background is divided horizontally into two flat two-tone halves like a clean studio room: upper half is a solid [Color Superior] wall, and lower half is a solid [Color Inferior] flat table surface, with a clean horizontal horizon line dividing them behind the robot. Strictly NO shadow beneath the robot, no drop shadow, no ground shadow, no contact shadow on the table. Completely textless, strictly no text, no words, no numbers, no letters, no labels, no watermarks.
 ```
+
+---
+
+## 4. Iconos de Esencia de los Robots (Formato 1:1 Cuadrado)
+
+Para tarjetas de actividades, insignias curriculares, avatares y elementos compactos de la interfaz, se utilizan iconos cuadrados que capturan la **esencia/rostro icónico** de cada robot:
+
+- **Ubicación:** `assets/icons/[robot].jpg` (resolución estándar: 512 × 512 px).
+- **Proporción y Encuadre:** Formato cuadrado 1:1, centrado, llenando el 70-75% del marco.
+- **Fondo Completo (Full Bleed):** Mismo fondo bicolor (pared pastel superior y mesa inferior) extendido hasta los bordes, sin marcos redondeados ni bordes de app icon.
+- **🚫 Lineless estricto:** Sin líneas de contorno ni trazos de tinta oscuros, idéntico al estilo 3D suave de *CodeyRocky*.
+- **🚫 Sin sombras en el suelo y sin texto.**
+
+### Elementos de esencia por robot:
+- **CodeyRocky:** Cabeza de Codey con orejitas redondeadas, pantalla con sonrisa pixelada LED cian y botones A y B.
+- **TaleBot:** Cubo rechoncho azul claro con grandes ojos expresivos, ruedas naranjas y botones superiores de flechas de colores.
+- **CodingSet:** Pequeño robot MatataBot redondeado con cúpula translúcida naranja, ojitos amigables y ruedas naranjas.
+- **Spike Prime:** Hub inteligente amarillo con ojos ultrasónicos circulares blancos y sonrisa matricial de LEDs rojos.
+- **Coding Express:** Cabina de locomotora amarilla DUPLO con chimenea gris, ventana curvada y base azul.
+- **Microbit:** Placa negra micro:bit con sonrisa de LEDs rojos 5x5, botones A y B y conector inferior con pines dorados.
+
