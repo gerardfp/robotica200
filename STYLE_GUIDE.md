@@ -79,3 +79,11 @@ Para las 3 secciones principales de la web (*Pensament computacional*, *Robòtic
 - **Robòtica (`robotica.png`):** Rostro de robot amigo con antena esférica, pantalla con sonrisa pixelada LED cian y sensores laterales, fondo transparente.
 - **Situacions d'aprenentatge (`situacions-aprenentatge.png`):** Portapapeles de desafío/misión con bandera de meta roja y estrella dorada de consecución, fondo transparente.
 
+---
+
+## 6. Sistema Tipográfico Oficial
+
+- **Títulos y Encabezados:** **"Sora"** (`font-family: var(--font-heading)`). Tipografía sans-serif geométrica con gran personalidad y legibilidad para todos los niveles de encabezado (`h1-h6`), marca (`.logo-name`), tarjetas (`.pillar-title`, `.item-title`) y cabeceras de página.
+- **Cuerpo de Texto e Interfaz (UI):** **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`). Tipografía sans-serif moderna, equilibrada y limpia para párrafos, botones, menús de navegación, insignias/etiquetas y elementos de formulario.
+
+
