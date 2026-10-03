@@ -37,9 +37,13 @@
 - **Text continu i interfície (UI):** Font **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`). S'aplica a tot el cos (`body`), botons (`.btn-primary`, `.btn-back`, `.nav-btn`), controls de filtratge (`.filter-select`), etiquetes (`.tag-badge`, `.robot-spec-pill`), textos i descripcions.
 
 ## 🏷️ Identitat Corporativa Oficial ("Robòtica per a docents")
-- **Concepte:** Síntesi geomètrica neta que uneix un rostre de robot educatiu amable amb peces modulars d'aprenentatge (bloc de construcció STEAM groc/coral, engranatge mecànic violeta i fitxa algorítmica maragda).
-- **Logotip / Isotip de marca:** `assets/icons/brand.png` (i `assets/icons/logo.png`) a 512 × 512 px, fons transparent, integrat a la capçalera de totes les pàgines (`.logo-badge-img`), a la portada (`.home-hero-icon`) i com a favicon del lloc web.
+- **Concepte:** Disseny geomètric abstracte, net i minimalista ("El Bot Modular STEAM"), que manté l'equilibri entre el to educatiu infantil i la serietat institucional adulta.
+- **Logotip / Isotip Vectorial (`assets/icons/logo.svg` i `brand.svg`):**
+  - **Barra superior:** Es mostra de manera estàtica i neta a la capçalera de totes les pàgines (`.logo-badge-img`).
+  - **Favicon:** Utilitzat com a favicon oficial en format SVG (`<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">`).
+  - **Portada (`index.html`):** Inserit en línia (`.home-hero-svg`) on el rectangle `id="face"` incorpora una animació CSS de micro-glitches robòtics sobtats però subtils en tons de pantalla fosca tecnològica.
 - **Il·lustració corporativa:** `assets/banners/robotica-docents.jpg` (i `assets/banners/corporativa.jpg`) a format 4:3 (800 × 600 px), amb fons bicolor pla (paret blau cel pastís i taula clara), lineless, acabat mat i sense ombres al terra.
+
 
 
 

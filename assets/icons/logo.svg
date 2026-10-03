@@ -1,17 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
-  <!-- Top Modular Stud (Amber STEAM node) -->
-  <rect x="221" y="94" width="70" height="28" rx="12" ry="12" fill="#f59e0b" />
-  
-  <!-- Outer Head (Brand Blue Squircle) -->
-  <rect x="118" y="112" width="276" height="250" rx="85" ry="85" fill="#2563eb" />
-  
-  <!-- Dark Visor Screen (Midnight Slate) -->
-  <rect x="148" y="145" width="216" height="156" rx="55" ry="55" fill="#0f172a" />
-  
-  <!-- Electric Cyan Circular Eyes -->
-  <circle cx="206" cy="208" r="24" fill="#38bdf8" />
-  <circle cx="306" cy="208" r="24" fill="#38bdf8" />
-  
-  <!-- Warm Minimalist Cyan Smile Arc -->
-  <path d="M 234 246 A 22 22 0 0 0 278 246" fill="none" stroke="#38bdf8" stroke-width="7.5" stroke-linecap="round" />
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="73.025002mm"
+   height="75.141663mm"
+   viewBox="0 0 73.025002 75.141663"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.4.4 (dcaf3e7d9e, 2026-05-05)"
+   sodipodi:docname="brand.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="0.5229307"
+     inkscape:cx="343.25772"
+     inkscape:cy="-64.062026"
+     inkscape:window-width="1448"
+     inkscape:window-height="991"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.046957,-77.258334)"><g
+       id="g1"
+       transform="matrix(0.26458333,0,0,0.26458333,3.7041675,56.620834)"><rect
+         x="221.46094"
+         y="78"
+         width="70"
+         height="28"
+         rx="12"
+         ry="12"
+         fill="#f59e0b"
+         id="antenna" /><rect
+         x="118.46094"
+         y="112"
+         width="276"
+         height="250"
+         rx="85"
+         ry="85"
+         fill="#2563eb"
+         id="head" /><rect
+         x="148.46094"
+         y="159"
+         width="216"
+         height="156"
+         rx="55"
+         ry="55"
+         fill="#0f172a"
+         id="face" /><circle
+         cx="206"
+         cy="224"
+         r="24"
+         fill="#38bdf8"
+         id="right_eye" /><circle
+         cx="306"
+         cy="224"
+         r="24"
+         fill="#38bdf8"
+         id="left_eye" /><path
+         id="mouth"
+         fill="#38bdf8"
+         style="opacity:1;fill-opacity:1;stroke:none;stroke-width:4.96268;stroke-linecap:square;stroke-linejoin:round;stroke-dashoffset:3.19371;stroke-opacity:1"
+         d="m 271.28321,254.35156 a 16.732649,14.874199 0 0 1 -14.79493,8.00196 16.732649,14.874199 0 0 1 -14.84765,-7.93946 l -6.68164,2.99805 a 24.053183,21.38166 0 0 0 21.53711,11.74609 24.053183,21.38166 0 0 0 21.46679,-11.84765 z" /></g></g></svg>

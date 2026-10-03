@@ -236,16 +236,94 @@ body {
 }
 
 .home-hero-icon {
-  width: 5.25rem;
-  height: 5.25rem;
-  object-fit: contain;
+  width: 5.5rem;
+  height: 5.5rem;
   margin: 0 auto 1.25rem;
-  display: block;
-  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .home-hero-icon:hover {
-  transform: scale(1.06);
+  transform: scale(1.08);
+}
+
+.home-hero-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Glitches robòtics sobtats però subtils a la pantalla del robot a la portada */
+@keyframes roboticFaceGlitch {
+  0%, 41.9% {
+    fill: #0f172a;
+  }
+  /* Primer micro-glitch sobtat (interferència blava profunda / cian fosc) */
+  42% {
+    fill: #172554;
+  }
+  42.4% {
+    fill: #0c3547;
+  }
+  42.8% {
+    fill: #0f172a;
+  }
+  43.3% {
+    fill: #1e293b;
+  }
+  43.8% {
+    fill: #0f172a;
+  }
+  43.9%, 71.9% {
+    fill: #0f172a;
+  }
+  /* Segon micro-glitch (salt violeta / maragda digital) */
+  72% {
+    fill: #1e1b4b;
+  }
+  72.5% {
+    fill: #0f172a;
+  }
+  73.1% {
+    fill: #042f2e;
+  }
+  73.6% {
+    fill: #162438;
+  }
+  74.2% {
+    fill: #083344;
+  }
+  74.8% {
+    fill: #0f172a;
+  }
+  74.9%, 89.9% {
+    fill: #0f172a;
+  }
+  /* Tercer micro-glitch ràpid (espurna de recalibració de circuits) */
+  90% {
+    fill: #1f1d24;
+  }
+  90.4% {
+    fill: #0e2e38;
+  }
+  90.8% {
+    fill: #0f172a;
+  }
+  90.9%, 100% {
+    fill: #0f172a;
+  }
+}
+
+.home-hero-svg #face {
+  animation: roboticFaceGlitch 7.5s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-svg #face {
+    animation: none;
+  }
 }
 
 .home-title {

@@ -90,9 +90,13 @@ Para las 3 secciones principales de la web (*Pensament computacional*, *Robòtic
 
 ## 7. Identidad Corporativa Oficial ("Robòtica per a docents")
 
-- **Concepto:** Composición geométrica limpia que armoniza un rostro de robot docente afable con piezas modulares de aprendizaje (bloque de construcción STEAM amarillo/coral, engranaje mecánico violeta y ficha direccional algorítmica esmeralda).
-- **Isotipo / Icono de Marca (`assets/icons/brand.png`, `assets/icons/logo.png`):** Resolución 512 × 512 px, formato PNG con fondo transparente, lineless, acabado mate y cel-shaded. Utilizado en la cabecera (`.logo-badge-img`), en la portada (`.home-hero-icon`) y como favicon.
-- **Ilustración Corporativa (`assets/banners/robotica-docents.jpg`, `assets/banners/corporativa.jpg`):** Formato 4:3 (800 × 600 px), fondo bicolor dividido (pared azul cielo pastel suave `#e0f2fe` y mesa crema/pizarra clara `#f8fafc`), lineless y estrictamente sin sombras en el suelo.
+- **Concepto:** Síntesis geométrica abstracta ("El Bot Modular STEAM"), que equilibra el diseño lúdico/educativo con la sobriedad tecnológica y la madurez corporativa.
+- **Isotipo / Logotipo Vectorial (`assets/icons/logo.svg`, `assets/icons/brand.svg`):**
+  - **Barra superior:** Se muestra como imagen estática limpia (`.logo-badge-img`) en la cabecera de todas las páginas.
+  - **Favicon:** Icono oficial del navegador en formato SVG vectorial (`<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">`).
+  - **Portada (`index.html`):** Integrado inline (`.home-hero-svg`), con animación CSS de micro-glitches robóticos repentinos y sutiles en el visor (`rect#face`) que simulan la recalibración digital de la pantalla.
+- **Ilustración Corporativa (`assets/banners/robotica-docents.jpg`, `assets/banners/corporativa.jpg`):** Formato 4:3 (800 × 600 px), fondo bicolor dividido (pared azul cielo pastel suave `#e0f2fe` y mesa clara `#f8fafc`), lineless y estrictamente sin sombras en el suelo.
+
 
 
 
