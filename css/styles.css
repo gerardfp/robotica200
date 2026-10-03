@@ -656,20 +656,22 @@ body {
   width: 96px;
   height: 96px;
   min-width: 96px;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: #ffffff;
+  background: var(--bg-card-subtle);
   border: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: var(--shadow-sm);
+  padding: 0.5rem;
 }
 
 .robot-profile-avatar {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
 }
 
 .robot-big-icon {
