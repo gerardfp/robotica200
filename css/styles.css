@@ -283,23 +283,27 @@ body {
 }
 
 .home-hero-svg #antenna {
-  transform-origin: 50% 100%;
+  transform-origin: center bottom;
   transition: fill 0.2s ease;
 }
 
-.home-hero-svg #right_eye,
+.home-hero-svg #right_eye {
+  transform-origin: center center;
+  transition: fill 0.2s ease;
+}
+
 .home-hero-svg #left_eye {
-  transform-origin: 50% 50%;
+  transform-origin: center center;
   transition: fill 0.2s ease;
 }
 
 .home-hero-svg #face {
-  transform-origin: 50% 50%;
+  transform-origin: center center;
   transition: fill 0.25s ease;
 }
 
 .home-hero-svg #mouth {
-  transform-origin: 50% 50%;
+  transform-origin: center center;
   transition: fill 0.2s ease;
 }
 
@@ -491,14 +495,6 @@ body {
   30%, 70% { fill: #34d399; }
 }
 
-/* Accessibilitat per moviment reduït */
-@media (prefers-reduced-motion: reduce) {
-  .home-hero-svg,
-  .home-hero-svg * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
 
 .home-title {
   font-size: clamp(2rem, 3.5vw, 2.75rem);
