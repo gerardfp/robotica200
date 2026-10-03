@@ -21,9 +21,10 @@
 - **🚫 Sense text:** **Cap text, paraula, xifra, logotip ni marca d'aigua.**
 - **Mida:** Amplada exacta de 600px (format 4:3, 600x448 px).
 
-## 🧩 Guia d'Estil de les Icones de Robots (Format Quadrat 1:1)
-- **Objectiu:** Captar l'essència / rostre icònic de cada robot per a targetes d'activitats, insígnies i components compactes.
-- **Estil visual:** Idèntic al de les portades (estil 3D joguina suau, lineless estricte sense línies ni contorns negres, fons bicolor pastís de paret i taula a sang completa sense marcs arrodonits artificials, sense ombres al terra, sense text).
-- **Mida i Ubicació:** `assets/icons/[robot].jpg` a 512 × 512 px.
+## 🧩 Guia d'Estil de les Icones de Robots (Format Quadrat 1:1, Fons Transparent)
+- **Objectiu:** Captar l'essència icònica de cada robot amb molt pocs detalls (alt minimalisme), mantenint exactament la mateixa quantitat i nivell de detall visual a tots els robots.
+- **Estil visual:** Lineless estricte (sense contorns ni línies negres), acabat mat (sense brillantors ni reflexos), colors plans uniformes (sense degradats ni ombrejats suaus), sense cap ombra al terra.
+- **Fons Transparent:** Format PNG amb canal alfa transparent completament net, sense halos ni vores d'adhesiu.
+- **Mida i Ubicació:** `assets/icons/[robot].png` a 512 × 512 px.
 
 

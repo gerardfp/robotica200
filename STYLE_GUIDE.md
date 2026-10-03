@@ -44,21 +44,22 @@ Minimalist flat vector 3D-isometric illustration of [Robot Name] from the refere
 
 ---
 
-## 4. Iconos de Esencia de los Robots (Formato 1:1 Cuadrado)
+## 4. Iconos de Esencia de los Robots (Formato 1:1 Cuadrado, Fondo Transparente)
 
-Para tarjetas de actividades, insignias curriculares, avatares y elementos compactos de la interfaz, se utilizan iconos cuadrados que capturan la **esencia/rostro icónico** de cada robot:
+Para tarjetas de actividades, insignias curriculares, avatares y elementos compactos de la interfaz, se utilizan iconos cuadrados que capturan la **esencia icónica con muy pocos detalles** (alto minimalismo, con igual nivel de detalle entre todos los robots):
 
-- **Ubicación:** `assets/icons/[robot].jpg` (resolución estándar: 512 × 512 px).
-- **Proporción y Encuadre:** Formato cuadrado 1:1, centrado, llenando el 70-75% del marco.
-- **Fondo Completo (Full Bleed):** Mismo fondo bicolor (pared pastel superior y mesa inferior) extendido hasta los bordes, sin marcos redondeados ni bordes de app icon.
-- **🚫 Lineless estricto:** Sin líneas de contorno ni trazos de tinta oscuros, idéntico al estilo 3D suave de *CodeyRocky*.
+- **Ubicación:** `assets/icons/[robot].png` (resolución estándar: 512 × 512 px).
+- **Fondo Transparente:** Formato PNG con canal alfa limpio y transparente, sin halos ni siluetas de borde.
+- **Proporción y Encuadre:** Formato cuadrado 1:1, centrado, ocupando ~75% del marco.
+- **🚫 Lineless estricto:** Sin líneas de contorno ni trazos de tinta oscuros, idéntico al estilo plano de *CodeyRocky*.
+- **🚫 Sin brillos ni degradados:** Acabado mate cel-shaded, cada forma es de un único color plano.
 - **🚫 Sin sombras en el suelo y sin texto.**
 
 ### Elementos de esencia por robot:
-- **CodeyRocky:** Cabeza de Codey con orejitas redondeadas, pantalla con sonrisa pixelada LED cian y botones A y B.
-- **TaleBot:** Cubo rechoncho azul claro con grandes ojos expresivos, ruedas naranjas y botones superiores de flechas de colores.
-- **CodingSet:** Pequeño robot MatataBot redondeado con cúpula translúcida naranja, ojitos amigables y ruedas naranjas.
-- **Spike Prime:** Hub inteligente amarillo con ojos ultrasónicos circulares blancos y sonrisa matricial de LEDs rojos.
-- **Coding Express:** Cabina de locomotora amarilla DUPLO con chimenea gris, ventana curvada y base azul.
-- **Microbit:** Placa negra micro:bit con sonrisa de LEDs rojos 5x5, botones A y B y conector inferior con pines dorados.
+- **CodeyRocky (`codeyrocky.png`):** Cabeza de Codey con orejitas redondeadas, pantalla oscura con sonrisa pixelada LED cian y botones redondos A y B.
+- **TaleBot (`talebot.png`):** Cubo rechoncho azul con frontal blanco, dos grandes ojos negros redondos, aleta lateral naranja y cuatro botones circulares de colores arriba.
+- **CodingSet (`codingset.png`):** Pequeño MatataBot cilíndrico blanco con cúpula naranja, dos pequeños ojos negros y ruedas naranjas.
+- **Spike (`spike.png`):** Hub inteligente rectangular amarillo con frontal blanco, dos ojos circulares ultrasónicos negros y sonrisa de matriz LED roja.
+- **Coding Express (`coding-express.png`):** Cabina de locomotora amarilla con chimenea gris redondeada, ventana arqueada diáfana, chasis azul y ruedas rojas.
+- **Microbit (`microbit.png`):** Placa rectangular negra de esquinas redondeadas, matriz LED 5x5 con sonrisa roja, botones A y B y conectores dorados inferiores.
 
