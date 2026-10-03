@@ -1,4 +1,4 @@
-# Guía de Estilo Visual para las Imágenes de Robòtica200
+# Guía de Estilo Visual para las Imágenes de Robòtica²⁰⁰
 
 Este documento establece el estándar visual obligatorio para todas las imágenes de portada de robots y elementos ilustrados de la web.
 

@@ -1,4 +1,4 @@
-# Regles del Projecte Robòtica200
+# Regles del Projecte Robòtica²⁰⁰
 
 ## 🚫 Prohibició Total de Diàlegs Modals i Popups (Estricte)
 - **Queda absolutament prohibit l'ús de diàlegs modals (`<dialog>`, modales, popups, overlays, lightbox, backdrops foscos o qualsevol element flotant similar).**
