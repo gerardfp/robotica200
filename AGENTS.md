@@ -6,33 +6,28 @@
 - Cada pàgina de detall ha de disposar d'un botó visible de tornada (`← Tornar...`) que restitueixi l'estat anterior de manera natural i accessible.
 - La web ha de mantenir en tot moment una **baixa densitat d'informació**, espaiat generós i netedat visual.
 
-## 🎨 Guia d'Estil de les Imatges de Portada dels Robots
-- **Estil visual:** Il·lustració digital 3D/vectorial estilitzada, joguina tecnològica educativa amable, superfícies suaus i arrodonides, idèntic a l'estil de referència de *CodeyRocky*.
-- **🚫 Sense contorns ni línies (Lineless estricte):** **Completament sense línies de contorn (sense outlines, sense traçats negres ni línies de tinta).** Les formes, peces i volums s'han de definir exclusivament mitjançant el contrast de colors, llum i volum, exactament com a *CodeyRocky*.
-- **🚫 Sense brillantors:** Acabat mat, sense reflexos especulars ni lluentors de plàstic brillant.
-- **🚫 Sense degradats ni ombrejats:** Sense degradats de color, sense ombrejat suau ni oclusió ambiental.
-- **🎨 Cada forma és d'un únic color:** Estil pla (flat cel-shading / vectorial). Cada faceta, peça o forma geomètrica s'omple amb un únic color sòlid uniforme, exactament igual que a *CodeyRocky*.
-- **Composició de fons bicolor (2 meitats):**
-  - Fons dividit horitzontalment en dues meitats netes (efecte paret i taula).
-  - Meitat superior: color pastís pla que harmonitzi amb els tons del robot.
-  - Meitat inferior: color pla de superfície/taula que acompanyi la paleta del robot.
-  - Línia d'horitzó horitzontal neta darrere el robot.
-- **🚫 Sense ombres:** **No hi ha d'haver cap ombra sota el robot** (sense ombra de contacte, sense ombra projectada al terra).
-- **🚫 Sense text:** **Cap text, paraula, xifra, logotip ni marca d'aigua.**
-- **Mida:** Amplada exacta de 600px (format 4:3, 600x448 px).
+## 🎨 Guia d'Estil de les Imatges dels Robots (Fons Transparent Estricte)
+- **2 Imatges Obligatòries per Robot (Format PNG Transparent):**
+  1. **Robot Complet (`_assets/robots/[robot].png`):** Model 3D isomètric complet, joguina tecnològica educativa amable, superfícies suaus i arrodonides, perspectiva 3/4. **Canal alfa 100% transparent**.
+  2. **Icona Abstracta d'Essència (`_assets/icons/[robot].png`):** Síntesi geomètrica minimalista (512 × 512 px) que capta l'essència icònica amb molt pocs detalls. **Canal alfa 100% transparent**.
+- **🚫 Lineless estricte:** Sense línies de contorn (sense outlines, sense traçats negres ni línies de tinta). Formes definides per contrast de colors i volum.
+- **🚫 Sense brillantors ni reflexos:** Acabat mat suau, sense reflexos especulars.
+- **🚫 Sense ombres al terra:** Cap ombra sota el robot per permetre la integració neta sobre el fons bicolor CSS.
+- **🚫 Sense text:** Cap text, paraula, xifra, logotip ni marca d'aigua.
 
-## 🧩 Guia d'Estil de les Icones de Robots (Format Quadrat 1:1, Fons Transparent)
-- **Objectiu:** Captar l'essència icònica de cada robot amb molt pocs detalls (alt minimalisme), mantenint exactament la mateixa quantitat i nivell de detall visual a tots els robots.
-- **Estil visual:** Lineless estricte (sense contorns ni línies negres), acabat mat (sense brillantors ni reflexos), colors plans uniformes (sense degradats ni ombrejats suaus), sense cap ombra al terra.
-- **Fons Transparent:** Format PNG amb canal alfa transparent completament net, sense halos ni vores d'adhesiu.
-- **Mida i Ubicació:** `_assets/icons/[robot].png` a 512 × 512 px.
-- **Noms oficials i slugs:**
-  - `Coding Express` (`coding-express`) — Prefix tutorials: `ce-`
-  - `Tale-Bot` (`tale-bot`) — Prefix tutorials: `tb-`
-  - `Coding Set` (`coding-set`) — Prefix tutorials: `cs-`
-  - `Codey Rocky` (`codey-rocky`) — Prefix tutorials: `cr-`
-  - `Spike` (`spike`) — Prefix tutorials: `sp-`
-  - `Micro:bit` (`microbit`) — Prefix tutorials: `mb-`
+## 🎴 Sistema de Targetes i Paletes de 2 Colors per Robot
+- Cada robot té una **paleta de dos colors associats**, que s'utilitzen per:
+  1. El fons bicolor corbat/diagonal darrere del robot (generat per CSS).
+  2. La vora de la targeta (`border: 2px solid`) i els elements decoratius.
+  3. L'indicador de 2 punts cromàtics (`.robot-color-dots`) sobre el títol.
+  4. La píndola flotant d'edat a la cantonada superior dreta (`👤 X anys`).
+- **Paletes Oficials:**
+  - `Coding Express` (`coding-express`): Vermell viu `#E01A27` + Groc ambre `#F5B901` (👤 2-5 anys) — Prefix: `ce-`
+  - `Tale-Bot` (`tale-bot`): Taronja corall `#FF7E2D` + Violeta `#784FAD` (👤 3-7 anys) — Prefix: `tb-`
+  - `Coding Set` (`coding-set`): Taronja mandarí `#F76D08` + Verd fresc `#5DA22B` (👤 4-9 anys) — Prefix: `cs-`
+  - `Codey Rocky` (`codey-rocky`): Blau cel / Atzur `#0377DA` + Groc sorra `#FEC907` (👤 6-12 anys) — Prefix: `cr-`
+  - `Spike` (`spike`): Magenta viu `#B92384` + Groc LEGO `#FDDC43` (👤 10-16 anys) — Prefix: `sp-`
+  - `Micro:bit` (`microbit`): Blau elèctric `#067CD4` + Negre obsidiana `#18181B` (👤 9-18 anys) — Prefix: `mb-`
 
 ## 🚩 Banners i Icones de Seccions Temàtiques
 - **Seccions:** *Pensament computacional*, *Robots* i *Situacions d'aprenentatge*.
