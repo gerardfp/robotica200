@@ -1,4 +1,4 @@
-// js/components.js - Components Web Natius per a Robòtica²⁰⁰
+// _js/components.js - Components Web Natius per a Robòtica²⁰⁰
 (function () {
   'use strict';
 
@@ -25,7 +25,7 @@
         <header class="header">
           <div class="container header-inner">
             <a href="${root}index.html" class="logo">
-              <span class="logo-badge"><img src="${root}assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+              <span class="logo-badge"><img src="${root}_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
               <div class="logo-text">
                 <span class="logo-name">Robòtica<sup>200</sup></span>
                 <span class="logo-subtitle">Robòtica per a docents</span>

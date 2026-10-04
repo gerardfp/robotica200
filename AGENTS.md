@@ -25,12 +25,12 @@
 - **Objectiu:** Captar l'essència icònica de cada robot amb molt pocs detalls (alt minimalisme), mantenint exactament la mateixa quantitat i nivell de detall visual a tots els robots.
 - **Estil visual:** Lineless estricte (sense contorns ni línies negres), acabat mat (sense brillantors ni reflexos), colors plans uniformes (sense degradats ni ombrejats suaus), sense cap ombra al terra.
 - **Fons Transparent:** Format PNG amb canal alfa transparent completament net, sense halos ni vores d'adhesiu.
-- **Mida i Ubicació:** `assets/icons/[robot].png` a 512 × 512 px.
+- **Mida i Ubicació:** `_assets/icons/[robot].png` a 512 × 512 px.
 
 ## 🚩 Banners i Icones de Seccions Temàtiques
 - **Seccions:** *Pensament computacional*, *Robòtica* i *Situacions d'aprenentatge*.
-- **Banners:** `assets/banners/[seccio].jpg` a format 4:3 (800x600 px), amb fons bicolor pla (paret pastís i taula clara), lineless, acabat mat i sense ombres al terra.
-- **Icones:** `assets/icons/[seccio].png` a 512 × 512 px, fons transparent, síntesi geomètrica i lineless.
+- **Banners:** `_assets/banners/[seccio].jpg` a format 4:3 (800x600 px), amb fons bicolor pla (paret pastís i taula clara), lineless, acabat mat i sense ombres al terra.
+- **Icones:** `_assets/icons/[seccio].png` a 512 × 512 px, fons transparent, síntesi geomètrica i lineless.
 
 ## 🔤 Guia Tipogràfica Oficial
 - **Títols i encapçalaments:** Font **"Sora"** (`font-family: var(--font-heading)`). S'aplica a tots els `h1-h6`, nom de marca (`.logo-name`), títols de targetes (`.pillar-title`, `.item-title`), capçaleres de detall (`.detail-page-title`, `.detail-section h4`, `.robot-profile-title`, `.robot-tutorials-heading h3`).
@@ -38,11 +38,11 @@
 
 ## 🏷️ Identitat Corporativa Oficial ("Robòtica per a docents")
 - **Concepte:** Disseny geomètric abstracte, net i minimalista ("El Bot Modular STEAM"), que manté l'equilibri entre el to educatiu infantil i la serietat institucional adulta.
-- **Logotip / Isotip Vectorial (`assets/icons/logo.svg`):**
+- **Logotip / Isotip Vectorial (`_assets/icons/logo.svg`):**
   - **Barra superior:** Es mostra de manera estàtica i neta a la capçalera de totes les pàgines (`.logo-badge-img`).
-  - **Favicon:** Utilitzat com a favicon oficial en format SVG (`<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">`).
-  - **Portada (`index.html`):** Inserit en línia (`.home-hero-svg`) amb suite dinàmica de 8 micro-animacions robòtiques executades cada 2-4 segons (`js/robot-animation.js`): parpelleig ràpid d'ulls (`robot-anim-blink`), oscil·lació ràpida d'antena (`robot-anim-antenna`), alerta de sensor i radar (`robot-anim-alert`), micro-glitch de pantalla (`robot-anim-glitch`), mirada curiosa als costats (`robot-anim-look`), salt alegre/hop (`robot-anim-happy`), inclinació de cap pensant (`robot-anim-tilt`) i escaneig cromàtic de mode matrix (`robot-anim-scan`). També reactiu al clic/interacció de l'usuari.
-- **Il·lustració corporativa:** `assets/banners/robotica-docents.jpg` (i `assets/banners/corporativa.jpg`) a format 4:3 (800 × 600 px), amb fons bicolor pla (paret blau cel pastís i taula clara), lineless, acabat mat i sense ombres al terra.
+  - **Favicon:** Utilitzat com a favicon oficial en format SVG (`<link rel="icon" type="image/svg+xml" href="_assets/icons/logo.svg">`).
+  - **Portada (`index.html`):** Inserit en línia (`.home-hero-svg`) amb suite dinàmica de 8 micro-animacions robòtiques executades cada 2-4 segons (`_js/robot-animation.js`): parpelleig ràpid d'ulls (`robot-anim-blink`), oscil·lació ràpida d'antena (`robot-anim-antenna`), alerta de sensor i radar (`robot-anim-alert`), micro-glitch de pantalla (`robot-anim-glitch`), mirada curiosa als costats (`robot-anim-look`), salt alegre/hop (`robot-anim-happy`), inclinació de cap pensant (`robot-anim-tilt`) i escaneig cromàtic de mode matrix (`robot-anim-scan`). També reactiu al clic/interacció de l'usuari.
+- **Il·lustració corporativa:** `_assets/banners/robotica-docents.jpg` (i `_assets/banners/corporativa.jpg`) a format 4:3 (800 × 600 px), amb fons bicolor pla (paret blau cel pastís i taula clara), lineless, acabat mat i sense ombres al terra.
 
 
 

@@ -10,7 +10,7 @@ specs:
 - ✓ Sensor de distància (segons el conjunt)
 - ✓ Sensor de color i llum
 - ✓ Sensor de força (SPIKE Prime)
-image: assets/robots/spike.jpg
+image: _assets/robots/spike.jpg
 status_note: LEGO Education ha anunciat la retirada comercial de SPIKE Essential i SPIKE Prime a partir
   del 30 de juny de 2026. Si el centre ja té el kit, el pot continuar fent servir; el suport de l’aplicació
   està previst fins al 30 de juny de 2031.

@@ -10,7 +10,7 @@ specs:
 - ✓ Acceleròmetre i brúixola 3D
 - ✓ Antena de ràdio 2.4GHz
 - ✓ Pins d’entrada/sortida i connexió a circuits
-image: assets/robots/microbit.jpg
+image: _assets/robots/microbit.jpg
 official_resources:
 - title: Lliçons de micro:bit
   href: https://microbit.org/teach/lessons/

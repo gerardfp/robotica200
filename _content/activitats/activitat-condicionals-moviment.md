@@ -7,7 +7,7 @@ duration: 35 min
 order: 5
 ---
 
-![Una targeta amb una estrela es divideix en dos camins que acaben en fitxes diferents.](assets/imatges/condicionals-ramificacions.webp)
+![Una targeta amb una estrela es divideix en dos camins que acaben en fitxes diferents.](_assets/imatges/condicionals-ramificacions.webp)
 
 ## 🎯 Què aprendrem?
 

@@ -4,10 +4,10 @@ seo_title: Situacions d'Aprenentatge Curriculars | Robòtica200
 description: Catàleg de situacions d'aprenentatge curriculars de robòtica i pensament computacional.
 layout: catalog
 collection: situacions
-section_icon: assets/icons/situacions-aprenentatge.png
+section_icon: _assets/icons/situacions-aprenentatge.png
 hero_width: 1440
 hero_height: 480
-hero_image: assets/imatges/situacions-aula.webp
+hero_image: _assets/imatges/situacions-aula.webp
 hero_alt: Tale-Bot i Codey Rocky al costat d’una maqueta simple de barri amb edificis, arbres i un camí accessible.
 hero_caption: Els dos robots de la dotació apareixen en un escenari de disseny i exploració del barri.
 callout_title: Orientació curricular.

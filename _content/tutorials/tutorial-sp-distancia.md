@@ -7,7 +7,7 @@ duration: 45 min
 order: 4
 ---
 
-![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](assets/imatges/spike-parada-distancia.webp)
+![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](_assets/imatges/spike-parada-distancia.webp)
 
 ## 🎯 Objectius d’aprenentatge
 

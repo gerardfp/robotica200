@@ -13,7 +13,7 @@ La biblioteca mòbil ha de visitar tres parades i tornar a començar la ruta per
 
 ## 🖼️ Abans de començar
 
-![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](assets/imatges/coding-express-bucles.webp)
+![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](_assets/imatges/coding-express-bucles.webp)
 
 Aquesta activitat parteix de la idea de repetició que LEGO Education treballa amb la via en forma d’O, però planteja un repte nou: organitzar un servei de biblioteca amb torns i parades. Les instruccions, el relat i la imatge d’aquesta pàgina són propis. Consulta la [lliçó oficial sobre vies en forma d’O i bucles](https://education.lego.com/es-es/lessons/preschool-coding-express/o-shaped-track-looping/) per contrastar-ne la proposta.
 

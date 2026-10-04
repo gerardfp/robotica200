@@ -7,7 +7,7 @@ duration: 35 min
 order: 5
 ---
 
-![Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum.](assets/imatges/microbit-fanalet.webp)
+![Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum.](_assets/imatges/microbit-fanalet.webp)
 
 ## 🎯 Objectius d’aprenentatge
 

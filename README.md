@@ -9,17 +9,17 @@ Portal educatiu obert de robòtica educativa, pensament computacional i situacio
 La web està construïda exclusivament amb **HTML5, CSS modern i Web Components natius (Custom Elements)**. Funciona de manera 100% autònoma, tant en servidors web (com GitHub Pages) com en local obrint directament qualsevol fitxer amb doble clic (`file://`).
 
 - **Cero dependències i zero eines de compilació:** No requereix Node, npm, Python ni cap pas de construcció per funcionar o editar.
-- **Reutilització centralitzada (`js/components.js`):** La capçalera, la navegació, el peu de pàgina i els botons de retorn estan modularitzats com a elements personalitzats estàndard:
+- **Reutilització centralitzada (`_js/components.js`):** La capçalera, la navegació, el peu de pàgina i els botons de retorn estan modularitzats com a elements personalitzats estàndard:
   - `<site-header active="robotica" root="../../"></site-header>`: Capçalera amb logotip, títol, navegació amb pestanya activa i selector de tema clar/fosc.
   - `<site-footer></site-footer>`: Peu de pàgina unificat.
   - `<nav-back href="../../robotica/index.html" label="Robòtica"></nav-back>`: Botó de retorn accessible.
-- **Light DOM:** Els components utilitzen el DOM estàndard, de manera que [`css/styles.css`](css/styles.css) aplica estils de forma global i coherent a tot el lloc web sense necessitat d'encapsulació aïllada.
+- **Light DOM:** Els components utilitzen el DOM estàndard, de manera que [`_css/styles.css`](_css/styles.css) aplica estils de forma global i coherent a tot el lloc web sense necessitat d'encapsulació aïllada.
 
 ---
 
 ## 📂 Estructura de Carpetes i URLs Netes
 
-El repositori s'organitza en directoris amb `index.html` per oferir rutes i URLs netes:
+El repositori s'organitza en directoris amb `index.html` per oferir rutes i URLs netes, separant les carpetes navegables dels recursos tècnics (marcats amb prefix `_`):
 
 ```
 robotica200/
@@ -40,14 +40,14 @@ robotica200/
 │   └── [nom-situacio]/index.html        # 10 situacions d'aprenentatge (/situacio/[nom]/)
 ├── guia/
 │   └── [nom-guia]/index.html            # Guies didàctiques (/guia/[nom]/)
-├── css/
+├── _css/
 │   └── styles.css                       # Full d'estils unificat (Sora + Plus Jakarta Sans)
-├── js/
+├── _js/
 │   ├── components.js                    # Web Components natius (<site-header>, <site-footer>, <nav-back>)
 │   ├── theme.js                         # Control del mode clar / fosc
 │   ├── filters.js                       # Filtres multicriteri per a situacions d'aprenentatge
 │   └── robot-animation.js               # Suite de 8 micro-animacions del robot de portada
-└── assets/
+└── _assets/
     ├── banners/                         # Banners il·lustrats lineless (format 4:3)
     ├── icons/                           # Icones minimalistes transparents i logotip SVG
     ├── imatges/                         # Fotografies i il·lustracions d'aula en WebP

@@ -1,4 +1,4 @@
-// js/theme.js - Gestió del mode clar / fosc
+// _js/theme.js - Gestió del mode clar / fosc
 (function () {
   const STORAGE_KEY = 'robotica200_theme';
   const html = document.documentElement;

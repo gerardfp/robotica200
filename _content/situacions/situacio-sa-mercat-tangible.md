@@ -17,7 +17,7 @@ order: 4
 "Com podem planificar la compra de fruites i verdures de temporada al mercat gastant el pressupost just i fent el camí més curt?"
 {: .sa-challenge }
 
-![El MatataBot real del Coding Set i la torre de comandes al centre d’un mapa amb tres parades de fruita i verdura.](assets/imatges/mercat-coding-set.webp)
+![El MatataBot real del Coding Set i la torre de comandes al centre d’un mapa amb tres parades de fruita i verdura.](_assets/imatges/mercat-coding-set.webp)
 
 ## 🏆 Competències Clau Treballades
 

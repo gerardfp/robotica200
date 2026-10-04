@@ -25,7 +25,7 @@ jobs:
             .
             !.git/
             !.github/
-          include-hidden-files: false
+          include-hidden-files: true
           if-no-files-found: error
       - name: Preparar artefacto de Pages
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PUBLISH_PAGES == 'true'

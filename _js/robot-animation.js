@@ -1,4 +1,4 @@
-// js/robot-animation.js - Micro-animacions robòtiques dinàmiques per a Robòtica²⁰⁰
+// _js/robot-animation.js - Micro-animacions robòtiques dinàmiques per a Robòtica²⁰⁰
 (function () {
   'use strict';
 
