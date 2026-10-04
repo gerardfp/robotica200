@@ -14,8 +14,8 @@
   - Colors sòlids i vibrants (paletes binàries netes).
   - Il·luminació difusa de fons d'estudi amb ombres suaus de volum.
   - Identitat tècnica i educativa (no és un simple dibuix animat infantil, té caràcter STEAM).
-- **📝 Fórmula Oficial de Prompt:**
-  `Stylized 3D isometric educational robotics illustration of [Nom], cute toy-like robots, rounded geometry, simplified low-poly forms, matte plastic materials, soft studio lighting, vibrant solid colors, subtle shadows, isolated on solid white background, modern edtech aesthetic.`
+- **📝 Fórmula Oficial de Prompt ("Estil Robòtica²⁰⁰"):**
+  `Polished 3D isometric educational robotics illustration, stylized toy-like low-poly geometry, rounded beveled forms, matte plastic materials, soft diffuse studio lighting, gentle ambient occlusion, clean geometric shapes, vivid but softened STEM colors, compact modular isometric platform, friendly modern edtech aesthetic, transparent background, no text or logos. [SUBJECT: descripció del robot i elements educatius que l'envolten]`
 - **2 Imatges Obligatòries per Robot (Format PNG Transparent):**
   1. **Robot Complet (`_assets/robots/[robot].png`):** Model 3D isomètric complet, perspectiva 3/4. **Canal alfa 100% transparent**.
   2. **Icona Abstracta d'Essència (`_assets/icons/[robot].png`):** Síntesi geomètrica minimalista (512 × 512 px) que capta l'essència icònica amb molt pocs detalls. **Canal alfa 100% transparent**.

@@ -84,12 +84,71 @@ La identitat visual dels robots es defineix com una **il·lustració 3D isomètr
 8. **Fondo gráfico abstracto / Transparente:** En la web, el fondo de la imagen se aísla con canal alfa 100% transparente para montarse limpiamente sobre los fondos bicolores CSS.
 9. **Estética edtech contemporánea:** Lenguaje visual que recuerda a las ilustraciones de productos tecnológicos educativos punteros y landing pages de startups de tecnología y diseño (estilo Stripe / Linear / Duolingo / Vercel Kids).
 
-### 📝 Fórmula de Prompt Condensada (Estàndard Oficial):
+### 📝 Prompt Mestre d'Estil Robòtica²⁰⁰:
+
+Per mantenir **consistència estricta entre totes les il·lustracions**, el prompt es divideix en un **bloc fix d'estil** i un **bloc variable per al robot i la seva escena**:
+
 ```text
-Stylized 3D isometric educational robotics illustration of [Nom del Robot], cute toy-like robots, rounded geometry, simplified low-poly forms, matte plastic materials, soft studio lighting, vibrant solid colors, subtle shadows, isolated on solid white studio background, modern edtech aesthetic.
+Create a polished 3D isometric educational robotics illustration.
+
+STYLE:
+Stylized 3D toy-like illustration with a friendly modern edtech aesthetic.
+Soft low-poly geometry with rounded, carefully beveled edges.
+Cute, approachable proportions, but not childish or cartoonish.
+Objects should look like high-quality educational robotics kits made from
+smooth matte plastic.
+
+Use clean geometric shapes, simplified forms and subtle surface details.
+Soft studio lighting with diffuse illumination, gentle ambient occlusion,
+soft contact shadows and subtle highlights.
+No photorealism, no metallic realism, no complex textures.
+
+COMPOSITION:
+Isometric / axonometric perspective, viewed from a slightly elevated angle.
+The main robot is the clear focal point, centered or slightly off-center.
+Place the robot on a small layered isometric platform or modular base.
+Add a few simple educational elements around it: blocks, programming tiles,
+sensors, arrows, paths, gears or other objects related to the robot.
+
+Use depth through overlapping objects and multiple platform levels.
+Keep the composition compact, balanced and readable at small sizes.
+Leave generous negative space around the illustration.
+
+COLORS:
+Use a clean, bright educational palette.
+Main colors should be vivid but slightly softened rather than neon.
+White and very light neutral surfaces for the robot,
+combined with 2–3 strong accent colors.
+Use the robot's real-world brand colors when appropriate.
+
+BACKGROUND:
+Transparent background.
+No room, no environment, no horizon, no scenery.
+Only the illustrated objects and their isometric platform should remain visible.
+
+LIGHTING:
+Soft diffuse studio lighting.
+Subtle glow and atmospheric softness around the edges.
+Soft shadows underneath objects.
+Clean separation between overlapping forms.
+
+VISUAL LANGUAGE:
+Modern educational technology.
+Premium children's STEM / robotics product illustration.
+Friendly, intelligent, playful and technological.
+Clean enough to work as a website card illustration.
+Consistent visual language across a complete family of six robotics
+illustrations.
+
+NO TEXT, NO LETTERS, NO LOGOS, NO WATERMARKS.
 ```
 
-> 💡 **Nota clau d'identitat:** No és un disseny infantil genèric: la combinació d'isometria precisa, bisells nets i geometria modular dota al conjunt d'un caràcter tècnic i professional adequat tant per a mestres d'Infantil com de Secundària.
+### ⚡ Fórmula Curta Oficial ("Estil Robòtica²⁰⁰"):
+```text
+Polished 3D isometric educational robotics illustration, stylized toy-like low-poly geometry, rounded beveled forms, matte plastic materials, soft diffuse studio lighting, gentle ambient occlusion, clean geometric shapes, vivid but softened STEM colors, compact modular isometric platform, friendly modern edtech aesthetic, transparent background, no text or logos.
+```
+
+Després d'aquesta base d'estil s'especifica el bloc `SUBJECT:` amb el robot i els elements educatius modulars que l'envolten.
 
 ---
 

@@ -807,8 +807,6 @@ guide-page {
   max-width: 100%;
   max-height: 280px;
   width: auto;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
   object-fit: contain;
 }
 
