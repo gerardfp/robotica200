@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>micro:bit: un fanalet que respon a la llum - Microbit | Robòtica200</title>
+  <meta name="description" content="Llegir la llum ambiental amb la matriu LED i encendre una icona quan l’entorn s’enfosqueix.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/styles.css?v=2">
+  <link rel="icon" type="image/svg+xml" href="../../assets/icons/logo.svg">
+  <script src="../../js/components.js"></script>
+</head>
+<body>
+  <site-header active="robotica" root="../../"></site-header>
+  <main class="container page-content">
+    <nav-back href="../../robot/microbit/index.html" label="Microbit"></nav-back>
+<article class="detail-page-card">
+  <div class="detail-page-header">
+    <div class="detail-page-badges">
+<span class="tag-badge primary">Microbit</span><span class="tag-badge">Iniciació</span><span class="tag-badge">⏱️ 35 min</span>    </div>
+    <h1 class="detail-page-title">micro:bit: un fanalet que respon a la llum</h1>
+<p class="detail-intro">Llegir la llum ambiental amb la matriu LED i encendre una icona quan l’entorn s’enfosqueix.</p>  </div>
+  <div class="prose"><p><img alt="Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum." src="../../assets/imatges/microbit-fanalet.webp" /></p>
+<section class="detail-section"><h2>🎯 Objectius d’aprenentatge</h2>
+<ul>
+<li>Entendre que la matriu LED també pot llegir la llum ambiental.</li>
+<li>Utilitzar una lectura de sensor dins d’una condició i un bucle.</li>
+<li>Ajustar un llindar a partir de proves en diferents espais.</li>
+</ul>
+</section><section class="detail-section"><h2>📦 Material necessari</h2>
+<ul>
+<li>Placa BBC micro:bit (V1 o V2) o simulador MakeCode.</li>
+<li>Ordinador amb navegador i MakeCode.</li>
+<li>Portapiles opcional per a les proves fora de l’ordinador.</li>
+</ul>
+</section><section class="detail-section"><h2>👣 Passos de la pràctica</h2>
+<div class="lesson-step"><h3>1. Crear el projecte</h3>
+<p>Obri MakeCode, crea un projecte nou i comprova la simulació. El projecte oficial de referència anomena la lectura «light level»; en MakeCode, cerca la lectura del nivell de llum a la categoria Entrada.</p>
+</div><div class="lesson-step"><h3>2. Fer que el fanalet decidisca</h3>
+<p>Dins de «per sempre», crea una condició: si el nivell de llum és inferior a 100, mostra una icona de lluna o una matriu que represente el fanalet encés; altrament, apaga la matriu amb «neteja la pantalla». El valor 100 és un punt de partida, no un valor universal.</p>
+</div><div class="lesson-step"><h3>3. Provar i calibrar</h3>
+<p>Descarrega el programa o usa el simulador. Anota la lectura aproximada en un lloc clar i en un altre més fosc. Tapa suaument la matriu amb la mà i observa què passa. Ajusta el llindar perquè el canvi tinga sentit en l’espai de l’aula.</p>
+</div></section><blockquote class="teacher-tip-box">
+<p><strong>💡 Consell docent:</strong> els LED que mostren la icona també s’utilitzen per estimar la llum. Comprova el comportament amb la placa concreta del centre i deixa un breu interval entre lectures si la pantalla parpelleja.</p>
+</blockquote>
+<div class="lesson-step"><h3>4. Dissenyar una versió pròpia</h3>
+<p>Canvia la lluna per una estrella, una casa o un símbol creat per l’alumnat. Si la placa queda connectada a un portapiles, col·loca-la de manera estable i sense tapar-la completament amb materials que puguen escalfar-se.</p>
+</div><section class="detail-section"><h2>🧠 Què observem?</h2>
+<p>La lectura va de 0 (molt fosc) a 255 (molt clar). L’algoritme revisa contínuament el valor i tria una de dues accions. El llindar depén de l’orientació de la placa i de la llum de l’aula; per això cal mesurar i ajustar, no copiar un número sense provar.</p>
+<div class="lesson-step"><h3>Preguntes per a la parella</h3>
+<ul>
+<li>Quina diferència heu mesurat entre els dos espais?</li>
+<li>Què passa si el llindar és més alt? I si és més baix?</li>
+<li>Com podem saber si el canvi és causat per la llum o per haver mogut la placa?</li>
+</ul>
+</div></section><section class="detail-section"><h2>♿ Suport i extensió</h2>
+<p>Facilita un projecte inicial amb el bucle preparat i deixa que cada parella trie la icona o el llindar. Com a extensió, recolliu cinc lectures per espai i compareu-les; manteniu la placa en la mateixa orientació per fer una comparació més justa.</p>
+</section><section class="detail-section"><h2>✅ Evidències</h2>
+<p>Guardeu el projecte MakeCode, la taula de lectures i una explicació del llindar final. La placa només mostra llum en la seua matriu; no és una llum potent per il·luminar una habitació.</p>
+</section><section class="detail-section"><h2>🔎 Inspiració i límits de l’adaptació</h2>
+<p>Proposta pròpia inspirada en <a href="https://www.microbit.org/projects/make-it-code-it/nightlight/">Nightlight de micro:bit</a> i en la documentació de <a href="https://makecode.microbit.org/reference/input/light-level">lectura del nivell de llum de MakeCode</a>. El recurs oficial explica que la matriu LED actua com a sensor i recomana ajustar el llindar a les condicions locals.</p>
+</section></div>
+</article>
+  </main>
+  <site-footer></site-footer>
+  <script src="../../js/theme.js"></script>
+</body>
+</html>

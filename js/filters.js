@@ -7,13 +7,21 @@
   const back = document.querySelector('.btn-back');
 
   if (!document.getElementById('filter-robot')) {
-    if (back && back.getAttribute('href') === 'situacions-aprenentatge.html') {
+    if (back && back.getAttribute('href') && back.getAttribute('href').includes('situacions-aprenentatge')) {
       const filters = new URLSearchParams();
       keys.forEach(key => {
         if (params.has(key)) filters.set(key, params.get(key));
       });
-      const slug = window.location.pathname.split('/').pop().replace(/\.html$/, '');
-      back.href = 'situacions-aprenentatge.html' + (filters.size ? '?' + filters : '') + '#' + slug;
+      const parts = window.location.pathname.split('/').filter(Boolean);
+      let slug = '';
+      if (parts.length >= 2 && parts[parts.length - 1] === 'index.html') {
+        slug = parts[parts.length - 2];
+      } else if (parts.length >= 1) {
+        slug = parts[parts.length - 1].replace(/\.html$/, '');
+      }
+      const baseHref = back.getAttribute('href').split('?')[0].split('#')[0];
+      const targetHash = slug ? '#' + (slug.startsWith('situacio-sa-') ? slug : 'situacio-sa-' + slug) : '';
+      back.href = baseHref + (filters.size ? '?' + filters : '') + targetHash;
     }
     return;
   }
