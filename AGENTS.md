@@ -62,8 +62,9 @@
 
 ## 📐 Layout Unificat de Seccions Principals
 - Les pàgines principals de secció (**Robots**, **Pensament computacional** i **Situacions d'aprenentatge**) utilitzen exactament la mateixa estructura visual:
-  1. **Hero corporatiu (`.robots-hero` / `.section-hero`):** Fons `#ebf5fd`, `border-radius: 28px`, vora suau `1px solid rgba(0, 121, 220, 0.12)`, padding generós de 2.5rem.
-     - Columna esquerra: Botó de retorn (`<nav-back>`), títol `h1` en Sora 800, descripció clara i guions de color STEAM (`.accent-dashes`).
+  1. **Hero corporatiu (`.robots-hero` / `.section-hero`):** Fons `#ebf5fd` d'amplada completa (100% de la finestra, sense vores ni arrodoniments externs, enganxat a la capçalera), amb contenidor intern (`.container.robots-hero-inner`).
+     - Botó de retorn (`<nav-back>`): Sempre alineat a la part superior de l'hero (`grid-column: 1 / -1; align-self: start`).
+     - Columna esquerra: Títol `h1` en Sora 800 (`#010b40`), descripció clara i guions de color STEAM (`.accent-dashes`).
      - Columna dreta: Banner oficial 4:3 de la secció amb `border-radius: 20px` i ombra de profunditat neta.
   2. **Zona de contingut / Graella:** Graella d'elements (`.clean-grid`) amb targetes de baixa densitat, cantonades arrodonides (20-24px), tipografia Sora en els títols i elevació suau a l'hover.
   3. **Callout inferior de suport (`.catalog-callout`):** Bloc inferior de reflexió/guia pedagògica abans del peu de pàgina.

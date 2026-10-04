@@ -696,7 +696,7 @@ guide-page {
   border: none;
   border-radius: 0;
   margin: 0;
-  padding: 3.25rem 0;
+  padding: 2.25rem 0 2.75rem;
 }
 
 .section-hero-inner,
@@ -704,7 +704,40 @@ guide-page {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1.25rem 2.5rem;
+}
+
+/* Nav-back al hero: sempre alineat a la part superior */
+.section-hero-inner > nav-back,
+.robots-hero-inner > nav-back {
+  grid-column: 1 / -1;
+  align-self: start;
+  margin-bottom: 0.5rem;
+}
+
+/* Suport si nav-back està dins del contenidor de contingut */
+.section-hero-inner:has(.robots-hero-content > nav-back),
+.robots-hero-inner:has(.robots-hero-content > nav-back),
+.section-hero-inner:has(.section-hero-content > nav-back),
+.robots-hero-inner:has(.section-hero-content > nav-back) {
+  align-items: start;
+}
+
+.section-hero-content,
+.robots-hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hero-content > nav-back,
+.robots-hero-content > nav-back {
+  align-self: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.section-hero .btn-back,
+.robots-hero .btn-back {
+  margin-left: -0.8rem;
 }
 
 /* Retrocompatibilitat si no s'utilitza contenidor intern */
@@ -712,20 +745,20 @@ guide-page {
 .robots-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)) {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 2.5rem 1.5rem;
+  align-items: start;
+  gap: 1.5rem 2.5rem;
+  padding: 2.25rem 1.5rem;
 }
 
 @media (max-width: 860px) {
   .section-hero,
   .robots-hero {
-    padding: 2rem 0;
+    padding: 1.75rem 0 2rem;
   }
   .section-hero-inner,
   .robots-hero-inner {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 }
 

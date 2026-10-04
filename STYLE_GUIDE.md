@@ -125,8 +125,8 @@ Per a cada robot del projecte es generaran i mantindran **dues representacions v
 ## 4. 🌟 Elements d'Entorn de la Pàgina de Robots
 
 ### A) Capçalera Hero de la Pàgina
-- **Enllaç de retorn:** `← Tornar a inici` en to blau corporatiu suau.
-- **Títol principal:** `Robòtica Educativa` (o `Robots`), amb tipografia **Sora** extra bold (`font-weight: 800`), color blau fosc profund (`#0f172a`).
+- **Enllaç de retorn:** `<nav-back>` sempre alineat a la part superior de l'hero (`grid-column: 1 / -1; align-self: start`) amb la fletxa en to `#2563eb`.
+- **Títol principal:** `Robòtica Educativa` (o `Robots`), amb tipografia **Sora** extra bold (`font-weight: 800`), color blau fosc profund (`#010b40`).
 - **Subtítol:** `"Selecciona un robot per accedir a la seva pàgina d'aprenentatge i tutorials específics."` en Plus Jakarta Sans.
 - **Indicador de 3 barres decoratives:**
   - Barra vermella (`#EF4444`)
