@@ -61,10 +61,18 @@
 - Tot l'estil es basa en fons blancs nets (`#ffffff`), fons de pàgina suaus (`#f8fafc`), capçaleres hero i footers en `#ebf5fd` i contrast òptim de text (`#0f172a` i `#64748b`).
 
 ## 📐 Layout Unificat de Seccions Principals
-- Les pàgines principals de secció (**Robots**, **Pensament computacional** i **Situacions d'aprenentatge**) utilitzen exactament la mateixa estructura visual:
-  1. **Hero corporatiu (`.robots-hero` / `.section-hero`):** Fons `#ebf5fd` d'amplada completa (100% de la finestra, sense vores ni arrodoniments externs, enganxat a la capçalera), amb contenidor intern (`.container.robots-hero-inner`).
-     - Botó de retorn (`<nav-back>`): Sempre alineat a la part superior de l'hero (`grid-column: 1 / -1; align-self: start`).
-     - Columna esquerra: Títol `h1` en Sora 800 (`#010b40`), descripció clara i guions de color STEAM (`.accent-dashes`).
-     - Columna dreta: Banner oficial 4:3 de la secció amb `border-radius: 20px` i ombra de profunditat neta.
+- Les pàgines principals de secció (**Robòtica educativa**, **Pensament computacional** i **Situacions d'aprenentatge**) utilitzen exactament la mateixa estructura visual:
+  1. **Hero corporatiu (`.robots-hero` / `.section-hero`):** Fons `#ebf5fd` d'amplada completa (100% de la finestra, sense vores ni arrodoniments externs, enganxat a la capçalera), amb contenidor intern (`.container.robots-hero-inner`) en graella i `overflow: visible;`.
+     - Botó de retorn (`<nav-back>`): Sempre alineat a la part superior esquerra de l'hero (`grid-column: 1; grid-row: 1; align-self: start;`).
+     - Columna esquerra: Títol `h1` en Sora 800 (`#010b40`) amb `margin-top: 0` per garantir que tots els títols de les seccions quedin exactament a la mateixa alçada vertical, descripció clara i guions de color STEAM (`.accent-dashes`).
+     - Columna dreta: Banner oficial transparent (`.robots-hero-img`) ocupant tota l'alçada del hero i sobresortint lleugerament per sota (`margin-top: -2.25rem; margin-bottom: -3.75rem; overflow: visible;`) per aportar dinamisme i profunditat 3D sense obstaculitzar el contingut.
   2. **Zona de contingut / Graella:** Graella d'elements (`.clean-grid`) amb targetes de baixa densitat, cantonades arrodonides (20-24px), tipografia Sora en els títols i elevació suau a l'hover.
   3. **Callout inferior de suport (`.catalog-callout`):** Bloc inferior de reflexió/guia pedagògica abans del peu de pàgina.
+
+## 🎓 Nomenclatura Oficial dels Nivells Educatius (Estricte)
+- La web utilitza exclusivament els 4 nivells oficials d'educació infantil i primària:
+  1. **Educació Infantil** (`infantil`)
+  2. **Primer cicle** (`primer-cicle`)
+  3. **Segon cicle** (`segon-cicle`)
+  4. **Tercer cicle** (`tercer-cicle`)
+- **Queda descartada totalment l'ESO**: no s'utilitza com a filtre, etiqueta ni opció a cap activitat, robot o situació d'aprenentatge.

@@ -6,20 +6,20 @@ layout: home
 pillars:
 - href: pensament-computacional.html
   icon: 💡
-  image: _assets/banners/pensament-computacional.jpg
+  image: _assets/banners/pensament-computacional.png
   title: Pensament computacional
   description: Activitats desendollades de PC per treballar la lògica, els algorismes i la resolució de problemes
     sense pantalles.
   action: Explorar activitats →
-- href: robots.html
+- href: robotica-educativa.html
   icon: 🤖
-  image: _assets/banners/robots.jpg
-  title: Robots
+  image: _assets/banners/robotica.png
+  title: Robòtica educativa
   description: 'Tutorials i guies dels {robot_count} robots d''aula.'
   action: Veure els {robot_count} robots →
 - href: situacions-aprenentatge.html
   icon: 📑
-  image: _assets/banners/situacions-aprenentatge.jpg
+  image: _assets/banners/situacions-aprenentatge.png
   title: Situacions d'aprenentatge
   description: Catàleg curricular filtrable per robot, cicle educatiu, temàtica transversal i matèria d'aprenentatge.
   action: Obrir catàleg →

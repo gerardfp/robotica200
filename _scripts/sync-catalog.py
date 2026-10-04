@@ -109,11 +109,11 @@ def scan_situations():
                     robot = k
                     break
             cicle_label = clean_html(badges[1]) if len(badges) > 1 else ""
-            cicle = "cicle-mitja"
+            cicle = "segon-cicle"
             if "infantil" in cicle_label.lower(): cicle = "infantil"
-            elif "inicial" in cicle_label.lower(): cicle = "cicle-inicial"
-            elif "superior" in cicle_label.lower(): cicle = "cicle-superior"
-            elif "eso" in cicle_label.lower(): cicle = "eso"
+            elif "primer" in cicle_label.lower() or "inicial" in cicle_label.lower(): cicle = "primer-cicle"
+            elif "segon" in cicle_label.lower() or "mitjà" in cicle_label.lower() or "mitja" in cicle_label.lower(): cicle = "segon-cicle"
+            elif "tercer" in cicle_label.lower() or "superior" in cicle_label.lower() or "eso" in cicle_label.lower(): cicle = "tercer-cicle"
 
             materia_label = clean_html(badges[2]) if len(badges) > 2 else ""
             materia = "tecnologia"

@@ -4,8 +4,8 @@ description: Com podem planificar la compra de fruites i verdures de temporada a
   i fent el camí més curt?
 robot: coding-set
 cycles:
-- cicle-inicial
-cycle_label: Cicle Inicial (1r-2n)
+- primer-cicle
+cycle_label: Primer cicle
 theme: salut
 subject: matematiques
 duration: 4 sessions

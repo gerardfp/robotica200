@@ -2,7 +2,7 @@
 title: Micro:bit
 description: La placa microcontroladora per a projectes oberts i ciutadans
 icon: 📟
-age: Primària, ESO i Batxillerat (9-18 anys)
+age: Segon i tercer cicle (8-12 anys)
 order: 6
 specs:
 - ✓ Matriu 5x5 de LEDs vermells

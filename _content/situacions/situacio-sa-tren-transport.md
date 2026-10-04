@@ -5,7 +5,7 @@ description: Com podem crear una línia de tren que connecti les parades i ajudi
 robot: coding-express
 cycles:
 - infantil
-cycle_label: Educació Infantil (3-5 anys)
+cycle_label: Educació Infantil
 theme: sostenibilitat
 subject: medi
 duration: 3 sessions

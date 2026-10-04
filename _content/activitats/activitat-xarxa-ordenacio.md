@@ -3,7 +3,7 @@ title: Xarxa d'Ordenació al Terra (Sorting Networks)
 description: Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les
   línies; en cada encreuament es comparen de dos en dos i el més petit sempre va cap a l'esquerra.
 topic: Algorismes de Comparació i Processament Paral·lel
-cycle_label: Cicle Mitjà i Superior
+cycle_label: Segon i tercer cicle
 duration: 50 min
 order: 3
 ---

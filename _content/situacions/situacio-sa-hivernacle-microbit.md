@@ -4,9 +4,8 @@ description: Com podem garantir que les plantes del nostre hort rebin l'aigua i 
   el cap de setmana?
 robot: microbit
 cycles:
-- cicle-mitja
-- cicle-superior
-cycle_label: Cicle Mitjà i Superior
+- segon-cicle
+cycle_label: Segon cicle
 theme: sostenibilitat
 subject: medi
 duration: 5 sessions

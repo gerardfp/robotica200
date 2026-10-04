@@ -4,9 +4,8 @@ description: Podem sincronitzar una colla de robots perquè ballin una cançó t
   llums i disfresses creades per nosaltres?
 robot: codey-rocky
 cycles:
-- cicle-inicial
-- cicle-mitja
-cycle_label: Cicle Inicial i Mitjà
+- primer-cicle
+cycle_label: Primer cicle
 theme: art
 subject: artistica
 duration: 4 sessions

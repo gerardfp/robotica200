@@ -3,7 +3,7 @@ title: Dibuix per Píxels i Imatges Binàries
 description: Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules
   utilitzant només els valors 0 (blanc) i 1 (negre).
 topic: Representació de Dades (Binari)
-cycle_label: Cicle Inicial i Mitjà
+cycle_label: Primer i segon cicle
 duration: 45 min
 order: 2
 ---

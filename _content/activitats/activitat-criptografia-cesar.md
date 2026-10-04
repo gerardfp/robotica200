@@ -3,7 +3,7 @@ title: Missatges Secrets i Xifratge Cèsar
 description: Construcció d'una roda de xifratge de dos cercles concèntrics per comprendre com es protegeix la informació
   a Internet desplaçant les lletres de l'alfabet un nombre fix de posicions.
 topic: Ciberseguretat i Criptografia
-cycle_label: Cicle Mitjà, Superior i ESO
+cycle_label: Segon i tercer cicle
 duration: 50 min
 order: 6
 ---

@@ -4,8 +4,8 @@ description: Com podem eliminar les barreres arquitectòniques i sensorials del 
   o amb cadira de rodes es desplaci amb seguretat?
 robot: microbit
 cycles:
-- cicle-superior
-cycle_label: Cicle Superior (5è-6è)
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: ciutat
 subject: tecnologia
 duration: 6 sessions

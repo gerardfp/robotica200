@@ -34,7 +34,7 @@ Cada robot es presenta en una targeta amb personalitat cromàtica pròpia i una 
   - Transició hover: Lleugera elevació vertical (`translateY(-5px)`) amb increment d'ombra suau (`box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12)`).
 - **Àrea d'il·lustració superior (`.robot-card-media`):**
   - Sense arrodoniment propi (`border-radius: 0`), hereta el retall del pare per `overflow: hidden`.
-  - Aspect ratio: `16 / 11`.
+  - Aspect ratio: `16 / 9`.
   - **Fons SVG vectorial isomètric i corbat:** Fons SVG pur (`_assets/robots/bg-[robot].svg`) amb pedestal axonomètric a 30°, línies corbes i combinació tonal dels colors oficials del robot.
   - **Insígnia d'edat flotant (`.robot-age-badge`):**
     - Càpsula flotant a la cantonada superior dreta (`top: 12px; right: 12px`).
@@ -243,11 +243,11 @@ Per garantir la màxima coherència estilística entre els robots, es valora la 
 
 ## 8. 📐 Layout Unificat de les Seccions Principals
 
-Totes les pàgines de secció principal (**Robots**, **Pensament computacional** i **Situacions d'aprenentatge**) segueixen estrictament la mateixa arquitectura:
+Totes les pàgines de secció principal (**Robòtica educativa**, **Pensament computacional** i **Situacions d'aprenentatge**) segueixen estrictament la mateixa arquitectura:
 
 1. **Hero Corporatiu (`.robots-hero` / `.section-hero`):**
-   - Fons corporatiu suau `#ebf5fd` amb vora suau `1px solid rgba(0, 121, 220, 0.12)` i `border-radius: 28px`.
-   - Grid a 2 columnes (columna de text a l'esquerra amb botó de retorn, títol Sora 800, subtítol i els 3 guions d'accent; columna dreta amb la il·lustració/banner 4:3 oficial arrodonida a 20px).
+   - Fons corporatiu suau `#ebf5fd` d'amplada completa (100% de la finestra, enganxat a la capçalera), `overflow: visible;`.
+   - Grid a 2 columnes: columna esquerra amb botó de retorn alineat a dalt, títol Sora 800 (`margin-top: 0` fixat a la mateixa alçada a totes les pàgines), subtítol i els 3 guions d'accent; columna dreta amb la il·lustració/banner transparent oficial ocupant tota l'alçada del hero i sobresortint lleugerament per sota (`margin-top: -2.25rem; margin-bottom: -3.75rem;`).
 2. **Graella de Targetes (`.clean-grid`):**
    - Targetes espaiades amb fons blanc, cantons arrodonits (20-24px), títols en Sora Bold i footer d'acció semibold.
 3. **Callout Pedagògic Inferior (`.catalog-callout`):**

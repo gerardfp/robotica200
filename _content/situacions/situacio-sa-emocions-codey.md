@@ -4,8 +4,8 @@ description: Com podem crear un company robòtic que ens ajudi a expressar i ges
   estem enfadats, tristos o eufòrics?
 robot: codey-rocky
 cycles:
-- cicle-mitja
-cycle_label: Cicle Mitjà (3r-4t)
+- segon-cicle
+cycle_label: Segon cicle
 theme: salut
 subject: llengua
 duration: 4 sessions

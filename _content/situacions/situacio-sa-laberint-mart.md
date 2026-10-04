@@ -4,8 +4,8 @@ description: Com programar un vehicle no tripulat per explorar un cràter marci�
   agafar una mostra mineral sense intervenció humana directa?
 robot: spike
 cycles:
-- eso
-cycle_label: ESO (1r-3r)
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: espai
 subject: tecnologia
 duration: 6 sessions

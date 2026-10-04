@@ -1,6 +1,6 @@
 ---
-title: Robots
-seo_title: Robots - Els {robot_count} Robots d'Aula | Robòtica200
+title: Robòtica educativa
+seo_title: Robòtica Educativa - Els {robot_count} Robots d'Aula | Robòtica200
 description: Guies didàctiques i tutorials dels {robot_count} robots educatius d'aula.
 layout: catalog
 collection: robots

@@ -4,9 +4,8 @@ description: Com podem automatitzar la separació d'envasos, vidre i paper al me
   el percentatge de reciclatge?
 robot: spike
 cycles:
-- cicle-superior
-- eso
-cycle_label: Cicle Superior (5è-6è) i ESO
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: sostenibilitat
 subject: medi
 duration: 5 sessions

@@ -4,9 +4,8 @@ description: Com podem protegir els nostres missatges i dades privades a la xarx
   nostra identitat?
 robot: desendollat
 cycles:
-- cicle-superior
-- eso
-cycle_label: Cicle Superior i ESO
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: societat
 subject: matematiques
 duration: 3 sessions

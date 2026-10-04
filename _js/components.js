@@ -77,6 +77,22 @@
     }
   }
 
+  function deferRender(element, renderFn) {
+    if (element._rendered) return;
+    const doRender = () => {
+      if (element._rendered) return;
+      element._rendered = true;
+      renderFn();
+      element.setAttribute('rendered', '');
+    };
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', doRender, { once: true });
+    } else {
+      setTimeout(doRender, 0);
+    }
+  }
+
   function loadCatalogData(root, callback) {
     if (window.CATALEG) {
       callback();
@@ -112,7 +128,7 @@
             <nav class="header-nav" aria-label="Navegació principal">
               <a href="${root}index.html" class="nav-btn ${active === 'inici' ? 'active' : ''}">Inici</a>
               <a href="${root}pensament-computacional/index.html" class="nav-btn ${active === 'pensament' ? 'active' : ''}">Pensament computacional</a>
-              <a href="${root}robots/index.html" class="nav-btn ${active === 'robots' || active === 'robotica' ? 'active' : ''}">Robòtica educativa</a>
+              <a href="${root}robotica-educativa/index.html" class="nav-btn ${active === 'robots' || active === 'robotica' || active === 'robotica-educativa' ? 'active' : ''}">Robòtica educativa</a>
               <a href="${root}situacions-aprenentatge/index.html" class="nav-btn ${active === 'situacions' ? 'active' : ''}">Situacions d'aprenentatge</a>
             </nav>
           </div>
@@ -180,28 +196,30 @@
       const description = this.getAttribute('description') || '';
 
       ensureDocumentHead(root, title, description);
-      const content = this.innerHTML;
 
-      this.innerHTML = `
-        <site-header active="pensament" root="${root}"></site-header>
-        <main class="container page-content">
-          <nav-back href="${backHref}" label="${backLabel}"></nav-back>
-          <article class="detail-page-card">
-            <div class="detail-page-header">
-              <div class="detail-page-badges">
-                ${tag ? `<span class="tag-badge primary">${tag}</span>` : ''}
-                ${cicle ? `<span class="tag-badge">${cicle}</span>` : ''}
-                ${durada ? `<span class="tag-badge">⏱️ ${durada}</span>` : ''}
+      deferRender(this, () => {
+        const content = this.innerHTML;
+        this.innerHTML = `
+          <site-header active="pensament" root="${root}"></site-header>
+          <main class="container page-content">
+            <nav-back href="${backHref}" label="${backLabel}"></nav-back>
+            <article class="detail-page-card">
+              <div class="detail-page-header">
+                <div class="detail-page-badges">
+                  ${tag ? `<span class="tag-badge primary">${tag}</span>` : ''}
+                  ${cicle ? `<span class="tag-badge">${cicle}</span>` : ''}
+                  ${durada ? `<span class="tag-badge">⏱️ ${durada}</span>` : ''}
+                </div>
+                <h1 class="detail-page-title">${title}</h1>
               </div>
-              <h1 class="detail-page-title">${title}</h1>
-            </div>
-            <div class="prose">
-              ${content}
-            </div>
-          </article>
-        </main>
-        <site-footer></site-footer>
-      `;
+              <div class="prose">
+                ${content}
+              </div>
+            </article>
+          </main>
+          <site-footer></site-footer>
+        `;
+      });
     }
   }
 
@@ -211,6 +229,10 @@
       const title = this.getAttribute('title') || '';
       const robot = (this.getAttribute('robot') || '').toLowerCase();
       const robotLabel = this.getAttribute('robot-label') || this.getAttribute('robot') || '';
+      let robotIcon = this.getAttribute('robot-icon') || '';
+      if (!robotIcon && robot) {
+        robotIcon = `${robot}.png`;
+      }
       const dificultat = this.getAttribute('dificultat') || this.getAttribute('nivell') || '';
       const durada = this.getAttribute('durada') || '';
       const intro = this.getAttribute('intro') || '';
@@ -220,29 +242,31 @@
       const description = this.getAttribute('description') || intro;
 
       ensureDocumentHead(root, title, description);
-      const content = this.innerHTML;
 
-      this.innerHTML = `
-        <site-header active="robots" root="${root}"></site-header>
-        <main class="container page-content">
-          <nav-back href="${backHref}" label="${backLabel}"></nav-back>
-          <article class="detail-page-card">
-            <div class="detail-page-header">
-              <div class="detail-page-badges">
-                ${robotLabel ? `<span class="tag-badge primary">${robotLabel}</span>` : ''}
-                ${dificultat ? `<span class="tag-badge">${dificultat}</span>` : ''}
-                ${durada ? `<span class="tag-badge">⏱️ ${durada}</span>` : ''}
+      deferRender(this, () => {
+        const content = this.innerHTML;
+        this.innerHTML = `
+          <site-header active="robots" root="${root}"></site-header>
+          <main class="container page-content">
+            <nav-back href="${backHref}" label="${backLabel}"></nav-back>
+            <article class="detail-page-card">
+              <div class="detail-page-header">
+                <div class="detail-page-badges">
+                  ${robotLabel ? `<span class="tag-badge primary">${robotIcon ? `<img src="${root}_assets/icons/${robotIcon}" alt="" class="tag-badge-icon" width="20" height="20">` : ''}${robotLabel}</span>` : ''}
+                  ${dificultat ? `<span class="tag-badge">${dificultat}</span>` : ''}
+                  ${durada ? `<span class="tag-badge">⏱️ ${durada}</span>` : ''}
+                </div>
+                <h1 class="detail-page-title">${title}</h1>
+                ${intro ? `<p class="detail-intro">${intro}</p>` : ''}
               </div>
-              <h1 class="detail-page-title">${title}</h1>
-              ${intro ? `<p class="detail-intro">${intro}</p>` : ''}
-            </div>
-            <div class="prose">
-              ${content}
-            </div>
-          </article>
-        </main>
-        <site-footer></site-footer>
-      `;
+              <div class="prose">
+                ${content}
+              </div>
+            </article>
+          </main>
+          <site-footer></site-footer>
+        `;
+      });
     }
   }
 
@@ -267,43 +291,45 @@
       const description = this.getAttribute('description') || repte;
 
       ensureDocumentHead(root, title, description);
-      const content = this.innerHTML;
 
-      const hasRepteInContent = content.includes('sa-challenge') || content.includes('Repte o Pregunta Guia');
-      const repteHtml = (repte && !hasRepteInContent) ? `
-        <section class="detail-section">
-          <h2>❓ Repte o Pregunta Guia</h2>
-          <p class="sa-challenge">"${repte}"</p>
-        </section>
-      ` : '';
+      deferRender(this, () => {
+        const content = this.innerHTML;
+        const hasRepteInContent = content.includes('sa-challenge') || content.includes('Repte o Pregunta Guia');
+        const repteHtml = (repte && !hasRepteInContent) ? `
+          <section class="detail-section">
+            <h2>❓ Repte o Pregunta Guia</h2>
+            <p class="sa-challenge">"${repte}"</p>
+          </section>
+        ` : '';
 
-      this.innerHTML = `
-        <site-header active="situacions" root="${root}"></site-header>
-        <main class="container page-content">
-          <nav-back href="${backHref}" label="${backLabel}"></nav-back>
-          <article class="detail-page-card">
-            <div class="detail-page-header">
-              <div class="detail-page-badges">
-                ${robotLabel ? `
-                  <span class="tag-badge primary">
-                    ${robotIcon ? `<img src="${root}_assets/icons/${robotIcon}" alt="" class="tag-badge-icon">` : ''}${robotLabel}
-                  </span>
-                ` : ''}
-                ${cicleLabel ? `<span class="tag-badge">${cicleLabel}</span>` : ''}
-                ${materiaLabel ? `<span class="tag-badge">${materiaLabel}</span>` : ''}
-                ${durada ? `<span class="tag-badge">⏱️ ${durada}</span>` : ''}
+        this.innerHTML = `
+          <site-header active="situacions" root="${root}"></site-header>
+          <main class="container page-content">
+            <nav-back href="${backHref}" label="${backLabel}"></nav-back>
+            <article class="detail-page-card">
+              <div class="detail-page-header">
+                <div class="detail-page-badges">
+                  ${robotLabel ? `
+                    <span class="tag-badge primary">
+                      ${robotIcon ? `<img src="${root}_assets/icons/${robotIcon}" alt="" class="tag-badge-icon" width="20" height="20">` : ''}${robotLabel}
+                    </span>
+                  ` : ''}
+                  ${cicleLabel ? `<span class="tag-badge">${cicleLabel}</span>` : ''}
+                  ${materiaLabel ? `<span class="tag-badge">${materiaLabel}</span>` : ''}
+                  ${durada ? `<span class="tag-badge">⏱️ ${durada}</span>` : ''}
+                </div>
+                <h1 class="detail-page-title">${title}</h1>
+                ${tematicaLabel ? `<span class="tag-badge">🏷️ ${tematicaLabel}</span>` : ''}
               </div>
-              <h1 class="detail-page-title">${title}</h1>
-              ${tematicaLabel ? `<span class="tag-badge">🏷️ ${tematicaLabel}</span>` : ''}
-            </div>
-            <div class="prose">
-              ${repteHtml}
-              ${content}
-            </div>
-          </article>
-        </main>
-        <site-footer></site-footer>
-      `;
+              <div class="prose">
+                ${repteHtml}
+                ${content}
+              </div>
+            </article>
+          </main>
+          <site-footer></site-footer>
+        `;
+      });
     }
   }
 
@@ -319,24 +345,26 @@
       const description = this.getAttribute('description') || '';
 
       ensureDocumentHead(root, title, description);
-      const content = this.innerHTML;
 
-      this.innerHTML = `
-        <site-header active="${active}" root="${root}"></site-header>
-        <main class="container page-content">
-          <nav-back href="${backHref}" label="${backLabel}"></nav-back>
-          <article class="detail-page-card">
-            <div class="detail-page-header">
-              ${tag ? `<div class="detail-page-badges"><span class="tag-badge primary">${tag}</span></div>` : ''}
-              <h1 class="detail-page-title">${title}</h1>
-            </div>
-            <div class="prose">
-              ${content}
-            </div>
-          </article>
-        </main>
-        <site-footer></site-footer>
-      `;
+      deferRender(this, () => {
+        const content = this.innerHTML;
+        this.innerHTML = `
+          <site-header active="${active}" root="${root}"></site-header>
+          <main class="container page-content">
+            <nav-back href="${backHref}" label="${backLabel}"></nav-back>
+            <article class="detail-page-card">
+              <div class="detail-page-header">
+                ${tag ? `<div class="detail-page-badges"><span class="tag-badge primary">${tag}</span></div>` : ''}
+                <h1 class="detail-page-title">${title}</h1>
+              </div>
+              <div class="prose">
+                ${content}
+              </div>
+            </article>
+          </main>
+          <site-footer></site-footer>
+        `;
+      });
     }
   }
 
@@ -384,7 +412,10 @@
                data-robot="${item.robot}" data-cicle="${item.cicle}"
                data-tematica="${item.tematica}" data-materia="${item.materia}">
               <div class="card-top">
-                <span class="tag-badge primary">${item.robotLabel}</span>
+                <div class="card-robot-info">
+                  ${item.robot && item.robot !== 'desendollat' ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
+                  <span class="tag-badge primary">${item.robotLabel}</span>
+                </div>
                 <span class="tag-badge">${item.cicleLabel}</span>
               </div>
               <h3 class="item-title">${item.titol}</h3>
@@ -422,10 +453,13 @@
       this.innerHTML = `
         <div class="clean-grid">
           ${items.map(item => `
-            <a id="${item.id}" href="${root}${item.url}" class="item-card">
+            <a id="${item.id}" href="${root}${item.url}" class="item-card tutorial-card">
               <div class="card-top">
-                <span class="tag-badge primary">${item.dificultat}</span>
-                <span class="tag-badge">⏱️ ${item.durada}</span>
+                <div class="card-badges">
+                  <span class="tag-badge primary">${item.dificultat}</span>
+                  <span class="tag-badge">⏱️ ${item.durada}</span>
+                </div>
+                ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-icon" width="36" height="36">` : ''}
               </div>
               <h3 class="item-title">${item.titol}</h3>
               <p class="item-desc">${item.descripcio || ''}</p>

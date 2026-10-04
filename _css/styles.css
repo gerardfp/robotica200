@@ -71,6 +71,22 @@ sup {
   top: -0.5em;
 }
 
+/* Llistes amb sagnat i espaiat natural */
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0 1rem;
+}
+
+li {
+  padding-left: 0.25rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+li > ul, li > ol {
+  margin: 0.35rem 0 0.5rem;
+}
+
 body {
   min-height: 100vh;
   display: flex;
@@ -86,14 +102,18 @@ activity-grid, situation-grid, tutorial-grid {
 activity-page:not(:defined),
 tutorial-page:not(:defined),
 situation-page:not(:defined),
-guide-page:not(:defined) {
+guide-page:not(:defined),
+activity-page:not([rendered]),
+tutorial-page:not([rendered]),
+situation-page:not([rendered]),
+guide-page:not([rendered]) {
   opacity: 0;
 }
 
-activity-page,
-tutorial-page,
-situation-page,
-guide-page {
+activity-page[rendered],
+tutorial-page[rendered],
+situation-page[rendered],
+guide-page[rendered] {
   opacity: 1;
   transition: opacity 0.15s ease-in;
 }
@@ -211,6 +231,11 @@ guide-page {
 .page-content {
   padding: 2.75rem 0 5rem;
   animation: fadeIn 0.25s ease-out;
+}
+
+.robot-hero + .page-content,
+.page-content:has(.robot-profile) {
+  padding-top: 1.25rem;
 }
 
 .view-section {
@@ -692,23 +717,29 @@ guide-page {
   border: none;
   border-radius: 0;
   margin: 0;
-  padding: 2.25rem 0 2.75rem;
+  padding: 2.25rem 0 2rem;
+  position: relative;
+  overflow: visible;
+  z-index: 10;
 }
 
 .section-hero-inner,
 .robots-hero-inner {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  align-items: center;
-  gap: 1.25rem 2.5rem;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: start;
+  gap: 0 2rem;
+  position: relative;
+  min-height: 230px;
 }
 
-/* Nav-back al hero: sempre alineat a la part superior */
+/* Nav-back al hero: sempre alineat a la part superior esquerra */
 .section-hero-inner > nav-back,
 .robots-hero-inner > nav-back {
-  grid-column: 1 / -1;
+  grid-column: 1;
+  grid-row: 1;
   align-self: start;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Suport si nav-back està dins del contenidor de contingut */
@@ -721,6 +752,9 @@ guide-page {
 
 .section-hero-content,
 .robots-hero-content {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
   display: flex;
   flex-direction: column;
 }
@@ -740,9 +774,9 @@ guide-page {
 .section-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)),
 .robots-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)) {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.08fr 0.92fr;
   align-items: start;
-  gap: 1.5rem 2.5rem;
+  gap: 1.5rem 2rem;
   padding: 2.25rem 1.5rem;
 }
 
@@ -750,11 +784,37 @@ guide-page {
   .section-hero,
   .robots-hero {
     padding: 1.75rem 0 2rem;
+    overflow: visible;
   }
   .section-hero-inner,
   .robots-hero-inner {
     grid-template-columns: 1fr;
     gap: 1.25rem;
+    min-height: auto;
+  }
+  .section-hero-inner > nav-back,
+  .robots-hero-inner > nav-back {
+    grid-column: auto;
+    grid-row: auto;
+    margin-bottom: 0.5rem;
+  }
+  .section-hero-content,
+  .robots-hero-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .section-hero-media,
+  .robots-hero-media {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .section-hero-img,
+  .robots-hero-img {
+    max-height: 220px;
+    object-position: center;
   }
 }
 
@@ -765,7 +825,7 @@ guide-page {
   font-weight: 800;
   color: #010b40;
   letter-spacing: -0.025em;
-  margin: 0.5rem 0 0.85rem;
+  margin: 0 0 0.85rem;
   line-height: 1.15;
 }
 
@@ -797,17 +857,142 @@ guide-page {
 
 .section-hero-media,
 .robots-hero-media {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: -2.25rem;
+  margin-bottom: -3.75rem;
+  z-index: 5;
+  pointer-events: none;
 }
 
 .section-hero-img,
 .robots-hero-img {
-  max-width: 100%;
-  max-height: 280px;
   width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 330px;
   object-fit: contain;
+  object-position: right center;
+  filter: drop-shadow(0 12px 28px rgba(1, 11, 64, 0.08));
+}
+
+/* ==========================================================================
+   HERO INDIVIDUAL DE ROBOT (Més compacte que el de secció)
+   ========================================================================== */
+
+.robot-hero {
+  width: 100%;
+  background-color: #ebf5fd;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 1.75rem 0 1.5rem;
+  position: relative;
+  overflow: visible;
+  z-index: 10;
+}
+
+.robot-hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: start;
+  gap: 0 2rem;
+  position: relative;
+  min-height: 175px;
+}
+
+.robot-hero-inner > nav-back {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  margin-bottom: 0.5rem;
+}
+
+.robot-hero-content {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.robot-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.2vw, 2.35rem);
+  font-weight: 800;
+  color: #010b40;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.45rem;
+  line-height: 1.15;
+}
+
+.robot-hero-sub {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.85rem;
+  max-width: 520px;
+}
+
+.robot-hero-media {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: -1.75rem;
+  margin-bottom: -2.75rem;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.robot-hero-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 205px;
+  object-fit: contain;
+  object-position: right center;
+  filter: drop-shadow(0 10px 22px rgba(1, 11, 64, 0.08));
+}
+
+@media (max-width: 860px) {
+  .robot-hero {
+    padding: 1.5rem 0 1.75rem;
+    overflow: visible;
+  }
+  .robot-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    min-height: auto;
+  }
+  .robot-hero-inner > nav-back {
+    grid-column: auto;
+    grid-row: auto;
+    margin-bottom: 0.5rem;
+  }
+  .robot-hero-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .robot-hero-media {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .robot-hero-img {
+    max-height: 160px;
+    object-position: center;
+  }
 }
 
 /* Targeta de Robot Redissenyada (vora degradada 4px, border-radius 12px) */
@@ -841,7 +1026,7 @@ guide-page {
 .robot-card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 16 / 9;
   border-radius: 0;
   overflow: hidden;
   margin-bottom: 0;
@@ -1097,6 +1282,42 @@ guide-page {
   gap: 0.5rem;
 }
 
+.card-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.card-robot-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.08));
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-robot-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.card-robot-sa-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.item-card:hover .card-robot-icon,
+.item-card:hover .card-robot-sa-icon {
+  transform: scale(1.12);
+}
+
 .tag-badge {
   font-size: 0.75rem;
   font-weight: 700;
@@ -1114,6 +1335,10 @@ guide-page {
   height: 1.25rem;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+.tag-badge:has(.tag-badge-icon) {
+  padding-left: 0.35rem;
 }
 
 .tag-badge.primary {
@@ -1391,12 +1616,13 @@ guide-page {
 
 /* Pàgina dedicada del Robot */
 .robot-profile {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 2.25rem;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 0;
   margin-bottom: 2.5rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
 }
 
 .robot-profile-top {
@@ -1631,14 +1857,16 @@ guide-page {
 .prose ul, .prose ol { padding-left: 1.25rem; }
 .prose li { margin-bottom: 0.35rem; }
 .prose p + p { margin-top: 0.75rem; }
-.prose .lesson-step {
+.lesson-step, .prose .lesson-step {
   background: var(--bg-card-subtle);
   padding: 1.15rem 1.35rem;
   border-radius: var(--radius-sm);
   border-left: 3px solid var(--primary);
   margin-top: 0.95rem;
 }
-.prose .lesson-step h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+.lesson-step h3, .prose .lesson-step h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+.lesson-step ul, .lesson-step ol { padding-left: 1.35rem; margin: 0.5rem 0 0.5rem; }
+.lesson-step li { padding-left: 0.25rem; margin-bottom: 0.35rem; }
 .prose .lesson-sessions { padding: 0; list-style: none; }
 .prose .lesson-sessions li {
   background: var(--bg-card-subtle);
