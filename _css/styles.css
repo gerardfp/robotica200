@@ -583,10 +583,6 @@ guide-page {
   gap: 0.35rem;
 }
 
-/* Encapçalat de seccions internes */
-.section-nav-back {
-  margin-bottom: 1.5rem;
-}
 
 .btn-back {
   background: none;
