@@ -4,6 +4,7 @@ seo_title: Situacions d'Aprenentatge Curriculars | Robòtica200
 description: Catàleg de situacions d'aprenentatge curriculars de robòtica i pensament computacional.
 layout: catalog
 collection: situacions
+section_icon: assets/icons/situacions-aprenentatge.png
 hero_width: 1440
 hero_height: 480
 hero_image: assets/imatges/situacions-aula.webp

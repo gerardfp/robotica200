@@ -7,7 +7,7 @@
   {% endif %}
   <div class="card-top">
     {% for badge in item.card_badges %}<span class="tag-badge{% if loop.first %} primary{% endif %}">{{ badge }}</span>{% endfor %}
-    {% if item.collection == 'robots' %}<span class="robot-icon-small">{{ item.icon }}</span>{% endif %}
+    {% if item.collection == 'robots' and item.get('robot_icon') %}<img src="{{ item.robot_icon }}" alt="" class="robot-icon-small-img">{% endif %}
   </div>
   <{{ heading }} class="item-title">{{ item.title }}</{{ heading }}>
   {% if item.collection == 'situacions' %}

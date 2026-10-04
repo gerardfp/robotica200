@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Robot Humà i el Llenguatge Precís | Robòtica²⁰⁰</title>
-  <meta name="description" content="Un alumne fa de 'robot' amb els ulls tapats i ha de moure's per l'aula seguint únicament instruccions exactes dels seus companys ('un pas endavant', 'gir 90º a la dreta').">
+  <title>El Robot Humà i el Llenguatge Precís | Robòtica200</title>
+  <meta name="description" content="Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb instruccions precises i verificables.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -15,88 +15,70 @@
   <header class="header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="" class="logo-badge-img"></span>
         <div class="logo-text">
           <span class="logo-name">Robòtica<sup>200</sup></span>
           <span class="logo-subtitle">Robòtica per a docents</span>
         </div>
       </a>
-
       <nav class="header-nav" aria-label="Navegació principal">
-        <a href="index.html" class="nav-btn ">Inici</a>
+        <a href="index.html" class="nav-btn">Inici</a>
         <a href="pensament-computacional.html" class="nav-btn active">Pensament computacional</a>
-        <a href="robotica.html" class="nav-btn ">Robòtica</a>
-        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+        <a href="robotica.html" class="nav-btn">Robòtica</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn">Situacions d&#39;aprenentatge</a>
       </nav>
-
       <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
-        <span id="theme-icon">🌙</span>
+        <span id="theme-icon" aria-hidden="true">🌙</span>
       </button>
     </div>
   </header>
-
   <main class="container page-content">
     <div class="section-nav-back">
       <a href="pensament-computacional.html" class="btn-back">← Tornar a Pensament Computacional</a>
     </div>
-
-    <article class="detail-page-card">
-      <div class="detail-page-header">
-        <div class="detail-page-badges">
-          <span class="tag-badge primary">Algorismes i Precisió</span>
-          <span class="tag-badge">Infantil i Cicle Inicial</span>
-          <span class="tag-badge">⏱️ 45 min</span>
-        </div>
-        <h1 class="detail-page-title" style="margin-top: 0.75rem;">El Robot Humà i el Llenguatge Precís</h1>
-      </div>
-
-      <div class="detail-section">
-        <h4>🎯 Objectiu de l'activitat</h4>
-        <p>Un alumne fa de 'robot' amb els ulls tapats i ha de moure's per l'aula seguint únicament instruccions exactes dels seus companys ('un pas endavant', 'gir 90º a la dreta').</p>
-      </div>
-
-      <div class="detail-section">
-        <h4>📦 Material necessari</h4>
-        <ul style="padding-left: 1.25rem;">
-        <li style="margin-bottom: 0.35rem;">Mocador per tapar els ulls</li>
-        <li style="margin-bottom: 0.35rem;">Cadires o cons per fer d'obstacles tous</li>
-        </ul>
-      </div>
-
-      <div class="detail-section">
-        <h4>👣 Desenvolupament pas a pas</h4>
-        <div style="display: flex; flex-direction: column; gap: 0.85rem; margin-top: 0.5rem;">
-          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
-            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">1. Introducció al concepte de programa</strong>
-            <p style="font-size: 0.95rem; margin: 0;">Expliquem que els robots no 'endevinen' el que volem: només executen ordres literals. Si diem 'ves allà', el robot no sap on és 'allà'.</p>
-          </div>
-          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
-            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">2. Definir el repertori d'instruccions</strong>
-            <p style="font-size: 0.95rem; margin: 0;">Acordem les úniques 4 ordres permeses: Avança 1 pas, Retrocedeix 1 pas, Gira a la dreta, Gira a l'esquerra.</p>
-          </div>
-          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
-            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">3. El repte del circuit</strong>
-            <p style="font-size: 0.95rem; margin: 0;">Per parelles, un alumne fa de programador i l'altre de robot. Han de portar el robot des de la sortida fins a la meta evitant els cons.</p>
-          </div>
-          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
-            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">4. Reflexió i depuració (Debug)</strong>
-            <p style="font-size: 0.95rem; margin: 0;">Quan el robot topa o s'atura, analitzem quina instrucció ha fallat i com corregir la seqüència.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="teacher-tip-box">
-        <strong>💡 Consell per a l'aula:</strong> És ideal per treballar la lateralitat i la importància de donar ordres sense ambigüitats.
-      </div>
-    </article>
+<article class="detail-page-card">
+  <div class="detail-page-header">
+    <div class="detail-page-badges">
+<span class="tag-badge primary">Algorismes i Precisió</span><span class="tag-badge">Infantil i Cicle Inicial</span><span class="tag-badge">⏱️ 45 min</span>    </div>
+    <h1 class="detail-page-title">El Robot Humà i el Llenguatge Precís</h1>
+  </div>
+  <div class="prose"><section class="detail-section"><h2>🎯 Objectiu de l'activitat</h2>
+<p>Una persona fa de robot sobre una graella o mou una fitxa seguint instruccions precises com «un pas endavant» i «gira 90° a la dreta».</p>
+</section><section class="detail-section"><h2>📦 Material necessari</h2>
+<ul>
+<li>Graella de paper, cinta de pintor o una quadrícula sobre la taula</li>
+<li>Fitxa que faci de robot i targetes amb les instruccions acordades</li>
+</ul>
+</section><section class="detail-section"><h2>👣 Desenvolupament pas a pas</h2>
+<div class="lesson-step"><h3>1. Introducció al concepte de programa</h3>
+<p>Expliquem que els robots no 'endevinen' el que volem: només executen ordres literals. Si diem 'ves allà', el robot no sap on és 'allà'.</p>
+</div><div class="lesson-step"><h3>2. Definir el repertori d'instruccions</h3>
+<p>Acordem les úniques 4 ordres permeses: Avança 1 pas, Retrocedeix 1 pas, Gira a la dreta, Gira a l'esquerra.</p>
+</div><div class="lesson-step"><h3>3. El repte del circuit</h3>
+<p>Per parelles, una persona és programadora i l’altra mou una fitxa de robot sobre la quadrícula fins a la meta.</p>
+</div><div class="lesson-step"><h3>4. Reflexió i depuració (Debug)</h3>
+<p>Si la fitxa arriba a una casella no prevista, localitzem l'ordre que ho ha provocat i corregim la seqüència.</p>
+</div></section><blockquote class="teacher-tip-box">
+<p><strong>💡 Consell per a l'aula:</strong> És ideal per treballar la lateralitat i la importància de donar ordres sense ambigüitats.</p>
+</blockquote>
+<section class="detail-section"><h2>🧑‍🤝‍🧑 Organització i seguretat</h2>
+<p>Treballa per parelles en una graella de paper o cinta de pintor. Una persona dicta instruccions i una altra desplaça una fitxa; ningú no camina amb els ulls tapats ni a cegues per l'aula. Marca la sortida, l'orientació inicial i una casella d'arribada abans de començar.</p>
+</section><section class="detail-section"><h2>🗣️ Preguntes per fer pensar</h2>
+<ul>
+<li>Què vol dir exactament «gira a la dreta» si el robot mira en una altra direcció?</li>
+<li>Quantes ordres cal repetir per fer dos passos endavant?</li>
+<li>En quin punt hem detectat l'error? Com ho podem comprovar sense tornar a començar?</li>
+</ul>
+</section><section class="detail-section"><h2>♿ Adaptacions i aprofundiment</h2>
+<p>Fes servir fletxes grans amb pictogrames i limita el primer recorregut a una graella de 3 × 3. Una persona pot donar les ordres assenyalant les cartes en comptes de parlar. Com a ampliació, introdueix una instrucció nova, «repeteix», o demana comparar dues rutes i comptar-ne els girs.</p>
+</section><section class="detail-section"><h2>✅ Evidències observables</h2>
+<p>Registra si l'equip ha acordat l'orientació, si executa una instrucció cada vegada i si pot rectificar una sola ordre justificant el canvi. Tanca demanant que un membre expliqui la ruta sense moure la fitxa.</p>
+</section></div>
+</article>
   </main>
-
   <footer class="footer">
-    <div class="container">
-      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
-    </div>
+    <div class="container"><p>Robòtica<sup>200</sup> • Robòtica per a docents</p></div>
   </footer>
-
   <script src="js/theme.js"></script>
 </body>
 </html>

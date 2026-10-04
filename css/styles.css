@@ -1,7 +1,5 @@
 /* css/styles.css - Disseny minimalista, ampli i de baixa densitat d'informació */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap');
-
 :root {
   --font-heading: 'Sora', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -251,6 +249,10 @@ body {
 }
 
 .home-hero-icon {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
   width: 5.5rem;
   height: 5.5rem;
   margin: 0 auto 1.25rem;
@@ -258,6 +260,12 @@ body {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.home-hero-icon:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 5px;
+  border-radius: var(--radius-md);
 }
 
 .home-hero-icon:hover {
@@ -638,7 +646,7 @@ body {
   flex-shrink: 0;
 }
 
-.view-header h2 {
+.view-header h1, .view-header h2 {
   font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: -0.02em;
@@ -1007,6 +1015,19 @@ body {
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.2;
+}
+
+.robot-profile-heading {
+  display: flex;
+  align-items: center;
+  gap: .65rem;
+}
+
+.robot-profile-icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  flex: 0 0 auto;
 }
 
 .robot-profile-sub {

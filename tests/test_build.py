@@ -27,7 +27,11 @@ class BuildTests(unittest.TestCase):
         count = build(self.root)
         sources = list((self.root / 'content').rglob('*.md'))
         self.assertEqual(count, len(sources))
-        self.assertEqual({p.stem for p in sources}, {p.stem for p in self.out.glob('*.html')})
+        _, groups = load_content(self.root)
+        expected_urls = {url for items in groups.values() for item in items for url in [item['url'], *item['aliases']]}
+        self.assertEqual({url.removesuffix('.html') for url in expected_urls}, {p.stem for p in self.out.glob('*.html')})
+        self.assertTrue((self.out / 'robot-coding-express.html').exists())
+        self.assertTrue((self.out / 'robot-lego-coding-express.html').exists())
         snapshot = {p.relative_to(self.out): p.read_bytes() for p in self.out.rglob('*') if p.is_file()}
         build(self.root)
         self.assertEqual(snapshot, {p.relative_to(self.out): p.read_bytes() for p in self.out.rglob('*') if p.is_file()})
@@ -114,7 +118,7 @@ class BuildTests(unittest.TestCase):
     def test_template_typo_fails_without_replacing_output(self):
         build(self.root)
         previous = (self.out / 'index.html').read_bytes()
-        self.edit('templates/home.html', '{{ page.title }}', '{{ page.typo }}')
+        self.edit('templates/home.html', '{{ page.body }}', '{{ page.typo }}')
         with self.assertRaises(UndefinedError):
             build(self.root)
         self.assertEqual(previous, (self.out / 'index.html').read_bytes())

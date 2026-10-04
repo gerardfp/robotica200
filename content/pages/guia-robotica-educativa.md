@@ -54,7 +54,7 @@ Els sistemes tangibles connecten peces físiques amb accions. Permeten explorar 
 - Demana que l’equip expliqui què representa cada peça.
 
 
-[Explora Coding Express](robot-lego-coding-express.html)
+[Explora Coding Express](robot-coding-express.html)
 
 ### 📟 Mesurar i respondre
 

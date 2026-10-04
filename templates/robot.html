@@ -6,7 +6,7 @@
     <div class="robot-profile-media"><img src="{{ page.image }}" alt="{{ page.name }}" width="600" height="448" class="robot-profile-avatar"></div>
     <div>
       <span class="tag-badge primary robot-age">{{ page.age }}</span>
-      <h1 class="robot-profile-title">{{ page.icon }} {{ page.name }}</h1>
+      <div class="robot-profile-heading">{% if page.get('robot_icon') %}<img src="{{ page.robot_icon }}" alt="" class="robot-profile-icon">{% endif %}<h1 class="robot-profile-title">{{ page.name }}</h1></div>
     </div>
   </div>
   <p class="robot-profile-sub">{{ page.description }}</p>
@@ -23,10 +23,6 @@
   {% endif %}
   <div class="robot-specs-list">{% for spec in page.specs %}<span class="robot-spec-pill">{{ spec }}</span>{% endfor %}</div>
 </div>
-<figure class="robot-learning-loop">
-  <img src="assets/imatges/robotica-aula.webp" alt="El robot Codey Rocky, blanc i amb erugues turquesa, al costat de blocs de colors." width="1440" height="480">
-  <figcaption>Una bona sessió deixa temps per predir, provar i explicar què s'ha après.</figcaption>
-</figure>
 <div class="robot-tutorials-heading">
   <h2>Tutorials de {{ page.name }}</h2>
   <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>

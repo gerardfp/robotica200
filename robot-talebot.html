@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TaleBot - Robòtica Educativa | Robòtica²⁰⁰</title>
+  <title>TaleBot - Robòtica Educativa | Robòtica200</title>
   <meta name="description" content="El robot narrador que parla, llegeix mapes interactius i dibuixa">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,102 +15,87 @@
   <header class="header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="" class="logo-badge-img"></span>
         <div class="logo-text">
           <span class="logo-name">Robòtica<sup>200</sup></span>
           <span class="logo-subtitle">Robòtica per a docents</span>
         </div>
       </a>
-
       <nav class="header-nav" aria-label="Navegació principal">
-        <a href="index.html" class="nav-btn ">Inici</a>
-        <a href="pensament-computacional.html" class="nav-btn ">Pensament computacional</a>
+        <a href="index.html" class="nav-btn">Inici</a>
+        <a href="pensament-computacional.html" class="nav-btn">Pensament computacional</a>
         <a href="robotica.html" class="nav-btn active">Robòtica</a>
-        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn">Situacions d&#39;aprenentatge</a>
       </nav>
-
       <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
-        <span id="theme-icon">🌙</span>
+        <span id="theme-icon" aria-hidden="true">🌙</span>
       </button>
     </div>
   </header>
-
   <main class="container page-content">
     <div class="section-nav-back">
       <a href="robotica.html" class="btn-back">← Tornar a Robòtica</a>
     </div>
-
-    <div class="robot-profile">
-      <div class="robot-profile-top">
-        <div class="robot-profile-media">
-          <img src="assets/icons/talebot.png" alt="TaleBot" class="robot-profile-avatar">
-        </div>
-        <div>
-          <span class="tag-badge primary" style="margin-bottom: 0.35rem; display: inline-block;">Infantil i Cicle Inicial (3-7 anys)</span>
-          <h1 class="robot-profile-title">TaleBot</h1>
-        </div>
-      </div>
-      <p class="robot-profile-sub">El robot narrador que parla, llegeix mapes interactius i dibuixa</p>
-      <p class="robot-profile-desc">TaleBot Pro és un robot tangible pensat per desenvolupar el pensament computacional, el llenguatge oral i la creativitat. Reconeix mapes temàtics mitjançant un sensor òptic OID, permet enregistrar la pròpia veu a cada casella i dibuixa figures geomètriques amb retoladors.</p>
-      <div class="robot-specs-list">
-        <span class="robot-spec-pill">✓ Botons superiors direccionals</span>
-        <span class="robot-spec-pill">✓ Sensor OID de lectura de mapes</span>
-        <span class="robot-spec-pill">✓ Micròfon i altaveu integrats</span>
-        <span class="robot-spec-pill">✓ Suport de retoladors per dibuix</span>
-      </div>
+<div class="robot-profile">
+  <div class="robot-profile-top">
+    <div class="robot-profile-media"><img src="assets/robots/talebot.jpg" alt="TaleBot" width="600" height="448" class="robot-profile-avatar"></div>
+    <div>
+      <span class="tag-badge primary robot-age">Infantil i Cicle Inicial (3-7 anys)</span>
+      <div class="robot-profile-heading"><img src="assets/icons/talebot.png" alt="" class="robot-profile-icon"><h1 class="robot-profile-title">TaleBot</h1></div>
     </div>
-
-    <div class="robot-tutorials-heading">
-      <h3>Tutorials de TaleBot</h3>
-      <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
-    </div>
-
-    <div class="clean-grid">
-      <a href="tutorial-tb-primeres-passes.html" class="item-card">
-        <div class="card-top">
-          <span class="tag-badge primary">Iniciació</span>
-          <span class="tag-badge">30 min</span>
-        </div>
-        <h4 class="item-title">Primeres passes: Botons direccionals i la tecla Delete</h4>
-        <p class="item-desc">Descobrir els comandaments bàsics de TaleBot, la mesura del seu pas (10 cm) i la importància de buidar la memòria.</p>
-        <div class="item-footer">
-          <span>Pas a pas d'aula</span>
-          <span>Obrir tutorial →</span>
-        </div>
-      </a>
-      <a href="tutorial-tb-reconeixement-veu.html" class="item-card">
-        <div class="card-top">
-          <span class="tag-badge primary">Iniciació</span>
-          <span class="tag-badge">40 min</span>
-        </div>
-        <h4 class="item-title">Reconeixement i enregistrament de veu</h4>
-        <p class="item-desc">Gravar pistes d'àudio i diàlegs personalitzats amb la veu de l'alumnat a cada etapa del recorregut.</p>
-        <div class="item-footer">
-          <span>Pas a pas d'aula</span>
-          <span>Obrir tutorial →</span>
-        </div>
-      </a>
-      <a href="tutorial-tb-motors-sensors.html" class="item-card">
-        <div class="card-top">
-          <span class="tag-badge primary">Intermedi</span>
-          <span class="tag-badge">45 min</span>
-        </div>
-        <h4 class="item-title">Motors i sensors: Dibuix geomètric amb retoladors</h4>
-        <p class="item-desc">Inserir dos retoladors a les ales de TaleBot per traçar formes geomètriques de colors exactes sobre paper continu.</p>
-        <div class="item-footer">
-          <span>Pas a pas d'aula</span>
-          <span>Obrir tutorial →</span>
-        </div>
-      </a>
-    </div>
+  </div>
+  <p class="robot-profile-sub">El robot narrador que parla, llegeix mapes interactius i dibuixa</p>
+  <div class="robot-profile-desc"><p>TaleBot Pro és un robot tangible pensat per desenvolupar el pensament computacional, el llenguatge oral i la creativitat. Reconeix mapes temàtics mitjançant un sensor òptic OID, permet enregistrar la pròpia veu a cada casella i dibuixa figures geomètriques amb retoladors.</p>
+<section class="detail-section"><h2>Un mapa que convida a explicar</h2>
+<p>Tale-Bot Pro dona al grup un punt de partida per unir seqüències de moviment, llenguatge oral, orientació en una quadrícula i narració. Mantingues la història en mans dels infants: el robot és un personatge més, no qui decideix com acaba.</p>
+<div class="lesson-step"><h3>Organització de la sessió</h3>
+<ul>
+<li>Col·loca el mapa sobre una superfície plana i acorda on comencen i acaben les ordres.</li>
+<li>En una primera ronda, l'alumnat mou un marcador sobre el paper mentre una persona llegeix les ordres.</li>
+<li>Quan el pla queda clar, traslladeu-lo als botons del robot i feu una prova curta.</li>
+<li>Canvieu els rols de narrador, programador i observador abans de revisar la història.</li>
+</ul>
+</div><div class="lesson-step"><h3>Preguntes que ajuden a seqüenciar</h3>
+<p>«Què ha de passar abans que el personatge arribi aquí?», «quantes ordres es repeteixen?» i «què canviaries perquè la història tingui un altre final?» permeten parlar d'algorismes sense perdre la narrativa.</p>
+<p>Les ordres físiques, la seqüenciació, els bucles, els indicadors de color i l'enregistrament de veu depenen del model. Confirma quina versió tens i no enregistres cap veu sense acordar-ho amb els infants i el centre. <a href="https://matatalab.com/en/node/774">Informació oficial de Tale-Bot Pro</a>.</p>
+</div></section></div>
+  <section class="robot-official-resources" aria-labelledby="official-resources-heading">
+    <h2 id="official-resources-heading">Recursos oficials del fabricant</h2>
+    <p>Per consultar materials, compatibilitat i instruccions actualitzades. Les activitats de Robòtica200 són adaptacions pròpies.</p>
+    <ul><li><a href="https://matatalab.com/en/node/808">Curs oficial de Tale-Bot Pro</a><span>Ús del robot, targetes d’activitat i disseny de propostes pròpies.</span></li><li><a href="https://matatalab.com/en/activity">Catàleg d’activitats de Matatalab</a><span>Filtra les activitats i comprova per a quin producte s’han dissenyat.</span></li></ul>
+  </section>
+  <div class="robot-specs-list"><span class="robot-spec-pill">✓ Botons superiors direccionals</span><span class="robot-spec-pill">✓ Sensor OID de lectura de mapes</span><span class="robot-spec-pill">✓ Micròfon i altaveu integrats</span><span class="robot-spec-pill">✓ Suport de retoladors per dibuix</span></div>
+</div>
+<div class="robot-tutorials-heading">
+  <h2>Tutorials de TaleBot</h2>
+  <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
+</div>
+<div class="clean-grid"><a id="tutorial-tb-primeres-passes" href="tutorial-tb-primeres-passes.html" class="item-card">
+  <div class="card-top">
+<span class="tag-badge primary">Iniciació</span><span class="tag-badge">⏱️ 30 min</span>  </div>
+  <h3 class="item-title">Primeres passes: Botons direccionals i la tecla Delete</h3>
+  <p class="item-desc">Descobrir els comandaments bàsics de TaleBot, la mesura del seu pas (10 cm) i la importància de buidar la memòria.</p>
+  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
+</a>
+<a id="tutorial-tb-reconeixement-veu" href="tutorial-tb-reconeixement-veu.html" class="item-card">
+  <div class="card-top">
+<span class="tag-badge primary">Iniciació</span><span class="tag-badge">⏱️ 40 min</span>  </div>
+  <h3 class="item-title">Reconeixement i enregistrament de veu</h3>
+  <p class="item-desc">Gravar pistes d&#39;àudio i diàlegs personalitzats amb la veu de l&#39;alumnat a cada etapa del recorregut.</p>
+  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
+</a>
+<a id="tutorial-tb-motors-sensors" href="tutorial-tb-motors-sensors.html" class="item-card">
+  <div class="card-top">
+<span class="tag-badge primary">Intermedi</span><span class="tag-badge">⏱️ 45 min</span>  </div>
+  <h3 class="item-title">Motors i sensors: Dibuix geomètric amb retoladors</h3>
+  <p class="item-desc">Inserir dos retoladors a les ales de TaleBot per traçar formes geomètriques de colors exactes sobre paper continu.</p>
+  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
+</a>
+</div>
   </main>
-
   <footer class="footer">
-    <div class="container">
-      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
-    </div>
+    <div class="container"><p>Robòtica<sup>200</sup> • Robòtica per a docents</p></div>
   </footer>
-
   <script src="js/theme.js"></script>
 </body>
 </html>

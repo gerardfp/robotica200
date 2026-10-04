@@ -9,7 +9,10 @@ specs:
 - ✓ Llums LED frontals
 - ✓ Altaveu amb sons reals de tren
 - ✓ Motor elèctric suau Push & Go
-image: assets/robots/lego-coding-express.jpg
+image: assets/robots/coding-express.jpg
+url: robot-coding-express.html
+aliases:
+  - robot-lego-coding-express.html
 status_note: El fabricant marca Coding Express com a producte retirat. Les propostes són per als centres
   que ja tenen el tren; comprova l’estat de l’app i els recursos disponibles per al teu dispositiu.
 status_source: https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/

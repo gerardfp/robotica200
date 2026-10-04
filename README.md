@@ -2,7 +2,7 @@
 
 Web educativa estática generada con **Python, Markdown y plantillas Jinja**. El contenido se edita en `content/`; el generador crea las páginas, los catálogos y sus enlaces en `dist/`.
 
-Se mantienen las 45 URL de la web original, las portadas, los tres apartados, el modo claro/oscuro, los filtros combinables y las vistas completas con botón de vuelta. Las situaciones admiten varios ciclos y conservan los filtros al volver desde el detalle. No se utilizan modales ni servicios externos en el navegador.
+Se mantienen las URL de la web, las portadas, los tres apartados, el modo claro/oscuro, los filtros combinables y las vistas completas con botón de vuelta. Las situaciones admiten varios ciclos y conservan los filtros al volver desde el detalle. No se utilizan modales, APIs ni analítica externa; las tipografías se cargan desde Google Fonts con fuentes de sistema como alternativa.
 
 ## Uso local
 

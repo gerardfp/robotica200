@@ -30,6 +30,11 @@ CATALOGS = {'robots': 'robotica.html', 'activitats': 'pensament-computacional.ht
 BACK_LABELS = {'robots': 'Robòtica', 'activitats': 'Pensament Computacional',
                'situacions': "Situacions d'Aprenentatge"}
 MARKER = '.robotica200-build'
+ROBOT_ICON_FILES = {
+    'talebot': 'talebot.png', 'codingset': 'codingset.png',
+    'codeyrocky': 'codeyrocky.png', 'microbit': 'microbit.png',
+    'spike': 'spike.png', 'lego-coding-express': 'coding-express.png',
+}
 
 
 class ContentError(ValueError):
@@ -126,15 +131,21 @@ def load_content(root):
                 raise ContentError(f'{source}: el cuerpo Markdown está vacío.')
             if not re.fullmatch(r'[a-z0-9][a-z0-9-]*', path.stem):
                 raise ContentError(f'{source}: el nombre debe usar minúsculas, números y guiones.')
-            url = path.stem + '.html'
-            if url in urls:
-                raise ContentError(f'{source}: URL duplicada: {url}')
-            urls.add(url)
+            url = data.pop('url', path.stem + '.html')
+            aliases = data.pop('aliases', [])
+            if not isinstance(url, str) or not re.fullmatch(r'[a-z0-9][a-z0-9-]*\.html', url):
+                raise ContentError(f'{source}: url ha de ser un nom de pàgina HTML vàlid.')
+            if not isinstance(aliases, list) or any(not isinstance(alias, str) or not re.fullmatch(r'[a-z0-9][a-z0-9-]*\.html', alias) for alias in aliases):
+                raise ContentError(f'{source}: aliases ha de ser una llista de noms de pàgina HTML vàlids.')
+            for page_url in [url, *aliases]:
+                if page_url in urls:
+                    raise ContentError(f'{source}: URL duplicada: {page_url}')
+                urls.add(page_url)
             if type(data.get('order', 100)) is not int:
                 raise ContentError(f'{source}: order debe ser un entero.')
             if group == 'pages':
                 data['catalog'] = data.pop('collection', None)
-            data.update(collection=group, url=url, slug=path.stem, source=source,
+            data.update(collection=group, url=url, aliases=aliases, slug=path.stem, source=source,
                         body=render_markdown(match[2]), back=data.get('back'))
             data.setdefault('order', 100)
             groups[group].append(data)
@@ -148,6 +159,9 @@ def load_content(root):
         if not isinstance(robot.get('specs'), list) or not all(isinstance(x, str) for x in robot['specs']):
             raise ContentError(f"{robot['source']}: specs debe ser una lista de textos.")
         robots[robot['slug'].removeprefix('robot-')] = robot
+        icon_file = ROBOT_ICON_FILES.get(robot['slug'].removeprefix('robot-'))
+        if icon_file:
+            robot['robot_icon'] = f'assets/icons/{icon_file}'
     for group, entries in groups.items():
         for item in entries:
             if 'seo_title' not in item:
@@ -199,6 +213,8 @@ def load_content(root):
                         raise ContentError(f'{source}: falta la lista pillars.')
                     for pillar in item['pillars']:
                         require(pillar, ('href', 'icon', 'title', 'description', 'action'), source)
+                        if pillar.get('image') and not (root / pillar['image']).is_file():
+                            raise ContentError(f'{source}: imatge de portada inexistent: {pillar["image"]}')
                         for field in ('description', 'action'):
                             pillar[field] = pillar[field].replace('{robot_count}', str(len(robots)))
                 item['active'] = item.get('active', item['url'])
@@ -237,6 +253,7 @@ def load_content(root):
                             badges=[labels['robot'][item['robot']], item['cycle_label'], item.get('subject_label', labels['materia'][item['subject']]), '⏱️ ' + item['duration']],
                             theme_label=item.get('theme_label', labels['tematica'][item['theme']]),
                             card_footer='⏱️ ' + item['duration'], card_action='Veure situació →')
+                item['robot_icon'] = robots.get(item['robot'], {}).get('robot_icon', '')
     required = {'index.html', *CATALOGS.values()}
     if not required <= {p['url'] for p in groups['pages']}:
         raise ContentError('Faltan las páginas de inicio o de catálogo en content/pages/.')
@@ -317,6 +334,8 @@ def build(root=ROOT, output=None):
                     template = 'detail'
                 html = env.get_template(template + '.html').render(site=site, page=item, entries=entries)
                 (staging / item['url']).write_text(html + '\n', encoding='utf-8')
+                for alias in item['aliases']:
+                    (staging / alias).write_text(html + '\n', encoding='utf-8')
         (staging / '.nojekyll').touch()
         validate_output(staging)
         files = sorted(str(p.relative_to(staging)) for p in staging.rglob('*') if p.is_file())

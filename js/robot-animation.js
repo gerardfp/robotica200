@@ -77,9 +77,6 @@
     // Interacció manual: en fer clic sobre el robot, fa un salt alegre immediat
     var heroIcon = document.querySelector('.home-hero-icon');
     if (heroIcon) {
-      heroIcon.setAttribute('title', 'Fes clic per interactuar amb el robot!');
-      heroIcon.style.cursor = 'pointer';
-
       heroIcon.addEventListener('click', function () {
         if (timerId) clearTimeout(timerId);
         isAnimating = false;

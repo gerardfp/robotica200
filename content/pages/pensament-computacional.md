@@ -4,6 +4,7 @@ seo_title: Pensament Computacional Desendollat | Robòtica200
 description: Activitats desendollades de pensament computacional per a l'aula.
 layout: catalog
 collection: activitats
+section_icon: assets/icons/pensament-computacional.png
 hero_width: 1440
 hero_height: 720
 hero_image: assets/imatges/pensament-computacional-aula.webp

@@ -3,7 +3,7 @@
 <article class="detail-page-card">
   <div class="detail-page-header">
     <div class="detail-page-badges">
-      {% for badge in page.badges %}<span class="tag-badge{% if loop.first %} primary{% endif %}">{{ badge }}</span>{% endfor %}
+      {% for badge in page.badges %}<span class="tag-badge{% if loop.first %} primary{% endif %}">{% if page.collection == 'situacions' and loop.first and page.get('robot_icon') %}<img src="{{ page.robot_icon }}" alt="" class="tag-badge-icon">{% endif %}{{ badge }}</span>{% endfor %}
     </div>
     <h1 class="detail-page-title">{{ page.title }}</h1>
     {% if page.collection == 'tutorials' %}<p class="detail-intro">{{ page.description }}</p>{% endif %}
