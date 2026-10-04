@@ -80,19 +80,6 @@ robotica200/
 
 ---
 
-## 💻 Ús i Visualització Local
-
-Pots obrir directament el fitxer [`index.html`](index.html) amb qualsevol navegador o servir-lo amb qualsevol servidor estàtic senzill:
-
-```bash
-# Servidor local opcional en Python (sense dependències)
-python3 -m http.server 3000
-```
-
-Obre <http://localhost:3000> al navegador.
-
----
-
 ## 🎨 Guia d'Estil i Bones Pràctiques
 
 - **Sense modales ni popups:** Prohibició total de `<dialog>`, popups i overlays. Tota la navegació es fa mitjançant pàgines completes amb botó de retorn accessible.
