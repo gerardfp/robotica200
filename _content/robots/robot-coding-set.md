@@ -1,5 +1,5 @@
 ---
-title: CodingSet
+title: Coding Set
 description: Programació tangible sense pantalles amb Matatalab
 icon: 🧩
 age: Infantil i Primària (4-9 anys)
@@ -9,7 +9,7 @@ specs:
 - ✓ Tauler de programació matricial
 - ✓ Blocs físics de moviment, números i bucles
 - ✓ Robot mòbil amb ulls expressius
-image: _assets/robots/coding-set.jpg
+image: _assets/robots/coding-set.png
 official_resources:
 - title: Catàleg d’activitats de Matatalab
   href: https://matatalab.com/en/activity

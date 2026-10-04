@@ -1,5 +1,5 @@
 ---
-title: CodeyRocky
+title: Codey Rocky
 description: El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues
 icon: 🐼
 age: Primària (6-12 anys)
@@ -10,7 +10,7 @@ specs:
 - ✓ Tracció per erugues
 - ✓ Sensor infraroig i de color
 - ✓ Connexió USB/Bluetooth
-image: _assets/robots/codey-rocky.jpg
+image: _assets/robots/codey-rocky.png
 official_resources:
 - title: Guies i casos de Codey Rocky
   href: https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky
