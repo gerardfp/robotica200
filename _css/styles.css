@@ -946,7 +946,7 @@ guide-page {
   --robot-primary: #e4242b;
   --robot-badge-text: #e4242b;
 }
-.robot-ce .robot-card-media { background-image: url('../_assets/robots/bg-coding-express.svg'); }
+.robot-ce .robot-card-media { background-image: url('../_assets/backgrounds/bg-coding-express.svg'); }
 .robot-ce .dot-1 { background: #e4242b; }
 .robot-ce .dot-2 { background: #fec002; }
 
@@ -958,7 +958,7 @@ guide-page {
   --robot-primary: #fc8439;
   --robot-badge-text: #fc8439;
 }
-.robot-tb .robot-card-media { background-image: url('../_assets/robots/bg-tale-bot.svg'); }
+.robot-tb .robot-card-media { background-image: url('../_assets/backgrounds/bg-tale-bot.svg'); }
 .robot-tb .dot-1 { background: #fc8439; }
 .robot-tb .dot-2 { background: #804cbd; }
 
@@ -970,7 +970,7 @@ guide-page {
   --robot-primary: #fc7813;
   --robot-badge-text: #fc7813;
 }
-.robot-cs .robot-card-media { background-image: url('../_assets/robots/bg-coding-set.svg'); }
+.robot-cs .robot-card-media { background-image: url('../_assets/backgrounds/bg-coding-set.svg'); }
 .robot-cs .dot-1 { background: #fc7813; }
 .robot-cs .dot-2 { background: #60a62d; }
 
@@ -982,7 +982,7 @@ guide-page {
   --robot-primary: #0079dc;
   --robot-badge-text: #0079dc;
 }
-.robot-cr .robot-card-media { background-image: url('../_assets/robots/bg-codey-rocky.svg'); }
+.robot-cr .robot-card-media { background-image: url('../_assets/backgrounds/bg-codey-rocky.svg'); }
 .robot-cr .dot-1 { background: #0079dc; }
 .robot-cr .dot-2 { background: #fdc80a; }
 
@@ -994,7 +994,7 @@ guide-page {
   --robot-primary: #d82098;
   --robot-badge-text: #d82098;
 }
-.robot-sp .robot-card-media { background-image: url('../_assets/robots/bg-spike.svg'); }
+.robot-sp .robot-card-media { background-image: url('../_assets/backgrounds/bg-spike.svg'); }
 .robot-sp .dot-1 { background: #d82098; }
 .robot-sp .dot-2 { background: #fddc3e; }
 
@@ -1006,7 +1006,7 @@ guide-page {
   --robot-primary: #047fdf;
   --robot-badge-text: #047fdf;
 }
-.robot-mb .robot-card-media { background-image: url('../_assets/robots/bg-microbit.svg'); }
+.robot-mb .robot-card-media { background-image: url('../_assets/backgrounds/bg-microbit.svg'); }
 .robot-mb .dot-1 { background: #047fdf; }
 .robot-mb .dot-2 { background: #4a515d; }
 
