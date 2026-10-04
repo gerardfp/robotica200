@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../_css/styles.css?v=2">
   <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script src="../../_js/cataleg.js"></script>
   <script src="../../_js/components.js"></script>
 </head>
 <body>
@@ -49,42 +50,7 @@
   <h2>Tutorials de Microbit</h2>
   <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
 </div>
-<div class="clean-grid"><a id="tutorial-mb-primeres-passes" href="../../tutorial/mb-primeres-passes/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Iniciació</span><span class="tag-badge">⏱️ 30 min</span>  </div>
-  <h3 class="item-title">Primeres passes: MakeCode, matriu de 25 LEDs i polsadors</h3>
-  <p class="item-desc">Com programar la placa des del navegador web MakeCode sense instal·lar cap programa i descarregar l&#39;arxiu .hex.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-<a id="tutorial-mb-motors-sensors" href="../../tutorial/mb-motors-sensors/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Intermedi</span><span class="tag-badge">⏱️ 50 min</span>  </div>
-  <h3 class="item-title">Motors i sensors: Sensor d&#39;humitat i servomotors</h3>
-  <p class="item-desc">Connectar sensors externs als pins de la vora (P0, P1, P2) amb pinces de cocodril per automatitzar una alarma de reg.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-<a id="tutorial-mb-radio-mesh" href="../../tutorial/mb-radio-mesh/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Intermedi</span><span class="tag-badge">⏱️ 45 min</span>  </div>
-  <h3 class="item-title">Xarxa de ràdio sense fils: Walkie-talkie i sensors remots</h3>
-  <p class="item-desc">Connectar diverses micro:bits de l&#39;aula entre si utilitzant l&#39;antena de ràdio integrada sense necessitat de Wi-Fi.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-<a id="tutorial-mb-so-microfon" href="../../tutorial/mb-so-microfon/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Iniciació</span><span class="tag-badge">⏱️ 35 min</span>  </div>
-  <h3 class="item-title">Micròfon i so: Detector de soroll i aplaudiments (V2)</h3>
-  <p class="item-desc">Utilitzar el micròfon MEMS de la versió 2 per controlar el nivell de decibels de l&#39;aula o encendre un llum en picar de mans.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-<a id="tutorial-mb-fanalet-llum" href="../../tutorial/mb-fanalet-llum/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Iniciació</span><span class="tag-badge">⏱️ 35 min</span>  </div>
-  <h3 class="item-title">micro:bit: un fanalet que respon a la llum</h3>
-  <p class="item-desc">Llegir la llum ambiental amb la matriu LED i encendre una icona quan l’entorn s’enfosqueix.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-</div>
+<tutorial-grid robot="microbit" root="../../"></tutorial-grid>
   </main>
   <site-footer></site-footer>
   <script src="../../_js/theme.js"></script>

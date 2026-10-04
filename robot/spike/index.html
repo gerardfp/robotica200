@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../_css/styles.css?v=2">
   <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script src="../../_js/cataleg.js"></script>
   <script src="../../_js/components.js"></script>
 </head>
 <body>
@@ -51,35 +52,7 @@
   <h2>Tutorials de Spike</h2>
   <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
 </div>
-<div class="clean-grid"><a id="tutorial-sp-primeres-passes" href="../../tutorial/sp-primeres-passes/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Iniciació</span><span class="tag-badge">⏱️ 35 min</span>  </div>
-  <h3 class="item-title">Primeres passes: El Hub intel·ligent i el primer programa</h3>
-  <p class="item-desc">Connexió del Hub per Bluetooth a l&#39;App SPIKE, gestió de la matriu 5x5 de LEDs i bateria recarregable.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-<a id="tutorial-sp-motors-sensors" href="../../tutorial/sp-motors-sensors/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Intermedi</span><span class="tag-badge">⏱️ 50 min</span>  </div>
-  <h3 class="item-title">Motors i sensors: Tren d&#39;engranatges i sensor de color</h3>
-  <p class="item-desc">Muntar un vehicle amb reductora d&#39;engranatges per guanyar força i aturar-lo exactament davant d&#39;una línia vermella.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-<a id="tutorial-sp-brac-sensor-forca" href="../../tutorial/sp-brac-sensor-forca/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Avançat</span><span class="tag-badge">⏱️ 55 min</span>  </div>
-  <h3 class="item-title">Braç robòtic i sensor de força</h3>
-  <p class="item-desc">Construir una pinça que detecti el contacte i utilitzar les lectures del sensor de força per provar un límit programat.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-<a id="tutorial-sp-distancia" href="../../tutorial/sp-distancia/index.html" class="item-card">
-  <div class="card-top">
-<span class="tag-badge primary">Intermedi</span><span class="tag-badge">⏱️ 45 min</span>  </div>
-  <h3 class="item-title">SPIKE Prime: calcular una parada sense tocar l’obstacle</h3>
-  <p class="item-desc">Ajustar el recorregut d’una base motriu amb girs de roda i comparar el càlcul amb una parada per contacte.</p>
-  <div class="item-footer"><span>Pas a pas d&#39;aula</span><span>Obrir tutorial →</span></div>
-</a>
-</div>
+<tutorial-grid robot="spike" root="../../"></tutorial-grid>
   </main>
   <site-footer></site-footer>
   <script src="../../_js/theme.js"></script>

@@ -8,11 +8,21 @@ Portal educatiu obert de robòtica educativa, pensament computacional i situacio
 
 La web està construïda exclusivament amb **HTML5, CSS modern i Web Components natius (Custom Elements)**. Funciona de manera 100% autònoma, tant en servidors web (com GitHub Pages) com en local obrint directament qualsevol fitxer amb doble clic (`file://`).
 
-- **Cero dependències i zero eines de compilació:** No requereix Node, npm, Python ni cap pas de construcció per funcionar o editar.
-- **Reutilització centralitzada (`_js/components.js`):** La capçalera, la navegació, el peu de pàgina i els botons de retorn estan modularitzats com a elements personalitzats estàndard:
-  - `<site-header active="robotica" root="../../"></site-header>`: Capçalera amb logotip, títol, navegació amb pestanya activa i selector de tema clar/fosc.
-  - `<site-footer></site-footer>`: Peu de pàgina unificat.
-  - `<nav-back href="../../robotica/index.html" label="Robòtica"></nav-back>`: Botó de retorn accessible.
+- **Cero dependències i zero eines de compilació:** No requereix Node, npm, ni dependències externes per funcionar. Tot és HTML estàndard i JavaScript natiu executable en local amb doble clic (`file://`).
+- **Reutilització centralitzada (`_js/components.js`):**
+  - **Elements d'estructura:** `<site-header>`, `<site-footer>`, `<nav-back>`.
+  - **Plantilles de pàgina (Layout Components):**
+    - `<activity-page title="..." tag="..." cicle="..." durada="...">`: Plantilla per a activitats desendollades.
+    - `<tutorial-page title="..." robot="..." robot-label="..." dificultat="..." durada="..." intro="...">`: Plantilla per a tutorials tècnics de robots.
+    - `<situation-page title="..." robot="..." cicle="..." materia="..." tematica="..." durada="..." repte="...">`: Plantilla per a situacions d'aprenentatge curriculars.
+    - `<guide-page title="..." tag="...">`: Plantilla per a guies didàctiques.
+  - **Reixes de catàleg automàtiques:**
+    - `<activity-grid root="../"></activity-grid>`: Renderitza automàticament les targetes de pensament computacional.
+    - `<situation-grid root="../"></situation-grid>`: Renderitza la graella de situacions connectada als filtres interactius.
+    - `<tutorial-grid robot="codeyrocky" root="../../"></tutorial-grid>`: Renderitza la llista de tutorials per a cada robot.
+- **Autodescobriment automàtic de continguts (Opció B):**
+  - Per crear un nou contingut (activitat, situació o tutorial), només cal crear la carpeta amb el seu `index.html` utilitzant la plantilla corresponent.
+  - L'script `_scripts/sync-catalog.py` (executat automàticament pel hook de git `pre-commit` o a GitHub Actions) escaneja les carpetes, n'extreu les metadades i actualitza el registre central `_js/cataleg.js`.
 - **Light DOM:** Els components utilitzen el DOM estàndard, de manera que [`_css/styles.css`](_css/styles.css) aplica estils de forma global i coherent a tot el lloc web sense necessitat d'encapsulació aïllada.
 
 ---

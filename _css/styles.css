@@ -97,6 +97,27 @@ body {
   flex-direction: column;
 }
 
+site-header, site-footer, nav-back,
+activity-page, tutorial-page, situation-page, guide-page,
+activity-grid, situation-grid, tutorial-grid {
+  display: block;
+}
+
+activity-page:not(:defined),
+tutorial-page:not(:defined),
+situation-page:not(:defined),
+guide-page:not(:defined) {
+  opacity: 0;
+}
+
+activity-page,
+tutorial-page,
+situation-page,
+guide-page {
+  opacity: 1;
+  transition: opacity 0.15s ease-in;
+}
+
 /* Contenidor central amb molt d'aire */
 .container {
   width: 100%;
