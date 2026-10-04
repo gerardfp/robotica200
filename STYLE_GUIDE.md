@@ -28,20 +28,20 @@ Cada robot es presenta en una targeta amb personalitat cromàtica pròpia i una 
 ### Especificacions Tècniques de la Targeta:
 - **Contenidor exterior:**
   - Fons: Blanc sòlid (`#ffffff`).
-  - Arrodoniment: `border-radius: 22px` - `24px`.
-  - Vora decorativa: `border: 2px solid var(--robot-border)` (feta amb el color primari de cada robot o una variant suau d'aquest).
-  - Ombra suau: `box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05)`.
-  - Transició hover: Lleugera elevació vertical (`translateY(-4px)`) amb increment d'ombra suau.
+  - Arrodoniment: `border-radius: 12px`.
+  - Vora degradada de 4px: `border: 4px solid transparent` amb degradat entre els dos colors oficials de cada robot (`linear-gradient(135deg, var(--robot-c1), var(--robot-c2)) border-box`).
+  - Ombra suau: `box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05)`.
+  - Transició hover: Lleugera elevació vertical (`translateY(-5px)`) amb increment d'ombra suau (`box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12)`).
 - **Àrea d'il·lustració superior (`.robot-card-media`):**
-  - Arrodoniment superior: `border-radius: 20px 20px 0 0`.
-  - Alçada: ~210px - 230px.
-  - **Fons amb composició d'àrees superposades (`.robot-card-media`):** Generat per CSS (sense diagonal simple). El color base dominant (65-70%) actua de fons i sobre ell se superposen dos lòbuls/àrees corbades amb ombra suau en el color secundari (30-35%), acompanyades d'un accent circular superior.
+  - Sense arrodoniment propi (`border-radius: 0`), hereta el retall del pare per `overflow: hidden`.
+  - Aspect ratio: `16 / 11`.
+  - **Fons SVG vectorial isomètric i corbat:** Fons SVG pur (`_assets/robots/bg-[robot].svg`) amb pedestal axonomètric a 30°, línies corbes i combinació tonal dels colors oficials del robot.
   - **Insígnia d'edat flotant (`.robot-age-badge`):**
     - Càpsula flotant a la cantonada superior dreta (`top: 12px; right: 12px`).
     - Fons blanc translúcid (`rgba(255, 255, 255, 0.95)`), `border-radius: 9999px`, padding `4px 12px`.
     - Ombra suau: `box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12)`.
     - Text: Icona de persona `👤` seguida del rang d'edat, acolorit amb el **color primari del robot**.
-- **Vora de la targeta:** Vora sòlida de **4px** (`border: 4px solid var(--card-border)`), que enquadra la targeta amb el color primari de cada robot.
+- **Vora de la targeta:** Vora degradada de **4px** que recorre tot el perímetre de la targeta unint harmònicament els dos colors oficials del robot.
 - **Cos de la targeta (`.robot-card-body`):**
   - **Indicador de 2 punts (`.robot-color-dots`):** Dos cercles (`10px` de diàmetre) situats a dalt a l'esquerra del títol, separats `7px`, que mostren de manera elegant la paleta binària del robot.
   - **Títol (`.robot-card-title`):** Font **Sora**, pes 700 (Bold), mida `1.25rem`, color fosc de contrast (`#0f172a`).

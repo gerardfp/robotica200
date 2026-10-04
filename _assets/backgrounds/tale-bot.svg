@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1374 820" preserveAspectRatio="xMidYMid slice" width="1374" height="820">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#FFB27A"/>
+      <stop offset="0.55" stop-color="#FDBE8E"/>
+      <stop offset="1" stop-color="#FDEBDC"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF9440"/>
+      <stop offset="1" stop-color="#F9A867"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#B07FD6"/>
+      <stop offset="0.5" stop-color="#8B52C9"/>
+      <stop offset="1" stop-color="#6F3DB5"/>
+    </linearGradient>
+    <linearGradient id="lilac" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#E7C7EE" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#C58EDF" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="cream" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF4EA"/>
+      <stop offset="1" stop-color="#FBE3D0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.75" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+  </defs>
+
+  <!-- Base -->
+  <rect width="1374" height="820" fill="url(#base)"/>
+
+  <!-- Gran curva naranja a la izquierda -->
+  <path d="M0 40 C 150 70 330 200 420 400 C 470 510 380 560 250 540 C 130 520 50 470 0 430 Z" fill="url(#orange)" opacity="0.95"/>
+
+  <!-- Forma lila clara de transición -->
+  <path d="M760 0 L1374 0 L1374 420 C 1200 470 1020 380 940 250 C 890 170 860 60 760 0 Z" fill="url(#lilac)"/>
+
+  <!-- Forma morada principal -->
+  <path d="M1110 0 L1374 0 L1374 700 L920 700 C 790 700 730 630 770 550 C 810 470 910 440 940 340 C 970 240 960 90 1110 0 Z" fill="url(#purple)"/>
+
+  <!-- Reflejo suave dentro del morado -->
+  <path d="M1010 120 C 1080 60 1200 70 1374 140 L1374 330 C 1230 260 1090 280 1000 350 C 960 290 960 190 1010 120 Z" fill="#FFFFFF" opacity="0.10"/>
+
+  <!-- Barrido crema inferior -->
+  <path d="M0 540 C 250 470 520 520 760 640 C 860 690 960 740 1100 760 L1374 760 L1374 820 L0 820 Z" fill="url(#cream)"/>
+  <path d="M0 640 C 220 590 470 640 700 740 L760 820 L0 820 Z" fill="#FFFFFF" opacity="0.35"/>
+
+  <!-- Brillo suave -->
+  <ellipse cx="480" cy="600" rx="420" ry="200" fill="url(#glow)"/>
+
+  <!-- Sombra difusa bajo la forma morada -->
+  <ellipse cx="900" cy="705" rx="260" ry="26" fill="#6F3DB5" opacity="0.18" filter="url(#soft)"/>
+</svg>

@@ -26,8 +26,8 @@
 
 ## 🎴 Sistema de Targetes i Paletes de 2 Colors per Robot
 - Cada robot té una **paleta de dos colors associats amb proporcions oficials**, que s'utilitzen per:
-  1. El fons de la imatge generat per CSS amb **composició d'àrees superposades** (sense diagonal simple): Color 1 dominant (65-70%) i Color 2 superposat (30-35%).
-  2. La vora de la targeta (**gruix de 4px**: `border: 4px solid var(--card-border)`).
+  1. El fons de la imatge generat amb fitxers vectorials SVG purs (`_assets/robots/bg-[robot].svg`) amb toc isomètric a 30°, línies corbes i diferents tonalitats.
+  2. La vora de la targeta (**gruix de 4px degradat** entre els 2 colors de cada robot, `border-radius: 12px` al `.robot-card` i sense border-radius a `.robot-card-media`).
   3. L'indicador de 2 punts cromàtics (`.robot-color-dots`) sobre el títol.
   4. La píndola flotant d'edat a la cantonada superior dreta (`👤 X anys`).
 - **Paletes Oficials:**

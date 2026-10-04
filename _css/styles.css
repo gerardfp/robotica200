@@ -783,26 +783,31 @@ guide-page {
   object-fit: contain;
 }
 
-/* Targeta de Robot Redissenyada (vores 4px i composició d'àrees superposades) */
+/* Targeta de Robot Redissenyada (vora degradada 4px, border-radius 12px) */
 .robot-card {
   padding: 0;
-  border-radius: 24px;
-  border: 4px solid var(--card-border, var(--border-color));
-  background: var(--bg-card);
+  border-radius: 12px;
+  border: 4px solid transparent;
+  background: 
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, var(--robot-c1), var(--robot-c2)) border-box;
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  -webkit-background-clip: padding-box, border-box;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease;
   position: relative;
   text-decoration: none;
   color: inherit;
+  isolation: isolate;
 }
 
 .robot-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
-  border-color: var(--card-border);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
 }
 
 /* Àrea d'imatge superior amb fons vectorial SVG isomètric i corbat */
@@ -810,7 +815,7 @@ guide-page {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 11;
-  border-radius: 20px 20px 0 0;
+  border-radius: 0;
   overflow: hidden;
   margin-bottom: 0;
   display: flex;
