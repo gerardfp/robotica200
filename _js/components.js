@@ -112,7 +112,7 @@
             <nav class="header-nav" aria-label="Navegació principal">
               <a href="${root}index.html" class="nav-btn ${active === 'inici' ? 'active' : ''}">Inici</a>
               <a href="${root}pensament-computacional/index.html" class="nav-btn ${active === 'pensament' ? 'active' : ''}">Pensament computacional</a>
-              <a href="${root}robots/index.html" class="nav-btn ${active === 'robots' || active === 'robotica' ? 'active' : ''}">Robots</a>
+              <a href="${root}robots/index.html" class="nav-btn ${active === 'robots' || active === 'robotica' ? 'active' : ''}">Robòtica educativa</a>
               <a href="${root}situacions-aprenentatge/index.html" class="nav-btn ${active === 'situacions' ? 'active' : ''}">Situacions d'aprenentatge</a>
             </nav>
           </div>
