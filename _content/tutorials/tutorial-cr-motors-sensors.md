@@ -2,7 +2,7 @@
 title: 'Motors i sensors: Esquivador d''obstacles amb infrarojos'
 description: Utilitzar les erugues de Rocky i el sensor frontal per aturar-se o girar abans de xocar contra una
   paret.
-robot: codeyrocky
+robot: codey-rocky
 level: Intermedi
 duration: 45 min
 order: 2

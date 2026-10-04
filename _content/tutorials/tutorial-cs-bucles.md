@@ -1,7 +1,7 @@
 ---
 title: Bucles de repetició i estructures de control
 description: Empaquetar conjunts d'instruccions dins de blocs de bucle per crear figures regulars i camins repetitius.
-robot: codingset
+robot: coding-set
 level: Intermedi
 duration: 45 min
 order: 3

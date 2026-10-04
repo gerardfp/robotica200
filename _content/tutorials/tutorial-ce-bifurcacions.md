@@ -2,7 +2,7 @@
 title: Canvis d'agulla i bifurcacions en Y
 description: Utilitzar peces de canvi de via per crear rutes alternatives i prendre decisions de transport segons
   el destí.
-robot: lego-coding-express
+robot: coding-express
 level: Intermedi
 duration: 45 min
 order: 3

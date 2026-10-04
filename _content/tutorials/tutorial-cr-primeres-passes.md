@@ -1,7 +1,7 @@
 ---
 title: 'Primeres passes: Connexió a mBlock 5 i cares a la matriu LED'
 description: Connectar Codey al software de l'ordinador o tauleta i programar animacions facials i missatges lliscants.
-robot: codeyrocky
+robot: codey-rocky
 level: Iniciació
 duration: 35 min
 order: 1

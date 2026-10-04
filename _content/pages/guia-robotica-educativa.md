@@ -44,7 +44,7 @@ Els robots de terra fan visible l’ordre de les instruccions i la relació entr
 - Compara la ruta prevista amb la ruta real.
 
 
-[Mira Tale-Bot Pro](robot-talebot.html)
+[Mira Tale-Bot Pro](robot-tale-bot.html)
 
 ### 🧩 Codificar amb objectes
 
@@ -84,7 +84,7 @@ Per a primeres experiències, valora la mida dels botons, la retroacció visual 
 - Planifica rols perquè tothom prengui decisions.
 
 
-[Consulta Matatalab](robot-codingset.html)
+[Consulta Matatalab](robot-coding-set.html)
 
 ### 🧰 Comprovar disponibilitat
 
@@ -94,7 +94,7 @@ Els models, accessoris, versions d’app i sistemes operatius canvien. Fes una p
 - No pressuposis que tots els kits del mateix nom són idèntics.
 
 
-[Consulta Codey Rocky](robot-codeyrocky.html)
+[Consulta Codey Rocky](robot-codey-rocky.html)
 
 ## 02 · CICLE D’ENGINYERIA — Una rutina curta que aprofundeix l’aprenentatge
 

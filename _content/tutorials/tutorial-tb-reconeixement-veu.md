@@ -1,7 +1,7 @@
 ---
 title: Reconeixement i enregistrament de veu
 description: Gravar pistes d'àudio i diàlegs personalitzats amb la veu de l'alumnat a cada etapa del recorregut.
-robot: talebot
+robot: tale-bot
 level: Iniciació
 duration: 40 min
 order: 2

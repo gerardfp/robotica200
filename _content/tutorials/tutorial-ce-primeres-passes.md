@@ -2,7 +2,7 @@
 title: 'Primeres passes: El circuit bàsic i el motor Push & Go'
 description: Com encendre la locomotora, comprendre la mecànica 'empeny per arrencar i atura amb la mà' i muntar
   el primer circuit tancat de vies.
-robot: lego-coding-express
+robot: coding-express
 level: Iniciació
 duration: 30 min
 order: 1

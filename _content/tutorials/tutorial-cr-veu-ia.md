@@ -2,7 +2,7 @@
 title: Reconeixement de veu i Intel·ligència Artificial
 description: Utilitzar l'extensió de Serveis Cognitius per controlar el moviment del robot mitjançant ordres de
   veu en català.
-robot: codeyrocky
+robot: codey-rocky
 level: Avançat
 duration: 50 min
 order: 3

@@ -2,7 +2,7 @@
 title: La Línia Verda del Tren Sostenible
 description: Com podem crear una línia de tren que connecti les parades i ajudi a comparar distàncies i recorreguts
   entre el camp i la ciutat?
-robot: lego-coding-express
+robot: coding-express
 cycles:
 - infantil
 cycle_label: Educació Infantil (3-5 anys)

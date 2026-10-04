@@ -2,7 +2,7 @@
 title: 'La Festa dels Autòmats: Art i Programació'
 description: Podem sincronitzar una colla de robots perquè ballin una cançó tradicional al compàs de la música amb
   llums i disfresses creades per nosaltres?
-robot: codeyrocky
+robot: codey-rocky
 cycles:
 - cicle-inicial
 - cicle-mitja

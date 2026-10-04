@@ -26,6 +26,13 @@
 - **Estil visual:** Lineless estricte (sense contorns ni línies negres), acabat mat (sense brillantors ni reflexos), colors plans uniformes (sense degradats ni ombrejats suaus), sense cap ombra al terra.
 - **Fons Transparent:** Format PNG amb canal alfa transparent completament net, sense halos ni vores d'adhesiu.
 - **Mida i Ubicació:** `_assets/icons/[robot].png` a 512 × 512 px.
+- **Noms oficials i slugs:**
+  - `Coding Express` (`coding-express`) — Prefix tutorials: `ce-`
+  - `Tale-Bot` (`tale-bot`) — Prefix tutorials: `tb-`
+  - `Coding Set` (`coding-set`) — Prefix tutorials: `cs-`
+  - `Codey Rocky` (`codey-rocky`) — Prefix tutorials: `cr-`
+  - `Spike` (`spike`) — Prefix tutorials: `sp-`
+  - `Micro:bit` (`microbit`) — Prefix tutorials: `mb-`
 
 ## 🚩 Banners i Icones de Seccions Temàtiques
 - **Seccions:** *Pensament computacional*, *Robòtica* i *Situacions d'aprenentatge*.

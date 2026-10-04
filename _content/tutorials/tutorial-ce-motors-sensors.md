@@ -2,7 +2,7 @@
 title: 'Motors i sensors: Els maons d''acció de colors'
 description: Descobrir la relació causa-efecte col·locant els 5 maons de colors a les vies per activar sensors,
   sons i canvis de marxa.
-robot: lego-coding-express
+robot: coding-express
 level: Iniciació
 duration: 45 min
 order: 2

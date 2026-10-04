@@ -1,7 +1,7 @@
 ---
 title: "El bucle ferroviari: repetir un recorregut"
 description: Explorar la repetició amb una via tancada, fer prediccions i comparar el bucle físic amb una seqüència d’accions.
-robot: lego-coding-express
+robot: coding-express
 level: Iniciació
 duration: 40 min
 order: 4

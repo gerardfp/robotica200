@@ -19,11 +19,26 @@ La web està construïda exclusivament amb **HTML5, CSS modern i Web Components 
   - **Reixes de catàleg automàtiques:**
     - `<activity-grid root="../"></activity-grid>`: Renderitza automàticament les targetes de pensament computacional.
     - `<situation-grid root="../"></situation-grid>`: Renderitza la graella de situacions connectada als filtres interactius.
-    - `<tutorial-grid robot="codeyrocky" root="../../"></tutorial-grid>`: Renderitza la llista de tutorials per a cada robot.
+    - `<tutorial-grid robot="codey-rocky" root="../../"></tutorial-grid>`: Renderitza la llista de tutorials per a cada robot.
 - **Autodescobriment automàtic de continguts (Opció B):**
   - Per crear un nou contingut (activitat, situació o tutorial), només cal crear la carpeta amb el seu `index.html` utilitzant la plantilla corresponent.
   - L'script `_scripts/sync-catalog.py` (executat automàticament pel hook de git `pre-commit` o a GitHub Actions) escaneja les carpetes, n'extreu les metadades i actualitza el registre central `_js/cataleg.js`.
 - **Light DOM:** Els components utilitzen el DOM estàndard, de manera que [`_css/styles.css`](_css/styles.css) aplica estils de forma global i coherent a tot el lloc web sense necessitat d'encapsulació aïllada.
+
+---
+
+## 🤖 Robots Oficials i Slugs
+
+Els 6 robots oficials del projecte i els seus identificadors únics (slugs) normalitzats a tot el repositori:
+
+| Robot | Slug Oficial | Prefix Tutorials | Carpeta Fitxa | Carpetes de Tutorials |
+| :--- | :--- | :--- | :--- | :--- |
+| **Coding Express** | `coding-express` | `ce-` | `robot/coding-express/` | `tutorial/ce-*/` |
+| **Tale-Bot** | `tale-bot` | `tb-` | `robot/tale-bot/` | `tutorial/tb-*/` |
+| **Coding Set** | `coding-set` | `cs-` | `robot/coding-set/` | `tutorial/cs-*/` |
+| **Codey Rocky** | `codey-rocky` | `cr-` | `robot/codey-rocky/` | `tutorial/cr-*/` |
+| **Spike** | `spike` | `sp-` | `robot/spike/` | `tutorial/sp-*/` |
+| **Micro:bit** | `microbit` | `mb-` | `robot/microbit/` | `tutorial/mb-*/` |
 
 ---
 

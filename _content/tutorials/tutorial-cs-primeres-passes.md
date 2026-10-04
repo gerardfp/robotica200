@@ -1,7 +1,7 @@
 ---
 title: 'Primeres passes: La torre de lectura i el tauler físic'
 description: Descobrir la connexió entre la torre d'escaneig i el MatataBot, i l'ordre seqüencial d'esquerra a dreta.
-robot: codingset
+robot: coding-set
 level: Iniciació
 duration: 30 min
 order: 1

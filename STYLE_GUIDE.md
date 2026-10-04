@@ -56,12 +56,12 @@ Para tarjetas de actividades, insignias curriculares, avatares y elementos compa
 - **🚫 Sin sombras en el suelo y sin texto.**
 
 ### Elementos de esencia por robot:
-- **CodeyRocky (`codeyrocky.png`):** Cabeza de Codey con orejitas redondeadas, pantalla oscura con sonrisa pixelada LED cian y botones redondos A y B.
-- **TaleBot (`talebot.png`):** Cubo rechoncho azul con frontal blanco, dos grandes ojos negros redondos, aleta lateral naranja y cuatro botones circulares de colores arriba.
-- **CodingSet (`codingset.png`):** Pequeño MatataBot cilíndrico blanco con cúpula naranja, dos pequeños ojos negros y ruedas naranjas.
+- **Codey Rocky (`codey-rocky.png`):** Cabeza de Codey con orejitas redondeadas, pantalla oscura con sonrisa pixelada LED cian y botones redondos A y B.
+- **Tale-Bot (`tale-bot.png`):** Cubo rechoncho azul con frontal blanco, dos grandes ojos negros redondos, aleta lateral naranja y cuatro botones circulares de colores arriba.
+- **Coding Set (`coding-set.png`):** Pequeño MatataBot cilíndrico blanco con cúpula naranja, dos pequeños ojos negros y ruedas naranjas.
 - **Spike (`spike.png`):** Hub inteligente rectangular amarillo con ojos ultrasónicos circulares, sonrisa LED roja, orificios Technic, dos motores angulares azul verdoso con ruedas y dos cables limpios conectados al hub.
 - **Coding Express (`coding-express.png`):** Cabina de locomotora amarilla LEGO DUPLO con 4 studs redondeados en el techo, chimenea gris, ventana arqueada diáfana, chasis azul y ruedas rojas.
-- **Microbit (`microbit.png`):** Placa rectangular negra de esquinas redondeadas, matriz LED 5x5 con sonrisa roja, botones A y B y conectores dorados inferiores.
+- **Micro:bit (`microbit.png`):** Placa rectangular negra de esquinas redondeadas, matriz LED 5x5 con sonrisa roja, botones A y B y conectores dorados inferiores.
 
 ---
 

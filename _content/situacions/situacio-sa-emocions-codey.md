@@ -2,7 +2,7 @@
 title: La Mascota de les Emocions i el Benestar
 description: Com podem crear un company robòtic que ens ajudi a expressar i gestionar les nostres emocions quan
   estem enfadats, tristos o eufòrics?
-robot: codeyrocky
+robot: codey-rocky
 cycles:
 - cicle-mitja
 cycle_label: Cicle Mitjà (3r-4t)

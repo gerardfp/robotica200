@@ -9,7 +9,7 @@ specs:
 - ✓ Tauler de programació matricial
 - ✓ Blocs físics de moviment, números i bucles
 - ✓ Robot mòbil amb ulls expressius
-image: _assets/robots/codingset.jpg
+image: _assets/robots/coding-set.jpg
 official_resources:
 - title: Catàleg d’activitats de Matatalab
   href: https://matatalab.com/en/activity

@@ -2,7 +2,7 @@
 title: Els Viatges del Conte Màgic
 description: Podem ajudar el protagonista del nostre conte a trobar els seus amics superant el bosc misteriós tot
   explicant la història amb les nostres veus?
-robot: talebot
+robot: tale-bot
 cycles:
 - infantil
 cycle_label: Educació Infantil (4-5 anys)

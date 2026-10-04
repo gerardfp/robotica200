@@ -2,7 +2,7 @@
 title: 'Primeres passes: Botons direccionals i la tecla Delete'
 description: Descobrir els comandaments bàsics de TaleBot, la mesura del seu pas (10 cm) i la importància de buidar
   la memòria.
-robot: talebot
+robot: tale-bot
 level: Iniciació
 duration: 30 min
 order: 1

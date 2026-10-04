@@ -66,13 +66,12 @@ def scan_activities():
 def scan_situations():
     situations = []
     robot_display = {
-        "lego-coding-express": "Coding Express",
         "coding-express": "Coding Express",
-        "talebot": "TaleBot",
-        "codingset": "CodingSet",
-        "codeyrocky": "CodeyRocky",
+        "tale-bot": "Tale-Bot",
+        "coding-set": "Coding Set",
+        "codey-rocky": "Codey Rocky",
         "spike": "Spike",
-        "microbit": "Microbit",
+        "microbit": "Micro:bit",
         "desendollat": "Desendollat (Sense robot)"
     }
     for f in sorted(ROOT_DIR.glob('situacio/*/index.html')):
@@ -84,6 +83,10 @@ def scan_situations():
             attrs = tag_m.group(1)
             title = get_attr(attrs, 'title') or slug
             robot = get_attr(attrs, 'robot').lower()
+            if robot == 'lego-coding-express': robot = 'coding-express'
+            elif robot == 'talebot': robot = 'tale-bot'
+            elif robot == 'codingset': robot = 'coding-set'
+            elif robot == 'codeyrocky': robot = 'codey-rocky'
             robot_label = get_attr(attrs, 'robot-label') or robot_display.get(robot, robot.capitalize())
             cicle = get_attr(attrs, 'cicle')
             cicle_label = get_attr(attrs, 'cicle-label') or cicle
@@ -149,12 +152,12 @@ def scan_situations():
 def scan_tutorials():
     tutorials = []
     robot_display = {
-        "cr": ("codeyrocky", "CodeyRocky"),
-        "cs": ("codingset", "CodingSet"),
-        "lce": ("coding-express", "Coding Express"),
-        "mb": ("microbit", "Microbit"),
+        "ce": ("coding-express", "Coding Express"),
+        "cr": ("codey-rocky", "Codey Rocky"),
+        "cs": ("coding-set", "Coding Set"),
+        "mb": ("microbit", "Micro:bit"),
         "sp": ("spike", "Spike"),
-        "tb": ("talebot", "TaleBot")
+        "tb": ("tale-bot", "Tale-Bot")
     }
 
     for f in sorted(ROOT_DIR.glob('tutorial/*/index.html')):

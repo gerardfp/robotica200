@@ -2,7 +2,7 @@
 title: Motors i paràmetres numèrics
 description: Optimitzar el codi combinant les fitxes direccionals amb blocs de números (1, 2, 3, 4, 5) per estalviar
   espai al tauler.
-robot: codingset
+robot: coding-set
 level: Intermedi
 duration: 40 min
 order: 2

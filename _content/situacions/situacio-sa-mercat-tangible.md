@@ -2,7 +2,7 @@
 title: Ruta Saludable pel Mercat del Barri
 description: Com podem planificar la compra de fruites i verdures de temporada al mercat gastant el pressupost just
   i fent el camí més curt?
-robot: codingset
+robot: coding-set
 cycles:
 - cicle-inicial
 cycle_label: Cicle Inicial (1r-2n)

@@ -2,7 +2,7 @@
 title: 'Motors i sensors: Dibuix geomètric amb retoladors'
 description: Inserir dos retoladors a les ales de TaleBot per traçar formes geomètriques de colors exactes sobre
   paper continu.
-robot: talebot
+robot: tale-bot
 level: Intermedi
 duration: 45 min
 order: 3
