@@ -7,11 +7,20 @@
 - La web ha de mantenir en tot moment una **baixa densitat d'informació**, espaiat generós i netedat visual.
 
 ## 🎨 Guia d'Estil de les Imatges dels Robots (Fons Transparent Estricte)
+- **Estil Visual: Estètica EdTech Isomètrica 3D:**
+  - Il·lustració 3D estilitzada / joguina tecnològica amable (toy-like), superfícies netes i arrodonides.
+  - Isometria suau / perspectiva axonomètrica neta (~30°).
+  - Low-poly refinat: geometria simple amb bisells i volums nets, acabat plàstic mat / setinat suau.
+  - Colors sòlids i vibrants (paletes binàries netes).
+  - Il·luminació difusa de fons d'estudi amb ombres suaus de volum.
+  - Identitat tècnica i educativa (no és un simple dibuix animat infantil, té caràcter STEAM).
+- **📝 Fórmula Oficial de Prompt:**
+  `Stylized 3D isometric educational robotics illustration of [Nom], cute toy-like robots, rounded geometry, simplified low-poly forms, matte plastic materials, soft studio lighting, vibrant solid colors, subtle shadows, isolated on solid white background, modern edtech aesthetic.`
 - **2 Imatges Obligatòries per Robot (Format PNG Transparent):**
-  1. **Robot Complet (`_assets/robots/[robot].png`):** Model 3D isomètric complet, joguina tecnològica educativa amable, superfícies suaus i arrodonides, perspectiva 3/4. **Canal alfa 100% transparent**.
+  1. **Robot Complet (`_assets/robots/[robot].png`):** Model 3D isomètric complet, perspectiva 3/4. **Canal alfa 100% transparent**.
   2. **Icona Abstracta d'Essència (`_assets/icons/[robot].png`):** Síntesi geomètrica minimalista (512 × 512 px) que capta l'essència icònica amb molt pocs detalls. **Canal alfa 100% transparent**.
-- **🚫 Lineless estricte:** Sense línies de contorn (sense outlines, sense traçats negres ni línies de tinta). Formes definides per contrast de colors i volum.
-- **🚫 Sense brillantors ni reflexos:** Acabat mat suau, sense reflexos especulars.
+- **🚫 Lineless estricte:** Sense línies de contorn (sense outlines, sense traçats negres ni línies de tinta).
+- **🚫 Sense brillantors especulars:** Acabat mat suau.
 - **🚫 Sense ombres al terra:** Cap ombra sota el robot per permetre la integració neta sobre el fons bicolor CSS.
 - **🚫 Sense text:** Cap text, paraula, xifra, logotip ni marca d'aigua.
 

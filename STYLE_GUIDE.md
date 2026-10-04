@@ -68,20 +68,42 @@ Cada robot té assignada una **paleta de dos colors associats**, que s'utilitzen
 
 ---
 
-## 3. 🖼️ Les 2 Imatges Obligatòries per Robot (Amb Fons Transparent)
+## 3. 🎨 Direcció d'Art i Estil Visual Oficial (Estètica EdTech Isomètrica)
+
+La identitat visual dels robots es defineix com una **il·lustració 3D isomètrica tècnica i amable**. No és un simple "3D cartoon" infantil; el component isomètric, axonomètric i geomètric li confereix una identitat més tècnica, rigorosa i pròpia de la robòtica educativa moderna.
+
+### Els 9 Pilars de l'Estil Gràfic:
+1. **Ilustración 3D estilizada / cartoon 3D:** Objetos tridimensionales, pero simplificados y sin buscar realismo fotográfico ni suciedad en las texturas.
+2. **Isométrico suave:** Perspectiva e isometría casi axonométrica limpia (ángulo cenital de ~30°), especialmente en las plataformas, bloques y componentes.
+3. **Toy-like / aspecto de juguete:** Los robots parecen pequeños objetos físicos de juguete o kits educativos amables, con superficies limpias y formas redondeadas.
+4. **Low-poly refinado:** Geometría relativamente sencilla y limpia, pero con suficientes volúmenes, biseles curvados y gradaciones de luz para que no parezca un low-poly tosco.
+5. **Materiales plásticos mate:** Superficies de plástico ligeramente satinadas / soft-touch, sin reflejos especulares ni brillos fotográficos agresivos.
+6. **Colores sólidos y vibrantes:** Colores muy limpios y saturados, con combinaciones binarias de 2–3 colores vivos por robot según su paleta oficial.
+7. **Iluminación de estudio suave:** Luz difusa de estudio fotográfico, sombras blandas y pequeños toques de luz que ayudan a recortar y separar los volúmenes en el espacio.
+8. **Fondo gráfico abstracto / Transparente:** En la web, el fondo de la imagen se aísla con canal alfa 100% transparente para montarse limpiamente sobre los fondos bicolores CSS.
+9. **Estética edtech contemporánea:** Lenguaje visual que recuerda a las ilustraciones de productos tecnológicos educativos punteros y landing pages de startups de tecnología y diseño (estilo Stripe / Linear / Duolingo / Vercel Kids).
+
+### 📝 Fórmula de Prompt Condensada (Estàndard Oficial):
+```text
+Stylized 3D isometric educational robotics illustration of [Nom del Robot], cute toy-like robots, rounded geometry, simplified low-poly forms, matte plastic materials, soft studio lighting, vibrant solid colors, subtle shadows, isolated on solid white studio background, modern edtech aesthetic.
+```
+
+> 💡 **Nota clau d'identitat:** No és un disseny infantil genèric: la combinació d'isometria precisa, bisells nets i geometria modular dota al conjunt d'un caràcter tècnic i professional adequat tant per a mestres d'Infantil com de Secundària.
+
+---
+
+## 4. 🖼️ Les 2 Imatges Obligatòries per Robot (Amb Fons Transparent)
 
 Per a cada robot del projecte es generaran i mantindran **dues representacions visuals amb canal alfa transparent pur (`.png`)**:
 
 ### A) Tipus 1: Robot Complet (`_assets/robots/[slug].png`)
 - **Funció:** Imatge principal per a la targeta del catàleg de robots i la capçalera de la seva fitxa tècnica.
-- **Format:** PNG 32-bit amb **fons 100% transparent** (sense vores blanques ni halos).
+- **Format:** PNG 32-bit amb **fons 100% transparent** (sense vores blanques, halos ni ombres projectades al terra).
 - **Resolució:** 600 × 448 px (proporció 4:3) o 800 × 600 px centrat.
 - **Estil visual:**
-  - Model 3D isomètric estilitzat de joguina tecnològica educativa amable.
-  - **🚫 Lineless estricte:** Sense línies negres de contorn (sense outlines ni traços de tinta). El volum i les formes es defineixen exclusivament pel contrast de color, llum i plans suaus.
-  - **🚫 Sense brillantors ni reflexos:** Acabat mat suau (soft-matte / clay-morphism subtil).
-  - **🚫 Sense ombres al terra:** No hi ha d'haver ombres projectades al terra a la imatge PNG; el fons ha de ser transparent fins a la mateixa base del robot perquè s'integri sobre el fons bicolor CSS.
-  - **Perspectiva:** Perspectiva isomètrica 3/4 frontal, orientat lleugerament cap a l'esquerra o dreta segons el dinamisme de la peça.
+  - Aplica exactament els 9 pilars EdTech isomètrics descrits anteriorment.
+  - Model 3D isomètric complet en perspectiva 3/4 frontal.
+  - Sense ombres sota el robot per permetre la integració directa amb el fons corbat CSS.
 
 ### B) Tipus 2: Icona Abstracta d'Essència (`_assets/icons/[slug].png`)
 - **Funció:** Icona d'identificació ràpida per a miniatures d'activitats, insígnies curriculars de situacions d'aprenentatge, filtres i taules.
