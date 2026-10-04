@@ -1238,6 +1238,25 @@ body {
 }
 .prose .sa-challenge { font-size: 1.05rem; padding: 1rem 1.25rem; }
 .prose img { max-width: 100%; height: auto; }
+.prose .sa-illustration {
+  margin: 1.75rem 0 2.25rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background: var(--bg-card-subtle);
+}
+.prose .sa-illustration img {
+  display: block;
+  width: 100%;
+  max-height: 34rem;
+  object-fit: cover;
+}
+.prose .sa-illustration figcaption {
+  padding: .8rem 1rem;
+  color: var(--text-muted);
+  font-size: .9rem;
+  line-height: 1.5;
+}
 .prose pre { overflow-x: auto; padding: 1rem; background: var(--bg-card-subtle); }
 .prose table { display: block; overflow-x: auto; border-collapse: collapse; }
 .prose th, .prose td { padding: 0.5rem; border: 1px solid var(--border-color); }

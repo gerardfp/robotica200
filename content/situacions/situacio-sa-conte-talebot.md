@@ -1,7 +1,6 @@
 ---
 title: Els Viatges del Conte Màgic
-description: Podem ajudar el protagonista del nostre conte a trobar els seus amics superant el bosc misteriós tot
-  explicant la història amb les nostres veus?
+description: Com podem convertir un conte inventat en una seqüència de moviments, parades i missatges enregistrats amb Tale-Bot Pro?
 robot: talebot
 cycles:
 - infantil
@@ -14,46 +13,86 @@ order: 5
 
 ## ❓ Repte o Pregunta Guia
 
-"Podem ajudar el protagonista del nostre conte a trobar els seus amics superant el bosc misteriós tot explicant la història amb les nostres veus?"
+Com podem convertir un conte inventat en un recorregut que el Tale-Bot puga seguir i que el grup puga narrar de més d'una manera?
 {: .sa-challenge }
 
-## 🏆 Competències Clau Treballades
+<figure class="sa-illustration">
+  <img src="assets/imatges/sa-conte-talebot.webp" alt="TaleBot de la dotació segueix un camí de caselles que travessa un pont de paper per arribar a un personatge del conte." width="600" height="448" loading="lazy">
+  <figcaption>El grup inventa els personatges, el pont i el recorregut; TaleBot ajuda a ordenar i narrar la història.</figcaption>
+</figure>
 
-- Competència en Comunicació Oral: Enregistrament de veu i expressivitat.
-- Pensament Computacional Primerenc: Ordre seqüencial d'esdeveniments.
-- Competència Artística: Il·lustració dels personatges i escenografies.
+## Intenció d'aprenentatge
 
-## 📅 Seqüència Didàctica de Sessions
+Planificar un relat curt amb inici, dos o tres esdeveniments i final; traduir una part de la història a ordres de moviment; provar el recorregut i revisar-lo quan el robot no arribe al lloc previst.
 
-- S1: Lectura compartida del conte i distribució dels capítols.
+Sabrem que avancem quan l'equip:
 
-- S2: Enregistrament de les pistes d'àudio al TaleBot pas a pas.
+- ordena esdeveniments i destinacions en un mapa amb graella;
+- representa el recorregut amb símbols abans de prémer els botons;
+- detecta una ordre que falta, sobra o està invertida i ho comprova;
+- tria una forma de narrar que permet participar sense obligar ningú a enregistrar la veu.
 
-- S3: Sessió de contacontes: el robot es mou pel mapa i narra la història.
+## 🏆 Aprenentatges que hi conflueixen
+
+- Llengua: estructura narrativa, vocabulari de posició i expressió oral o visual.
+- Pensament computacional: seqüència, predicció, repetició i depuració.
+- Expressió artística: creació d'escenaris, personatges i finals alternatius.
+- Convivència: escolta, torns i autoria col·lectiva de la història.
+
+## Materials i preparació
+
+- Tale-Bot Pro, mapa o graella gran i peces que representen personatges i llocs.
+- Tires amb fletxes per planificar abans de programar i full de seqüència inici–mig–final.
+- Opcional: llapis de colors i suports compatibles del kit per traçar una ruta.
+
+Inventeu un conte breu o feu servir una història lliure de drets i adequada al grup. En el model Pro, cada enregistrament té un límit de 30 segons; comproveu la memòria disponible abans de preparar molts missatges. No feu gravacions públiques ni conserveu veus sense acord del centre i consentiment corresponent.
+
+## 📅 Itinerari de tres sessions
+
+### Sessió 1 · Imaginar i representar el conte
+
+Llegiu o inventeu una història amb poques localitzacions. El grup tria què vol que faça el personatge i col·loca les destinacions al mapa. Ordeneu tres o quatre moments amb imatges o pictogrames; reserveu l'enregistrament per a més avant.
+
+- Evidència: storyboard amb inici, problema, accions i final.
+- Pregunta docent: «Què ha de passar abans que el personatge arribe ací?»
+
+### Sessió 2 · Programar i provar una escena
+
+Traduïu una escena curta a fletxes: avance, gir a esquerra/dreta i, si es vol, repetició. Feu que una persona llig la seqüència mentre una altra prediu la destinació. Enregistreu només un missatge breu i voluntari, o feu servir la veu del docent, una frase en targeta o una onomatopeia.
+
+- Evidència: tira d'ordres, predicció de la casella final i prova real.
+- Depuració: elimineu o canvieu una única ordre i torneu a executar des del mateix punt.
+
+### Sessió 3 · Contacontes amb més d'un final
+
+Presenteu el conte al grup. Canvieu una decisió del personatge i penseu com hauria de variar la seqüència. Si hi ha temps, compareu dos camins fins al mateix destí i expliqueu quin és més fàcil de seguir, no sols quin és més curt.
+
+- Evidència: narració, seqüència executada i un final alternatiu representat.
+- Pregunta docent: «Quina instrucció fa que la història canvie?»
 
 ## 📋 Criteri d'Avaluació Curricular
 
-Estructura relats senzills seguint un fil narratiu temporal (inici, nus, desenllaç) mitjançant el moviment d'un dispositiu robòtic.
+Observa si l'alumnat ordena fets, representa un recorregut, comunica una decisió narrativa i revisa la seqüència quan la prova no coincideix amb la predicció. Ajusta el criteri als objectius lingüístics i digitals del nivell.
 {: .assessment }
 
 ## Abans de començar
 
-Trieu un conte curt amb recorregut representable al mapa. Prepareu un principi i un final, però deixeu que cada grup decideixi quines accions necessita el protagonista. Abans de programar, comproveu que els símbols i la graella siguin visibles i que tots els infants puguin participar en la tria.
+Trieu un conte curt amb recorregut representable al mapa. Prepareu una graella prou gran, proveu la resposta del robot i reduïu el nombre d'ordres de partida. Deixeu que cada grup trie accions i destinacions; eviteu que la plantilla fixe una única manera correcta d'explicar la història.
 
 ## 🧭 Evidències que recollirem
 
-- Un esbós del camí amb inici, destinació i instruccions en ordre.
-- Una narració oral o alternativa visual que relacioni cada acció amb un moment del conte.
-- Una prova on el grup trobi i corregeixi una instrucció que s'ha interpretat de més d'una manera.
+- Un storyboard i una seqüència de fletxes associada a cada escena.
+- Una predicció del destí, una execució i el registre d'una correcció.
+- Una narració oral, visual, gestual o enregistrada de manera voluntària.
 
 ## ♿ Disseny accessible
 
-Distribuïu tasques de narració, ordenació de targetes, enregistrament i observació. Ningú no ha d'enregistrar la seva veu per força: es pot utilitzar la veu del docent, una targeta de personatge o una onomatopeia acordada. Acordeu on i quant de temps guardareu les gravacions.
+Distribuïu tasques de narració, ordenació, programació i observació, i feu-les rotar. Ningú no ha d'enregistrar la seua veu per força: també podeu usar la veu del docent, una targeta de personatge, pictogrames o una onomatopeia. Acordeu si es guardarà cap gravació, qui hi tindrà accés i quan s'esborrarà.
 
 ## 🔁 Variació entre sessions
 
-Quan una ruta ja funciona, canvieu-ne una sola part —el destí o l'ordre d'una instrucció— i pregunteu si l'argument continua tenint sentit.
+Quan una ruta ja funciona, canvieu-ne una sola part —el destí o l'ordre d'una instrucció— i pregunteu si l'argument continua tenint sentit. Un repte avançat consisteix a repetir un patró de moviment o dibuixar un element del mapa amb el suport de dibuix compatible del kit.
 
 ## 🔗 Recursos del fabricant
 
-Per explorar com es dissenyen targetes i activitats per al Tale-Bot Pro, consulta el [curs oficial per a docents de Matatalab](https://matatalab.com/en/node/808). Aquesta situació proposa un conte original per a l’aula; no reprodueix les targetes ni els recursos visuals del fabricant.
+Per consultar les ordres, el botó de gravació i les funcions del model Pro, revisa la [guia oficial de Tale-Bot Pro](https://matatalab.com/en/lesson4.2). La situació proposa un conte i un mapa originals; no reprodueix les targetes ni els recursos visuals del fabricant.

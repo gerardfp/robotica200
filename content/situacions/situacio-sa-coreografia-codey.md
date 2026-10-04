@@ -1,7 +1,6 @@
 ---
 title: 'La Festa dels Autòmats: Art i Programació'
-description: Podem sincronitzar una colla de robots perquè ballin una cançó tradicional al compàs de la música amb
-  llums i disfresses creades per nosaltres?
+description: Com podem transformar un ritme en una coreografia programada amb moviments i llums de Codey Rocky, i revisar-la quan el temps no encaixa?
 robot: codeyrocky
 cycles:
 - cicle-inicial
@@ -16,44 +15,92 @@ subject_label: Educació Artística i Plàstica
 
 ## ❓ Repte o Pregunta Guia
 
-"Podem sincronitzar una colla de robots perquè ballin una cançó tradicional al compàs de la música amb llums i disfresses creades per nosaltres?"
+Com podem fer que una seqüència de moviments i llums de Codey Rocky represente un ritme creat pel grup?
 {: .sa-challenge }
 
-## 🏆 Competències Clau Treballades
+<figure class="sa-illustration">
+  <img src="assets/imatges/sa-coreografia-codey.webp" alt="Codey Rocky de la dotació al costat d'una seqüència de caselles de colors que representa una coreografia." width="600" height="448" loading="lazy">
+  <figcaption>Una seqüència de huit pulsacions es converteix en moviments provats amb un únic Codey Rocky.</figcaption>
+</figure>
 
-- Competència Artística: Disseny plàstic d'escenografies i disfresses de personatges.
-- Competència Musical: Ritme, pulsació i sincronització temporal.
-- Competència Digital: Programació de bucles sincronitzats per temps.
+## Intenció d'aprenentatge
 
-## 📅 Seqüència Didàctica de Sessions
+Relacionar pols, duració i ordre amb una seqüència programada. L'alumnat dissenya una coreografia curta, la prova amb un únic Codey Rocky i ajusta una variable cada vegada per fer coincidir el moviment amb el ritme.
 
-- S1: Elecció de la cançó i compàs dels moviments (endavant, gir, llums).
+Sabrem que avancem quan l'equip:
 
-- S2: Taller de disfresses amb cartolines i materials reciclats per a Rocky.
+- representa el ritme amb una graella de pulsacions o una línia temporal;
+- relaciona cada moviment o llum amb una intenció expressiva;
+- prediu què passarà en repetir una instrucció o canviar-ne la duració;
+- explica un desajust i el canvi que ha fet per corregir-lo.
 
-- S3: Programació dels blocs de ritme i llum RGB al programa mBlock.
+## 🏆 Aprenentatges que hi conflueixen
 
-- S4: Ballada final conjunta i gravació del videoclip musical de l'aula.
+- Música: pulsació, seqüència, pausa i contrast de ritmes.
+- Expressió artística: intenció, composició, escenografia i interpretació.
+- Pensament computacional: repetició, temporització i depuració.
+- Treball cooperatiu: rols rotatius i crítica respectuosa entre equips.
+
+## Materials i preparació
+
+- Codey Rocky, mBlock 5 i ordinador o tauleta amb la connexió preparada.
+- Targetes de moviment, llum i pausa; graella de 8 o 16 pulsacions.
+- Opcional: percussió corporal o instrumental creada a classe, altaveu i material lleuger d'escenografia.
+
+Comenceu amb una seqüència estacionària o amb moviments lents i una superfície lliure. Qualsevol element decoratiu ha de ser lleuger i no tapar sensors, ventilació, rodes ni parts mòbils. Si es fa una mostra pública, empreu una peça musical pròpia o amb permís d'ús.
+
+## 📅 Itinerari de quatre sessions
+
+### Sessió 1 · Escoltar, comptar i triar una idea
+
+Escolteu una peça breu o creeu un ritme amb percussió corporal. Marqueu la pulsació amb palmades i decidiu quina sensació o escena voleu expressar. Compareu si el ritme és estable o té pauses i canvis.
+
+- Evidència: patró de pulsacions anotat o representat amb símbols.
+- Pregunta docent: «Quina part del ritme volem que es note en el moviment?»
+
+### Sessió 2 · Coreografiar sense programar encara
+
+Repartiu targetes de moviments que Codey Rocky puga fer amb seguretat: avanç curt, gir i pausa. Assigneu una llum o una expressió de la matriu a moments concrets. Feu que una persona execute la seqüència caminant una graella imaginària abans de passar-la al robot.
+
+- Evidència: guió temporal amb inici, repetició i final.
+- Criteri de disseny: la seqüència s'ha de poder explicar i reproduir.
+
+### Sessió 3 · Programar i sincronitzar
+
+Construïu primer la seqüència de llums; després afegiu un moviment cada vegada. Useu repeticions per als patrons i temps curts per a les pauses. Executeu la coreografia sobre un espai lliure i mesureu si cada acció arriba abans, durant o després de la pulsació prevista.
+
+- Evidència: taula amb acció, temps previst, resultat observat i ajust.
+- Pregunta docent: «Quina sola duració canviaries per acostar el moviment al pols?»
+
+### Sessió 4 · Mostrar dues versions i revisar
+
+Presenteu la primera versió i la revisada. El públic observa un aspecte concret —ritme, claredat o expressió— i ofereix un comentari que l'equip pot acceptar o rebutjar amb una raó. La gravació és opcional; també es pot mostrar el programa o fer una demostració en directe.
+
+- Evidència: programa final i explicació d'una decisió de disseny.
 
 ## 📋 Criteri d'Avaluació Curricular
 
-Combina llenguatges artístics plàstics i musicals amb el moviment robòtic per expressar idees i sentiments de forma col·laborativa.
+Observa si l'alumnat representa un ritme, programa una seqüència coherent, revisa el temps a partir de la prova i comunica una intenció artística. Ajusta el criteri oficial al nivell i a l'àrea.
 {: .assessment }
 
 ## Abans de començar
 
-Dividiu l'escena en frases breus de música i definiu una consigna que cada robot pugui provar per separat. Feu que el grup triï la música o creeu una base amb percussió corporal: per a una actuació pública, feu servir àudio que el centre tingui permís d'utilitzar.
+Dividiu l'escena en frases breus i definiu què pot fer un únic robot. Si el centre només té un Codey Rocky, els grups poden crear coreografies per torns o combinar una acció del robot amb dansa humana; no presenteu la disponibilitat de diverses unitats com a requisit.
 
 ## 🧭 Evidències que recollirem
 
-- Un guió temporal que relacioni moviments i fragments de música.
-- Una predicció sobre què es desajustarà si el ritme s'accelera.
-- Una actuació final i una explicació de com el grup ha sincronitzat les accions.
+- Guió de pulsacions amb instruccions i repeticions visibles.
+- Registre d'una prova amb un canvi justificat de duració o ordre.
+- Demostració o explicació equivalent per a qui no vulga actuar ni aparéixer en vídeo.
 
 ## ♿ Variants per repartir la participació
 
-Els robots, les targetes de llum, les figures o un narrador poden tenir rols equivalents a l'escena. Permeteu presentar el resultat amb una seqüència dibuixada, una demostració en directe o una explicació enregistrada; assegureu-vos que el registre de veu sigui voluntari.
+Les targetes, les llums del robot, la percussió, les figures o una persona narradora poden assumir rols equivalents. Permeteu presentar el resultat amb una seqüència dibuixada, una demostració o una explicació enregistrada de manera voluntària. Limiteu els estímuls sonors i oferiu un espai tranquil per provar.
 
 ## 🔁 Depuració de la coreografia
 
-No canvieu alhora la melodia, el moviment i la pausa. Manteniu dos elements i canvieu-ne un; proveu un robot, anoteu-ne el temps i només després incorporeu-ne d'altres.
+No canvieu alhora el ritme, el moviment i la pausa. Manteniu dos elements i canvieu-ne un; proveu Codey Rocky en una superfície coneguda i només després afegiu complexitat. Un repte avançat és fer que una mateixa coreografia es puga executar amb dos ritmes diferents canviant una variable del programa.
+
+## 🔗 Consulta tècnica
+
+Abans de planificar moviments, revisa els mòduls que incorpora el [Codey Rocky de Makeblock](https://www.makeblock.com/products/buy-codey-rocky) i comprova que la versió de mBlock disponible al centre els exposa com esperes.
