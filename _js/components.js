@@ -119,7 +119,7 @@
             <nav class="header-nav" aria-label="Navegació principal">
               <a href="${root}index.html" class="nav-btn ${active === 'inici' ? 'active' : ''}">Inici</a>
               <a href="${root}pensament-computacional/index.html" class="nav-btn ${active === 'pensament' ? 'active' : ''}">Pensament computacional</a>
-              <a href="${root}robotica/index.html" class="nav-btn ${active === 'robotica' ? 'active' : ''}">Robòtica</a>
+              <a href="${root}robots/index.html" class="nav-btn ${active === 'robots' || active === 'robotica' ? 'active' : ''}">Robots</a>
               <a href="${root}situacions-aprenentatge/index.html" class="nav-btn ${active === 'situacions' ? 'active' : ''}">Situacions d'aprenentatge</a>
             </nav>
             <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
@@ -216,7 +216,7 @@
       const content = this.innerHTML;
 
       this.innerHTML = `
-        <site-header active="robotica" root="${root}"></site-header>
+        <site-header active="robots" root="${root}"></site-header>
         <main class="container page-content">
           <nav-back href="${backHref}" label="${backLabel}"></nav-back>
           <article class="detail-page-card">

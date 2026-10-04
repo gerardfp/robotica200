@@ -11,10 +11,10 @@ pillars:
   description: Activitats desendollades de PC per treballar la lògica, els algorismes i la resolució de problemes
     sense pantalles.
   action: Explorar activitats →
-- href: robotica.html
+- href: robots.html
   icon: 🤖
-  image: _assets/banners/robotica.jpg
-  title: Robòtica
+  image: _assets/banners/robots.jpg
+  title: Robots
   description: 'Tutorials i guies dels {robot_count} robots d''aula.'
   action: Veure els {robot_count} robots →
 - href: situacions-aprenentatge.html

@@ -6,8 +6,8 @@ navigation:
   label: Inici
 - href: pensament-computacional.html
   label: Pensament computacional
-- href: robotica.html
-  label: Robòtica
+- href: robots.html
+  label: Robots
 - href: situacions-aprenentatge.html
   label: Situacions d'aprenentatge
 filters:

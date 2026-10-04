@@ -51,8 +51,8 @@ robotica200/
 ├── index.html                           # Portada principal (/)
 ├── pensament-computacional/
 │   └── index.html                       # Catàleg de pensament computacional (/pensament-computacional/)
-├── robotica/
-│   └── index.html                       # Catàleg dels 6 robots d'aula (/robotica/)
+├── robots/
+│   └── index.html                       # Catàleg dels 6 robots d'aula (/robots/)
 ├── situacions-aprenentatge/
 │   └── index.html                       # Catàleg curricular filtrable (/situacions-aprenentatge/)
 ├── activitat/

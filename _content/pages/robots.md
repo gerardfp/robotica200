@@ -1,10 +1,10 @@
 ---
-title: Robòtica Educativa
-seo_title: Robòtica Educativa - Els {robot_count} Robots d'Aula | Robòtica200
+title: Robots
+seo_title: Robots - Els {robot_count} Robots d'Aula | Robòtica200
 description: Guies didàctiques i tutorials dels {robot_count} robots educatius d'aula.
 layout: catalog
 collection: robots
-section_icon: _assets/icons/robotica.png
+section_icon: _assets/icons/robots.png
 hero_width: 1440
 hero_height: 480
 hero_image: _assets/imatges/robotica-aula.webp

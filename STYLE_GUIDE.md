@@ -67,16 +67,16 @@ Para tarjetas de actividades, insignias curriculares, avatares y elementos compa
 
 ## 5. Banners e Iconos de Secciones Temáticas
 
-Para las 3 secciones principales de la web (*Pensament computacional*, *Robòtica*, *Situacions d'aprenentatge*), se han diseñado tanto banners bicolores de cabecera como iconos minimalistas con fondo transparente:
+Para las 3 secciones principales de la web (*Pensament computacional*, *Robots*, *Situacions d'aprenentatge*), se han diseñado tanto banners bicolores de cabecera como iconos minimalistas con fondo transparente:
 
 ### A) Banners de Sección (`_assets/banners/[seccion].jpg`)
 - **Pensament computacional (`pensament-computacional.jpg`):** Pared pastel lavanda y mesa crema, con bloques táctiles de flechas algorítmicas y bombilla de ideas estilizada.
-- **Robòtica (`robotica.jpg`):** Pared pastel azul cielo y mesa menta/arena, con robot amigo sonriente y bloques modulares STEAM con ojos de sensor.
+- **Robots (`robots.jpg`):** Pared pastel azul cielo y mesa menta/arena, con robot amigo sonriente y bloques modulares STEAM con ojos de sensor.
 - **Situacions d'aprenentatge (`situacions-aprenentatge.jpg`):** Pared pastel melocotón y mesa crema cálida, con tapiz de misión isométrica con bandera roja y estrella dorada.
 
 ### B) Iconos de Sección (`_assets/icons/[seccion].png`)
 - **Pensament computacional (`pensament-computacional.png`):** Bombilla de ideas cálida con flechas de programación tangibles (avance y giro) en su interior, fondo transparente.
-- **Robòtica (`robotica.png`):** Rostro de robot amigo con antena esférica, pantalla con sonrisa pixelada LED cian y sensores laterales, fondo transparente.
+- **Robots (`robots.png`):** Rostro de robot amigo con antena esférica, pantalla con sonrisa pixelada LED cian y sensores laterales, fondo transparente.
 - **Situacions d'aprenentatge (`situacions-aprenentatge.png`):** Portapapeles de desafío/misión con bandera de meta roja y estrella dorada de consecución, fondo transparente.
 
 ---
