@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeres passes: Connexió a mBlock 5 i cares a la matriu LED - CodeyRocky | Robòtica²⁰⁰</title>
+  <meta name="description" content="Connectar Codey al software de l'ordinador o tauleta i programar animacions facials i missatges lliscants.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-btn ">Inici</a>
+        <a href="pensament-computacional.html" class="nav-btn ">Pensament computacional</a>
+        <a href="robotica.html" class="nav-btn active">Robòtica</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <div class="section-nav-back">
+      <a href="robot-codeyrocky.html" class="btn-back">← Tornar a CodeyRocky</a>
+    </div>
+
+    <article class="detail-page-card">
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+          <span class="tag-badge primary">CodeyRocky</span>
+          <span class="tag-badge">Iniciació</span>
+          <span class="tag-badge">⏱️ 35 min</span>
+        </div>
+        <h1 class="detail-page-title" style="margin-top: 0.75rem;">Primeres passes: Connexió a mBlock 5 i cares a la matriu LED</h1>
+        <p style="font-size: 1.05rem; color: var(--text-muted); margin: 0;">Connectar Codey al software de l'ordinador o tauleta i programar animacions facials i missatges lliscants.</p>
+      </div>
+
+      <div class="detail-section">
+        <h4>🎯 Objectius d'aprenentatge</h4>
+        <ul style="padding-left: 1.25rem;">
+          <li style="margin-bottom: 0.35rem;">Connectar el dispositiu per cable USB o Bluetooth a mBlock 5.</li>
+          <li style="margin-bottom: 0.35rem;">Dibuixar a la graella de píxels de 16x8 de la pantalla.</li>
+          <li style="margin-bottom: 0.35rem;">Gestionar esdeveniments bàsics: 'Quan es prem el botó A'.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h4>📦 Material necessari</h4>
+        <ul style="padding-left: 1.25rem;">
+          <li style="margin-bottom: 0.35rem;">Robot Codey Rocky</li>
+          <li style="margin-bottom: 0.35rem;">Ordinador o tauleta amb mBlock 5</li>
+          <li style="margin-bottom: 0.35rem;">Cable micro-USB</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h4>👣 Passos de la pràctica a l'aula</h4>
+        <div style="display: flex; flex-direction: column; gap: 0.95rem; margin-top: 0.5rem;">
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">1. Afegir el dispositiu</strong>
+            <p style="font-size: 0.95rem; margin: 0;">A mBlock 5, fes clic a 'Dispositius' → 'Afegir' i selecciona 'Codey'. Prem 'Connectar'.</p>
+          </div>
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">2. Dibuixar una cara somrient</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Arrossega el bloc blau 'Mostra la imatge [ ] durant 2 segons' i fes clic per pintar els LEDs dels ulls i la boca.</p>
+          </div>
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">3. Interacció amb botons</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Programa: 'Quan es prem el botó A' → Mostra cara feliç; 'Quan es prem el botó B' → Mostra text 'Hola'.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-tip-box">
+        <strong>💡 Consell docent per a la sessió:</strong> En mode 'En viu', el codi s'executa a l'instant sense haver de carregar el programa cada vegada a la memòria.
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

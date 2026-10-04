@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Situacions d'Aprenentatge Curriculars | Robòtica200</title>
+  <title>Situacions d'Aprenentatge Curriculars | Robòtica²⁰⁰</title>
   <meta name="description" content="Catàleg de situacions d'aprenentatge curriculars de robòtica i pensament computacional.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
-        <span class="logo-badge">🤖</span>
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
         <div class="logo-text">
-          <span class="logo-name">Robòtica200</span>
+          <span class="logo-name">Robòtica<sup>200</sup></span>
           <span class="logo-subtitle">Robòtica per a docents</span>
         </div>
       </a>
@@ -38,8 +41,13 @@
     </div>
 
     <div class="view-header">
-      <h2>Situacions d'Aprenentatge</h2>
-      <p>Filtra les situacions per trobar la proposta que millor s'adapti al teu cicle, al robot disponible i a l'àrea d'aprenentatge.</p>
+      <div class="view-header-top">
+        <img src="assets/icons/situacions-aprenentatge.png" alt="Situacions d'Aprenentatge" class="view-header-icon">
+        <div>
+          <h2>Situacions d'Aprenentatge</h2>
+          <p>Filtra les situacions per trobar la proposta que millor s'adapti al teu cicle, al robot disponible i a l'àrea d'aprenentatge.</p>
+        </div>
+      </div>
     </div>
 
     <!-- Barra de Filtres interactiva -->
@@ -105,7 +113,7 @@
     <div class="clean-grid" id="situations-grid">
       <a href="situacio-sa-ciutat-accessible.html" class="item-card sa-card" data-robot="microbit" data-cicle="cicle-superior" data-tematica="ciutat" data-materia="tecnologia">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/microbit.jpg" alt="" class="tag-badge-icon"> Microbit</span>
+          <span class="tag-badge primary"><img src="assets/icons/microbit.png" alt="" class="tag-badge-icon"> Microbit</span>
           <span class="tag-badge">Cicle Superior (5è-6è)</span>
         </div>
         <h3 class="item-title">La Ciutat Accessible per a Tothom</h3>
@@ -117,7 +125,7 @@
       </a>
       <a href="situacio-sa-residus-lego.html" class="item-card sa-card" data-robot="spike" data-cicle="cicle-superior" data-tematica="sostenibilitat" data-materia="medi">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/spike.jpg" alt="" class="tag-badge-icon"> Spike</span>
+          <span class="tag-badge primary"><img src="assets/icons/spike.png" alt="" class="tag-badge-icon"> Spike</span>
           <span class="tag-badge">Cicle Superior (5è-6è) i ESO</span>
         </div>
         <h3 class="item-title">Eco-Planta de Reciclatge Intel·ligent</h3>
@@ -129,7 +137,7 @@
       </a>
       <a href="situacio-sa-emocions-codey.html" class="item-card sa-card" data-robot="codeyrocky" data-cicle="cicle-mitja" data-tematica="salut" data-materia="llengua">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/codeyrocky.jpg" alt="" class="tag-badge-icon"> CodeyRocky</span>
+          <span class="tag-badge primary"><img src="assets/icons/codeyrocky.png" alt="" class="tag-badge-icon"> CodeyRocky</span>
           <span class="tag-badge">Cicle Mitjà (3r-4t)</span>
         </div>
         <h3 class="item-title">La Mascota de les Emocions i el Benestar</h3>
@@ -141,7 +149,7 @@
       </a>
       <a href="situacio-sa-mercat-tangible.html" class="item-card sa-card" data-robot="codingset" data-cicle="cicle-inicial" data-tematica="salut" data-materia="matematiques">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/codingset.jpg" alt="" class="tag-badge-icon"> CodingSet</span>
+          <span class="tag-badge primary"><img src="assets/icons/codingset.png" alt="" class="tag-badge-icon"> CodingSet</span>
           <span class="tag-badge">Cicle Inicial (1r-2n)</span>
         </div>
         <h3 class="item-title">Ruta Saludable pel Mercat del Barri</h3>
@@ -153,7 +161,7 @@
       </a>
       <a href="situacio-sa-conte-talebot.html" class="item-card sa-card" data-robot="talebot" data-cicle="infantil" data-tematica="art" data-materia="llengua">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/talebot.jpg" alt="" class="tag-badge-icon"> TaleBot</span>
+          <span class="tag-badge primary"><img src="assets/icons/talebot.png" alt="" class="tag-badge-icon"> TaleBot</span>
           <span class="tag-badge">Educació Infantil (4-5 anys)</span>
         </div>
         <h3 class="item-title">Els Viatges del Conte Màgic</h3>
@@ -165,7 +173,7 @@
       </a>
       <a href="situacio-sa-tren-transport.html" class="item-card sa-card" data-robot="lego-coding-express" data-cicle="infantil" data-tematica="sostenibilitat" data-materia="medi">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/coding-express.jpg" alt="" class="tag-badge-icon"> Coding Express</span>
+          <span class="tag-badge primary"><img src="assets/icons/coding-express.png" alt="" class="tag-badge-icon"> Coding Express</span>
           <span class="tag-badge">Educació Infantil (3-5 anys)</span>
         </div>
         <h3 class="item-title">La Línia Verda del Tren Sostenible</h3>
@@ -189,7 +197,7 @@
       </a>
       <a href="situacio-sa-hivernacle-microbit.html" class="item-card sa-card" data-robot="microbit" data-cicle="cicle-mitja" data-tematica="sostenibilitat" data-materia="medi">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/microbit.jpg" alt="" class="tag-badge-icon"> Microbit</span>
+          <span class="tag-badge primary"><img src="assets/icons/microbit.png" alt="" class="tag-badge-icon"> Microbit</span>
           <span class="tag-badge">Cicle Mitjà i Superior</span>
         </div>
         <h3 class="item-title">L'Hivernacle Escolar Automatitzat</h3>
@@ -201,7 +209,7 @@
       </a>
       <a href="situacio-sa-coreografia-codey.html" class="item-card sa-card" data-robot="codeyrocky" data-cicle="cicle-inicial" data-tematica="art" data-materia="artistica">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/codeyrocky.jpg" alt="" class="tag-badge-icon"> CodeyRocky</span>
+          <span class="tag-badge primary"><img src="assets/icons/codeyrocky.png" alt="" class="tag-badge-icon"> CodeyRocky</span>
           <span class="tag-badge">Cicle Inicial i Mitjà</span>
         </div>
         <h3 class="item-title">La Festa dels Autòmats: Art i Programació</h3>
@@ -213,7 +221,7 @@
       </a>
       <a href="situacio-sa-laberint-mart.html" class="item-card sa-card" data-robot="spike" data-cicle="eso" data-tematica="espai" data-materia="tecnologia">
         <div class="card-top">
-          <span class="tag-badge primary"><img src="assets/icons/spike.jpg" alt="" class="tag-badge-icon"> Spike</span>
+          <span class="tag-badge primary"><img src="assets/icons/spike.png" alt="" class="tag-badge-icon"> Spike</span>
           <span class="tag-badge">ESO (1r-3r)</span>
         </div>
         <h3 class="item-title">Missió Mart: El Rover de Rescat</h3>
@@ -228,7 +236,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>Robòtica200 • Robòtica per a docents</p>
+      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
     </div>
   </footer>
 

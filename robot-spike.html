@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spike - Robòtica Educativa | Robòtica²⁰⁰</title>
+  <meta name="description" content="Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-btn ">Inici</a>
+        <a href="pensament-computacional.html" class="nav-btn ">Pensament computacional</a>
+        <a href="robotica.html" class="nav-btn active">Robòtica</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <div class="section-nav-back">
+      <a href="robotica.html" class="btn-back">← Tornar a Robòtica</a>
+    </div>
+
+    <div class="robot-profile">
+      <div class="robot-profile-top">
+        <div class="robot-profile-media">
+          <img src="assets/icons/spike.png" alt="Spike" class="robot-profile-avatar">
+        </div>
+        <div>
+          <span class="tag-badge primary" style="margin-bottom: 0.35rem; display: inline-block;">Cicle Superior i ESO (10-16 anys)</span>
+          <h1 class="robot-profile-title">Spike</h1>
+        </div>
+      </div>
+      <p class="robot-profile-sub">Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education</p>
+      <p class="robot-profile-desc">LEGO Education SPIKE (Essential i Prime) és el referent de construcció STEAM per a primària avançada i secundària. Incorpora un Hub programable amb 6 ports universals, motors angulars amb mesurador de posició absolut i sensors industrials de distància, color i força.</p>
+      <div class="robot-specs-list">
+        <span class="robot-spec-pill">✓ Smart Hub amb giroscopi de 6 eixos</span>
+        <span class="robot-spec-pill">✓ Motors angulars amb mesura de graus</span>
+        <span class="robot-spec-pill">✓ Sensor de distància ultrasònic</span>
+        <span class="robot-spec-pill">✓ Sensor de color i llum</span>
+        <span class="robot-spec-pill">✓ Sensor de força (Newtons)</span>
+      </div>
+    </div>
+
+    <div class="robot-tutorials-heading">
+      <h3>Tutorials de Spike</h3>
+      <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
+    </div>
+
+    <div class="clean-grid">
+      <a href="tutorial-sp-primeres-passes.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Iniciació</span>
+          <span class="tag-badge">35 min</span>
+        </div>
+        <h4 class="item-title">Primeres passes: El Hub intel·ligent i el primer programa</h4>
+        <p class="item-desc">Connexió del Hub per Bluetooth a l'App SPIKE, gestió de la matriu 5x5 de LEDs i bateria recarregable.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+      <a href="tutorial-sp-motors-sensors.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Intermedi</span>
+          <span class="tag-badge">50 min</span>
+        </div>
+        <h4 class="item-title">Motors i sensors: Tren d'engranatges i sensor de color</h4>
+        <p class="item-desc">Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una línia vermella.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+      <a href="tutorial-sp-brac-sensor-forca.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Avançat</span>
+          <span class="tag-badge">55 min</span>
+        </div>
+        <h4 class="item-title">Braç robòtic i sensor de pressió (Newtons)</h4>
+        <p class="item-desc">Construir una pinça articulada que ajusti la seva força d'agafada segons si l'objecte és tou o dur.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

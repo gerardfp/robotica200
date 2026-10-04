@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeres passes: La torre de lectura i el tauler físic - CodingSet | Robòtica²⁰⁰</title>
+  <meta name="description" content="Descobrir la connexió entre la torre d'escaneig i el MatataBot, i l'ordre seqüencial d'esquerra a dreta.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-btn ">Inici</a>
+        <a href="pensament-computacional.html" class="nav-btn ">Pensament computacional</a>
+        <a href="robotica.html" class="nav-btn active">Robòtica</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <div class="section-nav-back">
+      <a href="robot-codingset.html" class="btn-back">← Tornar a CodingSet</a>
+    </div>
+
+    <article class="detail-page-card">
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+          <span class="tag-badge primary">CodingSet</span>
+          <span class="tag-badge">Iniciació</span>
+          <span class="tag-badge">⏱️ 30 min</span>
+        </div>
+        <h1 class="detail-page-title" style="margin-top: 0.75rem;">Primeres passes: La torre de lectura i el tauler físic</h1>
+        <p style="font-size: 1.05rem; color: var(--text-muted); margin: 0;">Descobrir la connexió entre la torre d'escaneig i el MatataBot, i l'ordre seqüencial d'esquerra a dreta.</p>
+      </div>
+
+      <div class="detail-section">
+        <h4>🎯 Objectius d'aprenentatge</h4>
+        <ul style="padding-left: 1.25rem;">
+          <li style="margin-bottom: 0.35rem;">Entendre que les fitxes es llegeixen com un text: d'esquerra a dreta i de dalt a baix.</li>
+          <li style="margin-bottom: 0.35rem;">Emparellar per Bluetooth la torre i el robot.</li>
+          <li style="margin-bottom: 0.35rem;">Executar una seqüència de tres passos simples.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h4>📦 Material necessari</h4>
+        <ul style="padding-left: 1.25rem;">
+          <li style="margin-bottom: 0.35rem;">Tauler de control</li>
+          <li style="margin-bottom: 0.35rem;">Torre Matatalab</li>
+          <li style="margin-bottom: 0.35rem;">Robot MatataBot</li>
+          <li style="margin-bottom: 0.35rem;">Fitxes de moviment (fletxes)</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h4>👣 Passos de la pràctica a l'aula</h4>
+        <div style="display: flex; flex-direction: column; gap: 0.95rem; margin-top: 0.5rem;">
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">1. Engegar el sistema</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Encén el robot i la torre prement el seu botó durant 2 segons. La llum blava fixa indica emparellament correcte.</p>
+          </div>
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">2. Col·locar les fitxes</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Posa les fletxes sobre les caselles buides del tauler seguint una línia horitzontal contínua.</p>
+          </div>
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">3. Prémer el gran botó Play</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Prem el botó gran taronja de la torre. La càmera escaneja les fitxes i el robot comença a moure's immediatament pel tapís.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-tip-box">
+        <strong>💡 Consell docent per a la sessió:</strong> Si la torre no llegeix una fitxa, comprova que la il·luminació no creï ombres intenses sobre el tauler.
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

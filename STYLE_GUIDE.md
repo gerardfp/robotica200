@@ -1,4 +1,4 @@
-# Guía de Estilo Visual para las Imágenes de Robòtica200
+# Guía de Estilo Visual para las Imágenes de Robòtica²⁰⁰
 
 Este documento establece el estándar visual obligatorio para todas las imágenes de portada de robots y elementos ilustrados de la web.
 
@@ -44,21 +44,59 @@ Minimalist flat vector 3D-isometric illustration of [Robot Name] from the refere
 
 ---
 
-## 4. Iconos de Esencia de los Robots (Formato 1:1 Cuadrado)
+## 4. Iconos de Esencia de los Robots (Formato 1:1 Cuadrado, Fondo Transparente)
 
-Para tarjetas de actividades, insignias curriculares, avatares y elementos compactos de la interfaz, se utilizan iconos cuadrados que capturan la **esencia/rostro icónico** de cada robot:
+Para tarjetas de actividades, insignias curriculares, avatares y elementos compactos de la interfaz, se utilizan iconos cuadrados que capturan la **esencia icónica con muy pocos detalles** (alto minimalismo, con igual nivel de detalle entre todos los robots):
 
-- **Ubicación:** `assets/icons/[robot].jpg` (resolución estándar: 512 × 512 px).
-- **Proporción y Encuadre:** Formato cuadrado 1:1, centrado, llenando el 70-75% del marco.
-- **Fondo Completo (Full Bleed):** Mismo fondo bicolor (pared pastel superior y mesa inferior) extendido hasta los bordes, sin marcos redondeados ni bordes de app icon.
-- **🚫 Lineless estricto:** Sin líneas de contorno ni trazos de tinta oscuros, idéntico al estilo 3D suave de *CodeyRocky*.
+- **Ubicación:** `assets/icons/[robot].png` (resolución estándar: 512 × 512 px).
+- **Fondo Transparente:** Formato PNG con canal alfa limpio y transparente, sin halos ni siluetas de borde.
+- **Proporción y Encuadre:** Formato cuadrado 1:1, centrado, ocupando ~75% del marco.
+- **🚫 Lineless estricto:** Sin líneas de contorno ni trazos de tinta oscuros, idéntico al estilo plano de *CodeyRocky*.
+- **🚫 Sin brillos ni degradados:** Acabado mate cel-shaded, cada forma es de un único color plano.
 - **🚫 Sin sombras en el suelo y sin texto.**
 
 ### Elementos de esencia por robot:
-- **CodeyRocky:** Cabeza de Codey con orejitas redondeadas, pantalla con sonrisa pixelada LED cian y botones A y B.
-- **TaleBot:** Cubo rechoncho azul claro con grandes ojos expresivos, ruedas naranjas y botones superiores de flechas de colores.
-- **CodingSet:** Pequeño robot MatataBot redondeado con cúpula translúcida naranja, ojitos amigables y ruedas naranjas.
-- **Spike Prime:** Hub inteligente amarillo con ojos ultrasónicos circulares blancos y sonrisa matricial de LEDs rojos.
-- **Coding Express:** Cabina de locomotora amarilla DUPLO con chimenea gris, ventana curvada y base azul.
-- **Microbit:** Placa negra micro:bit con sonrisa de LEDs rojos 5x5, botones A y B y conector inferior con pines dorados.
+- **CodeyRocky (`codeyrocky.png`):** Cabeza de Codey con orejitas redondeadas, pantalla oscura con sonrisa pixelada LED cian y botones redondos A y B.
+- **TaleBot (`talebot.png`):** Cubo rechoncho azul con frontal blanco, dos grandes ojos negros redondos, aleta lateral naranja y cuatro botones circulares de colores arriba.
+- **CodingSet (`codingset.png`):** Pequeño MatataBot cilíndrico blanco con cúpula naranja, dos pequeños ojos negros y ruedas naranjas.
+- **Spike (`spike.png`):** Hub inteligente rectangular amarillo con ojos ultrasónicos circulares, sonrisa LED roja, orificios Technic, dos motores angulares azul verdoso con ruedas y dos cables limpios conectados al hub.
+- **Coding Express (`coding-express.png`):** Cabina de locomotora amarilla LEGO DUPLO con 4 studs redondeados en el techo, chimenea gris, ventana arqueada diáfana, chasis azul y ruedas rojas.
+- **Microbit (`microbit.png`):** Placa rectangular negra de esquinas redondeadas, matriz LED 5x5 con sonrisa roja, botones A y B y conectores dorados inferiores.
+
+---
+
+## 5. Banners e Iconos de Secciones Temáticas
+
+Para las 3 secciones principales de la web (*Pensament computacional*, *Robòtica*, *Situacions d'aprenentatge*), se han diseñado tanto banners bicolores de cabecera como iconos minimalistas con fondo transparente:
+
+### A) Banners de Sección (`assets/banners/[seccion].jpg`)
+- **Pensament computacional (`pensament-computacional.jpg`):** Pared pastel lavanda y mesa crema, con bloques táctiles de flechas algorítmicas y bombilla de ideas estilizada.
+- **Robòtica (`robotica.jpg`):** Pared pastel azul cielo y mesa menta/arena, con robot amigo sonriente y bloques modulares STEAM con ojos de sensor.
+- **Situacions d'aprenentatge (`situacions-aprenentatge.jpg`):** Pared pastel melocotón y mesa crema cálida, con tapiz de misión isométrica con bandera roja y estrella dorada.
+
+### B) Iconos de Sección (`assets/icons/[seccion].png`)
+- **Pensament computacional (`pensament-computacional.png`):** Bombilla de ideas cálida con flechas de programación tangibles (avance y giro) en su interior, fondo transparente.
+- **Robòtica (`robotica.png`):** Rostro de robot amigo con antena esférica, pantalla con sonrisa pixelada LED cian y sensores laterales, fondo transparente.
+- **Situacions d'aprenentatge (`situacions-aprenentatge.png`):** Portapapeles de desafío/misión con bandera de meta roja y estrella dorada de consecución, fondo transparente.
+
+---
+
+## 6. Sistema Tipográfico Oficial
+
+- **Títulos y Encabezados:** **"Sora"** (`font-family: var(--font-heading)`). Tipografía sans-serif geométrica con gran personalidad y legibilidad para todos los niveles de encabezado (`h1-h6`), marca (`.logo-name`), tarjetas (`.pillar-title`, `.item-title`) y cabeceras de página.
+- **Cuerpo de Texto e Interfaz (UI):** **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`). Tipografía sans-serif moderna, equilibrada y limpia para párrafos, botones, menús de navegación, insignias/etiquetas y elementos de formulario.
+
+---
+
+## 7. Identidad Corporativa Oficial ("Robòtica per a docents")
+
+- **Concepto:** Síntesis geométrica abstracta ("El Bot Modular STEAM"), que equilibra el diseño lúdico/educativo con la sobriedad tecnológica y la madurez corporativa.
+- **Isotipo / Logotipo Vectorial (`assets/icons/logo.svg`):**
+  - **Barra superior:** Se muestra como imagen estática limpia (`.logo-badge-img`) en la cabecera de todas las páginas.
+  - **Favicon:** Icono oficial del navegador en formato SVG vectorial (`<link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">`).
+  - **Portada (`index.html`):** Integrado inline (`.home-hero-svg`), con suite dinámica de 8 microanimaciones robóticas activadas cada 2-4 segundos (`js/robot-animation.js`): parpadeo rápido de ojos (`robot-anim-blink`), oscilación de antena (`robot-anim-antenna`), alerta de sensor/radar (`robot-anim-alert`), micro-glitch de pantalla (`robot-anim-glitch`), mirada a los lados (`robot-anim-look`), salto alegre/hop (`robot-anim-happy`), inclinación de cabeza curiosa (`robot-anim-tilt`) y escaneo cromático modo matrix (`robot-anim-scan`). Reactivo además al clic del usuario.
+- **Ilustración Corporativa (`assets/banners/robotica-docents.jpg`, `assets/banners/corporativa.jpg`):** Formato 4:3 (800 × 600 px), fondo bicolor dividido (pared azul cielo pastel suave `#e0f2fe` y mesa clara `#f8fafc`), lineless y estrictamente sin sombras en el suelo.
+
+
+
 

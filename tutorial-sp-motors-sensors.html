@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motors i sensors: Tren d'engranatges i sensor de color - Spike | Robòtica²⁰⁰</title>
+  <meta name="description" content="Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una línia vermella.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-btn ">Inici</a>
+        <a href="pensament-computacional.html" class="nav-btn ">Pensament computacional</a>
+        <a href="robotica.html" class="nav-btn active">Robòtica</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <div class="section-nav-back">
+      <a href="robot-spike.html" class="btn-back">← Tornar a Spike</a>
+    </div>
+
+    <article class="detail-page-card">
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+          <span class="tag-badge primary">Spike</span>
+          <span class="tag-badge">Intermedi</span>
+          <span class="tag-badge">⏱️ 50 min</span>
+        </div>
+        <h1 class="detail-page-title" style="margin-top: 0.75rem;">Motors i sensors: Tren d'engranatges i sensor de color</h1>
+        <p style="font-size: 1.05rem; color: var(--text-muted); margin: 0;">Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una línia vermella.</p>
+      </div>
+
+      <div class="detail-section">
+        <h4>🎯 Objectius d'aprenentatge</h4>
+        <ul style="padding-left: 1.25rem;">
+          <li style="margin-bottom: 0.35rem;">Calcular la relació de transmissió entre un engranatge petit de 8 dents i un de gran de 24 dents.</li>
+          <li style="margin-bottom: 0.35rem;">Moure el motor exactament un nombre de graus o rotacions determinades.</li>
+          <li style="margin-bottom: 0.35rem;">Utilitzar el sensor de color en mode detecció de color directe.</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h4>📦 Material necessari</h4>
+        <ul style="padding-left: 1.25rem;">
+          <li style="margin-bottom: 0.35rem;">Hub SPIKE</li>
+          <li style="margin-bottom: 0.35rem;">2 motors angulars</li>
+          <li style="margin-bottom: 0.35rem;">1 sensor de color</li>
+          <li style="margin-bottom: 0.35rem;">Peces Technic i engranatges</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h4>👣 Passos de la pràctica a l'aula</h4>
+        <div style="display: flex; flex-direction: column; gap: 0.95rem; margin-top: 0.5rem;">
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">1. Muntatge mecatrònic</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Munta un eix que connecti el motor a l'engranatge de 8 dents i aquest al de 24 de la roda.</p>
+          </div>
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">2. Connectar al port B i D</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Connecta els motors als ports B i D, i el sensor de color al port C apuntant cap a terra.</p>
+          </div>
+          <div style="background: var(--bg-card-subtle); padding: 1.15rem 1.35rem; border-radius: var(--radius-sm); border-left: 3px solid var(--primary);">
+            <strong style="display: block; margin-bottom: 0.35rem; font-size: 1rem;">3. Condició de parada</strong>
+            <p style="font-size: 0.95rem; margin: 0;">Programa: 'Inicia el moviment dels motors' → 'Espera fins que el sensor C sigui [Vermell]' → 'Atura el moviment'.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="teacher-tip-box">
+        <strong>💡 Consell docent per a la sessió:</strong> Pregunta socràtica: 'Gira més ràpid la roda o el motor?' (El motor gira 3 vegades per cada volta de roda).
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>

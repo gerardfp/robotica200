@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ca" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microbit - Robòtica Educativa | Robòtica²⁰⁰</title>
+  <meta name="description" content="La placa microcontroladora per a projectes oberts i ciutadans">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-btn ">Inici</a>
+        <a href="pensament-computacional.html" class="nav-btn ">Pensament computacional</a>
+        <a href="robotica.html" class="nav-btn active">Robòtica</a>
+        <a href="situacions-aprenentatge.html" class="nav-btn ">Situacions d'aprenentatge</a>
+      </nav>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <div class="section-nav-back">
+      <a href="robotica.html" class="btn-back">← Tornar a Robòtica</a>
+    </div>
+
+    <div class="robot-profile">
+      <div class="robot-profile-top">
+        <div class="robot-profile-media">
+          <img src="assets/icons/microbit.png" alt="Microbit" class="robot-profile-avatar">
+        </div>
+        <div>
+          <span class="tag-badge primary" style="margin-bottom: 0.35rem; display: inline-block;">Primària, ESO i Batxillerat (9-18 anys)</span>
+          <h1 class="robot-profile-title">Microbit</h1>
+        </div>
+      </div>
+      <p class="robot-profile-sub">La placa microcontroladora per a projectes oberts i ciutadans</p>
+      <p class="robot-profile-desc">BBC micro:bit (V1 i V2) és una petita placa programable amb un cost molt accessible. Incorpora 25 LEDs vermells, dos polsadors, sensor de temperatura, brúixola magnètica, acceleròmetre de moviment, micròfon amb reconeixement de soroll, altaveu i emissor de ràdio freqüència entre plaques.</p>
+      <div class="robot-specs-list">
+        <span class="robot-spec-pill">✓ Matriu 5x5 de LEDs vermells</span>
+        <span class="robot-spec-pill">✓ Sensor de llum, temperatura i micròfon</span>
+        <span class="robot-spec-pill">✓ Acceleròmetre i brúixola 3D</span>
+        <span class="robot-spec-pill">✓ Antena de ràdio 2.4GHz</span>
+        <span class="robot-spec-pill">✓ Pins P0, P1, P2 amb sortides analògiques</span>
+      </div>
+    </div>
+
+    <div class="robot-tutorials-heading">
+      <h3>Tutorials de Microbit</h3>
+      <p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p>
+    </div>
+
+    <div class="clean-grid">
+      <a href="tutorial-mb-primeres-passes.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Iniciació</span>
+          <span class="tag-badge">30 min</span>
+        </div>
+        <h4 class="item-title">Primeres passes: MakeCode, matriu de 25 LEDs i polsadors</h4>
+        <p class="item-desc">Com programar la placa des del navegador web MakeCode sense instal·lar cap programa i descarregar l'arxiu .hex.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+      <a href="tutorial-mb-motors-sensors.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Intermedi</span>
+          <span class="tag-badge">50 min</span>
+        </div>
+        <h4 class="item-title">Motors i sensors: Sensor d'humitat i servomotors</h4>
+        <p class="item-desc">Connectar sensors externs als pins de la vora (P0, P1, P2) amb pinces de cocodril per automatitzar una alarma de reg.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+      <a href="tutorial-mb-radio-mesh.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Intermedi</span>
+          <span class="tag-badge">45 min</span>
+        </div>
+        <h4 class="item-title">Xarxa de ràdio sense fils: Walkie-talkie i sensors remots</h4>
+        <p class="item-desc">Connectar diverses micro:bits de l'aula entre si utilitzant l'antena de ràdio integrada sense necessitat de Wi-Fi.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+      <a href="tutorial-mb-so-microfon.html" class="item-card">
+        <div class="card-top">
+          <span class="tag-badge primary">Iniciació</span>
+          <span class="tag-badge">35 min</span>
+        </div>
+        <h4 class="item-title">Micròfon i so: Detector de soroll i aplaudiments (V2)</h4>
+        <p class="item-desc">Utilitzar el micròfon MEMS de la versió 2 per controlar el nivell de decibels de l'aula o encendre un llum en picar de mans.</p>
+        <div class="item-footer">
+          <span>Pas a pas d'aula</span>
+          <span>Obrir tutorial →</span>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
