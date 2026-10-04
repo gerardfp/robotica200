@@ -1,33 +1,10 @@
-// _js/theme.js - Gestió del mode clar / fosc
+// _js/theme.js - Tema clar estricte (eliminació de mode fosc i neteja de preferències)
 (function () {
-  const STORAGE_KEY = 'robotica200_theme';
-  const html = document.documentElement;
-
-  function getPreferredTheme() {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) return saved;
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
-  function applyTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    const icon = document.getElementById('theme-icon');
-    if (icon) {
-      icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  'use strict';
+  try {
+    localStorage.removeItem('robotica200_theme');
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+      document.documentElement.removeAttribute('data-theme');
     }
-  }
-
-  const initialTheme = getPreferredTheme();
-  applyTheme(initialTheme);
-
-  // Delegació d'esdeveniments per funcionar amb Web Components
-  document.addEventListener('click', function (e) {
-    const btn = e.target.closest('#theme-toggle');
-    if (btn) {
-      const current = html.getAttribute('data-theme') || 'light';
-      const next = current === 'dark' ? 'light' : 'dark';
-      applyTheme(next);
-      localStorage.setItem(STORAGE_KEY, next);
-    }
-  });
+  } catch (e) {}
 })();

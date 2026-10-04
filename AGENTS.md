@@ -25,18 +25,18 @@
 - **🚫 Sense text:** Cap text, paraula, xifra, logotip ni marca d'aigua.
 
 ## 🎴 Sistema de Targetes i Paletes de 2 Colors per Robot
-- Cada robot té una **paleta de dos colors associats**, que s'utilitzen per:
-  1. El fons bicolor corbat/diagonal darrere del robot (generat per CSS).
-  2. La vora de la targeta (`border: 2px solid`) i els elements decoratius.
+- Cada robot té una **paleta de dos colors associats amb proporcions oficials**, que s'utilitzen per:
+  1. El fons de la imatge generat per CSS amb **composició d'àrees superposades** (sense diagonal simple): Color 1 dominant (65-70%) i Color 2 superposat (30-35%).
+  2. La vora de la targeta (**gruix de 4px**: `border: 4px solid var(--card-border)`).
   3. L'indicador de 2 punts cromàtics (`.robot-color-dots`) sobre el títol.
   4. La píndola flotant d'edat a la cantonada superior dreta (`👤 X anys`).
 - **Paletes Oficials:**
-  - `Coding Express` (`coding-express`): Vermell viu `#E01A27` + Groc ambre `#F5B901` (👤 2-5 anys) — Prefix: `ce-`
-  - `Tale-Bot` (`tale-bot`): Taronja corall `#FF7E2D` + Violeta `#784FAD` (👤 3-7 anys) — Prefix: `tb-`
-  - `Coding Set` (`coding-set`): Taronja mandarí `#F76D08` + Verd fresc `#5DA22B` (👤 4-9 anys) — Prefix: `cs-`
-  - `Codey Rocky` (`codey-rocky`): Blau cel / Atzur `#0377DA` + Groc sorra `#FEC907` (👤 6-12 anys) — Prefix: `cr-`
-  - `Spike` (`spike`): Magenta viu `#B92384` + Groc LEGO `#FDDC43` (👤 10-16 anys) — Prefix: `sp-`
-  - `Micro:bit` (`microbit`): Blau elèctric `#067CD4` + Negre obsidiana `#18181B` (👤 9-18 anys) — Prefix: `mb-`
+  - `Coding Express` (`coding-express`): `#e4242b` (70%) + `#fec002` (30%) — (👤 2-5 anys) — Prefix: `ce-`
+  - `Tale-Bot` (`tale-bot`): `#fc8439` (65%) + `#804cbd` (35%) — (👤 3-7 anys) — Prefix: `tb-`
+  - `Coding Set` (`coding-set`): `#fc7813` (65%) + `#60a62d` (35%) — (👤 4-9 anys) — Prefix: `cs-`
+  - `Codey Rocky` (`codey-rocky`): `#0079dc` (70%) + `#fdc80a` (30%) — (👤 6-12 anys) — Prefix: `cr-`
+  - `Spike` (`spike`): `#d82098` (65%) + `#fddc3e` (35%) — (👤 10-16 anys) — Prefix: `sp-`
+  - `Micro:bit` (`microbit`): `#047fdf` (70%) + `#4a515d` (30%) — (👤 9-18 anys) — Prefix: `mb-`
 
 ## 🚩 Banners i Icones de Seccions Temàtiques
 - **Seccions:** *Pensament computacional*, *Robots* i *Situacions d'aprenentatge*.
@@ -55,7 +55,15 @@
   - **Portada (`index.html`):** Inserit en línia (`.home-hero-svg`) amb suite dinàmica de 8 micro-animacions robòtiques executades cada 2-4 segons (`_js/robot-animation.js`): parpelleig ràpid d'ulls (`robot-anim-blink`), oscil·lació ràpida d'antena (`robot-anim-antenna`), alerta de sensor i radar (`robot-anim-alert`), micro-glitch de pantalla (`robot-anim-glitch`), mirada curiosa als costats (`robot-anim-look`), salt alegre/hop (`robot-anim-happy`), inclinació de cap pensant (`robot-anim-tilt`) i escaneig cromàtic de mode matrix (`robot-anim-scan`). També reactiu al clic/interacció de l'usuari.
 - **Il·lustració corporativa:** `_assets/banners/robotica-docents.jpg` (i `_assets/banners/corporativa.jpg`) a format 4:3 (800 × 600 px), amb fons bicolor pla (paret blau cel pastís i taula clara), lineless, acabat mat i sense ombres al terra.
 
+## ☀️ Tema Clar Exclusiu (Sense Mode Fosc)
+- El lloc web funciona **exclusivament en tema clar**.
+- Queda absolutament descartat qualsevol selector de mode fosc (`[data-theme="dark"]`, botons d'alternança, `prefers-color-scheme`, etc.).
+- Tot l'estil es basa en fons blancs nets (`#ffffff`), fons de pàgina suaus (`#f8fafc`), capçaleres hero i footers en `#ebf5fd` i contrast òptim de text (`#0f172a` i `#64748b`).
 
-
-
-
+## 📐 Layout Unificat de Seccions Principals
+- Les pàgines principals de secció (**Robots**, **Pensament computacional** i **Situacions d'aprenentatge**) utilitzen exactament la mateixa estructura visual:
+  1. **Hero corporatiu (`.robots-hero` / `.section-hero`):** Fons `#ebf5fd`, `border-radius: 28px`, vora suau `1px solid rgba(0, 121, 220, 0.12)`, padding generós de 2.5rem.
+     - Columna esquerra: Botó de retorn (`<nav-back>`), títol `h1` en Sora 800, descripció clara i guions de color STEAM (`.accent-dashes`).
+     - Columna dreta: Banner oficial 4:3 de la secció amb `border-radius: 20px` i ombra de profunditat neta.
+  2. **Zona de contingut / Graella:** Graella d'elements (`.clean-grid`) amb targetes de baixa densitat, cantonades arrodonides (20-24px), tipografia Sora en els títols i elevació suau a l'hover.
+  3. **Callout inferior de suport (`.catalog-callout`):** Bloc inferior de reflexió/guia pedagògica abans del peu de pàgina.

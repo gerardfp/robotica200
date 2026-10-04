@@ -69,7 +69,6 @@ robotica200/
 │   └── styles.css                       # Full d'estils unificat (Sora + Plus Jakarta Sans)
 ├── _js/
 │   ├── components.js                    # Web Components natius (<site-header>, <site-footer>, <nav-back>)
-│   ├── theme.js                         # Control del mode clar / fosc
 │   ├── filters.js                       # Filtres multicriteri per a situacions d'aprenentatge
 │   └── robot-animation.js               # Suite de 8 micro-animacions del robot de portada
 └── _assets/

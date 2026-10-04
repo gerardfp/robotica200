@@ -34,26 +34,6 @@
   --transition: all 0.2s ease;
 }
 
-[data-theme="dark"] {
-  --bg-page: #0f172a;
-  --bg-card: #1e293b;
-  --bg-card-subtle: #172033;
-  --border-color: #334155;
-  --border-hover: #475569;
-  
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-light: #64748b;
-  
-  --primary: #3b82f6;
-  --primary-hover: #60a5fa;
-  --primary-subtle: rgba(59, 130, 246, 0.15);
-  
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.5);
-}
-
 /* Reset bàsic */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -225,25 +205,6 @@ guide-page {
 .nav-btn.active {
   color: var(--primary);
   background: var(--primary-subtle);
-}
-
-.theme-toggle {
-  background: var(--bg-card-subtle);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
-  border-radius: var(--radius-full);
-  width: 2.4rem;
-  height: 2.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.05rem;
-  transition: var(--transition);
-}
-
-.theme-toggle:hover {
-  border-color: var(--border-hover);
 }
 
 /* Contingut de les pàgines */
@@ -636,16 +597,30 @@ guide-page {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
   padding: 0.4rem 0.8rem;
   border-radius: var(--radius-sm);
   transition: var(--transition);
   text-decoration: none;
 }
 
+.btn-back-arrow {
+  color: #2563eb;
+  font-size: 1.15em;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
 .btn-back:hover {
   color: var(--primary);
   background: var(--bg-card-subtle);
+}
+
+.btn-back:hover .btn-back-arrow {
+  transform: translateX(-3px);
+  color: #1d4ed8;
 }
 
 .view-header {
@@ -687,64 +662,91 @@ guide-page {
   gap: 1.5rem;
 }
 
-/* Targeta minimalista */
+/* Targeta unificada per a activitats i situacions */
 .item-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
   padding: 1.75rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  transition: var(--transition);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
 .item-card:hover {
-  border-color: var(--border-hover);
-  box-shadow: var(--shadow-card);
-  transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
 }
 
 /* ==========================================================================
-   NOU SISTEMA VISUAL: TARGETES I HERO DE ROBOTS (STYLE GUIDE REDESIGN)
+   NOU SISTEMA VISUAL: HERO I TARGETES (ROBOTS, PC I SITUACIONS)
    ========================================================================== */
 
-/* Hero de la pàgina de Robots */
+/* Hero unificat de les seccions (Robots, Pensament Computacional, Situacions) */
+.section-hero,
 .robots-hero {
+  width: 100%;
+  background-color: #ebf5fd;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 3.25rem 0;
+}
+
+.section-hero-inner,
+.robots-hero-inner {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
   gap: 2.5rem;
-  margin-bottom: 2rem;
-  padding: 0.5rem 0 1rem;
+}
+
+/* Retrocompatibilitat si no s'utilitza contenidor intern */
+.section-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)),
+.robots-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)) {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 @media (max-width: 860px) {
+  .section-hero,
   .robots-hero {
+    padding: 2rem 0;
+  }
+  .section-hero-inner,
+  .robots-hero-inner {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
 
+.section-hero-title,
 .robots-hero-title {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 3.8vw, 2.75rem);
   font-weight: 800;
-  color: var(--text-color);
+  color: #010b40;
   letter-spacing: -0.025em;
   margin: 0.5rem 0 0.85rem;
   line-height: 1.15;
 }
 
+.section-hero-desc,
 .robots-hero-desc {
   font-size: 1.05rem;
   color: var(--text-muted);
   line-height: 1.55;
   margin-bottom: 1.35rem;
-  max-width: 480px;
+  max-width: 520px;
 }
 
 .accent-dashes {
@@ -764,12 +766,14 @@ guide-page {
 .dash-yellow { background: #F59E0B; }
 .dash-blue { background: #3B82F6; }
 
+.section-hero-media,
 .robots-hero-media {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.section-hero-img,
 .robots-hero-img {
   max-width: 100%;
   max-height: 280px;
@@ -779,11 +783,11 @@ guide-page {
   object-fit: contain;
 }
 
-/* Targeta de Robot Redissenyada */
+/* Targeta de Robot Redissenyada (vores 4px i composició d'àrees superposades) */
 .robot-card {
   padding: 0;
   border-radius: 24px;
-  border: 2px solid var(--card-border, var(--border-color));
+  border: 4px solid var(--card-border, var(--border-color));
   background: var(--bg-card);
   overflow: hidden;
   display: flex;
@@ -797,23 +801,26 @@ guide-page {
 
 .robot-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.09);
-  border-color: var(--robot-primary);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.10);
+  border-color: var(--card-border);
 }
 
-/* Àrea d'imatge superior amb fons bicolor */
+/* Àrea d'imatge superior amb fons vectorial SVG isomètric i corbat */
 .robot-card-media {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 11;
-  border-radius: 22px 22px 0 0;
+  border-radius: 20px 20px 0 0;
   overflow: hidden;
   margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
-  background: var(--robot-bg, #f1f5f9);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--robot-c1);
 }
 
 /* Insígnia d'edat flotant a la cantonada superior dreta */
@@ -821,8 +828,10 @@ guide-page {
   position: absolute;
   top: 12px;
   right: 12px;
-  z-index: 2;
-  background: #ffffff;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   color: var(--robot-badge-text, var(--text-color));
   padding: 4px 12px;
   border-radius: var(--radius-full);
@@ -831,25 +840,22 @@ guide-page {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
   letter-spacing: 0.01em;
 }
 
-[data-theme="dark"] .robot-age-badge {
-  background: #1e293b;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
 .robot-card-img {
-  width: 78%;
-  height: 78%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 1;
+  z-index: 3;
+  position: relative;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
 }
 
 .robot-card:hover .robot-card-img {
-  transform: scale(1.06);
+  transform: scale(1.05);
 }
 
 /* Cos del contingut de la targeta */
@@ -927,79 +933,77 @@ guide-page {
    PALETES ESPECÍFIQUES PER A CADA ROBOT (OFICIALS)
    ========================================================================== */
 
-/* 1. Coding Express */
+/* 1. Coding Express (#e4242b 70% + #fec002 30%) */
 .robot-ce {
-  --robot-primary: #E01A27;
-  --robot-secondary: #F5B901;
-  --card-border: #FFCDD2;
-  --robot-badge-text: #C53030;
-  --robot-bg: linear-gradient(142deg, #F04134 0%, #FA7268 46%, #FFF1BE 46.5%, #FEE78B 100%);
+  --robot-c1: #e4242b;
+  --robot-c2: #fec002;
+  --card-border: #e4242b;
+  --robot-primary: #e4242b;
+  --robot-badge-text: #e4242b;
 }
-.robot-ce .dot-1 { background: #E01A27; }
-.robot-ce .dot-2 { background: #F5B901; }
+.robot-ce .robot-card-media { background-image: url('../_assets/robots/bg-coding-express.svg'); }
+.robot-ce .dot-1 { background: #e4242b; }
+.robot-ce .dot-2 { background: #fec002; }
 
-/* 2. Tale-Bot */
+/* 2. Tale-Bot (#fc8439 65% + #804cbd 35%) */
 .robot-tb {
-  --robot-primary: #784FAD;
-  --robot-secondary: #FF7E2D;
-  --card-border: #E9D5FF;
-  --robot-badge-text: #6B46C1;
-  --robot-bg: linear-gradient(142deg, #A78BFA 0%, #C4B5FD 46%, #FED7AA 46.5%, #FFEDD5 100%);
+  --robot-c1: #fc8439;
+  --robot-c2: #804cbd;
+  --card-border: #fc8439;
+  --robot-primary: #fc8439;
+  --robot-badge-text: #fc8439;
 }
-.robot-tb .dot-1 { background: #FF7E2D; }
-.robot-tb .dot-2 { background: #784FAD; }
+.robot-tb .robot-card-media { background-image: url('../_assets/robots/bg-tale-bot.svg'); }
+.robot-tb .dot-1 { background: #fc8439; }
+.robot-tb .dot-2 { background: #804cbd; }
 
-/* 3. Coding Set */
+/* 3. Coding Set (#fc7813 65% + #60a62d 35%) */
 .robot-cs {
-  --robot-primary: #5DA22B;
-  --robot-secondary: #F76D08;
-  --card-border: #BBF7D0;
-  --robot-badge-text: #22543D;
-  --robot-bg: linear-gradient(142deg, #86EFAC 0%, #BBF7D0 48%, #FED7AA 48.5%, #FFEDD5 100%);
+  --robot-c1: #fc7813;
+  --robot-c2: #60a62d;
+  --card-border: #fc7813;
+  --robot-primary: #fc7813;
+  --robot-badge-text: #fc7813;
 }
-.robot-cs .dot-1 { background: #F76D08; }
-.robot-cs .dot-2 { background: #5DA22B; }
+.robot-cs .robot-card-media { background-image: url('../_assets/robots/bg-coding-set.svg'); }
+.robot-cs .dot-1 { background: #fc7813; }
+.robot-cs .dot-2 { background: #60a62d; }
 
-/* 4. Codey Rocky */
+/* 4. Codey Rocky (#0079dc 70% + #fdc80a 30%) */
 .robot-cr {
-  --robot-primary: #0377DA;
-  --robot-secondary: #FEC907;
-  --card-border: #BAE6FD;
-  --robot-badge-text: #2B6CB0;
-  --robot-bg: linear-gradient(142deg, #0284C7 0%, #38BDF8 46%, #FEF3C7 46.5%, #FDE68A 100%);
+  --robot-c1: #0079dc;
+  --robot-c2: #fdc80a;
+  --card-border: #0079dc;
+  --robot-primary: #0079dc;
+  --robot-badge-text: #0079dc;
 }
-.robot-cr .dot-1 { background: #0377DA; }
-.robot-cr .dot-2 { background: #FEC907; }
+.robot-cr .robot-card-media { background-image: url('../_assets/robots/bg-codey-rocky.svg'); }
+.robot-cr .dot-1 { background: #0079dc; }
+.robot-cr .dot-2 { background: #fdc80a; }
 
-/* 5. Spike */
+/* 5. SPIKE (#d82098 65% + #fddc3e 35%) */
 .robot-sp {
-  --robot-primary: #B92384;
-  --robot-secondary: #FDDC43;
-  --card-border: #F5D0FE;
-  --robot-badge-text: #97266D;
-  --robot-bg: linear-gradient(142deg, #BA2576 0%, #E879F9 46%, #FEF08A 46.5%, #FDE047 100%);
+  --robot-c1: #d82098;
+  --robot-c2: #fddc3e;
+  --card-border: #d82098;
+  --robot-primary: #d82098;
+  --robot-badge-text: #d82098;
 }
-.robot-sp .dot-1 { background: #B92384; }
-.robot-sp .dot-2 { background: #FDDC43; }
+.robot-sp .robot-card-media { background-image: url('../_assets/robots/bg-spike.svg'); }
+.robot-sp .dot-1 { background: #d82098; }
+.robot-sp .dot-2 { background: #fddc3e; }
 
-/* 6. Micro:bit */
+/* 6. micro:bit (#047fdf 70% + #4a515d 30%) */
 .robot-mb {
-  --robot-primary: #067CD4;
-  --robot-secondary: #18181B;
-  --card-border: #BAE6FD;
-  --robot-badge-text: #2C5282;
-  --robot-bg: linear-gradient(142deg, #0284C7 0%, #38BDF8 46%, #FEF3C7 46.5%, #FDE68A 100%);
+  --robot-c1: #047fdf;
+  --robot-c2: #4a515d;
+  --card-border: #047fdf;
+  --robot-primary: #047fdf;
+  --robot-badge-text: #047fdf;
 }
-.robot-mb .dot-1 { background: #067CD4; }
-.robot-mb .dot-2 { background: #18181B; }
-
-/* Mode Fosc: ajust de contrast per a les vores de targeta */
-[data-theme="dark"] .robot-ce { --card-border: rgba(224, 26, 39, 0.35); }
-[data-theme="dark"] .robot-tb { --card-border: rgba(120, 79, 173, 0.4); }
-[data-theme="dark"] .robot-cs { --card-border: rgba(93, 162, 43, 0.4); }
-[data-theme="dark"] .robot-cr { --card-border: rgba(3, 119, 218, 0.4); }
-[data-theme="dark"] .robot-sp { --card-border: rgba(185, 35, 132, 0.4); }
-[data-theme="dark"] .robot-mb { --card-border: rgba(6, 124, 212, 0.4); }
+.robot-mb .robot-card-media { background-image: url('../_assets/robots/bg-microbit.svg'); }
+.robot-mb .dot-1 { background: #047fdf; }
+.robot-mb .dot-2 { background: #4a515d; }
 
 /* Banner Pedagògic inferior de la pàgina de Robots */
 .robots-footer-banner {
@@ -1264,13 +1268,6 @@ guide-page {
   margin-top: 1.5rem;
 }
 
-[data-theme="dark"] .teacher-tip-box {
-  background: #78350f22;
-  border-color: #78350f55;
-  color: #fde68a;
-}
-
-
 .btn-primary {
   background: var(--primary);
   color: #ffffff;
@@ -1287,7 +1284,71 @@ guide-page {
   background: var(--primary-hover);
 }
 
-/* Footer sobri */
+/* Site Footer amb ones i fons #ebf5fd */
+.site-footer {
+  margin-top: 4rem;
+  width: 100%;
+  position: relative;
+  background-color: #ebf5fd;
+  overflow: hidden;
+}
+
+.site-footer-waves {
+  width: 100%;
+  height: 52px;
+  overflow: hidden;
+  line-height: 0;
+  display: block;
+}
+
+.footer-wave-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.footer-wave-back {
+  fill: rgba(0, 121, 220, 0.09);
+}
+
+.footer-wave-front {
+  fill: #ebf5fd;
+}
+
+.site-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.site-footer-motto {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.footer-accent-dashes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.site-footer-brand {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Footer sobri retrocompatible */
 .footer {
   margin-top: auto;
   padding: 2.5rem 0;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca" data-theme="light">
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +14,8 @@
 </head>
 <body>
   <site-header active="robots" root="../"></site-header>
-  <main class="container page-content">
-    <div class="robots-hero">
+  <div class="robots-hero">
+    <div class="container robots-hero-inner">
       <div class="robots-hero-content">
         <nav-back href="../index.html" label="inici"></nav-back>
         <h1 class="robots-hero-title">Robòtica Educativa</h1>
@@ -30,13 +30,14 @@
         <img src="../_assets/banners/robots.jpg" alt="Robots d'Aula" class="robots-hero-img" width="800" height="600">
       </div>
     </div>
-
+  </div>
+  <main class="container page-content">
     <div class="clean-grid">
       <!-- 1. Coding Express -->
       <a id="robot-coding-express" href="../robot/coding-express/index.html" class="robot-card robot-ce">
         <div class="robot-card-media">
           <span class="robot-age-badge"><span class="badge-icon">👤</span> 2-5 anys</span>
-          <img src="../_assets/robots/coding-express.png" alt="Coding Express" class="robot-card-img" onerror="this.onerror=null; this.src='../_assets/robots/coding-express.jpg';">
+          <img src="../_assets/robots/coding-express.png" alt="Coding Express" class="robot-card-img">
         </div>
         <div class="robot-card-body">
           <div class="robot-color-dots">
@@ -59,7 +60,7 @@
       <a id="robot-tale-bot" href="../robot/tale-bot/index.html" class="robot-card robot-tb">
         <div class="robot-card-media">
           <span class="robot-age-badge"><span class="badge-icon">👤</span> 3-7 anys</span>
-          <img src="../_assets/robots/tale-bot.png" alt="Tale-Bot" class="robot-card-img" onerror="this.onerror=null; this.src='../_assets/robots/tale-bot.jpg';">
+          <img src="../_assets/robots/tale-bot.png" alt="Tale-Bot" class="robot-card-img">
         </div>
         <div class="robot-card-body">
           <div class="robot-color-dots">
@@ -82,7 +83,7 @@
       <a id="robot-coding-set" href="../robot/coding-set/index.html" class="robot-card robot-cs">
         <div class="robot-card-media">
           <span class="robot-age-badge"><span class="badge-icon">👤</span> 4-9 anys</span>
-          <img src="../_assets/robots/coding-set.png" alt="Coding Set" class="robot-card-img" onerror="this.onerror=null; this.src='../_assets/robots/coding-set.jpg';">
+          <img src="../_assets/robots/coding-set.png" alt="Coding Set" class="robot-card-img">
         </div>
         <div class="robot-card-body">
           <div class="robot-color-dots">
@@ -105,7 +106,7 @@
       <a id="robot-codey-rocky" href="../robot/codey-rocky/index.html" class="robot-card robot-cr">
         <div class="robot-card-media">
           <span class="robot-age-badge"><span class="badge-icon">👤</span> 6-12 anys</span>
-          <img src="../_assets/robots/codey-rocky.png" alt="Codey Rocky" class="robot-card-img" onerror="this.onerror=null; this.src='../_assets/robots/codey-rocky.jpg';">
+          <img src="../_assets/robots/codey-rocky.png" alt="Codey Rocky" class="robot-card-img">
         </div>
         <div class="robot-card-body">
           <div class="robot-color-dots">
@@ -128,7 +129,7 @@
       <a id="robot-spike" href="../robot/spike/index.html" class="robot-card robot-sp">
         <div class="robot-card-media">
           <span class="robot-age-badge"><span class="badge-icon">👤</span> 10-16 anys</span>
-          <img src="../_assets/robots/spike.png" alt="Spike" class="robot-card-img" onerror="this.onerror=null; this.src='../_assets/robots/spike.jpg';">
+          <img src="../_assets/robots/spike.png" alt="Spike" class="robot-card-img">
         </div>
         <div class="robot-card-body">
           <div class="robot-color-dots">
@@ -151,7 +152,7 @@
       <a id="robot-microbit" href="../robot/microbit/index.html" class="robot-card robot-mb">
         <div class="robot-card-media">
           <span class="robot-age-badge"><span class="badge-icon">👤</span> 9-18 anys</span>
-          <img src="../_assets/robots/microbit.png" alt="Micro:bit" class="robot-card-img" onerror="this.onerror=null; this.src='../_assets/robots/microbit.jpg';">
+          <img src="../_assets/robots/microbit.png" alt="Micro:bit" class="robot-card-img">
         </div>
         <div class="robot-card-body">
           <div class="robot-color-dots">
@@ -171,23 +172,10 @@
       </a>
     </div>
 
-    <div class="robots-footer-banner">
-      <div class="robots-footer-mascot">
-        <img src="../_assets/icons/logo.svg" alt="Robòtica²⁰⁰" class="robots-footer-logo">
-        <div class="robots-footer-motto">
-          <p>Aprendre fent,</p>
-          <p>programar per a un futur millor.</p>
-          <div class="accent-dashes">
-            <span class="dash dash-red"></span>
-            <span class="dash dash-yellow"></span>
-            <span class="dash dash-blue"></span>
-          </div>
-        </div>
-      </div>
+    <div class="catalog-callout" style="margin-top: 2.5rem;">
       <p class="catalog-supporting-link"><a href="../guia/robotica-educativa/index.html">Consulta la guia per triar robots i preparar les sessions <span aria-hidden="true">→</span></a></p>
     </div>
   </main>
   <site-footer></site-footer>
-  <script src="../_js/theme.js"></script>
 </body>
 </html>

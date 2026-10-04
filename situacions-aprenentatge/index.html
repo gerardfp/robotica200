@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ca" data-theme="light">
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Situacions d&#39;Aprenentatge Curriculars | Robòtica200</title>
-  <meta name="description" content="Catàleg de situacions d&#39;aprenentatge curriculars de robòtica i pensament computacional.">
+  <title>Situacions d'Aprenentatge Curriculars | Robòtica200</title>
+  <meta name="description" content="Catàleg de situacions d'aprenentatge curriculars de robòtica i pensament computacional.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -15,48 +15,87 @@
 </head>
 <body>
   <site-header active="situacions" root="../"></site-header>
+  <div class="robots-hero">
+    <div class="container robots-hero-inner">
+      <div class="robots-hero-content">
+        <nav-back href="../index.html" label="inici"></nav-back>
+        <h1 class="robots-hero-title">Situacions d'Aprenentatge</h1>
+        <p class="robots-hero-desc">Propostes curriculars i reptes d'aula per connectar la robòtica i el pensament computacional amb contextos significatius.</p>
+        <div class="accent-dashes">
+          <span class="dash dash-red"></span>
+          <span class="dash dash-yellow"></span>
+          <span class="dash dash-blue"></span>
+        </div>
+      </div>
+      <div class="robots-hero-media">
+        <img src="../_assets/banners/situacions-aprenentatge.jpg" alt="Situacions d'Aprenentatge" class="robots-hero-img" width="800" height="600">
+      </div>
+    </div>
+  </div>
   <main class="container page-content">
-    <nav-back href="../index.html" label="inici"></nav-back>
-<div class="view-header">
-  <div class="view-header-top">
-<img src="../_assets/icons/situacions-aprenentatge.png" alt="" class="view-header-icon">    <div><h1>Situacions d&#39;Aprenentatge</h1><p>Filtra les situacions per trobar un repte aplicable al teu cicle, al robot disponible i a l’àrea que vols treballar.</p>
-<p>Prenem com a referència el projecte <a href="https://portal.edu.gva.es/escola40/va/inici/">Escola 4.0 de la Generalitat Valenciana</a>, que impulsa la competència digital i el pensament computacional als centres educatius. Les propostes d’aquest catàleg es poden adaptar al projecte de cada centre i a les necessitats del seu alumnat.</p></div>
-  </div>
-  <figure class="catalog-diagram">
-    <img src="../_assets/imatges/situacions-aula.webp" alt="Tale-Bot i Codey Rocky al costat d’una maqueta simple de barri amb edificis, arbres i un camí accessible." loading="eager" width="1440" height="480">
-    <figcaption>Els dos robots de la dotació apareixen en un escenari de disseny i exploració del barri.</figcaption>
-  </figure>
-<p class="catalog-callout"><strong>Orientació curricular.</strong> Els filtres orienten la cerca; ajusta els sabers i criteris al nivell, a la programació del centre i al projecte del grup.</p></div>
-<div class="filters-bar">
-  <div class="filter-group">
-    <label class="filter-label" for="filter-robot">Robot</label>
-    <select id="filter-robot" class="filter-select">
-<option value="all">Tots els robots</option><option value="coding-express">Coding Express</option><option value="tale-bot">Tale-Bot</option><option value="coding-set">Coding Set</option><option value="codey-rocky">Codey Rocky</option><option value="spike">Spike</option><option value="microbit">Micro:bit</option><option value="desendollat">Desendollat (Sense robot)</option>    </select>
-  </div>
-  <div class="filter-group">
-    <label class="filter-label" for="filter-cicle">Cicle</label>
-    <select id="filter-cicle" class="filter-select">
-<option value="all">Tots els cicles</option><option value="infantil">Educació Infantil</option><option value="cicle-inicial">Cicle Inicial</option><option value="cicle-mitja">Cicle Mitjà</option><option value="cicle-superior">Cicle Superior</option><option value="eso">ESO</option>    </select>
-  </div>
-  <div class="filter-group">
-    <label class="filter-label" for="filter-tematica">Temàtica</label>
-    <select id="filter-tematica" class="filter-select">
-<option value="all">Totes les temàtiques</option><option value="sostenibilitat">Medi ambient i sostenibilitat</option><option value="ciutat">Ciutat intel·ligent i accessibilitat</option><option value="salut">Salut, hàbits i benestar</option><option value="art">Art, música i expressió</option><option value="espai">Exploració espacial</option><option value="societat">Convivència i ciutadania</option>    </select>
-  </div>
-  <div class="filter-group">
-    <label class="filter-label" for="filter-materia">Matèria</label>
-    <select id="filter-materia" class="filter-select">
-<option value="all">Totes les matèries</option><option value="medi">Coneixement del Medi / Ciències</option><option value="matematiques">Matemàtiques</option><option value="llengua">Llengua i Literatura</option><option value="artistica">Educació Artística</option><option value="tecnologia">Tecnologia i Digitalització</option>    </select>
-  </div>
-  <div class="filter-count">
-    <span id="situations-count" role="status" aria-live="polite">Mostrant 10 de 10 situacions</span>
-    <button type="button" class="btn-reset-filters" id="btn-reset-sa">Restablir filtres</button>
-  </div>
-</div>
-<situation-grid root="../"></situation-grid>
-<p class="catalog-supporting-link"><a href="../guia/situacions-aprenentatge/index.html">Consulta la guia de disseny, planificació i avaluació <span aria-hidden="true">→</span></a></p>
-<p id="situations-empty" hidden>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>  </main>
+    <div class="filters-bar">
+      <div class="filter-group">
+        <label class="filter-label" for="filter-robot">Robot</label>
+        <select id="filter-robot" class="filter-select">
+          <option value="all">Tots els robots</option>
+          <option value="coding-express">Coding Express</option>
+          <option value="tale-bot">Tale-Bot</option>
+          <option value="coding-set">Coding Set</option>
+          <option value="codey-rocky">Codey Rocky</option>
+          <option value="spike">Spike</option>
+          <option value="microbit">Micro:bit</option>
+          <option value="desendollat">Desendollat (Sense robot)</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="filter-cicle">Cicle</label>
+        <select id="filter-cicle" class="filter-select">
+          <option value="all">Tots els cicles</option>
+          <option value="infantil">Educació Infantil</option>
+          <option value="cicle-inicial">Cicle Inicial</option>
+          <option value="cicle-mitja">Cicle Mitjà</option>
+          <option value="cicle-superior">Cicle Superior</option>
+          <option value="eso">ESO</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="filter-tematica">Temàtica</label>
+        <select id="filter-tematica" class="filter-select">
+          <option value="all">Totes les temàtiques</option>
+          <option value="sostenibilitat">Medi ambient i sostenibilitat</option>
+          <option value="ciutat">Ciutat intel·ligent i accessibilitat</option>
+          <option value="salut">Salut, hàbits i benestar</option>
+          <option value="art">Art, música i expressió</option>
+          <option value="espai">Exploració espacial</option>
+          <option value="societat">Convivència i ciutadania</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label" for="filter-materia">Matèria</label>
+        <select id="filter-materia" class="filter-select">
+          <option value="all">Totes les matèries</option>
+          <option value="medi">Coneixement del Medi / Ciències</option>
+          <option value="matematiques">Matemàtiques</option>
+          <option value="llengua">Llengua i Literatura</option>
+          <option value="artistica">Educació Artística</option>
+          <option value="tecnologia">Tecnologia i Digitalització</option>
+        </select>
+      </div>
+      <div class="filter-count">
+        <span id="situations-count" role="status" aria-live="polite">Mostrant 10 de 10 situacions</span>
+        <button type="button" class="btn-reset-filters" id="btn-reset-sa">Restablir filtres</button>
+      </div>
+    </div>
+
+    <situation-grid root="../"></situation-grid>
+    <p id="situations-empty" hidden>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>
+
+    <div class="catalog-callout" style="margin-top: 2.5rem;">
+      <p><strong>Orientació curricular:</strong> Prenem com a referència el projecte <a href="https://portal.edu.gva.es/escola40/va/inici/">Escola 4.0 de la Generalitat Valenciana</a>, que impulsa la competència digital i el pensament computacional als centres educatius. Els filtres orienten la cerca; pots adaptar els sabers i criteris a la programació del teu centre.</p>
+      <p class="catalog-supporting-link"><a href="../guia/situacions-aprenentatge/index.html">Consulta la guia de disseny, planificació i avaluació <span aria-hidden="true">→</span></a></p>
+    </div>
+  </main>
   <site-footer></site-footer>
-  <script src="../_js/theme.js"></script>
-<script src="../_js/filters.js"></script></body>
+  <script src="../_js/filters.js"></script>
+</body>
 </html>

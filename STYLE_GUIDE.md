@@ -35,36 +35,37 @@ Cada robot es presenta en una targeta amb personalitat cromàtica pròpia i una 
 - **Àrea d'il·lustració superior (`.robot-card-media`):**
   - Arrodoniment superior: `border-radius: 20px 20px 0 0`.
   - Alçada: ~210px - 230px.
-  - **Fons bicolor corbat:** Composició de fons generada per CSS (o màscara SVG) amb els **dos colors associats** de cada robot (efecte paret pastís superior i terra/ona suau inferior).
-  - **Insígnia d'edat (`.age-badge`):**
-    - Càpsula flotant a la cantonada superior dreta (`top: 14px; right: 14px`).
-    - Fons blanc pur (`#ffffff`), `border-radius: 9999px`, padding `4px 12px`.
-    - Ombra suau: `box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08)`.
+  - **Fons amb composició d'àrees superposades (`.robot-card-media`):** Generat per CSS (sense diagonal simple). El color base dominant (65-70%) actua de fons i sobre ell se superposen dos lòbuls/àrees corbades amb ombra suau en el color secundari (30-35%), acompanyades d'un accent circular superior.
+  - **Insígnia d'edat flotant (`.robot-age-badge`):**
+    - Càpsula flotant a la cantonada superior dreta (`top: 12px; right: 12px`).
+    - Fons blanc translúcid (`rgba(255, 255, 255, 0.95)`), `border-radius: 9999px`, padding `4px 12px`.
+    - Ombra suau: `box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12)`.
     - Text: Icona de persona `👤` seguida del rang d'edat, acolorit amb el **color primari del robot**.
-- **Cos de la targeta (`.card-body`):**
-  - **Indicador de 2 punts (`.robot-color-dots`):** Dos cercles (`8px` o `10px` de diàmetre) situats a dalt a l'esquerra del títol, separats `6px`, que mostren de manera elegant la paleta binària del robot.
-  - **Títol (`.item-title`):** Font **Sora**, pes 700 (Bold), mida `1.25rem`, color fosc de contrast (`#0f172a`).
-  - **Descripció (`.item-desc`):** Font **Plus Jakarta Sans**, pes 400 (Regular), color gris pissarra (`#64748b`), alçada de línia `1.5`.
-- **Peu de la targeta (`.item-footer`):**
-  - **Comptador de tutorials:** Icona de llibre `📖` o SVG net + text `X tutorials`, acolorit en el **color primari del robot**.
+- **Vora de la targeta:** Vora sòlida de **4px** (`border: 4px solid var(--card-border)`), que enquadra la targeta amb el color primari de cada robot.
+- **Cos de la targeta (`.robot-card-body`):**
+  - **Indicador de 2 punts (`.robot-color-dots`):** Dos cercles (`10px` de diàmetre) situats a dalt a l'esquerra del títol, separats `7px`, que mostren de manera elegant la paleta binària del robot.
+  - **Títol (`.robot-card-title`):** Font **Sora**, pes 700 (Bold), mida `1.25rem`, color fosc de contrast (`#0f172a`).
+  - **Descripció (`.robot-card-desc`):** Font **Plus Jakarta Sans**, pes 400 (Regular), color gris pissarra (`#64748b`), alçada de línia `1.5`.
+- **Peu de la targeta (`.robot-card-footer`):**
+  - **Comptador de tutorials:** Icona de llibre SVG net + text `X tutorials`, acolorit en el **color primari del robot**.
   - **Enllaç d'acció:** `Entrar a la pàgina →`, en tipografia semibold, acolorit en el **color primari del robot**.
 
 ---
 
 ## 2. 🎨 Paletes Cromàtiques Oficials per Robot
 
-Cada robot té assignada una **paleta de dos colors associats**, que s'utilitzen per:
-1. Crear el seu fons bicolor corbat/diagonal darrere del robot.
-2. Pintar la vora i els detalls de la targeta (punts indicadors, badge d'edat, comptador i botó).
+Cada robot té assignada una **paleta de dos colors associats amb proporció oficial**:
+1. Crear la composició d'àrees superposades darrere del robot (Color 1 dominant ~65-70% i Color 2 superposat ~30-35%).
+2. Pintar la vora de 4px i els detalls de la targeta (punts indicadors, comptador i botó).
 
-| Robot | Slug Oficial | Color Primari (Vora, Punt 1, Accents) | Color Secundari (Punt 2, Fons) | Fons Bicolor Recomanat (CSS) | Rang d'Edat |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **Coding Express** | `coding-express` | Vermell viu `#E01A27` | Groc ambre `#F5B901` | Superior: `#FF4D5A` / `#EF4444`<br>Inferior: `#FEF08A` / `#FDE047` | 👤 2-5 anys |
-| **Tale-Bot** | `tale-bot` | Taronja corall `#FF7E2D` | Violeta / Lavanda `#784FAD` | Superior: `#C4B5FD` / `#A78BFA`<br>Inferior: `#FFEDD5` / `#FED7AA` | 👤 3-7 anys |
-| **Coding Set** | `coding-set` | Taronja mandarí `#F76D08` | Verd gespa fresc `#5DA22B` | Superior: `#BBF7D0` / `#86EFAC`<br>Inferior: `#FFEDD5` / `#FED7AA` | 👤 4-9 anys |
-| **Codey Rocky** | `codey-rocky` | Blau cel / Atzur `#0377DA` | Groc sorra suau `#FEC907` | Superior: `#7DD3FC` / `#38BDF8`<br>Inferior: `#FEF3C7` / `#FDE68A` | 👤 6-12 anys |
-| **Spike** | `spike` | Magenta / Fúcsia viu `#B92384` | Groc LEGO vibrant `#FDDC43` | Superior: `#F5D0FE` / `#E879F9`<br>Inferior: `#FEF08A` / `#FDE047` | 👤 10-16 anys |
-| **Micro:bit** | `microbit` | Blau elèctric `#067CD4` | Negre obsidiana `#18181B` | Superior: `#38BDF8` / `#60A5FA`<br>Inferior: `#FEF3C7` / `#FDE68A` | 👤 9-18 anys |
+| Robot | Slug Oficial | Color 1 (Dominant 65-70%, Vora 4px, Punt 1) | Color 2 (Secundari 30-35%, Àrees superposades, Punt 2) | Proporció | Rang d'Edat |
+| :--- | :--- | :--- | :--- | :---: | :--- |
+| **Coding Express** | `coding-express` | Vermell `#e4242b` | Groc ambre `#fec002` | 70% + 30% | 👤 2-5 anys |
+| **Tale-Bot** | `tale-bot` | Taronja corall `#fc8439` | Violeta `#804cbd` | 65% + 35% | 👤 3-7 anys |
+| **Coding Set** | `coding-set` | Taronja mandarí `#fc7813` | Verd fresc `#60a62d` | 65% + 35% | 👤 4-9 anys |
+| **Codey Rocky** | `codey-rocky` | Blau cel `#0079dc` | Groc sorra `#fdc80a` | 70% + 30% | 👤 6-12 anys |
+| **SPIKE** | `spike` | Fúcsia vibrant `#d82098` | Groc LEGO `#fddc3e` | 65% + 35% | 👤 10-16 anys |
+| **micro:bit** | `microbit` | Blau elèctric `#047fdf` | Gris obsidiana `#4a515d` | 70% + 30% | 👤 9-18 anys |
 
 ---
 
@@ -170,3 +171,26 @@ Per garantir la màxima coherència estilística entre els robots, es valora la 
 - **Títols i Encapçalaments:** **"Sora"** (`font-family: var(--font-heading)`).
 - **Text Continu i Controls:** **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`).
 - **Identitat Oficial:** `Robòtica<sup>200</sup>` — *Robòtica per a docents*.
+
+---
+
+## 7. ☀️ Tema Clar Exclusiu
+
+- El projecte s'executa **íntegrament en tema clar**. No hi ha suport per a mode fosc.
+- No s'admeten selectors `[data-theme="dark"]`, botons d'alternança `#theme-toggle` ni regles `@media (prefers-color-scheme: dark)`.
+- El contrast visual es basa en fons blancs nets (`#ffffff`), fons suaus `#f8fafc`, heros i footers corporatius en `#ebf5fd` i tipografia d'alta llegibilitat (`#0f172a` per a títols, `#475569` per a text general).
+
+---
+
+## 8. 📐 Layout Unificat de les Seccions Principals
+
+Totes les pàgines de secció principal (**Robots**, **Pensament computacional** i **Situacions d'aprenentatge**) segueixen estrictament la mateixa arquitectura:
+
+1. **Hero Corporatiu (`.robots-hero` / `.section-hero`):**
+   - Fons corporatiu suau `#ebf5fd` amb vora suau `1px solid rgba(0, 121, 220, 0.12)` i `border-radius: 28px`.
+   - Grid a 2 columnes (columna de text a l'esquerra amb botó de retorn, títol Sora 800, subtítol i els 3 guions d'accent; columna dreta amb la il·lustració/banner 4:3 oficial arrodonida a 20px).
+2. **Graella de Targetes (`.clean-grid`):**
+   - Targetes espaiades amb fons blanc, cantons arrodonits (20-24px), títols en Sora Bold i footer d'acció semibold.
+3. **Callout Pedagògic Inferior (`.catalog-callout`):**
+   - Caixa neta inferior amb suport didàctic i enllaç a la guia docent abans del peu de pàgina corporatiu.
+

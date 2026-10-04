@@ -8,15 +8,16 @@
     return root;
   }
 
-  function getThemeIcon() {
-    const theme = document.documentElement.getAttribute('data-theme') ||
-      localStorage.getItem('robotica200_theme') ||
-      (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    return theme === 'dark' ? '☀️' : '🌙';
-  }
-
   function ensureDocumentHead(root, title, description) {
     root = cleanRoot(root);
+
+    // Neteja de preferències de tema antic
+    try {
+      localStorage.removeItem('robotica200_theme');
+      if (document.documentElement.getAttribute('data-theme') === 'dark') {
+        document.documentElement.removeAttribute('data-theme');
+      }
+    } catch (e) {}
 
     // Title
     if (title && (!document.title || document.title.trim() === '')) {
@@ -74,14 +75,6 @@
       icon.href = `${root}_assets/icons/logo.svg`;
       document.head.appendChild(icon);
     }
-
-    // Theme JS
-    if (!window.__themeScriptLoaded && !document.querySelector('script[src*="_js/theme.js"]')) {
-      const script = document.createElement('script');
-      script.src = `${root}_js/theme.js`;
-      document.body ? document.body.appendChild(script) : document.head.appendChild(script);
-      window.__themeScriptLoaded = true;
-    }
   }
 
   function loadCatalogData(root, callback) {
@@ -100,7 +93,7 @@
     document.head.appendChild(script);
   }
 
-  // 1. Cabecera reutilizable amb navegació i selector de tema
+  // 1. Cabecera reutilizable amb navegació
   class SiteHeader extends HTMLElement {
     connectedCallback() {
       const active = (this.getAttribute('active') || '').toLowerCase();
@@ -122,9 +115,6 @@
               <a href="${root}robots/index.html" class="nav-btn ${active === 'robots' || active === 'robotica' ? 'active' : ''}">Robots</a>
               <a href="${root}situacions-aprenentatge/index.html" class="nav-btn ${active === 'situacions' ? 'active' : ''}">Situacions d'aprenentatge</a>
             </nav>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
-              <span id="theme-icon" aria-hidden="true">${getThemeIcon()}</span>
-            </button>
           </div>
         </header>
       `;
@@ -135,9 +125,21 @@
   class SiteFooter extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
-        <footer class="footer">
-          <div class="container">
-            <p>Robòtica<sup>200</sup> • Robòtica per a docents</p>
+        <footer class="site-footer">
+          <div class="site-footer-waves" aria-hidden="true">
+            <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+              <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+              <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+            </svg>
+          </div>
+          <div class="container site-footer-inner">
+            <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+            <div class="footer-accent-dashes" aria-hidden="true">
+              <span class="dash dash-red"></span>
+              <span class="dash dash-yellow"></span>
+              <span class="dash dash-blue"></span>
+            </div>
+            <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
           </div>
         </footer>
       `;
@@ -148,13 +150,18 @@
   class NavBack extends HTMLElement {
     connectedCallback() {
       const href = this.getAttribute('href') || 'index.html';
-      let label = this.getAttribute('label') || 'Tornar';
-      if (!label.startsWith('←')) {
-        label = '← Tornar a ' + label;
+      let label = (this.getAttribute('label') || 'Tornar').trim();
+      if (label.startsWith('←')) {
+        label = label.replace(/^←\s*/, '');
+      } else if (!label.toLowerCase().startsWith('tornar')) {
+        label = 'Tornar a ' + label;
       }
       this.innerHTML = `
         <div class="section-nav-back">
-          <a href="${href}" class="btn-back">${label}</a>
+          <a href="${href}" class="btn-back">
+            <span class="btn-back-arrow" aria-hidden="true">←</span>
+            <span class="btn-back-text">${label}</span>
+          </a>
         </div>
       `;
     }
