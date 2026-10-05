@@ -150,31 +150,166 @@
 
   const footerBot = ({ c, accent, cargo }) => `
     <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
-      <g class="fbot-body">
+      <g data-part="body">
         ${isoBox(24, 44, 13, 4, ['#475569', '#334155', '#1e293b'])}
         ${isoBox(24, 30, 12, 14, c)}
-        <g class="fbot-arm"><polygon fill="${accent}" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
-        <g class="fbot-head">
+        <g data-part="arm"><polygon fill="${accent}" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+        <g data-part="head">
           ${isoBox(24, 21, 8, 9, c)}
-          <g class="fbot-eyes" fill="#e0f2fe">
+          <g data-part="eyes" fill="#e0f2fe">
             <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
             <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
           </g>
           <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
-          <polygon class="fbot-led" fill="${accent}" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+          <polygon data-part="led" fill="${accent}" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
         </g>
-        ${cargo ? `<g class="fbot-cargo">${isoBox(24, -8, 8, 6, cargo)}</g>` : ''}
+        <g data-part="cargo" opacity="0">${isoBox(24, -8, 8, 6, cargo)}</g>
       </g>
     </svg>`;
 
+  // Paletes oficials: [superior, esquerra, dreta], accent i bloc de càrrega
   const FOOTER_BOTS = [
-    { cls: 'fbot-patrol', c: ['#3d9cf0', '#0079dc', '#005aa6'], accent: '#fdc80a' },
-    { cls: 'fbot-hop',    c: ['#ff5a5f', '#e4242b', '#b3151b'], accent: '#fec002' },
-    { cls: 'fbot-carry',  c: ['#8bd152', '#60a62d', '#437a1c'], accent: '#fc7813', cargo: ['#ffb066', '#fc7813', '#c95a08'] },
-    { cls: 'fbot-scan',   c: ['#ffa368', '#fc8439', '#d4621c'], accent: '#804cbd' },
-    { cls: 'fbot-wave',   c: ['#ef54b8', '#d82098', '#a3126f'], accent: '#fddc3e' },
-    { cls: 'fbot-dance',  c: ['#7a828f', '#4a515d', '#30353d'], accent: '#047fdf' }
+    { c: ['#ff5a5f', '#e4242b', '#b3151b'], accent: '#fec002', cargo: ['#ffe066', '#fec002', '#c99700'] },
+    { c: ['#ffa368', '#fc8439', '#d4621c'], accent: '#804cbd', cargo: ['#a77fd6', '#804cbd', '#5c3394'] },
+    { c: ['#8bd152', '#60a62d', '#437a1c'], accent: '#fc7813', cargo: ['#ffb066', '#fc7813', '#c95a08'] },
+    { c: ['#3d9cf0', '#0079dc', '#005aa6'], accent: '#fdc80a', cargo: ['#ffe066', '#fdc80a', '#c99a00'] },
+    { c: ['#ef54b8', '#d82098', '#a3126f'], accent: '#fddc3e', cargo: ['#fff07a', '#fddc3e', '#cfae12'] },
+    { c: ['#7a828f', '#4a515d', '#30353d'], accent: '#047fdf', cargo: ['#4aa8f2', '#047fdf', '#0360a8'] }
   ];
+
+  // Motor de comportament: cada robot tria accions aleatòries i s'anima amb requestAnimationFrame
+  const FooterRobots = (() => {
+    const BOT_W = 44;
+    const rand = (a, b) => a + Math.random() * (b - a);
+    const ease = t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    const env = p => Math.min(1, Math.sin(Math.PI * p) * 3); // entrada/sortida suau
+    const ACTIONS = [
+      ['walk', 4], ['hop', 2], ['wave', 2], ['scan', 2], ['dance', 1.5], ['lift', 1.5], ['idle', 2]
+    ];
+    const DUR = { walk: [1800, 3500], hop: [900, 900], wave: [1800, 2600], scan: [2000, 3200], dance: [2400, 3600], lift: [2600, 3800], idle: [600, 1800] };
+
+    const pick = () => {
+      const total = ACTIONS.reduce((s, a) => s + a[1], 0);
+      let r = Math.random() * total;
+      for (const [name, w] of ACTIONS) { if ((r -= w) <= 0) return name; }
+      return 'idle';
+    };
+
+    function start(stage) {
+      const bots = Array.from(stage.querySelectorAll('.fbot')).map((el, i, all) => {
+        const part = n => el.querySelector(`[data-part="${n}"]`);
+        const home = (i + 0.5) / all.length;
+        return {
+          el, home, x: home, x0: home, x1: home, dir: Math.random() < 0.5 ? 1 : -1,
+          body: part('body'), head: part('head'), arm: part('arm'), eyes: part('eyes'), led: part('led'), cargo: part('cargo'),
+          action: 'idle', t0: 0, dur: rand(200, 1500), nextBlink: rand(500, 4000), ledPhase: rand(0, 1000)
+        };
+      });
+
+      let width = stage.clientWidth;
+      let visible = true;
+      let rafId = null;
+      if ('ResizeObserver' in window) new ResizeObserver(() => { width = stage.clientWidth; }).observe(stage);
+      if ('IntersectionObserver' in window) {
+        new IntersectionObserver(([e]) => {
+          visible = e.isIntersecting;
+          if (visible && rafId === null) rafId = requestAnimationFrame(frame);
+        }).observe(stage);
+      }
+
+      function begin(b, now) {
+        b.action = b.action === 'idle' ? pick() : 'idle';
+        b.t0 = now;
+        const [lo, hi] = DUR[b.action];
+        b.dur = rand(lo, hi);
+        if (b.action === 'walk') {
+          const span = 0.5 / bots.length + 0.06;
+          b.x0 = b.x;
+          b.x1 = Math.max(0.02, Math.min(0.98, b.home + rand(-span, span)));
+          b.dir = b.x1 >= b.x0 ? 1 : -1;
+        }
+      }
+
+      function animate(b, now) {
+        let p = (now - b.t0) / b.dur;
+        if (p >= 1) { begin(b, now); p = 0; }
+
+        let body = '', head = '', arm = 0, cargoOp = 0, cargoY = 0, ledSpeed = 800;
+        const e = env(p);
+
+        switch (b.action) {
+          case 'walk': {
+            b.x = b.x0 + (b.x1 - b.x0) * ease(p);
+            body = `translate(0 ${(-Math.abs(Math.sin(p * b.dur / 170 * Math.PI)) * 1.6).toFixed(2)})`;
+            arm = Math.sin(p * b.dur / 170 * Math.PI) * 12;
+            break;
+          }
+          case 'hop': {
+            let y = 0, sx = 1, sy = 1;
+            if (p < 0.18) { const q = p / 0.18; sx = 1 + 0.1 * q; sy = 1 - 0.14 * q; }
+            else if (p < 0.82) { const q = (p - 0.18) / 0.64; y = -18 * Math.sin(Math.PI * q); sx = 1 - 0.05 * Math.sin(Math.PI * q); sy = 1 + 0.07 * Math.sin(Math.PI * q); }
+            else { const q = (p - 0.82) / 0.18; sx = 1 + 0.08 * (1 - q); sy = 1 - 0.1 * (1 - q); }
+            body = `translate(0 ${y.toFixed(2)}) translate(24 56) scale(${sx.toFixed(3)} ${sy.toFixed(3)}) translate(-24 -56)`;
+            arm = -40 * Math.sin(Math.PI * p);
+            break;
+          }
+          case 'wave':
+            arm = e * (-115 + 18 * Math.sin(p * b.dur / 140));
+            head = `rotate(${(e * 6).toFixed(2)} 24 30)`;
+            break;
+          case 'scan':
+            head = `rotate(${(e * 15 * Math.sin(p * Math.PI * 4)).toFixed(2)} 24 30)`;
+            ledSpeed = 180;
+            break;
+          case 'dance': {
+            const s = Math.sin(p * b.dur / 300 * Math.PI);
+            body = `translate(0 ${(-Math.abs(s) * 3 * e).toFixed(2)}) rotate(${(s * 8 * e).toFixed(2)} 24 56)`;
+            head = `rotate(${(-s * 10 * e).toFixed(2)} 24 30)`;
+            arm = -60 * e + s * 30 * e;
+            break;
+          }
+          case 'lift':
+            arm = -150 * e + 8 * Math.sin(p * Math.PI * 4) * e;
+            cargoOp = e;
+            cargoY = (1 - e) * 10 - 3 * Math.sin(p * Math.PI * 4);
+            ledSpeed = 400;
+            break;
+          default: // idle: petita respiració
+            body = `translate(0 ${(Math.sin(now / 500 + b.home * 10) * 0.6).toFixed(2)})`;
+        }
+
+        // Parpelleig
+        let eyeScale = 1;
+        if (now > b.nextBlink) {
+          const k = (now - b.nextBlink) / 140;
+          if (k >= 1) b.nextBlink = now + rand(2000, 6000);
+          else eyeScale = 0.15 + 0.85 * Math.abs(1 - 2 * k);
+        }
+
+        const px = b.x * Math.max(0, width - BOT_W);
+        b.el.style.transform = `translateX(${px.toFixed(1)}px) scaleX(${b.dir})`;
+        b.body.setAttribute('transform', body);
+        b.head.setAttribute('transform', head);
+        b.arm.setAttribute('transform', `rotate(${arm.toFixed(2)} 35 32.5)`);
+        b.eyes.setAttribute('transform', `translate(0 27.5) scale(1 ${eyeScale.toFixed(2)}) translate(0 -27.5)`);
+        b.cargo.setAttribute('opacity', cargoOp.toFixed(2));
+        b.cargo.setAttribute('transform', `translate(0 ${cargoY.toFixed(2)})`);
+        b.led.setAttribute('opacity', Math.floor((now + b.ledPhase) / ledSpeed) % 2 ? '0.35' : '1');
+      }
+
+      function frame(now) {
+        if (!visible) { rafId = null; return; }
+        bots.forEach(b => {
+          if (b.el.offsetParent === null) return; // ocult (p. ex. mòbil)
+          animate(b, now);
+        });
+        rafId = requestAnimationFrame(frame);
+      }
+      rafId = requestAnimationFrame(frame);
+    }
+
+    return { start };
+  })();
 
   // 2. Peu de pàgina corporatiu unificat
   class SiteFooter extends HTMLElement {
@@ -188,19 +323,21 @@
             </svg>
           </div>
           <div class="container site-footer-inner">
-            <div class="footer-robots" aria-hidden="true">
-              ${FOOTER_BOTS.map(b => `<div class="fbot ${b.cls}">${footerBot(b)}</div>`).join('')}
-            </div>
-            <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
-            <div class="footer-accent-dashes" aria-hidden="true">
-              <span class="dash dash-red"></span>
-              <span class="dash dash-yellow"></span>
-              <span class="dash dash-blue"></span>
-            </div>
-            <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+                <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+                <div class="footer-accent-dashes" aria-hidden="true">
+                  <span class="dash dash-red"></span>
+                  <span class="dash dash-yellow"></span>
+                  <span class="dash dash-blue"></span>
+                </div>
+                <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+              <div class="footer-robots" aria-hidden="true">
+                ${FOOTER_BOTS.map(b => `<div class="fbot">${footerBot(b)}</div>`).join('')}
+              </div>
           </div>
         </footer>
       `;
+      const stage = this.querySelector('.footer-robots');
+      if (stage) FooterRobots.start(stage);
     }
   }
 
