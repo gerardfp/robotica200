@@ -508,5 +508,97 @@ window.CATALEG = {
       "durada": "40 min",
       "descripcio": "Gravar pistes d'àudio i diàlegs personalitzats amb la veu de l'alumnat a cada etapa del recorregut."
     }
+  ],
+  "robots": [
+    {
+      "id": "robot-coding-express",
+      "slug": "coding-express",
+      "prefix": "ce",
+      "nom": "Coding Express",
+      "edat": "2-5 anys",
+      "descripcio": "El tren interactiu dels colors i el pensament computacional primerenc.",
+      "colors": [
+        "#e4242b",
+        "#fec002"
+      ],
+      "order": 1,
+      "url": "robot/coding-express/index.html",
+      "tutorials": 4
+    },
+    {
+      "id": "robot-tale-bot",
+      "slug": "tale-bot",
+      "prefix": "tb",
+      "nom": "Tale-Bot",
+      "edat": "3-7 anys",
+      "descripcio": "El robot narrador que parla, llegeix mapes interactius i dibuixa.",
+      "colors": [
+        "#fc8439",
+        "#804cbd"
+      ],
+      "order": 2,
+      "url": "robot/tale-bot/index.html",
+      "tutorials": 3
+    },
+    {
+      "id": "robot-coding-set",
+      "slug": "coding-set",
+      "prefix": "cs",
+      "nom": "Coding Set",
+      "edat": "4-9 anys",
+      "descripcio": "Programació tangible sense pantalles amb Matatalab.",
+      "colors": [
+        "#fc7813",
+        "#60a62d"
+      ],
+      "order": 3,
+      "url": "robot/coding-set/index.html",
+      "tutorials": 3
+    },
+    {
+      "id": "robot-codey-rocky",
+      "slug": "codey-rocky",
+      "prefix": "cr",
+      "nom": "Codey Rocky",
+      "edat": "6-12 anys",
+      "descripcio": "El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues.",
+      "colors": [
+        "#0079dc",
+        "#fdc80a"
+      ],
+      "order": 4,
+      "url": "robot/codey-rocky/index.html",
+      "tutorials": 3
+    },
+    {
+      "id": "robot-spike",
+      "slug": "spike",
+      "prefix": "sp",
+      "nom": "Spike",
+      "edat": "10-16 anys",
+      "descripcio": "Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education.",
+      "colors": [
+        "#d82098",
+        "#fddc3e"
+      ],
+      "order": 5,
+      "url": "robot/spike/index.html",
+      "tutorials": 4
+    },
+    {
+      "id": "robot-microbit",
+      "slug": "microbit",
+      "prefix": "mb",
+      "nom": "Micro:bit",
+      "edat": "9-18 anys",
+      "descripcio": "La placa microcontroladora per a projectes oberts i ciutadans.",
+      "colors": [
+        "#047fdf",
+        "#4a515d"
+      ],
+      "order": 6,
+      "url": "robot/microbit/index.html",
+      "tutorials": 5
+    }
   ]
 };

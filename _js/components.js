@@ -474,6 +474,267 @@
     }
   }
 
+  // 11. Guions d'accent cromàtics STEAM
+  class AccentDashes extends HTMLElement {
+    connectedCallback() {
+      this.classList.add('accent-dashes');
+      this.setAttribute('aria-hidden', 'true');
+      this.innerHTML = `
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      `;
+    }
+  }
+
+  // 12. Hero per a la pàgina de robot individual
+  class RobotHero extends HTMLElement {
+    connectedCallback() {
+      const root = cleanRoot(this.getAttribute('root') || '../../');
+      const robot = (this.getAttribute('robot') || '').toLowerCase();
+      let title = this.getAttribute('title') || '';
+      let subtitle = this.getAttribute('subtitle') || this.getAttribute('sub') || '';
+      const backHref = this.getAttribute('back-href') || `${root}robotica-educativa/index.html`;
+      const backLabel = this.getAttribute('back-label') || 'Robòtica educativa';
+
+      const renderHero = () => {
+        if (!title || !subtitle) {
+          const robots = (window.CATALEG && window.CATALEG.robots) || [];
+          const found = robots.find(r => r.slug === robot);
+          if (found) {
+            if (!title) title = found.nom;
+            if (!subtitle) subtitle = found.descripcio;
+          }
+        }
+        if (!title) {
+          title = robot.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        this.classList.add('robot-hero');
+        this.innerHTML = `
+          <div class="container robot-hero-inner">
+            <nav-back href="${backHref}" label="${backLabel}"></nav-back>
+            <div class="robot-hero-content">
+              <h1 class="robot-hero-title">${title}</h1>
+              ${subtitle ? `<p class="robot-hero-sub">${subtitle}</p>` : ''}
+              <accent-dashes></accent-dashes>
+            </div>
+            <div class="robot-hero-media">
+              <img src="${root}_assets/robots/${robot}.png" alt="${title}" class="robot-hero-img" width="600" height="448">
+            </div>
+          </div>
+        `;
+      };
+
+      if (!title || !subtitle) {
+        loadCatalogData(root, renderHero);
+      } else {
+        renderHero();
+      }
+    }
+  }
+
+  // 13. Targeta individual de robot
+  class RobotCard extends HTMLElement {
+    connectedCallback() {
+      const root = cleanRoot(this.getAttribute('root') || '../');
+      const robotSlug = (this.getAttribute('robot') || '').toLowerCase();
+      loadCatalogData(root, () => this.render(root, robotSlug));
+    }
+    render(root, robotSlug) {
+      const robots = (window.CATALEG && window.CATALEG.robots) || [];
+      const item = robots.find(r => r.slug === robotSlug);
+      if (!item) return;
+      const tutorials = (window.CATALEG && window.CATALEG.tutorials) || [];
+      const tCount = item.tutorials !== undefined ? item.tutorials : tutorials.filter(t => t.robot === item.slug).length;
+
+      this.innerHTML = `
+        <a id="${item.id}" href="${root}${item.url}" class="robot-card robot-${item.prefix}">
+          <div class="robot-card-media">
+            <span class="robot-age-badge"><span class="badge-icon">👤</span> ${item.edat}</span>
+            <img src="${root}_assets/robots/${item.slug}.png" alt="${item.nom}" class="robot-card-img" width="400" height="225" loading="lazy">
+          </div>
+          <div class="robot-card-body">
+            <div class="robot-color-dots">
+              <span class="dot dot-1"></span>
+              <span class="dot dot-2"></span>
+            </div>
+            <h3 class="robot-card-title">${item.nom}</h3>
+            <p class="robot-card-desc">${item.descripcio}</p>
+            <div class="robot-card-footer">
+              <span class="robot-tutorials-count">
+                <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                ${tCount} tutorial${tCount === 1 ? '' : 's'}
+              </span>
+              <span class="robot-card-action">Entrar a la pàgina →</span>
+            </div>
+          </div>
+        </a>
+      `;
+    }
+  }
+
+  // 14. Graella de targetes de robots educatius
+  class RobotGrid extends HTMLElement {
+    connectedCallback() {
+      const root = cleanRoot(this.getAttribute('root') || '../');
+      loadCatalogData(root, () => this.render(root));
+    }
+    render(root) {
+      const items = (window.CATALEG && window.CATALEG.robots) || [];
+      const tutorials = (window.CATALEG && window.CATALEG.tutorials) || [];
+      this.innerHTML = `
+        <div class="clean-grid">
+          ${items.map(item => {
+            const tCount = item.tutorials !== undefined ? item.tutorials : tutorials.filter(t => t.robot === item.slug).length;
+            return `
+              <a id="${item.id}" href="${root}${item.url}" class="robot-card robot-${item.prefix}">
+                <div class="robot-card-media">
+                  <span class="robot-age-badge"><span class="badge-icon">👤</span> ${item.edat}</span>
+                  <img src="${root}_assets/robots/${item.slug}.png" alt="${item.nom}" class="robot-card-img" width="400" height="225" loading="lazy">
+                </div>
+                <div class="robot-card-body">
+                  <div class="robot-color-dots">
+                    <span class="dot dot-1"></span>
+                    <span class="dot dot-2"></span>
+                  </div>
+                  <h3 class="robot-card-title">${item.nom}</h3>
+                  <p class="robot-card-desc">${item.descripcio}</p>
+                  <div class="robot-card-footer">
+                    <span class="robot-tutorials-count">
+                      <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                      ${tCount} tutorial${tCount === 1 ? '' : 's'}
+                    </span>
+                    <span class="robot-card-action">Entrar a la pàgina →</span>
+                  </div>
+                </div>
+              </a>
+            `;
+          }).join('')}
+        </div>
+      `;
+    }
+  }
+
+  // 15. Barra de filtres dinàmics per a situacions d'aprenentatge
+  class SituationFilters extends HTMLElement {
+    connectedCallback() {
+      const root = cleanRoot(this.getAttribute('root') || '../');
+      loadCatalogData(root, () => this.render(root));
+    }
+    render(root) {
+      const situacions = (window.CATALEG && window.CATALEG.situacions) || [];
+
+      // 1. Robots: ordre oficial d'edat + desendollat
+      const robotOrder = ['coding-express', 'tale-bot', 'coding-set', 'codey-rocky', 'spike', 'microbit', 'desendollat'];
+      const robotMap = new Map();
+      robotMap.set('coding-express', 'Coding Express');
+      robotMap.set('tale-bot', 'Tale-Bot');
+      robotMap.set('coding-set', 'Coding Set');
+      robotMap.set('codey-rocky', 'Codey Rocky');
+      robotMap.set('spike', 'Spike');
+      robotMap.set('microbit', 'Micro:bit');
+      robotMap.set('desendollat', 'Desendollat (Sense robot)');
+
+      situacions.forEach(s => {
+        if (s.robot && !robotMap.has(s.robot)) {
+          robotMap.set(s.robot, s.robotLabel || s.robot);
+        }
+      });
+
+      const robotOptions = Array.from(robotMap.entries()).sort((a, b) => {
+        const ia = robotOrder.indexOf(a[0]);
+        const ib = robotOrder.indexOf(b[0]);
+        if (ia !== -1 && ib !== -1) return ia - ib;
+        if (ia !== -1) return -1;
+        if (ib !== -1) return 1;
+        return a[1].localeCompare(b[1]);
+      });
+
+      // 2. Cicles: 4 nivells educatius oficials estrictes
+      const cicleOptions = [
+        ['infantil', 'Educació Infantil'],
+        ['primer-cicle', 'Primer cicle'],
+        ['segon-cicle', 'Segon cicle'],
+        ['tercer-cicle', 'Tercer cicle']
+      ];
+
+      // 3. Temàtiques: canòniques + situacions
+      const tematicaCanonical = {
+        'sostenibilitat': 'Medi ambient i sostenibilitat',
+        'ciutat': 'Ciutat intel·ligent i accessibilitat',
+        'salut': 'Salut, hàbits i benestar',
+        'art': 'Art, música i expressió',
+        'espai': 'Exploració espacial',
+        'societat': 'Convivència i ciutadania'
+      };
+      const tematicaMap = new Map(Object.entries(tematicaCanonical));
+      situacions.forEach(s => {
+        if (s.tematica && !tematicaMap.has(s.tematica)) {
+          tematicaMap.set(s.tematica, s.tematicaLabel || s.tematica);
+        }
+      });
+
+      // 4. Matèries: canòniques + situacions
+      const materiaCanonical = {
+        'medi': 'Coneixement del Medi / Ciències',
+        'matematiques': 'Matemàtiques',
+        'llengua': 'Llengua i Literatura',
+        'artistica': 'Educació Artística',
+        'tecnologia': 'Tecnologia i Digitalització'
+      };
+      const materiaMap = new Map(Object.entries(materiaCanonical));
+      situacions.forEach(s => {
+        if (s.materia && !materiaMap.has(s.materia)) {
+          materiaMap.set(s.materia, s.materiaLabel || s.materia);
+        }
+      });
+
+      const count = situacions.length;
+
+      this.innerHTML = `
+        <div class="filters-bar">
+          <div class="filter-group">
+            <label class="filter-label" for="filter-robot">Robot</label>
+            <select id="filter-robot" class="filter-select">
+              <option value="all">Tots els robots</option>
+              ${robotOptions.map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label" for="filter-cicle">Cicle</label>
+            <select id="filter-cicle" class="filter-select">
+              <option value="all">Tots els cicles</option>
+              ${cicleOptions.map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label" for="filter-tematica">Temàtica</label>
+            <select id="filter-tematica" class="filter-select">
+              <option value="all">Totes les temàtiques</option>
+              ${Array.from(tematicaMap.entries()).map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-label" for="filter-materia">Matèria</label>
+            <select id="filter-materia" class="filter-select">
+              <option value="all">Totes les matèries</option>
+              ${Array.from(materiaMap.entries()).map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
+            </select>
+          </div>
+          <div class="filter-count">
+            <span id="situations-count" role="status" aria-live="polite">Mostrant ${count} de ${count} situacions</span>
+            <button type="button" class="btn-reset-filters" id="btn-reset-sa">Restablir filtres</button>
+          </div>
+        </div>
+      `;
+
+      if (typeof window.initSituationFilters === 'function') {
+        window.initSituationFilters();
+      }
+    }
+  }
+
   // Registre de tots els Custom Elements
   const defs = [
     ['site-header', SiteHeader],
@@ -485,7 +746,12 @@
     ['guide-page', GuidePage],
     ['activity-grid', ActivityGrid],
     ['situation-grid', SituationGrid],
-    ['tutorial-grid', TutorialGrid]
+    ['tutorial-grid', TutorialGrid],
+    ['accent-dashes', AccentDashes],
+    ['robot-hero', RobotHero],
+    ['robot-card', RobotCard],
+    ['robot-grid', RobotGrid],
+    ['situation-filters', SituationFilters]
   ];
 
   defs.forEach(([tag, cls]) => {

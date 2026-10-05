@@ -95,8 +95,13 @@ body {
 
 site-header, site-footer, nav-back,
 activity-page, tutorial-page, situation-page, guide-page,
-activity-grid, situation-grid, tutorial-grid {
+activity-grid, situation-grid, tutorial-grid,
+robot-hero, robot-grid, robot-card, situation-filters {
   display: block;
+}
+
+accent-dashes {
+  display: flex;
 }
 
 activity-page:not(:defined),
@@ -234,6 +239,7 @@ guide-page[rendered] {
 }
 
 .robot-hero + .page-content,
+robot-hero + .page-content,
 .page-content:has(.robot-profile) {
   padding-top: 1.25rem;
 }
@@ -838,7 +844,8 @@ guide-page[rendered] {
   max-width: 520px;
 }
 
-.accent-dashes {
+.accent-dashes,
+accent-dashes {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -885,7 +892,8 @@ guide-page[rendered] {
    HERO INDIVIDUAL DE ROBOT (Més compacte que el de secció)
    ========================================================================== */
 
-.robot-hero {
+.robot-hero,
+robot-hero {
   width: 100%;
   background-color: #ebf5fd;
   border: none;
@@ -964,7 +972,8 @@ guide-page[rendered] {
 }
 
 @media (max-width: 860px) {
-  .robot-hero {
+  .robot-hero,
+  robot-hero {
     padding: 1.5rem 0 1.75rem;
     overflow: visible;
   }

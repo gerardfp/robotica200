@@ -21,11 +21,7 @@
       <div class="robots-hero-content">
         <h1 class="robots-hero-title">Situacions d'Aprenentatge</h1>
         <p class="robots-hero-desc">Propostes curriculars i reptes d'aula per connectar la robòtica i el pensament computacional amb contextos significatius.</p>
-        <div class="accent-dashes">
-          <span class="dash dash-red"></span>
-          <span class="dash dash-yellow"></span>
-          <span class="dash dash-blue"></span>
-        </div>
+        <accent-dashes></accent-dashes>
       </div>
       <div class="robots-hero-media">
         <img src="../_assets/banners/situacions-aprenentatge.png" alt="Situacions d'Aprenentatge" class="robots-hero-img" width="800" height="600">
@@ -33,58 +29,7 @@
     </div>
   </div>
   <main class="container page-content">
-    <div class="filters-bar">
-      <div class="filter-group">
-        <label class="filter-label" for="filter-robot">Robot</label>
-        <select id="filter-robot" class="filter-select">
-          <option value="all">Tots els robots</option>
-          <option value="coding-express">Coding Express</option>
-          <option value="tale-bot">Tale-Bot</option>
-          <option value="coding-set">Coding Set</option>
-          <option value="codey-rocky">Codey Rocky</option>
-          <option value="spike">Spike</option>
-          <option value="microbit">Micro:bit</option>
-          <option value="desendollat">Desendollat (Sense robot)</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label class="filter-label" for="filter-cicle">Cicle</label>
-        <select id="filter-cicle" class="filter-select">
-          <option value="all">Tots els cicles</option>
-          <option value="infantil">Educació Infantil</option>
-          <option value="primer-cicle">Primer cicle</option>
-          <option value="segon-cicle">Segon cicle</option>
-          <option value="tercer-cicle">Tercer cicle</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label class="filter-label" for="filter-tematica">Temàtica</label>
-        <select id="filter-tematica" class="filter-select">
-          <option value="all">Totes les temàtiques</option>
-          <option value="sostenibilitat">Medi ambient i sostenibilitat</option>
-          <option value="ciutat">Ciutat intel·ligent i accessibilitat</option>
-          <option value="salut">Salut, hàbits i benestar</option>
-          <option value="art">Art, música i expressió</option>
-          <option value="espai">Exploració espacial</option>
-          <option value="societat">Convivència i ciutadania</option>
-        </select>
-      </div>
-      <div class="filter-group">
-        <label class="filter-label" for="filter-materia">Matèria</label>
-        <select id="filter-materia" class="filter-select">
-          <option value="all">Totes les matèries</option>
-          <option value="medi">Coneixement del Medi / Ciències</option>
-          <option value="matematiques">Matemàtiques</option>
-          <option value="llengua">Llengua i Literatura</option>
-          <option value="artistica">Educació Artística</option>
-          <option value="tecnologia">Tecnologia i Digitalització</option>
-        </select>
-      </div>
-      <div class="filter-count">
-        <span id="situations-count" role="status" aria-live="polite">Mostrant 10 de 10 situacions</span>
-        <button type="button" class="btn-reset-filters" id="btn-reset-sa">Restablir filtres</button>
-      </div>
-    </div>
+    <situation-filters root="../"></situation-filters>
 
     <situation-grid root="../"></situation-grid>
     <p id="situations-empty" hidden>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>
