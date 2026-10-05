@@ -2,7 +2,7 @@
 title: Receptes amb Instruccions de Robot
 description: Descomposeu una tasca quotidiana en instruccions precises i proveu què passa si en canvieu l'ordre.
 topic: Descomposició i Algorismes
-cycle_label: Cicle Inicial, Mitjà, Superior i ESO
+cycle_label: Primer, segon i tercer cicle
 duration: 50 min
 order: 9
 ---

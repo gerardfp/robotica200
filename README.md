@@ -51,8 +51,8 @@ robotica200/
 ├── index.html                           # Portada principal (/)
 ├── pensament-computacional/
 │   └── index.html                       # Catàleg de pensament computacional (/pensament-computacional/)
-├── robots/
-│   └── index.html                       # Catàleg dels 6 robots d'aula (/robots/)
+├── robotica-educativa/
+│   └── index.html                       # Catàleg dels 6 robots d'aula (/robotica-educativa/)
 ├── situacions-aprenentatge/
 │   └── index.html                       # Catàleg curricular filtrable (/situacions-aprenentatge/)
 ├── activitat/
@@ -69,7 +69,6 @@ robotica200/
 │   └── styles.css                       # Full d'estils unificat (Sora + Plus Jakarta Sans)
 ├── _js/
 │   ├── components.js                    # Web Components natius (<site-header>, <site-footer>, <nav-back>)
-│   ├── theme.js                         # Control del mode clar / fosc
 │   ├── filters.js                       # Filtres multicriteri per a situacions d'aprenentatge
 │   └── robot-animation.js               # Suite de 8 micro-animacions del robot de portada
 └── _assets/
@@ -78,19 +77,6 @@ robotica200/
     ├── imatges/                         # Fotografies i il·lustracions d'aula en WebP
     └── robots/                          # Imatges oficials lineless dels 6 robots d'aula
 ```
-
----
-
-## 💻 Ús i Visualització Local
-
-Pots obrir directament el fitxer [`index.html`](index.html) amb qualsevol navegador o servir-lo amb qualsevol servidor estàtic senzill:
-
-```bash
-# Servidor local opcional en Python (sense dependències)
-python3 -m http.server 3000
-```
-
-Obre <http://localhost:3000> al navegador.
 
 ---
 

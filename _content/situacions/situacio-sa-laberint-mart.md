@@ -3,8 +3,8 @@ title: "Missió Mart: Disseny i proves d'un rover"
 description: Com pot un rover basat en SPIKE Prime avançar per una pista, reaccionar davant d'obstacles i explicar les limitacions de la seua autonomia?
 robot: spike
 cycles:
-- eso
-cycle_label: ESO (1r-3r)
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: espai
 subject: tecnologia
 duration: 6 sessions

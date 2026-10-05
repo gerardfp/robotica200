@@ -3,7 +3,7 @@ title: El Laberint d'Instruccions i Detecció d'Errors
 description: Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes
   per planificar un camí abans d'executar-lo. Quan troben un obstacle, aprenen a aïllar l'ordre equivocada.
 topic: Depuració (Debugging) i Seqüenciació
-cycle_label: Infantil i Cicle Inicial
+cycle_label: Educació Infantil i primer cicle
 duration: 40 min
 order: 4
 ---

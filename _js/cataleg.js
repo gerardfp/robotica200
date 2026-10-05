@@ -8,7 +8,7 @@ window.CATALEG = {
       "url": "activitat/bucles-coreografia/index.html",
       "titol": "La Coreografia dels Bucles",
       "tag": "Bucles i Repetició",
-      "cicle": "Cicle Inicial, Mitjà i Superior",
+      "cicle": "Primer, segon i tercer cicle",
       "durada": "45 min",
       "descripcio": "Repetiu una seqüència de moviments i busqueu la manera més clara d'explicar-la amb poques instruccions."
     },
@@ -28,7 +28,7 @@ window.CATALEG = {
       "url": "activitat/criptografia-cesar/index.html",
       "titol": "Missatges Secrets i Xifratge Cèsar",
       "tag": "Ciberseguretat i Criptografia",
-      "cicle": "Cicle Mitjà, Superior i ESO",
+      "cicle": "Segon i tercer cicle",
       "durada": "50 min",
       "descripcio": "Construcció d'una roda de xifratge de dos cercles concèntrics per comprendre com es protegeix la informació a Internet desplaçant les lletres de l'alfabet un nombre fix de posicions."
     },
@@ -38,7 +38,7 @@ window.CATALEG = {
       "url": "activitat/dades-classificacio/index.html",
       "titol": "El Museu de les Dades",
       "tag": "Dades, Classificació i Privadesa",
-      "cicle": "Cicle Inicial, Mitjà, Superior i ESO",
+      "cicle": "Primer, segon i tercer cicle",
       "durada": "50 min",
       "descripcio": "Recolliu dades inventades, trieu com classificar-les i representeu-les amb una regla clara."
     },
@@ -48,7 +48,7 @@ window.CATALEG = {
       "url": "activitat/descomposicio-receptes/index.html",
       "titol": "Receptes amb Instruccions de Robot",
       "tag": "Descomposició i Algorismes",
-      "cicle": "Cicle Inicial, Mitjà, Superior i ESO",
+      "cicle": "Primer, segon i tercer cicle",
       "durada": "50 min",
       "descripcio": "Descomposeu una tasca quotidiana en instruccions precises i proveu què passa si en canvieu l'ordre."
     },
@@ -58,7 +58,7 @@ window.CATALEG = {
       "url": "activitat/laberint-debugging/index.html",
       "titol": "El Laberint d'Instruccions i Detecció d'Errors",
       "tag": "Depuració (Debugging) i Seqüenciació",
-      "cicle": "Infantil i Cicle Inicial",
+      "cicle": "Educació Infantil i primer cicle",
       "durada": "40 min",
       "descripcio": "Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes per planificar un camí abans d'executar-lo. Quan troben un obstacle, aprenen a aïllar l'ordre equivocada."
     },
@@ -68,7 +68,7 @@ window.CATALEG = {
       "url": "activitat/patrons-simetries/index.html",
       "titol": "Detectius de Patrons i Repeticions",
       "tag": "Patrons i Abstracció",
-      "cicle": "Educació Infantil, Inicial i Mitjà",
+      "cicle": "Educació Infantil, primer i segon cicle",
       "durada": "40 min",
       "descripcio": "Observeu seqüències de formes i sons, expliqueu la regla i predigueu quin element ve després."
     },
@@ -78,7 +78,7 @@ window.CATALEG = {
       "url": "activitat/pixels-binaris/index.html",
       "titol": "Dibuix per Píxels i Imatges Binàries",
       "tag": "Representació de Dades (Binari)",
-      "cicle": "Cicle Inicial i Mitjà",
+      "cicle": "Primer i segon cicle",
       "durada": "45 min",
       "descripcio": "Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules utilitzant només els valors 0 (blanc) i 1 (negre)."
     },
@@ -88,7 +88,7 @@ window.CATALEG = {
       "url": "activitat/robot-huma/index.html",
       "titol": "El Robot Humà i el Llenguatge Precís",
       "tag": "Algorismes i Precisió",
-      "cicle": "Infantil i Cicle Inicial",
+      "cicle": "Educació Infantil i primer cicle",
       "durada": "45 min",
       "descripcio": "Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb instruccions precises i verificables."
     },
@@ -98,7 +98,7 @@ window.CATALEG = {
       "url": "activitat/xarxa-ordenacio/index.html",
       "titol": "Xarxa d'Ordenació al Terra (Sorting Networks)",
       "tag": "Algorismes de Comparació i Processament Paral·lel",
-      "cicle": "Cicle Mitjà i Superior",
+      "cicle": "Segon i tercer cicle",
       "durada": "50 min",
       "descripcio": "Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les línies; en cada encreuament es comparen de dos en dos i el més petit sempre va cap a l'esquerra."
     }
@@ -111,8 +111,8 @@ window.CATALEG = {
       "titol": "La Ciutat Accessible per a Tothom",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "cicle": "cicle-superior",
-      "cicleLabel": "Cicle Superior (5è-6è)",
+      "cicle": "tercer-cicle",
+      "cicleLabel": "Tercer cicle",
       "tematica": "ciutat",
       "tematicaLabel": "Ciutat intel·ligent i accessibilitat",
       "materia": "tecnologia",
@@ -128,7 +128,7 @@ window.CATALEG = {
       "robot": "tale-bot",
       "robotLabel": "Tale-Bot",
       "cicle": "infantil",
-      "cicleLabel": "Educació Infantil (4-5 anys)",
+      "cicleLabel": "Educació Infantil",
       "tematica": "art",
       "tematicaLabel": "Art, música i expressió",
       "materia": "llengua",
@@ -143,8 +143,8 @@ window.CATALEG = {
       "titol": "La Festa dels Autòmats: Art i Programació",
       "robot": "codey-rocky",
       "robotLabel": "Codey Rocky",
-      "cicle": "cicle-inicial",
-      "cicleLabel": "Cicle Inicial i Mitjà",
+      "cicle": "primer-cicle",
+      "cicleLabel": "Primer cicle",
       "tematica": "art",
       "tematicaLabel": "Art, música i expressió",
       "materia": "artistica",
@@ -159,8 +159,8 @@ window.CATALEG = {
       "titol": "Espies Escolars i Secrets Criptogràfics",
       "robot": "desendollat",
       "robotLabel": "Desendollat (Sense robot)",
-      "cicle": "cicle-superior",
-      "cicleLabel": "Cicle Superior i ESO",
+      "cicle": "tercer-cicle",
+      "cicleLabel": "Tercer cicle",
       "tematica": "societat",
       "tematicaLabel": "Convivència i ciutadania digital",
       "materia": "matematiques",
@@ -175,8 +175,8 @@ window.CATALEG = {
       "titol": "La Mascota de les Emocions i el Benestar",
       "robot": "codey-rocky",
       "robotLabel": "Codey Rocky",
-      "cicle": "cicle-mitja",
-      "cicleLabel": "Cicle Mitjà (3r-4t)",
+      "cicle": "segon-cicle",
+      "cicleLabel": "Segon cicle",
       "tematica": "salut",
       "tematicaLabel": "Salut, hàbits i benestar",
       "materia": "llengua",
@@ -191,8 +191,8 @@ window.CATALEG = {
       "titol": "L'Hivernacle Escolar Automatitzat",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "cicle": "cicle-mitja",
-      "cicleLabel": "Cicle Mitjà i Superior",
+      "cicle": "segon-cicle",
+      "cicleLabel": "Segon cicle",
       "tematica": "sostenibilitat",
       "tematicaLabel": "Medi ambient i sostenibilitat",
       "materia": "medi",
@@ -207,8 +207,8 @@ window.CATALEG = {
       "titol": "Missió Mart: El Rover de Rescat",
       "robot": "spike",
       "robotLabel": "Spike",
-      "cicle": "eso",
-      "cicleLabel": "ESO (1r-3r)",
+      "cicle": "tercer-cicle",
+      "cicleLabel": "Tercer cicle",
       "tematica": "espai",
       "tematicaLabel": "Exploració espacial i viatges",
       "materia": "tecnologia",
@@ -223,8 +223,8 @@ window.CATALEG = {
       "titol": "Ruta Saludable pel Mercat del Barri",
       "robot": "coding-set",
       "robotLabel": "Coding Set",
-      "cicle": "cicle-inicial",
-      "cicleLabel": "Cicle Inicial (1r-2n)",
+      "cicle": "primer-cicle",
+      "cicleLabel": "Primer cicle",
       "tematica": "salut",
       "tematicaLabel": "Salut, hàbits i benestar",
       "materia": "matematiques",
@@ -239,8 +239,8 @@ window.CATALEG = {
       "titol": "Eco-Planta de Reciclatge Intel·ligent",
       "robot": "spike",
       "robotLabel": "Spike",
-      "cicle": "cicle-superior",
-      "cicleLabel": "Cicle Superior (5è-6è) i ESO",
+      "cicle": "tercer-cicle",
+      "cicleLabel": "Tercer cicle",
       "tematica": "sostenibilitat",
       "tematicaLabel": "Medi ambient i sostenibilitat",
       "materia": "medi",
@@ -256,7 +256,7 @@ window.CATALEG = {
       "robot": "coding-express",
       "robotLabel": "Coding Express",
       "cicle": "infantil",
-      "cicleLabel": "Educació Infantil (3-5 anys)",
+      "cicleLabel": "Educació Infantil",
       "tematica": "sostenibilitat",
       "tematicaLabel": "Medi ambient i sostenibilitat",
       "materia": "medi",
@@ -507,6 +507,98 @@ window.CATALEG = {
       "dificultat": "Iniciació",
       "durada": "40 min",
       "descripcio": "Gravar pistes d'àudio i diàlegs personalitzats amb la veu de l'alumnat a cada etapa del recorregut."
+    }
+  ],
+  "robots": [
+    {
+      "id": "robot-coding-express",
+      "slug": "coding-express",
+      "prefix": "ce",
+      "nom": "Coding Express",
+      "edat": "2-5 anys",
+      "descripcio": "El tren interactiu dels colors i el pensament computacional primerenc.",
+      "colors": [
+        "#e4242b",
+        "#fec002"
+      ],
+      "order": 1,
+      "url": "robot/coding-express/index.html",
+      "tutorials": 4
+    },
+    {
+      "id": "robot-tale-bot",
+      "slug": "tale-bot",
+      "prefix": "tb",
+      "nom": "Tale-Bot",
+      "edat": "3-7 anys",
+      "descripcio": "El robot narrador que parla, llegeix mapes interactius i dibuixa.",
+      "colors": [
+        "#fc8439",
+        "#804cbd"
+      ],
+      "order": 2,
+      "url": "robot/tale-bot/index.html",
+      "tutorials": 3
+    },
+    {
+      "id": "robot-coding-set",
+      "slug": "coding-set",
+      "prefix": "cs",
+      "nom": "Coding Set",
+      "edat": "4-9 anys",
+      "descripcio": "Programació tangible sense pantalles amb Matatalab.",
+      "colors": [
+        "#fc7813",
+        "#60a62d"
+      ],
+      "order": 3,
+      "url": "robot/coding-set/index.html",
+      "tutorials": 3
+    },
+    {
+      "id": "robot-codey-rocky",
+      "slug": "codey-rocky",
+      "prefix": "cr",
+      "nom": "Codey Rocky",
+      "edat": "6-12 anys",
+      "descripcio": "El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues.",
+      "colors": [
+        "#0079dc",
+        "#fdc80a"
+      ],
+      "order": 4,
+      "url": "robot/codey-rocky/index.html",
+      "tutorials": 3
+    },
+    {
+      "id": "robot-spike",
+      "slug": "spike",
+      "prefix": "sp",
+      "nom": "Spike",
+      "edat": "10-16 anys",
+      "descripcio": "Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education.",
+      "colors": [
+        "#d82098",
+        "#fddc3e"
+      ],
+      "order": 5,
+      "url": "robot/spike/index.html",
+      "tutorials": 4
+    },
+    {
+      "id": "robot-microbit",
+      "slug": "microbit",
+      "prefix": "mb",
+      "nom": "Micro:bit",
+      "edat": "9-18 anys",
+      "descripcio": "La placa microcontroladora per a projectes oberts i ciutadans.",
+      "colors": [
+        "#047fdf",
+        "#4a515d"
+      ],
+      "order": 6,
+      "url": "robot/microbit/index.html",
+      "tutorials": 5
     }
   ]
 };

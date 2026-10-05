@@ -1,15 +1,15 @@
 ---
-title: TaleBot
+title: Tale-Bot
 description: El robot narrador que parla, llegeix mapes interactius i dibuixa
 icon: 🦔
-age: Infantil i Cicle Inicial (3-7 anys)
+age: Educació Infantil i primer cicle (3-7 anys)
 order: 2
 specs:
 - ✓ Botons superiors direccionals
 - ✓ Sensor OID de lectura de mapes
 - ✓ Micròfon i altaveu integrats
 - ✓ Suport de retoladors per dibuix
-image: _assets/robots/tale-bot.jpg
+image: _assets/robots/tale-bot.png
 official_resources:
 - title: Curs oficial de Tale-Bot Pro
   href: https://matatalab.com/en/node/808

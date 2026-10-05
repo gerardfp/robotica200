@@ -1,8 +1,8 @@
 ---
-title: Microbit
+title: Micro:bit
 description: La placa microcontroladora per a projectes oberts i ciutadans
 icon: 📟
-age: Primària, ESO i Batxillerat (9-18 anys)
+age: Segon i tercer cicle (8-12 anys)
 order: 6
 specs:
 - ✓ Matriu 5x5 de LEDs vermells
@@ -10,7 +10,7 @@ specs:
 - ✓ Acceleròmetre i brúixola 3D
 - ✓ Antena de ràdio 2.4GHz
 - ✓ Pins d’entrada/sortida i connexió a circuits
-image: _assets/robots/microbit.jpg
+image: _assets/robots/microbit.png
 official_resources:
 - title: Lliçons de micro:bit
   href: https://microbit.org/teach/lessons/

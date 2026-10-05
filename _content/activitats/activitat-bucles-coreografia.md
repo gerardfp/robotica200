@@ -2,7 +2,7 @@
 title: La Coreografia dels Bucles
 description: Repetiu una seqüència de moviments i busqueu la manera més clara d'explicar-la amb poques instruccions.
 topic: Bucles i Repetició
-cycle_label: Cicle Inicial, Mitjà i Superior
+cycle_label: Primer, segon i tercer cicle
 duration: 45 min
 order: 7
 ---

@@ -2,7 +2,7 @@
 title: El Museu de les Dades
 description: Recolliu dades inventades, trieu com classificar-les i representeu-les amb una regla clara.
 topic: Dades, Classificació i Privadesa
-cycle_label: Cicle Inicial, Mitjà, Superior i ESO
+cycle_label: Primer, segon i tercer cicle
 duration: 50 min
 order: 10
 ---

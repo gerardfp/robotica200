@@ -3,7 +3,7 @@ title: El Robot Humà i el Llenguatge Precís
 description: Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb
   instruccions precises i verificables.
 topic: Algorismes i Precisió
-cycle_label: Infantil i Cicle Inicial
+cycle_label: Educació Infantil i primer cicle
 duration: 45 min
 order: 1
 ---

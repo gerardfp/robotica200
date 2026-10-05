@@ -3,9 +3,8 @@ title: Un Classificador de Mostres per a l'Ecoaula
 description: Pot un prototip amb SPIKE Prime classificar mostres de colors, reconéixer els casos dubtosos i explicar per què el color no identifica tots els materials?
 robot: spike
 cycles:
-- cicle-superior
-- eso
-cycle_label: Cicle Superior (5è-6è) i ESO
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: sostenibilitat
 subject: medi
 duration: 5 sessions

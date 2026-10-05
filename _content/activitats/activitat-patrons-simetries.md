@@ -2,7 +2,7 @@
 title: Detectius de Patrons i Repeticions
 description: Observeu seqüències de formes i sons, expliqueu la regla i predigueu quin element ve després.
 topic: Patrons i Abstracció
-cycle_label: Educació Infantil, Inicial i Mitjà
+cycle_label: Educació Infantil, primer i segon cicle
 duration: 40 min
 order: 8
 ---

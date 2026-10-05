@@ -3,8 +3,8 @@ title: La Ciutat Accessible per a Tothom
 description: Com podem detectar barreres en un recorregut i dissenyar un senyal de pas més comprensible, combinant observació, representació i un prototip amb micro:bit?
 robot: microbit
 cycles:
-- cicle-superior
-cycle_label: Cicle Superior (5è-6è)
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: ciutat
 subject: tecnologia
 duration: 6 sessions

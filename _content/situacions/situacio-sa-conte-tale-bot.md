@@ -6,7 +6,7 @@ description:
 robot: tale-bot
 cycles:
   - infantil
-cycle_label: Educació Infantil (4-5 anys)
+cycle_label: Educació Infantil
 theme: art
 subject: llengua
 duration: 3 sessions

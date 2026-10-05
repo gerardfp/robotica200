@@ -3,9 +3,8 @@ title: El Microclima del Racó Verd
 description: Què ens poden explicar la llum i la temperatura sobre el racó on creix una planta, i com podem convertir les observacions en una recomanació de cura?
 robot: microbit
 cycles:
-- cicle-mitja
-- cicle-superior
-cycle_label: Cicle Mitjà i Superior
+- segon-cicle
+cycle_label: Segon cicle
 theme: sostenibilitat
 subject: medi
 duration: 5 sessions

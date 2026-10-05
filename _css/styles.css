@@ -34,26 +34,6 @@
   --transition: all 0.2s ease;
 }
 
-[data-theme="dark"] {
-  --bg-page: #0f172a;
-  --bg-card: #1e293b;
-  --bg-card-subtle: #172033;
-  --border-color: #334155;
-  --border-hover: #475569;
-  
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-light: #64748b;
-  
-  --primary: #3b82f6;
-  --primary-hover: #60a5fa;
-  --primary-subtle: rgba(59, 130, 246, 0.15);
-  
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.4);
-  --shadow-hover: 0 10px 24px rgba(0, 0, 0, 0.5);
-}
-
 /* Reset bàsic */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -68,6 +48,7 @@ html {
   line-height: 1.6;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 body,
@@ -91,39 +72,78 @@ sup {
   top: -0.5em;
 }
 
+/* Llistes amb sagnat i espaiat natural */
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0 1rem;
+}
+
+li {
+  padding-left: 0.25rem;
+  margin-bottom: 0.35rem;
+  line-height: 1.6;
+}
+
+li > ul, li > ol {
+  margin: 0.35rem 0 0.5rem;
+}
+
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 site-header, site-footer, nav-back,
 activity-page, tutorial-page, situation-page, guide-page,
-activity-grid, situation-grid, tutorial-grid {
+activity-grid, situation-grid, tutorial-grid,
+robot-hero, robot-grid, robot-card, situation-filters {
   display: block;
+}
+
+accent-dashes {
+  display: flex;
 }
 
 activity-page:not(:defined),
 tutorial-page:not(:defined),
 situation-page:not(:defined),
-guide-page:not(:defined) {
+guide-page:not(:defined),
+activity-page:not([rendered]),
+tutorial-page:not([rendered]),
+situation-page:not([rendered]),
+guide-page:not([rendered]) {
   opacity: 0;
 }
 
-activity-page,
-tutorial-page,
-situation-page,
-guide-page {
+activity-page[rendered],
+tutorial-page[rendered],
+situation-page[rendered],
+guide-page[rendered] {
   opacity: 1;
   transition: opacity 0.15s ease-in;
 }
 
-/* Contenidor central amb molt d'aire */
+/* Contenidor central amb molt d'aire i espaiat responsive fluid */
 .container {
   width: 100%;
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding-inline: 1rem;
+  }
 }
 
 /* Capçalera minimalista */
@@ -227,34 +247,49 @@ guide-page {
   background: var(--primary-subtle);
 }
 
-.theme-toggle {
-  background: var(--bg-card-subtle);
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
-  border-radius: var(--radius-full);
-  width: 2.4rem;
-  height: 2.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.05rem;
-  transition: var(--transition);
-}
-
-.theme-toggle:hover {
-  border-color: var(--border-hover);
-}
-
-/* Contingut de les pàgines */
-.page-content {
-  padding: 2.75rem 0 5rem;
-  animation: fadeIn 0.25s ease-out;
-}
-
+/* Contingut de les pàgines: preserva l'espaiat horitzontal del contenidor i escala fluidament */
+.page-content,
 .view-section {
-  padding: 2.75rem 0 5rem;
+  padding-top: 2.75rem;
+  padding-bottom: 5rem;
+  padding-inline: 1.5rem;
   animation: fadeIn 0.25s ease-out;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.robot-hero + .page-content,
+robot-hero + .page-content,
+.page-content:has(.robot-profile) {
+  padding-top: 1.25rem;
+}
+
+@media (max-width: 860px) {
+  .page-content,
+  .view-section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-inline: 1.25rem;
+  }
+  .robot-hero + .page-content,
+  robot-hero + .page-content,
+  .page-content:has(.robot-profile) {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .page-content,
+  .view-section {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    padding-inline: 1rem;
+  }
+  .robot-hero + .page-content,
+  robot-hero + .page-content,
+  .page-content:has(.robot-profile) {
+    padding-top: 0.85rem;
+  }
 }
 
 @keyframes fadeIn {
@@ -622,10 +657,6 @@ guide-page {
   gap: 0.35rem;
 }
 
-/* Encapçalat de seccions internes */
-.section-nav-back {
-  margin-bottom: 1.5rem;
-}
 
 .btn-back {
   background: none;
@@ -636,16 +667,30 @@ guide-page {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
   padding: 0.4rem 0.8rem;
   border-radius: var(--radius-sm);
   transition: var(--transition);
   text-decoration: none;
 }
 
+.btn-back-arrow {
+  color: #2563eb;
+  font-size: 1.15em;
+  font-weight: 700;
+  display: inline-block;
+  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
 .btn-back:hover {
   color: var(--primary);
   background: var(--bg-card-subtle);
+}
+
+.btn-back:hover .btn-back-arrow {
+  transform: translateX(-3px);
+  color: #1d4ed8;
 }
 
 .view-header {
@@ -680,61 +725,607 @@ guide-page {
   max-width: 700px;
 }
 
-/* Graella de targetes neta */
+/* Graella de targetes neta i perfectament responsive */
 .clean-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
   gap: 1.5rem;
+  width: 100%;
 }
 
-/* Targeta minimalista */
+@media (max-width: 768px) {
+  .clean-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .clean-grid {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
+}
+
+/* Targeta unificada per a activitats i situacions */
 .item-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
   padding: 1.75rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  transition: var(--transition);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
 .item-card:hover {
-  border-color: var(--border-hover);
-  box-shadow: var(--shadow-card);
-  transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
 }
 
-/* Format específic per a targetes de robot amb imatge */
-.robot-card {
-  padding: 1.25rem 1.25rem 1.5rem;
-}
+/* ==========================================================================
+   NOU SISTEMA VISUAL: HERO I TARGETES (ROBOTS, PC I SITUACIONS)
+   ========================================================================== */
 
-.robot-card-media {
+/* Hero unificat de les seccions (Robots, Pensament Computacional, Situacions) */
+.section-hero,
+.robots-hero {
   width: 100%;
-  aspect-ratio: 16 / 11;
-  background: #f1f5f9;
-  border-radius: var(--radius-sm);
+  background-color: #ebf5fd;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 2.25rem 0 2rem;
+  position: relative;
+  overflow: visible;
+  z-index: 10;
+}
+
+.section-hero-inner,
+.robots-hero-inner {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: start;
+  gap: 0 2rem;
+  position: relative;
+  min-height: 230px;
+}
+
+/* Nav-back al hero: sempre alineat a la part superior esquerra */
+.section-hero-inner > nav-back,
+.robots-hero-inner > nav-back {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  margin-bottom: 0.75rem;
+}
+
+/* Suport si nav-back està dins del contenidor de contingut */
+.section-hero-inner:has(.robots-hero-content > nav-back),
+.robots-hero-inner:has(.robots-hero-content > nav-back),
+.section-hero-inner:has(.section-hero-content > nav-back),
+.robots-hero-inner:has(.section-hero-content > nav-back) {
+  align-items: start;
+}
+
+.section-hero-content,
+.robots-hero-content {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-hero-content > nav-back,
+.robots-hero-content > nav-back {
+  align-self: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.section-hero .btn-back,
+.robots-hero .btn-back {
+  margin-left: -0.8rem;
+}
+
+/* Retrocompatibilitat si no s'utilitza contenidor intern */
+.section-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)),
+.robots-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)) {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: start;
+  gap: 1.5rem 2rem;
+  padding: 2.25rem 1.5rem;
+}
+
+@media (max-width: 860px) {
+  .section-hero,
+  .robots-hero {
+    padding: 1.75rem 0 2rem;
+    overflow: visible;
+  }
+  .section-hero-inner,
+  .robots-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    min-height: auto;
+  }
+  .section-hero-inner > nav-back,
+  .robots-hero-inner > nav-back {
+    grid-column: auto;
+    grid-row: auto;
+    margin-bottom: 0.5rem;
+  }
+  .section-hero-content,
+  .robots-hero-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .section-hero-media,
+  .robots-hero-media {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .section-hero-img,
+  .robots-hero-img {
+    max-height: 220px;
+    object-position: center;
+  }
+}
+
+.section-hero-title,
+.robots-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  font-weight: 800;
+  color: #010b40;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.85rem;
+  line-height: 1.15;
+}
+
+.section-hero-desc,
+.robots-hero-desc {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: 1.35rem;
+  max-width: 520px;
+}
+
+.accent-dashes,
+accent-dashes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash {
+  width: 24px;
+  height: 5px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+}
+
+.dash-red { background: #EF4444; }
+.dash-yellow { background: #F59E0B; }
+.dash-blue { background: #3B82F6; }
+
+.section-hero-media,
+.robots-hero-media {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: -2.25rem;
+  margin-bottom: -3.75rem;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.section-hero-img,
+.robots-hero-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 330px;
+  object-fit: contain;
+  object-position: right center;
+  filter: drop-shadow(0 12px 28px rgba(1, 11, 64, 0.08));
+}
+
+/* ==========================================================================
+   HERO INDIVIDUAL DE ROBOT (Més compacte que el de secció)
+   ========================================================================== */
+
+.robot-hero,
+robot-hero {
+  width: 100%;
+  background-color: #ebf5fd;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 1.75rem 0 1.5rem;
+  position: relative;
+  overflow: visible;
+  z-index: 10;
+}
+
+.robot-hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: start;
+  gap: 0 2rem;
+  position: relative;
+  min-height: 175px;
+}
+
+.robot-hero-inner > nav-back {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  margin-bottom: 0.5rem;
+}
+
+.robot-hero-content {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.robot-hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.85rem, 3.2vw, 2.35rem);
+  font-weight: 800;
+  color: #010b40;
+  letter-spacing: -0.025em;
+  margin: 0 0 0.45rem;
+  line-height: 1.15;
+}
+
+.robot-hero-sub {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  margin-bottom: 0.85rem;
+  max-width: 520px;
+}
+
+.robot-hero-media {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  margin-top: -1.75rem;
+  margin-bottom: -2.75rem;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.robot-hero-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 205px;
+  object-fit: contain;
+  object-position: right center;
+  filter: drop-shadow(0 10px 22px rgba(1, 11, 64, 0.08));
+}
+
+@media (max-width: 860px) {
+  .robot-hero,
+  robot-hero {
+    padding: 1.5rem 0 1.75rem;
+    overflow: visible;
+  }
+  .robot-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    min-height: auto;
+  }
+  .robot-hero-inner > nav-back {
+    grid-column: auto;
+    grid-row: auto;
+    margin-bottom: 0.5rem;
+  }
+  .robot-hero-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .robot-hero-media {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .robot-hero-img {
+    max-height: 160px;
+    object-position: center;
+  }
+}
+
+/* Targeta de Robot Redissenyada (vora degradada 4px, border-radius 12px) */
+.robot-card {
+  padding: 0;
+  border-radius: 12px;
+  border: 4px solid transparent;
+  background: 
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, var(--robot-c1), var(--robot-c2)) border-box;
+  background-origin: padding-box, border-box;
+  background-clip: padding-box, border-box;
+  -webkit-background-clip: padding-box, border-box;
   overflow: hidden;
-  margin-bottom: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  isolation: isolate;
+}
+
+.robot-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Àrea d'imatge superior amb fons vectorial SVG isomètric i corbat */
+.robot-card-media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--border-color);
+  border: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Insígnia d'edat flotant a la cantonada superior dreta */
+.robot-age-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--robot-badge-text, var(--text-color));
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  letter-spacing: 0.01em;
 }
 
 .robot-card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 3;
+  position: relative;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.12));
 }
 
 .robot-card:hover .robot-card-img {
-  transform: scale(1.04);
+  transform: scale(1.05);
+}
+
+/* Cos del contingut de la targeta */
+.robot-card-body {
+  padding: 1.25rem 1.35rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Indicador dels 2 punts cromàtics */
+.robot-color-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 0.65rem;
+}
+
+.robot-color-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.robot-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 0.4rem;
+  line-height: 1.3;
+}
+
+.robot-card-desc {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0 0 1.25rem;
+  flex: 1;
+}
+
+/* Peu de targeta amb tutorials i botó d'acció */
+.robot-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.robot-tutorials-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--robot-primary);
+}
+
+.robot-card-action {
+  color: var(--robot-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: gap 0.2s ease;
+}
+
+.robot-card:hover .robot-card-action {
+  gap: 8px;
+}
+
+/* ==========================================================================
+   PALETES ESPECÍFIQUES PER A CADA ROBOT (OFICIALS)
+   ========================================================================== */
+
+/* 1. Coding Express (#e4242b 70% + #fec002 30%) */
+.robot-ce {
+  --robot-c1: #e4242b;
+  --robot-c2: #fec002;
+  --card-border: #e4242b;
+  --robot-primary: #e4242b;
+  --robot-badge-text: #e4242b;
+}
+.robot-ce .robot-card-media { background-image: url('../_assets/backgrounds/bg-coding-express.svg'); }
+.robot-ce .dot-1 { background: #e4242b; }
+.robot-ce .dot-2 { background: #fec002; }
+
+/* 2. Tale-Bot (#fc8439 65% + #804cbd 35%) */
+.robot-tb {
+  --robot-c1: #fc8439;
+  --robot-c2: #804cbd;
+  --card-border: #fc8439;
+  --robot-primary: #fc8439;
+  --robot-badge-text: #fc8439;
+}
+.robot-tb .robot-card-media { background-image: url('../_assets/backgrounds/bg-tale-bot.svg'); }
+.robot-tb .dot-1 { background: #fc8439; }
+.robot-tb .dot-2 { background: #804cbd; }
+
+/* 3. Coding Set (#fc7813 65% + #60a62d 35%) */
+.robot-cs {
+  --robot-c1: #fc7813;
+  --robot-c2: #60a62d;
+  --card-border: #fc7813;
+  --robot-primary: #fc7813;
+  --robot-badge-text: #fc7813;
+}
+.robot-cs .robot-card-media { background-image: url('../_assets/backgrounds/bg-coding-set.svg'); }
+.robot-cs .dot-1 { background: #fc7813; }
+.robot-cs .dot-2 { background: #60a62d; }
+
+/* 4. Codey Rocky (#0079dc 70% + #fdc80a 30%) */
+.robot-cr {
+  --robot-c1: #0079dc;
+  --robot-c2: #fdc80a;
+  --card-border: #0079dc;
+  --robot-primary: #0079dc;
+  --robot-badge-text: #0079dc;
+}
+.robot-cr .robot-card-media { background-image: url('../_assets/backgrounds/bg-codey-rocky.svg'); }
+.robot-cr .dot-1 { background: #0079dc; }
+.robot-cr .dot-2 { background: #fdc80a; }
+
+/* 5. SPIKE (#d82098 65% + #fddc3e 35%) */
+.robot-sp {
+  --robot-c1: #d82098;
+  --robot-c2: #fddc3e;
+  --card-border: #d82098;
+  --robot-primary: #d82098;
+  --robot-badge-text: #d82098;
+}
+.robot-sp .robot-card-media { background-image: url('../_assets/backgrounds/bg-spike.svg'); }
+.robot-sp .dot-1 { background: #d82098; }
+.robot-sp .dot-2 { background: #fddc3e; }
+
+/* 6. micro:bit (#047fdf 70% + #4a515d 30%) */
+.robot-mb {
+  --robot-c1: #047fdf;
+  --robot-c2: #4a515d;
+  --card-border: #047fdf;
+  --robot-primary: #047fdf;
+  --robot-badge-text: #047fdf;
+}
+.robot-mb .robot-card-media { background-image: url('../_assets/backgrounds/bg-microbit.svg'); }
+.robot-mb .dot-1 { background: #047fdf; }
+.robot-mb .dot-2 { background: #4a515d; }
+
+/* Banner Pedagògic inferior de la pàgina de Robots */
+.robots-footer-banner {
+  margin-top: 3rem;
+  padding: 1.75rem 2rem;
+  background: var(--bg-card);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.robots-footer-mascot {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.robots-footer-logo {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+}
+
+.robots-footer-motto p {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--text-color);
+  margin: 0;
+  line-height: 1.35;
+}
+
+.robots-footer-motto .accent-dashes {
+  margin-top: 0.65rem;
 }
 
 .robot-icon-small {
@@ -758,6 +1349,42 @@ guide-page {
   gap: 0.5rem;
 }
 
+.card-badges {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.card-robot-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.08));
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-robot-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.card-robot-sa-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.item-card:hover .card-robot-icon,
+.item-card:hover .card-robot-sa-icon {
+  transform: scale(1.12);
+}
+
 .tag-badge {
   font-size: 0.75rem;
   font-weight: 700;
@@ -775,6 +1402,10 @@ guide-page {
   height: 1.25rem;
   object-fit: contain;
   flex-shrink: 0;
+}
+
+.tag-badge:has(.tag-badge-icon) {
+  padding-left: 0.35rem;
 }
 
 .tag-badge.primary {
@@ -927,7 +1558,7 @@ guide-page {
 
 .color-pills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
   gap: 0.75rem;
   margin-top: 0.75rem;
 }
@@ -960,13 +1591,6 @@ guide-page {
   margin-top: 1.5rem;
 }
 
-[data-theme="dark"] .teacher-tip-box {
-  background: #78350f22;
-  border-color: #78350f55;
-  color: #fde68a;
-}
-
-
 .btn-primary {
   background: var(--primary);
   color: #ffffff;
@@ -983,7 +1607,95 @@ guide-page {
   background: var(--primary-hover);
 }
 
-/* Footer sobri */
+/* Site Footer amb ones i fons #ebf5fd */
+.site-footer {
+  margin-top: 4rem;
+  width: 100%;
+  position: relative;
+  background-color: #ebf5fd;
+  overflow: hidden;
+}
+
+.site-footer-waves {
+  width: 100%;
+  height: 52px;
+  overflow: hidden;
+  line-height: 0;
+  display: block;
+}
+
+.footer-wave-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.footer-wave-back {
+  fill: rgba(0, 121, 220, 0.09);
+}
+
+.footer-wave-front {
+  fill: #ebf5fd;
+}
+
+.site-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.site-footer-motto {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.footer-accent-dashes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.site-footer-brand {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ===== Mini-robots isomètrics animats del peu ===== */
+.footer-robots {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto 0.25rem;
+}
+
+.fbot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 44px;
+  height: 55px;
+  will-change: transform;
+}
+
+.fbot-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+}
+
+/* Footer sobri retrocompatible */
 .footer {
   margin-top: auto;
   padding: 2.5rem 0;
@@ -995,12 +1707,13 @@ guide-page {
 
 /* Pàgina dedicada del Robot */
 .robot-profile {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-lg);
-  padding: 2.25rem;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 0;
   margin-bottom: 2.5rem;
-  box-shadow: var(--shadow-sm);
+  box-shadow: none;
 }
 
 .robot-profile-top {
@@ -1066,7 +1779,7 @@ guide-page {
 .robot-official-resources { margin: 1.4rem 0; padding: 1.25rem 1.4rem; border: 1px solid #dce7e6; border-radius: 1rem; background: #f7faf9; }
 .robot-official-resources h2 { margin: 0 0 .35rem; font-size: 1.1rem; }
 .robot-official-resources > p { margin: 0 0 .8rem; color: var(--text-muted); font-size: .92rem; line-height: 1.55; }
-.robot-official-resources ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.robot-official-resources ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: .75rem; margin: 0; padding: 0; list-style: none; }
 .robot-official-resources li { display: flex; flex-direction: column; gap: .25rem; padding: .8rem; border-radius: .7rem; background: white; }
 .robot-official-resources a { color: #17656c; font-weight: 750; text-underline-offset: .18em; }
 .robot-official-resources li span { color: var(--text-muted); font-size: .86rem; line-height: 1.5; }
@@ -1102,15 +1815,60 @@ guide-page {
   font-size: 0.95rem;
 }
 
-/* Responsivitat */
-@media (max-width: 860px) {
+/* ==========================================================================
+   RESPONSIVITAT GLOBAL I ADAPTACIÓ DE DISPOSITIUS
+   ========================================================================== */
+
+@media (max-width: 960px) {
   .three-pillars {
     grid-template-columns: 1fr;
-    gap: 1.25rem;
+    gap: 1.5rem;
+    max-width: 580px;
+    margin-inline: auto;
   }
-  
+}
+
+@media (max-width: 860px) {
   .filters-bar {
     grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+    padding: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.85rem 0;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 0.65rem 1rem;
+  }
+
+  .header-nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.35rem;
+  }
+
+  .header-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .detail-page-card {
+    padding: 1.75rem 1.5rem;
+    border-radius: var(--radius-md);
   }
 }
 
@@ -1129,10 +1887,64 @@ guide-page {
 
   .filters-bar {
     grid-template-columns: 1fr;
+    padding: 0.95rem;
+    gap: 0.75rem;
   }
-  
-  .header-nav {
-    display: none;
+
+  .filter-count {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+    text-align: center;
+  }
+
+  .btn-reset-filters {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .three-pillars {
+    gap: 1.15rem;
+  }
+
+  .pillar-card {
+    padding: 1rem 1rem 1.35rem;
+  }
+
+  .item-card {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .robot-card-body {
+    padding: 1rem 1.15rem 1.15rem;
+  }
+
+  .robot-card-title {
+    font-size: 1.15rem;
+  }
+
+  .robot-card-desc {
+    font-size: 0.85rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .detail-page-card {
+    padding: 1.35rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+
+  .detail-page-title {
+    font-size: 1.45rem;
+  }
+
+  .home-intro {
+    margin: 1rem auto 2.5rem;
+  }
+
+  .home-title {
+    font-size: 2rem;
   }
 }
 
@@ -1168,7 +1980,7 @@ guide-page {
 }
 .catalog-guides {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 1rem;
   margin-top: 2.5rem;
 }
@@ -1235,14 +2047,16 @@ guide-page {
 .prose ul, .prose ol { padding-left: 1.25rem; }
 .prose li { margin-bottom: 0.35rem; }
 .prose p + p { margin-top: 0.75rem; }
-.prose .lesson-step {
+.lesson-step, .prose .lesson-step {
   background: var(--bg-card-subtle);
   padding: 1.15rem 1.35rem;
   border-radius: var(--radius-sm);
   border-left: 3px solid var(--primary);
   margin-top: 0.95rem;
 }
-.prose .lesson-step h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+.lesson-step h3, .prose .lesson-step h3 { font-size: 1rem; margin-bottom: 0.35rem; }
+.lesson-step ul, .lesson-step ol { padding-left: 1.35rem; margin: 0.5rem 0 0.5rem; }
+.lesson-step li { padding-left: 0.25rem; margin-bottom: 0.35rem; }
 .prose .lesson-sessions { padding: 0; list-style: none; }
 .prose .lesson-sessions li {
   background: var(--bg-card-subtle);

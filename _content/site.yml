@@ -25,14 +25,12 @@ filters:
       label: Tots els cicles
     - value: infantil
       label: Educació Infantil
-    - value: cicle-inicial
-      label: Cicle Inicial
-    - value: cicle-mitja
-      label: Cicle Mitjà
-    - value: cicle-superior
-      label: Cicle Superior
-    - value: eso
-      label: ESO
+    - value: primer-cicle
+      label: Primer cicle
+    - value: segon-cicle
+      label: Segon cicle
+    - value: tercer-cicle
+      label: Tercer cicle
   tematica:
     label: Temàtica
     options:

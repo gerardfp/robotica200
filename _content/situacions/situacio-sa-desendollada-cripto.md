@@ -3,9 +3,8 @@ title: 'Missatges secrets: el xifratge de Cèsar i els seus límits'
 description: Com podem xifrar i desxifrar un missatge de prova, i per què una roda de Cèsar no protegeix una contrasenya ni una conversa real?
 robot: desendollat
 cycles:
-- cicle-superior
-- eso
-cycle_label: Cicle Superior i ESO
+- tercer-cicle
+cycle_label: Tercer cicle
 theme: societat
 subject: matematiques
 duration: 3 sessions

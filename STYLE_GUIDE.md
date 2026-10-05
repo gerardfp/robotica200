@@ -1,102 +1,258 @@
-# Guía de Estilo Visual para las Imágenes de Robòtica²⁰⁰
+# 🎨 Guia d'Estil Visual i Sistema de Disseny — Robòtica²⁰⁰
 
-Este documento establece el estándar visual obligatorio para todas las imágenes de portada de robots y elementos ilustrados de la web.
-
-## 1. Reglas Fundamentales de las Ilustraciones
-- **Estilo Gráfico:** Ilustración digital estilizada (3D suave / vectorial limpio), diseño moderno de tecnología educativa para niños, formas limpias y redondeadas, estética de juguete tecnológico amigable (inspirado exactamente en el estilo de *CodeyRocky*).
-- **🚫 Estricto Estilo Sin Líneas (Lineless):** **Sin líneas de contorno (outlines), sin trazos negros, sin rebordes oscuros ni entintado.** Las formas, piezas y límites se definen exclusivamente a través del contraste de color, luz y sombreado suave de volumen, exactamente igual que en *CodeyRocky*.
-- **🚫 Sin brillos:** Acabado mate estricto, sin reflejos especulares, brillos plásticos ni brillos blancos.
-- **🚫 Sin degradados ni sombreados suaves:** Sin transiciones de color degradadas ni sombreados continuos o sombras suaves.
-- **🎨 Cada forma es de un único color:** Estilo plano (flat cel-shaded / vectorial). Cada plano, faceta o pieza geométrica se rellena con un solo color plano uniforme, exactamente igual que en *CodeyRocky*.
-- **Fondo Bicolor Dividido (Mesa y Pared):**
-  - El fondo está dividido horizontalmente en dos mitades limpias por una línea de horizonte detrás de la parte media del robot.
-  - **Mitad superior (Pared):** Color pastel plano suave que armoniza con los colores primarios del robot.
-  - **Mitad inferior (Mesa/Superficie):** Color plano suave de mesa que complementa la paleta cromática del dispositivo.
-- **🚫 Prohibición Estricta de Sombras en el Suelo:**
-  - **No debe haber ninguna sombra debajo del robot.** Ni sombra proyectada (cast shadow), ni sombra de contacto (contact shadow), ni oclusión ambiental en la mesa.
-- **🚫 Prohibición Total de Texto:**
-  - Sin ningún tipo de texto, letras, números, marcas comerciales, logotipos o marcas de agua.
-- **Perspectiva y Encuadre:**
-  - Robot centrado en el encuadre, ocupando un 70-75% del ancho.
-  - Vista isométrica en perspectiva 3/4 frontal.
-- **Dimensiones:**
-  - Ancho de **600px** (proporción 4:3, resolución estándar de 600 × 448 px).
+Aquest document estableix l'estàndard oficial del nou sistema visual de **Robòtica²⁰⁰**, extret directament del disseny de referència de la pàgina de **Robots** (`_assets/banners/mockup-robots-redisseny.jpg`).
 
 ---
 
-## 2. Paletas de Fondo por Robot
+## 1. 🎴 Anatomia de les Targetes de Robots
 
-| Robot | Mitad Superior (Pared) | Mitad Inferior (Mesa) | Tonos del Robot |
-| :--- | :--- | :--- | :--- |
-| **CodeyRocky** | Azul cielo pastel suave (`#dbeafe`) | Blanco roto / gris neutro claro (`#f1f5f9`) | Blanco, cian/turquesa brillante, negro |
-| **Coding Express** | Amarillo crema pastel suave | Verde menta pastel claro | Amarillo, azul DUPLO, rojo, verde |
-| **TaleBot Pro** | Melocotón / albaricoque pastel cálido | Turquesa muy pálido / crema claro | Azul cielo, naranja, botones de colores |
-| **CodingSet** | Naranja pastel suave / crema cálido | Blanco marfil / salvia muy claro | Blanco, cúpula naranja, botones amarillos |
-| **Spike Prime** | Lavanda / lila pastel suave | Gris cálido claro / crema suave | Amarillo vivo, turquesa, magenta, negro |
-| **Microbit** | Rosa pastel suave / coral pálido | Arena dorada clara / blanco cálido | Negro PCB, rojo LED, dorado conector |
+Cada robot es presenta en una targeta amb personalitat cromàtica pròpia i una estructura neta i ben jerarquitzada:
 
----
-
-## 3. Plantilla de Prompt Obligatoria para Generación
-```text
-Minimalist flat vector 3D-isometric illustration of [Robot Name] from the reference image, in the exact flat minimalist art style of Codey Rocky. CRITICAL ART STYLE RULES: Strictly NO outlines, no black contours, no line strokes. Strictly NO glossy shine, NO specular reflections, NO highlights, matte finish. Strictly NO gradients, NO soft shading, NO ambient occlusion, NO shadow gradients. Every shape and surface is a single flat solid color (flat cel-shaded vector look). Each facet and part is filled with one uniform flat solid color, exactly like Codey Rocky. Centered 3/4 isometric perspective. Background is two flat solid halves: top half flat solid [Color Superior], bottom half flat solid [Color Inferior], divided by a straight horizontal line behind the robot. Strictly NO shadow under the robot on the table, no drop shadow. Strictly textless, no words, no numbers, no letters, no logos.
+```
+┌────────────────────────────────────────────────────────┐
+│  [ FONS BICOLOR CORBAT / DIAGONAL DEL ROBOT ]          │
+│                                           ┌──────────┐ │
+│                                           │👤 Edat   │ │
+│                 [ ROBOT 3D ]              └──────────┘ │
+│           (PNG FONS TRANSPARENT)                       │
+├────────────────────────────────────────────────────────┤
+│  ● ●  (2 punts de color de la paleta)                  │
+│                                                        │
+│  Nom del Robot (Sora Bold)                             │
+│  Descripció pedagògica en una o dues frases breus.     │
+│                                                        │
+│  📖 X tutorials                    Entrar a la pàgina →│
+└────────────────────────────────────────────────────────┘
 ```
 
----
-
-## 4. Iconos de Esencia de los Robots (Formato 1:1 Cuadrado, Fondo Transparente)
-
-Para tarjetas de actividades, insignias curriculares, avatares y elementos compactos de la interfaz, se utilizan iconos cuadrados que capturan la **esencia icónica con muy pocos detalles** (alto minimalismo, con igual nivel de detalle entre todos los robots):
-
-- **Ubicación:** `_assets/icons/[robot].png` (resolución estándar: 512 × 512 px).
-- **Fondo Transparente:** Formato PNG con canal alfa limpio y transparente, sin halos ni siluetas de borde.
-- **Proporción y Encuadre:** Formato cuadrado 1:1, centrado, ocupando ~75% del marco.
-- **🚫 Lineless estricto:** Sin líneas de contorno ni trazos de tinta oscuros, idéntico al estilo plano de *CodeyRocky*.
-- **🚫 Sin brillos ni degradados:** Acabado mate cel-shaded, cada forma es de un único color plano.
-- **🚫 Sin sombras en el suelo y sin texto.**
-
-### Elementos de esencia por robot:
-- **Codey Rocky (`codey-rocky.png`):** Cabeza de Codey con orejitas redondeadas, pantalla oscura con sonrisa pixelada LED cian y botones redondos A y B.
-- **Tale-Bot (`tale-bot.png`):** Cubo rechoncho azul con frontal blanco, dos grandes ojos negros redondos, aleta lateral naranja y cuatro botones circulares de colores arriba.
-- **Coding Set (`coding-set.png`):** Pequeño MatataBot cilíndrico blanco con cúpula naranja, dos pequeños ojos negros y ruedas naranjas.
-- **Spike (`spike.png`):** Hub inteligente rectangular amarillo con ojos ultrasónicos circulares, sonrisa LED roja, orificios Technic, dos motores angulares azul verdoso con ruedas y dos cables limpios conectados al hub.
-- **Coding Express (`coding-express.png`):** Cabina de locomotora amarilla LEGO DUPLO con 4 studs redondeados en el techo, chimenea gris, ventana arqueada diáfana, chasis azul y ruedas rojas.
-- **Micro:bit (`microbit.png`):** Placa rectangular negra de esquinas redondeadas, matriz LED 5x5 con sonrisa roja, botones A y B y conectores dorados inferiores.
-
----
-
-## 5. Banners e Iconos de Secciones Temáticas
-
-Para las 3 secciones principales de la web (*Pensament computacional*, *Robots*, *Situacions d'aprenentatge*), se han diseñado tanto banners bicolores de cabecera como iconos minimalistas con fondo transparente:
-
-### A) Banners de Sección (`_assets/banners/[seccion].jpg`)
-- **Pensament computacional (`pensament-computacional.jpg`):** Pared pastel lavanda y mesa crema, con bloques táctiles de flechas algorítmicas y bombilla de ideas estilizada.
-- **Robots (`robots.jpg`):** Pared pastel azul cielo y mesa menta/arena, con robot amigo sonriente y bloques modulares STEAM con ojos de sensor.
-- **Situacions d'aprenentatge (`situacions-aprenentatge.jpg`):** Pared pastel melocotón y mesa crema cálida, con tapiz de misión isométrica con bandera roja y estrella dorada.
-
-### B) Iconos de Sección (`_assets/icons/[seccion].png`)
-- **Pensament computacional (`pensament-computacional.png`):** Bombilla de ideas cálida con flechas de programación tangibles (avance y giro) en su interior, fondo transparente.
-- **Robots (`robots.png`):** Rostro de robot amigo con antena esférica, pantalla con sonrisa pixelada LED cian y sensores laterales, fondo transparente.
-- **Situacions d'aprenentatge (`situacions-aprenentatge.png`):** Portapapeles de desafío/misión con bandera de meta roja y estrella dorada de consecución, fondo transparente.
+### Especificacions Tècniques de la Targeta:
+- **Contenidor exterior:**
+  - Fons: Blanc sòlid (`#ffffff`).
+  - Arrodoniment: `border-radius: 12px`.
+  - Vora degradada de 4px: `border: 4px solid transparent` amb degradat entre els dos colors oficials de cada robot (`linear-gradient(135deg, var(--robot-c1), var(--robot-c2)) border-box`).
+  - Ombra suau: `box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05)`.
+  - Transició hover: Lleugera elevació vertical (`translateY(-5px)`) amb increment d'ombra suau (`box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12)`).
+- **Àrea d'il·lustració superior (`.robot-card-media`):**
+  - Sense arrodoniment propi (`border-radius: 0`), hereta el retall del pare per `overflow: hidden`.
+  - Aspect ratio: `16 / 9`.
+  - **Fons SVG vectorial isomètric i corbat:** Fons SVG pur (`_assets/robots/bg-[robot].svg`) amb pedestal axonomètric a 30°, línies corbes i combinació tonal dels colors oficials del robot.
+  - **Insígnia d'edat flotant (`.robot-age-badge`):**
+    - Càpsula flotant a la cantonada superior dreta (`top: 12px; right: 12px`).
+    - Fons blanc translúcid (`rgba(255, 255, 255, 0.95)`), `border-radius: 9999px`, padding `4px 12px`.
+    - Ombra suau: `box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12)`.
+    - Text: Icona de persona `👤` seguida del rang d'edat, acolorit amb el **color primari del robot**.
+- **Vora de la targeta:** Vora degradada de **4px** que recorre tot el perímetre de la targeta unint harmònicament els dos colors oficials del robot.
+- **Cos de la targeta (`.robot-card-body`):**
+  - **Indicador de 2 punts (`.robot-color-dots`):** Dos cercles (`10px` de diàmetre) situats a dalt a l'esquerra del títol, separats `7px`, que mostren de manera elegant la paleta binària del robot.
+  - **Títol (`.robot-card-title`):** Font **Sora**, pes 700 (Bold), mida `1.25rem`, color fosc de contrast (`#0f172a`).
+  - **Descripció (`.robot-card-desc`):** Font **Plus Jakarta Sans**, pes 400 (Regular), color gris pissarra (`#64748b`), alçada de línia `1.5`.
+- **Peu de la targeta (`.robot-card-footer`):**
+  - **Comptador de tutorials:** Icona de llibre SVG net + text `X tutorials`, acolorit en el **color primari del robot**.
+  - **Enllaç d'acció:** `Entrar a la pàgina →`, en tipografia semibold, acolorit en el **color primari del robot**.
 
 ---
 
-## 6. Sistema Tipográfico Oficial
+## 2. 🎨 Paletes Cromàtiques Oficials per Robot
 
-- **Títulos y Encabezados:** **"Sora"** (`font-family: var(--font-heading)`). Tipografía sans-serif geométrica con gran personalidad y legibilidad para todos los niveles de encabezado (`h1-h6`), marca (`.logo-name`), tarjetas (`.pillar-title`, `.item-title`) y cabeceras de página.
-- **Cuerpo de Texto e Interfaz (UI):** **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`). Tipografía sans-serif moderna, equilibrada y limpia para párrafos, botones, menús de navegación, insignias/etiquetas y elementos de formulario.
+Cada robot té assignada una **paleta de dos colors associats amb proporció oficial**:
+1. Crear la composició d'àrees superposades darrere del robot (Color 1 dominant ~65-70% i Color 2 superposat ~30-35%).
+2. Pintar la vora de 4px i els detalls de la targeta (punts indicadors, comptador i botó).
+
+| Robot | Slug Oficial | Color 1 (Dominant 65-70%, Vora 4px, Punt 1) | Color 2 (Secundari 30-35%, Àrees superposades, Punt 2) | Proporció | Rang d'Edat |
+| :--- | :--- | :--- | :--- | :---: | :--- |
+| **Coding Express** | `coding-express` | Vermell `#e4242b` | Groc ambre `#fec002` | 70% + 30% | 👤 2-5 anys |
+| **Tale-Bot** | `tale-bot` | Taronja corall `#fc8439` | Violeta `#804cbd` | 65% + 35% | 👤 3-7 anys |
+| **Coding Set** | `coding-set` | Taronja mandarí `#fc7813` | Verd fresc `#60a62d` | 65% + 35% | 👤 4-9 anys |
+| **Codey Rocky** | `codey-rocky` | Blau cel `#0079dc` | Groc sorra `#fdc80a` | 70% + 30% | 👤 6-12 anys |
+| **SPIKE** | `spike` | Fúcsia vibrant `#d82098` | Groc LEGO `#fddc3e` | 65% + 35% | 👤 10-16 anys |
+| **micro:bit** | `microbit` | Blau elèctric `#047fdf` | Gris obsidiana `#4a515d` | 70% + 30% | 👤 9-18 anys |
 
 ---
 
-## 7. Identidad Corporativa Oficial ("Robòtica per a docents")
+## 3. 🎨 Direcció d'Art i Estil Visual Oficial (Estètica EdTech Isomètrica)
 
-- **Concepto:** Síntesis geométrica abstracta ("El Bot Modular STEAM"), que equilibra el diseño lúdico/educativo con la sobriedad tecnológica y la madurez corporativa.
-- **Isotipo / Logotipo Vectorial (`_assets/icons/logo.svg`):**
-  - **Barra superior:** Se muestra como imagen estática limpia (`.logo-badge-img`) en la cabecera de todas las páginas.
-  - **Favicon:** Icono oficial del navegador en formato SVG vectorial (`<link rel="icon" type="image/svg+xml" href="_assets/icons/logo.svg">`).
-  - **Portada (`index.html`):** Integrado inline (`.home-hero-svg`), con suite dinámica de 8 microanimaciones robóticas activadas cada 2-4 segundos (`_js/robot-animation.js`): parpadeo rápido de ojos (`robot-anim-blink`), oscilación de antena (`robot-anim-antenna`), alerta de sensor/radar (`robot-anim-alert`), micro-glitch de pantalla (`robot-anim-glitch`), mirada a los lados (`robot-anim-look`), salto alegre/hop (`robot-anim-happy`), inclinación de cabeza curiosa (`robot-anim-tilt`) y escaneo cromático modo matrix (`robot-anim-scan`). Reactivo además al clic del usuario.
-- **Ilustración Corporativa (`_assets/banners/robotica-docents.jpg`, `_assets/banners/corporativa.jpg`):** Formato 4:3 (800 × 600 px), fondo bicolor dividido (pared azul cielo pastel suave `#e0f2fe` y mesa clara `#f8fafc`), lineless y estrictamente sin sombras en el suelo.
+La identitat visual dels robots es defineix com una **il·lustració 3D isomètrica tècnica i amable**. No és un simple "3D cartoon" infantil; el component isomètric, axonomètric i geomètric li confereix una identitat més tècnica, rigorosa i pròpia de la robòtica educativa moderna.
 
+### Els 9 Pilars de l'Estil Gràfic:
+1. **Ilustración 3D estilizada / cartoon 3D:** Objetos tridimensionales, pero simplificados y sin buscar realismo fotográfico ni suciedad en las texturas.
+2. **Isométrico suave:** Perspectiva e isometría casi axonométrica limpia (ángulo cenital de ~30°), especialmente en las plataformas, bloques y componentes.
+3. **Toy-like / aspecto de juguete:** Los robots parecen pequeños objetos físicos de juguete o kits educativos amables, con superficies limpias y formas redondeadas.
+4. **Low-poly refinado:** Geometría relativamente sencilla y limpia, pero con suficientes volúmenes, biseles curvados y gradaciones de luz para que no parezca un low-poly tosco.
+5. **Materiales plásticos mate:** Superficies de plástico ligeramente satinadas / soft-touch, sin reflejos especulares ni brillos fotográficos agresivos.
+6. **Colores sólidos y vibrantes:** Colores muy limpios y saturados, con combinaciones binarias de 2–3 colores vivos por robot según su paleta oficial.
+7. **Iluminación de estudio suave:** Luz difusa de estudio fotográfico, sombras blandas y pequeños toques de luz que ayudan a recortar y separar los volúmenes en el espacio.
+8. **Fondo gráfico abstracto / Transparente:** En la web, el fondo de la imagen se aísla con canal alfa 100% transparente para montarse limpiamente sobre los fondos bicolores CSS.
+9. **Estética edtech contemporánea:** Lenguaje visual que recuerda a las ilustraciones de productos tecnológicos educativos punteros y landing pages de startups de tecnología y diseño (estilo Stripe / Linear / Duolingo / Vercel Kids).
 
+### 📝 Prompt Mestre d'Estil Robòtica²⁰⁰:
 
+Per mantenir **consistència estricta entre totes les il·lustracions**, el prompt es divideix en un **bloc fix d'estil** i un **bloc variable per al robot i la seva escena**:
+
+```text
+Create a polished 3D isometric educational robotics illustration.
+
+STYLE:
+Stylized 3D toy-like illustration with a friendly modern edtech aesthetic.
+Soft low-poly geometry with rounded, carefully beveled edges.
+Cute, approachable proportions, but not childish or cartoonish.
+Objects should look like high-quality educational robotics kits made from
+smooth matte plastic. 
+
+Use clean geometric shapes, simplified forms and subtle surface details.
+Soft studio lighting with diffuse illumination, gentle ambient occlusion,
+soft contact shadows and subtle highlights.
+No photorealism, no metallic realism, no complex textures.
+
+COMPOSITION:
+Isometric / axonometric perspective, viewed from a slightly elevated angle.
+The main robot is the clear focal point, centered or slightly off-center.
+Place the robot on a small layered isometric platform or modular base.
+Add a few simple educational elements around it: blocks, programming tiles,
+sensors, arrows, paths, gears or other objects related to the robot.
+
+Use depth through overlapping objects and multiple platform levels.
+Keep the composition compact, balanced and readable at small sizes.
+Leave generous negative space around the illustration.
+
+COLORS:
+Use a clean, bright educational palette.
+Main colors should be vivid but slightly softened rather than neon.
+White and very light neutral surfaces for the robot,
+combined with 2–3 strong accent colors.
+Use the robot's real-world brand colors when appropriate.
+
+BACKGROUND:
+Transparent background.
+No room, no environment, no horizon, no scenery.
+Only the illustrated objects and their isometric platform should remain visible.
+
+LIGHTING:
+Soft diffuse studio lighting.
+Subtle glow and atmospheric softness around the edges.
+Soft shadows underneath objects.
+Clean separation between overlapping forms.
+
+VISUAL LANGUAGE:
+Modern educational technology.
+Premium children's STEM / robotics product illustration.
+Friendly, intelligent, playful and technological.
+Clean enough to work as a website card illustration.
+Consistent visual language across a complete family of six robotics
+illustrations.
+
+NO TEXT, NO LETTERS, NO LOGOS, NO WATERMARKS.
+```
+
+### ⚡ Fórmula Curta Oficial ("Estil Robòtica²⁰⁰"):
+```text
+Polished 3D isometric educational robotics illustration, stylized toy-like low-poly geometry, rounded beveled forms, matte plastic materials, soft diffuse studio lighting, gentle ambient occlusion, clean geometric shapes, vivid but softened STEM colors, compact modular isometric platform, friendly modern edtech aesthetic, transparent background, no text or logos.
+```
+
+Després d'aquesta base d'estil s'especifica el bloc `SUBJECT:` amb el robot i els elements educatius modulars que l'envolten.
+
+---
+
+## 4. 🖼️ Les 2 Imatges Obligatòries per Robot (Amb Fons Transparent)
+
+Per a cada robot del projecte es generaran i mantindran **dues representacions visuals amb canal alfa transparent pur (`.png`)**:
+
+### A) Tipus 1: Robot Complet (`_assets/robots/[slug].png`)
+- **Funció:** Imatge principal per a la targeta del catàleg de robots i la capçalera de la seva fitxa tècnica.
+- **Format:** PNG 32-bit amb **fons 100% transparent** (sense vores blanques, halos ni ombres projectades al terra).
+- **Resolució:** 600 × 448 px (proporció 4:3) o 800 × 600 px centrat.
+- **Estil visual:**
+  - Aplica exactament els 9 pilars EdTech isomètrics descrits anteriorment.
+  - Model 3D isomètric complet en perspectiva 3/4 frontal.
+  - Sense ombres sota el robot per permetre la integració directa amb el fons corbat CSS.
+
+### B) Tipus 2: Icona Abstracta d'Essència (`_assets/icons/[slug].svg`)
+- **Funció:** Icona d'identificació ràpida per a miniatures d'activitats, insígnies curriculars de situacions d'aprenentatge, targetes de tutorials i catàlegs.
+- **Format:** Format vectorial pur SVG (`viewBox="0 0 210 210"`).
+- **Estil visual (Síntesi Geomètrica Isomètrica Pura):**
+  - **Menys de 10 polígons en total per icona** (geometria ultra low-poly refinada i neta).
+  - **Tots apuntant exactament en la mateixa direcció:** perspectiva axonomètrica isomètrica neta a 30° (vista 3/4 frontal-esquerra: cara frontal a la cara esquerra, lateral a la dreta, superior a dalt).
+  - **Sense ombres ni degradats, ni reflexos, ni brillantors:** cares planes de colors sòlids que defineixen el volum mitjançant matisos plans de color.
+  - **Com a màxim 5 colors plans per icona.**
+  - **Essència capturada:**
+    - `coding-express`: Locomotora vermella isomètrica amb xemeneia groga, far frontal i xassís fosc (8 polígons).
+    - `tale-bot`: Cos arrodonit taronja amb visor cian, ulls blancs i aletes/orelles morades als dos costats (9 polígons).
+    - `coding-set`: Cub taronja de MatataBot amb visera blanca, ninetes fosques i barret de cúpula verd (9 polígons).
+    - `codey-rocky`: Cap de Codey blau amb dues orelles de gat, pantalla fosca, botó groc i xassís Rocky amb erugues fosques (9 polígons).
+    - `spike`: Hub rectangular de LEGO groc i magenta amb pantalla LED central i botons/studs superiors cian i magenta (8 polígons).
+    - `microbit`: Placa microcontroladora blava isomètrica amb xip fosc, pantalla LED amb cor vermell, botons A/B blancs i connectors daurats (9 polígons).
+  - **Full de conjunt:** Conservat a `_assets/icons/sheet.png` per a referència global.
+
+---
+
+## 4. 🌟 Elements d'Entorn de la Pàgina de Robots
+
+### A) Capçalera Hero de la Pàgina
+- **Enllaç de retorn:** `<nav-back>` sempre alineat a la part superior de l'hero (`grid-column: 1 / -1; align-self: start`) amb la fletxa en to `#2563eb`.
+- **Títol principal:** `Robòtica Educativa` (o `Robots`), amb tipografia **Sora** extra bold (`font-weight: 800`), color blau fosc profund (`#010b40`).
+- **Subtítol:** `"Selecciona un robot per accedir a la seva pàgina d'aprenentatge i tutorials específics."` en Plus Jakarta Sans.
+- **Indicador de 3 barres decoratives:**
+  - Barra vermella (`#EF4444`)
+  - Barra groga (`#F59E0B`)
+  - Barra blava (`#3B82F6`)
+- **Escena gràfica dreta:**
+  - Il·lustració isomètrica 3D STEAM amb el robotet blau somrient sobre un mapa amb línia discontínua i cubs/blocs modulars de colors (vermell, verd, groc, blau).
+
+### B) Peu de Pàgina Pedagògic
+- **Costat esquerre:**
+  - Logotip/avatar del robot somrient de Robòtica²⁰⁰ amb antena.
+  - Lema curricular: **"Aprendre fent, programar per a un futur millor."**
+  - Les 3 barres decoratives (vermell, groc, blau).
+- **Costat dret:**
+  - Composició isomètrica amb cubs modulars STEAM (verd amb icona, vermell, blau, groc) acompanyats pel mini-robot blau.
+
+---
+
+## 5. 🔬 Valoració Tècnica: Full Únic (Grid/Sheet) vs. Imatges Individuals
+
+Per garantir la màxima coherència estilística entre els robots, es valora la proposta de generar un full conjunt:
+
+### Avantatges de Generar un Full Únic (Grid/Sprite Sheet):
+1. **Coherència d'Estil Impecable:** El model d'IA aplica exactament la mateixa il·luminació, nivell de cel-shading, acabat mat i paleta harmònica a tots els elements en una sola passada.
+2. **Harmonia d'Escala i Angle:** Els 6 robots comparteixen el mateix angle de cambra isomètric (30 graus) i una escala relativa natural.
+3. **Optimització de Tokens i Iteració:** Una sola generació permet avaluar la coherència del conjunt d'un cop d'ull.
+
+### Reptes Tècnics i Riscos a Controlar:
+1. **Confusió de Característiques (Creuament de Detalls):** En demanar 6 robots educatius concrets en un sol prompt, l'IA pot barrejar components (p. ex., posar rodes a la Micro:bit o peces LEGO al Tale-Bot).
+2. **Resolució per Element:** Una imatge quadrada de 1024 × 1024 px dividida en 6 caselles (3 columnes × 2 files) deixa aproximadament 300 × 400 px per robot, que un cop retallada i escalada pot perdre nitidesa comparat amb un render dedicat.
+3. **Retall i Transparència:** Cal generar sobre un fons pla d'alt contrast (p. ex., blanc pur o verd croma) per poder executar un script de màscara alfa en Python (rembg o PIL) que aïlli cadascun dels 6 robots sense vores dentades ni halos de color.
+
+### Estratègia Òptima Adoptada:
+- **Pas 1:** Intentar la generació del full conjunt (Sprite Sheet 3x2) amb els 6 robots sobre fons blanc d'estudi amb perspectiva uniforme.
+- **Pas 2:** Extreure i retallar en Python cada robot amb fons transparent (`_assets/robots/[slug].png`).
+- **Pas 3:** Si algun robot presenta deformacions o pèrdua de detalls fidels al model real, es regenera aquest robot individualment utilitzant la mateixa llavor visual i el prompt d'estil de la guia.
+
+---
+
+## 6. 🔤 Sistema Tipogràfic i Identitat
+
+- **Títols i Encapçalaments:** **"Sora"** (`font-family: var(--font-heading)`).
+- **Text Continu i Controls:** **"Plus Jakarta Sans"** (`font-family: var(--font-sans)`).
+- **Identitat Oficial:** `Robòtica<sup>200</sup>` — *Robòtica per a docents*.
+
+---
+
+## 7. ☀️ Tema Clar Exclusiu
+
+- El projecte s'executa **íntegrament en tema clar**. No hi ha suport per a mode fosc.
+- No s'admeten selectors `[data-theme="dark"]`, botons d'alternança `#theme-toggle` ni regles `@media (prefers-color-scheme: dark)`.
+- El contrast visual es basa en fons blancs nets (`#ffffff`), fons suaus `#f8fafc`, heros i footers corporatius en `#ebf5fd` i tipografia d'alta llegibilitat (`#0f172a` per a títols, `#475569` per a text general).
+
+---
+
+## 8. 📐 Layout Unificat de les Seccions Principals
+
+Totes les pàgines de secció principal (**Robòtica educativa**, **Pensament computacional** i **Situacions d'aprenentatge**) segueixen estrictament la mateixa arquitectura:
+
+1. **Hero Corporatiu (`.robots-hero` / `.section-hero`):**
+   - Fons corporatiu suau `#ebf5fd` d'amplada completa (100% de la finestra, enganxat a la capçalera), `overflow: visible;`.
+   - Grid a 2 columnes: columna esquerra amb botó de retorn alineat a dalt, títol Sora 800 (`margin-top: 0` fixat a la mateixa alçada a totes les pàgines), subtítol i els 3 guions d'accent; columna dreta amb la il·lustració/banner transparent oficial ocupant tota l'alçada del hero i sobresortint lleugerament per sota (`margin-top: -2.25rem; margin-bottom: -3.75rem;`).
+2. **Graella de Targetes (`.clean-grid`):**
+   - Targetes espaiades amb fons blanc, cantons arrodonits (20-24px), títols en Sora Bold i footer d'acció semibold.
+3. **Callout Pedagògic Inferior (`.catalog-callout`):**
+   - Caixa neta inferior amb suport didàctic i enllaç a la guia docent abans del peu de pàgina corporatiu.
 

@@ -109,11 +109,11 @@ def scan_situations():
                     robot = k
                     break
             cicle_label = clean_html(badges[1]) if len(badges) > 1 else ""
-            cicle = "cicle-mitja"
+            cicle = "segon-cicle"
             if "infantil" in cicle_label.lower(): cicle = "infantil"
-            elif "inicial" in cicle_label.lower(): cicle = "cicle-inicial"
-            elif "superior" in cicle_label.lower(): cicle = "cicle-superior"
-            elif "eso" in cicle_label.lower(): cicle = "eso"
+            elif "primer" in cicle_label.lower() or "inicial" in cicle_label.lower(): cicle = "primer-cicle"
+            elif "segon" in cicle_label.lower() or "mitjà" in cicle_label.lower() or "mitja" in cicle_label.lower(): cicle = "segon-cicle"
+            elif "tercer" in cicle_label.lower() or "superior" in cicle_label.lower() or "eso" in cicle_label.lower(): cicle = "tercer-cicle"
 
             materia_label = clean_html(badges[2]) if len(badges) > 2 else ""
             materia = "tecnologia"
@@ -200,16 +200,92 @@ def scan_tutorials():
         })
     return tutorials
 
+def scan_robots(tutorials):
+    robot_meta = [
+        {
+            "id": "robot-coding-express",
+            "slug": "coding-express",
+            "prefix": "ce",
+            "nom": "Coding Express",
+            "edat": "2-5 anys",
+            "descripcio": "El tren interactiu dels colors i el pensament computacional primerenc.",
+            "colors": ["#e4242b", "#fec002"],
+            "order": 1
+        },
+        {
+            "id": "robot-tale-bot",
+            "slug": "tale-bot",
+            "prefix": "tb",
+            "nom": "Tale-Bot",
+            "edat": "3-7 anys",
+            "descripcio": "El robot narrador que parla, llegeix mapes interactius i dibuixa.",
+            "colors": ["#fc8439", "#804cbd"],
+            "order": 2
+        },
+        {
+            "id": "robot-coding-set",
+            "slug": "coding-set",
+            "prefix": "cs",
+            "nom": "Coding Set",
+            "edat": "4-9 anys",
+            "descripcio": "Programació tangible sense pantalles amb Matatalab.",
+            "colors": ["#fc7813", "#60a62d"],
+            "order": 3
+        },
+        {
+            "id": "robot-codey-rocky",
+            "slug": "codey-rocky",
+            "prefix": "cr",
+            "nom": "Codey Rocky",
+            "edat": "6-12 anys",
+            "descripcio": "El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues.",
+            "colors": ["#0079dc", "#fdc80a"],
+            "order": 4
+        },
+        {
+            "id": "robot-spike",
+            "slug": "spike",
+            "prefix": "sp",
+            "nom": "Spike",
+            "edat": "10-16 anys",
+            "descripcio": "Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education.",
+            "colors": ["#d82098", "#fddc3e"],
+            "order": 5
+        },
+        {
+            "id": "robot-microbit",
+            "slug": "microbit",
+            "prefix": "mb",
+            "nom": "Micro:bit",
+            "edat": "9-18 anys",
+            "descripcio": "La placa microcontroladora per a projectes oberts i ciutadans.",
+            "colors": ["#047fdf", "#4a515d"],
+            "order": 6
+        }
+    ]
+
+    robots = []
+    for r in robot_meta:
+        slug = r["slug"]
+        t_count = len([t for t in tutorials if t.get("robot") == slug])
+        r_item = dict(r)
+        r_item["url"] = f"robot/{slug}/index.html"
+        r_item["tutorials"] = t_count
+        robots.append(r_item)
+    return robots
+
 def main():
     activitats = scan_activities()
     situacions = scan_situations()
     tutorials = scan_tutorials()
+    robots = scan_robots(tutorials)
 
     cataleg_path = ROOT_DIR / '_js' / 'cataleg.js'
     cataleg_data = {
         "activitats": activitats,
         "situacions": situacions,
-        "tutorials": tutorials
+        "tutorials": tutorials,
+        "robots": robots
     }
 
     js_content = f"""// _js/cataleg.js - Dades del catàleg generades automàticament per _scripts/sync-catalog.py
@@ -221,6 +297,7 @@ window.CATALEG = {json.dumps(cataleg_data, ensure_ascii=False, indent=2)};
     print(f"  - {len(activitats)} activitats")
     print(f"  - {len(situacions)} situacions d'aprenentatge")
     print(f"  - {len(tutorials)} tutorials")
+    print(f"  - {len(robots)} robots")
     print(f"  Fitxer generat: {cataleg_path}")
 
 if __name__ == '__main__':

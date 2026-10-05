@@ -1,0 +1,5 @@
+- [x] Els filtres del catàleg es generen dinàmicament a partir de cataleg.js amb el component `<situation-filters>`
+- [x] Arquitectura de components ampliada: `<accent-dashes>`, `<robot-hero>`, `<robot-card>`, `<robot-grid>`, `<situation-filters>`
+- [ ] Posem filtres a les de Pensament Computacional ?
+- [ ] El title de la pàgina hauria de ser més concís (p. ex. Tale-Bot | Robòtica²⁰⁰)
+- [ ] Prova de nou estil low-poly per a robots i banners (prompts desats a `_assets/artwork/lowpoly/PROMPTS.md`)
