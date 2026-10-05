@@ -1,4 +1,6 @@
 // _js/components.js - Components Web Natius per a Robòtica²⁰⁰
+
+
 (function () {
   'use strict';
 
@@ -137,6 +139,43 @@
     }
   }
 
+  // 2a. Mini-robots isomètrics low-poly animats del peu de pàgina
+  // Cada robot és un SVG pla de pocs polígons (cares superior/esquerra/dreta d'una caixa isomètrica a 30°)
+  const isoBox = (cx, ty, s, h, [top, left, right]) => {
+    const w = +(s * 0.866).toFixed(1), hh = s / 2;
+    return `<polygon fill="${top}" points="${cx},${ty - hh} ${cx + w},${ty} ${cx},${ty + hh} ${cx - w},${ty}"/>` +
+      `<polygon fill="${left}" points="${cx - w},${ty} ${cx},${ty + hh} ${cx},${ty + hh + h} ${cx - w},${ty + h}"/>` +
+      `<polygon fill="${right}" points="${cx},${ty + hh} ${cx + w},${ty} ${cx + w},${ty + h} ${cx},${ty + hh + h}"/>`;
+  };
+
+  const footerBot = ({ c, accent, cargo }) => `
+    <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+      <g class="fbot-body">
+        ${isoBox(24, 44, 13, 4, ['#475569', '#334155', '#1e293b'])}
+        ${isoBox(24, 30, 12, 14, c)}
+        <g class="fbot-arm"><polygon fill="${accent}" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+        <g class="fbot-head">
+          ${isoBox(24, 21, 8, 9, c)}
+          <g class="fbot-eyes" fill="#e0f2fe">
+            <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+            <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+          </g>
+          <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+          <polygon class="fbot-led" fill="${accent}" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+        </g>
+        ${cargo ? `<g class="fbot-cargo">${isoBox(24, -8, 8, 6, cargo)}</g>` : ''}
+      </g>
+    </svg>`;
+
+  const FOOTER_BOTS = [
+    { cls: 'fbot-patrol', c: ['#3d9cf0', '#0079dc', '#005aa6'], accent: '#fdc80a' },
+    { cls: 'fbot-hop',    c: ['#ff5a5f', '#e4242b', '#b3151b'], accent: '#fec002' },
+    { cls: 'fbot-carry',  c: ['#8bd152', '#60a62d', '#437a1c'], accent: '#fc7813', cargo: ['#ffb066', '#fc7813', '#c95a08'] },
+    { cls: 'fbot-scan',   c: ['#ffa368', '#fc8439', '#d4621c'], accent: '#804cbd' },
+    { cls: 'fbot-wave',   c: ['#ef54b8', '#d82098', '#a3126f'], accent: '#fddc3e' },
+    { cls: 'fbot-dance',  c: ['#7a828f', '#4a515d', '#30353d'], accent: '#047fdf' }
+  ];
+
   // 2. Peu de pàgina corporatiu unificat
   class SiteFooter extends HTMLElement {
     connectedCallback() {
@@ -149,6 +188,9 @@
             </svg>
           </div>
           <div class="container site-footer-inner">
+            <div class="footer-robots" aria-hidden="true">
+              ${FOOTER_BOTS.map(b => `<div class="fbot ${b.cls}">${footerBot(b)}</div>`).join('')}
+            </div>
             <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
             <div class="footer-accent-dashes" aria-hidden="true">
               <span class="dash dash-red"></span>
