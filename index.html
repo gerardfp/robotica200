@@ -8,30 +8,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg">
+  <link rel="stylesheet" href="_css/styles.css?v=2">
+  <link rel="icon" type="image/svg+xml" href="_assets/icons/logo.svg">
+  <script src="_js/components.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-badge"><img src="assets/icons/logo.svg" alt="" class="logo-badge-img"></span>
-        <div class="logo-text">
-          <span class="logo-name">Robòtica<sup>200</sup></span>
-          <span class="logo-subtitle">Robòtica per a docents</span>
-        </div>
-      </a>
-      <nav class="header-nav" aria-label="Navegació principal">
-        <a href="index.html" class="nav-btn active" aria-current="page">Inici</a>
-        <a href="pensament-computacional.html" class="nav-btn">Pensament computacional</a>
-        <a href="robotica.html" class="nav-btn">Robòtica</a>
-        <a href="situacions-aprenentatge.html" class="nav-btn">Situacions d&#39;aprenentatge</a>
-      </nav>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Canviar tema de color">
-        <span id="theme-icon" aria-hidden="true">🌙</span>
-      </button>
-    </div>
-  </header>
+  <site-header active="inici" root=""></site-header>
   <main class="container page-content">
 <div class="home-intro">
   <button type="button" class="home-hero-icon" aria-label="Interactua amb el robot de Robòtica 200">
@@ -48,26 +30,24 @@
   <div class="home-desc"><p>Robòtica per a docents</p></div>
 </div>
 <div class="three-pillars">
-  <a href="pensament-computacional.html" class="pillar-card">
-<div class="pillar-media"><img src="assets/banners/pensament-computacional.jpg" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Pensament computacional</h2>
+  <a href="pensament-computacional/index.html" class="pillar-card">
+<div class="pillar-media"><img src="_assets/banners/pensament-computacional.jpg" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Pensament computacional</h2>
     <p class="pillar-desc">Activitats desendollades de PC per treballar la lògica, els algorismes i la resolució de problemes sense pantalles.</p>
     <div class="pillar-action">Explorar activitats →</div>
   </a>
-  <a href="robotica.html" class="pillar-card">
-<div class="pillar-media"><img src="assets/banners/robotica.jpg" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Robòtica</h2>
+  <a href="robots/index.html" class="pillar-card">
+<div class="pillar-media"><img src="_assets/banners/robots.jpg" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Robots</h2>
     <p class="pillar-desc">Tutorials i guies dels 6 robots d&#39;aula.</p>
     <div class="pillar-action">Veure els 6 robots →</div>
   </a>
-  <a href="situacions-aprenentatge.html" class="pillar-card">
-<div class="pillar-media"><img src="assets/banners/situacions-aprenentatge.jpg" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Situacions d&#39;aprenentatge</h2>
+  <a href="situacions-aprenentatge/index.html" class="pillar-card">
+<div class="pillar-media"><img src="_assets/banners/situacions-aprenentatge.jpg" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Situacions d&#39;aprenentatge</h2>
     <p class="pillar-desc">Catàleg curricular filtrable per robot, cicle educatiu, temàtica transversal i matèria d&#39;aprenentatge.</p>
     <div class="pillar-action">Obrir catàleg →</div>
   </a>
 </div>
   </main>
-  <footer class="footer">
-    <div class="container"><p>Robòtica<sup>200</sup> • Robòtica per a docents</p></div>
-  </footer>
-  <script src="js/theme.js"></script>
-<script src="js/robot-animation.js?v=2"></script></body>
+  <site-footer></site-footer>
+  <script src="_js/theme.js"></script>
+<script src="_js/robot-animation.js?v=2"></script></body>
 </html>
