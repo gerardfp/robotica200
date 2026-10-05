@@ -231,7 +231,7 @@
       const robotLabel = this.getAttribute('robot-label') || this.getAttribute('robot') || '';
       let robotIcon = this.getAttribute('robot-icon') || '';
       if (!robotIcon && robot) {
-        robotIcon = `${robot}.png`;
+        robotIcon = `${robot}.svg`;
       }
       const dificultat = this.getAttribute('dificultat') || this.getAttribute('nivell') || '';
       const durada = this.getAttribute('durada') || '';
@@ -278,7 +278,7 @@
       const robotLabel = this.getAttribute('robot-label') || '';
       let robotIcon = this.getAttribute('robot-icon') || '';
       if (!robotIcon && robot && robot !== 'desendollat') {
-        robotIcon = `${robot}.png`;
+        robotIcon = `${robot}.svg`;
       }
       const cicleLabel = this.getAttribute('cicle-label') || this.getAttribute('cicle') || '';
       const materiaLabel = this.getAttribute('materia-label') || this.getAttribute('materia') || '';
@@ -413,7 +413,7 @@
                data-tematica="${item.tematica}" data-materia="${item.materia}">
               <div class="card-top">
                 <div class="card-robot-info">
-                  ${item.robot && item.robot !== 'desendollat' ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
+                  ${item.robot && item.robot !== 'desendollat' ? `<img src="${root}_assets/icons/${item.robot}.svg" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
                   <span class="tag-badge primary">${item.robotLabel}</span>
                 </div>
                 <span class="tag-badge">${item.cicleLabel}</span>
@@ -459,7 +459,7 @@
                   <span class="tag-badge primary">${item.dificultat}</span>
                   <span class="tag-badge">⏱️ ${item.durada}</span>
                 </div>
-                ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-icon" width="36" height="36">` : ''}
+                ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.svg" alt="" class="card-robot-icon" width="36" height="36">` : ''}
               </div>
               <h3 class="item-title">${item.titol}</h3>
               <p class="item-desc">${item.descripcio || ''}</p>

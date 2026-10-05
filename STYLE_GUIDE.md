@@ -96,7 +96,7 @@ Stylized 3D toy-like illustration with a friendly modern edtech aesthetic.
 Soft low-poly geometry with rounded, carefully beveled edges.
 Cute, approachable proportions, but not childish or cartoonish.
 Objects should look like high-quality educational robotics kits made from
-smooth matte plastic.
+smooth matte plastic. 
 
 Use clean geometric shapes, simplified forms and subtle surface details.
 Soft studio lighting with diffuse illumination, gentle ambient occlusion,
@@ -165,19 +165,22 @@ Per a cada robot del projecte es generaran i mantindran **dues representacions v
   - Model 3D isomètric complet en perspectiva 3/4 frontal.
   - Sense ombres sota el robot per permetre la integració directa amb el fons corbat CSS.
 
-### B) Tipus 2: Icona Abstracta d'Essència (`_assets/icons/[slug].png`)
-- **Funció:** Icona d'identificació ràpida per a miniatures d'activitats, insígnies curriculars de situacions d'aprenentatge, filtres i taules.
-- **Format:** PNG quadrat 1:1 (resolució estàndard: 512 × 512 px) amb **fons 100% transparent**.
-- **Estil visual:**
-  - Síntesi geomètrica abstracta i alt minimalisme (mateix nivell de detall sintètic a tots els robots).
-  - Captura exclusivament l'element més icònic:
-    - `coding-express`: Cabina de locomotora groga DUPLO amb 4 studs i xemeneia.
-    - `tale-bot`: Cub blanc/blau amb els dos grans ulls amables i botons superiors.
-    - `coding-set`: Petit MatataBot cilíndric blanc amb cúpula taronja.
-    - `codey-rocky`: Cap de Codey amb orelletes i matriu LED cian somrient.
-    - `spike`: Hub rectangular groc amb ulls de sensor d'ultrasons.
-    - `microbit`: Placa negra cantonades arrodonides amb matriu 5x5 i pins daurats.
-  - Lineless estricte, acabat mat, colors sòlids plans.
+### B) Tipus 2: Icona Abstracta d'Essència (`_assets/icons/[slug].svg`)
+- **Funció:** Icona d'identificació ràpida per a miniatures d'activitats, insígnies curriculars de situacions d'aprenentatge, targetes de tutorials i catàlegs.
+- **Format:** Format vectorial pur SVG (`viewBox="0 0 210 210"`).
+- **Estil visual (Síntesi Geomètrica Isomètrica Pura):**
+  - **Menys de 10 polígons en total per icona** (geometria ultra low-poly refinada i neta).
+  - **Tots apuntant exactament en la mateixa direcció:** perspectiva axonomètrica isomètrica neta a 30° (vista 3/4 frontal-esquerra: cara frontal a la cara esquerra, lateral a la dreta, superior a dalt).
+  - **Sense ombres ni degradats, ni reflexos, ni brillantors:** cares planes de colors sòlids que defineixen el volum mitjançant matisos plans de color.
+  - **Com a màxim 5 colors plans per icona.**
+  - **Essència capturada:**
+    - `coding-express`: Locomotora vermella isomètrica amb xemeneia groga, far frontal i xassís fosc (8 polígons).
+    - `tale-bot`: Cos arrodonit taronja amb visor cian, ulls blancs i aletes/orelles morades als dos costats (9 polígons).
+    - `coding-set`: Cub taronja de MatataBot amb visera blanca, ninetes fosques i barret de cúpula verd (9 polígons).
+    - `codey-rocky`: Cap de Codey blau amb dues orelles de gat, pantalla fosca, botó groc i xassís Rocky amb erugues fosques (9 polígons).
+    - `spike`: Hub rectangular de LEGO groc i magenta amb pantalla LED central i botons/studs superiors cian i magenta (8 polígons).
+    - `microbit`: Placa microcontroladora blava isomètrica amb xip fosc, pantalla LED amb cor vermell, botons A/B blancs i connectors daurats (9 polígons).
+  - **Full de conjunt:** Conservat a `_assets/icons/sheet.png` per a referència global.
 
 ---
 

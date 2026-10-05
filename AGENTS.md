@@ -18,7 +18,7 @@
   `Polished 3D isometric educational robotics illustration, stylized toy-like low-poly geometry, rounded beveled forms, matte plastic materials, soft diffuse studio lighting, gentle ambient occlusion, clean geometric shapes, vivid but softened STEM colors, compact modular isometric platform, friendly modern edtech aesthetic, transparent background, no text or logos. [SUBJECT: descripció del robot i elements educatius que l'envolten]`
 - **2 Imatges Obligatòries per Robot (Format PNG Transparent):**
   1. **Robot Complet (`_assets/robots/[robot].png`):** Model 3D isomètric complet, perspectiva 3/4. **Canal alfa 100% transparent**.
-  2. **Icona Abstracta d'Essència (`_assets/icons/[robot].png`):** Síntesi geomètrica minimalista (512 × 512 px) que capta l'essència icònica amb molt pocs detalls. **Canal alfa 100% transparent**.
+  2. **Icona Abstracta d'Essència (`_assets/icons/[robot].svg`):** Síntesi geomètrica minimalista vectorial (format SVG pur) que capta l'essència icònica amb molt pocs detalls.
 - **🚫 Lineless estricte:** Sense línies de contorn (sense outlines, sense traçats negres ni línies de tinta).
 - **🚫 Sense brillantors especulars:** Acabat mat suau.
 - **🚫 Sense ombres al terra:** Cap ombra sota el robot per permetre la integració neta sobre el fons bicolor CSS.
