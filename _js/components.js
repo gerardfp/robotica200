@@ -277,7 +277,7 @@
       const robot = (this.getAttribute('robot') || '').toLowerCase();
       const robotLabel = this.getAttribute('robot-label') || '';
       let robotIcon = this.getAttribute('robot-icon') || '';
-      if (!robotIcon && robot && robot !== 'desendollat') {
+      if (!robotIcon && robot) {
         robotIcon = `${robot}.svg`;
       }
       const cicleLabel = this.getAttribute('cicle-label') || this.getAttribute('cicle') || '';
@@ -413,7 +413,7 @@
                data-tematica="${item.tematica}" data-materia="${item.materia}">
               <div class="card-top">
                 <div class="card-robot-info">
-                  ${item.robot && item.robot !== 'desendollat' ? `<img src="${root}_assets/icons/${item.robot}.svg" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
+                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.svg" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
                   <span class="tag-badge primary">${item.robotLabel}</span>
                 </div>
                 <span class="tag-badge">${item.cicleLabel}</span>

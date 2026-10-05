@@ -48,6 +48,7 @@ html {
   line-height: 1.6;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 body,
@@ -91,6 +92,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 site-header, site-footer, nav-back,
@@ -123,12 +125,25 @@ guide-page[rendered] {
   transition: opacity 0.15s ease-in;
 }
 
-/* Contenidor central amb molt d'aire */
+/* Contenidor central amb molt d'aire i espaiat responsive fluid */
 .container {
   width: 100%;
-  max-width: 1060px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 860px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .container {
+    padding-inline: 1rem;
+  }
 }
 
 /* Capçalera minimalista */
@@ -232,10 +247,15 @@ guide-page[rendered] {
   background: var(--primary-subtle);
 }
 
-/* Contingut de les pàgines */
-.page-content {
-  padding: 2.75rem 0 5rem;
+/* Contingut de les pàgines: preserva l'espaiat horitzontal del contenidor i escala fluidament */
+.page-content,
+.view-section {
+  padding-top: 2.75rem;
+  padding-bottom: 5rem;
+  padding-inline: 1.5rem;
   animation: fadeIn 0.25s ease-out;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .robot-hero + .page-content,
@@ -244,9 +264,32 @@ robot-hero + .page-content,
   padding-top: 1.25rem;
 }
 
-.view-section {
-  padding: 2.75rem 0 5rem;
-  animation: fadeIn 0.25s ease-out;
+@media (max-width: 860px) {
+  .page-content,
+  .view-section {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-inline: 1.25rem;
+  }
+  .robot-hero + .page-content,
+  robot-hero + .page-content,
+  .page-content:has(.robot-profile) {
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .page-content,
+  .view-section {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
+    padding-inline: 1rem;
+  }
+  .robot-hero + .page-content,
+  robot-hero + .page-content,
+  .page-content:has(.robot-profile) {
+    padding-top: 0.85rem;
+  }
 }
 
 @keyframes fadeIn {
@@ -682,11 +725,26 @@ robot-hero + .page-content,
   max-width: 700px;
 }
 
-/* Graella de targetes neta */
+/* Graella de targetes neta i perfectament responsive */
 .clean-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
   gap: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .clean-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .clean-grid {
+    grid-template-columns: 1fr;
+    gap: 1.15rem;
+  }
 }
 
 /* Targeta unificada per a activitats i situacions */
@@ -1500,7 +1558,7 @@ robot-hero {
 
 .color-pills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
   gap: 0.75rem;
   margin-top: 0.75rem;
 }
@@ -1697,7 +1755,7 @@ robot-hero {
 .robot-official-resources { margin: 1.4rem 0; padding: 1.25rem 1.4rem; border: 1px solid #dce7e6; border-radius: 1rem; background: #f7faf9; }
 .robot-official-resources h2 { margin: 0 0 .35rem; font-size: 1.1rem; }
 .robot-official-resources > p { margin: 0 0 .8rem; color: var(--text-muted); font-size: .92rem; line-height: 1.55; }
-.robot-official-resources ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.robot-official-resources ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: .75rem; margin: 0; padding: 0; list-style: none; }
 .robot-official-resources li { display: flex; flex-direction: column; gap: .25rem; padding: .8rem; border-radius: .7rem; background: white; }
 .robot-official-resources a { color: #17656c; font-weight: 750; text-underline-offset: .18em; }
 .robot-official-resources li span { color: var(--text-muted); font-size: .86rem; line-height: 1.5; }
@@ -1733,15 +1791,60 @@ robot-hero {
   font-size: 0.95rem;
 }
 
-/* Responsivitat */
-@media (max-width: 860px) {
+/* ==========================================================================
+   RESPONSIVITAT GLOBAL I ADAPTACIÓ DE DISPOSITIUS
+   ========================================================================== */
+
+@media (max-width: 960px) {
   .three-pillars {
     grid-template-columns: 1fr;
-    gap: 1.25rem;
+    gap: 1.5rem;
+    max-width: 580px;
+    margin-inline: auto;
   }
-  
+}
+
+@media (max-width: 860px) {
   .filters-bar {
     grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+    padding: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0.85rem 0;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    gap: 0.65rem 1rem;
+  }
+
+  .header-nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.35rem;
+  }
+
+  .header-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .detail-page-card {
+    padding: 1.75rem 1.5rem;
+    border-radius: var(--radius-md);
   }
 }
 
@@ -1760,10 +1863,64 @@ robot-hero {
 
   .filters-bar {
     grid-template-columns: 1fr;
+    padding: 0.95rem;
+    gap: 0.75rem;
   }
-  
-  .header-nav {
-    display: none;
+
+  .filter-count {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.65rem;
+    text-align: center;
+  }
+
+  .btn-reset-filters {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .three-pillars {
+    gap: 1.15rem;
+  }
+
+  .pillar-card {
+    padding: 1rem 1rem 1.35rem;
+  }
+
+  .item-card {
+    padding: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .robot-card-body {
+    padding: 1rem 1.15rem 1.15rem;
+  }
+
+  .robot-card-title {
+    font-size: 1.15rem;
+  }
+
+  .robot-card-desc {
+    font-size: 0.85rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .detail-page-card {
+    padding: 1.35rem 1.15rem;
+    border-radius: var(--radius-md);
+  }
+
+  .detail-page-title {
+    font-size: 1.45rem;
+  }
+
+  .home-intro {
+    margin: 1rem auto 2.5rem;
+  }
+
+  .home-title {
+    font-size: 2rem;
   }
 }
 
@@ -1799,7 +1956,7 @@ robot-hero {
 }
 .catalog-guides {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
   gap: 1rem;
   margin-top: 2.5rem;
 }
