@@ -176,6 +176,7 @@ def scan_tutorials():
             dificultat = get_attr(attrs, 'dificultat') or get_attr(attrs, 'nivell')
             durada = get_attr(attrs, 'durada')
             intro = get_attr(attrs, 'intro') or get_attr(attrs, 'description')
+            imatge = get_attr(attrs, 'imatge') or get_attr(attrs, 'thumbnail') or get_attr(attrs, 'image')
         else:
             title_m = re.search(r'<h1 class=\"detail-page-title\">(.*?)</h1>', content)
             title = clean_html(title_m.group(1)) if title_m else slug
@@ -186,6 +187,15 @@ def scan_tutorials():
             robot = def_robot
             dificultat = clean_html(badges[1]) if len(badges) > 1 else ""
             durada = clean_html(badges[2]).replace('⏱️', '').strip() if len(badges) > 2 else ""
+            imatge = ""
+
+        if not imatge:
+            for ext in ['.png', '.webp', '.jpg', '.jpeg']:
+                if (ROOT_DIR / f"_assets/tutorials/{slug}{ext}").exists():
+                    imatge = f"_assets/tutorials/{slug}{ext}"
+                    break
+        if not imatge:
+            imatge = f"_assets/tutorials/{slug}.png"
 
         tutorials.append({
             "id": f"tutorial-{slug}",
@@ -193,6 +203,7 @@ def scan_tutorials():
             "robot": robot,
             "robotLabel": robot_label,
             "url": f"tutorial/{slug}/index.html",
+            "imatge": imatge,
             "titol": title,
             "dificultat": dificultat,
             "durada": durada,
