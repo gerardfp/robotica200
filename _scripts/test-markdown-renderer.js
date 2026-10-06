@@ -42,16 +42,21 @@ for (const item of catalog.situacions) {
 }
 const sharedPage = fs.readFileSync(path.join(root, "situacio/index.html"), "utf8");
 const pageTemplate = fs.readFileSync(path.join(root, "_templates/situation-page.html"), "utf8");
+const componentSource = fs.readFileSync(path.join(root, "_js/components.js"), "utf8");
+const styles = fs.readFileSync(path.join(root, "_css/styles.css"), "utf8");
 assert.match(sharedPage, /<situation-page root="\.\.\/">/, "hi ha una única pàgina de detall compartida");
 for (const templateId of ["situation-page-template", "situation-page-loading-template", "situation-page-error-template"]) {
   assert.match(pageTemplate, new RegExp(`id="${templateId}"`), `falta la plantilla ${templateId}`);
 }
 assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statSync(path.join(root, "situacio", name)).isDirectory()).length, 0, "no hi ha shells HTML individuals");
-assert.match(fs.readFileSync(path.join(root, "_js/components.js"), "utf8"), /new URLSearchParams\(window\.location\.search\)/, "la pàgina tria el Markdown a partir de l'ID de la URL");
+assert.match(componentSource, /new URLSearchParams\(window\.location\.search\)/, "la pàgina tria el Markdown a partir de l'ID de la URL");
+assert.match(componentSource, /function initializeLearningWizard/, "les sessions s'inicialitzen com un assistent de passos");
+assert.match(componentSource, /aria-valuetext/, "el progrés del wizard té una descripció accessible");
+assert.match(styles, /\.learning-step\[hidden\]/, "els passos no actius es retiren de la lectura visual");
 
 const unsafe = renderer.parse('## Prova\n\n<script>alert(1)</script>\n\n[x](javascript:alert(1))', "https://example.test/a.md");
 assert.doesNotMatch(unsafe.html, /<script>/, "el Markdown no interpreta HTML cru");
 assert.doesNotMatch(unsafe.html, /href="javascript:/i, "els enllaços amb esquemes no permesos es rebutgen");
 assert.match(unsafe.html, /&lt;script&gt;/, "el contingut HTML cru s'escapa com a text");
 
-console.log("Markdown renderer tests passed: front matter, six step cards, 18 phases, code highlighting, image, links and escaping.");
+console.log(`Markdown renderer tests passed: ${activeFiles.length} active situations, ${activeFiles.reduce((total, item) => total + renderer.parse(item.source, "https://example.test/source.md").steps.length, 0)} navigable steps, template states, accessible wizard, code, images, links and escaping.`);

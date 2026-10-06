@@ -2645,3 +2645,35 @@ robot-profile[robot="microbit"] .robot-detail-section,
 .markdown-loading { max-width: 64rem; margin: 2rem auto; padding: 1.1rem 1.25rem; border-radius: var(--radius-md); color: var(--text-muted); background: var(--bg-card-subtle); }
 
 .learning-step:target { outline: 3px solid #bfdbfe; outline-offset: 3px; }
+.learning-step[hidden] { display: none !important; }
+.learning-wizard {
+  margin: 0 0 1.25rem;
+  padding: 1rem clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card-subtle);
+}
+.learning-wizard-status { margin: 0 0 .65rem; color: var(--text-main); font-weight: 700; }
+.learning-wizard-progress { height: .45rem; margin-bottom: .85rem; overflow: hidden; border-radius: 999px; background: #dbe5ee; }
+.learning-wizard-progress span { display: block; height: 100%; border-radius: inherit; background: var(--primary); transition: width .2s ease; }
+.learning-wizard-picker { display: flex; flex-wrap: wrap; gap: .45rem; }
+.learning-wizard-step {
+  min-width: 2.55rem;
+  min-height: 2.55rem;
+  padding: .35rem .55rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--text-main);
+  background: #fff;
+  font: 700 .9rem var(--font-sans);
+  cursor: pointer;
+}
+.learning-wizard-step[aria-current="step"] { border-color: var(--primary); color: #fff; background: var(--primary); }
+.learning-wizard-step:focus-visible, .btn-wizard-step:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
+.learning-wizard-controls { display: flex; justify-content: space-between; gap: .75rem; margin: 1rem 0 1.5rem; }
+.btn-wizard-step { min-height: 2.75rem; padding: .65rem 1rem; border: 1px solid var(--border-color); border-radius: var(--radius-full); color: var(--text-main); background: #fff; font: 700 .95rem var(--font-sans); cursor: pointer; }
+.btn-wizard-step.primary { border-color: var(--primary); color: #fff; background: var(--primary); }
+.btn-wizard-step:disabled { opacity: .48; cursor: not-allowed; }
+.prose .learning-step .sa-illustration { margin: 1.25rem 0; }
+.prose .learning-step .sa-illustration img { display: block; width: min(100%, 42rem); height: auto; margin-inline: auto; border-radius: var(--radius-md); }
+@media (prefers-reduced-motion: reduce) { .learning-wizard-progress span { transition: none; } }

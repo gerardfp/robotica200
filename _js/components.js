@@ -160,6 +160,87 @@
     return template.content.cloneNode(true);
   }
 
+  function initializeLearningWizard(contentRoot) {
+    const steps = Array.from(contentRoot.querySelectorAll('.learning-step'));
+    const index = contentRoot.querySelector('.learning-step-index');
+    if (!steps.length || !index) return;
+
+    const coverImage = Array.from(contentRoot.querySelectorAll('.sa-illustration'))
+      .find(figure => !figure.closest('.learning-step'));
+    const firstHeading = steps[0].querySelector('h3');
+    if (coverImage && firstHeading) firstHeading.after(coverImage);
+
+    index.className = 'learning-wizard';
+    index.setAttribute('aria-label', 'Navegació pels passos de la situació');
+    index.replaceChildren();
+
+    const status = document.createElement('p');
+    status.className = 'learning-wizard-status';
+    status.setAttribute('role', 'status');
+    status.setAttribute('aria-live', 'polite');
+    status.setAttribute('aria-atomic', 'true');
+
+    const progress = document.createElement('div');
+    progress.className = 'learning-wizard-progress';
+    progress.setAttribute('role', 'progressbar');
+    progress.setAttribute('aria-label', 'Progrés de la seqüència');
+    progress.setAttribute('aria-valuemin', '1');
+    progress.setAttribute('aria-valuemax', String(steps.length));
+    const progressFill = document.createElement('span');
+    progress.appendChild(progressFill);
+
+    const picker = document.createElement('div');
+    picker.className = 'learning-wizard-picker';
+    picker.setAttribute('role', 'group');
+    picker.setAttribute('aria-label', 'Tria un pas');
+
+    const controls = document.createElement('div');
+    controls.className = 'learning-wizard-controls';
+    const previous = document.createElement('button');
+    previous.type = 'button';
+    previous.className = 'btn-wizard-step';
+    previous.textContent = '← Pas anterior';
+    const next = document.createElement('button');
+    next.type = 'button';
+    next.className = 'btn-wizard-step primary';
+    next.textContent = 'Pas següent →';
+    controls.append(previous, next);
+
+    const buttons = steps.map((step, position) => {
+      const title = step.querySelector('h3')?.textContent.trim() || `Pas ${position + 1}`;
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'learning-wizard-step';
+      button.textContent = String(position + 1);
+      button.setAttribute('aria-label', `Obrir pas ${position + 1}: ${title}`);
+      button.addEventListener('click', () => activate(position));
+      picker.appendChild(button);
+      return { step, title, button };
+    });
+
+    index.append(status, progress, picker);
+    let current = 0;
+    const activate = position => {
+      current = Math.max(0, Math.min(position, steps.length - 1));
+      buttons.forEach(({ step, button }, index) => {
+        step.hidden = index !== current;
+        if (index === current) button.setAttribute('aria-current', 'step');
+        else button.removeAttribute('aria-current');
+      });
+      const label = `Pas ${current + 1} de ${steps.length}: ${buttons[current].title}`;
+      status.textContent = label;
+      progress.setAttribute('aria-valuenow', String(current + 1));
+      progress.setAttribute('aria-valuetext', label);
+      progressFill.style.width = `${((current + 1) / steps.length) * 100}%`;
+      previous.disabled = current === 0;
+      next.disabled = current === steps.length - 1;
+      buttons[current].step.after(controls);
+    };
+    previous.addEventListener('click', () => activate(current - 1));
+    next.addEventListener('click', () => activate(current + 1));
+    activate(0);
+  }
+
   // 1. Cabecera reutilizable amb navegació
   class SiteHeader extends HTMLElement {
     connectedCallback() {
@@ -590,7 +671,9 @@
             fragment.querySelector('[data-challenge]').textContent = challenge;
             fragment.querySelector('[data-challenge-section]').hidden = false;
           }
-          fragment.querySelector('[data-markdown-content]').innerHTML = parsed.html;
+          const markdownContent = fragment.querySelector('[data-markdown-content]');
+          markdownContent.innerHTML = parsed.html;
+          initializeLearningWizard(markdownContent);
 
           const description = value('description', challenge);
           ensureDocumentHead(root, value('title'), description);

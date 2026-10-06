@@ -51,6 +51,10 @@ quan comença
     decideix l’acció
 ```
 
+![Il·lustració de suport per a l’exploració o el muntatge.](../../_assets/imatges/nom-imatge-pas.webp)
+
+_Peu breu que connecta la imatge amb la decisió o el material que s’està provant._
+
 > **Evidència:** producte, registre o explicació que es guardarà.
 >
 > **Pregunta docent:** pregunta concreta per fer avançar la investigació.
