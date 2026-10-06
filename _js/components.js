@@ -592,7 +592,7 @@
                data-tematica="${item.tematica}" data-materia="${item.materia}">
               <div class="card-top">
                 <div class="card-robot-info">
-                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
+                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-sa-icon" width="36" height="36">` : ''}
                   <span class="tag-badge primary">${item.robotLabel}</span>
                 </div>
                 <span class="tag-badge">${item.cicleLabel}</span>
