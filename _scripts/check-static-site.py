@@ -18,6 +18,8 @@ class PageParser(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.refs = []
         self.has_situation_page = False
+        self.has_content_detail = False
+        self.content_kinds = []
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -25,6 +27,9 @@ class PageParser(HTMLParser):
             self.refs.append(("FORBIDDEN", "<dialog> elements are not allowed"))
         if tag.lower() == "situation-page":
             self.has_situation_page = True
+        if tag.lower() == "content-detail-page":
+            self.has_content_detail = True
+            self.content_kinds.append(attrs.get("kind", ""))
         for attr in ("href", "src"):
             value = attrs.get(attr, "").strip()
             if value:
@@ -36,6 +41,8 @@ def local_target(page: Path, ref: str):
     if parsed.scheme or parsed.netloc or ref.startswith(("#", "data:")):
         return None
     path = unquote(parsed.path)
+    if path.startswith("_assets/"):
+        return ROOT / path
     if not path:
         return page
     if path.startswith("/"):
@@ -72,6 +79,34 @@ def main():
                 problems.append(f"{relative}: missing local {kind} {ref}")
         if relative == Path("situacio/index.html") and not parser.has_situation_page:
             problems.append("situacio/index.html: missing shared <situation-page>")
+        if relative in {Path("activitat/index.html"), Path("tutorial/index.html"), Path("robot/index.html"), Path("guia/index.html")} and not parser.has_content_detail:
+            problems.append(f"{relative}: missing shared <content-detail-page>")
+
+    shared_content = {
+        "activitat/index.html": ("activity", "activitats", "activitat-"),
+        "tutorial/index.html": ("tutorial", "tutorials", "tutorial-"),
+        "robot/index.html": ("robot", "robots", "robot-"),
+        "guia/index.html": ("guide", "pages", "guia-"),
+    }
+    for page_name, (kind, folder, prefix) in shared_content.items():
+        page = ROOT / page_name
+        component = re.search(r'<content-detail-page\b[^>]*kind=["\']([^"\']+)', page.read_text(encoding="utf-8"))
+        if not component or component.group(1) != kind:
+            problems.append(f"{page_name}: content kind should be {kind}")
+        paths = sorted((ROOT / "_content" / folder).glob(f"{prefix}*.md"))
+        if kind == "guide": paths = [p for p in paths if p.stem in {"guia-pensament-computacional", "guia-robotica-educativa", "guia-situacions-aprenentatge"}]
+        if not paths:
+            problems.append(f"_content/{folder}: no Markdown records for {kind}")
+        for markdown_path in paths:
+            editorial, body = read_frontmatter(markdown_path)
+            if not editorial.get("title"):
+                problems.append(f"{markdown_path.relative_to(ROOT)}: missing title")
+            for ref in re.findall(r"(?<!!)\[[^\]]+\]\(([^)]+)\)|!\[[^\]]*\]\(([^)]+)\)", body):
+                link = ref[0] or ref[1]
+                target = local_target(markdown_path, link)
+                # Shared detail URLs use a page query; their target path must exist.
+                if target is not None and not target.exists():
+                    problems.append(f"{markdown_path.relative_to(ROOT)}: missing Markdown reference {link}")
 
     content_dir = ROOT / "_content/situacions"
     active = []

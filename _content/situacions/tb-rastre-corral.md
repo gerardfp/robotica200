@@ -24,7 +24,7 @@ L’alumnat crea un mapa propi d’un corral o d’un paisatge agrari valencià;
 
 ## Abans de començar
 
-Prepareu una graella plana, fletxes de paper, cinc targetes grans d’animals i una marca d’inici amb una fletxa que indique cap on mira el robot. Ajusteu la mida de casella al Tale-Bot físic: el desplaçament predeterminat és d’uns 10 cm, i el manual permet establir 15 cm; comproveu-ho al tutorial [Primeres passes amb Tale-Bot Pro](../../tutorial/tb-primeres-passes/) abans de dibuixar la quadrícula. Per a practicar només ordres cap avant, situeu cada animal en el corredor que queda davant del robot, reorientant-lo en reiniciar cada repte.
+Prepareu una graella plana, fletxes de paper, cinc targetes grans d’animals i una marca d’inici amb una fletxa que indique cap on mira el robot. Ajusteu la mida de casella al Tale-Bot físic: el desplaçament predeterminat és d’uns 10 cm, i el manual permet establir 15 cm; comproveu-ho al tutorial [Primeres passes amb Tale-Bot Pro](../../tutorial/index.html?id=tb-primeres-passes) abans de dibuixar la quadrícula. Per a practicar només ordres cap avant, situeu cada animal en el corredor que queda davant del robot, reorientant-lo en reiniciar cada repte.
 
 ## 📅 Seqüència didàctica · 3 sessions
 

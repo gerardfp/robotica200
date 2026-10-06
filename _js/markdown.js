@@ -24,9 +24,31 @@
     const match = source.match(/^---\s*\r?\n([\s\S]*?)\r?\n---\s*\r?\n?/);
     if (!match) return { data: {}, body: source };
     const data = {};
-    for (const line of match[1].split(/\r?\n/)) {
-      const field = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
-      if (field) data[field[1]] = parseScalar(field[2]);
+    const lines = match[1].split(/\r?\n/);
+    for (let i = 0; i < lines.length; i++) {
+      const field = lines[i].match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+      if (!field) continue;
+      const key = field[1], raw = field[2];
+      if (raw === '>' || raw === '|') {
+        const parts = [];
+        while (i + 1 < lines.length && /^\s{2,}\S/.test(lines[i + 1])) parts.push(lines[++i].trim());
+        data[key] = parts.join(raw === '>' ? ' ' : '\n');
+      } else if (!raw && i + 1 < lines.length && /^\s*-\s+/.test(lines[i + 1])) {
+        const items = [];
+        while (i + 1 < lines.length && /^\s*-\s+/.test(lines[i + 1])) {
+          const itemLine = lines[++i].replace(/^\s*-\s+/, '');
+          const itemField = itemLine.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+          if (!itemField) { items.push(parseScalar(itemLine)); continue; }
+          const item = { [itemField[1]]: parseScalar(itemField[2]) };
+          while (i + 1 < lines.length && /^\s{2,}[A-Za-z0-9_-]+:\s*/.test(lines[i + 1])) {
+            const nested = lines[++i].trim().match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+            if (nested) item[nested[1]] = parseScalar(nested[2]);
+          }
+          items.push(item);
+        }
+        data[key] = items;
+      } else if (!raw) data[key] = '';
+      else data[key] = parseScalar(raw);
     }
     return { data, body: source.slice(match[0].length) };
   }

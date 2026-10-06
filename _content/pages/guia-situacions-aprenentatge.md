@@ -58,7 +58,7 @@ Selecciona sabers i criteris d’avaluació de les àrees implicades i descriu q
 - Adapta la concreció curricular al nivell i al centre.
 
 
-[Exemple: ciutat accessible](situacio-sa-ciutat-accessible.html)
+[Exemple: ciutat accessible](../../situacio/index.html?id=sa-ciutat-accessible)
 
 ### 🗺️ Investigar abans de dissenyar
 
@@ -75,7 +75,7 @@ Construeix una versió inicial de baixa complexitat. Prova-la amb els criteris a
 - Explica què ha canviat a partir de l’evidència.
 
 
-[Exemple: hivernacle amb sensors](situacio-sa-hivernacle-microbit.html)
+[Exemple: hivernacle amb sensors](../../situacio/index.html?id=sa-hivernacle-microbit)
 
 ### 📣 Comunicació amb propòsit
 
@@ -85,7 +85,7 @@ El producte final pot ser un prototip, un mapa, una demostració o una proposta 
 - Tanca amb què transferirien a un altre repte.
 
 
-[Exemple: classificació de residus](situacio-sa-residus-lego.html)
+[Exemple: classificació de residus](../../situacio/index.html?id=sa-residus-lego)
 
 ## 02 · PLANIFICACIÓ — Una seqüència flexible de sis moments
 

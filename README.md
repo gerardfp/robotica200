@@ -11,11 +11,8 @@ La web és estàtica i està construïda amb **HTML5, CSS modern i Web Component
 - **Sense pas de compilació:** No requereix Node, npm ni dependències Python per mostrar o publicar les pàgines. En local, és preferible servir la carpeta amb `python3 -m http.server` perquè les rutes relatives funcionen de la mateixa manera que al web.
 - **Reutilització centralitzada (`_js/components.js`):**
   - **Elements d'estructura:** `<site-header>`, `<site-footer>`, `<nav-back>`.
-  - **Plantilles de pàgina (Layout Components):**
-    - `<activity-page title="..." tag="..." cicle="..." durada="...">`: Plantilla per a activitats desendollades.
-    - `<tutorial-page title="..." robot="..." robot-label="..." dificultat="..." durada="..." intro="...">`: Plantilla per a tutorials tècnics de robots.
-    - `<situation-page root="../">`: llig `?id=slug` i carrega el Markdown corresponent; el layout editable és a `_templates/situation-page.html`.
-    - `<guide-page title="..." tag="...">`: Plantilla per a guies didàctiques.
+  - **Plantilla de detall compartida:** `<content-detail-page kind="activity|tutorial|robot|guide">` llig `?id=slug` i carrega el Markdown corresponent. El layout editable és a `_templates/content-detail-page.html`.
+  - **Situacions d’aprenentatge:** `<situation-page root="../">` llig `?id=slug`; el layout amb passos i estat de càrrega és a `_templates/situation-page.html`.
   - **Reixes de catàleg automàtiques:**
     - `<activity-grid root="../"></activity-grid>`: Renderitza automàticament les targetes de pensament computacional.
     - `<situation-grid root="../"></situation-grid>`: Renderitza la graella de situacions connectada als filtres interactius.
@@ -23,7 +20,7 @@ La web és estàtica i està construïda amb **HTML5, CSS modern i Web Component
 - **Catàleg derivat del front matter:** Per afegir una situació, crea un Markdown actiu segons [`_content/situacions/TEMPLATE-SITUACIO.md`](_content/situacions/TEMPLATE-SITUACIO.md). El component carrega el Markdown al navegador. Després executa `python3 _scripts/sync-catalog.py` perquè el catàleg filtre també les metadades del front matter. Aquest script només actualitza l’índex; no compila ni genera pàgines.
 - **Validació estàtica:** `python3 _scripts/check-static-site.py` comprova les referències locals, l'estructura de les fitxes de situacions i el mínim de cinc situacions per robot. GitHub Actions també verifica el renderitzador Markdown i la sintaxi del JavaScript abans de publicar.
 - **Cobertura de situacions oficials:** [`docs/ADAPTACIO-SITUACIONS.md`](docs/ADAPTACIO-SITUACIONS.md) relaciona les fonts oficials amb les fitxes pròpies i registra el progrés d’auditoria. SPIKE Prime té identificades 35 lliçons de les unitats temàtiques, cinc *Activity Briefs*, cinc lliçons suplementàries, l’activitat híbrida *Design for You* i dos reptes *Prime Combined*. La identificació i l’associació de fitxes no es consideren adaptació integral fins que es complete la revisió de cada seqüència.
-- **Contingut editorial:** Les 99 situacions d’aprenentatge actives tenen Markdown amb front matter com a font única. Una única pàgina compartida (`situacio/index.html?id=slug`) carrega el document triat i el Web Component renderitza els passos, imatges, notes i exemples de codi. Les fitxes d’altres tipus que encara usen HTML continuen compatibles.
+- **Contingut editorial:** Activitats, tutorials, robots, guies i les 99 situacions d’aprenentatge tenen Markdown com a font única. Les pàgines compartides (`activitat/index.html?id=slug`, `tutorial/index.html?id=slug`, `robot/index.html?id=slug`, `guia/index.html?id=slug` i `situacio/index.html?id=slug`) carreguen el document triat. Les metadades alimenten també els catàlegs i els filtres.
 - **Light DOM:** Els components utilitzen el DOM estàndard, de manera que [`_css/styles.css`](_css/styles.css) aplica estils de forma global i coherent a tot el lloc web sense necessitat d'encapsulació aïllada.
 
 ---
@@ -34,16 +31,16 @@ Els 6 robots oficials del projecte i els seus identificadors únics (slugs) norm
 
 | Robot | Slug Oficial | Prefix Tutorials | Carpeta Fitxa | Carpetes de Tutorials |
 | :--- | :--- | :--- | :--- | :--- |
-| **Coding Express** | `coding-express` | `ce-` | `robot/coding-express/` | `tutorial/ce-*/` |
-| **Tale-Bot** | `tale-bot` | `tb-` | `robot/tale-bot/` | `tutorial/tb-*/` |
-| **Coding Set** | `coding-set` | `cs-` | `robot/coding-set/` | `tutorial/cs-*/` |
-| **Codey Rocky** | `codey-rocky` | `cr-` | `robot/codey-rocky/` | `tutorial/cr-*/` |
-| **Spike** | `spike` | `sp-` | `robot/spike/` | `tutorial/sp-*/` |
-| **Micro:bit** | `microbit` | `mb-` | `robot/microbit/` | `tutorial/mb-*/` |
+| **Coding Express** | `coding-express` | `ce-` | `robot/index.html?id=coding-express` | `tutorial/ce-*/` |
+| **Tale-Bot** | `tale-bot` | `tb-` | `robot/index.html?id=tale-bot` | `tutorial/tb-*/` |
+| **Coding Set** | `coding-set` | `cs-` | `robot/index.html?id=coding-set` | `tutorial/cs-*/` |
+| **Codey Rocky** | `codey-rocky` | `cr-` | `robot/index.html?id=codey-rocky` | `tutorial/cr-*/` |
+| **Spike** | `spike` | `sp-` | `robot/index.html?id=spike` | `tutorial/sp-*/` |
+| **Micro:bit** | `microbit` | `mb-` | `robot/index.html?id=microbit` | `tutorial/mb-*/` |
 
 ---
 
-## 📂 Estructura de Carpetes i URLs Netes
+## 📂 Estructura de Carpetes i rutes compartides
 
 El repositori s'organitza en directoris amb `index.html` per oferir rutes i URLs netes, separant les carpetes navegables dels recursos tècnics (marcats amb prefix `_`):
 
@@ -57,18 +54,25 @@ robotica200/
 ├── situacions-aprenentatge/
 │   └── index.html                       # Catàleg curricular filtrable (/situacions-aprenentatge/)
 ├── activitat/
-│   └── [nom-activitat]/index.html       # 10 activitats desendollades (/activitat/[nom]/)
+│   └── index.html                       # Detall compartit (?id=slug)
 ├── robot/
-│   └── [nom-robot]/index.html           # 6 fitxes tècniques de robots (/robot/[nom]/)
+│   └── index.html                       # Detall compartit (?id=slug)
 ├── tutorial/
-│   └── [nom-tutorial]/index.html        # Tutorials pràctics pas a pas (/tutorial/[nom]/)
+│   └── index.html                       # Detall compartit (?id=slug)
 ├── situacio/
 │   └── index.html                      # Pàgina compartida de detall (?id=slug)
 ├── guia/
-│   └── [nom-guia]/index.html            # Guies didàctiques (/guia/[nom]/)
+│   └── index.html                       # Detall compartit (?id=slug)
+├── _content/
+│   ├── activitats/                      # 10 activitats en Markdown
+│   ├── tutorials/                       # 22 tutorials en Markdown
+│   ├── robots/                          # 6 fitxes de robot en Markdown
+│   ├── pages/                           # 3 guies docents en Markdown
+│   └── situacions/                      # 99 situacions d'aprenentatge
 ├── _css/
 │   └── styles.css                       # Full d'estils unificat (Sora + Plus Jakarta Sans)
 ├── _templates/
+│   ├── content-detail-page.html         # Layout compartit de contingut i estats
 │   └── situation-page.html              # Layout de situació, càrrega i error
 ├── _js/
 │   ├── components.js                    # Comportament dels Web Components

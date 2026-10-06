@@ -47,43 +47,17 @@ def read_markdown_frontmatter(path):
 
 def scan_activities():
     activities = []
-    for f in sorted(ROOT_DIR.glob('activitat/*/index.html')):
-        slug = f.parent.name
-        content = f.read_text(encoding='utf-8')
-
-        # Check <activity-page>
-        tag_m = re.search(r'<activity-page\b([^>]*)>', content, re.IGNORECASE | re.DOTALL)
-        if tag_m:
-            attrs = tag_m.group(1)
-            title = get_attr(attrs, 'title') or slug
-            tag = get_attr(attrs, 'tag')
-            cicle = get_attr(attrs, 'cicle')
-            durada = get_attr(attrs, 'durada')
-            desc = get_attr(attrs, 'description')
-            if not desc:
-                # look for first paragraph
-                p_m = re.search(r'<p>(.*?)</p>', content, re.IGNORECASE | re.DOTALL)
-                desc = clean_html(p_m.group(1)) if p_m else ""
-        else:
-            # Fallback for classic HTML
-            title_m = re.search(r'<h1 class=\"detail-page-title\">(.*?)</h1>', content)
-            title = clean_html(title_m.group(1)) if title_m else slug
-            badges = re.findall(r'<span class=\"tag-badge[^\"]*\">(.*?)</span>', content)
-            tag = clean_html(badges[0]) if len(badges) > 0 else ""
-            cicle = clean_html(badges[1]) if len(badges) > 1 else ""
-            durada = clean_html(badges[2]).replace('⏱️', '').strip() if len(badges) > 2 else ""
-            desc_m = re.search(r'<meta name=\"description\" content=\"(.*?)\"', content)
-            desc = clean_html(desc_m.group(1)) if desc_m else ""
-
+    for path in sorted((ROOT_DIR / '_content/activitats').glob('activitat-*.md')):
+        data = read_markdown_frontmatter(path)
+        if data.get('active', 'true').lower() != 'true':
+            continue
+        slug = path.stem.removeprefix('activitat-')
         activities.append({
-            "id": f"activitat-{slug}",
-            "slug": slug,
-            "url": f"activitat/{slug}/index.html",
-            "titol": title,
-            "tag": tag,
-            "cicle": cicle,
-            "durada": durada,
-            "descripcio": desc
+            "id": f"activitat-{slug}", "slug": slug,
+            "url": f"activitat/index.html?id={slug}",
+            "titol": data.get('title', slug), "tag": data.get('topic', ''),
+            "cicle": data.get('cycle_label', data.get('cycle', '')),
+            "durada": data.get('duration', ''), "descripcio": data.get('description', '')
         })
     return activities
 
@@ -139,62 +113,26 @@ def scan_situations():
 def scan_tutorials():
     tutorials = []
     robot_display = {
-        "ce": ("coding-express", "Coding Express"),
-        "cr": ("codey-rocky", "Codey Rocky"),
-        "cs": ("coding-set", "Coding Set"),
-        "mb": ("microbit", "Micro:bit"),
-        "sp": ("spike", "Spike"),
-        "tb": ("tale-bot", "Tale-Bot")
+        "ce": ("coding-express", "Coding Express"), "cr": ("codey-rocky", "Codey Rocky"),
+        "cs": ("coding-set", "Coding Set"), "mb": ("microbit", "Micro:bit"),
+        "sp": ("spike", "Spike"), "tb": ("tale-bot", "Tale-Bot")
     }
-
-    for f in sorted(ROOT_DIR.glob('tutorial/*/index.html')):
-        slug = f.parent.name
-        content = f.read_text(encoding='utf-8')
-
-        prefix = slug.split('-')[0]
-        def_robot, def_label = robot_display.get(prefix, ("altres", "Robot"))
-
-        tag_m = re.search(r'<tutorial-page\b([^>]*)>', content, re.IGNORECASE | re.DOTALL)
-        if tag_m:
-            attrs = tag_m.group(1)
-            title = get_attr(attrs, 'title') or slug
-            robot = get_attr(attrs, 'robot').lower() or def_robot
-            robot_label = get_attr(attrs, 'robot-label') or def_label
-            dificultat = get_attr(attrs, 'dificultat') or get_attr(attrs, 'nivell')
-            durada = get_attr(attrs, 'durada')
-            intro = get_attr(attrs, 'intro') or get_attr(attrs, 'description')
-            imatge = get_attr(attrs, 'imatge') or get_attr(attrs, 'thumbnail') or get_attr(attrs, 'image')
-        else:
-            title_m = re.search(r'<h1 class=\"detail-page-title\">(.*?)</h1>', content)
-            title = clean_html(title_m.group(1)) if title_m else slug
-            intro_m = re.search(r'class=\"detail-intro\">(.*?)</p>', content)
-            intro = clean_html(intro_m.group(1)) if intro_m else ""
-            badges = re.findall(r'<span class=\"tag-badge[^\"]*\">(.*?)</span>', content)
-            robot_label = clean_html(badges[0]) if len(badges) > 0 else def_label
-            robot = def_robot
-            dificultat = clean_html(badges[1]) if len(badges) > 1 else ""
-            durada = clean_html(badges[2]).replace('⏱️', '').strip() if len(badges) > 2 else ""
-            imatge = ""
-
-        if not imatge:
-            for ext in ['.png', '.webp', '.jpg', '.jpeg']:
-                if (ROOT_DIR / f"_assets/tutorials/{slug}{ext}").exists():
-                    imatge = f"_assets/tutorials/{slug}{ext}"
-                    break
-        if not imatge:
-            imatge = f"_assets/tutorials/{slug}.png"
-
+    for path in sorted((ROOT_DIR / '_content/tutorials').glob('tutorial-*.md')):
+        data = read_markdown_frontmatter(path)
+        if data.get('active', 'true').lower() != 'true':
+            continue
+        slug = path.stem.removeprefix('tutorial-')
+        def_robot, def_label = robot_display.get(slug.split('-')[0], ("altres", "Robot"))
+        robot = data.get('robot', def_robot).lower()
+        image = data.get('image', '')
+        if not image:
+            image = next((f"_assets/tutorials/{slug}{ext}" for ext in ['.png', '.webp', '.jpg', '.jpeg'] if (ROOT_DIR / f"_assets/tutorials/{slug}{ext}").exists()), f"_assets/tutorials/{slug}.png")
         tutorials.append({
-            "id": f"tutorial-{slug}",
-            "slug": slug,
-            "robot": robot,
-            "robotLabel": robot_label,
-            "url": f"tutorial/{slug}/index.html",
-            "imatge": imatge,
-            "titol": title,
-            "dificultat": dificultat,
-            "durada": durada,
-            "descripcio": intro
+            "id": f"tutorial-{slug}", "slug": slug, "robot": robot,
+            "robotLabel": data.get('robot_label', def_label),
+            "url": f"tutorial/index.html?id={slug}", "imatge": image,
+            "titol": data.get('title', slug), "dificultat": data.get('level', ''),
+            "durada": data.get('duration', ''), "descripcio": data.get('description', '')
         })
     return tutorials
 
@@ -267,7 +205,11 @@ def scan_robots(tutorials):
         slug = r["slug"]
         t_count = len([t for t in tutorials if t.get("robot") == slug])
         r_item = dict(r)
-        r_item["url"] = f"robot/{slug}/index.html"
+        editorial = read_markdown_frontmatter(ROOT_DIR / f'_content/robots/robot-{slug}.md')
+        r_item['nom'] = editorial.get('title', r_item['nom'])
+        r_item['edat'] = editorial.get('age', r_item['edat'])
+        r_item['descripcio'] = editorial.get('description', r_item['descripcio'])
+        r_item["url"] = f"robot/index.html?id={slug}"
         r_item["tutorials"] = t_count
         robots.append(r_item)
     return robots

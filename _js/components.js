@@ -558,8 +558,8 @@
       const dificultat = this.getAttribute('dificultat') || this.getAttribute('nivell') || '';
       const durada = this.getAttribute('durada') || '';
       const intro = this.getAttribute('intro') || '';
-      const root = cleanRoot(this.getAttribute('root') || '../../');
-      const backHref = this.getAttribute('back-href') || `${root}robot/${robot}/index.html`;
+      const root = cleanRoot(this.getAttribute('root') || '../');
+      const backHref = this.getAttribute('back-href') || `${root}robot/index.html?id=${robot}`;
       const backLabel = this.getAttribute('back-label') || robotLabel;
       const description = this.getAttribute('description') || intro;
 
@@ -588,6 +588,106 @@
           </main>
           <site-footer></site-footer>
         `;
+      });
+    }
+  }
+
+  // Pàgines editorials compartides: activitat, tutorial, robot i guia.
+  class ContentDetailPage extends HTMLElement {
+    connectedCallback() {
+      const kind = this.getAttribute('kind') || '';
+      const root = cleanRoot(this.getAttribute('root') || '../');
+      const id = new URLSearchParams(window.location.search).get('id') || '';
+      const safeId = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) ? id : '';
+      const folders = { activity: 'activitats', tutorial: 'tutorials', robot: 'robots', guide: 'pages' };
+      const filePrefix = { activity: 'activitat-', tutorial: 'tutorial-', robot: 'robot-', guide: 'guia-' };
+      if (!folders[kind]) { this.textContent = 'Tipus de contingut desconegut.'; return; }
+      const markdownPath = kind === 'guide'
+        ? `${root}_content/pages/guia-${safeId}.md`
+        : `${root}_content/${folders[kind]}/${filePrefix[kind]}${safeId}.md`;
+      deferRender(this, async () => {
+        this.setAttribute('aria-busy', 'true');
+        try {
+          const [renderer, templateResponse] = await Promise.all([
+            loadMarkdownRenderer(root), fetch(`${root}_templates/content-detail-page.html`)
+          ]);
+          if (!templateResponse.ok) throw new Error('No s’ha pogut carregar la plantilla de contingut.');
+          const parsedTemplate = new DOMParser().parseFromString(await templateResponse.text(), 'text/html');
+          const copy = name => {
+            const template = parsedTemplate.getElementById(name);
+            if (!template) throw new Error(`Falta la plantilla ${name}.`);
+            return template.content.cloneNode(true);
+          };
+          this.replaceChildren(copy('content-detail-loading'));
+          if (!safeId) throw new Error('Tria un contingut des del catàleg per obrir-ne el detall.');
+          const response = await fetch(markdownPath);
+          if (!response.ok) throw new Error(`No s’ha pogut carregar el contingut (${response.status}).`);
+          const source = await response.text();
+          const rendered = renderer.parse(source.replace(/\]\(_assets\//g, "](../../_assets/"), response.url);
+          const data = rendered.data;
+          const title = String(data.title || safeId).trim();
+          const description = String(data.description || '').trim();
+          const guideBack = {
+            'pensament-computacional': [`${root}pensament-computacional/index.html`, 'Activitats de pensament computacional', 'pensament'],
+            'robotica-educativa': [`${root}robotica-educativa/index.html`, 'Catàleg de robòtica', 'robots'],
+            'situacions-aprenentatge': [`${root}situacions-aprenentatge/index.html`, "Situacions d'aprenentatge", 'situacions']
+          }[safeId] || [`${root}index.html`, 'Inici', 'inici'];
+          const backTarget = kind === 'activity' ? `${root}pensament-computacional/index.html`
+            : kind === 'tutorial' ? `${root}robot/index.html?id=${data.robot || safeId.split('-')[0]}`
+              : kind === 'robot' ? `${root}robotica-educativa/index.html`
+                : guideBack[0];
+          const backLabel = kind === 'activity' ? 'Pensament computacional'
+            : kind === 'tutorial' ? (data.robot || 'robots')
+              : kind === 'robot' ? 'Catàleg de robòtica' : guideBack[1];
+          const fragment = copy('content-detail-template');
+          const header = fragment.querySelector('[data-header]');
+          header.setAttribute('active', kind === 'activity' ? 'pensament' : kind === 'guide' ? guideBack[2] : 'robots');
+          header.setAttribute('root', root);
+          const back = fragment.querySelector('[data-back]'); back.setAttribute('href', backTarget); back.setAttribute('label', backLabel);
+          if (kind === 'robot') back.hidden = true; // <robot-hero> inclou el retorn visible.
+          fragment.querySelector('[data-title]').textContent = title;
+          if (kind === 'robot') fragment.querySelector('[data-title]').hidden = true;
+          const descriptionNode = fragment.querySelector('[data-description]');
+          if (description) { descriptionNode.textContent = description; descriptionNode.hidden = false; }
+          const badges = fragment.querySelector('[data-badges]');
+          const badge = (text, primary = false) => { if (!text) return; const node = document.createElement('span'); node.className = `tag-badge${primary ? ' primary' : ''}`; node.textContent = text; badges.appendChild(node); };
+          if (kind === 'activity') { badge(data.topic, true); badge(data.cycle_label || data.cycle); badge(data.duration ? `⏱️ ${data.duration}` : ''); }
+          if (kind === 'tutorial') { badge(data.robot_label || data.robot, true); badge(data.level); badge(data.duration ? `⏱️ ${data.duration}` : ''); }
+          if (kind === 'robot') badge(data.age, true);
+          if (kind === 'guide') badge(data.tag || 'Guia docent', true);
+          fragment.querySelector('[data-content]').innerHTML = rendered.html;
+          if (kind === 'robot') {
+            const hero = fragment.querySelector('[data-robot-hero]');
+            hero.hidden = false; hero.setAttribute('robot', safeId); hero.setAttribute('title', title);
+            hero.setAttribute('subtitle', description); hero.setAttribute('root', root);
+            const extra = fragment.querySelector('[data-robot-extra]'); extra.hidden = false;
+            fragment.querySelector('[data-tutorial-heading]').textContent = `Tutorials de ${title}`;
+            const grid = fragment.querySelector('[data-tutorial-grid]'); grid.setAttribute('robot', safeId); grid.setAttribute('root', root);
+            const resources = data.official_resources || [];
+            const list = fragment.querySelector('[data-resource-list]');
+            resources.forEach(item => { const li = document.createElement('li'); const a = document.createElement('a'); a.href = item.href; a.textContent = item.title; a.target = '_blank'; a.rel = 'noopener noreferrer'; li.append(a); const span = document.createElement('span'); span.textContent = item.description || ''; li.append(span); list.append(li); });
+            fragment.querySelector('[data-official-resources]').hidden = !resources.length;
+            const status = fragment.querySelector('[data-status]');
+            if (data.status_note) { status.innerHTML = `<strong>Estat i disponibilitat del kit:</strong> ${data.status_note} <a href="${data.status_source}" target="_blank" rel="noopener noreferrer">${data.status_source_label || 'Font oficial'}</a>`; status.hidden = false; }
+            const specs = fragment.querySelector('[data-specs]');
+            (data.specs || []).forEach(text => { const span = document.createElement('span'); span.className = 'robot-spec-pill'; span.textContent = text; specs.append(span); });
+          }
+          ensureDocumentHead(root, title, description);
+          document.title = `${title} | Robòtica²⁰⁰`;
+          this.replaceChildren(fragment);
+        } catch (error) {
+          const templates = await fetch(`${root}_templates/content-detail-page.html`).then(response => response.text());
+          const parsed = new DOMParser().parseFromString(templates, 'text/html');
+          const template = parsed.getElementById('content-detail-error');
+          if (template) {
+            const fragment = template.content.cloneNode(true);
+            fragment.querySelector('[data-back]').setAttribute('href', `${root}${kind === 'activity' ? 'pensament-computacional/index.html' : 'robotica-educativa/index.html'}`);
+            fragment.querySelector('[data-back]').setAttribute('label', 'Tornar al catàleg');
+            fragment.querySelector('[data-error-title]').textContent = 'No s’ha pogut carregar aquest contingut';
+            fragment.querySelector('[data-error-message]').textContent = error.message;
+            this.replaceChildren(fragment);
+          } else this.textContent = error.message;
+        } finally { this.removeAttribute('aria-busy'); }
       });
     }
   }
@@ -709,7 +809,7 @@
       const title = this.getAttribute('title') || '';
       const tag = this.getAttribute('tag') || '';
       const active = (this.getAttribute('active') || 'inici').toLowerCase();
-      const root = cleanRoot(this.getAttribute('root') || '../../');
+      const root = cleanRoot(this.getAttribute('root') || '../');
       const backHref = this.getAttribute('back-href') || `${root}index.html`;
       const backLabel = this.getAttribute('back-label') || 'Inici';
       const description = this.getAttribute('description') || '';
@@ -1204,6 +1304,7 @@
     ['nav-back', NavBack],
     ['activity-page', ActivityPage],
     ['tutorial-page', TutorialPage],
+    ['content-detail-page', ContentDetailPage],
     ['situation-page', SituationPage],
     ['guide-page', GuidePage],
     ['activity-grid', ActivityGrid],

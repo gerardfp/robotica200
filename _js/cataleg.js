@@ -5,7 +5,7 @@ window.CATALEG = {
     {
       "id": "activitat-bucles-coreografia",
       "slug": "bucles-coreografia",
-      "url": "activitat/bucles-coreografia/index.html",
+      "url": "activitat/index.html?id=bucles-coreografia",
       "titol": "La Coreografia dels Bucles",
       "tag": "Bucles i Repetició",
       "cicle": "Primer, segon i tercer cicle",
@@ -15,7 +15,7 @@ window.CATALEG = {
     {
       "id": "activitat-condicionals-moviment",
       "slug": "condicionals-moviment",
-      "url": "activitat/condicionals-moviment/index.html",
+      "url": "activitat/index.html?id=condicionals-moviment",
       "titol": "El joc dels condicionals: si... llavors... si no...",
       "tag": "Estructures de Control Condicional",
       "cicle": "Tots els cicles",
@@ -25,17 +25,17 @@ window.CATALEG = {
     {
       "id": "activitat-criptografia-cesar",
       "slug": "criptografia-cesar",
-      "url": "activitat/criptografia-cesar/index.html",
+      "url": "activitat/index.html?id=criptografia-cesar",
       "titol": "Missatges Secrets i Xifratge Cèsar",
       "tag": "Ciberseguretat i Criptografia",
       "cicle": "Segon i tercer cicle",
       "durada": "50 min",
-      "descripcio": "Construcció d'una roda de xifratge de dos cercles concèntrics per comprendre com es protegeix la informació a Internet desplaçant les lletres de l'alfabet un nombre fix de posicions."
+      "descripcio": "Construcció d'una roda de xifratge de dos cercles concèntrics per comprendre com es protegeix la informació"
     },
     {
       "id": "activitat-dades-classificacio",
       "slug": "dades-classificacio",
-      "url": "activitat/dades-classificacio/index.html",
+      "url": "activitat/index.html?id=dades-classificacio",
       "titol": "El Museu de les Dades",
       "tag": "Dades, Classificació i Privadesa",
       "cicle": "Primer, segon i tercer cicle",
@@ -45,7 +45,7 @@ window.CATALEG = {
     {
       "id": "activitat-descomposicio-receptes",
       "slug": "descomposicio-receptes",
-      "url": "activitat/descomposicio-receptes/index.html",
+      "url": "activitat/index.html?id=descomposicio-receptes",
       "titol": "Receptes amb Instruccions de Robot",
       "tag": "Descomposició i Algorismes",
       "cicle": "Primer, segon i tercer cicle",
@@ -55,17 +55,17 @@ window.CATALEG = {
     {
       "id": "activitat-laberint-debugging",
       "slug": "laberint-debugging",
-      "url": "activitat/laberint-debugging/index.html",
+      "url": "activitat/index.html?id=laberint-debugging",
       "titol": "El Laberint d'Instruccions i Detecció d'Errors",
       "tag": "Depuració (Debugging) i Seqüenciació",
       "cicle": "Educació Infantil i primer cicle",
       "durada": "40 min",
-      "descripcio": "Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes per planificar un camí abans d'executar-lo. Quan troben un obstacle, aprenen a aïllar l'ordre equivocada."
+      "descripcio": "Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes"
     },
     {
       "id": "activitat-patrons-simetries",
       "slug": "patrons-simetries",
-      "url": "activitat/patrons-simetries/index.html",
+      "url": "activitat/index.html?id=patrons-simetries",
       "titol": "Detectius de Patrons i Repeticions",
       "tag": "Patrons i Abstracció",
       "cicle": "Educació Infantil, primer i segon cicle",
@@ -75,32 +75,32 @@ window.CATALEG = {
     {
       "id": "activitat-pixels-binaris",
       "slug": "pixels-binaris",
-      "url": "activitat/pixels-binaris/index.html",
+      "url": "activitat/index.html?id=pixels-binaris",
       "titol": "Dibuix per Píxels i Imatges Binàries",
       "tag": "Representació de Dades (Binari)",
       "cicle": "Primer i segon cicle",
       "durada": "45 min",
-      "descripcio": "Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules utilitzant només els valors 0 (blanc) i 1 (negre)."
+      "descripcio": "Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules"
     },
     {
       "id": "activitat-robot-huma",
       "slug": "robot-huma",
-      "url": "activitat/robot-huma/index.html",
+      "url": "activitat/index.html?id=robot-huma",
       "titol": "El Robot Humà i el Llenguatge Precís",
       "tag": "Algorismes i Precisió",
       "cicle": "Educació Infantil i primer cicle",
       "durada": "45 min",
-      "descripcio": "Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb instruccions precises i verificables."
+      "descripcio": "Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb"
     },
     {
       "id": "activitat-xarxa-ordenacio",
       "slug": "xarxa-ordenacio",
-      "url": "activitat/xarxa-ordenacio/index.html",
+      "url": "activitat/index.html?id=xarxa-ordenacio",
       "titol": "Xarxa d'Ordenació al Terra (Sorting Networks)",
       "tag": "Algorismes de Comparació i Processament Paral·lel",
       "cicle": "Segon i tercer cicle",
       "durada": "50 min",
-      "descripcio": "Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les línies; en cada encreuament es comparen de dos en dos i el més petit sempre va cap a l'esquerra."
+      "descripcio": "Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les"
     }
   ],
   "situacions": [
@@ -1695,19 +1695,19 @@ window.CATALEG = {
       "slug": "ce-bifurcacions",
       "robot": "coding-express",
       "robotLabel": "Coding Express",
-      "url": "tutorial/ce-bifurcacions/index.html",
+      "url": "tutorial/index.html?id=ce-bifurcacions",
       "imatge": "_assets/tutorials/ce-bifurcacions.png",
       "titol": "Canvis d'agulla i bifurcacions en Y",
       "dificultat": "Intermedi",
       "durada": "45 min",
-      "descripcio": "Utilitzar peces de canvi de via per crear rutes alternatives i prendre decisions de transport segons el destí."
+      "descripcio": "Utilitzar peces de canvi de via per crear rutes alternatives i prendre decisions de transport segons"
     },
     {
       "id": "tutorial-ce-bucles",
       "slug": "ce-bucles",
       "robot": "coding-express",
       "robotLabel": "Coding Express",
-      "url": "tutorial/ce-bucles/index.html",
+      "url": "tutorial/index.html?id=ce-bucles",
       "imatge": "_assets/tutorials/ce-bucles.png",
       "titol": "El bucle ferroviari: repetir un recorregut",
       "dificultat": "Iniciació",
@@ -1719,43 +1719,43 @@ window.CATALEG = {
       "slug": "ce-motors-sensors",
       "robot": "coding-express",
       "robotLabel": "Coding Express",
-      "url": "tutorial/ce-motors-sensors/index.html",
+      "url": "tutorial/index.html?id=ce-motors-sensors",
       "imatge": "_assets/tutorials/ce-motors-sensors.png",
       "titol": "Motors i sensors: Els maons d'acció de colors",
       "dificultat": "Iniciació",
       "durada": "45 min",
-      "descripcio": "Descobrir la relació causa-efecte col·locant els 5 maons de colors a les vies per activar sensors, sons i canvis de marxa."
+      "descripcio": "Descobrir la relació causa-efecte col·locant els 5 maons de colors a les vies per activar sensors,"
     },
     {
       "id": "tutorial-ce-primeres-passes",
       "slug": "ce-primeres-passes",
       "robot": "coding-express",
       "robotLabel": "Coding Express",
-      "url": "tutorial/ce-primeres-passes/index.html",
+      "url": "tutorial/index.html?id=ce-primeres-passes",
       "imatge": "_assets/tutorials/ce-primeres-passes.png",
       "titol": "Primeres passes: El circuit bàsic i el motor Push & Go",
       "dificultat": "Iniciació",
       "durada": "30 min",
-      "descripcio": "Com encendre la locomotora, comprendre la mecànica 'empeny per arrencar i atura amb la mà' i muntar el primer circuit tancat de vies."
+      "descripcio": "Com encendre la locomotora, comprendre la mecànica 'empeny per arrencar i atura amb la mà' i muntar"
     },
     {
       "id": "tutorial-cr-motors-sensors",
       "slug": "cr-motors-sensors",
       "robot": "codey-rocky",
       "robotLabel": "Codey Rocky",
-      "url": "tutorial/cr-motors-sensors/index.html",
+      "url": "tutorial/index.html?id=cr-motors-sensors",
       "imatge": "_assets/tutorials/cr-motors-sensors.png",
       "titol": "Motors i sensors: Esquivador d'obstacles amb infrarojos",
       "dificultat": "Intermedi",
       "durada": "45 min",
-      "descripcio": "Utilitzar les erugues de Rocky i el sensor frontal per aturar-se o girar abans de xocar contra una paret."
+      "descripcio": "Utilitzar les erugues de Rocky i el sensor frontal per aturar-se o girar abans de xocar contra una"
     },
     {
       "id": "tutorial-cr-primeres-passes",
       "slug": "cr-primeres-passes",
       "robot": "codey-rocky",
       "robotLabel": "Codey Rocky",
-      "url": "tutorial/cr-primeres-passes/index.html",
+      "url": "tutorial/index.html?id=cr-primeres-passes",
       "imatge": "_assets/tutorials/cr-primeres-passes.png",
       "titol": "Primeres passes: Connexió a mBlock 5 i cares a la matriu LED",
       "dificultat": "Iniciació",
@@ -1767,19 +1767,19 @@ window.CATALEG = {
       "slug": "cr-veu-ia",
       "robot": "codey-rocky",
       "robotLabel": "Codey Rocky",
-      "url": "tutorial/cr-veu-ia/index.html",
+      "url": "tutorial/index.html?id=cr-veu-ia",
       "imatge": "_assets/tutorials/cr-veu-ia.png",
       "titol": "Reconeixement de veu i Intel·ligència Artificial",
       "dificultat": "Avançat",
       "durada": "50 min",
-      "descripcio": "Utilitzar l'extensió de Serveis Cognitius per controlar el moviment del robot mitjançant ordres de veu en català."
+      "descripcio": "Utilitzar l'extensió de Serveis Cognitius per controlar el moviment del robot mitjançant ordres de"
     },
     {
       "id": "tutorial-cs-bucles",
       "slug": "cs-bucles",
       "robot": "coding-set",
       "robotLabel": "Coding Set",
-      "url": "tutorial/cs-bucles/index.html",
+      "url": "tutorial/index.html?id=cs-bucles",
       "imatge": "_assets/tutorials/cs-bucles.png",
       "titol": "Bucles de repetició i estructures de control",
       "dificultat": "Intermedi",
@@ -1791,19 +1791,19 @@ window.CATALEG = {
       "slug": "cs-motors-sensors",
       "robot": "coding-set",
       "robotLabel": "Coding Set",
-      "url": "tutorial/cs-motors-sensors/index.html",
+      "url": "tutorial/index.html?id=cs-motors-sensors",
       "imatge": "_assets/tutorials/cs-motors-sensors.png",
       "titol": "Motors i paràmetres numèrics",
       "dificultat": "Intermedi",
       "durada": "40 min",
-      "descripcio": "Optimitzar el codi combinant les fitxes direccionals amb blocs de números (1, 2, 3, 4, 5) per estalviar espai al tauler."
+      "descripcio": "Optimitzar el codi combinant les fitxes direccionals amb blocs de números (1, 2, 3, 4, 5) per estalviar"
     },
     {
       "id": "tutorial-cs-primeres-passes",
       "slug": "cs-primeres-passes",
       "robot": "coding-set",
       "robotLabel": "Coding Set",
-      "url": "tutorial/cs-primeres-passes/index.html",
+      "url": "tutorial/index.html?id=cs-primeres-passes",
       "imatge": "_assets/tutorials/cs-primeres-passes.png",
       "titol": "Primeres passes: La torre de lectura i el tauler físic",
       "dificultat": "Iniciació",
@@ -1815,7 +1815,7 @@ window.CATALEG = {
       "slug": "mb-fanalet-llum",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "url": "tutorial/mb-fanalet-llum/index.html",
+      "url": "tutorial/index.html?id=mb-fanalet-llum",
       "imatge": "_assets/tutorials/mb-fanalet-llum.png",
       "titol": "micro:bit: un fanalet que respon a la llum",
       "dificultat": "Iniciació",
@@ -1827,67 +1827,67 @@ window.CATALEG = {
       "slug": "mb-motors-sensors",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "url": "tutorial/mb-motors-sensors/index.html",
+      "url": "tutorial/index.html?id=mb-motors-sensors",
       "imatge": "_assets/tutorials/mb-motors-sensors.png",
       "titol": "Motors i sensors: Sensor d'humitat i servomotors",
       "dificultat": "Intermedi",
       "durada": "50 min",
-      "descripcio": "Connectar sensors externs als pins de la vora (P0, P1, P2) amb pinces de cocodril per automatitzar una alarma de reg."
+      "descripcio": "Connectar sensors externs als pins de la vora (P0, P1, P2) amb pinces de cocodril per automatitzar"
     },
     {
       "id": "tutorial-mb-primeres-passes",
       "slug": "mb-primeres-passes",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "url": "tutorial/mb-primeres-passes/index.html",
+      "url": "tutorial/index.html?id=mb-primeres-passes",
       "imatge": "_assets/tutorials/mb-primeres-passes.png",
       "titol": "Primeres passes: MakeCode, matriu de 25 LEDs i polsadors",
       "dificultat": "Iniciació",
       "durada": "30 min",
-      "descripcio": "Com programar la placa des del navegador web MakeCode sense instal·lar cap programa i descarregar l'arxiu .hex."
+      "descripcio": "Com programar la placa des del navegador web MakeCode sense instal·lar cap programa i descarregar l'arxiu"
     },
     {
       "id": "tutorial-mb-radio-mesh",
       "slug": "mb-radio-mesh",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "url": "tutorial/mb-radio-mesh/index.html",
+      "url": "tutorial/index.html?id=mb-radio-mesh",
       "imatge": "_assets/tutorials/mb-radio-mesh.png",
       "titol": "Xarxa de ràdio sense fils: Walkie-talkie i sensors remots",
       "dificultat": "Intermedi",
       "durada": "45 min",
-      "descripcio": "Connectar diverses micro:bits de l'aula entre si utilitzant l'antena de ràdio integrada sense necessitat de Wi-Fi."
+      "descripcio": "Connectar diverses micro:bits de l'aula entre si utilitzant l'antena de ràdio integrada sense necessitat"
     },
     {
       "id": "tutorial-mb-so-microfon",
       "slug": "mb-so-microfon",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "url": "tutorial/mb-so-microfon/index.html",
+      "url": "tutorial/index.html?id=mb-so-microfon",
       "imatge": "_assets/tutorials/mb-so-microfon.png",
       "titol": "Micròfon i so: Detector de soroll i aplaudiments (V2)",
       "dificultat": "Iniciació",
       "durada": "35 min",
-      "descripcio": "Utilitzar el micròfon MEMS de la versió 2 per controlar el nivell de decibels de l'aula o encendre un llum en picar de mans."
+      "descripcio": "Utilitzar el micròfon MEMS de la versió 2 per controlar el nivell de decibels de l'aula o encendre"
     },
     {
       "id": "tutorial-sp-brac-sensor-forca",
       "slug": "sp-brac-sensor-forca",
       "robot": "spike",
       "robotLabel": "Spike",
-      "url": "tutorial/sp-brac-sensor-forca/index.html",
+      "url": "tutorial/index.html?id=sp-brac-sensor-forca",
       "imatge": "_assets/tutorials/sp-brac-sensor-forca.png",
       "titol": "Braç robòtic i sensor de força",
       "dificultat": "Avançat",
       "durada": "55 min",
-      "descripcio": "Construir una pinça que detecti el contacte i utilitzar les lectures del sensor de força per provar un límit programat."
+      "descripcio": "Construir una pinça que detecti el contacte i utilitzar les lectures del sensor de força per provar"
     },
     {
       "id": "tutorial-sp-distancia",
       "slug": "sp-distancia",
       "robot": "spike",
       "robotLabel": "Spike",
-      "url": "tutorial/sp-distancia/index.html",
+      "url": "tutorial/index.html?id=sp-distancia",
       "imatge": "_assets/tutorials/sp-distancia.png",
       "titol": "SPIKE Prime: calcular una parada sense tocar l’obstacle",
       "dificultat": "Intermedi",
@@ -1899,19 +1899,19 @@ window.CATALEG = {
       "slug": "sp-motors-sensors",
       "robot": "spike",
       "robotLabel": "Spike",
-      "url": "tutorial/sp-motors-sensors/index.html",
+      "url": "tutorial/index.html?id=sp-motors-sensors",
       "imatge": "_assets/tutorials/sp-motors-sensors.png",
       "titol": "Motors i sensors: Tren d'engranatges i sensor de color",
       "dificultat": "Intermedi",
       "durada": "50 min",
-      "descripcio": "Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una línia vermella."
+      "descripcio": "Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una"
     },
     {
       "id": "tutorial-sp-primeres-passes",
       "slug": "sp-primeres-passes",
       "robot": "spike",
       "robotLabel": "Spike",
-      "url": "tutorial/sp-primeres-passes/index.html",
+      "url": "tutorial/index.html?id=sp-primeres-passes",
       "imatge": "_assets/tutorials/sp-primeres-passes.png",
       "titol": "Primeres passes: El Hub intel·ligent i el primer programa",
       "dificultat": "Iniciació",
@@ -1923,31 +1923,31 @@ window.CATALEG = {
       "slug": "tb-motors-sensors",
       "robot": "tale-bot",
       "robotLabel": "Tale-Bot",
-      "url": "tutorial/tb-motors-sensors/index.html",
+      "url": "tutorial/index.html?id=tb-motors-sensors",
       "imatge": "_assets/tutorials/tb-motors-sensors.png",
       "titol": "Motors i sensors: Dibuix geomètric amb retoladors",
       "dificultat": "Intermedi",
       "durada": "45 min",
-      "descripcio": "Inserir dos retoladors a les ales de TaleBot per traçar formes geomètriques de colors exactes sobre paper continu."
+      "descripcio": "Inserir dos retoladors a les ales de TaleBot per traçar formes geomètriques de colors exactes sobre"
     },
     {
       "id": "tutorial-tb-primeres-passes",
       "slug": "tb-primeres-passes",
       "robot": "tale-bot",
-      "robotLabel": "Tale-Bot Pro",
-      "url": "tutorial/tb-primeres-passes/index.html",
+      "robotLabel": "Tale-Bot",
+      "url": "tutorial/index.html?id=tb-primeres-passes",
       "imatge": "_assets/tutorials/tb-primeres-passes.png",
-      "titol": "Primeres passes: comandaments i distància",
+      "titol": "Primeres passes: Botons direccionals i la tecla Delete",
       "dificultat": "Iniciació",
       "durada": "30 min",
-      "descripcio": "Prepara Tale-Bot Pro, tria la longitud de pas i programa una seqüència curta amb les tecles direccionals."
+      "descripcio": "Descobrir els comandaments bàsics de TaleBot, la mesura del seu pas (10 cm) i la importància de buidar"
     },
     {
       "id": "tutorial-tb-reconeixement-veu",
       "slug": "tb-reconeixement-veu",
       "robot": "tale-bot",
       "robotLabel": "Tale-Bot",
-      "url": "tutorial/tb-reconeixement-veu/index.html",
+      "url": "tutorial/index.html?id=tb-reconeixement-veu",
       "imatge": "_assets/tutorials/tb-reconeixement-veu.png",
       "titol": "Reconeixement i enregistrament de veu",
       "dificultat": "Iniciació",
@@ -1961,14 +1961,14 @@ window.CATALEG = {
       "slug": "coding-express",
       "prefix": "ce",
       "nom": "Coding Express",
-      "edat": "2-5 anys",
-      "descripcio": "El tren interactiu dels colors i el pensament computacional primerenc.",
+      "edat": "Educació Infantil (2-5 anys)",
+      "descripcio": "El tren interactiu dels colors i el pensament computacional primerenc",
       "colors": [
         "#e4242b",
         "#fec002"
       ],
       "order": 1,
-      "url": "robot/coding-express/index.html",
+      "url": "robot/index.html?id=coding-express",
       "tutorials": 4
     },
     {
@@ -1976,14 +1976,14 @@ window.CATALEG = {
       "slug": "tale-bot",
       "prefix": "tb",
       "nom": "Tale-Bot",
-      "edat": "3-7 anys",
-      "descripcio": "El robot narrador que parla, llegeix mapes interactius i dibuixa.",
+      "edat": "Educació Infantil i primer cicle (3-7 anys)",
+      "descripcio": "El robot narrador que parla, llegeix mapes interactius i dibuixa",
       "colors": [
         "#fc8439",
         "#804cbd"
       ],
       "order": 2,
-      "url": "robot/tale-bot/index.html",
+      "url": "robot/index.html?id=tale-bot",
       "tutorials": 3
     },
     {
@@ -1991,14 +1991,14 @@ window.CATALEG = {
       "slug": "coding-set",
       "prefix": "cs",
       "nom": "Coding Set",
-      "edat": "4-9 anys",
-      "descripcio": "Programació tangible sense pantalles amb Matatalab.",
+      "edat": "Educació Infantil i primària (4-9 anys)",
+      "descripcio": "Programació tangible sense pantalles amb Matatalab",
       "colors": [
         "#fc7813",
         "#60a62d"
       ],
       "order": 3,
-      "url": "robot/coding-set/index.html",
+      "url": "robot/index.html?id=coding-set",
       "tutorials": 3
     },
     {
@@ -2006,14 +2006,14 @@ window.CATALEG = {
       "slug": "codey-rocky",
       "prefix": "cr",
       "nom": "Codey Rocky",
-      "edat": "6-12 anys",
-      "descripcio": "El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues.",
+      "edat": "Primària (6-12 anys)",
+      "descripcio": "El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues",
       "colors": [
         "#0079dc",
         "#fdc80a"
       ],
       "order": 4,
-      "url": "robot/codey-rocky/index.html",
+      "url": "robot/index.html?id=codey-rocky",
       "tutorials": 3
     },
     {
@@ -2021,14 +2021,14 @@ window.CATALEG = {
       "slug": "spike",
       "prefix": "sp",
       "nom": "Spike",
-      "edat": "10-16 anys",
-      "descripcio": "Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education.",
+      "edat": "Tercer cicle (10-12 anys)",
+      "descripcio": "Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education",
       "colors": [
         "#d82098",
         "#fddc3e"
       ],
       "order": 5,
-      "url": "robot/spike/index.html",
+      "url": "robot/index.html?id=spike",
       "tutorials": 4
     },
     {
@@ -2036,14 +2036,14 @@ window.CATALEG = {
       "slug": "microbit",
       "prefix": "mb",
       "nom": "Micro:bit",
-      "edat": "9-18 anys",
-      "descripcio": "La placa microcontroladora per a projectes oberts i ciutadans.",
+      "edat": "Segon i tercer cicle (8-12 anys)",
+      "descripcio": "La placa microcontroladora per a projectes oberts i ciutadans",
       "colors": [
         "#047fdf",
         "#4a515d"
       ],
       "order": 6,
-      "url": "robot/microbit/index.html",
+      "url": "robot/index.html?id=microbit",
       "tutorials": 5
     }
   ]

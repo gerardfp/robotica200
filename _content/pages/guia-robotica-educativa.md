@@ -44,7 +44,7 @@ Els robots de terra fan visible l’ordre de les instruccions i la relació entr
 - Compara la ruta prevista amb la ruta real.
 
 
-[Mira Tale-Bot Pro](robot-tale-bot.html)
+[Mira Tale-Bot Pro](../../robot/index.html?id=tale-bot)
 
 ### 🧩 Codificar amb objectes
 
@@ -54,7 +54,7 @@ Els sistemes tangibles connecten peces físiques amb accions. Permeten explorar 
 - Demana que l’equip expliqui què representa cada peça.
 
 
-[Explora Coding Express](robot-coding-express.html)
+[Explora Coding Express](../../robot/index.html?id=coding-express)
 
 ### 📟 Mesurar i respondre
 
@@ -64,7 +64,7 @@ Les plaques i robots amb sensors relacionen el programa amb fenòmens com la llu
 - Anota la lectura i el context de mesura.
 
 
-[Descobreix micro:bit](robot-microbit.html)
+[Descobreix micro:bit](../../robot/index.html?id=microbit)
 
 ### ⚙️ Construir mecanismes
 
@@ -74,7 +74,7 @@ Els kits de construcció connecten programació amb transmissió, estabilitat, f
 - Canvia una peça o un paràmetre per prova.
 
 
-[Explora SPIKE Prime](robot-spike.html)
+[Explora SPIKE Prime](../../robot/index.html?id=spike)
 
 ### 🧒 Prioritzar l’accessibilitat
 
@@ -84,7 +84,7 @@ Per a primeres experiències, valora la mida dels botons, la retroacció visual 
 - Planifica rols perquè tothom prengui decisions.
 
 
-[Consulta Matatalab](robot-coding-set.html)
+[Consulta Matatalab](../../robot/index.html?id=coding-set)
 
 ### 🧰 Comprovar disponibilitat
 
@@ -94,7 +94,7 @@ Els models, accessoris, versions d’app i sistemes operatius canvien. Fes una p
 - No pressuposis que tots els kits del mateix nom són idèntics.
 
 
-[Consulta Codey Rocky](robot-codey-rocky.html)
+[Consulta Codey Rocky](../../robot/index.html?id=codey-rocky)
 
 ## 02 · CICLE D’ENGINYERIA — Una rutina curta que aprofundeix l’aprenentatge
 

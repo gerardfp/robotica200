@@ -42,6 +42,27 @@ assert.equal(catalog.situacions.length, activeFiles.length, "el catàleg conté 
 for (const item of catalog.situacions) {
   assert.equal(item.url, `situacio/index.html?id=${item.slug}`, `${item.slug} enllaça amb la pàgina compartida`);
 }
+const expectedDetailKinds = [
+  ["activitat", "activity", "activitats", "activitat-", 10, catalog.activitats],
+  ["tutorial", "tutorial", "tutorials", "tutorial-", 22, catalog.tutorials],
+  ["robot", "robot", "robots", "robot-", 6, catalog.robots],
+  ["guia", "guide", "pages", "guia-", 3, null]
+];
+for (const [route, kind, folder, prefix, expected, entries] of expectedDetailKinds) {
+  const page = fs.readFileSync(path.join(root, route, "index.html"), "utf8");
+  assert.match(page, new RegExp(`<content-detail-page kind="${kind}"`), `${route} utilitza el component compartit`);
+  const docs = fs.readdirSync(path.join(root, "_content", folder)).filter(file => file.startsWith(prefix) && file.endsWith(".md"));
+  assert.equal(docs.length, expected, `${route} té el nombre esperat de documents Markdown`);
+  assert.equal(fs.readdirSync(path.join(root, route)).filter(file => fs.existsSync(path.join(root, route, file, "index.html"))).length, 0, `${route} no manté shells HTML per document`);
+  if (entries) {
+    assert.equal(entries.length, expected, `catàleg ${route} sincronitzat des del Markdown`);
+    assert.ok(entries.every(item => item.url.startsWith(`${route}/index.html?id=`)), `les targetes ${route} usen una ruta compartida`);
+  }
+}
+const robotMarkdown = fs.readFileSync(path.join(root, "_content/robots/robot-spike.md"), "utf8");
+const robotRecord = renderer.parse(robotMarkdown, "https://example.test/_content/robots/robot-spike.md");
+assert.equal(robotRecord.data.specs.length, 5, "les especificacions de robot es llegeixen del front matter");
+assert.equal(robotRecord.data.official_resources.length, 2, "els recursos oficials de robot es llegeixen del front matter");
 const sharedPage = fs.readFileSync(path.join(root, "situacio/index.html"), "utf8");
 const pageTemplate = fs.readFileSync(path.join(root, "_templates/situation-page.html"), "utf8");
 const componentSource = fs.readFileSync(path.join(root, "_js/components.js"), "utf8");

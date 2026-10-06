@@ -91,10 +91,10 @@ En parlar de dades i missatges, distingeix els jocs de les eines de protecció r
 
 ## Activitats relacionades
 
-- [Prova la recepta d’instruccions](activitat-descomposicio-receptes.html)
-- [Explora patrons i simetries](activitat-patrons-simetries.html)
-- [Programa un robot humà](activitat-robot-huma.html)
-- [Fes la coreografia dels bucles](activitat-bucles-coreografia.html)
-- [Depura un laberint](activitat-laberint-debugging.html)
-- [Classifica i interpreta dades](activitat-dades-classificacio.html)
-- [Explora el xifratge Cèsar](activitat-criptografia-cesar.html)
+- [Prova la recepta d’instruccions](../../activitat/index.html?id=descomposicio-receptes)
+- [Explora patrons i simetries](../../activitat/index.html?id=patrons-simetries)
+- [Programa un robot humà](../../activitat/index.html?id=robot-huma)
+- [Fes la coreografia dels bucles](../../activitat/index.html?id=bucles-coreografia)
+- [Depura un laberint](../../activitat/index.html?id=laberint-debugging)
+- [Classifica i interpreta dades](../../activitat/index.html?id=dades-classificacio)
+- [Explora el xifratge Cèsar](../../activitat/index.html?id=criptografia-cesar)

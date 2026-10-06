@@ -1,0 +1,27 @@
+<template id="content-detail-loading">
+  <main class="container page-content"><p class="markdown-loading" role="status">Carregant el contingut…</p></main>
+</template>
+<template id="content-detail-error">
+  <main class="container page-content">
+    <nav-back data-back></nav-back>
+    <section class="content-load-error" role="alert"><h1 data-error-title></h1><p data-error-message></p></section>
+  </main>
+</template>
+<template id="content-detail-template">
+  <site-header data-header></site-header>
+  <robot-hero data-robot-hero hidden></robot-hero>
+  <main class="container page-content">
+    <nav-back data-back></nav-back>
+    <article class="detail-page-card">
+      <div class="detail-page-header"><div class="detail-page-badges" data-badges></div><h1 class="detail-page-title" data-title></h1><p class="detail-intro" data-description hidden></p></div>
+      <div class="prose" data-content></div>
+    </article>
+    <section data-robot-extra hidden>
+      <div class="robot-tutorials-heading"><div class="robot-tutorials-heading-main"><div><h2 data-tutorial-heading></h2><p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p></div></div></div>
+      <tutorial-grid data-tutorial-grid></tutorial-grid>
+      <section class="robot-official-resources" data-official-resources hidden><h2>Recursos oficials del fabricant</h2><p>Materials, compatibilitat i instruccions actualitzades.</p><ul data-resource-list></ul></section>
+      <p class="robot-status-note" data-status hidden></p><div class="robot-specs-list" data-specs></div>
+    </section>
+  </main>
+  <site-footer></site-footer>
+</template>
