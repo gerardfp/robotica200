@@ -1,4 +1,4 @@
-name: Generar web
+name: Validar i publicar web estàtica
 
 on:
   push:
@@ -13,13 +13,17 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  site:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Sincronitzar catàlegs
+      - name: Sincronitzar catàleg filtrable
         run: python3 _scripts/sync-catalog.py
-      - name: Guardar web descargable
+      - name: Validar enllaços i situacions
+        run: python3 _scripts/check-static-site.py
+      - name: Comprovar JavaScript
+        run: node --check _js/components.js
+      - name: Preparar web estàtica descarregable
         uses: actions/upload-artifact@v4
         with:
           name: robotica200-web
@@ -37,7 +41,7 @@ jobs:
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PUBLISH_PAGES == 'true'
-    needs: build
+    needs: site
     runs-on: ubuntu-latest
     permissions:
       pages: write

@@ -2034,7 +2034,7 @@ robot-hero {
 .robot-status-note a { color: var(--primary); font-weight: 650; }
 .detail-section { scroll-margin-top: 6rem; }
 
-/* Markdown content uses the same lesson layout as the original pages. */
+/* Shared detail-page content layout. */
 [hidden] { display: none !important; }
 .detail-page-title { margin-top: 0.75rem; }
 .detail-intro { font-size: 1.05rem; color: var(--text-muted); }
