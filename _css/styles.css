@@ -1481,7 +1481,7 @@ robot-hero[robot="microbit"],
 }
 
 .card-robot-sa-icon {
-  height: 2rem;
+  height: 1.75rem;
   object-fit: contain;
   flex-shrink: 0;
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.1));
