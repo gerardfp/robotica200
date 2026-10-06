@@ -3,19 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Com varia la lectura de llum en diferents espais de l’aula i com podem comunicar-la amb dades repetibles?">
-  <title>El mapa de llum de l’aula - Situació d'Aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Investiguem com varien les lectures relatives del sensor de llum de Codey Rocky entre finestres, aules i moments diferents.">
+  <title>El mapa de llum de l’aula | Situació d’aprenentatge | Robòtica²⁰⁰</title>
   <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
   <script src="../../_js/components.js"></script>
 </head>
 <body>
-  <situation-page title="El mapa de llum de l’aula" robot="codey-rocky" robot-label="Codey Rocky" cicle="segon-cicle" cicle-label="Segon cicle" materia="medi" materia-label="Coneixement del Medi / Ciències" tematica="sostenibilitat" tematica-label="Medi ambient i sostenibilitat" durada="3 sessions" repte="Com varia la lectura de llum en diferents espais de l’aula i com podem comunicar-la amb dades repetibles?">
+  <situation-page
+    title="El mapa de llum de l’aula"
+    robot="codey-rocky"
+    robot-label="Codey Rocky"
+    cicle="segon-cicle"
+    cicle-label="Segon cicle d’Educació Primària"
+    materia="medi"
+    materia-label="Coneixement del Medi, Ciències i Tecnologia"
+    tematica="sostenibilitat"
+    tematica-label="Entorn escolar i ús responsable de l’energia"
+    durada="4 sessions"
+    description="Investiguem com varien les lectures relatives del sensor de llum de Codey Rocky entre finestres, aules i moments diferents."
+    repte="Com podem comparar la llum de diferents espais amb un procediment repetible i explicar els límits de la mesura?"
+    root="../../">
     <figure class="sa-illustration">
-      <img src="../../_assets/imatges/sa-cr-llum-aula.webp" alt="Codey Rocky al costat d’una finestra i un llum de taula en dos espais d’il·luminació." width="600" height="448" loading="lazy">
-      <figcaption>Comparem llocs i moments amb el mateix procediment, sense convertir la lectura en una mesura de salut o benestar.</figcaption>
+      <img src="../../_assets/imatges/sa-cr-llum-aula.webp" alt="Codey Rocky de la dotació entre una finestra i un llum de taula, com a punts de comparació de llum." width="600" height="448" loading="lazy">
+      <figcaption>El valor del sensor serveix per comparar proves semblants; no és una mesura certificada d’il·luminació.</figcaption>
     </figure>
-    <section class="detail-section"><h2>🧩 Repte i context</h2><p>Preparem un mapa d’observació de la llum: prop de la finestra, al centre de l’aula i en un racó. Codey mostra una lectura del sensor de llum ambiental; la classe investiga com comparar mesures sense confondre-les amb una escala professional d’il·luminació.</p></section><section class="detail-section"><h2>📅 Seqüència didàctica</h2><ol><li><strong>Sessió 1 · Predir i acordar.</strong> Ordenem els llocs segons la llum esperada i definim una orientació, distància i moment de lectura.</li><li><strong>Sessió 2 · Mesurar i repetir.</strong> Recollim més d’una lectura per lloc i, si és possible, repetim en un altre moment del dia. Anotem finestres, cortines i llums encesos.</li><li><strong>Sessió 3 · Visualitzar i discutir.</strong> Fem un mapa amb rangs propis del projecte i expliquem diferències, incerteses i millores possibles de l’espai.</li></ol></section><section class="detail-section"><h2>🎯 Aprenentatges i evidències</h2><p>Practiquem observació, variables, repetició, representació de dades i argumentació. El grup entrega el protocol breu, una taula o gràfic i una conclusió que incloga almenys una limitació de la mesura.</p></section><section class="detail-section"><h2>🧰 Abans de mesurar</h2><p>La lectura integrada és relativa i depén del model i del programa. Manteniu el sensor orientat de la mateixa manera, eviteu tapar-lo i registreu les condicions de cada prova. No presenteu el resultat com una mesura certificada de lux, de consum o de confort visual.</p></section><section class="detail-section"><h2>♿ Dades per a tothom</h2><p>Utilitzeu una escala visual de tres rangs acordada pel grup, descripcions verbals i gràfics tàctils o de formes. La conclusió pot presentar-se com a pòster, àudio o explicació oral.</p></section>
-    <section class="detail-section"><h2>🔗 Referent oficial adaptat</h2><p>Hem pres com a punt de partida <a href="https://support.makeblock.com/hc/en-us/articles/7462771369367-Case-6-Display-the-ambient-light-intensity">Case 6: Display the ambient light intensity</a>. Aquesta situació és una proposta pròpia amb context, seqüència i materials verificables per al centre; no reprodueix ni substitueix el material oficial. Comproveu sempre el model de robot i els accessoris disponibles.</p></section>
+    <section class="detail-section">
+      <h2>💡 Repte, context i aprenentatges</h2>
+      <p class="sa-challenge">Com podem comparar la llum de diferents espais amb un procediment repetible i explicar els límits de la mesura?</p>
+      <p>Els equips preparen un mapa d’observació de la llum en espais accessibles de l’escola: prop d’una finestra, al centre de l’aula i en un racó. Codey Rocky mostra en la pantalla el valor que rep del sensor de llum ambiental. L’alumnat compara lectures, apunta les condicions de cada prova i pregunta què pot explicar una diferència: orientació del sensor, cortines, núvols, llums encesos o ombres.</p>
+      <p><strong>Aprenentatges:</strong> formular prediccions, repetir mesures amb un protocol, controlar variables, representar dades, relacionar una diferència amb possibles factors i distingir lectura del sensor de mesura professional. El número del dispositiu no és lux certificat, no diagnostica confort visual ni determina si un espai és saludable o eficient energèticament.</p>
+    </section>
+    <section class="detail-section">
+      <h2>🧰 Materials i preparació</h2>
+      <p>Prepareu un Codey Rocky amb bateria, ordinador amb mBlock 5 i cable USB per carregar el programa, mapa senzill de l’aula o del passadís, full de registre, llapis i pictogrames per indicar finestra, cortina, llum artificial i condicions del cel. La situació pot executar-se amb el mòdul Codey quiet; no cal que el xassís Rocky es desplace. El cas oficial mostra el valor de llum ambiental en la pantalla de Codey mitjançant els blocs Sensing i Looks en mode Upload.</p>
+      <p>El sensor de llum de Codey és al xicotet orifici de la part inferior dreta del mòdul, vist de cara. Comproveu que no quede tapat per una mà, una taula o una carcassa. Trieu dos o tres llocs de lectura que no interrompen el pas i no canvieu la il·luminació habitual només per obtenir una puntuació. Si hi ha un llum de taula, que l’utilitze i col·loque sempre una persona adulta; no mireu directament la font ni acosteu el robot a líquids o calor.</p>
+      <p><strong>Vocabulari:</strong> llum ambiental, sensor, lectura, repetició, variable, condició, comparar, interval, ombra, predicció i limitació. Presenteu «el sensor mostra un valor més alt en aquesta prova» en lloc de «ací hi ha més lux».</p>
+    </section>
+    <section class="detail-section">
+      <h2>📅 Seqüència didàctica · quatre sessions de 40 minuts</h2>
+      <ol>
+        <li><strong>Prediem i acordem un protocol (40 min).</strong>
+          <p>Mostreu el plànol i marqueu tres punts d’observació. Cada parella ordena els llocs segons la llum que espera trobar i explica en què basa la predicció: proximitat a la finestra, cortines o llums que ja estan encesos. Anoteu el moment del dia i l’estat aproximat del cel amb símbols, sense exposar dades personals de cap alumne.</p>
+          <p>Decidiu com sostindre Codey: mateix costat cap amunt, sensor descobert, mateixa alçada respecte a la taula i mateixa orientació. Feu un assaig de lectura en un únic punt i comproveu que tothom pot veure la pantalla. <em>Evidència:</em> mapa amb punts, predicció inicial i protocol visual compartit. <em>Preguntes docents:</em> «Què mantindrem igual en totes les proves? Quines coses poden canviar sense que les controlem?»</p>
+        </li>
+        <li><strong>Programem i fem la primera ronda (40 min).</strong>
+          <p>Connecteu Codey a mBlock 5, seleccioneu el dispositiu correcte i useu el bloc de lectura d’intensitat de llum ambiental amb el bloc Looks que mostra el valor en la pantalla. Carregueu el programa en mode Upload i comproveu la lectura abans de començar. No cal programar que el robot classifique els espais com a «bons» o «dolents»; el propòsit és observar el número i registrar-lo.</p>
+          <p>Feu la ronda pels tres punts. En cada lloc, espereu que l’aparell quede quiet, llegiu la pantalla i anoteu valor, hora aproximada, llums encesos, cortines i ombra visible. Repetiu la lectura dues vegades sense canviar la posició. Si varia molt, marqueu-ho com a dada variable en lloc de seleccionar només el número que confirma la predicció. <em>Evidència:</em> taula de tres llocs amb lectures repetides i condicions. <em>Preguntes docents:</em> «Les lectures d’un mateix punt coincideixen? Què podria haver canviat entre una lectura i la següent?»</p>
+        </li>
+        <li><strong>Repetim en un altre moment i representem (40 min).</strong>
+          <p>Repetiu la ronda en una altra franja horària o un altre dia, sempre que es puga fer sense canviar l’horari habitual de l’aula. Registreu condicions de finestra, cortina, llum elèctrica i cel. No tapeu finestres ni apagueu llums necessàries per a estudiar; si no es pot repetir en condicions comparables, anoteu la diferència com a limitació.</p>
+          <p>Ordeneu els resultats amb una representació adequada: punts amb símbols, una línia simple o intervals qualitatius decidits pel grup. Si es calculen mitjanes, mostreu també les lectures originals i no amagueu variacions. Compareu espais i moments: on es repeteix el patró?, què ha canviat?, què no podem separar amb aquestes dades? <em>Evidència:</em> gràfic o mapa amb llegenda i comparació entre rondes. <em>Preguntes docents:</em> «Quina diferència veiem en les dades? Quina explicació és una hipòtesi i què hauríem de mesurar per provar-la?»</p>
+        </li>
+        <li><strong>Comuniquem una conclusió amb límits (40 min).</strong>
+          <p>Prepareu una fitxa o pòster breu amb pregunta, protocol, resultats, una interpretació prudent i una limitació. Exemples de frases vàlides: «en les nostres tres proves el punt de la finestra ha donat lectures superiors a les del racó» o «les mesures han variat quan també ha canviat el cel». Eviteu conclusions sobre lux exactes, estalvi d’energia, salut visual o benestar.</p>
+          <p>Una altra parella revisa si el gràfic inclou llocs, moments, unitats del dispositiu o descripció de la lectura i condicions. Proposeu una prova de seguiment possible, com repetir en un dia cobert mantenint la mateixa orientació. Tanqueu amb una observació sobre el funcionament del sensor, no amb recomanacions de modificar instal·lacions. <em>Evidència:</em> presentació amb una conclusió sustentada i una pregunta encara oberta. <em>Preguntes docents:</em> «Quina afirmació recolzen les nostres proves? Quina mesura professional necessitaríem per respondre una altra pregunta?»</p>
+        </li>
+      </ol>
+    </section>
+    <section class="detail-section">
+      <h2>📊 Avaluació i evidències</h2>
+      <p>Recolliu protocol, taula de lectures, mapa/gràfic i conclusió. Observeu si l’alumnat:</p>
+      <ul>
+        <li>formula una predicció i explica quin indici l’ha motivada;</li>
+        <li>manté orientació i posició del sensor semblants entre repeticions;</li>
+        <li>registra els valors reals, incloses les diferències inesperades;</li>
+        <li>representa i compara lectures sense convertir-les en lux ni en judici de qualitat;</li>
+        <li>distingeix resultat, explicació possible i limitació del procediment.</li>
+      </ul>
+      <p>No s’avalua que l’alumnat obtinga el resultat esperat ni que determine quina il·luminació necessita l’aula. Es valora la qualitat del registre i la prudència de les conclusions.</p>
+    </section>
+    <section class="detail-section">
+      <h2>♿ Dades accessibles i ús responsable</h2>
+      <p>Utilitzeu una escala visual de tres rangs acordada pel grup al costat dels valors numèrics, descripcions verbals, etiquetes tàctils i gràfics de formes. Una persona pot llegir la pantalla i una altra registrar; també es pot respondre dictant, assenyalant pictogrames o construint un gràfic físic. Manteniu el robot sobre una taula accessible i oferiu una alternativa amb fotografies o lectures prèviament recollides si moure’s per l’aula no és viable. Les conclusions no s’utilitzen per valorar hàbits, capacitat visual ni necessitats individuals de cap alumne.</p>
+    </section>
+    <section class="detail-section">
+      <h2>🔗 Referent oficial i adaptació pròpia</h2>
+      <p>Adapta <a href="https://support.makeblock.com/hc/en-us/articles/7462771369367-Case-6-Display-the-ambient-light-intensity">Case 6: Display the ambient light intensity</a>, que mostra la lectura del sensor de llum de Codey en la pantalla mitjançant els blocs de lectura i Looks en mBlock 5 Upload. Aquesta proposta amplia l’exemple tècnic amb preguntes, repeticions, control de variables, representació de dades i contextos de l’aula; no tracta la lectura com un luxímetre calibrat.</p>
+    </section>
   </situation-page>
 </body>
 </html>
