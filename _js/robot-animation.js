@@ -15,7 +15,8 @@
       { name: 'robot-anim-look', duration: 1150, label: 'Mirada curiosa als costats' },
       { name: 'robot-anim-happy', duration: 700, label: 'Salutació alegre / Hop' },
       { name: 'robot-anim-tilt', duration: 1000, label: 'Inclinació de cap curiosa' },
-      { name: 'robot-anim-scan', duration: 900, label: 'Escaneig cromàtic / Mode matrix' }
+      { name: 'robot-anim-scan', duration: 900, label: 'Escaneig cromàtic / Mode matrix' },
+      { name: 'robot-anim-dashes', duration: 1700, label: 'Antena que es transforma en els guions STEAM' }
     ];
 
     var lastIndex = -1;

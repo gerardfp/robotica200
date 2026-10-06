@@ -687,7 +687,7 @@
                data-tematica="${item.tematica}" data-materia="${item.materia}">
               <div class="card-top">
                 <div class="card-robot-info">
-                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
+                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-sa-icon" width="36" height="36">` : ''}
                   <span class="tag-badge primary">${item.robotLabel}</span>
                 </div>
                 <span class="tag-badge">${item.cicleLabel}</span>
@@ -1049,28 +1049,40 @@
       this.innerHTML = `
         <div class="filters-bar">
           <div class="filter-group">
-            <label class="filter-label" for="filter-robot">Robot</label>
+            <label class="filter-label" for="filter-robot" style="display: flex; align-items: center; gap: 0.5rem;">
+              <img src="${root}_assets/icons/pack/robot.png" alt="" class="filter-label-icon" height="36">
+              Robot
+            </label>
             <select id="filter-robot" class="filter-select">
               <option value="all">Tots els robots</option>
               ${robotOptions.map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
             </select>
           </div>
           <div class="filter-group">
-            <label class="filter-label" for="filter-cicle">Cicle</label>
+            <label class="filter-label" for="filter-cicle" style="display: flex; align-items: center; gap: 0.5rem;">
+              <img src="${root}_assets/icons/pack/cicle.png" alt="" class="filter-label-icon" height="36">
+              Cicle
+            </label>
             <select id="filter-cicle" class="filter-select">
               <option value="all">Tots els cicles</option>
               ${cicleOptions.map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
             </select>
           </div>
           <div class="filter-group">
-            <label class="filter-label" for="filter-tematica">Temàtica</label>
+            <label class="filter-label" for="filter-tematica" style="display: flex; align-items: center; gap: 0.5rem;">
+              <img src="${root}_assets/icons/pack/tematica.png" alt="" class="filter-label-icon" height="36">
+              Temàtica
+            </label>
             <select id="filter-tematica" class="filter-select">
               <option value="all">Totes les temàtiques</option>
               ${Array.from(tematicaMap.entries()).map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
             </select>
           </div>
           <div class="filter-group">
-            <label class="filter-label" for="filter-materia">Matèria</label>
+            <label class="filter-label" for="filter-materia" style="display: flex; align-items: center; gap: 0.5rem;">
+              <img src="${root}_assets/icons/pack/materia.png" alt="" class="filter-label-icon" height="36">
+              Matèria
+            </label>
             <select id="filter-materia" class="filter-select">
               <option value="all">Totes les matèries</option>
               ${Array.from(materiaMap.entries()).map(([val, label]) => `<option value="${val}">${label}</option>`).join('')}
