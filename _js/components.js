@@ -630,24 +630,39 @@
         items = items.filter(it => it.robot === robot);
       }
       this.innerHTML = `
-        <div class="clean-grid">
-          ${items.map(item => `
-            <a id="${item.id}" href="${root}${item.url}" class="item-card tutorial-card">
-              <div class="card-top">
-                <div class="card-badges">
-                  <span class="tag-badge primary">${item.dificultat}</span>
-                  <span class="tag-badge">⏱️ ${item.durada}</span>
+        <div class="clean-grid tutorial-grid">
+          ${items.map(item => {
+            const difClass = (item.dificultat || '')
+              .toLowerCase()
+              .normalize('NFD')
+              .replace(/[\u0300-\u036f]/g, '')
+              .replace(/\s+/g, '-');
+            const imgSrc = item.imatge ? `${root}${item.imatge}` : `${root}_assets/robots/${item.robot}.png`;
+            return `
+              <article id="${item.id}" class="tutorial-card">
+                <div class="card-top">
+                  <div class="card-badges">
+                    <span class="tag-badge badge-${difClass}">${item.dificultat}</span>
+                    <span class="tag-badge badge-durada">⏱️ ${item.durada}</span>
+                  </div>
+                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.svg" alt="" class="card-robot-icon" width="28" height="28">` : ''}
                 </div>
-                ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.svg" alt="" class="card-robot-icon" width="36" height="36">` : ''}
-              </div>
-              <h3 class="item-title">${item.titol}</h3>
-              <p class="item-desc">${item.descripcio || ''}</p>
-              <div class="item-footer">
-                <span>Pas a pas d'aula</span>
-                <span>Obrir tutorial →</span>
-              </div>
-            </a>
-          `).join('')}
+                <a href="${root}${item.url}" class="tutorial-card-media-link" aria-label="${item.titol}">
+                  <div class="tutorial-card-media">
+                    <img src="${imgSrc}" alt="${item.titol}" class="tutorial-card-img" loading="lazy">
+                  </div>
+                </a>
+                <h3 class="tutorial-card-title">
+                  <a href="${root}${item.url}">${item.titol}</a>
+                </h3>
+                <p class="tutorial-card-desc">${item.descripcio || ''}</p>
+                <div class="tutorial-card-footer">
+                  <a href="${root}${item.url}" class="btn-step-by-step">Pas a pas d'aula →</a>
+                  <a href="${root}${item.url}" class="btn-open-tutorial">Obrir tutorial →</a>
+                </div>
+              </article>
+            `;
+          }).join('')}
         </div>
       `;
     }
@@ -690,6 +705,10 @@
         }
 
         this.classList.add('robot-hero');
+        if (robot) {
+          this.classList.add(`robot-hero-${robot}`);
+          this.setAttribute('data-robot', robot);
+        }
         this.innerHTML = `
           <div class="container robot-hero-inner">
             <nav-back href="${backHref}" label="${backLabel}"></nav-back>
@@ -710,6 +729,67 @@
       } else {
         renderHero();
       }
+    }
+  }
+
+  // 12b. Perfil i introducció del robot
+  class RobotProfile extends HTMLElement {
+    connectedCallback() {
+      const root = cleanRoot(this.getAttribute('root') || '../../');
+      const robot = (this.getAttribute('robot') || '').toLowerCase();
+      const prefixMap = {
+        'coding-express': 'ce',
+        'tale-bot': 'tb',
+        'coding-set': 'cs',
+        'codey-rocky': 'cr',
+        'spike': 'sp',
+        'microbit': 'mb'
+      };
+      const prefix = prefixMap[robot] || '';
+
+      this.classList.add('robot-profile');
+      if (prefix) {
+        this.classList.add(`robot-${prefix}`);
+      }
+      if (robot) {
+        this.setAttribute('data-robot', robot);
+      }
+
+      deferRender(this, () => {
+        const pElem = this.querySelector(':scope > p') || this.querySelector('.robot-profile-desc > p');
+        const introHtml = pElem ? pElem.innerHTML : (this.getAttribute('intro') || '');
+
+        const sectionElem = this.querySelector('section.robot-detail-section') || this.querySelector('section.detail-section') || this.querySelector('section');
+        let titleHtml = '';
+        let textHtml = '';
+
+        if (sectionElem) {
+          const hElem = sectionElem.querySelector('h2, h3');
+          if (hElem) titleHtml = hElem.innerHTML;
+          const bodyPElem = sectionElem.querySelector('.robot-detail-section-body p') || sectionElem.querySelector('.detail-section-body p') || sectionElem.querySelector('p');
+          if (bodyPElem) textHtml = bodyPElem.innerHTML;
+        }
+
+        if (!titleHtml) titleHtml = this.getAttribute('detail-title') || this.getAttribute('title') || '';
+        if (!textHtml) textHtml = this.getAttribute('detail-text') || '';
+
+        const iconPath = this.getAttribute('icon') || `${root}_assets/icons/pack/bulb.png`;
+
+        this.innerHTML = `
+          <div class="robot-profile-desc">
+            <p>${introHtml}</p>
+            <section class="robot-detail-section">
+              <div class="robot-detail-section-icon" aria-hidden="true">
+                <img src="${iconPath}" alt="" width="34" height="34" class="robot-detail-section-icon-img">
+              </div>
+              <div class="robot-detail-section-body">
+                <h2>${titleHtml}</h2>
+                <p>${textHtml}</p>
+              </div>
+            </section>
+          </div>
+        `;
+      });
     }
   }
 
@@ -928,6 +1008,7 @@
     ['tutorial-grid', TutorialGrid],
     ['accent-dashes', AccentDashes],
     ['robot-hero', RobotHero],
+    ['robot-profile', RobotProfile],
     ['robot-card', RobotCard],
     ['robot-grid', RobotGrid],
     ['situation-filters', SituationFilters]
