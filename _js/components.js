@@ -410,7 +410,7 @@
       const robotLabel = this.getAttribute('robot-label') || this.getAttribute('robot') || '';
       let robotIcon = this.getAttribute('robot-icon') || '';
       if (!robotIcon && robot) {
-        robotIcon = `${robot}.svg`;
+        robotIcon = `${robot}.png`;
       }
       const dificultat = this.getAttribute('dificultat') || this.getAttribute('nivell') || '';
       const durada = this.getAttribute('durada') || '';
@@ -592,7 +592,7 @@
                data-tematica="${item.tematica}" data-materia="${item.materia}">
               <div class="card-top">
                 <div class="card-robot-info">
-                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.svg" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
+                  ${item.robot ? `<img src="${root}_assets/icons/${item.robot}.png" alt="" class="card-robot-sa-icon" width="40" height="40">` : ''}
                   <span class="tag-badge primary">${item.robotLabel}</span>
                 </div>
                 <span class="tag-badge">${item.cicleLabel}</span>

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# _scripts/sync-catalog.py - Generador automàtic del catàleg a partir de les carpetes
+# _scripts/sync-catalog.py - Sincronització de metadades del catàleg Web Components
 import os
 import re
 import json
