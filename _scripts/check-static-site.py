@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
-"""Validate local references and learning-situation catalog coverage."""
+"""Validate local references and shared Markdown learning-situation coverage."""
 
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
+import re
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parent.parent
 EXPECTED_ROBOTS = {
-    "coding-express",
-    "tale-bot",
-    "coding-set",
-    "codey-rocky",
-    "spike",
-    "microbit",
+    "coding-express", "tale-bot", "coding-set", "codey-rocky", "spike", "microbit"
 }
 
 
@@ -21,11 +17,7 @@ class PageParser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.refs = []
-        self.robots = []
         self.has_situation_page = False
-        self.has_illustration = False
-        self.in_situation_illustration = False
-        self.has_accessible_situation_image = False
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
@@ -33,25 +25,10 @@ class PageParser(HTMLParser):
             self.refs.append(("FORBIDDEN", "<dialog> elements are not allowed"))
         if tag.lower() == "situation-page":
             self.has_situation_page = True
-            robot = attrs.get("robot", "").strip().lower()
-            if robot and robot != "desendollat":
-                self.robots.append(robot)
-        if tag.lower() == "figure" and "sa-illustration" in attrs.get("class", "").split():
-            self.has_illustration = True
-            self.in_situation_illustration = True
-        if tag.lower() == "img" and self.in_situation_illustration:
-            alt = attrs.get("alt", "").strip()
-            self.has_accessible_situation_image = bool(
-                alt and attrs.get("width") == "600" and attrs.get("height") == "448"
-            )
         for attr in ("href", "src"):
             value = attrs.get(attr, "").strip()
             if value:
                 self.refs.append((attr, value))
-
-    def handle_endtag(self, tag):
-        if tag.lower() == "figure" and self.in_situation_illustration:
-            self.in_situation_illustration = False
 
 
 def local_target(page: Path, ref: str):
@@ -64,6 +41,17 @@ def local_target(page: Path, ref: str):
     if path.startswith("/"):
         return ROOT / path.lstrip("/")
     return page.parent / path
+
+
+def read_frontmatter(path: Path):
+    text = path.read_text(encoding="utf-8")
+    match = re.match(r"^---\s*\n([\s\S]*?)\n---\s*\n?", text)
+    if not match:
+        return {}, text
+    values = {}
+    for item in re.finditer(r"^([A-Za-z0-9_-]+):\s*(.*)$", match.group(1), re.MULTILINE):
+        values[item.group(1)] = item.group(2).strip().strip("\"'")
+    return values, text[match.end():]
 
 
 def main():
@@ -82,24 +70,45 @@ def main():
             target = local_target(page, ref)
             if target is not None and not target.exists():
                 problems.append(f"{relative}: missing local {kind} {ref}")
+        if relative == Path("situacio/index.html") and not parser.has_situation_page:
+            problems.append("situacio/index.html: missing shared <situation-page>")
 
-        if relative.parts[0] == "situacio":
-            if not parser.has_situation_page:
-                problems.append(f"{relative}: missing <situation-page> Web Component")
-            if not parser.has_illustration:
-                problems.append(f"{relative}: missing local situation illustration")
-            elif not parser.has_accessible_situation_image:
-                problems.append(f"{relative}: situation illustration needs descriptive alt text and 600x448 dimensions")
-            robot_counts.update(parser.robots)
+    content_dir = ROOT / "_content/situacions"
+    active = []
+    for markdown_path in sorted(content_dir.glob("*.md")):
+        editorial, body = read_frontmatter(markdown_path)
+        if editorial.get("active", "").lower() != "true":
+            continue
+        active.append(markdown_path)
+        for required in ("title", "description", "robot", "cycle", "subject", "theme", "duration", "challenge"):
+            if not editorial.get(required):
+                problems.append(f"{markdown_path.relative_to(ROOT)}: missing front matter '{required}'")
+        robot = editorial.get("robot", "").lower()
+        if robot != "desendollat":
+            robot_counts[robot] += 1
+        images = re.findall(r"!\[([^\]]*)\]\(([^)]+)\)", body)
+        if not images:
+            problems.append(f"{markdown_path.relative_to(ROOT)}: missing editorial image")
+        for alt, ref in images:
+            if not alt.strip():
+                problems.append(f"{markdown_path.relative_to(ROOT)}: Markdown image needs descriptive alt text")
+            target = local_target(markdown_path, ref)
+            if target is not None and not target.exists():
+                problems.append(f"{markdown_path.relative_to(ROOT)}: missing Markdown image {ref}")
+        for ref in re.findall(r"(?<!!)\[[^\]]+\]\(([^)]+)\)", body):
+            target = local_target(markdown_path, ref)
+            if target is not None and not target.exists():
+                problems.append(f"{markdown_path.relative_to(ROOT)}: missing Markdown link {ref}")
 
+    if len(active) != 99:
+        problems.append(f"expected 99 active Markdown situations, found {len(active)}")
     for robot in sorted(EXPECTED_ROBOTS):
         if robot_counts[robot] < 5:
             problems.append(f"robot {robot}: expected at least 5 situations, found {robot_counts[robot]}")
-        icon = ROOT / "_assets" / "icons" / f"{robot}.png"
+        icon = ROOT / "_assets/icons" / f"{robot}.png"
         if not icon.is_file():
             problems.append(f"robot {robot}: missing PNG icon at {icon.relative_to(ROOT)}")
-
-    if not (ROOT / "_assets" / "icons" / "desendollat.png").is_file():
+    if not (ROOT / "_assets/icons/desendollat.png").is_file():
         problems.append("disconnected activities: missing PNG icon _assets/icons/desendollat.png")
 
     if problems:
@@ -107,8 +116,7 @@ def main():
         for problem in problems:
             print(f"- {problem}")
         return 1
-
-    print(f"Static site validation passed: {len(pages)} HTML pages, no broken local references, six robot collections meet the five-situation minimum.")
+    print(f"Static site validation passed: {len(pages)} HTML pages, one shared situation page, {len(active)} active Markdown situations, no broken local references.")
     return 0
 
 

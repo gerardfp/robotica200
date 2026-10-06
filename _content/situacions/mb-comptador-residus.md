@@ -1,0 +1,111 @@
+---
+active: true
+title: "Comptem residus amb cura"
+description: "Com podem programar un comptador amb micro:bit per registrar residus segurs i proposar una millora al pati?"
+robot: "microbit"
+robot_label: "micro:bit"
+cycle: "tercer-cicle"
+cycle_label: "Tercer cicle"
+subject: "medi"
+subject_label: "Medi, Matemàtiques i Tecnologia"
+theme: "sostenibilitat"
+theme_label: "Residus i entorn escolar"
+duration: "3 sessions · 150 min"
+challenge: "Com podem dissenyar un comptador de micro:bit que registre residus per categoria i ens ajude a fer una proposta responsable?"
+---
+
+![Una placa micro:bit acompanya una llibreta de recompte, pinces de recollida i exemples nets de residus de paper separats per tipus.](../../_assets/imatges/sa-mb-comptador-residus.webp)
+
+_El registre és anònim i se centra en objectes; la placa no identifica qui els ha deixat._
+
+## 🌱 Situació i intenció
+
+La brigada verda del centre vol saber quins residus visibles apareixen en una zona delimitada del pati i proposar una millora de prevenció o separació. L’alumnat aprén a llegir entrades, guardar comptatges en variables i construir un comptador de categories amb micro:bit. Primer el prova amb materials nets preparats; després l’utilitza en una observació guiada del centre i presenta dades agregades. No es registra qui ha deixat cap objecte ni s’afirma que una mostra xicoteta descriga tot el centre.
+
+La proposta adapta les dues lliçons de *Barefoot · Litter hunt*, adreçades a alumnat d’uns 9–11 anys: usar botons i sensors per mostrar icones, modificar variables i jugar amb una entrada; després dissenyar, programar i usar un comptador de residus reciclables en l’entorn local. La tercera sessió és una ampliació pròpia per separar disseny tècnic, treball de camp i interpretació.
+
+## 🧰 Materials i preparació
+
+Micro:bit física amb portapiles, MakeCode, 3 targetes d’icones de categoria, mostres simulades netes de paper/cartró i envasos buits nets, graella o taula de dades, llapis, guants i pinces només si el centre autoritza la recollida segura. La font oficial demana plaques físiques i alimentació per al projecte de camp: el simulador serveix per a preparar i provar el codi però no equival a usar el comptador en una recollida real. Si no hi ha placa o portapiles, manteniu la mateixa activitat amb targetes i etiqueteu-la com a simulació.
+
+Abans d’eixir, consulteu la guia de separació del municipi o del servei de residus del centre, anoteu font i data i convertiu-la en tres categories amb una opció “no sabem / consultar”. Les normes de separació poden variar; no classifiqueu automàticament un objecte com a reciclable només pel seu aspecte. Delimiteu una zona privada i autoritzada del pati, acordant límits de recorregut, temps, rols i contacte amb residus. La persona adulta revisa el protocol de riscos i decideix quins objectes no es toquen.
+
+## 📅 Seqüència didàctica · tres sessions de 50 minuts
+
+### **Sessió 1 · Entrades, eixides i variables (Litter hunt, lesson 1).**
+
+*Identificar components (8 min):*
+
+localitzeu botons A/B, matriu LED, pins i un sensor integrat rellevant, com l’acceleròmetre; expliqueu què és entrada i què és eixida.
+
+*Provar icones (10 min):*
+
+programeu A per mostrar una icona i B una altra; proveu el moviment d’inclinació o sacsejada per a mostrar una tercera resposta i compareu què detecta el sensor sense associar-lo a una persona identificable.
+
+*Crear variable (12 min):*
+
+inicialitzeu un comptador en zero, feu que un esdeveniment el modifique i mostreu-ne el valor; prediu el resultat abans de cada prova.
+
+*Joc d’entrada per torns (15 min):*
+
+adapteu el joc de prémer botó: una targeta indica l’entrada, cada participant anticipa quina icona o valor apareixerà i executa el torn quan li toca. No mesureu qui és més ràpid ni feu rànquings; compareu si totes les entrades són detectades i si el comptador es modifica una sola vegada.
+
+*Reflexió (5 min):*
+
+expliqueu com es guarda el nombre i què podria provocar un increment no desitjat. Evidència: mapa entrada-processament-eixida, variable anotada i taula d’esdeveniments.
+
+### **Sessió 2 · Dissenyar i verificar el comptador.**
+
+*Definir el problema (8 min):*
+
+useu una situació inventada de recollida del pati i trieu tres categories verificables en la guia local: per exemple paper/cartó, envasos lleugers i dubtós/altre.
+
+*Dissenyar la interfície (8 min):*
+
+decidiu com A canvia la categoria, B suma una unitat i una combinació d’ordres reinicia el recompte; associeu una icona constant a cada categoria.
+
+*Programar (14 min):*
+
+creeu variables independents per categoria i, si és útil, un total derivat. Eviteu que un canvi de categoria incremente el recompte.
+
+*Proves de taula (15 min):*
+
+proveu una entrada de cada tipus, dos elements seguits de la mateixa categoria, un canvi de categoria abans d’incrementar, reinici i categoria dubtosa. Anoteu valor previst, valor mostrat i resultat real; corregiu un error i torneu a executar els mateixos casos.
+
+*Revisió entre equips (5 min):*
+
+una altra parella segueix les instruccions i indica si pot saber què està comptant. Evidència: codi, taula de proves completa i canvi justificat.
+
+### **Sessió 3 · Observació segura i proposta local (adaptació de Litter hunt, lesson 2).**
+
+*Briefing i rols (8 min):*
+
+recordeu límits, zona, recorregut i senyal d’aturada; assigneu operació del comptador, lectura de guia, registre, observació i supervisió adulta.
+
+*Observació (20 min):*
+
+en una ruta curta i autoritzada, classifiqueu només allò que es pot identificar visualment amb la guia local. Una persona registra cada observació amb el comptador i una altra porta el recompte de comprovació en paper; no fotografieu persones ni toqueu objectes desconeguts. La persona adulta, no l’alumnat, gestiona la recollida d’objectes potencialment perillosos; si no hi ha un protocol aprovat, feu només observació i utilitzeu mostres netes de classe.
+
+*Comprovar dades (10 min):*
+
+compareu el total micro:bit amb el registre manual, identifiqueu discrepàncies i no les esborreu: anoteu-les i expliqueu-ne una causa possible (doble recompte, categoria incerta o botó premut dues vegades).
+
+*Analitzar (7 min):*
+
+convertiu resultats en una taula i un gràfic senzill; indiqueu zona, data i durada de la mostra, sense extrapolar al centre sencer.
+
+*Proposar (5 min):*
+
+escriviu una millora que puga provar el centre, com ubicar millor un contenidor o fer un recordatori visual, i indiqueu quina dada futura permetria comprovar-la. Evidència: registres agregats, discrepància documentada, gràfic i proposta.
+
+## 📊 Criteris d’èxit i avaluació
+
+Recolliu diagrama de components, variables, icones, codi, casos de prova, pauta local de separació, recompte de micro:bit i paper, gràfic i proposta. Valoreu si l’alumnat (1) diferencia sensor/botó i entrada/eixida; (2) inicialitza i modifica variables sense perdre categories; (3) segueix una guia datada i deixa dubtes com a dubtes; (4) detecta discrepàncies entre recompte automàtic i manual; i (5) formula una conclusió proporcional a una zona i un període observats. El dispositiu ajuda a registrar, però no classifica residus per si mateix: la persona decideix la categoria i pot marcar incertesa.
+
+## ♿ Participació, seguretat i privacitat
+
+Oferiu icones tàctils o d’alt contrast, targetes de categoria, dictat de dades, rol de verificació en paper i una ruta accessible o observació des d’un punt fix. No cronometreu velocitat ni publiqueu rànquings d’alumnes o grups. Manteniu-vos en zona autoritzada, useu pinces/guants només amb supervisió i no toqueu vidre, xeringues, piles, femta, objectes tallants, substàncies ni residus d’origen desconegut. Si hi ha qualsevol dubte, l’alumnat no l’arreplega: la persona adulta el deixa, aïlla la zona segons el protocol del centre i ho comunica al servei responsable. No registreu noms, cares ni qui podria haver deixat un residu; les dades es guarden agregades. Renteu-vos les mans després de la pràctica.
+
+## 🔗 Unitat oficial adaptada
+
+[Barefoot · Litter hunt](https://microbit.org/teach/lessons/barefoot-litter-hunt/) consta de dues lliçons. La [primera](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-1/) treballa botons i sensors per a mostrar imatges, variables i un joc de resposta; la [segona](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-2/) presenta el repte d’una organització ambiental, dissenya el comptador, registra deixalles locals i fa una recollida. Aquesta proposta conserva els objectius de programació i registre, substitueix la cursa ràpida per proves accessibles, incorpora normativa local de separació i separa l’observació de la manipulació segura de residus. La sessió de verificació i proposta és una ampliació pròpia; no reutilitza els materials visuals oficials.

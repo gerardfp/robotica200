@@ -1,0 +1,93 @@
+---
+active: true
+title: "Animacions de l’aiguamoll"
+description: "Com podem convertir la fauna i les plantes dels aiguamolls en icones i animacions originals amb micro:bit?"
+robot: "microbit"
+robot_label: "micro:bit"
+cycle: "primer-cicle"
+cycle_label: "Primer cicle"
+subject: "artistica"
+subject_label: "Educació Artística, Medi i Tecnologia"
+theme: "natura"
+theme_label: "Natura i expressió digital"
+duration: "2 sessions · 100 min"
+challenge: "Com podem explicar una observació de la natura amb una icona LED i una animació programada?"
+---
+
+![Una placa micro:bit mostra una icona de pixel d’un ocell al costat d’un taumàtrop de paper inspirat en l’aiguamoll.](../../_assets/imatges/sa-mb-animacions-aiguamoll.webp)
+
+_Les icones són representacions pròpies, no imatges realistes ni reclams per a fauna salvatge._
+
+## 🌱 Situació i intenció
+
+La classe prepara una microexposició digital de l’aiguamoll de l’Albufera. Cada equip parteix d’una imatge o observació autoritzada de fauna o vegetació, n’identifica un tret recognoscible i el transforma primer en una icona 5 × 5 i després en una animació de dos fotogrames. La placa ajuda a estudiar entrada/eixida, seqüència i repetició; no es porta a l’aiguamoll ni s’utilitza per atraure o enregistrar fauna.
+
+La unitat oficial té dues lliçons per a alumnat d’uns 7–9 anys: familiarització amb components i transferència de programa, icones predefinides i disseny LED píxel a píxel; després, taumàtrop, bucle continu, bucle comptat i avaluació. Aquesta seqüència conserva tots aquests objectius i els situa en un context valencià verificable.
+
+## 🧰 Materials i preparació
+
+BBC micro:bit física i cable USB o simulador MakeCode, ordinador/tauleta, projector opcional, graelles 5 × 5, llapis, paper, cartolina lleugera, llapis de colors, cinta i pal de cartó o dos llaços de paper per al taumàtrop. Prepareu una icona predefinida per analitzar, un projecte MakeCode inicial i targetes de seqüència desconnectada. Trieu imatges pròpies o amb ús autoritzat i fonts datades; la informació local es pot contrastar amb la [guia pública de l’Albufera](https://parquesnaturales.gva.es/documents/80302883/168872077/RUTA%2B1%2B-%2B%2BVOLTA%2BA%2BL%27ALBUFERA%2BEN%2BBICICLETA.pdf/efb00d45-964e-4115-a8fe-6e30bb45508c). Si la identificació d’una espècie no està verificada, descriviu-la com a “au observada” o “planta de l’aiguamoll” i no li assigneu un nom científic.
+
+Abans de començar, comproveu el procés de transferència USB del centre. La versió física i el simulador són alternatives per al mateix programa; anoteu quina s’ha utilitzat, perquè la transferència al dispositiu també és un objectiu de la primera lliçó.
+
+## 📅 Seqüència didàctica · dues sessions de 50 minuts
+
+### **Sessió 1 · De la placa i el programa a una icona pròpia.**
+
+*Explorar components (8 min):*
+
+localitzeu matriu LED, botons A/B, pins, connector USB i control de reinici; associeu cada component a una funció d’entrada, eixida o connexió sense desmuntar la placa.
+
+*Seqüència desconnectada (8 min):*
+
+ordeneu targetes “inici, mostra icona, pausa, mostra una altra imatge” i feu que una parella execute les ordres com si fora el dispositiu; prediu què passa si es canvia l’ordre.
+
+*Transferir un programa (8 min):*
+
+obriu un exemple a MakeCode, executeu-lo al simulador i, si hi ha placa, descarregueu-lo i transferiu-lo per USB; compareu el que es veu en ambdós casos i registreu qualsevol diferència.
+
+*Analitzar i crear (18 min):*
+
+mireu una icona integrada i determineu quines cel·les encén; en graella 5 × 5, creeu una representació d’un tret (bec, ala, fulla o tija) amb un màxim de 25 píxels. Passeu la graella a blocs LED individuals i preveieu el resultat abans d’executar.
+
+*Galeria i revisió (8 min):*
+
+una parella intenta identificar el tret i proposa un píxel que es podria llevar o moure. Evidència: esquema dels components, seqüència en targetes, programa transferit o simulat, icona i una revisió basada en interpretació del públic.
+
+### **Sessió 2 · Dos fotogrames, un moviment suggerit.**
+
+*Construir i predir (10 min):*
+
+dibuixeu en les dues cares d’un disc de cartolina una figura i un canvi menut —per exemple, una au quieta i l’au amb l’ala en una altra posició—. Alineeu el centre de les imatges abans d’enganxar el pal o les nanses de paper; proveu el gir lentament i anoteu quan costa llegir el canvi.
+
+*Storyboard LED (8 min):*
+
+representeu els dos fotogrames en dues graelles 5 × 5, numerant-los i descrivint què canvia; un company comprova que la diferència siga llegible.
+
+*Animació amb forever (12 min):*
+
+programmeu mostra del fotograma 1, pausa, fotograma 2, pausa dins d’un bucle continu. Executeu en simulador o placa, canvieu només el temps de pausa i compareu si encara es perceben els dos dibuixos. No cal buscar el parpelleig més ràpid: l’objectiu és fer comprensible la seqüència.
+
+*Animació comptada (10 min):*
+
+repetiu la parella de fotogrames un nombre fix de voltes amb un bucle de recompte, feu que després la matriu es netege o mostre una icona de final i distingiu aquest comportament del bucle infinit.
+
+*Coavaluació (5 min):*
+
+un altre equip respon què ha canviat i suggereix una millora concreta.
+
+*Tancament (5 min):*
+
+valoreu les representacions en paper i LED i registreu quina versió explica millor el moviment i per què. Evidència: taumàtrop, storyboard, dos programes (continu/comptat), comparació de ritmes i una millora provada.
+
+## 📋 Criteris d’èxit i evidències
+
+Arxiveu el diagrama anotat de la placa, l’ordre d’instruccions, el nom del fitxer MakeCode, les dues graelles, la transferència o captura del simulador, el codi amb `forever` i el bucle comptat i les notes de coavaluació. Comproveu si l’alumnat (1) relaciona parts físiques amb les seues funcions; (2) prediu i executa una seqüència d’eixides LED; (3) diferencia repetició contínua i repetició limitada; (4) conserva un tret visual amb pocs píxels; i (5) proposa i prova una millora. La icona no s’avalua com a identificació científica d’una espècie: s’avaluen decisions de disseny i explicació.
+
+## ♿ Accés visual i confort sensorial
+
+Permeteu participar amb versió estàtica, simulador, graella impresa, dictat de píxels o rol de narració/observació. Aviseu abans de cada animació, oferiu no mirar-la i no feu servir ràfegues ràpides ni flaixos; la persona docent pot mostrar fotogrames estàtics en lloc de reproduir el bucle. Useu icones grans, alt contrast i suport oral per descriure quines cel·les canvien. Per a dificultats motores, les targetes 5 × 5 substitueixen la manipulació de blocs menuts sense llevar l’anàlisi de l’algorisme.
+
+## 🔗 Unitat oficial adaptada
+
+[Barefoot · Wildlife animations](https://microbit.org/teach/lessons/barefoot-wildlife-animations/) conté dues lliçons: la primera tracta components, seqüenciació en MakeCode, transferència, icones predefinides i imatges fetes amb LEDs individuals; la segona crea un taumàtrop, programa una animació amb bucle *forever*, en fa una altra amb repetició comptada i demana avaluar i suggerir millores. La fitxa manté aquesta cobertura i crea icones, storyboard i relat propis de l’aiguamoll. La font oficial diu que l’ús de placa física és preferible però admet simulador; ací tots dos itineraris es declaren i es registren.

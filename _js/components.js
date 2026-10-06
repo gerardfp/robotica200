@@ -10,6 +10,12 @@
     return root;
   }
 
+  function escapeTemplate(value) {
+    return String(value == null ? '' : value).replace(/[&<>"']/g, char => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    })[char]);
+  }
+
   function ensureDocumentHead(root, title, description) {
     root = cleanRoot(root);
 
@@ -109,6 +115,49 @@
     script.src = `${cleanRoot(root)}_js/cataleg.js`;
     script.onload = () => callback();
     document.head.appendChild(script);
+  }
+
+  function loadMarkdownRenderer(root) {
+    if (window.RoboticsMarkdown) return Promise.resolve(window.RoboticsMarkdown);
+    if (window._roboticsMarkdownLoading) return window._roboticsMarkdownLoading;
+    window._roboticsMarkdownLoading = new Promise((resolve, reject) => {
+      const existing = document.querySelector('script[data-robotics-markdown]');
+      const script = existing || document.createElement('script');
+      script.src = `${cleanRoot(root)}_js/markdown.js`;
+      script.dataset.roboticsMarkdown = 'true';
+      script.onload = () => window.RoboticsMarkdown ? resolve(window.RoboticsMarkdown) : reject(new Error('No s’ha pogut inicialitzar el renderitzador Markdown.'));
+      script.onerror = () => reject(new Error('No s’ha pogut carregar _js/markdown.js.'));
+      if (!existing) document.head.appendChild(script);
+    });
+    return window._roboticsMarkdownLoading;
+  }
+
+  function loadSituationTemplates(root) {
+    if (window._roboticsSituationTemplatesLoading) return window._roboticsSituationTemplatesLoading;
+    const templateURL = `${cleanRoot(root)}_templates/situation-page.html`;
+    window._roboticsSituationTemplatesLoading = fetch(templateURL)
+      .then(response => {
+        if (!response.ok) throw new Error(`No s’han pogut carregar les plantilles (${response.status}).`);
+        return response.text();
+      })
+      .then(source => {
+        const parsed = new DOMParser().parseFromString(source, 'text/html');
+        for (const id of ['situation-page-template', 'situation-page-loading-template', 'situation-page-error-template']) {
+          if (!parsed.getElementById(id)) throw new Error(`Falta la plantilla ${id}.`);
+        }
+        return parsed;
+      })
+      .catch(error => {
+        window._roboticsSituationTemplatesLoading = null;
+        throw error;
+      });
+    return window._roboticsSituationTemplatesLoading;
+  }
+
+  function clonePageTemplate(templates, id) {
+    const template = templates.getElementById(id);
+    if (!template || !template.content) throw new Error(`No està disponible la plantilla ${id}.`);
+    return template.content.cloneNode(true);
   }
 
   // 1. Cabecera reutilizable amb navegació
@@ -369,7 +418,7 @@
       const tag = this.getAttribute('tag') || '';
       const cicle = this.getAttribute('cicle') || '';
       const durada = this.getAttribute('durada') || '';
-      const root = cleanRoot(this.getAttribute('root') || '../../');
+      const root = cleanRoot(this.getAttribute('root') || '../');
       const backHref = this.getAttribute('back-href') || `${root}pensament-computacional/index.html`;
       const backLabel = this.getAttribute('back-label') || 'Pensament Computacional';
       const description = this.getAttribute('description') || '';
@@ -452,62 +501,108 @@
   // 6. Plantilla de pàgina de situació d'aprenentatge
   class SituationPage extends HTMLElement {
     connectedCallback() {
-      const title = this.getAttribute('title') || '';
-      const robot = (this.getAttribute('robot') || '').toLowerCase();
-      const robotLabel = this.getAttribute('robot-label') || '';
-      let robotIcon = this.getAttribute('robot-icon') || '';
-      if (!robotIcon && robot) {
-        robotIcon = `${robot}.svg`;
-      }
-      const cicleLabel = this.getAttribute('cicle-label') || this.getAttribute('cicle') || '';
-      const materiaLabel = this.getAttribute('materia-label') || this.getAttribute('materia') || '';
-      const tematicaLabel = this.getAttribute('tematica-label') || this.getAttribute('tematica') || '';
-      const durada = this.getAttribute('durada') || this.getAttribute('sessions') || '';
-      const repte = this.getAttribute('repte') || '';
-      const root = cleanRoot(this.getAttribute('root') || '../../');
+      const root = cleanRoot(this.getAttribute('root') || '../');
       const backHref = this.getAttribute('back-href') || `${root}situacions-aprenentatge/index.html`;
       const backLabel = this.getAttribute('back-label') || "Situacions d'Aprenentatge";
-      const description = this.getAttribute('description') || repte;
+      const requestedId = new URLSearchParams(window.location.search).get('id') || '';
+      const safeId = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(requestedId) ? requestedId : '';
+      const contentSource = safeId ? `${root}_content/situacions/${safeId}.md` : '';
 
-      ensureDocumentHead(root, title, description);
+      deferRender(this, async () => {
+        const showError = async (title, message, help = '') => {
+          this.removeAttribute('aria-busy');
+          try {
+            const templates = await loadSituationTemplates(root);
+            const fragment = clonePageTemplate(templates, 'situation-page-error-template');
+            const back = fragment.querySelector('[data-back-navigation]');
+            back.setAttribute('href', backHref);
+            back.setAttribute('label', backLabel);
+            fragment.querySelector('[data-error-title]').textContent = title;
+            fragment.querySelector('[data-error-message]').textContent = message;
+            const helpElement = fragment.querySelector('[data-error-help]');
+            helpElement.textContent = help;
+            helpElement.hidden = !help;
+            this.replaceChildren(fragment);
+          } catch (templateError) {
+            this.textContent = `${title}. ${message}`;
+          }
+        };
 
-      deferRender(this, () => {
-        const content = this.innerHTML;
-        const hasRepteInContent = content.includes('sa-challenge') || content.includes('Repte o Pregunta Guia');
-        const repteHtml = (repte && !hasRepteInContent) ? `
-          <section class="detail-section">
-            <h2>❓ Repte o Pregunta Guia</h2>
-            <p class="sa-challenge">"${repte}"</p>
-          </section>
-        ` : '';
+        this.setAttribute('aria-busy', 'true');
+        if (!contentSource) {
+          await showError('Situació no indicada', 'Tria una situació des del catàleg per a obrir-ne el contingut.');
+          return;
+        }
 
-        this.innerHTML = `
-          <site-header active="situacions" root="${root}"></site-header>
-          <main class="container page-content">
-            <nav-back href="${backHref}" label="${backLabel}"></nav-back>
-            <article class="detail-page-card">
-              <div class="detail-page-header">
-                <div class="detail-page-badges">
-                  ${robotLabel ? `
-                    <span class="tag-badge primary">
-                      ${robotIcon ? `<img src="${root}_assets/icons/${robotIcon}" alt="" class="tag-badge-icon" width="20" height="20">` : ''}${robotLabel}
-                    </span>
-                  ` : ''}
-                  ${cicleLabel ? `<span class="tag-badge">${cicleLabel}</span>` : ''}
-                  ${materiaLabel ? `<span class="tag-badge">${materiaLabel}</span>` : ''}
-                  ${durada ? `<span class="tag-badge">⏱️ ${durada}</span>` : ''}
-                </div>
-                <h1 class="detail-page-title">${title}</h1>
-                ${tematicaLabel ? `<span class="tag-badge">🏷️ ${tematicaLabel}</span>` : ''}
-              </div>
-              <div class="prose">
-                ${repteHtml}
-                ${content}
-              </div>
-            </article>
-          </main>
-          <site-footer></site-footer>
-        `;
+        try {
+          const [renderer, templates] = await Promise.all([loadMarkdownRenderer(root), loadSituationTemplates(root)]);
+          this.replaceChildren(clonePageTemplate(templates, 'situation-page-loading-template'));
+          const response = await fetch(contentSource);
+          if (!response.ok) throw new Error(`No s’ha pogut carregar el contingut (${response.status}).`);
+          const source = await response.text();
+          const parsed = renderer.parse(source, response.url);
+          const fragment = clonePageTemplate(templates, 'situation-page-template');
+          const header = fragment.querySelector('[data-site-header]');
+          header.setAttribute('root', root);
+          const back = fragment.querySelector('[data-back-navigation]');
+          back.setAttribute('href', backHref);
+          back.setAttribute('label', backLabel);
+
+          const value = (key, fallback = '') => String(parsed.data[key] || fallback || '').trim();
+          fragment.querySelector('[data-title]').textContent = value('title', safeId);
+          const badges = fragment.querySelector('[data-badges]');
+          const appendBadge = (label, { primary = false, icon = '', prefix = '' } = {}) => {
+            if (!label) return;
+            const badge = document.createElement('span');
+            badge.className = `tag-badge${primary ? ' primary' : ''}`;
+            if (icon) {
+              const image = document.createElement('img');
+              const safeIcon = /^[a-z0-9-]+\.(?:png|svg)$/i.test(icon) ? icon : '';
+              if (safeIcon) {
+                image.src = `${root}_assets/icons/${safeIcon}`;
+                image.alt = '';
+                image.className = 'tag-badge-icon';
+                image.width = 20;
+                image.height = 20;
+                badge.appendChild(image);
+              }
+            }
+            badge.appendChild(document.createTextNode(`${prefix}${label}`));
+            badges.appendChild(badge);
+          };
+          const robot = value('robot').toLowerCase();
+          const robotIcon = value('robot_icon', robot ? `${robot}.png` : '');
+          appendBadge(value('robot_label', robot), { primary: true, icon: robotIcon });
+          appendBadge(value('cycle_label', value('cycle')));
+          appendBadge(value('subject_label', value('subject')));
+          appendBadge(value('duration', value('sessions')), { prefix: '⏱️ ' });
+
+          const theme = fragment.querySelector('[data-theme]');
+          const themeLabel = value('theme_label', value('theme'));
+          if (themeLabel) {
+            theme.textContent = `🏷️ ${themeLabel}`;
+            theme.hidden = false;
+          }
+
+          const challenge = value('challenge');
+          const contentHasChallenge = parsed.html.includes('sa-challenge') || /Repte o pregunta guia/i.test(parsed.html);
+          if (challenge && !contentHasChallenge) {
+            fragment.querySelector('[data-challenge]').textContent = challenge;
+            fragment.querySelector('[data-challenge-section]').hidden = false;
+          }
+          fragment.querySelector('[data-markdown-content]').innerHTML = parsed.html;
+
+          const description = value('description', challenge);
+          ensureDocumentHead(root, value('title'), description);
+          if (parsed.data.title) document.title = `${parsed.data.title} | Situació d’aprenentatge | Robòtica²⁰⁰`;
+          const descriptionTag = document.querySelector('meta[name="description"]');
+          if (descriptionTag && description) descriptionTag.content = description;
+          this.replaceChildren(fragment);
+          this.removeAttribute('aria-busy');
+        } catch (error) {
+          console.error('Error carregant la situació en Markdown:', error);
+          await showError('No s’ha pogut carregar aquesta situació', error.message || 'Comprova la connexió local i el fitxer de contingut.', 'Recarrega la pàgina quan el fitxer Markdown estiga disponible.');
+        }
       });
     }
   }

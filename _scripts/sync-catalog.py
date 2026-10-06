@@ -21,6 +21,30 @@ def get_attr(tag_str, attr_name):
         return clean_html(val)
     return ""
 
+def read_markdown_frontmatter(path):
+    """Read the project's deliberately flat YAML metadata subset without dependencies."""
+    if not path or not path.is_file():
+        return {}
+    text = path.read_text(encoding='utf-8')
+    match = re.match(r'^---\s*\n([\s\S]*?)\n---\s*\n?', text)
+    if not match:
+        return {}
+    metadata = {}
+    for line in match.group(1).splitlines():
+        field = re.match(r'^([A-Za-z0-9_-]+):\s*(.*)$', line)
+        if not field:
+            continue
+        value = field.group(2).strip()
+        if value.startswith('"') and value.endswith('"'):
+            try:
+                value = json.loads(value)
+            except json.JSONDecodeError:
+                value = value[1:-1]
+        elif value.startswith("'") and value.endswith("'"):
+            value = value[1:-1].replace("''", "'")
+        metadata[field.group(1)] = value
+    return metadata
+
 def scan_activities():
     activities = []
     for f in sorted(ROOT_DIR.glob('activitat/*/index.html')):
@@ -74,67 +98,30 @@ def scan_situations():
         "microbit": "Micro:bit",
         "desendollat": "Desendollat (Sense robot)"
     }
-    for f in sorted(ROOT_DIR.glob('situacio/*/index.html')):
-        slug = f.parent.name
-        content = f.read_text(encoding='utf-8')
-
-        tag_m = re.search(r'<situation-page\b([^>]*)>', content, re.IGNORECASE | re.DOTALL)
-        if tag_m:
-            attrs = tag_m.group(1)
-            title = get_attr(attrs, 'title') or slug
-            robot = get_attr(attrs, 'robot').lower()
-            if robot == 'lego-coding-express': robot = 'coding-express'
-            elif robot == 'talebot': robot = 'tale-bot'
-            elif robot == 'codingset': robot = 'coding-set'
-            elif robot == 'codeyrocky': robot = 'codey-rocky'
-            robot_label = get_attr(attrs, 'robot-label') or robot_display.get(robot, robot.capitalize())
-            cicle = get_attr(attrs, 'cicle')
-            cicle_label = get_attr(attrs, 'cicle-label') or cicle
-            materia = get_attr(attrs, 'materia')
-            materia_label = get_attr(attrs, 'materia-label') or materia
-            tematica = get_attr(attrs, 'tematica')
-            tematica_label = get_attr(attrs, 'tematica-label') or tematica
-            durada = get_attr(attrs, 'durada') or get_attr(attrs, 'sessions')
-            repte = get_attr(attrs, 'repte')
-        else:
-            title_m = re.search(r'<h1 class=\"detail-page-title\">(.*?)</h1>', content)
-            title = clean_html(title_m.group(1)) if title_m else slug
-            repte_m = re.search(r'class=\"sa-challenge\">\"?(.*?)\"?</p>', content)
-            repte = clean_html(repte_m.group(1)) if repte_m else ""
-            badges = re.findall(r'<span class=\"tag-badge[^\"]*\">(?:<img[^>]*>)?(.*?)</span>', content)
-            robot_label = clean_html(badges[0]) if len(badges) > 0 else ""
-            robot = "desendollat"
-            for k, v in robot_display.items():
-                if v.lower() in robot_label.lower():
-                    robot = k
-                    break
-            cicle_label = clean_html(badges[1]) if len(badges) > 1 else ""
-            cicle = "segon-cicle"
-            if "infantil" in cicle_label.lower(): cicle = "infantil"
-            elif "primer" in cicle_label.lower() or "inicial" in cicle_label.lower(): cicle = "primer-cicle"
-            elif "segon" in cicle_label.lower() or "mitjà" in cicle_label.lower() or "mitja" in cicle_label.lower(): cicle = "segon-cicle"
-            elif "tercer" in cicle_label.lower() or "superior" in cicle_label.lower() or "eso" in cicle_label.lower(): cicle = "tercer-cicle"
-
-            materia_label = clean_html(badges[2]) if len(badges) > 2 else ""
-            materia = "tecnologia"
-            if "medi" in materia_label.lower(): materia = "medi"
-            elif "matemàtiques" in materia_label.lower() or "matematiques" in materia_label.lower(): materia = "matematiques"
-            elif "llengua" in materia_label.lower(): materia = "llengua"
-            elif "artística" in materia_label.lower() or "artistica" in materia_label.lower(): materia = "artistica"
-
-            durada = clean_html(badges[3]).replace('⏱️', '').strip() if len(badges) > 3 else ""
-            tematica_label = clean_html(badges[4]).replace('🏷️', '').strip() if len(badges) > 4 else ""
-            tematica = "sostenibilitat"
-            if "ciutat" in tematica_label.lower(): tematica = "ciutat"
-            elif "salut" in tematica_label.lower(): tematica = "salut"
-            elif "art" in tematica_label.lower(): tematica = "art"
-            elif "espacial" in tematica_label.lower() or "espai" in tematica_label.lower(): tematica = "espai"
-            elif "ciutadania" in tematica_label.lower() or "societat" in tematica_label.lower(): tematica = "societat"
-
+    for markdown_path in sorted((ROOT_DIR / '_content/situacions').glob('*.md')):
+        editorial = read_markdown_frontmatter(markdown_path)
+        if editorial.get('active', '').lower() != 'true':
+            continue
+        slug = markdown_path.stem
+        title = editorial.get('title', slug)
+        robot = editorial.get('robot', '').lower()
+        if robot == 'lego-coding-express': robot = 'coding-express'
+        elif robot == 'talebot': robot = 'tale-bot'
+        elif robot == 'codingset': robot = 'coding-set'
+        elif robot == 'codeyrocky': robot = 'codey-rocky'
+        robot_label = editorial.get('robot_label') or robot_display.get(robot, robot.capitalize())
+        cicle = editorial.get('cycle', '')
+        cicle_label = editorial.get('cycle_label') or cicle
+        materia = editorial.get('subject', '')
+        materia_label = editorial.get('subject_label') or materia
+        tematica = editorial.get('theme', '')
+        tematica_label = editorial.get('theme_label') or tematica
+        durada = editorial.get('duration', '')
+        repte = editorial.get('challenge', '')
         situations.append({
             "id": f"situacio-sa-{slug}",
             "slug": slug,
-            "url": f"situacio/{slug}/index.html",
+            "url": f"situacio/index.html?id={slug}",
             "titol": title,
             "robot": robot,
             "robotLabel": robot_label,

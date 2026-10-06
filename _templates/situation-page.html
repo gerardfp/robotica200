@@ -1,0 +1,36 @@
+<template id="situation-page-loading-template">
+  <div class="markdown-loading" role="status">Carregant la situació…</div>
+</template>
+
+<template id="situation-page-error-template">
+  <main class="container page-content">
+    <nav-back data-back-navigation></nav-back>
+    <section class="content-load-error" role="alert">
+      <h1 data-error-title></h1>
+      <p data-error-message></p>
+      <p data-error-help></p>
+    </section>
+  </main>
+</template>
+
+<template id="situation-page-template">
+  <site-header data-site-header active="situacions"></site-header>
+  <main class="container page-content">
+    <nav-back data-back-navigation></nav-back>
+    <article class="detail-page-card">
+      <div class="detail-page-header">
+        <div class="detail-page-badges" data-badges></div>
+        <h1 class="detail-page-title" data-title></h1>
+        <span class="tag-badge" data-theme hidden></span>
+      </div>
+      <div class="prose">
+        <section class="detail-section" data-challenge-section hidden>
+          <h2>Repte o pregunta guia</h2>
+          <p class="sa-challenge" data-challenge></p>
+        </section>
+        <div data-markdown-content></div>
+      </div>
+    </article>
+  </main>
+  <site-footer></site-footer>
+</template>

@@ -2522,3 +2522,73 @@ robot-profile[robot="microbit"] .robot-detail-section,
 .prose table { display: block; overflow-x: auto; border-collapse: collapse; }
 .prose th, .prose td { padding: 0.5rem; border: 1px solid var(--border-color); }
 .sa-card { scroll-margin-top: 7rem; }
+
+/* Contingut editorial Markdown i passos de les situacions */
+.learning-step-index {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card-subtle);
+}
+.learning-step-index > strong { display: block; margin-bottom: 0.55rem; font-family: var(--font-heading); }
+.learning-step-index ol { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.learning-step-index li { margin: 0; padding: 0; }
+.learning-step-index a { display: inline-block; padding: 0.4rem 0.7rem; border-radius: var(--radius-full); color: var(--primary); background: #fff; text-decoration: none; font-size: 0.9rem; }
+.learning-step-index a:hover, .learning-step-index a:focus-visible { text-decoration: underline; }
+.prose .learning-step {
+  margin: 1.25rem 0;
+  padding: 1.25rem clamp(1rem, 3vw, 1.6rem);
+  border: 1px solid var(--border-color);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  background: #fff;
+  scroll-margin-top: 6.5rem;
+}
+.prose .learning-step > h3 { margin: 0 0 0.85rem; font-size: 1.14rem; }
+.prose .learning-phase {
+  margin: 1rem 0;
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card-subtle);
+}
+.prose .learning-phase > h4 { margin: 0 0 0.45rem; color: #334155; font-size: 0.96rem; }
+.prose .markdown-callout {
+  margin: 0.9rem 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid #94a3b8;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  background: #f8fafc;
+}
+.prose .markdown-callout p { margin: 0; }
+.prose .markdown-callout p + p { margin-top: 0.45rem; }
+.prose .markdown-evidence { border-left-color: #16a36a; background: #f0fdf7; }
+.prose .markdown-table-wrap { max-width: 100%; overflow-x: auto; margin: 0.9rem 0 1.2rem; }
+.prose .markdown-table-wrap table { display: table; width: 100%; }
+.prose .code-panel {
+  margin: 1rem 0 1.35rem;
+  overflow: hidden;
+  border: 1px solid #dbe3ed;
+  border-radius: var(--radius-md);
+  background: #101b2d;
+}
+.prose .code-panel figcaption { padding: 0.65rem 1rem; color: #cbd5e1; background: #1c2a40; font: 600 0.78rem var(--font-sans); letter-spacing: 0.04em; text-transform: uppercase; }
+.prose pre.code-block { margin: 0; padding: 1rem 1.1rem; overflow: auto; color: #e2e8f0; background: #101b2d; font: 0.92rem/1.65 var(--font-mono); tab-size: 2; }
+.prose pre.code-block code { white-space: pre; }
+.syntax-keyword { color: #93c5fd; }
+.syntax-string { color: #86efac; }
+.syntax-number { color: #fda4af; }
+.syntax-comment { color: #94a3b8; font-style: italic; }
+.program-line { display: block; min-height: 1.6em; }
+.block-chip { display: inline-block; margin: 0.12rem 0; padding: 0.15rem 0.65rem; border-radius: 0.45rem; color: #102033; background: #facc15; white-space: pre-wrap; }
+.block-event { background: #f59e0b; }
+.block-control { background: #fb923c; }
+.block-data { background: #c4b5fd; }
+.block-output { background: #67e8f9; }
+.block-action { background: #fde68a; }
+.content-load-error { margin: 2rem auto; padding: 1.5rem; max-width: 42rem; border: 1px solid #fecaca; border-radius: var(--radius-md); background: #fff7f7; }
+.content-load-error h1 { margin-bottom: 0.6rem; font-size: 1.35rem; }
+.content-load-error p + p { margin-top: 0.5rem; }
+.markdown-loading { max-width: 64rem; margin: 2rem auto; padding: 1.1rem 1.25rem; border-radius: var(--radius-md); color: var(--text-muted); background: var(--bg-card-subtle); }
+
+.learning-step:target { outline: 3px solid #bfdbfe; outline-offset: 3px; }
