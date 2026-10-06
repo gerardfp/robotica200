@@ -165,13 +165,25 @@
     const index = contentRoot.querySelector('.learning-step-index');
     if (!steps.length || !index) return;
 
+    const firstTitle = steps[0].querySelector('h3')?.textContent.trim() || '';
+    const unitLabel = /^(sessió|sessio|s\d+\b)/i.test(firstTitle) ? 'Sessió'
+      : /^(lliçó|l\d+\b)/i.test(firstTitle) ? 'Lliçó'
+        : /^[a-d]-\d+\b/i.test(firstTitle) ? 'Repte' : 'Pas';
+    const pluralLabel = unitLabel === 'Sessió' ? 'sessions'
+      : unitLabel === 'Lliçó' ? 'lliçons'
+        : unitLabel === 'Repte' ? 'reptes' : 'passos';
+    const pluralArticle = unitLabel === 'Sessió' || unitLabel === 'Lliçó' ? 'per les' : 'pels';
+    index.setAttribute('aria-label', `Navegació ${pluralArticle} ${pluralLabel} de la situació`);
+    const sequenceHeading = steps[0].closest('.detail-section')?.querySelector('h2');
+    if (sequenceHeading) sequenceHeading.after(index);
+    else steps[0].before(index);
+
     const coverImage = Array.from(contentRoot.querySelectorAll('.sa-illustration'))
       .find(figure => !figure.closest('.learning-step'));
     const firstHeading = steps[0].querySelector('h3');
     if (coverImage && firstHeading) firstHeading.after(coverImage);
 
     index.className = 'learning-wizard';
-    index.setAttribute('aria-label', 'Navegació pels passos de la situació');
     index.replaceChildren();
 
     const status = document.createElement('p');
@@ -192,27 +204,28 @@
     const picker = document.createElement('div');
     picker.className = 'learning-wizard-picker';
     picker.setAttribute('role', 'group');
-    picker.setAttribute('aria-label', 'Tria un pas');
+    picker.setAttribute('aria-label', `Tria ${unitLabel.toLowerCase()}`);
 
     const controls = document.createElement('div');
     controls.className = 'learning-wizard-controls';
     const previous = document.createElement('button');
     previous.type = 'button';
     previous.className = 'btn-wizard-step';
-    previous.textContent = '← Pas anterior';
+    previous.textContent = `← ${unitLabel} anterior`;
     const next = document.createElement('button');
     next.type = 'button';
     next.className = 'btn-wizard-step primary';
-    next.textContent = 'Pas següent →';
+    next.textContent = `${unitLabel} següent →`;
     controls.append(previous, next);
 
     const buttons = steps.map((step, position) => {
-      const title = step.querySelector('h3')?.textContent.trim() || `Pas ${position + 1}`;
+      const heading = step.querySelector('h3')?.textContent.trim() || `Pas ${position + 1}`;
+      const title = heading.replace(/^(?:(?:sessió|sessio|lliçó|lliço)\s+\d+|[a-d]-\d+|[sl]\d+)\s*[·:—-]\s*/i, '').trim() || heading;
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'learning-wizard-step';
       button.textContent = String(position + 1);
-      button.setAttribute('aria-label', `Obrir pas ${position + 1}: ${title}`);
+      button.setAttribute('aria-label', `Obrir ${unitLabel.toLowerCase()} ${position + 1}: ${title}`);
       button.addEventListener('click', () => activate(position));
       picker.appendChild(button);
       return { step, title, button };
@@ -227,7 +240,7 @@
         if (index === current) button.setAttribute('aria-current', 'step');
         else button.removeAttribute('aria-current');
       });
-      const label = `Pas ${current + 1} de ${steps.length}: ${buttons[current].title}`;
+      const label = `${unitLabel} ${current + 1} de ${steps.length} · ${buttons[current].title}`;
       status.textContent = label;
       progress.setAttribute('aria-valuenow', String(current + 1));
       progress.setAttribute('aria-valuetext', label);
@@ -666,7 +679,7 @@
           }
 
           const challenge = value('challenge');
-          const contentHasChallenge = parsed.html.includes('sa-challenge') || /Repte o pregunta guia/i.test(parsed.html);
+          const contentHasChallenge = /<h2\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html);
           if (challenge && !contentHasChallenge) {
             fragment.querySelector('[data-challenge]').textContent = challenge;
             fragment.querySelector('[data-challenge-section]').hidden = false;

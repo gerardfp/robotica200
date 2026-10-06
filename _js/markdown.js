@@ -164,9 +164,11 @@
       if (image) {
         const src = escapeHTML(safeURL(image[2], sourceURL, true));
         let caption = '';
-        if (lines[i + 1] && /^\s*_[^_].*_[ \t]*$/.test(lines[i + 1])) {
-          caption = inline(lines[i + 1].trim().slice(1, -1), sourceURL);
-          i += 1;
+        let captionLine = i + 1;
+        while (captionLine < lines.length && !lines[captionLine].trim()) captionLine += 1;
+        if (lines[captionLine] && /^\s*_[^_].*_[ \t]*$/.test(lines[captionLine])) {
+          caption = inline(lines[captionLine].trim().slice(1, -1), sourceURL);
+          i = captionLine;
         }
         output.push(`<figure class="sa-illustration"><img src="${src}" alt="${escapeHTML(image[1])}" width="600" height="448" loading="lazy">${caption ? `<figcaption>${caption}</figcaption>` : ''}</figure>`);
         i += 1;

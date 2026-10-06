@@ -15,6 +15,8 @@ assert.equal(pilot.steps.length, 6, "cada lliçó ha de ser una targeta navegabl
 assert.equal((pilot.html.match(/class="learning-phase"/g) || []).length, 18, "cada lliçó mostra les seues tres fases");
 assert.equal((pilot.html.match(/class="code-panel"/g) || []).length, 2, "els exemples pseudocodi i Python es renderitzen com a blocs");
 assert.equal((pilot.html.match(/class="sa-illustration"/g) || []).length, 1, "la portada Markdown es renderitza com a figura de situació");
+assert.match(pilot.html, /<figcaption>Una llista guarda/, "els peus d'imatge separats per una línia en blanc es mantenen dins de la figura");
+assert.doesNotMatch(pilot.html, /<p>_[^<]+_<\/p>/, "el peu d'imatge no apareix amb els guions baixos literals");
 assert.match(pilot.html, /syntax-keyword/, "el codi Python rep ressaltat sintàctic");
 assert.match(pilot.html, /href="https:\/\/assets\.education\.lego\.com\//, "els enllaços externs es conserven");
 
@@ -52,6 +54,8 @@ assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statS
 assert.match(componentSource, /new URLSearchParams\(window\.location\.search\)/, "la pàgina tria el Markdown a partir de l'ID de la URL");
 assert.match(componentSource, /function initializeLearningWizard/, "les sessions s'inicialitzen com un assistent de passos");
 assert.match(componentSource, /aria-valuetext/, "el progrés del wizard té una descripció accessible");
+assert.match(componentSource, /sequenceHeading\.after\(index\)/, "la navegació apareix junt a la seqüència, després del context");
+assert.ok(componentSource.includes('contentHasChallenge = /<h2\\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html)'), "el repte no es duplica si ja té una secció pròpia");
 assert.match(styles, /\.learning-step\[hidden\]/, "els passos no actius es retiren de la lectura visual");
 
 const unsafe = renderer.parse('## Prova\n\n<script>alert(1)</script>\n\n[x](javascript:alert(1))', "https://example.test/a.md");
