@@ -239,6 +239,7 @@
     let openPhase = false;
     let sequenceSection = false;
     let introPending = false;
+    let wizardInserted = false;
     const closePhase = () => { if (openPhase) { output.push('</section>'); openPhase = false; } };
     const closeStep = () => { closePhase(); if (openStep) { output.push('</section>'); openStep = false; } };
     const closeSection = () => { closeStep(); if (openSection) { output.push('</section>'); openSection = false; } introPending = false; };
@@ -279,6 +280,7 @@
           if (!openSection) { output.push('<section class="detail-section">'); openSection = true; }
           closeStep();
           const stepNumber = steps.length + 1;
+          if (!wizardInserted) { output.push('<!--LEARNING_WIZARD-->'); wizardInserted = true; }
           output.push(`<section class="learning-step" id="${id}" data-step="${stepNumber}" x-show="step === ${steps.length}" x-cloak><header class="learning-step-header"><span class="learning-step-kicker">Pas ${stepNumber}</span><h3>${inline(title, sourceURL)}</h3></header>`);
           openStep = true;
           steps.push({ id, title: plainTitle });
@@ -381,7 +383,8 @@
       <ol class="learning-wizard-picker" aria-label="Tria un pas"><template x-for="(item, index) in steps" :key="item.id"><li><button type="button" class="learning-wizard-step" x-on:click="step = index" :aria-label="'Obrir pas ' + (index + 1) + ': ' + item.title" :aria-current="step === index ? 'step' : null"><span class="learning-wizard-step-number" x-text="index + 1"></span><span class="learning-wizard-step-title" x-text="item.title"></span></button></li></template></ol>
       <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" x-on:click="step = Math.max(0, step - 1)" :disabled="step === 0">← Pas anterior</button><button type="button" class="btn-wizard-step primary" x-on:click="step = Math.min(steps.length - 1, step + 1)" :disabled="step === steps.length - 1">Pas següent →</button></div>
     </nav>` : '';
-    return { data, html: stepIndex + output.join('\n'), steps };
+    const rendered = output.join('\n').replace('<!--LEARNING_WIZARD-->', stepIndex);
+    return { data, html: rendered, steps };
   }
 
   global.RoboticsMarkdown = { parse: renderMarkdown, splitFrontMatter };

@@ -537,6 +537,22 @@ window.CATALEG = {
       "repte": "Com podem descriure i classificar els colors que observem a l’horta sense confondre una lectura del sensor amb la identificació d’un objecte?"
     },
     {
+      "id": "situacio-sa-cs-estacions-codi",
+      "slug": "cs-estacions-codi",
+      "url": "situacio/index.html?id=cs-estacions-codi",
+      "titol": "Estacions de codi: del bloc al mapa",
+      "robot": "coding-set",
+      "robotLabel": "Coding Set",
+      "cicle": "primer-cicle",
+      "cicleLabel": "Primer cicle",
+      "tematica": "entorn-local",
+      "tematicaLabel": "Entorn i comunitat",
+      "materia": "pensament-computacional",
+      "materiaLabel": "Pensament computacional, llengües i expressió artística",
+      "sessions": "12 sessions de 45 minuts",
+      "repte": "Com podem passar d’unes ordres tangibles a una història i un mapa que una altra classe puga comprendre i recórrer?"
+    },
+    {
       "id": "situacio-sa-desendollada-cripto",
       "slug": "desendollada-cripto",
       "url": "situacio/index.html?id=desendollada-cripto",
