@@ -51,6 +51,7 @@ const expectedDetailKinds = [
 for (const [route, kind, folder, prefix, expected, entries] of expectedDetailKinds) {
   const page = fs.readFileSync(path.join(root, route, "index.html"), "utf8");
   assert.match(page, new RegExp(`<content-detail-page kind="${kind}"`), `${route} utilitza el component compartit`);
+  assert.match(page, /_js\/components\.js\?v=/, `${route} invalida la memòria cau del router actualitzat`);
   const docs = fs.readdirSync(path.join(root, "_content", folder)).filter(file => file.startsWith(prefix) && file.endsWith(".md"));
   assert.equal(docs.length, expected, `${route} té el nombre esperat de documents Markdown`);
   assert.equal(fs.readdirSync(path.join(root, route)).filter(file => fs.existsSync(path.join(root, route, file, "index.html"))).length, 0, `${route} no manté shells HTML per document`);
@@ -58,6 +59,10 @@ for (const [route, kind, folder, prefix, expected, entries] of expectedDetailKin
     assert.equal(entries.length, expected, `catàleg ${route} sincronitzat des del Markdown`);
     assert.ok(entries.every(item => item.url.startsWith(`${route}/index.html?id=`)), `les targetes ${route} usen una ruta compartida`);
   }
+}
+for (const pageName of ["pensament-computacional", "robotica-educativa", "situacions-aprenentatge"]) {
+  const page = fs.readFileSync(path.join(root, pageName, "index.html"), "utf8");
+  assert.match(page, /_js\/components\.js\?v=/, `${pageName} descarrega la versió actual del router AJAX`);
 }
 const robotMarkdown = fs.readFileSync(path.join(root, "_content/robots/robot-spike.md"), "utf8");
 const robotRecord = renderer.parse(robotMarkdown, "https://example.test/_content/robots/robot-spike.md");
