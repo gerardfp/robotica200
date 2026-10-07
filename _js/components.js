@@ -505,6 +505,16 @@
     }
   }
 
+  class ContentLoading extends HTMLElement {
+    connectedCallback() {
+      const message = this.getAttribute('message') || 'Carregant el contingut';
+      this.classList.add('content-loading');
+      this.setAttribute('role', 'status');
+      this.setAttribute('aria-live', 'polite');
+      this.innerHTML = `<span class="content-loading-spinner" aria-hidden="true"></span><span>${message}…</span>`;
+    }
+  }
+
   // 4. Plantilla de pàgina d'activitat
   class ActivityPage extends HTMLElement {
     connectedCallback() {
@@ -595,7 +605,39 @@
   // Pàgines editorials compartides: activitat, tutorial, robot i guia.
   class ContentDetailPage extends HTMLElement {
     connectedCallback() {
-      const kind = this.getAttribute('kind') || '';
+      this._onDetailClick = event => {
+        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const anchor = event.target.closest('a[href]');
+        if (!anchor || anchor.target || anchor.hasAttribute('download')) return;
+        const target = new URL(anchor.href, window.location.href);
+        if (target.origin !== window.location.origin) return;
+        const route = target.pathname.match(/\/(activitat|tutorial|robot|guia)\/index\.html$/);
+        const id = target.searchParams.get('id') || '';
+        if (!route || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) return;
+        event.preventDefault();
+        window.history.pushState({ contentDetail: true }, '', target.href);
+        this.loadFromLocation(route[1]);
+      };
+      this._onDetailPopstate = () => {
+        const route = window.location.pathname.match(/\/(activitat|tutorial|robot|guia)\/index\.html$/);
+        if (route) this.loadFromLocation(route[1]);
+      };
+      document.addEventListener('click', this._onDetailClick);
+      window.addEventListener('popstate', this._onDetailPopstate);
+      this.loadFromLocation();
+    }
+
+    disconnectedCallback() {
+      document.removeEventListener('click', this._onDetailClick);
+      window.removeEventListener('popstate', this._onDetailPopstate);
+    }
+
+    loadFromLocation(routeKind = '') {
+      const routeKinds = { activitat: 'activity', tutorial: 'tutorial', robot: 'robot', guia: 'guide' };
+      const kind = routeKind ? routeKinds[routeKind] : (this.getAttribute('kind') || '');
+      if (kind) this.setAttribute('kind', kind);
+      const requestId = (this._detailRequestId || 0) + 1;
+      this._detailRequestId = requestId;
       const root = cleanRoot(this.getAttribute('root') || '../');
       const id = new URLSearchParams(window.location.search).get('id') || '';
       const safeId = /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id) ? id : '';
@@ -611,6 +653,7 @@
           const [renderer, templateResponse] = await Promise.all([
             loadMarkdownRenderer(root), fetch(`${root}_templates/content-detail-page.html`)
           ]);
+          if (requestId !== this._detailRequestId) return;
           if (!templateResponse.ok) throw new Error('No s’ha pogut carregar la plantilla de contingut.');
           const parsedTemplate = new DOMParser().parseFromString(await templateResponse.text(), 'text/html');
           const copy = name => {
@@ -621,8 +664,10 @@
           this.replaceChildren(copy('content-detail-loading'));
           if (!safeId) throw new Error('Tria un contingut des del catàleg per obrir-ne el detall.');
           const response = await fetch(markdownPath);
+          if (requestId !== this._detailRequestId) return;
           if (!response.ok) throw new Error(`No s’ha pogut carregar el contingut (${response.status}).`);
           const source = await response.text();
+          if (requestId !== this._detailRequestId) return;
           const rendered = renderer.parse(source.replace(/\]\(_assets\//g, "](../../_assets/"), response.url);
           const data = rendered.data;
           const title = String(data.title || safeId).trim();
@@ -675,8 +720,16 @@
           ensureDocumentHead(root, title, description);
           document.title = `${title} | Robòtica²⁰⁰`;
           this.replaceChildren(fragment);
+          const heading = this.querySelector('.detail-page-title, .robot-hero-title');
+          if (heading) {
+            heading.setAttribute('tabindex', '-1');
+            heading.focus({ preventScroll: true });
+          }
+          window.scrollTo({ top: 0, behavior: 'auto' });
         } catch (error) {
+          if (requestId !== this._detailRequestId) return;
           const templates = await fetch(`${root}_templates/content-detail-page.html`).then(response => response.text());
+          if (requestId !== this._detailRequestId) return;
           const parsed = new DOMParser().parseFromString(templates, 'text/html');
           const template = parsed.getElementById('content-detail-error');
           if (template) {
@@ -687,7 +740,9 @@
             fragment.querySelector('[data-error-message]').textContent = error.message;
             this.replaceChildren(fragment);
           } else this.textContent = error.message;
-        } finally { this.removeAttribute('aria-busy'); }
+        } finally {
+          if (requestId === this._detailRequestId) this.removeAttribute('aria-busy');
+        }
       });
     }
   }
@@ -695,6 +750,34 @@
   // 6. Plantilla de pàgina de situació d'aprenentatge
   class SituationPage extends HTMLElement {
     connectedCallback() {
+      this._onSituationClick = event => {
+        if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        const anchor = event.target.closest('a[href]');
+        if (!anchor || anchor.target || anchor.hasAttribute('download')) return;
+        const target = new URL(anchor.href, window.location.href);
+        if (target.origin !== window.location.origin || !/\/situacio\/index\.html$/.test(target.pathname)) return;
+        const id = target.searchParams.get('id') || '';
+        if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) return;
+        event.preventDefault();
+        window.history.pushState({ situationDetail: true }, '', target.href);
+        this.loadSituation();
+      };
+      this._onSituationPopstate = () => {
+        if (/\/situacio\/index\.html$/.test(window.location.pathname)) this.loadSituation();
+      };
+      document.addEventListener('click', this._onSituationClick);
+      window.addEventListener('popstate', this._onSituationPopstate);
+      this.loadSituation();
+    }
+
+    disconnectedCallback() {
+      document.removeEventListener('click', this._onSituationClick);
+      window.removeEventListener('popstate', this._onSituationPopstate);
+    }
+
+    loadSituation() {
+      const requestId = (this._situationRequestId || 0) + 1;
+      this._situationRequestId = requestId;
       const root = cleanRoot(this.getAttribute('root') || '../');
       const backHref = this.getAttribute('back-href') || `${root}situacions-aprenentatge/index.html`;
       const backLabel = this.getAttribute('back-label') || "Situacions d'Aprenentatge";
@@ -704,9 +787,10 @@
 
       deferRender(this, async () => {
         const showError = async (title, message, help = '') => {
-          this.removeAttribute('aria-busy');
+          if (requestId !== this._situationRequestId) return;
           try {
             const templates = await loadSituationTemplates(root);
+            if (requestId !== this._situationRequestId) return;
             const fragment = clonePageTemplate(templates, 'situation-page-error-template');
             const back = fragment.querySelector('[data-back-navigation]');
             back.setAttribute('href', backHref);
@@ -730,10 +814,13 @@
 
         try {
           const [renderer, templates] = await Promise.all([loadMarkdownRenderer(root), loadSituationTemplates(root)]);
+          if (requestId !== this._situationRequestId) return;
           this.replaceChildren(clonePageTemplate(templates, 'situation-page-loading-template'));
           const response = await fetch(contentSource);
+          if (requestId !== this._situationRequestId) return;
           if (!response.ok) throw new Error(`No s’ha pogut carregar el contingut (${response.status}).`);
           const source = await response.text();
+          if (requestId !== this._situationRequestId) return;
           const parsed = renderer.parse(source, response.url);
           const fragment = clonePageTemplate(templates, 'situation-page-template');
           const header = fragment.querySelector('[data-site-header]');
@@ -794,10 +881,16 @@
           const descriptionTag = document.querySelector('meta[name="description"]');
           if (descriptionTag && description) descriptionTag.content = description;
           this.replaceChildren(fragment);
-          this.removeAttribute('aria-busy');
+          const heading = this.querySelector('.detail-page-title');
+          if (heading) { heading.setAttribute('tabindex', '-1'); heading.focus({ preventScroll: true }); }
+          window.scrollTo({ top: 0, behavior: 'auto' });
         } catch (error) {
+          if (requestId !== this._situationRequestId) return;
           console.error('Error carregant la situació en Markdown:', error);
           await showError('No s’ha pogut carregar aquesta situació', error.message || 'Comprova la connexió local i el fitxer de contingut.', 'Recarrega la pàgina quan el fitxer Markdown estiga disponible.');
+        }
+        finally {
+          if (requestId === this._situationRequestId) this.removeAttribute('aria-busy');
         }
       });
     }
@@ -1302,6 +1395,7 @@
     ['site-header', SiteHeader],
     ['site-footer', SiteFooter],
     ['nav-back', NavBack],
+    ['content-loading', ContentLoading],
     ['activity-page', ActivityPage],
     ['tutorial-page', TutorialPage],
     ['content-detail-page', ContentDetailPage],

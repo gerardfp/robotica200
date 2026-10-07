@@ -73,6 +73,12 @@ for (const templateId of ["situation-page-template", "situation-page-loading-tem
 }
 assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statSync(path.join(root, "situacio", name)).isDirectory()).length, 0, "no hi ha shells HTML individuals");
 assert.match(componentSource, /new URLSearchParams\(window\.location\.search\)/, "la pàgina tria el Markdown a partir de l'ID de la URL");
+assert.match(componentSource, /history\.pushState\(\{ contentDetail: true \}/, "les fitxes canvien de contingut sense recarregar el document");
+assert.match(componentSource, /addEventListener\('popstate'/, "el botó enrere/avant del navegador restaura la fitxa corresponent");
+assert.match(componentSource, /loadFromLocation\(route\[1\]\)/, "la ruta AJAX actualitza el tipus i l'identificador de la fitxa");
+assert.match(componentSource, /heading\.focus\(\{ preventScroll: true \}\)/, "el canvi de contingut mou el focus al títol");
+assert.match(componentSource, /history\.pushState\(\{ situationDetail: true \}/, "les situacions també canvien de fitxa sense recarregar el document");
+assert.match(componentSource, /_onSituationPopstate/, "l'historial del navegador restaura les situacions");
 assert.match(componentSource, /function initializeLearningWizard/, "les sessions s'inicialitzen com un assistent de passos");
 assert.match(componentSource, /aria-valuetext/, "el progrés del wizard té una descripció accessible");
 assert.match(componentSource, /sequenceHeading\.after\(index\)/, "la navegació apareix junt a la seqüència, després del context");

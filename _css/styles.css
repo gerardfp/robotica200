@@ -2642,7 +2642,10 @@ robot-profile[robot="microbit"] .robot-detail-section,
 .content-load-error { margin: 2rem auto; padding: 1.5rem; max-width: 42rem; border: 1px solid #fecaca; border-radius: var(--radius-md); background: #fff7f7; }
 .content-load-error h1 { margin-bottom: 0.6rem; font-size: 1.35rem; }
 .content-load-error p + p { margin-top: 0.5rem; }
-.markdown-loading { max-width: 64rem; margin: 2rem auto; padding: 1.1rem 1.25rem; border-radius: var(--radius-md); color: var(--text-muted); background: var(--bg-card-subtle); }
+.content-loading { display: flex; align-items: center; justify-content: center; gap: 0.7rem; min-height: 7rem; margin: 1.5rem auto; padding: 1.25rem; border-radius: var(--radius-md); color: var(--text-muted); background: var(--bg-card-subtle); font-weight: 600; }
+.content-loading-spinner { width: 1.15rem; height: 1.15rem; flex: 0 0 auto; border: 3px solid color-mix(in srgb, var(--primary) 22%, transparent); border-top-color: var(--primary); border-radius: 50%; animation: contentLoadingSpin 0.8s linear infinite; }
+@keyframes contentLoadingSpin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .content-loading-spinner { animation: none; } }
 
 .learning-step:target { outline: 3px solid #bfdbfe; outline-offset: 3px; }
 .learning-step[hidden] { display: none !important; }
