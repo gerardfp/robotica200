@@ -615,7 +615,7 @@
         const id = target.searchParams.get('id') || '';
         if (!route || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) return;
         event.preventDefault();
-        window.history.pushState({ contentDetail: true }, '', target.href);
+        window.history.pushState({ ...(window.history.state || {}), contentDetail: true }, '', target.href);
         this.loadFromLocation(route[1]);
       };
       this._onDetailPopstate = () => {
@@ -759,7 +759,7 @@
         const id = target.searchParams.get('id') || '';
         if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) return;
         event.preventDefault();
-        window.history.pushState({ situationDetail: true }, '', target.href);
+        window.history.pushState({ ...(window.history.state || {}), situationDetail: true }, '', target.href);
         this.loadSituation();
       };
       this._onSituationPopstate = () => {
@@ -1416,5 +1416,51 @@
     if (!customElements.get(tag)) {
       customElements.define(tag, cls);
     }
+  });
+
+  // Des del catàleg, obri la fitxa dins del document actual; guarda el catàleg
+  // perquè el botó Enrere el puga restaurar sense tornar a descarregar l'HTML.
+  const viewSnapshots = new Map();
+  let viewSequence = 0;
+  const detailRoute = pathname => pathname.match(/\/(activitat|tutorial|robot|guia|situacio)\/index\.html$/);
+  const currentViewKey = () => {
+    const state = window.history.state || {};
+    if (state.roboticsViewKey) return state.roboticsViewKey;
+    const key = `view-${++viewSequence}`;
+    window.history.replaceState({ ...state, roboticsViewKey: key }, '', window.location.href);
+    viewSnapshots.set(key, { body: document.body.cloneNode(true), title: document.title });
+    return key;
+  };
+  const mountDetailRoute = routeName => {
+    const routeKinds = { activitat: 'activity', tutorial: 'tutorial', robot: 'robot', guia: 'guide' };
+    const element = document.createElement(routeName === 'situacio' ? 'situation-page' : 'content-detail-page');
+    if (routeName !== 'situacio') element.setAttribute('kind', routeKinds[routeName]);
+    element.setAttribute('root', '../');
+    document.body.replaceChildren(element);
+  };
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const anchor = event.target.closest('a[href]');
+    if (!anchor || anchor.target || anchor.hasAttribute('download')) return;
+    const target = new URL(anchor.href, window.location.href);
+    const route = target.origin === window.location.origin ? detailRoute(target.pathname) : null;
+    const id = target.searchParams.get('id') || '';
+    if (!route || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) return;
+    event.preventDefault();
+    currentViewKey();
+    window.history.pushState({ roboticsDetail: true }, '', target.href);
+    mountDetailRoute(route[1]);
+  });
+  window.addEventListener('popstate', event => {
+    const route = detailRoute(window.location.pathname);
+    if (route) {
+      if (!document.querySelector('content-detail-page, situation-page')) mountDetailRoute(route[1]);
+      return; // La fitxa actual gestiona canvis entre fitxes.
+    }
+    const snapshot = event.state && viewSnapshots.get(event.state.roboticsViewKey);
+    if (!snapshot) return;
+    const restoredBody = snapshot.body.cloneNode(true);
+    document.body.replaceChildren(...Array.from(restoredBody.childNodes));
+    document.title = snapshot.title;
   });
 })();
