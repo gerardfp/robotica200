@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pensament Computacional Desendollat | Robòtica200</title>
+  <title id="page-title" x-sync>Pensament Computacional Desendollat | Robòtica200</title>
   <meta name="description" content="Activitats desendollades de pensament computacional per a l'aula.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,24 +12,38 @@
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
   <script src="../_js/cataleg.js?v=10a126d"></script>
   <script src="../_js/components.js?v=10a126d"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 </head>
 <body>
-  <site-header active="pensament" root="../"></site-header>
+  <site-header id="site-header" x-sync active="pensament" root="../"></site-header>
+  <main id="page-content" class="container page-content">
   <div class="robots-hero">
     <div class="container robots-hero-inner">
       <nav-back href="../index.html" label="inici"></nav-back>
       <div class="robots-hero-content">
         <h1 class="robots-hero-title">Pensament Computacional</h1>
         <p class="robots-hero-desc">Activitats desendollades per treballar instruccions, patrons, decisions i dades amb el cos i materials d'aula.</p>
-        <accent-dashes></accent-dashes>
+        <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
       </div>
       <div class="robots-hero-media">
         <img src="../_assets/banners/pensament-computacional.png" alt="Pensament Computacional" class="robots-hero-img" width="800" height="600">
       </div>
     </div>
   </div>
-  <main class="container page-content">
-    <activity-grid root="../"></activity-grid>
+    <div class="clean-grid" x-data="{ items: window.CATALEG.activitats }">
+      <template x-for="item in items" :key="item.id">
+        <a :id="item.id" :href="'../' + item.url" x-target.push="page-content" class="item-card">
+          <div class="card-top">
+            <span class="tag-badge primary" x-text="item.tag"></span>
+            <span class="tag-badge" x-show="item.cicle" x-text="item.cicle"></span>
+          </div>
+          <h3 class="item-title" x-text="item.titol"></h3>
+          <p class="item-desc" x-text="item.descripcio"></p>
+          <div class="item-footer"><span x-text="'⏱️ ' + item.durada"></span><span>Veure activitat →</span></div>
+        </a>
+      </template>
+    </div>
 
   </main>
   <site-footer></site-footer>

@@ -74,10 +74,23 @@
       return stash(`<img src="${src}" alt="${escapeHTML(alt)}"${titleAttr} width="600" height="448" loading="lazy">`);
     });
     value = value.replace(/\[([^\]]+)\]\(([^\s)]+)(?:\s+"([^"]*)")?\)/g, (_, label, href, title) => {
-      const url = escapeHTML(safeURL(href, base, false));
+      const resolved = safeURL(href, base, false);
+      const url = escapeHTML(resolved);
       const titleAttr = title ? ` title="${escapeHTML(title)}"` : '';
-      const external = /^https?:/i.test(url) ? ' target="_blank" rel="noopener noreferrer"' : '';
-      return stash(`<a href="${url}"${titleAttr}${external}>${escapeHTML(label)}</a>`);
+      let external = '';
+      let ajaxTarget = '';
+      try {
+        const destination = new URL(resolved, base);
+        const source = new URL(base);
+        if (destination.origin !== source.origin) external = ' target="_blank" rel="noopener noreferrer"';
+        else if (!destination.hash) {
+          const path = destination.pathname;
+          if (/\/(?:activitat|tutorial|robot|guia|situacio)\/index\.html$/.test(path) || /\/(?:index\.html)?$/.test(path)) {
+            ajaxTarget = ' x-target.push="page-content"';
+          }
+        }
+      } catch (_) { /* Keep malformed or unsupported links as ordinary links. */ }
+      return stash(`<a href="${url}"${titleAttr}${ajaxTarget}${external}>${escapeHTML(label)}</a>`);
     });
     value = escapeHTML(value);
     value = value.replace(/`([^`]+)`/g, '<code>$1</code>');
@@ -165,7 +178,7 @@
         } else if (level === 3 && (isStep(plainTitle) || sequenceSection)) {
           if (!openSection) { output.push('<section class="detail-section">'); openSection = true; }
           closeStep();
-          output.push(`<section class="learning-step" id="${id}"><h3>${inline(title, sourceURL)}</h3>`);
+          output.push(`<section class="learning-step" id="${id}" x-show="step === ${steps.length}" x-cloak><h3>${inline(title, sourceURL)}</h3>`);
           openStep = true;
           steps.push({ id, title: plainTitle });
         } else if (level === 4 && isPhase(plainTitle)) {
@@ -240,7 +253,15 @@
     }
     closeSection();
 
-    const stepIndex = steps.length ? `<nav class="learning-step-index" aria-label="Passos de la situació"><strong>Ves directament a un pas</strong><ol>${steps.map(step => `<li><a href="#${step.id}">${escapeHTML(step.title)}</a></li>`).join('')}</ol></nav>` : '';
+    const stepIndex = steps.length ? `<nav class="learning-step-index learning-wizard" aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" role="status" aria-live="polite" aria-atomic="true" x-text="'Pas ' + (step + 1) + ' de ' + steps.length + ' · ' + steps[step].title"></p>
+      <div class="learning-wizard-progress" role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" :aria-valuemax="steps.length" :aria-valuenow="step + 1" :aria-valuetext="'Pas ' + (step + 1) + ' de ' + steps.length">
+        <span :style="'width: ' + ((step + 1) / steps.length * 100) + '%'" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><template x-for="(item, index) in steps" :key="item.id"><li><button type="button" class="learning-wizard-step" x-on:click="step = index" :aria-label="'Obrir pas ' + (index + 1) + ': ' + item.title" :aria-current="step === index ? 'step' : null" x-text="index + 1"></button></li></template></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" x-on:click="step = Math.max(0, step - 1)" :disabled="step === 0">← Pas anterior</button><button type="button" class="btn-wizard-step primary" x-on:click="step = Math.min(steps.length - 1, step + 1)" :disabled="step === steps.length - 1">Pas següent →</button></div>
+    </nav>` : '';
     return { data, html: stepIndex + output.join('\n'), steps };
   }
 

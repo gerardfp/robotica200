@@ -2577,6 +2577,7 @@ robot-profile[robot="microbit"] .robot-detail-section,
 .sa-card { scroll-margin-top: 7rem; }
 
 /* Contingut editorial Markdown i passos de les situacions */
+[x-cloak] { display: none !important; }
 .learning-step-index {
   margin: 0 0 1.5rem;
   padding: 1rem 1.2rem;

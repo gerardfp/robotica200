@@ -1,36 +1,39 @@
 <template id="situation-page-loading-template">
-  <content-loading message="Carregant la situació"></content-loading>
+  <div class="content-loading" role="status" aria-live="polite"><span class="content-loading-spinner" aria-hidden="true"></span><span>Carregant la situació…</span></div>
 </template>
 
 <template id="situation-page-error-template">
-  <main class="container page-content">
-    <nav-back data-back-navigation></nav-back>
-    <section class="content-load-error" role="alert">
-      <h1 data-error-title></h1>
-      <p data-error-message></p>
-      <p data-error-help></p>
-    </section>
-  </main>
+  <nav-back data-back-navigation></nav-back>
+  <section class="content-load-error" role="alert">
+    <h1 data-error-title></h1>
+    <p data-error-message></p>
+    <p data-error-help></p>
+  </section>
 </template>
 
 <template id="situation-page-template">
-  <site-header data-site-header active="situacions"></site-header>
-  <main class="container page-content">
-    <nav-back data-back-navigation></nav-back>
-    <article class="detail-page-card">
-      <div class="detail-page-header">
-        <div class="detail-page-badges" data-badges></div>
-        <h1 class="detail-page-title" data-title></h1>
-        <span class="tag-badge" data-theme hidden></span>
+  <nav-back data-back-navigation></nav-back>
+  <article class="detail-page-card"
+    x-data="{ title: '', badges: [], theme: '', challenge: '', showChallenge: false, content: '', steps: [], step: 0 }"
+    x-on:situation-ready="Object.assign($data, $event.detail)">
+    <div class="detail-page-header">
+      <div class="detail-page-badges">
+        <template x-for="(badge, index) in badges" :key="index">
+          <span class="tag-badge" :class="{ 'primary': badge.primary }">
+            <img x-show="badge.icon" :src="badge.icon" alt="" class="tag-badge-icon" width="20" height="20">
+            <span x-text="badge.text"></span>
+          </span>
+        </template>
       </div>
-      <div class="prose">
-        <section class="detail-section" data-challenge-section hidden>
-          <h2>Repte o pregunta guia</h2>
-          <p class="sa-challenge" data-challenge></p>
-        </section>
-        <div data-markdown-content></div>
-      </div>
-    </article>
-  </main>
-  <site-footer></site-footer>
+      <h1 class="detail-page-title" data-title x-text="title"></h1>
+      <span class="tag-badge" data-theme x-text="theme" x-show="theme"></span>
+    </div>
+    <div class="prose">
+      <section class="detail-section" data-challenge-section x-show="showChallenge" x-cloak>
+        <h2>Repte o pregunta guia</h2>
+        <p class="sa-challenge" data-challenge x-text="challenge"></p>
+      </section>
+      <div data-markdown-content x-html="content"></div>
+    </div>
+  </article>
 </template>

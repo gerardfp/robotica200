@@ -12,6 +12,8 @@ const pilot = renderer.parse(fs.readFileSync(pilotPath, "utf8"), "https://exampl
 assert.equal(pilot.data.title, "Lògica per a una escola oberta");
 assert.equal(pilot.data.robot, "spike");
 assert.equal(pilot.steps.length, 6, "cada lliçó ha de ser una targeta navegable");
+assert.match(pilot.html, /x-for="\(item, index\) in steps"/, "els controls del wizard són HTML d'Alpine generat amb la plantilla");
+assert.match(pilot.html, /x-show="step === 0" x-cloak/, "el pas actiu es controla amb Alpine");
 assert.equal((pilot.html.match(/class="learning-phase"/g) || []).length, 18, "cada lliçó mostra les seues tres fases");
 assert.equal((pilot.html.match(/class="code-panel"/g) || []).length, 2, "els exemples pseudocodi i Python es renderitzen com a blocs");
 assert.equal((pilot.html.match(/class="sa-illustration"/g) || []).length, 1, "la portada Markdown es renderitza com a figura de situació");
@@ -19,6 +21,9 @@ assert.match(pilot.html, /<figcaption>Una llista guarda/, "els peus d'imatge sep
 assert.doesNotMatch(pilot.html, /<p>_[^<]+_<\/p>/, "el peu d'imatge no apareix amb els guions baixos literals");
 assert.match(pilot.html, /syntax-keyword/, "el codi Python rep ressaltat sintàctic");
 assert.match(pilot.html, /href="https:\/\/assets\.education\.lego\.com\//, "els enllaços externs es conserven");
+const navigationLink = renderer.parse('[Obri la situació](../../situacio/index.html?id=sp-exemple)', 'https://example.test/_content/situacions/exemple.md');
+assert.match(navigationLink.html, /x-target\.push="page-content"/, "els enllaços Markdown interns activen Alpine AJAX");
+assert.doesNotMatch(navigationLink.html, /target="_blank"/, "els enllaços interns no s'obrin com si foren externs");
 
 const contentDir = path.join(root, "_content/situacions");
 const activeFiles = fs.readdirSync(contentDir)
@@ -62,7 +67,19 @@ for (const [route, kind, folder, prefix, expected, entries] of expectedDetailKin
 }
 for (const pageName of ["pensament-computacional", "robotica-educativa", "situacions-aprenentatge"]) {
   const page = fs.readFileSync(path.join(root, pageName, "index.html"), "utf8");
-  assert.match(page, /_js\/components\.js\?v=/, `${pageName} descarrega la versió actual del router AJAX`);
+  assert.match(page, /alpine-ajax@/, `${pageName} carrega Alpine AJAX`);
+  assert.match(page, /alpinejs@/, `${pageName} carrega Alpine`);
+  assert.match(page, /id="page-content"/, `${pageName} defineix la vista AJAX compartida`);
+}
+const situationCatalogPage = fs.readFileSync(path.join(root, "situacions-aprenentatge/index.html"), "utf8");
+assert.match(situationCatalogPage, /x-data="\{[\s\S]*?matches\(item\)/, "els filtres es defineixen declarativament en Alpine");
+assert.match(situationCatalogPage, /x-effect="sync\(\)"/, "els filtres mantenen l'estat en la URL amb Alpine");
+assert.doesNotMatch(situationCatalogPage, /filters\.js/, "el catàleg no carrega un controlador de filtres separat");
+for (const file of ["pensament-computacional/index.html", "robotica-educativa/index.html", "situacions-aprenentatge/index.html", "_templates/content-detail-page.html", "_templates/situation-page.html"]) {
+  const markup = fs.readFileSync(path.join(root, file), "utf8");
+  for (const [, expression] of markup.matchAll(/x-data="([\s\S]*?)"/g)) {
+    assert.doesNotThrow(() => new Function(`return (${expression})`), `${file} té una expressió x-data vàlida`);
+  }
 }
 const robotMarkdown = fs.readFileSync(path.join(root, "_content/robots/robot-spike.md"), "utf8");
 const robotRecord = renderer.parse(robotMarkdown, "https://example.test/_content/robots/robot-spike.md");
@@ -78,15 +95,15 @@ for (const templateId of ["situation-page-template", "situation-page-loading-tem
 }
 assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statSync(path.join(root, "situacio", name)).isDirectory()).length, 0, "no hi ha shells HTML individuals");
 assert.match(componentSource, /new URLSearchParams\(window\.location\.search\)/, "la pàgina tria el Markdown a partir de l'ID de la URL");
-assert.match(componentSource, /contentDetail: true/, "les fitxes canvien de contingut sense recarregar el document");
-assert.match(componentSource, /addEventListener\('popstate'/, "el botó enrere/avant del navegador restaura la fitxa corresponent");
-assert.match(componentSource, /loadFromLocation\(route\[1\]\)/, "la ruta AJAX actualitza el tipus i l'identificador de la fitxa");
+assert.match(componentSource, /x-target\.push="page-content"/, "els enllaços del catàleg usen Alpine AJAX");
+assert.doesNotMatch(componentSource, /addEventListener\('popstate'/, "l'historial no es manté amb un router manual");
+assert.doesNotMatch(componentSource, /class (?:ActivityGrid|SituationGrid|TutorialGrid|RobotGrid|SituationFilters|RobotHero|AccentDashes)/, "els catàlegs i les peces de presentació ja no tenen renderitzadors JavaScript propis");
+assert.match(pageTemplate, /x-data=/, "les plantilles de detall usen estat declaratiu d'Alpine");
+assert.match(componentSource, /loadFromLocation\(\)/, "el component carrega Markdown segons la URL actual");
 assert.match(componentSource, /heading\.focus\(\{ preventScroll: true \}\)/, "el canvi de contingut mou el focus al títol");
-assert.match(componentSource, /situationDetail: true/, "les situacions també canvien de fitxa sense recarregar el document");
-assert.match(componentSource, /_onSituationPopstate/, "l'historial del navegador restaura les situacions");
-assert.match(componentSource, /function initializeLearningWizard/, "les sessions s'inicialitzen com un assistent de passos");
-assert.match(componentSource, /aria-valuetext/, "el progrés del wizard té una descripció accessible");
-assert.match(componentSource, /sequenceHeading\.after\(index\)/, "la navegació apareix junt a la seqüència, després del context");
+assert.match(pageTemplate, /x-on:situation-ready/, "la plantilla SDA rep les dades amb Alpine");
+assert.doesNotMatch(componentSource, /initializeLearningWizard/, "el wizard no necessita un controlador JavaScript propi");
+assert.match(pilot.html, /:aria-valuetext=/, "el progrés del wizard té una descripció accessible");
 assert.ok(componentSource.includes('contentHasChallenge = /<h2\\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html)'), "el repte no es duplica si ja té una secció pròpia");
 assert.match(styles, /\.learning-step\[hidden\]/, "els passos no actius es retiren de la lectura visual");
 

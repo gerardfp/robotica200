@@ -1,5 +1,5 @@
-- [x] Els filtres del catàleg es generen dinàmicament a partir de cataleg.js amb el component `<situation-filters>`
-- [x] Arquitectura de components ampliada: `<accent-dashes>`, `<robot-hero>`, `<robot-card>`, `<robot-grid>`, `<situation-filters>`
+- [x] Els filtres del catàleg i les targetes es defineixen en HTML amb Alpine i es nodreixen de `cataleg.js`.
+- [x] Els catàlegs i les fitxes utilitzen plantilles Alpine; els Web Components es reserven per a capçalera, peu, retorn i càrrega de contingut.
 - [ ] Posem filtres a les de Pensament Computacional ?
 - [ ] El title de la pàgina hauria de ser més concís (p. ex. Tale-Bot | Robòtica²⁰⁰)
 - [ ] DESCARTEM DE MOMENT Prova de nou estil low-poly per a robots i banners (prompts desats a `_assets/artwork/lowpoly/PROMPTS.md`)

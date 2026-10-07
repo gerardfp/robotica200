@@ -4,19 +4,18 @@ Portal educatiu obert de robòtica educativa, pensament computacional i situacio
 
 ---
 
-## Arquitectura estàtica amb Web Components
+## Arquitectura estàtica amb Alpine i Web Components
 
-La web és estàtica i està construïda amb **HTML5, CSS modern i Web Components natius**. Els `index.html` defineixen les rutes i els Web Components; les fitxes editorials es poden carregar des de Markdown en temps d’execució, sense compilar ni generar HTML. Es poden servir localment amb qualsevol servidor estàtic o publicar directament a GitHub Pages. La tipografia de Google Fonts necessita connexió; el renderitzador, els continguts i les imatges són locals.
+La web és estàtica i està construïda amb **HTML5, CSS modern, Alpine.js i Web Components natius**. Les plantilles HTML defineixen la presentació amb directives Alpine; els Web Components es reserven als elements d'estructura reutilitzables. Les fitxes editorials es carreguen des de Markdown en temps d’execució, sense compilar ni generar HTML. Es poden servir localment amb qualsevol servidor estàtic o publicar directament a GitHub Pages. Alpine i Alpine AJAX es carreguen des de CDN; el renderitzador, els continguts i les imatges són locals.
 
 - **Sense pas de compilació:** No requereix Node, npm ni dependències Python per mostrar o publicar les pàgines. En local, és preferible servir la carpeta amb `python3 -m http.server` perquè les rutes relatives funcionen de la mateixa manera que al web.
-- **Reutilització centralitzada (`_js/components.js`):**
+- **Interfície declarativa:**
+  - Els catàlegs i els filtres es defineixen en HTML amb `x-data`, `x-for`, `x-model` i `x-show`; les fitxes Markdown omplin les plantilles separades d'`_templates/` amb bindings Alpine.
+  - Alpine AJAX carrega les vistes dins de `#page-content`, sincronitza capçalera i títol, i manté l'historial del navegador.
+- **Web Components estructurals (`_js/components.js`):**
   - **Elements d'estructura:** `<site-header>`, `<site-footer>`, `<nav-back>`.
   - **Plantilla de detall compartida:** `<content-detail-page kind="activity|tutorial|robot|guide">` llig `?id=slug` i carrega el Markdown corresponent. El layout editable és a `_templates/content-detail-page.html`.
   - **Situacions d’aprenentatge:** `<situation-page root="../">` llig `?id=slug`; el layout amb passos i estat de càrrega és a `_templates/situation-page.html`.
-  - **Reixes de catàleg automàtiques:**
-    - `<activity-grid root="../"></activity-grid>`: Renderitza automàticament les targetes de pensament computacional.
-    - `<situation-grid root="../"></situation-grid>`: Renderitza la graella de situacions connectada als filtres interactius.
-    - `<tutorial-grid robot="codey-rocky" root="../../"></tutorial-grid>`: Renderitza la llista de tutorials per a cada robot.
 - **Catàleg derivat del front matter:** Per afegir una situació, crea un Markdown actiu segons [`_content/situacions/TEMPLATE-SITUACIO.md`](_content/situacions/TEMPLATE-SITUACIO.md). El component carrega el Markdown al navegador. Després executa `python3 _scripts/sync-catalog.py` perquè el catàleg filtre també les metadades del front matter. Aquest script només actualitza l’índex; no compila ni genera pàgines.
 - **Validació estàtica:** `python3 _scripts/check-static-site.py` comprova les referències locals, l'estructura de les fitxes de situacions i el mínim de cinc situacions per robot. GitHub Actions també verifica el renderitzador Markdown i la sintaxi del JavaScript abans de publicar.
 - **Cobertura de situacions oficials:** [`docs/ADAPTACIO-SITUACIONS.md`](docs/ADAPTACIO-SITUACIONS.md) relaciona les fonts oficials amb les fitxes pròpies i registra el progrés d’auditoria. SPIKE Prime té identificades 35 lliçons de les unitats temàtiques, cinc *Activity Briefs*, cinc lliçons suplementàries, l’activitat híbrida *Design for You* i dos reptes *Prime Combined*. La identificació i l’associació de fitxes no es consideren adaptació integral fins que es complete la revisió de cada seqüència.

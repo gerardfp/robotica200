@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Situacions d'Aprenentatge Curriculars | Robòtica200</title>
+  <title id="page-title" x-sync>Situacions d'Aprenentatge Curriculars | Robòtica200</title>
   <meta name="description" content="Catàleg de situacions d'aprenentatge curriculars de robòtica i pensament computacional.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,30 +12,122 @@
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
   <script src="../_js/cataleg.js?v=10a126d"></script>
   <script src="../_js/components.js?v=10a126d"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 </head>
 <body>
-  <site-header active="situacions" root="../"></site-header>
+  <site-header id="site-header" x-sync active="situacions" root="../"></site-header>
+  <main id="page-content" class="container page-content">
   <div class="robots-hero">
     <div class="container robots-hero-inner">
       <nav-back href="../index.html" label="inici"></nav-back>
       <div class="robots-hero-content">
         <h1 class="robots-hero-title">Situacions d'Aprenentatge</h1>
         <p class="robots-hero-desc">Propostes curriculars i reptes d'aula per connectar la robòtica i el pensament computacional amb contextos significatius.</p>
-        <accent-dashes></accent-dashes>
+        <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
       </div>
       <div class="robots-hero-media">
         <img src="../_assets/banners/situacions-aprenentatge.png" alt="Situacions d'Aprenentatge" class="robots-hero-img" width="800" height="600">
       </div>
     </div>
   </div>
-  <main class="container page-content">
-    <situation-filters root="../"></situation-filters>
-
-    <situation-grid root="../"></situation-grid>
-    <p id="situations-empty" hidden>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>
+    <div x-data="{
+      robot: new URLSearchParams(location.search).get('robot') || 'all',
+      cicle: new URLSearchParams(location.search).get('cicle') || 'all',
+      tematica: new URLSearchParams(location.search).get('tematica') || 'all',
+      materia: new URLSearchParams(location.search).get('materia') || 'all',
+      situations: window.CATALEG.situacions,
+      robotOptions: [
+        ['coding-express', 'Coding Express'], ['tale-bot', 'Tale-Bot'], ['coding-set', 'Coding Set'],
+        ['codey-rocky', 'Codey Rocky'], ['spike', 'SPIKE Prime'], ['microbit', 'Micro:bit'], ['desendollat', 'Desendollat (sense robot)']
+      ],
+      cycleOptions: [
+        ['infantil', 'Educació Infantil'], ['segon-cicle-infantil', 'Infantil i primer cicle'],
+        ['primer-cicle', 'Primer cicle'], ['segon-cicle', 'Segon cicle'], ['tercer-cicle', 'Tercer cicle']
+      ],
+      topicOptions: Array.from(new Map(window.CATALEG.situacions.map(item => [item.tematica, item.tematicaLabel])).entries()),
+      subjectOptions: Array.from(new Map(window.CATALEG.situacions.map(item => [item.materia, item.materiaLabel])).entries()),
+      matches(item) {
+        return ['robot', 'cicle', 'tematica', 'materia'].every(key => {
+          const values = String(item[key] || '').split(/\s+/);
+          return this[key] === 'all' || values.includes(this[key]) || (key === 'cicle' && values.includes('tots'));
+        });
+      },
+      withFilters(href) {
+        const url = new URL(href, location.href);
+        ['robot', 'cicle', 'tematica', 'materia'].forEach(key => {
+          if (this[key] === 'all') url.searchParams.delete(key);
+          else url.searchParams.set(key, this[key]);
+        });
+        return url.href;
+      },
+      count() { return this.situations.filter(item => this.matches(item)).length; },
+      total() { return this.situations.length; },
+      sync() {
+        const params = new URLSearchParams();
+        ['robot', 'cicle', 'tematica', 'materia'].forEach(key => { if (this[key] !== 'all') params.set(key, this[key]); });
+        history.replaceState(history.state || {}, '', location.pathname + (params.size ? '?' + params : '') + location.hash);
+      },
+      reset() { this.robot = this.cicle = this.tematica = this.materia = 'all'; }
+    }"
+      x-effect="sync()"
+      x-init="$nextTick(() => location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)))?.focus({ preventScroll: true }))">
+      <div class="filters-bar">
+        <div class="filter-group">
+          <label class="filter-label" for="filter-robot"><img src="../_assets/icons/pack/robot.png" alt="" class="filter-label-icon" height="36">Robot</label>
+          <select id="filter-robot" class="filter-select" x-model="robot">
+            <option value="all">Tots els robots</option>
+            <template x-for="option in robotOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label" for="filter-cicle"><img src="../_assets/icons/pack/cicle.png" alt="" class="filter-label-icon" height="36">Cicle</label>
+          <select id="filter-cicle" class="filter-select" x-model="cicle">
+            <option value="all">Tots els cicles</option>
+            <template x-for="option in cycleOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label" for="filter-tematica"><img src="../_assets/icons/pack/tematica.png" alt="" class="filter-label-icon" height="36">Temàtica</label>
+          <select id="filter-tematica" class="filter-select" x-model="tematica">
+            <option value="all">Totes les temàtiques</option>
+            <template x-for="option in topicOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label class="filter-label" for="filter-materia"><img src="../_assets/icons/pack/materia.png" alt="" class="filter-label-icon" height="36">Matèria</label>
+          <select id="filter-materia" class="filter-select" x-model="materia">
+            <option value="all">Totes les matèries</option>
+            <template x-for="option in subjectOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+          </select>
+        </div>
+        <div class="filter-count">
+          <span id="situations-count" role="status" aria-live="polite" x-text="'Mostrant ' + count() + ' de ' + total() + ' situacions'"></span>
+          <button type="button" class="btn-reset-filters" x-on:click="reset()">Restablir filtres</button>
+        </div>
+      </div>
+      <div class="clean-grid" id="situations-grid">
+        <template x-for="item in situations" :key="item.id">
+          <a :id="item.id" :href="withFilters('../' + item.url)" x-show="matches(item)" x-target.push="page-content" class="item-card sa-card"
+             :data-robot="item.robot" :data-cicle="item.cicle" :data-tematica="item.tematica" :data-materia="item.materia">
+            <div class="card-top">
+              <div class="card-robot-info">
+                <template x-if="item.robot"><img :src="'../_assets/icons/' + item.robot + '.png'" alt="" class="card-robot-sa-icon" width="36" height="36"></template>
+                <span class="tag-badge primary" x-text="item.robotLabel"></span>
+              </div>
+              <span class="tag-badge" x-text="item.cicleLabel"></span>
+            </div>
+            <h3 class="item-title" x-text="item.titol"></h3>
+            <div class="sa-challenge" x-text="'“' + item.repte + '”'"></div>
+            <div class="card-tags"><span class="tag-pill" x-text="item.materiaLabel"></span><span class="tag-pill" x-text="item.tematicaLabel"></span></div>
+            <div class="item-footer"><span x-text="'⏱️ ' + (item.sessions || item.durada)"></span><span>Obrir situació →</span></div>
+          </a>
+        </template>
+      </div>
+      <p id="situations-empty" x-show="count() === 0" x-cloak>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>
+    </div>
 
   </main>
   <site-footer></site-footer>
-  <script src="../_js/filters.js?v=10a126d"></script>
 </body>
 </html>

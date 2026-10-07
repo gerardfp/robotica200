@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robòtica Educativa - Els 6 Robots d&#39;Aula | Robòtica200</title>
+  <title id="page-title" x-sync>Robòtica Educativa - Els 6 Robots d&#39;Aula | Robòtica200</title>
   <meta name="description" content="Guies didàctiques i tutorials dels 6 robots educatius d&#39;aula.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,24 +12,47 @@
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
   <script src="../_js/cataleg.js?v=10a126d"></script>
   <script src="../_js/components.js?v=10a126d"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 </head>
 <body>
-  <site-header active="robotica-educativa" root="../"></site-header>
+  <site-header id="site-header" x-sync active="robotica-educativa" root="../"></site-header>
+  <main id="page-content" class="container page-content">
   <div class="robots-hero">
     <div class="container robots-hero-inner">
       <nav-back href="../index.html" label="inici"></nav-back>
       <div class="robots-hero-content">
         <h1 class="robots-hero-title">Robòtica educativa</h1>
         <p class="robots-hero-desc">Selecciona un robot per accedir a la seva pàgina d'aprenentatge i tutorials específics.</p>
-        <accent-dashes></accent-dashes>
+        <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
       </div>
       <div class="robots-hero-media">
         <img src="../_assets/banners/robotica.png" alt="Robots d'Aula" class="robots-hero-img" width="800" height="600">
       </div>
     </div>
   </div>
-  <main class="container page-content">
-    <robot-grid root="../"></robot-grid>
+    <div class="clean-grid" x-data="{ robots: window.CATALEG.robots, tutorials: window.CATALEG.tutorials, tutorialCount(item) { return item.tutorials ?? this.tutorials.filter(tutorial => tutorial.robot === item.slug).length; } }">
+      <template x-for="item in robots" :key="item.id">
+        <a :id="item.id" :href="'../' + item.url" x-target.push="page-content" class="robot-card" :class="'robot-' + item.prefix">
+          <div class="robot-card-media">
+            <span class="robot-age-badge"><span class="badge-icon">👤</span> <span x-text="item.edat"></span></span>
+            <img :src="'../_assets/robots/' + item.slug + '.png'" :alt="item.nom" class="robot-card-img" width="400" height="225" loading="lazy">
+          </div>
+          <div class="robot-card-body">
+            <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
+            <h3 class="robot-card-title" x-text="item.nom"></h3>
+            <p class="robot-card-desc" x-text="item.descripcio"></p>
+            <div class="robot-card-footer">
+              <span class="robot-tutorials-count">
+                <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span x-text="tutorialCount(item) + (tutorialCount(item) === 1 ? ' tutorial' : ' tutorials')"></span>
+              </span>
+              <span class="robot-card-action">Entrar a la pàgina →</span>
+            </div>
+          </div>
+        </a>
+      </template>
+    </div>
 
   </main>
   <site-footer></site-footer>

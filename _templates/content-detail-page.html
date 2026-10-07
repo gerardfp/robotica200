@@ -1,27 +1,67 @@
 <template id="content-detail-loading">
-  <main class="container page-content"><content-loading message="Carregant el contingut"></content-loading></main>
+  <div class="content-loading" role="status" aria-live="polite"><span class="content-loading-spinner" aria-hidden="true"></span><span>Carregant el contingut…</span></div>
 </template>
 <template id="content-detail-error">
-  <main class="container page-content">
-    <nav-back data-back></nav-back>
-    <section class="content-load-error" role="alert"><h1 data-error-title></h1><p data-error-message></p></section>
-  </main>
+  <nav-back data-back></nav-back>
+  <section class="content-load-error" role="alert"><h1 data-error-title></h1><p data-error-message></p></section>
 </template>
 <template id="content-detail-template">
-  <site-header data-header></site-header>
-  <robot-hero data-robot-hero hidden></robot-hero>
-  <main class="container page-content">
-    <nav-back data-back></nav-back>
-    <article class="detail-page-card">
-      <div class="detail-page-header"><div class="detail-page-badges" data-badges></div><h1 class="detail-page-title" data-title></h1><p class="detail-intro" data-description hidden></p></div>
-      <div class="prose" data-content></div>
-    </article>
-    <section data-robot-extra hidden>
-      <div class="robot-tutorials-heading"><div class="robot-tutorials-heading-main"><div><h2 data-tutorial-heading></h2><p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p></div></div></div>
-      <tutorial-grid data-tutorial-grid></tutorial-grid>
-      <section class="robot-official-resources" data-official-resources hidden><h2>Recursos oficials del fabricant</h2><p>Materials, compatibilitat i instruccions actualitzades.</p><ul data-resource-list></ul></section>
-      <p class="robot-status-note" data-status hidden></p><div class="robot-specs-list" data-specs></div>
-    </section>
-  </main>
-  <site-footer></site-footer>
+  <div x-data="{ title: '', description: '', badges: [], content: '', steps: [], step: 0, robot: false, robotSlug: '', root: '../', resources: [], statusNote: '', statusSource: '', statusSourceLabel: '', specs: [] }"
+    x-on:detail-ready="Object.assign($data, $event.detail)">
+  <section class="robot-hero" data-robot-hero x-show="robot" x-cloak :class="'robot-hero-' + robotSlug" :data-robot="robotSlug">
+    <div class="container robot-hero-inner">
+      <nav-back data-robot-back></nav-back>
+      <div class="robot-hero-content">
+        <h1 class="robot-hero-title" x-text="title"></h1>
+        <p class="robot-hero-sub" x-text="description" x-show="description"></p>
+        <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
+      </div>
+      <div class="robot-hero-media"><img :src="root + '_assets/robots/' + robotSlug + '.png'" :alt="title" class="robot-hero-img" width="600" height="448"></div>
+    </div>
+  </section>
+  <nav-back data-back x-show="!robot" x-cloak></nav-back>
+  <article class="detail-page-card">
+    <div class="detail-page-header">
+      <div class="detail-page-badges">
+        <template x-for="(badge, index) in badges" :key="index">
+          <span class="tag-badge" :class="{ 'primary': badge.primary }">
+            <img x-show="badge.icon" :src="badge.icon" alt="" class="tag-badge-icon" width="20" height="20">
+            <span x-text="badge.text"></span>
+          </span>
+        </template>
+      </div>
+      <h1 class="detail-page-title" data-title x-text="title" x-show="!robot"></h1>
+      <p class="detail-intro" data-description x-text="description" x-show="description && !robot"></p>
+    </div>
+    <div class="prose" data-content x-html="content"></div>
+  </article>
+  <section data-robot-extra x-show="robot" x-cloak>
+    <div class="robot-tutorials-heading"><div class="robot-tutorials-heading-main"><div><h2 data-tutorial-heading x-text="'Tutorials de ' + title"></h2><p>Tutorials pas a pas pensats per a l'ús directe a l'aula.</p></div></div></div>
+    <div class="clean-grid tutorial-grid" data-tutorial-grid x-data="{ items: [] }" x-on:tutorials-ready="items = $event.detail.items">
+      <template x-for="item in items" :key="item.id">
+        <article class="tutorial-card" :id="item.id">
+          <div class="card-top">
+            <div class="card-badges">
+              <span class="tag-badge" :class="'badge-' + item.dificultat.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-')" x-text="item.dificultat"></span>
+              <span class="tag-badge badge-durada" x-text="'⏱️ ' + item.durada"></span>
+            </div>
+            <img :src="'../_assets/icons/' + item.robot + '.svg'" alt="" class="card-robot-icon" width="28" height="28">
+          </div>
+          <a :href="'../' + item.url" x-target.push="page-content" class="tutorial-card-media-link" :aria-label="item.titol">
+            <div class="tutorial-card-media"><img :src="'../' + (item.imatge || ('_assets/robots/' + item.robot + '.png'))" :alt="item.titol" class="tutorial-card-img" loading="lazy"></div>
+          </a>
+          <h3 class="tutorial-card-title"><a :href="'../' + item.url" x-target.push="page-content" x-text="item.titol"></a></h3>
+          <p class="tutorial-card-desc" x-text="item.descripcio"></p>
+          <div class="tutorial-card-footer">
+            <a :href="'../' + item.url" x-target.push="page-content" class="btn-step-by-step">Pas a pas d'aula →</a>
+            <a :href="'../' + item.url" x-target.push="page-content" class="btn-open-tutorial">Obrir tutorial →</a>
+          </div>
+        </article>
+      </template>
+    </div>
+    <section class="robot-official-resources" data-official-resources x-show="resources.length"><h2>Recursos oficials del fabricant</h2><p>Materials, compatibilitat i instruccions actualitzades.</p><ul><template x-for="resource in resources" :key="resource.href"><li><a :href="resource.href" target="_blank" rel="noopener noreferrer" x-text="resource.title"></a><span x-text="resource.description"></span></li></template></ul></section>
+    <p class="robot-status-note" data-status x-show="statusNote"><strong>Estat i disponibilitat del kit:</strong> <span x-text="statusNote"></span> <a :href="statusSource" target="_blank" rel="noopener noreferrer" x-text="statusSourceLabel || 'Font oficial'"></a></p>
+    <div class="robot-specs-list" data-specs><template x-for="spec in specs" :key="spec"><span class="robot-spec-pill" x-text="spec"></span></template></div>
+  </section>
+  </div>
 </template>

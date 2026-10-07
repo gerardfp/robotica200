@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Robòtica200 | Robòtica per a docents</title>
+  <title id="page-title" x-sync>Robòtica200 | Robòtica per a docents</title>
   <meta name="description" content="Recursos oberts de robòtica educativa i pensament computacional per a mestres i professors.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="_css/styles.css?v=3">
   <link rel="icon" type="image/svg+xml" href="_assets/icons/logo.svg">
   <script src="_js/components.js?v=10a126d"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@imacrayon/alpine-ajax@0.12.7/dist/cdn.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
 </head>
 <body>
-  <site-header active="inici" root=""></site-header>
-  <main class="container page-content">
+  <site-header id="site-header" x-sync active="inici" root=""></site-header>
+  <main id="page-content" class="container page-content">
 <div class="home-intro">
   <button type="button" class="home-hero-icon" aria-label="Interactua amb el robot de Robòtica 200">
     <svg viewBox="0 0 73.025 75.142" class="home-hero-svg" role="img" aria-label="Robot Robòtica 200" xmlns="http://www.w3.org/2000/svg">
@@ -35,17 +37,17 @@
   <div class="home-desc"><p>Robòtica per a docents</p></div>
 </div>
 <div class="three-pillars">
-  <a href="pensament-computacional/index.html" class="pillar-card">
+  <a href="pensament-computacional/index.html" x-target.push="page-content" class="pillar-card">
 <div class="pillar-media"><img src="_assets/banners/pensament-computacional.png" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Pensament computacional</h2>
     <p class="pillar-desc">Activitats desendollades de PC per treballar la lògica, els algorismes i la resolució de problemes sense pantalles.</p>
     <div class="pillar-action">Explorar activitats →</div>
   </a>
-  <a href="robotica-educativa/index.html" class="pillar-card">
+  <a href="robotica-educativa/index.html" x-target.push="page-content" class="pillar-card">
 <div class="pillar-media"><img src="_assets/banners/robotica.png" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Robòtica educativa</h2>
     <p class="pillar-desc">Tutorials i guies dels 6 robots d'aula.</p>
     <div class="pillar-action">Veure els 6 robots →</div>
   </a>
-  <a href="situacions-aprenentatge/index.html" class="pillar-card">
+  <a href="situacions-aprenentatge/index.html" x-target.push="page-content" class="pillar-card">
 <div class="pillar-media"><img src="_assets/banners/situacions-aprenentatge.png" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Situacions d'aprenentatge</h2>
     <p class="pillar-desc">Catàleg curricular filtrable per robot, cicle educatiu, temàtica transversal i matèria d'aprenentatge.</p>
     <div class="pillar-action">Obrir catàleg →</div>
