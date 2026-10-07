@@ -24,6 +24,13 @@ La classe prepara una microexposició digital de l’aiguamoll de l’Albufera. 
 
 La unitat oficial té dues lliçons per a alumnat d’uns 7–9 anys: familiarització amb components i transferència de programa, icones predefinides i disseny LED píxel a píxel; després, taumàtrop, bucle continu, bucle comptat i avaluació. Aquesta seqüència conserva tots aquests objectius i els situa en un context valencià verificable.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Abstraure un tret observable d’una planta o animal i representar-lo amb una icona de 5×5 píxels.
+- Ordenar dos fotogrames per suggerir un moviment sense afirmar que la placa reprodueix el comportament real.
+- Programar, provar i revisar una animació breu amb els blocs disponibles.
+- Comunicar la decisió artística i distingir una observació pròpia d’una inferència sobre l’espècie.
+
 ## 🧰 Materials i preparació
 
 BBC micro:bit física i cable USB o simulador MakeCode, ordinador/tauleta, projector opcional, graelles 5 × 5, llapis, paper, cartolina lleugera, llapis de colors, cinta i pal de cartó o dos llaços de paper per al taumàtrop. Prepareu una icona predefinida per analitzar, un projecte MakeCode inicial i targetes de seqüència desconnectada. Trieu imatges pròpies o amb ús autoritzat i fonts datades; la informació local es pot contrastar amb la [guia pública de l’Albufera](https://parquesnaturales.gva.es/documents/80302883/168872077/RUTA%2B1%2B-%2B%2BVOLTA%2BA%2BL%27ALBUFERA%2BEN%2BBICICLETA.pdf/efb00d45-964e-4115-a8fe-6e30bb45508c). Si la identificació d’una espècie no està verificada, descriviu-la com a “au observada” o “planta de l’aiguamoll” i no li assigneu un nom científic.

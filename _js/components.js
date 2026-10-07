@@ -65,7 +65,7 @@
     if (!document.querySelector('link[href*="_css/styles.css"]')) {
       const css = document.createElement('link');
       css.rel = 'stylesheet';
-      css.href = `${root}_css/styles.css?v=2`;
+      css.href = `${root}_css/styles.css?v=6`;
       document.head.appendChild(css);
     }
 
@@ -101,7 +101,7 @@
     window._roboticsMarkdownLoading = new Promise((resolve, reject) => {
       const existing = document.querySelector('script[data-robotics-markdown]');
       const script = existing || document.createElement('script');
-      script.src = `${cleanRoot(root)}_js/markdown.js`;
+      script.src = `${cleanRoot(root)}_js/markdown.js?v=uniform-sda-2`;
       script.dataset.roboticsMarkdown = 'true';
       script.onload = () => window.RoboticsMarkdown ? resolve(window.RoboticsMarkdown) : reject(new Error('No s’ha pogut inicialitzar el renderitzador Markdown.'));
       script.onerror = () => reject(new Error('No s’ha pogut carregar _js/markdown.js.'));

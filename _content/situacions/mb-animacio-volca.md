@@ -24,6 +24,13 @@ El museu escolar prepara una peça digital per explicar com una animació simpli
 
 La seqüència conserva les cinc lliçons de *Volcano animations* per a alumnat d’uns 8–9 anys: animació i descomposició amb dansa/flipbook, diagrama i repetició, planificació de l’erupció, programació/prova/depuració i reflexió. L’animació del projecte és un model gràfic de quatre estats triats, no una seqüència universal ni una eina de predicció geològica.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Descompondre un fenomen en fotogrames i ordenar-los perquè una altra persona puga reconstruir-ne el canvi.
+- Representar moviment amb una matriu de 5×5 i controlar què canvia entre dos fotogrames.
+- Usar una repetició per a mostrar un patró i relacionar-lo amb el diagrama o l’algorisme.
+- Provar l’animació en la placa, depurar una transició i explicar que és un model gràfic, no una simulació científica d’una erupció.
+
 ## 🧰 Materials i preparació
 
 BBC micro:bit física o simulador MakeCode, projector opcional, paper per a diagrames i flipbooks, quadrícula 5 × 5, llapis de colors, cartolina per a la maqueta seca i targetes amb els termes *magma*, *lava*, *erupció* i *animació*. Reviseu abans una font de l’Institut Geogràfic Nacional sobre el fenomen i la seua cartografia; distingiu magma subterrani de lava que arriba a la superfície. Per al vincle valencià, podeu consultar la documentació de l’IGN que identifica zones volcàniques documentades, inclosos Cofrentes i Columbretes. No suposeu que el volcà de la maqueta representa cap d’aquestes àrees.

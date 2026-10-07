@@ -26,6 +26,13 @@ _La maqueta mostra dades consultades al núvol; no mesura el vent que fa al pati
 
 > **Límit del model:** La maqueta representa dades d’una previsió per a una ubicació i una hora. No mesura el vent del pati ni és un dispositiu d’avís o seguretat.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Interpretar una dada quantitativa de velocitat del vent i identificar-ne la font i les unitats.
+- Construir i calibrar un indicador amb intervals que es puguen distingir i provar.
+- Afegir una segona condició o direcció i comprovar com canvia la representació.
+- Comunicar que el prototip representa dades i no mesura el vent ni substitueix els avisos oficials.
+
 ## 📅 Seqüència didàctica · 3 sessions
 
 ### **S1 · Construïm i interpretem un indicador (45–60 min).**

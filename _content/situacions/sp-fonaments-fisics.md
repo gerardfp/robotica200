@@ -22,6 +22,13 @@ _Un mateix sistema combina peces, sensors, motors, instruccions i decisions de l
 
 La classe prepara una mostra per a explicar com la robòtica pot ajudar en tasques de cura, educació i vida quotidiana. Al llarg de sis lliçons, els equips defineixen criteris per col·laborar i organitzar els materials, diferencien un robot d’una màquina programable, experimenten amb la llum, el so, els motors i els sensors, i milloren un prototip a partir de proves registrades. La seqüència adapta el mòdul *What Is a Robot?* de LEGO Education *Foundations of Physical Computing*; les preguntes, els contextos, les proves i les evidències són propis. Cap prototip es presenta com un dispositiu de servei real ni com una solució certificada.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Explicar com interactuen estructura, actuadors, sensors i programa en un sistema robòtic.
+- Provar una entrada i una eixida i descriure què canvia quan es modifica el codi.
+- Construir i iterar un prototip amb rols cooperatius i proves observables.
+- Relacionar la computació física amb tasques professionals sense atribuir autonomia o capacitats no provades.
+
 ## 📅 Seqüència didàctica · sis lliçons
 
 ### **Lliçó 1 · Introducció a la robòtica (45 min).**

@@ -22,7 +22,13 @@ _Comptem, comparem i comprovem distàncies de joguina amb Coding Express._
 
 La classe prepara una ruta entre espais familiars —per exemple, la biblioteca, el mercat i la plaça— representats en una maqueta de taula. Primer compara distàncies amb una mateixa unitat; després investiga què passa quan tria diferents nombres de moviment en l’app Coding Express. Les comparacions es refereixen al tren i al circuit concret de prova: els nombres de l’app no són metres, no indiquen quant hi ha entre llocs reals i poden variar segons el circuit i la configuració.
 
-**Aprenentatges:** mesurar amb unitats no convencionals repetides, comparar «més curt/més llarg», ordenar nombres, anticipar un resultat, descriure una seqüència de parades i revisar la predicció observant el moviment.
+
+## 🎯 Aprenentatges i vocabulari
+
+- Mesurar recorreguts amb unitats no convencionals repetibles i comparar-ne la longitud.
+- Ordenar nombres de moviment i relacionar-los amb el desplaçament observat en una via concreta.
+- Predir una parada, provar-la més d’una vegada i registrar diferències entre intents.
+- Explicar per què els nombres de l’app no són metres ni distàncies reals entre llocs.
 
 ## 🧰 Materials i preparació
 

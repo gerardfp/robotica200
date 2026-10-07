@@ -22,6 +22,13 @@ _La fira de prototips investiga necessitats reals sense donar per fet què neces
 
 Adaptació de la unitat *Invention Squad* per al context d’un centre educatiu valencià. Cada sessió conserva l’objectiu oficial i el tradueix en un repte, materials i criteris propis; quan una activitat del pla és híbrida o no requereix el hub, s’indica expressament en la sessió.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar barreres en una situació fictícia i convertir-les en requisits de disseny verificables.
+- Construir alternatives de mecanisme i comparar-les amb una prova justa i el mateix criteri.
+- Iterar un prototip a partir de les observacions de persones voluntàries, sense inferir necessitats individuals.
+- Explicar què millora la solució, per a qui s’ha provat i quines barreres continuen presents.
+
 ## 📅 Seqüència didàctica · 6 reptes / 8–10 sessions
 
 ### **S1 · Interpretem tres senyals del museu ([Help!](https://education.lego.com/en-us/lessons/prime-invention-squad/help/), 60 min + neteja).**

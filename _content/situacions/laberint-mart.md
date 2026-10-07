@@ -24,6 +24,13 @@ La unitat oficial *Competition Ready* de LEGO Education introdueix la conducció
 
 La seqüència oficial inclou en 2026–27 una missió guiada vinculada a FIRST LEGO League. La sessió 4 conserva l’estructura didàctica de preparar una ruta, alinear el robot, activar un model i valorar fiabilitat i estratègia, però usa un repte, un camp i models propis. No reprodueix ni representa la missió, el tapet o els materials oficials de la temporada.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Construir i calibrar una base mòbil, i registrar com canvien la ruta i la precisió quan s’ajusta una variable.
+- Integrar moviment, sensors de línia i mecanismes per resoldre missions de camp amb rols cooperatius.
+- Comparar intents, localitzar una fallada i justificar la revisió amb dades de proves repetides.
+- Comunicar què ha resolt el robot, quina decisió ha pres l’equip i quins límits conserva la maqueta ambiental.
+
 ## 📅 Seqüència didàctica · 12–15 sessions
 
 ### **S1 · Base i conducció precisa · [Training Camp 1: Driving Around](https://education.lego.com/en-us/lessons/prime-competition-ready/training-camp-1-driving-around/) (30–45 min).**

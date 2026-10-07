@@ -22,6 +22,13 @@ _Les dades de les targetes són registres de prova: qualsevol decisió sobre l�
 
 Adaptació de la unitat *Life Hacks* per al context d’un centre educatiu valencià. Cada sessió conserva l’objectiu oficial i el tradueix en un repte, materials i criteris propis; quan una activitat del pla és híbrida o no requereix el hub, s’indica expressament en la sessió.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar variables i distingir observacions de valors simulats o inferències.
+- Planificar una recollida de dades comparable i repetir mesures mantenint constants les condicions acordades.
+- Usar dades i condicions en un programa per respondre a una necessitat fictícia del festival.
+- Argumentar una decisió amb gràfics i declarar la incertesa i els límits de la mostra.
+
 ## 📅 Seqüència didàctica · 8 lliçons / 10–12 sessions
 
 La classe prepara una mostra interactiva per al pati i l’hort escolar. Cada equip passa d’una observació o necessitat a una prova amb dades, i diferencia sempre una previsió, una mesura del model i una decisió de les persones responsables. El programa no recull dades de salut ni puntua alumnes; cap control automàtic rega o modifica un espai real.

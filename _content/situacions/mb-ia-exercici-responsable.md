@@ -56,6 +56,13 @@ Incorporeu les etiquetes ML a MakeCode i programeu un temporitzador visual curt 
 
 Completeu una fitxa del model: propòsit, origen i tractament de dades, categories, resultats, límits i impactes possibles. Presenteu-lo, rebeu preguntes i decidiu en quines circumstàncies no s’hauria d’utilitzar.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Distingir un sistema basat en regles d’un model que aprén patrons a partir de dades.
+- Netejar i separar conjunts d’entrenament i prova, documentant exclusions i condicions.
+- Calcular encerts, errors i dubtes, revisar biaixos i iterar sense usar dades personals o biomètriques.
+- Construir una eixida controlable per a una maqueta i presentar una model card amb usos, riscos i límits.
+
 ## 🧰 Requisits i alternativa didàctica
 
 CreateAI, MakeCode, navegador o app compatible, micro:bit V2, alimentació i cable de dades; una segona placa pot ser necessària segons el Bluetooth de l’ordinador. El servei guarda projectes al navegador o dispositiu i el fitxer HEX pot incloure dades, model i codi. Si no es pot usar l’eina, les lliçons 1, 2, 5 i 8 continuen amb targetes; les sessions de ML es poden fer amb un classificador en paper identificat com a simulació, sense afirmar que s’ha entrenat un model.

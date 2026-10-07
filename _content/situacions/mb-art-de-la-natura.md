@@ -24,6 +24,13 @@ Una galeria de l’aiguamoll de l’Albufera mostrarà com una observació natur
 
 La unitat oficial *Nature art* conté quatre lliçons per a 7–8 anys: observació i representació amb materials, algoritmes d’art, representació digital amb LEDs i programació/avaluació d’imatges. Aquesta situació conserva la progressió i situa el treball en un entorn valencià; una visita física és opcional i mai no implica recol·lectar éssers vius.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Observar formes naturals amb respecte i triar-ne trets essencials per a una representació.
+- Descompondre una icona en una graella de 5×5 i explicar quina informació conserva o perd.
+- Escriure i depurar un algorisme per representar una forma amb materials i píxels.
+- Comparar interpretacions, justificar decisions artístiques i evitar presentar una icona com una identificació científica.
+
 ## 🧰 Materials i preparació
 
 Prepareu micro:bit física o simulador, MakeCode, cable USB si es transferirà a placa, graelles 5 × 5, quadern d’observació, llapis, paper translúcid o cartolina, ceres/llapis de colors i retalls de materials d’art no tòxics. Trieu una zona segura del pati o imatges i il·lustracions amb ús autoritzat. Es pot consultar la [guia pública del Parc Natural de l’Albufera](https://parquesnaturales.gva.es/documents/80302883/168872077/RUTA%2B1%2B-%2B%2BVOLTA%2BA%2BL%27ALBUFERA%2BEN%2BBICICLETA.pdf/efb00d45-964e-4115-a8fe-6e30bb45508c) per decidir què investigar; anoteu la font i no afirmeu el nom d’una espècie si no l’heu verificat. Reviseu el flux de descàrrega MakeCode abans de la sessió. Manteniu micro:bit seca i no la porteu a l’aiguamoll.

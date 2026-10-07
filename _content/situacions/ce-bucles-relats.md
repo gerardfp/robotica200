@@ -22,6 +22,13 @@ _El recorregut tancat fa visible una repetició; l’equip decideix quan començ
 
 Quatre sessions exploren la diferència entre repetir una acció i fer-la una sola vegada. L’alumnat compara recorreguts, observa patrons i crea relats amb tornades. Els bucles es representen amb les possibilitats reals de les vies i peces del kit; si el robot no disposa d’una ordre programable de repetició, el patró s’explicita en targetes i s’executa manualment.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar accions i trams que es repeteixen en un recorregut o relat.
+- Representar un patró repetit amb una seqüència d’ordres, targetes o moviments.
+- Comparar una repetició finita amb una que no té una condició de parada explícita.
+- Provar el patró i explicar quina regla permet saber quan acaba.
+
 ## Abans de començar
 
 Prepareu Coding Express, vies rectes i corbes, figures de paper, targetes d’acció i instruments senzills o percussió corporal. Comproveu quines vies i blocs hi ha al vostre lot. Les rondes es fan en una maqueta sense obstacles al voltant de les rodes, i qualsevol repetició es limita a un nombre acordat de torns.

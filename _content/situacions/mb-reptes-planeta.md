@@ -90,6 +90,13 @@ Compareu node, ràdio i passarel·la amb un mapa de dades simulades de temperatu
 
 En una quadrícula de paper, dissenyeu i compareu algorismes que visiten cel·les marcades, comptant passos i obstacles. Després representeu un vehicle amb cartó; si es motoritza, calen motors/controlador compatibles externs. No es descàrrega cap substància i no es proposa cap robot real com a resposta suficient a un vessament.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Analitzar un repte ambiental o de benestar i delimitar què pot comprovar una maqueta escolar.
+- Dissenyar una entrada, una regla i una eixida amb micro:bit, registrant les condicions de prova.
+- Comparar les prediccions amb resultats repetits i comunicar errors, riscos i casos no coberts.
+- Proposar una alternativa que no manipule fauna ni dades personals i que no prometa protecció real.
+
 ## 🧰 Materials, prototips i avaluació
 
 Micro:bit, MakeCode, cartó, mapa, materials reflectants, peces de maqueta i fitxes de dades simulades. Les ràdios funcionen entre plaques dins dels límits de l’entorn; sensors d’humitat, llum externs, relés, motors o altres elements no formen part de la placa i necessiten maquinari compatible addicional. Cada equip lliura mapa del problema, font d’informació, criteris, diagrama/pseudocodi, prototip, proves i un apartat «què no pot fer».
@@ -101,3 +108,7 @@ No captureu dades personals ni biomètriques. No poseu dispositius a animals ni 
 ## 🧪 Evidències i avaluació
 
 Rúbrica compartida: comprensió del problema, qualitat de les fonts, algorisme, elecció de components reals, proves repetibles, cooperació i comunicació de límits. Avalueu també qui podria quedar exclòs, quines conseqüències no previstes hi ha i quina alternativa de baix cost o desconnectada existeix.
+
+## 🔗 Fonts oficials i abast de l’adaptació
+
+La col·lecció reinterpreta els reptes públics de [Protecting animals on land](https://www.microbit.org/teach/lessons/protecting-animals/), [Saving sea creatures](https://www.microbit.org/teach/lessons/sea-creatures/), [Being active](https://www.microbit.org/teach/lessons/being-active/), [Night safety](https://www.microbit.org/teach/lessons/night-safety/), [Healthy oceans](https://www.microbit.org/teach/lessons/healthy-oceans/) i [Helping plants grow](https://microbit.org/teach/lessons/helping-plants-grow/). Cada repte conserva el tema i el punt de partida descrits en les pàgines oficials, però canvia els escenaris, les dades, els materials i els prototips per al context local. Els sensors ambientals, motors i altres accessoris s’identifiquen com a externs quan no formen part de la placa. Les activitats que requeririen desplegament real es resolen amb simulacions i maquetes segures.

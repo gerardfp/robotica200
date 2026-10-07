@@ -22,6 +22,13 @@ _Una mateixa placa dona lloc a sis projectes; la ruta es pot programar amb blocs
 
 La biblioteca escolar obri un laboratori de projectes digitals per explicar què pot fer una micro:bit. Cada sessió resol un repte curt amb una eixida, una entrada, una estructura de control o un sensor. Els projectes parteixen de la unitat oficial *First lessons with MakeCode and the micro:bit*; es pot repetir la ruta amb el curs paral·lel de Python. Les paraules i personatges dels exemples són ficticis: no es mostren noms ni emocions reals de l’alumnat.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar l’entrada i l’eixida de cadascun dels sis projectes de biblioteca.
+- Programar una insígnia, una animació, un comptador o un joc amb seqüència, bucle, botó, sensor o aleatorietat.
+- Comparar una versió amb blocs i una versió Python mantenint el mateix objectiu i els mateixos casos de prova.
+- Dissenyar prototips amb contingut fictici, sense guardar dades personals de lectores o visitants.
+
 ## 📅 Seqüència didàctica · 6 sessions
 
 ### **Sessió 1 · Identificador fictici (Name badge).**
@@ -93,6 +100,10 @@ En acabar, cada equip tria un dels sis prototips i el presenta en una targeta am
 ## 🧰 Materials, versions i inclusió
 
 BBC micro:bit, MakeCode o Python Editor, llibres i targetes de la maqueta. Confirmeu les funcions de la placa i l’entorn, especialment el sensor de llum i l’acceleròmetre. Si sacsejar o observar LED parpellejant no és accessible, oferiu botó, targeta estàtica o simulació. Cap activitat necessita guardar dades d’alumnes.
+
+## ♿ Participació, accessibilitat i seguretat
+
+Si sacsejar la placa, mirar LED intermitents o llegir codi textual no és accessible per a alguna persona, oferiu una targeta estàtica, un botó o un programa de mostra equivalent. La via Python és opcional i no condiciona l’accés als mateixos objectius. Els prototips de lectura usen identificadors ficticis i no guarden dades de visitants.
 
 ## 🔗 Unitats oficials adaptades
 

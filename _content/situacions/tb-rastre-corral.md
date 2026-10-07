@@ -24,6 +24,13 @@ _El mapa i les cinc targetes d’animals són materials propis; Tale-Bot conserv
 
 **Pregunta guia:** Quantes ordres cap avant necessita el robot per a arribar a cada animal, i com podem comprovar que el programa és correcte?
 
+## 🎯 Aprenentatges i vocabulari
+
+- Orientar-se en una graella amb files, columnes i un punt inicial acordat.
+- Programar rutes a cinc destinacions amb ordres cap avant que es puguen comptar.
+- Comparar predicció i trajecte i corregir una instrucció concreta quan no coincideixen.
+- Explicar les decisions amb un mapa de paper sense atribuir al robot la capacitat d’identificar animals.
+
 ## Abans de començar
 
 **Materials:** Tale-Bot, graella plana en blanc, targetes pròpies de fletxes, cinc imatges grans d’animals, fitxes adhesives o marcadors reposicionables i una marca d’inici orientada. Les targetes pròpies fan la funció de les targetes de comandament i els adhesius del material oficial, sense reutilitzar-ne els elements gràfics.

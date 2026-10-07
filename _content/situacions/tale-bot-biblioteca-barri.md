@@ -22,7 +22,11 @@ _Tale-Bot segueix una graella pròpia que connecta una prestatgeria, un racó de
 
 La biblioteca es converteix en un mapa de llocs imaginaris: un racó de contes, una prestatgeria de llibres sense paraules i una plaça on les històries es conten en veu baixa. Els equips creen un personatge i un motiu per al seu viatge, planifiquen una ruta amb Tale-Bot i fan que cada parada aporte una part al relat. La programació és una seqüència d’ordres que podem representar, provar i corregir; la història és una obra pròpia que podem explicar amb paraules, imatges o gestos.
 
-**Aprenentatges:** orientar-se en una graella, construir una seqüència amb més d’una destinació, anticipar posicions, detectar i corregir una ordre, crear una narració amb inici, canvi i final, escoltar i negociar decisions compartides.
+
+
+## 🎯 Aprenentatges i vocabulari
+
+orientar-se en una graella, construir una seqüència amb més d’una destinació, anticipar posicions, detectar i corregir una ordre, crear una narració amb inici, canvi i final, escoltar i negociar decisions compartides.
 
 ## Abans de començar
 

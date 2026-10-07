@@ -22,6 +22,13 @@ _Els sensors proporcionen entrades concretes; les regles i decisions del program
 
 La biblioteca escolar organitza una circulació simulada de capses lleugeres entre prestatges, punts de recepció i places de càrrega. En huit lliçons, l’alumnat combina sensors, motors i condicions; registra com la potència afecta una parada; depura un moviment rítmic activat per color; dissenya un laberint; classifica paquets de paper; i coordina bases mòbils en una maqueta d’aparcament amb i sense sensor. La seqüència adapta la unitat 5 *Sensors* del curs LEGO Education *Foundations of Physical Computing*. La biblioteca és un escenari didàctic: no es desplacen llibres reals ni es fa cap afirmació que aquest prototip siga segur o apte per a un servei autònom.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Relacionar una lectura de sensor amb una regla i una resposta segura del robot.
+- Calibrar sensors amb casos coneguts i comparar dades abans de classificar o seguir una ruta.
+- Integrar moviment, detecció i coordinació entre equips en una maqueta de logística escolar.
+- Provar casos adversos i explicar les condicions en què el sistema s’atura o demana revisió humana.
+
 ## 📅 Seqüència didàctica · huit lliçons
 
 ### **Lliçó 1 · Els sensors activen respostes (90 min).**

@@ -22,7 +22,11 @@ _El valor del sensor serveix per comparar proves semblants; no és una mesura ce
 
 Els equips preparen un mapa d’observació de la llum en espais accessibles de l’escola: prop d’una finestra, al centre de l’aula i en un racó. Codey Rocky mostra en la pantalla el valor que rep del sensor de llum ambiental. L’alumnat compara lectures, apunta les condicions de cada prova i pregunta què pot explicar una diferència: orientació del sensor, cortines, núvols, llums encesos o ombres.
 
-**Aprenentatges:** formular prediccions, repetir mesures amb un protocol, controlar variables, representar dades, relacionar una diferència amb possibles factors i distingir lectura del sensor de mesura professional. El número del dispositiu no és lux certificat, no diagnostica confort visual ni determina si un espai és saludable o eficient energèticament.
+
+
+## 🎯 Aprenentatges i vocabulari
+
+formular prediccions, repetir mesures amb un protocol, controlar variables, representar dades, relacionar una diferència amb possibles factors i distingir lectura del sensor de mesura professional. El número del dispositiu no és lux certificat, no diagnostica confort visual ni determina si un espai és saludable o eficient energèticament.
 
 ## 🧰 Materials i preparació
 

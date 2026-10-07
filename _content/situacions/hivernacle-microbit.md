@@ -24,6 +24,13 @@ Una classe de tercer cicle investiga dues preguntes sobre un hort i un espai ver
 
 La fundació presenta les activitats per a 11–14 i 14–16 anys. Aquesta versió les escala a tercer cicle de primària: simplifica la instrumentació, modela els sensors externs i posa l’accent en el disseny, les dades, la ràdio i els límits. No es presenta com una equivalència d’edat ni com un sistema IoT desplegable.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Convertir una necessitat de protecció o cultiu en criteris observables per a un prototip.
+- Programar emissor i receptor de ràdio i comprovar recepció amb missatges ficticis i intents repetits.
+- Interpretar lectures simulades o d’un sensor addicional només després de verificar el maquinari i el programa.
+- Explicar que el prototip no vigila fauna, no controla un cultiu real i no ha d’exposar la placa a l’aigua o al sòl.
+
 ## 🧰 Preparació, materials i coneixements
 
 Necessiteu una o preferiblement dues plaques micro:bit, MakeCode, ordinador o tauleta, cable USB, targetes de condició/missatge, full de dades i materials secs per a construir una maqueta. La ràdio i els botons són funcions integrades. La micro:bit no té sensor d’humitat del sòl, relé ni connexió a internet integrats; per a fer la lectura amb maquinari real cal un sensor analògic i un circuit de baixa tensió compatible que el centre verifique. Si no es disposa d’aquests components, els botons A/B seleccionen valors simulats que s’identifiquen clarament com a dades de prova. No connecteu probes descobertes a terra humida ni cap càrrega a tensió de xarxa.

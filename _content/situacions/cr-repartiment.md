@@ -50,7 +50,7 @@ Ajusteu el recorregut perquè tinga una zona de gir ampla i cap eixida a terra. 
 
 Tanqueu amb un cartell d’ús responsable: el prototip només funciona dins la pista de prova, sota supervisió i amb obstacles triats pel docent. *Evidència:* programa comentat, plànol revisat, taula de proves i recomanació per a la persona supervisora. *Pregunta docent:* «Què podem afirmar amb les dades i què no podem prometre sobre un robot real?»
 
-## 🎯 Aprenentatges i evidències
+## 🧪 Evidències i avaluació
 
 Recolliu el plànol, el programa amb comentaris, tres proves de línia base, les observacions amb obstacle i la recomanació final. Observeu si l’alumnat:
 
@@ -65,6 +65,14 @@ Recolliu el plànol, el programa amb comentaris, tres proves de línia base, les
 - explica per què cal supervisió humana i quins límits té el prototip.
 
 Valoreu la qualitat del protocol i la interpretació honesta, no que el robot complete sempre la ruta.
+
+## 🎯 Aprenentatges i vocabulari
+
+- Descompondre una tasca de repartiment fictícia en entrada, decisió, gir i continuació.
+- Programar una resposta amb els components de Codey Rocky que s’han comprovat al centre.
+- Comparar els resultats de diversos intents i revisar una regla davant d’una detecció incorrecta.
+- Explicar per què un prototip escolar no és un sistema autònom segur per a un espai públic.
+
 
 ## 🧰 Preparació i seguretat
 

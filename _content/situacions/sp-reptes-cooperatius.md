@@ -22,6 +22,13 @@ _Cinc reptes propis per practicar cooperació, ideació, programació i revisió
 
 El centre prepara una jornada de prototips on cada equip haurà d’explicar una idea, construir un mecanisme i convidar altres grups a provar-lo. La classe adapta íntegrament la col·lecció suplementària oficial de SPIKE Prime: cooperació, generació d’idees, comunicació d’un objecte, control de distància i joc de taula. Les missions, targetes, regles i imatge són originals i pensades per a un taller escolar valencià.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Participar en una ronda d’ideació i seleccionar una proposta amb criteris compartits.
+- Construir i programar un mecanisme de taula que resolga un repte delimitat.
+- Provar la proposta, incorporar el retorn i explicar què s’ha canviat.
+- Repartir rols i documentar contribucions sense premiar només la rapidesa o el resultat final.
+
 ## 📅 Seqüència didàctica · 5 sessions
 
 Cada lliçó oficial dura 30–45 minuts; les sessions següents reserven també temps per documentar, provar amb una altra parella i fer retorn. Les targetes de treball i els criteris són propis. Organitzeu equips de 2–3 persones, roteu qui pren decisions i qui manipula el prototip, i conserveu una llibreta de proves comuna.

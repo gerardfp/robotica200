@@ -114,6 +114,13 @@ Useu una única fitxa de registre per a totes les parades: pregunta, targetes o 
 
 La graella d'observació docent recull si l'infant identifica inici i meta, espera el torn, anticipa una ordre, interpreta una diferència entre predicció i resultat, usa un recompte o patró i comunica una decisió. Un mateix alumne pot demostrar-ho amb accions diferents en sessions diferents; no cal exigir totes les habilitats en cada parada. Tanqueu preguntant quina instrucció ha sigut més clara per a qui visitava la fira i quin material canviaria el grup en una nova versió.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Explorar espais de l’escola amb instruccions de moviment i destinacions fictícies o autoritzades.
+- Usar recompte, formes, vocabulari i observació en reptes breus de la fira.
+- Crear una proposta artística o narrativa i presentar-la amb veu, pictogrames o demostració.
+- Provar les rutes i revisar-les perquè una altra classe puga seguir-les amb claredat.
+
 ## 🧰 Materials i preparació
 
 Tale-Bot Pro de la dotació, retolador rentable i suport de dibuix del kit base, mapa gran de paper o quadrícula al terra, targetes de fletxes, siluetes i fitxes reutilitzables, imatges de fruita/productes i llapis. Feu una prova del traç amb el robot abans de la sessió i utilitzeu un full prou gran, fixat a la taula. Si la unitat disponible no inclou el retolador o el suport, manteniu el repte com a recorregut de caselles i targetes, sense afegir accessoris no disponibles.

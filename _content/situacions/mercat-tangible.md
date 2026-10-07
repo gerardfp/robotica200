@@ -22,6 +22,13 @@ _La graella i les parades són una adaptació pròpia; els preus ficticis permet
 
 La classe organitza el mercat de proximitat d’una cooperativa escolar. Quatre targetes de producte viatgen juntes sobre un suport pla del robot; en cada parada es retira la targeta corresponent i es conta una microhistòria sobre qui la necessita i per què. El repte combina orientació i programació tangible amb una extensió matemàtica de quantitats, suma de preus ficticis i comparació de rutes. Els aliments són targetes il·lustrades: no es manipula ni es jutja el menjar de ningú.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Llegir una graella i descompondre encàrrecs en parades, ordres i destinacions.
+- Planificar una compra fictícia respectant un pressupost i les quantitats acordades.
+- Comparar recorreguts amb una mateixa unitat i comprovar que cap encàrrec s’ha omés.
+- Inventar i compartir una missió de mercat amb aliments locals i opcions no estigmatitzants.
+
 ## 🧰 Preparació i materials
 
 Prepareu MatataBot, torre de comandaments i tauler del Coding Set; una quadrícula pròpia de 5 × 5 caselles; quatre parades amb noms i pictogrames (fruita de temporada, hortalisses, cooperativa i cuina escolar); quatre targetes de producte que càpiguen planes sobre un suport de paper lleuger; targetes de comanda, fletxes, llapis, moneda simbòlica i full de registre. Situeu parades i obstacles amb espai perquè el robot puga avançar, retrocedir i girar sense enganxar-se. Comproveu primer que el suport no tapa sensors, rodes ni elements de programació. Si no es pot carregar amb estabilitat, una persona transporta les targetes mentre MatataBot guia la ruta, i l’equip anota aquesta variant.

@@ -22,6 +22,13 @@ _Una bona depuració redueix el problema, prova hipòtesis i documenta els canvi
 
 El servei fictici de préstec de la biblioteca necessita traslladar una caixa lleugera entre dues zones sense eixir d’un recorregut marcat. Abans de confiar-hi, la classe aprén a aïllar errors físics, detectar problemes del programa i provar rutes per parts. La seqüència adapta les sis lliçons de la unitat 3 *Troubleshooting and Debugging* de LEGO Education *Foundations of Physical Computing*. Els models i codis concrets de l’app es consulten en el recurs oficial; ací se’n creen recorreguts, casos de prova i registres propis. No es transporten llibres reals ni s’utilitza el robot amb persones en moviment.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Diferenciar una avaria de muntatge d’un error en la seqüència de programa.
+- Formular una hipòtesi de fallada i canviar una sola variable en cada prova.
+- Construir i depurar una ruta amb sensors, casos límit i registre de resultats repetits.
+- Justificar que un canvi resol el problema sense ocultar els casos que encara fallen.
+
 ## 📅 Seqüència didàctica · sis lliçons
 
 ### **Lliçó 1 · Depuració del model: el plòter de la mediateca ([Broken](https://education.lego.com/en-us/lessons/prime-invention-squad/broken/), 90–135 min).**

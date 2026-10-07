@@ -22,6 +22,13 @@ _Una idea millora quan definim criteris, fem proves i escoltem comentaris concre
 
 Una cooperativa escolar prepara una fira de solucions útils per al centre. Els equips aprenen a crear un primer prototip, donar-se retorn respectuós i modificar el disseny amb evidències; escriuen pseudocodi abans de programar; valoren si una tasca és adequada per a l’automatització; i presenten una proposta amb claredat i sense promeses exagerades. La fitxa adapta les sis lliçons de la unitat 2 *Improving a Design* de LEGO Education *Foundations of Physical Computing*. Té punts de contacte amb *Ideas, the LEGO way!* i altres recursos, però conserva la seqüència i els objectius específics d’aquesta unitat.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Convertir una necessitat en requisits i una proposta de prototip que es puga provar.
+- Usar pseudocodi per explicar el procés abans de programar-lo.
+- Iterar el disseny mecànic o digital a partir de dades i retorn d’altres equips.
+- Comunicar els usos, les limitacions i les decisions d’automatització d’una proposta.
+
 ## 📅 Seqüència didàctica · sis lliçons
 
 ### **Lliçó 1 · Iteració i perseverança: el saltador de l’aiguamoll ([Hopper Race](https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/), 90 min).**

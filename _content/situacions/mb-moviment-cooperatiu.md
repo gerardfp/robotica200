@@ -22,6 +22,13 @@ _Els programes són prototips didàctics: no mesuren salut, rendiment ni calorie
 
 El grup vol preparar un menú de jocs breus per al pati, amb opcions per moure’s, observar, marcar ritme o dirigir. A través de variables, comptadors i nombres aleatoris, l’alumnat aprén a dissenyar programes que informen i proposen opcions sense classificar persones. La situació adapta les cinc lliçons oficials de *Getting active*; els exemples, les proves i les regles de participació són propis.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Descriure una activitat amb variables observables sense convertir-les en puntuacions sobre persones.
+- Programar un comptador o selector amb entrades, variables, condicions i valors de prova.
+- Comprovar que l’atzar i les regles ofereixen opcions diverses i no exclouen una forma de participar.
+- Proposar alternatives de moviment voluntari, pausa o participació sense moviment.
+
 ## 📅 Seqüència didàctica · 5 sessions
 
 ### **Sessió 1 · Descriure amb variables (Describing with variables).**

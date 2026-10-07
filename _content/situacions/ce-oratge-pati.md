@@ -22,6 +22,13 @@ _Els símbols i les maquetes ajuden a parlar de l’oratge sense presentar una p
 
 L’alumnat crea un mapa de pati que pot canviar al llarg de l’any. Amb el tren Coding Express representa seqüències, opcions i parades; amb dades de calendari preparades pel docent, compara observacions i pren decisions de joc o disseny. Les targetes de sol, núvol, pluja i vent són models per conversar, no sensors ni prediccions meteorològiques.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Interpretar targetes i registres d’oratge indicant-ne la data, la font i si són dades reals o simulades.
+- Ordenar instruccions perquè una maqueta represente una decisió de disseny per al pati.
+- Comparar una predicció amb les dades proporcionades i revisar l’explicació quan no coincideix.
+- Distingir un model escolar d’una predicció meteorològica útil per a prendre decisions de seguretat.
+
 ## Abans de començar
 
 Prepareu el tren, les vies i els blocs d’acció Coding Express, cartolina, peces de construcció, pictogrames d’oratge i targetes amb dades. La unitat oficial vincula algunes propostes a STEAM Park; aquesta adaptació permet substituir eixos materials per cartó, paper i elements escolars. Per a les activitats amb dades, useu observacions reals del centre amb data i font, o un conjunt fictici clarament etiquetat com a simulació. No feu una predicció per a decisions de seguretat: consulteu els avisos oficials amb les persones adultes responsables.

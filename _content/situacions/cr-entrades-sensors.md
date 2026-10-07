@@ -72,11 +72,23 @@ Investiguem què comuniquen els valors del giroscopi quan inclinem suaument Code
 
 Programem un joc curt governat per una inclinació detectada pel giroscopi: el personatge de la matriu evita obstacles i suma punts amb una regla comprensible. Ajustem el llindar perquè el repte no exigisca gestos bruscos i oferim una alternativa amb botons per a qui la preferisca. Tanquem amb una prova d'usabilitat i una explicació de com el sensor transforma moviment en dades.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar les entrades disponibles de Codey Rocky i relacionar-les amb una resposta del programa.
+- Construir una prova repetible que compare la predicció amb la lectura observada.
+- Interpretar dades de botons, infraroig, color, llum o giroscopi sense atribuir-los capacitats que no tenen.
+- Documentar errors, límits del sensor i una decisió de disseny basada en evidències.
+
+
 ## 🧰 Materials, accessibilitat i límits
 
-Cal Codey Rocky, mBlock en una versió compatible, paper, targetes de color, quadrícula i material tou per a la maqueta. Les sessions 5 i 6 necessiten dos dispositius amb transmissió/recepció IR compatibles per a completar la comunicació física; sense el segon dispositiu es conserva el disseny de protocol i s'identifica l'assaig com a no executat. Oferim instruccions orals i visuals, torns de control, opcions amb botons i rols de programació, observació i registre. El resultat de cada sensor s'ha de verificar al model i al programari disponibles.
+Cal Codey Rocky, mBlock en una versió compatible, paper, targetes de color, quadrícula i material tou per a la maqueta. Les sessions 5 i 6 necessiten dos dispositius amb transmissió/recepció IR compatibles per a completar la comunicació física; sense el segon dispositiu es conserva el disseny de protocol i s'identifica l'assaig com a no executat. El resultat de cada sensor s'ha de verificar al model i al programari disponibles.
 
 El catàleg oficial associa també altres lliçons a interruptors tàctils externs, sensor d'ultrasons i tira LED Neuron. Aquests components no es consideren part del Codey Rocky bàsic d'aquesta proposta. No substituïm eixos reptes per una activitat que fingisca tindre els mòduls: queden marcats per a adaptar-los quan es confirme l'accessori corresponent.
+
+## ♿ Participació, accessibilitat i seguretat
+
+Oferim instruccions orals i visuals, torns de control, opcions amb botons i rols de programació, observació i registre. Evitem gestos bruscos i mantenim el robot sobre una superfície estable; les lectures es comproven al model i al programari disponibles.
 
 ## 🎯 Evidències d'aprenentatge
 

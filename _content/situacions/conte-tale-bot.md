@@ -24,7 +24,11 @@ La classe inventa una història que passa en un paisatge de marjal imaginat: un 
 
 La narració pot fer-se en directe, amb pictogrames o amb una gravació molt breu del Tale-Bot Pro si el centre confirma que la funció de micròfon està disponible i el grup tria usar-la. L’enregistrament és opcional i s’elimina després de la sessió. Ningú no ha de posar la seua veu al robot per participar.
 
-**Aprenentatges:** ordenar esdeveniments; descriure lloc, personatge i acció; relacionar moviment i relat; anticipar destinacions; comprovar i depurar una instrucció; expressar-se amb llenguatge oral, visual o corporal; escoltar i revisar una història per a una audiència.
+
+
+## 🎯 Aprenentatges i vocabulari
+
+ordenar esdeveniments; descriure lloc, personatge i acció; relacionar moviment i relat; anticipar destinacions; comprovar i depurar una instrucció; expressar-se amb llenguatge oral, visual o corporal; escoltar i revisar una història per a una audiència.
 
 ## 🧰 Materials i preparació
 

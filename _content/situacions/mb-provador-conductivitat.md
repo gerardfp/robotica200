@@ -22,6 +22,13 @@ _La prova és de baixa tensió i només usa mostres aïllades i circuits revisat
 
 El taller de ciències vol saber quins materials podrien formar part d’un interruptor senzill per a una maqueta. L’alumnat compara circuits de baixa tensió, representa decisions amb diagrames de flux i programa una entrada perquè micro:bit mostre una icona. La situació adapta les cinc lliçons oficials de *Electrical conductors*; els materials es proven com a mostres, no com a objectes connectats a instal·lacions elèctriques.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Formular una predicció sobre la conductivitat d’una mostra segura i registrar les condicions de prova.
+- Construir un circuit de baixa tensió i descriure l’entrada i l’eixida de micro:bit.
+- Programar una selecció condicional i provar materials coneguts, secs i no perillosos.
+- Distingir el resultat del prototip de l’evidència científica i rebutjar proves amb endolls, líquids o materials desconeguts.
+
 ## 📅 Seqüència didàctica · 5 sessions
 
 ### **Sessió 1 · Selecció i conductivitat (Selection & conductivity investigation).**

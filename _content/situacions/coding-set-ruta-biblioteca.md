@@ -22,6 +22,13 @@ _MatataBot i el Coding Set recorren caselles entre un punt de préstec, un racó
 
 MatataBot és el visitant nou. Cada equip investiga quatre espais públics del centre, representa’n la distribució en un plànol simplificat, crea maquetes lleugeres de paper i codifica una ruta per a guiar la classe. El grup prepara un discurs breu amb informació contrastada i divideix la guia en parades; un llibre fictici pot fer de fil narratiu, però el robot no transporta càrrega. La seqüència localitza i reinterpreta els objectius de *MatataBot’s Guide* en un itinerari de benvinguda propi.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Observar l’espai i representar-ne punts d’interés en un mapa miniatura i una graella.
+- Programar una seqüència que visite tres espais ficticis i comprovar-ne el recorregut.
+- Escriure una recomanació original per a un llibre inventat sense copiar sinopsis ni usar dades de lectores.
+- Guiar una altra persona, recollir-ne el retorn i revisar tant el mapa com les ordres.
+
 ## 🧰 Materials i preparació docent
 
 Prepareu el Coding Set complet, paper gran per al mapa, regles, retalls de cartó i paper, cinta de pintor, targetes de símbols, llapis, fulls de recerca i un full de registre. Demaneu abans a l’escola informació pública o autoritzada sobre la història i cultura del centre, i delimiteu quins espais es poden observar i representar. No fotografieu persones ni inclogueu horaris, codis d’accés, noms complets o informació de seguretat. Si no hi ha plànol compartible, mesureu o estimeu només relacions de proximitat entre espais amb permís docent, i indiqueu que el mapa és esquemàtic. Feu una prova de desplaçament del robot per comprovar quina longitud correspon a cada ordre i quines caselles reals caben en el full.

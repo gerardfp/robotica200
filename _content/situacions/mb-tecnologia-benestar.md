@@ -24,6 +24,13 @@ El centre vol millorar una rutina quotidiana: demanar una pausa, recordar una ta
 
 La proposta transforma la unitat oficial en un projecte de disseny accessible. La placa mostra icones o missatges breus quan l’usuari prem un botó; la decisió de quan usar-la continua sent seua. No hi ha sensors corporals, monitoratge, diagnòstic ni registre d’identitat.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Investigar un repte de rutina amb situacions fictícies i criteris definits per les persones usuàries.
+- Dissenyar un prototip opcional amb entrada, resposta, cancel·lació i aturada accessibles.
+- Provar diversos casos d’ús i revisar si la persona manté el control i pot ignorar o desactivar l’ajuda.
+- Comunicar que el prototip no diagnostica, vigila ni substitueix el suport d’una persona adulta.
+
 ## 📅 Seqüència didàctica · 5 sessions
 
 ### **Sessió 1 · Investiguem tecnologia per a la salut (Health of the nation).**

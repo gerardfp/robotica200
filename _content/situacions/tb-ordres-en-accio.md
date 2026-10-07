@@ -26,10 +26,16 @@ La classe organitza una fira de jocs de barri. Els equips aprenen a llegir els b
 
 ### **A-1 · Hola, Tale-Bot i al repte.**
 
-Presenteu un mapa propi de descobertes del centre i pregunteu què pot fer un robot i què no pot fer sense instruccions. L’alumnat observa el Tale-Bot real, identifica rodes, botons i senyals, localitza l’interruptor, practica encendre’l/apagar-lo i acorda una norma de cura. Exploreu tots els botons i els indicadors que corresponen a cada ordre: avant, arrere, girs, Play, dansa aleatòria, repetir, gravar i esborrar. Comproveu que una pulsació breu d’esborrar lleva l’última ordre i que mantindre el botó premut neteja el programa complet. Després, trieu una quantitat d’ordres entre una i deu, prepareu una seqüència d’eixa llargària, observeu els colors dels indicadors i executeu-la amb Play. Per tancar, parleu de la relació entre l’ordre i la resposta del robot. Feu una prova per torn, amb l’àrea lliure i sense persones davant; si no és segur usar la torre, substituïu-la per acostar una fitxa gran a una zona marcada. Les ales o els suports només s’afegeixen si són accessoris presents en el kit real i no tapen els controls.
+**Objectiu:** identificar les parts i els botons, entendre què és una ordre i un programa, i comprovar visualment la seqüència introduïda.
 
-*Evidència: identificació dels controls, predicció de moviment i una norma de cura proposada pels infants.*
+**Preparació:** Tale-Bot Pro, esquema propi de les parts, targetes pròpies amb els botons de moviment, *Play* i esborrat, targetes de nombre de l’1 al 10 i una graella breu. Els accessoris s’exploren només si formen part del kit del centre.
 
+1. **Observem i tenim cura (8 min).** Mireu el robot apagat i l’esquema propi. Assenyaleu cos, rodes, botons, llums i interruptor; distingiu les ordres que pot executar d’una decisió que correspon a les persones. Acordeu una norma de cura i practiqueu l’encesa i l’apagada amb supervisió.
+2. **Explorem els controls (10 min).** Proveu els botons de moviment, gir, *Play*, dansa, repetició, gravació i esborrat que tinga el model disponible. Comproveu que una pulsació curta d’esborrat elimina una ordre i que mantindre’l premut esborra la seqüència completa; anoteu les funcions que no incorpora la unitat del centre.
+3. **Codifiquem un nombre (12 min).** Cada equip tria una targeta de l’1 al 10 i introdueix exactament eixe nombre d’ordres, per exemple una seqüència de girs i avanços en una quadrícula pròpia. Abans de prémer *Play*, una altra persona compta les targetes i les ordres enregistrades; si no coincideixen, esborreu i corregiu només el tram necessari.
+4. **Llegim els indicadors i expliquem (5 min).** Observeu els colors dels indicadors de codificació, executeu el programa i compareu l’acció amb la predicció. Expliqueu amb un exemple que un programa és un conjunt d’instruccions ordenades que el robot executa; la seqüència i l’esquema s’han de poder presentar també amb pictogrames.
+
+**Evidència:** esquema de parts i controls, nombre triat, seqüència amb el recompte exacte, predicció, resultat i una norma de cura. Aquesta activitat adapta l’exploració dels botons, el recompte d’ordres i els indicadors de l’Activity Card A-1. La torre de gots pertany a A-2, que es treballa a continuació; així evitem repetir-la en dos reptes.
 ### **A-2 · Avança, avança.**
 
 Construïu una torre de deu gots de paper i programeu Tale-Bot perquè hi arribe i en faça caure tants com puga. Abans de cada intent, trieu el nombre d’ordres cap avant, representeu-les amb targetes i compareu el resultat amb la predicció. Recol·loqueu els gots i reinicieu el robot des de la mateixa línia per a fer una prova comparable. Si els accessoris presents al kit poden ajudar-lo a empényer, proveu-ne un canvi i compareu-lo; és una extensió identificada, no un accessori que pressuposem. Useu només gots buits i lleugers i manteniu lliure la trajectòria.
@@ -68,6 +74,13 @@ Dibuixeu una ruta des de Tale-Bot fins a una fruita de temporada en un mapa pla 
 
 Col·loqueu Tale-Bot i una joguina lleugera sobre una superfície plana. Programeu una ruta perquè el robot passe al voltant de l’objecte sense tocar-lo; dibuixeu abans el camí i proveu-lo amb les targetes. Com a repte, situeu dos objectes amb separació suficient i dissenyeu un únic programa que envolte tots dos. No useu objectes fràgils ni obstacles rígids, i manteniu el recorregut allunyat de la vora.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar ordres de moviment i combinar-les en seqüències amb inici i final.
+- Predir la posició final del Tale-Bot i comprovar-la en una quadrícula pròpia.
+- Localitzar una ordre de més, de menys o en direcció incorrecta i depurar-la.
+- Explicar una ruta perquè una altra persona la puga reproduir amb targetes o amb el robot.
+
 ## 🧰 Materials i diferències de model
 
 Tale-Bot de la dotació, targetes de fletxes impreses pel centre, graella, gots de paper, peces planes i cinta de pintor. Gravació de veu, indicadors, botó de repetició i accessoris varien segons el model: comproveu-los abans. Si una funció no està disponible, representeu-la amb una targeta o una ordre oral; no s’atribueix al robot una capacitat absent.
@@ -76,6 +89,10 @@ Tale-Bot de la dotació, targetes de fletxes impreses pel centre, graella, gots 
 
 Recolliu predicció, seqüència de targetes, recorregut observat i correcció d’un error. Accepteu resposta oral, gestual, pictogràfica o amb codi. Roten els papers de planificador, operador i observador; cap infant queda associat a un rol fix.
 
+## ♿ Participació, accessibilitat i seguretat
+
+Comenceu amb poques ordres i una quadrícula clara; oferiu fletxes grans, fitxes tàctils o una ruta de paper abans de prémer els botons del robot. La participació pot ser assenyalar, anticipar, ordenar targetes, comprovar o narrar. Manteniu les mans fora de les rodes quan el Tale-Bot estiga en moviment i pareu-lo abans de canviar-ne el recorregut.
+
 ## 🔗 Referents oficials adaptats
 
-Adapta les deu targetes de categoria A —*Hello, Tale-Bot*, *Forward, Forward*, *How Many “Forwards”?*, *Tale-Bot Classroom I*, *Nice to Meet You!*, *Tale-Bot Loves Dancing*, *Turn Left or Turn Right?*, *Tale-Bot Classroom II*, *Fruit Picking* i *Tale-Bot Guard I*— de les [Activity Cards per a Tale-Bot Pro](https://matatalab.com/en/lesson4.4). Les primeres activitats també adapten la primera lliçó pública del currículum, [«Hola, robot Matata»](https://matatalab.com/zh-hans/node/827): reconèixer l’estructura i els botons, encendre el robot, practicar ordres i construir un repte escolar de gots de paper amb els accessoris disponibles. Les nostres targetes i mapa són propis; no reproduïm materials del fabricant.
+Adapta les deu targetes de categoria A —*Hello, Tale-Bot*, *Forward, Forward*, *How Many “Forwards”?*, *Tale-Bot Classroom I*, *Nice to Meet You!*, *Tale-Bot Loves Dancing*, *Turn Left or Turn Right?*, *Tale-Bot Classroom II*, *Fruit Picking* i *Tale-Bot Guard I*— de les [Activity Cards per a Tale-Bot Pro](https://matatalab.com/en/lesson4.4). L’activitat A-1 també es basa en la primera lliçó pública del currículum, [«Hola, robot Matata»](https://matatalab.com/zh-hans/node/827), que proposa conéixer l’estructura i els botons, encendre i apagar el robot, despertar curiositat i practicar-ne la cura; la pàgina enumera model de paper, robot, accessoris de muntatge i deu gots de paper entre els materials. La fitxa pròpia explicita aquests objectius i transforma els gots en una ruta de predicció i prova. El PDF i la presentació de la lliçó no s’han pogut llegir, de manera que no afirmem reproduir-ne el guió ni la construcció exacta. Les nostres targetes, model i mapa són propis; no reutilitzem materials gràfics del fabricant.

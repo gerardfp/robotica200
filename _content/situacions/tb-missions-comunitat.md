@@ -64,6 +64,13 @@ Poseu al mapa, en ordre aleatori, targetes pròpies d’una cerca: la primera é
 
 Escolteu un conte triat per la classe i seleccioneu-ne quatre o cinc moments clau en targetes originals, sense copiar les il·lustracions del llibre. Poseu-les aleatòriament al mapa i programeu Tale-Bot perquè les visite en l’ordre narratiu correcte. En cada parada, si el model ho permet, feu que reproduïsca una frase gravada que explique aquell moment; si no, un narrador la diu en directe. Tanqueu reconstruint el conte a partir de la fila de targetes.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Planificar una ruta amb diverses parades i un relat que es puga modificar.
+- Usar ordres i bucles per representar un servei comunitari en un mapa fictici.
+- Provar la seqüència, localitzar una ambigüitat i revisar les instruccions en equip.
+- Comunicar la missió amb destinacions inventades, sense adreces ni dades de persones reals.
+
 ## 🧰 Materials i model real
 
 Tale-Bot, quadrícula pròpia, icones dibuixades, targetes de personatges i cinta per fixar el mapa. L’enregistrament i el mode de missatge depenen del model Pro; si no hi són, es poden fer servir símbols i narració humana. Els mapes de l’Activity Box no són requisit.
@@ -71,6 +78,10 @@ Tale-Bot, quadrícula pròpia, icones dibuixades, targetes de personatges i cint
 ## 🧪 Evidències i convivència
 
 Mapa, seqüència de destinacions, programa, conte col·lectiu, prova amb un segon equip i una revisió del final. Avalueu orientació, ordre, capacitat de relatar i escolta mútua; mai la rapidesa o la interpretació personal d’un infant.
+
+## ♿ Participació, accessibilitat i seguretat
+
+Permeteu aportar idees per veu, dibuix, pictogrames o selecció de targetes; ningú no ha de representar una experiència personal ni parlar en públic. Les missions es resolen amb destinacions fictícies i no incorporen noms o adreces reals. Repartiu els rols de planificació, programació, observació i relat, i feu torns curts amb el robot.
 
 ## 🔗 Referent oficial adaptat
 

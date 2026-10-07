@@ -22,6 +22,13 @@ _El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zone
 
 Practicar seqüenciació, orientació espacial i presa de decisions en un joc cooperatiu amb criteris de participació i seguretat.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Llegir una graella i planificar una ruta de passada fins a una zona acordada.
+- Programar, provar i depurar ordres de moviment mantenint una convenció comuna.
+- Canviar rols i ajustar la dificultat perquè l’èxit depenga de la cooperació i no de la velocitat individual.
+- Comparar una predicció amb el resultat i comunicar una millora del repte.
+
 ## Abans de començar
 
 Dibuixeu una pista de taula amb caselles amples i dues zones de destinació. Useu una pilota lleugera que no bloquege sensors ni pose en risc el robot; si el kit no la pot empényer amb seguretat, feu que el robot la visite i que una persona la moga després.

@@ -24,6 +24,13 @@ La biblioteca escolar prepara una guia perquè la comunitat reconega riscos digi
 
 La unitat oficial té tres lliçons per a 11–14 anys i s’imparteix idealment després de *Computing fundamentals*. Aquesta versió local per a tercer cicle incorpora una activació de pseudocodi, targetes de suport i casos preparats; manté la progressió de ciberseguretat, contrasenyes fortes, algorisme amb variables/selecció i programació, prova, depuració i avaluació.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar riscos digitals i distingir una demostració escolar d’una protecció de seguretat real.
+- Descompondre un algorisme didàctic que combina caràcters ficticis i regles de selecció.
+- Programar una eixida simbòlica i provar casos sense introduir credencials o dades reals.
+- Explicar per què una seqüència aleatòria de micro:bit no és una clau criptogràfica segura.
+
 ## 🧰 Preparació, dades i materials
 
 Micro:bit, MakeCode, targetes de missatges totalment ficticis, graelles d’algoritme, full de prova i targetes de tokens neutres (paraules sense referència personal, símbols i dígits). No useu serveis en línia, comptes, credencials reals ni dades de l’alumnat. El generador queda desconnectat de xarxes i la placa esborra la pantalla al final de cada prova. Prepareu exemples de missatges sense URL activa, fitxer adjunt, codi QR ni instrucció que l’alumnat puga seguir.

@@ -22,6 +22,13 @@ _El model classifica patrons de moviment del dispositiu; no pensa, entén ni con
 
 Una exposició local de ciència prepara una demostració sobre com les màquines classifiquen exemples. L’alumnat diferencia automatització i IA, ordena dades i usa micro:bit CreateAI per entrenar i provar un model senzill amb moviments del dispositiu. L’objectiu és entendre dades, etiquetes i límits; no es tracta de construir una aplicació per avaluar persones.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Distingir una instrucció programada d’un model que aprén patrons a partir d’exemples.
+- Preparar exemples etiquetats de dos moviments ficticis i comprovar quines diferències pot usar el model.
+- Provar el model amb exemples que no han format part de l’entrenament i registrar encerts i confusions.
+- Explicar que el resultat depén de les dades i no permet identificar ni valorar persones.
+
 ## 📅 Seqüència didàctica · 2 sessions
 
 ### **Sessió 1 · Introducció a la IA (Introduction to AI).**

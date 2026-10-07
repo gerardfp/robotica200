@@ -24,6 +24,13 @@ La brigada verda del centre vol saber quins residus visibles apareixen en una zo
 
 La proposta adapta les dues lliçons de *Barefoot · Litter hunt*, adreçades a alumnat d’uns 9–11 anys: usar botons i sensors per mostrar icones, modificar variables i jugar amb una entrada; després dissenyar, programar i usar un comptador de residus reciclables en l’entorn local. La tercera sessió és una ampliació pròpia per separar disseny tècnic, treball de camp i interpretació.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Definir categories observables i registrar recomptes amb un procediment consistent.
+- Programar entrades, variables i eixides per a representar un comptador de mostres segures.
+- Provar valors inicials, increments i límits per detectar errors de recompte.
+- Usar els resultats per plantejar una millora local sense tocar residus perillosos ni atribuir causalitat a dades limitades.
+
 ## 🧰 Materials i preparació
 
 Micro:bit física amb portapiles, MakeCode, 3 targetes d’icones de categoria, mostres simulades netes de paper/cartró i envasos buits nets, graella o taula de dades, llapis, guants i pinces només si el centre autoritza la recollida segura. La font oficial demana plaques físiques i alimentació per al projecte de camp: el simulador serveix per a preparar i provar el codi però no equival a usar el comptador en una recollida real. Si no hi ha placa o portapiles, manteniu la mateixa activitat amb targetes i etiqueteu-la com a simulació.

@@ -22,7 +22,13 @@ _El tren Coding Express connecta una via de joguina amb un escenari de concert d
 
 El grup investiga què fa cada maó d’acció amb la configuració disponible de l’app, relaciona sons amb models d’animals i crea una composició pròpia. El focus és pensar en seqüències: anticipar un ordre, provar-lo, escoltar o observar el resultat i revisar-lo. Un so suggeridor no és una identificació científica de l’animal: les associacions es presenten com a joc de representació.
 
-**Aprenentatges:** escolta i discriminació de sons; ordenació d’esdeveniments; anticipació i comprovació; repetició com a patró; expressió d’una intenció artística; conversa sobre decisions pròpies i respecte pels torns.
+
+## 🎯 Aprenentatges i vocabulari
+
+- Escoltar i comparar sons sense atribuir-los una identificació científica que no s’ha comprovat.
+- Ordenar esdeveniments sonors i anticipar què passarà quan canvie la seqüència.
+- Crear i revisar un patró musical propi amb els maons i les funcions disponibles.
+- Comunicar una intenció artística i respectar els torns durant la composició col·lectiva.
 
 ## Abans de començar
 

@@ -22,6 +22,13 @@ _Comparar prototips demana controls comuns, mesures útils i conclusions proporc
 
 La classe obri un laboratori d’enginyeria que investiga quan una màquina és útil, com les proves milloren un disseny i quines decisions tenen conseqüències per a les persones i el medi. La unitat adapta les vuit lliçons de *Testing and Evaluating Solutions* en el curs LEGO Education *Foundations of Physical Computing*. Cada pràctica formula criteris observables, manté condicions de comparació justes i separa dades mesurades d’interpretacions. Els models són prototips escolars, no dispositius mèdics ni recomanacions per a agricultura real.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Definir una pregunta de prova, variables i criteris abans de comparar dos prototips.
+- Registrar intents repetits amb unitats i condicions constants i descriure la variabilitat.
+- Comparar una tasca humana i una robòtica sense convertir el resultat en una classificació general.
+- Usar evidències per revisar un prototip i explicar quan les dades són insuficients.
+
 ## 📅 Seqüència didàctica · huit lliçons
 
 ### **Lliçó 1 · Provar prototips: el pont mòbil de l’escola (45 min).**

@@ -22,6 +22,13 @@ _Dos reptes d’enginyeria redissenyats per al centre i per als materials SPIKE 
 
 Una cooperativa escolar prepara una mostra de prototips sobre consum responsable i agricultura de proximitat. La seqüència adapta dos reptes oberts oficials de LEGO Education que combinen programació SPIKE Prime amb les peces i l’experimentació de BricQ Motion Prime. El primer investiga com automatitzar una acció quotidiana per reduir l’impacte ambiental; el segon aplica forces i disseny iteratiu a una eina de collita que no danye fruita. El context s’inspira en habitatges i horts de la Comunitat Valenciana, però els prototips només funcionen en maquetes: no controlen habitatges reals ni toquen aliments o cultius.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Definir una regla d’automatització domèstica simulada amb entrada, condició, eixida i cancel·lació.
+- Construir i comparar mecanismes de collita amb formes de fruita simulades i càrregues lleugeres.
+- Relacionar forces d’interacció amb observacions qualitatives sense afirmar mesures que el set no capta.
+- Provar alternatives, revisar el disseny i comunicar què no es pot concloure sobre una casa o collita reals.
+
 ## 📅 Seqüència didàctica · 7–8 sessions
 
 Dediqueu tres sessions a [Smart House: Go Green](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-smart-house-go-green/) i tres a [Protect Our Produce](https://education.lego.com/en-us/lessons/spike-and-bricq-motion-prime-combined/spike-prime-and-bricq-motion-prime-protect-our-produce/); reserveu una sessió de galeria i, si cal, una d’ampliació. En tots dos reptes, establiu criteris d’èxit abans de construir, useu idees d’exemple com a inspiració i registreu proves per poder defensar les decisions amb evidències.
@@ -61,6 +68,10 @@ SPIKE Prime amb hub, motor gran o mitjà, sensor de distància i sensor de color
 ## 🧪 Evidències, límits i seguretat
 
 Carpeta de procés amb criteris i prediccions, esbossos alternatius, codi condicional, matriu de quatre entrades, taula d’iteracions de collita, retorn dels visitants i argument final. Valoreu la coherència entre problema, criteris, programa i proves; que la modificació responga a dades; i que l’equip separe allò observat d’allò que només suposa. No connecteu cap prototip a la xarxa elèctrica, no inferiu estalvi energètic d’una maqueta, no useu fruita ni branques reals i manteniu qualsevol moviment a baixa velocitat. Atureu el hub abans d’ajustar peces.
+
+## ♿ Participació, accessibilitat i seguretat
+
+Assigneu rols rotatius de muntatge, programació, observació i registre; permeteu que una persona contribuïsca amb un esquema o una predicció sense manipular el mecanisme. Feu totes les proves a baixa velocitat, atureu el hub abans d’ajustar peces i useu només càrregues de paper o escuma. Les targetes de clima i els fruits simulats no es presenten com a dades o materials reals.
 
 ## 🔗 Reptes oficials adaptats
 

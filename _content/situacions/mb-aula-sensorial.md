@@ -24,6 +24,13 @@ Una classe de tercer cicle treballa el disseny d’un recurs de suport visual qu
 
 La unitat oficial té quatre lliçons per a 11–14 anys i assumeix coneixements previs de pseudocodi i MakeCode. Aquesta versió local conserva l’exploració d’entorns i ajudes, patrons de llum, algoritmes amb entrada/eixida/iteració/selecció i construcció, prova i avaluació; adapta el ritme i l’abast al tercer cicle de primària. No demana a ningú compartir diagnòstic, preferències personals ni experiències de salut.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Analitzar una rutina fictícia i formular requisits de predictibilitat, control voluntari i aturada.
+- Dissenyar patrons visuals regulables amb entrades i eixides que l’usuari puga controlar.
+- Programar i provar opcions estàtiques o de moviment suau, sense pampallugues ni estímuls obligatoris.
+- Recollir retorn voluntari sobre el prototip i explicar que no és una intervenció clínica ni una solució universal.
+
 ## 🧰 Materials i acords previs
 
 BBC micro:bit, MakeCode i cable USB, cartó per a un suport que deixe visibles botons i LEDs, targetes de patrons estàtics, pseudocodi, full d’observació de criteris i un temporitzador opcional. Prepareu dos encàrrecs ficticis contrastats amb una persona adulta de suport educatiu o amb material públic d’accessibilitat; no inventeu una “necessitat típica” d’un diagnòstic. Totes les proves es fan primer amb simulador, en una zona de l’aula on la persona que observa pot apartar-se. L’ús en una aula real requereix autorització i acceptació voluntària; el valor pedagògic és el procés de disseny, no l’eficàcia clínica del prototip.

@@ -70,6 +70,13 @@ Dissenyeu un repte final amb peces grans de carabassa, una ruta marcada i com a 
 
 *Evidència: repte creat, predicció d’un altre equip, prova i depuració justificada.*
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar una unitat que es repeteix en un patró de moviments o símbols.
+- Expressar una repetició amb ordres més breus sense perdre la seqüència prevista.
+- Provar patrons diferents i detectar en quin punt deixa de coincidir el resultat.
+- Crear una ruta rítmica o visual i explicar-ne la regla a una altra parella.
+
 ## 🧰 Materials i accés
 
 Tale-Bot, graella dibuixada pel centre, targetes de fletxes, peces planes i llapis de colors. No cal Activity Box: les targetes de joc i el mapa es poden confeccionar amb caselles pròpies. Comproveu el botó de repetició i les funcions de cada versió.
@@ -77,6 +84,10 @@ Tale-Bot, graella dibuixada pel centre, targetes de fletxes, peces planes i llap
 ## 🧪 Evidències
 
 Patró marcat, seqüència llarga, versió compacta, nombre de repeticions i registre de prova. L’alumnat explica quan un bucle és més clar i quan pot amagar un error.
+
+## ♿ Participació, accessibilitat i seguretat
+
+Representem cada instrucció amb forma i símbol a més de color, i oferim una pauta de patró manipulable amb targetes. Qui no vulga conduir el robot pot predir, ordenar, observar o registrar el trajecte. Comenceu amb una ruta curta en superfície plana i afegiu ordres només quan l’equip puga explicar el patró.
 
 ## 🔗 Referent oficial adaptat
 

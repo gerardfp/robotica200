@@ -22,6 +22,13 @@ _El classificador respon a exemples de moviment i no interpreta el significat d�
 
 Un centre d’interpretació vol una maqueta interactiva que canvie de panell quan la placa s’inclina cap a una de dues direccions. Els equips aprenen què és IA, com les persones agrupen dades, com es recullen i netegen mostres de moviment, com s’entrena un model i com es connecta a un programa MakeCode. Les proves són anònimes i les etiquetes descriuen orientacions de l’objecte, no identitats ni capacitats de les persones.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Explicar el cicle d’un model: exemples etiquetats, entrenament, prova i revisió.
+- Preparar dades de moviment consistents per controlar quines variacions veu el model.
+- Avaluar casos nous, errors i diferències entre grups de prova abans d’activar una resposta en la maqueta.
+- Iterar una solució amb l’usuari al control i documentar-ne els límits, els riscos i les condicions d’ús.
+
 ## 📅 Seqüència didàctica · 7 sessions
 
 ### **Sessió 1 · Presentar la IA (Introducing AI).**

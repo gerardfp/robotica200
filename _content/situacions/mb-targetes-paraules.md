@@ -22,6 +22,13 @@ _Les paraules i icones es trien amb la classe de llengües i es representen per 
 
 La classe prepara un joc de targetes per repassar vocabulari d’anglés, valencià o una altra llengua que estiguen aprenent. Primer crea algorismes clars perquè una persona presente una pista i l’altra responga; després programa una selecció de paraules com a imatges LED. La matriu 5×5 obliga a abstraure, no a escriure paraules llargues: les targetes físiques conserven l’ortografia, el so i el significat.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Seleccionar vocabulari adequat al grup i representar-lo amb text breu o icones pròpies.
+- Programar una targeta amb seqüència, patró, pausa i una entrada de control.
+- Provar si la targeta ajuda una altra parella a recordar o reconéixer una paraula sense pressa.
+- Crear alternatives llegibles que no depenguen només del color, la velocitat de lectura o la resposta oral.
+
 ## 📅 Seqüència didàctica · 5 sessions
 
 ### **Sessió 1 · Algorismes de flashcards (Flashcard algorithms).**

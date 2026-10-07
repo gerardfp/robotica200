@@ -22,6 +22,13 @@ _Una bifurcació ofereix opcions: cal conéixer el mapa, justificar una tria i p
 
 Les quatre sessions amplien la seqüenciació amb observació del sistema, bifurcacions, planificació de desviaments i representació de rutes en un mapa. L’alumnat documenta què ha fet i què ha passat abans d’atribuir una causa. Les vies i blocs disponibles varien segons el set; es poden simular les alternatives amb targetes si el tren no permet controlar una bifurcació de manera directa.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Llegir una ruta en un mapa i descompondre-la en trams i decisions verificables.
+- Comparar dues alternatives davant d’una bifurcació o incidència representada.
+- Provar una solució amb les vies i els blocs disponibles, o simular-la amb targetes si el set no la permet.
+- Justificar una revisió del pla amb el resultat observat i distingir-la d’una funció que el robot no té.
+
 ## Abans de començar
 
 Prepareu el tren Coding Express, vies i peces del vostre lot, targetes de direcció, cinta de paper per al mapa i obstacles tous separats de la via. Reviseu les instruccions del fabricant abans del muntatge. No forceu les unions ni poseu peces que bloquegen rodes o sensors. Si una funció no és present al kit, convertiu-la en una decisió humana amb targetes.

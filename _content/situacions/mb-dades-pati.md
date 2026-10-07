@@ -44,6 +44,13 @@ Programeu una resposta a una lectura de sensor amb un llindar triat a partir de 
 
 Construïu un assistent de menú que respon a A/B amb una proposta preprogramada: observar ombra, revisar una planta o triar una ruta de joc. Representeu en un diagrama quines dades usa i quines no. No hi ha micròfon, conversa ni decisió intel·ligent: és una seqüència local amb condicions escrites per l’equip.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Distingir una observació, una dada i una interpretació, i registrar font i condicions de mesura.
+- Comparar lectures repetides i descriure variabilitat, casos dubtosos i límits del sensor.
+- Dissenyar un prototip amb una regla explícita que transforma una entrada en una resposta.
+- Comunicar una proposta útil sense recollir dades personals ni presentar una lectura com a mesura professional.
+
 ## 🧰 Materials i preparació
 
 BBC micro:bit, MakeCode, ordinador, targetes, llapis i full de registre. Els sensors de llum, brúixola, acceleròmetre i temperatura varien segons la versió i l’entorn; confirmeu els blocs i les limitacions de la placa disponible. No cal connexió a internet ni compte d’usuari.

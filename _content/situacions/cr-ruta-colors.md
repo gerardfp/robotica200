@@ -50,7 +50,7 @@ Ordeneu les mostres en una taula o mural amb quatre camps: mostra, predicció, l
 
 Tanqueu proposant una nova prova que faria falta per respondre una pregunta diferent: comparar llum natural i artificial, repetir en un altre fons o observar la planta al llarg del temps amb una pauta humana. No cal fer aquestes investigacions en aquesta SDA ni atribuir-les al robot. *Evidència:* arxiu final, una afirmació sustentada per lectures i una pregunta que continua oberta. *Pregunta docent:* «Quina frase podem afirmar a partir de les nostres dades? Què encara no sabem?»
 
-## 🎯 Aprenentatges i evidències
+## 🧪 Evidències i avaluació
 
 Recolliu el programa, les prediccions, el registre de lectures i l’arxiu crític. Observeu si l’alumnat:
 
@@ -65,6 +65,14 @@ Recolliu el programa, les prediccions, el registre de lectures i l’arxiu crít
 - proposa una pregunta nova sense atribuir al sensor funcions que no té.
 
 No es valora encertar totes les classificacions, sinó descriure honestament què ha passat i quines condicions limiten la prova.
+
+## 🎯 Aprenentatges i vocabulari
+
+- Calibrar el sensor amb mostres conegudes i registrar les condicions de llum i distància.
+- Programar una regla de classificació limitada a les mostres de prova acordades.
+- Calcular encerts, errors i casos dubtosos en intents repetits.
+- Distingir el color llegit de la identitat, la qualitat o la seguretat d’un objecte real.
+
 
 ## 🧰 Preparació i cura del material
 

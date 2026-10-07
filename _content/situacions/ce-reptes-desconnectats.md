@@ -18,76 +18,125 @@ challenge: "Podem resoldre els mateixos reptes amb el cos, targetes i paper?"
 
 _Els reptes es resolen amb instruccions físiques, paper i cooperació, sense aplicació ni tren._
 
-## ❓ Repte i intenció
+## 🌱 Situació, repte i intenció
 
-Aquesta fitxa reuneix les quatre activitats desconnectades oficials de Coding Express en versions pròpies. Cada sessió manté una idea computacional (seqüència, desviament, patró o mesura) i permet comprovar-la sense electricitat, pantalla, aplicació o robot. Les peces de paper fan visible el procediment, i la classe prova si una altra persona pot seguir les instruccions.
+Aquesta situació adapta les quatre lliçons desconnectades de Coding Express perquè es puguen fer amb paper, targetes i cooperació. El grup comprova si una altra persona pot seguir instruccions explícites, resoldre una desviació, interpretar un patró i comparar distàncies sense electricitat, pantalla, aplicació ni robot.
 
-## Abans de començar
+## 🎯 Aprenentatges i vocabulari
 
-Prepareu targetes de fletxes i símbols, paper gran, retoladors, tires de paper, fitxes de colors, una figura plana i cinta adhesiva reposicionable. Deixeu un corredor lliure per als recorreguts corporals; ningú corre ni tanca el pas. Oferiu també una ruta de taula perquè es puga participar sense desplaçar-se.
+- Descompondre una història o un trajecte en instruccions ordenades i verificables.
+- Detectar una instrucció ambigua, revisar-la i comprovar que una altra parella la pot executar.
+- Representar una alternativa a una ruta i justificar-la amb un criteri acordat.
+- Crear, repetir i modificar un patró sonor o visual, i mesurar recorreguts amb unitats iguals.
 
-## 📅 Seqüència didàctica · 4 lliçons desconnectades
+**Vocabulari:** instrucció, seqüència, patró, repetició, desviament, casella, unitat i depuració.
 
-### **L’eruga ordenada · Character—Caterpillar.**
+## 🧰 Materials i preparació
 
-Creeu una eruga amb peces de paper i acordeu una història d’inici, moviment i parada. Una persona fa d’«intèrpret» i segueix les targetes d’instrucció sense endevinar què volia dir l’autoria. Si la figura s’allunya del recorregut previst, l’equip troba la primera instrucció ambigua i la reescriu.
+Prepareu targetes de fletxes i símbols, paper gran, retoladors, tires de paper de longitud igual, fitxes de colors, una figura plana i cinta adhesiva reposicionable. Deixeu un corredor lliure per als recorreguts corporals; ningú corre ni tanca el pas. Oferiu també una ruta de taula perquè es puga participar sense desplaçar-se.
 
-*Evidència: seqüència amb inici/final i una instrucció millorada.*
+## 📅 Seqüència didàctica · quatre sessions desconnectades
 
-### **Obres en la ruta · Journey—Trouble on the Road.**
+### Sessió 1 · L’eruga ordenada · Character—Caterpillar (30–35 min)
 
-Dibuixeu una carretera de quadrícula amb una incidència marcada amb una targeta, mai amb un obstacle físic. Programeu una ruta amb fletxes fins a la destinació; després, canvieu-la perquè evite la zona i comproveu el pla movent una fitxa, pas a pas.
+#### Fase 1 · Activem i prediem
 
-*Evidència: ruta inicial, desviament i comprovació de cada pas.*
+Doneu a cada equip una figura d’eruga i quatre targetes d’acció. Inventeu una història curta amb inici, canvi i final; abans d’ordenar les targetes, cada equip prediu quines instruccions faran falta perquè una altra persona la puga representar.
 
-### **Concert d’animals · Music—Animal Concert.**
+#### Fase 2 · Explorem i construïm
 
-Trieu figures de paper i assigneu a cadascuna un ritme que es puga fer amb palmades suaus, veu o targetes visuals. Ordeneu la seqüència, repetiu-la i canvieu un sol símbol per comparar les versions. La participació pot ser completament visual i silenciosa.
+Convertiu les accions en ordres visibles, com ara avançar una casella, girar o parar. Eviteu consignes vagues com «ves fins a l’arbre»: afegiu un símbol o un nombre de passos. Una persona que no ha creat la seqüència la segueix literalment.
 
-*Evidència: partitura d’icones, patró i canvi identificat.*
+#### Fase 3 · Expliquem i registrem
 
-### **Quina ruta és més llarga? · Math—Distance.**
+Compareu el final previst amb el que ha representat l’intèrpret. Marqueu l’ordre concreta on s’ha perdut i expliqueu què li faltava perquè fora reproduïble.
 
-Traceu dues rutes de quadrícula entre els mateixos punts. Mesureu-les amb unitats no estàndard iguals (fitxes o segments de paper), compareu els resultats i expliqueu per què la mateixa unitat és important. Un tercer equip rep les instruccions i comprova una de les mesures.
+#### Fase 4 · Apliquem i millorem
 
-*Evidència: recompte amb unitat comuna i comparació justificada.*
+Reescriviu només la instrucció ambigua i intercanvieu la seqüència amb una altra parella. Proveu si la nova versió condueix al mateix final sense ajuda oral de les persones autores.
 
-## 📋 Avaluació i evidències
+#### Fase 5 · Comprovem i reflexionem
 
-Guardeu l’algorisme de l’eruga, els mapes de ruta, la partitura visual i les mesures. Valoreu si la seqüència és reproduïble, si l’equip depura una instrucció concreta, si identifica un patró i si mesura amb unitats consistents. Compareu després què s’ha mantingut respecte de les versions amb tren i quines diferències aporta el material real.
+Guardeu la tira d’ordres i una anotació del canvi. **Evidència:** seqüència amb inici i final, seguida per una altra parella. **Pregunta docent:** quina informació ha fet que la instrucció es puga executar sense endevinar?
 
-## Desenvolupament de cada repte
+### Sessió 2 · Obres en la ruta · Journey—Trouble on the Road (30–35 min)
 
-### 1. L'eruga ordenada · 30–35 min
+#### Fase 1 · Activem i prediem
 
-Doneu a cada equip quatre targetes d'acció i una figura d'eruga. Primer, l'equip conta una història curta amb començament, canvi i final. Després, converteix cada acció en una instrucció visible: avançar una casella, girar o parar. Una persona que no ha creat el programa segueix les targetes literalment. Si la instrucció diu «ves fins a l'arbre», però no hi ha un símbol d'arbre o un nombre de passos, el grup identifica què falta i crea una versió més precisa. Al final, intercanvieu la seqüència amb un altre equip i compareu si els dos intèrprets arriben al mateix final.
+Dibuixeu una quadrícula de 5×5 amb inici, destinació i una casella marcada com a obra. Predigueu quins moviments permeten arribar-hi sense passar per la zona tancada.
 
-### 2. Obres en la ruta · 30–35 min
+#### Fase 2 · Explorem i construïm
 
-Dibuixeu una quadrícula de 5×5, poseu-hi inici, destinació i una targeta d'obra. L'equip escriu una ruta inicial i després una alternativa que evite la casella tancada. Una fitxa representa el tren i es mou una casella cada vegada; la persona observadora marca cada pas. Si el desviament crea una ruta més llarga, compteu els moviments i expliqueu quin criteri heu triat: arribar-hi, evitar l'obra o reduir passos. No convertiu la incidència en un obstacle físic a l'aula.
+Escriviu una ruta inicial amb fletxes i, després, una alternativa. Una fitxa representa el tren i es mou una casella per instrucció; la persona observadora marca cada pas. La incidència és una targeta, no un obstacle físic a l’aula.
 
-### 3. Concert d'animals · 30–35 min
+![Targetes amb fletxes ordenades al costat d’una graella de paper amb inici, destinació i caselles tancades.](../../_assets/imatges/sa-ce-reptes-desconnectats-ruta.webp)
 
-Trieu tres animals de paper i assigneu a cadascun un patró gràfic, com ara dues marques curtes i una llarga. Ordeneu les targetes, repetiu un motiu i canvieu una sola peça. Un altre equip interpreta la partitura amb palmades molt suaus, instruments o símbols de color. Qui prefereix silenci pot dirigir targetes i observar si el patró es conserva. Compareu les dues versions amb preguntes descriptives: què es repeteix?, què ha canviat?, la llegenda permetia interpretar-ho?
+_Les targetes fan visible el programa abans que una persona execute la ruta i comprove si evita la zona tancada._
 
-### 4. Quina ruta és més llarga? · 30–35 min
+#### Fase 3 · Expliquem i registrem
 
-Traceu dues rutes sobre la mateixa graella i mesureu-les amb segments de paper de longitud igual. Acordeu si els girs compten com a trams i manteniu la convenció en totes dues rutes. Un equip mesura i un segon verifica sense veure el resultat inicial. Si els recomptes difereixen, busqueu on s'ha començat o acabat el segment; després redacteu una instrucció de mesura que elimine l'ambigüitat. Tanqueu comparant unitats no estàndard amb una regla convencional si el grup ja la coneix.
+Compteu els moviments de cada ruta i compareu si totes dues arriben a la destinació. Digueu quin criteri heu prioritzat: evitar l’obra, arribar-hi o reduir passos.
 
-## Documentació i retroacció
+#### Fase 4 · Apliquem i millorem
 
-Prepareu una carpeta de grup amb quatre artefactes: la història i la tira d'ordres; les dues rutes amb el registre de passos; la partitura i la llegenda; i la comparació de distàncies amb unitat indicada. En cada full deixeu espai per a «predicció», «prova» i «canvi». La retroacció d'una altra parella ha de descriure si ha pogut seguir les instruccions i assenyalar el punt concret on s'ha perdut, sense substituir la solució de l'equip autor.
+Intercanvieu el mapa amb una altra parella perquè prove la ruta sense explicacions addicionals. Si la fitxa entra a la casella tancada o es perd, reviseu el tram exacte i canvieu una instrucció.
 
-La graella docent observa quatre coses: instruccions en ordre, ús consistent de símbols, una revisió justificada i explicació que una altra persona puga seguir. No cal que l'alumnat acabe totes les variants ni que totes les històries siguen iguals. Es pot avaluar el procés amb una ruta de taula, una interpretació gestual o una explicació dictada.
+#### Fase 5 · Comprovem i reflexionem
 
-## Connexió amb l'activitat amb Coding Express
+Guardeu el mapa amb les dues rutes i els recomptes. **Evidència:** desviament executat pas a pas i justificat amb el criteri triat. **Pregunta docent:** una ruta amb més passos pot ser millor si evita la casella tancada?
 
-Per comparar sense convertir el robot en requisit, mostreu després una fotografia del circuit o feu la versió amb Coding Express en un altre moment. Pregunteu quina part de la instrucció continua sent igual i quina depén del tren, de la via o dels maons d'acció. En el repte de distància, destaqueu que la quadrícula de paper usa unitats convencionals de classe mentre que la via real pot tindre longituds físiques diferents. La comparació fa visibles els límits del model desconnectat i del model amb objecte.
+### Sessió 3 · Concert d’animals · Music—Animal Concert (30–35 min)
 
-## ♿ Més d’una manera de participar
+#### Fase 1 · Activem i prediem
 
-Useu targetes grans amb formes i textures, instruccions d’un pas cada vegada i recorreguts asseguts sobre una quadrícula de taula. Permeteu comunicar-se amb gestos, selecció d’icones, dictat o demostració. En la sessió musical, no cal produir sons: la partitura de símbols també representa el patró.
+Trieu tres figures de paper i proposeu un símbol per al so o ritme de cadascuna. Predigueu què entendrà un altre equip en veure la llegenda, abans de fer cap interpretació.
 
-## 🔗 Unitat oficial i adaptació
+#### Fase 2 · Explorem i construïm
 
-Adaptació original de [Unplugged Lessons de Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/unplugged-lessons/): Character—Caterpillar, Journey—Trouble on the Road, Music—Animal Concert i Math—Distance. Les quatre sessions es poden executar sense tren ni aplicació; els materials, històries, mapes i il·lustració són propis.
+Assigneu patrons gràfics —per exemple, dues marques curtes i una llarga— i ordeneu les targetes per crear una partitura. Es pot representar amb palmades suaus, instruments, veu o només símbols visuals.
+
+#### Fase 3 · Expliquem i registrem
+
+Un altre equip interpreta la partitura. Compareu què s’ha repetit, quin símbol ha canviat i si la llegenda permetia entendre l’ordre sense conéixer la història original.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una sola targeta i repetiu la interpretació. Qui prefereix silenci pot dirigir les icones o marcar visualment l’inici i el final del patró.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Guardeu la partitura, la llegenda i el canvi identificat. **Evidència:** patró interpretat per una altra parella amb o sense so. **Pregunta docent:** què ha de mantindre’s perquè encara reconeguem el patró?
+
+### Sessió 4 · Quina ruta és més llarga? · Math—Distance (30–35 min)
+
+#### Fase 1 · Activem i prediem
+
+Traceu dues rutes en la mateixa quadrícula entre els mateixos punts. Abans de mesurar, ordeneu-les de més curta a més llarga i acordeu si els girs compten com a trams.
+
+#### Fase 2 · Explorem i construïm
+
+Mesureu les dues rutes amb segments de paper de longitud igual. Marqueu on comença i acaba cada segment i escriviu el recompte amb la unitat emprada.
+
+#### Fase 3 · Expliquem i registrem
+
+Un segon equip verifica una ruta sense veure el recompte inicial. Si els resultats difereixen, localitzeu on s’ha començat o acabat un segment i comproveu que s’ha mantingut la mateixa convenció.
+
+#### Fase 4 · Apliquem i millorem
+
+Redacteu una instrucció de mesura que elimine l’ambigüitat i torneu a mesurar. Si el grup ja coneix la regla, compareu la unitat de paper amb una unitat convencional sense barrejar els dos recomptes.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Guardeu les dues rutes, els recomptes i la unitat indicada. **Evidència:** comparació verificada per un segon equip. **Pregunta docent:** per què cal usar unitats iguals quan comparem dos recorreguts?
+
+## 🧪 Evidències i avaluació
+
+Prepareu una carpeta amb quatre artefactes: la història i la tira d’ordres; les dues rutes amb el registre de passos; la partitura i la llegenda; i la comparació de distàncies amb la unitat indicada. Valoreu si les instruccions són reproduïbles, si l’equip revisa una decisió concreta, si identifica què es manté en un patró i si mesura amb unitats consistents. La retroacció d’una altra parella ha d’assenyalar el punt exacte on s’ha perdut, sense substituir la solució de l’equip autor.
+
+## ♿ Participació, accessibilitat i seguretat
+
+Useu targetes grans amb formes i textures, instruccions d’un pas cada vegada i recorreguts asseguts sobre una quadrícula de taula. Permeteu participar amb gestos, selecció d’icones, dictat o demostració. En la sessió musical no cal produir sons: la partitura visual representa el patró completament en silenci. Manteniu lliure el corredor i no feu córrer l’alumnat.
+
+## 🔗 Referents i adaptació
+
+Adaptació original de [Unplugged Lessons de Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/unplugged-lessons/): *Character—Caterpillar*, *Journey—Trouble on the Road*, *Music—Animal Concert* i *Math—Distance*. Les quatre sessions es poden executar sense tren ni aplicació; les instruccions, històries, mapes, evidències i il·lustració són propis. La comparació opcional amb Coding Express es fa en un altre moment i no és requisit per completar aquesta situació.

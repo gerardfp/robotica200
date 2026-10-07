@@ -22,6 +22,13 @@ _El barri representat és una maqueta de paper: el robot segueix una ruta i no c
 
 Partim de la temàtica de cotxes de les etiquetes interactives de l’Activity Box per imaginar carrers compartits. Tale-Bot es mou per un mapa pla de l’aula; l’equip decideix com connectar habitatges, biblioteca, plaça i transport públic, i com representar un pas de vianants accessible. Els cotxes apareixen com a dibuixos i no hi ha cap moviment de vehicles reals.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Llegir un mapa de maqueta i descriure itineraris amb orientació, parades i cruïlles.
+- Comparar recorreguts amb criteris acordats de llegibilitat i accessibilitat, sense simular experiències personals.
+- Programar i depurar una ruta amb Tale-Bot i proposar una millora de disseny de la cruïlla.
+- Explicar que el mapa és una representació escolar i no una avaluació de seguretat del carrer real.
+
 ## Abans de començar
 
 Prepareu una graella amb interseccions amples, targetes pròpies de llocs del municipi i peces planes que representen bancs, arbres o obres. Incloeu opcions de transport diverses. No poseu obstacles al pas del robot ni feu l’activitat en una via pública. L’ús de l’adhesiu temàtic de cotxes és opcional i depén de la disponibilitat del centre.
@@ -74,9 +81,23 @@ Una parella introdueix la seqüència de moviment de Tale-Bot i una altra llegei
 
 Intercanvieu mapes entre equips i demaneu a les persones que els reben que troben la biblioteca només amb la llegenda. Recolliu preguntes sobre símbols confusos i afegiu una millora. Cada equip presenta la ruta triada, el criteri que ha prioritzat i una cosa que la maqueta no pot comprovar. Si la classe vol continuar, consulteu un mapa públic del municipi amb el docent i compareu representacions, sense declarar que el plànol de paper certifica la seguretat d'un carrer.
 
+## Opció amb els mapes interactius de l’Activity Box
+
+Aquest itinerari propi funciona amb mapa de paper. Si el centre disposa de l’Activity Box compatible, podeu substituir-lo o ampliar-lo amb un mapa interactiu, sense canviar l’objectiu d’accessibilitat:
+
+1. Poseu Tale-Bot a l’entrada principal de la cantonada superior esquerra i escolteu la consigna completa.
+2. Quan la veu indique una entrada secundària, traslladeu el robot a eixe punt. Abans de programar, localitzeu en el mapa el destí, les cruïlles i una ruta possible.
+3. Programeu i executeu la seqüència. Si el robot arriba a un lloc equivocat, useu l’avís del mapa com una dada per a revisar la ruta, no com una valoració de l’equip.
+4. En una entrada o punt d’inici, una nova consigna pot substituir l’anterior en moure-hi el robot. Si el robot ja es desplaça i cal interrompre la veu, useu *Play*; la resta de botons no la cancel·len.
+5. Useu els mapes interactius i els adhesius interactius per separat. Si canvieu d’un mapa a un tema d’adhesius, reinicieu el robot abans de començar el nou tema. Si la caixa o el mapa de la dotació no coincidix amb aquestes funcions, torneu a la graella pròpia i no pressuposeu la resposta sonora.
+
+**Evidència:** seqüència de targetes, consigna escoltada o llegida, error detectat i una modificació provada. Sense Activity Box, feu servir la mateixa evidència amb un mapa propi i una targeta de destí.
+
 ## Materials, representació i evidències
 
 Feu una graella de caselles grans sobre paper reutilitzable, símbols impresos en alt contrast, un full de llegenda, targetes de gir i una fitxa alternativa per assajar sense robot. Una còpia en relleu o línies amb cordill pot facilitar l'exploració tàctil. Les evidències mínimes són el mapa inicial, les dues rutes, una tira d'ordres amb predicció, el registre d'una depuració i una justificació oral, escrita o pictogràfica de la decisió final.
+
+L’Activity Box és opcional. En la versió descrita per Matatalab inclou cinc mapes interactius de doble cara, un mapa en blanc de doble cara, 32 targetes de comandament i adhesius; comproveu la caixa concreta abans de preparar la sessió, perquè altres paquets del fabricant tenen inventaris diferents.
 
 Useu una escala formativa: encara necessita suport / ho resol amb una pista / ho explica de manera autònoma. Observeu si l'equip manté l'ordre de les instruccions, localitza l'error amb una prova i usa els criteris acordats per comparar opcions. No avalueu suposades necessitats d'accessibilitat de companys ni demaneu a ningú que simule una discapacitat.
 
@@ -90,4 +111,4 @@ Oferiu un mapa amb relleu, poques interseccions i símbols d’alt contrast; per
 
 ## 🔗 Material oficial reinterpretat
 
-La temàtica parteix dels adhesius de cotxes de l’[Activity Box oficial de Tale-Bot Pro](https://matatalab.com/en/lesson4.3). Aquesta és una ampliació didàctica pròpia, no una activitat numerada de les 42 Activity Cards ni una reproducció del mapa o les instruccions de veu originals. El robot conserva la funció real de programar el moviment per botons; les normes de circulació i accessibilitat es treballen en paper.
+La temàtica parteix dels adhesius de cotxes de l’[Activity Box oficial de Tale-Bot Pro](https://matatalab.com/en/lesson4.3). La guia oficial descriu cinc mapes interactius de doble cara, un mapa en blanc, 32 targetes de comandament, adhesius i les regles de les consignes de veu; l’opció anterior les adapta a una missió pròpia. Aquesta és una ampliació didàctica, no una activitat numerada de les 42 Activity Cards ni una reproducció dels mapes o materials gràfics originals. Les activitats amb mapa propi continuen disponibles si la caixa no és a la dotació.

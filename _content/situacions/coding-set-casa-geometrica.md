@@ -22,6 +22,13 @@ _El Coding Set i MatataBot acompanyen un mapa de caselles amb una casa geomètri
 
 En quatre sessions, l’alumnat investiga com els moviments i els girs creen figures, escriu programes repetits i transforma cartró net de rebuig en una maqueta col·lectiva. La casa combina un contorn quadrat, un sostre triangular i una porta quadrada més menuda. Cada equip construeix i prova almenys quatre contorns; el treball manual amb tisores i cinta és una part de disseny i reutilització, no un requisit perquè MatataBot dibuixe directament.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Construir un recorregut que represente els costats d’un quadrat i distingir moviment recte i gir.
+- Compondre una casa amb formes geomètriques i explicar com s’ha obtingut cada contorn.
+- Usar cartró recuperat per crear una maqueta i relacionar-la amb el dibuix programat.
+- Canviar una forma, tornar a provar el programa i defensar el disseny amb una evidència.
+
 ## 🧰 Materials i preparació
 
 Prepareu Coding Set complet, quadrícula pròpia, paper quadriculat o cartó pla gran, retalls nets de capses, llapis i llapis de colors, cinta o cola, tisores d’aula, regle, plantilla d’angles de 60°, 90° i 120°, targetes amb moviments i bucles i una graella de registre. Si el centre disposa de l’Artist Add-On, podeu fer el traçat amb l’accessori després de comprovar la fixació i el lliscament; si no, MatataBot recorre les línies de caselles i l’alumnat trasllada el disseny al paper. Les dues opcions treballen el mateix raonament geomètric. Trieu cartró net, sec, sense grapes ni vores esmolades, i talleu-lo amb supervisió.

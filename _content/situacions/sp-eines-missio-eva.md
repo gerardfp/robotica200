@@ -38,6 +38,13 @@ Trieu una de tres tasques: traslladar una femella gran d’escuma d’un pern am
 
 - La idea d’interfície té en compte l’adherència ampla i un contrast visual clar sense obligar ningú a restringir la vista o el moviment.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Analitzar una tasca simulada i definir requisits d’una eina per a una persona amb guants.
+- Comparar agafadors i guies de cable amb criteris de control, abast i facilitat d’ús.
+- Construir una maqueta segura i provar-la amb peces lleugeres i moviments lents.
+- Iterar el disseny a partir d’observacions i distingir una simulació d’una eina apta per a ús real.
+
 ## 📅 Seqüència didàctica · 5 sessions de 50 minuts
 
 ### **Sessió 1 · Entenem la tasca i el context.**

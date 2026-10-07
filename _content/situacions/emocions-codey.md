@@ -22,7 +22,11 @@ _Una expressió programada representa una idea del relat; no llig l’estat emoc
 
 Una plaça de poble imaginària es prepara per a una festa. Uns personatges ficticis —una granota que ha perdut el mapa, un núvol que busca ombra o una llavor que espera la pluja— travessen situacions que poden donar lloc a interpretacions diferents. La classe dissenya cares digitals per a contar el relat amb Codey: usa les expressions integrades i crea imatges senzilles a la pantalla LED. El robot mostra el que el grup ha programat; no detecta ni interpreta les emocions de les persones.
 
-**Aprenentatges:** expressar idees amb signes gràfics, observar que una mateixa situació pot provocar reaccions diferents, programar una resposta a un esdeveniment, dissenyar una imatge LED amb píxels, ordenar una narració i parlar de quan una persona pot necessitar suport humà.
+
+
+## 🎯 Aprenentatges i vocabulari
+
+expressar idees amb signes gràfics, observar que una mateixa situació pot provocar reaccions diferents, programar una resposta a un esdeveniment, dissenyar una imatge LED amb píxels, ordenar una narració i parlar de quan una persona pot necessitar suport humà.
 
 ## 🧰 Materials i preparació
 

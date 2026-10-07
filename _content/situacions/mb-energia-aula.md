@@ -48,6 +48,13 @@ Amb la potència nominal documentada d’una lluminària fictícia o facilitada 
 
 Prepareu un pòster o exposició breu amb mètode, gràfic, estimacions, errors possibles i una acció de baix cost. Expliqueu què caldria mesurar millor per comprovar-ne l’efecte i compartiu la proposta amb l’audiència escolar acordada.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Planificar una recollida de dades de llum amb lloc, hora i condicions comparables.
+- Calibrar i repetir lectures, representar-les i distingir valors observats de dades fictícies.
+- Argumentar una proposta d’ús de la il·luminació basada en el conjunt de dades disponible.
+- Explicar que el sensor de micro:bit no certifica lux, eficiència energètica ni confort visual.
+
 ## 🧰 Materials i preparació
 
 BBC micro:bit amb sensor de llum disponible en la versió del centre, cable o alimentació adequada, ordinador amb MakeCode o Python, cronòmetre i full de registre. Si la placa és v1 o no exposa les lectures requerides a l’entorn instal·lat, useu un sensor extern verificat per separat o feu una simulació amb dades de prova identificades com a simulades.

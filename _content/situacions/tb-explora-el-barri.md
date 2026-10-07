@@ -78,7 +78,13 @@ Col·loqueu Tale-Bot, adhesius propis de parany i tresors en la quadrícula. Cad
 
 ### **B-12 · Persones que fan servei al barri.**
 
-Relacioneu una professió amb una eina o un espai que realment utilitza (fornera–forn, bibliotecari–llibre, jardinera–regadora, personal de salut–consulta). Trieu una parella, poseu una casella d’inici i una destinació i programeu el recorregut evitant les zones marcades com a tancades. Parleu de com demanar ajuda a persones de confiança; no dramatitzeu una emergència ni feu inferències sobre professions a partir de l’aparença.
+**Preparem el mapa.** Creeu targetes pròpies amb persones i eines de serveis del barri: per exemple, una persona bibliotecària i un carretó de llibres, una jardinera i una regadora, o personal de correus i una bossa de cartes. Afegiu adhesius propis de «zona tancada» com a adaptació local dels paranys de la targeta oficial. Parleu del servei que presta cada persona i relacioneu-lo amb l’eina; no deduïu ocupacions per l’aparença ni assigneu-les per gènere.
+
+**Programem des del servei fins a l’eina.** Trieu una fitxa de persona com a inici i la seua eina concreta com a destinació. Abans de tocar el robot, l’equip assenyala una ruta segura, representa les ordres amb targetes i comprova que no travessa cap zona tancada. Després programa Tale-Bot perquè vaja des de la persona fins a l’eina, executa el recorregut i compara el resultat amb la predicció. Si entra en una casella tancada o no arriba, localitzeu la primera ordre que cal canviar i torneu a provar.
+
+**Fem una segona missió i expliquem el servei.** Canvieu els rols de qui tria les targetes, programa, comprova obstacles i explica la decisió. Repetiu amb una altra parella persona–eina i demaneu a l’equip que justifique per què correspon. La situació representa serveis quotidians, no una emergència; si el robot no està disponible, feu la mateixa missió amb una fitxa que recórrega la quadrícula.
+
+**Evidència:** dues parelles persona–eina justificades, dues rutes amb les zones tancades evitades i una correcció explicada o, si la primera prova funciona, una comprovació independent del programa.
 
 ### **B-13 · Del més lent al més ràpid.**
 
@@ -92,6 +98,13 @@ Examineu si la dotació té el suport multifunció i retoladors que s’hi pugue
 
 Partiu d’una forma traçada per l’equip, afegiu-ne una segona amb un color diferent i convertiu-les en una escena del barri (jardí, mercat o plaça). Repartiu rols de disseny, codificació, comprovació i il·lustració; compareu el resultat fet amb el suport de Tale-Bot amb la versió manual si l’accessori no està disponible. Afegiu detalls que expliquen una història i presenteu una decisió artística que hàgeu revisat.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Fer servir una ruta per orientar una exploració de ciència, llenguatge, matemàtiques o art.
+- Ordenar instruccions i anticipar què observarà el grup en cada parada.
+- Comparar observació directa, representació i inferència en activitats de l’entorn.
+- Crear relats i recomptes amb mapes propis sense registrar dades personals ni afirmar deteccions del robot.
+
 ## 🧰 Materials i límits tècnics
 
 Robot de la dotació, mapa en paper, targetes pròpies, fitxes planes i, opcionalment, suport multifunció i retoladors compatibles que s’hagen comprovat físicament. La proposta oficial empra els mapes i recursos de l’Activity Box; ací s’ofereix una alternativa imprimible i manipulable, i no es pressuposen avisos de veu ni mapes interactius. Les activitats d’imant i dibuix s’adapten segons la seguretat i els accessoris disponibles. El robot no identifica objectes, aliments, colors ni magnetisme per si mateix.
@@ -99,6 +112,10 @@ Robot de la dotació, mapa en paper, targetes pròpies, fitxes planes i, opciona
 ## 🧪 Evidències
 
 Mapa anotat, classificacions, prediccions, seqüències de comandaments, una ruta depurada i relat oral o visual. Es valora argumentar l’ordre, comprovar-lo i revisar una idea després d’una prova, no encertar a la primera.
+
+## ♿ Participació, accessibilitat i seguretat
+
+Oferiu el mapa en format gran, amb inici ben contrastat i pictogrames a més de colors. L’alumnat pot planificar amb targetes, assenyalar o dictar les ordres abans que una altra persona les introduïsca al robot. Reduïu el nombre de parades si cal i feu les proves sobre una taula estable, sense obstacles que puguen encallar les rodes.
 
 ## 🔗 Referent oficial adaptat
 

@@ -22,6 +22,13 @@ _La peça és original i pot escoltar-se amb la placa, instruments d’aula, llu
 
 El pati de l’escola tindrà una mostra sonora breu. Cada equip crea una peça original, escriu instruccions per a un públic concret i investiga com la micro:bit pot interpretar notes, pauses i gestos. La situació recorre les cinc lliçons oficials de *Musical micro:bit*, combinant algoritmes desconnectats, composició, selecció, acceleròmetre, programació i avaluació.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Transformar una idea musical en símbols, duracions i instruccions interpretables.
+- Programar una peça amb les eixides sonores disponibles i depurar-ne el ritme i les pauses.
+- Comparar una interpretació de la placa amb una interpretació humana i revisar la partitura perquè es puga seguir.
+- Comunicar decisions de composició i oferir una participació visual o silenciosa equivalent.
+
 ## 📅 Seqüència didàctica · 5 sessions
 
 ### **Sessió 1 · Algoritmes musicals (Musical algorithms).**

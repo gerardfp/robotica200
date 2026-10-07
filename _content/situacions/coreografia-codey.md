@@ -24,7 +24,11 @@ La classe prepara una breu actuació per a una festa escolar inspirada en els ri
 
 L’objectiu no és fer que molts robots es moguen sincronitzats ni garantir una precisió musical professional. La proposta està pensada per a un Codey Rocky, que cada equip pot provar per torns. S’investiga com ordenar accions i pauses, què es pot repetir al programa i com canvia la dansa quan modifiquem un element.
 
-**Aprenentatges:** pulsació i patrons rítmics; correspondència entre símbol, temps i acció; seqüenciació; ús de blocs de moviment, emoció, llum i espera; prova i depuració; creació cooperativa i comunicació d’una decisió artística.
+
+
+## 🎯 Aprenentatges i vocabulari
+
+pulsació i patrons rítmics; correspondència entre símbol, temps i acció; seqüenciació; ús de blocs de moviment, emoció, llum i espera; prova i depuració; creació cooperativa i comunicació d’una decisió artística.
 
 ## 🧰 Materials i preparació
 

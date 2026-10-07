@@ -32,6 +32,13 @@ La biblioteca prepara un plànol de rutes per a una jornada escolar simulada. El
 
 - **Decisió:** una recomanació ha d’indicar criteris, costos simulats i límits de les dades.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Usar variables i comptadors per descriure l’orientació, la distància i la velocitat d’una maqueta.
+- Fer mesures repetibles i registrar unitats, condicions inicials i diferències entre intents.
+- Comparar rutes de servei simulades amb criteris explícits de distància i temps.
+- Explicar els límits de les mesures i evitar extrapolar-les a distàncies reals sense calibratge.
+
 ## 📅 Seqüència didàctica · sis lliçons
 
 ### **Lliçó 1 · Orientar-se sense volar (60–90 min).**

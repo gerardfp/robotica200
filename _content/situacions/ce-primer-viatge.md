@@ -22,7 +22,13 @@ _El tren Coding Express de la dotació recorre una via amb una estació i maons 
 
 La primera exploració de Coding Express introdueix les peces de construcció i els maons d’acció. En aquesta adaptació, el grup construeix una destinació pròpia de l’entorn pròxim —com el jardí de l’escola, una parada de mercat o el port—, planifica una seqüència perquè una passatgera hi arribe i compara les formes disponibles d’aturar el tren. Cada idea es prova amb el material real: el color no s’utilitza com a explicació fins que s’ha observat què fa la peça.
 
-**Aprenentatges:** identificar elements del set, construir cooperativament, explicar una ruta pas a pas, anticipar una arribada, observar el comportament dels maons d’acció i usar proves per a revisar una predicció.
+
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar les peces del set que s’han comprovat i construir una via estable en equip.
+- Descompondre una ruta en ordres i anticipar l’arribada a una destinació de la maqueta.
+- Provar les opcions d’aturada disponibles i registrar què fa realment cada maó.
+- Explicar com l’evidència d’una prova confirma o modifica la seqüència prevista.
 
 ## Abans de començar
 

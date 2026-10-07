@@ -25,9 +25,15 @@ La biblioteca del centre vol preparar un recorregut de descobertes per a una alt
 
 La proposta pren com a referència el currículum oficial **Learning Station** de Matatalab: dotze lliçons, amb una progressió pública que va de la familiarització amb el Coding Set i els blocs (1–4), als obstacles, banderes i laberints amb històries o poemes (5–7), als mapes i les graelles (8–10), i a la creació artística o musical amb accessoris (11–12). El document docent complet no s’ha pogut contrastar pas a pas; per això, les sessions següents són una adaptació pròpia de l’abast públic, no una transcripció ni una afirmació de correspondència integral amb cada pla de lliçó.
 
+La guia docent pública concreta els quatre primers objectius i activitats: (1) vocabulari de robot, robòtica i comunicació; (2) enviar i rebre missatges i relacionar-ho amb torre i robot; (3) classificar blocs de moviment, nombres, bucles, funcions, música/dansa, obstacles i banderes; i (4) resoldre reptes il·lustrats del *Challenge Booklet* de nivell 1 amb blocs i bandera, comprovant la posició final. També indica uns 20 minuts per lliçó i grups cooperatius de quatre. Ací ampliem cada lliçó a 45 minuts per afegir context valencià, prediccions, proves repetides, registre i revisió per una altra parella; aquesta duració és una decisió local, no l’oficial. El quadern de reptes no està disponible per comprovar cada exercici, així que la sessió 4 usa targetes pròpies i no s’afirma que adapte els seus reptes exactes.
+
 **Pregunta guia:** quines instruccions i quina informació necessita una altra classe per arribar al lloc que hem triat i entendre què hi passa?
 
-**Aprenentatges:** anticipar l’efecte d’una seqüència, distingir ordre i orientació, provar i depurar una ruta, representar espais en una graella, comunicar un itinerari amb vocabulari espacial i revisar una creació a partir de les proves.
+
+
+## 🎯 Aprenentatges i vocabulari
+
+anticipar l’efecte d’una seqüència, distingir ordre i orientació, provar i depurar una ruta, representar espais en una graella, comunicar un itinerari amb vocabulari espacial i revisar una creació a partir de les proves.
 
 ## 🧰 Materials i preparació
 
@@ -45,7 +51,7 @@ Abans d’iniciar la seqüència, mesureu el desplaçament real del robot amb un
 
 **Activació · 5 min:** presenteu el repte de preparar una ruta perquè una altra classe puga descobrir la biblioteca o un racó del pati. Mostreu el kit tancat i recolliu prediccions sobre què pot fer cada peça.
 
-**Exploració · 15 min:** en equips de tres, identifiqueu robot, torre i tauler. Observeu quines peces necessiten càrrega i quines ordres tangibles reconeix el kit. Cada membre explica una funció amb les seues paraules abans de provar res.
+**Exploració · 15 min:** en equips de quatre, identifiqueu robot, torre i tauler. Repartiu i roteu els rols de programador/a, inspector/a, responsable del mapa i portaveu; observeu quines peces necessiten càrrega i quines ordres tangibles reconeix el kit. Cada membre explica una funció amb les seues paraules abans de provar res.
 
 **Prova · 15 min:** executeu una ordre senzilla des d’una casella marcada i observeu què passa quan la torre llig el tauler i envia la instrucció al robot. Repetiu només després de tornar a col·locar el robot en la mateixa posició inicial.
 
@@ -53,137 +59,167 @@ Abans d’iniciar la seqüència, mesureu el desplaçament real del robot amb un
 
 **Evidència:** dibuix de les tres parts del sistema, una funció observada i una pregunta per a investigar.
 
-### Sessió 2 · Llegir i ordenar les instruccions
+### Sessió 2 · Enviar i rebre una instrucció
 
-**Activació · 5 min:** mostreu dues seqüències amb les mateixes ordres en ordre diferent. Abans d’executar-les, cada equip prediu si acabaran al mateix lloc.
+**Activació · 5 min:** acordeu missatges curts i neutres sobre espais del centre (per exemple, «la biblioteca està oberta»). No useu informació personal.
 
-**Modelatge · 10 min:** construïu una seqüència curta amb el tauler i verbalitzeu com es llig segons les instruccions del model disponible. Comproveu l’ordre real amb el manual del vostre kit; no extrapoleu una convenció visual que no hàgeu verificat.
+**Missatge desconnectat · 12 min:** en equips de quatre, dues persones envien un missatge oral a l’altra banda de l’espai i les altres dues el reben i el repeteixen. Canvieu els rols. Compareu què passa quan el missatge arriba incomplet o en un ordre diferent.
 
-**Repte · 20 min:** en una graella de tres per tres, planifiqueu una ruta fins a una bandera. Col·loqueu les ordres, dibuixeu el resultat previst i executeu-lo. Canvieu una sola instrucció i compareu el nou destí.
+**Connexió amb el kit · 18 min:** representeu una ruta amb blocs en el tauler. La torre llig la disposició i envia instruccions al robot; una parella fa de programadora i l’altra d’inspectora: abans d’executar, la receptora descriu què espera que faça el robot. Repetiu amb una sola ordre canviada i identifiqueu el missatge diferent.
 
-**Tancament · 10 min:** una altra parella rep la seqüència dibuixada i intenta anticipar-la sense veure el robot.
+**Tancament · 10 min:** dibuixeu dos símbols propis, un per a «enviar» i un per a «rebre», i expliqueu la relació entre torre, programa i robot.
 
-**Evidència:** dues seqüències diferents, dues prediccions i una explicació de com l’ordre altera el resultat.
+**Evidència:** missatge transmés i rebut, dibuix de la ruta i una explicació de la funció de la torre i del robot.
 
-### Sessió 3 · Què vol dir girar?
+### Sessió 3 · Classificar blocs, obstacles i destinacions
 
-**Activació · 5 min:** una persona camina per una quadrícula de cinta i s’atura en cada cruïlla. El grup descriu el canvi de direcció sense confondre’l amb un desplaçament lateral.
+**Activació · 5 min:** mostreu el Coding Set preparat sobre una taula plana. Abans de tocar les peces, cada equip proposa criteris per a agrupar-les.
 
-**Exploració · 12 min:** representeu amb fletxes l’orientació inicial del robot. Feu una predicció abans de cada gir i marqueu l’orientació nova en el paper.
+**Classificació · 15 min:** repartiu targetes pròpies amb aquestes categories: moviment/direcció, nombres/paràmetres, repetició, funcions, música/dansa i obstacles/banderes. En grups de quatre, classifiqueu les peces que realment hi ha al kit i poseu cada targeta al costat del grup corresponent. Si una categoria depén d’un accessori absent, deixeu la targeta com a «no disponible en aquesta dotació»; no la completeu amb peces imaginàries.
 
-**Pràctica · 18 min:** creeu dues rutes que arriben a la mateixa destinació però inclouen girs en punts diferents. Executeu-les des del mateix inici. Si una falla, comproveu primer l’orientació, després la seqüència, i finalment la mida de la casella.
+**Discussió i representació · 15 min:** expliqueu per a què podria servir cada categoria i feu un dibuix original que la represente. Compareu dues classificacions i justifiqueu qualsevol diferència amb una peça concreta, una instrucció del manual o una prova observada.
 
-**Tancament · 10 min:** compareu el dibuix amb el moviment real. Afegiu una llegenda que indique què representa cada fletxa.
+**Tancament · 10 min:** reuniu les targetes i prepareu un inventari de classe: nom, funció comprovada i dependència d’accessori si n’hi ha.
 
-**Evidència:** mapa abans/després amb orientació, girs i una correcció justificada.
+**Evidència:** taula il·lustrada de categories amb peces observades i una llista separada d’elements absents o pendents de verificar.
 
-### Sessió 4 · Repetir sense perdre el control
+### Sessió 4 · Resoldre reptes de codi amb banderes
 
-**Activació · 5 min:** busqueu una ruta curta amb un tram que es repetisca. Representeu-la primer amb marques en paper, sense col·locar blocs.
+La guia oficial proposa completar els reptes del *Challenge Booklet* de nivell 1 seguint les imatges, col·locant blocs i una bandera de destinació i comprovant si el robot arriba al lloc representat. Com que no tenim el quadern per validar-ne els reptes individuals, aquesta sessió el substitueix per targetes originals; no es presenta com una adaptació dels seus exercicis exactes.
 
-**Modelatge · 10 min:** consulteu quines peces de repetició inclou exactament el Coding Set del centre. Si no hi ha un bloc compatible, tracteu la repetició com un patró de seqüència i no simuleu una funció inexistent.
+**Preparació · 5 min:** dibuixeu una graella de quatre per quatre amb biblioteca, hort i plaça com a destinacions fictícies. Prepareu tres targetes pròpies amb inici, bandera i seqüència representada amb símbols.
 
-**Repte · 20 min:** creeu dues representacions equivalents d’un itinerari: una amb ordres repetides i una altra amb el recurs de repetició disponible. Compareu quantes peces calen i en quin punt deixa de ser útil comprimir la seqüència.
+**Reptes progressius · 25 min:** en grups de quatre, resoleu tres reptes: arribar amb una seqüència curta de moviments; arribar amb un gir i l’orientació marcada; i comparar dues seqüències vàlides per a la mateixa destinació. La persona inspectora comprova que la seqüència física coincideix amb la targeta abans de prémer el botó d’execució. Després, compareu la posició final del robot amb el dibuix de destí i corregiu una sola peça si no coincideixen.
 
-**Tancament · 10 min:** expliqueu la repetició amb un exemple corporal o una tira de paper perquè una altra parella la puga reconstruir.
+**Crear i intercanviar · 10 min:** cada equip dibuixa una ruta original amb blocs i bandera per a un altre equip. Qui la rep la programa sense que l’equip autor li done instruccions orals.
 
-**Evidència:** parell de programes comparats i regla escrita sobre quan convé repetir.
+**Tancament · 5 min:** compartiu una ruta provada i dibuixeu-la al quadern o al registre de l’equip.
 
-### Sessió 5 · Afegir obstacles i una destinació clara
+**Evidència:** targeta creada, disposició comprovada de blocs, destí previst/observat i ruta dibuixada després de la prova.
 
-**Activació · 5 min:** poseu un obstacle de cartolina en una ruta coneguda. Abans de moure’l, pregunteu quina informació cal per trobar un camí alternatiu.
+### Sessió 5 · Descobrir què fa que un mapa siga un laberint
 
-**Disseny · 12 min:** cada equip crea un laberint de paper amb inici, una bandera de destí i un màxim de tres obstacles baixos. Manteniu una ruta possible i una zona de seguretat al voltant del robot.
+**Activació · 5 min:** presenteu un camí obert i un laberint dibuixat amb carrers de paper. Demaneu que localitzen inici, destinació, cruïlles i carrerons sense eixida.
 
-**Prova · 18 min:** una parella programa la ruta i una altra observa. Registreu la primera casella on la predicció i l’execució divergeixen. Modifiqueu una ordre o l’obstacle, però no totes dues coses alhora.
+**Exploració desconnectada · 15 min:** en grups de quatre, una persona fa de robot sobre una quadrícula de cinta i les altres li donen instruccions d’una en una. Marqueu en el mapa on hi ha més d’una opció i on cal tornar arrere; no poseu obstacles físics al recorregut.
 
-**Tancament · 10 min:** intercanvieu laberints. L’equip visitant ha de localitzar l’inici, la bandera i un obstacle abans de programar.
+**Disseny · 15 min:** cada equip dibuixa un primer laberint senzill de carrers amples amb més d’un itinerari possible. Una fitxa recorre la ruta i el grup comprova que almenys una opció connecta entrada i eixida.
 
-**Evidència:** laberint amb llegenda, programa provat i anotació d’una depuració.
+**Tancament · 10 min:** intercanvieu mapes i demaneu a una altra parella que trace un camí possible sense que l’equip autor li’l marque.
 
-### Sessió 6 · Una història que recorre el laberint
+**Evidència:** laberint amb llegenda, dos camins identificats i una explicació de per què un és viable.
 
-**Activació · 5 min:** trieu un personatge fictici que ha de resoldre una necessitat concreta: trobar un llibre, portar una nota o arribar a un espai de joc.
+![Laberint de paper en una graella amb inici, obstacles baixos i una bandera de destinació.](../../_assets/imatges/sa-cs-laberint-paper.webp)
 
-**Planificació · 12 min:** dibuixeu inici, problema i final en tres vinyetes. Relacioneu cada canvi de lloc amb una instrucció o una decisió de ruta.
+_La ruta es planifica i es revisa en paper abans de provar el robot._
 
-**Creació · 18 min:** situeu les vinyetes al voltant del laberint i programeu el trajecte. Si una ordre no ajuda a explicar la història, retireu-la o justifiqueu-la. No cal gravar veus: es pot narrar, escriure o ordenar pictogrames.
+### Sessió 6 · Afegir obstacles i banderes
 
-**Compartir · 10 min:** una altra parella segueix la ruta i conta què creu que ha passat. L’equip autor compara la interpretació amb la intenció inicial.
+**Activació · 5 min:** recupereu el laberint de la sessió anterior i distingiu un obstacle, una bandera de destí i un carrer transitable. La bandera indica on arribar; no és un bloc de moviment.
 
-**Evidència:** guió de tres parts, ruta executada i una revisió feta després del retorn.
+**Classificació · 10 min:** cada equip col·loca targetes pròpies d’obstacle i bandera en diverses caselles i explica quina funció té cadascuna. Els obstacles són símbols plans dibuixats al mapa, mai peces altes que puguen encallar el robot.
 
-### Sessió 7 · Escriure un poema amb moviments
+**Planificació i prova · 20 min:** situeu inici, una bandera i fins a tres obstacles representats en paper. Dibuixeu un camí que evite els obstacles, convertiu-lo en instruccions i proveu-lo. Registreu el primer punt on el camí previst i l’execució divergeixen; canvieu una ordre cada vegada.
 
-**Activació · 5 min:** llegiu un poema breu d’autoria pròpia sobre el pati, la plaça o l’horta. Marqueu paraules que indiquen direcció, repetició o pausa.
+**Tancament · 10 min:** canvieu la bandera de casella sense moure els obstacles i expliqueu què ha canviat en la ruta necessària.
 
-**Composició · 12 min:** convertiu tres o quatre versos en una seqüència visual de caselles, icones o targetes. Cada símbol ha de tindre un significat acordat i visible.
+**Evidència:** mapa amb llegenda, distinció obstacle/destí, seqüència provada i anotació d’una depuració.
 
-**Programació · 18 min:** executeu la ruta i llegiu el poema seguint-la. Si un tram no es pot representar amb el kit, deixeu-lo com a narració o gest: no inventeu ordres que el robot no tinga.
+### Sessió 7 · Crear un laberint amb inici i final
 
-**Tancament · 10 min:** intercanvieu poemes i comproveu si la llegenda permet reconstruir la seqüència.
+**Activació · 5 min:** cada equip tria un espai valencià imaginari —una marjal, un jardí escolar o un camí entre parades del mercat— i fixa una entrada i una bandera final.
 
-**Evidència:** poema o relat breu, llegenda de símbols i programa revisat per una altra parella.
+**Construcció · 15 min:** dissenyeu un laberint propi amb carrers de paper amples, dos o tres obstacles dibuixats i almenys una ruta completa. Una altra parella revisa que inici, bandera i llegenda siguen inequívocs abans de programar.
 
-### Sessió 8 · Llegir una graella i orientar-se
+**Programació i iteració · 15 min:** col·loqueu la seqüència de blocs i executeu-la des del mateix inici. Compareu la posició final amb la bandera, canvieu una sola instrucció i repetiu la prova. Després, creeu una segona solució si el laberint permet més d’un camí.
 
-**Activació · 5 min:** compareu una graella sense referències amb una que té files, columnes i llocs reconeixibles. Identifiqueu quina és més fàcil d’explicar.
+**Compartir · 10 min:** intercanvieu laberints. L’equip visitant traça el recorregut i prova el programa; l’equip autor registra una millora del mapa o de les instruccions. Com a extensió pròpia, afegiu un relat o poema curt que done sentit a la destinació.
 
-**Modelatge · 10 min:** acordeu un sistema comú de coordenades o etiquetes. Marqueu el punt inicial i l’orientació amb una fletxa; una coordenada sola no indica necessàriament cap a on mira el robot.
+**Evidència:** laberint amb inici/final, ruta dibuixada, programa provat, resultat observat i una revisió posterior al retorn.
 
-**Repte · 20 min:** col·loqueu tres fites en una graella de paper i redacteu una ruta amb referències espacials. Una parella la descriu oralment i l’altra la tradueix a ordres tangibles.
+### Sessió 8 · Crear un mapa esquemàtic de l’entorn (45 min)
 
-**Tancament · 10 min:** compareu la descripció, la predicció i l’execució. Corregiu primer amb llenguatge, després amb blocs.
+Aquesta sessió adapta el tema oficial «Introducing Maps»: representar un espai amb símbols i llegenda abans de convertir-lo en una quadrícula. El mapa és una maqueta didàctica, no un plànol d’orientació real.
 
-**Evidència:** graella etiquetada i equivalència entre instruccions espacials i seqüència programada.
+**Activació · 5 min:** compareu un dibuix panoràmic i una llista de llocs del centre o d’un poble imaginari. Quina informació cal perquè una altra classe entenga com es relacionen els llocs? Useu espais públics o inventats, mai adreces particulars.
 
-### Sessió 9 · Dibuixar un mapa del nostre entorn
+**Exploració · 10 min:** observeu una imatge o un dibuix de referència de l’Albufera i identifiqueu elements que es poden representar sense afirmar distàncies exactes: aigua, camins, horta, pont, plaça o biblioteca. Separeu allò observat d’allò que el grup proposa com a símbol.
 
-**Activació · 5 min:** trieu un espai compartit i públic del centre o del barri: biblioteca, plaça, pati o camí d’accés. Useu un dibuix o una font cartogràfica pública, no ubicacions particulars.
+**Explicació i registre · 10 min:** acordeu una llegenda amb símbols diferenciats per a lloc, camí, inici i destinació. Anoteu què significa cada símbol i quina informació deixa fora el mapa; encara no afegiu coordenades ni una escala geogràfica.
 
-**Construcció · 15 min:** representeu quatre o cinc fites en una graella simplificada. Afegiu una llegenda, una entrada i una destinació. La distància entre caselles ha de correspondre a una prova del robot, no a una escala geogràfica real.
+**Iteració · 15 min:** dibuixeu un mapa esquemàtic amb quatre o cinc llocs i un camí continu. Una altra parella l’interpreta sense ajuda i marca amb una fitxa una ruta possible. Si no pot distingir camins, llocs i destí, reviseu la llegenda o l’organització abans d’afegir instruccions per al robot.
 
-**Rutes · 15 min:** cada equip prepara dos itineraris possibles fins a la mateixa fita. Compareu nombre d’ordres, girs i obstacles; no convertiu la ruta més curta en l’únic criteri si és menys clara o accessible.
+**Reflexió i verificació · 5 min:** expliqueu una decisió de representació i una limitació del mapa. Deseu la versió inicial i el retorn de la parella perquè es puga transformar en graella en la sessió següent.
 
-**Tancament · 10 min:** reviseu que el mapa no continga dades personals i que una persona que no l’ha dibuixat entenga els símbols.
+**Evidència:** mapa original amb llegenda, ruta verbalitzada per una altra parella i una nota que diferencia representació esquemàtica de distància real.
 
-**Evidència:** mapa local esquemàtic, dues rutes comparades i llegenda comprensible.
+![Mapa esquemàtic de la marjal amb graella, camins, nucli habitat i camps, sense coordenades reals.](../../_assets/imatges/sa-cs-mapa-marjal.webp)
 
-### Sessió 10 · Trobar i explicar una ruta millor
+_El mapa és una maqueta didàctica: no representa rutes reals ni dades de cap infant._
 
-**Activació · 5 min:** recupereu dues rutes de la sessió anterior. Definiu conjuntament què vol dir «millor» per a aquest repte: menys ordres, menys girs, més fàcil de seguir o menys propensa a errors.
+### Sessió 9 · Convertir el mapa en una graella (45 min)
 
-**Experiment · 20 min:** executeu cada ruta almenys dues vegades des del mateix inici. Registreu desviacions, temps només si és útil i la causa observada. Manteniu constants les caselles i el robot.
+La segona lliçó del bloc oficial tracta les graelles. Ací transformem el mapa de la sessió 8 en una representació regular que permet descriure posicions i instruccions sense confondre coordenades amb ordres directes del Coding Set.
 
-**Revisió · 10 min:** canvieu una decisió cada vegada i repetiu la prova. Si el recorregut físic no és estable, atureu la comparació i reviseu el muntatge.
+**Activació · 5 min:** recupereu el mapa esquemàtic i trieu un recorregut curt. Predigueu què es perdrà i què es guanyarà si es dibuixa sobre caselles iguals.
 
-**Comunicació · 10 min:** redacteu una recomanació que incloga el criteri, les dades i una limitació de la maqueta.
+**Exploració · 10 min:** poseu una quadrícula transparent o de paper damunt del mapa. Marqueu files i columnes amb símbols grans, una fletxa d’orientació i les posicions d’inici/destí. Manteniu la quadrícula prou ampla perquè el robot puga circular si es farà una prova física.
 
-**Evidència:** taula de proves repetides, ruta seleccionada i argument basat en un criteri explícit.
+**Explicació i registre · 10 min:** descriviu tres llocs amb referències de fila/columna i practiqueu una ruta amb davant, darrere i gir. Acordeu el punt de vista del robot; una coordenada assenyala una casella, però no indica cap a on mira ni substitueix els blocs de moviment.
 
-### Sessió 11 · Crear un patró sonor o rítmic
+**Iteració · 15 min:** una parella dona la ruta amb referències de graella i l’altra la tradueix a blocs físics. Predigueu les caselles de pas, executeu des d’una mateixa orientació inicial i anoteu la primera diferència entre posició prevista i observada. Corregiu una sola instrucció i proveu de nou.
 
-**Activació · 5 min:** escolteu o llegiu un patró de percussió corporal creat pel grup. Representeu pulsacions i pauses amb formes, no amb una gravació de cap alumne.
+**Reflexió i verificació · 5 min:** compareu mapa i graella: quins detalls del lloc han quedat simplificats? Quina informació cal afegir perquè un equip visitant puga reconstruir la ruta?
 
-**Opció amb accessori · 20 min:** si el centre té el Musician Add-On compatible i ha comprovat les instruccions del seu model, creeu una seqüència curta amb les peces disponibles. Proveu un canvi cada vegada i anoteu quin efecte sonor produeix.
+**Evidència:** mapa en quadrícula amb llegenda i orientació, taula de tres posicions i seqüència de blocs provada o marcada explícitament com a simulació.
 
-**Opció sense accessori · 20 min:** manteniu el repte artístic amb targetes de ritme i una ruta de robot associada a símbols de so. Una persona pot fer la percussió amb objectes de classe o el grup pot usar pictogrames en silenci.
+### Sessió 10 · Reduir una ruta amb bucles i funcions (45 min)
 
-**Tancament · 10 min:** compareu el patró previst amb el resultat i expliqueu quin element es repetix o canvia.
+Aquesta sessió adapta «Introducing More Advanced Coding Blocks». Els recursos oficials de Matatalab descriuen l’ús de bucles amb moviment i nombre, i de funcions amb altres blocs o bucles; fem servir eixes regles publicades, però no afirmem que siguen els passos exactes del pla docent de la lliçó 10. Abans de començar, comproveu que els blocs de bucle i funció del kit local estiguen complets i siguen reconeguts pel tauler.
 
-**Evidència:** partitura de símbols i registre de prova. La versió sense accessori no es presenta com l’ús del Musician Add-On oficial.
+**Activació · 5 min:** mostreu dues seqüències pròpies per arribar a la mateixa destinació: una llarga i una amb un tram repetit. L’alumnat prediu quina és més fàcil de revisar i identifica quina part es repetix.
 
-### Sessió 12 · Muntar una exposició per a una altra classe
+**Exploració · 10 min:** amb els blocs disponibles, observeu que un bucle es forma amb inici i final en parella; el nombre va davall del bloc d’inici i controla quantes vegades es repetixen les ordres interiors. Per a les funcions, consulteu el manual de la versió local: la guia de Matatalab indica que definició i crida s’usen en parella, que la definició se situa en la fila inferior a la crida i que no s’hi combina un bloc numèric. No improviseu una disposició si les peces del centre difereixen.
 
-**Activació · 5 min:** cada equip tria una peça creada: laberint, mapa, poema en ruta o patró artístic/sonor.
+**Explicació i registre · 10 min:** representeu el mateix tram repetit com una seqüència explícita i com un bucle, anotant quines ordres queden dins del parell. Després, identifiqueu un recorregut que puga encapsular-se en una funció i dibuixeu on apareix la definició i on es crida. Si falta algun bloc, feu aquesta comparació amb targetes pròpies i marqueu-la com a simulació.
 
-**Muntatge · 15 min:** organitzeu una exposició de taula amb inici visible, llegenda, ordres, predicció i resultat. Si hi ha Artist Add-On, useu-lo només després de verificar les peces i el procediment del kit; sense l’accessori, completeu la representació amb paper i retoladors.
+**Iteració · 15 min:** programeu la ruta de la graella de la sessió 9 amb el mètode més llegible per al kit real. Proveu primer la versió sense comprimir; després, useu un bucle o una funció, una a la vegada, i compareu si el robot arriba a les mateixes caselles. Registreu ordres, errors i diferències; una ruta més curta no es considera millor si deixa de ser interpretable per l’equip visitant.
 
-**Visita · 15 min:** una parella visitant prova la ruta o interpreta la llegenda sense que l’equip autor li explique cada pas. Registreu una pregunta i una cosa que ja es comprén.
+**Reflexió i verificació · 5 min:** cada equip justifica quina representació reutilitzaria i per què. Separeu la funció realment executada pel robot de la que només s’ha representat en paper.
 
-**Tancament · 10 min:** feu una revisió final i completeu una autoavaluació: què sabíem al principi, què hem pogut comprovar i què depén del material disponible.
+**Evidència:** dues versions d’un programa equivalent, registre de la prova i explicació del paper del nombre del bucle o de la crida a funció.
 
-**Evidència:** exposició interactiva, retorn d’una altra parella, autoavaluació i una limitació documentada.
+### Sessió 11 · Angles i estrelles del nostre entorn (45 min)
+
+L’índex de Learning Station inclou angles i pentagrames/estrelles en el tram de creació amb Artist i Musician Add-Ons. Com a comprovació tècnica complementària, la guia oficial Artist explica que el MatataBot dibuixa l’angle suplementari indicat pel bloc d’angle i que aquests blocs s’usen amb girs esquerra/dreta; combinats amb moviment i bucle permeten traçar formes. Aquesta sessió ho adapta amb una roseta pròpia inspirada en rajoles i places valencianes, sense copiar plantilles ni pressupostar accessoris.
+
+**Activació · 5 min:** mostreu una roseta dibuixada per l’equip docent i pregunteu quines repeticions i girs poden explicar-ne la forma. Cada parella marca amb fletxes el recorregut que espera i indica què entén per angle; no confongueu l’angle de gir del robot amb l’angle interior del polígon.
+
+**Exploració · 10 min:** amb paper, regle i transportador opcional, compareu un gir recte amb girs més oberts o més tancats. Dibuixeu un pentagrama (estrela de cinc puntes) amb els vèrtexs marcats i traceu l’ordre que seguix el llapis. Si el centre disposa de l’Artist Add-On compatible, inventarieu-ne els 20 blocs d’angle, els tres llapis de colors i les targetes d’escalfament que realment hi ha, i reviseu les instruccions abans de muntar el llapis. La guia del fabricant enumera deu valors d’angle (30°, 36°, 45°, 60°, 72°, 108°, 120°, 135°, 144° i 150°), cadascun amb dos blocs; useu només els valors presents i feu una plantilla original de prova.
+
+**Explicació i registre · 10 min:** descomponeu la roseta en trams repetits. En una taula, anoteu nombre de trams, gir observat, predicció i resultat. Feu una primera simulació amb fletxes sobre una quadrícula; una seqüència de girs a la graella no es presenta com una ordre en graus si el kit base no permet introduir-la.
+
+**Iteració · 15 min:** amb el complement verificat, combineu blocs de moviment, gir, angle i bucle per provar un triangle i una estrella propis. Predigueu la relació entre angle interior i gir suplementari, canvieu un paràmetre cada vegada i comproveu el traç sobre paper. Sense complement, manteniu el mateix objectiu amb una composició de paper: programeu MatataBot perquè visite els vèrtexs numerats d’una estrella gran o representeu el traçat amb una fitxa; registreu aquesta alternativa com a simulació, no com a dibuix del robot. Una parella revisa si el patró es pot repetir i si el dibuix coincideix amb la ruta prevista.
+
+**Reflexió i verificació · 5 min:** cada equip mostra el patró i completa «Hem pogut comprovar… / Encara no podem afirmar…». Compareu el dibuix, la seqüència i el moviment observat; guardeu la plantilla pròpia i anoteu si s’ha usat el complement o una alternativa.
+
+**Evidència:** disseny original amb vèrtexs i fletxes, registre de predicció/prova i explicació de la diferència entre angle geomètric, gir del robot i funcions del complement disponible.
+
+### Sessió 12 · Joc creatiu lliure: una obra que una altra classe puga explorar (45 min)
+
+La guia oficial tanca el currículum amb «Introducing Creative Free Play». Ací l’alumnat tria una idea i combina lliurement les habilitats treballades en una creació per a una altra classe. Com a connexió tècnica complementària, la guia Musician explica com combinar blocs de nota i melodia amb nombres per modificar el compàs; només s’aplica si el complement està present i verificat. Si no, el repte continua amb seqüències de paper, símbols i una alternativa silenciosa.
+
+**Activació · 5 min:** obriu tres possibilitats sense imposar-ne cap: una història en un mapa, un laberint amb més d’una ruta o una composició de patrons/estrelles. Cada equip tria destinatari, propòsit i una cosa que vol provar; la proposta ha de poder-se explicar amb les peces que realment té.
+
+**Exploració · 10 min:** feu un esbós amb inici, fites i final o amb les parts del patró. Assigneu rols rotatius i prepareu una llegenda. Si s’incorpora un complement, l’equip docent comprova prèviament compatibilitat, peces i instruccions; si no, oferiu l’alternativa en paper sense penalització.
+
+**Explicació i registre · 10 min:** convertiu el disseny en una seqüència llegible: ordre de blocs, repeticions que el kit base admeta, girs, obstacles representats i missatge final. En una fitxa pròpia, distingiu «funció comprovada», «simulació» i «idea per provar». Abans d’executar, una parella predix què farà el robot o com recorrerà el visitant l’obra.
+
+**Iteració · 15 min:** feu una prova amb MatataBot si el disseny usa rutes; manteniu el mateix inici i compareu predicció/resultat. Si és una composició sonora i hi ha Musician Add-On, creeu una melodia original curta amb blocs de nota o de melodia i proveu un canvi de duració amb el bloc numèric; no copieu una cançó publicada. Si no hi ha complement, representeu el patró amb paper, ritme silenciós i símbols. Una classe visitant prova o interpreta la proposta sense indicacions de l’equip autor; el grup registra un comentari i aplica una millora concreta.
+
+**Reflexió i verificació · 5 min:** presenteu el producte i expliqueu una decisió basada en la prova, una limitació del model i quina part depenia d’un accessori. Deseu el mapa o plantilla, la seqüència i el retorn rebut per a la mostra de classe.
+
+**Evidència:** creació original provada o identificada com a model, instruccions que una altra parella pot seguir, retorn aplicat i reflexió sobre materials disponibles.
 
 ## 🧪 Avaluació i evidències
 
@@ -207,7 +243,8 @@ Manteniu el robot sobre una superfície plana, deixeu lliure el seu recorregut i
 ## 🔗 Referent oficial i adaptació
 
 - Matatalab, [Learning Station Curriculum](https://matatalab.com/zh-hans/node/66): font pública que descriu 12 lliçons, el Coding Set com a producte principal i la progressió general entre blocs, obstacles/laberints, mapes/graelles i creacions amb Artist/Musician Add-Ons.
-- Matatalab, [Teacher Resource Guide · Learning Station Curriculum](https://matatalab.com/cdn/ff/Vz0MsyTfj9_BIp7xKGB0hyr_QXjABpbIlXHSS3VcPg4/1637831178/public/2021-11/Learning%20Station%20Curriculum.pdf): document docent enllaçat oficialment. El fitxer excedix el límit de consulta disponible; no s’han pogut validar els objectius, materials ni passos exactes de cadascuna de les dotze lliçons.
+- Matatalab, [Teacher Resource Guide · Learning Station Curriculum](https://matatalab.com/cdn/ff/Vz0MsyTfj9_BIp7xKGB0hyr_QXjABpbIlXHSS3VcPg4/1637831178/public/2021-11/Learning%20Station%20Curriculum.pdf): guia docent oficial. S’han contrastat al detall els objectius i les activitats publicades de les lliçons 1–4 (vocabulari, missatges, classificació de peces i reptes del quadern de nivell 1), així com la duració, el treball cooperatiu i la preparació. La indexació consultable no mostra prou detall per a contrastar els objectius, materials i passos de les lliçons 5–12 ni els exercicis individuals del quadern.
+- Matatalab, [Loop](https://matatalab.com/en/node/62), [Function](https://matatalab.com/en/node/63), [Artist](https://matatalab.com/en/node/64) i [Musician](https://matatalab.com/en/node/65): guies oficials complementàries que verifiquen les combinacions de blocs, les restriccions de disposició de bucles/funcions, els valors d’angle i les funcions de notes/melodies. No es presenten com el pla docent complet de les lliçons 10–12 de Learning Station.
 - Matatalab, [catàleg d’activitats Coding Set](https://matatalab.com/en/activity): font complementària per comprovar el producte i les activitats públiques; no substituïx el pla docent complet.
 
-La seqüència local conserva la progressió temàtica pública i crea context, materials de paper, consignes, registres i avaluació originals. Les sessions 11 i 12 separen explícitament l’ús real d’un accessori de l’alternativa desconnectada. Cal completar una comparació lliçó per lliçó si el centre obté el quadern docent complet.
+La seqüència local conserva la progressió temàtica pública i crea context, materials de paper, consignes, registres i avaluació originals. Per a les sessions 11–12, la pàgina oficial i l’índex del PDF enumeren angles, pentagrames o estrelles i creació lliure; la proposta els converteix en una roseta de l’entorn i una obra oberta, sense afirmar una correspondència exacta de cada subtema amb una lliçó perquè no s’ha pogut inspeccionar el PDF complet. Les dues sessions separen l’ús real d’un accessori de l’alternativa desconnectada. Continua pendent el contrast integral de les lliçons 5–12 i dels exercicis individuals del quadern, ja que la descàrrega oficial excedeix el límit de lectura disponible.

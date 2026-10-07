@@ -80,6 +80,10 @@ Useu una graella breu per anotar si cada infant participa en una elecció, antic
 
 Comenceu amb dues parades, reduïu les distàncies i useu fletxes grans amb forma i color. Oferiu símbols tàctils i temps d'espera per respondre. L'alumnat pot crear un so amb un objecte, imitar-lo, seleccionar una targeta o deixar que una parella el represente. Per ampliar, afegiu una ruta alternativa i compareu quina instrucció permet arribar al mateix lloc; també es pot repetir un motiu sonor com a patró rítmic.
 
-## Privacitat i adaptació
+## Privacitat
 
-El barri i els seus habitants són imaginaris; les targetes no inclouen adreces, noms ni informació d'infants reals. L'enregistrament és opcional, mai necessari per completar la situació, i s'ha de gestionar segons les normes del centre. La funció de gravar històries i les targetes de micròfon formen part de les possibilitats descrites per [Matatalab per a Tale-Bot Pro](https://matatalab.com/en/node/774). Aquesta versió crea un mapa sonor original a partir d'eixes possibilitats; no reutilitza mapes ni imatges del fabricant.
+El barri i els seus habitants són imaginaris; les targetes no inclouen adreces, noms ni informació d'infants reals. L'enregistrament és opcional, mai necessari per completar la situació, i s'ha de gestionar segons les normes del centre.
+
+## 🔗 Referents i adaptació
+
+La funció de gravar històries i les targetes de micròfon formen part de les possibilitats descrites per [Matatalab per a Tale-Bot Pro](https://matatalab.com/en/node/774). Aquesta versió crea un mapa sonor original a partir d'eixes possibilitats; no reutilitza mapes ni imatges del fabricant.

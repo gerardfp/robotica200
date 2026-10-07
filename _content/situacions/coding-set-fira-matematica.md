@@ -22,6 +22,13 @@ _Una fira creada per l’aula connecta programació tangible, matemàtiques i im
 
 La classe organitza tres espais de descoberta. En cada un, els equips fan una predicció, preparen una seqüència amb els blocs tangibles i comproven què ha fet MatataBot. La fira posa el focus en explicar les decisions i comparar procediments, no en acabar primer.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Interpretar ordres tangibles i convertir-les en instruccions que una altra persona puga seguir.
+- Classificar formes i representar nombres amb les peces, la graella i les convencions de la fira.
+- Aplicar girs i repeticions per construir una figura geomètrica i una constel·lació pròpia.
+- Explicar les estratègies matemàtiques als visitants i revisar una estació a partir del retorn rebut.
+
 ## Abans de començar
 
 Comproveu que el Coding Set inclou el robot, la torre de control i la taula de programació. Prepareu una graella pròpia, targetes grans amb aliments ficticis i formes, paper quadriculat, retoladors solubles i cartolines. Per a les activitats de traçat, useu l’Artist Add-On només si forma part de la dotació; si no, el robot recorre la figura sobre una quadrícula i l’alumnat dibuixa el resultat en paper.

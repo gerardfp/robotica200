@@ -22,6 +22,13 @@ _L’indicador representa una dada de previsió; no mesura la humitat del sòl n
 
 La classe prepara un indicador visual que ajude a parlar de les necessitats d’aigua d’un hort escolar. La situació adapta *Veggie Love* de LEGO Education: construïm un «tomato-meter», consultem dades meteorològiques quantitatives del núvol per a una ciutat i fem que una agulla represente la precipitació prevista acumulada per a la setmana. Investiguem la relació entre dada, escala i decisió sense convertir la maqueta en una recomanació agronòmica: el reg real depén també del sòl, l’espècie, el cultiu i les observacions de l’hort. La conversa inicial també contrasta per què alguns cultius o regions tenen períodes de creixement diferents; no s’assumeix que una previsió setmanal determine per si sola la necessitat d’aigua.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Interpretar una sèrie setmanal de precipitació amb font, dates i unitats explícites.
+- Calibrar una escala de maqueta i provar els valors als límits i entre intervals.
+- Programar un indicador que represente les dades sense confondre previsió amb mesura del sòl.
+- Argumentar una decisió per a un hort de maqueta i deixar clar que no controla un reg real.
+
 ## 📅 Seqüència didàctica · 3 sessions
 
 ### **S1 · De la previsió a una pregunta investigable (45–60 min).**

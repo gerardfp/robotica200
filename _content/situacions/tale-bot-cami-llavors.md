@@ -22,7 +22,11 @@ _Les llavors i els cultius del mapa són símbols de paper; la ruta ajuda a parl
 
 El grup prepara un hort escolar imaginari amb bancals de flors, hortalisses i plantes aromàtiques pròpies del context local. Tale-Bot transporta una fitxa de llavor —no una llavor real— des del viver dibuixat fins al bancal triat. A cada parada, l’equip conta què podria passar a continuació i quines condicions ajudaran una planta a créixer: llum, aigua, aire i condicions adequades per a l’espècie. Les necessitats concretes varien entre plantes; no totes es planten o es reguen de la mateixa manera.
 
-**Aprenentatges:** seqüenciar ordres, orientar-se en una graella, anticipar el destí, revisar una instrucció, observar plantes de manera respectuosa i ordenar una explicació temporal: llavor, germinació, creixement i cura. El robot segueix les ordres introduïdes; no sap què necessita la llavor ni pot comprovar si una planta està sana.
+
+
+## 🎯 Aprenentatges i vocabulari
+
+seqüenciar ordres, orientar-se en una graella, anticipar el destí, revisar una instrucció, observar plantes de manera respectuosa i ordenar una explicació temporal: llavor, germinació, creixement i cura. El robot segueix les ordres introduïdes; no sap què necessita la llavor ni pot comprovar si una planta està sana.
 
 ## 🧰 Materials i preparació
 

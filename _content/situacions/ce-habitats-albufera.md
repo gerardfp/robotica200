@@ -22,6 +22,13 @@ _La maqueta mostra un hàbitat de paper i el tren real de Coding Express; no es 
 
 Una aula vol muntar una exposició de maquetes d’aiguamoll. Sis sessions connecten les necessitats bàsiques, les relacions entre éssers vius i medi, els hàbitats diferents i les decisions humanes. El tren Coding Express es mou per vies pròpies; les peces de paper representen situacions i no substitueixen observacions científiques o mesures ambientals.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Identificar necessitats bàsiques dels éssers vius i relacionar-les amb elements d’un hàbitat.
+- Comparar dos escenaris de maqueta i explicar quins recursos o refugis hi falten.
+- Representar amb una ruta i una seqüència d’accions un canvi possible en l’entorn modelat.
+- Distingir una maqueta didàctica de l’observació científica i proposar una forma responsable de documentar-la.
+
 ## Abans de començar
 
 Prepareu el tren i les vies Coding Express, blocs d’acció presents al set, figures de paper d’éssers vius, icones d’aigua, aire, refugi i aliment i cartolina per fer paisatges. LEGO presenta la unitat original per a Coding Express i STEAM Park: les nostres activitats funcionen amb el tren i materials corrents, sense necessitar el segon set. No captureu ni alimenteu animals, no arranqueu plantes i no feu visites de camp sense autorització i supervisió.

@@ -22,7 +22,13 @@ _El tren Coding Express travessa un pas de vianants i una barrera de maqueta en 
 
 El grup investiga els quatre senyals de la dotació, construeix un recorregut en Y i resol incidències fictícies d’una ciutat de joguina. La maqueta permet parlar de com els senyals ens recorden acords i ajuden a descriure una ruta, però no representa un carrer complet ni ensenya totes les normes de circulació. Cada maó d’acció es prova amb l’app per distingir la seua resposta programada del significat que el grup imagina per al senyal.
 
-**Aprenentatges:** observar i interpretar símbols, descriure trajectes i bifurcacions, anticipar què passarà després d’un maó, comprovar una hipòtesi, afegir informació visual a una explicació i acordar una solució segura per a una situació fictícia.
+
+## 🎯 Aprenentatges i vocabulari
+
+- Interpretar símbols i descriure trajectes, bifurcacions i possibles incidències en una maqueta.
+- Anticipar la resposta observada d’un maó d’acció i revisar la predicció amb una prova.
+- Construir una explicació de ruta amb ordres, pictogrames i llenguatge espacial.
+- Distingir una representació de joguina de les normes i senyals reals de circulació.
 
 ## Abans de començar
 

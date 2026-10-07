@@ -22,6 +22,13 @@ _Una mateixa ruta pot explicar històries diferents si canviem l’ordre, les pa
 
 El grup és l’equip de guionistes d’una estació: planifica recorreguts, reconstrueix una seqüència recordada, associa sons a esdeveniments i crea relats repetibles. Cada equip fa una predicció abans de provar el tren i revisa l’ordre si el resultat no correspon al relat previst.
 
+## 🎯 Aprenentatges i vocabulari
+
+- Ordenar esdeveniments i instruccions perquè una altra parella puga reconstruir un relat.
+- Anticipar el resultat d’una seqüència i contrastar-lo amb el recorregut del tren.
+- Associar sons o parades amb esdeveniments sense confondre una representació amb una dada científica.
+- Revisar una història perquè es puga repetir i comunicar les decisions preses per l’equip.
+
 ## Abans de començar
 
 Prepareu Coding Express amb via, locomotora, vagons i blocs d’acció disponibles; targetes amb imatges, objectes menuts i un espai tranquil per escoltar sons. Comproveu quines funcions de so ofereix el vostre set i no pressuposeu una funció que no hi siga: quan calga, una persona pot fer el so o es pot usar una targeta. Els relats són inventats i no necessiten pantalles ni enregistraments.
