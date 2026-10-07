@@ -141,8 +141,38 @@
     [/^(ampliació|extensió):$/i, 'extension', '🚀'],
     [/^(vocabulari|paraules clau):$/i, 'vocabulary', '💬'],
     [/^(aprenentatges|objectius):$/i, 'learning', '🎯'],
-    [/^(límit del model|límit|precaució):$/i, 'limit', 'ℹ️']
+    [/^(límit del model|límit|precaució):$/i, 'limit', 'ℹ️'],
+    [/^(activació|engage|explore|exploració|construcció|modelatge|programació|programa|proves?|test|explain|explicació|elaborate|evaluate|avaluació|tancament|reflexió|decisió|iteració|revisió|registre|eixida|disseny|ideació|prototip|depuració|presentació|comunicació|exercici|model|implementació|validació|preparació|investigació|contrast|intercanvi|feedback|lectura|planificació|maqueta|definició|pràctica|cas de prova|sortida|demostració|debrief)(?:\b|\s|·)/i, 'phase', '🧩']
   ];
+
+  const listLabels = [
+    [/^(evidència|evidencia|producte|resultat esperat)\s*:\s*/i, 'evidence', 'Evidència'],
+    [/^(pregunta docent|pregunta per acompanyar|pregunta guia)\s*:\s*/i, 'question', 'Pregunta docent'],
+    [/^(criteri(?: d'èxit| de disseny)?)\s*:\s*/i, 'criterion', 'Criteri'],
+    [/^(depuració|si hi ha errors|revisió)\s*:\s*/i, 'debug', 'Revisió'],
+    [/^(ampliació|extensió|opcional)\s*:\s*/i, 'extension', 'Ampliació'],
+    [/^(temps|duració|durada)\s*:\s*/i, 'time', 'Temps']
+  ];
+
+  function renderListItem(raw, base) {
+    const task = raw.match(/^\[([ xX])\]\s*(.*)$/);
+    const text = task ? task[2] : raw;
+    let content = inline(text, base);
+    const labelMatch = text.match(/^(?:\*\*)?([^:*]{2,36}?)(?:\*\*)?:\s*/);
+    const known = labelMatch && listLabels.find(([pattern]) => pattern.test(`${labelMatch[1]}:`));
+    let body = content;
+    let className = '';
+    if (known) {
+      const [, kind, label] = known;
+      body = `<span class="markdown-list-label markdown-list-label-${kind}">${label}</span><span class="markdown-list-detail">${inline(text.slice(labelMatch[0].length), base)}</span>`;
+      className = ` class="markdown-list-item markdown-list-item-${kind}"`;
+    }
+    if (task) {
+      body = `<span class="markdown-task-mark" aria-hidden="true">${task[1].trim() ? '✓' : ''}</span><span class="markdown-list-detail">${body}</span>`;
+      className = ' class="markdown-list-item markdown-task-item"';
+    }
+    return `<li${className}>${body}</li>`;
+  }
 
   function renderParagraph(text, base) {
     const content = inline(text, base);
@@ -159,6 +189,46 @@
     return `${prefix}<aside class="markdown-note markdown-note-${kind}"><span class="markdown-note-icon" aria-hidden="true">${icon}</span><div><h4>${escapeHTML(label)}</h4><p>${after}</p></div></aside>`;
   }
 
+  function countWords(text) { return (text.match(/\S+/g) || []).length; }
+
+  function splitLongParagraph(text, limit = 82) {
+    if (countWords(text) <= limit) return [text];
+    const sentences = text.split(/(?<=[.!?;])\s+/);
+    const chunks = [];
+    let current = '';
+    for (const sentence of sentences) {
+      const candidate = current + sentence;
+      const delimitersBalanced = value => {
+        const bold = (value.match(/\*\*/g) || []).length;
+        const italic = (value.match(/(?<!\*)\*(?!\*)/g) || []).length;
+        return bold % 2 === 0 && italic % 2 === 0;
+      };
+      if (current && countWords(candidate) > limit && delimitersBalanced(current)) {
+        chunks.push(current.trim());
+        current = sentence;
+      } else current = candidate;
+    }
+    if (current.trim()) chunks.push(current.trim());
+    return chunks.length > 1 ? chunks : [text];
+  }
+
+  function canonicalSection(title) {
+    const value = title.replace(/^[^\p{L}\p{N}]+/u, '').toLowerCase();
+    const suffixMatch = title.match(/\s*(?:·|—)\s*(.+)$/);
+    const suffix = suffixMatch ? ` · ${suffixMatch[1]}` : '';
+    if (/^(seqüèn|seqüen|itinerari|sessions\b|passos\b|lliçons\b|fases\b)/.test(value)) return { key: 'sequence', title: `📅 Seqüència didàctica${suffix}` };
+    if (/^repte\s+\d+/i.test(value)) return { key: 'sequence', title: `📅 ${title.replace(/^[^\p{L}\p{N}]+/u, '')}` };
+    if (/^reptes\b/i.test(value)) return { key: 'sequence', title: `📅 Seqüència didàctica · ${title.replace(/^[^\p{L}\p{N}]+/u, '')}` };
+    if (/^com usar\b/i.test(value)) return { key: 'intro', title: `🧭 ${title.replace(/^[^\p{L}\p{N}]+/u, '')}` };
+    if (/^(repte\b|situació|situacio|punt de partida|punt de trobada|sentit i intenció|context\b|propòsit|proposit)/.test(value)) return { key: 'intro', title: '🌱 Situació, repte i intenció' };
+    if (/materials|preparació|preparacio|abans de començar/.test(value)) return { key: 'materials', title: '🧰 Materials i preparació' };
+    if (/evidèn|eviden|avaluació|avaluacio|autoavaluació/.test(value)) return { key: 'assessment', title: '🧪 Evidències i avaluació' };
+    if (/participació|participacio|manera de participar|inclusió|inclusio|accessibilitat|privacitat|seguretat|salvaguardes|límits|limites|adaptacions|ús responsable/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };
+    if (/aprenentatge|vocabulari|objectius|resultats d.aprenentatge/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
+    if (/oficial|adaptació|adaptacio|referent|font consultada/.test(value)) return { key: 'official', title: '🔗 Referent oficial i adaptació' };
+    return { key: '', title };
+  }
+
   function renderMarkdown(source, sourceURL) {
     const { data, body } = splitFrontMatter(source);
     const lines = body.replace(/\r\n?/g, '\n').split('\n');
@@ -168,9 +238,10 @@
     let openStep = false;
     let openPhase = false;
     let sequenceSection = false;
+    let introPending = false;
     const closePhase = () => { if (openPhase) { output.push('</section>'); openPhase = false; } };
     const closeStep = () => { closePhase(); if (openStep) { output.push('</section>'); openStep = false; } };
-    const closeSection = () => { closeStep(); if (openSection) { output.push('</section>'); openSection = false; } };
+    const closeSection = () => { closeStep(); if (openSection) { output.push('</section>'); openSection = false; } introPending = false; };
     const isStep = title => /^(sessió|sessio|lliçó|lliço|lliço|lesson|session)\s+\d+/i.test(title);
     const isPhase = title => /^(fase|pas|phase|step)\s+\d+/i.test(title);
 
@@ -199,13 +270,16 @@
         const id = slugify(plainTitle);
         if (level === 2) {
           closeSection();
-          sequenceSection = /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|repte|reptes|fases|àmbits)/i.test(plainTitle);
-          output.push(`<section class="detail-section"><h2 id="${id}">${inline(title, sourceURL)}</h2>`);
+          const section = canonicalSection(plainTitle);
+          sequenceSection = section.key !== 'intro' && /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|repte|reptes|fases|àmbits)/i.test(plainTitle);
+          output.push(`<section class="detail-section${section.key === 'intro' ? ' detail-section-intro' : ''}"><h2 id="${id}">${inline(section.title, sourceURL)}</h2>`);
           openSection = true;
+          introPending = section.key === 'intro';
         } else if (level === 3 && (isStep(plainTitle) || sequenceSection)) {
           if (!openSection) { output.push('<section class="detail-section">'); openSection = true; }
           closeStep();
-          output.push(`<section class="learning-step" id="${id}" x-show="step === ${steps.length}" x-cloak><h3>${inline(title, sourceURL)}</h3>`);
+          const stepNumber = steps.length + 1;
+          output.push(`<section class="learning-step" id="${id}" data-step="${stepNumber}" x-show="step === ${steps.length}" x-cloak><header class="learning-step-header"><span class="learning-step-kicker">Pas ${stepNumber}</span><h3>${inline(title, sourceURL)}</h3></header>`);
           openStep = true;
           steps.push({ id, title: plainTitle });
         } else if (level === 4 && isPhase(plainTitle)) {
@@ -261,10 +335,12 @@
           if (!lines[i].trim() && i + 1 < lines.length && (ordered ? /^\s*\d+[.)]\s+/.test(lines[i + 1]) : /^\s*[-*+]\s+/.test(lines[i + 1]))) { i += 1; continue; }
           if (!(ordered ? /^\s*\d+[.)]\s+/.test(lines[i]) : /^\s*[-*+]\s+/.test(lines[i]))) break;
           const item = lines[i].replace(/^\s*(?:[-*+]|\d+[.)])\s+/, '');
-          items.push(`<li>${inline(item, sourceURL)}</li>`);
+          items.push(item);
           i += 1;
         }
-        output.push(`<${tag}>${items.join('')}</${tag}>`);
+          const renderedItems = items.map(item => renderListItem(item, sourceURL));
+          const listClass = renderedItems.some(item => /markdown-(?:list-item|task-item)/.test(item)) ? ' class="markdown-structured-list"' : '';
+          output.push(`<${tag}${listClass}>${renderedItems.join('')}</${tag}>`);
         continue;
       }
 
@@ -283,7 +359,16 @@
       while (i < lines.length && lines[i].trim() && !/^(#{1,6}\s|```|\s*>|\s*[-*+]\s|\s*\d+[.)]\s|\s*---+\s*$)/.test(lines[i])) {
         paragraph.push(lines[i++].trim());
       }
-      output.push(renderParagraph(paragraph.join(' '), sourceURL));
+      for (const chunk of splitLongParagraph(paragraph.join(' '))) {
+        let rendered = renderParagraph(chunk, sourceURL);
+        if (introPending) {
+          introPending = false;
+          if (!rendered.includes('markdown-note')) {
+            rendered = `<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4>${rendered}</div></aside>`;
+          }
+        }
+        output.push(rendered);
+      }
     }
     closeSection();
 
@@ -293,7 +378,7 @@
       <div class="learning-wizard-progress" role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" :aria-valuemax="steps.length" :aria-valuenow="step + 1" :aria-valuetext="'Pas ' + (step + 1) + ' de ' + steps.length">
         <span :style="'width: ' + ((step + 1) / steps.length * 100) + '%'" aria-hidden="true"></span>
       </div>
-      <ol class="learning-wizard-picker" aria-label="Tria un pas"><template x-for="(item, index) in steps" :key="item.id"><li><button type="button" class="learning-wizard-step" x-on:click="step = index" :aria-label="'Obrir pas ' + (index + 1) + ': ' + item.title" :aria-current="step === index ? 'step' : null" x-text="index + 1"></button></li></template></ol>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><template x-for="(item, index) in steps" :key="item.id"><li><button type="button" class="learning-wizard-step" x-on:click="step = index" :aria-label="'Obrir pas ' + (index + 1) + ': ' + item.title" :aria-current="step === index ? 'step' : null"><span class="learning-wizard-step-number" x-text="index + 1"></span><span class="learning-wizard-step-title" x-text="item.title"></span></button></li></template></ol>
       <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" x-on:click="step = Math.max(0, step - 1)" :disabled="step === 0">← Pas anterior</button><button type="button" class="btn-wizard-step primary" x-on:click="step = Math.min(steps.length - 1, step + 1)" :disabled="step === steps.length - 1">Pas següent →</button></div>
     </nav>` : '';
     return { data, html: stepIndex + output.join('\n'), steps };
