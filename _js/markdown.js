@@ -132,6 +132,33 @@
     return result + escapeHTML(code.slice(cursor));
   }
 
+  const noteTypes = [
+    [/^(situació|punt de partida|context):$/i, 'situation', '🧭'],
+    [/^(materials|material|materials i preparació):$/i, 'materials', '🧰'],
+    [/^(evidència|evidencia|producte|evidències i avaluació):$/i, 'evidence', '🔎'],
+    [/^(pregunta|pregunta guia|repte|repte i intenció):$/i, 'question', '❓'],
+    [/^(suport|participació|participació i límits|accessibilitat):$/i, 'support', '♿'],
+    [/^(ampliació|extensió):$/i, 'extension', '🚀'],
+    [/^(vocabulari|paraules clau):$/i, 'vocabulary', '💬'],
+    [/^(aprenentatges|objectius):$/i, 'learning', '🎯'],
+    [/^(límit del model|límit|precaució):$/i, 'limit', 'ℹ️']
+  ];
+
+  function renderParagraph(text, base) {
+    const content = inline(text, base);
+    const labels = [...content.matchAll(/<strong>([^<]+)<\/strong>/g)];
+    const labelled = labels.map(match => ({ match, type: noteTypes.find(([pattern]) => pattern.test(match[1].trim())) }))
+      .find(item => item.type);
+    if (!labelled) return `<p>${content}</p>`;
+    const { match, type } = labelled;
+    const [, kind, icon] = type;
+    const label = match[1].replace(/:$/, '');
+    const before = content.slice(0, match.index).trim();
+    const after = content.slice(match.index + match[0].length).trim();
+    const prefix = before ? `<p>${before}</p>` : '';
+    return `${prefix}<aside class="markdown-note markdown-note-${kind}"><span class="markdown-note-icon" aria-hidden="true">${icon}</span><div><h4>${escapeHTML(label)}</h4><p>${after}</p></div></aside>`;
+  }
+
   function renderMarkdown(source, sourceURL) {
     const { data, body } = splitFrontMatter(source);
     const lines = body.replace(/\r\n?/g, '\n').split('\n');
@@ -215,7 +242,14 @@
         while (i < lines.length && /^\s*>/.test(lines[i])) quote.push(lines[i++].replace(/^\s*>\s?/, ''));
         const content = quote.map(text => `<p>${inline(text, sourceURL)}</p>`).join('');
         const isEvidence = /<strong>(evidència|evidencia|producte|pregunta docent|repte)/i.test(content);
-        output.push(`<aside class="markdown-callout${isEvidence ? ' markdown-evidence' : ''}">${content}</aside>`);
+        const label = content.match(/^<p><strong>([^<]+)<\/strong>\s*(.*?)<\/p>/s);
+        const note = label && noteTypes.find(([pattern]) => pattern.test(label[1].trim()));
+        if (note) {
+          const [, kind, icon] = note;
+          output.push(`<aside class="markdown-note markdown-note-${kind}"><span class="markdown-note-icon" aria-hidden="true">${icon}</span><div><h4>${escapeHTML(label[1].replace(/:$/, ''))}</h4><p>${label[2]}</p>${content.replace(label[0], '')}</div></aside>`);
+        } else {
+          output.push(`<aside class="markdown-callout${isEvidence ? ' markdown-evidence' : ''}">${content}</aside>`);
+        }
         continue;
       }
 
@@ -249,7 +283,7 @@
       while (i < lines.length && lines[i].trim() && !/^(#{1,6}\s|```|\s*>|\s*[-*+]\s|\s*\d+[.)]\s|\s*---+\s*$)/.test(lines[i])) {
         paragraph.push(lines[i++].trim());
       }
-      output.push(`<p>${inline(paragraph.join(' '), sourceURL)}</p>`);
+      output.push(renderParagraph(paragraph.join(' '), sourceURL));
     }
     closeSection();
 

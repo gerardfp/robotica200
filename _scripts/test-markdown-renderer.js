@@ -21,6 +21,16 @@ assert.match(pilot.html, /<figcaption>Una llista guarda/, "els peus d'imatge sep
 assert.doesNotMatch(pilot.html, /<p>_[^<]+_<\/p>/, "el peu d'imatge no apareix amb els guions baixos literals");
 assert.match(pilot.html, /syntax-keyword/, "el codi Python rep ressaltat sintàctic");
 assert.match(pilot.html, /href="https:\/\/assets\.education\.lego\.com\//, "els enllaços externs es conserven");
+const wind = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/sp-vent-model.md"), "utf8"), "https://example.test/_content/situacions/sp-vent-model.md");
+assert.match(wind.html, /markdown-note-question/, "la pregunta guia es mostra com una nota visual");
+assert.match(wind.html, /markdown-note-limit/, "els límits del model es ressalten com a informació contextual");
+assert.match(wind.html, /<ol><li>Escriviu una taula/, "les instruccions numerades es renderitzen com una seqüència clara");
+assert.match(wind.html, /markdown-note-materials/, "els materials es presenten en un bloc identificable");
+assert.match(wind.html, /markdown-note-evidence/, "les evidències es presenten en un bloc identificable");
+const farmTrail = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/tb-rastre-corral.md"), "utf8"), "https://example.test/_content/situacions/tb-rastre-corral.md");
+assert.match(farmTrail.html, /markdown-note-situation/, "la introducció contextual de l'SDA rep un format propi");
+assert.match(farmTrail.html, /markdown-note-question/, "la pregunta guia es destaca també en l'SDA de Tale-Bot");
+assert.match(farmTrail.html, /<ol><li>Exploreu què representa el mapa/, "els passos de preparació es poden seguir en ordre");
 const navigationLink = renderer.parse('[Obri la situació](../../situacio/index.html?id=sp-exemple)', 'https://example.test/_content/situacions/exemple.md');
 assert.match(navigationLink.html, /x-target\.push="page-content"/, "els enllaços Markdown interns activen Alpine AJAX");
 assert.doesNotMatch(navigationLink.html, /target="_blank"/, "els enllaços interns no s'obrin com si foren externs");

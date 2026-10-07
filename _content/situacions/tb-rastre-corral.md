@@ -20,35 +20,44 @@ _El mapa i les cinc targetes d’animals són materials propis; Tale-Bot conserv
 
 ## ❓ Repte i intenció
 
-L’alumnat crea un mapa propi d’un corral o d’un paisatge agrari valencià; pot situar-hi animals de granja o fauna triada amb una font local fiable. Abans de programar, identifica files i columnes, estima caselles i representa cada ordre amb una targeta. La lliçó oficial treballa un mapa preparat, la instrucció cap avant i la verificació del programa; ací canviem mapa, imatges, espècies i fitxa de treball.
+**Situació:** Una aula prepara un mapa d’un corral o d’un paisatge agrari valencià perquè Tale-Bot visite cinc animals. El mapa, les imatges i les targetes són originals; la classe practica la mateixa idea central de la lliçó pública: preparar un mapa i completar-hi un repte amb ordres cap avant.
+
+**Pregunta guia:** Quantes ordres cap avant necessita el robot per a arribar a cada animal, i com podem comprovar que el programa és correcte?
 
 ## Abans de començar
 
-Prepareu una graella plana, fletxes de paper, cinc targetes grans d’animals i una marca d’inici amb una fletxa que indique cap on mira el robot. Ajusteu la mida de casella al Tale-Bot físic: el desplaçament predeterminat és d’uns 10 cm, i el manual permet establir 15 cm; comproveu-ho al tutorial [Primeres passes amb Tale-Bot Pro](../../tutorial/index.html?id=tb-primeres-passes) abans de dibuixar la quadrícula. Per a practicar només ordres cap avant, situeu cada animal en el corredor que queda davant del robot, reorientant-lo en reiniciar cada repte.
+**Materials:** Tale-Bot, graella plana en blanc, targetes pròpies de fletxes, cinc imatges grans d’animals, fitxes adhesives o marcadors reposicionables i una marca d’inici orientada. Les targetes pròpies fan la funció de les targetes de comandament i els adhesius del material oficial, sense reutilitzar-ne els elements gràfics.
+
+Comproveu la distància de moviment en el Tale-Bot disponible: el valor predeterminat és d’uns 10 cm i alguns models permeten configurar 15 cm. Consulteu [Primeres passes amb Tale-Bot Pro](../../tutorial/index.html?id=tb-primeres-passes) abans de definir la graella. Per a practicar només ordres cap avant, poseu les metes en el corredor davant del robot i reorienteu-lo en reiniciar cada repte.
 
 ## 📅 Seqüència didàctica · 3 sessions
 
 ### **Sessió 1 · Dissenyem i llegim el mapa.**
 
-Sobre la graella en blanc, marqueu files amb lletres i columnes amb nombres, o trieu un altre codi visual de coordenades. Compteu files, columnes i caselles totals. Cada equip col·loca cinc animals de paper i una marca d’inici; la punta de la fletxa d’inici mostra cap on mirarà el robot. Parleu de característiques observables dels animals i del lloc on viuen; si useu fauna local, contrasteu-ne els noms amb una font de l’entorn o una persona experta. Practiqueu descriure una posició amb coordenades i torneu a posar el mapa igual després de cada ronda.
+1. Exploreu què representa el mapa, què indiquen les targetes de fletxes i com es poden moure les fitxes adhesives sense tapar les caselles.
+2. Marqueu files i columnes amb lletres, nombres o un altre codi visual; compteu les caselles.
+3. Cada equip col·loca cinc animals i una marca d’inici orientada. Si tria fauna valenciana, contrasta els noms amb una font local fiable.
+4. Practiqueu descriure una posició i torneu a col·locar el mapa igual després de cada ronda.
 
-*Evidència: mapa original amb llegenda, files, columnes, inici orientat i cinc metes.*
+**Evidència:** mapa propi amb llegenda, files, columnes, inici orientat i cinc metes identificades.
 
 ### **Sessió 2 · Programem cinc arribades.**
 
-Una persona tria un animal i l’equip troba la casella de destinació. Compteu les caselles entre inici i meta, col·loqueu sobre la tira les targetes «avant» que calen i verbalitzeu la predicció. Abans de prémer
+1. Una persona tria un animal i l’equip localitza la destinació.
+2. Compteu les caselles entre inici i meta, col·loqueu les targetes «avant» i verbalitzeu la predicció.
+3. Abans de prémer *Play*, compteu els indicadors lluminosos i comproveu si n’hi ha un per cada ordre.
+4. Executeu la ruta, recolliu un marcador en arribar i repetiu amb els altres quatre animals, reiniciant des de la marca orientada. Si no arriba, compareu la posició final amb la predicció abans de canviar el programa.
 
-*Play*
-
-, compteu els indicadors lluminosos del Tale-Bot i comproveu si n’hi ha un per cada ordre introduïda. Executeu la ruta recta, recolliu un marcador de paper en arribar i repetiu per trobar els altres quatre animals, reiniciant sempre des de la marca orientada. Si no arriba, mireu la posició final i compareu-la amb la predicció abans de canviar res.
-
-*Evidència: cinc seqüències de targetes amb predicció i destinació.*
+**Evidència:** cinc seqüències de targetes amb predicció, destinació i comprovació dels indicadors.
 
 ### **Sessió 3 · Comparem, depurem i expliquem.**
 
-Ordeneu les cinc rutes de la que necessita menys ordres cap avant a la que en necessita més; comproveu-ho amb els recomptes i amb la longitud de les seqüències. Trieu un programa que haja acabat una casella abans o després de la fita: localitzeu si la causa és el recompte de caselles, la grandària de la quadrícula, la posició de l’inici o un indicador que s’havia passat per alt. Corregiu una sola cosa i feu una nova prova des del mateix punt. Tanqueu identificant quina ruta necessitava més ordres, quina menys, quantes files i columnes té el mapa i què va ajudar a detectar l’error.
+1. Ordeneu les cinc rutes de la que necessita menys ordres a la que en necessita més i contrasteu els recomptes.
+2. Trieu una ruta que haja acabat abans o després de la fita. Comproveu el recompte, la grandària de la quadrícula, l’orientació i els indicadors.
+3. Corregiu una sola cosa i repetiu la prova des del mateix punt.
+4. Expliqueu quina ruta era més llarga o més curta i quin indici ha ajudat a trobar l’error.
 
-*Evidència: seqüència abans/després, correcció explicada i resposta oral, gestual o pictogràfica a les preguntes de tancament.*
+**Evidència:** seqüència abans/després, correcció explicada i resposta oral, gestual o pictogràfica a les preguntes de tancament.
 
 ## Conducció de les sessions
 
