@@ -30,7 +30,13 @@ Converseu sobre què canvia en activitats quotidianes quan fa vent i com disting
 
 ### **S2 · Calibrem quatre intervals amb condicions (45–60 min).**
 
-Abans de programar, feu una activitat desconnectada breu: ordeneu targetes de velocitat dins de les quatre bandes i associeu-les amb els colors del model. Useu els rangs de referència de la lliçó (1–3 Beaufort, blau: 0,5–5,5 m/s; 4–6, verd: 5,5–13,8 m/s; 7–9, groc: 13,8–24,4 m/s; 10–12, roig: 24,4–32,7 m/s) i acordeu com tractareu els valors exactes de frontera perquè no queden sense categoria ni en dues alhora. Escriviu primer la taula de llindars amb unitats coherents; després programeu condicions *si / si no* perquè l’indicador mostre el color o angle assignat a cada tram. Tracteu 0 m/s com a calma, fora de les quatre bandes Beaufort codificades, i proveu també valors propers als llindars i un valor superior al rang; anoteu si cada cas queda classificat com s’havia previst. Cada equip explica com les condicions converteixen dades contínues en grups discrets. Qui necessite una bastida pot començar amb dos intervals; l’objectiu comú és arribar als quatre i verificar-los. **Evidència:** taula de llindars, pseudocodi, casos de prova i una correcció documentada.
+Abans de programar, feu una activitat desconnectada breu: ordeneu targetes de velocitat dins de les quatre bandes i associeu-les amb els colors del model. Useu els rangs de referència de la lliçó (1–3 Beaufort, blau: 0,5–5,5 m/s; 4–6, verd: 5,5–13,8 m/s; 7–9, groc: 13,8–24,4 m/s; 10–12, roig: 24,4–32,7 m/s) i acordeu com tractareu els valors exactes de frontera perquè no queden sense categoria ni en dues alhora. La il·lustració ajuda a comparar visualment la intensitat de les quatre bandes; les targetes amb els valors numèrics i les unitats continuen sent la referència per a programar.
+
+![Quatre grups de línies de vent que augmenten d’intensitat, de blau a verd, groc i roig.](../../_assets/imatges/sa-sp-vent-beaufort.webp)
+
+_Representació qualitativa dels quatre trams de l’activitat; no és una escala de mesura ni substitueix els valors i les unitats._
+
+Escriviu primer la taula de llindars amb unitats coherents; després programeu condicions *si / si no* perquè l’indicador mostre el color o angle assignat a cada tram. Tracteu 0 m/s com a calma, fora de les quatre bandes Beaufort codificades, i proveu també valors propers als llindars i un valor superior al rang; anoteu si cada cas queda classificat com s’havia previst. Cada equip explica com les condicions converteixen dades contínues en grups discrets. Qui necessite una bastida pot començar amb dos intervals; l’objectiu comú és arribar als quatre i verificar-los. **Evidència:** taula de llindars, pseudocodi, casos de prova i una correcció documentada.
 
 ### **S3 · Compareu ubicacions i afegiu direcció (45–60 min).**
 

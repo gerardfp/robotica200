@@ -36,7 +36,15 @@ Preparem tres microreptes en un mateix mapa: arribar a una casella, fer una paus
 
 ### **Sessió 3 · El recorregut dels cinc sentits — «My Five Senses».**
 
-Construïm una ruta d'observació amb targetes visuals de vista, oïda, tacte, gust i olfacte. A cada parada, el grup descriu un element segur de l'aula o del pati: un color, un so ambient, una textura, una fruita representada o una olor d'un pot tancat i voluntari. Tale-Bot només indica el lloc; són les persones qui observen. No tastem aliments ni acostem materials desconeguts a la cara.
+Preparem cinc estacions de taula amb pictogrames: una composició de colors per a la vista, un enregistrament ambiental triat pel docent per a l’oïda, retalls nets de tela per al tacte, una targeta de fruita per al gust i un pot tancat amb una herba culinària coneguda per a l’olfacte. No s’hi tasten aliments ni s’acosten recipients al nas; cada infant pot triar una estació alternativa de mirar o assenyalar. Abans de moure el robot, distingim què pot fer Tale-Bot —seguir ordres i marcar una parada— i què fan les persones —observar i descriure—. En equips, ordenem tres estacions, representem el recorregut amb targetes de moviment i comprovem la ruta sobre el mapa. A cada parada, l’observador tria un pictograma o una paraula per registrar una característica de l’objecte o del so, sense anotar gustos ni experiències personals. Després, canviem l’ordre de dues parades i comparem si la seqüència de moviments també canvia. Tanquem explicant quina instrucció ha indicat cada lloc i quina observació s’hi ha fet; la ruta del robot no és una mesura sensorial.
+
+![Tale-Bot Pro de la dotació al centre d'una ruta amb cinc estacions visuals: fulles de colors, ones sonores, retalls de tela, una targeta de fruita i un pot tancat amb herbes.](../../_assets/imatges/sa-tb-cinc-sentits.webp)
+
+_Les imatges indiquen llocs d'observació, no instruccions perquè el robot perceba sabors, olors, sons o textures._
+
+**Conducció de la parada (30 min):** reserveu 5 minuts per anticipar el recorregut i recordar les opcions de participació; 7 per seleccionar tres estacions i construir la seqüència amb targetes; 10 per provar la ruta i completar observacions breus per torns; 5 per intercanviar l’ordre de dues parades i depurar una instrucció; i 3 per compartir què ha indicat el robot i què han observat les persones. Amb un únic robot, la resta d’equips anticipen el programa en una graella de paper mentre esperen.
+
+**Evidència:** mapa amb inici orientat, seqüència de targetes abans i després de la prova, i tres registres pictogràfics o orals de característiques observades. Es pot demostrar l’aprenentatge assenyalant, dictant o movent peces; no cal tocar, olorar ni parlar davant del grup.
 
 ### **Sessió 4 · La botiga de temporada — «Matata Grocery Store».**
 

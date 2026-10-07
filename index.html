@@ -18,8 +18,10 @@
   <site-header id="site-header" x-sync active="inici" root=""></site-header>
   <main id="page-content" class="container page-content">
 <div class="home-intro">
-  <button type="button" class="home-hero-icon" aria-label="Interactua amb el robot de Robòtica 200">
-    <svg viewBox="0 0 73.025 75.142" class="home-hero-svg" role="img" aria-label="Robot Robòtica 200" xmlns="http://www.w3.org/2000/svg">
+  <button type="button" class="home-hero-icon" aria-label="Interactua amb el robot de Robòtica 200"
+    x-data="{ animation: '', animations: [['robot-anim-blink', 400], ['robot-anim-antenna', 700], ['robot-anim-alert', 800], ['robot-anim-glitch', 500], ['robot-anim-look', 1150], ['robot-anim-happy', 700], ['robot-anim-tilt', 1000], ['robot-anim-scan', 900], ['robot-anim-dashes', 1700]], last: -1, timer: null, animationTimer: null, play(index) { clearTimeout(this.animationTimer); this.animation = ''; this.$nextTick(() => { this.animation = this.animations[index][0]; this.animationTimer = setTimeout(() => this.animation = '', this.animations[index][1] + 50); }); }, next() { let index; do { index = Math.floor(Math.random() * this.animations.length); } while (index === this.last); this.last = index; this.play(index); this.timer = setTimeout(() => this.next(), 2000 + Math.random() * 2000); }, start() { this.timer = setTimeout(() => this.next(), 600); }, greet() { clearTimeout(this.timer); this.last = 5; this.play(5); this.timer = setTimeout(() => this.next(), 700); } }"
+    x-init="start()" @click="greet()">
+    <svg viewBox="0 0 73.025 75.142" class="home-hero-svg" :class="animation" role="img" aria-label="Robot Robòtica 200" xmlns="http://www.w3.org/2000/svg">
       <rect id="antenna" x="27.252" y="0" width="18.521" height="7.408" rx="3.175" fill="#f59e0b"/>
       <g class="antenna-dashes" aria-hidden="true">
         <rect class="antenna-dash antenna-dash-red" x="18.512" y="2.104" width="10" height="3.2" rx="1.6" fill="#ef4444"/>
@@ -55,5 +57,5 @@
 </div>
   </main>
   <site-footer></site-footer>
-<script src="_js/robot-animation.js?v=3"></script></body>
+</body>
 </html>

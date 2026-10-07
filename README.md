@@ -75,8 +75,7 @@ robotica200/
 │   └── situation-page.html              # Layout de situació, càrrega i error
 ├── _js/
 │   ├── components.js                    # Comportament dels Web Components
-│   ├── filters.js                       # Filtres multicriteri per a situacions d'aprenentatge
-│   └── robot-animation.js               # Suite de 8 micro-animacions del robot de portada
+│   └── markdown.js                      # Renderitzador client dels continguts Markdown
 ├── _scripts/
 │   ├── sync-catalog.py                  # Sincronitza metadades a _js/cataleg.js
 │   └── check-static-site.py             # Validació de referències i estructura
