@@ -65,7 +65,7 @@
     if (!document.querySelector('link[href*="_css/styles.css"]')) {
       const css = document.createElement('link');
       css.rel = 'stylesheet';
-      css.href = `${root}_css/styles.css?v=6`;
+      css.href = `${root}_css/styles.css?v=7`;
       document.head.appendChild(css);
     }
 

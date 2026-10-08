@@ -256,111 +256,162 @@ Compareu els girs observats en les tres orientacions i la taula de llum clara/om
 
 **Pregunta docent:** quines parts del repte reutilitzen un bucle i quina lectura del sensor justifica cada condició?
 
-### **L9 · Barra de so: bucles i condicions (40 min).**
+### **L9 · Una barra que respon al paisatge sonor (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Proposeu una barra visual per a una instal·lació sonora del museu. Definiu tres franges de lectura —baixa, intermèdia i alta— i predigueu quin color o nombre de píxels correspondria a cada franja. Useu un so breu produït expressament o dades de prova; no enregistreu veus ni converses.
+Al museu escolar de l’Albufera, una pantalla interpreta l’activitat sonora de l’entorn com una barra de tres altures. Sense gravar ni identificar cap font, predigueu què hauria de mostrar davant d’una lectura baixa, mitjana o alta. El sensor retorna un valor de nivell relatiu; no és una mesura calibrada de decibels ni permet saber qui o què ha produït el so.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Comproveu que el sensor de so ambiental integrat apareix en el mBlock instal·lat i feu tres lectures del mateix estímul. Si no hi ha bloc accessible, utilitzeu les mateixes lectures fictícies en paper i identifiqueu-les clarament com a simulació. Creeu una barra LED amb condicions que assignen una eixida a cada interval; el valor és una lectura relativa del sensor, no una mesura certificada en decibels.
+Localitzeu el sensor de so de Codey en la versió de mBlock disponible i observeu com canvia la lectura davant de tres estímuls suaus i acordats. No feu crits ni sorolls sobtats: es pot treballar amb el soroll ambient habitual o amb una seqüència de valors simulats en paper si el sensor o el bloc no està disponible. Anoteu que la lectura depén del dispositiu, la distància i l’entorn; no enregistreu àudio.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Implementeu la solució de bucles niats indicada pel repte: un bucle infinit exterior conté un segon bucle infinit que llig el sensor i aplica les condicions de la barra. Col·loqueu qualsevol instrucció posterior a banda i prediu si arribarà a executar-se. Proveu la lectura per davall, en la frontera i per damunt de cada llindar.
+Construïu la barra de tres altures amb una condició dins d’un únic bucle `per sempre`. La branca alta correspon a `nivell > 20`; la mitjana, a `10 ≤ nivell ≤ 20`, expressada amb l’operador lògic **i**; la baixa, a `nivell < 10`. Són llindars didàctics del repte oficial, no valors universals del sensor. Traceu els casos 9, 10, 15, 20 i 21 abans de provar-los.
 
 ```blocks
 per sempre
-  per sempre
-    llig el nivell de so
-    si nivell < llindar_1
-      mostra barra curta
-    si no, si nivell < llindar_2
+  llig el nivell de so
+  si nivell > 20
+    mostra barra alta
+  si no
+    si nivell >= 10 i nivell <= 20
       mostra barra mitjana
-    si no
-      mostra barra llarga
+  si no
+    si nivell < 10
+      mostra barra baixa
 ```
+
+![Codey Rocky de la dotació mostra tres altures de barra en la matriu LED.](../../_assets/imatges/sa-cr-barra-sonora.webp)
+
+_Representació visual de tres nivells: la pantalla mostra una resposta programada, no un valor de decibels ni una gravació._
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Observeu que el bucle interior infinit no retorna al cos exterior: les instruccions que queden després no s’executen. Refactoreu-ho en un únic bucle continu amb les tres condicions i torneu a passar els mateixos valors. Compareu les dues estructures, expliqueu el comportament i conserveu la versió funcional, sense afegir un segon bucle infinit redundant.
+Comproveu cada frontera (9, 10, 20 i 21) amb l’entrada real o amb valors simulats. Després, feu l’extensió oficial: afegiu una resposta de color amb l’indicador RGB o dividiu una de les franges en dos nivells. Manteniu el bucle de lectura i torneu a provar totes les fronteres que puga afectar el canvi.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** taula de lectures i llindars, dos programes comparats, resultats en les fronteres i una explicació del bloqueig del bucle niat.
+**Evidència:** taula de valors i eixides per als cinc casos, programa amb condició dins del bucle continu i una explicació de com l’operador **i** delimita la franja intermèdia.
 
-**Pregunta docent:** què aporta cada bucle infinit en aquesta estructura i quin codi queda inaccessible quan el bucle interior no acaba?
+**Pregunta docent:** què passa exactament amb els valors 10 i 20, i com podem demostrar que cap lectura queda sense una resposta definida?
 ### **L10 · Funcions de bon dia (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Llegiu una seqüència de benvinguda amb icona, so opcional i pausa. Busqueu una part que es repetisca en més d’una escena i prediu què canviaria si s’escriguera una sola vegada.
+Presenteu l’obertura del museu de la marjal: abans d’entrar el públic, cal preparar una icona de benvinguda, deixar una pausa i mostrar un missatge breu. Pregunteu com podem donar un nom curt a una seqüència d’accions perquè siga fàcil de tornar a cridar. Una funció agrupa instruccions sota un nom; no és només un esdeveniment ni una animació.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Agrupeu la seqüència en una funció pròpia de mBlock i crideu-la des de dos esdeveniments diferents. Useu missatges neutres per als visitants i manteniu una versió sense so.
+En equips, repartiu targetes amb funcions fictícies d’obertura (preparar la pantalla, mostrar la icona, fer una pausa, reproduir un so opcional) i algunes que no corresponen a l’esdeveniment. Doneu un nom clar a cada grup d’accions, trieu quines funcions cal cridar quan Codey s’inicia i ordeneu-les. Compareu si alguna sobra, si una s’ha cridat dues vegades o si el nom no descriu les accions. Es pot llegir la seqüència sense representar-la corporalment.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Seguiu el programa des de cada crida i registreu quina funció s’executa, quin bloc continua després i si el resultat és el mateix en els dos casos.
+En mBlock 5, obriu **Els meus blocs / My Blocks**, creeu una funció pròpia `benvinguda_marjal` i definiu-hi les instruccions de la pantalla. Després, crideu-la des de l’esdeveniment d’inici de Codey. Traceu l’ordre: esdeveniment → crida → instruccions de la funció → final de la seqüència. Registreu la diferència entre definir una funció i cridar-la.
+
+```blocks
+defineix benvinguda_marjal
+  mostra icona de la marjal
+  espera 1 segon
+  mostra missatge de benvinguda
+
+quan Codey inicia
+  crida benvinguda_marjal
+```
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Afegiu una variació d’icona o duració a una crida sense duplicar tota la funció. Si el curs de mBlock disponible no admet l’opció imaginada, conserveu la funció sense paràmetres i expliqueu la limitació.
+Personalitzeu la funció amb una segona icona o un missatge propi i compareu-la amb una versió que repetisca els mateixos blocs sense funció. Comproveu que la crida d’inici executa tota la seqüència i que el nom continua sent precís. El so és opcional; manteniu l’alternativa visual silenciosa.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** funció reutilitzada dues vegades i esquema de crides.
+**Evidència:** targetes ordenades, funció definida i cridada en iniciar, traça de l’execució i comparació amb la versió sense funció.
 
-**Pregunta docent:** quina part del programa hem pogut reutilitzar i per què?
+**Pregunta docent:** què passa si definim una funció però no la cridem, i com sabem que el nom representa realment les instruccions que conté?
 
 ### **L11 · Petit vigilant I: missions i distàncies (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-En un plànol fictici del museu, marqueu inici, tres parades numerades i arribada. Definiu una missió que demane visitar les parades en ordre i calculeu quantes unitats de graella recorrerà abans de construir el programa. Una unitat és una convenció del mapa, no una mesura real del sensor.
+El museu escolar vol una maqueta de patrulla amb dos recintes quadrats connectats per un passadís. Dibuixeu l’inici, els dos quadrats i la connexió; mesureu un costat i el passadís amb la mateixa unitat. Predigueu quina seqüència es pot encapsular en una funció repetible i quines dades falten abans de calcular el temps del trajecte.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Dissenyeu una escena de patrulla amb tres encàrrecs curts: arribar a una parada, mostrar-ne el símbol i tornar a l’inici. Escriviu `distància = passos × unitat`; useu, per exemple, quatre passos per cada unitat de mapa i calculeu la longitud total de dos trams. Descomponeu les accions comunes en funcions o seqüències amb nom; si la versió de mBlock no admet el format previst, anoteu els valors en variables separades.
+Marqueu la ruta sobre paper gran o amb cinta de pintor en una zona de terra lliure i plana; manteniu el robot allunyat de taules, escales i passadissos de circulació. Mesureu la distància que recorre Codey Rocky durant un segon a una potència baixa i repetible; repetiu tres vegades i calculeu una velocitat de referència. Anoteu costat, connexió, potència i distància observada. El valor d’exemple del manual (14 cm per costat i 7 cm/s a potència 50%) és només una dada per practicar el càlcul: mesureu el robot real abans d’usar-lo.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Proveu cada funció per separat i compareu el nombre de passos previst amb el recompte del mapa. Registreu les operacions, la distància modelada i qualsevol diferència entre la ruta ideal i el moviment del robot; no presenteu l’estimació com una mesura calibrada en centímetres.
+Definiu `quadrat` com quatre repeticions de «avança una longitud de costat i gira a la dreta». Calculeu el temps aproximat de cada costat amb `temps = distància ÷ velocitat mesurada`, i calibreu per separat el temps de gir de 90° en una prova curta. Si un costat mesura 14 cm i el robot recorre 7 cm/s en la prova, el càlcul inicial és 2 s; no pressuposeu que eixa relació es manté a qualsevol potència o superfície.
+
+```blocks
+defineix quadrat
+  repeteix 4
+    avança durant temps_costat
+    gira a la dreta durant temps_gir
+
+quan es prem A
+  crida quadrat
+  avança durant temps_connexio
+  crida quadrat
+```
+
+Traceu al mapa la distància total prevista: `2 × (4 × costat) + connexió`. Expliqueu per què cridar la funció dues vegades repeteix el perímetre i per què el tram de connexió va entre les dues crides.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Combineu els trams en una missió completa. Afegiu una condició d’èxit que es complisca quan s’han visitat les tres parades i s’ha tornat a l’inici. Una altra parella segueix només el mapa i les instruccions; reviseu una ambigüitat o operació incorrecta que detecte.
+Executeu una volta a potència baixa amb una persona al costat del robot i compareu la posició final amb la línia. Ajusteu una sola dada cada vegada (temps de costat, potència o gir), torneu a provar i registreu l’error. Després, completeu el trajecte amb les dues crides de `quadrat`. Com a extensió, simuleu amb targetes una condició de so elevat; si s’implementa al robot, substituïu la resposta oficial de moviment a màxima potència per una icona lluminosa estacionària, perquè el so no inicie un desplaçament inesperat.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** mapa numerat, càlcul d’almenys dos trams, programa modular, recompte previst/observat i criteri d’èxit.
+**Evidència:** mapa mesurat, tres lectures de calibratge, càlcul de velocitat i temps, funció `quadrat` cridada dues vegades i comparació entre posició prevista i observada.
 
-**Pregunta docent:** quina part és una dada del mapa i quina és una estimació basada en el nostre model?
+**Pregunta docent:** quina dada hem mesurat en el robot i quina part del càlcul continua sent una estimació que depén del terra i de la bateria?
 ### **L12 · Petit vigilant II: funcions per a rutes complexes (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Compareu dues missions: una visita tres parades i una altra en visita quatre, però totes dues comparteixen la salutació, la parada de lectura i el retorn. Predigueu quins blocs es poden reutilitzar i calculeu la distància modelada de cada ruta a partir dels trams del mapa.
+Recupereu el plànol de la primera planta i compareu-lo amb una nova ruta del museu escolar: hi ha més sales, dos passadissos i diversos girs. Predigueu quines funcions de L11 encara serveixen, quines parts cal afegir i com podeu calcular el temps total sense escriure cada moviment des de zero.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Creeu una funció `visita(parades, passos_per_tram)` amb els paràmetres que permeta la versió de mBlock. Calculeu `distància = parades × passos_per_tram × unitat` i mostreu el resultat abans d’iniciar la ruta. Si el bloc de funció no accepta paràmetres, utilitzeu variables d’entrada i documenteu-ne el valor en cada crida; no dupliqueu la funció sense comparar-ho.
+Dibuixeu una planta pròpia amb tres sales quadrades connectades per dos passadissos i marqueu inici, sentit de circulació i final. Mesureu costat i connexions; feu servir la velocitat de referència i el temps de gir calibrats en L11, però torneu a comprovar-los si canvien el terra, la càrrega o la potència. Una parella revisa que les línies no se sobreposen i que el recorregut tinga una única interpretació.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Executeu les missions amb les mateixes unitats i registreu valors d’entrada, operacions, parades visitades i resultat. Verifiqueu la multiplicació amb un càlcul manual i proveu també una ruta de zero trams i una amb un tram addicional. La longitud és una predicció del mapa, no una promesa de precisió física.
+Reutilitzeu `quadrat` de L11 i definiu funcions separades per als passadissos. Creeu després `planta_marjal`, que crida les funcions en l’ordre del mapa; executeu-la des del botó A. Calculeu `distància prevista = 3 × (4 × costat) + passadís 1 + passadís 2` i `temps previst = distància prevista ÷ velocitat mesurada`, afegint a banda els temps de gir. Si el vostre dibuix necessita una altra forma, canvieu el nombre de trams i anoteu la fórmula corresponent.
+
+```blocks
+defineix passadís_1
+  avança durant temps_passadís_1
+
+defineix passadís_2
+  avança durant temps_passadís_2
+
+defineix planta_marjal
+  crida quadrat
+  crida passadís_1
+  gira segons el mapa
+  crida quadrat
+  crida passadís_2
+  gira segons el mapa
+  crida quadrat
+
+quan es prem A
+  crida planta_marjal
+```
+
+Compareu el càlcul manual amb la traça del programa i identifiqueu quines instruccions són funcions auxiliars i quina és la funció que organitza la missió sencera.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Afegiu una condició que trie una missió curta o llarga segons el nombre de parades sol·licitat. Canvieu un paràmetre d’una missió i comproveu que l’altra conserva el seu valor. Una parella revisora ha de trobar on es defineix cada entrada i explicar com es calcula la distància.
+Proveu primer una sola sala i el passadís següent a potència baixa. Compareu la posició real amb la del plànol i canvieu una sola durada cada vegada. Quan els trams passen les proves, executeu la missió completa amb una persona observadora al costat; atureu el robot si ix de la ruta o s’acosta a una zona ocupada. Si no hi ha una zona de prova lliure, feu la validació amb una fitxa sobre el mapa i passos de codi en paper.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** dues missions, funció o alternativa documentada, taula de càlcul, casos límit i comparació amb el programa de L11.
+**Evidència:** mapa de la planta ampliada, funcions auxiliars, funció de missió, càlcul de distància i temps, traça per trams i comparació prevista/observada.
 
-**Pregunta docent:** com ens ajuden les funcions i les operacions a ampliar una missió sense perdre de vista els valors que la controlen?
+**Pregunta docent:** què hem pogut reutilitzar de L11 i quina part del temps calculat varia quan canvien superfície, bateria o ajust del gir?
 ### **L13 · La caixa de llavors de l’hort (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
@@ -436,25 +487,47 @@ Afegiu una cancel·lació amb B que ature el compte i mostre «pausa»; torneu a
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Representeu pedra, paper i tisora amb tres símbols i acordeu la regla de victòria i empat. Predigueu els resultats de les nou combinacions abans de programar-les.
+Representeu les tres opcions amb símbols neutres i acordeu la regla: pedra guanya a tisora, tisora a paper i paper a pedra; dues opcions iguals són empat. Abans de programar, completeu una matriu amb les nou combinacions i decidiu com registrareu el resultat sense guardar noms ni puntuacions individuals.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Creeu una ronda amb una elecció d’usuari i una resposta aleatòria del programa, si la funció està disponible. Manteniu l’atzar dins del joc i no useu el resultat per prendre decisions reals sobre l’alumnat.
+Inicialitzeu `gest`, `guanys`, `derrotes` i `empats` a zero. Quan Codey Rocky es sacseja, assigneu a `gest` un nombre aleatori entre 0 i 2: **0 = pedra, 1 = tisora, 2 = paper**. Mostreu el símbol corresponent en la matriu LED. Si la versió de mBlock no exposa el giroscopi o l’atzar, activeu la mateixa seqüència amb A i useu targetes de nombres per a triar el gest; identifiqueu aquesta alternativa com a simulació.
+
+![Codey Rocky de la dotació al costat de targetes pròpies amb símbols de pedra, paper i tisora.](../../_assets/imatges/sa-cr-pedra-paper-tisora.webp)
+
+_Les targetes fan visibles les tres opcions del joc; la matriu del robot mostra el gest generat pel programa._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Proveu les tres opcions contra cada resultat possible i marqueu victòria, derrota o empat en una matriu. Compareu cada eixida amb la regla acordada.
+Després de comparar el gest de Codey amb el de la parella, registreu el resultat amb els botons: A suma 1 a `guanys`, B suma 1 a `derrotes` i C suma 1 a `empats`. Traceu tres rondes i comproveu que només canvia el comptador triat. L’atzar determina el gest del joc; no és una predicció ni una mesura sobre les persones.
+
+```blocks
+quan Codey es sacseja
+  estableix gest a nombre aleatori entre 0 i 2
+  si gest = 0
+    mostra símbol pedra
+  si no, si gest = 1
+    mostra símbol tisora
+  si no
+    mostra símbol paper
+
+quan es prem A
+  canvia guanys per 1
+quan es prem B
+  canvia derrotes per 1
+quan es prem C
+  canvia empats per 1
+```
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Afegiu un botó per iniciar una ronda nova i comproveu que es reinicien els símbols i el resultat. Una parella revisora prova un cas triat a l’atzar.
+Executeu la matriu completa de nou combinacions i reviseu si cada resultat coincideix amb les regles. Com a extensió, mostreu la proporció de victòries `guanys ÷ (guanys + derrotes + empats)` quan hi haja almenys una ronda i la lectura de llum ambiental supere el llindar de 2 de l’exercici oficial. El sensor dona una lectura pròpia del dispositiu, no lux calibrats; si el bloc no està disponible, proveu la condició amb valors de llum simulats. Per expressar el resultat com a percentatge, multipliqueu la proporció per 100.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** matriu completa, programa i reinici verificat.
+**Evidència:** matriu de les nou combinacions, programa de gest aleatori, traça dels tres comptadors i una prova que evita dividir per zero quan encara no hi ha rondes.
 
-**Pregunta docent:** quina combinació faltava o estava classificada de manera incorrecta?
+**Pregunta docent:** quines variables canvien en cada resultat i què ens diu —i què no ens diu— la proporció de victòries d’un joc?
 
 ### **L17 · Un circuit jugable per al museu (40 min).**
 
@@ -510,145 +583,212 @@ Feu un repte curt, proveu-lo i corregiu una incidència cada vegada. Compareu el
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Trieu l’objectiu d’un joc de col·lecció de símbols del museu. Escriviu quan comença, què compta com a èxit i quina condició el fa acabar.
+Recupereu el joc de recorregut de L17 i convertiu-lo en una ruta virtual per a una barqueta missatgera de la marjal. Abans de tocar el codi, definiu tres tipus de regles: què representen els elements de joc, quines accions pot fer el personatge i quin resultat tanca la partida. Acordeu també una regla comuna i transparent perquè totes les persones juguen en les mateixes condicions.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Programeu l’inici, una variable de puntuació i una condició de finalització. Manteniu l’escena curta i useu símbols, no dades o rànquings de visitants.
+Dibuixeu una pista ampla amb inici, meta i una zona exterior ben diferenciada; en aquesta primera versió no afegiu obstacles ni cronòmetre. En mBlock, connecteu Codey i feu que A i B envien missatges de control a la barqueta; si la connexió no és disponible, useu les fletxes del teclat o targetes equivalents. Definiu en una targeta de regles què vol dir «dins de la pista», què passa quan se n’ix i com es reconeix l’arribada.
+
+![Codey Rocky de la dotació al costat d’un mapa de canal amb inici, meta i una barqueta dins i fora de la ruta.](../../_assets/imatges/sa-cr-mecanica-joc.webp)
+
+_El mapa il·lustra la regla de límit del joc; la barqueta és un personatge digital i no un robot físic._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Feu la traça d’una partida prevista i una d’interrompuda. Comproveu que el marcador i l’estat final coincideixen amb les regles escrites.
+Programeu els casos previstos: si la barqueta continua dins del canal, la partida segueix; si toca la vora exterior, torna a l’inici i comença de nou; si arriba a la meta, mostra un senyal de final i deixa de rebre ordres. El personatge de joc pot ser una il·lustració original: no es presenta com un robot físic ni com una representació exacta de fauna local.
+
+```blocks
+quan es prem A en Codey
+  envia el missatge «avança»
+quan es prem B en Codey
+  envia el missatge «gira»
+
+quan el personatge rep «avança» o «gira»
+  mou el personatge segons l'ordre
+  si toca la zona exterior
+    torna a l'inici
+    reinicia la ruta
+  si toca la meta
+    mostra «missió completada»
+    atura els controls
+```
+
+Traceu una partida que segueix la ruta, una que ix del canal i una que arriba a la meta. En cada cas, comproveu que el resultat correspon a la targeta de regles.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Demaneu a una parella que jugue sense explicació oral. Ajusteu una instrucció o una condició que haja resultat ambigua i repetiu la prova.
+Feu una prova d’ús amb una parella que no haja programat la ruta. Observeu si pot explicar les regles només amb la pantalla i les instruccions disponibles. Recolliu un comentari concret i canvieu una sola condició o element del fons abans de repetir la prova. Per a qui necessite una primera aproximació, amplieu el canal i retireu els girs; com a extensió, es pot proposar una volta en un temps acordat, sempre com a repte personal i sense classificació.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** regla, codi, dos casos i retorn de la parella.
+**Evidència:** targeta de regles (elements, accions i resultats), escena, controls amb missatges o via alternativa, tres casos de prova i una iteració basada en el retorn.
 
-**Pregunta docent:** com sap el programa que la partida ha acabat?
+**Pregunta docent:** quina regla explica millor què ha de fer qui juga quan ix del canal o arriba a la meta?
 
 ### **L20 · Mecàniques de joc II (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Recupereu el joc anterior i identifiqueu una manera de fer-lo més variat sense augmentar la pressió sobre qui juga. Predigueu quin canvi tindrà més efecte.
+Recupereu el prototip de L19 i distingiu tres maneres de crear un repte: un obstacle fix o mòbil, un oponent i un dilema amb dues opcions que tenen avantatges diferents. Trieu-ne una per a una nova ruta de la barqueta i predigueu com canviarà la partida sense modificar alhora les altres regles.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Afegiu un nivell, una opció o un obstacle virtual i feu explícita la condició que el activa. Manteniu una eixida clara per a pausar o acabar.
+Afegiu un obstacle gràfic mòbil que entra des de la part superior de l’escena. Quan toca la barqueta, aquesta torna a l’inici i la partida es reinicia; si no hi ha contacte, la ruta continua i l’obstacle torna a aparéixer després d’una pausa. Feu l’objecte gran i lent en la primera prova, i deixeu un control per a pausar o reiniciar el joc.
+
+![Codey Rocky al costat d’un canal de joc amb una barqueta, un obstacle mòbil, una fitxa i dues opcions de ruta.](../../_assets/imatges/sa-cr-obstacles-joc.webp)
+
+_L’escena representa un obstacle, un objecte col·leccionable i dues rutes; les regles concretes es proven al prototip de mBlock._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Proveu el cas habitual, els límits de puntuació i el cas d’aturada. Registreu errors i dubtes amb dades fictícies, mai amb classificacions personals.
+Representeu l’estat del joc amb una taula: «en curs», «contacte amb obstacle» i «arribada». Proveu cada transició, inclòs el cas en què l’obstacle passa sense tocar el personatge. Afegiu una extensió opcional: una fitxa de ruta que cal arreplegar abans que isca de la pantalla mentre s’evita l’obstacle; calculeu si la fitxa és assolible amb les regles actuals.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Compareu la versió nova amb la inicial amb els mateixos casos. Retireu el canvi si fa el joc menys comprensible o no millora el criteri triat.
+Una altra parella prova el joc sense instruccions orals. Ajusteu una sola variable —velocitat o mida de l’obstacle, temps d’aparició o amplària de la ruta— i torneu a comprovar els tres estats. Com a dilema de disseny, oferiu una ruta directa més estreta i una alternativa més ampla i llarga; feu visibles les conseqüències de cada tria. La versió guiada pot eliminar l’obstacle mòbil, i el repte avançat pot combinar obstacle i fitxa sense afegir una classificació de jugadors.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** versions comparades, casos límit i decisió argumentada.
+**Evidència:** prototip de L19 amb una mecànica nova, taula d’estats i transicions, prova de contacte/no contacte, retorn entre parelles i una versió revisada.
 
-**Pregunta docent:** quin criteri ens ha permés decidir si la mecànica nova millorava el joc?
+**Pregunta docent:** quin canvi ha fet el repte més interessant i quina evidència mostra que les regles encara són comprensibles i justes?
 
 ### **L21 · Ràpid i segur (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Observeu una pista de sobretaula tancada i marqueu una zona d’aturada. Predigueu què pot canviar si augmenta la velocitat del motor i quin risc cal evitar.
+Recupereu la ruta virtual de L19–L20 i completeu-ne les condicions de victòria i de reinici. En aquesta sessió, Codey és el comandament d’un personatge digital dins d’mBlock: el robot físic es queda quiet sobre la taula, no participa en una cursa ni es mou a gran velocitat. Predigueu què ha de passar quan el cotxe virtual completa una volta, ix de la pista o toca un obstacle.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Programeu una ruta curta amb velocitat baixa i increments petits. Manteniu el Codey Rocky lluny de vores, cables i persones; no es cronometra ni es compara el rendiment entre equips.
+Dibuixeu una pista tancada i prou ampla, una línia blava de meta i un obstacle gràfic. Col·loqueu l’inici just després de la meta perquè el primer contacte amb la línia blava arribe després d’una volta completa. Useu A/B de Codey per enviar missatges al personatge en mBlock; si no hi ha connexió, manteniu el control amb teclat o targetes. Afegiu un senyal visual de victòria i deixeu el so desactivat per defecte.
+
+![Codey Rocky de la dotació al costat d’un circuit virtual amb meta blava, personatge de joc i obstacle.](../../_assets/imatges/sa-cr-fast-and-furious.webp)
+
+_El cotxe és un personatge digital controlat per Codey; la unitat física no es mou durant aquesta activitat._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Feu tres intents amb la mateixa ruta i registreu temps aproximat i desviació sense convertir-los en una competició. Atureu la prova si el robot s’acosta a la vora o entra algú a la zona.
+Implementeu els resultats del joc: completar una volta i creuar la meta blava mostra «volta completada»; eixir de la pista o tocar l’obstacle retorna el personatge a l’inici i reinicia la partida. Registreu l’estat abans i després de cada esdeveniment. Comproveu que la posició d’inici no activa la victòria per error i que la línia es detecta només quan el cotxe hi torna després del recorregut.
+
+```blocks
+quan comença la partida
+  situa el cotxe virtual a l'inici
+  estableix estat a «en curs»
+
+mentre estat és «en curs»
+  si el cotxe ix de la pista o toca l'obstacle
+    torna el cotxe a l'inici
+    reinicia la partida
+  si el cotxe toca la línia blava després de recórrer la pista
+    mostra el senyal de victòria
+    estableix estat a «volta completada»
+```
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Canvieu només la velocitat o el temps de motor i repetiu els tres intents. Compareu control i estabilitat, no sols el temps mínim.
+Convideu una parella a provar el joc i observar si entén la meta, el reinici i l’obstacle sense explicació oral. Canvieu una regla cada vegada i repetiu els casos. Com a extensions del material oficial, oferiu una volta amb un temps personal orientatiu, diverses voltes o una segona meta roja amb un resultat diferent; cap temps es publica ni es compara entre persones. La pista ampla i el control per teclat són l’opció guiada.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** registre d’intents, límit de seguretat i canvi justificat.
+**Evidència:** pista digital amb línia blava, obstacles i missatges de control; diagrama de victòria/reinici; proves de volta, eixida i contacte; i una revisió feta després del playtesting.
 
-**Pregunta docent:** quina velocitat permet mantindre el control en aquesta pista concreta?
+**Pregunta docent:** com sap el programa que el cotxe ha completat una volta i no acaba de començar-la?
 
-### **L22 · Fem un gir (40 min).**
+### **L22 · Corbes amb Codey Rocky (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Recupereu les parts de Codey Rocky i les ordres bàsiques de moviment. En una graella que represente un recorregut segur entre l’aula, la biblioteca i el pati, marqueu inici, meta i un gir de 90 graus. Dibuixeu dues rutes possibles i predigueu quina seqüència de moviments pot seguir el robot sense eixir del carril.
+Recordeu que Rocky es mou amb dues rodes motrius. Representeu-les amb dues fitxes —o, si el grup ho prefereix, amb dues persones que mostren fletxes sense haver de desplaçar-se— i proveu tres casos: les dues rodes avancen igual, una roda avança més que l’altra i una roda queda quieta mentre l’altra avança. Predigueu quin cas produeix una recta, un cercle ample o un gir més tancat. Aquest model és una simplificació: no reprodueix la fricció ni les diferències entre motors reals.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Traduïu una ruta a ordres de moviment de mBlock i col·loqueu una marca d’inici i una zona de parada prou allunyada de la vora. Comenceu amb un tram recte i un únic gir; useu velocitat baixa i el control de temps o angle que estiga disponible en la versió instal·lada. Abans de cada prova, alineeu el robot amb la mateixa marca.
+En mBlock, localitzeu el bloc de moviment que permet ajustar la potència de les rodes de Rocky (0–100) i prepareu una pista ampla de paper, amb inici i parada ben visibles. Proveu primer un tram recte amb potències iguals; després, una volta circular i una semicircular modificant la diferència entre les dues rodes. Manteniu una potència baixa, deixeu espai lliure al voltant i atureu el programa abans de recol·locar el robot. No cal perseguir una forma geomètrica perfecta: el propòsit és relacionar la diferència de velocitat de les rodes amb la curvatura observada.
+
+![Codey Rocky de la dotació al costat de trajectòries corbes per a una volta circular, una semicircumferència, una corba en S i un repte en forma de huit.](../../_assets/imatges/sa-cr-fem-un-gir.webp)
+
+_Les trajectòries són una representació pròpia del repte de corbes; les potències indicades en mBlock s’han de provar amb el robot disponible._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Executeu la seqüència i registreu l’ordre, la superfície, el punt final i la desviació respecte del camí dibuixat. Feu dos intents amb la mateixa configuració. Expliqueu on comença cada tram i quina instrucció inicia el gir; mesureu la desviació amb una plantilla de paper i indiqueu que és una aproximació de la maqueta, no una especificació exacta del robot.
+Dissenyeu al mapa una ruta que combine una circumferència i una semicircumferència i intercanvieu-la amb una altra parella. Abans d’executar-la, anoteu els valors triats per a cada roda i la forma esperada; després, marqueu la traça real amb un llapis o amb una tira de paper. Registreu si el robot completa la corba, on s’obri o es tanca i quina diferència de potència ho pot explicar. Repetiu la prova sense canviar els valors per distingir una desviació puntual d’un resultat consistent.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Intercanvieu les targetes de ruta amb una altra parella, que haurà de predir i provar el trajecte sense indicacions orals. Reviseu el punt de gir o una sola variable del programa, repetiu dos intents i compareu-los amb la línia base. Si el model no fa el gir esperat, representeu la maniobra amb fletxes i compareu-la amb la traça del robot abans de canviar altres ordres.
+Dibuixeu una corba en S i acordeu un temps ample per completar-la com a prova de planificació, no com a competició entre persones. Dividiu-la en trams, indiqueu quan canvia el sentit de la corba i proveu el recorregut amb Codey Rocky en una zona delimitada. Canvieu una sola diferència de potència o la durada d’un tram, torneu a provar i compareu les traces. Com a ampliació del repte oficial, dissenyeu corbes consecutives o un huit; intercanvieu el mapa amb una altra parella perquè puga predir-ne l’ordre abans de programar-lo.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** mapa anotat, seqüència de blocs, registre de dos intents abans i després, desviació aproximada i configuració triada. Expliqueu quina instrucció ha ajudat a seguir la ruta i en quines condicions de superfície és vàlida la conclusió.
+**Evidència:** mapa propi amb cercle, semicercle i corba en S; valors de les dues rodes; traces previstes i observades; i una modificació justificada. Feu una autoavaluació breu: «En aquesta sessió he aprés que…», «durant la prova m’ha costat…» i «ho he resolt…».
 
-**Pregunta docent:** quina diferència hi ha entre dissenyar un recorregut al mapa i comprovar que el robot el pot executar en aquesta superfície?
+**Pregunta docent:** com canvia la trajectòria quan una roda gira més de pressa que l’altra, i per què el mateix programa pot dibuixar una corba diferent en una altra superfície?
 
 ### **L23 · Gir i obstacles (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Plantegeu una ruta per una maqueta de carrers del barri i afegiu un obstacle tou. Relacioneu el repte amb l’ús de funcions en vehicles que interpreten dades dels sensors, sense presentar Codey Rocky com un cotxe autònom real. Predigueu una maniobra d’avís i desviament, i marqueu un límit que impedisca que el model caiga de la pista.
+Recupereu les traces corbes de L22 i presenteu un tram recte del camí escolar amb un obstacle tou al mig. Rocky ha de continuar el recorregut quan el camí és lliure i fer una desviació quan el sensor IR frontal detecta l’obstacle. Predigueu quines ordres ha d’executar en cada cas i dibuixeu una ruta lateral que el deixe avançar paral·lelament a l’obstacle. Aclariu que és una maqueta didàctica: no prova que el robot puga circular amb seguretat per un carrer real.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Comproveu al Codey Rocky del centre si està disponible el sensor IR frontal i el bloc que en llig la proximitat. Creeu una funció pròpia `avisar_i_girar()` que mostre un senyal quan detecta l’obstacle i execute una desviació curta; després, crideu la funció des de la seqüència de ruta. Prepareu una pista de cartó plana amb carrils amples i vores protegides. Si el sensor, el firmware o la funció no són compatibles, simuleu l’entrada amb una targeta i marqueu el resultat com a simulació.
+Comproveu que el sensor IR integrat a la part frontal del Rocky està orientat cap avant i que mBlock ofereix el bloc de detecció de proximitat. En una pista plana, ampla i sense vores exposades, programeu l’inici amb A i una condició: si el sensor detecta l’obstacle, gireu a la dreta, avanceu un tram curt a potència reduïda, gireu a l’esquerra i continueu; si no en detecta cap, avanceu a baixa potència. Si «Els meus blocs» està disponible, agrupeu la maniobra en `esquivar_obstacle()`; altrament, conserveu-la com una seqüència de blocs visible. Si el sensor o el firmware no són compatibles, simuleu l’entrada amb targetes i etiqueteu la prova com a simulació.
+
+```blocks
+quan es prem A
+per sempre
+  si obstacle detectat
+    gira a la dreta 90°
+    avança amb potència baixa durant 1 s
+    gira a l’esquerra 90°
+  altrament
+    avança amb potència baixa durant 1 s
+```
+
+![Codey Rocky de la dotació davant d’un obstacle tou en una pista de paper, amb la trajectòria de desviament marcada.](../../_assets/imatges/sa-cr-gir-obstacles.webp)
+
+_El recorregut és una maqueta pròpia per provar la resposta del sensor IR; no representa una instrucció per circular en un espai públic._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Dividiu la ruta en trams rectes mesurats amb una regla i un gir indicat en el mapa. Abans de cada prova, l’equip explica on es crida la funció i què ha de fer si el camí està lliure o ocupat. Executeu una ruta lliure i una amb obstacle, des del mateix inici; registreu lectura del sensor, resposta, distància aproximada i desviació. No proveu l’aturada sobre la vora d’una taula: representeu el límit amb una franja de contrast dins d’una pista plana i manteniu una barrera física de seguretat.
+Executeu primer el programa amb el camí lliure i després amb l’obstacle tou al davant, sempre des de la mateixa marca. Registreu l’estat esperat, la lectura o resposta del sensor, les ordres executades i si Rocky recupera el sentit inicial del recorregut. Repetiu cada cas una vegada sense canviar el programa. Si la lectura apareix com una distància, anoteu-la com a valor aproximat del sensor; no la convertiu en una garantia sobre objectes, persones o distàncies reals.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Proveu també una detecció falsa —una targeta fora del carril o una superfície de contrast— i comproveu si l’avís apareix quan toca. Canvieu una sola condició o llindar i repetiu els dos casos. Intercanvieu el mapa amb una altra parella, que ha de poder localitzar i explicar la funció; la persona observadora conserva el control d’aturada i ningú posa els dits davant de les rodes o del sensor.
+Canvieu el sentit de la desviació per provar l’extensió oficial d’esquivar cap a l’altre costat i compareu quina versió manté millor l’orientació de la ruta. Una persona observadora pot mostrar «lliure» o «obstacle» amb targetes perquè l’equip contraste la condició abans d’activar el robot. Intercanvieu el diagrama amb una altra parella, que ha de predir el resultat dels dos casos. Modifiqueu una sola ordre cada vegada i manteniu sempre una persona responsable de la parada; no poseu els dits davant de les rodes ni del sensor.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** mapa amb trams i distàncies, funció pròpia i punt on es crida, registre de ruta lliure/obstacle/fals positiu i revisió justificada. Expliqueu què resol la funció i per què la pista de prova no demostra que un vehicle real siga segur.
+**Evidència:** mapa de la desviació, programa o funció visible, taula amb els casos lliure/obstacle, dues execucions per cas i un canvi justificat. Com a extensió opcional, Codey mostra una icona quan detecta l’obstacle; el so queda desactivat per defecte.
 
-**Pregunta docent:** quina informació proporciona el sensor IR i quina prova addicional caldria abans d’usar una regla semblant fora de la maqueta?
+**Pregunta docent:** quina part del recorregut depén de la lectura IR i quines situacions reals no podem donar per resoltes amb aquesta prova?
 
 ### **L24 · Segueix la línia (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Dibuixeu una línia d’alt contrast amb inici, corba i final. Predigueu quina lectura del sensor inferior permetrà distingir línia i superfície, i com ho comprovaríeu.
+Dibuixeu una ruta negra sobre una superfície clara i localitzeu el sensor de color inferior de Rocky i el seu punt de llum RGB. Predigueu si la lectura de llum reflectida serà més alta sobre la línia o sobre el fons i expliqueu per què el valor pot canviar amb la superfície o la llum de l’aula. La lectura és una unitat pròpia del sensor, no una mesura en lux.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Verifiqueu que el Rocky del centre disposa del sensor i del bloc de seguiment compatibles. Calibreu amb la línia i el fons reals; si el sensor o la versió no són disponibles, completeu el mateix algorisme amb entrades simulades i declareu-ho.
+Comproveu que el sensor inferior i el bloc de lectura de llum reflectida funcionen. Mostreu el valor en la matriu LED de Codey en temps real i prepareu targetes amb superfícies diferents. Mesureu primer la superfície clara i després la cinta negra; repetiu la lectura amb el punt RGB situat a la vora de la línia, tal com proposa el quadern. Registreu cada valor sense anomenar-lo lux ni suposar que serà igual en tots els robots.
+
+![Codey Rocky de la dotació amb el sensor RGB frontal inferior orientat a la vora d’una línia negra sobre una pista clara.](../../_assets/imatges/sa-cr-segueix-linia.webp)
+
+_La il·lustració assenyala el punt de lectura que es compara amb les superfícies clares i fosques._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Proveu el programa en un tram recte curt i registreu lectures sobre la línia i fora d’ella. Afegiu la corba només després que la regla bàsica funcione; manteniu una zona d’aturada lliure.
+Simuleu la regla amb una fitxa i fletxes: quan el sensor llig la vora de la línia, representeu una correcció de 45° cap a un costat; quan llig el fons, representeu la correcció oposada. És una versió de taula del joc de simulació del quadern, sense exigir moviments corporals. Després, programeu Rocky perquè seguisca un tram recte ample; afegiu una corba només quan la resposta bàsica siga repetible i deixeu una zona d’aturada lliure.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Canvieu el llindar o la velocitat, una variable cada vegada, i repetiu el tram. Compareu el recorregut amb un algorisme en paper i expliqueu qualsevol desviació.
+Proveu un circuit amb corba i registreu on Rocky perd o recupera la línia. Canvieu només el llindar entre negre i clar o la potència de moviment, repetiu el recorregut i compareu la traça. Si el sensor o la versió no són compatibles, completeu la mateixa seqüència amb lectures simulades i marqueu clarament què s’ha mesurat i què s’ha representat.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** calibratge, codi o pseudocodi, resultats i alternativa en paper.
+**Evidència:** taula de llum reflectida sobre fons, línia i vora; valors mostrats en pantalla; algorisme de correcció; recorregut de prova; i revisió d’un llindar o una potència. Adjunteu també la simulació en paper si el sensor no està disponible.
 
-**Pregunta docent:** quin cas de prova ens ha confirmat que el robot distingia la línia del fons?
+**Pregunta docent:** com utilitza el programa el contrast entre llum reflectida de la línia i del fons per corregir la direcció?
 ## 🧰 Maquinari, programari i dependències
 
 Codey Rocky, ordinador amb versió compatible de mBlock, cable USB o connexió provada i materials plans de cartó. Useu exclusivament mòduls integrats comprovats en la unitat: botons, pantalla, indicador RGB, altaveu, sensor de so/llum, potenciòmetre, giroscopi, emissor/receptor IR i sensor de color/distància del xassís, segons el model i firmware. Les activitats L21–L24 necessiten el Rocky i el seu sensor corresponent; si no està disponible, feu el mateix algorisme en simulació. Neuron queda fora d’aquesta adaptació.
