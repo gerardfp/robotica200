@@ -46,19 +46,91 @@ Per a l'observació, useu una visita al pati en un moment tranquil o un plànol 
 
 ### Sessió 1 — Mirem l'espai amb ulls de disseny (20–25 min)
 
-**Observació (8 min):** feu una volta curta i localitzeu dues o tres zones sense fotografiar persones. **Conversació (7 min):** parleu de què permet cada lloc i quines condicions s'hi observen: ombra, soroll, espai per moure's o lloc per seure. **Representació (7 min):** trieu formes i pictogrames per al mapa. Tanqueu amb una pregunta de disseny, com ara «tenim un lloc tranquil i un recorregut que no travesse el joc?».
+#### Fase 1 · Activem i prediem
+
+Abans d’observar, penseu quines zones i recorreguts fan que un pati siga comprensible i convide a jugar de maneres diferents.
+
+#### Fase 2 · Explorem i construïm
+
+Feu una volta curta i localitzeu dues o tres zones sense fotografiar persones. Si no podeu eixir al pati, useu un plànol buit preparat per la docent.
+
+#### Fase 3 · Expliquem i registrem
+
+Descriviu què permet cada lloc i quines condicions hi observeu: ombra, soroll, espai per moure’s o lloc per seure. Registreu característiques de l’espai, no qui l’utilitza.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu formes i pictogrames per al mapa. Reviseu la pregunta de disseny: «tenim un lloc tranquil i un recorregut que no travesse el joc?» Afegiu un element si falta una opció de descans o circulació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** esbós inicial amb zones i preguntes sobre les activitats possibles. Què hem observat i què continua sent una idea per comprovar?
 
 ### Sessió 2 — De la forma a les instruccions (20–25 min)
 
-Sobre paper, construïu un plànol simbòlic amb tres zones. Amb cordill o peces, dibuixeu una forma gran —quadrat, rectangle o camí en L— i seguiu-la amb el dit. Ordeneu les instruccions de Tale-Bot utilitzant les targetes del kit. Abans d'executar, pregunteu: on comença?, quantes vegades repetirem el moviment?, on hauria d'acabar? Feu una passada simulada amb una fitxa de paper perquè el grup puga detectar errors sense haver d'esperar el robot.
+#### Fase 1 · Activem i prediem
+
+Sobre paper, creeu un plànol simbòlic amb tres zones. Trieu una forma gran —quadrat, rectangle o camí en L— i predigueu on començarà i acabarà Tale-Bot.
+
+#### Fase 2 · Explorem i construïm
+
+Amb cordill o peces, representeu la forma i seguiu-la amb el dit. Assenyaleu l’orientació inicial i on caldrà girar.
+
+#### Fase 3 · Expliquem i registrem
+
+Ordeneu les instruccions de Tale-Bot amb les targetes del kit. Anoteu quantes vegades repetireu el moviment i la casella final prevista.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu una passada simulada amb una fitxa de paper. Si el recorregut no concorda amb la forma, reviseu una ordre abans d’executar el robot.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** plànol, forma representada i seqüència d’ordres anotada. «On comença? Quantes vegades repetirem el moviment? On hauria d’acabar?»
 
 ### Sessió 3 — Dibuixem, observem i revisem (20–25 min)
 
-Col·loqueu el retolador segons les instruccions del fabricant, poseu el robot al punt d'inici i executeu una seqüència curta. Observeu el traç i compareu-lo amb el model de cordill. Si un costat és massa llarg o el robot gira cap a una altra direcció, canvieu una sola instrucció i torneu a provar en un espai net del paper. Marqueu amb una targeta l'inici i el final. La precisió del traç no és l'únic objectiu: també es pot assolir descrivint l'ordre o identificant el canvi necessari.
+#### Fase 1 · Activem i prediem
+
+Recupereu la seqüència i prediu la forma que dibuixarà el robot abans de col·locar el retolador.
+
+#### Fase 2 · Explorem i construïm
+
+Col·loqueu el retolador segons les instruccions del fabricant, poseu Tale-Bot al punt d’inici i executeu una seqüència curta.
+
+#### Fase 3 · Expliquem i registrem
+
+Observeu el traç i compareu-lo amb el model de cordill. Marqueu inici i final; descriviu qualsevol diferència, com un costat massa llarg o un gir en una altra direcció.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una sola instrucció i torneu a provar en un espai net del paper. També podeu assolir l’objectiu descrivint l’ordre o assenyalant quin canvi caldria fer, sense manipular el robot.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** esbós, traç observat i una ordre revisada. Quina diferència heu trobat entre el traç i la predicció? La precisió del dibuix no és l’únic objectiu.
 
 ### Sessió 4 — Presentem un pati amb opcions (20–25 min)
 
-Afegiu pictogrames a les formes dibuixades i expliqueu què representa cadascuna. Un altre equip rep el plànol sense explicació i intenta trobar-hi les zones. Escolteu què interpreta, afegiu una llegenda si és necessària i reviseu la proposta: hi ha una opció de descans?, un espai ampli?, un recorregut comprensible? No cal que totes les activitats estiguen representades ni afirmar que un disseny resol les necessitats de totes les persones; el producte és una maqueta inicial per conversar.
+#### Fase 1 · Activem i prediem
+
+Mireu les formes dibuixades i predigueu què podrà entendre un altre grup sense que li ho expliqueu.
+
+#### Fase 2 · Explorem i construïm
+
+Afegiu pictogrames a les formes i decidiu què representa cadascuna: un lloc tranquil, una zona de moviment o un espai per construir.
+
+#### Fase 3 · Expliquem i registrem
+
+Un altre equip rep el plànol sense explicació i intenta trobar-hi les zones. Anoteu què interpreta i quins símbols resulten ambigus.
+
+#### Fase 4 · Apliquem i millorem
+
+Afegiu una llegenda si cal i reviseu la proposta: hi ha una opció de descans, un espai ampli i un recorregut comprensible? No cal representar totes les activitats.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** plànol amb pictogrames i llegenda revisada després de la prova. El producte és una maqueta inicial per conversar, no una afirmació que resol les necessitats de totes les persones.
 
 ## Organització i rols
 

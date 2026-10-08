@@ -40,27 +40,91 @@ Prepareu un acord de conversa segur: no es pregunta «com estàs de veritat?» n
 
 ### **Una escena, diverses interpretacions (45 min).**
 
-Presenteu una situació fictícia senzilla: la granota arriba a la plaça i troba l’estand tancat. En lloc de fixar una resposta correcta, oferiu diverses possibilitats: pot estar decebuda, curiosa perquè hi ha una sorpresa, tranquil·la perquè sap que tornarà a obrir o simplement pensativa. Els equips trien una interpretació per al personatge i expliquen quina part de la història els hi ha fet pensar.
+#### Fase 1 · Activem i prediem
 
-Trieu pictogrames, paraules o colors lliures per representar cada interpretació. No imposeu una associació fixa entre color i emoció: cada equip pot usar una combinació diferent si n’explica la intenció. Afegiu una targeta «no ho sabem» per recordar que un observador no pot conéixer amb certesa el que sent una altra persona només mirant-ne la cara. *Evidència:* targeta d’escena amb dues interpretacions possibles i una explicació del grup. *Preguntes docents:* «Quines pistes del relat heu usat? Podria el personatge sentir una altra cosa?»
+Presenteu una situació fictícia: la granota arriba a la plaça i troba l’estand tancat. Oferiu lectures possibles: pot estar decebuda, curiosa per una sorpresa, tranquil·la perquè sap que tornarà a obrir o pensativa. Predigueu quines pistes del relat han portat a cada interpretació.
 
-### **Programem una emoció i la revisem (45 min).**
+#### Fase 2 · Explorem i construïm
 
-Connecteu Codey a mBlock 5. Seguint l’estructura del tutorial bàsic oficial, associeu el botó A a una expressió predissenyada dels blocs Emotion. Carregueu-la i comproveu que s’activa en prémer el botó. Després, cada equip tria una altra expressió disponible i canvia el programa. L’objectiu és entendre que el codi fa aparéixer una imatge acordada, no que el robot «sent» eixa emoció.
+En equips, trieu una interpretació per al personatge i representeu-la amb pictogrames, paraules o colors lliures. No imposeu una associació fixa entre color i emoció; cada equip pot triar una combinació diferent si n’explica la intenció.
 
-Compareu les dues expressions com a opcions gràfiques: quines formes o elements les diferencien? Algunes cares es poden llegir de maneres distintes; accepteu interpretacions diverses i pregunteu quin context narratiu faria més clara cadascuna. *Evidència:* programa amb entrada de botó, expressió triada i una explicació de com el context canvia la interpretació. *Preguntes docents:* «Què ha provocat que aparega la imatge? Què ens diu el programa i què no pot saber?»
+#### Fase 3 · Expliquem i registrem
+
+Afegiu una targeta «no ho sabem» i registreu dues interpretacions possibles per a la mateixa escena. Expliqueu quina pista del relat sosté cada lectura.
+
+#### Fase 4 · Apliquem i millorem
+
+Intercanvieu les targetes amb un altre grup. Reviseu la representació si només s’entén quan qui l’ha creada n’explica la intenció.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compartiu si el personatge podria sentir una altra cosa i per què una cara sola no permet saber què sent una persona real. **Evidència:** targeta d’escena amb dues interpretacions i explicació del grup.
+
+### **Programem una expressió i la revisem (45 min).**
+
+#### Fase 1 · Activem i prediem
+
+Abans d’executar el programa, predigueu quina imatge apareixerà en prémer el botó A i quina acció l’activa. Recordeu que el robot mostra una imatge programada, no que «sent» una emoció.
+
+#### Fase 2 · Explorem i construïm
+
+Connecteu Codey a mBlock 5. Seguint l’estructura del tutorial bàsic oficial, associeu el botó A a una expressió predissenyada dels blocs Emotion. Carregueu-la i comproveu que s’activa en prémer el botó; després, trieu una altra expressió disponible i modifiqueu el programa.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu l’esdeveniment d’entrada, l’expressió triada i la resposta observada. Compareu les dues imatges com a opcions gràfiques: quines formes o elements les diferencien?
+
+#### Fase 4 · Apliquem i millorem
+
+Si una expressió es pot interpretar de diverses maneres, afegiu un context narratiu que n’aclarisca la intenció. Reviseu la imatge o l’esdeveniment i torneu a provar-la.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què ha provocat que aparega la imatge i què no pot saber el programa. **Evidència:** programa amb entrada de botó, expressió triada i explicació de com el context canvia la interpretació.
 
 ### **Dibuixem una careta amb píxels (45 min).**
 
-Useu una quadrícula que represente la pantalla LED de Codey. Dissenyeu una expressió original amb pocs píxels encesos; marqueu clarament els píxels buits i encesos i penseu com es veurà des de certa distància. Programeu l’esdeveniment del botó A per a mostrar la imatge durant un temps breu, i si el grup està preparat, afegiu una segona imatge o una espera perquè la careta canvie en la narració. No cal utilitzar animació, so ni giroscopi per completar el repte.
+#### Fase 1 · Activem i prediem
 
-Compareu el disseny en paper amb la pantalla. Si costa llegir-lo, canvieu una sola característica: separació dels ulls, forma de la boca o duració. Doneu a una altra parella el context fictici sense explicar la intenció gràfica i demaneu-li que descriga què interpreta; després, qui ha programat pot aclarir què volia comunicar. *Evidència:* esbós de quadrícula, imatge en Codey i una millora basada en la lectura d’una altra persona. *Preguntes docents:* «Quins píxels fan que canvie la lectura? Què ha entés l’altra parella?»
+En una quadrícula que represente la pantalla LED de Codey, predigueu com es veurà una cara amb pocs píxels encesos i quins detalls seran llegibles des de certa distància.
+
+#### Fase 2 · Explorem i construïm
+
+Dissenyeu una expressió original i marqueu clarament els píxels buits i encesos. Programeu el botó A perquè mostre la imatge durant un temps breu; si el grup està preparat, afegiu una segona imatge o una espera perquè la careta canvie dins de la narració. No cal animació, so ni giroscopi.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu el disseny en paper amb la pantalla. Doneu a una altra parella el context fictici sense explicar la intenció gràfica i demaneu-li que descriga què interpreta.
+
+#### Fase 4 · Apliquem i millorem
+
+Si costa llegir la imatge, canvieu una sola característica —separació dels ulls, forma de la boca o durada— i proveu-la de nou. Després, qui ha programat pot explicar què volia comunicar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Anoteu quins píxels han canviat la lectura i què ha entés l’altra parella. **Evidència:** esbós de quadrícula, imatge en Codey i una millora basada en la lectura externa.
 
 ### **Contem una història i pensem en els límits (45 min).**
 
-Ordeneu tres targetes —inici, complicació i desenllaç— per al personatge de la plaça. Programeu una expressió en un moment del relat i una altra només si ajuda a entendre el canvi de situació. Un grup presenta la història amb targetes, narració, gestos o una demostració del Codey; l’audiència pot proposar dues interpretacions en lloc d’endevinar una emoció «correcta».
+#### Fase 1 · Activem i prediem
 
-Finalitzeu amb una conversa curta: un robot pot mostrar un símbol que hem programat; una persona de confiança pot escoltar-nos i preguntar què necessitem. Si algú expressa malestar, no es demana al robot que el diagnostique ni a la classe que el resolga; s’ofereix l’acompanyament adult previst pel centre. *Evidència:* seqüència narrativa, programa revisat i una frase sobre el límit del dispositiu. *Preguntes docents:* «Quines dues lectures podria tindre aquesta cara? Quina diferència hi ha entre representar una emoció i detectar-la?»
+Ordeneu tres targetes —inici, complicació i desenllaç— per al personatge de la plaça. Predigueu en quin moment una expressió digital pot ajudar a entendre el canvi de situació.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu una expressió per a un moment del relat i una altra només si ajuda a explicar el canvi. Prepareu una presentació amb targetes, narració, gestos o demostració del Codey; ningú no ha d’usar la veu ni representar una expressió corporal.
+
+#### Fase 3 · Expliquem i registrem
+
+L’audiència proposa dues interpretacions possibles en lloc d’endevinar una emoció «correcta». Registreu quines pistes del relat o de la imatge han ajudat.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu una expressió o una escena a partir del retorn. Si algú expressa malestar, no demaneu al robot que el diagnostique ni a la classe que el resolga: oferiu l’acompanyament adult previst pel centre.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu la diferència entre representar una emoció i detectar-la, i tanqueu amb una frase sobre el límit del dispositiu. **Evidència:** seqüència narrativa, programa revisat i declaració del límit.
 
 ## 📋 Avaluació i evidències
 

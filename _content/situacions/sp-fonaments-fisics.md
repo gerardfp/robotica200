@@ -29,31 +29,207 @@ La classe prepara una mostra per a explicar com la robòtica pot ajudar en tasqu
 - Construir i iterar un prototip amb rols cooperatius i proves observables.
 - Relacionar la computació física amb tasques professionals sense atribuir autonomia o capacitats no provades.
 
-## 📅 Seqüència didàctica · sis lliçons
+## 📅 Seqüència didàctica · cinc lliçons i un projecte final de quatre sessions
 
 ### **Lliçó 1 · Introducció a la robòtica (45 min).**
 
-En parelles, exploreu el set SPIKE Prime i acordeu tres normes concretes per compartir un kit, torns de construcció i programació, i lliurament a temps. Feu una pluja d’idees sobre necessitats que podria ajudar a resoldre la tecnologia; distingiu problema, persona usuària i funció tècnica. Mireu la dotació i identifiqueu hub, motors, sensors i elements estructurals sense desmuntar connexions a la força. Anoteu una primera idea de projecte final, els rols de cada membre i com els rotareu. Tanqueu amb un inventari cooperatiu de la caixa i una autoavaluació breu de participació, temps i cura dels materials.
+#### Fase 1 · Activem i prediem
+
+Feu una pluja d’idees sobre necessitats que podria ajudar a resoldre la tecnologia. Distingiu problema, persona usuària i funció tècnica; anoteu una hipòtesi de què podria fer un robot per respondre a una necessitat.
+
+#### Fase 2 · Explorem i construïm
+
+En parelles, exploreu el set SPIKE Prime i identifiqueu hub, motors, sensors i elements estructurals. No forceu ni desmunteu connexions.
+
+#### Fase 3 · Expliquem i registrem
+
+Acordeu tres normes concretes per compartir el kit, alternar torns de construcció i programació, i deixar els materials preparats per al grup següent. Registreu una primera idea de projecte final.
+
+#### Fase 4 · Apliquem i millorem
+
+Assigneu rols i decidiu com rotaran. Reviseu si les normes permeten que cada persona participe i si es pot completar el lliurament a temps; canvieu una norma si deixa una tasca sense responsable.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** inventari cooperatiu, normes, idea de projecte i autoavaluació breu sobre participació, temps i cura dels materials. Quina norma ha ajudat més a compartir el kit?
 
 ### **Lliçó 2 · Què és un robot? (45 min).**
 
-Definiu «robot» amb tres paraules i contrasteu exemples quotidians i industrials: què detecten, quin programa segueixen i quina tasca repetitiva o difícil fan? En una taula, compareu entrada, procés i resposta, i marqueu què és maquinari i què és programari. Amb el hub SPIKE sense accessoris, obriu la lliçó d’inici de l’app i comproveu què pot fer la matriu quan rep un programa; discutiu si el hub a soles compleix els criteris que heu acordat per a dir-ne robot. Afegiu casos que compliquen la definició, com una porta automàtica o un electrodomèstic programable. Reviseu la definició amb proves i no amb l’aparença de la màquina.
+#### Fase 1 · Activem i prediem
+
+Definiu «robot» amb tres paraules i predigueu quins elements hauria de tindre un sistema per encaixar en la definició.
+
+#### Fase 2 · Explorem i construïm
+
+Contrasteu exemples quotidians i industrials: què detecten, quin programa segueixen i quina tasca repetitiva o difícil fan? Completeu una taula d’entrada, procés i resposta, i marqueu què és maquinari i què és programari.
+
+#### Fase 3 · Expliquem i registrem
+
+Amb el hub SPIKE sense accessoris, obriu la lliçó d’inici de l’app i comproveu què pot fer la matriu quan rep un programa. Anoteu l’entrada, el codi executat i la resposta observada.
+
+#### Fase 4 · Apliquem i millorem
+
+Afegiu casos que compliquen la definició, com una porta automàtica o un electrodomèstic programable. Reviseu quins criteris expliquen millor les proves i quins casos necessiten una matisació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** definició inicial i revisada, taula entrada-procés-resposta i observació del hub. El hub a soles compleix els criteris acordats? Justifiqueu-ho amb proves, no amb l’aparença.
 
 ### **Lliçó 3 · So i llum (45 min).**
 
-Representeu una funció amb el cos o amb targetes: cada grup executa un to baix, mitjà o alt i ordeneu-los de manera ascendent i descendent. Relacioneu funció i paràmetre: es reutilitza una instrucció i se’n modifica un valor. Després, cada parella crea un missatge breu d’acollida per a una biblioteca o un espai tranquil de l’escola, combinant icones de la matriu del hub i una seqüència de sons o tons de l’altaveu integrat. Planifiqueu primer amb pseudocodi; proveu inici, ordre, durada, volum i repetició. Feu una versió silenciosa o només visual, i pregunteu a una altra parella què ha entés abans d’explicar-li el missatge.
+#### Fase 1 · Activem i prediem
+
+Representeu amb el cos o amb targetes tons baixos, mitjans i alts. Ordeneu-los de manera ascendent i descendent i predigueu com canviaria el missatge si modifiqueu un paràmetre.
+
+#### Fase 2 · Explorem i construïm
+
+Relacioneu funció i paràmetre: reutilitzeu una instrucció i canvieu un valor. Cada parella crea un missatge d’acollida per a una biblioteca o un espai tranquil, combinant icones de la matriu del hub i una seqüència de sons.
+
+#### Fase 3 · Expliquem i registrem
+
+Planifiqueu amb pseudocodi l’inici, l’ordre de les icones i els sons, la durada, el volum i la repetició. Anoteu què significa cada senyal perquè una altra parella puga interpretar-lo.
+
+#### Fase 4 · Apliquem i millorem
+
+Programeu i proveu el missatge. Feu una versió silenciosa o només visual i reviseu-la després que una altra parella explique què ha entés abans de rebre la vostra explicació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** pseudocodi, missatge programat i interpretació d’una altra parella. Quina part del missatge depén de la llum, del so o del context compartit?
 
 ### **Lliçó 4 · Motors i sensors (45–60 min).**
 
-Abans de connectar res, predieu la funció de cada component del set: motor mitjà i gran, sensor de distància, sensor de color, sensor de força i sensor giroscòpic del hub. Completeu una graella amb nom, predicció, prova, observació i exemple quotidià. Seguiu la pràctica guiada de l’app i amplieu-la: en un motor, proveu una arrencada progressiva al llarg de deu rotacions i canvieu-ne el sentit; amb sensors, observeu què varia en canviar distància, color, pressió o inclinació, sense confondre el sensor giroscòpic amb un sensor extern. Cada equip programa una entrada i una resposta, i després combina un motor i un sensor en una idea pròpia. Registreu ports i valors perquè un altre equip puga reproduir la prova.
+#### Fase 1 · Activem i prediem
+
+Abans de connectar res, predigueu la funció del motor mitjà i gran, dels sensors de distància, color i força, i del giroscopi integrat al hub.
+
+#### Fase 2 · Explorem i construïm
+
+Completeu una graella amb component, predicció, prova, observació i exemple quotidià. Seguiu la pràctica guiada de l’app; en un motor, proveu una arrencada progressiva durant deu rotacions i canvieu-ne el sentit.
+
+#### Fase 3 · Expliquem i registrem
+
+Observeu què varia quan canvieu distància, color, pressió o inclinació. No confongueu el giroscopi integrat del hub amb un sensor extern. Registreu port i valors de cada prova.
+
+#### Fase 4 · Apliquem i millorem
+
+Cada equip programa una entrada i una resposta, i després combina un motor i un sensor en una idea pròpia. Reviseu el programa perquè un altre equip puga reproduir la prova amb els mateixos ports i condicions.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** graella de prediccions/observacions, programa i registre de ports. Quina entrada ha produït la resposta prevista i quina dada caldria repetir per confirmar-ho?
 
 ### **Lliçó 5 · Fes que es moga (90 min).**
 
-Recupereu les definicions de robot i prototip. Construïu amb les instruccions disponibles a l’app un model saltador senzill del kit SPIKE Prime i programeu-lo perquè faça un moviment controlat. Abans de cada canvi, escriviu què espereu que passe; altereu una sola variable del programa cada vegada —velocitat, durada, potència o nombre de rotacions— i anoteu resultat i següent decisió en una taula d’iteració. Depureu per parts: connexió, port, mecanisme, bloc i valor. Compareu dos intents en les mateixes condicions i expliqueu com el codi canvia el comportament del maquinari. Finalment, defenseu amb evidències si el prototip compleix els criteris consensuats per a considerar-lo robot.
+#### Fase 1 · Activem i prediem
 
-### **Lliçó 6 · Professions de cura i educació (4 sessions de 60 min; 240 min).**
+Recupereu les definicions de robot i prototip. Acordeu criteris observables per decidir si el model es mou de manera controlada i quines proves donaran evidència.
 
-**Preparació docent:** seleccioneu fonts públiques accessibles sobre ocupacions i itineraris a la Comunitat Valenciana, prepareu una fitxa d’investigació i organitzeu equips de quatre amb rols rotatius (cercador de fonts, verificador, cartògraf visual i portaveu). No cal que ningú revele interessos personals. **Sessió 1 · Obrim el mapa de professions:** connecteu la robòtica amb dos àmbits, serveis humans i educació i formació. En pluja d’idees, poseu exemples de qui ensenya, acompanya, facilita l’accés a un servei o prepara recursos; amplieu la llista més enllà de les ocupacions més conegudes. Cada equip tria dues professions i completa una fitxa amb tasques reals, persones amb qui col·labora, habilitats, entorn, estudis o acreditacions que cal comprovar i una font datada. Distingiu un fet trobat d’una suposició i no copieu dades laborals d’un altre país com si descrigueren el mercat local. **Sessió 2 · Del treball a un model:** relacioneu les professions amb el que hem après de robots, motors i sensors; construïu una representació amb peces SPIKE o materials de paper i cartó. El model explica un sector o la col·laboració entre rols, no caricaturitza persones ni afirma que un robot puga substituir una tasca de cura. Prepareu una presentació d’un minut amb una idea clau i una pregunta oberta. **Sessió 3 · Contrastem i connectem:** cada grup presenta; la classe pregunta qui utilitza el servei, quines habilitats comparteixen les ocupacions i quines són específiques. Completeu un diagrama de Venn «compartit / serveis humans / educació i formació» i una xarxa de col·laboracions entre professions. Afegiu una ocupació desconeguda que hàgeu trobat i una font que la confirme. **Sessió 4 · Necessitat, suport i reflexió:** trieu una necessitat fictícia d’un espai educatiu, definiu persona usuària i criteris, i dissenyeu una ajuda segura (prototip simple o maqueta de paper). Etiqueteu entrada, resposta, persona responsable, límit i alternativa manual; expliqueu quin personal qualificat participa en el servei. Tanqueu amb una fitxa individual privada: què m’ha interessat, quina habilitat voldria practicar i quina pregunta investigaria després. Compartir-la és opcional i no s’avalua la preferència professional. **Evidències i avaluació:** fitxes de fonts, mapa visual, presentació, concepte de suport i reflexió; observeu si es distingeixen fonts i conjectures, si s’expliquen tasques i habilitats amb exemples, si el model comunica la relació entre professions i si es reconeixen els límits i la intervenció humana. Un altre grup dona una pregunta i una fortalesa concreta. El pla oficial preveu una sèrie de 240 minuts sobre aquestes dues vies professionals, investigació de tasques, habilitats i formació, representació amb peces i presentació breu; aquesta adaptació crea ocupacions, preguntes, fitxes i maqueta pròpies.
+#### Fase 2 · Explorem i construïm
+
+Construïu, amb les instruccions disponibles a l’app, un model saltador senzill del set SPIKE Prime. Reviseu connexions, port, mecanisme i espai de moviment abans d’executar-lo.
+
+#### Fase 3 · Expliquem i registrem
+
+Abans de cada canvi, escriviu què espereu que passe. Altereu una sola variable —velocitat, durada, potència o nombre de rotacions— i anoteu el resultat i la decisió següent en una taula d’iteració.
+
+#### Fase 4 · Apliquem i millorem
+
+Depureu per parts: connexió, port, mecanisme, bloc i valor. Compareu dos intents en les mateixes condicions i expliqueu com el codi canvia el comportament del maquinari.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** programa, taula d’iteració i comparació de dos intents. Defenseu amb els criteris acordats si el prototip es pot considerar robot i indiqueu què no heu pogut provar.
+
+La docent selecciona fonts públiques accessibles sobre ocupacions i itineraris a la Comunitat Valenciana, prepara una fitxa d’investigació i organitza equips de quatre amb rols rotatius (cercador de fonts, verificador, cartògraf visual i portaveu). Ningú no ha de revelar interessos personals. El projecte amplia la lliçó oficial de 240 minuts en quatre sessions navegables de 60 minuts.
+
+### **Projecte professional · Sessió 1 · Obrim el mapa d’ocupacions (60 min).**
+
+#### Fase 1 · Activem i prediem
+
+Connecteu la robòtica amb dos àmbits: serveis humans i educació/formació. En pluja d’idees, proposeu qui ensenya, acompanya, facilita l’accés a un servei o prepara recursos. Predigueu quines tasques visibles i invisibles fan possible un servei.
+
+#### Fase 2 · Explorem i construïm
+
+Amplieu la llista més enllà de les ocupacions conegudes. Cada equip tria dues professions i localitza una font pública adequada per investigar-les.
+
+#### Fase 3 · Expliquem i registrem
+
+Completeu una fitxa amb tasques reals, persones amb qui col·laboren, habilitats, entorn, estudis o acreditacions per comprovar i una font datada. Distingiu el fet trobat de la suposició i no traslladeu dades laborals d’un altre país com si descrigueren el mercat local.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu la fitxa amb un altre equip: cada tasca s’entén i cada afirmació té font o queda marcada com a hipòtesi? Afegiu un rol que falte o una pregunta de verificació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa inicial i dues fitxes de professió amb fonts datades. Quines tasques del servei quedarien fora si només anomenàrem les ocupacions més conegudes?
+
+### **Projecte professional · Sessió 2 · Del treball a un model (60 min).**
+
+#### Fase 1 · Activem i prediem
+
+Recupereu les fitxes de professions i predigueu com es relacionen amb els robots, motors i sensors estudiats en les lliçons anteriors.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu una representació d’un sector o de la col·laboració entre rols amb peces SPIKE, paper o cartó. El model no caricaturitza persones ni afirma que un robot puga substituir una tasca de cura.
+
+#### Fase 3 · Expliquem i registrem
+
+Relacioneu cada part del model amb una tasca professional, una habilitat i una persona o servei que hi col·labora. Prepareu una presentació d’un minut amb una idea clau i una pregunta oberta.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu la presentació amb un altre equip. Reviseu una part del model si no comunica la relació entre les professions o si es confon la representació amb un servei real.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** model físic o visual i guió d’un minut. Quina relació entre rols s’entén millor i quina necessita una explicació més clara?
+
+### **Projecte professional · Sessió 3 · Contrastem i connectem (60 min).**
+
+#### Fase 1 · Activem i prediem
+
+Abans de les presentacions, anoteu quines habilitats espereu que siguen compartides i quines penseu que seran específiques de cada ocupació.
+
+#### Fase 2 · Explorem i construïm
+
+Cada grup presenta el seu model. La classe pregunta qui utilitza el servei i quines ocupacions hi participen abans, durant i després.
+
+#### Fase 3 · Expliquem i registrem
+
+Completeu un diagrama de Venn «compartit / serveis humans / educació i formació» i una xarxa de col·laboracions entre professions. Afegiu una ocupació desconeguda que hàgeu trobat i una font que la confirme.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu la xarxa si les fonts o les preguntes del públic mostren una connexió que faltava. Un altre grup aporta una pregunta i una fortalesa concreta del model.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** diagrama revisat, xarxa de col·laboracions i font d’una ocupació nova. Quines habilitats apareixen en més d’un àmbit i com es manifesten de manera diferent?
+
+### **Projecte professional · Sessió 4 · Necessitat, suport i reflexió (60 min).**
+
+#### Fase 1 · Activem i prediem
+
+Trieu una necessitat fictícia d’un espai educatiu i definiu una persona usuària sense utilitzar casos identificables. Predigueu quina ajuda seria útil i quina intervenció humana continuaria sent necessària.
+
+#### Fase 2 · Explorem i construïm
+
+Dissenyeu una ajuda segura: prototip senzill amb peces o maqueta de paper. Indiqueu entrada, resposta, persona responsable, límit i alternativa manual.
+
+#### Fase 3 · Expliquem i registrem
+
+Expliqueu quin personal qualificat participa en el servei i quines decisions no delegaríeu al prototip. Prepareu una prova de taula amb criteris observables.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu una prova amb targetes o objectes, reviseu un criteri i anoteu una limitació. No presenteu el prototip com a substitut de l’acompanyament professional.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** concepte de suport, registre de prova i reflexió privada. Cada persona pot anotar què li ha interessat, quina habilitat voldria practicar i quina pregunta investigaria després; compartir-ho és opcional i no s’avalua la preferència professional.
 
 ![Un robot mòbil construït amb peces SPIKE Prime acompanya una activitat de lectura en una biblioteca escolar.](../../_assets/imatges/sa-sp-fonaments-carreres.webp)
 

@@ -41,69 +41,69 @@ Abans d’eixir, consulteu la guia de separació del municipi o del servei de re
 
 ### **Sessió 1 · Entrades, eixides i variables (Litter hunt, lesson 1).**
 
-*Identificar components (8 min):*
+#### Fase 1 · Activem i prediem
 
-localitzeu botons A/B, matriu LED, pins i un sensor integrat rellevant, com l’acceleròmetre; expliqueu què és entrada i què és eixida.
+Localitzeu botons A/B, matriu LED, pins i un sensor integrat rellevant, com l’acceleròmetre. Predigueu què és una entrada i què és una eixida i com pot una inclinació o una sacsejada activar una resposta sense identificar cap persona.
 
-*Provar icones (10 min):*
+#### Fase 2 · Explorem i construïm
 
-programeu A per mostrar una icona i B una altra; proveu el moviment d’inclinació o sacsejada per a mostrar una tercera resposta i compareu què detecta el sensor sense associar-lo a una persona identificable.
+Programeu A per mostrar una icona i B una altra. Proveu el moviment d’inclinació o sacsejada per a mostrar una tercera resposta. Després, inicialitzeu un comptador en zero, feu que un esdeveniment el modifique i mostreu-ne el valor; predigueu el resultat abans de cada prova.
 
-*Crear variable (12 min):*
+#### Fase 3 · Expliquem i registrem
 
-inicialitzeu un comptador en zero, feu que un esdeveniment el modifique i mostreu-ne el valor; prediu el resultat abans de cada prova.
+Adapteu el joc d’entrada per torns: una targeta indica l’entrada, cada participant anticipa quina icona o valor apareixerà i executa el torn quan li toca. Registreu les entrades i el valor esperat i observat.
 
-*Joc d’entrada per torns (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-adapteu el joc de prémer botó: una targeta indica l’entrada, cada participant anticipa quina icona o valor apareixerà i executa el torn quan li toca. No mesureu qui és més ràpid ni feu rànquings; compareu si totes les entrades són detectades i si el comptador es modifica una sola vegada.
+Compareu si totes les entrades es detecten i si el comptador es modifica una sola vegada. Si hi ha increments no desitjats, canvieu una condició o l’esdeveniment d’entrada i repetiu el mateix torn. No mesureu qui és més ràpid ni feu rànquings.
 
-*Reflexió (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-expliqueu com es guarda el nombre i què podria provocar un increment no desitjat. Evidència: mapa entrada-processament-eixida, variable anotada i taula d’esdeveniments.
+Expliqueu com es guarda el nombre i quina entrada podria provocar un increment accidental. **Evidència:** mapa entrada-processament-eixida, variable anotada, predicció i taula d’esdeveniments.
 
-### **Sessió 2 · Dissenyar i verificar el comptador.**
+### **Sessió 2 · Dissenyem i verifiquem el comptador.**
 
-*Definir el problema (8 min):*
+#### Fase 1 · Activem i prediem
 
-useu una situació inventada de recollida del pati i trieu tres categories verificables en la guia local: per exemple paper/cartó, envasos lleugers i dubtós/altre.
+Useu una situació inventada de recollida del pati. Consulteu la guia local de separació, anoteu-ne font i data i trieu tres categories verificables, per exemple paper/cartó, envasos lleugers i dubtós/altre. Predigueu què ha de passar quan es canvia de categoria sense comptar cap objecte.
 
-*Dissenyar la interfície (8 min):*
+#### Fase 2 · Explorem i construïm
 
-decidiu com A canvia la categoria, B suma una unitat i una combinació d’ordres reinicia el recompte; associeu una icona constant a cada categoria.
+Dissenyeu la interfície: A canvia la categoria, B suma una unitat i una combinació d’ordres reinicia el recompte; associeu una icona constant a cada categoria. Creeu variables independents per categoria i, si és útil, un total derivat. Eviteu que canviar de categoria incremente el recompte.
 
-*Programar (14 min):*
+#### Fase 3 · Expliquem i registrem
 
-creeu variables independents per categoria i, si és útil, un total derivat. Eviteu que un canvi de categoria incremente el recompte.
+Escriviu una taula de proves amb entrada, categoria seleccionada, valor previst i valor mostrat. Incloeu una entrada de cada tipus, dos elements seguits de la mateixa categoria, canvi de categoria abans d’incrementar, reinici i categoria dubtosa.
 
-*Proves de taula (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-proveu una entrada de cada tipus, dos elements seguits de la mateixa categoria, un canvi de categoria abans d’incrementar, reinici i categoria dubtosa. Anoteu valor previst, valor mostrat i resultat real; corregiu un error i torneu a executar els mateixos casos.
+Executeu els casos, compareu resultat previst i real i corregiu un error. Torneu a executar exactament els mateixos casos per comprovar que la correcció resol el problema sense alterar les altres categories.
 
-*Revisió entre equips (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-una altra parella segueix les instruccions i indica si pot saber què està comptant. Evidència: codi, taula de proves completa i canvi justificat.
+Una altra parella segueix les instruccions i explica si pot saber què està comptant. **Evidència:** codi, interfície amb icones, taula de proves completa i un canvi justificat.
 
-### **Sessió 3 · Observació segura i proposta local (adaptació de Litter hunt, lesson 2).**
+### **Sessió 3 · Observem amb seguretat i fem una proposta local (adaptació de Litter hunt, lesson 2).**
 
-*Briefing i rols (8 min):*
+#### Fase 1 · Activem i prediem
 
-recordeu límits, zona, recorregut i senyal d’aturada; assigneu operació del comptador, lectura de guia, registre, observació i supervisió adulta.
+Recordeu els límits, la zona, el recorregut i el senyal d’aturada. Assigneu rols d’operació del comptador, lectura de la guia, registre, observació i supervisió adulta. Predigueu quines categories es podran identificar visualment i quins casos quedaran com a dubtosos.
 
-*Observació (20 min):*
+#### Fase 2 · Explorem i construïm
 
-en una ruta curta i autoritzada, classifiqueu només allò que es pot identificar visualment amb la guia local. Una persona registra cada observació amb el comptador i una altra porta el recompte de comprovació en paper; no fotografieu persones ni toqueu objectes desconeguts. La persona adulta, no l’alumnat, gestiona la recollida d’objectes potencialment perillosos; si no hi ha un protocol aprovat, feu només observació i utilitzeu mostres netes de classe.
+En una ruta curta i autoritzada, classifiqueu només allò que es pot identificar visualment amb la guia local. Una persona registra cada observació amb el comptador i una altra porta el recompte de comprovació en paper. No fotografieu persones ni toqueu objectes desconeguts. La persona adulta, no l’alumnat, gestiona residus potencialment perillosos; si no hi ha protocol aprovat, feu només observació i useu mostres netes de classe.
 
-*Comprovar dades (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-compareu el total micro:bit amb el registre manual, identifiqueu discrepàncies i no les esborreu: anoteu-les i expliqueu-ne una causa possible (doble recompte, categoria incerta o botó premut dues vegades).
+Compareu el total micro:bit amb el registre manual. Identifiqueu discrepàncies, conserveu-les en el registre i descriviu una causa possible, com doble recompte, categoria incerta o botó premut dues vegades.
 
-*Analitzar (7 min):*
+#### Fase 4 · Apliquem i millorem
 
-convertiu resultats en una taula i un gràfic senzill; indiqueu zona, data i durada de la mostra, sense extrapolar al centre sencer.
+Convertiu els resultats en una taula i un gràfic senzill; indiqueu zona, data i durada de la mostra, sense extrapolar al centre sencer. Escriviu una millora que el centre puga provar —com ubicar millor un contenidor o fer un recordatori visual— i concreteu quina dada futura permetria comprovar-la.
 
-*Proposar (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-escriviu una millora que puga provar el centre, com ubicar millor un contenidor o fer un recordatori visual, i indiqueu quina dada futura permetria comprovar-la. Evidència: registres agregats, discrepància documentada, gràfic i proposta.
+Presenteu la proposta amb els límits de la mostra i expliqueu com una nova observació permetria valorar-la. **Evidència:** registres agregats, discrepància documentada, gràfic i proposta local.
 
 ## 📊 Criteris d’èxit i avaluació
 

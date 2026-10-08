@@ -39,55 +39,91 @@ La proposta amplia el repte oficial de 45 minuts en una investigació de quatre 
 
 ### **Sessió 1 · Del mapa a la seqüència.**
 
-*Activació (5 min):*
+#### Fase 1 · Activem i prediem
 
-en una graella de 4 × 4 caselles de 10 cm, indiqueu inici, porteria i tres obstacles de cartó.
+En una graella de 4 × 4 caselles de 10 cm, indiqueu inici, porteria i tres obstacles de cartó. Abans de programar, cada parella anticipa quins girs haurà de fer MatataBot.
 
-*Modelatge (10 min):*
+#### Fase 2 · Explorem i construïm
 
-l’adult pensa en veu alta com orientar MatataBot i traduir cada tram en ordres; l’alumnat anticipa els girs i compara avançar, retrocedir i girar 90°.
+L’adult pensa en veu alta com orientar MatataBot i traduir cada tram en ordres; l’alumnat compara avançar, retrocedir i girar 90°.
 
-*Planificació en parelles (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-dibuixeu dues rutes possibles amb fletxes, escriviu el programa amb targetes de comanda i compteu ordres i caselles.
+Dibuixeu dues rutes possibles amb fletxes, escriviu el programa amb targetes de comanda i compteu ordres i caselles.
 
-*Prova i depuració (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-executeu una ruta, marqueu on queda el robot i localitzeu la primera diferència entre predicció i moviment; corregiu només l’ordre necessària i torneu a provar.
+Executeu una ruta, marqueu on queda el robot i localitzeu la primera diferència entre predicció i moviment. Corregiu només l’ordre necessària i torneu a provar.
 
-*Tancament (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-expliqueu què heu canviat. Evidència: mapa anotat, seqüència inicial/corregida i una explicació del primer error.
+Expliqueu què heu canviat. **Evidència:** mapa anotat, seqüència inicial/corregida i explicació del primer error.
 
 ### **Sessió 2 · Defensa i atac amb rols intercanviables (45 min).**
 
-*Preparació (5 min):*
+#### Fase 1 · Activem i prediem
 
-prepareu la mateixa graella i una pilota de paper lleugera amb porteria ampla. Un equip defensor situa tres obstacles sense tapar el robot ni crear passos massa estrets; l’equip atacant observa el camp i planifica una ruta fins a una casella des d’on una pala ampla de paper puga empényer la pilota suaument cap a la porteria. Dediqueu 10 minuts a modelar la regla i planificar la primera ronda, 10 a jugar-la i registrar si s’ha arribat a la zona de colp, si la pilota ha entrat, quantes ordres s’han usat i quin obstacle ha condicionat la ruta; feu una pausa de 5 minuts per intercanviar rols, jugueu una segona ronda de 10 minuts i tanqueu amb 5 minuts de comparació de resultats. El punt és col·lectiu: atac i defensa guanyen quan poden justificar una decisió amb el mapa i les dades, no per rapidesa.
+Prepareu la mateixa graella i una pilota de paper lleugera amb porteria ampla. Un equip defensor situa tres obstacles sense tapar el robot ni crear passos massa estrets; l’equip atacant observa el camp i prediu una ruta possible.
+
+#### Fase 2 · Explorem i construïm
+
+L’equip atacant planifica una ruta fins a una casella des d’on una pala ampla de paper puga empényer la pilota suaument cap a la porteria. Dediqueu deu minuts a modelar la regla i preparar la primera ronda.
+
+#### Fase 3 · Expliquem i registrem
+
+Jugueu la primera ronda durant deu minuts i registreu si s’ha arribat a la zona de colp, si la pilota ha entrat, quantes ordres s’han usat i quin obstacle ha condicionat la ruta.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu una pausa de cinc minuts per intercanviar rols i jugueu una segona ronda de deu minuts. Si la pala no es pot fixar sense bloquejar o danyar el robot, acabeu la ruta al costat de la pilota i que una persona la col·loque, registrant aquesta adaptació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Tanqueu amb cinc minuts de comparació. El punt és col·lectiu: atac i defensa guanyen quan poden justificar una decisió amb el mapa i les dades, no per rapidesa. **Evidència:** dos registres amb rols intercanviats i una comparació de resultats.
 
 ### **Sessió 3 · Dissenyar un repte equilibrat (45 min).**
 
-*Disseny (10 min):*
+#### Fase 1 · Activem i prediem
 
-cada parella crea un mapa nou amb quatre obstacles i una condició clara per a l’equip contrari. Abans de jugar, una altra parella comprova si la porteria és accessible, si hi ha almenys una ruta vàlida i si totes les instruccions caben en el mapa. Si no hi ha solució, reduïu un obstacle o canvieu-ne la posició. Intercanvieu mapes (5 min), proveu la ruta amb el robot i compteu ordres (15 min), reviseu obstacles i ajusteu el mapa (10 min), i expliqueu per què la solució és verificable (5 min). Extensió: demaneu dues rutes diferents i compareu nombre d’ordres, girs i marge d’error; no declareu una ruta “òptima” si només n’heu provat dues.
+Cada parella crea un mapa nou amb quatre obstacles i una condició clara per a l’equip contrari. Predigueu quines rutes poden ser vàlides abans d’intercanviar els mapes.
+
+#### Fase 2 · Explorem i construïm
+
+Una altra parella comprova si la porteria és accessible, si hi ha almenys una ruta vàlida i si totes les instruccions caben en el mapa. Si no hi ha solució, reduïu un obstacle o canvieu-ne la posició.
+
+#### Fase 3 · Expliquem i registrem
+
+Intercanvieu mapes, proveu la ruta amb el robot i compteu ordres. Anoteu la ruta provada, els girs i si s’ha arribat a la destinació.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu els obstacles i ajusteu el mapa després de la prova. Com a extensió, demaneu dues rutes i compareu nombre d’ordres, girs i marge d’error; no declareu una ruta «òptima» si només n’heu provat dues.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu per què la solució és verificable amb el mapa i les ordres. **Evidència:** mapa provat, registre dels canvis i justificació de la ruta.
 
 ### **Sessió 4 · Galeria, explicació i transferència (45 min).**
 
-*Preparació (10 min):*
+#### Fase 1 · Activem i prediem
 
-mostreu el mapa, la predicció, el programa i el registre de proves.
+Mostreu el mapa, la predicció, el programa i el registre de proves. Predigueu si una altra parella podrà executar la ruta sense que els autors l’expliquen.
 
-*Galeria (20 min):*
+#### Fase 2 · Explorem i construïm
 
-una parella visitant intenta repetir les ordres seguint només les fletxes i la convenció de gir acordada.
+Una parella visitant intenta repetir les ordres seguint només les fletxes i la convenció de gir acordada. L’equip autor observa sense donar instruccions addicionals.
 
-*Revisió (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-recolliu una pregunta i una proposta concreta de millora, i decidiu si l’accepteu amb una prova.
+Recolliu una pregunta del grup visitant i una proposta concreta de millora. Anoteu en quin punt s’ha interpretat o executat de manera diferent.
 
-*Transferència (5 min):*
+#### Fase 4 · Apliquem i millorem
 
-trieu una situació pròxima —repartir llibres en una biblioteca fictícia, arribar a una parada o portar una fitxa a un punt de recollida— i expliqueu quines parts del mètode es podrien reutilitzar.
+Decidiu si accepteu la proposta i comproveu-la amb una nova prova. Reviseu la llegenda o el programa perquè una altra parella puga reproduir-lo.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Trieu una situació pròxima —repartir llibres en una biblioteca fictícia, arribar a una parada o portar una fitxa a un punt de recollida— i expliqueu quines parts del mètode es podrien reutilitzar. **Evidència:** mapa i programa revisats, retorn de la parella i explicació de transferència.
 
 ## 🧰 Preparació, materials i llenguatge de programació
 

@@ -48,13 +48,17 @@ Organitzeu equips de tres o quatre amb rols rotatius: disseny de casos de prova,
 
 ### **Lliçó 1 · Crear una llista llegible per màquina (90 min).**
 
-#### Fase 1 · Crear i comparar seqüències (20 min)
+#### Fase 1 · Activem i prediem
 
 **Pregunta:** com guardem l’ordre d’una ruta perquè es puga llegir després? En parelles, poseu cinc targetes de color en una bossa opaca i traieu-les una per una, col·locant-les d’esquerra a dreta en una tira numerada. Registreu la seqüència dues vegades: una amb paraules i una amb codis numèrics assignats pel grup. Feu una segona extracció tornant cada targeta a la bossa abans de traure’n una altra; compareu-la amb una extracció sense reposició i expliqueu per què en una poden repetir-se colors i en l’altra no.
 
-#### Fase 2 · Registrar dades amb una llista (35 min)
+#### Fase 2 · Explorem i construïm
 
-A continuació, creeu una llista en l’app anomenada `Lectures`, inicialitzeu-la buida, llegiu una targeta amb el sensor i afegiu el valor a la llista en intervals acordats. Abans de programar la seqüència completa, escriviu pseudocodi i traceu-lo amb cinc targetes de prova. La versió Python és una representació textual de la lògica per a analitzar sobre paper; no s’executa en l’app SPIKE.
+Creeu en l’app una llista anomenada `Lectures`, inicialitzeu-la buida, llegiu una targeta amb el sensor i afegiu-ne el valor en intervals acordats. Si la lectura no és estable, introduïu els valors manualment i marqueu la prova com a simulació.
+
+#### Fase 3 · Expliquem i registrem
+
+Abans de programar la seqüència completa, escriviu pseudocodi i traceu-lo amb cinc targetes. La versió Python és una representació textual de la lògica per a analitzar sobre paper; no s’executa en l’app SPIKE.
 
 ```pseudocode
 quan comença
@@ -74,79 +78,123 @@ for _ in range(5):
 print(lectures)
 ```
 
-#### Fase 3 · Provar i explicar (35 min)
+#### Fase 4 · Apliquem i millorem
 
-Proveu cinc entrades en un ordre conegut i comproveu que l’ordre registrat coincideix. **Discussió:** quina informació desapareixeria si només comptàrem quants colors de cada tipus hi ha? Què significa una lectura inesperada? Tanqueu amb una definició pròpia de llista, exemple i contraexemple.
+Proveu cinc entrades en un ordre conegut i comproveu que l’ordre registrat coincideix. Repetiu amb una lectura inesperada i reviseu què guarda la llista en cada posició.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Discussió i evidència:** quina informació desapareixeria si només comptàrem quants colors de cada tipus hi ha? Què significa una lectura inesperada? Tanqueu amb una definició pròpia de llista, un exemple i un contraexemple.
 
 ### **Lliçó 2 · Comparar dos itineraris (90–135 min).**
 
-#### Fase 1 · Definir la comparació (25 min)
+#### Fase 1 · Activem i prediem
 
-**Pregunta:** quan són iguals dues seqüències i com localitzem el primer desacord? Cada equip rep dues rutes fictícies de cinc estacions, representades per peces o targetes en filera. Escriviu un algorisme que compare el primer element de cada llista, continue només si coincideixen i indique “coincidència” quan totes les posicions són iguals; si una posició difereix, deseu la primera posició discrepant i atureu la comparació. Feu una traça manual amb tres casos: llistes iguals, diferència inicial i diferència final.
+**Pregunta:** quan són iguals dues seqüències i com localitzem el primer desacord? Cada equip rep dues rutes fictícies de cinc estacions, representades per peces o targetes en filera. Predigueu si són iguals i assenyaleu on espereu trobar el primer desacord.
 
-#### Fase 2 · Posar a prova els casos límit (40–70 min)
+#### Fase 2 · Explorem i construïm
 
-Després intercanvieu el pseudocodi amb un altre equip perquè el prove amb llistes sorpresa, incloent una seqüència de longitud desigual; anoteu si el programa falla o produeix un fals positiu. Si la versió de l’app permet treballar amb llistes i índexs, implementeu la comparació amb lectures de color de dues tires; si no, manteniu les llistes en paper i programeu la condició de coincidència amb valors introduïts o blocs equivalents disponibles.
+Escriviu un algorisme que compare el primer element de cada llista, continue només si coincideixen i indique “coincidència” quan totes les posicions són iguals; si una posició difereix, deseu la primera posició discrepant i atureu la comparació.
 
-#### Fase 3 · Explicar i compartir (25–40 min)
+#### Fase 3 · Expliquem i registrem
 
-Completeu una taula de veritat per a dos elements i compareu una regla “tots iguals” (AND) amb una regla “almenys un coincideix” (OR). **Producte:** un procediment de comparació provat i una explicació de per què l’ordre forma part de les dades.
+Traceu manualment tres casos —llistes iguals, diferència inicial i diferència final— i registreu les posicions consultades i el resultat. Anoteu què ha de passar quan les longituds no coincideixen.
+
+#### Fase 4 · Apliquem i millorem
+
+Intercanvieu el pseudocodi amb un altre equip perquè el prove amb llistes sorpresa, inclosa una seqüència de longitud desigual; anoteu si falla o produeix un fals positiu. Si l’app permet llistes i índexs, implementeu la comparació amb lectures de color de dues tires; si no, manteniu les llistes en paper i programeu la condició amb els blocs equivalents disponibles.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Completeu una taula de veritat per a dos elements i compareu la regla “tots iguals” (AND) amb “almenys un coincideix” (OR). **Evidència:** procediment provat i explicació de per què l’ordre forma part de les dades.
 
 ### **Lliçó 3 · Llegir una línia i simplificar el programa (90 min).**
 
-#### Fase 1 · Representar la regla (15 min)
+#### Fase 1 · Activem i prediem
 
-**Pregunta:** com transforma una lectura del sensor en correccions repetides? En una primera pràctica desconnectada, una persona fa de robot i una altra dona instruccions “si lligues fosc, gira lleument cap a la línia; si lligues clar, corregeix cap a l’altre costat”; el grup identifica els subproblemes que es repeteixen.
+**Pregunta:** com transforma una lectura del sensor en correccions repetides? En una primera pràctica desconnectada, una persona fa de robot i una altra dona instruccions “si lligues fosc, gira lleument cap a la línia; si lligues clar, corregeix cap a l’altre costat”. Predigueu què passarà si el robot arriba a una marca no prevista.
 
-#### Fase 2 · Calibrar i provar la pista (45 min)
+#### Fase 2 · Explorem i construïm
 
-Amb la base mòbil i sensor de color, proveu primer una regla senzilla d’aturada en una línia fosca. Després avanceu a seguir una pista ampla: el robot llig el valor reflectit/color, ajusta la direcció i repeteix. Useu dades en directe per comprovar què detecta el sensor, feu una primera volta a velocitat baixa i marqueu on se n’ix o oscil·la. Modifiqueu una sola cosa per prova (llum, amplària de línia, llindar, velocitat o orientació), no diverses alhora. Alceu deliberadament un cas de prova amb una línia de color que no s’havia acordat i observeu si la regla la confon.
+El grup identifica els subproblemes que es repeteixen. Amb la base mòbil i el sensor de color, proveu primer una regla senzilla d’aturada en una línia fosca; després seguiu una pista ampla llegint el valor reflectit/color, ajustant la direcció i repetint.
 
-#### Fase 3 · Reutilitzar i revisar el codi (30 min)
+#### Fase 3 · Expliquem i registrem
 
-Descomponeu després el programa en blocs propis amb noms funcionals, per exemple `SeguirPista` i `AturarEnMarca`; torneu a cridar el bloc des del programa principal i compareu la llegibilitat. No prometeu seguiment robust en qualsevol superfície o il·luminació.
+Useu dades en directe per comprovar què detecta el sensor, feu una primera volta a velocitat baixa i marqueu on se n’ix o oscil·la. Anoteu la llum, l’amplària de línia, el llindar, la velocitat i l’orientació de la prova.
+
+#### Fase 4 · Apliquem i millorem
+
+Modifiqueu una sola cosa per prova. Afegiu deliberadament una línia de color no acordada i observeu si la regla la confon. Descomponeu el programa en blocs propis amb noms funcionals —per exemple `SeguirPista` i `AturarEnMarca`— i torneu a cridar-los des del programa principal.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu la llegibilitat del programa original i del reutilitzable. **Evidència:** pista provada, registre d’una iteració i explicació dels límits: el seguiment no és robust en qualsevol superfície o il·luminació.
 
 ### **Lliçó 4 · Condicions compostes i blocs reutilitzables (90 min).**
 
-#### Fase 1 · Formular les regles (25 min)
+#### Fase 1 · Activem i prediem
 
-**Pregunta:** què ha de ser cert perquè la maqueta done una indicació? Dissenyeu una estació fictícia que només active el senyal de “continua” si el robot és dins de la zona de prova *i* ha llegit el color d’autorització; amb *o*, feu que una lectura de dos colors alternatius active una indicació de “consulta el mapa”; amb *no*, distingiu que una condició no s’ha complert sense convertir l’absència en una alarma.
+**Pregunta:** què ha de ser cert perquè la maqueta done una indicació? Dissenyeu una estació fictícia que només active “continua” si el robot és dins de la zona de prova *i* ha llegit el color acordat. Predigueu què ocorre quan només una de les dues condicions es compleix.
 
-#### Fase 2 · Programar i depurar (45 min)
+#### Fase 2 · Explorem i construïm
 
-Representeu cada condició amb frases simples, símbols, taula de veritat i casos de prova, incloent llindar just per damunt/baix de la distància escollida. Després programeu el comportament en un o més blocs propis amb comentaris; si l’app permet entrades paràmetre, feu un bloc configurable, i si no, expliqueu la limitació i reutilitzeu el bloc amb valors fixos. Proveu tots els casos de la taula i feu traça d’un cas inesperat. Compareu el programa original amb la versió descomposta: localitzeu una errada deliberada al bloc secundari i useu la descomposició per trobar-la.
+Representeu la regla amb frases simples i símbols. Afegiu *o* perquè dos colors alternatius mostren “consulta el mapa”, i *no* per indicar que una condició no s’ha complit sense convertir l’absència en una alarma.
 
-#### Fase 3 · Explicar els operadors (20 min)
+#### Fase 3 · Expliquem i registrem
 
-Tanqueu escrivint en llenguatge natural la diferència entre “A i B”, “A o B” i “no A”; eviteu dir “o” en sentit ambigu inclusiu/exclusiu sense especificar-lo.
+Completeu taules de veritat i casos de prova, incloent valors just per damunt i per davall de la distància triada. Especifiqueu si *o* és inclusiu o exclusiu en cada regla.
+
+#### Fase 4 · Apliquem i millorem
+
+Programeu el comportament en blocs propis amb comentaris; si l’app admet paràmetres, feu un bloc configurable, i si no, expliqueu la limitació i reutilitzeu valors fixos. Proveu tots els casos i traceu-ne un d’inesperat. Introduïu una errada deliberada en un bloc secundari i useu la descomposició per trobar-la.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el programa original amb la versió descomposta. **Evidència:** casos provats i explicació en llenguatge natural de “A i B”, “A o B” i “no A”, sense ambigüitat sobre l’operador *o*.
 
 ### **Lliçó 5 · Mini-repte: indicador d’accés a una maqueta (90–135 min).**
 
-#### Fase 1 · Definir els requisits (20 min)
+#### Fase 1 · Activem i prediem
 
-**Repte:** prototipar un indicador de taula per a una jornada de portes obertes que detecte l’arribada d’un objecte de prova i demane una seqüència de colors fictícia per a triar una ruta dins de la maqueta. No es protegeix cap porta ni es controla el pas de persones. Definiu requisits mesurables: un avís només després de detectar el marcador de proximitat; una seqüència de dos o tres colors ha de coincidir en ordre; una lectura diferent mostra “revisar ruta” i permet reiniciar; el sistema no ha d’emetre més d’un avís per intent.
+**Repte:** prototipar un indicador de taula per a una jornada de portes obertes que detecte l’arribada d’un objecte de prova i demane una seqüència de colors fictícia per a triar una ruta dins de la maqueta. No protegeix cap porta ni controla el pas de persones. Predigueu quins errors podrien aparéixer en una seqüència llegida.
 
-#### Fase 2 · Construir i provar (50–75 min)
+#### Fase 2 · Explorem i construïm
 
-Escriviu pseudocodi i un diagrama d’estats abans de connectar el sensor de distància, el sensor de color i els llums/sons del hub. Creeu llistes per a la seqüència esperada i la llegida, combineu operadors i descomponeu alarma, lectura i reinici en blocs propis. Verifiqueu una matriu mínima de proves: aproximació absent/present; seqüència correcta; primer color incorrecte; segon color incorrecte; ordre invertit; retirada durant la lectura; reinici després d’error.
+Definiu requisits mesurables: avís només després del marcador de proximitat; seqüència de dos o tres colors correcta i en ordre; “revisar ruta” i reinici davant d’una diferència; com a màxim un avís per intent. Escriviu pseudocodi i un diagrama d’estats abans de connectar els sensors i els llums/sons del hub.
 
-#### Fase 3 · Iterar i compartir (20–40 min)
+#### Fase 3 · Expliquem i registrem
 
-Registreu fallades i una iteració del disseny. Si el kit o l’app no exposa una funció necessària, useu un botó del hub, una entrada manual o una representació en targetes, i etiqueteu-la com a alternativa; no afirmeu autenticació o seguretat real. Acabeu amb una demostració a altres equips i una revisió de requisits punt per punt.
+Creeu llistes per a la seqüència esperada i la llegida, combineu operadors i descomponeu avís, lectura i reinici en blocs propis. Prepareu una matriu de proves: proximitat absent/present; seqüència correcta; primer o segon color incorrecte; ordre invertit; retirada durant la lectura; reinici després d’error.
+
+#### Fase 4 · Apliquem i millorem
+
+Executeu la matriu, registreu fallades i feu almenys una iteració. Si el kit o l’app no ofereix una funció necessària, useu un botó del hub, una entrada manual o targetes, i identifiqueu-ho com a alternativa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Demostreu el prototip a un altre equip i reviseu cada requisit. **Evidència:** diagrama, codi, matriu de proves i límits declarats; no afirmeu autenticació ni seguretat real.
 
 ### **Lliçó 6 · Professions que organitzen una visita (60–90 min).**
 
-#### Fase 1 · Investigar les professions (20–30 min)
+#### Fase 1 · Activem i prediem
 
-**Pregunta:** quins coneixements fan que un servei d’acollida siga útil, inclusiu i comprensible? Exploreu rols de recepció, guia, interpretació, accessibilitat, organització d’esdeveniments i administració municipal, emprant fonts públiques preparades per la docent. Distingiu professió, tasca diària, competències, formació i responsabilitats; compareu com canvien les necessitats d’una visita escolar, d’un museu o d’una oficina d’informació turística.
+**Pregunta:** quins coneixements fan que un servei d’acollida siga útil, inclusiu i comprensible? Predigueu quina informació necessita una persona que arriba a una visita escolar i quina decisió ha de continuar en mans d’una persona.
 
-#### Fase 2 · Representar un servei (25–40 min)
+#### Fase 2 · Explorem i construïm
 
-Cada equip tria un perfil sense haver de vincular-lo amb les preferències personals de cap alumne, representa amb peces/cartó un punt d’informació o part d’un itinerari accessible, i connecta una tasca amb l’ús de llistes i condicions d’aquesta unitat.
+Exploreu rols de recepció, guia, interpretació, accessibilitat, organització d’esdeveniments i administració municipal amb fonts públiques preparades per la docent. Distingiu professió, tasca diària, competències, formació i responsabilitats; compareu les necessitats d’una visita escolar, d’un museu i d’una oficina d’informació turística.
 
-#### Fase 3 · Presentar i reflexionar (15–20 min)
+#### Fase 3 · Expliquem i registrem
 
-Prepareu una explicació d’un minut que incloga una decisió humana que el prototip no pot prendre, una pregunta que caldria fer a les persones usuàries i un límit de la maqueta. Feu una galeria d’explicacions i una autoavaluació voluntària i privada sobre interessos, habilitats practicades i una pregunta per investigar més endavant.
+Cada equip tria un perfil sense vincular-lo amb les preferències personals de cap alumne i representa amb peces o cartó un punt d’informació o part d’un itinerari accessible. Connecteu una tasca amb l’ús de llistes i condicions i anoteu una decisió que requeriria escoltar les persones usuàries.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu si la maqueta ofereix indicacions comprensibles per a més d’una persona usuària. Feu un canvi de disseny a partir d’una pregunta o necessitat d’accessibilitat identificada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Prepareu una explicació d’un minut amb una decisió humana que el prototip no pot prendre, una pregunta per a les persones usuàries i un límit de la maqueta. Feu una galeria i una autoavaluació voluntària i privada sobre habilitats practicades i una pregunta per investigar.
 
 ## 🧩 Model de raonament
 

@@ -39,33 +39,113 @@ Cada sessió adapta una lliçó de la unitat oficial d’introducció a la seqü
 
 ### **Memòria de les parades · Memory Game (40 min).**
 
-Prepareu una seqüència de tres imatges conegudes —estació, jardí i font, per exemple— i mostreu-la durant uns segons. Amagueu-la i convideu el grup a reconstruir l’ordre amb targetes. Pregunteu quina estratègia ha ajudat a recordar: repetir en veu baixa, agrupar dues imatges o associar-ne una amb una acció. Feu una segona ronda amb quatre targetes només si el grup està preparat.
+#### Fase 1 · Activem i prediem
 
-Traslladeu una seqüència a la via com a parades d’una història i feu que una altra parella la reconstruïsca abans de posar el tren en marxa. Compareu la seqüència recordada amb l’original; si hi ha una diferència, descriviu-la sense qualificar-la com a fallada personal. *Evidència:* seqüència inicial i reconstruïda, més una estratègia de memòria explicada o assenyalada. *Pregunta docent:* «Quina pista t’ha ajudat a recordar què venia després?»
+Prepareu una seqüència de tres imatges conegudes —estació, jardí i font, per exemple— i mostreu-la durant uns segons. Abans d’amagar-la, convideu el grup a anticipar quina imatge serà més fàcil de recordar i per què.
+
+#### Fase 2 · Explorem i construïm
+
+Amagueu la seqüència i reconstruïu-ne l’ordre amb targetes. Si el grup està preparat, feu una segona ronda amb quatre targetes.
+
+#### Fase 3 · Expliquem i registrem
+
+Pregunteu quina estratègia ha ajudat a recordar: repetir en veu baixa, agrupar dues imatges o associar-ne una amb una acció. Traslladeu una seqüència a la via com a parades d’una història.
+
+#### Fase 4 · Apliquem i millorem
+
+Demaneu a una altra parella que reconstruïsca l’ordre abans de posar el tren en marxa. Compareu la seqüència recordada amb l’original i reviseu les pistes o agrupacions que podrien fer-la més clara.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** seqüència inicial i reconstruïda, més una estratègia de memòria explicada o assenyalada. Si hi ha una diferència, descriviu-la sense qualificar-la com a fallada personal. Pregunteu: «Quina pista t’ha ajudat a recordar què venia després?»
 
 ### **El primer viatge · First Trip (40 min).**
 
-Dibuixeu una estació d’eixida i una destinació del barri o del paisatge local, com l’horta, una biblioteca o una parada del mercat. Construïu un trajecte curt amb els materials reals del kit i una figura passatgera. Abans d’usar el tren, l’equip representa les accions necessàries amb targetes, fletxes o gestos: eixir, avançar, arribar. Cada persona prediu on quedarà el tren i quina acció indicarà la parada, basant-se en peces que el grup haja comprovat.
+#### Fase 1 · Activem i prediem
 
-Executeu el viatge i compareu-lo amb el pla. Si la destinació no s’assoleix, localitzeu l’últim punt correcte i canvieu una sola instrucció o una sola peça. Repetiu i demaneu a una altra parella que descriga el procediment. *Evidència:* mapa, pla inicial, predicció i correcció d’una instrucció amb justificació. *Pregunta docent:* «Què ha passat primer? En quin punt hem vist que calia revisar el pla?»
+Dibuixeu una estació d’eixida i una destinació del barri o del paisatge local, com l’horta, una biblioteca o una parada del mercat. Cada persona prediu on quedarà el tren i quina acció indicarà la parada, basant-se en peces que el grup haja comprovat.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu un trajecte curt amb els materials reals del kit i una figura passatgera. Abans d’usar el tren, representeu les accions necessàries amb targetes, fletxes o gestos: eixir, avançar, arribar.
+
+#### Fase 3 · Expliquem i registrem
+
+Representeu el pla en un mapa i descriviu en quin ordre apareixen les accions. Una altra parella pot intentar explicar el procediment abans de la prova.
+
+#### Fase 4 · Apliquem i millorem
+
+Executeu el viatge i compareu-lo amb el pla. Si la destinació no s’assoleix, localitzeu l’últim punt correcte i canvieu una sola instrucció o peça. Repetiu i demaneu a una altra parella que descriga el procediment.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa, pla inicial, predicció i correcció d’una instrucció amb justificació. Pregunteu: «Què ha passat primer? En quin punt hem vist que calia revisar el pla?»
 
 ### **Un tren amb veu · Train Sound (40 min).**
 
-Trieu tres esdeveniments d’una història pròpia i associeu a cada un una targeta i un so breu: activitat del mercat, pluja sobre una teulada imaginària, un ocell del conte o un avís d’arribada. Feu primer una llegenda visual so-esdeveniment i practiqueu la seqüència amb la veu, un instrument suau o un gest. No imiteu sons d’animals com si foren identificacions científiques i no cal enregistrar cap participant.
+#### Fase 1 · Activem i prediem
 
-Si el set i l’app disponibles tenen una funció de so adequada, proveu-la i compareu-la amb la representació humana; anoteu què és propi del tren i què és una decisió artística del grup. Si no, una persona pot fer els sons en directe mentre una altra condueix, o substituir-los per pictogrames. *Evidència:* llegenda, seqüència de tres esdeveniments i registre breu d’una semblança o diferència. *Pregunta docent:* «Com podem saber a quin moment de la història correspon aquest so?»
+Trieu tres esdeveniments d’una història pròpia i anticipeu quin so o senyal podria representar cadascun: activitat del mercat, pluja sobre una teulada imaginària, un ocell del conte o un avís d’arribada.
+
+#### Fase 2 · Explorem i construïm
+
+Associeu a cada esdeveniment una targeta i un so breu. Feu una llegenda visual so-esdeveniment i practiqueu la seqüència amb la veu, un instrument suau o un gest. No imiteu sons d’animals com si foren identificacions científiques ni enregistreu participants.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu l’ordre de tres esdeveniments i què representa cada so. Si l’app no ofereix una funció adequada, una persona pot fer els sons en directe mentre una altra condueix, o podeu substituir-los per pictogrames.
+
+#### Fase 4 · Apliquem i millorem
+
+Si el set i l’app disponibles tenen una funció sonora adequada, proveu-la i compareu-la amb la representació humana. Registreu què és propi del tren i què és una decisió artística del grup.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** llegenda, seqüència de tres esdeveniments i registre d’una semblança o diferència. Pregunteu: «Com podem saber a quin moment de la història correspon aquest so?»
 
 ### **Una cançó que es repeteix · Are You Sleeping? (40 min).**
 
-Escolteu o reciteu una cançó coneguda pel grup amb una frase que torne. Marqueu-ne les parts amb símbols: A per al fragment repetit i B per a la part que canvia. Si cap cançó compartida és adequada, creeu una tornada original amb paraules o pictogrames. Ordeneu les targetes i expliqueu què vol dir que un fragment «torna».
+#### Fase 1 · Activem i prediem
 
-Representeu la forma amb una ruta curta, figures o una seqüència de maons d’acció compatibles amb la dotació; no pressuposeu que Coding Express té una ordre de bucle programable. Compareu dues versions on només canvia una estrofa i identifiqueu què es manté igual. *Evidència:* partitura visual A/B, fragment repetit assenyalat i explicació de la variació. *Pregunta docent:* «Quina part es repeteix i quina part conta una cosa nova?»
+Escolteu o reciteu una cançó coneguda pel grup amb una frase que torne. Pregunteu quina part espereu tornar a sentir i quina part podria canviar.
+
+#### Fase 2 · Explorem i construïm
+
+Marqueu les parts amb símbols: A per al fragment repetit i B per a la part que canvia. Si cap cançó compartida és adequada, creeu una tornada original amb paraules o pictogrames.
+
+#### Fase 3 · Expliquem i registrem
+
+Ordeneu les targetes i expliqueu què vol dir que un fragment «torna». Representeu la forma amb una partitura visual A/B.
+
+#### Fase 4 · Apliquem i millorem
+
+Representeu la forma amb una ruta curta, figures o una seqüència de maons compatibles amb la dotació; no pressuposeu que Coding Express té una ordre de bucle programable. Compareu dues versions on només canvia una estrofa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** partitura visual A/B, fragment repetit assenyalat i explicació de la variació. Pregunteu: «Quina part es repeteix i quina part conta una cosa nova?»
 
 ### **Viatge per veure animals · Trip to See Animals (40 min).**
 
-Trieu tres animals mitjançant imatges o figures i imagineu una visita respectuosa a una exposició de natura feta de paper. Parleu de mirar sense molestar ni capturar animals i de distingir un animal real d’un personatge inventat. L’equip crea una narració amb inici, dues parades i final; per a cada parada decideix què descobreix el personatge i quina imatge, frase, gest o so la representa.
+#### Fase 1 · Activem i prediem
 
-Ordeneu el recorregut en un mapa, feu una predicció de la seqüència i presenteu-lo a un altre grup sense explicar-li abans l’ordre. Els oients reconstrueixen la història amb targetes i indiquen quin indici els ha ajudat. Reviseu el mapa o el relat si una parada no s’entén i torneu a provar-lo. *Evidència:* història seqüenciada, mapa llegible, comentari d’un altre equip i una millora adoptada o descartada amb raó. *Pregunta docent:* «Què ha ajudat el públic a seguir la història? Què canviaríeu perquè les parades s’entenguen millor?»
+Trieu tres animals mitjançant imatges o figures i imagineu una visita respectuosa a una exposició de natura feta de paper. Parleu de mirar sense molestar ni capturar animals i de distingir un animal real d’un personatge inventat.
+
+#### Fase 2 · Explorem i construïm
+
+Creeu una narració amb inici, dues parades i final. Per a cada parada, decidiu què descobreix el personatge i quina imatge, frase, gest o so la representa.
+
+#### Fase 3 · Expliquem i registrem
+
+Ordeneu el recorregut en un mapa i feu una predicció de la seqüència. Presenteu-lo a un altre grup sense explicar-li abans l’ordre; els oients reconstrueixen la història amb targetes i indiquen quin indici els ha ajudat.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el mapa o el relat si una parada no s’entén i torneu a provar-lo. Incorporeu un comentari del públic o expliqueu per què decidiu no adoptar-lo.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** història seqüenciada, mapa llegible, comentari d’un altre equip i una millora adoptada o descartada amb raó. Pregunteu: «Què ha ajudat el públic a seguir la història? Què canviaríeu perquè les parades s’entenguen millor?»
 
 ## 📋 Avaluació i evidències
 

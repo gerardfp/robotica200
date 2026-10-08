@@ -63,23 +63,23 @@ _Les targetes i la interfície són una representació pròpia; el robot parteix
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Compareu dues icones que una persona podria interpretar de manera diferent. Acordeu que Codey mostrarà una expressió programada quan reba una entrada; el robot no detecta ni diagnostica com se sent ningú.
+Recordeu una entrada i una eixida de la lliçó anterior. Presenteu una situació neutral: “quan entrem en una aula fosca, premem l’interruptor i s’encén el llum”. Identifiqueu l’acció que inicia la resposta i predigueu què passaria si no es produïra. En aquesta SDA, les icones de pantalla són símbols triats per l’equip: no mesuren ni representen l’estat emocional de cap persona.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-En una taula, assigneu A a una icona i B a una altra. Abans de provar-les, cada parella dibuixa què espera veure en prémer cada botó i què passarà si no es prem cap. Roteu qui manipula la placa i qui registra.
+Feu una versió pròpia del joc desconnectat «Segueix les instruccions»: assigneu tres o quatre senyals geomètrics a accions simples de paper, com alçar una targeta, dibuixar una forma o girar una fitxa. Una persona mostra el senyal i el grup executa l’acció acordada; proveu una ronda lenta i una amb els senyals en un altre ordre. Qui preferisca no fer moviments pot ser qui mostra les targetes, marca la seqüència o comprova si la resposta correspon al senyal.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Localitzeu els blocs d’esdeveniment «quan A» i «quan B» en mBlock. Seguiu el programa amb el dit i expliqueu quina instrucció respon a cada entrada. Compareu una seqüència amb els blocs intercanviats i prediu-ne l’efecte abans de carregar-la.
+En mBlock, localitzeu un esdeveniment d’inici i els blocs «quan es prem A», «B» i «C». Seguiu amb el dit el programa model i expliqueu la relació entrada–resposta. Distingiu l’esdeveniment (inici o botó premut) de l’acció programada (mostrar una icona, reproduir un so o combinar les dues). Abans de carregar res, dibuixeu una taula amb les tres entrades, la resposta esperada i una comprovació; si la versió de l’app o el dispositiu no mostra algun bloc, anoteu la diferència i continueu amb les entrades disponibles.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Creeu una targeta de llegenda pròpia: cada símbol correspon a una icona de pantalla, no a un estat real de l’alumnat. Afegiu una resposta diferent a cada botó i deixeu la pantalla sense canvi si no hi ha una entrada. Proveu una variació de duració o so només si és còmoda per al grup; oferiu sempre una versió silenciosa.
+En parelles, programeu una resposta diferent per a cada botó amb símbols i sons propis o d’ús lliure. Feu una primera prova guiada i després canvieu els rols: una persona programa i l’altra comprova, sense tocar el projecte. Proveu cada entrada almenys dues vegades i una vegada l’inici; registreu si la resposta coincideix amb la taula. Ajusteu un bloc cada vegada. El so és opcional: oferiu sempre una versió silenciosa i no useu etiquetes com “content”, “trist” o “enfadat” per inferir com se sent qui participa.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** programa amb dos esdeveniments, llegenda, predicció i resultat d’A/B. Si una resposta no coincidix, identifiqueu el primer bloc que no concorda amb el pla i canvieu només eixe bloc.
+Cada parella presenta una resposta del seu programa i explica quin esdeveniment la desencadena. Una altra parella tria una entrada i comprova si el resultat coincideix amb la predicció; si no, l’equip assenyala el primer bloc que cal revisar i proposa una prova nova. **Evidència:** joc desconnectat, taula d’entrades i eixides, programa amb esdeveniments, registre de proves i una explicació breu d’un canvi. La valoració se centra en la relació causa–resposta i en la claredat del codi.
 
 ### **L3 · Dissenyem una animació amb seqüències (40 min).**
 
@@ -129,23 +129,23 @@ Canvieu una sola instrucció, torneu a executar el mateix cas i comproveu si s�
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Mireu una tira de quatre fotogrames d’un personatge de pa de pessic que intenta botar. Predigueu quantes vegades s’ha de repetir la seqüència perquè l’animació tinga un inici i un final visibles.
+Recupereu la idea de seqüència de L3: quins passos es repeteixen quan plantem un plançó i quins només fem una vegada? En una tira de quatre vinyetes, mostreu una granota de paper que travessa quatre illots de la marjal. Abans de programar, marqueu quants salts ha de fer i quina imatge obrirà i tancarà l’animació. Distingiu “quatre salts” d’una seqüència amb quatre blocs diferents.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-En mBlock, creeu una animació de paper o d’un símbol de l’exposició amb una repetició comptada. Fixeu el nombre de voltes i distingiu els blocs que formen una volta dels que van abans o després.
+Modeleu el bucle comptat amb una ruta de plantació: fer un clot, posar un plançó i cobrir-lo és una volta; avançar fins al següent punt prepara la volta següent. Si el tram té quatre punts, repetiu el fragment el nombre de vegades acordat i compareu-lo amb escriure totes les ordres una per una. Marqueu al diagrama quin fragment queda dins de `repeteix` i què passa abans/després del bucle.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Feu una traça en paper: número d’iteració, fotograma mostrat i valor del comptador. Compareu la predicció amb el resultat i marqueu si el programa executa una volta de més o de menys.
+En mBlock, programeu amb el botó A una animació original: mostrar la granota preparada, mostrar el salt, reproduir una pausa breu i tornar a la posició inicial; poseu el fragment dins d’un `repeteix (4)` perquè arribe als quatre illots. Seguiu la primera, segona i última iteració amb una taula de traça: número de volta, fotograma esperat i observat. Expliqueu què inicia el programa i per què el bucle acaba després del recompte fixat.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Canvieu el nombre de repeticions o un fotograma, però no les dues coses alhora. Una altra parella executa el programa i explica què ha canviat en l’animació.
+En parelles, creeu una segona versió: podeu canviar el nombre de salts, les imatges o el so opcional, però canvieu una sola variable de disseny cada vegada. Afegiu una història breu ambientada en un lloc pròxim —per exemple, la granota arriba a una zona de vegetació— sense presentar el dibuix com una observació real. Intercanvieu els programes: l’equip visitant prediu el nombre de voltes i comprova si el resultat coincideix. El so es pot substituir per una pausa visual.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** programa amb repetició comptada, taula de traça i una revisió justificada.
+Cada parella presenta l’animació i respon: què representa una iteració, quantes n’hi ha i quin canvi ha fet més clara la història? Registreu un problema trobat i com l’heu resolt; tanqueu amb un exemple de bucle comptat de la vida quotidiana, com repetir una ruta de quatre parades. **Evidència:** storyboard, programa activat per un esdeveniment amb bucle comptat, traça, resultat de la prova entre parelles i autoavaluació breu.
 
 **Pregunta docent:** què determina que el bucle acabe després del nombre de voltes acordat?
 
@@ -153,23 +153,23 @@ Canvieu el nombre de repeticions o un fotograma, però no les dues coses alhora.
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Compareu una animació que acaba amb una altra que continua fins que una persona la para. Acordeu una resposta visual tranquil·la que puga repetir-se sense pampallugues ràpides.
+Recupereu el programa de L5 i compareu `repeteix (4)` amb una seqüència que no té un nombre fix de voltes. Useu el cicle de llum i foscor com a exemple natural que es repeteix, i dibuixeu tres fotogrames per representar una alba i una posta de sol sobre la marjal. Predigueu quin programa acabarà després d’un nombre establit i quin continuarà fins que algú el detinga.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Programeu una animació ambiental amb un bucle continu i un control explícit d’aturada. Manteniu la freqüència còmoda i deixeu l’opció de veure els fotogrames en paper sense activar la pantalla.
+En mBlock, feu una animació finita amb un esdeveniment de botó i un `repeteix`; després, creeu-ne una segona amb un altre botó i poseu la seqüència dins de `per sempre`. Alterneu tres fotogrames propis amb pauses prou llargues perquè es puguen llegir. Reserveu el botó C per a aturar els scripts actius amb el control de parada disponible a la versió de mBlock del centre; proveu primer la parada amb el robot quiet i sense cap moviment de motors.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Observeu què passa en iniciar, durant la repetició i en prémer l’aturada. Registreu si la seqüència torna al primer fotograma i si el control interromp el moviment de manera previsible.
+Compareu els programes bloc a bloc: quin té un nombre de voltes definit i quin no incorpora cap eixida natural? Executeu-los i registreu inici, dos cicles observats, ordre d’aturada i resposta final. Verifiqueu que el botó C interromp la seqüència; si l’entorn no permet aquesta interrupció des del programa carregat, atureu-la des de mBlock i deixeu anotada la limitació. Expliqueu per què un bucle infinit necessita un control de parada accessible.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Afegiu una segona escena seleccionable amb un botó o una targeta de control. Proveu que el canvi d’escena i l’aturada continuen sent accessibles i no es confonen.
+En parelles, canvieu les imatges, l’ordre, una pausa o el so opcional i proveu si la història continua sent comprensible en tots dos programes. L’equip revisor comprova que la versió comptada acaba sola i que la versió contínua respon a l’aturada. No feu pampallugues ràpides ni sons sobtats; qui ho preferisca pot analitzar les targetes de fotogrames en paper, amb la mateixa predicció de bucle.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** diagrama d’estats, programa i prova d’inici/aturada.
+Cada equip presenta les dues animacions i respon quina utilitza `repeteix`, quina `per sempre` i com n’ha comprovat la finalització. Completeu una autoavaluació: un bucle comptat de la vida quotidiana, un procés cíclic que no té un final fix i una precaució necessària quan un programa continua actiu. **Evidència:** storyboard de tres fotogrames, dos programes amb esdeveniments diferents, registre de cicles/aturada, retorn d’una altra parella i autoavaluació.
 
 **Pregunta docent:** com sap l’usuari que el bucle està actiu i com pot acabar-lo?
 
@@ -177,68 +177,85 @@ Afegiu una segona escena seleccionable amb un botó o una targeta de control. Pr
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Presenteu una pista de cartó amb dues portes de color i un obstacle tou. Acordeu que Codey Rocky ha de distingir una porta blava d’una roja i reaccionar quan el sensor frontal detecte un objecte. Abans de connectar-lo, completeu una taula de prediccions: color detectat, obstacle present/absent i resposta esperada. La cursa és una missió de decisions, no una comparació de velocitat.
+Repasseu que una condició permet executar una instrucció si és certa i saltar-la si és falsa. Feu una «capsa de condicions» amb targetes de prova fàcils d’identificar i no personals (per exemple, «la fitxa és verda»): qui trau una targeta decideix si es compleix i segueix la instrucció associada. Després, predigueu com podria respondre Codey davant d’una bandera verda o d’un obstacle en una pista de maqueta. No és una cursa de velocitat.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Comproveu en el model i firmware del centre que mBlock ofereix lectures del sensor inferior de color i del sensor frontal de distància/infraroig. Calibreu sobre les targetes reals de la pista —mateixa llum, alçada i superfície— i feu tres lectures per color. Col·loqueu l’obstacle tou fora de la trajectòria de rodes i mans. Si una entrada no està disponible o no és estable, useu targetes de valor simulat i anoteu-ho com a simulació, sense atribuir-la al robot.
+Identifiqueu el mòdul IR de Rocky i comproveu el seu selector d’orientació: cap avall per llegir color/superfície, cap avant per detectar un obstacle. Són dues configuracions de prova, no dues lectures simultànies. Prepareu una porta amb targeta verda i una altra de color diferent; en una segona taula, poseu un obstacle tou i ample. Manteniu la base parada mentre canvieu l’orientació i comproveu al bloc de sensor què llig cada posició.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Programeu dues decisions separades: si el color llegit és el de la porta blava, mostrar el símbol de continuar; si la distància indica un objecte pròxim, parar i mostrar el símbol d’espera. No avanceu automàticament fins que una persona haja retirat l’obstacle. Registreu les lectures i les dues respostes observades.
+En la configuració cap avall, programeu el botó A i una condició `si color = verd`: avanceu només un tram curt a velocitat baixa si la lectura coincideix; altrament, quedeu-vos aturats. En la configuració cap avant, feu una prova independent `si obstacle detectat`: atureu-vos, gireu a l’esquerra una quantitat limitada i avanceu només una casella de maqueta abans d’aturar-vos. El bloc de proximitat es tracta com una detecció, no com una mesura exacta de distància. Registreu per separat orientació, entrada, valor/estat, condició vertadera o falsa i resposta.
 
 ```blocks
-quan s'inicia la missió
-  llig el color de la porta
-  si el color és blau
-    mostra «continua»
-  llig la distància frontal
-  si hi ha un obstacle pròxim
+quan es prem A
+  si el color llegit és verd
+    avança a velocitat baixa un tram curt
+  si no
     atura els motors
-    mostra «espera»
+
+quan es prem A  // en la prova amb el sensor orientat cap avant
+  si es detecta un obstacle
+    atura els motors
+    gira a l'esquerra una vegada
+    avança una casella i atura
 ```
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Passeu quatre casos controlats: porta blava lliure, porta roja lliure, porta blava amb obstacle i porta roja amb obstacle. Repetiu cada cas tres vegades; canvieu una condició o un llindar només després d’anotar la línia base. Si la lectura varia, amplieu la zona de color o atureu el repte i useu el registre per a explicar el límit del sensor.
+Completeu una bateria de casos en dues tandes: amb el sensor cap avall, targeta verda i no verda; cap avant, obstacle present i absent. Feu tres intents per cas sense moure la llum ni el material entre lectures. Si el color no es reconeix de manera estable, augmenteu la superfície de la targeta o useu una targeta d’entrada simulada. Si l’obstacle no es detecta, reviseu l’orientació i el bloc utilitzat. No combineu els resultats com si el robot haguera llegit ambdues entrades en un mateix instant.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** calibratge repetit, taula dels quatre casos, programa o simulació marcada i una revisió justificada.
+**Evidència:** dibuix de les dues orientacions del sensor, taules independents de casos vertaders/falsos, programes o simulacions identificades i una revisió justificada. Expliqueu quin bloc representa una decisió booleana i per què la lectura de color i la d’obstacle s’han provat en moments diferents.
 
-**Pregunta docent:** quina entrada ha provocat cada resposta i quina variació del material podria canviar la lectura?
-### **L8 · Cursa II: missions amb lògica combinada (40 min).**
+**Pregunta docent:** quina observació ha fet certa cada condició i què canvia quan girem el sensor?
+### **L8 · L’estació de servei i el túnel de la marjal (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Recupereu les lectures de color i obstacle de la sessió anterior. La missió d’avui només mostra «porta segura» quan el color és blau **i** el camí està lliure. Completeu abans de programar les quatre combinacions (blau/roig × lliure/obstacle) i marqueu quina compleix la regla.
+Recupereu les condicions vertadera/falsa de L7 i compareu una seqüència de tres `si` amb un `repeteix` que conté una condició. Presenteu dos reptes de maqueta: eixir d’una estació de servei orientada a l’esquerra, a la dreta o cap avant, i travessar un túnel fosc canviant la velocitat. Predigueu quins sensors i quines dades necessita cada repte; no es llegiran color i obstacle alhora.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Construïu la primera solució amb operadors lògics i una condició composta. Després, compareu-la amb una segona estratègia que usa un bucle comptat per revisar tres estacions, una condició dins del bucle i un operador per combinar la lectura de color amb l’estat de la ruta. Useu només blocs equivalents disponibles en la versió de mBlock del centre; si el sensor falla, llegiu les entrades d’una targeta simulada.
-
-```blocks
-repeteix 3 vegades
-  llig color i distància
-  si (color és blau) i (camí està lliure)
-    mostra «porta segura»
-  si no
-    mostra «revisa la ruta»
-```
+Construïu una estació amb llibres o caixes de cartó que deixen un únic corredor de sortida i un túnel curt de cartolina. Marqueu els tres possibles sentits inicials de Codey Rocky. Gireu el mòdul IR cap avant per detectar obstacles en l’estació; el sensor de llum integrat en Codey s’usa en una prova separada del túnel. Manteniu velocitat baixa i espai lliure al voltant de les rodes. Abans d’executar, comproveu que el programa correspon a l’orientació de sensor prevista.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Executeu les quatre combinacions amb cada versió. La taula de resultats ha d’incloure entrada de color, obstacle, valor de l’operador, resposta i coincidència amb la regla. Expliqueu què es repeteix tres vegades i quina part de la decisió continua sent diferent en cada estació.
+Programeu l’eixida amb una condició dins d’un bucle comptat: si hi ha un obstacle davant, gireu a la dreta 90°; repetiu la comprovació fins a tres vegades, de manera que l’orientació inicial no determine l’èxit. Quan el camí quede lliure, gireu cap al corredor de la maqueta i avanceu una casella a velocitat baixa. Anoteu l’orientació inicial, els girs executats i si s’ha trobat l’eixida.
+
+```blocks
+quan es prem A
+  repeteix 3 vegades
+    si hi ha obstacle davant
+      gira a la dreta 90 graus
+  si el camí està lliure
+    gira cap al corredor
+    avança una casella a velocitat baixa
+```
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Afegiu un cas límit: lectura de color dubtosa o obstacle just en el límit de detecció. Compareu les dues solucions amb els mateixos casos i trieu la que una parella revisora puga explicar i depurar millor. No amagueu un cas no resolt amb una resposta aleatòria.
+Proveu les tres orientacions inicials. Després, en una tanda independent, useu el sensor de llum de Codey per comparar el passadís clar amb el túnel ombrejat. Registreu primer lectures de les dues condicions i trieu un llindar entre els valors observats; són valors del sensor, no lux calibrats. Dins d’un segon `repeteix 3`, llegiu la llum, espereu un segon i apliqueu l’operador `<`: si el valor queda per davall del llindar, enceneu l’indicador RGB blanc i reduïu la velocitat; si no, apagueu l’indicador i manteniu la velocitat de prova. Feu tres lectures en cada condició i no presenteu el llindar com una mesura de seguretat real.
+
+```blocks
+repeteix 3 vegades
+  llig la llum ambiental
+  espera 1 segon
+  si la llum és menor que el llindar
+    encén l’indicador RGB blanc
+    mou-te a velocitat reduïda
+  si no
+    apaga l’indicador RGB
+    mantín la velocitat de prova
+```
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** taula de veritat completa, dues estructures de programa, casos de prova i decisió argumentada.
+Compareu els girs observats en les tres orientacions i la taula de llum clara/ombra. Expliqueu per què el bucle redueix codi repetit, què retorna una comparació `<` i quina diferència hi ha entre el mòdul IR orientat cap avant i el sensor de llum de Codey. **Evidència:** diagrama de l’estació, dos programes amb `repeteix` i `si`, registre d’orientacions, valors de llum i revisió d’una prova.
 
-**Pregunta docent:** quina diferència hi ha entre repetir una missió tres vegades i combinar dues condicions dins d’una missió?
+**Pregunta docent:** quines parts del repte reutilitzen un bucle i quina lectura del sensor justifica cada condició?
+
 ### **L9 · Barra de so: bucles i condicions (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
@@ -565,49 +582,49 @@ Canvieu només la velocitat o el temps de motor i repetiu els tres intents. Comp
 
 #### Fase 1 · Activem i prediem (5 min)
 
-En una graella de paper, dibuixeu un gir de 90 graus i predigueu quina ordre o combinació de motors pot aproximar-lo en la superfície disponible.
+Recupereu les parts de Codey Rocky i les ordres bàsiques de moviment. En una graella que represente un recorregut segur entre l’aula, la biblioteca i el pati, marqueu inici, meta i un gir de 90 graus. Dibuixeu dues rutes possibles i predigueu quina seqüència de moviments pot seguir el robot sense eixir del carril.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Calibreu el gir amb una velocitat baixa i un temps o angle de motor que mBlock permeta controlar. Feu una marca inicial i no canvieu alhora el punt de partida i la duració.
+Traduïu una ruta a ordres de moviment de mBlock i col·loqueu una marca d’inici i una zona de parada prou allunyada de la vora. Comenceu amb un tram recte i un únic gir; useu velocitat baixa i el control de temps o angle que estiga disponible en la versió instal·lada. Abans de cada prova, alineeu el robot amb la mateixa marca.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Registreu dos intents per cada configuració i mesureu la desviació amb una plantilla de paper. Indiqueu que és una aproximació de la maqueta, no una especificació exacta del robot.
+Executeu la seqüència i registreu l’ordre, la superfície, el punt final i la desviació respecte del camí dibuixat. Feu dos intents amb la mateixa configuració. Expliqueu on comença cada tram i quina instrucció inicia el gir; mesureu la desviació amb una plantilla de paper i indiqueu que és una aproximació de la maqueta, no una especificació exacta del robot.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Canvieu una variable, repetiu les mesures i trieu la configuració que complisca el criteri del mapa. Documenteu el valor que ha funcionat en aquesta superfície.
+Intercanvieu les targetes de ruta amb una altra parella, que haurà de predir i provar el trajecte sense indicacions orals. Reviseu el punt de gir o una sola variable del programa, repetiu dos intents i compareu-los amb la línia base. Si el model no fa el gir esperat, representeu la maniobra amb fletxes i compareu-la amb la traça del robot abans de canviar altres ordres.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** mapa, valors de prova, desviació aproximada i configuració triada.
+**Evidència:** mapa anotat, seqüència de blocs, registre de dos intents abans i després, desviació aproximada i configuració triada. Expliqueu quina instrucció ha ajudat a seguir la ruta i en quines condicions de superfície és vàlida la conclusió.
 
-**Pregunta docent:** quina variable hem aïllat per entendre millor el gir?
+**Pregunta docent:** quina diferència hi ha entre dissenyar un recorregut al mapa i comprovar que el robot el pot executar en aquesta superfície?
 
 ### **L23 · Gir i obstacles (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Afegiu al mapa una targeta d’obstacle tou i ample. Predigueu on hauria d’aturar-se o canviar de direcció el robot sense tocar l’objecte.
+Plantegeu una ruta per una maqueta de carrers del barri i afegiu un obstacle tou. Relacioneu el repte amb l’ús de funcions en vehicles que interpreten dades dels sensors, sense presentar Codey Rocky com un cotxe autònom real. Predigueu una maniobra d’avís i desviament, i marqueu un límit que impedisca que el model caiga de la pista.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Programeu una ruta tancada amb un punt de gir i una condició de parada. Useu un sensor frontal només si el seu comportament s’ha verificat al model; altrament, simuleu la detecció amb una targeta o un botó i etiqueteu-la com a simulació.
+Comproveu al Codey Rocky del centre si està disponible el sensor IR frontal i el bloc que en llig la proximitat. Creeu una funció pròpia `avisar_i_girar()` que mostre un senyal quan detecta l’obstacle i execute una desviació curta; després, crideu la funció des de la seqüència de ruta. Prepareu una pista de cartó plana amb carrils amples i vores protegides. Si el sensor, el firmware o la funció no són compatibles, simuleu l’entrada amb una targeta i marqueu el resultat com a simulació.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Proveu la ruta lliure i la ruta amb la targeta, mantenint la mateixa posició inicial. Observeu si el robot s’atura abans de l’obstacle i registreu qualsevol contacte o desviació.
+Dividiu la ruta en trams rectes mesurats amb una regla i un gir indicat en el mapa. Abans de cada prova, l’equip explica on es crida la funció i què ha de fer si el camí està lliure o ocupat. Executeu una ruta lliure i una amb obstacle, des del mateix inici; registreu lectura del sensor, resposta, distància aproximada i desviació. No proveu l’aturada sobre la vora d’una taula: representeu el límit amb una franja de contrast dins d’una pista plana i manteniu una barrera física de seguretat.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Ajusteu una condició a la vegada i repetiu la prova. La persona observadora pot aturar manualment el programa; ningú no col·loca dits davant de les rodes ni del sensor.
+Proveu també una detecció falsa —una targeta fora del carril o una superfície de contrast— i comproveu si l’avís apareix quan toca. Canvieu una sola condició o llindar i repetiu els dos casos. Intercanvieu el mapa amb una altra parella, que ha de poder localitzar i explicar la funció; la persona observadora conserva el control d’aturada i ningú posa els dits davant de les rodes o del sensor.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** esquema de la condició, casos amb/sense obstacle i límit del sensor.
+**Evidència:** mapa amb trams i distàncies, funció pròpia i punt on es crida, registre de ruta lliure/obstacle/fals positiu i revisió justificada. Expliqueu què resol la funció i per què la pista de prova no demostra que un vehicle real siga segur.
 
-**Pregunta docent:** com distingim una detecció real del sensor d’una entrada simulada?
+**Pregunta docent:** quina informació proporciona el sensor IR i quina prova addicional caldria abans d’usar una regla semblant fora de la maqueta?
 
 ### **L24 · Segueix la línia (40 min).**
 
@@ -646,6 +663,6 @@ Al llarg de les 24 sessions, cada parella conserva un guió de disseny, pseudoco
 
 ## 🔗 Repertori oficial adaptat
 
-Aquesta seqüència adapta les 24 lliçons CSTA publicades per Makeblock: [The Secret of Codey Rocky](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids), *Press Buttons to Change Emotions*, *To Be an Animation Designer*, *Identify the Bug*, *The Steamed Bread Can’t Jump*, *The Jumping Steamed Bread*, *The Racing Game I/II*, *Volume Bar*, *Good Morning! Functions*, *The Tiny Patroller I/II*, *The Squirrel’s Nuts Box*, *Mathematical Operations*, *The Bomb*, *Rock-Paper-Scissors*, *My Speedway*, *Game Control Schemes*, *Game Mechanics I/II*, *Fast and Furious*, *Make a Turn*, *Make a Turn Avoid Obstacles* i *Line-Following Car*. Cada repte s’ha reinterpretat amb materials i context propis. Les fitxes consultables directament s’enllacen a la [pàgina oficial del curs CSTA](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids): [L1](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2001%20The%20Secret%20of%20Codey%20Rocky_Sheet.pdf), [L3](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2003%20To%20Be%20an%20Animation%20Designer_Sheet.pdf), [L4](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2004%20Identify%20the%20Bug_Sheet.pdf), [L13](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2013%20The%20Squirrel%E2%80%99s%20Nuts%20Box_Sheet.pdf), [L14](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2014%20Mathematical%20Operations_Sheet.pdf), [L15](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2015%20The%20Bomb_Sheet.pdf), [L17](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2017%20My%20Speedway_Sheet.pdf) i [L18](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2018%20Game%20Control%20Schemes_Sheet.pdf). Els objectius del curs separat [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery) només s’usen com a comprovació complementària per a L1–L16; no es barregen els dos repertoris.
+Aquesta seqüència adapta les 24 lliçons CSTA publicades per Makeblock: [The Secret of Codey Rocky](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids), *Press Buttons to Change Emotions*, *To Be an Animation Designer*, *Identify the Bug*, *The Steamed Bread Can’t Jump*, *The Jumping Steamed Bread*, *The Racing Game I/II*, *Volume Bar*, *Good Morning! Functions*, *The Tiny Patroller I/II*, *The Squirrel’s Nuts Box*, *Mathematical Operations*, *The Bomb*, *Rock-Paper-Scissors*, *My Speedway*, *Game Control Schemes*, *Game Mechanics I/II*, *Fast and Furious*, *Make a Turn*, *Make a Turn Avoid Obstacles* i *Line-Following Car*. Cada repte s’ha reinterpretat amb materials i context propis. Les fitxes consultables directament s’enllacen a la [pàgina oficial del curs CSTA](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids): [L1](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2001%20The%20Secret%20of%20Codey%20Rocky_Sheet.pdf), [L3](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2003%20To%20Be%20an%20Animation%20Designer_Sheet.pdf), [L4](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2004%20Identify%20the%20Bug_Sheet.pdf), [L13](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2013%20The%20Squirrel%E2%80%99s%20Nuts%20Box_Sheet.pdf), [L14](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2014%20Mathematical%20Operations_Sheet.pdf), [L15](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2015%20The%20Bomb_Sheet.pdf), [L17](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2017%20My%20Speedway_Sheet.pdf) i [L18](https://res-us.makeblock.com/doc/course/Codey%20Rocky/Lesson%2018%20Game%20Control%20Schemes_Sheet.pdf). Per a L2, el fabricant publica el [manual docent de *Basic Coding Courses*](https://qiniu.makeblock.com/education-makeblock-com/SampleofTeachersBook.pdf) i el [quadern d’alumnat](https://qiniu.makeblock.com/education-makeblock-com/studentbook.pdf): s’hi contrasten esdeveniments, senyals geomètrics, blocs d’inici i de botó, pràctica per parelles i presentació. La seqüència local adapta aquests elements amb símbols propis, sense atribuir estats emocionals reals. Per a L5–L6, el quadern confirma les animacions amb bucle comptat i infinit, la progressió entre repeticions finites i contínues, l’activació per esdeveniment, la creació d’històries, la presentació i l’autoavaluació; l’aturada de L6 usa la funció oficial [`stop_all_scripts()`](https://github.com/Makeblock-official/micropython-api-doc/blob/master/docs/codey%26rocky/codey/script%20control.rst) com a recurs de control local. El quadern d’alumnat també permet contrastar els objectius de *Make a Turn* (repàs de conceptes bàsics de robòtica i disseny d’una ruta per a Codey Rocky) i *Line-Following Car* (aplicacions, intensitat reflectida i seguiment), però no equival als plans docents complets. La mateixa font conté una lliçó diferent, *Avoid Obstacles*, amb funcions, matemàtiques i obstacles; la usem com a referència complementària i no com a prova del pla CSTA *Make a Turn Avoid Obstacles*. Els objectius del curs separat [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery) només s’usen com a comprovació complementària per a L1–L16; no es barregen els dos repertoris.
 
 Makeblock publica a banda el curs [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery), de 34 lliçons. Només s’hi podran adaptar unitats compatibles amb la dotació quan es confirme quins components Neuron hi ha disponibles; aquesta fitxa no els pressuposa.

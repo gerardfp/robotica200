@@ -33,13 +33,47 @@ Una exposició local de ciència prepara una demostració sobre com les màquine
 
 ### **Sessió 1 · Introducció a la IA (Introduction to AI).**
 
-Classifiqueu exemples inventats de tecnologia que usa o no usa IA i justifiqueu la decisió. Reviseu frases que atribueixen intencions humanes a una màquina i reescriviu-les: el sistema processa dades i produeix una eixida segons el seu disseny. Distingiu una regla fixa d’un model entrenat amb exemples.
+#### Fase 1 · Activem i prediem
+
+Mostreu una regla senzilla —«si la targeta té ales, posa-la al grup A»— i una altra que necessita interpretació —«si el moviment sembla ràpid»—. Predigueu quina serà més fàcil de seguir i qui decideix què vol dir «ràpid».
+
+#### Fase 2 · Explorem i construïm
+
+Classifiqueu exemples inventats de tecnologia que usa o no usa IA i justifiqueu cada decisió. Separeu els casos clars dels dubtosos; no forceu una resposta única quan la informació no basta.
+
+#### Fase 3 · Expliquem i registrem
+
+Descriviu la regla aplicada i les dades que heu observat. Expliqueu que una regla programada respon a condicions escrites per una persona, mentre que un sistema d’aprenentatge automàtic ajusta un model a partir d’exemples etiquetats.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu frases que atribueixen intencions humanes a una màquina i reescriviu-les amb precisió: el sistema processa dades i produeix una eixida segons el seu disseny. Compareu si la nova formulació diferencia millor automatització, regla i model.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compartiu una definició pròpia d’IA i un cas en què no es pot decidir només amb la informació disponible. **Evidència:** classificació inicial, justificacions i definició revisada amb una limitació identificada.
 
 ### **Sessió 2 · Introducció a l’aprenentatge automàtic (Introduction to machine learning).**
 
-Separeu targetes de moviments en dues categories, descriviu les característiques observades i trieu etiquetes clares. Compareu com dues regles diferents poden classificar la mateixa targeta; després, expliqueu com una màquina podria aprendre patrons a partir d’exemples i per què les etiquetes depenen de decisions humanes. Aquesta lliçó continua desconnectada, tal com proposa la seqüència oficial; l’entrenament amb CreateAI es reserva per a les lliçons següents del curs ampliat.
+#### Fase 1 · Activem i prediem
 
-*Evidència: dues classificacions, les seues regles i una limitació identificada.*
+Presenteu targetes amb dibuixos esquemàtics de dos gestos geomètrics: «moure la placa en línia» i «fer un moviment circular». Abans de classificar els casos nous, cada equip prediu quins exemples seran fàcils de separar i en quins dubtarà.
+
+#### Fase 2 · Explorem i construïm
+
+Separeu les targetes en conjunt d’exemples i conjunt de prova. Descriviu les característiques observades —direcció, ritme dibuixat o nombre de canvis— i acordeu etiquetes clares. No useu fotografies, noms ni perfils d’alumnes.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu com dues regles diferents poden classificar una mateixa targeta. Registreu la classe esperada, la regla aplicada, el resultat i si hi ha acord entre observadors. Marqueu les targetes amb més d’una interpretació.
+
+#### Fase 4 · Apliquem i millorem
+
+Si l’etiqueta és ambigua o els exemples no representen bé els casos, reviseu la definició de les categories o afegiu una targeta fictícia. Torneu a provar la classificació i expliqueu si el canvi ha reduït la confusió. Aquesta lliçó continua desconnectada, com en la seqüència oficial; l’entrenament amb CreateAI queda per a les lliçons següents del curs ampliat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu com una màquina podria ajustar un model a partir d’exemples i per què les etiquetes depenen de decisions humanes. Concloeu: «Amb aquests exemples, el classificador separa…, però no podem assegurar…». **Evidència:** dues classificacions, les seues regles, taula de proves amb casos nous i una limitació identificada.
 
 ## 🧰 Materials i accés a CreateAI
 

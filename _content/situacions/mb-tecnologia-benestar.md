@@ -35,23 +35,113 @@ La proposta transforma la unitat oficial en un projecte de disseny accessible. L
 
 ### **Sessió 1 · Investiguem tecnologia per a la salut (Health of the nation).**
 
-Analitzeu casos de tecnologia que donen suport a la comunicació, l’accessibilitat o rutines de benestar. Distingiu benefici, usuari, dades necessàries, risc i supervisió humana. Creeu un glossari de salut digital sense buscar ni compartir dades personals de l’aula.
+#### Fase 1 · Activem i prediem
+
+Llegiu tres casos preparats pel docent: una ajuda per comunicar una elecció, un temporitzador de pausa i un senyal d’accessibilitat. Predigueu quin problema pràctic aborda cada cas i qui decideix activar-lo.
+
+#### Fase 2 · Explorem i construïm
+
+Analitzeu cada tecnologia i completeu una fitxa amb benefici, usuari, dades necessàries, risc, supervisió humana i manera d’aturar-la. No investigueu la salut de companys ni demaneu relats personals.
+
+#### Fase 3 · Expliquem i registrem
+
+Distingiu suport a la comunicació, accessibilitat, rutina de benestar i diagnòstic. Creeu un glossari de salut digital i assenyaleu quines dades no són necessàries per als casos ficticis.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu les fitxes i retireu qualsevol dada personal o funció de vigilància que no siga necessària. Afegiu una alternativa de suport humà quan la tecnologia no funciona o no és adequada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compartiu un benefici i un risc de cada exemple i expliqueu per què el prototip escolar no serà un dispositiu mèdic. **Evidència:** casos analitzats, glossari i mapa de dades necessàries/innecessàries.
 
 ### **Sessió 2 · Definim una necessitat i ideem solucions (Health tech innovations).**
 
-Trieu una situació fictícia —per exemple, demanar una pausa o recordar una rutina— i redacteu criteris d’èxit amb una persona usuària voluntària o un perfil inventat. Dibuixeu tres idees; compareu-les per accessibilitat, privacitat, cost i facilitat d’aturada; seleccioneu-ne una i construïu un model de cartó.
+#### Fase 1 · Activem i prediem
+
+Trieu una situació fictícia —per exemple, demanar una pausa o recordar una rutina— i redacteu-la com una oportunitat de disseny, no com una etiqueta sobre una persona: «cal una manera senzilla d’indicar que vull fer una pausa».
+
+#### Fase 2 · Explorem i construïm
+
+Si es consulta una persona usuària voluntària, demaneu consentiment i permeteu que no participe; també podeu treballar només amb un perfil inventat. Dibuixeu tres solucions possibles i compareu-les per claredat, control de l’usuari, privacitat, materials i facilitat d’aturada.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu els criteris d’èxit i per què cada idea els compleix o no. Registreu qui activa el sistema, quines dades necessita i com es cancel·la; no inclogueu diagnòstics ni informació personal.
+
+#### Fase 4 · Apliquem i millorem
+
+Seleccioneu una idea i construïu un model inicial de cartó. Reviseu si la persona manté el control, pot ignorar o desactivar l’ajuda i pot triar entre resposta visual o sonora.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu per què la idea triada respon millor als criteris i què encara caldrà provar. **Evidència:** mapa de necessitat fictícia, tres esbossos, criteris de selecció i maqueta inicial.
 
 ### **Sessió 3 · Algorisme, programa i depuració (Prototyping innovations).**
 
-Escriviu pseudocodi d’entrada, resposta, retorn a l’estat inicial i cancel·lació. Programeu el botó A de micro:bit perquè mostre una icona; proveu polsacions curtes, llargues i repetides. Si es necessita un avís sonor, useu només un accessori compatible i volum baix, amb alternativa visual. Registreu errors del prototip, no de les persones.
+#### Fase 1 · Activem i prediem
+
+Escriviu pseudocodi amb inici, entrada, resposta, cancel·lació i retorn a l’estat inicial. Predigueu què ha de passar amb una pulsació breu, una de repetida i cap activació.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu el botó A de micro:bit perquè mostre una icona pròpia. Si es necessita un avís sonor, useu només un accessori compatible i volum baix, amb una alternativa visual. La simulació de MakeCode i les targetes permeten completar el mateix flux sense placa.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu activació breu, activació repetida, absència d’activació, reinici i cancel·lació. Registreu la resposta prevista i observada i anoteu errors del prototip, no de les persones.
+
+#### Fase 4 · Apliquem i millorem
+
+Si apareix una resposta inesperada, reviseu l’esdeveniment i l’estat del programa. Canvieu una part i repetiu la prova; no canvieu la necessitat definida per adaptar-la a un error del codi.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu que el sistema respon als casos previstos i torna a l’estat de repòs. **Evidència:** pseudocodi, programa, taula de cinc proves i una depuració documentada.
 
 ### **Sessió 4 · Completem i preparem la presentació (Preparing presentations).**
 
-Refineu el muntatge, afegiu instruccions clares i feu una prova d’ús amb consentiment. L’equip prepara una explicació de necessitat, límits i decisió de privacitat, amb diagrama del programa i una demostració sense dades personals.
+#### Fase 1 · Activem i prediem
+
+Reviseu la maqueta i predigueu si una persona que no ha programat entendrà com iniciar, cancel·lar i interpretar la resposta.
+
+#### Fase 2 · Explorem i construïm
+
+Refineu el muntatge, afegiu instruccions clares i prepareu una fitxa d’ús amb propòsit, passos, manera de demanar ajuda i límits. El text indicarà que la persona controla quan usa el prototip i que no envia avisos a cap servei real.
+
+#### Fase 3 · Expliquem i registrem
+
+Prepareu un diagrama del programa i una demostració sense dades personals. Registreu la decisió de privacitat, els casos provats i l’alternativa d’accés o cancel·lació.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu una prova d’ús amb consentiment; la persona pot rebutjar-la. Reviseu les instruccions, la icona o la disposició dels botons si l’observació mostra una dificultat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu que la presentació descriu tant la utilitat com les limitacions del prototip. **Evidència:** fitxa d’ús, diagrama, demostració i revisió basada en una prova voluntària.
 
 ### **Sessió 5 · Mostra i avaluació (Health tech showcase).**
 
-Presenteu el prototip a una audiència, rebeu comentaris sobre accessibilitat i claredat, i reviseu-lo. Acabeu amb una pregunta crítica: en quin cas no seria adequat usar-lo i quina persona o servei hauria de donar suport real?
+#### Fase 1 · Activem i prediem
+
+Abans de la mostra, cada equip identifica un cas en què el prototip no seria adequat i una persona o servei que podria oferir suport real.
+
+#### Fase 2 · Explorem i construïm
+
+Presenteu el prototip a l’audiència i demostreu inici, resposta, cancel·lació i retorn a repòs. No feu servir registres personals ni presenteu l’activitat com una prova de salut.
+
+#### Fase 3 · Expliquem i registrem
+
+Recolliu comentaris sobre accessibilitat i claredat. Separeu l’observació del prototip de qualsevol afirmació sobre les necessitats de persones o grups.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el prototip o les instruccions a partir del retorn. Expliqueu quin canvi heu incorporat i què no heu resolt.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Contesteu: en quin cas no seria adequat usar-lo i qui hauria de donar suport real? **Evidència:** presentació, valoració de l’audiència, millora i límit d’ús justificat.
 
 ## 🧰 Materials i programació
 

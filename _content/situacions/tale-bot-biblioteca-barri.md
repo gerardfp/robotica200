@@ -40,27 +40,69 @@ Comproveu amb antelació com s’introdueixen, s’executen i s’esborren ordre
 
 ### **Creem la biblioteca i els personatges (40 min).**
 
-Comenceu amb una pregunta: quin lloc de lectura ens agradaria trobar al barri? Recolliu idees sense valorar-les per realistes o fantàstiques. En assemblea, seleccioneu tres espais diferents i representeu-los amb dibuixos o pictogrames; per exemple, una prestatgeria de llibres d’animals, un racó de lectura tranquil i una plaça de narració. Parleu breument de com es comparteix un espai de lectura: deixar passar, cuidar els materials i respectar qui vol escoltar en silenci.
+#### Fase 1 · Activem i prediem
 
-Cada equip tria un personatge fictici (una llavor que busca un conte, un núvol viatger o una tortuga bibliotecària) i decideix què necessita o què vol descobrir. Ordeneu tres targetes: inici, una cosa que passa durant el viatge i final o descobriment. Encara no programeu: primer assegureu-vos que hi ha una raó per visitar cada lloc.
+Comenceu amb la pregunta: quin lloc de lectura ens agradaria trobar al barri? Recolliu idees sense valorar-les per realistes o fantàstiques. Predigueu quins espais podrien ajudar a contar un viatge i quina informació ha de descobrir el personatge.
 
-*Evidència:* mapa d’espais i esquema narratiu amb personatge, motiu i tres moments. *Preguntes docents:* «Què vol descobrir? Què pot canviar en cada parada? Quin espai ajuda a explicar aquesta part?»
+#### Fase 2 · Explorem i construïm
+
+En assemblea, seleccioneu tres espais diferents i representeu-los amb dibuixos o pictogrames: per exemple, una prestatgeria de llibres d’animals, un racó de lectura tranquil i una plaça de narració. Parleu de com es comparteix un espai: deixar passar, cuidar els materials i respectar qui vol escoltar en silenci.
+
+#### Fase 3 · Expliquem i registrem
+
+Cada equip tria un personatge fictici —una llavor que busca un conte, un núvol viatger o una tortuga bibliotecària— i decideix què necessita o vol descobrir. Ordeneu tres targetes: inici, canvi durant el viatge i final o descobriment. Encara no programeu: cada parada ha de tindre una raó dins de la història.
+
+#### Fase 4 · Apliquem i millorem
+
+Comproveu que el personatge té un motiu per visitar cada espai. Si dues parades conten el mateix, canvieu-ne una o reviseu l’ordre. Una altra parella pot llegir les targetes i dir què espera que passe.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa dels tres espais i esquema narratiu amb personatge, motiu i tres moments. «Què vol descobrir? Què pot canviar en cada parada? Quin espai ajuda a explicar aquesta part?»
 
 ### **Planifiquem i provem la ruta (40 min).**
 
-Col·loqueu la graella al terra o a una taula accessible. Situeu el robot a la casella inicial, els tres espais en destinacions separades i, si el grup ho necessita, un únic obstacle que obligue a triar un camí. Primer, cada equip mou una fitxa de paper casella a casella i pronuncia o representa les instruccions. Després, ordena les targetes de fletxes i marca on vol fer cada parada. Compteu els moviments de manera concreta: un moviment equival a passar a la casella adjacent; els girs es decideixen segons l’orientació del robot i es proven abans d’afegir més ordres.
+#### Fase 1 · Activem i prediem
 
-Un participant introdueix la seqüència a Tale-Bot; un altre comprova la posició i un tercer compara el resultat amb el mapa. Feu una execució curta cap a la primera destinació, corregiu si cal i continueu cap a les altres dues. Si el robot no arriba on s’esperava, reconstruïu les ordres amb les fletxes i canvieu-ne una cada vegada. Compareu dues rutes que visiten els mateixos espais: quina és més curta?, quina evita l’obstacle?, quina instrucció ha sigut més difícil de comprovar?
+Col·loqueu la graella al terra o en una taula accessible. Situeu Tale-Bot a l’inici i els tres espais en destinacions separades. Predigueu en quina casella acabarà després de les primeres ordres i marqueu l’orientació inicial.
 
-*Evidència:* dues propostes de ruta, seqüència final anotada i registre d’una correcció explicada. *Preguntes docents:* «On pensàveu que acabaria? Quina ordre concreta ha canviat el resultat? Com ho podem comprovar?»
+#### Fase 2 · Explorem i construïm
+
+Afegiu, si cal, un únic obstacle que obligue a triar camí. Cada equip mou primer una fitxa de paper casella a casella i representa les instruccions amb fletxes. Un moviment equival a passar a la casella adjacent; els girs depenen de l’orientació del robot.
+
+#### Fase 3 · Expliquem i registrem
+
+Ordeneu les targetes de fletxes i assenyaleu les tres parades. Anoteu la seqüència i la predicció de casella final. Comproveu el pla amb una altra parella abans de transferir-lo al robot.
+
+#### Fase 4 · Apliquem i millorem
+
+Una persona introdueix la seqüència a Tale-Bot, una altra comprova la posició i una tercera compara el resultat amb el mapa. Feu un trajecte curt fins a la primera destinació i continueu després cap a les altres. Si el robot no arriba on s’esperava, reconstruïu les ordres i canvieu-ne només una cada vegada. Compareu dues rutes: quina és més curta, quina evita l’obstacle i quina és més fàcil de comprovar?
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dues propostes de ruta, seqüència final anotada i registre d’una correcció explicada. «On pensàveu que acabaria? Quina ordre concreta ha canviat el resultat? Com ho podem comprovar?»
 
 ### **Narrem les parades i compartim (40 min).**
 
-Recupereu l’esquema de la primera sessió i assigneu una part de la història a cada espai. Abans de moure el robot, l’equip acorda una frase breu, un gest o una imatge per a cada parada. En arribar-hi, deixa una targeta de l’escena i explica què hi ha descobert el personatge. Manteniu la història fictícia; ningú no ha de relatar experiències personals ni actuar en públic si no vol.
+#### Fase 1 · Activem i prediem
 
-Feu una passada completa de la ruta mentre una persona narra i una altra verifica les destinacions. Si s’utilitza alguna funció de so del model disponible, demaneu permís i useu només contingut creat pel grup; en cas contrari, narreu en directe o mostreu pictogrames. En acabar, un altre equip reconstrueix l’ordre de les escenes observant les targetes. Tanqueu amb una revisió: el recorregut ha ajudat a entendre la història?, s’ha visitat cada lloc en l’ordre previst?, quin canvi milloraria la ruta o el relat?
+Recupereu l’esquema de la primera sessió i assigneu una part de la història a cada espai. Predigueu què entendrà el públic només observant les parades i les targetes.
 
-*Evidència:* demostració de ruta, seqüència narrativa visual i una millora proposada a partir de la prova. *Pregunta docent:* «Què sabria el públic de la història només mirant les parades?»
+#### Fase 2 · Explorem i construïm
+
+Abans de moure el robot, acordeu una frase breu, un gest o una imatge per a cada parada. Prepareu una targeta d’escena que indique què hi descobreix el personatge. Manteniu la història fictícia; ningú no ha de relatar experiències personals ni actuar en públic si no vol.
+
+#### Fase 3 · Expliquem i registrem
+
+Reviseu l’ordre de les escenes amb el mapa i anoteu quina parada correspon a cada moment. Si useu una funció de so del model disponible, demaneu permís i empreu només contingut creat pel grup; també podeu narrar en directe o mostrar pictogrames.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu una passada completa de la ruta mentre una persona narra i una altra verifica les destinacions. Un altre equip reconstrueix l’ordre de les escenes observant les targetes. Si algun moment no s’entén, canvieu una targeta, una frase o l’ordre d’una parada i repetiu la comprovació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** demostració de ruta, seqüència narrativa visual i una millora proposada a partir de la prova. «Què sabria el públic de la història només mirant les parades? El recorregut ha ajudat a entendre-la?»
 
 ## 📋 Avaluació i evidències
 

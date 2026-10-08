@@ -56,43 +56,223 @@ Durant les deu lliçons, roten quatre responsabilitats: investigació/documentac
 
 ### **Lliçó 1 · Escoltar, observar i definir el repte (45–60 min).**
 
-**Entrada (10 min):** presenteu el mandat: traslladar materials lleugers entre dos punts d’una maqueta de classe amb un prototip SPIKE. Doneu un escenari escolar fictici; no pregunteu qui porta materials a casa ni com arriba a escola. **Investigació (15 min):** els equips examinen una escena de maqueta o parlen amb una persona usuària adulta voluntària sobre què fa que una entrega siga clara, accessible i ordenada. Registren necessitats anònimes com a observacions i preguntes, no opinions sobre individus. **Definició (20 min):** redacten una frase de problema, usuari, objectiu, dos criteris d’èxit i tres restriccions. Possible criteri: la càrrega de prova arriba a una àrea de destinació en 3 de 4 intents, sense caure i amb aturada manual accessible. Acordeu si la ruta segueix una línia de cinta, fites de color o ordres prefixades; no assumiu sensor disponible fins a comprovar la caixa. **Tancament (5–15 min):** cada equip explica una pregunta que cal investigar i una cosa que el seu prototip no pretén resoldre.
+#### Fase 1 · Activem i prediem
+
+Presenteu el mandat: traslladar materials lleugers entre dos punts d’una maqueta de classe amb un prototip SPIKE. Useu un escenari escolar fictici; no pregunteu qui porta materials a casa ni com arriba a escola. Predigueu quines condicions farien clara i ordenada l’entrega.
+
+#### Fase 2 · Explorem i construïm
+
+Examineu una escena de maqueta o parleu amb una persona adulta voluntària sobre què fa que una entrega siga clara i accessible. Registreu necessitats anònimes com a observacions i preguntes, no com a opinions sobre persones.
+
+#### Fase 3 · Expliquem i registrem
+
+Redacteu una frase de problema, usuari, objectiu, dos criteris d’èxit i tres restriccions. Un criteri possible és arribar a la destinació en 3 de 4 intents, sense caiguda de la càrrega i amb aturada manual accessible.
+
+#### Fase 4 · Apliquem i millorem
+
+Decidiu si la ruta seguirà una línia de cinta, fites de color o ordres prefixades. No pressuposeu cap sensor fins a comprovar la dotació; ajusteu els criteris si el material disponible no els pot verificar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** problema definit, usuari, criteris, restriccions i una pregunta oberta. Expliqueu una cosa que el prototip no pretén resoldre.
 
 ### **Lliçó 2 · Investigar dades, materials i restriccions (45–60 min).**
 
-**Mapa del sistema (10 min):** dibuixeu origen, trams, girs, zona de càrrega, destinació i punts on el robot s’hauria d’aturar. **Exploració (15 min):** mesureu amplària de pista, longitud dels trams, massa relativa (lleugera/mitjana, no cal una bàscula), distància de detecció i limitacions del sensor. Consulteu les funcions disponibles en la Knowledge Base i anoteu port, unitat i rang llegible. **Recerca aplicada (15 min):** compareu dues solucions manuals i dos mecanismes de maqueta (base amb safata, empenyedor, pinça sense tancament arriscat). Analitzeu estabilitat, accessibilitat i cost de peces; no copieu models LEGO protegits. **Actualització (10–20 min):** reviseu criteris amb la informació, anoteu allò que no s’ha pogut comprovar i afegiu la restricció de fer servir només càrrega de prova lleugera. La docent valida que el repte és possible amb peces i temps locals.
+#### Fase 1 · Activem i prediem
+
+Dibuixeu l’origen, els trams, els girs, la zona de càrrega, la destinació i els punts d’aturada. Predigueu quins materials o dades poden limitar la ruta.
+
+#### Fase 2 · Explorem i construïm
+
+Mesureu amplària de pista i longitud dels trams; descriviu la càrrega com a lleugera o mitjana sense necessitat de bàscula. Consulteu les funcions del sensor a la Knowledge Base i anoteu port, unitat i rang llegible.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu dues solucions manuals i dos mecanismes de maqueta, com base amb safata, empenyedor o pinça sense tancament arriscat. Registreu estabilitat, accessibilitat i peces necessàries; no copieu models protegits.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu els criteris amb la informació recollida i anoteu allò que no s’ha pogut comprovar. Afegiu la restricció d’utilitzar només càrrega de prova lleugera.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa del sistema, inventari de dades i comparació de mecanismes. La docent comprova que el repte és possible amb les peces i el temps disponibles.
 
 ### **Lliçó 3 · Generar opcions i triar amb criteris (45–60 min).**
 
-**Ideació individual (8 min):** cada membre dibuixa una idea sense discutir ni jutjar-la. **Posada en comú (12 min):** l’equip combina aportacions i prepara com a mínim tres conceptes diferents, inclosa una opció no motoritzada. **Matriz de decisió (15 min):** compareu cada idea per seguretat, estabilitat de càrrega, nombre de funcions Python, adaptació a usuaris, peces necessàries i facilitat de provar; useu escala 1–3 amb comentari, no una falsa puntuació científica. Si un valor falta, marqueu-lo desconegut. **Selecció (10 min):** anoteu idea triada, compromís que comporta i una característica d’una opció alternativa que es podria incorporar. **Revisió ràpida (5–15 min):** presenteu l’esbós a un altre equip i pregunteu què ha entés del criteri d’èxit abans de construir.
+#### Fase 1 · Activem i prediem
+
+Cada membre dibuixa una idea individual sense discutir-la ni jutjar-la. Predigueu quin criteri serà més difícil de satisfer.
+
+#### Fase 2 · Explorem i construïm
+
+Combineu aportacions i prepareu almenys tres conceptes diferents, inclosa una opció no motoritzada. Feu esbossos prou clars per comparar-los.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu cada idea per seguretat, estabilitat de càrrega, funcions Python, adaptació a usuaris, peces i facilitat de prova. Useu escala 1–3 amb comentaris; si una dada falta, marqueu-la com a desconeguda.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una idea i anoteu el compromís que implica i una característica d’una alternativa que podríeu incorporar. Presenteu l’esbós a un altre equip i pregunteu què entén del criteri abans de construir.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** tres conceptes, matriu raonada i decisió. L’escala orienta la conversa; no és una puntuació científica de les idees.
 
 ### **Lliçó 4 · Planificar el programa i els casos de prova (45–60 min).**
 
-**Descomposició (10 min):** convertiu la ruta en mòduls: iniciar, conduir tram, llegir fita, corregir, arribar/aturar, comunicar error. Creeu una funció o procediment per a cada acció que realment es repetisca. **Algoritme (15 min):** dibuixeu diagrama o pseudocodi de la ruta, incloent sensor absent, fita no reconeguda, càrrega que es mou i botó d’aturada. Ensenyeu on usarien llista d’instruccions o punts, condicions compostes, bucle, paràmetre de velocitat i registre de dades. **Plà de proves (15 min):** prepareu cas nominal, ruta amb gir, color no assignat, càrrega més ampla, arrencada mal orientada i aturada manual. Per a cada cas, prediu resultat i decisió si falla. **Preparació (5–20 min):** deseu una còpia en paper/ordinador i establiu qui revisa ports i qui pot autoritzar arrencada. La docent comprova que cap regla depén d’un sensor no disponible.
+#### Fase 1 · Activem i prediem
+
+Representeu una ruta i predigueu què pot fallar: sensor absent, fita desconeguda, càrrega desplaçada o necessitat d’aturada manual.
+
+#### Fase 2 · Explorem i construïm
+
+Descomponeu el programa en iniciar, conduir tram, llegir fita, corregir, arribar/aturar i comunicar error. Creeu funcions per a les accions que realment es repeteixen.
+
+#### Fase 3 · Expliquem i registrem
+
+Dibuixeu l’algoritme o pseudocodi. Indiqueu on poden servir llistes de punts, condicions compostes, bucles, paràmetres de velocitat i registre de dades.
+
+#### Fase 4 · Apliquem i millorem
+
+Prepareu casos nominals i límit: ruta amb gir, color no assignat, càrrega ampla, inici mal orientat i aturada manual. Predigueu el resultat i què fareu si falla; deseu una còpia del pla.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** diagrama, pseudocodi i pla de proves. La docent comprova que cap regla depén d’un sensor que no estiga disponible.
 
 ### **Lliçó 5 · Construir el prototip i validar la mecànica (45–60 min).**
 
-**Muntatge per subsistemes (20–25 min):** construïu base, suport de càrrega i sensor si escau. Proveu la safata buida, després amb una càrrega de cartó molt lleugera; observeu estabilitat en recta i gir. No subjecteu càrrega amb persones ni useu pinces que tanquen sobre dits. **Validació manual (10 min):** empenyeu la base apagada al llarg del recorregut només si el muntatge ho permet; busqueu encallament, cable que arrossega, roda que frega o centre de càrrega alt. **Programa mínim (10–15 min):** sense codi autònom complet, escriviu una única ordre de moviment curta amb la funció API que heu verificat. **Registre (5–10 min):** dibuixeu la versió 1, anoteu què funciona i què no, i decidiu un ajust. La construcció no es valora per semblança amb cap model comercial, sinó per com respon als criteris acordats.
+#### Fase 1 · Activem i prediem
+
+Abans de muntar, prediu què podria fer inestable la càrrega o dificultar un gir. Recordeu que el prototip transporta només materials lleugers de maqueta.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu per subsistemes la base, el suport de càrrega i el sensor si escau. Proveu la safata buida i després amb càrrega de cartó molt lleugera; observeu recta i gir. No subjecteu la càrrega amb persones ni useu pinces que tanquen sobre dits.
+
+#### Fase 3 · Expliquem i registrem
+
+Amb el muntatge apagat, proveu manualment el recorregut si és segur. Anoteu encallaments, cables que arrosseguen, rodes que freguen o centre de càrrega alt.
+
+#### Fase 4 · Apliquem i millorem
+
+Escriviu una única ordre curta amb la funció API verificada; no intenteu encara un programa autònom complet. Dibuixeu la versió 1, anoteu què funciona i decidiu un ajust.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** esquema de muntatge i primer registre de prova. Valoreu la construcció pels criteris acordats, no per la semblança amb un model comercial.
 
 ### **Lliçó 6 · Escriure el primer programa Python integrat (45–60 min).**
 
-**Organització del codi (10 min):** poseu constants i ports al principi, funcions amb noms clars al mig i seqüència principal al final. Comenteu la unitat de velocitat/distància i l’origen dels llindars. **Ruta base (20 min):** programeu un únic tram, una aturada controlada i la seqüència cap al següent tram. Afigueu lectura de sensor només després de comprovar-la aïlladament. Si el model no disposa del sensor, feu servir fites o ordres manuals identificades com a simulació. **Condicions i llistes (10 min):** representeu punts de ruta o accions en una llista si ajuda a reduir repetició; combineu amb una condició per a dades no reconegudes. No feu una seqüència tan llarga que siga impossible depurar. **Primer assaig (10–20 min):** executeu una ruta curta amb la zona lliure, velocitat baixa i una persona responsable d’aturar. Guardeu la sortida de consola i registreu posició final, detecció, temps i error observat. Pregunteu-vos si eixa única prova demostra el criteri; la resposta ha de ser no.
+#### Fase 1 · Activem i prediem
+
+Predigueu com es dividirà el programa i quina informació necessitareu per depurar una ruta curta. Acordeu qui pot autoritzar l’arrencada i qui té el control de l’aturada.
+
+#### Fase 2 · Explorem i construïm
+
+Organitzeu constants i ports al principi, funcions amb noms clars al mig i seqüència principal al final. Comenteu les unitats de velocitat/distància i l’origen dels llindars.
+
+#### Fase 3 · Expliquem i registrem
+
+Programeu un tram, una aturada controlada i la seqüència cap al tram següent. Comproveu aïlladament cada sensor abans d’afegir-lo; si no està disponible, useu fites o ordres manuals identificades com a simulació.
+
+#### Fase 4 · Apliquem i millorem
+
+Useu una llista per a punts o accions si redueix repeticions i afegiu una condició per a dades no reconegudes. Executeu una ruta curta amb velocitat baixa, zona lliure i una persona responsable d’aturar; no feu el programa tan llarg que siga difícil de depurar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** sortida de consola i registre de posició final, detecció, temps i error. Una sola prova no demostra que el criteri s’haja complit.
 
 ### **Lliçó 7 · Calibrar, provar i depurar amb evidència (45–60 min).**
 
-**Hipòtesi (5 min):** trieu una causa probable per a una fallada: orientació, fricció, unitat, llindar, ordre, dada absent o funció API incorrecta. **Proves repetides (20 min):** feu tres intents del mateix cas nominal amb inici i superfície constants. Afegiu després un cas de fita absent o diferent. Anoteu valor que llig sensor, valor esperat, resposta, aturada i variació. **Depuració (15 min):** canvieu una sola causa i repetiu. Classifiqueu problema de muntatge, connexió, sintaxi, execució o lògica; si la consola no reporta error però el destí falla, reviseu especificació/lectura en lloc d’assumir que el codi és correcte. **Actualització (5–20 min):** compareu les dades amb criteris i decidiu si continueu o simplifiqueu l’abast. Documenteu qualsevol funció, exemple o fragment extern reutilitzat i doneu-ne atribució; registreu versió d’app/API.
+#### Fase 1 · Activem i prediem
+
+Trieu una causa probable d’una fallada: orientació, fricció, unitat, llindar, ordre, dada absent o funció API incorrecta. Escriviu què espereu observar si la hipòtesi és correcta.
+
+#### Fase 2 · Explorem i construïm
+
+Feu tres intents del mateix cas nominal amb inici i superfície constants. Afegiu després un cas amb fita absent o diferent.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu lectura del sensor, valor esperat, resposta, aturada i variació. Classifiqueu l’error com a muntatge, connexió, sintaxi, execució o lògica.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una sola causa i repetiu. Si la consola no mostra error però el robot falla, reviseu l’especificació i la lectura abans d’assumir que el codi és correcte. Decidiu si cal continuar o simplificar l’abast.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** proves repetides, hipòtesi revisada i versió d’app/API. Atribuïu qualsevol funció o fragment extern reutilitzat.
 
 ### **Lliçó 8 · Revisar accessibilitat i millorar el sistema complet (45–60 min).**
 
-**Prova d’ús (10 min):** una parella d’un altre equip observa la pista i usa les instruccions sense que els autors facen de guia. Hi ha alternativa si el sensor no distingeix un color? La meta està marcada amb paraula/símbol i color? L’aturada és fàcil de trobar i la ruta no necessita reflexos ràpids? **Retorn (10 min):** reviseu interacció i codi amb frases d’evidència: “he vist…”, “no he sabut…”, “esperava…”. No es valora l’habilitat personal, sinó l’accessibilitat de l’artefacte. **Redisseny (20 min):** cada equip tria un canvi d’estructura, programa o instrucció; actualitza el pseudocodi, aplica una edició cada vegada i torna a executar dos casos. **Revisió crítica (5–20 min):** busqueu un cas esbiaixat (una entrada que no es veu, una única forma de respondre), un sensor que no s’ha calibrat o una afirmació que excedeix les dades. Registreu limitació i compensació.
+#### Fase 1 · Activem i prediem
+
+Una parella d’un altre equip observa la pista i intenta seguir les instruccions sense ajuda. Predigueu quines barreres podrien dificultar l’ús: llegenda poc clara, color difícil de distingir o aturada difícil de trobar.
+
+#### Fase 2 · Explorem i construïm
+
+Comproveu si la meta té paraula o símbol a més de color, si hi ha alternativa quan el sensor no distingeix una marca i si la ruta evita exigir reflexos ràpids.
+
+#### Fase 3 · Expliquem i registrem
+
+Recolliu retorn amb frases d’evidència: «he vist…», «no he sabut…», «esperava…». Valoreu l’accessibilitat de l’artefacte, no l’habilitat personal de qui el prova.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu un canvi d’estructura, programa o instrucció. Actualitzeu el pseudocodi, apliqueu una edició cada vegada i torneu a executar dos casos.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** retorn, canvi i dues proves posteriors. Registreu una possible barrera, un sensor sense calibrar o una afirmació que excedeix les dades, i com ho heu abordat.
 
 ### **Lliçó 9 · Tancar documentació, demostració i rúbrica (45–60 min).**
 
-**Diari tècnic (15 min):** completeu el problema, criteris/restriccions, tres idees, diagrama, mapa de ports, codi comentat, pla i resultats de prova, fallada important, canvi fet, feedback i limitació. **Preparar mostra (15 min):** guió de tres minuts: necessitat; usuari/criteris; construcció; fragment Python clau; taula amb proves repetides; millora; què no resol. Incloeu una forma estàtica o vídeo/simulació si el robot no està disponible, sense presentar-la com una execució real. **Rúbrica d’equip (10 min):** autoapliqueu descriptors publicats ací: estructura i correcció Python; relació maquinari–programari; proves i depuració; accessibilitat/ús; comunicació amb evidències. Cada dimensió té “inicial / en desenvolupament / competent / transferible”, amb una frase que cita una mostra del diari. **Assaig i revisió (5–20 min):** parelles revisen si cada afirmació de presentació té una dada o una observació al darrere.
+#### Fase 1 · Activem i prediem
+
+Reviseu què ha d’entendre l’audiència sobre el repte i predigueu quina evidència sustenta cada afirmació de la presentació.
+
+#### Fase 2 · Explorem i construïm
+
+Completeu el diari amb problema, criteris/restriccions, tres idees, diagrama, ports, codi comentat, pla/resultats de prova, fallada important, canvi, retorn i limitació.
+
+#### Fase 3 · Expliquem i registrem
+
+Prepareu una mostra de tres minuts: necessitat, usuari i criteris, construcció, fragment Python, proves repetides, millora i què no resol. Si el robot no està disponible, useu una imatge estàtica o simulació identificada com a tal.
+
+#### Fase 4 · Apliquem i millorem
+
+Autoapliqueu la rúbrica d’equip en Python, integració física, proves/depuració, accessibilitat i comunicació. Useu nivells inicial, en desenvolupament, competent i transferible amb una evidència concreta del diari.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** diari complet i guió revisat entre parelles. Comproveu que cada afirmació de la presentació té una dada o observació al darrere.
 
 ### **Lliçó 10 · Fira de prototips i reflexió final (45–60 min).**
 
-**Preparar estacions (5 min):** delimiteu espai, carril, càrrega i zona de públic; programeu una demostració curta amb aturada fàcil. **Mostra (20–25 min):** cada equip presenta i demostra almenys un cas d’èxit i una condició que el seu sistema no resol. Els visitants poden preguntar sobre dada, sensor, decisió, mecanisme i prova; no es comparen equips per rapidesa o nombre de peces. **Galeria amb feedback (10 min):** el públic deixa una nota específica basada en allò que ha observat i una pregunta respectuosa. **Auto/coavaluació (10 min):** cada membre explica la seua contribució i una aportació d’una altra persona que ha canviat el projecte. Compareu estimació inicial i final del criteri, no valor personal. **Tancament (5–10 min):** l’equip formula un següent experiment que faria amb més temps i una advertència clara: el model de taula és educatiu, no autònom ni apte per a transportar materials o persones en espais reals.
+#### Fase 1 · Activem i prediem
+
+Delimiteu carril, càrrega i zona de públic i trieu una demostració curta. Predigueu quina condició de prova pot mostrar una limitació del prototip.
+
+#### Fase 2 · Explorem i construïm
+
+Prepareu l’estació i comproveu que l’aturada manual és fàcil de trobar. Manteniu la càrrega lleugera i el recorregut dins de la zona marcada.
+
+#### Fase 3 · Expliquem i registrem
+
+Presenteu almenys un cas d’èxit i una condició que el sistema no resol. Accepteu preguntes sobre dades, sensors, decisions, mecanisme i proves; no compareu equips per rapidesa ni per nombre de peces.
+
+#### Fase 4 · Apliquem i millorem
+
+Recolliu una nota concreta del públic i una pregunta respectuosa. Cada membre explica la seua contribució i una aportació d’una altra persona que haja canviat el projecte.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** demostració, retorn i següent experiment proposat. Compareu estimació inicial i final del criteri, no el valor personal. El model és educatiu, no autònom ni apte per a transportar materials o persones en espais reals.
 
 ## 📦 Producte final i evidències
 

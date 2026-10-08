@@ -63,27 +63,135 @@ Equips de 2–3 persones: programació/lectura del codi, cura del mecanisme i re
 
 ### **Lliçó 1 · Una tasca, moltes accions amb nom (45 min).**
 
-**Activació (8 min):** demaneu que descriguen oralment un gest repetible —per exemple, alçar un cartell i tornar-lo a la posició inicial— i marqueu on reapareixen les mateixes instruccions. Escriviu-les en pseudocodi i pregunteu què canviaria si repetírem el gest amb un altre missatge. **Model (10 min):** compareu una seqüència amb les mateixes línies copiades tres vegades i una seqüència que defineix `saludar()` una vegada i la crida en tres punts. No executeu encara el mecanisme; feu traça en paper per comprovar definició, crida i ordre. **Repte (20 min):** construir una xicoteta aleta/indicador articulat amb un motor SPIKE que faça un senyal d’inici, un senyal de “mostra preparada” i un retorn a la posició inicial. Descomponeu el comportament en `preparar()`, `indicar()` i `tornar()`; definiu-los amb `def` i crideu-los en l’ordre del pseudocodi. Consulteu la Knowledge Base per a ordres de motor compatibles. Proveu primer cada funció amb mecanisme desconnectat o sense càrrega, després amb un moviment curt i lent. **Evidència i conversa (7 min):** dibuixeu les crides com una línia temporal i expliqueu quina instrucció s’executa primer i per què el codi dins una definició no corre fins que la funció és cridada. **Extensió:** canvieu l’ordre de dues crides i predigueu el comportament abans de provar-lo.
+#### Fase 1 · Activem i prediem
+
+**Activació (8 min):** demaneu que descriguen oralment un gest repetible —per exemple, alçar un cartell i tornar-lo a la posició inicial— i marqueu on reapareixen les mateixes instruccions. Escriviu-les en pseudocodi i pregunteu què canviaria si repetírem el gest amb un altre missatge.
+
+#### Fase 2 · Explorem i construïm
+
+**Model (10 min):** compareu una seqüència amb les mateixes línies copiades tres vegades i una seqüència que defineix `saludar()` una vegada i la crida en tres punts. No executeu encara el mecanisme; feu traça en paper per comprovar definició, crida i ordre.
+
+#### Fase 3 · Expliquem i registrem
+
+**Repte (20 min):** construir una xicoteta aleta/indicador articulat amb un motor SPIKE que faça un senyal d’inici, un senyal de “mostra preparada” i un retorn a la posició inicial. Descomponeu el comportament en `preparar()`, `indicar()` i `tornar()`; definiu-los amb `def` i crideu-los en l’ordre del pseudocodi. Consulteu la Knowledge Base per a ordres de motor compatibles. Proveu primer cada funció amb mecanisme desconnectat o sense càrrega, després amb un moviment curt i lent.
+
+#### Fase 4 · Apliquem i millorem
+
+**Evidència i conversa (7 min):** dibuixeu les crides com una línia temporal i expliqueu quina instrucció s’executa primer i per què el codi dins una definició no corre fins que la funció és cridada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Extensió:** canvieu l’ordre de dues crides i predigueu el comportament abans de provar-lo.
 
 ### **Lliçó 2 · Dues pinces, dues funcions de captura (45 min).**
 
-**Pregunta d’investigació:** com pot el mateix programa controlar accessoris amb agafades diferents? Dissenyeu en esbós dues puntes intercanviables —una ampla i lleugera per a una fitxa gran i una més estreta per a una fitxa menuda— sense que cap peça puga caure de la taula. No cal fabricar ambdues si el temps o les peces no ho permeten: una pinça i una palanca de cartó poden representar la segona variant. **Descomposició (8 min):** feu una seqüència com ara esperar ordre, tancar fins a límit segur, indicar captura i obrir. Marqueu quines accions són comunes i quines depenen de la forma de l’accessori. **Construcció i Python (25 min):** creeu dues funcions amb noms que expliquen la diferència (per exemple, `agafar_fitxa_gran()` i `agafar_fitxa_menuda()`) i un programa principal que crida la funció adequada segons una etiqueta triada per l’equip. Compareu aquest disseny amb una llarga còpia de codi duplicat: compteu quines línies canvien i quines es repeteixen. Calibreu cada recorregut amb la pinça buida, sense posar dits en la zona de tancament. **Proves (7 min):** proveu tres vegades una mateixa fitxa amb cada variant; registreu si l’agafa, si llisca, si es deforma i si la deixa al contenidor. **Reflexió:** per què ajuda tindre funcions separades quan cada accessori necessita un moviment distint? En quins casos seria millor compartir una funció comuna i canviar només una dada?
+#### Fase 1 · Activem i prediem
+
+**Pregunta d’investigació:** com pot el mateix programa controlar accessoris amb agafades diferents? Dissenyeu en esbós dues puntes intercanviables —una ampla i lleugera per a una fitxa gran i una més estreta per a una fitxa menuda— sense que cap peça puga caure de la taula. No cal fabricar ambdues si el temps o les peces no ho permeten: una pinça i una palanca de cartó poden representar la segona variant.
+
+#### Fase 2 · Explorem i construïm
+
+**Descomposició (8 min):** feu una seqüència com ara esperar ordre, tancar fins a límit segur, indicar captura i obrir. Marqueu quines accions són comunes i quines depenen de la forma de l’accessori.
+
+#### Fase 3 · Expliquem i registrem
+
+**Construcció i Python (25 min):** creeu dues funcions amb noms que expliquen la diferència (per exemple, `agafar_fitxa_gran()` i `agafar_fitxa_menuda()`) i un programa principal que crida la funció adequada segons una etiqueta triada per l’equip. Compareu aquest disseny amb una llarga còpia de codi duplicat: compteu quines línies canvien i quines es repeteixen. Calibreu cada recorregut amb la pinça buida, sense posar dits en la zona de tancament.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves (7 min):** proveu tres vegades una mateixa fitxa amb cada variant; registreu si l’agafa, si llisca, si es deforma i si la deixa al contenidor.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió:** per què ajuda tindre funcions separades quan cada accessori necessita un moviment distint? En quins casos seria millor compartir una funció comuna i canviar només una dada?
 
 ### **Lliçó 3 · Una funció, entrades diferents: paràmetres (45 min).**
 
-**Activació corporal (7 min):** feu un gràfic humà de preferències amb quatre opcions neutres (per exemple, quin tipus de missatge visual es comprén millor); compteu les respostes sense guardar noms. Relacioneu categories i quantitats amb la necessitat d’enviar dades a una mateixa acció. **Modelatge (10 min):** escriviu una funció de programari general `informar(etiqueta, color)` i crideu-la amb dos conjunts d’arguments. L’alumnat assenyala què és fix i què varia. Contrasteu-la amb una funció sense paràmetres i observeu que definir paràmetres obliga a proporcionar arguments en cridar-la. **Estació SPIKE (20 min):** el sensor llig una de quatre fitxes mat provades; el programa assigna una resposta de la maqueta (posició curta/mitjana/llarga del motor i missatge de consola). Separeu la funció que informa de les dades i la part que llig el sensor: una funció d’actuació rep arguments ja decidits per la regla. Per exemple, el programa pot cridar `indicar(20, "paper")` o `indicar(45, "cartró")`; traduïu les posicions a l’API disponible només després de consultar-la. Incloeu un color sense assignació que no tanque la pinça i mostre “sense lectura”. **Depuració guiada (8 min):** compareu crides amb dos arguments, un argument i arguments intercanviats. Predigueu quines fallen immediatament i quines podrien executar-se però mostrar una etiqueta incorrecta. Registreu definició, crida, error/sortida i correcció. **Eixida:** cada alumne completa “el paràmetre és…, el valor concret que he passat és…”.
+#### Fase 1 · Activem i prediem
+
+**Activació corporal (7 min):** feu un gràfic humà de preferències amb quatre opcions neutres (per exemple, quin tipus de missatge visual es comprén millor); compteu les respostes sense guardar noms. Relacioneu categories i quantitats amb la necessitat d’enviar dades a una mateixa acció.
+
+#### Fase 2 · Explorem i construïm
+
+**Modelatge (10 min):** escriviu una funció de programari general `informar(etiqueta, color)` i crideu-la amb dos conjunts d’arguments. L’alumnat assenyala què és fix i què varia. Contrasteu-la amb una funció sense paràmetres i observeu que definir paràmetres obliga a proporcionar arguments en cridar-la.
+
+#### Fase 3 · Expliquem i registrem
+
+**Estació SPIKE (20 min):** el sensor llig una de quatre fitxes mat provades; el programa assigna una resposta de la maqueta (posició curta/mitjana/llarga del motor i missatge de consola). Separeu la funció que informa de les dades i la part que llig el sensor: una funció d’actuació rep arguments ja decidits per la regla. Per exemple, el programa pot cridar `indicar(20, "paper")` o `indicar(45, "cartró")`; traduïu les posicions a l’API disponible només després de consultar-la. Incloeu un color sense assignació que no tanque la pinça i mostre “sense lectura”.
+
+#### Fase 4 · Apliquem i millorem
+
+**Depuració guiada (8 min):** compareu crides amb dos arguments, un argument i arguments intercanviats. Predigueu quines fallen immediatament i quines podrien executar-se però mostrar una etiqueta incorrecta. Registreu definició, crida, error/sortida i correcció.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Eixida:** cada alumne completa “el paràmetre és…, el valor concret que he passat és…”.
 
 ### **Lliçó 4 · Una estació de triatge automàtica en maqueta (90 min).**
 
-**Repte i criteris (12 min):** programar un prototip que reba una fitxa d’una en una i la porte al contenidor assignat pel codi de colors acordat per la classe. No es tracta d’identificar el material real. Fixeu criteris: no agafar fitxes no assignades; col·locar la fitxa dins una zona marcada; mantindre les peces senceres; respondre amb un indicador comprensible; permetre una aturada manual. Registreu les limitacions abans de construir. **Ideació i maqueta (18 min):** esbosseu dos mecanismes possibles (braç/pinça, porta desviadora o canal accionat); compareu nombre de peces, recorregut i risc d’encallament; seleccioneu-ne un i construïu-lo amb una fitxa de prova, sense reproduir cap model oficial. **Pseudocodi (10 min):** descriviu una volta: esperar activació; llegir color; seleccionar regla; cridar funció de triatge amb arguments; mostrar confirmació o “no reconegut”; esperar nova mostra. **Programa (20 min):** organitzeu funcions per responsabilitat: per exemple, `llegir_mostra()`, `informar_resultat(etiqueta, posicio)` i una rutina d’actuació de cada mecanisme. La lectura del sensor de color, els valors previstos i les ordres del motor depenen de la versió de l’app i han de consultar-se en la Knowledge Base. Manteniu separada la regla escolar de classificació de l’acció física del robot. **Proves (20 min):** creeu una taula amb entrada, resultat esperat, observació i decisió: cada color assignat, un color no assignat, absència de fitxa, peça girada i dos intents seguits. Feu tres assajos per color assignat; compteu encerts sobre intents, errors de lectura, encallaments i temps aproximat, sense presentar el recompte com una certificació. Canvieu només una variable cada vegada (llum, posició del sensor, llindar, geometria o argument). **Tancament (10 min):** expliqueu un error que la funció reusable ha evitat i un límit del sensor que l’equip encara ha de comunicar a l’usuari.
+#### Fase 1 · Activem i prediem
+
+**Repte i criteris (12 min):** programar un prototip que reba una fitxa d’una en una i la porte al contenidor assignat pel codi de colors acordat per la classe. No es tracta d’identificar el material real. Fixeu criteris: no agafar fitxes no assignades; col·locar la fitxa dins una zona marcada; mantindre les peces senceres; respondre amb un indicador comprensible; permetre una aturada manual. Registreu les limitacions abans de construir.
+
+#### Fase 2 · Explorem i construïm
+
+**Ideació i maqueta (18 min):** esbosseu dos mecanismes possibles (braç/pinça, porta desviadora o canal accionat); compareu nombre de peces, recorregut i risc d’encallament; seleccioneu-ne un i construïu-lo amb una fitxa de prova, sense reproduir cap model oficial.
+
+#### Fase 3 · Expliquem i registrem
+
+**Pseudocodi (10 min):** descriviu una volta: esperar activació; llegir color; seleccionar regla; cridar funció de triatge amb arguments; mostrar confirmació o “no reconegut”; esperar nova mostra.
+
+#### Fase 4 · Apliquem i millorem
+
+**Programa (20 min):** organitzeu funcions per responsabilitat: per exemple, `llegir_mostra()`, `informar_resultat(etiqueta, posicio)` i una rutina d’actuació de cada mecanisme. La lectura del sensor de color, els valors previstos i les ordres del motor depenen de la versió de l’app i han de consultar-se en la Knowledge Base. Manteniu separada la regla escolar de classificació de l’acció física del robot.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Proves (20 min):** creeu una taula amb entrada, resultat esperat, observació i decisió: cada color assignat, un color no assignat, absència de fitxa, peça girada i dos intents seguits. Feu tres assajos per color assignat; compteu encerts sobre intents, errors de lectura, encallaments i temps aproximat, sense presentar el recompte com una certificació. Canvieu només una variable cada vegada (llum, posició del sensor, llindar, geometria o argument). **Tancament (10 min):** expliqueu un error que la funció reusable ha evitat i un límit del sensor que l’equip encara ha de comunicar a l’usuari.
 
 ### **Lliçó 5 · Investigar una necessitat de l’entorn escolar (90 min).**
 
-**Exploració (15 min):** trieu amb el centre un flux de materials nets que existisca a l’aula o en una activitat escolar: repartir targetes, ordenar peces reutilitzables o tornar material a safates. No manipuleu residus reals ni fotografieu persones. Si no hi ha temps per a una visita, useu una planta de l’espai o un escenari inventat clarament identificat com a simulació. Escriviu qui fa la tasca, què costa o es confon i quina dada permetria prendre una decisió millor; no convertiu una observació puntual en afirmació sobre tota l’escola. **Defineix i idea (15 min):** formuleu una necessitat en una frase neutral, seleccioneu usuari i condicions d’ús, i redacteu dos criteris mesurables i dues restriccions (temps, peces, estabilitat o accessibilitat). Esbosseu individualment dues solucions abans de consensuar un prototip. **Construcció i funcions (30 min):** munteu una ajuda de taula que classifique o indique el pas d’una fitxa simulada. Decomposeu-la en subproblemes: rebre, detectar o seleccionar, actuar, informar i reiniciar. Escriviu funcions amb noms coherents, paràmetres per a les dades variables i comentaris per explicar decisions no òbvies. Eviteu una funció monolítica que llig sensor, tria categoria, mou motor i imprimeix tot a la vegada. **Pla de prova i revisió (20 min):** prepareu casos normals, frontera/no assignat i repetició; deixeu un marge físic al voltant de l’accessori i una parada manual. Executeu-los, registreu predicció/resultat i canvieu un element per iteració. **Comunicació (10 min):** escriviu una targeta d’ús que explique entrada, resultat, què fer amb “sense lectura” i què el prototip no pot determinar. Si la necessitat s’ha identificat al centre, demaneu a una persona adulta que confirme que la descripció és respectuosa i no conté dades personals.
+#### Fase 1 · Activem i prediem
+
+**Exploració (15 min):** trieu amb el centre un flux de materials nets que existisca a l’aula o en una activitat escolar: repartir targetes, ordenar peces reutilitzables o tornar material a safates. No manipuleu residus reals ni fotografieu persones. Si no hi ha temps per a una visita, useu una planta de l’espai o un escenari inventat clarament identificat com a simulació. Escriviu qui fa la tasca, què costa o es confon i quina dada permetria prendre una decisió millor; no convertiu una observació puntual en afirmació sobre tota l’escola.
+
+#### Fase 2 · Explorem i construïm
+
+**Defineix i idea (15 min):** formuleu una necessitat en una frase neutral, seleccioneu usuari i condicions d’ús, i redacteu dos criteris mesurables i dues restriccions (temps, peces, estabilitat o accessibilitat). Esbosseu individualment dues solucions abans de consensuar un prototip.
+
+#### Fase 3 · Expliquem i registrem
+
+**Construcció i funcions (30 min):** munteu una ajuda de taula que classifique o indique el pas d’una fitxa simulada. Decomposeu-la en subproblemes: rebre, detectar o seleccionar, actuar, informar i reiniciar. Escriviu funcions amb noms coherents, paràmetres per a les dades variables i comentaris per explicar decisions no òbvies. Eviteu una funció monolítica que llig sensor, tria categoria, mou motor i imprimeix tot a la vegada.
+
+#### Fase 4 · Apliquem i millorem
+
+**Pla de prova i revisió (20 min):** prepareu casos normals, frontera/no assignat i repetició; deixeu un marge físic al voltant de l’accessori i una parada manual. Executeu-los, registreu predicció/resultat i canvieu un element per iteració.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Comunicació (10 min):** escriviu una targeta d’ús que explique entrada, resultat, què fer amb “sense lectura” i què el prototip no pot determinar. Si la necessitat s’ha identificat al centre, demaneu a una persona adulta que confirme que la descripció és respectuosa i no conté dades personals.
 
 ### **Lliçó 6 · Idees per millorar i retorn entre equips (45 min).**
 
-**Preparació (8 min):** cada equip deixa un programa curt comentat, una taula amb almenys dos casos, la targeta d’ús i una pregunta oberta. Compartiu només dades simulades i codi necessari per entendre la maqueta; no publiqueu informació del centre. **Revisió (12 min):** un altre equip segueix pseudocodi o prova la maqueta amb el permís de l’equip autor. El retorn descriu evidència amb una pauta: “he observat…”, “esperava…”, “un cas que encara provaria és…”. No es canvia ni es reescriu el projecte d’un altre grup. **Decisió (5 min):** l’equip autor marca quina idea adopta, quina deixa per més avant i amb quina evidència ho justifica. **Redisseny (12 min):** feu una única millora: aclarir un nom, reorganitzar crides, validar un argument, afegir resposta a entrada no assignada o fer més llegible l’indicador. Repetiu el cas que va motivar-la i un cas diferent per comprovar que no s’ha trencat una resposta existent. **Autoavaluació (8 min):** cada persona registra una contribució pròpia, una ajuda que ha rebut, una pràctica de codi que entén millor i una pregunta que queda oberta. Escala privada d’1–3 per a ús del temps i cura del material, amb un objectiu de millora, sense comparar alumnat.
+#### Fase 1 · Activem i prediem
+
+**Preparació (8 min):** cada equip deixa un programa curt comentat, una taula amb almenys dos casos, la targeta d’ús i una pregunta oberta. Compartiu només dades simulades i codi necessari per entendre la maqueta; no publiqueu informació del centre.
+
+#### Fase 2 · Explorem i construïm
+
+**Revisió (12 min):** un altre equip segueix pseudocodi o prova la maqueta amb el permís de l’equip autor. El retorn descriu evidència amb una pauta: “he observat…”, “esperava…”, “un cas que encara provaria és…”. No es canvia ni es reescriu el projecte d’un altre grup.
+
+#### Fase 3 · Expliquem i registrem
+
+**Decisió (5 min):** l’equip autor marca quina idea adopta, quina deixa per més avant i amb quina evidència ho justifica.
+
+#### Fase 4 · Apliquem i millorem
+
+**Redisseny (12 min):** feu una única millora: aclarir un nom, reorganitzar crides, validar un argument, afegir resposta a entrada no assignada o fer més llegible l’indicador. Repetiu el cas que va motivar-la i un cas diferent per comprovar que no s’ha trencat una resposta existent.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Autoavaluació (8 min):** cada persona registra una contribució pròpia, una ajuda que ha rebut, una pràctica de codi que entén millor i una pregunta que queda oberta. Escala privada d’1–3 per a ús del temps i cura del material, amb un objectiu de millora, sense comparar alumnat.
 
 ## 🧪 Evidències, avaluació i producte final
 

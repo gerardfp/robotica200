@@ -42,23 +42,95 @@ Prepareu cartolina, tisores, llapis, una plantilla de dues rodes concèntriques 
 
 Prepareu missatges breus inventats com ara «EL MAPA ESTA AL PUNT BLAU» o instruccions de cerca d'un objecte fictici. Eviteu informació personal, dades de dispositius i qualsevol contrasenya real. En grups diversos, oferiu la roda impresa ja retallada o una taula gran per reduir la càrrega de motricitat fina.
 
-## Seqüència didàctica
+## Seqüència didàctica · quatre sessions de 50 minuts
 
-### Sessió 1 — Missatge, codi i destinatari (50 min)
+### **Sessió 1 · Missatge, codi i destinatari (50 min).**
 
-**Activació (10 min):** presenteu una targeta amb símbols inventats i pregunteu què necessita saber el receptor per interpretar-la. Recolliu idees: una clau compartida, un alfabet, ordre, separació de paraules. **Modelatge (15 min):** codifiqueu conjuntament una paraula amb una taula de substitució simple; una altra parella la descodifica. Introduïu emissor, missatge, codi i receptor com a parts d'un procés comunicatiu, sense equiparar el paper amb Internet. **Repte (20 min):** cada parella crea una clau visual i codifica una instrucció fictícia de fins a sis paraules. **Tancament (5 min):** anoteu quines convencions han hagut d'aclarir.
+#### Fase 1 · Activem i prediem
 
-### Sessió 2 — Roda de Cèsar i depuració (50 min)
+Presenteu una targeta amb símbols inventats i pregunteu què necessita saber el receptor per interpretar-la. Recolliu idees: clau compartida, alfabet, ordre i separació de paraules.
 
-**Construcció (15 min):** munteu la roda amb un alfabet exterior i un interior, amb una finestra clara per llegir correspondències. Trieu un desplaçament acordat, per exemple tres lletres, i manteniu la mateixa direcció en xifrar i desxifrar. **Prova creuada (20 min):** intercanvieu missatges i feu que la parella receptora escriga la regla abans de llegir. Si el resultat no té sentit, reviseu primer alfabet, espais i direcció: això és depuració, no un fracàs. **Conversa matemàtica (10 min):** amb 26 lletres, quants desplaçaments diferents no trivials hi ha? Què passa si el grup canvia la clau però algú conserva una còpia? **Eixida (5 min):** cada alumne dibuixa el pas més propens a error.
+#### Fase 2 · Explorem i construïm
 
-### Sessió 3 — Atacs de joc i límits del codi (50 min)
+Codifiqueu conjuntament una paraula amb una taula de substitució simple i demaneu a una altra parella que la descodifique. Introduïu emissor, missatge, codi i receptor com a parts d’un procés comunicatiu, sense equiparar el paper amb Internet.
 
-Doneu a una tercera parella un missatge xifrat i una pista: provar desplaçaments, buscar una paraula probable o observar repeticions. L'objectiu és veure que una clau amb poques opcions pot explorar-se sistemàticament. No es tracta de competició ni de provar a entrar en cap sistema. Compareu el xifrat de Cèsar amb una substitució inventada: augmentar les combinacions pot dificultar la lectura manual, però no converteix el paper en seguretat moderna. Cada equip afegeix al missatge una nota sobre què ha fet possible recuperar-lo.
+#### Fase 3 · Expliquem i registrem
 
-### Sessió 4 — Privacitat quotidiana i protocol d'aula (50 min)
+Cada parella crea una clau visual i codifica una instrucció fictícia de fins a sis paraules. Anoteu l’alfabet acordat, la separació d’espais i qualsevol convenció que haja calgut aclarir.
 
-Classifiqueu situacions fictícies en tres respostes: compartir amb tothom, compartir només amb persones de confiança o no compartir. Exemples: horari públic d'una activitat, adreça de casa, fotografia d'un company sense permís, codi d'accés del centre. Justifiqueu cada decisió considerant context, consentiment i destinatari; no hi ha una regla que convertisca tota dada en igualment sensible. En grup, redacteu cinc passos per actuar davant d'una petició inesperada: aturar-se, no enviar dades ni obrir enllaços, comprovar qui ho demana per un canal conegut, demanar ajuda a una persona adulta de confiança i comunicar l'incident segons les normes del centre.
+#### Fase 4 · Apliquem i millorem
+
+Intercanvieu les instruccions i reviseu la clau o les convencions si la parella receptora no pot reconstruir-les. Manteniu els missatges inventats i sense informació personal.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina informació necessita el destinatari per recuperar el missatge. **Evidència:** clau visual, missatge codificat i convencions aclarides.
+
+### **Sessió 2 · Roda de Cèsar i depuració (50 min).**
+
+#### Fase 1 · Activem i prediem
+
+Trieu un desplaçament acordat —per exemple, tres lletres— i prediu com es transformaran les primeres lletres. Declareu alfabet i direcció abans de començar.
+
+#### Fase 2 · Explorem i construïm
+
+Munteu la roda amb un alfabet exterior i un interior i una finestra clara per llegir correspondències. Manteniu la mateixa direcció per xifrar i desxifrar.
+
+#### Fase 3 · Expliquem i registrem
+
+Intercanvieu missatges. La parella receptora escriu la regla abans de llegir i registra el resultat. Si el text no té sentit, reviseu alfabet, espais i direcció: és depuració, no un fracàs.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu la versió inicial amb la descodificada i corregiu una ambigüitat de la regla. Amb 26 lletres, compteu quants desplaçaments no trivials hi ha i comenteu què pot passar si algú conserva una còpia de la clau.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Dibuixeu el pas més propens a error i expliqueu com l’heu verificat. **Evidència:** roda, missatge xifrat i descodificació amb una revisió documentada.
+
+### **Sessió 3 · Atacs de joc i límits del codi (50 min).**
+
+#### Fase 1 · Activem i prediem
+
+Doneu a una tercera parella un missatge xifrat i una pista: provar desplaçaments, buscar una paraula probable o observar repeticions. Predigueu què podria revelar el text sense conéixer la clau.
+
+#### Fase 2 · Explorem i construïm
+
+La parella prova les claus possibles o analitza patrons per recuperar el missatge. L’activitat és un joc de paper; no es prova d’accedir a cap sistema ni compte.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu el xifrat de Cèsar amb una substitució inventada. Registreu quantes possibilitats té cada codi i quina pista ha ajudat a llegir el missatge.
+
+#### Fase 4 · Apliquem i millorem
+
+Cada equip afegeix al missatge una nota que explique què ha fet possible recuperar-lo. Compareu si augmentar les combinacions dificulta la lectura manual i què no resol.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu per què una transformació de paper no es converteix en seguretat moderna només perquè siga més difícil de llegir. **Evidència:** missatge recuperat, comparació de codis i nota sobre els límits.
+
+### **Sessió 4 · Privacitat quotidiana i protocol d’aula (50 min).**
+
+#### Fase 1 · Activem i prediem
+
+Classifiqueu situacions fictícies en tres respostes: compartir amb tothom, compartir només amb persones de confiança o no compartir. Useu exemples com horari públic, adreça de casa, fotografia d’un company sense permís i codi d’accés del centre.
+
+#### Fase 2 · Explorem i construïm
+
+Justifiqueu cada decisió considerant context, consentiment i destinatari. No assumiu que tota dada té el mateix nivell de sensibilitat ni demaneu experiències personals.
+
+#### Fase 3 · Expliquem i registrem
+
+En grup, redacteu cinc passos davant d’una petició inesperada: aturar-se; no enviar dades ni obrir enllaços; comprovar qui ho demana per un canal conegut; demanar ajuda a una persona adulta de confiança; comunicar l’incident segons les normes del centre.
+
+#### Fase 4 · Apliquem i millorem
+
+Un altre equip revisa el protocol i comprova que cada pas siga concret, respectuós i aplicable. Reviseu les instruccions que deixen dubtes sobre a qui consultar o què no s’ha de fer.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Presenteu un cartell final sense noms ni exemples identificables i expliqueu una acció segura quan no reconeixeu el destinatari. **Evidència:** classificació de casos, protocol revisat i cartell d’aula.
 
 ## Organització i rols
 

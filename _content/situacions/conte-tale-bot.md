@@ -42,27 +42,91 @@ Proveu en la superfície de l’aula que una casella siga adequada per a un avan
 
 ### **Inventem personatge, lloc i problema (30 min).**
 
-Obriu amb una conversa a partir d’una imatge pròpia o autoritzada d’un paisatge amb aigua, camins i vegetació. Expliqueu que el conte serà imaginari i que no cal conéixer noms d’espècies per a crear-lo. Cada grup tria un personatge de paper, un lloc d’eixida i un destí. Després decideix quin xicotet problema fa necessari el viatge: s’ha perdut una invitació, falta una peça per a la festa o el personatge vol tornar un llibre.
+#### Fase 1 · Activem i prediem
 
-Ordeneu tres pictogrames: «comença», «passa una cosa» i «arriba a una solució». Dicteu o dibuixeu una frase per a cada escena. *Evidència:* guió gràfic amb protagonista, propòsit i tres moments. *Preguntes docents:* «Què vol el personatge? Què canvia al mig del conte? Què sabrà qui l’escolte al final?»
+Obriu una conversa a partir d’una imatge pròpia o autoritzada d’un paisatge amb aigua, camins i vegetació. Expliqueu que el conte serà imaginari i que no cal conéixer noms d’espècies per crear-lo. Cada grup tria un personatge de paper, un lloc d’eixida i un destí.
+
+#### Fase 2 · Explorem i construïm
+
+Decidiu quin problema menut fa necessari el viatge: s’ha perdut una invitació, falta una peça per a la festa o el personatge vol tornar un llibre. Ordeneu tres pictogrames: «comença», «passa una cosa» i «arriba a una solució».
+
+#### Fase 3 · Expliquem i registrem
+
+Dicteu o dibuixeu una frase per a cada escena. Anoteu què vol el personatge, què canvia al mig del conte i què sabrà qui l’escolte al final.
+
+#### Fase 4 · Apliquem i millorem
+
+Intercanvieu els guions gràfics amb un altre equip. Reviseu una escena si no queda clar el propòsit, el canvi o la solució, sense necessitat d’allargar el relat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu que les tres escenes formen una seqüència amb inici, canvi i final. **Evidència:** guió gràfic amb protagonista, propòsit i tres moments.
 
 ### **Convertim el conte en un mapa de ruta (30 min).**
 
-Poseu el mapa en blanc sobre una taula, marqueu inici, pont i destinació, i col·loqueu-hi les targetes de les tres escenes. Primer moveu una fitxa de paper una casella cada vegada. L’alumnat tria les ordres de Tale-Bot i les posa en una tira visual abans de tocar el robot. Identifiqueu cap a on mira al començament i representeu cada gir amb el cos o amb una fletxa gran.
+#### Fase 1 · Activem i prediem
 
-Compareu dues rutes possibles fins al mateix destí i trieu la que siga més fàcil de llegir alhora que manté l’ordre narratiu. *Evidència:* mapa amb les escenes i seqüència d’ordres anticipada. *Preguntes docents:* «Quina ordre travessa el pont? On ha de parar perquè puguem contar la part del mig?»
+Poseu el mapa en blanc sobre la taula i marqueu inici, pont i destinació. Col·loqueu les targetes de les tres escenes i predigueu on s’aturarà el robot per poder contar el moment central.
+
+#### Fase 2 · Explorem i construïm
+
+Moveu primer una fitxa de paper una casella cada vegada. Trieu les ordres de Tale-Bot i poseu-les en una tira visual abans de tocar el robot. Identifiqueu cap a on mira al començament i representeu cada gir amb el cos o amb una fletxa gran.
+
+#### Fase 3 · Expliquem i registrem
+
+Dibuixeu la ruta al mapa i anoteu l’ordre de moviments que connecta cada escena. Una altra parella llig la tira i assenyala on espera cada parada.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu dues rutes possibles fins al mateix destí. Trieu la que siga més fàcil de llegir i mantinga l’ordre narratiu; reviseu una ordre si la fitxa o la tira no coincideix amb el mapa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina ordre travessa el pont i com sabeu que el robot ha arribat a la casella correcta. **Evidència:** mapa amb escenes i seqüència d’ordres anticipada.
 
 ### **Programem, narrem i depurem (30 min).**
 
-Introduïu les ordres de la tira en Tale-Bot i feu una execució curta fins al pont. Compareu la casella real amb la prevista; si hi ha una diferència, reviseu posició, orientació, nombre d’avançaments i girs. Canvieu una instrucció cada vegada i torneu a provar. Assigneu rols de programació, observació i narració, amb rotació breu.
+#### Fase 1 · Activem i prediem
 
-Si la funció de micròfon del model està comprovada i el grup vol usar-la, graveu una sola frase fictícia per escena amb la veu del docent o una veu voluntària amb consentiment. No inclogueu noms, informació personal ni vivències. Escolteu-la una vegada i esborreu-la en acabar; com a alternativa, narreu en directe, mostreu targetes o feu un gest acordat. *Evidència:* ruta depurada i narració representada d’una manera triada. *Preguntes docents:* «Quina instrucció hem revisat? Com podem contar-ho sense enregistrar cap veu?»
+Reviseu la tira d’ordres i predigueu la casella final i la posició del robot després de cada gir. Assigneu rols de programació, observació i narració, amb rotació breu.
+
+#### Fase 2 · Explorem i construïm
+
+Introduïu les ordres en Tale-Bot i feu una execució curta fins al pont. Si el model ho permet i el grup ho tria, prepareu una frase fictícia per a cada escena; l’enregistrament és opcional i es pot substituir per narració en directe, pictogrames o gestos.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu la casella real amb la prevista. Si hi ha una diferència, anoteu posició, orientació, nombre d’avançaments i girs. Registreu quina instrucció s’ha de revisar.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una instrucció cada vegada i torneu a provar. Si s’utilitza el micròfon —després de comprovar que està disponible—, graveu només una frase amb la veu del docent o d’una persona voluntària amb consentiment. No inclogueu noms ni informació personal; escolteu-la una vegada i esborreu-la en acabar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina instrucció heu revisat i mostreu com contar la mateixa escena sense enregistrar cap veu. **Evidència:** ruta depurada i narració representada d’una manera triada.
 
 ### **Presentem el conte a una audiència (30 min).**
 
-Una parella o un altre grup mira el mapa i segueix Tale-Bot sense rebre l’explicació abans d’hora. En cada parada, el grup creador presenta l’escena amb narració, pictograma o una pista sonora opcional. L’audiència ordena després les tres targetes i diu quina pista l’ha ajudada a entendre la història.
+#### Fase 1 · Activem i prediem
 
-Si una escena no s’entén, reviseu-ne la posició, el text oral o el pictograma. Tanqueu amb una frase d’autoavaluació: «Hem canviat… perquè…». Comproveu que qualsevol enregistrament temporal s’ha esborrat i que les veus no s’han compartit fora del grup. *Evidència:* ruta llegible, guió final i una millora justificada per l’audiència. *Preguntes docents:* «Quina part ha sigut més fàcil de seguir? Quina pista ha ajudat a entendre el final?»
+Una parella o un altre grup mira el mapa i prediu quina serà la ruta sense rebre abans l’explicació dels autors.
+
+#### Fase 2 · Explorem i construïm
+
+Executeu Tale-Bot en el mapa. En cada parada, presenteu l’escena amb narració, pictograma o una pista sonora opcional. L’audiència segueix el recorregut i ordena després les tres targetes.
+
+#### Fase 3 · Expliquem i registrem
+
+Demaneu quina pista ha ajudat a entendre la història i quina escena ha sigut més fàcil de seguir. Anoteu el retorn sense valorar l’expressivitat vocal individual ni la longitud del conte.
+
+#### Fase 4 · Apliquem i millorem
+
+Si una escena no s’entén, reviseu-ne la posició al mapa, el text oral o el pictograma. Tanqueu amb la frase «Hem canviat… perquè…» i comproveu que qualsevol gravació temporal s’ha esborrat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Verifiqueu que el públic pot ordenar inici, canvi i final i que les veus no s’han compartit fora del grup. **Evidència:** ruta llegible, guió final i una millora justificada per l’audiència.
 
 ## 📋 Avaluació i evidències
 

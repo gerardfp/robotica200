@@ -37,35 +37,91 @@ Prepareu el tren Coding Express, vies i peces del vostre lot, targetes de direcc
 
 ### **Com funciona el sistema? · How Does It Work?**
 
-Mostreu el tren i pregunteu com creuen que interacciona amb la via i els maons. Dibuixeu una predicció; després observeu què passa sense cap maó, quan el tren no és sobre la via i quan passa per damunt de maons de colors. Identifiqueu el sensor de color de la part inferior i diferencieu les parts físiques (tren, sensor, via, tauleta) del programa de l’app que interpreta el color i configura la resposta. Proveu l’app amb els maons disponibles i comenteu que el maquinari llig el color mentre el programari n’indica la resposta. Amb el tren aturat, tapeu temporalment el sensor amb una cartolina fosca i feu una prova supervisada: prediu si podrà llegir els maons, comproveu-ho a baixa velocitat i retireu la cartolina quan el tren estiga parat.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Mostreu el tren i pregunteu com creuen que interacciona amb la via i els maons. Dibuixeu una predicció sobre què passarà sense maó, fora de la via i quan passe per damunt d’un maó de color.
 
-dibuix abans/després, vocabulari maquinari–programari–sensor–app i explicació de la prova que ha fallat o ha funcionat.
+#### Fase 2 · Explorem i construïm
+
+Observeu el tren en cadascuna d’aquestes condicions. Identifiqueu el sensor de color de la part inferior i diferencieu les parts físiques —tren, sensor, via i tauleta— del programa de l’app.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu l’app amb els maons disponibles i registreu què fa el tren. Expliqueu que el maquinari llig el color i que el programari n’indica la resposta.
+
+#### Fase 4 · Apliquem i millorem
+
+Amb el tren aturat, tapeu temporalment el sensor amb una cartolina fosca i feu una prova supervisada: prediu si podrà llegir els maons, comproveu-ho a baixa velocitat i retireu la cartolina quan el tren estiga parat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dibuix abans/després, vocabulari maquinari–programari–sensor–app i explicació de la prova. Què ha canviat respecte de la predicció?
 
 ### **La bifurcació del barri · Y-Shaped Track.**
 
-Comenceu amb un joc de bitllets: anomeneu almenys tres parades de l’aula o la maqueta, poseu una fitxa de color a cada destinació i doneu un bitllet del mateix color a cada passatger. Verbalitzeu la condició «si el bitllet és de ___, aleshores anem a ___». Després construïu una via Y amb dues o més parades, col·loqueu maons d’acció perquè el tren es puga aturar i, per torns, feu de conductor movent la palanca roja de la via per seleccionar la branca. Una persona comprova si el bitllet, la palanca i la destinació coincideixen; la resta descriuen el trajecte. Com a ampliació, proveu els dos desviaments per crear una tercera branca/Q i useu el maó verd disponible per representar el retorn a altres parades. Compareu la via Y amb una de bucle i una de doble extrem.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Comenceu amb un joc de bitllets: anomeneu almenys tres parades de l’aula o la maqueta, poseu una fitxa de color a cada destinació i doneu un bitllet del mateix color a cada passatger. Predigueu quin ramal correspondrà a cada bitllet.
 
-parelles bitllet–destinació, instrucció condicional i mapa dels camins provats.
+#### Fase 2 · Explorem i construïm
+
+Construïu una via Y amb dues o més parades i col·loqueu maons d’acció perquè el tren es puga aturar. Verbalitzeu la condició «si el bitllet és de ___, aleshores anem a ___».
+
+#### Fase 3 · Expliquem i registrem
+
+Per torns, feu de conductor movent la palanca roja de la via per seleccionar la branca. Una persona comprova si el bitllet, la palanca i la destinació coincideixen; la resta descriuen el trajecte i el representen en un mapa.
+
+#### Fase 4 · Apliquem i millorem
+
+Com a ampliació, proveu els dos desviaments per crear una tercera branca o una Q i useu el maó verd disponible per representar el retorn a altres parades. Compareu la via Y amb una de bucle i una de doble extrem.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** parelles bitllet–destinació, instrucció condicional i mapa dels camins provats. Quines parts de la decisió depenen de la persona que mou l’agulla?
 
 ### **Obres en el camí · Journey—Trouble on the Road.**
 
-Converseu sobre què recorden els senyals i interpreteu els quatre senyals de trànsit inclosos en el set; representeu decisions a escala de maqueta, sense córrer ni simular perills reals. Al costat d’una via Y i de models propis, col·loqueu a l’atzar els maons d’acció. Connecteu el tren a l’app, exploreu-ne els botons i feu-lo circular per torns; quan aparega un problema fictici en l’app o una targeta d’incidència, identifiqueu què ha passat i trieu quin senyal pot ajudar. Proveu la resposta, empreu tots els senyals en una nova ronda i inventeu-ne un de propi amb un model o pictograma; poseu-lo al mapa i justifiqueu-ne la ubicació.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Converseu sobre què recorden els senyals i interpreteu els quatre senyals de trànsit inclosos en el set. Representeu decisions a escala de maqueta, sense córrer ni simular perills reals.
 
-incidència, senyal triat, predicció, resposta observada i explicació de per què la ubicació ajuda. La maqueta no és una guia viària real.
+#### Fase 2 · Explorem i construïm
+
+Al costat d’una via Y i de models propis, col·loqueu a l’atzar els maons d’acció. Connecteu el tren a l’app i exploreu-ne els botons abans de començar el recorregut.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu circular el tren per torns. Quan aparega un problema fictici en l’app o una targeta d’incidència, identifiqueu què ha passat i registreu la predicció, el senyal triat i la resposta observada.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu la resposta, empreu tots els senyals en una nova ronda i inventeu-ne un de propi amb un model o pictograma. Poseu-lo al mapa i justifiqueu-ne la ubicació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** incidència, senyal triat, predicció, resposta observada i explicació de per què la ubicació ajuda. La maqueta no és una guia viària real.
 
 ### **Un mapa per compartir · Story Maps.**
 
-Llegiu un relat breu propi o de lliure ús i identifiqueu-ne personatges, escenari, inici, nus i desenllaç. Ompliu un mapa de conte amb una fila per esdeveniment: què passa, quina acció ha de fer el tren i quin maó o tram de via la provoca. Trieu la forma de la via, col·loqueu els maons necessaris —per exemple, el maó blanc activa o desactiva els llums— i proveu de contar la història seguint el pla. Si la resposta no coincideix amb el que volíeu, depureu una decisió cada vegada (ordre d’escenes, ubicació del maó, instrucció) i torneu a executar-la. En grups, creeu després un relat complet nou; qui necessite suport pot partir d’un mapa parcial amb personatge, lloc i colors d’accions suggerits. Intercanvieu els mapes perquè un altre equip el conte sense explicacions addicionals.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Llegiu un relat breu propi o de lliure ús i identifiqueu-ne personatges, escenari, inici, nus i desenllaç. Predigueu quines accions del tren poden representar els esdeveniments.
 
-mapa d’esdeveniments, seqüència tren–acció–maó, una errada corregida i retorn del grup lector.
+#### Fase 2 · Explorem i construïm
+
+Ompliu un mapa de conte amb una fila per esdeveniment: què passa, quina acció ha de fer el tren i quin maó o tram de via la provoca. Trieu la forma de la via i col·loqueu els maons necessaris; per exemple, el maó blanc activa o desactiva els llums si així ho confirma el kit.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu de contar la història seguint el pla. Registreu si l’acció observada coincideix amb el que volíeu i on es produeix qualsevol diferència.
+
+#### Fase 4 · Apliquem i millorem
+
+Si la resposta no coincideix, depureu una decisió cada vegada —ordre d’escenes, ubicació del maó o instrucció— i torneu a executar-la. Després, creeu en grups un relat nou; qui necessite suport pot partir d’un mapa parcial amb personatge, lloc i colors d’accions suggerits.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Intercanvieu els mapes perquè un altre equip conte la història sense explicacions addicionals. **Evidència:** mapa d’esdeveniments, seqüència tren–acció–maó, una errada corregida i retorn del grup lector.
 
 ## 📋 Avaluació i evidències
 

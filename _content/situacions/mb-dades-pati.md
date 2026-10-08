@@ -26,23 +26,113 @@ El consell escolar demana una observació senzilla del pati: quins llocs tenen m
 
 ### **Sessió 1 · Què és una dada? (What is data?).**
 
-Classifiqueu exemples ficticis d’observacions ambientals, registres i opinions. Diferencieu dades personals, dades agregades i dades de l’entorn. Analitzeu com un ús inadequat pot perjudicar algú i establiu una norma: l’activitat no recull noms, imatges, veus, rutes individuals ni dades de salut.
+#### Fase 1 · Activem i prediem
+
+Presenteu la petició del consell escolar i mostreu tres exemples breus: una lectura de llum, el recompte agregat de targetes i l’opinió «m’agrada aquesta zona». Abans de classificar-los, l’alumnat prediu quins es poden comprovar i quins necessiten una explicació personal.
+
+#### Fase 2 · Explorem i construïm
+
+Classifiqueu targetes fictícies d’observacions ambientals, registres i opinions. Afegiu exemples de dades personals, dades agregades i dades de l’entorn; useu persones inventades i no demaneu a l’alumnat que expose informació pròpia. Cada equip escriu el criteri que ha utilitzat.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu les classificacions i analitzeu un cas fictici d’ús inadequat de dades que podria perjudicar algú. Distingiu l’observació «la placa mostra 120», la interpretació «ací hi ha menys llum» i l’opinió «preferisc aquesta zona»; anoteu quina prova podria revisar cada afirmació.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu què necessita saber el prototip per ajudar amb una pregunta ambiental i elimineu les dades supèrflues. Acordeu una norma de classe: no es recullen noms, imatges, veus, rutes individuals ni dades de salut; les proves se centren en l’entorn i es fan en llocs autoritzats.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** classificació argumentada, tres columnes d’observació/interpretació/opinió i norma de recollida. Comproveu si l’equip identifica una dada que no necessita i explica per què. Pregunta de tancament: «Com pot canviar el significat d’una dada segons qui la use i amb quin propòsit?».
 
 ### **Sessió 2 · Caça de dades (Data treasure hunt).**
 
-Busqueu informació mesurable en punts autoritzats del pati, com llum aproximada, orientació o temperatura estimada. Amb micro:bit, programeu lectures en punts comparables i registreu hora, ubicació genèrica, unitat i condicions. La temperatura llegida per la placa reflecteix aproximadament la del processador i pot diferir de la de l’aire; no l’useu per prendre decisions de salut o seguretat.
+#### Fase 1 · Activem i prediem
+
+Trieu una pregunta ambiental que es puga respondre en dos o tres punts autoritzats del pati, com ara si les lectures de llum canvien entre ombra i sol. Predigueu què hauria de mantindre’s igual per a comparar els punts i quina variació podria alterar la lectura.
+
+#### Fase 2 · Explorem i construïm
+
+Feu una caça de dades amb un mapa senzill i codis de lloc genèrics. Amb micro:bit, programeu lectures en MakeCode o useu el simulador identificant-lo com a tal. Si mesureu temperatura, recordeu que la placa reflecteix aproximadament la temperatura del processador i pot diferir de la de l’aire; no és un termòmetre per a salut o seguretat.
+
+#### Fase 3 · Expliquem i registrem
+
+En cada punt compareu lectures repetides, mantenint orientació i altura semblants. Registreu hora aproximada, ubicació genèrica, unitat i condicions (ombra, núvol, llum pròxima); no anoteu qui hi era. Separeu la lectura observada de la inferència que en feu.
+
+#### Fase 4 · Apliquem i millorem
+
+Si les dades varien molt, repetiu la lectura i reviseu si s’ha mogut la placa o ha canviat la llum natural. Si no disposeu del sensor o del bloc necessari en la versió del kit, feu servir un conjunt fictici i marqueu-lo clarament com a simulat, no com una mesura real.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa de punts, programa o simulació etiquetada, i taula amb repeticions, unitats i condicions. Pregunteu: «Quin patró podem descriure? Què no podem afirmar amb aquests pocs punts?».
 
 ### **Sessió 3 · Dissenyar un gadget (Sensor gadget design).**
 
-A partir de les dades, definiu un públic i una necessitat: un indicador de llum per a una maqueta d’hort o un senyal per saber si una zona de joc està a l’ombra. Dibuixeu entrades, procés i eixides, trieu criteris verificables i indiqueu quin sensor integrat o accessori extern s’utilitzaria. Si el sensor no forma part de la dotació, el prototip queda simulat.
+#### Fase 1 · Activem i prediem
+
+Reviseu el patró de la caça de dades i trieu un públic i una necessitat de maqueta: per exemple, un indicador de llum per a un hort escolar en cartró. Predigueu què hauria de fer l’ajuda en una lectura baixa, intermèdia i alta.
+
+#### Fase 2 · Explorem i construïm
+
+En equips, dissenyeu el gadget amb una activitat desconnectada: una targeta de lectura entra, una regla s’aplica i una icona o missatge ix. Escriviu un algorisme amb repetició per a tornar a llegir el sensor i una selecció per a triar resposta.
+
+#### Fase 3 · Expliquem i registrem
+
+Dibuixeu el diagrama d’entrada–procés–eixida i trieu criteris verificables: resposta llegible, regla justificable, eixida neutral i cap dada personal. Indiqueu quin sensor integrat o accessori extern s’utilitzaria i quines limitacions té.
+
+#### Fase 4 · Apliquem i millorem
+
+Intercanvieu els esbossos amb un altre equip i demaneu-li que execute l’algorisme amb tres targetes de lectura. Reviseu una instrucció ambigua o una eixida sense camí de retorn. Si el sensor no forma part de la dotació, manteniu el prototip com a simulació, sense atribuir-li una lectura real.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** esquema, algorisme amb repetició/selecció i comprovació amb targetes. Comproveu que el disseny respon a una necessitat concreta i que la resposta es pot explicar. Pregunteu: «Què faria el sistema si la lectura quedara entre dos casos?».
 
 ### **Sessió 4 · Dades, condicions i selecció (Data conditions & selection).**
 
-Programeu una resposta a una lectura de sensor amb un llindar triat a partir de proves locals: per exemple, mostrar una icona si la llum és baixa. Compareu valors al voltant del llindar, proveu el comportament en un altre punt i depureu falses alertes. El resultat és un avís informatiu, mai una alarma tèrmica o de seguretat.
+#### Fase 1 · Activem i prediem
+
+Recupereu els criteris del gadget i trieu un llindar justificat per les lectures locals, no un valor universal. Predigueu què hauria de passar per davall, exactament al llindar i per damunt; decidiu quin missatge neutral apareixerà si la lectura és dubtosa.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu una repetició de lectures i una condició que compare la dada amb el llindar, per exemple mostrar una icona si la llum és baixa. Representeu el codi amb pseudocodi o blocs i marqueu on entra la lectura, on es pren la decisió i quina eixida es mostra.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu tres valors —baix, igual al llindar i alt— i registreu lectura, condició activada i icona esperada. Compareu valors al voltant del llindar i expliqueu com canvia l’eixida quan canvia la dada.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu el comportament en un altre punt autoritzat i reviseu falses alertes. Si una ombra o l’orientació altera el resultat, ajusteu el muntatge o el llindar i torneu a passar els tres casos; no amagueu les proves anteriors.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** programa, taula de casos i canvi de depuració justificat. El resultat és un avís informatiu, mai una alarma tèrmica o de seguretat. Pregunteu: «Quines lectures poden fer que la condició es comporte d’una manera inesperada?».
 
 ### **Sessió 5 · Un assistent digital (Digital assistants).**
 
-Construïu un assistent de menú que respon a A/B amb una proposta preprogramada: observar ombra, revisar una planta o triar una ruta de joc. Representeu en un diagrama quines dades usa i quines no. No hi ha micròfon, conversa ni decisió intel·ligent: és una seqüència local amb condicions escrites per l’equip.
+#### Fase 1 · Activem i prediem
+
+Mireu exemples d’assistents digitals i pregunteu quines entrades reben i qui ha escrit les possibles respostes. Predigueu com es podria fer una ajuda local sense micròfon ni connexió: un menú de dues opcions per a l’hort o el joc de pati.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu un assistent de menú que respon a A/B amb una proposta preprogramada: observar l’ombra, revisar una planta o triar una ruta de joc. Escriviu primer les targetes d’opció i assigneu una resposta concreta a cada botó.
+
+#### Fase 3 · Expliquem i registrem
+
+Dibuixeu el mapa d’estats: inici, opció A, opció B i retorn. Indiqueu quines dades usa el programa —botó premut i regla triada— i quines no usa —veu, ubicació individual, identitat o dades de salut—. Expliqueu que les respostes les ha escrit l’equip.
+
+#### Fase 4 · Apliquem i millorem
+
+Una altra parella prova cada botó sense rebre instruccions dels autors i registra si arriba a l’opció prevista. Depureu una eixida sense camí de retorn o un botó sense resposta, i repetiu la prova després del canvi.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** programa, mapa d’estats i registre de prova creuada amb una millora. No hi ha micròfon, conversa ni decisió intel·ligent: és una seqüència local amb condicions escrites per l’equip. Pregunta final: «Què fa que aquesta ajuda siga digital i què continua depenent de les persones que l’han dissenyada?».
 
 ## 🎯 Aprenentatges i vocabulari
 

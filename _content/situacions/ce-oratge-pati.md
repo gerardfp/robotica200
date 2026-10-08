@@ -37,43 +37,113 @@ Prepareu el tren, les vies i els blocs d’acció Coding Express, cartolina, pec
 
 ### **Quatre estacions · Four Seasons (30–45 min).**
 
-Després de llegir un àlbum il·lustrat propi o de lliure ús sobre les estacions, compartiu observacions locals del sol, la temperatura percebuda, la pluja, les plantes i les activitats del pati al llarg de l’any. Classifiqueu complements de joguet o targetes (abric, capell, impermeable, cantimplora) per estació i compteu quants n’hi ha de cada categoria. Repartiu les quatre estacions entre grups i construïu al costat de cada parada del tren un model d’una activitat possible al nostre entorn —plantar a la primavera, buscar ombra en estiu o fer una activitat coberta en dies plujosos. Expliqueu quina observació justifica cada model i com podria canviar en una zona del món amb un clima diferent.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Després de llegir un àlbum il·lustrat propi o de lliure ús sobre les estacions, compartiu observacions locals del sol, la temperatura percebuda, la pluja, les plantes i les activitats del pati al llarg de l’any. Predigueu quins complements poden ser útils en cada estació.
 
-classificació i recompte, quatre escenes i justificació basada en observacions locals.
+#### Fase 2 · Explorem i construïm
+
+Classifiqueu complements de joguet o targetes (abric, capell, impermeable, cantimplora) per estació i compteu quants n’hi ha de cada categoria.
+
+#### Fase 3 · Expliquem i registrem
+
+Repartiu les quatre estacions entre grups i construïu al costat de cada parada del tren un model d’una activitat possible al nostre entorn —plantar a la primavera, buscar ombra en estiu o fer una activitat coberta en dies plujosos.
+
+#### Fase 4 · Apliquem i millorem
+
+Expliqueu quina observació justifica cada model i compareu com podria canviar en una zona del món amb un clima diferent. Reviseu una escena si no queda clar quina estació representa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** classificació i recompte, quatre escenes i justificació basada en observacions locals. Quina observació us ha ajudat a decidir on posar cada complement?
 
 ### **La roda de possibilitats · Probability (30 min).**
 
-Comenceu amb una endevinalla de color i compareu què passa quan hi ha pistes amb una tria sense pistes. Creeu una ruleta de paper segura amb espais acolorits (per exemple, tres blaus i un de cada un dels altres tres colors) o una bossa transparent amb la mateixa distribució. Abans de cada tirada, cada grup prediu quin color eixirà i marca la seua resposta; després fa girar/traure una vegada i registra el resultat en una taula pictogràfica. Després de diverses proves, compteu les marques, compareu freqüències i parleu de quin color és més probable en aquest model perquè té més espais, sense assegurar quin serà el resultat següent. En cinc torns, arreplegueu peces de cada color que haja eixit i useu-les per construir una composició comuna. El tren pot visitar una parada per resultat, però no és un pronosticador.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Comenceu amb una endevinalla de color i compareu què passa quan hi ha pistes amb una tria sense pistes. Abans de cada tirada, cada grup prediu quin color eixirà.
 
-prediccions, registre de cada prova, recompte final i explicació «té més possibilitats perquè…».
+#### Fase 2 · Explorem i construïm
+
+Creeu una ruleta de paper segura amb espais acolorits (per exemple, tres blaus i un de cada un dels altres tres colors) o una bossa transparent amb la mateixa distribució. Marqueu cada predicció en una taula pictogràfica.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu girar la ruleta o traieu una fitxa una vegada i registreu el resultat. Després de diverses proves, compteu les marques i compareu freqüències.
+
+#### Fase 4 · Apliquem i millorem
+
+Expliqueu quin color és més probable en aquest model perquè té més espais, sense assegurar quin serà el resultat següent. En cinc torns, arreplegueu peces de cada color que haja eixit i useu-les per construir una composició comuna. El tren pot visitar una parada per resultat, però no és un pronosticador.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** prediccions, registre de cada prova, recompte final i explicació «té més possibilitats perquè…». El resultat d’una tirada ha confirmat la predicció o només mostra una possibilitat?
 
 ### **Preparem un personatge davant d’un avís · Mr. Bear’s Forecast (60–90 min).**
 
-Converseu sobre per què ajuda una previsió i per què de vegades no coincideix exactament amb el que observem. L’adult mostra una notícia o avís meteorològic oficial, datat i triat per al context local; el grup identifica quin perill general s’hi descriu i quina informació voldria preguntar a una persona experta. Amb una titella o figura de paper, trieu un escenari fictici d’oratge advers i representeu dues parts: què podria preparar el personatge abans i com seguiria les instruccions oficials de les persones adultes si l’episodi arriba. Construïu una escena amb peces, cartó o dibuixos i presenteu-la a un altre equip, que pot fer preguntes. Inventeu també una eina o objecte que ajudaria el personatge dins del model. Aquesta activitat no crea consells d’emergència nous: per a la vida real s’apliquen les instruccions del centre i de les autoritats competents.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Converseu sobre per què ajuda una previsió i per què de vegades no coincideix exactament amb el que observem. L’adult mostra una notícia o avís meteorològic oficial, datat i triat per al context local.
 
-font i data de la informació, preguntes, model de preparació/resposta i explicació del que el model no pot decidir.
+#### Fase 2 · Explorem i construïm
+
+El grup identifica quin perill general s’hi descriu i quina informació voldria preguntar a una persona experta. Amb una titella o figura de paper, trieu un escenari fictici d’oratge advers.
+
+#### Fase 3 · Expliquem i registrem
+
+Representeu dues parts: què podria preparar el personatge abans i com seguiria les instruccions oficials de les persones adultes si l’episodi arriba. Registreu la font i la data de l’avís, les preguntes i les decisions del model.
+
+#### Fase 4 · Apliquem i millorem
+
+Construïu una escena amb peces, cartó o dibuixos i presenteu-la a un altre equip, que pot fer preguntes. Inventeu una eina o objecte que ajudaria el personatge dins del model i reviseu la proposta amb el retorn rebut.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** font i data de la informació, preguntes, model de preparació/resposta i explicació del que el model no pot decidir. Aquesta activitat no crea consells d’emergència: per a la vida real s’apliquen les instruccions del centre i de les autoritats competents.
 
 ### **Què canvia quan arriba el sol? · Playground (30–45 min).**
 
-Llegiu un relat breu sobre un pati amb zona d’arena, gespa i ombra. Amb observació supervisada, compareu una superfície del pati quan rep el sol i una zona semblant quan està a l’ombra; si no és possible eixir o el temps no ho permet, useu fotografies datades o un conjunt d’observacions preparat i identifiqueu-lo com a tal. Registreu què observeu, no toqueu superfícies calentes i no compareu sensacions corporals individuals. En una maqueta, representeu amb colors quines zones reben llum directa i quines queden protegides; expliqueu què us fa pensar que una zona s’escalfa més. Després prediu com canviaria l’ombra en un altre moment del dia i construïu un segon model. El tren serveix per visitar i descriure les zones, no per mesurar-ne la temperatura.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Llegiu un relat breu sobre un pati amb zona d’arena, gespa i ombra. Predigueu quina zona rebrà llum directa i quina pot quedar protegida.
 
-mapa observacional «sol/ombra», model amb llegenda i una predicció diferenciada de l’observació.
+#### Fase 2 · Explorem i construïm
+
+Amb observació supervisada, compareu una superfície del pati quan rep el sol i una zona semblant quan està a l’ombra. Si no és possible eixir, useu fotografies datades o observacions preparades i identifiqueu-les com a tals. No toqueu superfícies calentes ni compareu sensacions corporals individuals.
+
+#### Fase 3 · Expliquem i registrem
+
+Registreu què observeu i representeu en una maqueta, amb colors, quines zones reben llum directa i quines queden protegides. Expliqueu quina observació us fa pensar que una zona s’escalfa més.
+
+#### Fase 4 · Apliquem i millorem
+
+Predigueu com canviaria l’ombra en un altre moment del dia i construïu un segon model per comparar la predicció. El tren serveix per visitar i descriure les zones, no per mesurar-ne la temperatura.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa observacional «sol/ombra», model amb llegenda i una predicció diferenciada de l’observació. Què hem observat directament i què hem predit?
 
 ### **Ombra per a una figureta · Animal Shelter (30–45 min).**
 
-Plantegeu el repte de protegir del sol una figureta d’animal; no s’usen animals reals. Abans de construir, pregunteu com sabrem si hi ha ombra suficient i acordeu un criteri observable: que la figura quede fora del feix de llum directa. En grups de dos o tres, esbosseu i munteu un refugi amb peces i materials corrents. Poseu-lo en una zona il·luminada de l’aula o a l’exterior supervisat, observeu l’ombra i feu un canvi per millorar la protecció. Si el centre disposa d’un termòmetre escolar segur, una persona adulta pot prendre mesures comparables dins/fora del refugi; no és un requisit ni s’infereix la temperatura només mirant el model. Finalment, afegiu una nova condició representada amb targetes —vent o pluja— i adapteu el disseny explicant quin compromís apareix.
+#### Fase 1 · Activem i prediem
 
-*Evidència:*
+Plantegeu el repte de protegir del sol una figureta d’animal; no s’usen animals reals. Abans de construir, pregunteu com sabrem si hi ha ombra suficient i acordeu un criteri observable: que la figura quede fora del feix de llum directa.
 
-esbós, criteri de prova, primera/segona observació i millora explicada.
+#### Fase 2 · Explorem i construïm
+
+En grups de dos o tres, esbosseu i munteu un refugi amb peces i materials corrents. Poseu-lo en una zona il·luminada de l’aula o a l’exterior supervisat.
+
+#### Fase 3 · Expliquem i registrem
+
+Observeu l’ombra i registreu si la figura queda fora de la llum directa. Si el centre disposa d’un termòmetre escolar segur, una persona adulta pot prendre mesures comparables dins i fora del refugi; no és un requisit ni s’infereix la temperatura només mirant el model.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu un canvi per millorar la protecció i repetiu l’observació. Després, afegiu una nova condició representada amb targetes —vent o pluja— i adapteu el disseny explicant quin compromís apareix.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** esbós, criteri de prova, primera i segona observació i millora explicada. El disseny compleix el criteri acordat? Quina prova ho mostra?
 
 ## 📋 Avaluació i evidències
 

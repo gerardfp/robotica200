@@ -48,21 +48,69 @@ Si només hi ha un set, feu torns curts de muntatge i observació amb la resta d
 
 ### **Sessió 1 · Preparem un codi d’avís i pausa.**
 
-Inicieu una conversa sobre estacions que el grup conega: què ens avisa que alguna cosa s’acosta?, com podem saber que és moment d’esperar? No cal imitar moviments físics; feu el joc amb targetes, figures o gestos voluntaris. Acordeu tres senyals: el groc significa «avís» i acompanya el so que el model reprodueix; el blau indica la pausa per a la parada de servei del relat; una targeta de fletxa assenyala que el tren continua. Cada parella posa les targetes en l’ordre del viatge jardí → biblioteca i explica què passarà després de cada senyal.
+#### Fase 1 · Activem i prediem
 
-Abans d’encendre el tren, feu que una altra parella intente llegir la seqüència només amb les targetes. Si hi ha més d’una interpretació possible, simplifiqueu el codi. **Evidència:** seqüència de tres/quatre pictogrames i explicació oral, assenyalada o representada amb peces. **Suport:** oferiu només dues destinacions i dues targetes; **ampliació:** afegiu una tercera parada sense canviar el significat dels símbols.
+Inicieu una conversa sobre estacions que el grup conega: què ens avisa que alguna cosa s’acosta?, com podem saber que és moment d’esperar? No cal imitar moviments físics; feu el joc amb targetes, figures o gestos voluntaris.
+
+#### Fase 2 · Explorem i construïm
+
+Acordeu tres senyals: el groc significa «avís» i acompanya el so que el model reprodueix; el blau indica la pausa per a la parada de servei del relat; una targeta de fletxa assenyala que el tren continua. Cada parella posa les targetes en l’ordre del viatge jardí → biblioteca.
+
+#### Fase 3 · Expliquem i registrem
+
+Expliqueu què passarà després de cada senyal. Representeu la seqüència amb tres o quatre pictogrames i conserveu-la com a codi de referència per a les proves següents.
+
+#### Fase 4 · Apliquem i millorem
+
+Abans d’encendre el tren, feu que una altra parella intente llegir la seqüència només amb les targetes. Si hi ha més d’una interpretació possible, simplifiqueu el codi. Com a suport, oferiu dues destinacions i dues targetes; com a ampliació, afegiu una tercera parada sense canviar el significat dels símbols.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** seqüència de pictogrames i explicació oral, assenyalada o representada amb peces. Quina targeta ha ajudat més a anticipar què passarà i com ho sabem?
 
 ### **Sessió 2 · Provem maons d’acció i construïm la ruta.**
 
-Munteu l’estació i les dues destinacions amb figures de passatgers i una via de doble extrem. Abans de fer una ruta completa, poseu un maó groc en un tram curt i observeu què passa; retireu-lo, registreu el resultat i després repetiu la prova amb el maó blau. En la versió descrita per LEGO, el groc fa sonar l’avís i el blau representa la parada de servei/refill. Compareu allò que s’ha observat amb les targetes de la primera sessió. Si el model del centre respon d’una altra manera, anoteu la diferència i useu el comportament real del set.
+#### Fase 1 · Activem i prediem
 
-Col·loqueu els maons en els llocs que millor expliquen el relat. Abans de cada passada, un infant assenyala la seqüència prevista; un altre observa el tren; un tercer pot descriure què ha passat. Eviteu bloquejar el tren amb les mans o posar-les davant de la via en moviment. **Evidència:** taula visual amb «maó / predicció / què hem vist / on el col·loquem» i una passada del jardí a la biblioteca.
+Munteu l’estació i les dues destinacions amb figures de passatgers i una via de doble extrem. Abans de provar cada maó, pregunteu què penseu que farà i assenyaleu el senyal que s’hi relaciona.
+
+#### Fase 2 · Explorem i construïm
+
+Poseu un maó groc en un tram curt i observeu què passa; retireu-lo i repetiu la prova amb el maó blau. En la versió descrita per LEGO, el groc fa sonar l’avís i el blau representa la parada de servei. Compareu-ho amb les targetes de la primera sessió.
+
+#### Fase 3 · Expliquem i registrem
+
+Completeu una taula visual amb «maó / predicció / què hem vist / on el col·loquem». Si el model del centre respon d’una altra manera, anoteu la diferència i useu com a referència el comportament real del set.
+
+#### Fase 4 · Apliquem i millorem
+
+Col·loqueu els maons en els llocs que millor expliquen el relat jardí → biblioteca. Abans de cada passada, una persona assenyala la seqüència prevista, una altra observa el tren i una tercera descriu què ha passat. Eviteu bloquejar el tren amb les mans o posar-les davant de la via en moviment.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula visual completa i una passada del jardí a la biblioteca. Quina observació ha confirmat la predicció i quina funció encara necessitem comprovar amb el model del centre?
 
 ### **Sessió 3 · Fem un túnel, afegim llum i contem el viatge.**
 
-Construïu un túnel de cartó o useu una targeta de túnel que deixe espai suficient sobre la via. Col·loqueu un maó blanc abans i un després del túnel, si el set els inclou. Predieu què farà la llum del tren en entrar i eixir; feu una sola passada i compareu el resultat amb la predicció. La peça blanca controla la llum del tren en aquest sistema. Si no hi ha túnel o maons blancs, representeu el canvi amb una targeta «llum encesa/apagada» i marqueu-ho com a model de paper.
+#### Fase 1 · Activem i prediem
 
-Completeu una ruta amb avís groc, pausa blava i canvi de llum, afegint la destinació en l’ordre que heu acordat. Un equip narra amb pictogrames o paraules; un altre comprova si cada senyal coincideix amb el moviment observat. Feu una millora final: canviar un maó de lloc, canviar la targeta o aclarir l’ordre. **Evidència:** mapa de ruta, predicció del túnel, registre de resultat i relat final sincronitzat amb la seqüència.
+Construïu un túnel de cartó o useu una targeta de túnel amb espai suficient sobre la via. Predieu què farà la llum del tren quan hi entre i quan n’isca.
+
+#### Fase 2 · Explorem i construïm
+
+Col·loqueu un maó blanc abans i un després del túnel, si el set els inclou. Feu una sola passada i compareu el resultat amb la predicció. La peça blanca controla la llum en aquest sistema; si no hi ha túnel o maons blancs, representeu el canvi amb una targeta «llum encesa/apagada» i identifiqueu-ho com a model de paper.
+
+#### Fase 3 · Expliquem i registrem
+
+Afegiu al mapa el túnel, els maons i el resultat observat. Diferencieu la funció comprovada en el tren físic de la que s’ha representat amb targetes.
+
+#### Fase 4 · Apliquem i millorem
+
+Completeu una ruta amb avís groc, pausa blava i canvi de llum, afegint les destinacions en l’ordre acordat. Un equip narra amb pictogrames o paraules i un altre comprova si cada senyal coincideix amb el moviment observat. Milloreu la ruta canviant un maó de lloc, una targeta o l’ordre.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa de ruta, predicció del túnel, registre de resultat i relat final sincronitzat amb la seqüència. Quina part del viatge hem observat directament i quina hem representat?
 
 ## 📋 Avaluació i evidències
 

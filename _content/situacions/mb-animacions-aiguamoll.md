@@ -39,53 +39,49 @@ Abans de començar, comproveu el procés de transferència USB del centre. La ve
 
 ## 📅 Seqüència didàctica · dues sessions de 50 minuts
 
-### **Sessió 1 · De la placa i el programa a una icona pròpia.**
+### **Sessió 1 · De la placa i el programa a una icona pròpia (50 min).**
 
-*Explorar components (8 min):*
+#### Fase 1 · Activem i prediem
 
-localitzeu matriu LED, botons A/B, pins, connector USB i control de reinici; associeu cada component a una funció d’entrada, eixida o connexió sense desmuntar la placa.
+**Explorem components (8 min).** Localitzeu matriu LED, botons A/B, pins, connector USB i control de reinici; associeu cada component a una funció d’entrada, eixida o connexió sense desmuntar la placa. **Predicció (8 min).** Ordeneu targetes «inici, mostra icona, pausa, mostra una altra imatge» i feu que una parella execute les ordres com si fora el dispositiu. Predigueu què passa si es canvia l’ordre.
 
-*Seqüència desconnectada (8 min):*
+#### Fase 2 · Explorem i construïm
 
-ordeneu targetes “inici, mostra icona, pausa, mostra una altra imatge” i feu que una parella execute les ordres com si fora el dispositiu; prediu què passa si es canvia l’ordre.
+**Transferim un programa (8 min).** Obriu un exemple a MakeCode, executeu-lo al simulador i, si hi ha placa, descarregueu-lo i transferiu-lo per USB. Compareu el que es veu en ambdós casos i registreu qualsevol diferència. **Analitzem i creem (18 min).** Mireu una icona integrada i determineu quines cel·les encén; en una graella 5 × 5, creeu una representació d’un tret —bec, ala, fulla o tija— amb un màxim de 25 píxels. Passeu la graella a blocs LED individuals i preveieu el resultat abans d’executar.
 
-*Transferir un programa (8 min):*
+#### Fase 3 · Expliquem i registrem
 
-obriu un exemple a MakeCode, executeu-lo al simulador i, si hi ha placa, descarregueu-lo i transferiu-lo per USB; compareu el que es veu en ambdós casos i registreu qualsevol diferència.
+Anoteu les funcions dels components, l’ordre triat i la predicció de la icona. Deseu la graella i el programa transferit o simulat perquè es puga comparar el disseny amb l’eixida.
 
-*Analitzar i crear (18 min):*
+#### Fase 4 · Apliquem i millorem
 
-mireu una icona integrada i determineu quines cel·les encén; en graella 5 × 5, creeu una representació d’un tret (bec, ala, fulla o tija) amb un màxim de 25 píxels. Passeu la graella a blocs LED individuals i preveieu el resultat abans d’executar.
+Una parella intenta identificar el tret representat i proposa un píxel que es podria llevar o moure. L’equip modifica la icona només si pot explicar com el canvi ajuda a conservar el tret.
 
-*Galeria i revisió (8 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-una parella intenta identificar el tret i proposa un píxel que es podria llevar o moure. Evidència: esquema dels components, seqüència en targetes, programa transferit o simulat, icona i una revisió basada en interpretació del públic.
+Compareu la predicció amb la matriu i valoreu si el públic ha reconegut el tret. **Evidència:** esquema dels components, seqüència en targetes, programa transferit o simulat, icona i revisió basada en la interpretació del públic.
 
-### **Sessió 2 · Dos fotogrames, un moviment suggerit.**
+### **Sessió 2 · Dos fotogrames, un moviment suggerit (50 min).**
 
-*Construir i predir (10 min):*
+#### Fase 1 · Activem i prediem
 
-dibuixeu en les dues cares d’un disc de cartolina una figura i un canvi menut —per exemple, una au quieta i l’au amb l’ala en una altra posició—. Alineeu el centre de les imatges abans d’enganxar el pal o les nanses de paper; proveu el gir lentament i anoteu quan costa llegir el canvi.
+**Construïm i prediem (10 min).** Dibuixeu en les dues cares d’un disc de cartolina una figura i un canvi menut —per exemple, una au quieta i l’au amb l’ala en una altra posició—. Alineeu el centre de les imatges abans d’enganxar el pal o les nanses de paper; proveu el gir lentament i anoteu quan costa llegir el canvi.
 
-*Storyboard LED (8 min):*
+#### Fase 2 · Explorem i construïm
 
-representeu els dos fotogrames en dues graelles 5 × 5, numerant-los i descrivint què canvia; un company comprova que la diferència siga llegible.
+**Storyboard LED (8 min).** Representeu els dos fotogrames en dues graelles 5 × 5, numerant-los i descrivint què canvia; una altra persona comprova que la diferència siga llegible. **Animació contínua (12 min).** Programeu fotograma 1, pausa, fotograma 2 i pausa dins d’un bucle continu. Executeu-lo en simulador o placa, canvieu només el temps de pausa i compareu si encara es perceben els dos dibuixos. L’objectiu és fer comprensible la seqüència, no buscar el parpelleig més ràpid. **Animació comptada (10 min).** Repetiu la parella de fotogrames un nombre fix de voltes amb un bucle de recompte; després, netegeu la matriu o mostreu una icona final i distingiu aquest comportament del bucle infinit.
 
-*Animació amb forever (12 min):*
+#### Fase 3 · Expliquem i registrem
 
-programmeu mostra del fotograma 1, pausa, fotograma 2, pausa dins d’un bucle continu. Executeu en simulador o placa, canvieu només el temps de pausa i compareu si encara es perceben els dos dibuixos. No cal buscar el parpelleig més ràpid: l’objectiu és fer comprensible la seqüència.
+Registreu l’ordre dels fotogrames, el valor de pausa i el nombre de repeticions. Demaneu a un altre equip que descriga què ha canviat i anoteu una proposta concreta de millora.
 
-*Animació comptada (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-repetiu la parella de fotogrames un nombre fix de voltes amb un bucle de recompte, feu que després la matriu es netege o mostre una icona de final i distingiu aquest comportament del bucle infinit.
+Reviseu una graella o el temps de pausa a partir del retorn. Torneu a executar tant el bucle continu com el comptat per comprovar que la modificació no ha alterat el nombre d’imatges ni el final previst.
 
-*Coavaluació (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-un altre equip respon què ha canviat i suggereix una millora concreta.
-
-*Tancament (5 min):*
-
-valoreu les representacions en paper i LED i registreu quina versió explica millor el moviment i per què. Evidència: taumàtrop, storyboard, dos programes (continu/comptat), comparació de ritmes i una millora provada.
+Compareu les representacions en paper i LED i registreu quina versió explica millor el moviment i per què. **Evidència:** taumàtrop, storyboard, dos programes (continu i comptat), comparació de ritmes i una millora provada.
 
 ## 📋 Criteris d’èxit i evidències
 

@@ -39,47 +39,117 @@ Marqueu una distància de casella constant d’acord amb el desplaçament real d
 
 ### **Obrim la fira i llegim ordres.**
 
-Identifiqueu MatataBot, la torre i la taula; seguiu una seqüència curta d’esquerra a dreta. En una quadrícula original, cerqueu més d’un camí fins a una bandera i distingiu girar de desplaçar-se lateralment.
+#### Fase 1 · Activem i prediem
 
-*Evidència: programa ordenat, predicció i explicació d’un gir.*
+Mostreu MatataBot, la torre i la taula de control. Abans de provar res, demaneu que cada equip prediga què fa cada part i com es mourà el robot amb una seqüència curta.
+
+#### Fase 2 · Explorem i construïm
+
+Seguiu una seqüència d’ordres d’esquerra a dreta. En una quadrícula original, marqueu inici, destinació i bandera, i assageu la ruta amb el dit abans de col·locar les peces.
+
+#### Fase 3 · Expliquem i registrem
+
+Distingiu «gira a l’esquerra» de «mou-te cap a l’esquerra» i registreu el camí amb fletxes o blocs tangibles.
+
+#### Fase 4 · Apliquem i millorem
+
+Busqueu un segon camí que arribe al mateix punt sense creuar una bandera aliena. Compareu les dues seqüències i corregiu una ordre si el recorregut no coincideix amb la predicció.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** programa ordenat, predicció i explicació d’un gir. Quina instrucció descriu una rotació i quina descriu un desplaçament?
 
 ### **El rebost de les formes.**
 
-Classifiqueu targetes d’aliments dibuixats segons la forma geomètrica prominent (triangle, quadrat, cercle o rectangle). Trieu-ne una amb una targeta aleatòria i programeu una ruta fins a la casella corresponent. Si una ruta no funciona, registreu l’orientació i corregiu una sola ordre.
+#### Fase 1 · Activem i prediem
 
-*Evidència: classificació argumentada i seqüència provada.*
+Classifiqueu targetes d’aliments dibuixats segons la forma geomètrica prominent —triangle, quadrat, cercle o rectangle— i expliqueu quina part de la imatge heu utilitzat per a decidir.
+
+#### Fase 2 · Explorem i construïm
+
+Trieu una forma amb una targeta aleatòria i programeu una ruta fins a la casella corresponent. Si voleu usar un dau, deixeu que trie el repte de la ronda, no qui pot participar.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu la forma triada, la seqüència d’ordres i l’orientació inicial del robot abans d’executar el programa.
+
+#### Fase 4 · Apliquem i millorem
+
+Si la ruta no funciona, registreu on s’ha desviat i corregiu una sola ordre. Eviteu que una classificació amb més d’una interpretació es convertisca en una resposta incorrecta: l’equip ha d’explicar el criteri que ha triat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** classificació argumentada i seqüència provada. Quina instrucció heu revisat i quin resultat us ha permés comprovar-la?
 
 ### **Una data que es pot llegir.**
 
-Compareu una xifra escrita a mà amb el traçat que produeix un programa de moviments. En paper quadriculat, descomposeu 0, 1 i 7 en trams; després creeu xifres pròpies de l’aula i proveu on convé repetir moviments amb un bucle. El robot no necessita dibuixar amb retolador: pot recórrer la línia de caselles mentre una persona comprova la forma.
+#### Fase 1 · Activem i prediem
 
-*Evidència: tres xifres amb instruccions i una repetició justificada.*
+Compareu una xifra escrita a mà amb el traçat que podria produir un programa de moviments. Predigueu quins trams es poden representar amb línies rectes i quins canvis d’orientació faran falta.
+
+#### Fase 2 · Explorem i construïm
+
+En paper quadriculat, descomposeu 0, 1 i 7 en trams i convertiu-los en instruccions amb les ordres del kit.
+
+#### Fase 3 · Expliquem i registrem
+
+Registreu els trams, els girs i el nombre d’ordres de cada xifra. Creeu una xifra de l’aula inventada, sense utilitzar una data personal real.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu on convé repetir moviments amb un bucle. El robot no necessita dibuixar amb retolador: pot recórrer la línia de caselles mentre una persona comprova la forma.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** tres xifres amb instruccions i una repetició justificada. Quina part del traçat es repeteix i com ho heu representat?
 
 ### **Triangles que giren.**
 
-Construïu primer un triangle equilàter amb una fitxa i una corda. Predigueu quina peça d’angle cal per fer que el robot gire cap al costat següent: compareu el gir de 120° amb l’angle interior de 60° i expliqueu que el gir del robot és l’angle exterior suplementari. Exploreu després un triangle rectangle o obtusangle en la quadrícula; l’Artist Add-On és opcional i, sense aquest accessori, les longituds es representen en paper.
+#### Fase 1 · Activem i prediem
 
-*Evidència: dibuix anotat que diferencia gir i angle interior.*
+Construïu un triangle equilàter amb una fitxa i una corda. Predigueu quina peça d’angle cal perquè el robot gire cap al costat següent.
+
+#### Fase 2 · Explorem i construïm
+
+Compareu el gir de 120° amb l’angle interior de 60°. Representeu amb una plantilla els tres angles interiors i el gir exterior necessari per a continuar el contorn.
+
+#### Fase 3 · Expliquem i registrem
+
+Expliqueu amb un dibuix que el gir del robot és l’angle exterior suplementari. Anoteu els valors i les peces d’angle triades.
+
+#### Fase 4 · Apliquem i millorem
+
+Exploreu després un triangle rectangle o obtusangle en la quadrícula. L’Artist Add-On és opcional i, sense l’accessori, representeu les longituds en paper; distingiu el traçat calculat del dibuix fet a mà.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dibuix anotat que diferencia gir i angle interior. Quina suma o relació permet comprovar que els valors són coherents?
 
 ### **El cel de la fira.**
 
-En un mural comú, cada equip dissenya una constel·lació amb formes geomètriques i decideix una ruta que connecte les seues estrelles. Amb Artist Add-On poden dibuixar directament sobre paper gran; amb el kit base, marquen la ruta en una graella i completen el mural a mà. Cada grup presenta les ordres, els canvis fets durant les proves i una dada matemàtica del disseny.
+#### Fase 1 · Activem i prediem
 
-*Evidència: constel·lació col·laborativa i demostració comentada.*
+En un mural comú, cada equip dissenya una constel·lació amb formes geomètriques i prediu quina ruta connectarà les seues estrelles sense travessar les d’un altre grup.
+
+#### Fase 2 · Explorem i construïm
+
+Amb Artist Add-On, els equips poden dibuixar directament sobre paper gran. Amb el kit base, marquen la ruta en una graella i completen el mural a mà.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu les ordres i una dada matemàtica del disseny, com el nombre de costats, els girs o la longitud de la ruta en caselles.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu la ruta i reviseu els canvis necessaris per a connectar les estrelles sense interrompre les altres constel·lacions. Combineu les figures en una composició comuna.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Cada grup presenta les ordres i els canvis fets durant les proves. **Evidència:** constel·lació col·laborativa i demostració comentada.
 
 ## 📋 Avaluació i evidències
 
 Recolliu la predicció inicial, el programa tangible, el registre de proves i l’explicació final. Observeu si l’alumnat: classifica formes amb un criteri explícit; ordena moviments i girs; relaciona l’angle exterior de gir amb l’angle interior del triangle; identifica una repetició útil; i revisa el programa a partir del resultat observat. Valoreu també que l’explicació siga comprensible per a un altre equip.
-
-## Desenvolupament dels espais de la fira
-
-**Arribada i orientació:** mostreu les tres parts del Coding Set —MatataBot, torre i taula de control— i feu una ruta de demostració fins a una bandera de paper. Llegiu les ordres d'esquerra a dreta i distingiu «gira a l'esquerra» de «mou-te cap a l'esquerra». Cada equip marca inici i destinació, assaja una ruta amb el dit i compara una segona seqüència que arriba al mateix punt sense creuar una bandera aliena. Així recuperem el sentit introductori de *Hello, Matatalab Robots!* i deixem clares les regles abans de les estacions.
-
-**Rebost geomètric:** useu targetes d'aliments dibuixats i classifiqueu-les per forma prominent, no per categoria nutricional. Presenteu amb cura les formes amb més d'una interpretació: l'alumnat pot explicar quina part observa i triar un altre exemple. En una adaptació del joc oficial *Big Eater*, un dau amb quatre formes i dues cares de pausa/torna a tirar podia regular els torns i les targetes retirades; ací la tria és cooperativa i cap infant perd el torn si no programa a la primera. Si voleu mantindre el dau, feu que indique el repte de la ronda, no qui té dret a participar.
-
-**Taller de xifres:** comenceu comparant una xifra manuscrita i una traçada per moviments sobre quadrícula. La lliçó oficial proposa començar per 1 i que l'alumnat resolga 0 i 7, després usar programes de suport per a altres xifres i buscar repeticions amb blocs de bucle. En aquesta versió, trieu tres xifres segons el temps i el nivell; mesureu el recorregut en caselles i expliqueu quins trams s'han repetit. El repte de data d'aniversari es fa només amb una data fictícia o combinació inventada per no demanar informació personal.
-
-**Geometria i mural:** abans de programar el triangle equilàter, useu cordill per marcar els costats i una plantilla per veure que cada angle interior és de 60°. Després representeu l'angle de gir de la seqüència: el robot necessita un gir exterior de 120° perquè la seua orientació canvie mentre avança. Proveu un angle recte o obtús i compareu el traçat amb la predicció. En la constel·lació, els equips negocien un espai comú i uneixen les figures; qui no disposa d'Artist Add-On traça la ruta amb el robot i completa el dibuix a mà, sense perdre l'objectiu de seqüència i composició.
 
 ## Rotació de grups i retorn
 

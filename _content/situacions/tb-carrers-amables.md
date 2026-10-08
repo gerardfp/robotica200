@@ -35,51 +35,99 @@ Prepareu una graella amb interseccions amples, targetes pròpies de llocs del mu
 
 ## 📅 Seqüència didàctica
 
-### **Escoltem diferents recorreguts.**
-
-Creeu perfils ficticis —una persona que camina, algú que empeny un cotxet o viatja en cadira de rodes, una criatura que va acompanyada— sense assignar necessitats ni revelar dades personals de ningú. Trieu un destí comú i parleu de què fa còmode una ruta.
-
-*Evidència: criteris de ruta triats pel grup.*
-
-### **Construïm el mapa.**
-
-Situeu els llocs i dibuixeu carrers, un encreuament i un pas de vianants. Marqueu barreres fictícies amb peces planes i deixeu una ruta alternativa. Comproveu que cada casella és prou gran i que cap peça bloqueja físicament Tale-Bot.
-
-*Evidència: mapa amb dues opcions de recorregut.*
-
-### **Programem dues opcions.**
-
-En parelles, codifiqueu amb les tecles de moviment una ruta directa i una altra que evite l’obstacle simulat. Abans d’executar, una persona prediu el final i l’altra registra els girs. Canvieu una ordre si el robot no arriba al punt marcat.
-
-*Evidència: programes, predicció i registre de prova.*
-
-### **Fem una proposta per al barri.**
-
-Compareu itineraris segons distància en caselles, nombre de girs i presència d’un pas accessible. Expliqueu quin criteri s’ha prioritzat i com es podria comprovar en un mapa real amb fonts públiques, sense fer una auditoria de carrer sense supervisió.
-
-*Evidència: ruta triada i justificació col·lectiva.*
-
 ## 📋 Avaluació i evidències
 
 Valoreu que l’alumnat puga ordenar ordres, anticipar el resultat, rectificar un error i comparar dues rutes amb criteris explícits. Guardeu el plànol, els programes i una breu explicació de la decisió. No es pressuposa que la maqueta prove l’accessibilitat o la seguretat d’un carrer real.
 
-## Seqüència detallada i conversa de disseny
+## 📅 Seqüència d’aprenentatge · quatre sessions
 
 ### Sessió 1 — Què fa fàcil seguir una ruta? (25–30 min)
 
-Mostreu un mapa fictici amb biblioteca, plaça, parada i punt d'inici. Demaneu que cada equip trie una destinació i explique com la trobaria algú que no coneix el barri. Per evitar estereotips, no assigneu característiques personals a l'alumnat: useu perfils imaginaris com a perspectives de disseny i pregunteu quina informació del mapa ajudaria cada viatge. Trieu dos criteris observables, per exemple nombre de girs i presència d'una zona de pas lliure, i deixeu-los visibles.
+#### Fase 1 · Activem i prediem
+
+Mostreu un mapa fictici amb biblioteca, plaça, parada i punt d’inici. Cada equip tria una destinació i predigueu com la trobaria algú que no coneix el barri.
+
+#### Fase 2 · Explorem i construïm
+
+Creeu perfils ficticis —una persona que camina, algú que empeny un cotxet o viatja en cadira de rodes, una criatura acompanyada— com a perspectives de disseny, sense assignar necessitats a l’alumnat ni demanar experiències personals.
+
+#### Fase 3 · Expliquem i registrem
+
+Parleu de quina informació del mapa ajudaria cada viatge. Trieu dos criteris observables, com nombre de girs i presència d’una zona de pas lliure, i deixeu-los visibles.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu la llegenda del mapa perquè una persona que no coneix el barri puga trobar la destinació. Afegiu un símbol si falta informació per orientar-se.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** criteris triats pel grup i llegenda inicial. Expliqueu què fa còmoda o fàcil de seguir una ruta dins de la maqueta.
 
 ### Sessió 2 — Construïm la maqueta i les alternatives (25–30 min)
 
-En una graella plana, col·loqueu tres llocs i una intersecció. Afegiu una incidència simulada amb una targeta que es puga llevar; no poseu cap barrera davant de les rodes. Dibuixeu una ruta directa i una altra que evita la incidència. Abans d'introduir ordres al robot, seguiu cada ruta amb una fitxa, marqueu els girs i comproveu que la casella d'arribada està ben definida. Si les cruïlles són difícils d'interpretar, feu més ampla la graella o canvieu el símbol.
+#### Fase 1 · Activem i prediem
+
+Trieu biblioteca, plaça, parada i punt d’inici, i prediu per on passaria una ruta directa. Acordeu quina incidència fictícia farà necessari pensar en una alternativa.
+
+#### Fase 2 · Explorem i construïm
+
+En una graella plana, col·loqueu tres llocs i una intersecció. Afegiu una incidència simulada amb una targeta que es puga llevar; no poseu barreres davant de les rodes.
+
+#### Fase 3 · Expliquem i registrem
+
+Dibuixeu una ruta directa i una altra que evite la incidència. Seguiu-les amb una fitxa, marqueu els girs i comproveu que la casella d’arribada està definida.
+
+#### Fase 4 · Apliquem i millorem
+
+Si les cruïlles són difícils d’interpretar, feu més ampla la graella o canvieu el símbol. Comproveu que les peces no bloquegen físicament Tale-Bot.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa amb dues opcions de recorregut i llegenda clara. Indiqueu quina modificació ha fet que el mapa siga més fàcil de llegir.
 
 ### Sessió 3 — Programem, provem i depurem (25–30 min)
 
-Una parella introdueix la seqüència de moviment de Tale-Bot i una altra llegeix la ruta del mapa. Predigueu abans d'iniciar-la on acabarà el robot i compareu després el resultat. Si no arriba, reviseu l'ordre de cada gir, el nombre de passos i l'orientació inicial. Canvieu una instrucció per prova i anoteu quin canvi ha resolt el desajust. El temps que tarda el robot no s'utilitza per comparar equips.
+#### Fase 1 · Activem i prediem
+
+En parelles, codifiqueu una ruta directa i una ruta alternativa amb les tecles de moviment. Abans d’iniciar-les, una persona prediu la casella final i l’altra assenyala els girs.
+
+#### Fase 2 · Explorem i construïm
+
+Introduïu la seqüència al Tale-Bot i demaneu a una altra parella que llija la ruta del mapa. Comproveu l’orientació inicial i el punt de partida.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu on acaba el robot amb la predicció. Anoteu l’ordre dels girs, el nombre de passos i el resultat observat.
+
+#### Fase 4 · Apliquem i millorem
+
+Si no arriba, reviseu l’ordre de cada gir, el nombre de passos o l’orientació. Canvieu una instrucció per prova i registreu quin ajust resol el desajust.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dos programes, prediccions i registre d’una depuració. El temps que tarda el robot no s’utilitza per comparar equips.
 
 ### Sessió 4 — Explica la proposta i els seus límits (25–30 min)
 
-Intercanvieu mapes entre equips i demaneu a les persones que els reben que troben la biblioteca només amb la llegenda. Recolliu preguntes sobre símbols confusos i afegiu una millora. Cada equip presenta la ruta triada, el criteri que ha prioritzat i una cosa que la maqueta no pot comprovar. Si la classe vol continuar, consulteu un mapa públic del municipi amb el docent i compareu representacions, sense declarar que el plànol de paper certifica la seguretat d'un carrer.
+#### Fase 1 · Activem i prediem
+
+Intercanvieu mapes entre equips i demaneu a qui els rep que trobe la biblioteca utilitzant només la llegenda. Predigueu quins símbols poden resultar confusos.
+
+#### Fase 2 · Explorem i construïm
+
+Recolliu les preguntes de l’altre equip i afegiu una millora al mapa o al pas accessible. Compareu les opcions segons distància en caselles, nombre de girs i pas lliure.
+
+#### Fase 3 · Expliquem i registrem
+
+Cada equip presenta la ruta triada i el criteri que ha prioritzat. Anoteu una cosa que la maqueta pot representar i una que no pot comprovar.
+
+#### Fase 4 · Apliquem i millorem
+
+Si la classe vol continuar, consulteu amb la docent un mapa públic del municipi i compareu-ne les representacions. No feu una observació de carrer sense planificació i supervisió del centre.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** ruta justificada i una pregunta per investigar. El plànol de paper no certifica la seguretat ni l’accessibilitat d’un carrer real.
 
 ## Opció amb els mapes interactius de l’Activity Box
 

@@ -28,27 +28,91 @@ El grup dissenya un servei de repartiment de joguina entre un punt de preparaci�
 
 ### **Dissenyem el mapa de repartiment (45 min).**
 
-Dibuixeu una pista tancada i estable amb un punt de càrrega, una parada i una destinació. Marqueu distàncies amb unitats de paper, trams rectes i llocs on el robot podria girar. Col·loqueu una capsa lleugera de paper només com a símbol de paquet: no la fixeu damunt del robot si pot tapar el sensor o desestabilitzar-lo. En plànol, cada equip traça una ruta i prediu quines accions necessitaria.
+#### Fase 1 · Activem i prediem
 
-Parleu de què vol dir «obstacle» en el model i quina informació no pot donar el robot: no sap si una persona vol travessar, si una zona és privada ni si el paquet ha arribat a una persona concreta. *Evidència:* mapa amb recorregut, punts de parada i dos riscos potencials de la maqueta. *Pregunta docent:* «Què pot fer el robot amb una detecció i quina decisió continua sent nostra?»
+Dibuixeu una pista tancada i estable amb un punt de càrrega, una parada i una destinació. Marqueu distàncies amb unitats de paper, trams rectes i punts possibles de gir. Predigueu quines accions necessitaria Codey Rocky per seguir la ruta.
+
+#### Fase 2 · Explorem i construïm
+
+Traceu una ruta en el plànol i col·loqueu una capsa lleugera de paper com a símbol del paquet. No la fixeu damunt del robot si pot tapar el sensor o desestabilitzar-lo. Identifiqueu dos riscos potencials de la maqueta.
+
+#### Fase 3 · Expliquem i registrem
+
+Definiu què vol dir «obstacle» dins del model i anoteu quina informació el robot no pot donar: si una persona vol travessar, si una zona és privada o si el paquet ha arribat a una persona concreta.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el recorregut i amplieu les zones de gir si cal. Afegiu punts d’aturada clars abans de moure el robot.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què pot fer el robot amb una detecció i quina decisió continua sent humana. **Evidència:** mapa amb ruta, punts de parada i riscos potencials.
 
 ### **Establim una línia base (45 min).**
 
-Comproveu el Codey Rocky i l’entorn mBlock 5. Per a usar la detecció d’obstacles del tutorial Makeblock, orienteu cap a davant el sensor IR/color integrat, seguint les instruccions del fabricant; no afegiu sensors que no formen part de la dotació. Creeu un programa de prova curt que inicie el moviment amb el botó A i el pare amb una acció accessible o supervisada. Primer feu-lo circular sense obstacle, a baixa velocitat, en la pista tancada i lliure.
+#### Fase 1 · Activem i prediem
 
-Marqueu el punt d’inici, el temps aproximat i el lloc final. Repetiu la mateixa ruta tres vegades i compareu els resultats. Si la desviació és gran, comproveu superfície, bateria, velocitat i posició abans de canviar el codi. *Evidència:* línia base amb tres registres, velocitat/configuració provada i una observació sobre la variabilitat. *Pregunta docent:* «Quines condicions s’han mantingut igual en les tres proves?»
+Comproveu el Codey Rocky i l’entorn mBlock 5. Orienteu cap endavant el sensor IR/color integrat segons les instruccions del fabricant; no afegiu sensors aliens a la dotació. Predigueu on acabarà el robot en una prova sense obstacles.
+
+#### Fase 2 · Explorem i construïm
+
+Creeu un programa curt que inicie el moviment amb el botó A i el pare amb una acció accessible o supervisada. Feu-lo circular sense obstacle, a baixa velocitat, en una pista tancada i lliure.
+
+#### Fase 3 · Expliquem i registrem
+
+Marqueu el punt d’inici, el temps aproximat i el lloc final. Repetiu la mateixa ruta tres vegades i compareu els resultats, mantenint superfície, bateria, velocitat i posició inicial.
+
+#### Fase 4 · Apliquem i millorem
+
+Si la desviació és gran, comproveu superfície, bateria, velocitat i posició abans de canviar el codi. Repetiu el protocol després de corregir una condició.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Descriviu la variabilitat que s’ha observat i indiqueu quines condicions s’han mantingut igual. **Evidència:** tres registres de línia base i configuració provada.
 
 ### **Provem una condició davant d’obstacles (45 min).**
 
-Afegiu un obstacle gran, tou, estable i visible per al sensor, com una paret baixa de cartró. Programeu una condició: quan el sensor detecta l’obstacle, el robot tria un gir a esquerra o dreta i, després de superar-lo, reprén l’avanç. El tutorial oficial descriu aquesta resposta; la direcció aleatòria pot fer que el resultat varie i no garanteix arribar a una destinació concreta. Feu primer una demostració d’una sola detecció i manteniu les mans fora de la ruta mentre el motor està actiu.
+#### Fase 1 · Activem i prediem
 
-Canvieu una variable cada vegada: posició de l’obstacle, angle o distància inicial. Anoteu si s’ha detectat, si el gir l’ha evitat en aquesta prova i si el programa ha continuat endavant. Incloeu casos en què no detecta o reacciona massa prompte; no els oculteu ni els interpreteu com a negligència de qui programa. *Evidència:* taula de proves amb configuració, resposta esperada, resposta real i incidència. *Pregunta docent:* «Quina prova mostra que el sensor pot fallar? Què faríem llavors si hi haguera una persona?»
+Trieu un obstacle gran, tou, estable i visible per al sensor, com una paret baixa de cartró. Predigueu què farà el robot quan el detecte i recordeu que la direcció aleatòria no garanteix arribar a una destinació.
+
+#### Fase 2 · Explorem i construïm
+
+Afegiu una condició: quan el sensor detecta l’obstacle, el robot tria un gir a esquerra o dreta i després reprén l’avanç. Feu primer una demostració d’una sola detecció i manteniu les mans fora de la ruta mentre el motor està actiu.
+
+#### Fase 3 · Expliquem i registrem
+
+Canvieu una variable cada vegada —posició de l’obstacle, angle o distància inicial— i anoteu configuració, resposta esperada, resposta real i incidència. Incloeu casos sense detecció o amb una reacció massa prompte; no els oculteu ni els atribuïu a negligència de qui programa.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu una condició i torneu a provar la mateixa situació. Si varia l’obstacle, manteniu el registre dels intents perquè es puga comparar cada resultat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Identifiqueu quina prova mostra que el sensor pot fallar i què caldria fer si hi haguera una persona. **Evidència:** taula de proves amb deteccions, falses alarmes i una revisió justificada.
 
 ### **Revisem el servei i comuniquem els límits (45 min).**
 
-Ajusteu el recorregut perquè tinga una zona de gir ampla i cap eixida a terra. Una altra parella executa el mateix protocol sense rebre l’explicació prèvia i comprova si pot reproduir la prova. Reviseu si el programa pot completar el repartiment en més d’una situació i quines fallades requeririen una intervenció humana. Feu una presentació amb el mapa, les dades i una afirmació prudent: per exemple, «en dues de tres proves ha detectat aquesta paret de cartró a aquesta distància».
+#### Fase 1 · Activem i prediem
 
-Tanqueu amb un cartell d’ús responsable: el prototip només funciona dins la pista de prova, sota supervisió i amb obstacles triats pel docent. *Evidència:* programa comentat, plànol revisat, taula de proves i recomanació per a la persona supervisora. *Pregunta docent:* «Què podem afirmar amb les dades i què no podem prometre sobre un robot real?»
+Ajusteu el recorregut perquè tinga una zona de gir ampla i cap eixida a terra. Predigueu quines fallades requeririen una intervenció humana.
+
+#### Fase 2 · Explorem i construïm
+
+Una altra parella executa el mateix protocol sense rebre l’explicació prèvia i comprova si pot reproduir la prova. Manteniu supervisió directa i obstacle triat pel docent.
+
+#### Fase 3 · Expliquem i registrem
+
+Prepareu una presentació amb mapa, dades i una afirmació prudent, com ara «en dues de tres proves ha detectat aquesta paret de cartró a aquesta distància». Separeu l’observació del que no es pot concloure.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el programa o el protocol si l’altra parella no pot reproduir la prova. Afegiu un cartell d’ús: pista tancada, velocitat baixa i supervisió; no és un vehicle segur per a lliuraments reals.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Presenteu la recomanació per a la persona supervisora i expliqueu què les dades permeten afirmar i què no es pot prometre sobre un robot real. **Evidència:** programa comentat, plànol revisat, taula de proves i recomanació.
 
 ## 🧪 Evidències i avaluació
 

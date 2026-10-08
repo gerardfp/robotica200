@@ -33,31 +33,157 @@ Un centre d’interpretació vol una maqueta interactiva que canvie de panell qu
 
 ### **Sessió 1 · Presentar la IA (Introducing AI).**
 
-Analitzeu exemples propers de tecnologia i decidiu quins usen una regla programada i quins aprenen patrons de dades. Construïu una explicació senzilla que deixe clar que la IA és creada i orientada per persones, no és un ésser amb intencions.
+#### Fase 1 · Activem i prediem
+
+Presenteu el centre d’interpretació i la maqueta que voldria canviar de panell quan s’inclina. Abans de parlar d’intel·ligència artificial, cada equip dibuixa com pensa que un dispositiu podria distingir dues orientacions i anota què hauria de preparar una persona perquè funcionara.
+
+#### Fase 2 · Explorem i construïm
+
+Classifiqueu targetes pròpies d’objectes i serveis coneguts —temporitzador, alarma, mapa digital, llum automàtica, calculadora— segons si segueixen una regla escrita o si poden aprendre patrons a partir de dades. Deixeu algunes targetes sense classificar al primer intent perquè l’alumnat puga proposar una pregunta abans de decidir.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu els criteris dels equips: quines proves o informació els han fet classificar cada exemple? Distingiu un sistema que aplica una regla explícita d’un model que ajusta patrons amb exemples. Registreu en un diagrama qui defineix el propòsit, tria les dades i interpreta el resultat.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu les targetes dubtoses després d’escoltar un altre grup i afegiu-hi un exemple local, com ara un indicador de l’aula o del centre. Escriviu una definició de dues frases per a una família visitant i reviseu-la perquè no atribuïsca intencions, emocions ni comprensió humana al model.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** classificació inicial i revisada, diagrama del paper humà i definició breu d’IA. Comproveu que l’alumnat pot descriure amb paraules senzilles què pot fer la IA i identificar una decisió humana del procés. Pregunta de tancament: «Què no podem concloure només perquè un sistema done una resposta?».
 
 ### **Sessió 2 · Trobar patrons en dades (Exploring patterns in data).**
 
-Ordeneu targetes de moviments o orientacions segons regles explícites. Compareu com canvien els grups quan canvia la regla i expliqueu per què una màquina només veu les característiques que el sistema calcula.
+#### Fase 1 · Activem i prediem
+
+Recupereu la classificació de la sessió anterior i pregunteu què vol dir trobar un patró. Cada grup prediu dues maneres diferents d’ordenar un conjunt de targetes amb fletxes, angles dibuixats o orientacions d’una maqueta.
+
+#### Fase 2 · Explorem i construïm
+
+Ordeneu les targetes primer per una regla visible —direcció de la fletxa— i després per una altra —angle aproximat o posició inicial. Feu una tercera classificació amb una targeta que no encaixe clarament en cap grup. No useu fotografies ni moviments identificables de companys: les dades són símbols i posicions de la maqueta.
+
+#### Fase 3 · Expliquem i registrem
+
+Escriviu la regla de cada agrupació i compareu quines targetes canvien de grup quan canvia el criteri. Mostreu un exemple en què dues persones discrepen i expliqueu quina informació addicional faria falta per decidir. Relacioneu-ho amb les característiques numèriques que un sistema pot calcular, no amb el significat que una persona atribueix a un gest.
+
+#### Fase 4 · Apliquem i millorem
+
+Intercanvieu el conjunt de targetes amb un altre equip sense explicar-li la regla. Demaneu que propose una classificació i que assenyale una excepció; després feu explícita la regla i reviseu una targeta si la instrucció era ambigua.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** targetes agrupades sota dues regles, una excepció raonada i una definició de «característica». Pregunteu: «Si canviem la regla, quines targetes canvien de lloc? Quina part ha decidit la persona i quina podria executar una màquina?».
 
 ### **Sessió 3 · Afegir etiquetes i recollir dades (Adding labels and collecting data).**
 
-Definiu categories operatives, per exemple “orientat cap a l’esquerra” i “orientat cap a la dreta”. Registreu mostres amb una micro:bit compatible i CreateAI movent la placa sobre una maqueta. Useu codis anònims, variegeu l’angle de manera controlada i descarteu mostres que no representen cap etiqueta definida. La V2 és necessària per executar després el projecte MakeCode amb el model a la placa, no per a la recollida de dades.
+#### Fase 1 · Activem i prediem
+
+Definiu el propòsit limitat del model: reconéixer l’orientació d’una maqueta i canviar-ne el panell. Acordeu dues etiquetes operatives —per exemple, «inclinada cap a l’esquerra» i «inclinada cap a la dreta»— i una regla per a no etiquetar les posicions intermèdies. Predigueu quines variacions podrien confondre el sistema.
+
+#### Fase 2 · Explorem i construïm
+
+Connecteu una micro:bit compatible a CreateAI segons la guia oficial i practiqueu amb una mostra curta. Fixeu la placa a una base lleugera de la maqueta, no al cos; captureu diversos exemples de cada orientació amb codis de grup que no identifiquen persones. Manteniu constants les condicions al primer conjunt i anoteu angle aproximat i nombre de mostres.
+
+#### Fase 3 · Expliquem i registrem
+
+Reviseu les etiquetes una a una: cada mostra representa realment la classe definida? Marqueu les transicions i les lectures ambigües com a «unknown» o excloeu-les amb una justificació; no les forceu dins d’una classe. Compareu si els grups han enregistrat el mateix moviment amb criteris semblants.
+
+#### Fase 4 · Apliquem i millorem
+
+Si hi ha mostres inconsistents, atureu la captura i corregiu el protocol abans de continuar. Varieu només un factor —angle, velocitat d’inclinació o estabilitat de la base— i afegiu les mostres necessàries per representar una situació que abans faltava. La V2 cal per executar el projecte MakeCode amb el model en la placa, no per recollir dades ni entrenar a CreateAI.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** definicions d’etiqueta, protocol de captura i registre de mostres acceptades, excloses i dubtoses. Comproveu que les categories descriuen la posició de l’objecte, no una identitat, emoció o capacitat. Pregunteu: «Quina decisió de disseny ha afectat les dades que hem recollit?».
 
 ### **Sessió 4 · Entrenar i provar (Training and testing an ML model).**
 
-Separeu mostres d’entrenament i de prova, entreneu el model i completeu una targeta de resultats. Examineu falsos encerts i errors; afegiu dades només després d’identificar quin buit de representació voleu cobrir.
+#### Fase 1 · Activem i prediem
+
+Recupereu el conjunt etiquetat i predigueu quina classe serà més difícil de reconéixer i per què. Reserveu abans d’entrenar una part de les mostres com a prova; no la useu per ajustar el model, per poder comparar-lo amb dades que no ha vist.
+
+#### Fase 2 · Explorem i construïm
+
+Entreneu el model a CreateAI amb les mostres de cada classe. Proveu-lo amb el conjunt reservat i amb orientacions noves de la maqueta. Registreu l’etiqueta esperada, la resposta del model i si la resposta és correcta, una confusió o «unknown».
+
+#### Fase 3 · Expliquem i registrem
+
+Completeu una matriu de confusió de dues classes i anoteu el nombre de proves, no sols un percentatge. Localitzeu falsos encerts i errors i busqueu si comparteixen una condició —per exemple, un angle poc representat— abans de decidir què cal canviar.
+
+#### Fase 4 · Apliquem i millorem
+
+Afegiu dades només després d’identificar quin buit de representació voleu cobrir. Netegeu mostres mal etiquetades o repetides, torneu a entrenar i proveu amb un conjunt nou que continue separat. Compareu la matriu anterior i la nova per veure si una classe millora sense ocultar errors de l’altra.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** separació entrenament/prova, matriu de resultats abans i després, i justificació del canvi. Expliqueu que un millor resultat en poques mostres no demostra que el model funcione en totes les situacions. Pregunteu: «Quin error encara ens faria aturar o no activar la resposta?».
 
 ### **Sessió 5 · Millorar el codi amb el model (Enhancing code with ML).**
 
-Llegiu el projecte MakeCode que usa l’eixida del model com a entrada. Connecteu les dues etiquetes amb instruccions que mostren icones diferents a la placa i afegiu una eixida neutral quan la confiança és baixa o no hi ha moviment reconegut.
+#### Fase 1 · Activem i prediem
+
+Obriu el projecte MakeCode associat a CreateAI i localitzeu on el resultat del model entra al programa. Abans de modificar-lo, predigueu quina icona hauria d’aparéixer per cada orientació i què ha de veure l’usuari si el model no reconeix cap classe.
+
+#### Fase 2 · Explorem i construïm
+
+Llegiu els blocs existents i identifiqueu l’entrada del model, les dues etiquetes i les eixides. Connecteu cada etiqueta amb una icona diferent de la matriu LED que represente una destinació de la maqueta; manteniu una eixida neutral per a «unknown» o absència de moviment.
+
+#### Fase 3 · Expliquem i registrem
+
+Traceu el flux entrada–classificació–resposta amb tres casos de prova. Expliqueu què ocorre quan el model dona una classe coneguda i què passa quan no n’hi ha cap. Reviseu que la pantalla no presente la resposta neutral com si fora una tercera classe apresa.
+
+#### Fase 4 · Apliquem i millorem
+
+Descarregueu el projecte i el model en una micro:bit V2 i proveu-los en la maqueta sense ordinador. Ajusteu el programa si una resposta no és clara i afegiu un control perquè l’usuari puga reiniciar manualment. Si només disposeu d’una altra versió, feu la prova en l’ordinador i marqueu-la explícitament com a simulació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** diagrama de blocs anotat, icones de resposta i registre de la prova física o simulada. Pregunteu: «Quina part és codi amb regles i quina part és el model? Com sap l’usuari que el sistema no ha reconegut l’entrada?».
 
 ### **Sessió 6 · Avaluar el sistema (Evaluating an AI system).**
 
-Proveu la maqueta amb moviments nous fets per persones voluntàries o amb un dispositiu, i registreu errors sense noms. Expliqueu que el sistema integra dades, model, codi i placa; reviseu quines variacions d’orientació fan que perda fiabilitat.
+#### Fase 1 · Activem i prediem
+
+Presenteu la maqueta completa i recordeu que el sistema integra dades, model, codi i placa. Abans de la mostra, cada equip identifica un límit possible i prediu quin cas podria donar una resposta equivocada o cap resposta.
+
+#### Fase 2 · Explorem i construïm
+
+Proveu la maqueta amb orientacions noves del dispositiu i, només amb participació voluntària, amb diferents maneres de moure o subjectar la base. No registreu qui ha provat cada cas; useu un codi d’intent i descriviu només la condició tècnica observada. Oferiu una alternativa de prova amb suport fix si algú no vol o no pot moure el model.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu la classe esperada, la resposta, si hi ha hagut error i quina variació d’orientació hi havia. Compareu els resultats amb el conjunt de prova anterior i reviseu quines diferències poden explicar la pèrdua de fiabilitat. No generalitzeu a partir d’una sola persona ni d’una sola execució.
+
+#### Fase 4 · Apliquem i millorem
+
+Proposeu una millora concreta de dades, muntatge o codi, canvieu-ne només una i repetiu els casos afectats. Si la maqueta no funciona amb una variació, documenteu el límit i preferiu una eixida neutral abans que presentar una predicció dubtosa com a certa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** registre anònim de proves, límit identificat i decisió de redisseny. Expliqueu com interactuen el maquinari, les dades, el model i el codi. Pregunteu: «Qui hauria de decidir si aquest prototip és prou fiable per a una visita?».
 
 ### **Sessió 7 · Diversificar les dades (Strengthening models through adding diverse data).**
 
-Identifiqueu quins angles, ritmes o maneres de subjectar la maqueta falten. Afegiu mostres pertinents amb consentiment, torneu a provar amb un conjunt separat i compareu els resultats. Prepareu una fitxa del model amb propòsit, dades, límits i recomanacions d’ús.
+#### Fase 1 · Activem i prediem
+
+Reviseu els errors de les sessions anteriors i identifiqueu quins angles, ritmes o maneres de subjectar la maqueta falten. Predigueu quina classe podria millorar si s’afegiren exemples d’eixa variació, sense atribuir cap error a una persona o grup concret.
+
+#### Fase 2 · Explorem i construïm
+
+Afegiu mostres pertinents a les classes existents amb participació voluntària i codis anònims, o useu una base mòbil per variar l’orientació sense capturar gestos corporals. Manteniu un conjunt de prova nou i separat; no el barregeu amb les dades que s’usen per entrenar.
+
+#### Fase 3 · Expliquem i registrem
+
+Torneu a entrenar i compareu els resultats amb la matriu anterior. Registreu encerts, confusions i «unknown» per classe, així com quina variació s’ha afegit. Comproveu si la millora d’una classe ha afectat l’altra i expliqueu què no permet concloure el nombre limitat de proves.
+
+#### Fase 4 · Apliquem i millorem
+
+Si persisteix una confusió, reviseu si cal redefinir l’etiqueta, el muntatge o el protocol abans de capturar més mostres. Ajusteu el model només amb les dades d’entrenament i torneu-lo a provar amb el conjunt reservat. Compareu l’accessibilitat de la resposta i manteniu una eixida neutral i el reinici manual.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Prepareu una fitxa del model amb propòsit, classes, dades usades, prova, límits i recomanacions d’ús. **Evidència:** fitxa, matriu comparativa i decisió justificada de conservar o revisar el prototip. La pregunta final és: «Quines persones o situacions encara no hem representat i per què no hauríem d’afirmar que funciona per a tothom?».
 
 ## 🧰 Muntatge i alternativa
 

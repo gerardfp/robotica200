@@ -50,23 +50,69 @@ Prepareu una tira de quatre vinyetes per al conte, targetes amb la mateixa palet
 
 ### **Sessió 1 · Inventem la història de l’erugueta.**
 
-Presenteu un personatge que recorre l’hort del centre. Al principi juga a buscar ombres i fulles; després d’una estona, s’atura, seu i busca companyia. El grup ordena quatre vinyetes i separa un fet observat («s’ha assegut») d’una interpretació possible («potser està cansada», «potser espera algú»). Afegiu diverses hipòtesis i pregunteu quina altra pista ajudaria a entendre la història, sense demanar que ningú parle d’una experiència pròpia.
+#### Fase 1 · Activem i prediem
 
-Trieu dos moments que el tren puga representar i assigneu-los a un comportament que es puga observar en el model. El conte pot acabar amb una pausa, una invitació a jugar o un espai tranquil; no hi ha una resposta emocional correcta. **Evidència:** vinyetes ordenades, un fet i dues interpretacions possibles. **Suport:** proporcioneu vinyetes amb pictogrames ja preparats; **ampliació:** creeu una interpretació diferent a partir de la mateixa escena i justifiqueu-la amb una pista nova.
+Presenteu un personatge fictici que recorre l’hort del centre. Al principi juga a buscar ombres i fulles; després d’una estona, s’atura, seu i busca companyia. Pregunteu què creuen que està passant, sense demanar que ningú parle d’una experiència pròpia.
+
+#### Fase 2 · Explorem i construïm
+
+El grup ordena quatre vinyetes i separa un fet observat («s’ha assegut») d’una interpretació possible («potser està cansada», «potser espera algú»). Afegiu diverses hipòtesis i pregunteu quina altra pista ajudaria a entendre la història.
+
+#### Fase 3 · Expliquem i registrem
+
+Trieu dos moments que el tren puga representar i anoteu quina acció observable del model podria correspondre a cada escena. Manteniu separada la configuració tècnica de la interpretació narrativa.
+
+#### Fase 4 · Apliquem i millorem
+
+Decidiu com acaba el conte: amb una pausa, una invitació a jugar o un espai tranquil. No hi ha una resposta emocional correcta. Com a suport, proporcioneu vinyetes amb pictogrames; com a ampliació, creeu una interpretació diferent de la mateixa escena i justifiqueu-la amb una pista nova.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** vinyetes ordenades, un fet i dues interpretacions possibles. Quina part hem observat en la història i quina hem inferit?
 
 ### **Sessió 2 · Configurem i observem el tren.**
 
-Construïu un tram de via i col·loqueu-hi un maó d’acció de cada color que estiga present. Exploreu primer els botons de l’app i observeu com controlen el personatge. A continuació, canvieu el comportament configurat d’un maó, feu una predicció i passeu el tren per la via. Anoteu quin canvi heu fet i què ha fet el tren; repetiu amb un altre maó i canvieu el rol d’operació perquè més d’una persona puga provar-ho.
+#### Fase 1 · Activem i prediem
 
-Compareu la configuració de l’app, el senyal físic i el resultat observat. La taula pot mostrar que un mateix color ha rebut comportaments diferents en dos equips; no representeu un color com si sempre significara «trist» o «content». La configuració és una regla del sistema i el sentiment és una lectura narrativa del personatge, no un diagnòstic. **Evidència:** dues files de registre amb predicció/configuració/resultat i una decisió de quin moment del conte pot representar cada comportament.
+Construïu un tram curt de via i col·loqueu-hi un maó d’acció de cada color disponible. Abans de cada prova, trieu quin comportament espereu i quin moment del conte podria representar.
 
-Si l’app no ofereix la funció en els dispositius del centre, mostreu amb targetes com s’hauria configurat i feu la passada del tren com una prova diferent; anoteu que el comportament no s’ha canviat dins de l’app. No digueu que el tren ha guardat dades de la configuració si no ho heu verificat amb aquesta versió.
+#### Fase 2 · Explorem i construïm
+
+Exploreu primer els botons de l’app i observeu com controlen el personatge. A continuació, canvieu el comportament configurat d’un maó i passeu el tren per la via. Canvieu el rol d’operació perquè més d’una persona puga provar-ho.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu el canvi fet, la predicció i què ha fet el tren. Compareu la configuració de l’app, el senyal físic i el resultat observat; repetiu amb un altre maó. **Evidència:** dues files de registre amb predicció, configuració i resultat.
+
+#### Fase 4 · Apliquem i millorem
+
+Decidiu quin moment del conte pot representar cada comportament. Si l’app no ofereix la funció, mostreu amb targetes com es configuraria i feu la passada com una prova diferent; anoteu que el comportament no s’ha canviat dins de l’app. No afirmeu que el tren ha guardat una configuració si no ho heu verificat amb aquesta versió.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Un mateix color pot rebre comportaments diferents. No el presenteu com si sempre significara «trist» o «content»: la configuració és una regla del sistema i el sentiment és una interpretació del personatge, no un diagnòstic. Quina dada de la prova és observable i quina part és lectura narrativa?
 
 ### **Sessió 3 · Construïm models i conten entre totes.**
 
-En equips, construïu dos o tres escenaris amb peces, cartó o pictogrames per representar moments diferents de la història. Ajunteu-los en una seqüència amb inici, canvi i final; decidiu en quin punt apareix cada comportament programat. Un equip narra i un altre comprova si el tren passa pel maó indicat i si el model construït ajuda a entendre el relat.
+#### Fase 1 · Activem i prediem
 
-Tanqueu parlant de què podria fer una amistat quan un personatge de ficció està cansat o vol companyia: oferir repòs, preguntar què vol o compartir el joc. Accepteu més d’una resposta i no convertiu les estratègies en obligacions per a l’alumnat. Cada participant pot contar amb veu, targetes, pictogrames, gestos, dispositiu de comunicació o mostrant els models. **Evidència:** història completa, escenaris i una explicació sobre la relació entre configuració de l’app, maó i acció observada.
+Recupereu les vinyetes i els registres anteriors. Decidiu en quin moment de la història hauria d’aparéixer cada comportament configurat i expliqueu què espereu veure.
+
+#### Fase 2 · Explorem i construïm
+
+En equips, construïu dos o tres escenaris amb peces, cartó o pictogrames per a representar moments diferents. Ajunteu-los en una seqüència amb inici, canvi i final.
+
+#### Fase 3 · Expliquem i registrem
+
+Un equip narra i un altre comprova si el tren passa pel maó indicat i si el model construït ajuda a entendre el relat. Anoteu qualsevol diferència entre la predicció i l’acció observada.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu l’ordre de les escenes, la ubicació dels maons o la configuració si el relat no s’entén. Parleu de què podria fer una amistat quan el personatge fictici està cansat o vol companyia: oferir repòs, preguntar què vol o compartir el joc. Accepteu més d’una resposta i no convertiu les estratègies en obligacions per a l’alumnat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** història completa, escenaris i explicació de la relació entre configuració de l’app, maó i acció observada. Cada participant pot contar amb veu, targetes, pictogrames, gestos, dispositiu de comunicació o mostrant els models. Quina decisió ha fet el relat més comprensible?
 
 ## 📋 Avaluació i evidències
 

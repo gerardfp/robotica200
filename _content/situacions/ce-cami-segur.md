@@ -42,27 +42,69 @@ Useu senyals reals només per mirar-los i identificar-los amb fonts educatives f
 
 ### **Observem senyals i acordem el joc segur (40 min).**
 
-Inicieu una conversa curta sobre els senyals que l’alumnat recorda haver vist des d’un vehicle o acompanyat per una persona adulta. No demaneu que descriguen com creuar un carrer; centreu-vos en la funció general de recordar o comunicar informació. Mostreu els quatre senyals de la dotació Coding Express, un per un, i demaneu que n’observen forma i color abans de proposar una interpretació. El docent contrasta les idees amb informació fiable i explicita qualsevol diferència entre la peça de joguina i un senyal real.
+#### Fase 1 · Activem i prediem
 
-Després, feu un joc tranquil de conducció dins d’una zona marcada de taula: les persones mouen una figura o el tren lentament i s’aturen davant d’algunes targetes. Una persona pot fer de coordinadora del trànsit i donar senyals visuals de «continua», «redueix» o «atura’t», sempre com a regles inventades per al joc. Alterneu conducció i observació perquè totes les persones puguen veure què comunica cada targeta.
+Inicieu una conversa curta sobre els senyals que l’alumnat recorda haver vist des d’un vehicle o acompanyat per una persona adulta. No demaneu que descriguen com creuar un carrer; centreu-vos en la funció general de recordar o comunicar informació.
 
-*Evidència:* una targeta amb el senyal observat, interpretació inicial i explicació contrastada o revisada. *Preguntes docents:* «Què ens ajuda a recordar aquest símbol? Quina part és una norma contrastada i quina forma part del nostre joc?»
+#### Fase 2 · Explorem i construïm
+
+Mostreu els quatre senyals de la dotació Coding Express, un per un. Observeu-ne forma i color abans de proposar una interpretació. El docent contrasta les idees amb informació fiable i explica qualsevol diferència entre la peça de joguina i un senyal real.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu una targeta amb el senyal observat, la interpretació inicial i l’explicació contrastada o revisada. Marqueu quines parts són informació comprovada i quines són una regla inventada per al joc.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu un joc tranquil de conducció dins d’una zona marcada de taula: les persones mouen una figura o el tren lentament i s’aturen davant d’algunes targetes. Una persona pot coordinar el trànsit amb senyals visuals de «continua», «redueix» o «atura’t», sempre com a regles inventades. Alterneu conducció i observació perquè totes les persones puguen veure què comunica cada targeta.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** targeta revisada i una explicació de què comunica el símbol. Pregunteu: «Què ens ajuda a recordar aquest símbol? Quina part és una norma contrastada i quina forma part del nostre joc?»
 
 ### **Construïm la bifurcació i investiguem els maons (40 min).**
 
-En grup menut, construïu una via en Y i col·loqueu dos o tres models de barri al costat de cada ramal: plaça, biblioteca o jardí, per exemple. Situeu alguns maons d’acció en llocs variats, registrant-ne la ubicació amb un dibuix senzill. Abans d’engegar el tren, cada equip descriu una ruta completa: origen, bifurcació, ramal triat i destinació. La bifurcació i les vies del set són elements de la maqueta; no les presenteu com una representació exacta d’una carretera.
+#### Fase 1 · Activem i prediem
 
-Exploreu els controls de l’app en torns, d’un botó cada vegada. En passar cada maó, observeu l’efecte real: s’atura, canvia de comportament o no s’aprecia cap canvi? Anoteu «predicció / observació / què pensem ara». Si l’app mostra una incidència o si el docent la proposa amb una targeta, descriviu-la sense dramatitzar-la: una destinació queda fora de servei en el joc, cal visitar una altra parada o el tren s’ha desviat. Cada grup tria una solució i la prova.
+Abans de muntar, cada equip descriu una ruta completa: origen, bifurcació, ramal triat i destinació. Recordeu que les vies i la bifurcació són elements de la maqueta, no una representació exacta d’una carretera.
 
-*Evidència:* mapa de la Y amb destinacions, seqüència de la ruta i registre d’una predicció contrastada amb l’app. *Preguntes docents:* «Quin ramal heu triat i per què? Què ha fet realment el tren després del maó?»
+#### Fase 2 · Explorem i construïm
+
+En grup menut, construïu una via en Y i col·loqueu dos o tres models de barri al costat de cada ramal: plaça, biblioteca o jardí, per exemple. Situeu alguns maons d’acció en llocs variats i registreu-ne la ubicació amb un dibuix senzill.
+
+#### Fase 3 · Expliquem i registrem
+
+Exploreu els controls de l’app en torns, d’un botó cada vegada. En passar cada maó, observeu si el tren s’atura, canvia de comportament o no mostra cap canvi. Anoteu «predicció / observació / què pensem ara».
+
+#### Fase 4 · Apliquem i millorem
+
+Si l’app mostra una incidència o el docent la proposa amb una targeta, descriviu-la sense dramatitzar-la: una destinació queda fora de servei en el joc, cal visitar una altra parada o el tren s’ha desviat. Cada grup tria una solució i la prova.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa de la Y amb destinacions, seqüència de ruta i registre d’una predicció contrastada amb l’app. Pregunteu: «Quin ramal heu triat i per què? Què ha fet realment el tren després del maó?»
 
 ### **Dissenyem un senyal de joc i expliquem la ruta (40 min).**
 
-Useu els quatre senyals de la dotació en més d’un punt del trajecte i observeu si la història continua sent comprensible. Després, inventeu una targeta pròpia amb una forma i un pictograma fàcils de reconéixer; escriviu-hi «senyal del nostre joc» i expliqueu què demana en aquesta maqueta. Col·loqueu-la al punt on creieu que serà útil, executeu la ruta i demaneu a un altre equip que descriga què ha entés abans de veure l’explicació dels autors.
+#### Fase 1 · Activem i prediem
 
-Si el senyal no comunica la idea, canvieu un sol element —posició, contrast o símbol— i torneu a preguntar a un altre observador. Tanqueu amb una narració visual del trajecte: inici, bifurcació, una incidència, decisió i destinació. Cada participant tria si la presenta oralment, amb targetes o amb gestos. Recordeu en conjunt que les peces i les regles creades valen per a la maqueta i no substitueixen l’acompanyament adult ni les normes reals de seguretat viària.
+Useu els quatre senyals de la dotació en més d’un punt del trajecte i prediu si la història continuarà sent comprensible per a un altre equip.
 
-*Evidència:* senyal de joc revisat, relat visual i justificació del lloc on s’ha col·locat. *Preguntes docents:* «Què entén l’altre equip sense que li ho expliquem? Com hem comprovat que el senyal del joc no es confon amb un de real?»
+#### Fase 2 · Explorem i construïm
+
+Inventeu una targeta pròpia amb una forma i un pictograma fàcils de reconéixer. Escriviu-hi «senyal del nostre joc» i expliqueu què demana en aquesta maqueta. Col·loqueu-la al punt on penseu que serà útil.
+
+#### Fase 3 · Expliquem i registrem
+
+Executeu la ruta i demaneu a un altre equip que descriga què ha entés abans de sentir l’explicació dels autors. Registreu en una narració visual el trajecte: inici, bifurcació, incidència, decisió i destinació.
+
+#### Fase 4 · Apliquem i millorem
+
+Si el senyal no comunica la idea, canvieu un sol element —posició, contrast o símbol— i torneu a preguntar a un altre observador. Cada participant pot presentar el recorregut oralment, amb targetes o amb gestos.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** senyal de joc revisat, relat visual i justificació del lloc on s’ha col·locat. Pregunteu: «Què entén l’altre equip sense que li ho expliquem? Com hem comprovat que el senyal del joc no es confon amb un de real?» Recordeu que les peces i les regles creades valen per a la maqueta i no substitueixen l’acompanyament adult ni les normes reals de seguretat viària.
 
 ## 📋 Avaluació i evidències
 

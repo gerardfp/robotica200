@@ -43,15 +43,69 @@ La biblioteca prepara un plànol de rutes per a una jornada escolar simulada. El
 
 ### **Lliçó 1 · Orientar-se sense volar (60–90 min).**
 
-Obriu amb dues preguntes: com sabem si un moviment és precís i què pot revelar-ne un gràfic? Cada alumne anota una hipòtesi. En dos minuts, construïu amb un màxim de deu peces un model menut amb davant, darrere, dalt i baix; useu-lo per representar una inclinació de nas (pitch), una inclinació lateral (roll), un gir sobre l’eix vertical (yaw) i dues combinacions. Després munteu un marc propi amb nansa que subjecte el hub sense tapar la matriu de llum i marqueu-ne el davant. Connecteu-lo per USB o Bluetooth, obriu el gràfic de línia de l’app SPIKE i configureu el flux de dades d’orientació. Amb el hub en posició inicial estable i la matriu orientada cap a l’alumnat, programeu una prova de deu segons que represente un recorregut recte amb un obstacle baix de cartó: eleveu i abaixeu el davant una sola vegada mentre avanceu suaument, com si el sobrevolàreu. Compareu la predicció dibuixada amb la corba de pitch i assenyaleu-ne el pic; repetiu el moviment a una velocitat diferent i observeu com canvia la forma del traç. L’alumnat que necessite una entrada més simple pot fer la mateixa prova subjectant directament el hub, sense construir el marc; manteniu el programa ajustat a la posició del model. El gràfic registra orientació, no altura ni posició real. No llanceu, sacsegeu ni deixeu caure el hub.
+#### Fase 1 · Activem i prediem
+
+Obriu amb dues preguntes: com sabem si un moviment és precís i què pot revelar-ne un gràfic? Cada alumne anota una hipòtesi sobre la informació que podria donar una corba d’orientació.
+
+#### Fase 2 · Explorem i construïm
+
+Amb un màxim de deu peces, construïu un model amb davant, darrere, dalt i baix. Representeu pitch (inclinació del davant), roll (inclinació lateral), yaw (gir sobre l’eix vertical) i dues combinacions. Munteu després un marc amb nansa que subjecte el hub sense tapar la matriu i marqueu-ne el davant.
+
+#### Fase 3 · Expliquem i registrem
+
+Connecteu el hub per USB o Bluetooth, obriu el gràfic de línia de l’app SPIKE i configureu el flux de dades d’orientació. Dibuixeu la predicció abans de començar i fixeu una posició inicial estable, amb la matriu orientada cap a l’alumnat.
+
+#### Fase 4 · Apliquem i millorem
+
+Programeu una prova de deu segons que represente un trajecte recte amb un obstacle baix de cartó. Eleveu i abaixeu el davant una vegada mentre avanceu suaument. Compareu la predicció amb la corba de pitch, assenyaleu-ne el pic i repetiu a una altra velocitat. Qui necessite una entrada més simple pot subjectar directament el hub; manteniu el programa ajustat a la posició del model.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** hipòtesi, dibuix del moviment i dues corbes anotades. El gràfic registra orientació, no altura ni posició real. No llanceu, sacsegeu ni deixeu caure el hub. Què heu pogut observar i quina dada faria falta per saber la ubicació exacta?
 
 ### **Lliçó 2 · Llegir una ruta a partir de dades (60–90 min).**
 
-Prepareu sobre una taula dos carrils paral·lels d’anada i tornada, d’uns dos metres de llarg, amb obstacles baixos de cartó i una zona lliure als costats. Abans de moure el model, dibuixeu la ruta i prediu on caldrà fer pitch per passar per damunt d’un obstacle i yaw per girar al carril de tornada; recordeu que el hub és un simulador manual i que el seu angle no és la posició del model. Ajusteu el programa del gràfic perquè registre yaw al llarg del temps, manteniu la mateixa posició inicial i feu una passada contínua, lenta i segura; marqueu en el registre els moments de gir i relacioneu-los amb els canvis de la corba. Després afegiu pitch o roll al gràfic per a una segona prova i compareu com es combinen els moviments. Com a repte de programació, definiu una condició calibrada que mostre un senyal quan yaw o pitch supera un llindar acordat; proveu una vegada per sota, una en el llindar i una per damunt per revisar la frontera. Intercanvieu gràfics amb una altra parella perquè reproduïsca el patró de moviments i expliqueu on el traç és ambigu. Com a extensió matemàtica, trieu un tram quasi recte del gràfic, estimeu-ne el pendent amb dos punts (canvi d’angle/temps) i compareu-lo amb una segona prova; no extrapoleu el pendent a tot el recorregut. Un gràfic d’orientació pot suggerir un gir o una inclinació, però per si sol no revela la ubicació exacta, l’altura ni l’obstacle; indiqueu quina dada addicional faria falta.
+#### Fase 1 · Activem i prediem
+
+Prepareu dos carrils paral·lels d’anada i tornada, d’uns dos metres, amb obstacles baixos de cartó i espai lliure als costats. Dibuixeu la ruta i prediu on caldrà pitch per superar l’obstacle i yaw per girar.
+
+#### Fase 2 · Explorem i construïm
+
+Useu el hub com a simulador manual; el seu angle no és la posició del model. Configureu el gràfic per registrar yaw, manteniu una posició inicial comuna i feu una passada lenta i contínua. Marqueu els moments de gir al registre i relacioneu-los amb la corba.
+
+#### Fase 3 · Expliquem i registrem
+
+Afegiu pitch o roll en una segona prova i compareu els moviments. Intercanvieu els gràfics amb una altra parella perquè reproduïsca el patró. Anoteu quins trams són ambigus i quina interpretació proposa cada equip.
+
+#### Fase 4 · Apliquem i millorem
+
+Definiu una condició calibrada que mostre un senyal quan yaw o pitch supera un llindar. Proveu un valor per sota, un en el llindar i un per damunt. Com a extensió, estimeu el pendent d’un tram quasi recte amb dos punts (canvi d’angle/temps) i compareu-lo amb una segona prova.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** ruta prevista, gràfics amb girs marcats, tres casos de llindar i pendent estimat. Un gràfic d’orientació pot suggerir un gir o inclinació, però no revela per si sol ubicació, altura ni obstacle. Quina dada addicional faria falta? No extrapoleu el pendent a tot el recorregut.
 
 ### **Lliçó 3 · Comptar destinacions amb variables (90 min).**
 
-Presenteu cinc safates de devolució fictícies, cadascuna identificada amb color i símbol, i una sisena safata de revisió. En una primera ronda sense codi, cada equip rep deu targetes de préstec simulades, escriu pseudocodi que les classifica i anota quantes n’arriben a cada destinació; compareu com canvia el resultat quan es modifica l’ordre. Després creeu variables de nom clar —`comptador_blau`, `comptador_verd`, `comptador_groc`, `comptador_roig`, `comptador_lila` i `revisio_manual`— i establiu-les totes a zero a l’inici del programa. Amb el sensor de color, llegiu les targetes d’una en una; repetiu deu lectures, sumeu una unitat al comptador adequat i envieu qualsevol color no previst a revisió manual. Abans de provar, feu una execució de taula amb la mateixa seqüència per a poder comparar els valors finals. Afegiu comentaris, compareu si el codi ha comptat cada lectura una sola vegada i depureu una errada introduïda expressament (per exemple, oblidar reiniciar una variable). Com a extensió, convertiu la ronda en un joc fictici d’organització del bibliobús: la variable `punts` comença a zero, una categoria suma un punt, una altra en suma dos i una etiqueta de retorn incorrecte en resta un; l’equip ha d’explicar els valors assignats i validar el marcador amb una seqüència coneguda. Useu els comptadors de l’app per veure els valors i el so del hub com a confirmació opcional; no feu servir dades de préstecs reals ni noms d’alumnes.
+#### Fase 1 · Activem i prediem
+
+Presenteu cinc safates de devolució fictícies, identificades amb color i símbol, i una sisena safata de revisió. Cada equip classifica deu targetes simulades sense codi, anota quantes n’arriben a cada destinació i prediu què canviaria si s’alterara l’ordre.
+
+#### Fase 2 · Explorem i construïm
+
+Escriviu pseudocodi per classificar les targetes i preparar una resposta de revisió per als casos no previstos. Manteniu símbols a més dels colors perquè la classificació no depenga només de la percepció cromàtica.
+
+#### Fase 3 · Expliquem i registrem
+
+Definiu i inicialitzeu a zero `comptador_blau`, `comptador_verd`, `comptador_groc`, `comptador_roig`, `comptador_lila` i `revisio_manual`. Abans d’executar el programa, feu una traça de taula amb la mateixa seqüència i anoteu els valors finals esperats.
+
+#### Fase 4 · Apliquem i millorem
+
+Llegiu les targetes d’una en una amb el sensor de color. Repetiu deu lectures, sumeu una unitat al comptador corresponent i envieu qualsevol color desconegut a revisió manual. Compareu els resultats amb la traça, afegiu comentaris i depureu una errada controlada, com oblidar reiniciar una variable.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** codi comentat, traça de deu targetes i recompte final amb casos desconeguts. Com a ampliació, creeu un joc fictici de bibliobús amb `punts`: una categoria suma un punt, una altra dos i un retorn incorrecte en resta un. Valideu-lo amb una seqüència coneguda. No useu préstecs reals ni noms d’alumnes; el so del hub és una confirmació opcional.
 
 ![Hub SPIKE Prime connectat a un sensor de color que llig una fitxa blava davant de cinc safates de color i una safata grisa de revisió.](../../_assets/imatges/sa-sp-variables-comptadors.webp)
 
@@ -59,7 +113,25 @@ _Cada lectura actualitza un comptador amb nom; el color imprevist s’envia a re
 
 ### **Lliçó 4 · Distància, velocitat i representació gràfica (90 min).**
 
-Comenceu amb dues rodes unides per un eix: feu-les rodar amb una empenta suau i estimeu el recorregut sense regle, per exemple amb rajoles o passos; després comproveu la idea amb una cinta mètrica. Munta cada equip un xicotet carretó propi amb rodes lliures, una fitxa blanca i negra en una roda, el sensor de color orientat al marcador i el sensor de força accessible a la part superior. Mesureu la circumferència de la roda real almenys tres vegades i calculeu-ne la mitjana. Connecteu el hub a l’app SPIKE, activeu les variables i el gràfic; el programa espera el toc al sensor de força, registra el temps i el sensor de color compta els cicles del marcador mentre el vehicle avança. En una zona de taula delimitada i buida, premeu el sensor, deixeu anar el carretó amb una empenta controlada i pareu el registre quan s’haja aturat. Llegiu la corba de distància i els canvis de color: mesureu el temps entre dos passos consecutius pel mateix marcador i estimeu la velocitat en cm/s. Comproveu el càlcul de l’app amb `distància = circumferència × voltes` i `velocitat = distància / temps`; indiqueu les unitats, compareu el temps de la primera volta amb els següents i expliqueu per què els canvis de color se separen quan el carretó va perdent velocitat. Repetiu tres intents, canvieu una sola condició cada vegada (empenta suau/mitjana/forta o diàmetre de roda) i compareu distància i velocitat amb gràfic o taula. Amb una massa mesurada o proporcionada pel docent en quilograms i la velocitat inicial estimada convertida a m/s, calculeu l’energia cinètica inicial aproximada, `Ec = ½ × massa × velocitat²`; és un resultat del model matemàtic, no una lectura del sensor ni l’energia que el sensor haja mesurat. Anoteu com el temps, la superfície i la interpretació de la velocitat poden explicar les diferències entre equips.
+#### Fase 1 · Activem i prediem
+
+Feu rodar dues rodes unides per un eix amb una empenta suau. Estimeu el recorregut amb rajoles o passos i després comproveu-lo amb cinta mètrica. Predigueu com el diàmetre de la roda afectarà la distància per volta.
+
+#### Fase 2 · Explorem i construïm
+
+Munteu un carretó lleuger amb rodes lliures, una marca blanca i negra en una roda, el sensor de color orientat a la marca i el sensor de força accessible. Mesureu la circumferència de la roda almenys tres vegades i calculeu-ne la mitjana.
+
+#### Fase 3 · Expliquem i registrem
+
+Connecteu el hub a l’app SPIKE i activeu el gràfic i les variables. El programa espera el toc al sensor de força, registra el temps i compta els cicles de la marca amb el sensor de color. En una taula delimitada i buida, feu una empenta controlada i atureu el registre quan el carretó pare.
+
+#### Fase 4 · Apliquem i millorem
+
+Llegiu la corba de distància i mesureu el temps entre dos passos consecutius pel mateix marcador per estimar la velocitat en cm/s. Comproveu `distància = circumferència × voltes` i `velocitat = distància / temps`, amb unitats. Repetiu tres intents i canvieu una sola condició cada vegada: intensitat de l’empenta o diàmetre de roda.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** circumferència mitjana, tres registres i estimacions de distància i velocitat. Amb massa en kg i velocitat inicial en m/s, calculeu `Ec = ½ × massa × velocitat²`; és una estimació matemàtica, no una mesura del sensor. Expliqueu com el temps, la superfície i la interpretació de la velocitat afecten la comparació.
 
 ![Carretó amb rodes i hub SPIKE Prime, sensor de color davant d’una marca blanca en la roda, sensor de força al damunt i gràfic de dades al costat.](../../_assets/imatges/sa-sp-distancia-sensors.webp)
 
@@ -67,7 +139,25 @@ _El carretó es desplaça amb una empenta manual; els sensors registren les volt
 
 ### **Lliçó 5 · Joc de distància: encertar i justificar (90 min).**
 
-Recupereu el carretó instrumentat de la lliçó anterior i delimiteu un carril llarg, recte i d’accés controlat, amb una línia de llançament i una diana a 2 m. Cada parella fa dues o tres proves d’escalfament per observar com una empenta, el pes afegit o la superfície canvien el recorregut. Abans de competir, creeu i inicialitzeu les variables `massa_kg`, `velocitat_cm_s`, `velocitat_m_s`, `energia_J`, `error_cm` i `error_acumulat_cm`. Després de cada empenta, llegiu la velocitat del registre de voltes, convertiu-la dividint per 100, actualitzeu la massa real del carretó si afegiu o retireu peces SPIKE pesades i calculeu `energia_J = 0.5 × massa_kg × velocitat_m_s²`. La persona que empeny fa tres intents per diana; mesureu sempre des de la part davantera del carretó fins al centre del blanc, anoteu l’error absolut en centímetres i acumuleu-lo. Després d’acabar els tres intents, moveu la diana a 3 m i repetiu, i feu una tercera ronda a 4 m només si el carril escolar és prou llarg i segur. La parella alterna qui empeny i cadascú rep el mateix nombre d’intents. Entre dianes, cada participant pot revisar les dades i triar una estratègia: mantindre la massa i ajustar la intensitat de l’empenta, o canviar el pes mesurat mantenint l’empenta tan constant com siga possible; no canvieu les dues variables alhora si voleu atribuir-ne l’efecte. Guanya qui acumula menys error absolut, no qui fa un únic llançament llunyà. Compareu si l’energia cinètica estimada ajuda a interpretar la distància i expliqueu per què superfície, fregament i diferències d’empenta impedeixen tractar-la com una predicció exacta.
+#### Fase 1 · Activem i prediem
+
+Recupereu el carretó instrumentat i delimiteu un carril recte, amb línia de llançament i diana a 2 m. Feu dues o tres proves d’escalfament i predigueu com l’empenta, el pes o la superfície poden alterar el recorregut.
+
+#### Fase 2 · Explorem i construïm
+
+Inicialitzeu `massa_kg`, `velocitat_cm_s`, `velocitat_m_s`, `energia_J`, `error_cm` i `error_acumulat_cm`. Després de cada empenta, llegiu la velocitat del registre, convertiu-la dividint per 100 i actualitzeu la massa real si canvieu peces pesades.
+
+#### Fase 3 · Expliquem i registrem
+
+Calculeu `energia_J = 0.5 × massa_kg × velocitat_m_s²`. Mesureu sempre des de la part davantera del carretó fins al centre del blanc, registreu l’error absolut en cm i acumuleu-lo. Tres intents formen cada ronda.
+
+#### Fase 4 · Apliquem i millorem
+
+Després dels tres intents, moveu la diana a 3 m i repetiu; feu una ronda a 4 m només si l’espai és prou llarg i segur. Alterneu qui empeny perquè cada persona tinga el mateix nombre d’intents. Entre dianes, trieu si manteniu la massa i canvieu la intensitat, o canvieu el pes mesurat mantenint l’empenta tan constant com siga possible. No canvieu les dues variables alhora.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** errors dels tres intents a cada distància, error acumulat i estratègia revisada. Guanya qui acumula menys error absolut, no qui fa un llançament més llarg. Compareu l’energia estimada amb la distància i expliqueu per què superfície, fregament i variació de l’empenta impedeixen tractar-la com una predicció exacta.
 
 ![Carretó SPIKE Prime empés suaument pel carril cap a una diana de paper, amb cinta mètrica i un gràfic de tres intents.](../../_assets/imatges/sa-sp-joc-distancia.webp)
 
@@ -75,7 +165,25 @@ _En cada ronda es mesura la distància al centre de la diana i se suma l’error
 
 ### **Lliçó 6 · Qui planifica els recursos? Finances i gestió empresarial (90 min).**
 
-Connecteu la ruta de la biblioteca amb dues vies professionals: finances i gestió/administració d’empreses. Primer, cadascú completa una targeta privada amb dos interessos personals, una habilitat que ha practicat en la unitat i una pregunta sobre feines futures; compartir-la és voluntari. En equips de quatre, feu una pluja d’idees de quatre ocupacions per via i classifiqueu-les en una matriu comuna: tasques, habilitats, entorn de treball, formació o qualificacions i relació amb altres ocupacions. Cada equip investiga almenys dues ocupacions de cada via en fonts seleccionades pel docent (per exemple, l’[Observatori de les Ocupacions del SEPE](https://www.sepe.es/HomeSepe/es/que-es-observatorio.html), centres formatius o webs institucionals); anota la data de consulta, una tasca concreta, dues habilitats, una via d’accés i, si hi ha dades comparables, una tendència laboral sense convertir una previsió en certesa. Després, useu les dades de la maqueta —distància, temps, intents i girs— i un full de costos ficticis igual per a tothom per a calcular dues opcions de lliurament. Separeu en la taula les mesures reals de maqueta dels preus i supòsits inventats, mostreu una suma verificable i justifiqueu quina opció recomanaríeu a la biblioteca. Amb peces del set SPIKE, construïu una representació física d’una de les dues vies (per exemple, flux de pressupost, planificació d’operacions o comprovació de comptes); no cal fer un robot nou. Prepareu una explicació d’un minut que relacione cada part del model amb una tasca, una habilitat i una ocupació investigada. Després de les presentacions, compareu les dues vies: quines habilitats comparteixen, en què es diferencien i com col·laboren? Tanqueu amb una autoavaluació individual: quina tasca m’ha interessat, quina evidència de la unitat puc aportar i què voldria investigar després. Recolliu la targeta individual sense exposar interessos personals.
+#### Fase 1 · Activem i prediem
+
+Connecteu la ruta de la biblioteca amb finances i gestió/administració d’empreses. Qui organitza recursos i com col·laboren aquestes funcions? Cada persona pot completar privadament una targeta d’interessos i habilitats; compartir-la és voluntari.
+
+#### Fase 2 · Explorem i construïm
+
+En equips, proposeu quatre ocupacions per via i classifiqueu tasques, habilitats, entorn, formació i relacions amb altres ocupacions. Investigueu almenys dues ocupacions de cada via amb fonts actuals seleccionades per la docent, com l’Observatori de les Ocupacions del SEPE o webs institucionals. Anoteu data, tasques, habilitats i via d’accés; no convertiu una previsió en certesa.
+
+#### Fase 3 · Expliquem i registrem
+
+Useu les dades de la maqueta —distància, temps, intents i girs— i un full de costos ficticis igual per a tots els equips per calcular dues opcions de lliurament. Separeu les mesures de maqueta dels preus i supòsits inventats, mostreu una suma verificable i justifiqueu una recomanació per a la biblioteca.
+
+#### Fase 4 · Apliquem i millorem
+
+Amb peces SPIKE, representeu una via professional —flux de pressupost, planificació d’operacions o comprovació de comptes— sense construir un robot nou. Prepareu una explicació d’un minut que relacione les parts del model amb una tasca, una habilitat i una ocupació investigada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** matriu de les dues vies, fonts datades, comparació de costos i model explicat. Després de les presentacions, compareu habilitats compartides i diferències. Tanqueu amb una autoavaluació individual; no exposeu els interessos personals.
 
 ![Hub SPIKE Prime subjectat en un marc amb nansa i inclinat al costat d’un gràfic de línia amb un pic que representa un canvi de pitch.](../../_assets/imatges/sa-sp-variable-grafic.webp)
 

@@ -28,13 +28,55 @@ Aquesta seqüència pren com a referència els títols públicament visibles de 
 
 ### **Sessió 1 · L'escola de Tale-Bot — «Matatalab School».**
 
+#### Fase 1 · Activem i prediem
+
+Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+
+#### Fase 2 · Explorem i construïm
+
 Dibuixem una planta senzilla de l'aula amb tres llocs d'interés (biblioteca, hort o pati). Per parelles, triem un destí, escrivim una seqüència d'ordres i expliquem com l'hem calculada. Una persona fa de robot en la graella de paper i després comparem la representació amb el recorregut del Tale-Bot real. Tanquem amb una instrucció per a les visites de la fira.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
 
 ### **Sessió 2 · Un robot, moltes respostes — «Versatile Matatalab Robot».**
 
+#### Fase 1 · Activem i prediem
+
+Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+
+#### Fase 2 · Explorem i construïm
+
 Preparem tres microreptes en un mateix mapa: arribar a una casella, fer una pausa i continuar cap a una altra destinació. Amb el Tale-Bot Pro i els seus accessoris propis, provem moviments, una dansa i un dibuix curt amb retolador rentable; anotem què fa el robot en cada seqüència i com es pot esborrar el programa per tornar a començar. Separem les funcions integrades dels accessoris de muntatge i no atribuïm al robot cap sensor que no tinga.
 
+#### Fase 3 · Expliquem i registrem
+
+Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+
 ### **Sessió 3 · El recorregut dels cinc sentits — «My Five Senses».**
+
+#### Fase 1 · Activem i prediem
+
+Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+
+#### Fase 2 · Explorem i construïm
 
 Preparem cinc estacions de taula amb pictogrames: una composició de colors per a la vista, un enregistrament ambiental triat pel docent per a l’oïda, retalls nets de tela per al tacte, una targeta de fruita per al gust i un pot tancat amb una herba culinària coneguda per a l’olfacte. No s’hi tasten aliments ni s’acosten recipients al nas; cada infant pot triar una estació alternativa de mirar o assenyalar. Abans de moure el robot, distingim què pot fer Tale-Bot —seguir ordres i marcar una parada— i què fan les persones —observar i descriure—. En equips, ordenem tres estacions, representem el recorregut amb targetes de moviment i comprovem la ruta sobre el mapa. A cada parada, l’observador tria un pictograma o una paraula per registrar una característica de l’objecte o del so, sense anotar gustos ni experiències personals. Després, canviem l’ordre de dues parades i comparem si la seqüència de moviments també canvia. Tanquem explicant quina instrucció ha indicat cada lloc i quina observació s’hi ha fet; la ruta del robot no és una mesura sensorial.
 
@@ -46,21 +88,105 @@ _Les imatges indiquen llocs d'observació, no instruccions perquè el robot perc
 
 **Evidència:** mapa amb inici orientat, seqüència de targetes abans i després de la prova, i tres registres pictogràfics o orals de característiques observades. Es pot demostrar l’aprenentatge assenyalant, dictant o movent peces; no cal tocar, olorar ni parlar davant del grup.
 
+#### Fase 3 · Expliquem i registrem
+
+Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+
 ### **Sessió 4 · La botiga de temporada — «Matata Grocery Store».**
+
+#### Fase 1 · Activem i prediem
+
+Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+
+#### Fase 2 · Explorem i construïm
 
 Dissenyem una parada amb imatges de productes de mercat local i fitxes de preus senzills. Una targeta de comanda demana visitar dos productes; l'equip calcula la ruta i, si és adequat al nivell, suma dos preus. El robot lliura una fitxa de paper i una persona comprova que la comanda coincideix. Els aliments són dibuixats o de joguina: no es manipula ni es reparteix menjar real.
 
+#### Fase 3 · Expliquem i registrem
+
+Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+
 ### **Sessió 5 · Quantes maduixes hi ha? — «Count Strawberries I».**
+
+#### Fase 1 · Activem i prediem
+
+Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+
+#### Fase 2 · Explorem i construïm
 
 Situem grups de maduixes de paper en diverses caselles. Abans de programar, cada equip prediu quantes trobarà en una ruta i tria com evitar comptar-ne alguna dues vegades. Després segueix el recorregut, marca cada grup visitat i compara predicció i recompte. Com a ampliació, canviem l'ordre dels estands i comprovem si el total es manté.
 
+#### Fase 3 · Expliquem i registrem
+
+Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+
 ### **Sessió 6 · El monstre de les formes — «Shape Monster I».**
+
+#### Fase 1 · Activem i prediem
+
+Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+
+#### Fase 2 · Explorem i construïm
 
 Cada equip rep una silueta geomètrica gran i la descompon en fites de la graella. El robot visita els vèrtexs en ordre; el grup anota canvis de direcció i nombre de trams, i una persona uneix els punts en paper. Compareu triangles i quadrilàters sense exigir que Tale-Bot dibuixe: la línia es representa amb llapis després de la ruta.
 
+#### Fase 3 · Expliquem i registrem
+
+Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+
 ### **Sessió 7 · L'eruga artista — «Matata Artist—Caterpillar».**
 
+#### Fase 1 · Activem i prediem
+
+Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+
+#### Fase 2 · Explorem i construïm
+
 A partir d'una eruga de cercles de paper, triem un patró de colors o formes i construïm un recorregut perquè el robot visite els segments en l'ordre desitjat. Col·loquem un retolador rentable en el suport inclòs i comprovem el traç en paper gran, amb un adult que prepare el full i retire el retolador en acabar. Els infants expliquen la regla del patró i busquen un error o un canvi possible. Si falta el retolador o el suport en la unitat del centre, resolen el mateix repte amb el mapa i les targetes de direcció.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
 
 ## Intencions d'aprenentatge i criteris d'èxit
 

@@ -49,33 +49,113 @@ Trieu una de tres tasques: traslladar una femella gran d’escuma d’un pern am
 
 ### **Sessió 1 · Entenem la tasca i el context.**
 
-Consulteu el mapa públic del Parc Natural i marqueu la zona valenciana que inspira la missió fictícia. Compareu imatges o esquemes de l’espai amb una eina terrestre i distingiu els fets que provenen d’una font de les hipòtesis del vostre disseny. Llegiu una breu fitxa sobre les EVA: eines i peces poden necessitar tethers/ancoratges, i els passamans ajuden la tripulació a estabilitzar-se. En la maqueta, representeu aquesta idea amb un clip ample o una safata que reté la peça, sense dir que recrea la física orbital.
+#### Fase 1 · Activem i prediem
 
-En equips, seleccioneu una tasca, descriviu el client i completeu «necessitat / limitació / criteri de disseny / prova possible». Dibuixeu què canvia respecte d’una eina quotidiana: grandària i forma del mànec, contrast de la peça, visibilitat de l’acció i manera de retindre-la. **Evidència:** targeta de missió i dues necessitats amb criteris mesurables.
+Consulteu el mapa públic del Parc Natural i marqueu la zona valenciana que inspira la missió fictícia. Abans de llegir la fitxa, anoteu què penseu que pot necessitar una eina per retindre una peça en un entorn de treball diferent del terrestre.
+
+#### Fase 2 · Explorem i construïm
+
+Compareu imatges o esquemes de l’espai amb una eina terrestre i distingiu fets que provenen d’una font de les hipòtesis del disseny. Llegiu una fitxa sobre les EVA: algunes eines necessiten ancoratges i els passamans ajuden la tripulació a estabilitzar-se. Representeu la idea amb un clip ample o una safata que reté una peça; la maqueta no recrea la física orbital.
+
+#### Fase 3 · Expliquem i registrem
+
+En equip, seleccioneu una tasca i descriviu la persona usuària fictícia. Completeu «necessitat / limitació / criteri de disseny / prova possible» i indiqueu què està documentat i què és una decisió de disseny.
+
+#### Fase 4 · Apliquem i millorem
+
+Dibuixeu què canviaria respecte d’una eina quotidiana: grandària i forma del mànec, contrast de la peça, visibilitat de l’acció i manera de retindre-la. Reviseu si cada criteri es pot comprovar amb una prova de taula segura.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** targeta de missió i dues necessitats amb criteris mesurables. Quina afirmació prové de la font i quina és encara una hipòtesi de la maqueta?
 
 ### **Sessió 2 · Dissenyem i comparem agafadors.**
 
-Esbosseu dues eines: una pinça de dues peces mòbils i una cullera/guia fixa que evita agafar la peça. Assenyaleu eix, punt d’agafada, superfície de contacte i límit de tancament. Construïu primer una versió manual amb cartó o peces SPIKE sense motor i proveu-la amb peces grans d’escuma; això ajuda a comprovar la geometria abans de programar. Compareu un mànec estret amb un de més ample mitjançant plantilles, sense fer que ningú es pose guants que li impedisquen manipular amb seguretat.
+#### Fase 1 · Activem i prediem
 
-Seleccioneu el disseny que millor s’ajuste a la tasca. La forma de treballar amb guants és un requisit a considerar, no una experiència física que cal imitar: mida de presa, separació de controls i contrast. **Evidència:** dos esquemes, taula de criteris i selecció argumentada. **Ampliació:** un altre equip rep només el dibuix i prova si entén on col·locar la peça.
+Esbosseu dues eines: una pinça de dues peces mòbils i una cullera o guia fixa que evita agafar la peça. Predigueu quina pot retindre millor una peça gran d’escuma sense danyar-la.
+
+#### Fase 2 · Explorem i construïm
+
+Assenyaleu en cada esquema l’eix, el punt d’agafada, la superfície de contacte i el límit de tancament. Construïu una versió manual amb cartó o peces SPIKE, sense motor, i proveu-la amb peces grans d’escuma per comprovar la geometria abans de programar.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu un mànec estret amb un de més ample mitjançant plantilles. Registreu mida de presa, separació dels controls, contrast i facilitat de col·locació de la peça. Treballar amb guants és un requisit de disseny a considerar, no una experiència física que cal imitar.
+
+#### Fase 4 · Apliquem i millorem
+
+Seleccioneu el disseny que millor s’ajusta a la tasca i justifiqueu la decisió amb els criteris. Com a ampliació, doneu el dibuix a un altre equip perquè comprove si entén on col·locar la peça sense instruccions addicionals.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dos esquemes, taula de criteris i selecció argumentada. Quina característica del dibuix o del mànec ha facilitat més la interpretació?
 
 ### **Sessió 3 · Transmetem el moviment i provem engranatges.**
 
-Construiu l’eina amb hub, motor gran o mitjà del kit, bigues i una unió mòbil. Proveu una reducció d’engranatges i una configuració que augmente la velocitat, amb la mateixa peça i recorregut. Abans de cada intent, prediu si el moviment serà més lent o ràpid i si tindrà prou força per moure la peça. Feu tres execucions per configuració; registreu temps, nombre de trasllats reeixits, si la peça rellisca i si la base s’alça o gira.
+#### Fase 1 · Activem i prediem
 
-Useu dades per explicar el compromís: una reducció acostuma a donar més parell i menys velocitat a l’eix de sortida; augmentar la velocitat redueix el parell disponible, segons la relació de transmissió. No bloquegeu l’eix ni proveu la força amb els dits. Si la pinça no tanca de manera controlada, pareu i reviseu el topall o el programa. **Evidència:** diagrama d’engranatges i comparació de resultats. **Ampliació:** repetiu amb un braç més llarg i observeu com canvia l’abast i l’estabilitat.
+Abans de construir, predigueu què passarà amb la velocitat i el moviment de la peça si useu una reducció d’engranatges o una configuració que augmente la velocitat.
+
+#### Fase 2 · Explorem i construïm
+
+Construiu l’eina amb hub, motor gran o mitjà, bigues i una unió mòbil. Manteniu la base estable i el recorregut curt; no bloquegeu l’eix.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu una reducció i una configuració més ràpida amb la mateixa peça i recorregut. Feu tres execucions per configuració i registreu temps, trasllats reeixits, relliscades i si la base s’alça o gira.
+
+#### Fase 4 · Apliquem i millorem
+
+Useu les dades per explicar el compromís: una reducció acostuma a donar més parell i menys velocitat a l’eix de sortida; augmentar la velocitat redueix el parell disponible segons la relació de transmissió. Si la pinça no tanca de manera controlada, pareu i reviseu el topall o el programa. Com a ampliació, repetiu amb un braç més llarg i observeu l’abast i l’estabilitat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** diagrama d’engranatges i comparació de les proves. Per què no s’ha de comprovar la força amb els dits i quina configuració ha respost millor al criteri de la sessió?
 
 ### **Sessió 4 · Afegim una entrada i comparem sensors.**
 
-Prepareu una marca de color ample a la targeta de la peça. Amb el sensor de color del set, feu que el programa seleccione una configuració prèviament acordada; amb el sensor de distància, proveu una activació quan un bloc gran arriba a una zona marcada. Manteniu un control manual alternatiu. Registreu activacions correctes i falses amb tres targetes de prova i dues distàncies, i expliqueu la il·luminació o l’angle que poden afectar la lectura. El sensor de color llig l’etiqueta preparada; no identifica el material, el tipus de femella o la seua duresa.
+#### Fase 1 · Activem i prediem
 
-Una altra variant adapta l’exemple oficial de martell amb detecció de moviment: substituïu qualsevol impacte per una pressió lenta sobre una peça d’escuma, activada amb un gest del hub només si la classe pot fer-ho amb control. No es colpegen objectes ni persones. Compareu la llegibilitat i la previsibilitat de l’entrada automàtica amb el botó manual. **Evidència:** diagrama entrada-resposta, matriu de proves i justificació del sensor triat.
+Prepareu una targeta amb una marca de color ampla i prediu quina entrada podrà detectar cada sensor: etiqueta preparada amb color o proximitat d’un bloc gran.
+
+#### Fase 2 · Explorem i construïm
+
+Configureu el sensor de color perquè seleccione una acció acordada i el sensor de distància perquè active una resposta quan el bloc arriba a una zona marcada. Manteniu un control manual alternatiu per a cada prova.
+
+#### Fase 3 · Expliquem i registrem
+
+Prepareu tres targetes i dues distàncies. Registreu activacions correctes i falses, l’angle i la il·luminació. El sensor de color llig l’etiqueta preparada; no identifica material, tipus de femella ni duresa.
+
+#### Fase 4 · Apliquem i millorem
+
+Com a variant de l’exemple oficial del martell amb detecció de moviment, substituïu qualsevol impacte per una pressió lenta sobre una peça d’escuma. Useu el gest del hub només si es pot fer amb control. Compareu la llegibilitat i previsibilitat d’aquesta entrada amb el botó manual; no colpegeu objectes ni persones.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** diagrama entrada-resposta, matriu de proves i justificació del sensor triat. Quines condicions poden provocar una falsa activació i quina entrada manual queda disponible?
 
 ### **Sessió 5 · Iterem i fem el lliurament de missió.**
 
-Reviseu la pinça a partir de les dades: amplieu el mànec, canvieu el límit de tancament, reduïu velocitat o afegiu una guia per al cable. Canvieu una cosa cada vegada i repetiu la tasca tres voltes. Prepareu una fitxa de lliurament inspirada en les targetes públiques de divulgació espacial: missió, objecte que manipula, components SPIKE, passos d’ús, límit conegut i alternativa manual.
+#### Fase 1 · Activem i prediem
 
-Com a extensió creativa, l’equip pot demanar a una eina d’IA autoritzada variants de forma a partir dels criteris escrits. Reviseu cada idea contra el material real i les proves; anoteu l’ús d’IA. La IA no pilota ni controla el robot. Una altra parella executa la seqüència amb una targeta i una checklist, sense rebre instruccions orals addicionals. **Evidència:** prototip revisat, taula abans/després, instruccions i limitació que encara no s’ha provat.
+Reviseu la taula de proves i trieu una sola millora: ampliar el mànec, canviar el límit de tancament, reduir velocitat o afegir una guia per al cable. Predigueu quin criteri hauria de millorar.
+
+#### Fase 2 · Explorem i construïm
+
+Canvieu una cosa cada vegada i repetiu la tasca tres voltes amb les mateixes condicions. Registreu els resultats abans i després del canvi.
+
+#### Fase 3 · Expliquem i registrem
+
+Prepareu una fitxa de lliurament: missió, objecte que manipula, components SPIKE, passos d’ús, límit conegut i alternativa manual. Indiqueu quina prova avala cada afirmació.
+
+#### Fase 4 · Apliquem i millorem
+
+Una altra parella executa la seqüència amb una targeta i una llista de comprovació, sense instruccions orals addicionals. Com a extensió, podeu demanar a una eina d’IA autoritzada variants de forma basades en criteris escrits; contrasteu-les amb les peces i les proves, i anoteu-ne l’ús. La IA no pilota ni controla el robot.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** prototip revisat, taula abans/després, instruccions i una limitació encara no provada. Quina dada us ha fet canviar el mecanisme i quina prova caldria abans d’usar una eina real?
 
 ## 🧰 Materials i preparació
 

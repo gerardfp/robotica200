@@ -33,23 +33,113 @@ El pati de l’escola tindrà una mostra sonora breu. Cada equip crea una peça 
 
 ### **Sessió 1 · Algoritmes musicals (Musical algorithms).**
 
-Escolteu patrons breus creats pel grup i representeu notes i pauses amb símbols. Compareu dos algoritmes, corregiu una instrucció ambigua i escriviu una seqüència perquè una altra persona la puga interpretar sense saber llegir partitura convencional.
+#### Fase 1 · Activem i prediem
+
+Escolteu patrons breus creats pel grup i representeu notes i pauses amb símbols acordats. Abans d’interpretar-ne un, prediu l’ordre dels sons i el lloc del silenci.
+
+#### Fase 2 · Explorem i construïm
+
+Acordeu símbols per a so curt, so llarg, silenci i repetició, a més d’inici i final. Cada equip escriu una peça original de 20–40 segons amb tres o quatre sons i una llegenda clara.
+
+#### Fase 3 · Expliquem i registrem
+
+Una persona interpreta la partitura amb percussió corporal o instruments suaus i una altra la segueix amb el dit; després intercanvien rols. Anoteu les interpretacions diferents i les instruccions que han resultat ambigües.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu la notació perquè indique millor durades, pauses o repeticions. No corregiu la persona que interpreta: feu que la partitura comunique amb més precisió. Proveu-la de nou amb una altra parella.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què ha fet que l’algoritme siga interpretable per a un públic que no l’ha escrit. **Evidència:** partitura amb llegenda, prova entre parelles i versió revisada.
 
 ### **Sessió 2 · Programar i depurar música (Programming & debugging music).**
 
-Trieu una frase curta i programeu-la amb blocs de notes, durades i repeticions. Proveu-la amb l’altaveu integrat de micro:bit V2; amb V1, useu únicament l’altaveu o accessori autoritzat pel centre, o interpreteu-la amb instruments d’aula. Depureu l’ordre, el tempo i les pauses.
+#### Fase 1 · Activem i prediem
+
+Llegiu una seqüència de MakeCode amb notes, durades i una repetició. Predigueu l’ordre i la durada abans d’escoltar-la; compareu-la amb la partitura de la sessió anterior.
+
+#### Fase 2 · Explorem i construïm
+
+Trieu una frase curta i programeu-la amb blocs de notes, durades i repeticions. Feu primer funcionar una frase de dos sons, afegiu una pausa explícita i després repetiu una secció. Useu l’altaveu integrat en micro:bit V2; amb V1, feu servir només una eixida d’àudio autoritzada pel centre o interpreteu-la amb instruments d’aula.
+
+#### Fase 3 · Expliquem i registrem
+
+Executeu la peça i anoteu l’ordre dels blocs, el resultat esperat i el que s’ha sentit o representat. Registreu qualsevol diferència entre la predicció i l’eixida.
+
+#### Fase 4 · Apliquem i millorem
+
+Quan el resultat no correspon a la predicció, reviseu selecció de notes, durades, ordre dels blocs i repeticions, en aquest ordre. Canvieu un element i torneu a provar; anoteu error inicial, hipòtesi i resultat posterior.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu la versió inicial i la depurada i expliqueu quin canvi ha resolt la diferència. **Evidència:** partitura, codi amb pausa o repetició i taula d’errors corregits.
 
 ### **Sessió 3 · Gestos musicals (Musical gestures).**
 
-Una persona dirigeix amb gestos acordats i l’equip tradueix-los en instruccions: repetir, triar una de dues notes o fer una pausa. Reviseu si els gestos es poden interpretar de més d’una manera i afegiu una notació visual comprensible per al públic triat.
+#### Fase 1 · Activem i prediem
 
-### **Sessió 4 · Controlar la música amb entrades (Controlling music with inputs).**
+Una persona dirigeix amb gestos acordats i l’equip prediu quina instrucció correspon a cada gest: repetir, triar una de dues notes o fer una pausa.
 
-Programeu un botó o moviment de la placa perquè active una variació sonora amb condicions. Compareu activació per botó i acceleròmetre amb gestos suaus i voluntaris. Si sacsejar la placa no és accessible o còmode, substituïu-ho per un botó o control de direcció.
+#### Fase 2 · Explorem i construïm
 
-### **Sessió 5 · Avaluar la música de micro:bit (Evaluating micro:bit music).**
+Traduïu els gestos en instruccions i incorporeu-los a la partitura. Trieu un públic concret i prepareu una notació visual que puga seguir la peça sense dependre de la lectura musical convencional.
 
-Feu un repte de modificació: canvieu una condició o una repetició sense perdre el ritme acordat. Prepareu una explicació per a algú que no ha programat el codi i avalueu quan la placa ajuda a fer música i quan convé una alternativa acústica, visual o corporal.
+#### Fase 3 · Expliquem i registrem
+
+Intercanvieu la partitura amb un altre grup i registreu quins gestos s’han interpretat de més d’una manera i quina part de la notació ha causat el dubte.
+
+#### Fase 4 · Apliquem i millorem
+
+Afegiu un símbol, una llegenda o un exemple breu per resoldre l’ambigüitat. Torneu a dirigir la seqüència i comproveu que els gestos i la partitura concorden.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina instrucció s’ha aclarit i com ho heu comprovat amb el públic triat. **Evidència:** partitura visual, llegenda de gestos i comentaris de la prova.
+
+### **Sessió 4 · Controlem la música amb entrades (Controlling music with inputs).**
+
+#### Fase 1 · Activem i prediem
+
+Trieu un esdeveniment senzill —per exemple, el botó A inicia o canvia de motiu— i representeu-lo en una targeta. Predigueu quina variació activarà i què ha de passar si no arriba cap entrada.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu un botó o moviment de la placa perquè active una variació sonora amb condicions. Compareu l’activació per botó i per acceleròmetre amb moviments suaus i voluntaris. Assageu el moviment de la placa sobre una taula i comproveu que el llindar no activa la música accidentalment.
+
+#### Fase 3 · Expliquem i registrem
+
+Una persona executa les entrades i una altra registra la resposta prevista i observada, incloent-hi les activacions no desitjades. Expliqueu quina condició del programa decideix la variació.
+
+#### Fase 4 · Apliquem i millorem
+
+Ajusteu el llindar si cal i repetiu les proves. Manteniu un botó o control de direcció com a alternativa equivalent; ningú no ha de sacsejar la placa ni fer un moviment que no li resulte accessible o còmode.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu si l’entrada activa el motiu previst i si hi ha una alternativa per a cada participant. **Evidència:** targeta d’esdeveniment, codi amb condició i registre de proves d’entrada.
+
+### **Sessió 5 · Avaluem la música de micro:bit (Evaluating micro:bit music).**
+
+#### Fase 1 · Activem i prediem
+
+Reprengueu la peça i identifiqueu el ritme acordat, la repetició i una condició que es podria modificar sense perdre el patró.
+
+#### Fase 2 · Explorem i construïm
+
+Feu el repte de modificació: canvieu una condició o una repetició. Prepareu el codi o la partitura perquè una persona que no ha programat puga seguir la demostració.
+
+#### Fase 3 · Expliquem i registrem
+
+Presenteu la partitura o el codi abans d’interpretar-lo. L’audiència respon: quin patró ha reconegut?, en quin moment ha sentit el silenci?, quina part es podria representar amb llum o amb un gest? El retorn descriu l’experiència, no qualifica el gust musical ni la capacitat de ningú.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu una part de la peça a partir del retorn. Si no convé usar so, mostreu una animació LED estàtica amb el ritme representat en seqüència o dirigiu una interpretació silenciosa amb targetes.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Valoreu quan la placa ajuda a fer música i quan convé una alternativa acústica, visual o corporal. **Evidència:** peça revisada, retorn de l’audiència i autoavaluació del mitjà triat.
 
 ## 🧰 Materials i compatibilitat
 

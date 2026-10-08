@@ -39,83 +39,91 @@ Useu valors inventats per a l’exercici: quatre productes amb preus enters entr
 
 ### **Sessió 1 · Llegir la graella i arribar a una parada.**
 
-*Context (5 min):*
+#### Fase 1 · Activem i prediem
 
-presenteu quatre encàrrecs ficticis i pregunteu què ha d’incloure una instrucció perquè una altra parella la puga seguir.
+Presenteu quatre encàrrecs ficticis i pregunteu què ha d’incloure una instrucció perquè una altra parella la puga seguir.
 
-*Mapa i orientació (10 min):*
+#### Fase 2 · Explorem i construïm
 
-marqueu l’inici, una parada i dos obstacles; poseu una fletxa davant del robot i descriviu cap a on mira.
+Marqueu l’inici, una parada i dos obstacles; poseu una fletxa davant del robot i descriviu cap a on mira. Modeleu ordres de pas endavant, pas arrere i gir a esquerra/dreta de 90°.
 
-*Demostració guiada (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-modeleu ordres de pas endavant, pas arrere i gir a esquerra/dreta de 90°, verbalitzant que un gir canvia l’orientació però no trasllada el robot a una altra casella.
+Verbalitzeu que un gir canvia l’orientació però no trasllada el robot a una altra casella. Les parelles dibuixen una ruta i construeixen la seqüència amb targetes de comanda abans de posar-la al tauler.
 
-*Planificació (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-parelles dibuixen una ruta i construeixen la seqüència amb targetes de comanda abans de posar-la al tauler.
+Executeu la seqüència, compareu la posició prevista amb la real i corregiu l’ordre en el primer punt de desviació.
 
-*Prova (10 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-executeu-la, compareu posició prevista i real i corregiu l’ordre en el primer punt de desviació. Evidència: mapa amb inici, orientació, obstacles i seqüència corregida.
+**Evidència:** mapa amb inici, orientació, obstacles i seqüència corregida. Quina instrucció ha calgut revisar perquè una altra parella poguera seguir la ruta?
 
 ### **Sessió 2 · Quatre encàrrecs, quatre històries.**
 
-*Preparació (5 min):*
+#### Fase 1 · Activem i prediem
 
-col·loqueu les quatre parades i associeu a cadascuna un producte i una targeta-personatge pròpia (per exemple, qui cuina el dinar col·lectiu o qui prepara un tast de temporada).
+Col·loqueu les quatre parades i associeu a cadascuna un producte i una targeta-personatge pròpia, com qui cuina el dinar col·lectiu o prepara un tast de temporada. Decidiu en quin ordre visitareu les parades.
 
-*Predicció (10 min):*
+#### Fase 2 · Explorem i construïm
 
-en grup, decidiu en quin ordre visitar les parades i on es descarregarà cada targeta; cada persona verbalitza una part de l’itinerari.
+Decidiu on es descarregarà cada targeta i prepareu la seqüència de moviments. Podeu carregar les quatre targetes planes o repartir-les a una persona missatgera.
 
-*Programa i càrrega (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-carregueu les quatre targetes planes, o repartiu-les a una persona missatgera, i prepareu la seqüència de moviments.
+Cada persona verbalitza una part de l’itinerari. Proveu el recorregut i, en cada parada, retireu una única targeta, llegiu la microhistòria corresponent i marqueu el lliurament.
 
-*Execució (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-proveu el recorregut i, en cada parada, retireu una única targeta, llegiu la microhistòria corresponent i marqueu el lliurament. Si una ordre porta a una parada incorrecta, atureu, reconstruïu l’orientació actual i repreneu des d’allí.
+Si una ordre porta a una parada incorrecta, atureu el robot, reconstruïu l’orientació actual i repreneu des d’allí. Ordeneu les destinacions de nou amb les pistes de cada microhistòria.
 
-*Retorn (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-ordeneu de memòria les quatre destinacions i expliqueu quina pista us ajuda a recordar cada lliurament. Evidència: llista ordenada de parades, registre dels lliuraments i relat de quatre frases.
+**Evidència:** llista ordenada de parades, registre dels lliuraments i relat de quatre frases. Quina pista us ajuda a recordar cada lliurament?
 
 ### **Sessió 3 · Comparar cost i recorregut sense perdre cap encàrrec.**
 
-*Pressupost (10 min):*
+#### Fase 1 · Activem i prediem
 
-llegiu la carta fictícia, sumeu els quatre productes i decidiu si el total respecta 12 monedes; representeu la suma amb monedes o recta numèrica. Si supera el límit, compareu alternatives que encara complisquen les necessitats del repte, sense parlar de capacitat adquisitiva real de les famílies.
+Llegiu la carta fictícia, sumeu els quatre productes i decidiu si el total respecta 12 monedes; representeu la suma amb monedes o una recta numèrica. Si supera el límit, compareu alternatives que encara complisquen el repte, sense parlar de la capacitat adquisitiva real de les famílies.
 
-*Dues rutes (10 min):*
+#### Fase 2 · Explorem i construïm
 
-dibuixeu dos ordres de visita possibles i calculeu passos i girs a partir de la graella.
+Dibuixeu dos ordres de visita possibles i calculeu passos i girs a partir de la graella. Anoteu una predicció de cost i una altra de recorregut.
 
-*Proves controlades (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-executeu les dues rutes en les mateixes condicions i anoteu desplaçaments, errors d’orientació, encàrrecs lliurats i cost.
+Executeu les dues rutes en les mateixes condicions i anoteu desplaçaments, errors d’orientació, encàrrecs lliurats i cost.
 
-*Comparació (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-expliqueu quina ruta és més curta segons el recompte i si això canvia la decisió de cost. Distingiu la longitud del recorregut, el preu i la quantitat de productes: són mesures diferents. Evidència: dues prediccions, taula de resultats i una conclusió limitada a aquesta maqueta.
+Expliqueu quina ruta és més curta segons el recompte i si això canvia la decisió de cost. Distingiu longitud del recorregut, preu i quantitat de productes: són mesures diferents.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dues prediccions, taula de resultats i conclusió limitada a aquesta maqueta. Què podem concloure amb les dades i què no hem provat?
 
 ### **Sessió 4 · Canviar l’inici, crear i compartir una missió.**
 
-*Repte nou (10 min):*
+#### Fase 1 · Activem i prediem
 
-canvieu l’orientació inicial o moveu una parada i demaneu a cada parella que anticipe quines ordres deixaran de servir.
+Canvieu l’orientació inicial o moveu una parada. Cada parella anticipa quines ordres deixaran de servir i per què.
 
-*Depuració i bucle (15 min):*
+#### Fase 2 · Explorem i construïm
 
-modifiqueu el programa; si el recorregut repeteix un mateix tram, representeu-lo amb una targeta de repetició quan el set i el nivell del grup ho permeten, i compareu aquesta notació amb l’expansió ordre per ordre.
+Modifiqueu el programa. Si el recorregut repeteix un tram, representeu-lo amb una targeta de repetició quan el set i el nivell del grup ho permeten.
 
-*Creació (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-inventeu una cinquena destinació o una targeta d’encàrrec pròpia i reviseu que siga assolible sense col·lisions.
+Compareu la notació de repetició amb l’expansió ordre per ordre i anoteu quins moviments comprimeix.
 
-*Galeria i reflexió (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-una altra parella executa les instruccions i deixa una pregunta o proposta de millora; l’equip decideix si la incorpora i justifica la decisió. Evidència: mapa final, programa provat, canvi respecte de l’original i microhistòria local.
+Inventeu una cinquena destinació o una targeta d’encàrrec pròpia i reviseu que siga assolible sense col·lisions. Una altra parella executa les instruccions i deixa una pregunta o proposta de millora; decidiu si la incorporeu i justifiqueu la decisió.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa final, programa provat, canvi respecte de l’original i microhistòria local. Quina prova confirma que l’encàrrec es pot completar?
 
 ## 📋 Avaluació i evidències
 

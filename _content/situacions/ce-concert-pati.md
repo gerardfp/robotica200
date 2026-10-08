@@ -42,27 +42,69 @@ No cal que cada maó tinga un animal assignat ni que els sons siguen gravacions 
 
 ### **Escoltem i imaginem el concert (40 min).**
 
-Obriu amb una conversa breu: quins sons escoltem al pati, al jardí o prop d’una séquia? Diferencieu el que s’ha sentit realment («he sentit un ocell») del que s’imagina («potser era una merla»). Trieu tres animals coneguts de l’entorn de l’Albufera —per exemple, granota, ocell o insecte— i observeu-ne imatges. Useu un recurs sonor educatiu revisat pel docent o representeu les veus amb instruments suaus; expliqueu que la imitació no substitueix l’escolta de la fauna real.
+#### Fase 1 · Activem i prediem
 
-Escolteu o marqueu el ritme d’una cançó d’animals que el grup ja conega. El docent proposa que un autobús imaginari visita un concert a la marjal; el grup decideix quins animals hi participaran i com pot mostrar-los sense capturar-los ni molestar-los. Feu un mapa de tres entrades: animal, so real o inventat, i com el representarem. Deixeu la imitació vocal com una opció, no com una obligació.
+Obriu amb una conversa breu: quins sons escoltem al pati, al jardí o prop d’una séquia? Diferencieu el que s’ha sentit realment («he sentit un ocell») del que s’imagina («potser era una merla»).
 
-*Evidència:* mapa de so amb tres animals i una representació acordada. *Pregunta docent:* «Quina part sabem perquè l’hem observada i quina hem inventat per al concert?»
+#### Fase 2 · Explorem i construïm
+
+Trieu tres animals coneguts de l’entorn de l’Albufera —per exemple, granota, ocell o insecte— i observeu-ne imatges. Useu un recurs sonor educatiu revisat pel docent o representeu les veus amb instruments suaus; expliqueu que la imitació no substitueix l’escolta de la fauna real.
+
+#### Fase 3 · Expliquem i registrem
+
+Escolteu o marqueu el ritme d’una cançó d’animals que el grup ja conega. Feu un mapa de tres entrades: animal, so real o inventat, i com el representarem. Deixeu la imitació vocal com una opció, no com una obligació.
+
+#### Fase 4 · Apliquem i millorem
+
+El docent proposa que un autobús imaginari visite un concert a la marjal; el grup decideix quins animals hi participaran i com pot mostrar-los sense capturar-los ni molestar-los. Reviseu el mapa perquè quede clar què és una observació i què és una representació inventada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa de so amb tres animals i una representació acordada. Pregunteu: «Quina part sabem perquè l’hem observada i quina hem inventat per al concert?»
 
 ### **Investiguem les respostes de la via (40 min).**
 
-En equip de fins a quatre, construïu una via circular i situeu al voltant les figures o targetes. Si cal, afegiu un autobús de paper o una figura com a passatger: no cal construir un vehicle diferent del tren del kit. Col·loqueu un maó d’acció de cada color disponible, d’un en un, en punts fàcils de veure. Abans de conduir, cada participant tria com fer avançar el tren amb l’app i prediu què podria passar quan travesse un maó.
+#### Fase 1 · Activem i prediem
 
-Feu una volta de prova i registreu en una taula simple: «maó provat / què hem sentit o observat / animal que ens recorda / ho hem comprovat?». Torneu a passar quan una resposta no s’haja pogut escoltar bé. Després, useu l’app per explorar o canviar el comportament dels maons i comproveu què canvia. Expliqueu clarament que el color, per si sol, no identifica cap espècie, i que l’app pot produir sons representatius o musicals, no enregistraments de la fauna local. Si els sons no corresponen als animals esperats, convertiu-ho en una pregunta d’investigació, no en un error de l’alumnat.
+En equip de fins a quatre, construïu una via circular i situeu al voltant les figures o targetes. Col·loqueu un maó d’acció de cada color disponible, d’un en un, en punts fàcils de veure. Abans de conduir, cada participant tria com fer avançar el tren amb l’app i prediu què podria passar quan travesse un maó.
 
-*Evidència:* registre de dues o més proves, amb una predicció i una observació diferenciades. *Pregunta docent:* «Què ha canviat quan hem canviat la configuració? Com ho podem saber?»
+#### Fase 2 · Explorem i construïm
+
+Feu una volta de prova. Si cal, afegiu un autobús de paper o una figura com a passatger: no cal construir un vehicle diferent del tren del kit. Torneu a passar quan una resposta no s’haja pogut escoltar bé.
+
+#### Fase 3 · Expliquem i registrem
+
+Registreu «maó provat / què hem sentit o observat / animal que ens recorda / ho hem comprovat?». Després, useu l’app per explorar o canviar el comportament dels maons i anoteu què canvia.
+
+#### Fase 4 · Apliquem i millorem
+
+Expliqueu que el color, per si sol, no identifica cap espècie, i que l’app pot produir sons representatius o musicals, no enregistraments de la fauna local. Si els sons no corresponen als animals esperats, convertiu-ho en una pregunta d’investigació, no en un error de l’alumnat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** registre de dues o més proves, amb una predicció i una observació diferenciades. Pregunteu: «Què ha canviat quan hem canviat la configuració? Com ho podem saber?»
 
 ### **Composem, repetim i compartim (40 min).**
 
-Cada equip tria una idea que vol comunicar: matí tranquil, pluja que arriba, festa de l’horta o passeig per la marjal. Ordena els maons d’acció a la via i dibuixa o dicta la seqüència abans d’iniciar el tren. Proveu-la i convideu el grup a identificar un fragment que es repetisca. Si la volta tancada repeteix la seqüència sencera, distingiu aquesta repetició del patró més curt que l’equip ha decidit compondre.
+#### Fase 1 · Activem i prediem
 
-Canvieu només l’ordre d’un maó i compareu les dues versions: quin so apareix abans?, què es repeteix?, quina transmet millor la idea escollida? Per finalitzar, presenteu la composició amb el tren, amb pictogrames o amb instruments de taula. Qui no vulga actuar pot ordenar la seqüència, donar l’entrada o mostrar el cartell. Recolliu una frase o marca visual sobre una decisió que l’equip ha canviat després d’escoltar el resultat.
+Cada equip tria una idea que vol comunicar: matí tranquil, pluja que arriba, festa de l’horta o passeig per la marjal. Abans d’iniciar el tren, dibuixa o dicta la seqüència i prediu què transmetrà.
 
-*Evidència:* partitura visual, una seqüència provada, un patró repetit identificat i una revisió justificada. *Pregunta docent:* «Què volíeu expressar? Quina decisió us ha ajudat a aconseguir-ho?»
+#### Fase 2 · Explorem i construïm
+
+Ordeneu els maons d’acció a la via i proveu la composició. Convideu el grup a identificar un fragment que es repetisca. Si la volta tancada repeteix tota la seqüència, distingiu-la del patró més curt que l’equip ha decidit compondre.
+
+#### Fase 3 · Expliquem i registrem
+
+Canvieu només l’ordre d’un maó i compareu les dues versions: quin so apareix abans?, què es repeteix?, quina transmet millor la idea? Recolliu una frase o marca visual sobre una decisió que l’equip ha canviat després d’escoltar el resultat.
+
+#### Fase 4 · Apliquem i millorem
+
+Presenteu la composició amb el tren, amb pictogrames o amb instruments de taula. Qui no vulga actuar pot ordenar la seqüència, donar l’entrada o mostrar el cartell.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** partitura visual, seqüència provada, patró repetit identificat i revisió justificada. Pregunteu: «Què volíeu expressar? Quina decisió us ha ajudat a aconseguir-ho?»
 
 ## 📋 Avaluació i evidències
 

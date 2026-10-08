@@ -33,35 +33,179 @@ La biblioteca escolar organitza una circulació simulada de capses lleugeres ent
 
 ### **Lliçó 1 · Els sensors activen respostes (90 min).**
 
-Amb una base SPIKE, definiu en pseudocodi quan s’ha d’aturar el vehicle: en acostar-se a una paret més que el llindar acordat o en detectar una targeta de color determinada. Programeu una condició amb sensor de distància o de color i un motor; afegiu comentaris que expliquen la regla i la condició d’aturada. Proveu una entrada esperada i una inesperada i registreu la predicció, lectura i resposta. Si el sensor o la versió de l’app no permet l’exemple, useu una targeta manual i marqueu-ho com a simulació. L’aturada es prova amb un obstacle tou de taula, a velocitat baixa i sense col·locar-hi persones.
+#### Fase 1 · Activem i prediem
+
+Predigueu quan s’ha d’aturar una base: en acostar-se a una paret més que el llindar acordat o en detectar una targeta de color determinada.
+
+#### Fase 2 · Explorem i construïm
+
+Escriviu pseudocodi i programeu una condició amb sensor de distància o de color i un motor. Afegiu comentaris que expliquen la regla i l’aturada.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu una entrada esperada i una inesperada i anoteu predicció, lectura i resposta observada.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el llindar o la regla si la resposta no coincideix amb la predicció. Si el sensor o l’app no permeten l’exemple, useu una targeta manual i identifiqueu-la com a simulació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** pseudocodi, codi comentat i registre dels dos casos. Proveu l’aturada a baixa velocitat amb obstacle tou de taula; mai col·loqueu persones al recorregut.
 
 ### **Lliçó 2 · Sensors i dades (90 min).**
 
-Programeu que la base s’acoste a un mur de cartó i s’ature quan el sensor de distància indique la separació objectiu. Abans d’executar, escriviu el pseudocodi. Repetiu amb diversos nivells de potència del motor, mantenint fixes punt d’inici, distància objectiu, orientació i superfície; feu almenys tres intents per nivell. Anoteu distància final, error respecte de l’objectiu i temps. Calculeu mitjanes, representeu-les en una gràfica i discutiu per què una potència més alta pot fer que la base sobrepasse el punt abans de frenar. El sensor de distància usa retorn acústic, però la mesura continua condicionada per superfície, angle i resposta del programa.
+#### Fase 1 · Activem i prediem
+
+Predigueu a quina distància s’aturarà la base quan s’acoste a un mur de cartó i com pot canviar el resultat amb la potència del motor.
+
+#### Fase 2 · Explorem i construïm
+
+Escriviu pseudocodi i programeu l’aproximació fins que el sensor de distància indique la separació objectiu.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu diversos nivells de potència mantenint constants inici, distància objectiu, orientació i superfície; feu almenys tres intents per nivell. Anoteu distància final, error i temps.
+
+#### Fase 4 · Apliquem i millorem
+
+Calculeu mitjanes, representeu-les en una gràfica i reviseu el control si la base sobrepassa el punt abans de frenar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** pseudocodi, gràfica i explicació de la variació. El sensor usa retorn acústic i la lectura depén de superfície, angle i resposta del programa.
 
 ### **Lliçó 3 · Ball i depuració per color (45 min).**
 
-Planifiqueu una rutina de moviment rítmic amb un senyal visual; el robot respon a un color llegit per un sensor o a una seqüència de targetes sobre una pista. Escriviu pseudocodi, dividiu-lo en parts i afegiu comentaris a cada secció. Proveu primer amb un color, després amb un segon estat de moviment i finalment amb la seqüència sencera. Incorporeu el protocol de depuració: revisar instrucció i connexions, provar un tram, afegir funcionalitat a poc a poc i comprovar entrades esperades i inesperades. Registreu què fallava, quina única modificació s’ha fet i si el ritme continua coherent. L’exhibició davant del grup és opcional; es pot comunicar amb un esquema de llums i fletxes.
+#### Fase 1 · Activem i prediem
+
+Planifiqueu una rutina rítmica amb senyal visual i predigueu com respondrà el robot a un color o seqüència de targetes.
+
+#### Fase 2 · Explorem i construïm
+
+Escriviu pseudocodi, dividiu-lo en parts i afegiu comentaris. Proveu primer un color, després un segon estat de moviment i finalment la seqüència completa.
+
+#### Fase 3 · Expliquem i registrem
+
+Reviseu instruccions i connexions, proveu un tram i afegiu funcionalitat gradualment. Anoteu la fallada, la predicció i la resposta observada.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una sola cosa i torneu a provar entrades esperades i inesperades. Comproveu si el ritme continua coherent.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** codi comentat i registre de depuració. L’exhibició és opcional; també es pot comunicar amb un esquema de llums i fletxes.
 
 ### **Lliçó 4 · El laberint de la mediateca (90–135 min).**
 
-En grups, dissenyeu una ruta de paper amb un màxim de tres girs, una línia que el sensor de color puga seguir o detectar i una paret de cartó que active el sensor de distància. Un altre equip prova el recorregut. La base Driving Base amb sensor de color cap avall recorre el camí amb pseudocodi i instruccions comentades; afegiu un tram cada vegada i mesureu encerts, aturades i desviacions. Proveu com canvia la reacció a una paret amb motor a potència baixa i alta. Ajusteu la pista si la marca no es llig de manera consistent i expliqueu quina part del disseny era ambigua o massa exigent. No poseu obstacles durs ni conduïu fora de l’estora.
+#### Fase 1 · Activem i prediem
+
+En grups, dissenyeu una ruta de paper amb un màxim de tres girs. Predigueu quins punts dependran del sensor de color i quin punt activarà el de distància.
+
+#### Fase 2 · Explorem i construïm
+
+Afegiu una línia que el sensor puga seguir o detectar i una paret de cartó. Una base Driving Base amb el sensor de color cap avall executa el pseudocodi comentat.
+
+#### Fase 3 · Expliquem i registrem
+
+Un altre equip prova el recorregut. Afegiu un tram cada vegada i mesureu encerts, aturades i desviacions; compareu reacció davant la paret amb potència baixa i alta.
+
+#### Fase 4 · Apliquem i millorem
+
+Ajusteu la pista si la marca no es llig consistentment. Expliqueu quina part del disseny era ambigua o massa exigent i canvieu-la abans de repetir.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa, pseudocodi i registres de prova. No useu obstacles durs ni conduïu fora de l’estora.
 
 ### **Lliçó 5 · Fàbrica de capses (90–135 min).**
 
-Prepareu una estació de triatge amb capses de paper i destinacions distingibles per targetes de color i símbol. Abans de construir o programar, cada equip dibuixa la fàbrica: zona d’origen, lloc on es prepara el paquet, destinacions i torns de retorn; després compara amb una altra parella maneres possibles d’identificar, moure i separar paquets. Construïu una base SPIKE amb sensor de color i un empenyedor baix o una safata simple feta amb peces del set i cartó. El sensor llig una fitxa de codi situada al costat del paquet en l’estació d’origen; les condicions decideixen quin itinerari seguirà la base i el mecanisme trasllada físicament una capsa lleugera fins a la destinació correcta. Si és una base amb rodes, el programa torna a l’origen per arreplegar el paquet següent. Abans de programar, escriviu pseudocodi i descomponeu lectura, classificació, transport i retorn; comenteu el codi i feu una prova inicial d’empenyiment a baixa velocitat en una zona delimitada. El robot ha d’emetre llum o so quan estiga preparat i després de llegir cada entrada. Proveu els tres codis previstos, un codi desconegut i dos cicles complets; si no reconeix el codi, s’atura i avisa en lloc d’inventar una destinació. Registreu classificacions correctes, lliuraments, retorns i errors i reviseu el punt on el paquet ix de la safata. La maqueta no pressuposa una cinta transportadora, pinça especial ni peces fora del set i el material escolar.
+#### Fase 1 · Activem i prediem
+
+Dibuixeu la fàbrica amb origen, preparació de paquet, destinacions i torns de retorn. Compareu maneres d’identificar, moure i separar capses; predigueu què ha de fer el robot amb un codi desconegut.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu una base SPIKE amb sensor de color i empenyedor baix o safata simple de peces i cartó. El sensor llig una fitxa de codi al costat del paquet en l’origen; les condicions trien itinerari i el mecanisme trasllada una capsa lleugera.
+
+#### Fase 3 · Expliquem i registrem
+
+Escriviu pseudocodi per a lectura, classificació, transport i retorn i comenteu el codi. Afegiu senyal de preparació i lectura. Feu una prova inicial d’empenyiment a baixa velocitat en zona delimitada.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu tres codis vàlids, un de desconegut i dos cicles complets. El robot ha d’aturar-se i avisar davant d’un codi desconegut; reviseu també el punt on el paquet ix de la safata.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** classificacions correctes, lliuraments, retorns i errors registrats. La maqueta no pressuposa cinta transportadora, pinça especial ni peces fora del set i materials escolars.
 
 ### **Lliçó 6 · Aparcament cooperatiu sense sensor (90–135 min).**
 
-Marqueu una maqueta amb places numerades i dos carrers d’entrada. Assignareu a cada equip una plaça i una entrada. Preserveu les restriccions del repte: dues bases entren alhora, no s’aturen fora de plaça i només poden fer marxa arrere per eixir d’una plaça; primer resoleu casos en una quadrícula de paper i identifiqueu com es creuen les seqüències de dos vehicles. Després, programeu les bases sense sensor: el repte posa el pes en pseudocodi, distàncies calibrades, comentaris i coordinació entre equips. Una vegada plenes les places, trieu una regla comuna d’eixida (ordre d’entrada, ordre invers, eixida sincronitzada o places imparelles/parelles) i programeu-la. Mesureu desviacions abans de provar molts robots junts; feu-ho sobre estores separades, sense persones al recorregut.
+#### Fase 1 · Activem i prediem
+
+Marqueu places numerades i dos carrers d’entrada. Assigneu plaça i entrada a cada equip i preveieu com poden creuar-se les seqüències de dues bases.
+
+#### Fase 2 · Explorem i construïm
+
+Resoleu casos en quadrícula de paper respectant les regles: dues bases entren alhora, no s’aturen fora de plaça i només fan marxa arrere per eixir d’una plaça.
+
+#### Fase 3 · Expliquem i registrem
+
+Escriviu pseudocodi, calibreu distàncies, afegiu comentaris i acordeu senyals de coordinació entre equips. Programeu sense sensor.
+
+#### Fase 4 · Apliquem i millorem
+
+Quan les places estiguen plenes, trieu i programeu una regla d’eixida: ordre d’entrada, invers, sincronitzat o places imparelles/parelles. Mesureu desviacions abans de coordinar més robots.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** pseudocodi, desviacions i regla d’eixida provada. Useu estores separades i cap persona al recorregut dels robots.
 
 ### **Lliçó 7 · Aparcament per colors amb sensor (90–135 min).**
 
-Canvieu el repte: cada plaça té una targeta roja, verda o blava i cada vehicle rep una destinació de color. Les bases entren alhora des de dos costats, no travessen línies i prenen la primera plaça lliure del color que han rebut; afegiu el sensor de color i una condició al programa. En equips enfrontats, escriviu pseudocodi, comenteu qualsevol codi compartit, planifiqueu entrades que eviten bloquejos i executeu-les en torns coordinats. Després trieu com eixir: per colors, en ordre de plaça o en ordre invers, i proveu la regla en maqueta. Manteniu les targetes planes i amb bon contrast, calibreu lectura i llum abans de la ronda i no presenteu l’estacionament del model com una aplicació per a cotxes reals.
+#### Fase 1 · Activem i prediem
+
+Assigneu cada plaça a una targeta roja, verda o blava i cada vehicle a una destinació. Predigueu quina serà la primera plaça lliure del color rebut.
+
+#### Fase 2 · Explorem i construïm
+
+Afegiu el sensor de color i una condició al programa. Manteniu les targetes planes, amb bon contrast, i calibreu la lectura segons la llum del lloc.
+
+#### Fase 3 · Expliquem i registrem
+
+Escriviu pseudocodi, comenteu qualsevol codi compartit i planifiqueu entrades coordinades des de dos costats. Anoteu plaça assignada i lectura detectada.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu que les bases no travessen línies i prenguen la primera plaça lliure del color rebut. Trieu una regla d’eixida —per colors, ordre de plaça o invers— i proveu-la; reviseu els bloquejos.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** lectura calibrada, pseudocodi i regla d’entrada/eixida provada. L’aparcament és una maqueta educativa, no una aplicació per a cotxes reals.
 
 ### **Lliçó 8 · Professions de fabricació i logística (90 min).**
 
-Investigueu oficis i professions de fabricació, transport, distribució i logística: conducció, magatzem, control d’inventari, manteniment, operació CNC, planificació de rutes, anàlisi de cadena de subministrament. Compareu tasques, habilitats, formació i col·laboració entre rols amb fonts públiques preparades pel docent. En grups, feu una representació de com una capsa passa per les diferents parts del sistema i presenteu-la en un minut. Relacioneu la classificació, la ruta i la coordinació amb el treball real sense reduir cap sector a robots: feu visible la presa de decisions, la seguretat, la supervisió i el treball de persones. La fitxa individual d’interessos professionals és voluntària i privada.
+#### Fase 1 · Activem i prediem
+
+Observeu oficis de fabricació, transport, distribució i logística: conducció, magatzem, inventari, manteniment, operació CNC, planificació de rutes o cadena de subministrament. Predigueu quins rols cooperen en l’arribada d’una capsa.
+
+#### Fase 2 · Explorem i construïm
+
+Amb fonts públiques preparades per la docent, compareu tasques, habilitats, formació i col·laboració entre rols.
+
+#### Fase 3 · Expliquem i registrem
+
+En grup, representeu com una capsa passa per les diferents parts del sistema. Prepareu una presentació d’un minut.
+
+#### Fase 4 · Apliquem i millorem
+
+Relacioneu classificació, ruta i coordinació amb el treball real. Feu visibles la presa de decisions, seguretat, supervisió i contribució humana; no reduïu el sector als robots.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** representació del procés i presentació. La fitxa individual d’interessos professionals és voluntària i privada.
 
 ![Robot mòbil SPIKE Prime amb el sensor de color sobre una targeta roja i una capsa lleugera al costat d’una safata de destinació roja.](../../_assets/imatges/sa-sp-sensors-triatge.webp)
 

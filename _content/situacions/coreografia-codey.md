@@ -42,27 +42,91 @@ Deixeu lliure el xassís, les rodes i els sensors: no enganxeu disfresses ni mat
 
 ### **Escoltem, marquem i acordem un ritme (45 min).**
 
-Escolteu una peça instrumental adequada o creeu un patró curt amb palmades, colps suaus sobre una taula o instruments d’aula. Si voleu evocar tabal i dolçaina, descriviu el caràcter del ritme sense afirmar que una seqüència inventada és una peça tradicional concreta. Marqueu quatre pulsacions regulars amb una targeta per temps. Proveu després un patró senzill, com fort-suau-suau-fort, i deixeu que el grup propose una variació.
+#### Fase 1 · Activem i prediem
 
-Trieu fins a quatre accions que el robot puga representar segons els blocs disponibles: avançar un tram curt, girar amb una duració provada, mostrar una expressió, encendre l’indicador RGB o esperar. Associeu cada acció a un pictograma, no sols a un color. L’equip decideix quina part del ritme vol representar i quina quedarà a càrrec de la percussió humana. *Evidència:* una tira de quatre o huit pulsacions amb la llegenda de símbols i un patró rítmic acordat. *Preguntes docents:* «Quin temps es repeteix? Com sabrà una altra persona què representa cada targeta?»
+Escolteu una peça instrumental adequada o creeu un patró curt amb palmades, colps suaus sobre una taula o instruments d’aula. Si evoqueu tabal i dolçaina, descriviu el caràcter del ritme sense afirmar que una seqüència inventada és una peça tradicional concreta.
+
+#### Fase 2 · Explorem i construïm
+
+Marqueu quatre pulsacions regulars amb una targeta per temps. Proveu un patró senzill, com fort-suau-suau-fort, i deixeu que el grup propose una variació. Trieu fins a quatre accions que el robot puga representar: avanç curt, gir amb duració provada, expressió, indicador RGB o espera.
+
+#### Fase 3 · Expliquem i registrem
+
+Associeu cada acció a un pictograma, no sols a un color. Decidiu quina part del ritme representarà el robot i quina quedarà a càrrec de la percussió humana; anoteu la llegenda perquè una altra persona puga interpretar les targetes.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu una variació i reviseu si les targetes indiquen clarament el patró, la pulsació i les accions. Ajusteu la tira abans de programar si una instrucció resulta ambigua.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Una altra parella reconstrueix el ritme amb les targetes. **Evidència:** tira de quatre o huit pulsacions amb llegenda i patró acordat.
 
 ### **Inventem i assagem els moviments (45 min).**
 
-Abans d’obrir mBlock, representeu la coreografia amb una figura de paper sobre una pista dibuixada. El grup ordena els moviments i prediu on quedarà la figura al final. Cada acció ha de tindre una duració segura i assumible; si un gir no és previsible, proveu-lo a soles i ajusteu la distància o el temps abans d’incorporar-lo al patró. Cap persona posa mans o peus davant del robot mentre es mou.
+#### Fase 1 · Activem i prediem
 
-Assageu a velocitat lenta amb un sol Codey Rocky. Una persona porta el ritme, una altra assenyala la targeta que toca i una tercera observa el moviment; canvieu els rols en la següent prova. Si hi ha un desajust, identifiqueu si prové de la pulsació, la duració, el moviment o la pausa. *Evidència:* guió temporal amb inici, accions i final, més una predicció sobre un punt que podria desajustar-se. *Preguntes docents:* «Quina acció ocupa aquest temps? Podem canviar-la sense alterar la resta de la seqüència?»
+Representeu la coreografia amb una figura de paper sobre una pista dibuixada. Ordeneu els moviments i prediu on quedarà la figura al final.
+
+#### Fase 2 · Explorem i construïm
+
+Doneu a cada acció una duració segura i assumible. Si un gir no és previsible, proveu-lo a soles i ajusteu distància o temps abans d’incorporar-lo al patró. Ningú no posa mans o peus davant del robot mentre es mou.
+
+#### Fase 3 · Expliquem i registrem
+
+Assigneu rols: una persona porta el ritme, una altra assenyala la targeta que toca i una tercera observa el moviment. Registreu el guió temporal amb inici, accions i final, més una predicció sobre el punt que podria desajustar-se.
+
+#### Fase 4 · Apliquem i millorem
+
+Assageu a velocitat lenta amb un sol Codey Rocky i canvieu els rols en la prova següent. Si hi ha un desajust, identifiqueu si prové de pulsació, duració, moviment o pausa i canvieu un element cada vegada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu si el robot acaba a la posició prevista i expliqueu quina acció ocupa cada temps. **Evidència:** guió temporal, predicció inicial i registre d’una revisió.
 
 ### **Programem expressions, moviments i llums (45 min).**
 
-Connecteu Codey Rocky a mBlock 5 i seleccioneu el dispositiu Codey. Comenceu amb una seqüència curta d’un parell d’accions. Useu els blocs de moviment per als desplaçaments, els blocs Emotion per a l’expressió de la pantalla i els blocs Lighting per a l’indicador RGB; intercala pauses temporitzades per separar els gestos. Les categories i opcions exactes poden variar segons l’entorn. Si el grup està preparat, representeu la tornada repetint el fragment de blocs amb una estructura de repetició disponible, sense assumir que el robot s’ajusta automàticament a la música.
+#### Fase 1 · Activem i prediem
 
-Feu primer una prova sense música, després marqueu el patró amb palmades i compareu-lo amb la seqüència programada. Canvieu només un element cada vegada: nombre de pulsacions, duració d’un gir o color de l’indicador. L’indicador RGB és un efecte visual de la coreografia, no un senyal obligatori ni una instrucció que depenga només del color. *Evidència:* programa comentat o guió de blocs, una execució de prova i una nota sobre el canvi que ha millorat la seqüència. *Preguntes docents:* «Quina instrucció fa que el robot espere? Què es manté igual quan comparem les dues versions?»
+Connecteu Codey Rocky a mBlock 5, seleccioneu el dispositiu i llegiu el guió de blocs abans d’executar-lo. Predigueu l’ordre d’accions i assenyaleu quin bloc farà esperar el robot.
+
+#### Fase 2 · Explorem i construïm
+
+Comenceu amb una seqüència curta de dues accions. Useu blocs de moviment per als desplaçaments, Emotion per a l’expressió de pantalla i Lighting per a l’indicador RGB; intercaleu pauses temporitzades. Si el grup està preparat, repetiu la tornada amb una estructura de repetició disponible. No pressuposeu que el robot s’ajusta automàticament a la música.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu una prova sense música i després marqueu el patró amb palmades. Compareu-lo amb el programa i registreu el resultat; comenteu que l’indicador RGB és un efecte visual, no una instrucció que haja de dependre només del color.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu només un element —nombre de pulsacions, duració del gir o color de l’indicador— i compareu les dues versions. Confirmeu que el canvi no altera accidentalment la resta de la seqüència.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina instrucció produeix la pausa i quin canvi ha millorat el resultat. **Evidència:** programa comentat o guió de blocs, execució de prova i nota de revisió.
 
 ### **Mostrem la dansa i expliquem com l’hem revisada (45 min).**
 
-Prepareu una escena senzilla amb targetes o decorats de paper situats fora del trajecte. El grup tria si acompanya el robot amb percussió corporal, instruments suaus o silenci i targetes visuals. Executeu la coreografia amb el públic a distància segura i una persona responsable del botó d’aturada. No cal gravar-la: si el centre decideix enregistrar, cal seguir les seues normes de privacitat i comptar amb les autoritzacions pertinents.
+#### Fase 1 · Activem i prediem
 
-Després de la demostració, expliqueu quin patró heu triat, quin fragment es repeteix i quina revisió heu fet a partir de les proves. L’audiència pot reconstruir la seqüència amb les targetes i indicar què ha entés. Acabeu amb una autoavaluació breu: una decisió que mantindríem i una que canviaríem. *Evidència:* actuació o presentació alternativa, tira de coreografia revisada i comentari d’un altre equip. *Preguntes docents:* «Què comunica la vostra seqüència? Quina prova us va fer canviar una instrucció?»
+Prepareu una escena amb targetes o decorats de paper situats fora del trajecte. Trieu si acompanyareu el robot amb percussió corporal, instruments suaus o silenci i targetes visuals.
+
+#### Fase 2 · Explorem i construïm
+
+Executeu la coreografia en una pista ampla, amb el públic a distància segura i una persona responsable del botó d’aturada. No cal gravar-la; una demostració en directe o un guió visual compleix la mateixa funció.
+
+#### Fase 3 · Expliquem i registrem
+
+Presenteu el patró triat i el fragment que es repeteix. L’audiència pot reconstruir la seqüència amb targetes i indicar què ha entés.
+
+#### Fase 4 · Apliquem i millorem
+
+Useu el retorn per revisar una instrucció. Si el centre decideix enregistrar, seguiu les normes de privacitat i autoritzacions; també es pot documentar la revisió sense cap gravació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Tanqueu amb una decisió que mantindríeu i una que canviaríeu, i expliqueu quina prova ha motivat la revisió. **Evidència:** actuació o presentació alternativa, tira de coreografia revisada i comentari d’un altre equip.
 
 ## 📋 Avaluació i evidències
 

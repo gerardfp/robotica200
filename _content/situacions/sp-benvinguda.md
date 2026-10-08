@@ -42,33 +42,113 @@ Abans del muntatge, cada equip defineix com comprovarà aquests criteris: el ges
 
 ### **Sessió 1 · Què fa que una benvinguda siga llegible?**
 
-Observeu tres targetes amb gestos dibuixats —braç que saluda, bandera que s’alça i inclinació breu— i descriviu què veieu sense endevinar intencions. En grups, esbosseu tres propostes i anoteu per a cadascuna: què es mou, qui inicia el moviment, des de quina distància es veu i com acaba. Compareu una forma amable i recognoscible amb una de més abstracta; no cal afegir una cara o ulls al muntatge perquè el moviment comunique.
+#### Fase 1 · Activem i prediem
 
-Trieu un gest que es puga representar amb un motor i una peça lleugera. Marqueu en el dibuix la base, l’eix, la part mòbil i el recorregut màxim. El criteri d’accessibilitat comença ací: el senyal ha de ser visible sense so, i una targeta fixa de benvinguda ha de continuar disponible. **Evidència:** tres esbossos, anotacions de lectura i selecció argumentada. **Suport:** oferiu una plantilla amb les parts «base / motor / element mòbil / espai segur»; **ampliació:** dissenyeu dos gestos diferents amb una mateixa peça terminal.
+Observeu tres targetes amb gestos dibuixats —braç que saluda, bandera que s’alça i inclinació breu— i descriviu què veieu sense endevinar intencions. Predigueu quin es reconeixerà millor des de la distància.
+
+#### Fase 2 · Explorem i construïm
+
+En grups, esbosseu tres propostes i anoteu per a cadascuna què es mou, qui inicia el moviment, des de quina distància es veu i com acaba. Compareu una forma amable i recognoscible amb una de més abstracta.
+
+#### Fase 3 · Expliquem i registrem
+
+Trieu un gest que es puga representar amb un motor i una peça lleugera. Marqueu base, eix, part mòbil i recorregut màxim. Anoteu qui inicia el moviment i com arriba a la posició segura de repòs.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el disseny amb criteris d’accessibilitat: el senyal ha de ser visible sense so i una targeta fixa de benvinguda ha de continuar disponible. No cal afegir una cara o ulls perquè el moviment comunique.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu per què heu seleccionat el gest i com es pot entendre a distància. **Evidència:** tres esbossos, anotacions de lectura i selecció argumentada.
 
 ### **Sessió 2 · Del gir del motor al gest.**
 
-Construïu una base ferma amb un motor SPIKE Prime i un braç o bandera de cartó lleuger subjecte amb peces del kit. Comenceu amb l’articulació més simple. Desplaceu el motor o canvieu la posició de l’eix per observar com varia l’arc del braç; dibuixeu l’eix de rotació i mesureu l’amplitud aproximada en una graella de paper. Afegiu una «mà» geomètrica o una peça terminal només si ajuda a llegir el gest, sense fer-la massa pesada.
+#### Fase 1 · Activem i prediem
 
-Compareu una extensió curta amb una llarga: observeu recorregut, oscil·lació de la base i estabilitat en començar i parar. Com a ampliació inspirada en el brief, uniu peces en X per construir una extensió de tisora. Mesureu l’abast en repòs i desplegada i decidiu si realment millora la visibilitat del senyal. **Evidència:** muntatge anotat, esquema de l’eix i una comparació de dues formes. **Alternativa:** si la tisora és inestable o el temps és limitat, conserveu-la com a model de paper i completeu el gest bàsic amb un braç directe.
+Trieu una bandera o braç articulat i dibuixeu l’eix de rotació. Predigueu quin recorregut farà la figura en moure’s.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu una base ferma amb un motor SPIKE Prime i un braç o bandera de cartó lleuger subjecte amb peces del kit. Comenceu amb l’articulació més simple. Desplaceu el motor o canvieu la posició de l’eix per observar com varia l’arc; mesureu-ne l’amplitud aproximada en una graella.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu una extensió curta amb una de llarga i anoteu recorregut, oscil·lació de la base i estabilitat en començar i parar. Si feu una tisora amb peces en X, mesureu l’abast en repòs i desplegada.
+
+#### Fase 4 · Apliquem i millorem
+
+Afegiu una mà geomètrica o una peça terminal només si ajuda a llegir el gest i no fa el muntatge massa pesant. Reviseu l’estructura si és inestable; si cal, conserveu la tisora com a model de paper i feu el gest amb un braç directe.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina configuració és més visible i estable a partir de les proves. **Evidència:** muntatge anotat, esquema de l’eix i comparació de dues formes.
 
 ### **Sessió 3 · Programem el ritme i la tornada.**
 
-Escriviu primer una seqüència curta: posició inicial, moviment fins a una amplitud acordada, pausa breu i retorn. Programeu-la en blocs; si el grup té experiència prèvia, representeu la mateixa seqüència en Python. Creeu dues versions: una basada en temps i una altra en rotacions del motor. Manteniu constants la forma i la velocitat mentre compareu-les. Executeu cada versió tres vegades i registreu si l’element arriba al punt previst i si torna al repòs sense colpejar el suport.
+#### Fase 1 · Activem i prediem
 
-Si el braç no retorna o es mou massa, feu una prova de depuració canviant una sola cosa: valor de rotació, durada o orientació inicial del motor. Eviteu accelerar el moviment com a primera solució. **Evidència:** pseudocodi, captura o diagrama del programa i taula de tres execucions. **Repte d’ampliació:** programeu dos moviments consecutius amb una pausa clara i expliqueu quin es podria perdre si es redueix massa el temps entre ells.
+Escriviu una seqüència: posició inicial, moviment fins a una amplitud acordada, pausa breu i retorn. Predigueu si l’element arribarà al punt previst i tornarà al repòs sense colpejar el suport.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu-la amb blocs; si el grup té experiència, representeu-la també en Python. Creeu dues versions, una basada en temps i una altra en rotacions del motor, mantenint constants la forma i la velocitat.
+
+#### Fase 3 · Expliquem i registrem
+
+Executeu cada versió tres vegades i registreu si l’element arriba al punt previst i torna al repòs. Guardeu pseudocodi, captura o diagrama del programa.
+
+#### Fase 4 · Apliquem i millorem
+
+Si el braç no retorna o es mou massa, canvieu una sola cosa —rotació, duració o orientació inicial— i repetiu la prova. Eviteu accelerar el moviment com a primera solució.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu previsibilitat i repetibilitat entre temps i rotacions. **Evidència:** programa i taula de tres execucions. Com a ampliació, programeu dos moviments amb pausa i expliqueu quin es perdria si la pausa fora massa curta.
 
 ### **Sessió 4 · Decidim quan s’activa.**
 
-La proposta oficial planteja un sensor ultrasònic per fer que el moviment s’active quan hi ha algú al davant. Adapteu-ho sense apuntar a persones: useu una targeta gran o un objecte de cartó que es col·loca davant del sensor de distància SPIKE. Definiu una distància d’activació i una altra de separació, feu proves des de tres punts marcats i observeu si el gest s’activa una vegada o repetidament mentre l’objecte roman allí. Ajusteu el valor només després d’escriure què espereu que canvie.
+#### Fase 1 · Activem i prediem
 
-Feu una llista de possibles errors: objecte massa menut, angle diferent, obstacle del fons o distància fora del rang provat. Si el sensor no forma part del set o no està disponible, useu el botó del hub o un inici manual. Aquesta alternativa no és menys vàlida: permet comparar una entrada automatitzada amb una d’explícita i conserva el control de la persona. **Evidència:** diagrama d’entrada/resposta, taula de distàncies i una nota sobre falses activacions. Cap sensor identifica una persona ni determina si vol interactuar.
+Predigueu en quines distàncies s’hauria d’activar el gest i quantes vegades hauria de respondre mentre l’objecte continua davant del sensor. No apunteu sensors a persones.
+
+#### Fase 2 · Explorem i construïm
+
+Useu una targeta gran o un objecte de cartó davant del sensor de distància SPIKE. Definiu una distància d’activació i una altra de separació i feu proves des de tres punts marcats. Si el sensor no forma part del set o no està disponible, useu el botó del hub o un inici manual.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu les distàncies, resposta esperada i observada, i si el gest s’activa una vegada o repetidament. Registreu possibles errors: objecte massa menut, angle diferent, obstacle del fons o distància fora del rang provat.
+
+#### Fase 4 · Apliquem i millorem
+
+Ajusteu el llindar només després d’escriure què espereu que canvie. Compareu una entrada automatitzada amb una d’explícita; l’alternativa manual manté el control de la persona i és igualment vàlida.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què pot i què no pot detectar el sistema. **Evidència:** diagrama entrada/resposta, taula de distàncies i nota sobre falses activacions. El sensor no identifica qui està davant ni si vol interactuar.
 
 ### **Sessió 5 · Fem una prova d’ús i revisem.**
 
-Prepareu una demostració en una taula estable. Una parella que no ha construït el model veu el gest des d’un punt marcat i tria una targeta de retorn: «he entés el senyal», «el moviment m’ha sorprés» o «preferisc el senyal estàtic». No es pregunta a ningú si el robot li sembla personalment acollidor, ni es grava la resposta. El grup constructor usa el retorn per a canviar una sola característica —amplitud, posició del motor, durada o forma terminal— i torna a provar-lo.
+#### Fase 1 · Activem i prediem
 
-Presenteu el prototip amb un cartell que mostre el gest triat, el programa resumit i una limitació. Acabeu comparant el muntatge directe amb el braç de tisora, si s’ha construït, i expliqueu quina versió és més estable i més clara. **Evidència:** prototip revisat, feedback anònim no identificable, canvi documentat i explicació oral o escrita.
+Prepareu una demostració en taula estable. Una parella que no ha construït el model observarà el gest des d’un punt marcat i triarà una targeta de retorn: «he entés el senyal», «el moviment m’ha sorprés» o «preferisc el senyal estàtic».
+
+#### Fase 2 · Explorem i construïm
+
+Proveu el gest sense demanar si el robot sembla personalment acollidor i sense gravar la resposta. El grup constructor recull el retorn sobre el disseny i la llegibilitat.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu què ha observat el públic i quina característica podria revisar-se: amplitud, posició del motor, durada o forma terminal.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una sola característica i torneu a provar el prototip. Prepareu un cartell amb el gest triat, resum del programa i una limitació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el muntatge directe amb el braç de tisora, si s’ha construït, i expliqueu quina versió és més estable i clara. **Evidència:** prototip revisat, retorn anònim no identificable, canvi documentat i explicació oral o escrita.
 
 ## 🧰 Materials i preparació
 

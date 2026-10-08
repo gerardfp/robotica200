@@ -65,27 +65,135 @@ Rols rotatius de Python/prova, construcció/seguretat i mesura/registre. Cada eq
 
 ### **Lliçó 1 · El motor respon a temps i velocitat (45 min).**
 
-**Activació (7 min):** compareu dues maneres de fer moure una roda una distància aproximada: fer-la girar durant un temps o demanar un nombre de graus/rotacions. Dibuixeu una predicció del que podria variar entre una superfície llisa i una altra amb més fricció. **Prova aïllada (10 min):** amb la base elevada i fixada, executeu amb supervisió una ordre breu a velocitat baixa; comproveu quin motor i port responen. Atureu abans de canviar cables o configuració. **Exploració Python (18 min):** seguiu un exemple validat per a l’API local; canvieu només temps o velocitat en cada assaig, primer mantenint l’altra magnitud fixa. Passeu després a la pista curta i mesureu distància real amb regla. Feu dues repeticions per valor i anoteu bateria/superfície. **Interpretació (7 min):** representeu velocitat ordenada i distància observada en una taula; distingiu una ordre del programa d’una mesura del trajecte. **Eixida (3 min):** expliqueu en quin cas temporal seria més fàcil de programar i en quin caldria més calibratge.
+#### Fase 1 · Activem i prediem
+
+**Activació (7 min):** compareu dues maneres de fer moure una roda una distància aproximada: fer-la girar durant un temps o demanar un nombre de graus/rotacions. Dibuixeu una predicció del que podria variar entre una superfície llisa i una altra amb més fricció.
+
+#### Fase 2 · Explorem i construïm
+
+**Prova aïllada (10 min):** amb la base elevada i fixada, executeu amb supervisió una ordre breu a velocitat baixa; comproveu quin motor i port responen. Atureu abans de canviar cables o configuració.
+
+#### Fase 3 · Expliquem i registrem
+
+**Exploració Python (18 min):** seguiu un exemple validat per a l’API local; canvieu només temps o velocitat en cada assaig, primer mantenint l’altra magnitud fixa. Passeu després a la pista curta i mesureu distància real amb regla. Feu dues repeticions per valor i anoteu bateria/superfície.
+
+#### Fase 4 · Apliquem i millorem
+
+**Interpretació (7 min):** representeu velocitat ordenada i distància observada en una taula; distingiu una ordre del programa d’una mesura del trajecte.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Eixida (3 min):** expliqueu en quin cas temporal seria més fàcil de programar i en quin caldria més calibratge.
 
 ### **Lliçó 2 · Posició, camí curt i graus (45 min).**
 
-**Pregunta (5 min):** si un eix està en una posició coneguda, quina ordre el porta a una altra posició amb menys moviment? **Estació segura (8 min):** useu un motor sense càrrega amb una marca visual de referència a l’eix; anoteu posició inicial i no poseu dits prop de l’eix. **Investigació guiada (22 min):** proveu en Python un moviment fins a una posició i un moviment per un nombre de graus, amb la funció que documenta l’app local. Predigueu direcció i angle, observeu si el motor fa el camí esperat i contrasteu una rotació positiva amb una de negativa. Repetiu amb una posició a cada costat del punt de referència i compareu recorreguts. **Transferència a la roda (7 min):** calculeu circumferència amb mesura aproximada i compareu-la amb la distància que avança una rotació; expliqueu per què lliscament, pressió i diàmetre real alteren el resultat. **Registre (3 min):** dibuixeu l’eix i indiqueu què significa posició en la prova concreta, sense confondre-la amb orientació del robot.
+#### Fase 1 · Activem i prediem
+
+**Pregunta (5 min):** si un eix està en una posició coneguda, quina ordre el porta a una altra posició amb menys moviment?
+
+#### Fase 2 · Explorem i construïm
+
+**Estació segura (8 min):** useu un motor sense càrrega amb una marca visual de referència a l’eix; anoteu posició inicial i no poseu dits prop de l’eix.
+
+#### Fase 3 · Expliquem i registrem
+
+**Investigació guiada (22 min):** proveu en Python un moviment fins a una posició i un moviment per un nombre de graus, amb la funció que documenta l’app local. Predigueu direcció i angle, observeu si el motor fa el camí esperat i contrasteu una rotació positiva amb una de negativa. Repetiu amb una posició a cada costat del punt de referència i compareu recorreguts.
+
+#### Fase 4 · Apliquem i millorem
+
+**Transferència a la roda (7 min):** calculeu circumferència amb mesura aproximada i compareu-la amb la distància que avança una rotació; expliqueu per què lliscament, pressió i diàmetre real alteren el resultat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Registre (3 min):** dibuixeu l’eix i indiqueu què significa posició en la prova concreta, sense confondre-la amb orientació del robot.
 
 ### **Lliçó 3 · Automatitzar una acció útil (45 min).**
 
-**Definició (7 min):** trieu una acció repetible de la mostra: alçar una barrera de cartó, desplaçar una fitxa per una canaleta o girar un indicador. Escriviu entrada, acció del motor, resultat i condició d’aturada. **Ideació/mecanisme (10 min):** dibuixeu dues alternatives mecàniques i valoreu estabilitat, nombre de peces, recorregut i risc de pinçament. **Programa per etapes (18 min):** programeu una posició inicial coneguda, una acció limitada i retorn/aturada. Verifiqueu primer el mecanisme a mà amb motors apagats; després proveu sense càrrega i amb una fitxa gran i lleugera. L’objectiu és automatitzar una tasca clara, no construir un model decoratiu. **Proves i millora (7 min):** executeu tres intents i registreu si arriba, s’atura i retorna sense encallar. Si canvieu topall o posició inicial, torneu a mesurar. **Reflexió (3 min):** identifiqueu què és una decisió del codi i què és una propietat física del muntatge.
+#### Fase 1 · Activem i prediem
+
+**Definició (7 min):** trieu una acció repetible de la mostra: alçar una barrera de cartó, desplaçar una fitxa per una canaleta o girar un indicador. Escriviu entrada, acció del motor, resultat i condició d’aturada.
+
+#### Fase 2 · Explorem i construïm
+
+**Ideació/mecanisme (10 min):** dibuixeu dues alternatives mecàniques i valoreu estabilitat, nombre de peces, recorregut i risc de pinçament.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programa per etapes (18 min):** programeu una posició inicial coneguda, una acció limitada i retorn/aturada. Verifiqueu primer el mecanisme a mà amb motors apagats; després proveu sense càrrega i amb una fitxa gran i lleugera. L’objectiu és automatitzar una tasca clara, no construir un model decoratiu.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves i millora (7 min):** executeu tres intents i registreu si arriba, s’atura i retorna sense encallar. Si canvieu topall o posició inicial, torneu a mesurar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió (3 min):** identifiqueu què és una decisió del codi i què és una propietat física del muntatge.
 
 ### **Lliçó 4 · Dos motors, un moviment coordinat (45 min).**
 
-**Activació (5 min):** amb una analogia corporal no competitiva, proveu a dos costats d’una corda lleugera com és avançar alhora i què passa si cada costat actua en un moment diferent. No estireu l’alumnat ni useu forces; també es pot simular amb dos marcadors en paper. **Exploració (10 min):** proveu els dos motors per separat amb la base elevada; comproveu direcció, port i resposta. **Construcció (15 min):** creeu una plataforma de taula amb dues potes articulades o un mecanisme sense rodes de baixa altura, inspirat en el problema de coordinar motors del repte *Hopper Run*, però amb una forma original i sense perseguir cap distància o velocitat. El mecanisme ha de romandre dins del carril i tenir topalls. **Programació (10 min):** useu la crida de parella documentada per fer-los moure simultàniament durant un interval curt; compareu amb instruccions consecutives. Analitzeu simetria, ordre, fricció i desequilibri. **Conversa (5 min):** justifiqueu per què un robot sense rodes pot avançar i quins límits presenta el vostre prototip.
+#### Fase 1 · Activem i prediem
+
+**Activació (5 min):** amb una analogia corporal no competitiva, proveu a dos costats d’una corda lleugera com és avançar alhora i què passa si cada costat actua en un moment diferent. No estireu l’alumnat ni useu forces; també es pot simular amb dos marcadors en paper.
+
+#### Fase 2 · Explorem i construïm
+
+**Exploració (10 min):** proveu els dos motors per separat amb la base elevada; comproveu direcció, port i resposta.
+
+#### Fase 3 · Expliquem i registrem
+
+**Construcció (15 min):** creeu una plataforma de taula amb dues potes articulades o un mecanisme sense rodes de baixa altura, inspirat en el problema de coordinar motors del repte *Hopper Run*, però amb una forma original i sense perseguir cap distància o velocitat. El mecanisme ha de romandre dins del carril i tenir topalls.
+
+#### Fase 4 · Apliquem i millorem
+
+**Programació (10 min):** useu la crida de parella documentada per fer-los moure simultàniament durant un interval curt; compareu amb instruccions consecutives. Analitzeu simetria, ordre, fricció i desequilibri.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Conversa (5 min):** justifiqueu per què un robot sense rodes pot avançar i quins límits presenta el vostre prototip.
 
 ### **Lliçó 5 · Una ruta amb passos i girs (45–90 min).**
 
-**Encàrrec i criteris (10 min):** planifiqueu un lliurament fictici des de la biblioteca a tres parades de maqueta. L’èxit significa passar per l’ordre correcte de fites i quedar dins d’una zona final àmplia; no s’exigeix precisió d’un servei real. **Mapa i pseudocodi (10 min):** dibuixeu quadrícula de trams, girs i pauses. Feu recompte d’ordres, determineu quin motor-parella s’utilitza per recta i com es genera el gir amb diferència de girs entre rodes. **Calibratge (15 min):** feu una recta d’una longitud curta amb tres proves i estimeu graus de roda necessaris; feu un gir de quart aproximat i mesureu orientació amb quadrícula/transportador. Useu relacions com a estimacions específiques del vostre robot, no constants universals. **Implementació Python (20 min):** traduïu la ruta en crides documentades, separant recta, gir i parada. Proveu cada funció en solitari, després encadeneu dues ordres i finalment la ruta completa a baixa velocitat. Manteniu un botó o via manual per aturar. **Diagnòstic (10 min):** si se’n va de la marca, canvieu una variable per iteració (graus, alineació, velocitat o superfície); documenteu quin error disminueix. **Si es disposa de més temps:** repetiu tres vegades la ruta completa i compareu dispersió i causes, sense fer una cursa de velocitat.
+#### Fase 1 · Activem i prediem
+
+**Encàrrec i criteris (10 min):** planifiqueu un lliurament fictici des de la biblioteca a tres parades de maqueta. L’èxit significa passar per l’ordre correcte de fites i quedar dins d’una zona final àmplia; no s’exigeix precisió d’un servei real.
+
+#### Fase 2 · Explorem i construïm
+
+**Mapa i pseudocodi (10 min):** dibuixeu quadrícula de trams, girs i pauses. Feu recompte d’ordres, determineu quin motor-parella s’utilitza per recta i com es genera el gir amb diferència de girs entre rodes.
+
+#### Fase 3 · Expliquem i registrem
+
+**Calibratge (15 min):** feu una recta d’una longitud curta amb tres proves i estimeu graus de roda necessaris; feu un gir de quart aproximat i mesureu orientació amb quadrícula/transportador. Useu relacions com a estimacions específiques del vostre robot, no constants universals.
+
+#### Fase 4 · Apliquem i millorem
+
+**Implementació Python (20 min):** traduïu la ruta en crides documentades, separant recta, gir i parada. Proveu cada funció en solitari, després encadeneu dues ordres i finalment la ruta completa a baixa velocitat. Manteniu un botó o via manual per aturar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Diagnòstic (10 min):** si se’n va de la marca, canvieu una variable per iteració (graus, alineació, velocitat o superfície); documenteu quin error disminueix. **Si es disposa de més temps:** repetiu tres vegades la ruta completa i compareu dispersió i causes, sense fer una cursa de velocitat.
 
 ### **Lliçó 6 · Prova entre equips i feedback de disseny (30–45 min).**
 
-**Preparació (8 min):** cada equip deixa la ruta, codi comentat, criteri d’arribada i resultats inicials visibles. **Revisió (12 min):** un segon equip prediu el moviment abans d’executar, prova amb consentiment dels autors i registra comportament; no edita el programa ni reconstrueix el mecanisme. El feedback segueix “he observat…”, “la predicció diu…”, “un cas més que provaria…”. **Decisió (5 min):** autors trien una recomanació i expliquen si l’adopten, la deixen per al futur o la descarten amb motiu. **Iteració (12 min):** canvieu una característica, repetiu el cas anterior i un cas de control per assegurar que no s’ha perjudicat un tram correcte. **Tancament (3–8 min):** mostreu gràfic/taula de predicció i resultat, descriviu limitacions del robot i valoreu quina prova ha sigut més informativa que una demostració única.
+#### Fase 1 · Activem i prediem
+
+**Preparació (8 min):** cada equip deixa la ruta, codi comentat, criteri d’arribada i resultats inicials visibles.
+
+#### Fase 2 · Explorem i construïm
+
+**Revisió (12 min):** un segon equip prediu el moviment abans d’executar, prova amb consentiment dels autors i registra comportament; no edita el programa ni reconstrueix el mecanisme. El feedback segueix “he observat…”, “la predicció diu…”, “un cas més que provaria…”.
+
+#### Fase 3 · Expliquem i registrem
+
+**Decisió (5 min):** autors trien una recomanació i expliquen si l’adopten, la deixen per al futur o la descarten amb motiu.
+
+#### Fase 4 · Apliquem i millorem
+
+**Iteració (12 min):** canvieu una característica, repetiu el cas anterior i un cas de control per assegurar que no s’ha perjudicat un tram correcte.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Tancament (3–8 min):** mostreu gràfic/taula de predicció i resultat, descriviu limitacions del robot i valoreu quina prova ha sigut més informativa que una demostració única.
 
 ## 🧪 Evidències i avaluació
 

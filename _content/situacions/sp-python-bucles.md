@@ -64,31 +64,157 @@ Rols rotatius: lectura/escriptura Python, construcció segura, registre i revisi
 
 ### **Lliçó 1 · Quatre repeticions, una instrucció (45 min).**
 
-**Activació (7 min):** presenteu una tira amb quatre caselles i demaneu a l’alumnat com descriuria el mateix gest de col·locar una fitxa quatre vegades. Compareu quatre línies idèntiques amb “repeteix quatre voltes”. **Model (10 min):** feu traça en paper d’un `for index in range(4)` amb una ordre d’eixida; compteu iteracions començant per zero i diferencieu índex de número de fitxa visible. **Programació (18 min):** escriviu un programa SPIKE simple segons l’API local perquè un indicador faça un moviment curt, torne i pause quatre vegades. Comenceu amb actuador immobilitzat o desconnectat; després executeu amb angle limitat i velocitat baixa. **Validació (7 min):** l’equip anota el nombre esperat i el nombre observat; si el motor es mou contínuament, pareu i comproveu la indentació, el rang i la crida. **Eixida (3 min):** dibuixeu el flux d’una iteració i expliqueu què passa en acabar la quarta.
+#### Fase 1 · Activem i prediem
+
+**Activació (7 min):** presenteu una tira amb quatre caselles i demaneu a l’alumnat com descriuria el mateix gest de col·locar una fitxa quatre vegades. Compareu quatre línies idèntiques amb “repeteix quatre voltes”.
+
+#### Fase 2 · Explorem i construïm
+
+**Model (10 min):** feu traça en paper d’un `for index in range(4)` amb una ordre d’eixida; compteu iteracions començant per zero i diferencieu índex de número de fitxa visible.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programació (18 min):** escriviu un programa SPIKE simple segons l’API local perquè un indicador faça un moviment curt, torne i pause quatre vegades. Comenceu amb actuador immobilitzat o desconnectat; després executeu amb angle limitat i velocitat baixa.
+
+#### Fase 4 · Apliquem i millorem
+
+**Validació (7 min):** l’equip anota el nombre esperat i el nombre observat; si el motor es mou contínuament, pareu i comproveu la indentació, el rang i la crida.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Eixida (3 min):** dibuixeu el flux d’una iteració i expliqueu què passa en acabar la quarta.
 
 ### **Lliçó 2 · Comptar fitxes i fer compte arrere (45 min).**
 
-**Problema (5 min):** com sap l’operador quantes caselles del mosaic queden? **Variables i recompte (12 min):** representeu una seqüència de cinc fitxes amb comptador que augmenta; prediu els valors abans d’executar. **Comptador i eixida (18 min):** modifiqueu el programa perquè cada iteració actualitze el nombre col·locat i el mostre a consola o a la matriu si la funció local està disponible. Creeu una segona versió amb compte arrere des del nombre total fins a zero. Distingiu el recompte de cicles del sensor: la seqüència no detecta per si sola que una fitxa s’ha mogut correctament. **Proves de frontera (7 min):** proveu 1, 0 i 5 iteracions en simulació; reviseu si zero repeticions deixa el programa en un estat clar i si l’últim missatge és “acabat”. **Tancament (3 min):** descriviu un error *off-by-one* i com la traça l’ha fet visible.
+#### Fase 1 · Activem i prediem
+
+**Problema (5 min):** com sap l’operador quantes caselles del mosaic queden?
+
+#### Fase 2 · Explorem i construïm
+
+**Variables i recompte (12 min):** representeu una seqüència de cinc fitxes amb comptador que augmenta; prediu els valors abans d’executar.
+
+#### Fase 3 · Expliquem i registrem
+
+**Comptador i eixida (18 min):** modifiqueu el programa perquè cada iteració actualitze el nombre col·locat i el mostre a consola o a la matriu si la funció local està disponible. Creeu una segona versió amb compte arrere des del nombre total fins a zero. Distingiu el recompte de cicles del sensor: la seqüència no detecta per si sola que una fitxa s’ha mogut correctament.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves de frontera (7 min):** proveu 1, 0 i 5 iteracions en simulació; reviseu si zero repeticions deixa el programa en un estat clar i si l’últim missatge és “acabat”.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Tancament (3 min):** descriviu un error *off-by-one* i com la traça l’ha fet visible.
 
 ### **Lliçó 3 · Ritme de passos i pauses (45 min).**
 
-**Escolta/observació (6 min):** feu una seqüència no sonora amb palmell sobre la taula o targetes, i una versió lenta i una ràpida. La participació corporal és opcional; també es poden ordenar targetes. **Planificació (8 min):** convertiu un patró A-B-A en instruccions temporitzades. Pregunteu què es repeteix i què canvia en cada volta. **Implementació (18 min):** programa una sèrie de moviments curts amb pauses explícites; proveu amb el motor sense càrrega primer. Si la versió d’app no permet la funció de pausa prevista, feu una versió amb observació manual entre ordres i identifiqueu la limitació. **Comparació (8 min):** mesureu el temps total de dues seqüències amb mateixos moviments però pauses distintes; compareu durada prevista i real. **Reflexió (5 min):** identifiqueu quina part de la coreografia depén del bucle i quina del valor de cada moviment.
+#### Fase 1 · Activem i prediem
+
+**Escolta/observació (6 min):** feu una seqüència no sonora amb palmell sobre la taula o targetes, i una versió lenta i una ràpida. La participació corporal és opcional; també es poden ordenar targetes.
+
+#### Fase 2 · Explorem i construïm
+
+**Planificació (8 min):** convertiu un patró A-B-A en instruccions temporitzades. Pregunteu què es repeteix i què canvia en cada volta.
+
+#### Fase 3 · Expliquem i registrem
+
+**Implementació (18 min):** programa una sèrie de moviments curts amb pauses explícites; proveu amb el motor sense càrrega primer. Si la versió d’app no permet la funció de pausa prevista, feu una versió amb observació manual entre ordres i identifiqueu la limitació.
+
+#### Fase 4 · Apliquem i millorem
+
+**Comparació (8 min):** mesureu el temps total de dues seqüències amb mateixos moviments però pauses distintes; compareu durada prevista i real.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió (5 min):** identifiqueu quina part de la coreografia depén del bucle i quina del valor de cada moviment.
 
 ### **Lliçó 4 · Si la fitxa és d’un tipus, canvia el patró (45 min).**
 
-**Regla desconnectada (8 min):** definiu una condició visible sense dependre només del color: forma circular → seqüència A; forma quadrada → seqüència B. Els equips classifiquen targetes i descriuen la decisió “si… altrament…”. **Flowchart (8 min):** dibuixeu entrada manual, condició, dues branques i punt de reunió. **Programa i traça (17 min):** implementeu les branques a Python amb una variable triada en codi o confirmació manual; cada branca conté un patró curt de bucle. No afegiu sensor: l’objectiu és comprendre el control, no fer veure que el robot identifica formes. **Casos de prova (8 min):** executeu cada condició i un valor no previst; anoteu quina branca s’activa i quina resposta ofereix el programa a l’entrada desconeguda. **Sortida (4 min):** expliqueu per què el codi no ha de dependre d’una regla visual no especificada.
+#### Fase 1 · Activem i prediem
+
+**Regla desconnectada (8 min):** definiu una condició visible sense dependre només del color: forma circular → seqüència A; forma quadrada → seqüència B. Els equips classifiquen targetes i descriuen la decisió “si… altrament…”.
+
+#### Fase 2 · Explorem i construïm
+
+**Flowchart (8 min):** dibuixeu entrada manual, condició, dues branques i punt de reunió.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programa i traça (17 min):** implementeu les branques a Python amb una variable triada en codi o confirmació manual; cada branca conté un patró curt de bucle. No afegiu sensor: l’objectiu és comprendre el control, no fer veure que el robot identifica formes.
+
+#### Fase 4 · Apliquem i millorem
+
+**Casos de prova (8 min):** executeu cada condició i un valor no previst; anoteu quina branca s’activa i quina resposta ofereix el programa a l’entrada desconeguda.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Sortida (4 min):** expliqueu per què el codi no ha de dependre d’una regla visual no especificada.
 
 ### **Lliçó 5 · Repetir fins que algú ature: bucle infinit (45 min).**
 
-**Comparació (7 min):** mireu un fragment finit amb `range(3)` i un d’infinit teòric com `while True`. Sense executar el segon, descriviu quin té eixida automàtica. **Usos i riscos (10 min):** discutiu casos en què el codi podria esperar una interacció constant i per què cal una condició de parada, pausa segura i control manual. **Laboratori en paper (15 min):** traceu fragment infinit en una graella, localitzeu si existeix un canvi a la condició i afegiu un criteri de parada (comptador màxim, botó o estat explícit). Si es mostra en editor, és només sortida textual sense motors/connectivitat; mai es deixa el bucle executant sense supervisió. **Model de moviment (8 min):** proposeu com seria una “mostra contínua” del mosaic amb indicador que alterna; expliqueu quin mecanisme podria trencar-se i com es comporta el programa en pausa. **Tancament (5 min):** cada alumne escriu una regla per evitar moviment persistent no intencionat.
+#### Fase 1 · Activem i prediem
+
+**Comparació (7 min):** mireu un fragment finit amb `range(3)` i un d’infinit teòric com `while True`. Sense executar el segon, descriviu quin té eixida automàtica.
+
+#### Fase 2 · Explorem i construïm
+
+**Usos i riscos (10 min):** discutiu casos en què el codi podria esperar una interacció constant i per què cal una condició de parada, pausa segura i control manual.
+
+#### Fase 3 · Expliquem i registrem
+
+**Laboratori en paper (15 min):** traceu fragment infinit en una graella, localitzeu si existeix un canvi a la condició i afegiu un criteri de parada (comptador màxim, botó o estat explícit). Si es mostra en editor, és només sortida textual sense motors/connectivitat; mai es deixa el bucle executant sense supervisió.
+
+#### Fase 4 · Apliquem i millorem
+
+**Model de moviment (8 min):** proposeu com seria una “mostra contínua” del mosaic amb indicador que alterna; expliqueu quin mecanisme podria trencar-se i com es comporta el programa en pausa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Tancament (5 min):** cada alumne escriu una regla per evitar moviment persistent no intencionat.
 
 ### **Lliçó 6 · Liderar un equip amb un patró propi (90–120 min).**
 
-**Encàrrec (10 min):** dissenyeu un mòdul per al mosaic de la fira que use almenys una repetició i comunique clarament quan s’ha acabat. Pot moure un indicador, alternar dues fitxes o fer avançar un marcador; no ha d’emular postures físiques ni obligar persones a fer exercicis. **Exploració d’idees (12 min):** cada membre fa un esbós; l’equip tria una regla amb criteris de llegibilitat, nombre de peces, repeticions i estabilitat. Feu timeline/flowchart amb una iteració ampliada i marca de parada. **Construcció (20 min):** creeu suport i topalls amb peces de la dotació, de manera que el moviment no arrossegue el hub ni deixe caure fitxes. **Programa (20 min):** dividiu en inici, repetició de mòdul, recompte/estat final i retorn a posició inicial. Useu `for` si el total és conegut; justifiqueu qualsevol altra estructura. Comentaris expliquen el patró triat i el mecanisme de parada. **Proves (18 min):** feu un intent amb 1, 3 i el total pactat, primer sense fitxa i després amb càrrega lleugera. Anoteu cicles previstos/observats, desalineació, caigudes i temps; canvieu una única peça o valor per iteració. **Presentació (10–20 min):** cada equip mostra com es llig el codi i quin canvi ha fet més fiable el patró. Rols de portaveu rotatius perquè qui no programa habitualment també comunique.
+#### Fase 1 · Activem i prediem
+
+**Encàrrec (10 min):** dissenyeu un mòdul per al mosaic de la fira que use almenys una repetició i comunique clarament quan s’ha acabat. Pot moure un indicador, alternar dues fitxes o fer avançar un marcador; no ha d’emular postures físiques ni obligar persones a fer exercicis.
+
+#### Fase 2 · Explorem i construïm
+
+**Exploració d’idees (12 min):** cada membre fa un esbós; l’equip tria una regla amb criteris de llegibilitat, nombre de peces, repeticions i estabilitat. Feu timeline/flowchart amb una iteració ampliada i marca de parada.
+
+#### Fase 3 · Expliquem i registrem
+
+**Construcció (20 min):** creeu suport i topalls amb peces de la dotació, de manera que el moviment no arrossegue el hub ni deixe caure fitxes. **Programa (20 min):** dividiu en inici, repetició de mòdul, recompte/estat final i retorn a posició inicial. Useu `for` si el total és conegut; justifiqueu qualsevol altra estructura. Comentaris expliquen el patró triat i el mecanisme de parada.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves (18 min):** feu un intent amb 1, 3 i el total pactat, primer sense fitxa i després amb càrrega lleugera. Anoteu cicles previstos/observats, desalineació, caigudes i temps; canvieu una única peça o valor per iteració.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Presentació (10–20 min):** cada equip mostra com es llig el codi i quin canvi ha fet més fiable el patró. Rols de portaveu rotatius perquè qui no programa habitualment també comunique.
 
 ### **Lliçó 7 · Feedback per millorar el mosaic (30–45 min).**
 
-**Preparar evidències (7 min):** els autors exposen diagrama, programa, patró acabat, un resultat repetit i una pregunta. **Revisió (10 min):** una parella externa segueix el pseudocodi i observa un cicle complet; no canvia el codi ni reconstrueix el model. La pauta pregunta: es pot predir el nombre de moviments? l’aturada és visible? el ritme i el recompte concorden? **Feedback (5 min):** formuleu una observació, una pregunta i una suggerència concreta. Els autors poden demanar aclariment. **Iteració (12 min):** trieu una millora, registreu per què i repetiu el cas amb les mateixes condicions. **Reflexió (3–11 min):** compareu dades abans/després, indiqueu quin punt no es pot resoldre amb el temps disponible i valoreu la col·laboració sense comparar persones.
+#### Fase 1 · Activem i prediem
+
+**Preparar evidències (7 min):** els autors exposen diagrama, programa, patró acabat, un resultat repetit i una pregunta.
+
+#### Fase 2 · Explorem i construïm
+
+**Revisió (10 min):** una parella externa segueix el pseudocodi i observa un cicle complet; no canvia el codi ni reconstrueix el model. La pauta pregunta: es pot predir el nombre de moviments? l’aturada és visible? el ritme i el recompte concorden?
+
+#### Fase 3 · Expliquem i registrem
+
+**Feedback (5 min):** formuleu una observació, una pregunta i una suggerència concreta. Els autors poden demanar aclariment.
+
+#### Fase 4 · Apliquem i millorem
+
+**Iteració (12 min):** trieu una millora, registreu per què i repetiu el cas amb les mateixes condicions.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió (3–11 min):** compareu dades abans/després, indiqueu quin punt no es pot resoldre amb el temps disponible i valoreu la col·laboració sense comparar persones.
 
 ## 🧪 Evidències, avaluació i producte
 

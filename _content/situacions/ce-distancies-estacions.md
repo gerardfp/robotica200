@@ -42,21 +42,69 @@ Marqueu distàncies sobre la maqueta amb peces iguals o segments de paper de la 
 
 ### **Quina parada queda més lluny? (40 min)**
 
-Trieu dos o tres punts com a estacions i poseu-los noms propis. Abans de muntar la via, mostreu-los en un plànol o sobre la taula. Cada parella prediu quin tram sembla més curt i com ho podria comprovar. Recompteu unitats iguals entre cada parella de punts: col·loqueu-les una darrere l’altra sense espais ni superposicions. Compareu els resultats i pregunteu per què convé usar sempre la mateixa unitat. Si les distàncies no cauen en nombres sencers d’unitats, marqueu-ho i parleu de la diferència, sense forçar l’arrodoniment.
+#### Fase 1 · Activem i prediem
 
-Per a qui preferisca no caminar, una fitxa representa el trajecte en el mapa i es mou una casella cada vegada. No compareu longituds de pas entre persones ni presenteu el recompte d’una caminada individual com una mesura exacta. *Evidència:* predicció, recompte amb unitat acordada i comparació «més curt/més llarg». *Preguntes docents:* «Què hem mantingut igual? Quina distància ha resultat més llarga i com ho sabem?»
+Trieu dos o tres punts com a estacions i poseu-los noms propis. Abans de muntar la via, mostreu-los en un plànol o sobre la taula. Cada parella prediu quin tram sembla més curt i com ho podria comprovar.
+
+#### Fase 2 · Explorem i construïm
+
+Recompteu unitats iguals entre cada parella de punts: col·loqueu-les una darrere l’altra, sense espais ni superposicions. Per a qui preferisca no caminar, una fitxa representa el trajecte en el mapa i es mou una casella cada vegada.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu els resultats i registreu la unitat utilitzada. Si les distàncies no cauen en nombres sencers d’unitats, marqueu-ho i parleu de la diferència sense forçar l’arrodoniment.
+
+#### Fase 4 · Apliquem i millorem
+
+Comproveu que totes les parelles usen la mateixa unitat i el mateix procediment. No compareu longituds de pas entre persones ni presenteu el recompte d’una caminada individual com una mesura exacta.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** predicció, recompte amb unitat acordada i comparació «més curt/més llarg». Pregunteu: «Què hem mantingut igual? Quina distància ha resultat més llarga i com ho sabem?»
 
 ### **Construïm i investiguem els nombres de l’app (40 min).**
 
-En grup menut, construïu dos o tres models senzills de parada i una via de doble extrem; poseu les destinacions al costat de la via, des de prop de l’origen fins a més lluny. Abans de moure el tren, connecteu-lo a l’app i mireu quins nombres es poden seleccionar. Ordeneu-los del més menut al més gran amb targetes, si això coincideix amb la interfície observada.
+#### Fase 1 · Activem i prediem
 
-Proveu cada valor amb un tram lliure i segur, un cada vegada. Registreu on s’ha aturat el tren; no suposeu que el nombre equival a centímetres ni que produeix la mateixa distància en qualsevol muntatge. A continuació, cada equip selecciona un nombre per arribar a una parada: marca la predicció al plànol, executa el trajecte i compara l’arribada amb el resultat esperat. Si cal corregir, canvieu una sola selecció i torneu a provar. *Evidència:* taula «parada / nombre triat / predicció / on s’ha aturat / què revisaríem». *Preguntes docents:* «Quin valor creieu que farà avançar més el tren? Què heu observat quan l’heu provat?»
+Abans de moure el tren, connecteu-lo a l’app i mireu quins nombres es poden seleccionar. Predieu quin valor farà avançar més el model; no suposeu que els nombres representen centímetres.
+
+#### Fase 2 · Explorem i construïm
+
+En grup menut, construïu dos o tres models senzills de parada i una via de doble extrem. Poseu les destinacions al costat de la via, des de prop de l’origen fins a més lluny. Ordeneu els nombres amb targetes només si coincideix amb la interfície observada.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu cada valor amb un tram lliure i segur, un cada vegada. Registreu on s’ha aturat el tren; no suposeu que el nombre produeix la mateixa distància en qualsevol muntatge.
+
+#### Fase 4 · Apliquem i millorem
+
+Cada equip selecciona un nombre per arribar a una parada, marca la predicció al plànol, executa el trajecte i compara l’arribada amb el resultat esperat. Si cal corregir, canvieu una sola selecció i torneu a provar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula «parada / nombre triat / predicció / on s’ha aturat / què revisaríem». Pregunteu: «Quin valor creieu que farà avançar més el tren? Què heu observat quan l’heu provat?»
 
 ### **Afegim parades i contem el trajecte (40 min).**
 
-Afegiu una o dues destinacions i acordeu distàncies de maqueta diferents. Ordeneu les parades i representeu el trajecte amb targetes: inici, avanç, visita, nova parada i final. Compareu quin tram és el més curt i el més llarg; expliqueu quin nombre de l’app heu triat i què ha passat. Una altra parella reconstrueix el recorregut a partir del mapa, després comprova una distància amb la mateixa unitat de la primera sessió.
+#### Fase 1 · Activem i prediem
 
-Com a extensió per als equips preparats, compareu dos nombres consecutius de l’app o dissenyeu una ruta amb el valor més gran disponible. Useu les paraules «més/menys» només per descriure el moviment observat en aquesta prova; no convertiu el valor de la interfície en una unitat mètrica. Tanqueu amb una explicació de quina evidència ha ajudat a decidir el nombre i quina limitació té el model de distàncies. *Evidència:* mapa final, seqüència oral o visual i justificació de la comparació. *Preguntes docents:* «Quines parades hem fet i en quin ordre? Què hauríem de mesurar d’una altra manera si volguérem descriure un lloc real?»
+Afegiu una o dues destinacions i acordeu distàncies de maqueta diferents. Predieu quin tram serà més curt i quin nombre de l’app podria acostar el tren a cada parada.
+
+#### Fase 2 · Explorem i construïm
+
+Ordeneu les parades i representeu el trajecte amb targetes: inici, avanç, visita, nova parada i final. Una altra parella reconstrueix el recorregut a partir del mapa.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu quin tram és el més curt i el més llarg; expliqueu quin nombre de l’app heu triat i què ha passat. Comproveu una distància amb la mateixa unitat de la primera sessió.
+
+#### Fase 4 · Apliquem i millorem
+
+Per ampliar el repte, compareu dos nombres consecutius de l’app o dissenyeu una ruta amb el valor més gran disponible. Useu «més/menys» només per descriure el moviment observat en aquesta prova, no com a mesura mètrica. Expliqueu quina evidència ha ajudat a decidir el nombre i quina limitació té el model.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa final, seqüència oral o visual i justificació de la comparació. Pregunteu: «Quines parades hem fet i en quin ordre? Què hauríem de mesurar d’una altra manera si volguérem descriure un lloc real?»
 
 ## 📋 Avaluació i evidències
 

@@ -48,21 +48,69 @@ Els maons d’acció són opcionals per a l’objectiu principal. Si n’incorpo
 
 ### **Sessió 1 · Descobrim què es repeteix.**
 
-Pregunteu quines accions o rutines es fan sovint a l’escola o a casa. Recolliu exemples diversos —preparar la motxilla, obrir l’hort, mirar un llibre— sense demanar experiències personals que l’infant no vulga compartir. Trieu una seqüència breu de dos moviments representables amb pictogrames o fitxes i col·loqueu-la en cercle. El docent mostra l’ordre una vegada; el grup l’anticipa i la repeteix dues vegades. Després, assenyaleu quin fragment ha tornat i com sabem on comença una nova volta.
+#### Fase 1 · Activem i prediem
 
-Qui no vulga fer els gestos pot ordenar les targetes, fer girar un marcador sobre el cercle o dir/assenyalar «una altra vegada». Relacioneu la repetició amb el trajecte: el tren arribarà de nou al mateix punt si la via es tanca. **Evidència:** seqüència ordenada i una explicació oral, gestual o visual de què es repeteix. **Suport:** useu només una acció i una fletxa circular; **ampliació:** introduïu dues parades en una seqüència de tres passos.
+Pregunteu quines accions o rutines es fan sovint a l’escola o a casa. Recolliu exemples diversos —preparar la motxilla, obrir l’hort, mirar un llibre— sense demanar experiències personals que l’infant no vulga compartir. El grup tria una rutina que es puga representar amb moviments senzills.
+
+#### Fase 2 · Explorem i construïm
+
+Trieu una seqüència breu de dos moviments representables amb pictogrames o fitxes i col·loqueu-la en cercle. Qui no vulga fer els gestos pot ordenar les targetes, fer girar un marcador sobre el cercle o dir o assenyalar «una altra vegada».
+
+#### Fase 3 · Expliquem i registrem
+
+El docent mostra l’ordre una vegada; el grup l’anticipa i la repeteix dues vegades. Després, assenyaleu quin fragment ha tornat i com sabem on comença una nova volta. Registreu l’ordre amb una tira de pictogrames.
+
+#### Fase 4 · Apliquem i millorem
+
+Relacioneu la repetició amb el trajecte: el tren arribarà de nou al mateix punt si la via es tanca. Useu només una acció i una fletxa circular com a suport; si el grup ho domina, introduïu dues parades en una seqüència de tres passos.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** seqüència ordenada i una explicació oral, gestual o visual de què es repeteix. Pregunteu quina pista ens permet saber que comença una altra volta i com ho representaríem sense fer els gestos.
 
 ### **Sessió 2 · Construïm la ruta circular de l’horta.**
 
-Combineu vies rectes i corbes per tancar l’O. Abans de col·locar les destinacions, recórreu la via amb el dit o amb una figura i marqueu l’inici amb una targeta. En parelles, decidiu quin ordre faran les persones passatgeres: estació → bancal → ombra → estació. Construïu cada lloc amb peces grans o dibuixos en paper; manteniu-los fora de la via perquè no frenen el tren.
+#### Fase 1 · Activem i prediem
 
-Feu una predicció: «quan el tren passe pel marcador una altra vegada, què vindrà després?». Col·loqueu passatgers i maons d’acció només en llocs provats. Executeu una volta a baixa velocitat; un infant assenyala les targetes mentre un altre mira les parades. Si el tren no fa una aturada prevista, atureu-lo amb el control i reviseu si el maó està ben col·locat o si la funció s’havia interpretat malament. **Evidència:** mapa amb ordre, predicció i registre pictòric del que ha passat. **Ampliació:** afegiu una tercera destinació i compteu quantes parades hi ha en una volta.
+Abans de construir, pregunteu què passarà quan el tren arribe al marcador una altra vegada. Marqueu l’inici amb una targeta i feu una predicció sobre quin lloc visitarà després.
+
+#### Fase 2 · Explorem i construïm
+
+Combineu vies rectes i corbes per tancar l’O. Abans de col·locar les destinacions, recórreu la via amb el dit o amb una figura. En parelles, decidiu l’ordre de les persones passatgeres: estació → bancal → ombra → estació. Construïu cada lloc amb peces grans o dibuixos en paper i deixeu-los fora de la via perquè no frenen el tren.
+
+#### Fase 3 · Expliquem i registrem
+
+Representeu l’ordre en un mapa senzill i expliqueu per on passarà el tren. Col·loqueu passatgers i maons d’acció només en llocs provats; els maons són opcionals i se n’ha de confirmar la funció amb el tren disponible.
+
+#### Fase 4 · Apliquem i millorem
+
+Executeu una volta a baixa velocitat: una persona assenyala les targetes i una altra observa les parades. Si el tren no fa una aturada prevista, atureu-lo amb el control i reviseu la posició del maó o la interpretació de la seua funció abans de tornar-ho a provar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa amb l’ordre, predicció i registre pictòric del que ha passat. Si el grup ja domina el recorregut, afegiu una tercera destinació i compteu quantes parades hi ha en una volta. Quina observació confirma o corregix la predicció inicial?
 
 ### **Sessió 3 · Repetim i comparem dues vies.**
 
-Expliqueu que les persones passatgeres volen fer el mateix viatge una altra vegada. Pregunteu si cal canviar la via o si el tren pot continuar pel circuit. Feu una segona volta i marqueu amb un adhesiu el moment en què la seqüència torna a començar; descriviu l’ordre amb una tira d’imatges. Després, munteu una via de doble extrem curta al costat de l’O amb dues destinacions comunes.
+#### Fase 1 · Activem i prediem
 
-Compareu els recorreguts: la via en O tanca el trajecte, mentre que la de doble extrem té un inici i un final oberts i pot necessitar que el tren canvie de sentit o que la ruta es torne a preparar. Feu una prova curta i descriviu només el que s’ha vist en el muntatge. Tanqueu amb la pregunta «quina forma facilita repetir exactament la mateixa volta? Per què?». **Evidència:** dues voltes registrades, comparació visual de les vies i una explicació amb suport de preguntes.
+Expliqueu que les persones passatgeres volen fer el mateix viatge una altra vegada. Pregunteu si cal canviar la via o si el tren pot continuar pel circuit i anoteu una predicció abans de provar-ho.
+
+#### Fase 2 · Explorem i construïm
+
+Feu una segona volta i marqueu amb un adhesiu el moment en què la seqüència torna a començar. Descriviu l’ordre amb una tira d’imatges. Després, munteu una via de doble extrem curta al costat de l’O amb dues destinacions comunes.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu els recorreguts amb un dibuix: la via en O tanca el trajecte, mentre que la de doble extrem té un inici i un final oberts. Registreu què ha fet el tren en cada muntatge, sense generalitzar més enllà de la prova observada.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu una prova curta en la via oberta i comproveu si el tren ha de canviar de sentit o si cal preparar de nou la ruta. Ajusteu la tira d’imatges perquè represente amb claredat el moment de reinici.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dues voltes registrades, comparació visual de les vies i una explicació amb suport de preguntes. Tanqueu amb «quina forma facilita repetir exactament la mateixa volta? Per què?» i demaneu quina observació sosté la resposta.
 
 ## 📋 Avaluació i evidències
 

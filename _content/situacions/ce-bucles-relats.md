@@ -37,27 +37,91 @@ Prepareu Coding Express, vies rectes i corbes, figures de paper, targetes d’ac
 
 ### **Puja, baixa i torna · Up, Down, Around Again.**
 
-Trieu quatre maons de colors i assigneu a cada un una acció fàcil d’identificar: per exemple, tocar cap, muscles, genolls i peus, o fer els mateixos gestos amb una titella/fita en la taula. Practiqueu l’ordre de la seqüència i creeu un cinqué senyal visual que signifique «repeteix». Ordeneu els quatre maons, poseu el senyal de bucle al davant i torneu a posar els quatre moviments per executar la seqüència una segona vegada. Després poseu el marcador davant de cada acció per repetir-la individualment i compareu les dues formes de repetir.
+#### Fase 1 · Activem i prediem
 
-*Evidència: llegenda de colors, ordre de quatre accions, posició del marcador de bucle i explicació de quins passos es tornen a fer.*
+Trieu quatre maons de colors i assigneu a cada un una acció fàcil d’identificar: per exemple, tocar cap, muscles, genolls i peus, o fer els mateixos gestos amb una titella o fitxa sobre la taula. Predigueu què passarà si es repeteix la seqüència sencera.
+
+#### Fase 2 · Explorem i construïm
+
+Practiqueu l’ordre de les quatre accions i creeu un cinqué senyal visual que signifique «repeteix». Ordeneu els quatre maons i poseu el senyal de bucle al davant.
+
+#### Fase 3 · Expliquem i registrem
+
+Torneu a posar els quatre moviments per executar la seqüència una segona vegada. Registreu l’ordre i el lloc on apareix el marcador de bucle.
+
+#### Fase 4 · Apliquem i millorem
+
+Poseu el marcador davant de cada acció per repetir-la individualment i compareu les dues formes de repetir. Si una seqüència es confon, canvieu una sola targeta o acció i torneu a provar-la.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** llegenda de colors, ordre de quatre accions, posició del marcador de bucle i explicació de quins passos es tornen a fer. Quina part s’ha repetit en cada cas?
 
 ### **Una via redona · O-Shaped Track.**
 
-Combineu vies corbes i rectes per tancar un circuit —el model de referència suggereix sis corbes i quatre rectes, sempre segons les peces del lot— i construïu dos o tres llocs que el tren puga visitar. Poseu figures o fitxes com a passatgers, trieu una seqüència de parades i col·loqueu maons d’acció perquè el tren puga detindre’s; el maó blau pot representar una parada de descans o abastiment en la vostra història. Feu el viatge una vegada i, en la volta següent, observeu com el circuit permet tornar a passar pels mateixos llocs. Després munteu al costat una via de doble extrem i parleu de per què no repeteix automàticament la mateixa ruta.
+#### Fase 1 · Activem i prediem
 
-*Evidència: dos mapes de via, seqüència de parades i comparació oral entre circuit tancat i via oberta.*
+Abans de construir, predigueu quina forma de via permetrà tornar a passar pels mateixos llocs i quina necessitarà preparar un altre recorregut.
+
+#### Fase 2 · Explorem i construïm
+
+Combineu vies corbes i rectes per tancar un circuit —el model de referència suggereix sis corbes i quatre rectes, segons les peces del lot— i construïu dos o tres llocs que el tren puga visitar. Poseu figures o fitxes com a passatgers i trieu una seqüència de parades.
+
+#### Fase 3 · Expliquem i registrem
+
+Col·loqueu maons d’acció perquè el tren puga detindre’s; el maó blau pot representar una parada de descans o abastiment en la història. Dibuixeu el mapa de la via i anoteu l’ordre de les parades.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu el viatge una vegada i, en la volta següent, observeu com el circuit permet tornar a passar pels mateixos llocs. Després munteu al costat una via de doble extrem i proveu el mateix recorregut.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dos mapes de via, seqüència de parades i comparació oral entre circuit tancat i via oberta. Per què la via oberta no repeteix automàticament la mateixa ruta?
 
 ### **Concert d’animals · Animal Concert.**
 
-Cada figura de paper té un so o ritme curt. Ordeneu els sons en una seqüència i repetiu el conjunt com un concert; després canvieu només un so i escolteu què canvia. No cal enregistrar àudio ni atribuir capacitats musicals al tren.
+#### Fase 1 · Activem i prediem
 
-*Evidència: partitura d’icones i comparació entre dues versions.*
+Trieu figures de paper i imagineu quin so o ritme breu podria representar cadascuna. Predigueu com sonaria el conjunt abans d’ordenar-lo.
+
+#### Fase 2 · Explorem i construïm
+
+Assigneu un so o ritme curt a cada figura i ordeneu-los en una seqüència. Representeu l’ordre amb icones o targetes.
+
+#### Fase 3 · Expliquem i registrem
+
+Interpreteu la seqüència com un concert i marqueu en la partitura visual quin fragment es repeteix. No cal enregistrar àudio ni atribuir capacitats musicals al tren.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu només un so i torneu a interpretar la seqüència. Compareu què ha canviat i què s’ha mantingut igual.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** partitura d’icones i comparació entre dues versions. Quin canvi hem fet i com l’hem identificat?
 
 ### **El conte que torna al començament · The Never-Ending Story.**
 
-Escolteu o llegiu un relat breu propi en què l’últim esdeveniment pot portar de nou al primer. Identifiqueu les parts de la història i construïu entre totes les persones una via circular amb escenes al voltant; useu el tren, maons d’acció i figures o materials corrents per representar l’ordre del relat. Col·loqueu un maó de bucle on comença la tornada i proveu de contar-lo mentre el tren fa el recorregut. Si la història es trenca —falta una escena, una parada queda fora d’ordre o no s’entén on torna a començar— localitzeu l’error, canvieu la posició d’un maó o una instrucció i torneu a contar-la. En grup menut, inventeu després un conte circular propi amb escenari original i decidiu quantes voltes fareu abans de tancar-lo.
+#### Fase 1 · Activem i prediem
 
-*Evidència: esquema escena–ordre–maó, una errada corregida i explicació de com es repeteix el relat.*
+Escolteu o llegiu un relat breu propi en què l’últim esdeveniment pot portar de nou al primer. Predigueu quina escena farà de connexió amb l’inici.
+
+#### Fase 2 · Explorem i construïm
+
+Identifiqueu les parts de la història i construïu entre totes les persones una via circular amb escenes al voltant. Useu el tren, maons d’acció i figures o materials corrents per representar l’ordre del relat.
+
+#### Fase 3 · Expliquem i registrem
+
+Col·loqueu un maó de bucle on comença la tornada i proveu de contar el relat mentre el tren fa el recorregut. Representeu l’ordre amb un esquema escena–ordre–maó.
+
+#### Fase 4 · Apliquem i millorem
+
+Si la història es trenca —falta una escena, una parada queda fora d’ordre o no s’entén on torna a començar— localitzeu el problema, canvieu la posició d’un maó o una instrucció i torneu a contar-la. En grup menut, inventeu un conte circular propi amb escenari original i decidiu quantes voltes fareu abans de tancar-lo.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** esquema escena–ordre–maó, una errada corregida i explicació de com es repeteix el relat. Quina pista indica clarament que la història torna al començament?
 
 ## Organització i bastides
 

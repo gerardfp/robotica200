@@ -40,27 +40,91 @@ Fixeu el mapa sobre una superfície plana, poseu cada destí al centre d’una c
 
 ### **Preparem el quadern d’observació (45 min).**
 
-Mostreu fotografies pròpies o autoritzades de l’Albufera, d’un parc de l’entorn o d’un mapa fictici. Cada equip tria tres espais que es puguen representar sense manipular éssers vius: ombra i sol, superfície pavimentada, aigua representada en paper, plantes dibuixades o un banc. Formuleu una pregunta que es puga respondre mirant, com «on arriba l’ombra?» o «quines formes de fulla veiem en la fotografia?» Eviteu preguntes que requerisquen tocar, capturar o identificar amb certesa una espècie.
+#### Fase 1 · Activem i prediem
 
-Assigneu a cada parada un símbol i prepareu una fitxa amb camps «què veig», «què pense que podria significar» i «què no puc saber encara». Ordeneu les tres destinacions en un mapa i acordeu una norma de cura. *Evidència:* mapa inicial, tres símbols i una pregunta observable per parada. *Preguntes docents:* «Què podem saber només mirant? Quina part és una idea que encara hauríem de comprovar?»
+Mostreu fotografies pròpies o autoritzades de l’Albufera, d’un parc de l’entorn o d’un mapa fictici. Cada equip tria tres espais que es puguen representar sense manipular éssers vius: ombra i sol, superfície pavimentada, aigua representada en paper, plantes dibuixades o un banc.
+
+#### Fase 2 · Explorem i construïm
+
+Formuleu una pregunta que es puga respondre mirant, com «on arriba l’ombra?» o «quines formes de fulla veiem en la fotografia?». Eviteu preguntes que requerisquen tocar, capturar o identificar amb certesa una espècie.
+
+#### Fase 3 · Expliquem i registrem
+
+Assigneu a cada parada un símbol i prepareu una fitxa amb camps «què veig», «què pense que podria significar» i «què no puc saber encara».
+
+#### Fase 4 · Apliquem i millorem
+
+Ordeneu les tres destinacions en un mapa i acordeu una norma de cura. Comproveu que una altra parella pot entendre la pregunta i trobar cada parada amb els símbols.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa inicial, tres símbols i una pregunta observable per parada. Pregunteu: «Què podem saber només mirant? Quina part és una idea que encara hauríem de comprovar?»
 
 ### **Dissenyem i simulem l’itinerari (45 min).**
 
-Situeu MatataBot al punt d’inici de la quadrícula i identifiqueu la direcció cap on mira. Abans d’usar la torre, cada parella mou una fitxa casella a casella i registra les ordres físiques necessàries per arribar a la primera parada. Continueu fins a les altres dues, anotant els girs i les visites en l’ordre triat. Comproveu les distàncies en el mapa del centre i no pressuposeu que cada quadrícula ha de coincidir amb la longitud del moviment del robot.
+#### Fase 1 · Activem i prediem
 
-Compareu dues rutes: una que visita totes les parades i una que n’omet una. Comenteu nombre d’ordres, claredat i si el trajecte passa per llocs estrets. Després, ordeneu els blocs de moviment corresponents i una targeta de parada entre trams perquè el relat siga llegible. *Evidència:* dues rutes representades, una seqüència de blocs i predicció de la casella final. *Preguntes docents:* «Quina ordre farà girar el robot? Si comença mirant cap a una altra banda, què haurem de canviar?»
+Situeu MatataBot al punt d’inici de la quadrícula i identifiqueu la direcció cap on mira. Predigueu quin bloc farà girar el robot i on acabarà la primera ruta.
+
+#### Fase 2 · Explorem i construïm
+
+Abans d’usar la torre, cada parella mou una fitxa casella a casella i registra les ordres físiques necessàries per arribar a la primera parada. Continueu fins a les altres dues, anotant els girs i les visites en l’ordre triat.
+
+#### Fase 3 · Expliquem i registrem
+
+Comproveu les distàncies en el mapa del centre i anoteu la relació entre cada casella i l’espai representat. No pressuposeu que la quadrícula coincideix amb la longitud del moviment del robot.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu dues rutes: una que visita totes les parades i una que n’omet una. Comenteu el nombre d’ordres, la claredat i si el trajecte passa per llocs estrets. Ordeneu els blocs de moviment i una targeta de parada entre trams.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dues rutes representades, seqüència de blocs i predicció de la casella final. Pregunteu: «Quina ordre farà girar el robot? Si comença mirant cap a una altra banda, què haurem de canviar?»
 
 ### **Programem, provem i depurem amb MatataBot (45 min).**
 
-Col·loqueu els blocs físics a la torre seguint la seqüència acordada. Una persona llig les ordres, una altra comprova que cada bloc està ben orientat i una tercera prediu la ruta. Executeu primer un trajecte fins a una sola parada. Si MatataBot acaba en una casella diferent, compareu pas a pas la seqüència esperada i la real: orientació inicial, recompte de moviments, gir i alineació amb la graella. Canvieu una sola instrucció abans de repetir.
+#### Fase 1 · Activem i prediem
 
-Quan la primera part funciona, afegiu les altres destinacions i les targetes d’observació. Col·loqueu-les fora del camí perquè el robot no les desplace. En cada parada, l’equip tria la pregunta que investigaria i anota el símbol corresponent al quadern. *Evidència:* seqüència depurada, casella d’arribada real i registre d’un ajust justificat. *Preguntes docents:* «Quin és l’últim punt on el robot seguia el pla? Quina orde concreta revisarem?»
+Col·loqueu els blocs físics a la torre seguint la seqüència acordada. Una persona llig les ordres, una altra comprova l’orientació dels blocs i una tercera prediu la ruta.
+
+#### Fase 2 · Explorem i construïm
+
+Executeu primer un trajecte fins a una sola parada. Si MatataBot acaba en una casella diferent, compareu pas a pas la seqüència esperada i la real: orientació inicial, recompte de moviments, gir i alineació amb la graella.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu la casella d’arribada i l’últim punt en què el robot seguia el pla. Identifiqueu quin bloc o quina condició d’alineació cal revisar.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una sola instrucció abans de repetir. Quan la primera part funciona, afegiu les altres destinacions i les targetes d’observació, sempre fora del camí del robot.
+
+#### Fase 5 · Comprovem i reflexionem
+
+En cada parada, trieu la pregunta que investigaria l’equip i anoteu el símbol al quadern. **Evidència:** seqüència depurada, casella d’arribada real i ajust justificat. Pregunteu: «Quina ordre concreta revisarem?»
 
 ### **Fem la ronda i compartim una proposta de cura (45 min).**
 
-Executeu la ruta completa. En cada parada, un membre de l’equip llig la pregunta d’observació i un altre registra una dada del mapa, una fotografia o una observació real autoritzada. Si es treballa només amb maqueta, marqueu les dades com a simulades; no les presenteu com a observacions de camp. Cada equip tria una proposta de cura del parc que no requerisca instruccions de seguretat inventades, com mantindre’s en el camí autoritzat o no deixar residus.
+#### Fase 1 · Activem i prediem
 
-Intercanvieu mapes entre equips: l’altre grup reconstrueix la ruta i identifica quines observacions són dades i quines són interpretacions. Reviseu el mapa si alguna parada no s’entén o si la seqüència queda confusa. *Evidència:* ruta final, tres fitxes d’observació i una proposta de cura sustentada en una observació. *Preguntes docents:* «Quina dada heu vist o consultat? Quina proposta necessita una font o una persona experta?»
+Abans de l’última ronda, reviseu la ruta i prediu quines preguntes d’observació es podran respondre en cada parada.
+
+#### Fase 2 · Explorem i construïm
+
+Executeu la ruta completa. En cada parada, una persona llig la pregunta i una altra registra una dada del mapa, una fotografia o una observació real autoritzada. Si treballeu amb maqueta, marqueu les dades com a simulades, no com a observacions de camp.
+
+#### Fase 3 · Expliquem i registrem
+
+Trieu una proposta de cura del parc que no requerisca instruccions de seguretat inventades, com mantindre’s en un camí autoritzat o no deixar residus. Anoteu quina observació o font la sosté.
+
+#### Fase 4 · Apliquem i millorem
+
+Intercanvieu mapes entre equips. L’altre grup reconstrueix la ruta i identifica quines observacions són dades i quines són interpretacions. Reviseu el mapa si una parada no s’entén o si la seqüència queda confusa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** ruta final, tres fitxes d’observació i proposta de cura sustentada en una observació. Pregunteu: «Quina dada heu vist o consultat? Quina proposta necessita una font o una persona experta?»
 
 ## 📋 Avaluació i evidències
 

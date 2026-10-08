@@ -42,33 +42,113 @@ Els criteris comuns són: cap roda; el model es manté sobre la pista durant la 
 
 ### **Sessió 1 · Descomponem la caminada.**
 
-Observeu el model de referència i una demostració lenta. Marqueu amb fletxes les peces que giren, els punts d’unió de les bieles i les parts que toquen el terra. En parelles, esbosseu dues maneres de fixar les potes al motor: mateixa llargària amb ancoratges diferents o llargàries diferents amb punts d’unió iguals. Feu una predicció sobre quina avançarà, quina oscil·larà i quina podria bolcar, i indiqueu per què.
+#### Fase 1 · Activem i prediem
 
-Prepareu un plànol de prova amb línia d’eixida, carril i zona d’aturada. La classe tria una superfície inicial comuna i una durada curta de funcionament; encara no compareu dissenys sobre pistes diferents. Repartiu rols de muntatge, programació, observació i registre, amb rotació prevista. **Evidència:** diagrama anotat, predicció i protocol inicial. **Suport:** targetes amb «gira / empeny / toca / s’estabilitza»; **ampliació:** afegiu un dibuix de la trajectòria que esperem de cada pota.
+Observeu el model de referència i una demostració lenta. Marqueu amb fletxes les peces que giren, els punts d’unió de les bieles i les parts que toquen el terra. Predigueu quina configuració avançarà, oscil·larà o podria bolcar.
+
+#### Fase 2 · Explorem i construïm
+
+En parelles, esbosseu dues maneres de fixar les potes al motor: mateixa llargària amb ancoratges diferents o llargàries diferents amb punts d’unió iguals. Prepareu un plànol amb línia d’eixida, carril i zona d’aturada.
+
+#### Fase 3 · Expliquem i registrem
+
+La classe tria una superfície inicial comuna i una durada curta. Repartiu rols de muntatge, programació, observació i registre, amb rotació prevista. Anoteu per què espereu cada resultat i dibuixeu la trajectòria de les potes.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el protocol abans de comparar dissenys: manteniu la mateixa pista i indiqueu com s’aturarà el model. Useu targetes amb «gira / empeny / toca / s’estabilitza» si cal.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina hipòtesi provareu primer. **Evidència:** diagrama anotat, predicció i protocol inicial.
 
 ### **Sessió 2 · Construïm el primer model sense rodes.**
 
-Feu una base baixa amb hub, motor i peces estructurals. Afegiu dues potes o un parell d’extremitats articulades amb peces de la dotació. Comproveu que les unions estan fixades i que els elements no colpegen la taula amb força. Moveu el model a mà només quan estiga apagat, si la construcció ho permet, per detectar bloquejos abans d’engegar-lo.
+#### Fase 1 · Activem i prediem
 
-Executeu una ordre lenta i curta. Mesureu distància des de la línia d’eixida, temps fins a l’aturada i estat final (dret, tombat, girat o sense desplaçament). Si el prototip només vibra, poseu a prova una hipòtesi concreta —per exemple, si les potes empenyen cap avant o només cap avall— en lloc de començar de nou. **Evidència:** fotografia o dibuix de la construcció, codi inicial i registre del primer resultat.
+Feu una base baixa amb hub, motor i peces estructurals. Afegiu dues potes o un parell d’extremitats articulades, sense rodes. Predigueu com es mourà en una ordre lenta i curta.
+
+#### Fase 2 · Explorem i construïm
+
+Comproveu que les unions estan fixades i que les potes no colpegen la taula amb força. Amb el model apagat, moveu-lo a mà només si la construcció ho permet sense forçar-la; busqueu bloquejos abans d’engegar-lo.
+
+#### Fase 3 · Expliquem i registrem
+
+Executeu una ordre lenta i curta. Mesureu distància des de la línia d’eixida, temps fins a l’aturada i estat final: dret, tombat, girat o sense desplaçament.
+
+#### Fase 4 · Apliquem i millorem
+
+Si només vibra, poseu a prova una hipòtesi concreta —per exemple, si les potes empenyen cap avant o només cap avall— en lloc de començar de nou. Canvieu una part del muntatge i torneu a provar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu moviment observat i predicció. **Evidència:** dibuix o fotografia del muntatge, codi inicial i registre del primer resultat.
 
 ### **Sessió 3 · Una variable cada vegada.**
 
-Trieu una característica per modificar: llargària de la pota, separació dels punts de suport, posició de la biela o velocitat del motor. Feu servir la mateixa pista, la mateixa durada de programa i el mateix punt d’inici. Executeu tres intents per a la versió A i tres per a la B; registreu distància, temps, estabilitat i incidències. Calculeu el valor central senzill (mitjana o mediana, amb la fórmula que el grup conega) i compareu també la dispersió. Una mitjana més gran no és prou evidència si el robot bolca o els intents varien molt.
+#### Fase 1 · Activem i prediem
 
-Feu una pausa per revisar: «què hem mantingut igual?», «quina variable hem canviat?» i «quin resultat no esperàvem?». Si una prova no és comparable perquè el motor es va iniciar des d’un angle diferent, marqueu-la com a incidència i repetiu-la. **Evidència:** taula de sis intents i decisió de conservar o revertir la modificació.
+Trieu una característica per modificar: llargària de la pota, separació dels suports, posició de la biela o velocitat. Predigueu com canviarà distància, direcció o estabilitat.
+
+#### Fase 2 · Explorem i construïm
+
+Feu servir la mateixa pista, durada de programa i punt d’inici. Executeu tres intents per a la versió A i tres per a la B; registreu distància, temps, estabilitat i incidències.
+
+#### Fase 3 · Expliquem i registrem
+
+Calculeu mitjana o mediana amb la fórmula que conega el grup i compareu també la dispersió. Una mitjana més gran no basta si el robot bolca o els intents varien molt.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu què s’ha mantingut igual, quina variable ha canviat i quin resultat no esperàveu. Si la prova no és comparable perquè el motor va iniciar-se des d’un angle diferent, marqueu la incidència i repetiu-la.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Decidiu si conserveu o revertiu la modificació a partir de les dades. **Evidència:** taula de sis intents i decisió justificada.
 
 ### **Sessió 4 · Programem el ritme i comparem la pista.**
 
-Programeu una pausa entre rotacions i compareu-la amb un moviment continu. Després proveu dos valors baixos de velocitat mantenint la mateixa seqüència. Si el model té dos motors, compareu-los coordinats i alternats; abans de cada prova dibuixeu quina pota avança en cada moment. No canvieu simultàniament velocitat, potes i superfície: això impediria atribuir el canvi a una causa.
+#### Fase 1 · Activem i prediem
 
-Quan la construcció siga estable, repetiu la configuració guanyadora en una segona superfície plana i segura feta de materials d’aula. Etiqueteu-la amb el material i descriviu-ne només el que observeu (llisa, rugosa, flexible); no afirmeu que representa tots els paviments reals. Com a extensió, proveu si un prototip de dos motors pot simplificar-se a un sol, i compareu quina coordinació es perd o millora. El sensor del kit pot afegir una ordre d’aturada davant d’una barrera ampla d’escuma, però no es considera dispositiu de seguretat ni és objectiu obligatori. **Evidència:** pseudocodi o flux de moviments, resultats de ritme i nota de la segona superfície.
+Programeu una pausa entre rotacions i predigueu com es diferenciarà del moviment continu. Després trieu dos valors baixos de velocitat mantenint la seqüència.
+
+#### Fase 2 · Explorem i construïm
+
+Si el model té dos motors, compareu-los coordinats i alternats; abans de cada prova dibuixeu quina pota avança en cada moment. No canvieu alhora velocitat, potes i superfície.
+
+#### Fase 3 · Expliquem i registrem
+
+Quan la construcció siga estable, repetiu la configuració guanyadora en una segona superfície plana feta de materials d’aula. Etiqueteu el material i descriviu només allò observat —llisa, rugosa o flexible—; no generalitzeu a tots els paviments reals.
+
+#### Fase 4 · Apliquem i millorem
+
+Com a extensió, proveu si un caminador de dos motors es pot simplificar a un i compareu quina coordinació es perd o millora. També es pot afegir un sensor per aturar-se davant d’una barrera ampla d’escuma, però no és un dispositiu de seguretat ni un objectiu obligatori.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina variable heu canviat i com ha afectat el resultat. **Evidència:** pseudocodi o flux de moviments, resultats de ritme i nota sobre la segona superfície.
 
 ### **Sessió 5 · Desfilada de prototips i explicació.**
 
-Prepareu una presentació breu amb el diagrama del mecanisme, la millor comparació de proves i una afirmació delimitada: «en aquesta pista i amb aquest programa, la versió B ha recorregut…». Un equip visitant rep el diagrama sense instrucció oral i comprova si pot identificar el sentit d’avanç, les potes i el motor. Anoteu quin detall del dibuix o del muntatge necessita més explicació.
+#### Fase 1 · Activem i prediem
 
-Feu la desfilada a baixa velocitat, d’un en un, amb el carril separat de la vora de la taula. Cada equip comparteix una decisió que va canviar a partir de dades, un error útil i una limitació. Tanqueu amb una reflexió individual: «al principi pensava…», «la prova que m’ha fet revisar-ho és…» i «encara no puc afirmar que…». **Evidència:** cartel·la o explicació oral, diagrama revisat i reflexió final.
+Prepareu una afirmació delimitada, com «en aquesta pista i amb aquest programa, la versió B ha recorregut…». Predigueu quin detall del diagrama necessitarà més explicació.
+
+#### Fase 2 · Explorem i construïm
+
+Un equip visitant rep el diagrama sense instrucció oral i comprova si identifica el sentit d’avanç, les potes i el motor. Feu la desfilada a baixa velocitat, d’un en un, amb carril separat de la vora de la taula.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu què ha entés l’equip visitant i quin detall del dibuix o muntatge demana aclariment. Cada equip comparteix una decisió canviada a partir de dades i un error útil.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el diagrama o l’explicació per fer visible la trajectòria o el punt d’unió. Indiqueu una limitació i una prova que encara falta.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Tanqueu amb «al principi pensava…», «la prova que m’ha fet revisar-ho és…» i «encara no puc afirmar que…». **Evidència:** cartel·la o explicació oral, diagrama revisat i reflexió final.
 
 ## 🧰 Materials, preparació i programació
 

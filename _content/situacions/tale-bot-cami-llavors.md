@@ -40,27 +40,91 @@ Trieu fotos pròpies o autoritzades de plantes de l’hort o l’entorn. No coll
 
 ### **Observem i fem preguntes sobre les plantes (40 min).**
 
-Observeu una planta del pati si és accessible sense eixir dels espais permesos o mireu fotografies de l’hort escolar i de conreus de l’entorn valencià. Pregunteu què veuen directament: fulles, tija, flor, ombra, terra o recipient. Després, separeu les idees que són observacions de les que són prediccions: «veig una fulla nova» davant de «potser necessita més llum». Eviteu arrancar fulles o tocar plantes desconegudes.
+#### Fase 1 · Activem i prediem
 
-En assemblea, trieu tres bancals ficticis i associeu-los a imatges: flor, carlota i rave, per exemple. Cada equip crea una fitxa de llavor de paper i proposa una pregunta de cura que es puga investigar més endavant amb una persona adulta. *Evidència:* dibuix d’una planta, una observació directa o documentada i una pregunta. *Preguntes docents:* «Què podem veure sense tocar? Què ens agradaria investigar abans de decidir com cuidar-la?»
+Observeu una planta del pati des d’un espai permés o mireu fotografies de l’hort escolar i de conreus de l’entorn valencià. Predigueu què podríeu observar abans d’apropar-vos-hi.
+
+#### Fase 2 · Explorem i construïm
+
+Descriviu el que veieu directament: fulles, tija, flor, ombra, terra o recipient. No arrenqueu fulles ni toqueu plantes desconegudes. En assemblea, trieu tres bancals ficticis i associeu-los a imatges, com flor, carlota i rave.
+
+#### Fase 3 · Expliquem i registrem
+
+Separeu observacions de prediccions: «veig una fulla nova» és diferent de «potser necessita més llum». Cada equip crea una fitxa de llavor de paper i redacta una pregunta de cura que puga investigar després amb una persona adulta.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu la pregunta perquè es puga investigar sense danyar la planta ni assumir-ne les necessitats. Si no hi ha una planta accessible, baseu l’observació en fotografies o fonts del centre.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dibuix d’una planta, observació directa o documentada i pregunta de cura. «Què podem veure sense tocar? Què ens agradaria investigar abans de decidir com cuidar-la?»
 
 ### **Dissenyem el mapa i planifiquem les ordres (40 min).**
 
-Col·loqueu el viver a la casella inicial i els tres bancals en destinacions diferents. Feu que una fitxa de paper avance sobre el mapa abans d’usar Tale-Bot. L’alumnat selecciona una destinació i ordena fletxes o targetes d’instrucció per arribar-hi; assenyala l’orientació inicial i prediu on pararà el robot. Conteu cada moviment necessari i marqueu amb una fitxa els girs, que sovint són més difícils d’anticipar.
+#### Fase 1 · Activem i prediem
 
-Compareu dues rutes possibles al mateix bancal: quina evita un obstacle ampli?, quina usa menys instruccions?, quina és més fàcil de llegir per una altra parella? No cal que la ruta més curta siga la millor si confon la seqüència. *Evidència:* mapa amb inici/destí, dues seqüències alternatives i una predicció de casella final. *Preguntes docents:* «Cap a on mira Tale-Bot al començament? Què hem de fer abans de dir-li que gire?»
+Col·loqueu el viver a la casella inicial i els tres bancals en destinacions diferents. Trieu un bancal i assenyaleu l’orientació inicial del robot; predigueu la casella final.
+
+#### Fase 2 · Explorem i construïm
+
+Abans d’usar Tale-Bot, feu avançar una fitxa de paper sobre la graella. Compteu cada moviment com una casella adjacent i marqueu els girs amb fitxes.
+
+#### Fase 3 · Expliquem i registrem
+
+Ordeneu fletxes o targetes d’instrucció per arribar al bancal. Anoteu dues rutes alternatives i la predicció de destinació per a cadascuna.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu quina ruta evita l’obstacle, usa menys instruccions i és més fàcil de llegir per una altra parella. La ruta més curta no sempre és la millor si confon la seqüència. Reviseu les instruccions abans d’executar-les.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa amb inici/destinació, dues seqüències i predicció de casella final. «Cap a on mira Tale-Bot al començament? Què hem de fer abans de dir-li que gire?»
 
 ### **Programem el lliurament i depurem la ruta (40 min).**
 
-Introduïu les instruccions amb els botons de Tale-Bot en l’ordre planificat. Un infant dicta o assenyala la primera seqüència, una altra persona la comprova amb les targetes i una tercera observa la ruta. Feu primer un trajecte curt fins a un bancal. Si el robot no acaba on s’esperava, torneu a situar-lo a l’inici i compareu posició, orientació, nombre de moviments i girs. Esborreu o corregiu només les ordres necessàries i executeu de nou.
+#### Fase 1 · Activem i prediem
 
-Quan la primera destinació funciona, repetiu el procés per a un altre bancal. En arribar, col·loqueu la fitxa de llavor al seu lloc i trieu entre pictogrames quines condicions podrien ajudar una planta d’eixa classe. No programeu cap diagnòstic ni reg automàtic. *Evidència:* una seqüència revisada i una explicació del pas que s’ha corregit. *Preguntes docents:* «Quina és l’última casella correcta? Quin canvi provaràs ara?»
+Recupereu la seqüència triada i predigueu quina ordre pot ser més difícil d’executar o comprovar.
+
+#### Fase 2 · Explorem i construïm
+
+Introduïu les instruccions amb els botons de Tale-Bot. Una persona dicta o assenyala la seqüència, una altra la comprova amb les targetes i una tercera observa la ruta.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu un trajecte curt fins al primer bancal. Registreu posició inicial, orientació, nombre de moviments i girs, casella final prevista i casella observada.
+
+#### Fase 4 · Apliquem i millorem
+
+Si el robot no acaba on s’esperava, torneu a situar-lo a l’inici, localitzeu l’última casella correcta i corregiu només les ordres necessàries. Quan funcione, repetiu el procés per a un altre bancal.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** seqüència revisada i explicació del pas corregit. En arribar, col·loqueu la fitxa de llavor i trieu pictogrames de condicions que podrien ajudar la planta; no programeu diagnòstic ni reg automàtic. «Quina és l’última casella correcta? Quin canvi provaràs ara?»
 
 ### **Contem el cicle de creixement (40 min).**
 
-Creeu una història oral, gràfica o dictada amb quatre moments: llavor al viver, arribada al bancal, germinació i planta en creixement. A cada parada, una persona afegeix una imatge o un pictograma de llum, aigua, aire o cura. Expliqueu que són idees generals; les necessitats reals depenen de la planta i de l’observació concreta. Una altra parella reconstrueix l’ordre del relat seguint el mapa.
+#### Fase 1 · Activem i prediem
 
-Tanqueu amb una proposta de cura per a l’hort del centre que puga comprovar una persona responsable: observar abans de regar, respectar la zona de pas o preguntar quina planta s’hi cultiva. Si l’escola no té hort, la proposta queda com a disseny o pregunta per investigar, no com una instrucció per plantar sense permís. *Evidència:* ruta final, història de quatre moments i una pregunta o proposta de cura validable. *Preguntes docents:* «Què sabem d’aquesta planta? Què hauríem de preguntar o observar abans d’actuar?»
+Recupereu la ruta i predigueu quins quatre moments ajudaran a explicar el creixement sense convertir-los en una regla universal per a totes les plantes.
+
+#### Fase 2 · Explorem i construïm
+
+Creeu una història oral, gràfica o dictada amb quatre moments: llavor al viver, arribada al bancal, germinació i planta en creixement.
+
+#### Fase 3 · Expliquem i registrem
+
+A cada parada, afegiu una imatge o pictograma de llum, aigua, aire o cura. Expliqueu que són idees generals i que les necessitats reals depenen de la planta i de l’observació concreta. Una altra parella reconstrueix l’ordre del relat amb el mapa.
+
+#### Fase 4 · Apliquem i millorem
+
+Proposeu una cura per a l’hort del centre que puga comprovar una persona responsable: observar abans de regar, respectar la zona de pas o preguntar quina planta s’hi cultiva. Si no hi ha hort, formuleu-la com a pregunta o disseny, no com una instrucció per plantar sense permís.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** ruta final, història de quatre moments i pregunta o proposta de cura validable. «Què sabem d’aquesta planta? Què hauríem de preguntar o observar abans d’actuar?»
 
 ## 📋 Avaluació i evidències
 

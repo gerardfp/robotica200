@@ -29,19 +29,73 @@ La classe prepara un indicador visual que ajude a parlar de les necessitats d’
 - Programar un indicador que represente les dades sense confondre previsió amb mesura del sòl.
 - Argumentar una decisió per a un hort de maqueta i deixar clar que no controla un reg real.
 
-## 📅 Seqüència didàctica · 3 sessions
+## 📅 Seqüència didàctica · 3 sessions de 45–60 min
 
 ### **S1 · De la previsió a una pregunta investigable (45–60 min).**
 
-Activeu idees prèvies sobre estacions, cultius i pluja: què necessitaria saber una persona que cuida tomaqueres? Distingiu precipitació prevista, pluja observada i humitat del sòl. En parelles, construïu o adapteu un indicador de paper amb agulla motoritzada; cada equip tria una ciutat i executa el programa amb els blocs de dades meteorològiques disponibles a l’app SPIKE. Registreu ciutat, moment de consulta, unitat retornada i període de la dada. Si no hi ha connexió o els blocs no estan disponibles, useu una captura datada o una taula preparada pel docent i etiqueteu-la com a dada arxivada. **Evidència:** diagrama de la maqueta i fitxa que diferencia dada en viu, dada guardada i variable que no es mesura.
+#### Fase 1 · Activem i prediem
+
+Activeu idees prèvies sobre estacions, cultius i pluja: què necessitaria saber una persona que cuida tomaqueres? Distingiu precipitació prevista, pluja observada i humitat del sòl.
+
+#### Fase 2 · Explorem i construïm
+
+En parelles, construïu o adapteu un indicador de paper amb agulla motoritzada. Trieu una ciutat i executeu el programa amb els blocs de dades meteorològiques disponibles a l’app SPIKE. Si no hi ha connexió o els blocs no estan disponibles, useu una captura datada o una taula docent i etiqueteu-la com a dada arxivada.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu ciutat, moment de consulta, unitat retornada i període de la dada. Dibuixeu l’esquema i indiqueu quina variable no es mesura: el model no incorpora humitat del sòl.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu la dada amb el que representa l’agulla i reviseu l’escala inicial si les unitats o el període no queden clars. Manteniu separats les dades en viu i les arxivades.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què representa l’indicador i què no permet concloure sobre el reg. **Evidència:** diagrama de maqueta i fitxa que diferencia dada en viu, dada guardada i variable no mesurada.
 
 ### **S2 · Calibrem el tomato-meter amb la precipitació setmanal (45–60 min).**
 
-Feu que la pantalla mostre la suma de precipitació prevista per a la setmana i decidiu quina escala física representa aquest valor. Marqueu mínim, màxim i divisions abans de moure l’agulla; programeu una resposta proporcional entre dada i angle del motor, proveu almenys tres valors i compareu lectura esperada i posició observada. Si els equips necessiten suport, proporcioneu una primera regla de conversió; com a ampliació, canvieu el rang o les divisions i torneu a calibrar el mateix model. Ajunteu-vos amb una altra parella per detectar desajustos i explicar-los. **Evidència:** taula de valor, posició predita, posició mesurada i error, amb una iteració documentada.
+#### Fase 1 · Activem i prediem
+
+Llegiu la suma de precipitació prevista per a la setmana i decidiu quina escala física la representarà. Marqueu mínim, màxim i divisions abans de moure l’agulla; predigueu la posició per a diversos valors.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu una resposta proporcional entre la dada i l’angle del motor. Si cal, proporcioneu una primera regla de conversió; com a ampliació, canvieu el rang o les divisions del mateix model.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu almenys tres valors i anoteu valor, posició predita, posició observada i error. Una altra parella revisa els desajustos i n’explica una causa possible.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una regla d’escala cada vegada i torneu a provar els mateixos valors. Documenteu una iteració i comproveu si la nova conversió millora la lectura.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu com la dada s’ha transformat en moviment i què significa l’error de l’escala. **Evidència:** taula de valors, posicions previstes/observades i iteració documentada.
 
 ### **S3 · Recalibrem per a una altra dada i comuniquem els límits (45–60 min).**
 
-Sense canviar el muntatge, reinterpreteu l’escala per mostrar la temperatura prevista de la setmana: identifiqueu per què no es pot reutilitzar la conversió de precipitació i definiu un rang nou. Qui ja domine el procés pot crear targetes pròpies de «necessitats d’aigua» per a cultius ficticis i provar com de ràpid es recalibra l’indicador. Com a extensions matemàtiques, conserveu la mateixa escala per representar velocitat del vent al llarg del temps o temperatura en més d’un moment i expliqueu si cal recalibrar-la. Compareu ciutats o períodes amb dades datades. Com a extensió de llengua i medi, entrevisteu una persona agricultora o horticultora —o useu una font divulgativa fiable si no és possible— per comparar l’indicador escolar amb eines reals de camp; no demaneu ubicacions privades ni recomanacions de reg per a un cultiu concret. Redacteu una explicació per a l’hort escolar i incloeu què caldria comprovar abans de prendre una decisió real; no presenteu la previsió com una mesura del sòl ni com una instrucció de reg. **Evidència:** dues escales calibrades, targeta explicativa amb font i data, i una conclusió que separe observació, interpretació i decisió pendent.
+#### Fase 1 · Activem i prediem
+
+Sense canviar el muntatge, predigueu per què no es pot reutilitzar directament la conversió de precipitació per mostrar temperatura prevista. Identifiqueu quina variable, unitat i rang caldrà definir de nou.
+
+#### Fase 2 · Explorem i construïm
+
+Recalibreu l’escala per a la temperatura prevista de la setmana. Com a ampliació, creeu targetes pròpies de necessitats d’aigua per a cultius ficticis o useu la mateixa escala per representar velocitat del vent o temperatures de diversos moments; expliqueu si cal recalibrar.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu ciutats o períodes amb dades datades. Prepareu una targeta amb font, data, variable, unitats i la regla d’escala. Si és possible, contrasteu l’indicador amb una entrevista a una persona agricultora o horticultora; si no, useu una font divulgativa fiable, sense demanar ubicacions privades ni recomanacions per a un cultiu concret.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu l’explicació perquè separe observació, interpretació i decisió pendent. Indiqueu què caldria comprovar abans de prendre una decisió real; la previsió no és una mesura del sòl ni una instrucció de reg.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Presenteu les dues escales calibrades i la conclusió amb els seus límits. **Evidència:** dues escales, targeta explicativa amb font i data i conclusió que separa observació, interpretació i decisió pendent.
 
 ![Hub SPIKE Prime unit a un motor que mou una agulla sobre una escala sense etiquetes, amb una tomaquera i una targeta amb gotes de pluja al costat.](../../_assets/imatges/sa-sp-hort-indicador.webp)
 

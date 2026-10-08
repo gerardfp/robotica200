@@ -66,27 +66,135 @@ Rols rotatius: Python/condicions, construcció/seguretat, mesura/registre i obse
 
 ### **Lliçó 1 · Un botó inicia una decisió (45 min).**
 
-**Activació (7 min):** feu una breu dinàmica de “comença/congela” amb una targeta que l’adult pressiona i allibera; l’alumnat descriu quina observació marca cada estat. Sense córrer ni tocar altres persones, traduïu-ho a “esperar ordre / començar / aturar”. **Predicció de sensor (8 min):** observeu el sensor de força i formuleu què podria distingir: premut, soltat, colpejat. Diferencieu allò que heu observat d’allò que suposàveu. **Python (18 min):** connecteu el sensor al port confirmat, obriu un exemple oficial de la Knowledge Base i llegiu-ne cada línia. En un primer programa imprimiu l’estat si la funció ho permet; en un segon, afegiu una condició perquè una pressió curta active una llum de confirmació o permeta iniciar una acció motoritzada breu. No useu motor fins que la lògica d’entrada funcione amb actuadors quiets. **Proves (8 min):** feu cinc proves amb pressió clara, sense tocar-lo i amb contacte accidental molt suau; anoteu estat esperat i retorn observat. **Eixida (4 min):** escriviu una condició en paraules i indiqueu quina resposta segura convé si el sensor no respon.
+#### Fase 1 · Activem i prediem
+
+**Activació (7 min):** feu una breu dinàmica de “comença/congela” amb una targeta que l’adult pressiona i allibera; l’alumnat descriu quina observació marca cada estat. Sense córrer ni tocar altres persones, traduïu-ho a “esperar ordre / començar / aturar”.
+
+#### Fase 2 · Explorem i construïm
+
+**Predicció de sensor (8 min):** observeu el sensor de força i formuleu què podria distingir: premut, soltat, colpejat. Diferencieu allò que heu observat d’allò que suposàveu.
+
+#### Fase 3 · Expliquem i registrem
+
+**Python (18 min):** connecteu el sensor al port confirmat, obriu un exemple oficial de la Knowledge Base i llegiu-ne cada línia. En un primer programa imprimiu l’estat si la funció ho permet; en un segon, afegiu una condició perquè una pressió curta active una llum de confirmació o permeta iniciar una acció motoritzada breu. No useu motor fins que la lògica d’entrada funcione amb actuadors quiets.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves (8 min):** feu cinc proves amb pressió clara, sense tocar-lo i amb contacte accidental molt suau; anoteu estat esperat i retorn observat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Eixida (4 min):** escriviu una condició en paraules i indiqueu quina resposta segura convé si el sensor no respon.
 
 ### **Lliçó 2 · La potència canvia el viatge (45 min).**
 
-**Repte inspirat en *Charging Rhino* (5 min):** imagineu una base que necessita “carregar-se” abans de portar el paquet; relacioneu força/pressió amb una ordre explícita, no amb energia elèctrica real ni amb cap animal automatitzat. **Prova mecànica (10 min):** sense obstacle, mesureu el recorregut amb una potència baixa i temps fix. Feu tres repeticions i registreu distància, dispersió i irregularitats. **Comparació controlada (18 min):** repetiu amb un segon valor de potència, mantenint temps, càrrega, superfície i punt d’inici; establiu una parada manual i un límit segur. Compareu distància i temps, i expliqueu per què la potència ordenada no és una velocitat física calibrada. **Lectura del sensor de força (8 min):** afegiu inici per pressió però manteniu la resta inalterada; demaneu a una persona operadora que inicie cada intent. **Conclusió (4 min):** anoteu quina configuració sembla controlable dins d’aquesta pista, no quina seria “millor” universalment.
+#### Fase 1 · Activem i prediem
+
+**Repte inspirat en *Charging Rhino* (5 min):** imagineu una base que necessita “carregar-se” abans de portar el paquet; relacioneu força/pressió amb una ordre explícita, no amb energia elèctrica real ni amb cap animal automatitzat.
+
+#### Fase 2 · Explorem i construïm
+
+**Prova mecànica (10 min):** sense obstacle, mesureu el recorregut amb una potència baixa i temps fix. Feu tres repeticions i registreu distància, dispersió i irregularitats.
+
+#### Fase 3 · Expliquem i registrem
+
+**Comparació controlada (18 min):** repetiu amb un segon valor de potència, mantenint temps, càrrega, superfície i punt d’inici; establiu una parada manual i un límit segur. Compareu distància i temps, i expliqueu per què la potència ordenada no és una velocitat física calibrada.
+
+#### Fase 4 · Apliquem i millorem
+
+**Lectura del sensor de força (8 min):** afegiu inici per pressió però manteniu la resta inalterada; demaneu a una persona operadora que inicie cada intent.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Conclusió (4 min):** anoteu quina configuració sembla controlable dins d’aquesta pista, no quina seria “millor” universalment.
 
 ### **Lliçó 3 · El sensor de distància orienta una parada (45 min).**
 
-**Investigar (7 min):** compareu com una persona pot estimar si hi ha espai davant d’un vehicle i què necessita fer un robot si l’obstacle és més pròxim del que esperava. **Lectures sense moviment (12 min):** connecteu el sensor de distància; poseu una barrera de cartó a tres posicions mesurades amb regla i registreu la lectura retornada, unitat i diferència. Repetiu una posició amb el cartó perpendicular i lleugerament inclinat. No toqueu ni tapeu el sensor durant la lectura. **Programa de control (16 min):** planifiqueu “llegir; si lectura vàlida i menor que el llindar, aturar; si no, avançar molt poc; tornar a llegir”. Implementeu primer la branca de decisió amb motors quiets i missatges de consola. Després afegiu moviment curt, a potència baixa i amb supervisió. **Casos límit (7 min):** proveu obstacle llunyà, pròxim, superfície obliqua, absència d’objecte en rang i lectura invàlida simulada. Definiu parada segura explícita. **Eixida (3 min):** justifiqueu el llindar segons dades de la vostra prova.
+#### Fase 1 · Activem i prediem
+
+**Investigar (7 min):** compareu com una persona pot estimar si hi ha espai davant d’un vehicle i què necessita fer un robot si l’obstacle és més pròxim del que esperava.
+
+#### Fase 2 · Explorem i construïm
+
+**Lectures sense moviment (12 min):** connecteu el sensor de distància; poseu una barrera de cartó a tres posicions mesurades amb regla i registreu la lectura retornada, unitat i diferència. Repetiu una posició amb el cartó perpendicular i lleugerament inclinat. No toqueu ni tapeu el sensor durant la lectura.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programa de control (16 min):** planifiqueu “llegir; si lectura vàlida i menor que el llindar, aturar; si no, avançar molt poc; tornar a llegir”. Implementeu primer la branca de decisió amb motors quiets i missatges de consola. Després afegiu moviment curt, a potència baixa i amb supervisió.
+
+#### Fase 4 · Apliquem i millorem
+
+**Casos límit (7 min):** proveu obstacle llunyà, pròxim, superfície obliqua, absència d’objecte en rang i lectura invàlida simulada. Definiu parada segura explícita.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Eixida (3 min):** justifiqueu el llindar segons dades de la vostra prova.
 
 ### **Lliçó 4 · Entrega segura per una ruta curta (45–90 min).**
 
-**Especificació (10 min):** el prototip parteix d’una línia, espera pressió de la persona operadora, avança amb un paquet lleuger, llig una barrera i s’atura abans de tocar-la; la persona confirma l’arribada. Fixeu criteris: queda dins del carril, porta la càrrega sense desplaçar-la, no xoca i té parada manual. **Pseudocodi i taula (10 min):** detalleu estats, lectures, llindar i eixides abans de programar. Separeu “no hi ha lectura” de “no hi ha obstacle”. **Implementació per capes (20 min):** proveu el sensor de força; després el de distància amb motores quiets; després motor en recta sense càrrega; finalment combineu inici, motor i aturada amb paquet. L’adult comprova el codi i la pista entre capes. **Proves de seguretat (15 min):** feu tres intents amb la barrera en una mateixa posició, tres amb una altra i una prova amb el paquet retirat. Registreu aturada, contacte, desviació lateral i dades de sensor. Si arriba massa ràpid, reduïu velocitat/recorregut abans d’acostar l’obstacle. **Extensió (fins a 90 min):** dissenyeu una maqueta de viver amb dues parades àmplies i ajusteu el flux amb una targeta de “confirmar”, sense afirmar que el robot evita qualsevol persona o obstàcle real.
+#### Fase 1 · Activem i prediem
+
+**Especificació (10 min):** el prototip parteix d’una línia, espera pressió de la persona operadora, avança amb un paquet lleuger, llig una barrera i s’atura abans de tocar-la; la persona confirma l’arribada. Fixeu criteris: queda dins del carril, porta la càrrega sense desplaçar-la, no xoca i té parada manual.
+
+#### Fase 2 · Explorem i construïm
+
+**Pseudocodi i taula (10 min):** detalleu estats, lectures, llindar i eixides abans de programar. Separeu “no hi ha lectura” de “no hi ha obstacle”.
+
+#### Fase 3 · Expliquem i registrem
+
+**Implementació per capes (20 min):** proveu el sensor de força; després el de distància amb motores quiets; després motor en recta sense càrrega; finalment combineu inici, motor i aturada amb paquet. L’adult comprova el codi i la pista entre capes.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves de seguretat (15 min):** feu tres intents amb la barrera en una mateixa posició, tres amb una altra i una prova amb el paquet retirat. Registreu aturada, contacte, desviació lateral i dades de sensor. Si arriba massa ràpid, reduïu velocitat/recorregut abans d’acostar l’obstacle.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Extensió (fins a 90 min):** dissenyeu una maqueta de viver amb dues parades àmplies i ajusteu el flux amb una targeta de “confirmar”, sense afirmar que el robot evita qualsevol persona o obstàcle real.
 
 ### **Lliçó 5 · Depurar el salt del llagostí (*Grasshopper Troubles*) (45 min).**
 
-**Observació (5 min):** reviseu el model d’entrega i el cicle de prova. El títol oficial introdueix problemes del prototip “grasshopper”; ací el transformem en una base que fa un avanç curt erràtic o atura fora de la zona. **Classificació de possibles causes (10 min):** agrupeu pistes en maquinari/port, orientació i lectura del sensor, llindar/condició, potència/temps i geometria/rodes. No canvieu totes les categories de cop. **Estacions de diagnòstic (18 min):** investigueu tres símptomes: sensor en port diferent, barrera mal orientada i llindar massa estricte. Els errors de connexió s’inspeccionen amb motors aturats. Per cada cas, formuleu hipòtesi, proveu la lectura a mà o amb consola i canvieu només una causa. **Retest (8 min):** repetiu el mateix inici i obstacle tres voltes; anoteu si l’error es manté. **Reflexió (4 min):** distingiu error de codi, dada/sensor i resposta mecànica; identifiqueu què no es pot concloure amb una sola prova.
+#### Fase 1 · Activem i prediem
+
+**Observació (5 min):** reviseu el model d’entrega i el cicle de prova. El títol oficial introdueix problemes del prototip “grasshopper”; ací el transformem en una base que fa un avanç curt erràtic o atura fora de la zona.
+
+#### Fase 2 · Explorem i construïm
+
+**Classificació de possibles causes (10 min):** agrupeu pistes en maquinari/port, orientació i lectura del sensor, llindar/condició, potència/temps i geometria/rodes. No canvieu totes les categories de cop.
+
+#### Fase 3 · Expliquem i registrem
+
+**Estacions de diagnòstic (18 min):** investigueu tres símptomes: sensor en port diferent, barrera mal orientada i llindar massa estricte. Els errors de connexió s’inspeccionen amb motors aturats. Per cada cas, formuleu hipòtesi, proveu la lectura a mà o amb consola i canvieu només una causa.
+
+#### Fase 4 · Apliquem i millorem
+
+**Retest (8 min):** repetiu el mateix inici i obstacle tres voltes; anoteu si l’error es manté.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió (4 min):** distingiu error de codi, dada/sensor i resposta mecànica; identifiqueu què no es pot concloure amb una sola prova.
 
 ### **Lliçó 6 · Idees per millorar el prototip (*Ideas to Help Your Grasshopper*) (30–45 min).**
 
-**Preparar una revisió (7 min):** mostreu especificació, pseudocodi, configuració del llindar i dades d’almenys tres proves, inclosa una fallida. **Intercanvi (10 min):** una altra parella prediu què passarà, observa un intent i formula feedback basat en el registre: “he vist que…”, “el criteri diu…”, “encara provaria…”. No toca el robot ni edita el programa dels autors. **Decisió (5 min):** l’equip autor tria un suggeriment, n’explica el motiu i registra una alternativa aparcada. **Iteració (12 min):** fa un sol canvi a llindar, potència, suport del sensor o topall; repeteix el cas problema i un cas de control. **Compartir (3–8 min):** comuniqueu canvi, resultat i límit pendent. L’objectiu és usar perspectives externes per refinar disseny, no que tots els prototips siguen idèntics.
+#### Fase 1 · Activem i prediem
+
+**Preparar una revisió (7 min):** mostreu especificació, pseudocodi, configuració del llindar i dades d’almenys tres proves, inclosa una fallida.
+
+#### Fase 2 · Explorem i construïm
+
+**Intercanvi (10 min):** una altra parella prediu què passarà, observa un intent i formula feedback basat en el registre: “he vist que…”, “el criteri diu…”, “encara provaria…”. No toca el robot ni edita el programa dels autors.
+
+#### Fase 3 · Expliquem i registrem
+
+**Decisió (5 min):** l’equip autor tria un suggeriment, n’explica el motiu i registra una alternativa aparcada.
+
+#### Fase 4 · Apliquem i millorem
+
+**Iteració (12 min):** fa un sol canvi a llindar, potència, suport del sensor o topall; repeteix el cas problema i un cas de control.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Compartir (3–8 min):** comuniqueu canvi, resultat i límit pendent. L’objectiu és usar perspectives externes per refinar disseny, no que tots els prototips siguen idèntics.
 
 ## 🧪 Evidències, avaluació i producte final
 

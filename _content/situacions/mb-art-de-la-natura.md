@@ -37,93 +37,93 @@ Prepareu micro:bit física o simulador, MakeCode, cable USB si es transferirà a
 
 ## 📅 Seqüència didàctica · quatre sessions de 45 minuts
 
-### **Sessió 1 · Representar la natura.**
+### **Sessió 1 · Representem la natura amb materials (45 min).**
 
-*Mirada atenta (5 min):*
+#### Fase 1 · Activem i prediem
 
-presenteu una imatge o feu una observació curta des d’un lloc autoritzat; distingiu el que veieu del que suposeu.
+**Mirada atenta (5 min).** Presenteu una imatge autoritzada o feu una observació curta des d’un lloc segur del pati. Distingiu allò que es veu directament d’allò que només s’infereix. Abans de dibuixar, cada persona prediu quin tret permetrà reconéixer l’element si se’n lleven el color, la textura i el fons.
 
-*Predicció (5 min):*
+#### Fase 2 · Explorem i construïm
 
-abans de dibuixar, cada persona anota quin tret permetrà reconéixer l’element si se’n lleven color, textura i fons.
+**Esbossos i materials (25 min).** Dibuixeu contorn, repetició i proporció sense arrancar ni tocar plantes o animals. Feu dues representacions amb tècniques diferents —línia, collage, empremta de paper o textura fregada sobre una superfície artificial— i compareu què conserva cadascuna.
 
-*Esbossos (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-dibuixeu contorn, repetició i proporció sense arrancar ni tocar plantes o animals.
+Anoteu la predicció, el tret triat i les decisions de cada representació. Una parella observa les dues propostes sense que l’autor n’avance la resposta i assenyala quina pista visual l’ha ajudada.
 
-*Explorar materials (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-feu dues representacions amb tècniques diferents —línia, collage, empremta de paper o textura fregada sobre una superfície artificial— i compareu què conserva cadascuna.
+L’autor decideix si la simplificació funciona i modifica un detall —contorn, proporció o repetició— a partir del retorn. Manteniu les dues versions per poder comparar-les.
 
-*Retorn (10 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-una parella identifica el tret i explica quina pista visual l’ha ajudada; l’autor decideix si la simplificació funciona. Evidència: registre d’observació, predicció i dues imatges materials amb comentari comparatiu.
+Comproveu si la parella reconeix el tret triat i expliqueu què s’ha conservat o perdut en cada tècnica. **Evidència:** registre d’observació i predicció, dues representacions materials i comentari comparatiu.
 
-### **Sessió 2 · Escriure i depurar algoritmes d’art.**
+### **Sessió 2 · Escrivim i depurem algoritmes d’art (45 min).**
 
-*Recordatori (5 min):*
+#### Fase 1 · Activem i prediem
 
-ordeneu targetes “prepara base, tria forma, situa element, afegeix detall” i expliqueu que un algoritme és un conjunt d’instruccions ordenades per a aconseguir un resultat.
+**Recordem l’ordre (5 min).** Ordeneu targetes amb les instruccions «prepara base», «tria forma», «situa element» i «afegeix detall». Predigueu què passaria si s’intercanviaren dos passos i expliqueu que un algoritme és una seqüència d’instruccions per a aconseguir un resultat.
 
-*Descomposició (10 min):*
+#### Fase 2 · Explorem i construïm
 
-l’equip tria una representació de la sessió 1 i la divideix en passos: forma exterior, detalls, posició i acabat.
+**Descomponem la representació (10 min).** Trieu una obra de la sessió anterior i dividiu-la en forma exterior, detalls, posició i acabat. **Escrivim instruccions (10 min).** Cada pas ha d’indicar una acció i un lloc; canvieu expressions ambigües com «fes-ho bonic» per instruccions observables, com ara «afegeix tres línies curtes a la dreta».
 
-*Escriure instruccions (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-cada pas ha d’indicar acció i lloc; eviteu expressions ambigües com “fes-ho bonic” i concreteu-les (“afegeix tres línies curtes a la dreta”).
+**Prova entre parelles (12 min).** Una altra parella segueix les instruccions sense veure el model final. Marca el primer pas que no pot interpretar i descriu què necessita saber per continuar. Registreu tant el resultat com els dubtes, sense corregir-los abans de la prova.
 
-*Prova per una altra parella (12 min):*
+#### Fase 4 · Apliquem i millorem
 
-la parella executa les instruccions sense veure el model final i marca el primer pas que no pot interpretar.
+**Depurem (8 min).** Reescriviu només les instruccions que han causat confusió i demaneu a la parella que repetisca la prova. Compareu el primer i el segon resultat per comprovar si el canvi ha resolt el problema.
 
-*Depuració (8 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-reescriviu l’ordre ambigua, proveu de nou i anoteu què ha canviat. Evidència: algoritme inicial/anotat, resultat de la prova entre equips i versió depurada.
+Expliqueu quina instrucció s’ha concretat i com ha afectat el resultat. **Evidència:** algoritme inicial anotat, resultat de la prova entre equips i versió depurada.
 
-### **Sessió 3 · Dissenyar representacions digitals.**
+### **Sessió 3 · Dissenyem una representació digital (45 min).**
 
-*Parts i sortida (5 min):*
+#### Fase 1 · Activem i prediem
 
-localitzeu matriu LED, botons i connexió USB, i expliqueu que els LED formen una eixida visual.
+**Parts i eixida (5 min).** Localitzeu la matriu LED, els botons i la connexió USB de micro:bit. Expliqueu que els LED formen una eixida visual i predigueu quins detalls de la representació es podran distingir en una graella de només 5 × 5.
 
-*Planificar (10 min):*
+#### Fase 2 · Explorem i construïm
 
-en una graella 5 × 5, feu una versió de l’element amb un màxim de 25 cel·les; numereu files/columnes o useu transparències perquè siga clar quines cel·les s’encenen.
+**Planifiquem (10 min).** Representeu l’element amb un màxim de 25 cel·les; numereu files i columnes o useu transparències perquè quede clar quines s’encenen. **Programem (15 min).** Una altra persona llig la graella i anticipa la imatge abans d’obrir MakeCode. Passeu els píxels al programa amb les ordres LED i executeu-lo al simulador. Si useu una placa, descarregueu el programa i comproveu que es mostra com al simulador.
 
-*Predir i programar (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-abans d’obrir el simulador, una altra persona llig la graella i anticipa la imatge. Passeu els píxels a MakeCode amb les ordres LED, executeu i compareu predicció amb resultat. Si es treballa amb placa, descarregueu el programa i comproveu que es mostra com al simulador.
+Compareu la predicció amb l’eixida i anoteu en quina fila o columna apareix qualsevol diferència. Deseu la graella i el programa perquè una altra persona puga reconstruir la representació.
 
-*Revisió d’abstracció (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-canvieu un o dos píxels i observeu si el tret identificatiu millora o es perd; no afegiu detalls que la resolució no pot representar.
+Canvieu un o dos píxels i observeu si el tret identificatiu millora o es perd. No afegiu detalls que la resolució no pot representar; justifiqueu cada canvi amb el criteri de llegibilitat triat.
 
-*Registre (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-guardeu graella, codi i una nota sobre el canvi. Evidència: algoritme visual, programa, predicció i comparació amb l’eixida.
+Torneu a executar el programa i comproveu si l’eixida coincideix amb la graella revisada. **Evidència:** algoritme visual, programa, predicció inicial, comparació amb l’eixida i nota sobre el canvi.
 
-### **Sessió 4 · Programar i avaluar representacions.**
+### **Sessió 4 · Programem i avaluem representacions (45 min).**
 
-*Nova observació (5 min):*
+#### Fase 1 · Activem i prediem
 
-trieu un segon element o un altre punt de vista del primer i feu una predicció.
+**Nova observació (5 min).** Trieu un segon element o un altre punt de vista del primer. Anoteu quin tret voleu conservar i prediu com el representareu amb els 25 píxels disponibles.
 
-*Planificació i codi (15 min):*
+#### Fase 2 · Explorem i construïm
 
-dissenyeu una segona imatge o una seqüència de dues imatges estàtiques; escriviu-la i proveu-la al simulador o micro:bit.
+**Planifiquem i codifiquem (15 min).** Dissenyeu una segona imatge o una seqüència de dues imatges estàtiques; passeu-la a MakeCode i proveu-la al simulador o en micro:bit. Manteniu cada imatge prou temps perquè es puga observar.
 
-*Prova d’audiència (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-mostreu la imatge sense dir què representa i demaneu a dos observadors quines característiques han reconegut; registreu respostes sense qualificar-les com a encert/error científic.
+**Prova d’audiència (10 min).** Mostreu la imatge sense dir què representa i demaneu a dos observadors quines característiques hi reconeixen. Registreu les respostes literalment, sense qualificar-les com a encert o error científic.
 
-*Millora (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-trieu un criteri clar (llegibilitat, semblança d’un tret, ús de píxels o coherència amb la font) i reviseu la imatge d’acord amb el retorn.
+Trieu un criteri explícit —llegibilitat, semblança d’un tret, ús dels píxels o coherència amb la font— i reviseu la imatge a partir del retorn. Anoteu si accepteu cada proposta i per què.
 
-*Galeria i reflexió (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-presenteu la versió inicial i final i expliqueu l’abstracció, una errada depurada i una idea per a millorar. Evidència: segona icona, retorn, canvi provat i reflexió de l’equip.
+Presenteu la versió inicial i la final. Expliqueu l’abstracció, una errada depurada i una millora possible. **Evidència:** segona icona o seqüència, retorn dels observadors, canvi provat i reflexió de l’equip.
 
 ## 📊 Criteris d’èxit i avaluació
 

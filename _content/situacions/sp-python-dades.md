@@ -64,31 +64,157 @@ Prepareu un full de dades amb columnes per a hipòtesi, entrada, unitat, valor e
 
 ### **Lliçó 1 · Llegir i mostrar dades del sensor (45 min).**
 
-**Activació (7 min):** compareu quina informació caldria per descriure un trajecte en una maqueta: distància, durada, pressió sobre un botó, gir. Diferencieu una estimació d’una lectura mesurada. **Exploració de l’editor (8 min):** connecteu hub SPIKE i mireu dades en viu del sensor de força; després acosteu/allunyeu un cartó del sensor de distància. El model es mou amb la mà només si està apagat. Anoteu què varia i què es manté. **Programa de lectura (15 min):** examineu tres patrons en Python: llegir una vegada i imprimir; llegir en bucle amb pausa; llegir només quan el sensor de força es prem. Compareu quin és millor per respondre una pregunta concreta i per què imprimir sense pausa ompli massa la consola. Creeu una versió mínima que llegisca distància i escriga `mm:` amb la unitat. **Conversió i test (10 min):** compareu mm amb cm dividint per deu i proveu objectes a distàncies conegudes (per exemple 100, 200 i 300 mm, ajustades a la taula). Si no hi ha lectura, no la tracteu com zero: anoteu “absent/desconeguda”. **Sortida (5 min):** indiqueu quina part és dada mesurada, quina és conversió i quina és unitat de representació. Expliqueu un error que s’introduiria si es mostrara 200 com a cm quan el sensor retorna mm.
+#### Fase 1 · Activem i prediem
+
+**Activació (7 min):** compareu quina informació caldria per descriure un trajecte en una maqueta: distància, durada, pressió sobre un botó, gir. Diferencieu una estimació d’una lectura mesurada.
+
+#### Fase 2 · Explorem i construïm
+
+**Exploració de l’editor (8 min):** connecteu hub SPIKE i mireu dades en viu del sensor de força; després acosteu/allunyeu un cartó del sensor de distància. El model es mou amb la mà només si està apagat. Anoteu què varia i què es manté.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programa de lectura (15 min):** examineu tres patrons en Python: llegir una vegada i imprimir; llegir en bucle amb pausa; llegir només quan el sensor de força es prem. Compareu quin és millor per respondre una pregunta concreta i per què imprimir sense pausa ompli massa la consola. Creeu una versió mínima que llegisca distància i escriga `mm:` amb la unitat.
+
+#### Fase 4 · Apliquem i millorem
+
+**Conversió i test (10 min):** compareu mm amb cm dividint per deu i proveu objectes a distàncies conegudes (per exemple 100, 200 i 300 mm, ajustades a la taula). Si no hi ha lectura, no la tracteu com zero: anoteu “absent/desconeguda”.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Sortida (5 min):** indiqueu quina part és dada mesurada, quina és conversió i quina és unitat de representació. Expliqueu un error que s’introduiria si es mostrara 200 com a cm quan el sensor retorna mm.
 
 ### **Lliçó 2 · Ajustar velocitat amb operacions i límits (45 min).**
 
-**Discussió (5 min):** parleu de com es regula un ritme i per què un valor de programa no equival automàticament a la mateixa distància en diferents superfícies. **Base i control (10 min):** prepareu una base SPIKE en pista recta. En Python, guardeu la velocitat en una variable numèrica, mostreu-la com a text a la matriu del hub (conversió explícita amb `str()` quan calga) i escriviu una funció de recorregut que use el valor actual. **Modificar amb botons (15 min):** configureu un botó per reduir i un altre per augmentar un pas acordat, per exemple 20 unitats; definiu mínim i màxim per impedir ordres negatives o massa ràpides. Proveu primer el límit en pseudocodi i després a velocitat baixa, mantenint fixa la distància i les condicions de la pista. **Dades (10 min):** per a tres valors de velocitat, feu tres intents i mesureu distància final i temps. Calculeu mitjanes i anoteu també rang (mínim–màxim), no sols una xifra central. **Reflexió (5 min):** expliqueu si augmentar la potència va canviar el temps, la distància o ambdós, i quines altres variables (bateria, fricció, alineació) podrien explicar diferències.
+#### Fase 1 · Activem i prediem
+
+**Discussió (5 min):** parleu de com es regula un ritme i per què un valor de programa no equival automàticament a la mateixa distància en diferents superfícies.
+
+#### Fase 2 · Explorem i construïm
+
+**Base i control (10 min):** prepareu una base SPIKE en pista recta. En Python, guardeu la velocitat en una variable numèrica, mostreu-la com a text a la matriu del hub (conversió explícita amb `str()` quan calga) i escriviu una funció de recorregut que use el valor actual.
+
+#### Fase 3 · Expliquem i registrem
+
+**Modificar amb botons (15 min):** configureu un botó per reduir i un altre per augmentar un pas acordat, per exemple 20 unitats; definiu mínim i màxim per impedir ordres negatives o massa ràpides. Proveu primer el límit en pseudocodi i després a velocitat baixa, mantenint fixa la distància i les condicions de la pista.
+
+#### Fase 4 · Apliquem i millorem
+
+**Dades (10 min):** per a tres valors de velocitat, feu tres intents i mesureu distància final i temps. Calculeu mitjanes i anoteu també rang (mínim–màxim), no sols una xifra central.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió (5 min):** expliqueu si augmentar la potència va canviar el temps, la distància o ambdós, i quines altres variables (bateria, fricció, alineació) podrien explicar diferències.
 
 ### **Lliçó 3 · Comptar oscil·lacions sense comptar-les dues vegades (45 min).**
 
-**Situació (5 min):** mostreu una sèrie de lectures d’angle d’un hub que gira a una banda i torna: 0°, 40°, 82°, 95°, 66°, −10°, −81°, −90°. Pregunteu quantes oscil·lacions s’hi veuen i per què comptar cada lectura per damunt de 75° donaria un nombre massa gran. **Model i control de valors (10 min):** en una taula, apliqueu comparacions `>`, `<`, igualtat i desigualtat a les lectures i establiu un llindar com a part del model, no com a veritat universal. **Programa de comptatge (20 min):** useu el sensor de moviment integrat a l’hub en una base de taula o feu servir seqüències de dades prèviament preparades. Manteniu una variable `comptat_en_aquesta_banda` per sumar només quan l’angle travessa el llindar i rearmeu-la quan torna a la zona neutra. Afegiu un botó per acabar i mostrar el recompte. Imprimiu lectura crua i estat del comptador en consola perquè es puga auditar. **Validació (7 min):** feu una seqüència amb 0, 1, 3 moviments complets i diversos valors que oscil·len a prop del llindar; compareu recompte previst i observat. **Debrief (3 min):** què canviaria si el llindar fora 60° o 90°? Especifiqueu que és un comptador de rotacions de demostració, no un podòmetre ni una mesura fiable d’activitat física d’una persona.
+#### Fase 1 · Activem i prediem
+
+**Situació (5 min):** mostreu una sèrie de lectures d’angle d’un hub que gira a una banda i torna: 0°, 40°, 82°, 95°, 66°, −10°, −81°, −90°. Pregunteu quantes oscil·lacions s’hi veuen i per què comptar cada lectura per damunt de 75° donaria un nombre massa gran.
+
+#### Fase 2 · Explorem i construïm
+
+**Model i control de valors (10 min):** en una taula, apliqueu comparacions `>`, `<`, igualtat i desigualtat a les lectures i establiu un llindar com a part del model, no com a veritat universal.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programa de comptatge (20 min):** useu el sensor de moviment integrat a l’hub en una base de taula o feu servir seqüències de dades prèviament preparades. Manteniu una variable `comptat_en_aquesta_banda` per sumar només quan l’angle travessa el llindar i rearmeu-la quan torna a la zona neutra. Afegiu un botó per acabar i mostrar el recompte. Imprimiu lectura crua i estat del comptador en consola perquè es puga auditar.
+
+#### Fase 4 · Apliquem i millorem
+
+**Validació (7 min):** feu una seqüència amb 0, 1, 3 moviments complets i diversos valors que oscil·len a prop del llindar; compareu recompte previst i observat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Debrief (3 min):** què canviaria si el llindar fora 60° o 90°? Especifiqueu que és un comptador de rotacions de demostració, no un podòmetre ni una mesura fiable d’activitat física d’una persona.
 
 ### **Lliçó 4 · Moure i girar amb proporcions conegudes (45 min).**
 
-**Planificació (7 min):** dibuixeu una ruta de dos trams amb un gir a l’esquerra o a la dreta; convertiu cada tram en una ordre (avançar, aturar, girar) i marqueu les unitats. **Programa inicial (15 min):** en una base SPIKE, controleu parell de motors per a avançar i useu variables per a velocitat i graus de gir. Mostreu el valor triat a la matriu/console. Expliqueu que el gir d’un vehicle depén de la separació de les rodes, la superfície, la velocitat i el lliscament: la relació entre una rotació i un quart de volta al terra és una aproximació del model d’exemple, no constant universal. **Prova matemàtica (13 min):** mesurau el gir resultant en una quadrícula gran de cartó per a dos valors de motor, repetiu tres vegades i calculeu desviació de l’angle previst. Relacioneu divisió/multiplicació amb l’ajust; canvieu una variable cada vegada. **Depuració (7 min):** analitzeu un fragment desconnectat al qual falta la quantitat de graus d’una crida de motor. Llegiu el missatge d’error i identifiqueu si assenyala exactament la línia problemàtica; corregiu-lo en una còpia i traceu quan s’executa la crida. **Tancament (3 min):** anoteu quina dada s’ha de tornar a calibrar després de canviar rodes o superfície.
+#### Fase 1 · Activem i prediem
+
+**Planificació (7 min):** dibuixeu una ruta de dos trams amb un gir a l’esquerra o a la dreta; convertiu cada tram en una ordre (avançar, aturar, girar) i marqueu les unitats.
+
+#### Fase 2 · Explorem i construïm
+
+**Programa inicial (15 min):** en una base SPIKE, controleu parell de motors per a avançar i useu variables per a velocitat i graus de gir. Mostreu el valor triat a la matriu/console. Expliqueu que el gir d’un vehicle depén de la separació de les rodes, la superfície, la velocitat i el lliscament: la relació entre una rotació i un quart de volta al terra és una aproximació del model d’exemple, no constant universal.
+
+#### Fase 3 · Expliquem i registrem
+
+**Prova matemàtica (13 min):** mesurau el gir resultant en una quadrícula gran de cartó per a dos valors de motor, repetiu tres vegades i calculeu desviació de l’angle previst. Relacioneu divisió/multiplicació amb l’ajust; canvieu una variable cada vegada.
+
+#### Fase 4 · Apliquem i millorem
+
+**Depuració (7 min):** analitzeu un fragment desconnectat al qual falta la quantitat de graus d’una crida de motor. Llegiu el missatge d’error i identifiqueu si assenyala exactament la línia problemàtica; corregiu-lo en una còpia i traceu quan s’executa la crida.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Tancament (3 min):** anoteu quina dada s’ha de tornar a calibrar després de canviar rodes o superfície.
 
 ### **Lliçó 5 · Aparcament de maqueta i gestió de dades (45 min).**
 
-**Repte (5 min):** estacionar la base en una zona ampla de cartó identificada amb forma i color, sense tocar límits ni competir en velocitat. És una simulació, no una funció de conducció autònoma segura. **Mesura i algoritme (10 min):** mesureu longitud i amplada de la zona, distància d’aproximació i amplària de la base. Escriviu pseudocodi per avançar, llegir distància, reduir velocitat abans de la zona i aturar-se; declareu tolerància explícita i casos d’entrada absent. **Implementació (15 min):** useu comparacions numèriques per detectar “més lluny que”, “dins de la tolerància” o “lectura no vàlida”; convertiu mm/cm de manera explícita. Una marca de color pot ajudar a indicar posició, però no substitueix el sensor de distància si necessiteu una lectura mètrica. Afegiu parada manual i velocitat mínima per als últims centímetres. **Proves (10 min):** tres punts d’inici, dues distàncies i dues situacions de sensor (lectura/cap lectura). Registreu intents, error en cm i si el prototip ha quedat dins de la zona. No compareu resultats entre equips com a classificació: identifiqueu factors que poden variar. **Debrief (5 min):** un valor de distància pot ser prou precís per aquesta maqueta? Què caldria abans d’aplicar-lo a un vehicle real? Resposta esperada: un prototip educatiu no és un dispositiu de seguretat ni de transport real.
+#### Fase 1 · Activem i prediem
+
+**Repte (5 min):** estacionar la base en una zona ampla de cartó identificada amb forma i color, sense tocar límits ni competir en velocitat. És una simulació, no una funció de conducció autònoma segura.
+
+#### Fase 2 · Explorem i construïm
+
+**Mesura i algoritme (10 min):** mesureu longitud i amplada de la zona, distància d’aproximació i amplària de la base. Escriviu pseudocodi per avançar, llegir distància, reduir velocitat abans de la zona i aturar-se; declareu tolerància explícita i casos d’entrada absent.
+
+#### Fase 3 · Expliquem i registrem
+
+**Implementació (15 min):** useu comparacions numèriques per detectar “més lluny que”, “dins de la tolerància” o “lectura no vàlida”; convertiu mm/cm de manera explícita. Una marca de color pot ajudar a indicar posició, però no substitueix el sensor de distància si necessiteu una lectura mètrica. Afegiu parada manual i velocitat mínima per als últims centímetres.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves (10 min):** tres punts d’inici, dues distàncies i dues situacions de sensor (lectura/cap lectura). Registreu intents, error en cm i si el prototip ha quedat dins de la zona. No compareu resultats entre equips com a classificació: identifiqueu factors que poden variar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Debrief (5 min):** un valor de distància pot ser prou precís per aquesta maqueta? Què caldria abans d’aplicar-lo a un vehicle real? Resposta esperada: un prototip educatiu no és un dispositiu de seguretat ni de transport real.
 
 ### **Lliçó 6 · Un trajecte escolar simulat (45 min).**
 
-**Definició (7 min):** cada equip tria un punt d’origen fictici, un destí escolar de maqueta i dues opcions de ruta construïdes amb paper. No es demana a ningú que revele el seu trajecte, domicili, mode de transport o temps personal. Redacteu una pregunta mesurable: quina ruta té menys longitud de pista? quina requereix menys girs? **Disseny (8 min):** establiu restriccions: base SPIKE ha de seguir una ruta de cartó, evitar una zona marcada, aturar-se en una parada i comunicar la velocitat triada. L’equip proposa un vehicle i un procediment de prova en un esbós amb dues alternatives. **Construcció/programació (18 min):** construïu o ajusteu la base i programeu un recorregut amb una funció per avançar, una per girar i una rutina de registre. El programa calcula la longitud de ruta sumant trams i pot convertir la lectura de distància en unitats comunes. Afegiu un control d’aturada; no sobrecarregueu el model amb pesos. **Comprovació (8 min):** executeu ruta A i B tres vegades, registreu trams, durada, girs, lectures de distància i fallades. La taula només descriu el prototip sobre aquella superfície; no és una comparació de modes de transport ni un estudi de trànsit. **Mostra (4 min):** expliqueu quines dades han influït en una decisió de disseny i quines no s’han mesurat.
+#### Fase 1 · Activem i prediem
+
+**Definició (7 min):** cada equip tria un punt d’origen fictici, un destí escolar de maqueta i dues opcions de ruta construïdes amb paper. No es demana a ningú que revele el seu trajecte, domicili, mode de transport o temps personal. Redacteu una pregunta mesurable: quina ruta té menys longitud de pista? quina requereix menys girs?
+
+#### Fase 2 · Explorem i construïm
+
+**Disseny (8 min):** establiu restriccions: base SPIKE ha de seguir una ruta de cartó, evitar una zona marcada, aturar-se en una parada i comunicar la velocitat triada. L’equip proposa un vehicle i un procediment de prova en un esbós amb dues alternatives.
+
+#### Fase 3 · Expliquem i registrem
+
+**Construcció/programació (18 min):** construïu o ajusteu la base i programeu un recorregut amb una funció per avançar, una per girar i una rutina de registre. El programa calcula la longitud de ruta sumant trams i pot convertir la lectura de distància en unitats comunes. Afegiu un control d’aturada; no sobrecarregueu el model amb pesos.
+
+#### Fase 4 · Apliquem i millorem
+
+**Comprovació (8 min):** executeu ruta A i B tres vegades, registreu trams, durada, girs, lectures de distància i fallades. La taula només descriu el prototip sobre aquella superfície; no és una comparació de modes de transport ni un estudi de trànsit.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Mostra (4 min):** expliqueu quines dades han influït en una decisió de disseny i quines no s’han mesurat.
 
 ### **Lliçó 7 · Feedback i millora del trajecte (45 min).**
 
-**Preparació (7 min):** cada equip comparteix un diagrama de ruta, el codi comentat, un gràfic/taula amb intents i una pregunta sobre calibratge o accessibilitat. **Prova creuada (12 min):** l’equip revisor usa una còpia de la ruta o repeteix el procediment amb permís. Dona feedback concret sobre llegibilitat, unitats, casos de sensor absent, seguretat de la pista i coherència entre objectiu i mesura. No se sol·liciten dades de trajecte de persones. **Planificació de canvi (5 min):** els autors trien una millora a partir d’una evidència (recol·locar sensor, corregir conversió, canviar llindar, aclarir unitat o dividir una funció). **Iteració (13 min):** feu el canvi i repetiu almenys el cas que va motivar-lo i un altre cas per assegurar que no s’ha degradat la resposta. **Avaluació individual (8 min):** expliqueu per què una mitjana sola pot ocultar la variació, quin càlcul del projecte podeu recrear i una limitació que contaríeu a qui veja la maqueta. Autoavaluació privada d’ús del temps, cura del material i col·laboració, amb una acció següent concreta.
+#### Fase 1 · Activem i prediem
+
+**Preparació (7 min):** cada equip comparteix un diagrama de ruta, el codi comentat, un gràfic/taula amb intents i una pregunta sobre calibratge o accessibilitat.
+
+#### Fase 2 · Explorem i construïm
+
+**Prova creuada (12 min):** l’equip revisor usa una còpia de la ruta o repeteix el procediment amb permís. Dona feedback concret sobre llegibilitat, unitats, casos de sensor absent, seguretat de la pista i coherència entre objectiu i mesura. No se sol·liciten dades de trajecte de persones.
+
+#### Fase 3 · Expliquem i registrem
+
+**Planificació de canvi (5 min):** els autors trien una millora a partir d’una evidència (recol·locar sensor, corregir conversió, canviar llindar, aclarir unitat o dividir una funció).
+
+#### Fase 4 · Apliquem i millorem
+
+**Iteració (13 min):** feu el canvi i repetiu almenys el cas que va motivar-lo i un altre cas per assegurar que no s’ha degradat la resposta.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Avaluació individual (8 min):** expliqueu per què una mitjana sola pot ocultar la variació, quin càlcul del projecte podeu recrear i una limitació que contaríeu a qui veja la maqueta. Autoavaluació privada d’ús del temps, cura del material i col·laboració, amb una acció següent concreta.
 
 ## 🧪 Evidències i criteris d’avaluació
 

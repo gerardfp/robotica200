@@ -44,33 +44,113 @@ Abans de construir, l’equip acorda quatre criteris observables: l’acció s�
 
 ### **Sessió 1 · Investiguem la tasca i qui la farà servir.**
 
-Observeu les targetes de la recepta de mostra i marqueu el pas que podria beneficiar-se d’una ajuda: allisar una tira de paper, avançar una targeta d’un punt a un altre o moure fitxes d’un recorregut. No es demana reproduir cap tasca real amb aliments. Cada parella completa un mapa «persona / tasca / dificultat / ajuda possible» i formula una necessitat en una frase: «Una persona que ___ necessita que ___ perquè ___». Després ordena les targetes del procés i tria una sola acció per al primer prototip.
+#### Fase 1 · Activem i prediem
 
-Compareu els exemples del brief —corró sense mànec, sandvitxera i batedor automàtic— i valoreu quins es poden representar amb seguretat. Cada equip dibuixa dues solucions, assenyala l’entrada, l’acció, la zona de treball i l’aturada, i selecciona una amb una justificació basada en els criteris acordats. **Evidència:** mapa de necessitat, dues idees anotades i decisió raonada. **Suport:** oferiu targetes visuals de tasques i frases iniciadores; **ampliació:** compareu quina part ha de fer el robot i quina convé deixar a la persona.
+Observeu les targetes de la recepta de mostra i marqueu el pas que podria beneficiar-se d’una ajuda: allisar una tira de paper, avançar una targeta o moure fitxes d’un recorregut. No reproduïu cap tasca real amb aliments.
+
+#### Fase 2 · Explorem i construïm
+
+Completeu en parella un mapa «persona / tasca / dificultat / ajuda possible». Formuleu la necessitat amb la frase «Una persona que ___ necessita que ___ perquè ___». Ordeneu les targetes del procés i trieu una sola acció per al primer prototip.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu els exemples del brief —corró sense mànec, sandvitxera i batedor automàtic— i valoreu quins es poden representar amb seguretat. Dibuixeu dues solucions i assenyaleu entrada, acció, zona de treball i aturada.
+
+#### Fase 4 · Apliquem i millorem
+
+Seleccioneu una solució segons els criteris acordats: acció comprensible, activació accessible, tres execucions semblants i aturada sense colps, dits atrapats ni eixida de la zona de prova. Oferiu targetes visuals i frases iniciadores si cal.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina part ha de fer el robot i quina convé deixar a la persona. **Evidència:** mapa de necessitat, dues idees anotades i decisió raonada.
 
 ### **Sessió 2 · Fem una primera maqueta mecànica.**
 
-Construïu una base SPIKE Prime estable amb un motor i un corró o braç que actue sobre paper. En el repte del corró sense mànec, connecteu una peça LEGO llarga al radi del motor tal com proposa el brief. Abans de programar, feu girar el mecanisme a mà només si el muntatge ho permet sense forçar-lo i dibuixeu què espereu que faça el paper. Marqueu una línia d’inici i una de final perquè el recorregut siga mesurable. Comproveu que cap peça pot caure sobre les mans i que hi ha espai per desconnectar l’alimentació o aturar el programa.
+#### Fase 1 · Activem i prediem
 
-Compareu un braç curt i un de llarg mantenint iguals el material, la velocitat i el temps d’activació. Anoteu la distància que recorre el punt final i si l’estructura es balanceja. No conclogueu que «més llarg és sempre millor»: el braç llarg pot ampliar el recorregut i alhora reduir estabilitat o control. **Evidència:** esbós del muntatge, dues configuracions i predicció abans de la prova. **Alternativa:** si no hi ha motor lliure, feu primer la comparació amb una palanca manual i reserveu l’execució motora per a la sessió següent.
+Construïu una base SPIKE Prime estable amb un motor i un corró o braç que actue sobre paper. En el repte del corró sense mànec, connecteu una peça LEGO llarga al radi del motor, tal com proposa el brief. Dibuixeu què espereu que faça el paper i marqueu línies d’inici i final.
+
+#### Fase 2 · Explorem i construïm
+
+Comproveu que cap peça puga caure sobre les mans i que hi haja espai per desconnectar l’alimentació o aturar el programa. Feu girar el mecanisme a mà només si el muntatge ho permet sense forçar-lo.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu un braç curt i un de llarg mantenint iguals material, velocitat i temps d’activació. Anoteu la distància del punt final i si l’estructura es balanceja.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu el muntatge si es desestabilitza. Expliqueu el compromís: un braç llarg pot ampliar el recorregut i alhora reduir estabilitat o control; no conclogueu que «més llarg és sempre millor».
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu predicció i resultat i decidiu quina configuració provar després. **Evidència:** esbós, dues configuracions i predicció. Si no hi ha motor lliure, feu primer la comparació amb palanca manual.
 
 ### **Sessió 3 · Programem una acció controlada.**
 
-Activeu el motor amb el botó del hub o amb una ordre inicial simple. Creeu una seqüència d’inici, moviment i aturada, primer amb blocs i, si el grup ja en té experiència, amb Python. Proveu durada i nombre de rotacions com a dues maneres de delimitar l’acció; trieu una velocitat baixa per a la primera execució. Cada intent comença amb una predicció («amb quatre rotacions espere que la tira avance fins a…») i acaba amb un registre de valor programat, distància, desviació i incidència.
+#### Fase 1 · Activem i prediem
 
-Canvieu una sola variable en cada prova. Si el corró patina, identifiqueu si la causa és el contacte, la base o el valor del programa abans de reconstruir-ho tot. Introduïu una pausa o una ordre d’aturada clara quan l’acció es complete. **Evidència:** codi comentat o diagrama, tres intents comparables i una decisió de millora. **Repte d’ampliació:** feu que l’acció es puga repetir amb un segon botó només si el programa continua tenint una aturada accessible.
+Activeu el motor amb el botó del hub o una ordre inicial simple. Predigueu què ocorrerà amb quatre rotacions o una duració acordada i marqueu la distància esperada.
+
+#### Fase 2 · Explorem i construïm
+
+Creeu una seqüència d’inici, moviment i aturada, primer amb blocs i, si hi ha experiència, amb Python. Proveu durada i nombre de rotacions com a maneres de delimitar l’acció; useu baixa velocitat en la primera execució.
+
+#### Fase 3 · Expliquem i registrem
+
+Cada intent parteix d’una predicció i registra valor programat, distància, desviació i incidència. Feu tres intents comparables i canvieu una sola variable en cada prova.
+
+#### Fase 4 · Apliquem i millorem
+
+Si el corró patina, comproveu contacte, base i valor del programa abans de reconstruir-ho tot. Afegiu una pausa o una ordre d’aturada clara quan es complete l’acció.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quin canvi heu triat a partir de les dades. **Evidència:** codi comentat o diagrama, tres intents comparables i decisió de millora. Com a ampliació, feu que l’acció es puga repetir amb un segon botó només si es conserva una aturada accessible.
 
 ### **Sessió 4 · Adaptem el programa i el reutilitzem.**
 
-Prepareu dues tires de prova, per exemple paper fi i cartolina lleugera, amb les diferències anotades al full. No les descriviu com a aliments ni atribuïu al sensor una capacitat de detectar-ne la duresa. Modifiqueu només la configuració del motor —velocitat, potència o durada— i determineu quina funciona millor per a cada tira. Després canvieu l’eina: reutilitzeu la lògica del corró en una palanca que mou una fitxa, o en un remenador de fitxes dins d’un cercle dibuixat. Ressalteu al codi quines instruccions es conserven i quines depenen del mecanisme nou.
+#### Fase 1 · Activem i prediem
 
-Com a extensió del repte oficial, afegiu un sensor del set només si aporta una entrada comprensible. Una opció és el sensor de color per llegir una marca de color gran en la targeta de recepta i seleccionar una configuració predefinida; calibreu-lo amb la llum de l’aula i oferiu sempre el botó manual equivalent. El color representa una etiqueta que ha col·locat l’equip, no reconeix un ingredient ni mesura el material. **Evidència:** taula de dues configuracions i esquema «codi que reutilitze / codi que canvie».
+Prepareu dues tires de prova —per exemple, paper fi i cartolina lleugera— i anoteu les diferències. Predigueu quina configuració del motor funcionarà millor; no les descrigueu com a aliments ni atribuïu al sensor una lectura de duresa.
+
+#### Fase 2 · Explorem i construïm
+
+Modifiqueu només la configuració del motor —velocitat, potència o durada— i determineu quina funciona millor per a cada tira. Després canvieu l’eina: reutilitzeu la lògica del corró en una palanca que mou una fitxa o un remenador de peces dins d’un cercle dibuixat.
+
+#### Fase 3 · Expliquem i registrem
+
+Ressalteu al codi quines instruccions es conserven i quines depenen del mecanisme nou. Registreu les configuracions i els resultats per a cada material simulat.
+
+#### Fase 4 · Apliquem i millorem
+
+Com a extensió, afegiu un sensor del set només si aporta una entrada comprensible. El sensor de color pot llegir una marca gran de la targeta i seleccionar una configuració; calibreu-lo amb la llum de l’aula i oferiu un botó manual equivalent. El color és una etiqueta de l’equip, no una identificació d’ingredient ni una mesura del material.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu com es pot reutilitzar el programa i què cal adaptar en canviar el mecanisme. **Evidència:** taula de dues configuracions i esquema «codi que reutilitze / codi que canvie».
 
 ### **Sessió 5 · Combinem, provem i presentem.**
 
-Combineu dues accions senzilles en una seqüència —per exemple, ordenar una targeta i avançar una fitxa— sense fer el prototip més complex del que podeu provar. Un altre equip rep la consigna sense veure el vostre esbós: ha d’explicar què fa l’ajudant, trobar el control i assenyalar com s’atura. Feu tres execucions amb la mateixa configuració; si els resultats varien, decidiu si cal ajustar la base, el recorregut o la instrucció. Prepareu una cartel·la per a la mostra amb nom de la tasca, esquema d’entrada i eixida, font de la targeta local, una dada de prova i una limitació explícita.
+#### Fase 1 · Activem i prediem
 
-Tanqueu comparant el prototip amb la seqüència manual. No valoreu si el robot és «millor» en abstracte: expliqueu què fa amb més repetibilitat, què continua fent la persona i quines comprovacions serien imprescindibles abans de qualsevol ús fora de la maqueta. **Evidència:** demostració, registre final, retorn d’un altre equip i reflexió individual.
+Combineu dues accions senzilles —per exemple, ordenar una targeta i avançar una fitxa— sense fer el prototip més complex del que podeu provar. Predigueu l’ordre i la manera d’aturar-lo.
+
+#### Fase 2 · Explorem i construïm
+
+Un altre equip rep la consigna sense veure l’esbós i ha d’explicar què fa l’ajudant, trobar el control i assenyalar com s’atura. Feu tres execucions amb la mateixa configuració.
+
+#### Fase 3 · Expliquem i registrem
+
+Registreu els resultats i el retorn de l’altre equip. Si les execucions varien, identifiqueu si cal ajustar la base, el recorregut o la instrucció.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu una part i repetiu la prova. Prepareu una cartel·la amb nom de la tasca, esquema d’entrada/eixida, font de la targeta local, una dada de prova i una limitació explícita.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Demostreu el prototip i compareu-lo amb la seqüència manual. Expliqueu què fa amb més repetibilitat, què continua fent la persona i quines comprovacions serien necessàries abans de qualsevol ús fora de la maqueta. **Evidència:** demostració, registre final, retorn d’un altre equip i reflexió individual.
 
 ## 🧰 Materials i preparació
 

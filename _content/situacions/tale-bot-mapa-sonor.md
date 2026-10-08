@@ -46,19 +46,91 @@ Si el centre vol provar la funció de gravació de Tale-Bot Pro, feu-ho només a
 
 ### Sessió 1 — Escoltem i imaginem (20–25 min)
 
-**Benvinguda (3 min):** mostreu les tres targetes sense anomenar-les. **Exploració (7 min):** feu sonar un instrument o proposeu una onomatopeia; els infants trien quin lloc fictici podria produir aquell so i també poden proposar una interpretació diferent. **Creació (10 min):** en grup, dibuixeu un símbol per cada escena i dicteu una frase curta: «A la font, l'aigua fa…». **Compartim (3 min):** col·loqueu les targetes al mapa i expliqueu què representa cadascuna.
+#### Fase 1 · Activem i prediem
+
+Mostreu les tres targetes sense anomenar-les. Cada infant prediu quin lloc fictici podria representar.
+
+#### Fase 2 · Explorem i construïm
+
+Feu sonar un instrument o proposeu una onomatopeia. Els infants trien quin lloc podria produir aquell so i poden proposar interpretacions diferents.
+
+#### Fase 3 · Expliquem i registrem
+
+En grup, dibuixeu un símbol per a cada escena i dicteu una frase curta: «A la font, l’aigua fa…».
+
+#### Fase 4 · Apliquem i millorem
+
+Col·loqueu les targetes al mapa i expliqueu què representa cada símbol. Una altra parella intenta interpretar-los abans que els autors els expliquen.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** tres targetes, símbols i frases associades. Quina pista sonora o visual ajudaria a entendre una interpretació diferent?
 
 ### Sessió 2 — El mapa té un ordre (20–25 min)
 
-Recordeu el punt d'inici. Trieu dues parades i col·loqueu una fitxa de direcció per cada moviment necessari. Una persona segueix la ruta amb el dit, una altra mou una fitxa de paper i una tercera comprova si el robot cabria per aquell camí. Feu prediccions abans d'executar: «Primer anirà a…, després…». Si dues targetes poden significar el mateix so, pregunteu quina pista ajudaria una altra classe a entendre-les.
+#### Fase 1 · Activem i prediem
+
+Recordeu el punt d’inici i trieu dues parades. Predigueu quina visitarà Tale-Bot primer i quina després.
+
+#### Fase 2 · Explorem i construïm
+
+Col·loqueu una fitxa de direcció per cada moviment necessari. Una persona segueix la ruta amb el dit, una altra mou una fitxa de paper i una tercera comprova si el robot cabria per aquell camí.
+
+#### Fase 3 · Expliquem i registrem
+
+Descriviu l’ordre amb frases com «primer anirà a…, després…». Registreu les targetes i la ruta prevista.
+
+#### Fase 4 · Apliquem i millorem
+
+Si dues targetes poden significar el mateix so, afegiu una pista visual o una frase que ajude una altra classe a distingir-les.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa amb punt d’inici, dues parades i targetes ordenades. La ruta és clara per a qui no l’ha dissenyada?
 
 ### Sessió 3 — Programem i depurem (20–25 min)
 
-Introduïu les instruccions al Tale-Bot amb el suport d'una tira visual d'ordres. El docent acompanya la planificació i cedeix els controls amb torns curts; l'alumnat observa el robot i marca la casella on ha arribat. Quan no coincideix amb la predicció, torneu a la tira: falta un moviment?, n'hi ha un de més?, hem triat malament la direcció? Canvieu una instrucció cada vegada i repetiu. En arribar a una parada, representeu el so en directe o mostreu la targeta i la frase.
+#### Fase 1 · Activem i prediem
+
+Recupereu la ruta i feu una predicció de la casella final abans de programar-la.
+
+#### Fase 2 · Explorem i construïm
+
+Introduïu les instruccions a Tale-Bot amb una tira visual d’ordres. El docent acompanya la planificació i cedeix els controls en torns curts.
+
+#### Fase 3 · Expliquem i registrem
+
+Observeu el robot i marqueu la casella on ha arribat. Compareu-la amb la prevista i localitzeu l’últim moviment que coincidia.
+
+#### Fase 4 · Apliquem i millorem
+
+Si la ruta no coincideix, reviseu la tira: falta un moviment, n’hi ha un de més o la direcció és incorrecta? Canvieu una instrucció cada vegada i repetiu. En arribar a una parada, representeu el so en directe o mostreu-ne la targeta i la frase.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** seqüència inicial i corregida amb una diferència explicada. Quina ordre ha canviat el resultat?
 
 ### Sessió 4 — Contem el barri a una altra classe (20–25 min)
 
-Prepareu una passejada de tres parades. Cada equip presenta el seu mapa a un altre grup, que intenta seguir la ruta i interpretar els símbols. Després del primer intent, els autors poden afegir una pista visual o canviar l'ordre de les parades. Tanqueu amb una ronda de reflexió: quin so hem inventat, quin símbol l'acompanya i què hem canviat perquè el missatge s'entenguera millor?
+#### Fase 1 · Activem i prediem
+
+Prepareu una passejada de tres parades i prediu quines instruccions i símbols necessitarà un altre grup.
+
+#### Fase 2 · Explorem i construïm
+
+Cada equip presenta el mapa a un altre grup. Aquest intenta seguir la ruta i interpretar els símbols sense explicacions addicionals.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu quines parades ha trobat el grup visitant i què ha entés de cada símbol o so.
+
+#### Fase 4 · Apliquem i millorem
+
+Després del primer intent, afegiu una pista visual o canvieu l’ordre de les parades. Repetiu el recorregut per comprovar si el missatge s’entén millor.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa final, interpretació del grup visitant i canvi aplicat. Quin so heu inventat, quin símbol l’acompanya i què heu canviat perquè el missatge s’entenguera millor?
 
 ## Rols i organització
 

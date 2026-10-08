@@ -65,31 +65,157 @@ Formeu parelles amb rols que canvien a cada sessió: *pilota* (escriu o manipula
 
 ### **Lliçó 1 · La caixa d’eines del programa (45 min).**
 
-**Activació (7 min):** compareu una recepta amb un programa: ingredients i utensilis són recursos, mentre que instruccions en descriuen l’ús. Traslladeu l’analogia sense dir que una biblioteca és un dispositiu: és codi reutilitzable. **Exploració guiada (10 min):** identifiqueu les parts físiques disponibles en el hub SPIKE i dibuixeu una taula amb “component”, “què pot fer” i “què no sabem encara”. Obriu un exemple Python del projecte local, llegiu-ne les importacions i localitzeu una funció que s’hi utilitza; si el fitxer no és llegible en l’editor, el docent projecta un exemple mínim verificat. **Pràctica (20 min):** importeu la biblioteca exacta de la Knowledge Base de la versió instal·lada, executeu un programa mínim que no moga cap motor, observeu el missatge de consola i proveu què passa en una còpia si s’omet l’import o es canvia el nom. No executeu un error deliberat sobre un muntatge en moviment. **Registre i eixida (8 min):** completeu un esquema maquinari → instrucció → resposta i expliqueu per què el programa necessita importar funcions que no són part del nucli bàsic. Anoteu versió de l’app i API usada, perquè és una condició de reproduïbilitat.
+#### Fase 1 · Activem i prediem
+
+**Activació (7 min):** compareu una recepta amb un programa: ingredients i utensilis són recursos, mentre que instruccions en descriuen l’ús. Traslladeu l’analogia sense dir que una biblioteca és un dispositiu: és codi reutilitzable.
+
+#### Fase 2 · Explorem i construïm
+
+**Exploració guiada (10 min):** identifiqueu les parts físiques disponibles en el hub SPIKE i dibuixeu una taula amb “component”, “què pot fer” i “què no sabem encara”. Obriu un exemple Python del projecte local, llegiu-ne les importacions i localitzeu una funció que s’hi utilitza; si el fitxer no és llegible en l’editor, el docent projecta un exemple mínim verificat.
+
+#### Fase 3 · Expliquem i registrem
+
+**Pràctica (20 min):** importeu la biblioteca exacta de la Knowledge Base de la versió instal·lada, executeu un programa mínim que no moga cap motor, observeu el missatge de consola
+
+#### Fase 4 · Apliquem i millorem
+
+i proveu què passa en una còpia si s’omet l’import o es canvia el nom. No executeu un error deliberat sobre un muntatge en moviment.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Registre i eixida (8 min):** completeu un esquema maquinari → instrucció → resposta i expliqueu per què el programa necessita importar funcions que no són part del nucli bàsic. Anoteu versió de l’app i API usada, perquè és una condició de reproduïbilitat.
 
 ### **Lliçó 2 · La llum pot donar informació? (45 min).**
 
-**Pregunta d’investigació:** quins patrons de llum es poden distingir amb rapidesa sense dependre del color? **Modelatge (8 min):** el docent mostra tres missatges temporals en la matriu (per exemple, disponible, ocupat, demanar suport), descrits també per forma o ritme. L’alumnat dibuixa el patró abans de veure’l de nou i anota interpretacions alternatives. **Programació en parella (22 min):** partiu d’un exemple funcional de la biblioteca local; canvieu primer només una representació gràfica, després la pausa i després l’ordre. La persona navegant llig l’objectiu en veu alta, prediu l’eixida i registra diferències; la pilota escriu. Intercanvieu els rols a mitja tasca. Afegiu comentaris que expliquen el propòsit del senyal, no cada caràcter. **Prova amb usuaris (10 min):** mostreu els senyals a dues parelles sense donar la clau; feu que indiquen què creuen que significa cadascun. Recolliu només respostes anònimes del grup, sense atribuir-les a persones. **Tancament (5 min):** trieu una ambigüitat i escriviu una modificació mesurable; no conclogueu que el codi és accessible només perquè un grup l’ha entés.
+#### Fase 1 · Activem i prediem
+
+**Pregunta d’investigació:** quins patrons de llum es poden distingir amb rapidesa sense dependre del color?
+
+#### Fase 2 · Explorem i construïm
+
+**Modelatge (8 min):** el docent mostra tres missatges temporals en la matriu (per exemple, disponible, ocupat, demanar suport), descrits també per forma o ritme. L’alumnat dibuixa el patró abans de veure’l de nou i anota interpretacions alternatives.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programació en parella (22 min):** partiu d’un exemple funcional de la biblioteca local; canvieu primer només una representació gràfica, després la pausa i després l’ordre. La persona navegant llig l’objectiu en veu alta, prediu l’eixida i registra diferències; la pilota escriu. Intercanvieu els rols a mitja tasca. Afegiu comentaris que expliquen el propòsit del senyal, no cada caràcter.
+
+#### Fase 4 · Apliquem i millorem
+
+**Prova amb usuaris (10 min):** mostreu els senyals a dues parelles sense donar la clau; feu que indiquen què creuen que significa cadascun. Recolliu només respostes anònimes del grup, sense atribuir-les a persones.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Tancament (5 min):** trieu una ambigüitat i escriviu una modificació mesurable; no conclogueu que el codi és accessible només perquè un grup l’ha entés.
 
 ### **Lliçó 3 · Una parella, un programa revisable (45 min).**
 
-**Demostració (5 min):** modeleu el protocol: llegir enunciant, predir abans d’executar, escriure canvis menuts, provar, explicar i intercanviar. **Repte (25 min):** cada parella rep un programa curt de missatge lluminós amb una errada elemental controlada i una tasca de modificació. El navegant no dicta línia per línia: pregunta “quina eixida esperem?” i assenyala la part pertinent. La pilota verbalitza abans de canviar; després de cada prova anoten resultat i causa possible. Canvieu rols, editeu un segon missatge i compareu si el programa continua tenint les mateixes propietats. **Debat d’autoria (8 min):** distingiu prendre una idea, reutilitzar un exemple i presentar codi d’una altra persona com si fora propi. Afegiu un comentari que cite l’exemple consultat quan siga aplicable. **Reflexió (7 min):** cada membre anota una contribució pròpia i una pregunta tècnica; comproveu que ambdues persones han manipulat l’editor, no sols observat.
+#### Fase 1 · Activem i prediem
+
+**Demostració (5 min):** modeleu el protocol: llegir enunciant, predir abans d’executar, escriure canvis menuts, provar, explicar i intercanviar.
+
+#### Fase 2 · Explorem i construïm
+
+**Repte (25 min):** cada parella rep un programa curt de missatge lluminós amb una errada elemental controlada i una tasca de modificació. El navegant no dicta línia per línia: pregunta “quina eixida esperem?” i assenyala la part pertinent. La pilota verbalitza abans de canviar; després de cada prova anoten resultat i causa possible.
+
+#### Fase 3 · Expliquem i registrem
+
+Canvieu rols, editeu un segon missatge i compareu si el programa continua tenint les mateixes propietats.
+
+#### Fase 4 · Apliquem i millorem
+
+**Debat d’autoria (8 min):** distingiu prendre una idea, reutilitzar un exemple i presentar codi d’una altra persona com si fora propi. Afegiu un comentari que cite l’exemple consultat quan siga aplicable.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió (7 min):** cada membre anota una contribució pròpia i una pregunta tècnica; comproveu que ambdues persones han manipulat l’editor, no sols observat.
 
 ### **Lliçó 4 · Sons, pauses i alternatives (45 min).**
 
-**Escolta crítica (7 min):** proveu sons breus a volum baix i compareu to, nombre d’impulsos i pausa. No useu alarmes estridents ni sons sobtats. **Exploració Python (20 min):** useu una funció oficial de so validada per al hub per crear un patró d’un, dos o tres senyals; anoteu què fa cada argument segons la documentació i ajusteu una sola propietat per prova. Una parella treballa primer amb patrons dibuixats si el so no està disponible. **Regla de comunicació (10 min):** associeu cada so amb un patró visual i un text curt equivalent; feu una prova amb el so desactivat i expliqueu si encara es pot identificar l’estat. **Depuració (5 min):** reviseu un error preparat de crida o seqüència en paper, localitzeu-lo i corregiu-ne només una causa. **Eixida (3 min):** redacteu quan el senyal sonor no seria adequat i com conservar el mateix accés a la informació.
+#### Fase 1 · Activem i prediem
+
+**Escolta crítica (7 min):** proveu sons breus a volum baix i compareu to, nombre d’impulsos i pausa. No useu alarmes estridents ni sons sobtats.
+
+#### Fase 2 · Explorem i construïm
+
+**Exploració Python (20 min):** useu una funció oficial de so validada per al hub per crear un patró d’un, dos o tres senyals; anoteu què fa cada argument segons la documentació i ajusteu una sola propietat per prova. Una parella treballa primer amb patrons dibuixats si el so no està disponible.
+
+#### Fase 3 · Expliquem i registrem
+
+**Regla de comunicació (10 min):** associeu cada so amb un patró visual i un text curt equivalent; feu una prova amb el so desactivat i expliqueu si encara es pot identificar l’estat.
+
+#### Fase 4 · Apliquem i millorem
+
+**Depuració (5 min):** reviseu un error preparat de crida o seqüència en paper, localitzeu-lo i corregiu-ne només una causa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Eixida (3 min):** redacteu quan el senyal sonor no seria adequat i com conservar el mateix accés a la informació.
 
 ### **Lliçó 5 · El cartell digital de la biblioteca (90 min).**
 
-**Definir el problema (10 min):** cada equip tria tres estats ficticis del mostrador. Per a cadascun especifica destinatari, significat, patró visual, patró sonor opcional, durada i què ha de fer una persona usuària. Eviteu “lliure/ocupat” si no hi ha un sensor que ho comprove: l’operador selecciona manualment la targeta i el model només mostra eixa selecció. **Storyboard i proves de comprensió (12 min):** dibuixeu la seqüència d’entrada, missatge i retorn a estat inicial; una altra parella intenta interpretar icones i ritmes. Reviseu el vocabulari ambigu abans de programar. **Construcció i codi (30 min):** creeu una maqueta estable de taula amb hub visible, targetes grans i una interfície d’entrada viable en la versió local (botons del hub o selecció al programa). Dividiu el programa en passos que es puguen llegir: seleccionar estat, mostrar senyal, esperar o acabar. Afegiu llum i, si s’escau, so complementari. Manteniu els noms i ordres documentats per l’app instal·lada i proveu cada funció per separat. **Ronda de casos (20 min):** proveu els tres estats previstos, una entrada desconeguda i una interrupció/reset. Registreu entrada, senyal observat, interpretació de companys i canvi fet; comproveu si el programa queda en un estat comprensible en reiniciar. **Revisió creuada (10 min):** altres alumnes reben el cartell sense llegenda i expliquen la interpretació; cap equip recull noms ni identifica respostes individuals. **Comunicació (8 min):** presenteu una targeta d’ús amb clau dels senyals, instrucció d’aturada i límit principal: el prototip no detecta disponibilitat real, no substitueix avisos oficials i no s’ha d’instal·lar al centre com a equip de seguretat.
+#### Fase 1 · Activem i prediem
+
+**Definir el problema (10 min):** cada equip tria tres estats ficticis del mostrador. Per a cadascun especifica destinatari, significat, patró visual, patró sonor opcional, durada i què ha de fer una persona usuària. Eviteu “lliure/ocupat” si no hi ha un sensor que ho comprove: l’operador selecciona manualment la targeta i el model només mostra eixa selecció.
+
+#### Fase 2 · Explorem i construïm
+
+**Storyboard i proves de comprensió (12 min):** dibuixeu la seqüència d’entrada, missatge i retorn a estat inicial; una altra parella intenta interpretar icones i ritmes. Reviseu el vocabulari ambigu abans de programar.
+
+#### Fase 3 · Expliquem i registrem
+
+**Construcció i codi (30 min):** creeu una maqueta estable de taula amb hub visible, targetes grans i una interfície d’entrada viable en la versió local (botons del hub o selecció al programa). Dividiu el programa en passos que es puguen llegir: seleccionar estat, mostrar senyal, esperar o acabar. Afegiu llum i, si s’escau, so complementari. Manteniu els noms i ordres documentats per l’app instal·lada i proveu cada funció per separat.
+
+#### Fase 4 · Apliquem i millorem
+
+**Ronda de casos (20 min):** proveu els tres estats previstos, una entrada desconeguda i una interrupció/reset. Registreu entrada, senyal observat, interpretació de companys i canvi fet; comproveu si el programa queda en un estat comprensible en reiniciar. **Revisió creuada (10 min):** altres alumnes reben el cartell sense llegenda i expliquen la interpretació; cap equip recull noms ni identifica respostes individuals.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Comunicació (8 min):** presenteu una targeta d’ús amb clau dels senyals, instrucció d’aturada i límit principal: el prototip no detecta disponibilitat real, no substitueix avisos oficials i no s’ha d’instal·lar al centre com a equip de seguretat.
 
 ### **Lliçó 6 · Millorar una idea amb feedback (45 min).**
 
-**Preparació (8 min):** cada parella documenta objectiu, versió inicial, casos provats i una incertesa. **Intercanvi (12 min):** l’equip revisor prova els senyals en silenci primer i amb so opcional després, fent servir una pauta d’observació: “he vist/escoltat…”, “he interpretat…”, “una prova que falta…”. Es comenta el disseny i el codi, no l’habilitat de qui el va escriure. **Decisió (5 min):** els autors classifiquen cada suggeriment com adoptar, aparcar o rebutjar amb una raó. **Iteració (15 min):** canvieu una propietat; repetiu un cas que havia generat confusió i un senyal que ja es comprenia per comprovar que no s’ha degradat. Deseu un registre abans/després. **Autoavaluació (5 min):** expliqueu com ha canviat la coordinació pilot/navegant i quina instrucció encara voldríeu consultar a la documentació.
+#### Fase 1 · Activem i prediem
+
+**Preparació (8 min):** cada parella documenta objectiu, versió inicial, casos provats i una incertesa.
+
+#### Fase 2 · Explorem i construïm
+
+**Intercanvi (12 min):** l’equip revisor prova els senyals en silenci primer i amb so opcional després, fent servir una pauta d’observació: “he vist/escoltat…”, “he interpretat…”, “una prova que falta…”. Es comenta el disseny i el codi, no l’habilitat de qui el va escriure.
+
+#### Fase 3 · Expliquem i registrem
+
+**Decisió (5 min):** els autors classifiquen cada suggeriment com adoptar, aparcar o rebutjar amb una raó.
+
+#### Fase 4 · Apliquem i millorem
+
+**Iteració (15 min):** canvieu una propietat; repetiu un cas que havia generat confusió i un senyal que ja es comprenia per comprovar que no s’ha degradat. Deseu un registre abans/després.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Autoavaluació (5 min):** expliqueu com ha canviat la coordinació pilot/navegant i quina instrucció encara voldríeu consultar a la documentació.
 
 ### **Lliçó 7 · Professions que uneixen codi i persones (45–60 min).**
 
-**Mapa de tasques (10 min):** mireu el treball fet i assigneu-ne parts a funcions professionals —desenvolupar software, dissenyar una interacció, provar accessibilitat, documentar, reparar dispositius— sense afirmar que una persona real fa una única funció. **Investigació guiada (15 min):** per equips, redacteu tres preguntes sobre habilitats, col·laboració i decisions d’ètica/accés. Useu fonts professionals o una entrevista autoritzada si el centre en disposa; no inventeu respostes ni exigiu dades personals sobre itineraris familiars. **Producte (15 min):** creeu una fitxa de professió connectada amb una tasca del projecte, una competència observable i una pregunta oberta. **Galeria i síntesi (5–20 min):** presenteu prototips i professions en una mostra de classe, amb opció d’exposar text, diagrama o explicació oral. Tanqueu relacionant un canvi de disseny amb una necessitat d’usuari i una responsabilitat de qui construeix tecnologia.
+#### Fase 1 · Activem i prediem
+
+**Mapa de tasques (10 min):** mireu el treball fet i assigneu-ne parts a funcions professionals —desenvolupar software, dissenyar una interacció, provar accessibilitat, documentar, reparar dispositius— sense afirmar que una persona real fa una única funció.
+
+#### Fase 2 · Explorem i construïm
+
+**Investigació guiada (15 min):** per equips, redacteu tres preguntes sobre habilitats, col·laboració i decisions d’ètica/accés. Useu fonts professionals o una entrevista autoritzada si el centre en disposa; no inventeu respostes ni exigiu dades personals sobre itineraris familiars.
+
+#### Fase 3 · Expliquem i registrem
+
+**Producte (15 min):** creeu una fitxa de professió connectada amb una tasca del projecte, una competència observable i una pregunta oberta.
+
+#### Fase 4 · Apliquem i millorem
+
+**Galeria i síntesi (5–20 min):** presenteu prototips i professions en una mostra de classe, amb opció d’exposar text, diagrama o explicació oral.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Tanqueu relacionant un canvi de disseny amb una necessitat d’usuari i una responsabilitat de qui construeix tecnologia.
 
 ## 🧪 Evidències, avaluació i producte
 

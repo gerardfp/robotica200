@@ -40,21 +40,23 @@ El sensor de color de SPIKE pot llegir color, reflectivitat o llum ambiental. La
 
 ### **Auditem un problema sense tocar residus (50 min).**
 
-#### Fase 1 · Mirem el problema local (10 min)
+#### Fase 1 · Activem i prediem
 
 Mostreu fotografies o una llista de materials del mercat o del menjador escolar. En parelles, l’alumnat proposa com els separaria i anota quina informació li falta. Abans de la sessió, el docent contrasta les propostes amb la guia municipal o la informació vigent del centre.
 
-#### Fase 2 · Distingim el cas real del model (15 min)
+#### Fase 2 · Explorem i construïm
 
 Compareu dos objectes ficticis de color semblant i parleu de què sabem i què no sabem només mirant-los. Un envàs blau pot estar fet de materials diferents; un material pot tindre colors diversos. La lectura cromàtica no identifica la composició ni determina el contenidor.
 
-#### Fase 3 · Definim la tasca de prova (15 min)
+#### Fase 3 · Expliquem i registrem
 
 Cada equip tria dues o tres categories de color per a una maqueta amb maons o targetes. Dibuixeu entrada, regla i possibles eixides. Afegiu una categoria «per revisar» per a lectures desconegudes, i compareu-la amb la informació que caldria consultar per decidir sobre un residu real.
 
-#### Fase 4 · Tanquem amb una pregunta (10 min)
+#### Fase 4 · Apliquem i millorem
 
 Completeu un mapa de dues columnes: «què pot fer el prototip» i «què cal confirmar en la guia local». No cal manipular ni portar residus reals a l’aula.
+
+#### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** mapa de criteris amb una decisió del prototip i una dada pendent de verificar.
 
@@ -64,21 +66,23 @@ Completeu un mapa de dues columnes: «què pot fer el prototip» i «què cal co
 
 ### **Dissenyem i construïm el classificador (50 min).**
 
-#### Fase 1 · Representem el flux (10 min)
+#### Fase 1 · Activem i prediem
 
 Dibuixeu el recorregut d’una mostra: entrada, lectura, regla i eixida. Trieu un muntatge segur amb una mostra situada davant del sensor i una comporta motoritzada que puga orientar-la cap a una de dues safates. En una primera versió, la comporta es pot moure a mà.
 
-#### Fase 2 · Fem un prototip estable (25 min)
+#### Fase 2 · Explorem i construïm
 
 Fixeu el sensor en un suport ferm i perpendicular a la mostra. Marqueu una distància estable pròxima a la recomanació tècnica del fabricant, aproximadament 16 mm, i feu una lectura abans de connectar el motor. Useu només peces lleugeres i deixeu espai perquè la mostra no s’encalle.
 
-#### Fase 3 · Revisem el mecanisme sense motor (10 min)
+#### Fase 3 · Expliquem i registrem
 
 Moveu la comporta manualment per comprovar-ne l’abast. Identifiqueu on podrien quedar atrapats els dits o la mostra i ajusteu l’estructura abans d’automatitzar-la. L’alumnat no ha de copiar el prototip conceptual de la imatge: construirà una solució pròpia amb les peces disponibles.
 
-#### Fase 4 · Anotem la decisió de disseny (5 min)
+#### Fase 4 · Apliquem i millorem
 
 Assenyaleu al diagrama el sensor, l’actuador, les safates i la zona d’aturada segura.
+
+#### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** esbós anotat i prototip mecànic que supera una prova manual sense encallaments.
 
@@ -87,21 +91,23 @@ Assenyaleu al diagrama el sensor, l’actuador, les safates i la zona d’aturad
 
 ### **Programem i calibrem amb mostres conegudes (50 min).**
 
-#### Fase 1 · Comprovem les lectures disponibles (10 min)
+#### Fase 1 · Activem i prediem
 
 Llegiu maons o targetes mates amb colors que el sensor de SPIKE reconega en el model del centre. Registreu el valor que retorna el programa abans d’afegir una comporta. La lectura exacta pot variar amb la distància, la il·luminació i la superfície.
 
-#### Fase 2 · Programem una regla senzilla (20 min)
+#### Fase 2 · Explorem i construïm
 
 En l’app SPIKE, creeu una condició per al color triat. Si es detecta, el motor orienta la comporta cap a una eixida; altrament, la mostra queda en una safata de revisió. Ajusteu els blocs al muntatge real i comproveu que la posició inicial del motor siga repetible.
 
-#### Fase 3 · Repetim i canviem una condició (15 min)
+#### Fase 3 · Expliquem i registrem
 
 Proveu cada cas almenys tres vegades des de la mateixa posició. Després canvieu només una variable —distància, il·luminació o superfície— i compareu el resultat. Incloeu una mostra fora de les categories; el programa ha de poder respondre «no ho sé».
 
-#### Fase 4 · Registrem la calibració (5 min)
+#### Fase 4 · Apliquem i millorem
 
 Completeu la taula amb mostra, color esperat, lectura, eixida i excepció. Afegiu un comentari al codi que explique la regla.
+
+#### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** taula de calibratge amb lectures repetides, codi comentat i una ruta de revisió per als casos desconeguts.
 
@@ -110,21 +116,23 @@ Completeu la taula amb mostra, color esperat, lectura, eixida i excepció. Afegi
 
 ### **Posem a prova els límits amb casos adversos (50 min).**
 
-#### Fase 1 · Preparem una prova comparable (10 min)
+#### Fase 1 · Activem i prediem
 
 Creeu vint mostres repetibles amb peces LEGO o targetes, no amb residus reals. Incloeu colors coincidents, variacions de to, blanc i negre, i superfícies mates i brillants. Barregeu l’ordre perquè el programa no puga aprofitar una seqüència coneguda.
 
-#### Fase 2 · Executem i anotem cada cas (20 min)
+#### Fase 2 · Explorem i construïm
 
 Una persona que no programa la màquina conserva la clau de les categories de prova. L’equip executa les mostres i registra encerts, errors i casos enviats a revisió. Manteniu constants l’orientació i la distància; si les canvieu, marqueu-ho com una prova diferent.
 
-#### Fase 3 · Analitzem els errors (15 min)
+#### Fase 3 · Expliquem i registrem
 
 Calculeu el percentatge d’encerts sobre el nombre de mostres que el prototip havia de distingir. Compteu a banda les mostres de revisió: no són encerts automàtics. Trieu un fals positiu i un cas ambigu, i decidiu si l’origen probable és la lectura, la regla o el mecanisme.
 
-#### Fase 4 · Concloem què no podem afirmar (5 min)
+#### Fase 4 · Apliquem i millorem
 
 Escriviu un límit que les dades demostren i un risc que encara no s’ha provat. Un resultat amb maons o targetes no valida la classificació de residus reals.
+
+#### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** matriu de vint proves, percentatge amb denominador explícit i dos errors comentats.
 
@@ -134,21 +142,23 @@ Escriviu un límit que les dades demostren i un risc que encara no s’ha provat
 
 ### **Millorem i comuniquem una conclusió responsable (50 min).**
 
-#### Fase 1 · Triem una sola millora (10 min)
+#### Fase 1 · Activem i prediem
 
 Reviseu la matriu de proves i trieu una regla o una part mecànica. Escriviu una predicció concreta sobre què hauria de millorar abans de tocar el prototip.
 
-#### Fase 2 · Repetim els mateixos casos (15 min)
+#### Fase 2 · Explorem i construïm
 
 Canvieu una sola cosa i torneu a provar les mateixes vint mostres en condicions semblants. Si una categoria millora i una altra empitjora, conserveu les dues dades i expliqueu el compromís.
 
-#### Fase 3 · Contrastem amb la decisió real (10 min)
+#### Fase 3 · Expliquem i registrem
 
 Compareu la maqueta amb la guia local: què pot automatitzar-se en una prova de color?, què exigix informació sobre composició i etiquetatge?, quan cal una revisió humana? La guia vigent, i no el prototip, és la referència per a les normes locals.
 
-#### Fase 4 · Preparem una comunicació precisa (15 min)
+#### Fase 4 · Apliquem i millorem
 
 Presenteu un diagrama, la taula de proves, el percentatge, un límit del sensor i una millora pendent. Redacteu la conclusió com «classifica aquestes mostres per color en les condicions provades», no com «sap reciclar qualsevol residu».
+
+#### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** prototip revisat, comparació abans/després i recomanació per a una persona operadora.
 

@@ -41,91 +41,91 @@ Abans de la sessió, proveu que les dues plaques comparteixen el mateix grup de 
 
 ### **Sessió 1 · De la necessitat al criteri del protector d’arbres.**
 
-*Context (8 min):*
+#### Fase 1 · Activem i prediem
 
-llegiu una fitxa fictícia d’un viver o d’un arbre jove del pati i relacioneu-la amb la protecció de la biodiversitat i l’ODS 15.
+Llegiu una fitxa fictícia d’un viver o d’un arbre jove del pati i relacioneu-la amb la protecció de la biodiversitat i l’ODS 15.
 
-*Descompondre el sistema (12 min):*
+#### Fase 2 · Explorem i construïm
 
-en un diagrama IPO, escriviu l’entrada que inicia la prova (botó que simula una vibració o una incidència), el procés de decidir si cal avisar i les eixides possibles.
+En un diagrama IPO, escriviu l’entrada que inicia la prova (botó que simula una vibració o una incidència), el procés de decidir si cal avisar i les eixides possibles.
 
-*Disseny (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-dibuixeu el node sensor, el missatge per ràdio, el node receptor i la persona responsable que interpreta l’avís; distingiu aquesta xarxa local de prova d’una instal·lació real amb passarel·la a internet.
+Dibuixeu el node sensor, el missatge per ràdio, el node receptor i la persona responsable que interpreta l’avís; distingiu aquesta xarxa local de prova d’una instal·lació real amb passarel·la a internet.
 
-*Criteris i casos (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-acordeu quatre criteris mesurables: només s’envia el codi acordat, el receptor el mostra, un altre codi no es confon amb l’alerta i cap dada identifica persones o llocs sensibles.
+Acordeu quatre criteris mesurables: només s’envia el codi acordat, el receptor el mostra, un altre codi no es confon amb l’alerta i cap dada identifica persones o llocs sensibles.
 
-*Tancament (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-anoteu una limitació o una situació en què l’avís podria ser fals. Evidència: diagrama, criteris i taula de casos previstos.
+Anoteu una limitació o una situació en què l’avís podria ser fals. Evidència: diagrama, criteris i taula de casos previstos.
 
 ### **Sessió 2 · Construir i provar un avís de ràdio.**
 
-*Planificar missatges (8 min):*
+#### Fase 1 · Activem i prediem
 
-escolliu codis neutres com `REVISA` i `PROVA`, sense noms ni coordenades.
+Trieu dos codis curts i inequívocs, com `REVISA` i `PROVA`, que no incloguen noms, coordenades ni informació sobre una persona. Abans d’enviar-los, cada equip escriu quin missatge espera veure al receptor i què hauria de passar si arriba un codi diferent. Llegiu les regles de ràdio acordades i comproveu que els dos dispositius comparteixen el mateix grup; amb una sola placa, feu la predicció amb targetes i marqueu-la com a simulació, no com a recepció provada.
 
-*Programar emissor (12 min):*
+#### Fase 2 · Explorem i construïm
 
-en una placa, establiu grup de ràdio i envieu el missatge només quan es prema el botó seleccionat; afegiu una icona que indique que s’ha enviat.
+En una placa, establiu grup de ràdio i envieu el missatge només quan es prema el botó seleccionat; afegiu una icona que indique que s’ha enviat.
 
-*Programar receptor (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-en l’altra placa, espereu el missatge i mostreu una icona o paraula curta quan arribe; no feu que el receptor active actuadors.
+En l’altra placa, espereu el missatge i mostreu una icona o paraula curta quan arribe; no feu que el receptor active actuadors.
 
-*Proves (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-feu cinc intents a distància curta amb el mateix grup; registreu enviaments i recepcions. Repetiu amb un grup diferent per comprovar que no es barregen les proves. No cal allunyar plaques del docent ni provar cobertura fora de l’aula.
+Feu cinc intents a distància curta amb el mateix grup; registreu enviaments i recepcions. Repetiu amb un grup diferent per comprovar que no es barregen les proves. No cal allunyar plaques del docent ni provar cobertura fora de l’aula.
 
-*Revisió (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-marqueu falsos avisos, missatges perduts i una millora. Amb una sola placa, una persona pot fer d’emissor i una altra de receptor amb targetes de paper, però aquesta alternativa no es compta com a transmissió de ràdio provada.
+Marqueu falsos avisos, missatges perduts i una millora. Amb una sola placa, una persona pot fer d’emissor i una altra de receptor amb targetes de paper, però aquesta alternativa no es compta com a transmissió de ràdio provada.
 
 ### **Sessió 3 · Dades d’humitat i decisió de l’Auto-farmer.**
 
-*Examinar la mesura (10 min):*
+#### Fase 1 · Activem i prediem
 
-compareu què vol dir “sec”, “intermedi” i “humit” en tres mostres simulades; si hi ha sensor extern, consulteu les seues instruccions, calibreu-lo segons el centre i manteniu-lo separat de la placa.
+Compareu què vol dir “sec”, “intermedi” i “humit” en tres mostres simulades; si hi ha sensor extern, consulteu les seues instruccions, calibreu-lo segons el centre i manteniu-lo separat de la placa.
 
-*Programar una dada (12 min):*
+#### Fase 2 · Explorem i construïm
 
-useu A/B per seleccionar valors inventats (per exemple 250, 500 i 750) o llegiu l’entrada analògica disponible; mostreu número o barra LED.
+Useu A/B per seleccionar valors inventats (per exemple 250, 500 i 750) o llegiu l’entrada analògica disponible; mostreu número o barra LED.
 
-*Crear la condició (13 min):*
+#### Fase 3 · Expliquem i registrem
 
-formuleu una regla com “si lectura simulada < llindar de prova, mostrar ‘cal revisar’”; representeu eixida com a icona, missatge o LED, no com a reg efectiu.
+Formuleu una regla com “si lectura simulada < llindar de prova, mostrar ‘cal revisar’”; representeu eixida com a icona, missatge o LED, no com a reg efectiu.
 
-*Provar els límits (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-proveu valors just per davall, iguals i per damunt del llindar i anoteu què mostra el programa.
+Proveu valors just per davall, iguals i per damunt del llindar i anoteu què mostra el programa.
 
-*Tancament (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-distingiu lectura, interpretació i decisió humana. Evidència: pseudocodi, codi i taula valor/eixida.
+Distingiu lectura, interpretació i decisió humana. Evidència: pseudocodi, codi i taula valor/eixida.
 
 ### **Sessió 4 · Integrar els nodes i comunicar-ne els límits.**
 
-*Preparar un escenari (8 min):*
+#### Fase 1 · Activem i prediem
 
-representeu un planter de maqueta i decidiu quina placa fa de node de dades i quina rep el missatge.
+Representeu un planter de maqueta i decidiu quina placa fa de node de dades i quina rep el missatge.
 
-*Integrar (15 min):*
+#### Fase 2 · Explorem i construïm
 
-combineu lectura simulada o externa, comparació amb llindar i missatge de ràdio; feu que l’avís diga “revisió necessària” i no “reg automàtic”.
+Combineu lectura simulada o externa, comparació amb llindar i missatge de ràdio; feu que l’avís diga “revisió necessària” i no “reg automàtic”.
 
-*Auditar (12 min):*
+#### Fase 3 · Expliquem i registrem
 
-executeu una matriu de cinc casos, incloent lectura baixa, igual al llindar, alta, cap missatge i grup incorrecte; compareu criteris acordats amb resultats.
+Executeu una matriu de cinc casos, incloent lectura baixa, igual al llindar, alta, cap missatge i grup incorrecte; compareu criteris acordats amb resultats.
 
-*Proposar ampliació (8 min):*
+#### Fase 4 · Apliquem i millorem
 
-dibuixeu quin sensor compatible o relé de baixa tensió verificat caldria per avançar el prototip, quin risc o error s’hauria de resoldre i qui supervisaria una prova real.
+Dibuixeu quin sensor compatible o relé de baixa tensió verificat caldria per avançar el prototip, quin risc o error s’hauria de resoldre i qui supervisaria una prova real.
 
-*Galeria (7 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-presenteu diagrama, dades, prototip i límit principal a un altre equip, que deixa una pregunta. Evidència: sistema en maqueta, matriu de proves i revisió de disseny.
+Presenteu diagrama, dades, prototip i límit principal a un altre equip, que deixa una pregunta. Evidència: sistema en maqueta, matriu de proves i revisió de disseny.
 
 ## 📋 Criteris d’èxit i avaluació
 

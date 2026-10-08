@@ -33,23 +33,113 @@ El grup vol preparar un menú de jocs breus per al pati, amb opcions per moure�
 
 ### **Sessió 1 · Descriure amb variables (Describing with variables).**
 
-Amb targetes d’un personatge fictici del pati, canvieu valors com joc triat, torn o nombre de passos d’una fitxa. Representeu una variable amb una capsa que guarda un valor i escriviu instruccions per actualitzar-la. No useu noms ni dades de companys.
+#### Fase 1 · Activem i prediem
+
+Presenteu targetes d’un personatge fictici del pati i predigueu quins valors poden canviar durant un joc: opció triada, torn o nombre de passos d’una fitxa. No useu noms ni dades de companys.
+
+#### Fase 2 · Explorem i construïm
+
+Representeu una variable amb una capsa que guarda un valor. Canvieu el valor del joc triat o del torn amb targetes i observeu com el canvi modifica les instruccions que cal seguir.
+
+#### Fase 3 · Expliquem i registrem
+
+Escriviu instruccions per actualitzar la variable i anoteu quin valor hi havia abans i quin queda després. Expliqueu què guarda cada variable i quin esdeveniment la modifica.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu l’ordre d’una instrucció o el valor inicial i compareu el resultat. Reviseu l’algorisme si no queda clar qui l’actualitza o en quin moment.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Una altra parella segueix l’algorisme amb targetes i comprova el valor resultant. **Evidència:** exemples de variables, instruccions i taula de valors abans/després.
 
 ### **Sessió 2 · Comptar una activitat (Using variables in programs).**
 
-Dissenyeu un comptador de salts de fitxa o, si la classe ho tria, de moviments voluntaris de baixa intensitat. Useu l’acceleròmetre o el botó com a entrada i compareu lectures amb comptatge manual. Depureu un error intencionat de reinici o increment. No s’exigeix cap moviment concret ni s’avalua el nombre obtingut.
+#### Fase 1 · Activem i prediem
+
+Dissenyeu un comptador de salts d’una fitxa o, si la classe ho tria voluntàriament, de moviments suaus. Predigueu com es mostrarà el valor i què ha de passar quan s’inicia o es reinicia.
+
+#### Fase 2 · Explorem i construïm
+
+Useu l’acceleròmetre o el botó com a entrada i compareu les lectures amb un recompte manual. Identifiqueu quan la variable s’inicialitza, quin esdeveniment la modifica i com es mostra el resultat.
+
+#### Fase 3 · Expliquem i registrem
+
+Registreu entrada prevista, resultat del programa, diferència observada i explicació possible. Prepareu una versió amb un error intencionat de reinici o increment i predigueu quin resultat produirà.
+
+#### Fase 4 · Apliquem i millorem
+
+Localitzeu el bloc responsable, canvieu una sola cosa i repetiu la mateixa prova. El botó A pot substituir el moviment; no s’exigeix cap activitat física ni s’avalua el nombre obtingut.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu la versió inicial i la corregida i expliqueu què guarda la variable. **Evidència:** programa o pseudocodi, taula de proves i error depurat sense dades personals.
 
 ### **Sessió 3 · Un comptador de passos com a model (Programming step-counters).**
 
-Programeu un comptador activat pel moviment de la placa i proveu-lo caminant amb la placa a la mà o simulant sacsejades controlades. Compareu tres recorreguts amb observació manual, registre anònim i condicions consistents. Analitzeu moviments que crea erròniament que són passos i expliqueu que no és un podòmetre validat.
+#### Fase 1 · Activem i prediem
+
+Predigueu quins moviments de la placa podria confondre el comptador amb passos i quins passos podrien passar desapercebuts. Expliqueu que és una prova d’un model, no un podòmetre validat.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu un comptador activat pel moviment de la placa i proveu-lo al simulador o amb sacsejades suaus sobre una taula. Si l’alumnat ho tria, feu un recorregut curt en espai lliure, sense córrer ni competir; el botó i les fitxes són alternatives equivalents.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu tres recorreguts o seqüències amb observació manual, mantenint condicions consistents. Useu un registre anònim i anoteu falsos positius, moviments no comptats i diferències amb la fitxa manual.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu un llindar o una condició i repetiu la mateixa prova controlada. L’objectiu és identificar limitacions del recompte, no ajustar-lo a una mesura corporal exacta.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu per què el programa pot confondre altres moviments amb passos i per què no mesura salut, intensitat ni capacitat física. **Evidència:** dues versions del comptador, taula comparativa i límit del model explicat.
 
 ### **Sessió 4 · Propostes aleatòries (Random activities).**
 
-Examineu un programa de preguntes matemàtiques amb nombres aleatoris i variables. Després redacteu l’algorisme d’un selector que trie una targeta de joc entre opcions equivalentes: caminar una ruta curta, marcar un ritme, observar una forma o dirigir una seqüència. L’atzar proposa; qualsevol participant pot triar una altra opció o no fer activitat física.
+#### Fase 1 · Activem i prediem
+
+Examineu un programa de preguntes matemàtiques amb nombres aleatoris i variables. Predigueu quins valors podrien eixir i quines opcions quedarien fora si els límits s’escriuen malament.
+
+#### Fase 2 · Explorem i construïm
+
+Redacteu amb targetes l’algorisme d’un selector de jocs: iniciar, triar un nombre, mostrar l’activitat associada, preguntar si s’accepta i oferir alternativa. Incloeu activitats equivalents com caminar una ruta curta, marcar un ritme, observar una forma o dirigir una seqüència.
+
+#### Fase 3 · Expliquem i registrem
+
+Reviseu que totes les opcions siguen visibles i que cap obligue a fer exercici. Anoteu si tenen durades o demandes diferents i per què l’atzar no garanteix per si sol l’equitat.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu els valors mínim i màxim i comproveu que cada activitat pot aparéixer. Afegiu una opció «tria una altra» o «passe» amb el mateix valor que qualsevol altra; una elecció manual equivalent sempre està disponible.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu qui controla la selecció i com pot rebutjar una proposta. **Evidència:** algorisme amb targetes, llista equilibrada i proves de límits.
 
 ### **Sessió 5 · Programar i avaluar el selector (Programming an activity picker).**
 
-Implementeu el selector amb MakeCode, variables i nombres aleatoris. Proveu que totes les opcions poden eixir, reviseu una condició incorrecta i incorporeu una alternativa sense moviment. Presenteu el programa i valoreu si és clar, inclusiu i fàcil de modificar; esborreu les dades de prova en acabar.
+#### Fase 1 · Activem i prediem
+
+Reviseu l’algorisme i predigueu quina activitat correspon als valors mínim i màxim. Comproveu que una alternativa o passar el torn apareix com a opció.
+
+#### Fase 2 · Explorem i construïm
+
+Implementeu el selector amb MakeCode, variables i nombres aleatoris. Associeu cada opció a una targeta i feu que la persona puga acceptar, triar-ne una altra o no participar.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu sistemàticament els límits i inspeccioneu la llista perquè cap opció quede exclosa. Registreu valors i resultats sense noms, perfils ni identificadors.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu una condició incorrecta i torneu a provar-la. Afegiu o milloreu una alternativa sense moviment i expliqueu si el selector continua sent fàcil de modificar.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Presenteu el programa i valoreu si és clar, inclusiu i controlat per qui l’usa. Esborreu les dades de prova en acabar. **Evidència:** selector, taula de proves, condició revisada i justificació d’accessibilitat.
 
 ## 🧰 Materials i preparació
 

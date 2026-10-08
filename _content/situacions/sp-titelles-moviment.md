@@ -44,33 +44,113 @@ Criteris de disseny: el moviment es pot descriure amb un verb; l’estructura ag
 
 ### **Sessió 1 · Del lloc a un personatge.**
 
-Consulteu el mapa o les pàgines divulgatives del Parc Natural de l’Albufera. Trieu una idea visual —aigua, canyís, dunes, barca o una silueta animal— i feu una targeta de font: què hem vist, què sabem per la font i què inventarem per al relat. Si representeu una espècie, no li atribuïu comportaments biològics sense font; si preferiu, creeu un personatge imaginari i indiqueu que ho és.
+#### Fase 1 · Activem i prediem
 
-Dibuixeu tres poses i assigneu a cadascuna un verb de moviment: alçar, girar, inclinar, avançar o amagar-se. En una tira de paper, marqueu l’ordre de quatre moments del relat i decidiu quin d’ells necessita moviment mecànic. Feu una primera animació desconnectada passant les figures per una finestra de paper, sense moure el cos ni representar el gest físicament. **Evidència:** targeta de font/ficció, esbossos i guió de quatre moments.
+Consulteu un mapa o pàgines divulgatives del Parc Natural de l’Albufera. Trieu una idea visual —aigua, canyís, dunes, barca o silueta animal— i prepareu una targeta de font: què hem vist, què sabem per la font i què inventarem per al relat. Si representeu una espècie, no li atribuïu comportaments biològics sense font; també podeu crear una criatura fictícia i declarar-ho.
+
+#### Fase 2 · Explorem i construïm
+
+Dibuixeu tres poses i assigneu un verb a cadascuna: alçar, girar, inclinar, avançar o amagar-se. En una tira de paper, marqueu quatre moments del relat i decidiu quin necessita moviment mecànic.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu una animació desconnectada passant les figures per una finestra de paper, sense representar el gest amb el cos. Anoteu l’ordre de les vinyetes i el verb associat a cada pose.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu les poses si el moviment triat no es distingeix del personatge quiet. Separeu trets consultats a la font dels elements inventats.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quin moment necessita moviment i què aporta a la història. **Evidència:** targeta de font/ficció, esbossos i guió de quatre moments.
 
 ### **Sessió 2 · Del motor a la titella.**
 
-Trieu un format: titella de vareta amb moviment directe; silueta que es desplaça darrere d’una pantalla; o titella de fils amb un únic moviment senzill i fils curts subjectes. Construïu primer el suport i el punt de gir amb cartó lleuger. En SPIKE Prime, fixeu un motor i una manovella o biela que faça avançar i retrocedir la vareta. Dibuixeu l’eix de rotació i el recorregut que farà la figura.
+#### Fase 1 · Activem i prediem
 
-Proveu dues longituds de braç o dos punts d’unió amb una mateixa figura. Mesureu l’arc aproximat en una graella i observeu si la titella gira massa, es queda curta o colpeja l’escenari. Reduïu la massa de la figura abans d’augmentar la potència. **Evidència:** esquema del mecanisme, predicció i comparació de dues configuracions. **Alternativa:** si la conversió mecànica resulta complexa, una vareta unida al braç motor continua permetent investigar trajectòria i ritme.
+Trieu un format: titella de vareta amb moviment directe, silueta darrere d’una pantalla o titella de fils amb un moviment senzill i fils curts subjectes. Dibuixeu l’eix de rotació i prediu el recorregut de la figura.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu primer el suport i el punt de gir amb cartó lleuger. En SPIKE Prime, fixeu un motor i una manovella o biela que faça avançar i retrocedir la vareta. El moviment es pot resoldre també amb una vareta unida al braç motor.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu dues longituds de braç o dos punts d’unió amb una mateixa figura. Mesureu l’arc aproximat en una graella i anoteu si la titella gira massa, es queda curta o colpeja l’escenari.
+
+#### Fase 4 · Apliquem i millorem
+
+Reduïu la massa de la figura abans d’augmentar la potència. Ajusteu el punt d’unió o el braç i torneu a provar. Comproveu que l’estructura aguanta sense carregar el motor.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu predicció i moviment observat i expliqueu com la manovella transforma el gir en trajectòria. **Evidència:** esquema mecànic, predicció i comparació de dues configuracions.
 
 ### **Sessió 3 · Escrivim i provem la partitura de codi.**
 
-Abans de programar, redacteu una seqüència d’accions amb inici, pausa i retorn. Per exemple: «posició de repòs; alçar una vegada; esperar; tornar a repòs». En blocs, programeu una repetició finita per al gest que es repeteix. Si el grup ja treballa amb Python, useu un `for` amb un nombre limitat de repeticions per a la partitura principal i estudieu `while` només amb condició de parada explícita i una acció curta, mai amb un motor atrapat en un bucle sense eixida.
+#### Fase 1 · Activem i prediem
 
-Executeu a baixa velocitat i marqueu si cada pas coincideix amb la targeta de relat. Canvieu una variable per intent —rotacions, durada o pausa— i compareu la previsibilitat. La sintaxi i les funcions de Python del brief depenen de SPIKE Legacy; verifiqueu l’app al centre. **Evidència:** pseudocodi, programa o blocs i tres observacions.
+Abans de programar, redacteu una seqüència amb inici, pausa i retorn: per exemple, «posició de repòs; alçar una vegada; esperar; tornar a repòs». Predigueu on estarà la titella al final.
+
+#### Fase 2 · Explorem i construïm
+
+En blocs, programeu una repetició finita per al gest que es repeteix. Si el grup ja treballa amb Python, useu un `for` amb nombre limitat de repeticions per a la partitura principal. Estudieu `while` només amb condició de parada explícita i una acció curta; mai amb motor atrapat en un bucle sense eixida.
+
+#### Fase 3 · Expliquem i registrem
+
+Executeu a baixa velocitat i marqueu si cada pas coincideix amb la targeta del relat. Registreu pseudocodi, programa o blocs i tres observacions.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una variable per intent —rotacions, duració o pausa— i compareu la previsibilitat. Verifiqueu l’app local abans d’usar Python, ja que la sintaxi del brief depén de SPIKE Legacy.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quin valor ha donat més control al moviment i si la seqüència té inici i final recognoscibles. **Evidència:** pseudocodi, programa o blocs i tres observacions comparables.
 
 ### **Sessió 4 · Botons, so i lectura del públic.**
 
-Assigneu comportaments diferents als botons A i B del hub, si la versió local de l’app ho permet: una pose d’atenció i un moviment d’ala, per exemple. Feu que els botons siguen diferents variants del personatge, no una puntuació o resposta «correcta». Prepareu un guió de mostra i proveu si la figura es pot llegir des de dos llocs marcats de l’aula.
+#### Fase 1 · Activem i prediem
 
-El brief proposa moviment amb música i so simultani. Podeu sincronitzar un so curt amb el moviment si l’app i el dispositiu ho permeten; també és vàlid que una persona faça el so en directe o que el públic seguisca una targeta visual. El so no ha de ser necessari per entendre l’escena. Una altra parella veu l’assaig sense rebre el títol i tria quin verb de moviment descriu millor el gest, després aporta una pregunta concreta de millora. **Evidència:** mapa de botons, prova de sincronització o alternativa, feedback i nota de revisió.
+Si l’app local ho permet, assigneu comportaments diferents als botons A i B del hub, com una pose d’atenció i un moviment d’ala. Predigueu què passarà en cada cas; els botons creen variants, no una puntuació o resposta correcta.
+
+#### Fase 2 · Explorem i construïm
+
+Prepareu un guió de mostra i proveu si la figura es pot llegir des de dos llocs marcats de l’aula. Podeu sincronitzar un so curt amb el moviment si l’app i el dispositiu ho permeten; també és vàlid fer el so en directe o usar una targeta visual. El so no és necessari per entendre l’escena.
+
+#### Fase 3 · Expliquem i registrem
+
+Una altra parella veu l’assaig sense rebre el títol i tria quin verb descriu millor el gest. Recolliu una pregunta concreta de millora i anoteu si el públic ha pogut seguir l’escena per via visual.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu una pose, el control d’un botó o la sincronització a partir del retorn. Manteniu una alternativa visual per a qui no use so.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu si el moviment es llig des dels dos punts de l’aula. **Evidència:** mapa de botons, prova de sincronització o alternativa, retorn i nota de revisió.
 
 ### **Sessió 5 · Reescrivim i presentem.**
 
-Apliqueu una millora triada: modificar el mecanisme, canviar el ritme, afegir una pausa, reduir la figura o aclarir una targeta. Repetiu l’escena i compareu-la amb la primera versió. Prepareu una presentació de dos minuts amb el personatge, la font local si escau, una explicació del moviment, el codi o esquema, i un límit del prototip.
+#### Fase 1 · Activem i prediem
 
-Organitzeu la mostra com una seqüència de petites estacions: la persona que presenta pot parlar, mostrar subtítols o col·locar targetes; una altra persona pot operar el botó si qui narra no vol tocar l’equip. Tanqueu amb una reflexió: «una decisió artística que afecta el mecanisme», «una dada de la font que hem contrastat» i «una prova que encara ens falta». **Evidència:** escena revisada, cartel·la i reflexió.
+Trieu una millora —modificar el mecanisme, canviar el ritme, afegir una pausa, reduir la figura o aclarir una targeta— i prediu què canviarà en la lectura de l’escena.
+
+#### Fase 2 · Explorem i construïm
+
+Apliqueu la millora i repetiu l’escena. Prepareu una presentació de dos minuts amb el personatge, la font local si escau, explicació del moviment, codi o esquema i un límit del prototip.
+
+#### Fase 3 · Expliquem i registrem
+
+Organitzeu una mostra en estacions. La persona que presenta pot parlar, mostrar subtítols o col·locar targetes; una altra pot operar el botó si qui narra no vol tocar l’equip.
+
+#### Fase 4 · Apliquem i millorem
+
+Useu el retorn per aclarir una part de la narració o del mecanisme. Registreu una dada de la font que hàgeu contrastat i una prova que encara falta.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu la primera escena amb la revisada i completeu: «una decisió artística que afecta el mecanisme», «una dada contrastada» i «una prova pendent». **Evidència:** escena revisada, cartel·la i reflexió.
 
 ## 🧰 Materials i preparació
 

@@ -41,113 +41,113 @@ Decidiu si tota la classe treballarà amb simulador o si hi haurà transferènci
 
 ### **Sessió 1 · Animació i descomposició.**
 
-*Mapa d’idees (5 min):*
+#### Fase 1 · Activem i prediem
 
-feu una xarxa de paraules al voltant d’“animació” i separeu moviment real, moviment dibuixat i seqüència de fotogrames.
+Feu una xarxa de paraules al voltant d’“animació” i separeu moviment real, moviment dibuixat i seqüència de fotogrames.
 
-*Descompondre un moviment (10 min):*
+#### Fase 2 · Explorem i construïm
 
-una persona demostra un pas de dansa senzill i el grup l’explica com a inici, moviment, pausa i final; no cal que l’alumnat el faça físicament, també pot usar una fitxa o dirigir-lo.
+Una persona demostra un pas de dansa senzill i el grup l’explica com a inici, moviment, pausa i final; no cal que l’alumnat el faça físicament, també pot usar una fitxa o dirigir-lo.
 
-*Planificar (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-trieu tres poses que comuniquen el canvi i dibuixeu-les amb el mateix enquadrament.
+Trieu tres poses que comuniquen el canvi i dibuixeu-les amb el mateix enquadrament.
 
-*Crear flipbook (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-feu un llibret de tres o quatre imatges amb un canvi menut entre pàgines i proveu-lo sense llançar-lo ni sacsejar-lo prop de la cara.
+Feu un llibret de tres o quatre imatges amb un canvi menut entre pàgines i proveu-lo sense llançar-lo ni sacsejar-lo prop de la cara.
 
-*Compartir (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-expliqueu quina part s’ha descompost i què s’ha omés. Evidència: mapa d’idees, poses numerades i flipbook.
+Expliqueu quina part s’ha descompost i què s’ha omés. Evidència: mapa d’idees, poses numerades i flipbook.
 
 ### **Sessió 2 · Diagrames de flux i repetició.**
 
-*Recuperar passos (5 min):*
+#### Fase 1 · Activem i prediem
 
-ordeneu les imatges del flipbook i detecteu si alguna queda fora de seqüència.
+Ordeneu les imatges del flipbook i detecteu si alguna queda fora de seqüència.
 
-*Diagrama (12 min):*
+#### Fase 2 · Explorem i construïm
 
-convertiu les poses en un diagrama de flux amb inici, mostrar fotograma A, mostrar fotograma B, repetir i final; representeu amb una fletxa de retorn el fragment que es repeteix.
+Convertiu les poses en un diagrama de flux amb inici, mostrar fotograma A, mostrar fotograma B, repetir i final; representeu amb una fletxa de retorn el fragment que es repeteix.
 
-*Execució humana (8 min):*
+#### Fase 3 · Expliquem i registrem
 
-un equip llig només el diagrama i un altre fa de “pantalla”; anoteu què resulta ambigu.
+Un equip llig només el diagrama i un altre fa de “pantalla”; anoteu què resulta ambigu.
 
-*MakeCode (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-traslladeu els dos fotogrames a la matriu LED, afegiu pauses i compareu un programa que duplica les instruccions amb un altre que usa bucle.
+Traslladeu els dos fotogrames a la matriu LED, afegiu pauses i compareu un programa que duplica les instruccions amb un altre que usa bucle.
 
-*Conclusió (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-indiqueu què ha fet més curt el bucle i quines ordres continuen sent úniques. Evidència: diagrama inicial/depurat i comparació de programes amb/sense repetició.
+Indiqueu què ha fet més curt el bucle i quines ordres continuen sent úniques. Evidència: diagrama inicial/depurat i comparació de programes amb/sense repetició.
 
 ### **Sessió 3 · Planificar l’animació del volcà.**
 
-*Lectura de context (8 min):*
+#### Fase 1 · Activem i prediem
 
-consulteu una infografia o text de l’IGN; localitzeu un cas documentat i una àrea volcànica històrica de la Comunitat Valenciana. Anoteu font i data i no deduïu activitat o perill actual a partir d’un mapa geològic.
+Consulteu una infografia o text de l’IGN; localitzeu un cas documentat i una àrea volcànica històrica de la Comunitat Valenciana. Anoteu font i data i no deduïu activitat o perill actual a partir d’un mapa geològic.
 
-*Vocabulari científic (7 min):*
+#### Fase 2 · Explorem i construïm
 
-associeu magma amb material fos sota la superfície i lava amb el material que hi arriba; distingiu aquests termes de la columna de gasos o cendra que pot aparéixer en alguns tipus d’erupció.
+Associeu magma amb material fos sota la superfície i lava amb el material que hi arriba; distingiu aquests termes de la columna de gasos o cendra que pot aparéixer en alguns tipus d’erupció.
 
-*Storyboard (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-en equips, definiu quatre estats gràfics —superfície, inici de l’emissió, plomall o flux representat, i escena que es calma— com una convenció visual inventada, sense afirmar que tots els volcans passen per una mateixa seqüència.
+En equips, definiu quatre estats gràfics —superfície, inici de l’emissió, plomall o flux representat, i escena que es calma— com una convenció visual inventada, sense afirmar que tots els volcans passen per una mateixa seqüència.
 
-*Graelles i diagrama (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-dibuixeu cada estat en 5 × 5 píxels, identifiqueu quins quadres es repeteixen i en quin ordre, i creeu un diagrama amb pauses/repetició.
+Dibuixeu cada estat en 5 × 5 píxels, identifiqueu quins quadres es repeteixen i en quin ordre, i creeu un diagrama amb pauses/repetició.
 
-*Revisió (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-una parella comprova que el diagrama coincideix amb l’storyboard. Evidència: font citada, targeta de vocabulari, quatre graelles i algoritme.
+Una parella comprova que el diagrama coincideix amb l’storyboard. Evidència: font citada, targeta de vocabulari, quatre graelles i algoritme.
 
 ### **Sessió 4 · Programar, provar i depurar.**
 
-*Predir (5 min):*
+#### Fase 1 · Activem i prediem
 
-abans de programar, llegiu el diagrama i assenyaleu quin fotograma apareixerà després de la repetició.
+Abans de programar, llegiu el diagrama i assenyaleu quin fotograma apareixerà després de la repetició.
 
-*Construir codi (15 min):*
+#### Fase 2 · Explorem i construïm
 
-escriviu les icones en MakeCode amb LEDs individuals o graella de disseny; mostreu-les en ordre dins d’un bucle adequat i useu pauses suficients per llegir-les.
+Escriviu les icones en MakeCode amb LEDs individuals o graella de disseny; mostreu-les en ordre dins d’un bucle adequat i useu pauses suficients per llegir-les.
 
-*Provar (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-executeu al simulador o transferiu a micro:bit, marqueu cada eixida respecte del storyboard i comproveu si el bucle repeteix exactament el fragment indicat.
+Executeu al simulador o transferiu a micro:bit, marqueu cada eixida respecte del storyboard i comproveu si el bucle repeteix exactament el fragment indicat.
 
-*Depurar (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-proveu tres casos: fotograma canviat d’ordre, una repetició de més i pausa massa curta; canvieu una cosa cada vegada i registreu el resultat.
+Proveu tres casos: fotograma canviat d’ordre, una repetició de més i pausa massa curta; canvieu una cosa cada vegada i registreu el resultat.
 
-*Autoavaluar (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-justifiqueu una correcció i una simplificació. Evidència: codi, prediccions i registre de tres casos provats.
+Justifiqueu una correcció i una simplificació. Evidència: codi, prediccions i registre de tres casos provats.
 
 ### **Sessió 5 · Reflexió i revisió.**
 
-*Descompondre el procés (10 min):*
+#### Fase 1 · Activem i prediem
 
-feu un mapa de pensament des de la font fins a l’animació: investigar, seleccionar fases gràfiques, dissenyar píxels, escriure algoritme, programar, provar i revisar.
+Feu un mapa de pensament des de la font fins a l’animació: investigar, seleccionar fases gràfiques, dissenyar píxels, escriure algoritme, programar, provar i revisar.
 
-*Galeria (15 min):*
+#### Fase 2 · Explorem i construïm
 
-cada equip mostra el mapa, el codi i el vídeo/demostració de la seqüència; si no es grava, la mostra es fa en directe o amb una sèrie de captures autoritzades, sense fotografiar alumnat.
+Cada equip mostra el mapa, el codi i el vídeo/demostració de la seqüència; si no es grava, la mostra es fa en directe o amb una sèrie de captures autoritzades, sense fotografiar alumnat.
 
-*Retorn (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-el públic comenta una cosa clara i formula una pregunta sobre el model científic o el bucle.
+El públic comenta una cosa clara i formula una pregunta sobre el model científic o el bucle.
 
-*Revisió (5 min):*
+#### Fase 4 · Apliquem i millorem
 
-l’equip aplica o rebutja una proposta amb una raó.
+Reviseu el storyboard i el programa amb el retorn rebut. Trieu una proposta concreta, com ara fer més llegible una transició o allargar una pausa, i decidiu si millora la representació del procés. Abans de canviar el codi, anoteu què espereu que passe; després, compareu el resultat nou amb l’anterior. Si rebutgeu la proposta, justifiqueu-ho amb un criteri del projecte (claredat, coherència amb la font o ritme de lectura), no amb una preferència personal sense explicar.
 
-*Reflexió individual (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-completa “el meu codi representa…, no pot predir…, la repetició m’ha servit per…”. Evidència: mapa final, retorn i reflexió.
+Completa “el meu codi representa…, no pot predir…, la repetició m’ha servit per…”. Evidència: mapa final, retorn i reflexió.
 
 ## 📊 Criteris d’èxit i avaluació
 

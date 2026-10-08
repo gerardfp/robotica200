@@ -26,51 +26,267 @@ La classe obri un laboratori d'interacció per a una exposició tecnològica del
 
 ### **Sessió 1 · *Find the Blue Dot*.**
 
-Fem un tauler de coordenades amb una quadrícula de paper. Un botó inicia el repte; la matriu LED mostra un punt o una fletxa que indica una cel·la. Provem què ocorre si el programa rep una pulsació curta, una de llarga o cap entrada, i documentem la diferència entre llegir el botó i actualitzar la pantalla.
+#### Fase 1 · Activem i prediem
+
+Prepareu una quadrícula de paper amb files i columnes. Predigueu com es podria indicar una cel·la sense escriure’n el nom: un punt, una fletxa o una coordenada per torn.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu el botó de Codey perquè inicie el repte i la matriu LED perquè mostre un punt o una fletxa. Associeu cada símbol amb una cel·la del tauler.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu la cel·la indicada i l’entrada que ha activat el programa. Distingiu el moment de llegir el botó del moment d’actualitzar la pantalla.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu una pulsació curta, una de llarga i cap entrada. Si dues pulsacions generen respostes difícils de distingir, ajusteu la regla o el símbol LED.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula d’entrades i cel·les amb una regla que una altra parella puga seguir. Expliqueu què fa el programa quan no rep cap senyal.
 
 ### **Sessió 2 · *Lucky Wheel*.**
 
-Creem una roda de decisions amb opcions neutres —per exemple, quin repte cooperatiu provar— i usem el botó per iniciar i aturar una seqüència de selecció en la matriu. Repetim moltes vegades i comptem resultats: distingim una animació d'una selecció realment aleatòria i parlem de per què les freqüències observades poden variar.
+#### Fase 1 · Activem i prediem
+
+Trieu opcions neutres, com ara quin repte cooperatiu provar, i representeu-les en una roda de paper. Predigueu si cada opció eixirà amb la mateixa freqüència.
+
+#### Fase 2 · Explorem i construïm
+
+Useu el botó per iniciar i aturar una seqüència de selecció en la matriu LED. Diferencieu una animació que només sembla una roda d’una selecció que depén d’un valor variable.
+
+#### Fase 3 · Expliquem i registrem
+
+Feu una sèrie de rondes i anoteu cada resultat amb marques de recompte. Manteniu el mateix nombre d’opcions i el mateix nombre d’intents per tanda.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu dues tandes i reviseu que el programa no afavorisca una posició per l’ordre de la seqüència o pel temps de pulsació. Si no hi ha un bloc aleatori, descriviu el resultat com una animació cíclica, no com una tria aleatòria.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** recompte de resultats i explicació de per què freqüències observades poden variar. La roda és una dinàmica de joc, no un mecanisme per prendre decisions importants.
 
 ### **Sessió 3 · *Codey Rocky Can Do Addition*.**
 
-Programem un comptador de dues entrades d'infraroig: cada detecció vàlida en una finestra de prova aporta una unitat al registre corresponent. Sumem els dos recomptes, mostrem el resultat i comparem-lo amb el recompte manual. Abans, comprovem quin esdeveniment IR pot generar realment el model i l'equipament disponible; no interpretem lectures no documentades com a distàncies calibrades.
+#### Fase 1 · Activem i prediem
+
+Repartiu objectes de prova en dues categories i feu un recompte manual inicial. Predigueu com canviarà la suma quan s’afiga una detecció a cada categoria.
+
+#### Fase 2 · Explorem i construïm
+
+Comproveu quin esdeveniment infraroig pot generar realment el model i l’equipament disponible. Programeu dos comptadors: cada detecció vàlida dins de la finestra acordada aporta una unitat al registre corresponent.
+
+#### Fase 3 · Expliquem i registrem
+
+Mostreu els dos recomptes i la suma. Registreu els valors abans i després de cada entrada per poder reconstruir el càlcul.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu el resultat programat amb el recompte manual en una tanda nova. Reviseu dobles deteccions o senyals que no s’hagen comptat i ajusteu la finestra de prova.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula de recompte manual i del programa amb una suma explicada. No interpreteu lectures IR no documentades com a distàncies calibrades.
 
 ### **Sessió 4 · *Jump! Codey!*.**
 
-En una maqueta de joc de paper, l'infraroig actua com a senyal d'activació: quan el programa rep l'entrada acordada, Codey canvia la icona de la pantalla i Rocky executa un moviment breu. Fem una pista segura i comparem el programa amb i sense pausa, explicant què detecta el sensor i què és només una regla del joc.
+#### Fase 1 · Activem i prediem
+
+Dibuixeu una pista curta de paper i trieu una icona per a representar l’activació. Predigueu què ha de passar quan arriba l’entrada IR i què ha de passar quan no arriba.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu l’entrada IR acordada perquè Codey canvie la icona de la pantalla i Rocky faça un moviment breu. Manteniu la pista lliure d’obstacles rígids i el robot sobre una superfície estable.
+
+#### Fase 3 · Expliquem i registrem
+
+Registreu les entrades detectades, la icona mostrada i si el moviment s’ha produït. Separeu la lectura real del sensor de la regla de joc que heu triat.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu una versió amb pausa i una sense. Reviseu si els senyals consecutius es distingeixen i si el moviment es manté dins de la pista.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** programa i taula de proves amb activació present/absent. Expliqueu què detecta l’infraroig i quina part és només una convenció del joc.
 
 ### **Sessió 5 · *RC Car*.**
 
-Explorem la transmissió i recepció IR per comandar una ruta de repartiment sobre una quadrícula. Amb dos Codey Rocky, un equip envia ordres i l'altre les rep; intercanvien rols i registren ordres perdudes o repetides. Calen dos dispositius IR compatibles per a la prova entre robots; si només n'hi ha un, es fa la mateixa seqüència alternant el control amb un comandament IR compatible disponible, sense presentar una simulació en paper com a prova de transmissió.
+#### Fase 1 · Activem i prediem
+
+Dibuixeu una ruta de repartiment en una quadrícula i acordeu un vocabulari curt d’ordres. Predigueu quines instruccions podrien perdre’s o repetir-se durant una transmissió.
+
+#### Fase 2 · Explorem i construïm
+
+Amb dos Codey Rocky i dos dispositius IR compatibles, configureu un emissor i un receptor. L’emissor envia ordres de ruta i el receptor les converteix en moviments o indicacions del model.
+
+#### Fase 3 · Expliquem i registrem
+
+Registreu l’ordre enviada, la rebuda i la resposta. Intercanvieu els rols perquè cada equip prove tant la transmissió com la recepció.
+
+#### Fase 4 · Apliquem i millorem
+
+Repetiu una ruta i marqueu ordres perdudes o repetides. Si només hi ha un robot, alterneu el control amb un comandament IR compatible disponible; si no n’hi ha, assageu el protocol en targetes i indiqueu que la transmissió física no s’ha provat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** registre emissor/receptor i una millora proposada per fer les ordres més fiables. Calen dos dispositius IR compatibles per a validar la comunicació entre robots.
 
 ### **Sessió 6 · *When Codey Meets Codey*.**
 
-Amb dos robots, dissenyem una conversa d'icones breu: l'emissor envia una ordre o missatge i el receptor respon amb una expressió LED. Definim un codi compartit, provem missatges vàlids i invàlids, i identifiquem què cal perquè emissor i receptor interpreten igual el senyal. Si la dotació només permet un robot, documentem i assagem el protocol en targetes, deixant clar que la comunicació física queda pendent d'un segon dispositiu.
+#### Fase 1 · Activem i prediem
+
+Imagineu una conversa entre dos robots amb tres icones i definiu què significa cadascuna. Predigueu com es detectaria un missatge desconegut.
+
+#### Fase 2 · Explorem i construïm
+
+Amb dos dispositius compatibles, programeu l’emissor perquè envie un missatge i el receptor perquè responga amb una expressió LED. Escriviu el codi compartit en una llegenda visible.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu missatges vàlids i invàlids i anoteu què ha enviat l’emissor, què ha mostrat el receptor i si la interpretació coincideix amb la llegenda.
+
+#### Fase 4 · Apliquem i millorem
+
+Afegiu una regla per a missatges desconeguts i repetiu l’intercanvi canviant els rols. Si la dotació només té un robot, assageu el protocol amb targetes i identifiqueu que la comunicació física resta pendent d’un segon dispositiu.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** llegenda del codi i registres d’un missatge vàlid i un d’invàlid. Expliqueu què necessiten emissor i receptor per interpretar el senyal de la mateixa manera.
 
 ### **Sessió 7 · *Volume Control*.**
 
-Llegim el potenciòmetre integrat com a control graduat i fem que la seua posició regule el volum d'un senyal de so breu o, si el model/configuració no disposa de so utilitzable, la freqüència d'una animació LED. Anotem valors mínim, intermedi i màxim i convertim la lectura a una escala comprensible sense afirmar que siga una mesura normalitzada.
+#### Fase 1 · Activem i prediem
+
+Observeu el potenciòmetre i indiqueu quina resposta espereu en els extrems i al punt intermedi. Acordeu una escala de tres nivells per comparar-la.
+
+#### Fase 2 · Explorem i construïm
+
+Llegiu el potenciòmetre integrat i useu la posició per regular el volum d’un senyal breu. Si el model o la configuració no permet so, feu servir la freqüència d’una animació LED com a alternativa identificada.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu valors mínim, intermedi i màxim al costat de la resposta observada. Descriviu com heu convertit la lectura en tres nivells comprensibles.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu posicions intermèdies i ajuste els límits si dos nivells produeixen respostes massa semblants. Repetiu les lectures sense moure el robot ni canviar de programa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula de posició, lectura i resposta. La lectura és un control del model, no una escala normalitzada de volum.
 
 ### **Sessió 8 · *Number Guessing*.**
 
-El potenciòmetre selecciona una conjectura d'un rang menut; el botó la confirma i la matriu mostra pistes de «més», «menys» o «encert». Provem els extrems, els valors repetits i un rang diferent. Expliquem la relació entre lectura analògica, conversió a enter i condicions del programa.
+#### Fase 1 · Activem i prediem
+
+Trieu un rang menut i penseu com convertir el gir del potenciòmetre en una conjectura. Predigueu què mostrarà el programa si la conjectura és inferior, superior o igual al valor secret.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu el potenciòmetre per seleccionar la conjectura, el botó per confirmar-la i la matriu per mostrar «més», «menys» o «encert».
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu la lectura analògica, l’enter que li correspon, el valor secret i la pista mostrada en cada intent. Feu visible com es calcula la conversió.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu els valors dels extrems, repeticions i un rang diferent. Reviseu què passa quan dues lectures pròximes es converteixen en el mateix enter.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** una traça del joc amb tres resultats possibles i explicació de la relació entre lectura analògica, conversió a enter i condicions.
 
 ### **Sessió 9 · *I'm a Good Guesser*.**
 
-Rocky llig targetes de colors i les classifica per a una galeria del pati. Recollim diverses lectures per targeta, fixem condicions de llum i posició i comprovem si una regla de classificació funciona amb targetes que no s'han utilitzat per ajustar-la. El color llegit pel sensor depén de la superfície i de la il·luminació; no el tractem com una etiqueta infal·lible.
+#### Fase 1 · Activem i prediem
+
+Prepareu targetes de colors per a una galeria del pati i predigueu quines podrà distingir el sensor. Acordeu com presentareu cada targeta.
+
+#### Fase 2 · Explorem i construïm
+
+Feu lectures de diverses targetes, manteniu la distància, l’orientació i la llum tan constants com siga possible i creeu una regla inicial de classificació.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu les lectures repetides per targeta, la classificació prevista i el resultat. Separeu les targetes utilitzades per ajustar la regla de les que reservareu per a comprovar-la.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu la regla amb targetes que no s’han emprat per ajustar-la. Si falla, canvieu una condició alhora i repetiu tant la mostra inicial com les targetes de comprovació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula de lectures i errors de classificació amb una regla revisada. El color detectat depén de la superfície i la il·luminació; no és una etiqueta infal·lible.
 
 ### **Sessió 10 · *Stoplight*.**
 
-Construïm una maqueta de pas escolar amb targetes de color. Quan Rocky detecta la targeta acordada, el programa canvia l'estat LED i mostra també una forma o patró diferenciat. Revisem els casos límit i expliquem que és un prototip didàctic: no controla trànsit real ni substitueix senyalització accessible homologada.
+#### Fase 1 · Activem i prediem
+
+Dissenyeu una maqueta de pas escolar amb targetes de color i predigueu quina resposta ha de correspondre a cada senyal. Afegiu una targeta desconeguda com a cas de prova.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu Rocky perquè, en detectar la targeta acordada, canvie l’estat LED i mostre també una forma o patró diferenciat. Manteniu text o símbols equivalents al color.
+
+#### Fase 3 · Expliquem i registrem
+
+Completeu una taula amb senyal present, lectura del sensor i resposta mostrada. Registreu els casos de color reconegut, absent i no previst.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu els casos límit i feu que les respostes siguen distingibles també sense dependre només del color. Proveu de nou amb targetes en una condició de llum diferent.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** maqueta i matriu de proves amb una alternativa visual al color. És un prototip didàctic: no controla trànsit real ni substitueix senyalització accessible homologada.
 
 ### **Sessió 11 · *Sensing Motions*.**
 
-Investiguem què comuniquen els valors del giroscopi quan inclinem suaument Codey en diferents direccions. Fem una posició inicial de referència, registrem eixos i canvis i creem una visualització per a una maqueta d'edifici accessible. Distingim orientació relativa, moviment i posició absoluta; no fem girar ni deixem caure el robot.
+#### Fase 1 · Activem i prediem
+
+Amb Codey sobre una superfície estable, predigueu quin eix canviarà en una inclinació suau cap endavant, enrere o cap a un costat. No feu girar ni deixeu caure el robot.
+
+#### Fase 2 · Explorem i construïm
+
+Registreu una posició inicial de referència i inclineu Codey suaument en cada direcció. Llegiu els eixos i construïu una visualització senzilla per a una maqueta d’edifici accessible.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu posició inicial, eix observat, sentit del canvi i resposta representada. Repetiu cada inclinació i manteniu la mateixa posició de partida.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu les repeticions i ajuste la visualització perquè diferencie els canvis observats. Si la lectura deriva o varia, registreu-ho en lloc d’amagar-ho.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula d’eixos i representació del model. Expliqueu la diferència entre orientació relativa, moviment i posició absoluta.
 
 ### **Sessió 12 · *Jumping Game 2.0*.**
 
-Programem un joc curt governat per una inclinació detectada pel giroscopi: el personatge de la matriu evita obstacles i suma punts amb una regla comprensible. Ajustem el llindar perquè el repte no exigisca gestos bruscos i oferim una alternativa amb botons per a qui la preferisca. Tanquem amb una prova d'usabilitat i una explicació de com el sensor transforma moviment en dades.
+#### Fase 1 · Activem i prediem
+
+Dissenyeu un joc curt en què un personatge LED evita obstacles i guanya punts. Predigueu com una inclinació suau pot controlar el personatge i quines alternatives d’entrada podrien funcionar.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu el giroscopi perquè detecte una inclinació i moga el personatge. Manteniu clara la regla de puntuació i oferiu una alternativa amb botons des del primer prototip.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu inclinació detectada, resposta del personatge i resultat de cada partida. Compareu el senyal llegit amb l’acció programada.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu el llindar amb gestos còmodes i ajuste’l perquè el repte no exigisca moviments bruscos. Feu una prova d’usabilitat amb l’entrada alternativa i registreu si permet completar les mateixes accions.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** joc provat per dues persones amb opcions d’entrada i una explicació de com el sensor transforma moviment en dades. La participació no depén de fer gestos físics.
 
 ## 🎯 Aprenentatges i vocabulari
 

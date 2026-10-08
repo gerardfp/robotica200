@@ -42,39 +42,135 @@ Si no sabeu quina versió teniu, dissenyeu primer una resposta visual i useu tar
 
 ### **Observem el recorregut i fem preguntes (45 min).**
 
-Useu un mapa de l’entorn escolar o fotografies que no mostren cares, matrícules, rutes de casa ni informació identificable. Si l’escola autoritza una observació exterior, feu-la des d’un recorregut segur, amb supervisió i sense interrompre cap vianant. Registreu només elements visibles: pas, vorera, desnivell, senyal, semàfor existent o informació que es pot llegir. Separeu el fet observat de la pregunta: «hi ha una vorada» és observació; «impedeix passar a qualsevol persona amb cadira de rodes» requeriria consultar persones usuàries i context.
+#### Fase 1 · Activem i prediem
 
-Formuleu preguntes que el projecte escolar puga abordar a escala, com «com indiquem en una maqueta que l’estat ha canviat?» o «com podem fer que una instrucció es veja amb més d’una representació?». No simuleu ceguesa amb els ulls tapats, no demaneu a ningú fingir una discapacitat i no assumiu que una persona puga representar un grup sencer. *Evidència:* mapa d’observacions i dues preguntes de disseny formulades amb llenguatge prudent. *Preguntes docents:* «Què hem vist directament? Quina informació necessitaríem d’una persona usuària que vulga participar?»
+Useu un mapa de l’entorn escolar o fotografies que no mostren cares, matrícules, rutes de casa ni informació identificable. Predigueu quina informació es pot observar directament i quina exigiria consultar persones usuàries i el context.
+
+#### Fase 2 · Explorem i construïm
+
+Si l’escola autoritza l’observació exterior, feu-la des d’un recorregut segur, amb supervisió i sense interrompre cap vianant. Registreu només elements visibles: pas, vorera, desnivell, senyal, semàfor existent o informació llegible. També podeu treballar amb el mapa o fotografies autoritzades.
+
+#### Fase 3 · Expliquem i registrem
+
+Separeu fets de preguntes: «hi ha una vorada» és una observació; «impedeix passar a qualsevol persona amb cadira de rodes» requeriria consultar persones usuàries i context. Formuleu preguntes abordables a escala, com «com indiquem en una maqueta que l’estat ha canviat?». Registreu dues preguntes amb llenguatge prudent.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu les preguntes per evitar atribuir experiències a persones que no han participat. No simuleu ceguesa, no demaneu a ningú fingir una discapacitat i no assumiu que una persona represente un grup sencer.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compartiu què heu vist directament i quina informació necessitaríeu d’una persona usuària que vulga participar. **Evidència:** mapa d’observacions i dues preguntes de disseny. **Pregunta docent:** què hem vist directament i què necessitaríem saber abans de fer una afirmació més àmplia?
 
 ### **Definim els dos estats del model (45 min).**
 
-Construiu una maqueta de taula amb un carrer, voreres i un pas dibuixat. Les textures tàctils són recursos per representar materials i no una guia de dimensions normatives. Acordeu dos estats ficticis, per exemple «espera» i «simulació de canvi», i decidiu quina entrada els activa: botó A i botó B de la micro:bit. Eviteu utilitzar símbols que puguen confondre’s amb un semàfor real o instruccions com «creua ara». Afegiu a la maqueta una etiqueta visible: «PROTOTIP ESCOLAR — NO S’UTILITZA AL CARRER».
+#### Fase 1 · Activem i prediem
 
-Feu esbossos de senyals amb més d’una forma de representació: icona LED, targeta física i, només si el model ho admet, un to breu. El so no és necessàriament accessible ni apropiat en tot entorn; el silenci o la targeta també són opcions. *Evidència:* especificació dels estats, esdeveniments i canals triats, amb justificació. *Preguntes docents:* «Quina acció canvia l’estat? Com sabrà una persona observadora que la mostra és una simulació?»
+Descriviu què hauria de comunicar una maqueta quan canvia d’estat. Trieu dos estats ficticis, per exemple «espera» i «simulació de canvi», i predigueu quina entrada —botó A o B— activarà cadascun.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu una maqueta de taula amb carrer, voreres i pas dibuixat. Les textures tàctils són recursos per representar materials, no una guia de dimensions normatives. Afegiu l’etiqueta visible «PROTOTIP ESCOLAR — NO S’UTILITZA AL CARRER». Esbosseu senyals amb més d’una representació: icona LED, targeta física i, només si el model ho admet, un to breu.
+
+#### Fase 3 · Expliquem i registrem
+
+Especifiqueu els dos estats, les entrades i els canals triats i justifiqueu-los. Anoteu com sabrà l’observador que és una simulació; eviteu símbols confusos amb un semàfor real o instruccions com «creua ara».
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu els esbossos i reviseu qualsevol canal que no siga necessari o que puga resultar inadequat. El so no és necessàriament accessible en tots els entorns; el silenci o la targeta també són opcions.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina acció canvia l’estat i com es comunica el caràcter simulat del prototip. **Evidència:** maqueta inicial i especificació d’estats, esdeveniments i canals amb justificació. **Pregunta docent:** com pot saber una persona observadora que la mostra és una simulació?
 
 ### **Programem i provem la micro:bit (45 min).**
 
-En MakeCode, associeu el botó A a una icona pròpia per a l’estat «espera» i el botó B a una altra icona per a l’estat simulat. Proveu la matriu LED al nivell de llum real de la sala i reviseu que les icones siguen diferents i simples. Si useu so, comproveu versió i eixida: altaveu integrat en V2 o accessori d’àudio compatible en V1. Manteniu-lo a volum moderat, amb opció de silenci i sense dependre’n per a distingir els estats.
+#### Fase 1 · Activem i prediem
 
-Una parella llig el codi, una altra prem els botons en l’ordre de prova i una tercera anota resposta esperada/observada. Proveu també què passa després d’un reinici i si la pantalla conserva o esborra el senyal. *Evidència:* programa amb dos esdeveniments, taula de quatre o més proves i una revisió. *Preguntes docents:* «Quina entrada ha activat la resposta? Què veuria o sentiria l’observador si no coneix el codi?»
+Abans de programar, una persona llig els esdeveniments previstos i una altra anticipa quina resposta hauria d’aparéixer en cada estat. Comproveu la versió de la placa abans d’incloure so.
+
+#### Fase 2 · Explorem i construïm
+
+En MakeCode, associeu el botó A a una icona pròpia per a «espera» i el botó B a una altra per a l’estat simulat. Proveu la matriu LED amb la llum real de la sala i reviseu que les icones siguen diferents i simples. Si useu so, comproveu l’eixida: altaveu integrat en V2 o accessori compatible en V1. Manteniu un volum moderat i una opció de silenci; el so no ha de ser l’única diferència entre estats.
+
+#### Fase 3 · Expliquem i registrem
+
+Una parella llig el codi, una altra prem els botons en l’ordre de prova i una tercera anota resposta esperada i observada. Incloeu almenys quatre proves i registreu també què ocorre després d’un reinici.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu les icones o els esdeveniments si la resposta no és clara. Torneu a provar les entrades i comproveu si la pantalla conserva o esborra el senyal després del reinici.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina entrada ha activat cada resposta i què veuria o sentiria algú que encara no coneix el codi. **Evidència:** programa amb dos esdeveniments, taula de quatre o més proves i una revisió. **Pregunta docent:** quina entrada ha activat la resposta i com ho sabem?
 
 ### **Construïm el prototip a escala (45 min).**
 
-Useu cartró reutilitzat per fer el carrer i suports independents per a la placa. Manteniu micro:bit i piles fora de qualsevol zona que puga mullar-se o quedar comprimida. Col·loqueu el prototip a l’altura que permeta veure’l a observadors asseguts i dempeus, si és viable; no feu afirmacions de compliment normatiu amb una maqueta de classe. El paviment tàctil es pot mostrar amb paper rugós o peces, clarament identificat com a representació simbòlica.
+#### Fase 1 · Activem i prediem
 
-Comproveu que les targetes, icones i estats no es contradiguen. Si un color forma part de l’experiment, afegiu també una forma o paraula llegible perquè la interpretació no depenga només de distingir colors. *Evidència:* maqueta amb etiquetatge de prototip, placa fixa i una llegenda de símbols. *Preguntes docents:* «Quina part és el dispositiu i quina part és una representació del carrer? Es pot entendre el model sense que un membre de l’equip l’explique?»
+Reviseu l’especificació dels estats i predigueu si es podrà entendre el model sense que un membre de l’equip l’explique. Identifiqueu quina part és el dispositiu i quina representa el carrer.
+
+#### Fase 2 · Explorem i construïm
+
+Useu cartró reutilitzat per fer el carrer i suports independents per a la placa. Manteniu micro:bit i piles fora de qualsevol zona que puga mullar-se o quedar comprimida. Col·loqueu el prototip a una altura visible per a observadors asseguts i dempeus, si és viable. El paviment tàctil es pot representar amb paper rugós o peces, identificat com a símbol.
+
+#### Fase 3 · Expliquem i registrem
+
+Afegiu una llegenda dels símbols i documenteu l’etiquetatge del prototip, el suport de la placa i les alternatives de representació. No feu afirmacions de compliment normatiu a partir d’una maqueta escolar.
+
+#### Fase 4 · Apliquem i millorem
+
+Comproveu que targetes, icones i estats no es contradiguen. Si useu color, afegiu també una forma o paraula llegible perquè la interpretació no depenga només de distingir colors.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Demaneu a una altra parella que interprete la maqueta sense explicació prèvia i anoteu què ha entés. **Evidència:** maqueta amb etiqueta de prototip, placa fixa, llegenda i retorn inicial. **Pregunta docent:** es pot entendre el model sense que l’equip l’explique?
 
 ### **Fem proves d’ús sense simular discapacitats (45 min).**
 
-Convidem companys o personal del centre a observar voluntàriament el prototip i descriure què entenen; no se’ls assigna cap diagnòstic ni se’ls demana parlar en nom d’una comunitat. Si hi participa una persona amb experiència d’accessibilitat, acordem abans què vol revisar i respectem el dret a no donar consell. L’alumnat registra la interpretació dels pictogrames, la visibilitat des de dos punts i si el so resulta molest, sempre com a comentaris d’eixes persones concretes i no com a prova universal.
+#### Fase 1 · Activem i prediem
 
-Reviseu un element a partir del retorn: mida de la icona, contrast, seqüència, etiqueta o canal opcional. Si apareix una preocupació de seguretat real, no s’intenta resoldre amb el prototip; es comunica al personal responsable del centre perquè utilitze els canals establits. *Evidència:* comentaris anònims, canvi documentat i una limitació encara oberta. *Preguntes docents:* «Què ha dit realment cada observador? Què no podem generalitzar a partir d’aquesta prova?»
+Convidem companys o personal del centre a observar voluntàriament el prototip i descriure què entenen. Expliqueu que no se’ls assignarà cap diagnòstic ni se’ls demanarà parlar en nom d’una comunitat.
+
+#### Fase 2 · Explorem i construïm
+
+Registreu interpretació dels pictogrames, visibilitat des de dos punts i si el so resulta molest. Si participa una persona amb experiència d’accessibilitat, acordeu abans què vol revisar i respecteu el dret a no donar consell. Registreu comentaris d’eixes persones concretes, no com a prova universal.
+
+#### Fase 3 · Expliquem i registrem
+
+Descriviu literalment què ha dit cada observador i separeu-ho de les conclusions de l’equip. Identifiqueu què no es pot generalitzar a partir d’aquesta prova.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu un element a partir del retorn: mida de la icona, contrast, seqüència, etiqueta o canal opcional. Si apareix una preocupació de seguretat real, comuniqueu-la al personal responsable del centre perquè use els canals establits; no intenteu resoldre-la amb el prototip.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Compareu el prototip inicial i el revisat i indiqueu quina limitació continua oberta. **Evidència:** comentaris anònims, canvi documentat i limitació identificada. **Pregunta docent:** què ha dit cada observador i què no podem generalitzar?
 
 ### **Presentem el disseny i la seua frontera d’ús (45 min).**
 
-Prepareu una exposició de maqueta, diagrama de blocs, prova d’entrades i canvis fets després del retorn. Incloeu una diapositiva o cartell amb les condicions d’ús: escala escolar, no connectat a infraestructures, no instal·lable al carrer, no certifica accessibilitat i no determina que siga segur travessar. Demostreu els estats només sobre la maqueta i amb el senyal de prototip a la vista.
+#### Fase 1 · Activem i prediem
 
-Acabeu proposant què necessitaria una solució real abans de considerar-se: disseny professional, consulta de les persones afectades, revisió normativa i autorització de l’administració responsable. No cal que l’alumnat proveïsca eixos elements per acabar la SDA. *Evidència:* presentació, codi, registre de proves i llista de validacions que quedarien fora de l’abast escolar. *Preguntes docents:* «Quin problema de programació hem resolt a la maqueta? Quines decisions reals no podem prendre amb aquesta placa?»
+Prepareu una exposició amb maqueta, diagrama de blocs, prova d’entrades i canvis fets després del retorn. Predigueu quines preguntes podria fer el públic sobre l’ús real del prototip.
+
+#### Fase 2 · Explorem i construïm
+
+Demostreu els estats només sobre la maqueta i amb l’etiqueta de prototip a la vista. Incloeu les condicions d’ús: escala escolar, no connectat a infraestructures, no instal·lable al carrer, no certifica accessibilitat i no determina que siga segur travessar.
+
+#### Fase 3 · Expliquem i registrem
+
+Expliqueu quin problema de programació s’ha resolt i què queda fora de l’abast. Registreu en un cartell quines validacions requeriria una solució real: disseny professional, consulta de les persones afectades, revisió normativa i autorització de l’administració responsable.
+
+#### Fase 4 · Apliquem i millorem
+
+Useu les preguntes del públic per aclarir el diagrama o la descripció dels límits. No cal que l’alumnat proveïsca les validacions professionals per acabar la situació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Presenteu la versió final i expliqueu quines decisions reals no es poden prendre amb aquesta placa. **Evidència:** presentació, codi, registre de proves i llista de validacions fora de l’abast escolar. **Pregunta docent:** quin problema de programació hem resolt i quines decisions reals continuen fora del model?
 
 ## 📋 Avaluació i evidències
 

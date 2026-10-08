@@ -39,87 +39,91 @@ Feu una prova de calibratge curta per comprovar quant avança MatataBot amb una 
 
 ### **Sessió 1 · El gir també dibuixa.**
 
-*Activació (5 min):*
+#### Fase 1 · Activem i prediem
 
-observeu una casa feta amb figures geomètriques i distingiu costat, vèrtex, angle interior i trajectòria.
+Observeu una casa feta amb figures geomètriques i distingiu costat, vèrtex, angle interior i trajectòria. Predigueu quin gir necessitarà el robot per passar d’un costat al següent.
 
-*Exploració manual (10 min):*
+#### Fase 2 · Explorem i construïm
 
-amb una fitxa que representa MatataBot, recorreu un quadrat i un triangle equilàter; mesureu els angles interiors amb una plantilla i anoteu quant gira el robot quan passa d’un costat al següent.
+Amb una fitxa que representa MatataBot, recorreu un quadrat i un triangle equilàter. Mesureu els angles interiors amb una plantilla i anoteu quant gira el robot quan passa d’un costat al següent.
 
-*Modelatge de blocs (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-programeu un costat recte i un gir; compareu un gir de 90° amb un de 120°. Expliqueu amb dibuix que en un triangle equilàter cada angle interior és 60° i el gir exterior per continuar el contorn és 120°.
+Programeu un costat recte i un gir; compareu un gir de 90° amb un de 120°. Dibuixeu i etiqueteu l’angle interior i el gir exterior.
 
-*Prova en parelles (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-una persona prediu, l’altra col·loca els blocs; executeu i canvieu de rol.
+Expliqueu que en un triangle equilàter cada angle interior és 60° i que el gir exterior per continuar el contorn és 120°. En parelles, una persona prediu i l’altra col·loca els blocs; executeu i canvieu de rol.
 
-*Tancament (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-completeu “el gir programat és … perquè l’angle interior és …”. Evidència: dos croquis amb gir interior/exterior etiquetat i predicció comprovada.
+Completeu «el gir programat és … perquè l’angle interior és …». **Evidència:** dos croquis amb gir interior/exterior etiquetat i predicció comprovada.
 
 ### **Sessió 2 · Una casa és una composició de formes.**
 
-*Descomposició (10 min):*
+#### Fase 1 · Activem i prediem
 
-dibuixeu una casa amb parets quadrades, sostre triangular i porta quadrada més menuda. Compteu segments i decidiu on ha de començar i acabar cada tram.
+Dibuixeu una casa amb parets quadrades, sostre triangular i porta quadrada més menuda. Predigueu quants segments i girs caldran i decidiu on comença i acaba cada tram.
 
-*Programa modular (10 min):*
+#### Fase 2 · Explorem i construïm
 
-prepareu la seqüència del quadrat, la del triangle i el trajecte que les combina; representeu les ordres amb blocs disponibles i, al costat, amb una notació pròpia de fletxes si el kit no expressa el codi de la mateixa manera.
+Prepareu la seqüència del quadrat, la del triangle i el trajecte que les combina. Representeu les ordres amb els blocs disponibles i, si cal, amb una notació pròpia de fletxes.
 
-*Repetició (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-proveu com el bloc de bucle repeteix el patró de costat-gir per a una forma regular. Compareu el programa amb i sense bucle i anoteu què es repeteix i quina part no s’ha d’incloure en la repetició.
+Proveu com el bloc de bucle repeteix el patró costat–gir d’una forma regular. Compareu el programa amb i sense bucle i anoteu què es repeteix i què queda fora de la repetició.
 
-*Depuració (5 min):*
+#### Fase 4 · Apliquem i millorem
 
-si el robot no tanca el contorn, comproveu primer orientació i nombre de repeticions, i després distància.
+Si el robot no tanca el contorn, comproveu primer l’orientació i el nombre de repeticions; després reviseu la distància. Dibuixeu la seqüència final de la casa i la porta.
 
-*Registre (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-dibuixeu la seqüència final de la casa i la porta. Evidència: diagrama que relaciona forma, moviment, gir i repetició.
+**Evidència:** diagrama que relaciona forma, moviment, gir i repetició. Quina part del programa s’ha pogut simplificar amb el bucle?
 
 ### **Sessió 3 · Quatre cases amb cartró recuperat.**
 
-*Tria de materials (5 min):*
+#### Fase 1 · Activem i prediem
 
-classifiqueu retalls nets per mida i decidiu què es pot reutilitzar sense comprar material nou.
+Classifiqueu retalls nets per mida i decidiu què es pot reutilitzar sense comprar material nou. Cada equip prediu quins elements de la casa podrà construir amb els retalls disponibles.
 
-*Disseny (10 min):*
+#### Fase 2 · Explorem i construïm
 
-cada equip dibuixa quatre cases: conserva les tres formes bàsiques però canvia una variable (mida de la porta, orientació del sostre, proporció o decoració) i etiqueta-les A–D.
+Dibuixeu quatre cases: conserveu les tres formes bàsiques però canvieu una variable —mida de la porta, orientació del sostre, proporció o decoració— i etiqueteu-les A–D.
 
-*Traçat i muntatge (20 min):*
+#### Fase 3 · Expliquem i registrem
 
-proveu els quatre recorreguts sobre la graella o amb l’Artist Add-On disponible; traslladeu els contorns al cartó i retalleu parets, sostres i portes amb les normes del centre. Reaprofiteu les portes retallades com a finestres, camins o peces de pati.
+Proveu els quatre recorreguts sobre la graella o amb l’Artist Add-On disponible. Traslladeu els contorns al cartó i retalleu parets, sostres i portes d’acord amb les normes del centre.
 
-*Composició comuna (5 min):*
+#### Fase 4 · Apliquem i millorem
 
-uniu les cases en un barri sense cobrir els recorreguts necessaris per a la prova.
+Reaprofiteu les portes retallades com a finestres, camins o peces de pati. Uniu les cases en un barri sense cobrir els recorreguts necessaris per a la prova.
 
-*Reflexió (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-expliqueu quin retall heu pogut reutilitzar i com. Evidència: quatre dissenys identificables, un programa provat i una nota sobre l’ús dels materials.
+**Evidència:** quatre dissenys identificables, un programa provat i una nota sobre l’ús dels materials. Expliqueu quin retall heu pogut reutilitzar i com.
 
 ### **Sessió 4 · Canviem una forma i defensem el disseny.**
 
-*Repte d’angles (10 min):*
+#### Fase 1 · Activem i prediem
 
-trieu un triangle rectangle o obtusangle i predigueu els girs necessaris; useu angles fàcils de representar amb els blocs disponibles i construïu una maqueta manual quan un valor no es puga programar exactament.
+Trieu un triangle rectangle o obtusangle i predigueu els girs necessaris per recórrer-ne el contorn. Identifiqueu quins angles es poden representar amb els blocs disponibles.
 
-*Iteració (15 min):*
+#### Fase 2 · Explorem i construïm
 
-canvieu una variable cada vegada —llargària, gir, repeticions o punt d’inici— i registreu si el contorn es tanca i quantes ordres calen.
+Construïu el traçat amb blocs quan siga possible. Si un valor no es pot programar exactament, completeu-lo amb una maqueta manual i identifiqueu clarament les dues representacions.
 
-*Prova entre equips (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-una altra parella llig el diagrama i intenta repetir un programa.
+Canvieu una variable cada vegada —llargària, gir, repeticions o punt d’inici— i registreu si el contorn es tanca i quantes ordres calen.
 
-*Galeria (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-mostreu el barri, expliqueu una decisió geomètrica, una reparació del codi i una manera de reduir residus en la maqueta. Evidència: programa final amb anotacions, comentari d’un altre equip i justificació dels límits del dibuix o del kit.
+Una altra parella llig el diagrama i intenta repetir el programa. A partir del resultat, reviseu una instrucció o expliqueu per què la versió actual és reproduïble.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Mostreu el barri i expliqueu una decisió geomètrica, una reparació del codi i una manera de reduir residus. **Evidència:** programa final anotat, comentari d’un altre equip i justificació dels límits del dibuix o del kit.
 
 ## 📊 Registre i criteris d’avaluació
 

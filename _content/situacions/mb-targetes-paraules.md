@@ -29,27 +29,117 @@ La classe prepara un joc de targetes per repassar vocabulari d’anglés, valenc
 - Provar si la targeta ajuda una altra parella a recordar o reconéixer una paraula sense pressa.
 - Crear alternatives llegibles que no depenguen només del color, la velocitat de lectura o la resposta oral.
 
-## 📅 Seqüència didàctica · 5 sessions
+## 📅 Seqüència didàctica · 5 sessions de 45 minuts
 
 ### **Sessió 1 · Algorismes de flashcards (Flashcard algorithms).**
 
-En parelles, repartiu els rols de qui mostra la pista i qui respon. Escriviu una seqüència d’instruccions, proveu-la amb una altra parella i depureu qualsevol pas ambigu o massa difícil de seguir.
+#### Fase 1 · Activem i prediem
+
+Trieu huit paraules d’una unitat ja treballada, com animals o objectes de classe. En parelles, repartiu els rols de qui mostra la pista i qui respon. Predigueu quines instruccions necessita l’altra persona des que apareix la icona fins que arriba el torn de resposta.
+
+#### Fase 2 · Explorem i construïm
+
+Escriviu una seqüència d’instruccions amb inici, pista, temps per pensar, resposta i canvi de torn. Intercanvieu rols i proveu les instruccions amb una parella nova, sense explicar-les oralment.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu en quin pas s’ha aturat la parella o ha interpretat una instrucció d’una altra manera. Si «espera un poc» és ambigu, identifiqueu què no queda definit: durada, senyal per continuar o moment de resposta.
+
+#### Fase 4 · Apliquem i millorem
+
+Substituïu instruccions ambigües per una pausa acordada i un senyal clar per continuar. Torneu a provar la targeta amb una parella que no l’haja creada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu si qualsevol parella pot usar la targeta sense ajuda dels autors. **Evidència:** algorisme inicial, prova externa, instruccions revisades i targeta en paper.
 
 ### **Sessió 2 · Abstracció i programació (Abstraction & programming).**
 
-Trieu un conjunt xicotet de paraules conegudes. Dissenyeu per a cada una una icona 5×5 que conserve una característica útil, després programeu la seqüència amb MakeCode. Compareu la icona amb la targeta escrita i expliqueu què s’ha simplificat.
+#### Fase 1 · Activem i prediem
+
+Seleccioneu quatre paraules conegudes i determineu quina característica visual seria imprescindible per reconéixer cadascuna. Predigueu què es perdrà en reduir una imatge a 25 píxels.
+
+#### Fase 2 · Explorem i construïm
+
+Dibuixeu una icona 5×5 per a cada paraula i passeu la seqüència a MakeCode. Manteniu la paraula completa en la targeta física: la matriu LED és una pista visual, no una representació ortogràfica exhaustiva.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu dues versions de cada icona i anoteu quina característica han conservat i què han simplificat. Deseu la graella, el programa i la justificació.
+
+#### Fase 4 · Apliquem i millorem
+
+Passeu les targetes a un grup que no haja participat en el disseny. Demaneu que explique què interpreta abans de revelar la resposta i reviseu la icona si les pistes no resulten clares.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què aporta la imatge digital i què continuen aportant l’ortografia, el so i el significat de la targeta física. **Evidència:** vocabulari seleccionat, quatre graelles, programa i retorn de la prova externa.
 
 ### **Sessió 3 · Patrons i pauses (Patterns & delays).**
 
-Ordeneu les targetes en un patró, afegiu una pausa entre pista i resposta i proveu diferents durades d’espera. Representeu el mateix algorisme amb targetes de passos i codi; detecteu quan una pausa massa curta o llarga fa més difícil el joc.
+#### Fase 1 · Activem i prediem
+
+Trieu tres flashcards i ordeneu-les en un patró repetit. Predigueu en quin moment apareixerà cada pista i quant temps necessita el jugador abans de respondre.
+
+#### Fase 2 · Explorem i construïm
+
+Representeu el patró amb icones de paper i després programeu-lo a MakeCode amb una pausa entre pista i resposta. La transició serà una pausa seguida d’una imatge estable; no useu pampallugues ràpides.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu dues durades d’espera i registreu què ha pogut fer l’audiència en cada cas. Deixeu que les persones participants indiquen quina durada els facilita el torn.
+
+#### Fase 4 · Apliquem i millorem
+
+Ajusteu la pausa segons el retorn i torneu a provar el mateix patró. Manteniu constants les altres instruccions per poder comparar l’efecte del canvi.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Comproveu que l’ordre es conserva i que hi ha temps suficient per pensar o passar el torn. **Evidència:** seqüència en paper i codi, comparació de durades i decisió justificada.
 
 ### **Sessió 4 · Predir i experimentar (Predicting & experimenting).**
 
-Abans d’executar el codi, dibuixeu què espereu veure. Proveu diferents maneres de controlar els LED i planifiqueu una flashcard numèrica que responga als criteris del grup. Canvieu una sola instrucció cada vegada i compareu la predicció amb el resultat.
+#### Fase 1 · Activem i prediem
+
+Abans d’executar el programa, dibuixeu els LED que espereu veure i descriviu quan apareixerà cada imatge. Planifiqueu una targeta numèrica amb els criteris acordats pel grup.
+
+#### Fase 2 · Explorem i construïm
+
+Proveu l’esbós al simulador o a la placa. Compareu diferents maneres de controlar els LED i incorporeu la targeta numèrica seguint la mateixa convenció que les icones de vocabulari.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu la predicció amb el resultat i registreu quina instrucció o esdeveniment ha produït una diferència. Si la icona no apareix com s’esperava, reviseu graella, ordre dels blocs i entrades.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una sola instrucció cada vegada i torneu a executar la prova. Comproveu si la targeta numèrica respecta l’ordre i la llegenda compartits.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina prova ha confirmat o refutat la predicció i quina part del programa s’ha revisat. **Evidència:** dibuix previ, targeta numèrica, programa i registre de proves.
 
 ### **Sessió 5 · Depurar i avaluar (Debugging & evaluating).**
 
-Programeu la flashcard de nombres, intercanvieu-la amb una altra parella i useu els criteris acordats: lectura clara, temps suficient, seqüència correcta i resposta coherent. Depureu un error i feu una valoració final del que la micro:bit ajuda a practicar i del que requereix veu, escriptura o una targeta gran.
+#### Fase 1 · Activem i prediem
+
+Intercanvieu la flashcard amb una altra parella, que la provarà sense instruccions orals dels autors. Abans de començar, acordeu els criteris: icona visible, pausa suficient, seqüència correcta, resposta en el moment esperat i opció de passar.
+
+#### Fase 2 · Explorem i construïm
+
+La parella provadora recorre el joc i registra què entén, quan rep la pista i si pot passar o demanar que es repetisca. No avalueu la rapidesa ni la pronunciació en una llengua que l’alumne està aprenent.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu els resultats amb la llista de criteris i descriviu un punt concret que haja dificultat el joc. Accepteu respostes orals, escrites, assenyalades o amb comunicació augmentativa.
+
+#### Fase 4 · Apliquem i millorem
+
+Depureu un element i documenteu què ha canviat. Torneu a provar la targeta i compareu la claredat i el temps d’espera.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Valoreu què ajuda a practicar la micro:bit i què requereix veu, escriptura o una targeta gran. **Evidència:** proves entre parelles, criteris observats, canvi depurat i valoració final.
 
 ## 🧰 Materials i preparació
 

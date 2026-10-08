@@ -42,27 +42,69 @@ No cal disposar de targetes oficials de construcció: cada equip pot crear una d
 
 ### **Construïm la destinació i el trajecte (40 min).**
 
-Activeu idees prèvies preguntant quan han vist un tren, tramvia o autobús i com saben on cal baixar. Qui no vulga compartir experiències pot triar una fotografia o un pictograma. Presenteu el joc del tren amb moviment en fila només si resulta còmode i segur per al grup; l’alternativa és moure una figura sobre una línia de caselles i usar senyals visuals de «avança» i «para».
+#### Fase 1 · Activem i prediem
 
-En parelles, trieu un lloc pròxim o inventat i construïu-lo amb peces. Munteu l’estació, col·loqueu-hi la figura passatgera i prepareu una via de doble extrem entre estació i destí. Abans d’encendre el tren, representeu el trajecte amb el dit, peces o pictogrames i feu una predicció: on quedarà el tren?, què necessitarem per arribar-hi? Intercanvieu destinacions entre equips perquè cada grup prove també un model diferent.
+Activeu idees prèvies preguntant quan han vist un tren, tramvia o autobús i com saben on cal baixar. Qui no vulga compartir experiències pot triar una fotografia o un pictograma. Presenteu el joc del tren amb moviment en fila només si resulta còmode i segur; l’alternativa és moure una figura sobre caselles amb senyals visuals «avança» i «para». Cada parella tria un lloc pròxim o inventat i prediu quina ruta el connectaria amb l’estació.
 
-*Evidència:* model construït, ruta representada i predicció del punt d’arribada. *Preguntes docents:* «Què és el principi de la ruta? Com sabrem que la passatgera ja ha arribat?»
+#### Fase 2 · Explorem i construïm
+
+Construïu la destinació amb peces, munteu l’estació, col·loqueu-hi la figura passatgera i prepareu una via de doble extrem entre l’estació i el destí. Abans d’encendre el tren, representeu el trajecte amb el dit, peces o pictogrames; intercanvieu destinacions entre equips perquè cada grup prove també un model diferent.
+
+#### Fase 3 · Expliquem i registrem
+
+Descriviu la ruta amb un punt d’inici i un destí. Feu una predicció observable: on quedarà el tren i quines peces o ordres calen perquè la passatgera hi arribe? Una persona explica la seqüència i una altra la segueix sobre la maqueta.
+
+#### Fase 4 · Apliquem i millorem
+
+Executeu el trajecte a baixa velocitat i compareu el resultat amb la predicció. Si no arriba al lloc acordat, torneu al mapa, localitzeu l’últim punt correcte i canvieu una sola part de la ruta abans de repetir.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** model construït, ruta representada i predicció del punt d’arribada. **Preguntes docents:** «Què és el principi de la ruta? Com sabrem que la passatgera ja ha arribat?»
 
 ### **Compareu maneres d’aturar el tren (40 min).**
 
-En una via curta i a velocitat adequada, comenceu amb la modalitat d’aturada manual que s’ha aprés en la preparació bàsica; després proveu, d’una en una, el maó d’acció roig i el maó roig d’aturada si tots dos són a la dotació. Abans de cada intent, el grup col·loca una fitxa al punt on pensa que s’aturarà. La persona conductora executa la prova, la persona observadora assenyala el lloc real i la persona registradora marca el resultat amb una icona o una paraula.
+#### Fase 1 · Activem i prediem
 
-Compareu observacions: s’ha aturat al mateix lloc de la predicció?, ha calgut una acció de la persona o l’ha provocada el maó?, quina diferència es veu entre les peces? Repetiu només quan necessiteu confirmar una observació. Si una peça no existeix en el kit, poseu una targeta «no disponible» al registre; no inventeu el seu comportament ni substituïu-la per una peça que no tinga la mateixa funció.
+Recupereu la ruta i pregunteu com es pot aturar el tren amb seguretat. En una via curta i a velocitat adequada, cada equip col·loca una fitxa al punt on pensa que s’aturarà amb la modalitat manual practicada en la preparació bàsica.
 
-*Evidència:* taula visual «opció provada / predicció / què hem vist / punt d’aturada». *Preguntes docents:* «Què s’ha mantingut igual en cada prova? Quina prova dona suport a la vostra explicació?»
+#### Fase 2 · Explorem i construïm
+
+La persona conductora executa la prova; l’observadora assenyala el lloc real i la registradora marca el resultat amb una icona o una paraula. Repetiu el protocol amb el maó d’acció roig i el maó roig d’aturada només si tots dos formen part de la dotació.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu «opció provada / predicció / què hem vist / punt d’aturada». Expliqueu si ha calgut una acció de la persona o si la peça ha provocat l’aturada, i quina diferència observable hi ha entre les opcions disponibles.
+
+#### Fase 4 · Apliquem i millorem
+
+Repetiu només quan necessiteu confirmar una observació. Si una peça no existeix en el kit, poseu una targeta «no disponible» al registre; no n’invente el comportament ni la substituïu per una peça que no tinga la mateixa funció. Manteniu constants la via i la velocitat per fer una comparació justa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula visual amb les opcions, les prediccions i els punts d’aturada. **Preguntes docents:** «Què s’ha mantingut igual en cada prova? Quina prova dona suport a la vostra explicació?»
 
 ### **Allarguem el viatge i investiguem altres maons (40 min).**
 
-Afegiu trams i una o dues parades pròpies, dibuixeu la nova ruta i ordeneu-ne les accions abans de circular. Situeu un maó verd, d’un en un, en un punt visible i segur. Observeu què fa al tren concret del centre i compareu-ho amb la resposta del maó roig. La pregunta no és endevinar el significat del color: és descriure el canvi que s’ha vist i pensar com ajuda a completar el viatge.
+#### Fase 1 · Activem i prediem
 
-Proposeu el repte de tornar a l’estació. Els equips representen el camí de retorn, decideixen en quin sentit hauria d’anar el tren i proven una modificació cada vegada. Si la ruta no es completa, torneu al dibuix, localitzeu el darrer punt correcte i planifiqueu només el pas següent. Acabeu amb una ronda curta perquè cada equip explique una diferència observada entre peces i una decisió que ha canviat gràcies a la prova.
+Recupereu les observacions dels maons rojos i pregunteu què voldria comprovar el grup amb un maó verd. Afegiu trams i una o dues parades pròpies; dibuixeu la nova ruta i ordeneu-ne les accions abans de circular.
 
-*Evidència:* ruta allargada, seqüència revisada i explicació basada en una observació real del maó verd. *Preguntes docents:* «Què ha passat després del maó? Quina part del nostre pla caldria canviar per tornar a l’estació?»
+#### Fase 2 · Explorem i construïm
+
+Situeu un maó verd, d’un en un, en un punt visible i segur. Observeu què fa al tren concret del centre i compareu-ho amb la resposta del maó roig. Descriviu el canvi observat: no deduïu la funció només pel color.
+
+#### Fase 3 · Expliquem i registrem
+
+Proposeu el repte de tornar a l’estació. Representeu el camí de retorn i decidiu en quin sentit hauria d’anar el tren. Anoteu què fa el maó provat i quin efecte té en la ruta completa.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu una modificació cada vegada. Si la ruta no es completa, torneu al dibuix, localitzeu el darrer punt correcte i planifiqueu només el pas següent. Reviseu la seqüència després de cada prova i expliqueu què ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** ruta allargada, seqüència revisada i explicació basada en una observació real del maó verd. **Preguntes docents:** «Què ha passat després del maó? Quina part del nostre pla caldria canviar per tornar a l’estació?» Acabeu amb una ronda breu en què cada equip explique una diferència observada i una decisió que ha canviat gràcies a la prova.
 
 ## 📋 Avaluació i evidències
 

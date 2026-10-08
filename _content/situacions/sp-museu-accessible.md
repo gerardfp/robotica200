@@ -33,27 +33,135 @@ Adaptació de la unitat *Invention Squad* per al context d’un centre educatiu 
 
 ### **S1 · Interpretem tres senyals del museu ([Help!](https://education.lego.com/en-us/lessons/prime-invention-squad/help/), 60 min + neteja).**
 
-**Activació (5 min):** introduïu el repte amb una situació fictícia i recordeu separar observació de suposició. **Exploració (20 min):** en lloc d’interpretar un animal domèstic, fem servir una escultura pròpia de l’aiguamoll i una història de ficció en un espai triat (aiguamoll, museu o camí de l’horta). El sensor de color llig tres fitxes i activa primer una seqüència inicial de referència i després una història nova de tres sons, un per cada color. En un minut, cada parella anota tots els problemes possibles que podria tindre el personatge; no resol encara res. Per donar suport, restringiu l’escenari a un lloc i oferiu exemples de diferència entre fet observat i inferència; per ampliar, elimineu una interpretació evident i demaneu una descripció creativa del problema. **Contrast i definició (10 min):** compareu les llistes en parelles d’equips, expliqueu quins sons sustenten cada hipòtesi i redacteu un enunciat de problema. Després, els equips intercanvien «històries sonores»: creen tres sons propis perquè una altra parella definisca un problema diferent. **Elaboració (25 min):** establiu criteris i restriccions per a una solució (missatge interpretable, volum adequat, cap dada personal), trieu una necessitat definida, genereu almenys una resposta, reviseu-la segons els criteris i compartiu feedback positiu/constructiu. Deixeu temps per a guardar les peces. **Avaluació:** observeu si es defineix el problema amb detalls observables, si el grup separa definició del problema de la solució i si proposa criteris/restriccions pertinents. Autoavaluació privada en tres nivells: identificar un problema; afegir criteris i una idea; provar la idea contra els criteris i millorar-la. Acabeu amb conversa o presentació breu i feedback positiu i constructiu. **Evidència:** prediccions després de cada seqüència, llista inicial d’un minut, comparació de problemes, història pròpia de tres colors/sons, criteris, idea de solució i millora. Els sons no descriuen animals reals: són codis ficticis per practicar observació i definició de necessitats.
+#### Fase 1 · Activem i prediem
+
+introduïu el repte amb una situació fictícia i recordeu separar observació de suposició.
+
+#### Fase 2 · Explorem i construïm
+
+en lloc d’interpretar un animal domèstic, fem servir una escultura pròpia de l’aiguamoll i una història de ficció en un espai triat (aiguamoll, museu o camí de l’horta). El sensor de color llig tres fitxes i activa primer una seqüència inicial de referència i després una història nova de tres sons, un per cada color. En un minut, cada parella anota tots els problemes possibles que podria tindre el personatge; no resol encara res. Per donar suport, restringiu l’escenari a un lloc i oferiu exemples de diferència entre fet observat i inferència; per ampliar, elimineu una interpretació evident i demaneu una descripció creativa del problema.
+
+#### Fase 3 · Expliquem i registrem
+
+compareu les llistes en parelles d’equips, expliqueu quins sons sustenten cada hipòtesi i redacteu un enunciat de problema. Després, els equips intercanvien «històries sonores»: creen tres sons propis perquè una altra parella definisca un problema diferent.
+
+#### Fase 4 · Apliquem i millorem
+
+establiu criteris i restriccions per a una solució (missatge interpretable, volum adequat, cap dada personal), trieu una necessitat definida, genereu almenys una resposta, reviseu-la segons els criteris i compartiu feedback positiu/constructiu. Deixeu temps per a guardar les peces.
+
+#### Fase 5 · Comprovem i reflexionem
+
+observeu si es defineix el problema amb detalls observables, si el grup separa definició del problema de la solució i si proposa criteris/restriccions pertinents. Autoavaluació privada en tres nivells: identificar un problema; afegir criteris i una idea; provar la idea contra els criteris i millorar-la. Acabeu amb conversa o presentació breu i feedback positiu i constructiu. **Evidència:** prediccions després de cada seqüència, llista inicial d’un minut, comparació de problemes, història pròpia de tres colors/sons, criteris, idea de solució i millora. Els sons no descriuen animals reals: són codis ficticis per practicar observació i definició de necessitats.
 
 ### **S2 · Dissenyem potes per a una prova de recorregut ([Hopper Race](https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/), 30–45 min).**
 
-En parelles, munteu una base saltadora o caminadora SPIKE Prime i programeu-la perquè repetisca el moviment inicial. Dissenyeu més d’un joc de potes articulades que empenyen el cos endavant; les rodes no poden fer de locomoció. Abans de competir, definiu el criteri «arribar de la línia d’eixida a la meta amb rapidesa i sense bolcar» i proveu cada prototip durant cinc minuts: tres recorreguts en una mateixa superfície, longitud de pota o gambada i velocitat motoritzada anotades. Compareu temps i regularitat, compartiu els prototips prometedors i feu una cursa final; després afegiu unes poques peces soltes al carril per canviar la superfície i discutiu com canvia la prova. Deixeu que cada parella compartisca el prototip més prometedor i demaneu que una altra equip faça una observació constructiva abans de repetir el test. Per a l’ampliació matemàtica, calculeu velocitat mitjana en cm/s i useu distància = velocitat × temps per predir el recorregut després de 8, 16 i 24 segons; compareu estimació i mesura, sense suposar que la velocitat queda constant en superfícies distintes. En llengua i medi, prepareu una presentació breu de biomimètica: descriviu quina característica de locomoció d’un animal inspira el prototip i en què no és equivalent. Un repte addicional és superar el model de demostració del docent. Tanqueu amb una autoavaluació privada: un prototip funcional, dos o més prototips funcionals, o diverses iteracions que han millorat l’eficiència; els nivells descriuen el procés i no es comparen entre persones. **Evidència:** esbossos de diverses solucions —incloses les que no funcionen—, taula de proves comparables, predicció revisada, presentació d’analogia, retorn rebut i justificació del disseny triat.
+#### Fase 1 · Activem i prediem
+
+En parelles, munteu una base saltadora o caminadora SPIKE Prime i programeu-la perquè repetisca el moviment inicial. Definiu el criteri de la prova: arribar de la línia d’eixida a la meta amb rapidesa i sense bolcar.
+
+#### Fase 2 · Explorem i construïm
+
+Dissenyeu més d’un joc de potes articulades que empenyen el cos endavant; les rodes no poden fer de locomoció. Esbosseu les opcions abans de canviar el mecanisme.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu longitud de pota o gambada, superfície, velocitat i nombre d’intents. Predigueu quin prototip serà més regular i què comptarà com a bolcada o arribada.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu cada prototip durant cinc minuts, amb tres recorreguts en la mateixa superfície. Compareu temps i regularitat, compartiu les opcions prometedores i feu una cursa final. Afegiu unes poques peces soltes al carril, repetiu i observeu com canvia la prova. Una altra parella aporta una observació constructiva abans del retest.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** esbossos de diverses solucions, incloses les que no funcionen; taula de proves comparables; predicció revisada; retorn i justificació del disseny triat. Com a ampliació, calculeu velocitat mitjana en cm/s i useu distància = velocitat × temps per predir el recorregut després de 8, 16 i 24 segons; compareu predicció i mesura sense suposar velocitat constant en superfícies diferents. Prepareu una explicació breu de biomimètica: quina característica animal inspira el prototip i en què no és equivalent. Autoavaluació privada: prototip funcional, dos o més prototips o diverses iteracions amb millora; els nivells descriuen el procés i no es comparen entre persones.
 
 ### **S3 · Quin agafador serveix per a cada objecte? ([Super Cleanup](https://education.lego.com/en-us/lessons/prime-invention-squad/super-cleanup/), 30–45 min).**
 
-Construïu en tàndem un controlador manual i dos agafadors diferents: un de pinça flexible per a objectes lleugers i flexibles, un altre de boca partida que puga subjectar peces més grans i pesants. Proveu-los amb dues comparacions justes, anotant resultats en una taula: (1) objectes de mida diferent i pes semblant; (2) objectes de mida semblant i pes diferent. Manteniu constants el punt de partida, l’operador, el temps i el nombre d’intents; primer feu una prova modelada i després recolliu tres mostres pròpies de l’aula, sempre grans i lleugeres, sense vidre ni objectes personals. Predigueu quin agafador funcionarà millor amb cada peça, comproveu-ho, i expliqueu l’efecte de la mida i la massa: no hi ha un disseny «millor» per a tots els objectes. Si cal reduir dificultat, proveu només una peça gran i una de menuda; com a extensió, definiu criteris propis i redissenyeu un agafador abans de repetir els tests. Per a una extensió matemàtica, l’equip assigna pesos als criteris (per exemple, seguretat de l’agafada, portabilitat, cost de peces i facilitat de muntatge) que sumen 100%; justifica el repartiment, puntua cada disseny amb una escala acordada i calcula el resultat ponderat. Comproveu si una ponderació diferent canvia la recomanació i expliqueu que els pesos expressen prioritats del projecte, no una mesura objectiva universal. Per a comunicació, presenteu avantatges, límits i dades d’un agafador en una fitxa o exposició curta; no cal enregistrar ni publicar cap vídeo. Feu autoavaluació sobre quants dissenys heu provat i si heu usat les dades per justificar-ne la tria. **Evidència:** taula amb dos factors separats, predicció, resultats, criteris/pesos que sumen 100%, càlcul comparatiu, conclusió basada en les dades i retorn oral sobre avantatges i límits. Els materials són mostres de l’exposició, no residus reals ni càrregues que exigisquen acostar les mans a la pinça.
+#### Fase 1 · Activem i prediem
+
+Predigueu quin agafador funcionarà millor amb peces diferents i per què. Recordeu que no hi ha un disseny millor per a tots els objectes.
+
+#### Fase 2 · Explorem i construïm
+
+En tàndem, construïu un controlador manual i dos agafadors: una pinça flexible per a objectes lleugers/flexibles i una boca partida per a peces més grans/pesants. Useu mostres grans i lleugeres, mai vidre ni objectes personals.
+
+#### Fase 3 · Expliquem i registrem
+
+Planifiqueu dues comparacions justes: (1) mides diferents amb pes semblant; (2) mides semblants amb pes diferent. Manteniu constants punt de partida, operador, temps i intents. Feu una prova modelada i després tres mostres pròpies de l’aula.
+
+#### Fase 4 · Apliquem i millorem
+
+Comproveu les prediccions, registreu el resultat de cada agafador i expliqueu l’efecte de la mida i la massa. Si cal bastida, useu una peça gran i una menuda; com a extensió, definiu criteris i redissenyeu un agafador abans de repetir les proves.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** taula amb els dos factors separats, predicció, resultats, conclusió i retorn oral sobre avantatges i límits. Per a l’extensió matemàtica, assigneu pesos als criteris (seguretat, portabilitat, cost, facilitat) que sumen 100%, puntueu els dissenys i calculeu el resultat ponderat. Comproveu si una ponderació diferent canvia la recomanació: els pesos expressen prioritats del projecte, no una mesura objectiva universal. Presenteu una fitxa o exposició breu; no cal enregistrar vídeo.
 
 ### **S4 · Quatre causes d’una traçadora que no dibuixa ([Broken](https://education.lego.com/en-us/lessons/prime-invention-squad/broken/), 45–90 min).**
 
-Prepareu una traçadora XY de taula per al plànol d’una exposició, amb el programa i el paper dissenyats pel docent; el model començarà deliberadament amb errors i no s’ha d’engegar fins que l’equip haja llegit o explicat cada pas del codi. Repartiu la construcció en parella (bastidor superior i mecanismes / base, carro del llapis i alimentació del paper) i inspeccioneu quatre símptomes segurs: una roda d’alimentació absent que fa fallar l’eix Y, la part superior mal fixada, els engranatges d’alimentació invertits que avancen massa ràpid i el carro del llapis fluix que distorsiona l’eix X. L’objectiu és trobar causes arrel, no rebre la llista per endavant: per a cada símptoma anoteu què no funciona, què hauria de passar i una reparació proposada; modifiqueu el mecanisme o codi d’un en un, proveu sobre paper amb una figura de referència i documenteu el canvi. Compartiu les solucions i repetiu el cicle amb una millora pròpia. Per a qui necessite bastida, oferiu una safata de peces candidates o una targeta amb pistes de transmissió, fixació, alimentació del paper i carro; no indiqueu d’entrada la reparació. Per ampliar, dissenyeu una forma més complexa amb corbes i ajusteu paràmetres per aprofitar millor l’àrea imprimible; mesureu amplària i alçària del rectangle final i compareu amb l’espai útil calculat, explicant per què cal una actualització quan la necessitat supera el límit de la màquina. Afegiu una conversa «mans fora» de suport tècnic: una persona descriu símptoma i comportament previst, l’altra pregunta què s’ha provat i proposa una comprovació abans d’una reparació. En l’avaluació, observeu si l’alumnat pot descriure estructura i funció, localitzar una causa arrel entre resultat observat i previst, reparar per satisfer criteris i millorar mitjançant iteració. Tancament individual: cada persona tria un nivell privat de progrés i una prova o millora que justificaria. Atureu el motor abans de tocar engranatges, no forceu eixos i feu servir velocitat baixa. **Evidència:** pseudocodi previ, taula d’error–causa–prova–reparació, dibuix inicial/final, mesura de la figura i retorn de suport tècnic. El dispositiu i les figures són una adaptació pròpia, no una còpia de la màquina ni dels plans de LEGO.
+#### Fase 1 · Activem i prediem
+
+Presenteu l’encàrrec: una traçadora XY de taula ha de dibuixar el plànol d’una exposició. El programa i el paper són propis del docent i el model contindrà errors segurs. Abans d’engegar-lo, llegiu i expliqueu cada pas del codi.
+
+#### Fase 2 · Explorem i construïm
+
+Repartiu la construcció en parelles: bastidor superior i mecanismes / base, carro del llapis i alimentació del paper. Inspeccioneu quatre símptomes sense activar el motor: roda d’alimentació Y absent, part superior mal fixada, engranatges invertits que avancen massa ràpid i carro del llapis fluix que distorsiona X.
+
+#### Fase 3 · Expliquem i registrem
+
+Per a cada símptoma, anoteu què no funciona, què hauria de passar i una reparació possible. Dibuixeu les causes candidates i trieu una comprovació que puga distingir-les. L’objectiu és trobar causes arrel, no rebre la llista de reparacions per endavant.
+
+#### Fase 4 · Apliquem i millorem
+
+Modifiqueu una cosa cada vegada, proveu sobre paper amb una figura de referència i documenteu el canvi. Compartiu les solucions i repetiu amb una millora pròpia. Per bastida, oferiu una safata de peces candidates o pistes sobre transmissió, fixació, alimentació i carro; no indiqueu la reparació. Per ampliar, dissenyeu una forma amb corbes, mesureu amplària i alçària del rectangle dibuixat i compareu-les amb l’espai útil calculat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** pseudocodi previ, taula error–causa–prova–reparació, dibuix inicial/final, mesura i retorn tècnic. Expliqueu per què una necessitat que supera l’espai útil requeriria actualitzar la màquina. Feu una conversa «mans fora»: una persona descriu símptoma i resultat previst, l’altra pregunta què s’ha provat i suggereix una comprovació. Atureu el motor abans de tocar engranatges, no forceu eixos i useu velocitat baixa.
 
 ### **S5 · Dissenyem una eina per a una tasca triada ([Design for Someone](https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-someone/), projecte de 120+ min en diverses sessions).**
 
-La lliçó oficial connecta el procés de disseny amb pròtesis i funcions que una persona voldria poder fer. Manteniu aquesta connexió com a investigació de tecnologies d’assistència i disseny universal, sense demanar a l’alumnat que simule una discapacitat, diagnostique ningú ni fabrique una pròtesi d’ús humà. L’encàrrec pràctic és crear dues eines intercanviables de taula —inspirades en funcions d’agafada, subjecció o gir— per a una tasca triada, com ara agafar fruita grossa, subjectar una targeta o girar una maneta de maqueta. En una conversa inicial, delimiteu persona/usuari, necessitat, criteris i restriccions; la necessitat pot ser ficcionada o aportada per una persona col·laboradora adulta amb consentiment informat i capacitat real d’alterar la definició o retirar-se. **Part A · idear (15 + 30 min):** presenteu el procés i una història/recurs de disseny assistiu; les parelles generen diverses idees i n’escullen dues. Per donar suport, oferiu un exemple de mecanisme i un repte més concret, com moure una fruita o girar una maneta; per ampliar, convideu una persona especialista només si està disponible i accepteu peces fabricades només si el centre ja en disposa. **Part B · construir i provar (45 min):** munteu totes dues opcions, proveu-les amb el mateix protocol/càrrega i feu una taula pròpia de dades; registreu també un cas en què no funciona. **Part C · comunicar i revisar (45 min):** cada equip presenta resultats, explica quina opció compleix millor cada criteri i què revisaria; feu una iteració final a partir de feedback. El quadern d’inventor registra necessitat, criteris/restriccions, pluja d’idees, selecció, proves, dades, canvi i resultat. Avalueu identificació dels elements del problema, autonomia/creativitat de la solució i comunicació clara; autoavaluació privada i feedback constructiu entre iguals. Si hi ha una col·laboradora real, convideu-la a valorar utilitat i modificar requisits de manera voluntària; sense consultoria, anoteu que la necessitat no està validada. El producte és un prototip d’aula per a un objecte, no una pròtesi mèdica ni un dispositiu que es recomane fora de classe.
+#### Fase 1 · Activem i prediem
+
+La lliçó oficial connecta el procés de disseny amb pròtesis i funcions que una persona voldria poder fer. Investigueu tecnologies d’assistència i disseny universal sense simular discapacitats, diagnosticar ningú ni fabricar una pròtesi d’ús humà.
+
+#### Fase 2 · Explorem i construïm
+
+Definiu una tasca per a dues eines intercanviables de taula, per exemple agafar fruita grossa, subjectar una targeta o girar una maneta de maqueta. Delimiteu persona usuària, necessitat, criteris i restriccions. La necessitat pot ser fictícia o aportada voluntàriament per una persona adulta col·laboradora que puga modificar-la o retirar-se.
+
+#### Fase 3 · Expliquem i registrem
+
+Presenteu el procés i una història o recurs de disseny assistiu. Genereu diverses idees i seleccioneu-ne dues. Per donar suport, oferiu un mecanisme d’exemple i un repte concret; per ampliar, convideu una persona especialista només si està disponible. Useu peces fabricades només si el centre ja en disposa.
+
+#### Fase 4 · Apliquem i millorem
+
+Munteu les dues opcions i proveu-les amb el mateix protocol i càrrega. Registreu dades i un cas en què cada opció no funciona. Presenteu resultats, compareu els criteris i feu una iteració final a partir del feedback.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** quadern amb necessitat, criteris/restriccions, idees, selecció, proves, dades, canvi i resultat. Avalueu identificació del problema, autonomia/creativitat i comunicació clara; feu autoavaluació privada i feedback entre iguals. Si hi ha col·laboradora real, convideu-la a valorar i modificar requisits voluntàriament; sense consultoria, anoteu que la necessitat no està validada. El producte és un prototip d’aula per a un objecte, no una pròtesi mèdica ni un dispositiu recomanat fora de classe.
 
 ### **S6 · Un ajudant per a la taula de preparació ([Design for You](https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-you/), 45 min, híbrida).**
 
-Inicieu amb una conversa (10 min) sobre d’on venen les idees d’invents i quins problemes quotidians del propi espai de treball es podrien resoldre. Cada alumne dissenya individualment un «ajudant d’escriptori» per millorar un ús triat (mantindre dreta una targeta, separar peces, ordenar etiquetes). Durant exploració (15 min), faça una o dues rondes curtes d’idear, fer prototip i provar-lo; no hi ha instruccions ni model final obligatori, i s’accepten peces LEGO corrents o materials trobats perquè l’activitat és híbrida i no necessita SPIKE Prime/BricQ/hub. Expliqueu la diferència entre prototip i model acabat. En explicació (10 min), l’alumnat presenta el prototip a una parella i rep feedback concret sobre una prova o una millora; descriu com va definir la necessitat, quines idees va provar i què va mesurar. En elaboració (5 min), cadascú anota com canviaria el disseny a partir del feedback; només es dibuixa la transformació futura a SPIKE Prime, sense construir-la. En avaluació final (5 min), cada alumne comunica com l’invent va millorar l’espai i s’autoavalua: ho faig amb ajuda, ho explique, puc ensenyar altres a definir i avaluar opcions. Es pot demostrar amb conversa, text o dibuix. **Evidència:** descripció d’espai i necessitat, criteri compartit, prototip inicial, mesura/prova, feedback rebut, esbós d’una revisió i autoavaluació. No és un prototip motoritzat obligatori ni es publiquen fotos de casa/classe.
+#### Fase 1 · Activem i prediem
+
+Converseu sobre d’on venen les idees d’invents i quins problemes quotidians de l’espai de treball es podrien resoldre. Cada alumne tria una necessitat, com mantindre dreta una targeta, separar peces o ordenar etiquetes.
+
+#### Fase 2 · Explorem i construïm
+
+Dissenyeu individualment un ajudant d’escriptori. Feu una o dues rondes breus d’ideació, prototipatge i prova. No hi ha instruccions ni model final obligatori; podeu usar peces LEGO corrents o materials trobats. L’activitat híbrida no necessita SPIKE Prime, BricQ ni hub.
+
+#### Fase 3 · Expliquem i registrem
+
+Expliqueu la diferència entre prototip i model acabat. Presenteu el prototip a una parella i descriviu com heu definit la necessitat, quines idees heu provat i què heu mesurat. La parella dona feedback concret sobre una prova o millora.
+
+#### Fase 4 · Apliquem i millorem
+
+Anoteu com canviaria el disseny a partir del feedback. Dibuixeu una transformació futura a SPIKE Prime si és útil, però no cal construir-la ni motoritzar-la.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** necessitat i criteri compartit, prototip inicial, mesura/prova, feedback rebut, esbós de revisió i autoavaluació. Comuniqueu com l’invent ha millorat l’espai; es pot fer oralment, amb text o dibuix. No és obligatori motoritzar-lo ni publicar fotos de casa o de l’aula.
 
 ## 🧰 Materials i preparació
 

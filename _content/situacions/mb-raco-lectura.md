@@ -33,27 +33,135 @@ La biblioteca escolar obri un laboratori de projectes digitals per explicar què
 
 ### **Sessió 1 · Identificador fictici (Name badge).**
 
-Programeu una paraula inventada o una icona per comprendre instruccions, seqüència, càrrega del programa i matriu LED. Expliqueu què és entrada i què és eixida. Per a la via Python, situeu-vos en l’editor i feu que la placa mostre un símbol propi.
+#### Fase 1 · Activem i prediem
+
+Trieu una paraula inventada, una paraula comuna o una icona de personatge. Predigueu com apareixerà a la matriu LED i què pot passar si el text és massa llarg.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu el text o la icona per comprendre instruccions, seqüència, càrrega del programa i matriu LED. Per a la via Python, obriu l’editor i feu que la placa mostre un símbol propi.
+
+#### Fase 3 · Expliquem i registrem
+
+Identifiqueu l’entrada, el procés i l’eixida i anoteu el comportament del text i de la imatge. Deseu el programa breu o una captura impresa.
+
+#### Fase 4 · Apliquem i millorem
+
+Compareu text i icona i reviseu el missatge si el desplaçament o la durada en dificulten la lectura.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu quina informació pot mostrar la placa i què es podria comunicar millor en una targeta impresa. **Evidència:** programa d’identificador fictici i diagrama entrada-procés-eixida.
 
 ### **Sessió 2 · Animació amb bucle (Beating heart).**
 
-Creeu dues imatges senzilles que alternen per donar sensació de batec o moviment. Ajusteu la durada i useu un bucle per repetir-les; compareu la versió repetida amb instruccions escrites una per una.
+#### Fase 1 · Activem i prediem
+
+Dibuixeu dos fotogrames i decidiu-ne l’ordre. Predigueu com canviarà la percepció del moviment amb pauses curtes o llargues.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu dues imatges senzilles que alternen i useu un bucle per repetir-les. Manteniu la mateixa seqüència visual si compareu blocs amb una versió Python.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu l’ordre, les pauses i el nombre de repeticions. Compareu el guió visual amb el programa executat.
+
+#### Fase 4 · Apliquem i millorem
+
+Ajusteu una pausa i torneu a provar. Oferiu una versió estàtica si els LED intermitents no són accessibles o còmodes.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu com el bucle redueix instruccions repetides i si l’animació manté el patró previst. **Evidència:** dos fotogrames, programa amb bucle i comparació de pauses.
 
 ### **Sessió 3 · Insígnia amb entrada (Emotion badge).**
 
-Dissenyeu dues icones fictícies de preferència lectora i alterneu-les amb els botons A/B. Tracteu el botó com una entrada i la matriu com una eixida; les icones representen personatges inventats, no estats emocionals de companys.
+#### Fase 1 · Activem i prediem
+
+Dissenyeu dues icones per a preferències lectores de personatges ficticis. Predigueu quina eixida apareixerà en prémer A o B; les imatges no representen ni revelen estats emocionals de companys.
+
+#### Fase 2 · Explorem i construïm
+
+Programeu els botons A/B com a entrades i la matriu LED com a eixida. Creeu dues imatges pròpies i assigneu-ne una a cada botó.
+
+#### Fase 3 · Expliquem i registrem
+
+Una persona provadora prem cada botó i comprova la icona prevista. Registreu l’entrada, la resposta i qualsevol discrepància.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu la icona o l’assignació si les dues opcions no es distingeixen prou. Torneu a provar A i B en un ordre diferent.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què ha activat cada imatge i per què el programa no pot inferir emocions de ningú. **Evidència:** dues icones fictícies, codi i taula de proves dels botons.
 
 ### **Sessió 4 · Comptador de recorreguts (Step counter).**
 
-Feu una ruta curta per la maqueta de prestatgeries amb una fitxa mòbil i compareu-la amb un comptador de sacsejades de la placa. Definiu l’algorisme, incrementeu una variable i proveu quins moviments falsos compten com a pas. El recompte descriu la prova del model, no l’activitat d’una persona.
+#### Fase 1 · Activem i prediem
+
+Dibuixeu una ruta curta per una maqueta de prestatgeries i predigueu quants passos de fitxa hi ha. Expliqueu que el recompte descriu la prova del model, no l’activitat d’una persona.
+
+#### Fase 2 · Explorem i construïm
+
+Feu la ruta amb una fitxa mòbil i compareu-la amb un comptador de sacsejades de la placa. Definiu l’algorisme, incrementeu una variable i reinicieu-la entre assaigs.
+
+#### Fase 3 · Expliquem i registrem
+
+Compareu recompte manual i automàtic i anoteu falses deteccions o moviments que no s’han comptat. Manteniu el registre sense noms.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu una condició i repetiu la ruta. Si sacsejar la placa no és accessible, useu el botó, la fitxa o una simulació.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Descriviu què compta i quines limitacions té el model, sense presentar-lo com un podòmetre validat. **Evidència:** algorisme, variable, registre comparatiu i errors identificats.
 
 ### **Sessió 5 · Senyal que respon a la llum (Nightlight).**
 
-Useu la lectura de llum disponible per encendre una icona quan el nivell baixa del llindar acordat. Calibreu-la en dos llocs de la biblioteca i canvieu la condició si hi ha falsos activaments. La matriu LED és un senyal visible, no una llum per llegir un llibre ni un dispositiu de seguretat.
+#### Fase 1 · Activem i prediem
+
+Predigueu què ocorrerà quan la lectura de llum baixe del llindar acordat. Recordeu que l’eixida LED no il·lumina prou per llegir ni és un dispositiu de seguretat.
+
+#### Fase 2 · Explorem i construïm
+
+Useu la lectura de llum disponible per encendre una icona quan el nivell baixa del llindar. Col·loqueu la placa en dos punts de prova de la biblioteca.
+
+#### Fase 3 · Expliquem i registrem
+
+Anoteu el valor observat i si la icona s’ha activat en cada lloc. Incloeu proves de lectura baixa, alta i de frontera.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu el llindar si hi ha falsos activaments i torneu a provar les tres condicions. Manteniu constants els altres elements del programa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què indica el sensor en les condicions provades i què no podem concloure d’una mesura local. **Evidència:** codi condicional, taula de tres casos i llindar revisat.
 
 ### **Sessió 6 · Joc de mans (Rock, paper, scissors).**
 
-Useu el gest “sacsejar” o un botó per iniciar una simulació amb nombre aleatori, variable i selecció. Comproveu que totes les opcions poden aparéixer al cap de moltes proves i parleu de què significa justícia en una simulació. El resultat és un joc, no una predicció.
+#### Fase 1 · Activem i prediem
+
+Predigueu quines opcions pot mostrar el joc i què vol dir que el resultat siga aleatori. Recordeu que és una simulació lúdica, no una predicció.
+
+#### Fase 2 · Explorem i construïm
+
+Useu el gest «sacsejar» o un botó per iniciar una simulació amb nombre aleatori, variable i selecció. Associeu cada valor a una eixida del joc.
+
+#### Fase 3 · Expliquem i registrem
+
+Proveu una seqüència de casos, incloent-hi el valor mínim i màxim del rang. Registreu nombre, condició i eixida resultant.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu l’algorisme si alguna opció no té correspondència o queda exclosa per un límit incorrecte. Torneu a provar els extrems i l’associació de cada valor.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu si totes les opcions poden aparéixer i què significa justícia en aquesta simulació. **Evidència:** programa, taula de proves i explicació dels límits.
 
 ## 💻 Dues vies de programació
 

@@ -41,83 +41,91 @@ Les quatre sessions sumen 180 minuts, com la durada publicada del projecte de re
 
 ### **Sessió 1 · Investiguem el centre que presentarem.**
 
-*Pregunta i encàrrec (5 min):*
+#### Fase 1 · Activem i prediem
 
-qui arriba per primera vegada i quina informació li seria útil?
+Comenceu amb l’encàrrec: qui arriba per primera vegada i quina informació li seria útil? Cada equip anota què ja sap del centre i quines dades necessita confirmar.
 
-*Recerca en equips (10 min):*
+#### Fase 2 · Explorem i construïm
 
-consulteu una font del centre o pregunteu a una persona autoritzada sobre un element de la història, cultura o ús compartit de quatre espais; anoteu font, data i allò que encara no sabeu.
+Consulteu una font del centre o pregunteu a una persona autoritzada sobre la història, cultura o ús compartit de quatre espais. Anoteu font, data i allò que encara no sabeu.
 
-*Visita/observació (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-feu una observació docent guiada o useu un conjunt de notes/esbossos ja preparats; identifiqueu entrades, passadissos i llocs visitables sense entrar en zones restringides.
+Feu una observació docent guiada o useu notes/esbossos preparats. Identifiqueu entrades, passadissos i llocs visitables sense entrar en zones restringides; registreu només la informació necessària per al plànol.
 
-*Esbós a escala (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-decidiu quina distància representarà cada tram del plànol i dibuixeu límits i quatre punts d’interés.
+Decidiu quina distància representarà cada tram i dibuixeu límits i quatre punts d’interés. Un altre equip comprova si pot trobar l’inici i les destinacions i assenyala què cal aclarir.
 
-*Control de qualitat (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-un altre equip comprova si pot trobar l’inici i les destinacions. Evidència: notes de recerca amb fonts, esbós amb llegenda i escala declarada.
+**Evidència:** notes de recerca amb fonts, esbós amb llegenda i escala declarada. Quina informació continua pendent de confirmar?
 
 ### **Sessió 2 · Fem el mapa miniatura i les maquetes.**
 
-*Passar de l’esbós al mapa (10 min):*
+#### Fase 1 · Activem i prediem
 
-traslladeu passadissos i ubicacions amb la mateixa escala, afegiu títol, nord o orientació inicial, llegenda i una quadrícula amb lletres/nombres.
+Reviseu l’esbós de la sessió anterior i prediu quina informació ha de mantindre’s perquè el mapa siga llegible i conserve l’escala.
 
-*Construcció (20 min):*
+#### Fase 2 · Explorem i construïm
 
-creeu maquetes tridimensionals simples de paper per als edificis o espais representats; manteniu-les baixes i fora de la trajectòria del robot, o substituïu-les per símbols plans.
+Traslladeu passadissos i ubicacions amb la mateixa escala. Afegiu títol, nord o orientació inicial, llegenda i una quadrícula amb lletres i nombres.
 
-*Localització (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-assigneu coordenades de quadrícula als llocs i feu que cada persona trobe una destinació a partir d’una parella ordenada.
+Creeu maquetes tridimensionals simples de paper per als edificis o espais representats; manteniu-les baixes i fora de la trajectòria del robot o substituïu-les per símbols plans. Assigneu coordenades als llocs.
 
-*Revisió de correspondència (5 min):*
+#### Fase 4 · Apliquem i millorem
 
-contrasteu que les maquetes i símbols siguen en la mateixa posició relativa al mapa i que l’escala no haja canviat. Evidència: mapa llegible amb quatre maquetes/símbols i targetes de coordenades.
+Feu que cada persona trobe una destinació a partir d’una parella ordenada. Contrasteu que les maquetes i els símbols conserven la posició relativa al mapa i que l’escala no ha canviat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa llegible amb quatre maquetes o símbols i targetes de coordenades. Quina informació ens dona la coordenada i quina informació necessitarà el robot per moure’s?
 
 ### **Sessió 3 · Codifiquem i escrivim la visita guiada.**
 
-*Planificar (10 min):*
+#### Fase 1 · Activem i prediem
 
-trieu un punt d’inici, ordre de quatre parades i una ruta que el robot puga recórrer sense xocar. Marqueu amb una fletxa la seua orientació inicial.
+Trieu un punt d’inici, l’ordre de quatre parades i una ruta que el robot puga recórrer sense xocar. Marqueu amb una fletxa la seua orientació inicial i predigueu cada gir.
 
-*Discurs de guia (10 min):*
+#### Fase 2 · Explorem i construïm
 
-redacteu quatre fragments de 2–3 frases: nom de l’espai, un fet verificat i una indicació del que el visitant hi pot descobrir. Citeu oralment la font o assenyaleu-la en la targeta docent; no inventeu fets locals.
+Convertiu la ruta dibuixada en blocs de moviment. Col·loqueu la seqüència d’esquerra a dreta i proveu un tram cada vegada.
 
-*Programar (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-convertiu la ruta dibuixada en blocs de moviment. Predigueu cada gir en paper, col·loqueu la seqüència d’esquerra a dreta i proveu un tram cada vegada.
+Redacteu quatre fragments de visita guiada de dues o tres frases: nom de l’espai, un fet verificat i què pot descobrir-hi el visitant. Citeu oralment la font o assenyaleu-la en una targeta docent; no inventeu fets locals.
 
-*Depuració (5 min):*
+#### Fase 4 · Apliquem i millorem
 
-si MatataBot s’allunya de la ruta, registreu la casella on passa, l’orientació i el primer bloc que cal revisar.
+Si MatataBot s’allunya de la ruta, registreu la casella, l’orientació i el primer bloc que cal revisar. Depureu una instrucció i practiqueu la narració sincronitzada amb les parades.
 
-*Assaig (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-practiqueu la narració sincronitzada amb les parades. Evidència: guió de visita, programa i registre d’una prova.
+**Evidència:** guió de visita, programa i registre d’una prova. El mapa de coordenades i les ordres del robot descriuen la mateixa ruta de maneres diferents?
 
 ### **Sessió 4 · Guiem MatataBot i revisem el projecte.**
 
-*Preparació (5 min):*
+#### Fase 1 · Activem i prediem
 
-situeu mapa, maquetes i senyal d’inici; assigneu qui programa, qui narra i qui registra.
+Situeu mapa, maquetes i senyal d’inici; assigneu qui programa, qui narra i qui registra. Predigueu si el públic podrà seguir la ruta només amb el mapa i el discurs.
 
-*Visita presentada (20 min):*
+#### Fase 2 · Explorem i construïm
 
-cada equip mostra el codi, fa el recorregut i presenta els espais amb el discurs; el públic segueix el mapa i marca cada parada.
+Cada equip mostra el codi, fa el recorregut i presenta els espais amb el discurs. El públic segueix el mapa i marca cada parada.
 
-*Retorn entre iguals (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-una altra parella indica un punt fort i formula una pregunta concreta sobre escala, informació o ruta.
+Una altra parella indica un punt fort i formula una pregunta concreta sobre escala, informació o ruta. Registreu el retorn i la parada a què fa referència.
 
-*Revisió i reflexió (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-corregiu una part del mapa o del programa i responeu: què ens ha costat, quina font hem utilitzat i com ens hem repartit el treball? Evidència: visita completa, mapa final, programa revisat i reflexió individual o per dictat.
+Corregiu una part del mapa o del programa a partir del retorn i torneu a comprovar que el recorregut es pot seguir.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Responeu: què ens ha costat, quina font hem utilitzat i com ens hem repartit el treball? **Evidència:** visita completa, mapa final, programa revisat i reflexió individual o dictada.
 
 ## 🧭 Registre, rúbrica i evidències
 

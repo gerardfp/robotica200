@@ -52,15 +52,69 @@ Abans del curs, podeu oferir una fitxa privada i opcional sobre àrees que despe
 
 ### **Lliçó 1 · Una fira que funciona per moltes mans (90 min).**
 
-**Activació (10–15 min):** parleu de fires, jornades de ciència o trobades escolars; mireu imatges de referència seleccionades per la docent i identifiqueu què fa una persona visitant des que planifica el trajecte fins que torna a casa. Anoteu primer necessitats i accions, no noms de professions. **Exploració (25 min):** en equips de quatre, dibuixeu en cartó un mapa de la fira i els serveis del voltant: entrada, espais d’exposició, zona tranquil·la, transport públic, aigua i descans. Assigneu al grup diverses àrees professionals perquè n’investigue els rols visibles i els que preparen l’esdeveniment per avançat; exemples a explorar: muntatge, electricitat, manteniment, mediació científica, accessibilitat, disseny, gestió cultural, neteja, restauració, transport, comunicació i emergències. Cada afirmació de rol es recolza amb una font o s’etiqueta com a hipòtesi a verificar. **Representació:** construïu una maqueta modular amb peces SPIKE i cartó o una xarxa visual amb targetes. Connecteu professió → tasca → necessitat del visitant; indiqueu si el treball és abans, durant o després de la fira. **Posada en comú:** expliqueu qui es relaciona amb el públic i qui treballa entre bastidors. Altres equips afegeixen rols que falten, per exemple qui manté els lavabos accessibles o verifica el subtitulat. **Elaboració:** amplieu la xarxa amb qüestions de calor, llum, so, trànsit, menjar, connectivitat, salut, neteja i pagament; reviseu si les primeres idees deixaven fora algun servei o feien una suposició estereotipada. **Evidències:** mapa de professions amb fletxes i fonts, maqueta o alternativa plana, llista de tasques visibles/invisibles i una pregunta sense resposta. No es demana a ningú dir quina d’aquestes feines voldria fer.
+#### Fase 1 · Activem i prediem
+
+**Activació (10–15 min):** parleu de fires, jornades de ciència o trobades escolars; mireu imatges de referència seleccionades per la docent i identifiqueu què fa una persona visitant des que planifica el trajecte fins que torna a casa. Anoteu primer necessitats i accions, no noms de professions.
+
+#### Fase 2 · Explorem i construïm
+
+**Exploració (25 min):** en equips de quatre, dibuixeu en cartó un mapa de la fira i els serveis del voltant: entrada, espais d’exposició, zona tranquil·la, transport públic, aigua i descans. Assigneu al grup diverses àrees professionals perquè n’investigue els rols visibles i els que preparen l’esdeveniment per avançat; exemples a explorar: muntatge, electricitat, manteniment, mediació científica, accessibilitat, disseny, gestió cultural, neteja, restauració, transport, comunicació i emergències. Cada afirmació de rol es recolza amb una font o s’etiqueta com a hipòtesi a verificar.
+
+#### Fase 3 · Expliquem i registrem
+
+**Representació:** construïu una maqueta modular amb peces SPIKE i cartó o una xarxa visual amb targetes. Connecteu professió → tasca → necessitat del visitant; indiqueu si el treball és abans, durant o després de la fira.
+
+#### Fase 4 · Apliquem i millorem
+
+**Posada en comú:** expliqueu qui es relaciona amb el públic i qui treballa entre bastidors. Altres equips afegeixen rols que falten, per exemple qui manté els lavabos accessibles o verifica el subtitulat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Elaboració:** amplieu la xarxa amb qüestions de calor, llum, so, trànsit, menjar, connectivitat, salut, neteja i pagament; reviseu si les primeres idees deixaven fora algun servei o feien una suposició estereotipada. **Evidències:** mapa de professions amb fletxes i fonts, maqueta o alternativa plana, llista de tasques visibles/invisibles i una pregunta sense resposta. No es demana a ningú dir quina d’aquestes feines voldria fer.
 
 ### **Lliçó 2 · Habilitats que es practiquen i interessos que evolucionen (120 min).**
 
-**Activació:** useu un cas fictici: organitzar una visita en transport públic, entendre un plànol, revisar accessibilitat, comunicar informació i gestionar un pressupost. L’alumnat identifica sabers escolars, matemàtics, lingüístics, creatius i socials implicats, i quines professions podrien aportar-los. **Exploració cooperativa:** els grups trien almenys cinc competències transversals de la llista (comunicació oral/escrita, col·laboració, creativitat, pensament crític, resolució de problemes, organització, lideratge distribuït i autoregulació) i construeixen amb peces un símbol, estructura o maqueta que les represente. Per cada habilitat indiquen una activitat del curs on la van practicar i un exemple professional on podria ser útil. **Contrast:** compareu les propostes amb les experiències del curs; si una professió aparentment no necessita una habilitat, investigueu si simplement es manifesta d’una altra manera o si hi ha casos on no és central. Eviteu presentar qualsevol llista com a universal o com a requisit de contractació. **Reflexió longitudinal privada:** qui ho vulga compara la fitxa inicial del curs amb una versió nova; pot anotar canvis, continuïtats o dubtes. Alternativa equivalent: comentar una professió fictícia o revisar com ha canviat una hipòtesi de l’equip. No arreplegueu ni qualifiqueu els fulls personals. **Feedback:** en parelles, cada persona pot oferir una observació basada en el treball compartit (“he vist que vas…”) i una pregunta sobre una habilitat que l’altra persona vulga mostrar; no es diagnostiquen talents ni es comparen notes. **Producte:** xarxa de competències i feines, comentari sobre com ha canviat/continuat una idea i una pregunta futura. L’alumnat no està obligat a compartir el comentari personal.
+#### Fase 1 · Activem i prediem
+
+**Activació:** useu un cas fictici: organitzar una visita en transport públic, entendre un plànol, revisar accessibilitat, comunicar informació i gestionar un pressupost. L’alumnat identifica sabers escolars, matemàtics, lingüístics, creatius i socials implicats, i quines professions podrien aportar-los.
+
+#### Fase 2 · Explorem i construïm
+
+**Exploració cooperativa:** els grups trien almenys cinc competències transversals de la llista (comunicació oral/escrita, col·laboració, creativitat, pensament crític, resolució de problemes, organització, lideratge distribuït i autoregulació) i construeixen amb peces un símbol, estructura o maqueta que les represente. Per cada habilitat indiquen una activitat del curs on la van practicar i un exemple professional on podria ser útil.
+
+#### Fase 3 · Expliquem i registrem
+
+**Contrast:** compareu les propostes amb les experiències del curs; si una professió aparentment no necessita una habilitat, investigueu si simplement es manifesta d’una altra manera o si hi ha casos on no és central. Eviteu presentar qualsevol llista com a universal o com a requisit de contractació.
+
+#### Fase 4 · Apliquem i millorem
+
+**Reflexió longitudinal privada:** qui ho vulga compara la fitxa inicial del curs amb una versió nova; pot anotar canvis, continuïtats o dubtes. Alternativa equivalent: comentar una professió fictícia o revisar com ha canviat una hipòtesi de l’equip. No arreplegueu ni qualifiqueu els fulls personals.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Feedback:** en parelles, cada persona pot oferir una observació basada en el treball compartit (“he vist que vas…”) i una pregunta sobre una habilitat que l’altra persona vulga mostrar; no es diagnostiquen talents ni es comparen notes. **Producte:** xarxa de competències i feines, comentari sobre com ha canviat/continuat una idea i una pregunta futura. L’alumnat no està obligat a compartir el comentari personal.
 
 ### **Lliçó 3 · Un pla d’exploració possible (120 min).**
 
-**Activació:** planificar una meta quotidiana —com preparar una excursió o triar un curs— requereix passos, informació, opcions i revisió. Compareu un pla rígid amb un pla flexible i identifiqueu dependències i incerteses. **Recerca:** cada alumne tria en privat una ocupació per investigar, o selecciona un cas fictici d’una professió de la maqueta. Consulteu fonts actuals per esbrinar tres tasques concretes, estudis o acreditacions que poden requerir-se, competències, entorns de treball, feines relacionades i on trobar més orientació a la Comunitat Valenciana. Citeu data de consulta i distingiu requisits legals d’un anunci o opinió. No s’infereix un futur salari o disponibilitat de feina sense una font actual i contextualitzada. **Reflexió i model:** completeu una plantilla “connecta–crea–canvia”: què connecta aquesta ocupació, què produeix o resol, i què contribueix a millorar. Construïu un model de peces de la professió investigada o, com a alternativa, una infografia, guió o mapa d’itinerari. La comunicació oral és opcional i pot substituir-se per presentació gravada sense imatge personal o exposició del cas fictici. **Pla a curt termini:** escriviu un pas exploratori viable per a les pròximes setmanes (llegir una font, provar una tasca en club escolar, parlar amb orientació o visitar un espai públic), una habilitat que es voldria practicar, una persona/servei que podria ajudar i un pla alternatiu si canvien els interessos. No inclogueu informació de contacte privada ni compromisos amb persones adultes sense mediació docent. **Tancament:** el grup revisa la seua maqueta inicial i afegeix professions invisibilitzades o connexions noves. Guardeu el pla personal només si l’alumne vol; per a l’avaluació, es pot entregar el model de recerca fictici equivalent.
+#### Fase 1 · Activem i prediem
+
+**Activació:** planificar una meta quotidiana —com preparar una excursió o triar un curs— requereix passos, informació, opcions i revisió. Compareu un pla rígid amb un pla flexible i identifiqueu dependències i incerteses.
+
+#### Fase 2 · Explorem i construïm
+
+**Recerca:** cada alumne tria en privat una ocupació per investigar, o selecciona un cas fictici d’una professió de la maqueta. Consulteu fonts actuals per esbrinar tres tasques concretes, estudis o acreditacions que poden requerir-se, competències, entorns de treball, feines relacionades i on trobar més orientació a la Comunitat Valenciana. Citeu data de consulta i distingiu requisits legals d’un anunci o opinió. No s’infereix un futur salari o disponibilitat de feina sense una font actual i contextualitzada.
+
+#### Fase 3 · Expliquem i registrem
+
+**Reflexió i model:** completeu una plantilla “connecta–crea–canvia”: què connecta aquesta ocupació, què produeix o resol, i què contribueix a millorar. Construïu un model de peces de la professió investigada o, com a alternativa, una infografia, guió o mapa d’itinerari. La comunicació oral és opcional i pot substituir-se per presentació gravada sense imatge personal o exposició del cas fictici.
+
+#### Fase 4 · Apliquem i millorem
+
+**Pla a curt termini:** escriviu un pas exploratori viable per a les pròximes setmanes (llegir una font, provar una tasca en club escolar, parlar amb orientació o visitar un espai públic), una habilitat que es voldria practicar, una persona/servei que podria ajudar i un pla alternatiu si canvien els interessos. No inclogueu informació de contacte privada ni compromisos amb persones adultes sense mediació docent.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Tancament:** el grup revisa la seua maqueta inicial i afegeix professions invisibilitzades o connexions noves. Guardeu el pla personal només si l’alumne vol; per a l’avaluació, es pot entregar el model de recerca fictici equivalent.
 
 ## 📚 Fonts i qualitat de la informació
 

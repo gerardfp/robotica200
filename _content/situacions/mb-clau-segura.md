@@ -41,91 +41,91 @@ En la part de programació, useu una selecció aleatòria de MakeCode només com
 
 ### **Sessió 1 · Ciberseguretat, malware i hacking ètic (What is cyber security?).**
 
-*Activació (5 min):*
+#### Fase 1 · Activem i prediem
 
-distingiu dades públiques, privades i d’accés restringit amb targetes inventades.
+Distingiu dades públiques, privades i d’accés restringit amb targetes inventades. Predigueu quins indicis farien sospitós un missatge i quin pas segur es pot fer sense obrir-lo.
 
-*Malware o missatge legítim? (15 min):*
+#### Fase 2 · Explorem i construïm
 
-classifiqueu sis exemples impresos (missatge esperat, avís urgent, adjunt no sol·licitat, petició de credencial, premi inesperat i missatge amb remitent desconegut). Per a cadascun, marqueu indicis, què no podeu saber només mirant-lo i el pas segur: no clicar, no descarregar, no respondre, consultar una persona adulta o el canal oficial escrit. No intenteu obrir cap contingut real.
+Classifiqueu sis exemples impresos: missatge esperat, avís urgent, adjunt no sol·licitat, petició de credencial, premi inesperat i remitent desconegut. Per a cadascun, marqueu indicis, què no podeu saber només mirant-lo i una resposta segura: no clicar, no descarregar, no respondre o consultar una persona adulta o el canal oficial escrit. No obriu cap contingut real.
 
-*Hacking ètic (12 min):*
+#### Fase 3 · Expliquem i registrem
 
-compareu una auditoria autoritzada en un entorn de pràctica amb l’accés a un compte d’una altra persona; classifiqueu qui dona permís, quin sistema s’inclou i on acaba la prova. No feu escanejos, proves de contrasenya ni connexions a xarxes reals.
+Compareu una auditoria autoritzada en un entorn de pràctica amb l’accés al compte d’una altra persona. Registreu qui dona permís, quin sistema s’inclou i on acaba la prova; no feu escanejos, proves de contrasenya ni connexions a xarxes reals.
 
-*Mapa de protecció (13 min):*
+#### Fase 4 · Apliquem i millorem
 
-dibuixeu dispositiu, compte fictici, dada i persona de suport; identifiqueu una mesura preventiva i una resposta si hi ha dubte.
+Dibuixeu dispositiu, compte fictici, dada i persona de suport. Afegiu una mesura preventiva i una resposta si hi ha dubte; reviseu el mapa perquè no continga cap dada real.
 
-*Tancament (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-practiqueu una frase de report segur sense reenviar el missatge. Evidència: classificació raonada, límit d’autorització i diagrama de dades.
+Practiqueu una frase de report segur sense reenviar el missatge i justifiqueu una frontera d’autorització. **Evidència:** classificació raonada, límit d’autorització i diagrama de dades.
 
 ### **Sessió 2 · Contrasenyes i planificació de l’algorisme (Strong passwords).**
 
-*Revisar conceptes (8 min):*
+#### Fase 1 · Activem i prediem
 
-contrasteu longitud, imprevisibilitat, unicitat i no reutilització amb exemples abstractes; no proclameu “forta” una cadena només perquè conté símbols.
+Contrasteu longitud, imprevisibilitat, unicitat i no reutilització amb exemples abstractes. Predigueu quina característica importa en cada cas; no proclameu «forta» una cadena només perquè conté símbols.
 
-*Definir el prototip (7 min):*
+#### Fase 2 · Explorem i construïm
 
-l’objectiu és generar un patró didàctic de tres posicions amb un token de cada conjunt neutre, no crear una clau d’ús real.
+Definiu el prototip com un patró didàctic de tres posicions amb un token de cada conjunt neutre, mai una clau d’ús real. Prepareu llistes fictícies curtes de paraules o índexs, símbols inventats i dígits de prova. Cap token pot provindre de noms, dates o preferències personals.
 
-*Construir conjunts (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-prepareu llistes fictícies curtes de tokens (paraules/índexs, símbols inventats, dígits de prova); cap token prové de noms, dates o preferències d’una persona.
+Escriviu pseudocodi: inicialitzeu variables per a posició i token; seleccioneu una opció d’un conjunt; avanceu la posició; repetiu fins a omplir tres llocs; mostreu només l’índex simbòlic i esborreu-lo en acabar. Anoteu què hauria de passar en cada pas.
 
-*Escriure pseudocodi (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-inicialitzeu variables per a posició i token; seleccioneu una opció d’un conjunt; avanceu la posició; repetiu fins a omplir tres llocs; mostreu només l’índex simbòlic i esborreu-lo en acabar.
+Planifiqueu casos amb conjunt buit o longitud no permesa, índex mínim i màxim, selecció fora de rang i categoria omesa. Reviseu el pseudocodi si algun cas no té una resposta definida.
 
-*Planificar casos (10 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-proveu longitud nul·la/no permesa, índex al primer/últim element, selecció fora de rang i omissió d’una categoria. Evidència: pseudocodi, llistes fictícies i prediccions de casos.
+Una altra parella segueix l’algorisme amb les llistes de prova i comprova les prediccions. **Evidència:** pseudocodi, llistes fictícies i prediccions dels casos de prova.
 
-### **Sessió 3 · Programar el prototip amb micro:bit (Making a password generator).**
+### **Sessió 3 · Programem el prototip amb micro:bit (Making a password generator).**
 
-*Transició de targetes a variables (8 min):*
+#### Fase 1 · Activem i prediem
 
-assigneu una variable a cada posició i compareu-les amb el pseudocodi.
+Assigneu una variable a cada posició i compareu-la amb el pseudocodi. Predigueu quins índexs simbòlics mostraria una ronda amb tokens de demostració i què ha de fer l’ordre d’esborrat.
 
-*Implementar (18 min):*
+#### Fase 2 · Explorem i construïm
 
-programeu inicialització, selecció, condició i repetició limitada. Cada botó inicia una única generació de prova o esborra l’eixida; no mostreu una cadena completa que algú puga confondre amb una credencial real.
+Programeu inicialització, selecció, condició i repetició limitada. Cada botó inicia una única generació de prova o esborra l’eixida. No mostreu una cadena completa que algú puga confondre amb una credencial real; si l’editor no permet una eixida efímera, simuleu els tokens amb targetes i deixeu la placa en una eixida simbòlica.
 
-*Executar amb valors de demostració (12 min):*
+#### Fase 3 · Expliquem i registrem
 
-feu tres rondes amb tokens d’aula, anoteu índexs i comproveu que cada posició es completa.
+Executeu tres rondes amb tokens d’aula, anoteu els índexs i comproveu que cada posició es completa. Compareu el resultat amb la predicció i el pseudocodi.
 
-*Comparar codi i pla (7 min):*
+#### Fase 4 · Apliquem i millorem
 
-assenyaleu una diferència entre el programa i l’algorisme que cal revisar.
+Assenyaleu una diferència entre el codi i l’algorisme. Canvieu una part —inicialització, límit, ordre o esborrat— i torneu a executar la mateixa prova.
 
-*Esborrar (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-torneu a estat neutre i confirmeu que no hi ha cap credencial real ni historial guardat. Evidència: codi anotat, diagrama i comprovació d’esborrat de la pantalla.
+Torneu a l’estat neutre i confirmeu que no hi ha cap credencial real ni historial guardat. **Evidència:** codi anotat, diagrama, resultats de les rondes i comprovació d’esborrat de la pantalla.
 
-### **Sessió 4 · Provar, depurar i avaluar sense afirmar seguretat real.**
+### **Sessió 4 · Provem, depurem i avaluem sense afirmar seguretat real.**
 
-*Matriu de proves (15 min):*
+#### Fase 1 · Activem i prediem
 
-executeu casos de conjunt buit, índex mínim/màxim, categoria omesa, reinici, entrada inesperada i repetició de tokens; compareu eixida prevista i observada.
+Prepareu una matriu de proves amb conjunt buit, índex mínim i màxim, categoria omesa, reinici, entrada inesperada i repetició de tokens. Anoteu l’eixida prevista abans d’executar cada cas.
 
-*Depuració (12 min):*
+#### Fase 2 · Explorem i construïm
 
-identifiqueu si l’error és d’inicialització, límit, ordre o estat de reinici; canvieu una part i repetiu el mateix cas.
+Executeu els casos en el prototip didàctic i compareu les eixides previstes i observades. Si una prova no es pot fer de manera efímera o local, representeu-la amb targetes; no introduïu serveis, comptes ni credencials reals.
 
-*Avaluar (10 min):*
+#### Fase 3 · Expliquem i registrem
 
-reviseu si el prototip segueix l’algoritme i compleix els criteris de demostració, i escriviu tres límits: aleatorietat no criptogràfica, eixida visible i absència d’emmagatzematge/gestió segura.
+Classifiqueu cada error com a problema d’inicialització, límit, ordre o estat de reinici. Registreu el cas, el resultat i la causa que l’equip considera més probable.
 
-*Comunicació (8 min):*
+#### Fase 4 · Apliquem i millorem
 
-presenteu una pràctica de protecció basada en font fiable i expliqueu per què no usaríeu el resultat de la placa en un compte.
+Canvieu una part del programa i repetiu el mateix cas, així com els casos relacionats. Reviseu si la correcció manté el flux previst sense guardar ni mostrar una cadena completa.
 
-*Retorn (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-un altre equip deixa una pregunta sobre les proves o la seguretat. Evidència: matriu amb sis casos, versions abans/després i avaluació dels límits.
+Avalueu si el prototip segueix l’algorisme i expliqueu tres límits: aleatorietat no criptogràfica, eixida visible i absència d’emmagatzematge o gestió segura. Presenteu una pràctica de protecció basada en una font fiable i expliqueu per què no usaríeu el resultat de la placa en un compte. **Evidència:** matriu amb sis casos, versions abans/després, retorn d’un altre equip i declaració de límits.
 
 ## 📊 Criteris d’èxit i avaluació
 

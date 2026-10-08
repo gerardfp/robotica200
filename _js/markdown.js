@@ -333,10 +333,11 @@
       if (heading) {
         const level = heading[1].length;
         const title = heading[2].trim();
-        const plainTitle = title.replace(/\*\*|__|`/g, '').trim();
-        const displayTitle = plainTitle
-          .replace(/^(?:(?:sess(?:ió|io)|lliç(?:ó|o)|lesson|session)\s+\d+|s\d+)\s*[·—:.-]\s*/i, '')
-          .replace(/^\d+[.)]\s*/, '')
+      const plainTitle = title.replace(/\*\*|__|`/g, '').trim();
+      const displayTitle = plainTitle
+        .replace(/^(?:(?:sess(?:ió|io)|lliç(?:ó|o)|lesson|session)\s+\d+|s\d+)\s*[·—:.-]\s*/i, '')
+        .replace(/^(?:[a-z]{1,3}-?\d+)\s*[·—:.-]\s*/i, '')
+        .replace(/^\d+[.)]\s*/, '')
           .replace(/[.!?]+$/, '')
           .trim();
         const id = slugify(plainTitle);
@@ -374,7 +375,9 @@
         } else if (level === 4 && openStep) {
           if (!openSection) { output.push('<section class="detail-section" data-section-group="other">'); openSection = true; }
           closePhase();
-          output.push(`<section class="learning-phase"><h4>${inline(title, sourceURL)}</h4>`);
+          const phaseTitle = title.match(/^(Fase [1-5] · (?:Activem i prediem|Explorem i construïm|Expliquem i registrem|Apliquem i millorem|Comprovem i reflexionem))(?:\s*\(([^)]+)\))?$/);
+          const phaseHeading = phaseTitle ? inline(phaseTitle[1], sourceURL) : inline(title, sourceURL);
+          output.push(`<section class="learning-phase"><h4>${phaseHeading}</h4>`);
           openPhase = true;
         } else {
           output.push(`<h${level} id="${id}">${inline(title, sourceURL)}</h${level}>`);

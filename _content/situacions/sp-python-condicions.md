@@ -66,27 +66,135 @@ Rols rotatius: qui escriu la condició; qui llig els casos de prova; qui cuida l
 
 ### **Lliçó 1 · Protegim la informació sense compartir secrets (45 min).**
 
-**Conversa d’entrada (8 min):** presenteu targetes amb situacions fictícies: un dispositiu demana un codi inventat; una persona comparteix la clau amb tota la classe; una pantalla mostra un nom; un usuari crea una clau llarga única. L’alumnat classifica què podria protegir la informació i què caldria esborrar o no compartir. No es demana que ensenyen cap codi real. **Descomposició (10 min):** identifiqueu el problema del programa fictici: la resposta “correcte/incorrecte” no explica què passa si falta una dada o si la sessió acaba. Escriviu una especificació simple: una fitxa de prova concreta activa un missatge neutre; qualsevol altra entrada, inclòs cap valor, mostra “revisa la consigna”. **Python en paper i editor (20 min):** traceu `if/elif/else` amb tres valors simulats i representeu cada pas amb fletxes. En parelles, traduïu una regla a pseudocodi i a Python general sense guardar la dada introduïda en cap fitxer ni consola. Si useu editor real, tots els valors són de mostra. **Tancament (7 min):** classifiqueu les afirmacions “el programa compara aquesta entrada” i “el programa sap qui és la persona”; expliqueu per què la primera no demostra la segona. Feu una llista de coses que la maqueta mai no farà.
+#### Fase 1 · Activem i prediem
+
+**Conversa d’entrada (8 min):** presenteu targetes amb situacions fictícies: un dispositiu demana un codi inventat; una persona comparteix la clau amb tota la classe; una pantalla mostra un nom; un usuari crea una clau llarga única. L’alumnat classifica què podria protegir la informació i què caldria esborrar o no compartir. No es demana que ensenyen cap codi real.
+
+#### Fase 2 · Explorem i construïm
+
+**Descomposició (10 min):** identifiqueu el problema del programa fictici: la resposta “correcte/incorrecte” no explica què passa si falta una dada o si la sessió acaba. Escriviu una especificació simple: una fitxa de prova concreta activa un missatge neutre; qualsevol altra entrada, inclòs cap valor, mostra “revisa la consigna”.
+
+#### Fase 3 · Expliquem i registrem
+
+**Python en paper i editor (20 min):** traceu `if/elif/else` amb tres valors simulats i representeu cada pas amb fletxes.
+
+#### Fase 4 · Apliquem i millorem
+
+En parelles, traduïu una regla a pseudocodi i a Python general sense guardar la dada introduïda en cap fitxer ni consola. Si useu editor real, tots els valors són de mostra.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Tancament (7 min):** classifiqueu les afirmacions “el programa compara aquesta entrada” i “el programa sap qui és la persona”; expliqueu per què la primera no demostra la segona. Feu una llista de coses que la maqueta mai no farà.
 
 ### **Lliçó 2 · Una condició dins d’una altra, amb límits visibles (45 min).**
 
-**Activació (5 min):** joc de decisions desendollat: s’avança a la següent targeta només si es compleix la condició externa; dins de l’espai habilitat, una segona condició selecciona una de dues respostes. L’alumnat explica quan la segona regla ni tan sols es consulta. **Disseny (10 min):** dibuixeu una maqueta d’estació oberta per retornar material de joc a una safata. Regla d’exemple: si hi ha sessió activa, aleshores comprova que el color siga un dels dos acceptats; si no hi ha sessió, mostra instruccions d’inici. El color no representa una identitat. **Python (20 min):** escriviu una condició imbricada amb valors introduïts manualment i marqueu amb claudàtors l’abast de cada bloc. Proveu les rutes: sessió inactiva; activa amb color A; activa amb color B; activa amb color no admés. Compareu-la amb una cadena de `if/elif/else` i discutiu quina forma fa més clara la regla en aquest cas. **Prova física opcional (5 min):** useu el sensor de color amb targetes grans; manteniu motor inactiu i compareu el valor llegit amb l’entrada esperada. **Registre (5 min):** anoteu quina condició es consulta primer, quina branca no s’ha visitat i per què una condició imbricada pot ser difícil de llegir si acumula massa nivells.
+#### Fase 1 · Activem i prediem
+
+**Activació (5 min):** joc de decisions desendollat: s’avança a la següent targeta només si es compleix la condició externa; dins de l’espai habilitat, una segona condició selecciona una de dues respostes. L’alumnat explica quan la segona regla ni tan sols es consulta.
+
+#### Fase 2 · Explorem i construïm
+
+**Disseny (10 min):** dibuixeu una maqueta d’estació oberta per retornar material de joc a una safata. Regla d’exemple: si hi ha sessió activa, aleshores comprova que el color siga un dels dos acceptats; si no hi ha sessió, mostra instruccions d’inici. El color no representa una identitat.
+
+#### Fase 3 · Expliquem i registrem
+
+**Python (20 min):** escriviu una condició imbricada amb valors introduïts manualment i marqueu amb claudàtors l’abast de cada bloc. Proveu les rutes: sessió inactiva; activa amb color A; activa amb color B; activa amb color no admés. Compareu-la amb una cadena de `if/elif/else` i discutiu quina forma fa més clara la regla en aquest cas.
+
+#### Fase 4 · Apliquem i millorem
+
+**Prova física opcional (5 min):** useu el sensor de color amb targetes grans; manteniu motor inactiu i compareu el valor llegit amb l’entrada esperada.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Registre (5 min):** anoteu quina condició es consulta primer, quina branca no s’ha visitat i per què una condició imbricada pot ser difícil de llegir si acumula massa nivells.
 
 ### **Lliçó 3 · AND, OR i NOT en una taula de veritat (45 min).**
 
-**Modelatge corporal (8 min):** representeu amb dos gestos la condició A “fitxa de pràctica blava” i B “polsador físic activat”. El grup mostra `and` només quan A i B són certes, `or` quan almenys una és certa i `not` quan una condició no es compleix. Parleu explícitament de què significa OR inclusiu: si les dues són certes, continua sent cert. **Taula en equip (12 min):** completeu les quatre combinacions de A/B i els resultats esperats per A and B i A or B; afegiu una columna per not A. Compareu entre equips i expliqueu qualsevol fila discrepant. **Programa de simulació (18 min):** feu que un indicador de llum/console comunique els quatre estats: cap comprovació; només A; només B; totes dues. Useu `and`, `or` i `not` en regles amb propòsit distint; no els afegiu tots a una única expressió sense necessitat. Si connecteu sensor i botó, manteniu el motor desactivat. **Minirepte (7 min):** trobeu i corregiu una regla amb `or` on l’especificació demana `and`. Predigueu quin cas incorrecte passava abans de canviar-la i com la taula permet demostrar la correcció.
+#### Fase 1 · Activem i prediem
+
+**Modelatge corporal (8 min):** representeu amb dos gestos la condició A “fitxa de pràctica blava” i B “polsador físic activat”. El grup mostra `and` només quan A i B són certes, `or` quan almenys una és certa i `not` quan una condició no es compleix. Parleu explícitament de què significa OR inclusiu: si les dues són certes, continua sent cert.
+
+#### Fase 2 · Explorem i construïm
+
+**Taula en equip (12 min):** completeu les quatre combinacions de A/B i els resultats esperats per A and B i A or B; afegiu una columna per not A. Compareu entre equips i expliqueu qualsevol fila discrepant.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programa de simulació (18 min):** feu que un indicador de llum/console comunique els quatre estats: cap comprovació; només A; només B; totes dues.
+
+#### Fase 4 · Apliquem i millorem
+
+Useu `and`, `or` i `not` en regles amb propòsit distint; no els afegiu tots a una única expressió sense necessitat. Si connecteu sensor i botó, manteniu el motor desactivat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Minirepte (7 min):** trobeu i corregiu una regla amb `or` on l’especificació demana `and`. Predigueu quin cas incorrecte passava abans de canviar-la i com la taula permet demostrar la correcció.
 
 ### **Lliçó 4 · Dues comprovacions, una resposta prudent (45–90 min).**
 
-**Pregunta de disseny (10 min):** com podem combinar una fitxa de color i la pressió d’un sensor de força per donar una resposta de prova? Definiu primer la regla en llenguatge natural, per exemple: l’assaig s’accepta si la fitxa és blava *i* el sensor es prem després que aparega la fitxa; si la fitxa no es reconeix, el sistema no interpreta el polsador com a acceptació. **Maqueta i pseudocodi (10–15 min):** col·loqueu el sensor de color de manera fixa i reserveu el sensor de força com a entrada manual; representeu en paper què vol dir “després” (estat/ordre de passos) en lloc de fingir simultaneïtat si el codi no l’està comprovant. Un equip pot prototipar amb fitxes mentre un altre dissenya l’arbre de decisions. **Implementació (15–30 min):** convertiu la regla en funcions petites, una per llegir cada entrada i una per decidir/mostrar estat. Creeu variables booleans amb noms que descriguen la condició. Afegiu branca per a sensor sense lectura, pressió abans d’hora, pressió absent i una combinació no prevista. Només la consola, la llum o una bandera mecànica de recorregut curt mostren la decisió; el dispositiu no controla cap accés real. **Proves (10–25 min):** executeu una taula de casos, incloent totes dues entrades falses, només A, només B i totes dues certes. Repetiu una combinació tres vegades per observar si el sensor dona lectures estables, i indiqueu si cada cas passa al codi o a la lectura del sensor. **Reflexió:** quina dada rep el programa? quina regla ha definit l’equip? quina afirmació no podem fer sobre la seguretat d’un objecte real?
+#### Fase 1 · Activem i prediem
+
+**Pregunta de disseny (10 min):** com podem combinar una fitxa de color i la pressió d’un sensor de força per donar una resposta de prova? Definiu primer la regla en llenguatge natural, per exemple: l’assaig s’accepta si la fitxa és blava *i* el sensor es prem després que aparega la fitxa; si la fitxa no es reconeix, el sistema no interpreta el polsador com a acceptació.
+
+#### Fase 2 · Explorem i construïm
+
+**Maqueta i pseudocodi (10–15 min):** col·loqueu el sensor de color de manera fixa i reserveu el sensor de força com a entrada manual; representeu en paper què vol dir “després” (estat/ordre de passos) en lloc de fingir simultaneïtat si el codi no l’està comprovant. Un equip pot prototipar amb fitxes mentre un altre dissenya l’arbre de decisions.
+
+#### Fase 3 · Expliquem i registrem
+
+**Implementació (15–30 min):** convertiu la regla en funcions petites, una per llegir cada entrada i una per decidir/mostrar estat. Creeu variables booleans amb noms que descriguen la condició. Afegiu branca per a sensor sense lectura, pressió abans d’hora, pressió absent i una combinació no prevista. Només la consola, la llum o una bandera mecànica de recorregut curt mostren la decisió; el dispositiu no controla cap accés real.
+
+#### Fase 4 · Apliquem i millorem
+
+**Proves (10–25 min):** executeu una taula de casos, incloent totes dues entrades falses, només A, només B i totes dues certes. Repetiu una combinació tres vegades per observar si el sensor dona lectures estables, i indiqueu si cada cas passa al codi o a la lectura del sensor.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Reflexió:** quina dada rep el programa? quina regla ha definit l’equip? quina afirmació no podem fer sobre la seguretat d’un objecte real?
 
 ### **Lliçó 5 · Escape room de l’aula: obrir una ruta de pistes simulada (90 min).**
 
-**Encàrrec (10 min):** cada equip crearà una estació de repte de taula amb dues comprovacions lògiques, un senyal clar i una via alternativa perquè el joc es puga completar sense sensor si cal. No es tanca ningú dins d’un espai ni es creen claus secretes. Les “pistes” són fitxes públiques i fictícies; el resultat activa una targeta de pròxima instrucció, no un pany. **Ideació (12 min):** cada membre esbossa una microprova; l’equip n’escull una amb tres criteris: comprensible sense ajuda, comprovable amb quatre o més casos i resoluble amb els sensors presents. Escriviu instruccions curtes i la resposta correcta en un sobre docent separat. **Construcció (18 min):** feu un escenari o recorregut de cartó i col·loqueu estacions d’entrada; si un motor mou una fletxa o senyal, delimiteu recorregut i velocitat. L’estació sempre queda oberta i l’aturada és accessible. **Programa (20 min):** formuleu almenys una regla amb `and` i una amb `or` o `not`, comenteu-les amb una frase de llenguatge natural i tracteu explícitament entrada invàlida o desconeguda. Dibuixeu arbre de decisió i convertiu-lo a blocs Python indentats. **Validació entre equips (20 min):** un altre equip intenta resoldre el repte sense que li expliquen la resposta; prova cas correcte, incomplet, ambigu i no previst. Registra si les instruccions són clares, si el programa ofereix una resposta sense revelar dades i si cada pista és accessible. **Iteració i mostra (10 min):** l’equip creador millora una instrucció o una condició i demostra la versió revisada. Si no es pot provar amb sensor, marca clarament aquella part com a simulada en paper.
+#### Fase 1 · Activem i prediem
+
+**Encàrrec (10 min):** cada equip crearà una estació de repte de taula amb dues comprovacions lògiques, un senyal clar i una via alternativa perquè el joc es puga completar sense sensor si cal. No es tanca ningú dins d’un espai ni es creen claus secretes. Les “pistes” són fitxes públiques i fictícies; el resultat activa una targeta de pròxima instrucció, no un pany. **Ideació (12 min):** cada membre esbossa una microprova; l’equip n’escull una amb tres criteris: comprensible sense ajuda, comprovable amb quatre o més casos i resoluble amb els sensors presents. Escriviu instruccions curtes i la resposta correcta en un sobre docent separat.
+
+#### Fase 2 · Explorem i construïm
+
+**Construcció (18 min):** feu un escenari o recorregut de cartó i col·loqueu estacions d’entrada; si un motor mou una fletxa o senyal, delimiteu recorregut i velocitat. L’estació sempre queda oberta i l’aturada és accessible.
+
+#### Fase 3 · Expliquem i registrem
+
+**Programa (20 min):** formuleu almenys una regla amb `and` i una amb `or` o `not`, comenteu-les amb una frase de llenguatge natural i tracteu explícitament entrada invàlida o desconeguda. Dibuixeu arbre de decisió i convertiu-lo a blocs Python indentats.
+
+#### Fase 4 · Apliquem i millorem
+
+**Validació entre equips (20 min):** un altre equip intenta resoldre el repte sense que li expliquen la resposta; prova cas correcte, incomplet, ambigu i no previst. Registra si les instruccions són clares, si el programa ofereix una resposta sense revelar dades i si cada pista és accessible.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Iteració i mostra (10 min):** l’equip creador millora una instrucció o una condició i demostra la versió revisada. Si no es pot provar amb sensor, marca clarament aquella part com a simulada en paper.
 
 ### **Lliçó 6 · Feedback, revisió i límits del prototip (30–45 min).**
 
-**Visita de prova (10 min):** una altra parella usa l’estació de pistes; l’equip autor observa sense donar indicacions i anota els punts on cal ajuda o la lògica produeix una eixida sorprenent. No s’enregistren veus, noms ni respostes personals. **Feedback específic (8 min):** feu servir “he observat…”, “la regla diu…”, “aquest cas encara no està provat…”. El feedback tracta d’una condició, una instrucció o una resposta, no de la capacitat dels autors. **Decisió (5 min):** l’equip marca suggeriments adoptats o rebutjats i la raó basada en especificació/prova. **Revisió (10 min):** canvieu una branca, una expressió o el text de la indicació; repetiu la mateixa fila de la taula i una fila diferent. **Autoavaluació (5–12 min):** expliqueu la diferència entre la condició del programa i una garantia de ciberseguretat; identifiqueu una entrada que hauria de continuar sense resposta. Puntueu en privat treball col·laboratiu, documentació i gestió del temps, amb una acció de millora per al següent repte.
+#### Fase 1 · Activem i prediem
+
+**Visita de prova (10 min):** una altra parella usa l’estació de pistes; l’equip autor observa sense donar indicacions i anota els punts on cal ajuda o la lògica produeix una eixida sorprenent. No s’enregistren veus, noms ni respostes personals.
+
+#### Fase 2 · Explorem i construïm
+
+**Feedback específic (8 min):** feu servir “he observat…”, “la regla diu…”, “aquest cas encara no està provat…”. El feedback tracta d’una condició, una instrucció o una resposta, no de la capacitat dels autors.
+
+#### Fase 3 · Expliquem i registrem
+
+**Decisió (5 min):** l’equip marca suggeriments adoptats o rebutjats i la raó basada en especificació/prova.
+
+#### Fase 4 · Apliquem i millorem
+
+**Revisió (10 min):** canvieu una branca, una expressió o el text de la indicació; repetiu la mateixa fila de la taula i una fila diferent.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Autoavaluació (5–12 min):** expliqueu la diferència entre la condició del programa i una garantia de ciberseguretat; identifiqueu una entrada que hauria de continuar sense resposta. Puntueu en privat treball col·laboratiu, documentació i gestió del temps, amb una acció de millora per al següent repte.
 
 ## 🧪 Evidències i avaluació
 

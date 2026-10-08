@@ -41,30 +41,69 @@ Comproveu la distància de moviment en el Tale-Bot disponible: el valor predeter
 
 ### **Sessió 1 · Dissenyem i llegim el mapa.**
 
-1. Exploreu què representa el mapa, què indiquen les targetes de fletxes i com es poden moure les fitxes adhesives sense tapar les caselles.
-2. Marqueu files i columnes amb lletres, nombres o un altre codi visual; compteu les caselles.
-3. Cada equip col·loca cinc animals i una marca d’inici orientada. Si tria fauna valenciana, contrasta els noms amb una font local fiable.
-4. Practiqueu descriure una posició i torneu a col·locar el mapa igual després de cada ronda.
+#### Fase 1 · Activem i prediem
 
-**Evidència:** mapa propi amb llegenda, files, columnes, inici orientat i cinc metes identificades.
+Exploreu què representa el mapa i predigueu com es pot indicar una destinació sense tapar les caselles.
+
+#### Fase 2 · Explorem i construïm
+
+Observeu què indiquen les targetes de fletxes i com es poden moure les fitxes adhesives sense cobrir el recorregut.
+
+#### Fase 3 · Expliquem i registrem
+
+Marqueu files i columnes amb lletres, nombres o un altre codi visual. Practiqueu descriure una posició i compteu les caselles.
+
+#### Fase 4 · Apliquem i millorem
+
+Col·loqueu cinc animals i una marca d’inici orientada. Si trieu fauna valenciana, contrasteu els noms amb una font local fiable. Torneu a col·locar el mapa igual després de cada ronda.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** mapa amb llegenda, files, columnes, inici orientat i cinc metes. Una altra parella pot descriure correctament una destinació?
 
 ### **Sessió 2 · Programem cinc arribades.**
 
-1. Una persona tria un animal i l’equip localitza la destinació.
-2. Compteu les caselles entre inici i meta, col·loqueu les targetes «avant» i verbalitzeu la predicció.
-3. Abans de prémer *Play*, compteu els indicadors lluminosos i comproveu si n’hi ha un per cada ordre.
-4. Executeu la ruta, recolliu un marcador en arribar i repetiu amb els altres quatre animals, reiniciant des de la marca orientada. Si no arriba, compareu la posició final amb la predicció abans de canviar el programa.
+#### Fase 1 · Activem i prediem
 
-**Evidència:** cinc seqüències de targetes amb predicció, destinació i comprovació dels indicadors.
+Una persona tria un animal i l’equip localitza la destinació al mapa.
+
+#### Fase 2 · Explorem i construïm
+
+Compteu les caselles entre inici i meta i col·loqueu les targetes «avant» en l’ordre previst.
+
+#### Fase 3 · Expliquem i registrem
+
+Verbalitzeu la predicció. Abans de prémer *Play*, compteu els indicadors lluminosos i comproveu que n’hi ha un per cada ordre.
+
+#### Fase 4 · Apliquem i millorem
+
+Executeu la ruta, recolliu un marcador en arribar i repetiu amb els altres quatre animals, reiniciant des de la marca orientada. Si Tale-Bot no arriba, compareu la posició final amb la predicció abans de canviar el programa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** cinc seqüències amb predicció, destinació i comprovació dels indicadors. Quina comprovació us ha permés detectar abans una ordre absent?
 
 ### **Sessió 3 · Comparem, depurem i expliquem.**
 
-1. Ordeneu les cinc rutes de la que necessita menys ordres a la que en necessita més i contrasteu els recomptes.
-2. Trieu una ruta que haja acabat abans o després de la fita. Comproveu el recompte, la grandària de la quadrícula, l’orientació i els indicadors.
-3. Corregiu una sola cosa i repetiu la prova des del mateix punt.
-4. Expliqueu quina ruta era més llarga o més curta i quin indici ha ajudat a trobar l’error.
+#### Fase 1 · Activem i prediem
 
-**Evidència:** seqüència abans/després, correcció explicada i resposta oral, gestual o pictogràfica a les preguntes de tancament.
+Ordeneu les cinc rutes de la que necessita menys ordres a la que en necessita més i predigueu quina serà més llarga.
+
+#### Fase 2 · Explorem i construïm
+
+Poseu els recomptes costat per costat i comproveu que tots parteixen de la mateixa casella, orientació i destinació. Marqueu en el mapa els trams rectes i els girs: dues rutes poden tindre el mateix nombre d’ordres i longitud diferent, o a l’inrevés. Si hi ha desacord, reconstruïu una ruta amb una fitxa abans de tornar a programar Tale-Bot. Registreu també si la diferència prové del recorregut o de com s’ha comptat una ordre.
+
+#### Fase 3 · Expliquem i registrem
+
+Trieu una ruta que haja acabat abans o després de la fita. Comproveu recompte, mida de la quadrícula, orientació i indicadors; anoteu on va deixar de coincidir amb la predicció.
+
+#### Fase 4 · Apliquem i millorem
+
+Corregiu una sola cosa i repetiu des del mateix punt. Expliqueu quina ruta era més llarga o més curta i quin indici ha ajudat a trobar l’error.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** seqüència abans/després, correcció explicada i resposta oral, gestual o pictogràfica. Quina ordre heu canviat i quina observació justifica la decisió?
 
 ## Conducció de les sessions
 

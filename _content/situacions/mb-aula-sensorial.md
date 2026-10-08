@@ -41,91 +41,91 @@ Establiu criteris visibles abans de programar: el recurs roman apagat fins que a
 
 ### **Sessió 1 · Explorar entorns i avaluar ajudes (Exploring learning environments).**
 
-*Encàrrec (5 min):*
+#### Fase 1 · Activem i prediem
 
-llegiu una targeta fictícia amb un objectiu concret, sense etiquetar una persona.
+Llegiu una targeta fictícia amb un objectiu concret, sense etiquetar una persona. Predigueu quina informació de l’entorn pot ajudar a fer més previsible una rutina.
 
-*Observar l’entorn (10 min):*
+#### Fase 2 · Explorem i construïm
 
-en un mapa inventat d’aula, marqueu fonts de canvi o informació (inici de tasca, cartell, rellotge, soroll representat amb una targeta); no augmenteu llum ni soroll real per fer la prova.
+En un mapa inventat d’aula, marqueu fonts de canvi o informació —inici de tasca, cartell, rellotge o soroll representat amb una targeta—. No augmenteu llum ni soroll real per fer la prova.
 
-*Comparar opcions (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-examineu tres exemples: pictograma imprés, temporitzador analògic i micro:bit amb una icona. Useu una matriu criteri/opció —control de la persona, comprensibilitat, facilitat d’aturar-se, accessibilitat, cost i manteniment— i anoteu què no sabeu.
+Compareu tres opcions: pictograma imprés, temporitzador analògic i micro:bit amb una icona. Useu una matriu de criteris: control de la persona, comprensibilitat, facilitat d’aturada, accessibilitat, cost i manteniment; anoteu també què no sabeu.
 
-*Proposta inicial (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-trieu què provaríeu per a l’encàrrec i què deixareu fora.
+Trieu què provaríeu per a l’encàrrec fictici i què deixareu fora. Reviseu la proposta perquè l’opció impresa, el control de la persona i la possibilitat de declinar-la continuen disponibles.
 
-*Tancament (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-expliqueu qui decideix utilitzar el recurs i com pot declinar-lo. Evidència: mapa, comparació i criteris acordats.
+Expliqueu qui decideix utilitzar el recurs i com pot no usar-lo. **Evidència:** mapa d’entorn, comparació d’ajudes i criteris acordats.
 
 ### **Sessió 2 · Dissenyar patrons de llum amb repetició (Light patterns).**
 
-*Recuperar criteris (5 min):*
+#### Fase 1 · Activem i prediem
 
-comproveu que l’opció impresa i l’estat apagat continuen disponibles.
+Recupereu els criteris de la sessió anterior i comproveu que l’opció impresa i l’estat apagat continuen disponibles. Predigueu com serà el comportament d’un patró estàtic o lent.
 
-*Escriure pseudocodi (10 min):*
+#### Fase 2 · Explorem i construïm
 
-descriviu una seqüència “inici voluntari → mostrar patró → pausa → acabar en neutre”.
+Escriviu pseudocodi amb la seqüència «inici voluntari → mostrar patró → pausa → acabar en neutre». Dissenyeu dues imatges 5 × 5 de contrast clar; eviteu animacions, alternança ràpida i estímuls inesperats.
 
-*Crear patrons (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-dissenyeu dues imatges 5 × 5 de contrast clar; eviteu animacions, alternança ràpida i estímuls inesperats.
+Traslladeu un patró a MakeCode i useu una repetició de durada finita o una pausa perquè el comportament siga previsible. Registreu com correspon cada bloc amb el pseudocodi.
 
-*Programar (15 min):*
+#### Fase 4 · Apliquem i millorem
 
-traslladeu un patró a MakeCode i useu una repetició de durada finita o una pausa perquè el comportament siga previsible.
+Compareu el codi amb els criteris i reviseu-lo si s’activa sol, no acaba en neutre o no és fàcil d’aturar. No demaneu a companys que valoren reaccions corporals ni comoditat personal.
 
-*Avaluar (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-compareu el codi amb els criteris; no demaneu a companys que valoren reaccions corporals ni comoditat personal. Evidència: pseudocodi, dues graelles, codi i revisió basada en criteris tècnics.
+Comproveu que el patró només comença amb una acció voluntària i acaba de manera previsible. **Evidència:** pseudocodi, dues graelles, codi i revisió segons criteris tècnics.
 
 ### **Sessió 3 · Algoritme amb entrada, selecció i eixida (Developing pattern algorithms).**
 
-*Model d’estats (10 min):*
+#### Fase 1 · Activem i prediem
 
-dibuixeu “apagat”, “opció 1”, “opció 2” i “retorn a neutre”.
+Dibuixeu els estats «apagat», «opció 1», «opció 2» i «retorn a neutre». Predigueu què ha de passar quan no es prem cap botó, se’n tria una opció o s’atura.
 
-*Planificar controls (10 min):*
+#### Fase 2 · Explorem i construïm
 
-decidiu quin botó tria una opció i quin l’atura o la canvia; el programa no s’activa per llum, soroll, presència o moviment de la persona.
+Decidiu quin botó tria una opció i quin l’atura o la canvia. El programa no s’activa per llum, soroll, presència o moviment de la persona. Escriviu pseudocodi amb condicions «si/opció», «si/aturada» i una iteració limitada.
 
-*Escriure i simular (15 min):*
+#### Fase 3 · Expliquem i registrem
 
-escriviu pseudocodi amb `si/opció`, `si/aturada` i una iteració limitada; una parella l’executa com a ordinador seguint literalment les instruccions.
+Una parella fa d’ordinador i executa literalment les instruccions. Registreu les proves de no activació, opció 1, opció 2, canvi d’opció, aturada i un cas inesperat.
 
-*Proves de paper (10 min):*
+#### Fase 4 · Apliquem i millorem
 
-executeu els casos “no s’ha premut res”, “tria opció 1”, “tria opció 2”, “canvia d’opció” i “atura”; afegiu un cas inesperat.
+Localitzeu instruccions ambigües o una branca sense eixida i corregiu-les. Torneu a executar els casos afectats per comprovar la revisió.
 
-*Revisió (5 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-localitzeu instruccions ambigües i corregiu-les. Evidència: diagrama d’estats, pseudocodi depurat i matriu de casos.
+Verifiqueu que el diagrama inclou entrada, selecció, eixida i retorn a estat neutre. **Evidència:** diagrama d’estats, pseudocodi depurat i matriu de casos.
 
 ### **Sessió 4 · Construir, provar i avaluar l’ajuda (Building sensory aids).**
 
-*Preparar l’artefacte (8 min):*
+#### Fase 1 · Activem i prediem
 
-col·loqueu micro:bit en un suport estable sense tapar botons ni pantalla, o manteniu-la plana si això facilita controlar-la.
+Predigueu com es podrà activar i aturar el prototip abans de muntar-lo. Comproveu que la prova es pot fer amb simulador, captura estàtica o paper, sense mirar el patró.
 
-*Programar i seguir el pla (15 min):*
+#### Fase 2 · Explorem i construïm
 
-implementeu l’algoritme amb entrades, selecció, una repetició limitada i eixida estàtica; no afegiu automatismes que observen la classe.
+Col·loqueu la micro:bit en un suport estable sense tapar botons ni pantalla, o deixeu-la plana si així és més fàcil controlar-la. Implementeu l’algoritme amb entrades, selecció, una repetició limitada i eixida estàtica; no afegiu automatismes que observen la classe.
 
-*Prova tècnica (12 min):*
+#### Fase 3 · Expliquem i registrem
 
-recorreu els casos de la sessió 3, anoteu eixida esperada/real, reviseu un error i torneu a executar.
+Recorreu els casos de la sessió anterior i anoteu eixida esperada i real. Reviseu un error i torneu a executar-lo. Els comentaris de la galeria seran sobre el disseny, no sobre les reaccions de cap persona.
 
-*Auditoria de criteris (8 min):*
+#### Fase 4 · Apliquem i millorem
 
-comproveu que per defecte queda apagat, que l’opció en paper és equivalent per a comprendre l’avís i que sempre és fàcil deixar el recurs.
+Auditeu els criteris: per defecte queda apagat, l’opció en paper és equivalent per comprendre l’avís i sempre és fàcil deixar el recurs. Reviseu el programa si algun d’aquests punts falla.
 
-*Galeria (7 min):*
+#### Fase 5 · Comprovem i reflexionem
 
-presenteu codi, criteris i límit conegut; els comentaris són sobre el disseny, no sobre les reaccions d’una persona. Evidència: prototip, programa revisat, matriu de proves i autoavaluació.
+Presenteu el codi, els criteris i un límit conegut. **Evidència:** prototip, programa revisat, matriu de proves i autoavaluació tècnica.
 
 ## 📊 Avaluació i evidències
 

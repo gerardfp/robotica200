@@ -64,21 +64,93 @@ Equips de 2–4 persones; ningú treballa tot sol en aquesta tasca. Rols rotatiu
 
 ## 📅 Desenvolupament del projecte · quatre fases
 
-### **Fase 1 · Investigar i delimitar (2–3 sessions · 100–120 min).**
+### **Investiguem i delimitem · 2–3 sessions (100–120 min)**
 
-Feu una rotació breu per les sis propostes (cinc minuts de presentació per àmbit) i examineu fonts recomanades. Individualment, cada alumne anota dues preguntes o necessitats possibles sense revelar dades personals. En grup, genereu almenys tres problemes delimitats, busqueu fonts verificables i compareu qui es veu afectat, què se sap, què encara és incert i quina acció queda dins de les possibilitats escolars. Escriviu una frase de problema (“A [context fictici/espai investigat] costa… perquè…; volem explorar si…”) i dues o tres idees de solució. Definiu una persona usuària com a perfil de disseny sense atribuir-li experiències que no s’han consultat. Analitzeu interacció humà–ordinador, biaix, accessibilitat, conseqüències imprevistes, privacitat i materials. Feu un primer càlcul de viabilitat: temps disponible, set, peces, sensors i dades. Abans de continuar, mostreu a la docent problema, fonts, idea, efecte social/ambiental i límits; si falta informació o hi ha risc de confondre maqueta amb aplicació real, ajusteu la pregunta o trieu un altre repte.
+#### Fase 1 · Activem i prediem
 
-### **Fase 2 · Planificar el model i revisar el disseny (2 sessions · 100–120 min).**
+Feu una rotació breu per les sis propostes (cinc minuts de presentació per àmbit). Individualment, cada alumne anota dues preguntes o necessitats possibles sense revelar dades personals. Predigueu quines necessitats es poden investigar de manera segura i quines dades caldria consultar abans de proposar una solució.
 
-Feu esbossos des de dalt i de costat, marqueu dimensions i peces que es mouen, connectors/ports, punts d’entrada i sortida, llums/sons i llocs on el sensor pren una lectura. Escriviu pseudocodi i, quan ajude, diagrama de flux; descomponeu el programa en subcomponents o blocs propis. Definiu una funció mesurable per a cada component i què constitueix un resultat correcte. El pla explica com el sensor i el motor col·laboren; no és necessari usar-los tots si el repte es resol millor amb entrada manual, llum o so. Prepareu casos de prova abans de construir, incloent almenys un cas límit i un d’error. Demaneu feedback a dos companys amb tres preguntes: s’entén què intenta fer el projecte? quina part podria fallar o excloure algú? què funciona o resulta atractiu? Registreu comentari rebut, acceptat o rebutjat i justificació. La docent revisa esbós, maquinari/programari, pseudocodi, criteris i feedback; després l’equip documenta qualsevol canvi del disseny.
+#### Fase 2 · Explorem i construïm
 
-### **Fase 3 · Construir, programar i iterar (3–4 sessions · 180–200 min).**
+Examineu fonts recomanades i verificables. En grup, genereu almenys tres problemes delimitats i compareu qui es veu afectat, què se sap, què encara és incert i quina acció queda dins de les possibilitats escolars. Escriviu una frase de problema (“A [context fictici/espai investigat] costa… perquè…; volem explorar si…”) i dues o tres idees de solució.
 
-Construïu una prova mínima d’un sol subcomponent i programeu una resposta observable. Abans d’afegir funcionalitats, proveu si la base o mecanisme es mou com s’espera, si la lectura del sensor és consistent en l’entorn previst i si el programa té una aturada manual clara. Documenteu una primera versió i una taula de prova amb condicions inicials, predicció, resultat i observació. Integreu subsistemes d’un en un; comenteu blocs, anomeneu variables, proveu les condicions esperades/inesperades i useu dades adequades per depurar. Feu almenys dues iteracions justificades: una pot ser mecànica (estabilitat, agarre, alineació) i una altra de programació (llindar, ordre, bucle o condició). Canvieu una variable per prova sempre que siga possible. Si la prova falla, conserveu el resultat com a evidència i decidiu si reviseu hipòtesi, mecanisme, sensor o criteri. La docent revisa codi, interacció, seguretat, registre i una iteració; l’equip no passa a la mostra fins que pot demostrar una funció reduïda i explicar-ne els límits. L’èxit és el procés informat, no una automatització completa.
+#### Fase 3 · Expliquem i registrem
 
-### **Fase 4 · Presentar, avaluar i tancar (1–2 sessions · 80–100 min).**
+Definiu una persona usuària com a perfil de disseny sense atribuir-li experiències que no s’han consultat. Registreu les fonts, les preguntes obertes, els efectes socials i ambientals possibles i els límits del que es pot afirmar.
 
-Prepareu una presentació breu de 3–5 minuts amb necessitat, font principal, criteris, model, programa, una prova que funciona, una prova que ha fallat o queda pendent, feedback incorporat, efectes previstos i límits. Feu una demostració amb espai delimitat, velocitat baixa i aturada controlada; si el prototip és inestable, presenteu el vídeo només del model o executeu la prova amb simulació en paper, explicant-ho. Altres equips fan preguntes i donen una observació favorable, una pregunta i una proposta; cada equip anota quin comentari canviaria el disseny amb més temps. Avalueu el producte amb rúbrica docent/equip, després el funcionament cooperatiu i finalment la participació individual. Desmunteu els models, classifiqueu peces, feu inventari dels sets i registreu elements que falten o sobren. Cada persona pot completar una autoavaluació confidencial de contribució, feedback, temps i gestió de material; es pot respondre amb exemples del rol sense autovalorar interessos o personalitat.
+#### Fase 4 · Apliquem i millorem
+
+Analitzeu interacció humà–ordinador, biaix, accessibilitat, conseqüències imprevistes, privacitat i materials. Feu un primer càlcul de viabilitat: temps disponible, set, peces, sensors i dades. Si falta informació o hi ha risc de confondre maqueta amb aplicació real, ajusteu la pregunta o trieu un altre repte.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Mostreu a la docent el problema, les fonts, la idea triada, l’efecte social/ambiental i els límits. **Evidència:** frase del problema, fonts consultades, dues o tres idees inicials i una justificació de la selecció.
+
+### **Planifiquem el model i revisem el disseny · 2 sessions (100–120 min)**
+
+#### Fase 1 · Activem i prediem
+
+Recupereu la necessitat i els criteris acordats. Abans d’esbossar, cada membre dibuixa una idea i prediu quina entrada, acció i resposta observable podria resoldre una part del problema.
+
+#### Fase 2 · Explorem i construïm
+
+Feu esbossos des de dalt i de costat, marqueu dimensions i peces que es mouen, connectors/ports, punts d’entrada i eixida, llums/sons i llocs on el sensor pren una lectura. Escriviu pseudocodi i, quan ajude, diagrama de flux; descomponeu el programa en subcomponents o blocs propis.
+
+#### Fase 3 · Expliquem i registrem
+
+Definiu una funció mesurable per a cada component i què constitueix un resultat correcte. El pla explica com el sensor i el motor col·laboren; no és necessari usar-los tots si el repte es resol millor amb entrada manual, llum o so. Prepareu casos de prova abans de construir, incloent almenys un cas límit i un d’error.
+
+#### Fase 4 · Apliquem i millorem
+
+Demaneu feedback a dos companys: s’entén què intenta fer el projecte? quina part podria fallar o excloure algú? què funciona o resulta atractiu? Registreu cada comentari, si s’accepta o es rebutja, i la justificació. Després de la revisió docent, documenteu qualsevol canvi del disseny.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Reviseu amb la docent l’esbós, el maquinari/programari, el pseudocodi, els criteris i el feedback. **Evidència:** esbós anotat, pseudocodi, casos de prova i registre de les decisions de disseny.
+
+### **Construïm, programem i iterem · 3–4 sessions (180–200 min)**
+
+#### Fase 1 · Activem i prediem
+
+Trieu un subcomponent prioritari i formuleu què espereu que passe quan reba una entrada. Abans de construir, acordeu una aturada manual clara i les condicions inicials de la primera prova.
+
+#### Fase 2 · Explorem i construïm
+
+Construïu una prova mínima d’un sol subcomponent i programeu una resposta observable. Abans d’afegir funcionalitats, proveu si la base o el mecanisme es mou com s’espera i si la lectura del sensor és consistent en l’entorn previst.
+
+#### Fase 3 · Expliquem i registrem
+
+Documenteu la primera versió en una taula amb condicions inicials, predicció, resultat i observació. Integreu subsistemes d’un en un; comenteu blocs, anomeneu variables i proveu les condicions esperades i inesperades.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu almenys dues iteracions justificades: una pot ser mecànica (estabilitat, agarre, alineació) i una altra de programació (llindar, ordre, bucle o condició). Canvieu una variable per prova sempre que siga possible. Si la prova falla, conserveu el resultat i decidiu si reviseu hipòtesi, mecanisme, sensor o criteri.
+
+#### Fase 5 · Comprovem i reflexionem
+
+La docent revisa codi, interacció, seguretat, registre i una iteració. L’equip només passa a la mostra quan pot demostrar una funció reduïda i explicar-ne els límits. **Evidència:** dues versions comparables i decisions justificades amb dades. L’èxit és el procés informat, no una automatització completa.
+
+### **Presentem, avaluem i tanquem · 1–2 sessions (80–100 min)**
+
+#### Fase 1 · Activem i prediem
+
+Prepareu una presentació breu de 3–5 minuts amb necessitat, font principal, criteris, model i programa. Trieu una prova que funciona i una que ha fallat o queda pendent; predigueu quins límits o preguntes convé explicar amb més claredat.
+
+#### Fase 2 · Explorem i construïm
+
+Feu una demostració amb espai delimitat, velocitat baixa i aturada controlada. Si el prototip és inestable, presenteu un vídeo només del model o executeu la prova amb simulació en paper, explicant quin format s’ha utilitzat.
+
+#### Fase 3 · Expliquem i registrem
+
+Incloeu el feedback incorporat, els efectes previstos i els límits. Altres equips fan preguntes i donen una observació favorable, una pregunta i una proposta; cada equip anota quin comentari canviaria el disseny amb més temps.
+
+#### Fase 4 · Apliquem i millorem
+
+Avalueu el producte amb la rúbrica docent/equip, després el funcionament cooperatiu i finalment la participació individual. Useu les preguntes rebudes per concretar una millora possible, sense presentar-la com a resultat provat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Desmunteu els models, classifiqueu peces, feu inventari dels sets i registreu elements que falten o sobren. Cada persona pot completar una autoavaluació confidencial sobre contribució, feedback, temps i gestió de material, amb exemples del rol. **Evidència:** presentació, retorn rebut, rúbrica i inventari final.
 
 ## 🗂️ Documents del portafolis
 

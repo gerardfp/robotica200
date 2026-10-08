@@ -48,21 +48,69 @@ Un set està pensat per a grups de fins a sis. Repartiu rols i canvieu-los entre
 
 ### **Sessió 1 · Joc de bitllets de colors i símbols.**
 
-Trieu tres punts de l’aula com a estacions i poseu a cada lloc un maó de color amb un pictograma: parc, biblioteca o jardí. Una persona fa de conductora i reparteix un bitllet a cada passatgera. La regla es diu en veu alta o s’assenyala amb una targeta: «si tens el bitllet amb l’arbre, aleshores vas cap al jardí». La persona camina o mou una fitxa fins al punt corresponent; en arribar, compara la icona del bitllet amb la de l’estació.
+#### Fase 1 · Activem i prediem
 
-Canvieu colors, símbols o destinacions i comproveu que la regla continua sent clara. Si un bitllet pot correspondre a més d’una estació, pregunteu què cal modificar: la llegenda, el símbol o la instrucció. Acabeu posant dos bitllets al costat de dues branques dibuixades i fent una predicció de camí. **Evidència:** parelles bitllet–destinació, regla condicional i una observació sobre com s’ha comprovat la resposta. **Suport:** treballeu amb dues estacions i un sol pictograma; **ampliació:** afegiu un bitllet que indique una destinació i una parada intermèdia.
+Trieu tres punts de l’aula com a estacions i poseu a cada lloc un maó de color amb un pictograma: parc, biblioteca o jardí. Pregunteu quin bitllet podria enviar una passatgera a cadascun dels llocs abans d’explicar la regla.
+
+#### Fase 2 · Explorem i construïm
+
+Una persona fa de conductora i reparteix un bitllet a cada passatgera. La regla es diu en veu alta o s’assenyala amb una targeta: «si tens el bitllet amb l’arbre, aleshores vas cap al jardí». La persona camina o mou una fitxa fins al punt corresponent.
+
+#### Fase 3 · Expliquem i registrem
+
+En arribar, compareu la icona del bitllet amb la de l’estació. Registreu parelles bitllet–destinació i formuleu la regla amb «si… aleshores…», oralment, amb pictogrames o amb una tira de fletxes.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu colors, símbols o destinacions i comproveu que la regla continua sent clara. Si un bitllet pot correspondre a més d’una estació, decidiu què cal modificar: la llegenda, el símbol o la instrucció. Com a suport, treballeu amb dues estacions i un sol pictograma.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Acabeu posant dos bitllets al costat de dues branques dibuixades i fent una predicció de camí. **Evidència:** parelles bitllet–destinació, regla condicional i una observació de com s’ha comprovat la resposta. **Ampliació:** afegiu un bitllet que indique una destinació i una parada intermèdia.
 
 ### **Sessió 2 · Construïm la Y i fem la tria manual.**
 
-Munteu la via en Y, col·loqueu una destinació en cada branca i situeu maons d’acció perquè el tren puga aturar-se, d’acord amb les funcions que el grup ja ha comprovat. La conductora rep un bitllet, verbalitza o assenyala la regla i mou l’agulla roja abans d’engegar el tren. Una altra persona posa una figura passatgera al tren; la resta observa per separat el moviment de l’agulla i el punt on el tren s’atura.
+#### Fase 1 · Activem i prediem
 
-Feu un intent per a cada bitllet i canvieu els rols. Registreu: símbol del bitllet, branca triada, posició de l’agulla, estació observada i si coincideix amb la predicció. Si no coincideix, reviseu primer l’agulla, la connexió de la via i la posició del maó d’acció; no atribuïu el resultat al bitllet perquè el tren no el llig. **Evidència:** dues rutes executades i una discrepància descrita amb allò que s’ha vist. El control i l’accionament es fan aturats o amb la via buida, segons les instruccions del set; ningú posa la mà davant del tren.
+Abans de muntar, mostreu el mapa de dues branques i pregunteu quina informació necessita la conductora per triar-ne una. Recordeu que la regla orienta una persona: el tren no llig el bitllet.
+
+#### Fase 2 · Explorem i construïm
+
+Munteu la via en Y, col·loqueu una destinació en cada branca i situeu maons d’acció perquè el tren puga aturar-se, d’acord amb les funcions que el grup ja ha comprovat. La conductora rep un bitllet, verbalitza o assenyala la regla i mou l’agulla roja abans d’engegar el tren.
+
+#### Fase 3 · Expliquem i registrem
+
+Una altra persona posa una figura passatgera al tren; la resta observa per separat el moviment de l’agulla i el punt on el tren s’atura. Registreu símbol del bitllet, branca triada, posició de l’agulla, estació observada i si coincideix amb la predicció.
+
+#### Fase 4 · Apliquem i millorem
+
+Feu un intent per a cada bitllet i canvieu els rols. Si el resultat no coincideix, reviseu l’agulla, la connexió de la via i la posició del maó d’acció; no atribuïu el resultat al bitllet perquè el tren no el llig. Feu els canvis amb el tren aturat o amb la via buida, segons les instruccions del set; ningú posa la mà davant del tren.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** dues rutes executades i una discrepància descrita amb allò que s’ha vist. Compareu la predicció amb l’estació observada i expliqueu quina part de la decisió ha fet una persona.
 
 ### **Sessió 3 · Triem senyals i ampliem les opcions.**
 
-Compareu si la destinació s’entén millor amb color, pictograma, paraula, llum o so. LEGO proposa parlar dels senyals que els trens poden donar; en aquesta maqueta, el grup decideix quin senyal ajuda a les persones a saber quina ruta s’ha triat. No pressuposeu que el tren reconeix bitllets, paraules o sons: són codis per a qui controla el model.
+#### Fase 1 · Activem i prediem
 
-Com a repte, connecteu dues vies Y si la dotació ho permet per crear tres branques o una forma de Q. Dibuixeu quina regla caldria per triar una tercera destinació i com s’hi tornaria en una visita posterior. Proveu un maó verd de retorn només si és a la caixa i la seua funció està verificada en el tren real; altrament, traceu el retorn amb una fitxa sobre el mapa. Tanqueu explicant quina senyalització heu optimitzat i quina part continua depenent d’una persona. **Evidència:** llegenda revisada, tercera condició o simulació, i una explicació dels límits de la ruta.
+Recupereu la llegenda de les sessions anteriors. Pregunteu quin senyal —color, pictograma, paraula, llum o so— faria més clara la destinació per a les persones del grup.
+
+#### Fase 2 · Explorem i construïm
+
+LEGO proposa parlar dels senyals que els trens poden donar; en aquesta maqueta, el grup prova una llegenda que ajude les persones a saber quina ruta s’ha triat. No pressuposeu que el tren reconeix bitllets, paraules o sons: són codis per a qui controla el model.
+
+#### Fase 3 · Expliquem i registrem
+
+Dibuixeu la regla per a cada destinació i comproveu que una altra parella pot interpretar-la sense explicacions addicionals. Marqueu qualsevol senyal ambigu i proposeu una llegenda més clara.
+
+#### Fase 4 · Apliquem i millorem
+
+Si la dotació ho permet, connecteu dues vies Y per crear tres branques o una forma de Q. Dibuixeu quina regla caldria per a una tercera destinació i com s’hi tornaria en una visita posterior. Proveu un maó verd de retorn només si és a la caixa i la seua funció està verificada en el tren real; altrament, traceu el retorn amb una fitxa sobre el mapa.
+
+#### Fase 5 · Comprovem i reflexionem
+
+**Evidència:** llegenda revisada, tercera condició o simulació, i una explicació dels límits de la ruta. Tanqueu explicant quina senyalització heu millorat i quina part de la decisió continua depenent d’una persona.
 
 ## 📋 Avaluació i evidències
 

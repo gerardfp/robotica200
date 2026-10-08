@@ -52,23 +52,113 @@ Feu una anàlisi prèvia de riscos amb l’alumnat: la maqueta queda oberta, la 
 
 ### **Lliçó 1 · Joc amb variables: punts que es poden explicar (60–90 min).**
 
-**Activació:** compareu jocs de taula, cartes, esports i videojocs; cada persona pot parlar d’un joc conegut o analitzar un joc neutre preparat per la docent. En grups, identifiqueu què el fa comprensible i com se sap que s’ha guanyat. **Exploració:** inventeu un joc de taula per a dues persones amb una fitxa que recorre una pista i targetes de situació. Definiu com es guanyen o perden punts, quants torns hi ha i quan acaba. Escriviu regles en passos numerats abans de tocar el codi; feu una ronda manual per detectar interpretacions diferents. **Programació:** creeu variables `punts_jugador_a` i `punts_jugador_b`, inicialitzeu-les a zero a l’inici de cada partida, canvieu de torn de manera explícita i feu una resposta de llum/so cada vegada que la puntuació canvia. Si el sensor o el model no és necessari per al joc, no l’afegiu només per fer-lo més complex. **Prova i explicació:** un segon equip juga només amb les regles escrites i anota cada desacord; compareu puntuació en paper i en el programa després de cada ronda. Reviseu una regla amb el feedback rebut. **Evidències:** regles finals, taula de traça d’almenys quatre torns, captura/esquema del programa i una nota sobre la inicialització de variables. Autoavaluació: vaig deixar clar com sumar, canviar de torn i començar de nou?
+#### Fase 1 · Activem i prediem
+
+Compareu jocs de taula, cartes, esports i videojocs. Cada persona pot parlar d’un joc conegut o analitzar-ne un de neutre preparat per la docent. Predigueu com se sap que s’ha guanyat i com es registra la puntuació.
+
+#### Fase 2 · Explorem i construïm
+
+Inventeu un joc de taula per a dues persones amb una fitxa que recorre una pista i targetes de situació. Definiu com es guanyen o perden punts, quants torns hi ha i quan acaba. Escriviu les regles en passos numerats i feu una ronda manual.
+
+#### Fase 3 · Expliquem i registrem
+
+Creeu variables `punts_jugador_a` i `punts_jugador_b`, inicialitzeu-les a zero a l’inici de cada partida, canvieu de torn explícitament i afegiu una resposta de llum o so quan canvia la puntuació. Registreu almenys quatre torns en una taula de traça.
+
+#### Fase 4 · Apliquem i millorem
+
+Un segon equip juga només amb les regles escrites i anota cada desacord. Compareu la puntuació en paper i en el programa després de cada ronda i reviseu una regla a partir del retorn.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu com sumar, canviar de torn i començar de nou. **Evidència:** regles finals, taula de quatre torns, esquema del programa i nota sobre inicialització de variables.
 
 ### **Lliçó 2 · Dues comprovacions per a una acció (90 min).**
 
-**Activació:** cada parella crea un codi fictici de tres xifres i prova a endevinar els nombres triats per l’altra persona; no s’anoten contrasenyes habituals, PIN personals o dades privades. Calculeu quantes combinacions hi ha per a un, dos i tres dígits si cada posició pot valdre 0–9, i parleu de per què augmentar opcions dificulta endevinar però també pot fer més incòmode recordar. **Modelatge:** sobre un full de decisions, assigneu una regla a una capsa de paper oberta: “la peça de joc rep el senyal d’obertura només quan s’ha triat la targeta de color correcte *i* el botó d’inici s’ha premut”. Completeu les quatre files de la taula de veritat (color correcte/incorrecte × botó premut/no premut). **Exploració i codi:** utilitzeu una entrada de color i un botó del hub o dues entrades simulades; feu que el programa responga de manera diferent a acceptació i rebuig i que permeta tornar a començar. Afegiu missatges clars; no exposeu mai un codi correcte en una llum que es puga interpretar com a protecció. **Depuració:** proveu deliberadament els quatre casos, llegiu cada fila abans d’executar i compareu resultat esperat/real. Afegiu el cas d’una lectura que el sensor no reconeix i decidiu si s’ha de repetir, demanar ajuda o cancel·lar. **Tancament:** què vol dir “més segur” en el model i què no pot demostrar una maqueta? Deseu taula de veritat, pseudocodi i registre d’errors.
+#### Fase 1 · Activem i prediem
+
+Cada parella crea un codi fictici de tres xifres i prova d’endevinar els nombres triats per l’altra. No anoteu contrasenyes habituals, PIN personals o dades privades. Calculeu quantes combinacions hi ha per a un, dos i tres dígits si cada posició val 0–9; parleu de l’equilibri entre opcions i facilitat de record.
+
+#### Fase 2 · Explorem i construïm
+
+En un full de decisions, assigneu una regla a una capsa de paper oberta: la peça de joc rep un senyal només quan la targeta de color és la correcta **i** s’ha premut el botó d’inici. Completeu les quatre files de la taula de veritat: color correcte/incorrecte × botó premut/no premut.
+
+#### Fase 3 · Expliquem i registrem
+
+Useu una entrada de color i un botó del hub o dues entrades simulades. Feu que el programa responga de manera diferent a acceptació i rebuig i que permeta començar de nou. Deseu taula de veritat, pseudocodi i registre de proves.
+
+#### Fase 4 · Apliquem i millorem
+
+Proveu deliberadament els quatre casos, llegiu cada fila abans d’executar i compareu resultat esperat i real. Afegiu el cas d’una lectura que el sensor no reconeix i decidiu si es repeteix, es demana ajuda o es cancel·la.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu què significa «més segur» en aquest model i què no pot demostrar una maqueta. **Evidència:** taula de veritat, pseudocodi, registre d’errors i límit d’ús explícit.
 
 ### **Lliçó 3 · Compondre regles i pensar en més d’un factor (90 min).**
 
-**Activació:** reviseu per què algú voldria protegir informació o materials i qui podria quedar exclòs per una regla mal dissenyada. Amb targetes fictícies, compareu una sola comprovació amb dues comprovacions de tipus diferent —per exemple, una targeta de color i l’acció deliberada d’un botó— i representeu-les com a portes lògiques. **Disseny:** creeu un prototip de taula que autoritza l’avanç d’una fitxa de joc només si coincideixen dos senyals; el prototip pot donar un punt lluminós o fer moure una barrera de cartró molt lleugera que mai tanca res. Abans de construir, redacteu requisits, diagrama de flux, condicions i casos de prova; decidiu què passa amb una entrada tardana, incorrecta, repetida o absenta. **Construcció/programació:** combineu operadors booleans en el programa i proveu tant lògica encadenada com condició composta, segons el que admeta l’app. Etiqueteu comentaris amb el requisit corresponent i programeu una resposta de recuperació, no un bloqueig permanent. **Usabilitat i trade-offs:** un equip prova el prototip amb una guia accessible i comenta si entén què ha de fer i com rectificar; no es demana informació real. Reviseu el disseny: massa factors poden dificultar l’ús legítim tant com l’ús no desitjat, i més combinacions per si soles no fan un sistema segur. Documenteu quines proves recolzen la vostra afirmació i quines proves professionals faltarien.
+#### Fase 1 · Activem i prediem
+
+Parleu de per què algú voldria protegir informació o materials i qui podria quedar exclòs per una regla mal dissenyada. Amb targetes fictícies, compareu una comprovació amb dues de tipus diferent, com targeta de color i acció deliberada del botó.
+
+#### Fase 2 · Explorem i construïm
+
+Representeu les regles com a portes lògiques. Dissenyeu un prototip de taula que autoritza l’avanç d’una fitxa només si coincideixen dos senyals; pot donar un punt de llum o moure una barrera de cartró molt lleugera que no tanque res. Abans de construir, redacteu requisits, diagrama de flux i condicions.
+
+#### Fase 3 · Expliquem i registrem
+
+Definiu casos de prova: correcte, entrada tardana, incorrecta, repetida o absent. Combineu operadors booleans en el programa i etiqueteu cada comentari amb el requisit corresponent; incloeu una resposta de recuperació, no un bloqueig permanent.
+
+#### Fase 4 · Apliquem i millorem
+
+Un altre equip prova el prototip amb una guia accessible i comenta si entén què ha de fer i com rectificar. Reviseu el disseny: massa factors poden dificultar l’ús legítim, i més combinacions per si soles no fan un sistema segur. Documenteu què recolzen les proves i quines comprovacions professionals faltarien.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Expliqueu els compromisos entre usabilitat, nombre de combinacions i accessibilitat, sense presentar el dispositiu com a autenticació fiable. **Evidència:** requisits, diagrama, codi comentat, matriu de proves i revisió d’usabilitat.
 
 ### **Lliçó 4 · Mini-repte: breakout de pistes obertes (90–135 min).**
 
-**Repte:** cada equip crea un joc curt en una taula oberta que un altre equip resol amb pistes físiques, instruccions accessibles i una seqüència de respostes del SPIKE Prime. El nom “breakout” descriu el gènere de joc; ningú entra en una sala tancada i cap eixida física depén del programa. **Empatia i ideació:** feu una consulta breu i anònima sobre quins formats de pista resulten agradables (visual, tàctil, text, so opcional); identifiqueu alternatives per a qui no distingeix colors o prefereix no usar so. Trieu un problema fictici, com ordenar peces d’una exposició abans d’obrir-ne la capsa de cartó. **Planificació:** definiu tres restriccions mesurables: una acció de moviment segura, dues condicions que s’han de complir i un ordre de pistes; incloeu reinici i pista d’ajuda. Escriviu pseudocodi, esquema de connexions i una matriu amb camí correcte, un error per cada condició, ordre erroni, entrada no detectada i reinici. **Construcció i iteració:** creeu un mecanisme indicatiu amb peces mòbils de baixa energia o només llums/sons del hub; programeu una seqüència de respostes i variables de progrés. Proveu cada subcomponent aïllat abans del codi complet, recolliu els errors, canvieu una cosa per iteració i torneu a executar tota la matriu. **Intercanvi:** cada joc ha de ser resolt per almenys tres equips o tants com per obtindre feedback divers; si el temps no dona, feu una prova creuada i completeu la resta amb casos representats en paper. Les persones participants poden aturar-se sense perdre puntuació ni justificació. Cada equip revisa instruccions, nivell de dificultat, temps disponible sense compte enrere pressionant i accessibilitat; entrega una versió revisada i anota què ha canviat a partir de proves reals.
+#### Fase 1 · Activem i prediem
+
+Presenteu el repte com un joc de taula obert: ningú entra en una sala tancada i cap eixida física depén del programa. Trieu un problema fictici, com ordenar peces d’una exposició abans d’obrir una capsa de cartó. Recolliu comentaris anònims sobre formats de pista agradables —visual, tàctil, text o so opcional— i alternatives per a qui no distingeix colors o prefereix no usar so.
+
+#### Fase 2 · Explorem i construïm
+
+Definiu tres restriccions mesurables: una acció segura, dues condicions que s’han de complir i un ordre de pistes; afegiu reinici i pista d’ajuda. Escriviu pseudocodi i esquema de connexions. Creeu una matriu amb camí correcte, un error per cada condició, ordre erroni, entrada no detectada i reinici.
+
+#### Fase 3 · Expliquem i registrem
+
+Construïu un mecanisme d’indicació amb peces de baixa energia o només llums/sons del hub i programeu la seqüència amb variables de progrés. Proveu cada subcomponent aïllat abans del codi complet i registreu cada resultat.
+
+#### Fase 4 · Apliquem i millorem
+
+Canvieu una cosa per iteració i torneu a executar tota la matriu. Intercanvieu el joc amb almenys tres equips si el temps ho permet; si no, feu una prova creuada i completeu la resta amb casos en paper. Els participants poden aturar-se sense perdre puntuació ni justificar-se. Reviseu instruccions, dificultat, temps sense compte enrere pressionant i accessibilitat.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Lliureu la versió revisada i anoteu què ha canviat a partir de proves reals. **Evidència:** joc, matriu de proves completa, retorn d’usabilitat i registre d’iteracions.
 
 ### **Lliçó 5 · Arquitectura, construcció i STEM (60–90 min).**
 
-**Activació:** repasseu els jocs i localitzeu coneixements que apareixen en arquitectura i construcció, enginyeria, ciències i matemàtiques: mesura, estructura, forces, programació, dades, planificació i treball en equip. Classifiqueu imatges o targetes de professions, incloent arquitecta, electricista, lampista, fuster/a, enginyera biomèdica, tècnica de manteniment, estadístic/a, química/enginyer químic i operari/ària de construcció; eviteu associar oficis a un gènere o nivell d’estudis únic. **Recerca:** consulteu fonts públiques i actuals seleccionades per la docent per a descriure tasques, entorns, habilitats, formació i com cooperen diversos rols en un projecte. Cada equip tria dos perfils complementaris i elabora una fitxa de relació amb una evidència o font per afirmació. **Modelatge:** construïu amb peces una estructura o una mostra interactiva de maqueta, definiu-ne un requisit i incorporeu una regla booleana senzilla si aporta valor; no cal automatitzar la construcció per parlar de tecnologia. **Comunicació:** feu una presentació d’un minut que explique el problema, dos rols professionals, la decisió lògica usada i el que una maqueta no pot certificar. La reflexió individual sobre interessos professionals és privada i voluntària; es pot respondre sobre una professió investigada en lloc d’una aspiració personal.
+#### Fase 1 · Activem i prediem
+
+Repasseu els jocs i localitzeu coneixements d’arquitectura i construcció, enginyeria, ciències i matemàtiques: mesura, estructura, forces, programació, dades, planificació i treball en equip. Predigueu quins perfils professionals podrien col·laborar en un projecte.
+
+#### Fase 2 · Explorem i construïm
+
+Classifiqueu targetes de professions: arquitecta, electricista, lampista, fuster/a, enginyera biomèdica, tècnica de manteniment, estadístic/a, química/enginyer químic i personal de construcció. Eviteu associar oficis a un gènere o a un nivell d’estudis únic. Consulteu fonts públiques actuals triades per la docent i descriviu tasques, entorns, habilitats, formació i col·laboracions.
+
+#### Fase 3 · Expliquem i registrem
+
+Trieu dos perfils complementaris i feu una fitxa que relacione les seues tasques amb una evidència o font per afirmació. Construïu amb peces una estructura o mostra interactiva, definiu-ne un requisit i afegiu una regla booleana només si aporta valor.
+
+#### Fase 4 · Apliquem i millorem
+
+Reviseu la fitxa perquè les fonts sostinguen les afirmacions i el prototip responga al requisit. No cal automatitzar la construcció per parlar de tecnologia.
+
+#### Fase 5 · Comprovem i reflexionem
+
+Feu una presentació d’un minut amb el problema, dos rols professionals, la decisió lògica i allò que una maqueta no pot certificar. La reflexió individual sobre interessos és privada i voluntària; es pot respondre sobre una professió investigada. **Evidència:** fitxa professional amb fonts, prototip i presentació.
 
 ## 🧪 Evidències i avaluació
 
