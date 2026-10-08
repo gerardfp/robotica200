@@ -6,20 +6,26 @@ robot: tale-bot
 level: Iniciació
 duration: 30 min
 order: 1
+image: _assets/tutorials/tb-primeres-passes.png
 ---
 
-## 🎯 Objectius d'aprenentatge
+## 🎯 Repte i objectius
 
 - Distingir les tecles Endavant, Enrere, Gir Dreta i Gir Esquerra.
 - Aprendre la rutina del botó Delete (X) per evitar acumular ordres velles.
 - Calcular desplaçaments de casella en casella.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - 1 robot TaleBot Pro
 - Graella al terra o mapa bàsic
 
-## 👣 Passos de la pràctica a l'aula
+## 🧩 Funcions del robot treballades
+
+- Botons direccionals, Play, esborrat d’ordres i indicadors de programació.
+- La distància nominal de cada ordre s’ha de provar amb el Tale-Bot concret i el mapa utilitzat.
+
+## 👣 Seqüència guiada
 
 ### 1. Engegar el robot
 
@@ -35,18 +41,22 @@ Prem dos cops 'Endavant' i el botó taronja central 'Play'. TaleBot caminarà ex
 
 > **💡 Consell docent per a la sessió:** Per als girs, ensenya als infants que TaleBot gira sobre si mateix sense avançar casella.
 
-## 🎯 Planifica l'observació
+## 🧪 Prova, depura i reflexiona
 
 Dibuixa en un mapa gran on són la posició inicial i la destinació. Una parella crea la seqüència i una altra la traça amb el dit abans de prémer els botons.
 
-### Preguntes per a la parella
+### Preguntes per comprovar
 
 Cap a on mira el robot abans del primer gir? Quina instrucció física elimina si ha premut una tecla per error?
 
-## ♿ Suport i extensió
+## ♿ Accessibilitat i seguretat
 
 Comença amb una ruta de dues accions i demostra la funció d'eliminar abans d'afegir-hi més peces de seqüència.
 
-## ✅ Evidències que pots recollir
+## ✅ Evidències d’aprenentatge
 
 Un mapa de la ruta i l'explicació de com comprovar i esborrar una instrucció. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+
+## 🔗 Fonts oficials i límits
+
+Matatalab · Tale-Bot Pro guide · [https://matatalab.com/en/lesson4.2](https://matatalab.com/en/lesson4.2). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.

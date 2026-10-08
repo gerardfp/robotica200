@@ -407,7 +407,6 @@ const oceanMonitorLesson = planetChallenges.steps.find(step => step.title.starts
 const oilRouteLesson = planetChallenges.steps.find(step => step.title.startsWith("Ruta eficient per a una taca simulada"));
 const fitnessFriendLesson = planetChallenges.steps.find(step => step.title.startsWith("Recordatori triat per l’usuari"));
 const heartRateLesson = planetChallenges.steps.find(step => step.title.startsWith("Mesura crítica de pols"));
-const walkingWaterLesson = planetChallenges.steps.find(step => step.title.startsWith("Comptador d’un trajecte"));
 assert.ok(bycatchLesson, "el repte de xarxes és un pas identificable de la col·lecció micro:bit");
 assert.ok(turtleBeachLesson, "el repte de tortugues és un pas identificable de la col·lecció micro:bit");
 assert.ok(collarLesson, "el repte de protecció d'espècies és un pas identificable de la col·lecció micro:bit");
@@ -415,7 +414,6 @@ assert.ok(oceanMonitorLesson, "el monitor d'oceà és un pas identificable de la
 assert.ok(oilRouteLesson, "l'algorisme de neteja d'oceà és un pas identificable de la col·lecció micro:bit");
 assert.ok(fitnessFriendLesson, "Fitness friend és un pas identificable de la col·lecció micro:bit");
 assert.ok(heartRateLesson, "Heart rate monitor és un pas identificable de la col·lecció micro:bit");
-assert.ok(walkingWaterLesson, "Walking for water és un pas identificable de la col·lecció micro:bit");
 const bycatchStart = planetChallenges.html.indexOf(`id="${bycatchLesson.id}"`);
 const bycatchEnd = planetChallenges.html.indexOf('<section class="learning-step', bycatchStart + 10);
 const bycatchMarkup = planetChallenges.html.slice(bycatchStart, bycatchEnd < 0 ? undefined : bycatchEnd);
@@ -479,15 +477,6 @@ assert.match(heartRateMarkup, /cinc situacions[\s\S]*tres repeticions per cas/i,
 assert.match(heartRateMarkup, /no mesura pols real[\s\S]*no el porteu al cos/i, "el prototip no es presenta com a dispositiu mèdic ni com a mesura biomètrica");
 assert.match(planetChallengeSource, /teach\/lessons\/heart-rate-monitor/, "la fitxa enllaça l'activitat oficial Heart rate monitor");
 assert.match(planetChallengeSource, /education\.theiet\.org\/secondary\/teaching-resources\/design-a-personal-heart-monitoring-system-microbit/, "la fitxa separa la referència tècnica complementària de l'activitat oficial micro:bit");
-const walkingWaterStart = planetChallenges.html.indexOf(`id="${walkingWaterLesson.id}"`);
-const walkingWaterEnd = planetChallenges.html.indexOf('<section class="learning-step', walkingWaterStart + 10);
-const walkingWaterMarkup = planetChallenges.html.slice(walkingWaterStart, walkingWaterEnd < 0 ? undefined : walkingWaterEnd);
-assert.match(walkingWaterMarkup, /input\.onGesture\(Gesture\.Shake[\s\S]*Button\.A[\s\S]*Button\.B/, "Walking for water adapta el comptador oficial amb consulta i reinici");
-assert.match(walkingWaterMarkup, /sa-mb-walking-water-counter\.webp/, "Walking for water intercala una il·lustració pròpia de la maqueta accessible");
-assert.match(walkingWaterMarkup, /sis condicions[\s\S]*tres vegades/i, "Walking for water inclou sis proves repetides i comparació manual");
-assert.match(walkingWaterMarkup, /no mesurem distància sense calibratge[\s\S]*no recollim dades personals/i, "Walking for water delimita què mesura el prototip i protegeix la privacitat");
-assert.match(planetChallengeSource, /teach\/lessons\/walking-for-water/, "la fitxa enllaça l'activitat oficial Walking for water");
-assert.match(planetChallengeSource, /projects\/make-it-code-it\/step-counter/, "la fitxa enllaça el projecte oficial de comptador de passos");
 assert.equal(planetChallenges.steps.length, 12, "els cinc reptes micro:bit conserven les dotze activitats adaptades");
 assert.equal((planetChallenges.html.match(/class="learning-phase"/g) || []).length, 60, "les dotze activitats micro:bit comparteixen les cinc fases");
 assert.match(planetChallenges.html, /no poseu dispositius a cap animal/i, "els prototips de biodiversitat no es despleguen en animals");
@@ -662,7 +651,7 @@ for (const item of catalog.situacions) {
 }
 const expectedDetailKinds = [
   ["activitat", "activity", "activitats", "activitat-", 10, catalog.activitats],
-  ["tutorial", "tutorial", "tutorials", "tutorial-", 22, catalog.tutorials],
+  ["tutorial", "tutorial", "tutorials", "tutorial-", 29, catalog.tutorials],
   ["robot", "robot", "robots", "robot-", 6, catalog.robots],
   ["guia", "guide", "pages", "guia-", 3, null]
 ];

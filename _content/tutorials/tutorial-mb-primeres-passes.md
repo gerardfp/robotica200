@@ -6,21 +6,27 @@ robot: microbit
 level: Iniciació
 duration: 30 min
 order: 1
+image: _assets/tutorials/mb-primeres-passes.png
 ---
 
-## 🎯 Objectius d'aprenentatge
+## 🎯 Repte i objectius
 
 - Conèixer l'entorn de programació MakeCode i el seu simulador interactiu.
 - Crear un dau digital que mostri un número a l'atzar en sacsejar la placa.
 - Passar l'arxiu compilat .hex a la unitat micro:bit com si fos un llapis de memòria USB.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Placa micro:bit (V1 o V2)
 - Cable micro-USB
 - Ordinador amb navegador web
 
-## 👣 Passos de la pràctica a l'aula
+## 🧩 Funcions del robot treballades
+
+- MakeCode, matriu 5 × 5 i botons A/B.
+- Gestos detectats per l’acceleròmetre; els components de so integrat només estan presents en micro:bit V2.
+
+## 👣 Seqüència guiada
 
 ### 1. Obrir MakeCode
 
@@ -36,18 +42,22 @@ Connecta la micro:bit per USB i prem el botó 'Descarregar'. En pocs segons el d
 
 > **💡 Consell docent per a la sessió:** Recorda als alumnes que el simulador de l'esquerra permet provar el programa abans fins i tot de tenir la placa connectada.
 
-## 🎯 Planifica l'observació
+## 🧪 Prova, depura i reflexiona
 
 Escriu un símbol de 5 × 5, vincula'l a un polsador i transfereix el codi a la placa. Mantingues la sessió de creació independent de l'activitat opcional de ràdio.
 
-### Preguntes per a la parella
+### Preguntes per comprovar
 
 Quina entrada activa el programa? El resultat apareix amb cada pulsació o un sol cop?
 
-## ♿ Suport i extensió
+## ♿ Accessibilitat i seguretat
 
 Dona una icona impresa com a referència; deixa que cada parella triï com modificar-la i anoti la diferència.
 
-## ✅ Evidències que pots recollir
+## ✅ Evidències d’aprenentatge
 
 El codi guardat, el símbol personalitzat i una demostració dels dos polsadors. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+
+## 🔗 Fonts oficials i límits
+
+micro:bit · Features overview · [https://microbit.org/get-started/features/overview/](https://microbit.org/get-started/features/overview/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.

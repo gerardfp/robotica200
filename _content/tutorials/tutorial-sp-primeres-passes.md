@@ -5,21 +5,27 @@ robot: spike
 level: Iniciació
 duration: 35 min
 order: 1
+image: _assets/tutorials/sp-primeres-passes.png
 ---
 
-## 🎯 Objectius d'aprenentatge
+## 🎯 Repte i objectius
 
 - Actualitzar el firmware i emparellar el Hub amb l'ordinador.
 - Programar la matriu de 25 píxels per mostrar icones i animacions.
 - Comprendre la numeració dels 6 ports universals (A, B, C, D, E, F).
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Hub SPIKE Prime o Essential
 - App LEGO SPIKE instal·lada
 - Cable USB
 
-## 👣 Passos de la pràctica a l'aula
+## 🧩 Funcions del robot treballades
+
+- Hub SPIKE Prime: matriu LED 5 × 5, botó central, ports i sensor d’orientació de sis eixos.
+- Connexió i programació amb SPIKE App; els ports i elements connectats s’han d’identificar en cada muntatge.
+
+## 👣 Seqüència guiada
 
 ### 1. Connexió Bluetooth
 
@@ -35,18 +41,22 @@ Programa: 'Quan s'inclini cap a l'esquerra' → Mostra fletxa esquerra.
 
 > **💡 Consell docent per a la sessió:** Posa una etiqueta de color o número a cada Hub perquè els alumnes no es connectin per Bluetooth al robot del grup del costat.
 
-## 🎯 Planifica l'observació
+## 🧪 Prova, depura i reflexiona
 
 Identifica quin port s'utilitza per al motor abans d'executar la seqüència. Prepara un moviment curt, una pausa i una icona de hub que ajudi a veure quan comença i acaba.
 
-### Preguntes per a la parella
+### Preguntes per comprovar
 
 Què diu la icona durant l'execució? Quin valor de motor has triat? Què fa la pausa en la seqüència?
 
-## ♿ Suport i extensió
+## ♿ Accessibilitat i seguretat
 
 Segueix el procediment del hub concret i de la versió de l'aplicació disponible; practica sense connexions addicionals abans de muntar el repte.
 
-## ✅ Evidències que pots recollir
+## ✅ Evidències d’aprenentatge
 
 Un programa executat, el registre de ports i una predicció verbal del moviment. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+
+## 🔗 Fonts oficials i límits
+
+LEGO Education · SPIKE Prime technical specifications · [https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.

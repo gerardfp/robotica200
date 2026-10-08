@@ -1723,6 +1723,18 @@ window.CATALEG = {
   ],
   "tutorials": [
     {
+      "id": "tutorial-ce-app-musica-distancia",
+      "slug": "ce-app-musica-distancia",
+      "robot": "coding-express",
+      "robotLabel": "Coding Express",
+      "url": "tutorial/index.html?id=ce-app-musica-distancia",
+      "imatge": "_assets/tutorials/ce-app-musica-distancia.webp",
+      "titol": "Coding Express: app, melodies i distàncies",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Personalitzar les respostes dels maons d’acció amb l’app, compondre una seqüència sonora i comparar distàncies en una via."
+    },
+    {
       "id": "tutorial-ce-bifurcacions",
       "slug": "ce-bifurcacions",
       "robot": "coding-express",
@@ -1771,6 +1783,18 @@ window.CATALEG = {
       "descripcio": "Com encendre la locomotora, comprendre la mecànica 'empeny per arrencar i atura amb la mà' i muntar"
     },
     {
+      "id": "tutorial-cr-giroscopi-ir-control",
+      "slug": "cr-giroscopi-ir-control",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-giroscopi-ir-control",
+      "imatge": "_assets/tutorials/cr-giroscopi-ir-control.webp",
+      "titol": "Codey Rocky: giroscopi, control i comunicació infraroja",
+      "dificultat": "Avançat",
+      "durada": "60 min",
+      "descripcio": "Llegir la inclinació i el potenciòmetre, usar l’altaveu i enviar un senyal IR entre robots Codey Rocky."
+    },
+    {
       "id": "tutorial-cr-motors-sensors",
       "slug": "cr-motors-sensors",
       "robot": "codey-rocky",
@@ -1793,6 +1817,18 @@ window.CATALEG = {
       "dificultat": "Iniciació",
       "durada": "35 min",
       "descripcio": "Connectar Codey al software de l'ordinador o tauleta i programar animacions facials i missatges lliscants."
+    },
+    {
+      "id": "tutorial-cr-sensors-llum-so-linia",
+      "slug": "cr-sensors-llum-so-linia",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-sensors-llum-so-linia",
+      "imatge": "_assets/tutorials/cr-sensors-llum-so-linia.webp",
+      "titol": "Codey Rocky: llum, so, RGB i seguiment de línia",
+      "dificultat": "Intermedi",
+      "durada": "55 min",
+      "descripcio": "Explorar els sensors de llum, so i infraroig/color i combinar-los amb l’indicador RGB i els motors de Rocky."
     },
     {
       "id": "tutorial-cr-veu-ia",
@@ -1819,6 +1855,18 @@ window.CATALEG = {
       "descripcio": "Empaquetar conjunts d'instruccions dins de blocs de bucle per crear figures regulars i camins repetitius."
     },
     {
+      "id": "tutorial-cs-funcions-blocs-divertits",
+      "slug": "cs-funcions-blocs-divertits",
+      "robot": "coding-set",
+      "robotLabel": "Coding Set",
+      "url": "tutorial/index.html?id=cs-funcions-blocs-divertits",
+      "imatge": "_assets/tutorials/cs-funcions-fun-blocks.webp",
+      "titol": "Coding Set: funcions i blocs divertits",
+      "dificultat": "Intermedi",
+      "durada": "45 min",
+      "descripcio": "Definir i cridar una funció amb blocs físics i explorar moviment aleatori, música predefinida i dansa del MatataBot."
+    },
+    {
       "id": "tutorial-cs-motors-sensors",
       "slug": "cs-motors-sensors",
       "robot": "coding-set",
@@ -1841,6 +1889,18 @@ window.CATALEG = {
       "dificultat": "Iniciació",
       "durada": "30 min",
       "descripcio": "Descobrir la connexió entre la torre d'escaneig i el MatataBot, i l'ordre seqüencial d'esquerra a dreta."
+    },
+    {
+      "id": "tutorial-mb-brujola-temperatura-bluetooth",
+      "slug": "mb-brujola-temperatura-bluetooth",
+      "robot": "microbit",
+      "robotLabel": "Micro:bit",
+      "url": "tutorial/index.html?id=mb-brujola-temperatura-bluetooth",
+      "imatge": "_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp",
+      "titol": "Micro:bit: brúixola, temperatura, tacte i Bluetooth",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Llegir el rumb i la temperatura aproximada, provar el logotip tàctil de V2 i distingir Bluetooth de ràdio."
     },
     {
       "id": "tutorial-mb-fanalet-llum",
@@ -1951,6 +2011,18 @@ window.CATALEG = {
       "descripcio": "Connexió del Hub per Bluetooth a l'App SPIKE, gestió de la matriu 5x5 de LEDs i bateria recarregable."
     },
     {
+      "id": "tutorial-sp-sensor-distancia-alarma",
+      "slug": "sp-sensor-distancia-alarma",
+      "robot": "spike",
+      "robotLabel": "Spike",
+      "url": "tutorial/index.html?id=sp-sensor-distancia-alarma",
+      "imatge": "_assets/tutorials/sp-sensor-distancia-alarma.webp",
+      "titol": "SPIKE Prime: sensor de distància, giroscopi i avisador",
+      "dificultat": "Intermedi",
+      "durada": "55 min",
+      "descripcio": "Programar una parada basada en ultrasons, mesurar un gir amb el giroscopi i fer sonar l’altaveu del Hub."
+    },
+    {
       "id": "tutorial-tb-motors-sensors",
       "slug": "tb-motors-sensors",
       "robot": "tale-bot",
@@ -1981,10 +2053,22 @@ window.CATALEG = {
       "robotLabel": "Tale-Bot",
       "url": "tutorial/index.html?id=tb-reconeixement-veu",
       "imatge": "_assets/tutorials/tb-reconeixement-veu.png",
-      "titol": "Reconeixement i enregistrament de veu",
+      "titol": "Gravació i reproducció de veu",
       "dificultat": "Iniciació",
       "durada": "40 min",
       "descripcio": "Gravar pistes d'àudio i diàlegs personalitzats amb la veu de l'alumnat a cada etapa del recorregut."
+    },
+    {
+      "id": "tutorial-tb-repeticio-mapes-dansa",
+      "slug": "tb-repeticio-mapes-dansa",
+      "robot": "tale-bot",
+      "robotLabel": "Tale-Bot",
+      "url": "tutorial/index.html?id=tb-repeticio-mapes-dansa",
+      "imatge": "_assets/tutorials/tb-repeticio-mapes-dansa.webp",
+      "titol": "Tale-Bot Pro: repetició, dansa i mapes interactius",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Provar els comandaments de repetició i dansa, escoltar la guia OID del mapa i depurar una seqüència sense confondre gravació amb reconeixement de parla."
     }
   ],
   "robots": [
@@ -2001,7 +2085,7 @@ window.CATALEG = {
       ],
       "order": 1,
       "url": "robot/index.html?id=coding-express",
-      "tutorials": 4
+      "tutorials": 5
     },
     {
       "id": "robot-tale-bot",
@@ -2016,7 +2100,7 @@ window.CATALEG = {
       ],
       "order": 2,
       "url": "robot/index.html?id=tale-bot",
-      "tutorials": 3
+      "tutorials": 4
     },
     {
       "id": "robot-coding-set",
@@ -2031,7 +2115,7 @@ window.CATALEG = {
       ],
       "order": 3,
       "url": "robot/index.html?id=coding-set",
-      "tutorials": 3
+      "tutorials": 4
     },
     {
       "id": "robot-codey-rocky",
@@ -2046,7 +2130,7 @@ window.CATALEG = {
       ],
       "order": 4,
       "url": "robot/index.html?id=codey-rocky",
-      "tutorials": 3
+      "tutorials": 5
     },
     {
       "id": "robot-spike",
@@ -2061,7 +2145,7 @@ window.CATALEG = {
       ],
       "order": 5,
       "url": "robot/index.html?id=spike",
-      "tutorials": 4
+      "tutorials": 5
     },
     {
       "id": "robot-microbit",
@@ -2076,7 +2160,7 @@ window.CATALEG = {
       ],
       "order": 6,
       "url": "robot/index.html?id=microbit",
-      "tutorials": 5
+      "tutorials": 6
     }
   ]
 };

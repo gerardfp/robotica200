@@ -257,47 +257,23 @@ Canvieu només el llindar o el temps de bloqueig entre deteccions, no tots dos a
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte oficial [Walking for water](https://microbit.org/teach/lessons/walking-for-water/) i una font contextualitzada sobre accés a aigua i sanejament, com els [resultats globals d’UNICEF](https://www.unicef.org/reports/global-annual-results-report-2023-goal-area-4). Distingiu les dades que descriuen infraestructures i serveis de les experiències de les persones: no suposeu que la situació siga igual a tots els llocs ni demaneu a ningú que represente una situació de pobresa. En una maqueta de paper, plantegeu una ruta fictícia entre una escola i un punt d’aigua. Abans de construir, responeu: què comptaria el sensor?, què no podria dir sobre la qualitat o disponibilitat de l’aigua?, i quina informació necessitaríem per prendre decisions justes?
+Estudieu la desigualtat d’accés a l’aigua amb fonts contextualitzades. Predigueu què podria mostrar un comptador i quina part del context quedaria fora.
 
 #### Fase 2 · Explorem i construïm
 
-Adapteu el principi del [comptador de passos oficial](https://microbit.org/projects/make-it-code-it/step-counter/): l’acceleròmetre detecta una sacsejada, suma una unitat i mostra el recompte. Fixeu la placa en un suport de cartó i genereu sacsejades controlades al costat del suport; no la poseu al cos. Afegiu A per consultar el total i B per reiniciar-lo:
-
-```javascript
-let steps = 0
-
-input.onGesture(Gesture.Shake, function () {
-    steps += 1
-    basic.showNumber(steps)
-})
-
-input.onButtonPressed(Button.A, function () {
-    basic.showNumber(steps)
-})
-
-input.onButtonPressed(Button.B, function () {
-    steps = 0
-    basic.showNumber(steps)
-})
-```
-
-![Una micro:bit de la dotació en un suport de cartó registra sacsejades controlades al costat d’un mapa escolar de paper amb una ruta esquemàtica fins a un punt d’aigua.](../../_assets/imatges/sa-mb-walking-water-counter.webp)
-
-_La maqueta compta sacsejades de prova i representa una ruta fictícia; no mostra distàncies reals ni l’experiència de cap persona._
-
-Si el gest Shake no és accessible o no resulta consistent amb el suport disponible, feu servir targetes de dades fictícies o un registre manual equivalent. En aquesta adaptació ningú ha de caminar, carregar aigua ni compartir dades personals de moviment.
+Programeu un comptador per a un objecte en moviment o prepareu registres ficticis. No cal que cap alumne camine per completar el repte.
 
 #### Fase 3 · Expliquem i registrem
 
-Prepareu una taula amb condició, sacsejades fetes, total mostrat, diferència respecte del recompte manual i observacions. Proveu, com a mínim: repòs sense moviment; 10 sacsejades lentes; 10 sacsejades ràpides; moviment accidental del suport; consulta amb A; i reinici amb B. Repetiu cada condició tres vegades. Comproveu si cada gest genera una sola detecció, si el programa continua comptant després de consultar el valor i si B deixa el sistema realment a zero. Anoteu falsos recomptes i deteccions perdudes, sense reinterpretar una sacsejada com una passa real.
+Anoteu quantes deteccions registra el programa en una prova de maqueta i compareu-ho amb un recompte manual.
 
 #### Fase 4 · Apliquem i millorem
 
-Si les sacsejades es perden o es compten dues vegades, canvieu una condició de prova cada vegada (ritme, fermesa o estabilitat del suport) i repetiu els tres intents. Compareu el recompte automàtic amb el manual i expliqueu qualsevol correcció; multiplicar per dos només tindria sentit si les proves demostraren un patró estable d’una detecció per cada dues sacsejades, no com una regla universal. Apliqueu després el recompte a la ruta fictícia del mapa: què es pot estimar amb una escala acordada de caselles?, quines decisions depenen de fonts sobre serveis d’aigua i no del comptador? Incloeu l’alternativa desconnectada amb les mateixes dades i criteris.
+Reviseu falsos recomptes i expliqueu què representa i què no representa cada pas comptat. Connecteu el debat amb l’accés equitatiu a l’aigua potable.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidències:** programa amb consulta i reinici, mapa de ruta fictícia, taula de sis condicions amb tres repeticions, comparació entre recompte manual i automàtic i una conclusió que cite la font consultada. Expliqueu què representa el nombre mostrat i què deixa fora: el comptador no mesura distància sense calibratge, temps de trajecte, accés segur, qualitat de l’aigua ni necessitats d’una comunitat. No convertiu experiències de pobresa en joc, no feu competicions de distància i no recolliu dades personals. La proposta conserva el comptatge amb micro:bit i la reflexió del repte oficial, però substitueix la caminada per una maqueta cooperativa accessible.
+**Evidència:** registre, comparació i reflexió contextualitzada. No convertiu experiències de pobresa en joc ni feu competicions de distància.
 
 ## 🌙 Repte 4 · Visibilitat i desplaçaments nocturns
 

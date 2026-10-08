@@ -5,19 +5,19 @@ robot: coding-express
 level: Iniciació
 duration: 40 min
 order: 4
+image: _assets/tutorials/ce-bucles.png
 ---
 
-## 🎯 Repte
+## 🎯 Repte i objectius
 
 La biblioteca mòbil ha de visitar tres parades i tornar a començar la ruta perquè hi puguin pujar nous lectors. Com podem fer que repeteixi el mateix recorregut i com podem demostrar que ha completat una volta?
 
-## 🖼️ Abans de començar
 
 ![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](_assets/imatges/coding-express-bucles.webp)
 
 Aquesta activitat parteix de la idea de repetició que LEGO Education treballa amb la via en forma d’O, però planteja un repte nou: organitzar un servei de biblioteca amb torns i parades. Les instruccions, el relat i la imatge d’aquesta pàgina són propis. Consulta la [lliçó oficial sobre vies en forma d’O i bucles](https://education.lego.com/es-es/lessons/preschool-coding-express/o-shaped-track-looping/) per contrastar-ne la proposta.
 
-## 🧰 Material
+## 🧰 Materials i preparació
 
 - Tren Coding Express i trams de via corbs i rectes per construir un circuit tancat.
 - Tres estacions amb noms o pictogrames inventats per la classe.
@@ -26,7 +26,12 @@ Aquesta activitat parteix de la idea de repetició que LEGO Education treballa a
 
 Comprova que el tren, les vies i les peces d’acció del kit disponible funcionen. Coding Express està retirat comercialment; aquesta proposta és per als centres que ja disposen del conjunt.
 
-## 👣 Pràctica pas a pas
+## 🧩 Funcions del robot treballades
+
+- Motor Push & Go i recorregut sobre vies.
+- Bucle com a propietat de la via tancada; el tren no executa un bucle de codi ni compta voltes per si mateix.
+
+## 👣 Seqüència guiada
 
 ### 1. Representar una rutina repetida
 
@@ -48,14 +53,16 @@ Si el material ho permet, construïu també una via amb inici i final diferents.
 
 Afegiu una parada o canvieu la posició d’una estació. Repetiu la predicció i comproveu si tots els passatgers poden pujar sense aturar el tren en un lloc insegur.
 
-## 🔎 Preguntes per guiar la conversa
+## 🧪 Prova, depura i reflexiona
+
+### Preguntes per comprovar
 
 - Quina part del recorregut es repeteix? On torna a començar?
 - Com sabem que el tren ha fet una volta completa?
 - Si afegim una parada, quina part del pla hem de revisar?
 - Una via tancada és el mateix que un bucle en un programa? Què comparteixen i què no?
 
-## ♿ Suport, extensió i seguretat
+## ♿ Accessibilitat i seguretat
 
 Per a una primera prova, feu una volta amb només dues estacions i una persona que assenyali el punt de retorn. Es pot participar movent passatgers, ordenant targetes o registrant voltes sense manipular el tren. Com a extensió, compareu dues rutes que visiten les mateixes parades en ordres diferents i justifiqueu quina és més clara per als viatgers.
 
@@ -68,3 +75,7 @@ Munteu les vies en una zona delimitada i manteniu els dits fora del mecanisme me
 - Una explicació que distingeix el cicle de la via d’una repetició escrita en un programa.
 
 > **Per transferir-ho:** demana a cada infant que identifiqui una rutina diària que torna a començar i la representi amb tres imatges en cercle.
+
+## 🔗 Fonts oficials i límits
+
+LEGO Education · Coding Express · [https://education.lego.com/en-us/lessons/preschool-coding-express/](https://education.lego.com/en-us/lessons/preschool-coding-express/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.

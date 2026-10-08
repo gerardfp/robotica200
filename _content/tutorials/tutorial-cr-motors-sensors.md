@@ -6,20 +6,26 @@ robot: codey-rocky
 level: Intermedi
 duration: 45 min
 order: 2
+image: _assets/tutorials/cr-motors-sensors.png
 ---
 
-## 🎯 Objectius d'aprenentatge
+## 🎯 Repte i objectius
 
 - Llegir dades del sensor frontal d'infrarojos en centímetres.
 - Controlar la velocitat diferencial de les dues erugues.
 - Crear un bucle indefinit amb condicional: Si hi ha obstacle → Esquivar.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Codey acoblat a Rocky
 - Obstacles tous (capsetes de cartó)
 
-## 👣 Passos de la pràctica a l'aula
+## 🧩 Funcions del robot treballades
+
+- Motors de les erugues de Rocky i sensor infraroig/color frontal per a detectar obstacles en el muntatge de prova.
+- Resposta condicional programada en mBlock; la lectura no s’ha de descriure com a distància en centímetres sense verificar el bloc i la versió.
+
+## 👣 Seqüència guiada
 
 ### 1. Acoblar Codey a Rocky
 
@@ -35,18 +41,22 @@ Col·loca el robot dins un passadís de llibres i observa com navega de forma au
 
 > **💡 Consell docent per a la sessió:** Si el sensor reflecteix superfícies negres o miralls, la lectura pot variar; utilitza obstacles de colors clars.
 
-## 🎯 Planifica l'observació
+## 🧪 Prova, depura i reflexiona
 
 Compara la resposta d'un circuit curt amb obstacles a diferents posicions; ajusta el programa només després de predir quin cas canviarà.
 
-### Preguntes per a la parella
+### Preguntes per comprovar
 
 El valor registrat continua sent útil si varies la distància a l'obstacle? Què hauria de fer Rocky si la lectura no és clara?
 
-## ♿ Suport i extensió
+## ♿ Accessibilitat i seguretat
 
 Comença amb un obstacle ample i un recorregut buit; després afegeix una corba o una segona superfície.
 
-## ✅ Evidències que pots recollir
+## ✅ Evidències d’aprenentatge
 
 La predicció, la condició provada i la modificació justificada. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+
+## 🔗 Fonts oficials i límits
+
+Makeblock · Codey Rocky · [https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.

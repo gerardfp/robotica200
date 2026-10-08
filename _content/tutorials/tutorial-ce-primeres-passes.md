@@ -6,21 +6,27 @@ robot: coding-express
 level: Iniciació
 duration: 30 min
 order: 1
+image: _assets/tutorials/ce-primeres-passes.png
 ---
 
-## 🎯 Objectius d'aprenentatge
+## 🎯 Repte i objectius
 
 - Familiaritzar-se amb el botó d'encesa i el mecanisme Push & Go.
 - Construir un circuit ovalat o circular que no tingui talls.
 - Comprendre el concepte de cicle continu (bucle físic).
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - 1 locomotora Coding Express
 - 12 trams de via corba
 - Peces de decoració DUPLO
 
-## 👣 Passos de la pràctica a l'aula
+## 🧩 Funcions del robot treballades
+
+- Encesa, moviment Push & Go i aturada manual.
+- Motor integrat i vies DUPLO; no requereix aplicació ni programació digital.
+
+## 👣 Seqüència guiada
 
 ### 1. Encesa de la locomotora
 
@@ -36,18 +42,22 @@ En equips de 3 o 4 infants, cadascú afegeix un tram de via fins a tancar el cer
 
 > **💡 Consell docent per a la sessió:** Assegura't que les vies estiguin sobre una superfície plana (terra o taula baixa) perquè les rodes motrius tinguin bona tracció.
 
-## 🎯 Planifica l'observació
+## 🧪 Prova, depura i reflexiona
 
 Dibuixa el contorn del circuit abans de muntar-lo i compta les peces emprades. Quan tanquis la via, comprova sense pressa que el tren hi passa sense empènyer-lo.
 
-### Preguntes per a la parella
+### Preguntes per comprovar
 
 Per què el circuit ha de tancar-se? Què canvia si girem una peça corba?
 
-## ♿ Suport i extensió
+## ♿ Accessibilitat i seguretat
 
 Treballa amb equips petits i deixa que cada infant afegeixi una peça; introdueix un segon disseny només després que la via original funcioni.
 
-## ✅ Evidències que pots recollir
+## ✅ Evidències d’aprenentatge
 
 Un dibuix del circuit, el nombre de peces i una comprovació del trajecte. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+
+## 🔗 Fonts oficials i límits
+
+LEGO Education · Coding Express · [https://education.lego.com/en-us/lessons/preschool-coding-express/](https://education.lego.com/en-us/lessons/preschool-coding-express/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.

@@ -5,24 +5,29 @@ robot: spike
 level: Intermedi
 duration: 45 min
 order: 4
+image: _assets/tutorials/sp-distancia.png
 ---
+## 🎯 Repte i objectius
 
 ![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](_assets/imatges/spike-parada-distancia.webp)
-
-## 🎯 Objectius d’aprenentatge
 
 - Relacionar els girs de les rodes amb la distància que recorre la base.
 - Fer una estimació, provar-la i ajustar-la amb dades.
 - Distingir una parada calculada d’una parada activada per contacte.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Conjunt LEGO Education SPIKE Prime amb hub, dos motors i sensor de força.
 - Peces Technic per muntar una base motriu estable.
 - Un bloc LEGO vertical com a obstacle i cinta de paper per marcar la sortida.
 - Regle o cinta mètrica.
 
-## 👣 Passos de la pràctica
+## 🧩 Funcions del robot treballades
+
+- Motor angular i càlcul de desplaçament a partir de rotacions i geometria de roda.
+- La comparació amb el sensor de força detecta contacte; no s’utilitza el sensor d’ultrasons/distància en aquesta pràctica.
+
+## 👣 Seqüència guiada
 
 ### 1. Preparar el recorregut
 
@@ -42,24 +47,26 @@ Programa l’avanç a velocitat baixa i executa’l des de la marca. Mesura la s
 
 Si el muntatge incorpora un sensor de força al davant, afegiu-lo com a topall tou contra una paret feta amb blocs. Programeu el moviment perquè s’ature quan el sensor detecte el contacte. Feu aquesta comparació a velocitat baixa i amb un obstacle estable; el sensor de força no és un sensor de distància i aquesta segona prova sí que acaba en contacte.
 
-## 🧠 Què observem?
+## 🧪 Prova, depura i reflexiona
 
 El nombre de voltes dona una parada anticipada que es pot calcular, però depén de les rodes, la velocitat, el muntatge i el lliscament. El sensor de força detecta el contacte i pot fer d’interruptor de seguretat per al repte, però no serveix per mesurar l’espai que queda abans de l’impacte.
 
-### Preguntes per a la parella
+### Preguntes per comprovar
 
 - Quantes voltes havíeu previst i quantes n’han calgut després de provar?
 - Què ha canviat quan heu modificat la velocitat?
 - En quin cas el robot s’atura abans del contacte i en quin cas espera a tocar?
 
-## ♿ Suport i extensió
+## ♿ Accessibilitat i seguretat
 
 Per començar, facilita una taula de conversions roda-voltes-distància o una distància que corresponga a voltes completes. Com a extensió, compareu rodes de diàmetres diferents o representeu les proves en un gràfic. Repartiu els rols: conducció, mesura i registre.
 
-## ✅ Evidències
+## ✅ Evidències d’aprenentatge
 
 Recolliu una taula amb les prediccions i resultats, una explicació de l’ajust triat i una demostració de cada tipus de parada. Eviteu fotografiar cares o dades personals.
 
-## 🔎 Inspiració i límits de l’adaptació
+## 🔗 Fonts oficials i límits
 
 Adaptació pròpia del repte [Going the Distance de LEGO Education](https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/), que proposa calcular el recorregut d’un Rhino i comparar-lo després amb una parada per sensor de força. Ací canviem el context i el registre de proves; consulta la lliçó oficial per a les instruccions específiques del model.
+
+LEGO Education · SPIKE Prime technical specifications · [https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
