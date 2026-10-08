@@ -214,29 +214,35 @@ Completeu una bateria de casos en dues tandes: amb el sensor cap avall, targeta 
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Recupereu les condicions vertadera/falsa de L7 i compareu una seqüència de tres `si` amb un `repeteix` que conté una condició. Presenteu dos reptes de maqueta: eixir d’una estació de servei orientada a l’esquerra, a la dreta o cap avant, i travessar un túnel fosc canviant la velocitat. Predigueu quins sensors i quines dades necessita cada repte; no es llegiran color i obstacle alhora.
+Recupereu les condicions vertadera/falsa de L7 i compareu diverses instruccions `si` amb un `repeteix` que conté una condició. El repte principal adapta la reentrada al circuit de *The Racing Game II*: Codey Rocky arriba a una estació de servei en tres orientacions possibles —cap a l’esquerra, cap a la dreta o cap avant— i ha de trobar l’única eixida. Predigueu què indica l’obstacle davant del sensor i per què cal tornar a comprovar-lo després de cada gir. Com a segona prova independent, travessareu un túnel fosc i comparareu lectures de llum amb un operador. No es llegiran color, obstacle i llum alhora.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Construïu una estació amb llibres o caixes de cartó que deixen un únic corredor de sortida i un túnel curt de cartolina. Marqueu els tres possibles sentits inicials de Codey Rocky. Gireu el mòdul IR cap avant per detectar obstacles en l’estació; el sensor de llum integrat en Codey s’usa en una prova separada del túnel. Manteniu velocitat baixa i espai lliure al voltant de les rodes. Abans d’executar, comproveu que el programa correspon a l’orientació de sensor prevista.
+Construïu amb llibres o cartó una estació amb parets laterals, una única eixida i una recta de pista a continuació; prepareu també un túnel curt de cartolina per a la prova de llum. Situeu el robot en tres orientacions inicials diferents dins de l’estació. Gireu el sensor IR cap avant i comproveu que detecta les parets; useu el sensor de llum integrat només en la prova separada del túnel. Abans d’engegar, retireu qualsevol objecte solt i valideu la distància d’aturada a potència baixa.
+
+![Codey Rocky ix d’una estació de servei de cartó cap a un circuit pla i un túnel de prova a la marjal.](../../_assets/imatges/sa-cr-estacio-servei.webp)
+
+_Il·lustració pròpia de la maqueta de L8; el túnel i el traçat són materials d’aula, no un escenari oficial ni una construcció real de l’Albufera._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Programeu l’eixida amb una condició dins d’un bucle comptat: si hi ha un obstacle davant, gireu a la dreta 90°; repetiu la comprovació fins a tres vegades, de manera que l’orientació inicial no determine l’èxit. Quan el camí quede lliure, gireu cap al corredor de la maqueta i avanceu una casella a velocitat baixa. Anoteu l’orientació inicial, els girs executats i si s’ha trobat l’eixida.
+Programeu l’eixida amb una condició dins d’un bucle comptat: si hi ha una paret davant, gireu a la dreta 90°; repetiu la comprovació tres vegades com a màxim. Quan el sensor veja l’eixida lliure, el robot s’hi haurà orientat sense dependre de la posició inicial. En arribar a l’obertura, gireu a l’esquerra 90° per incorporar-vos a la recta del circuit i avanceu a la velocitat més alta que hàgeu comprovat abans que cap roda sobreïsca del traçat. Anoteu orientació inicial, nombre de girs, eixida detectada i resultat de la incorporació.
 
 ```blocks
 quan es prem A
   repeteix 3 vegades
     si hi ha obstacle davant
       gira a la dreta 90 graus
-  si el camí està lliure
-    gira cap al corredor
-    avança una casella a velocitat baixa
+  si l'eixida està lliure
+    gira a l'esquerra 90 graus
+    avança pel circuit a velocitat validada
 ```
+
+El bucle és finit i limita els girs a tres intents; no l’embolcalleu amb un `per sempre`. La consigna oficial de continuar a gran velocitat s’adapta a una velocitat màxima local validada, perquè una recta curta o una bateria baixa poden fer perdre el control del model.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Proveu les tres orientacions inicials. Després, en una tanda independent, useu el sensor de llum de Codey per comparar el passadís clar amb el túnel ombrejat. Registreu primer lectures de les dues condicions i trieu un llindar entre els valors observats; són valors del sensor, no lux calibrats. Dins d’un segon `repeteix 3`, llegiu la llum, espereu un segon i apliqueu l’operador `<`: si el valor queda per davall del llindar, enceneu l’indicador RGB blanc i reduïu la velocitat; si no, apagueu l’indicador i manteniu la velocitat de prova. Feu tres lectures en cada condició i no presenteu el llindar com una mesura de seguretat real.
+Proveu la ruta des de les tres orientacions, amb tres intents comparables per orientació. Registreu els girs i si arriba a la pista; canvieu una sola part del codi si falla. En una tanda separada, useu el sensor de llum de Codey per comparar el passadís clar amb el túnel ombrejat. Registreu primer les lectures i trieu un llindar entre els valors observats: són valors relatius del sensor, no lux calibrats. Dins d’un segon `repeteix 3`, llegiu la llum, espereu un segon i apliqueu l’operador `<`: si queda per davall del llindar, enceneu l’indicador RGB blanc i reduïu la velocitat; si no, apagueu l’indicador i manteniu la velocitat de prova. Feu tres lectures per condició i no presenteu el llindar com una mesura de seguretat real.
 
 ```blocks
 repeteix 3 vegades
@@ -252,7 +258,7 @@ repeteix 3 vegades
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-Compareu els girs observats en les tres orientacions i la taula de llum clara/ombra. Expliqueu per què el bucle redueix codi repetit, què retorna una comparació `<` i quina diferència hi ha entre el mòdul IR orientat cap avant i el sensor de llum de Codey. **Evidència:** diagrama de l’estació, dos programes amb `repeteix` i `si`, registre d’orientacions, valors de llum i revisió d’una prova.
+Compareu els girs observats en les tres orientacions i la taula de llum clara/ombra. Expliqueu per què el bucle redueix codi repetit, què retorna una comparació `<` i quina diferència hi ha entre el mòdul IR orientat cap avant i el sensor de llum de Codey. **Evidència:** diagrama de l’estació amb tres orientacions inicials, registre de nou intents de reentrada, dos programes amb bucles finits i condicions, valors de llum i revisió d’una prova.
 
 **Pregunta docent:** quines parts del repte reutilitzen un bucle i quina lectura del sensor justifica cada condició?
 
@@ -268,20 +274,26 @@ Localitzeu el sensor de so de Codey en la versió de mBlock disponible i observe
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Construïu la barra de tres altures amb una condició dins d’un únic bucle `per sempre`. La branca alta correspon a `nivell > 20`; la mitjana, a `10 ≤ nivell ≤ 20`, expressada amb l’operador lògic **i**; la baixa, a `nivell < 10`. Són llindars didàctics del repte oficial, no valors universals del sensor. Traceu els casos 9, 10, 15, 20 i 21 abans de provar-los.
+Construïu la barra de tres altures amb tres condicions dins d’un únic bucle `per sempre`. El pla docent defineix `nivell > 20`, `10–20` i `nivell < 10`, i demana l’operador **i** per a la franja central; el quadern d’alumnat escriu aquesta franja com `10 < nivell < 20`, sense assignar explícitament els valors exactes 10 i 20. Perquè la proposta local classifique totes les lectures, acordem i anotem una convenció pròpia: 10 i 20 també mostren la barra mitjana (`10 ≤ nivell ≤ 20`). Són llindars didàctics del repte, no valors universals del sensor. Traceu 9, 10, 15, 20 i 21 abans de provar-los.
 
 ```blocks
 per sempre
   llig el nivell de so
   si nivell > 20
     mostra barra alta
-  si no
-    si nivell >= 10 i nivell <= 20
-      mostra barra mitjana
-  si no
-    si nivell < 10
-      mostra barra baixa
+  si nivell >= 10 i nivell <= 20
+    mostra barra mitjana
+  si nivell < 10
+    mostra barra baixa
 ```
+
+| Lectura de prova | Eixida local | Motiu |
+|---:|---|---|
+| 9 | Barra baixa | Menor que 10 |
+| 10 | Barra mitjana | Límit assignat a la franja central per convenció local |
+| 15 | Barra mitjana | Dins de la franja central |
+| 20 | Barra mitjana | Límit assignat a la franja central per convenció local |
+| 21 | Barra alta | Major que 20 |
 
 ![Codey Rocky de la dotació mostra tres altures de barra en la matriu LED.](../../_assets/imatges/sa-cr-barra-sonora.webp)
 
@@ -289,13 +301,13 @@ _Representació visual de tres nivells: la pantalla mostra una resposta programa
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Comproveu cada frontera (9, 10, 20 i 21) amb l’entrada real o amb valors simulats. Després, feu l’extensió oficial: afegiu una resposta de color amb l’indicador RGB o dividiu una de les franges en dos nivells. Manteniu el bucle de lectura i torneu a provar totes les fronteres que puga afectar el canvi.
+Comproveu cada frontera (9, 10, 20 i 21) amb l’entrada real o amb valors simulats, i contrasteu-la amb la taula. Després, feu l’extensió oficial: afegiu una resposta de color amb l’indicador RGB o dividiu una de les franges en dos nivells. Manteniu el bucle de lectura i torneu a provar totes les fronteres que puga afectar el canvi.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
 **Evidència:** taula de valors i eixides per als cinc casos, programa amb condició dins del bucle continu i una explicació de com l’operador **i** delimita la franja intermèdia.
 
-**Pregunta docent:** què passa exactament amb els valors 10 i 20, i com podem demostrar que cap lectura queda sense una resposta definida?
+**Pregunta docent:** quina part de l’assignació de 10 i 20 ve de la font i quina és la convenció que hem acordat per al nostre programa? Com comprovem que cap lectura queda sense una resposta definida?
 ### **L10 · Funcions de bon dia (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
@@ -367,19 +379,19 @@ Executeu una volta a potència baixa amb una persona al costat del robot i compa
 **Evidència:** mapa mesurat, tres lectures de calibratge, càlcul de velocitat i temps, funció `quadrat` cridada dues vegades i comparació entre posició prevista i observada.
 
 **Pregunta docent:** quina dada hem mesurat en el robot i quina part del càlcul continua sent una estimació que depén del terra i de la bateria?
-### **L12 · Petit vigilant II: funcions per a rutes complexes (40 min).**
+### **L12 · Petit vigilant II: patrullem la segona planta (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Recupereu el plànol de la primera planta i compareu-lo amb una nova ruta del museu escolar: hi ha més sales, dos passadissos i diversos girs. Predigueu quines funcions de L11 encara serveixen, quines parts cal afegir i com podeu calcular el temps total sense escriure cada moviment des de zero.
+Recupereu el plànol de patrulla de la primera planta, construït en L11. El nou encàrrec és patrullar una segona planta: el repte de Makeblock augmenta la dificultat amb un altre mapa i demana reutilitzar funcions i matemàtiques. En la nostra maqueta, la planta superior té tres sales quadrades, dos passadissos i diversos girs. Abans de programar, marqueu quines instruccions es repeteixen, quines connexions canvien i quines dades del càlcul de L11 es poden reutilitzar. El robot no puja escales: cada planta és un plànol pla diferent.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Dibuixeu una planta pròpia amb tres sales quadrades connectades per dos passadissos i marqueu inici, sentit de circulació i final. Mesureu costat i connexions; feu servir la velocitat de referència i el temps de gir calibrats en L11, però torneu a comprovar-los si canvien el terra, la càrrega o la potència. Una parella revisa que les línies no se sobreposen i que el recorregut tinga una única interpretació.
+Dibuixeu un plànol propi de la segona planta amb tres sales quadrades i dos passadissos. Marqueu entrada, recorregut, sentit de circulació i eixida; no cal que coincidisca amb el mapa oficial. Mesureu els costats i les connexions amb una unitat comuna. Reutilitzeu la velocitat de referència i els girs calibrats en L11, però repetiu la calibració si han canviat el terra, la càrrega o la potència. Una parella comprova que el traçat no se sobreposa i que una altra persona el pot llegir sense instruccions orals.
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Reutilitzeu `quadrat` de L11 i definiu funcions separades per als passadissos. Creeu després `planta_marjal`, que crida les funcions en l’ordre del mapa; executeu-la des del botó A. Calculeu `distància prevista = 3 × (4 × costat) + passadís 1 + passadís 2` i `temps previst = distància prevista ÷ velocitat mesurada`, afegint a banda els temps de gir. Si el vostre dibuix necessita una altra forma, canvieu el nombre de trams i anoteu la fórmula corresponent.
+Reutilitzeu `quadrat` de L11 i definiu una funció per a cada passadís. Creeu `planta_2_marjal` per cridar les funcions en l’ordre marcat al plànol i assigneu-la al botó A. Abans de provar, calculeu `distància prevista = 3 × (4 × costat) + passadís 1 + passadís 2` i `temps previst = distància prevista ÷ velocitat mesurada`; afegiu per separat els girs, que no formen part de la distància recta. El plànol i les mesures són propis, no una còpia del mapa de la targeta oficial.
 
 ```blocks
 defineix passadís_1
@@ -388,7 +400,7 @@ defineix passadís_1
 defineix passadís_2
   avança durant temps_passadís_2
 
-defineix planta_marjal
+defineix planta_2_marjal
   crida quadrat
   crida passadís_1
   gira segons el mapa
@@ -398,20 +410,20 @@ defineix planta_marjal
   crida quadrat
 
 quan es prem A
-  crida planta_marjal
+  crida planta_2_marjal
 ```
 
-Compareu el càlcul manual amb la traça del programa i identifiqueu quines instruccions són funcions auxiliars i quina és la funció que organitza la missió sencera.
+Compareu el càlcul amb la traça del programa. Identifiqueu `quadrat` i els passadissos com a funcions auxiliars i `planta_2_marjal` com la funció que organitza la patrulla completa. Expliqueu com evita repetir el mateix codi de sala i quines parts canviarien si una altra planta tinguera una ruta diferent.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Proveu primer una sola sala i el passadís següent a potència baixa. Compareu la posició real amb la del plànol i canvieu una sola durada cada vegada. Quan els trams passen les proves, executeu la missió completa amb una persona observadora al costat; atureu el robot si ix de la ruta o s’acosta a una zona ocupada. Si no hi ha una zona de prova lliure, feu la validació amb una fitxa sobre el mapa i passos de codi en paper.
+Proveu primer una sala, després el passadís i el gir següent, sempre a potència baixa. Registreu distància prevista i observada per a cada tram; canvieu una sola durada cada vegada. Quan totes les peces passen la prova, executeu la patrulla de la segona planta amb una persona observadora al costat. Atureu el robot si ix del mapa o s’acosta a una zona ocupada. Si no hi ha una zona segura de prova, valideu la mateixa composició de funcions amb una fitxa i codi en paper.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** mapa de la planta ampliada, funcions auxiliars, funció de missió, càlcul de distància i temps, traça per trams i comparació prevista/observada.
+**Evidència:** plànols propis de les dues plantes, funcions auxiliars i funció `planta_2_marjal`, càlcul de distància/temps, registre de proves per tram i comparació prevista/observada.
 
-**Pregunta docent:** què hem pogut reutilitzar de L11 i quina part del temps calculat varia quan canvien superfície, bateria o ajust del gir?
+**Pregunta docent:** quina part de la patrulla de la primera planta hem reutilitzat i quins valors cal recalcular quan canvien ruta, superfície, bateria o gir?
 ### **L13 · La caixa de llavors de l’hort (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)

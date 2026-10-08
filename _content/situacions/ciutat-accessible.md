@@ -5,7 +5,7 @@ description: "Investiguem com comunicar estats diferents en una maqueta de pas u
 robot: "microbit"
 robot_label: "Micro:bit"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle d’Educació Primària"
+cycle_label: "Tercer cicle"
 subject: "tecnologia"
 subject_label: "Tecnologia, Coneixement del Medi i Disseny"
 theme: "ciutat"

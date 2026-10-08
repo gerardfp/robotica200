@@ -85,7 +85,11 @@ Presenteu el repte de traçar el mapa de passadissos de la mediateca i predigueu
 
 #### Fase 2 · Explorem i construïm
 
-Munteu un traçador X-Y amb una agulla ampla que llisque sobre paper; practiqueu com carregar el full i dividiu la construcció entre les dues parts principals. Amb piles de codi separades, proveu línies verticals i horitzontals. Registreu girs o rotacions del motor i la longitud que ha traçat cada prova.
+Munteu un traçador X-Y amb una agulla ampla que llisque sobre paper. En tàndem, una persona construeix la part superior del traçador i l’altra la base i l’agulla; després inspeccionen juntes que el conjunt es moga lliurement. Practiqueu com carregar el full sense arrugar-lo i comproveu primer cada pila de codi per separat. Comenceu amb línies verticals i horitzontals; reserveu diagonals per a una segona prova. Registreu les rotacions del motor i la longitud que ha traçat cada intent.
+
+![Model SPIKE Prime de la dotació al costat d’un traçador X-Y construït amb bigues i motors, amb una ruta de prova dibuixada sobre paper.](../../_assets/imatges/sa-sp-tracador-xy.webp)
+
+_Il·lustració conceptual per a entendre els eixos i el traçat; no és una instrucció de muntatge. Comproveu el model i les peces disponibles abans de construir._
 
 #### Fase 3 · Expliquem i registrem
 
@@ -97,9 +101,9 @@ A la segona sessió, feu un segon mapa i comenteu el codi reutilitzat. A partir 
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** mapa anotat, programa modular, comentaris i taula que relaciona rotacions del motor amb longitud de línia. Expliqueu quina decisió de calibratge ha millorat el traçat i atribuiu els blocs adaptats al programa de partida quan se n’haja reutilitzat un.
+**Evidència:** mapa anotat, piles de codi combinades, taula de rotacions/longituds i comentaris que atribueixen qualsevol programa reutilitzat. Comproveu tres criteris: reconéixer trams horitzontals, verticals i diagonals; reutilitzar i ajustar blocs per a una ruta nova; i identificar la procedència dels blocs adaptats. Cada alumne s’autoavalua amb tres nivells (encara ho prove amb ajuda / ho faig amb blocs existents / reutilitze i adapte el codi explicant-ne la font) i rep una observació d’una altra parella per a la prova següent.
 
-### **Una condició per controlar l’accés a la capsa de préstec ([Keep It Safe](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/keep-it-safe/), 90–120 min).**
+### **S4 · Una condició per controlar l’accés a la capsa de préstec ([Keep It Safe](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/keep-it-safe/), 90–120 min).**
 
 #### Fase 1 · Activem i prediem
 
@@ -161,6 +165,10 @@ Delimiteu una àrea per guardar prototips entre classes i prepareu una llibreta 
 #### Fase 2 · Explorem i construïm
 
 Cada equip identifica les parts clau del problema, esbossa almenys dues solucions i en tria una amb criteris explícits: precisió, facilitat de revisió, estabilitat i ús de materials. Escriviu pseudocodi i construïu un primer ajudant; combineu rols i anoteu qualsevol problema en lloc d’amagar-lo.
+
+![Model SPIKE Prime de la dotació comprova targetes de retorn de colors i les deriva cap a tres safates de prova.](../../_assets/imatges/sa-sp-classificador-retorns.webp)
+
+_Prototip conceptual amb fitxes i safates fictícies; el sensor i el mecanisme s’han d’ajustar i calibrar amb les peces reals del centre. No classifica llibres, persones ni dades reals._
 
 #### Fase 3 · Expliquem i registrem
 

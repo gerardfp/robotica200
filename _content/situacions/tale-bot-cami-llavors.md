@@ -5,7 +5,7 @@ description: "Programem Tale-Bot per dur llavors de paper als bancals d’un hor
 robot: "tale-bot"
 robot_label: "Tale-Bot Pro"
 cycle: "infantil"
-cycle_label: "Educació Infantil (4–5 anys)"
+cycle_label: "Educació Infantil"
 subject: "medi"
 subject_label: "Descoberta de l’entorn, llenguatge i matemàtiques"
 theme: "sostenibilitat"

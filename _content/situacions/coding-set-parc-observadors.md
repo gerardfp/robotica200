@@ -5,7 +5,7 @@ description: "Programem MatataBot per visitar punts d’un parc inspirat en l’
 robot: "coding-set"
 robot_label: "MatataBot · Coding Set"
 cycle: "primer-cicle"
-cycle_label: "Primer cicle d’Educació Primària"
+cycle_label: "Primer cicle"
 subject: "medi"
 subject_label: "Coneixement del Medi, Matemàtiques i Tecnologia"
 theme: "sostenibilitat"

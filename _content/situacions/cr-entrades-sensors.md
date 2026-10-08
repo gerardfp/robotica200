@@ -210,6 +210,10 @@ Prepareu targetes de colors per a una galeria del pati i predigueu quines podrà
 
 Feu lectures de diverses targetes, manteniu la distància, l’orientació i la llum tan constants com siga possible i creeu una regla inicial de classificació.
 
+![Codey Rocky de la dotació apunta el sensor frontal cap a una targeta roja, amb altres mostres de color i una taula de registre.](../../_assets/imatges/sa-cr-sensor-color-proves.webp)
+
+_La prova classifica lectures de superfícies en condicions controlades; el sensor no identifica què és l’objecte ni garanteix el mateix resultat amb qualsevol llum o distància._
+
 #### Fase 3 · Expliquem i registrem
 
 Anoteu les lectures repetides per targeta, la classificació prevista i el resultat. Separeu les targetes utilitzades per ajustar la regla de les que reservareu per a comprovar-la.
@@ -312,4 +316,4 @@ Cada equip lliura sis registres d'entrada i resposta, diagrames o fragments de c
 
 ## 🔗 Font oficial i abast de l'adaptació
 
-La traçabilitat parteix de les lliçons 17, 18 i 21–30 de [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery), segons els títols i objectius publicats per Makeblock. Les lliçons 19–20 (interruptors tàctils), 31–32 (ultrasons) i 33–34 (tira LED) depenen dels mòduls Neuron i queden fora mentre no es confirme que són a la dotació. La pàgina oficial remet a materials docents que requereixen accés de compte; aquesta adaptació crea reptes, seqüència i visuals propis a partir de la informació pública i no afirma reproduir instruccions privades. La llista general de les 24 lliçons CSTA de Codey Rocky es troba en la [pàgina de Codey Rocky de Makeblock](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids).
+La traçabilitat parteix de les lliçons 17, 18 i 21–30 de [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery), segons els títols i objectius publicats per Makeblock. La guia oficial [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) identifica el mòdul IR del xassís Rocky com a sensor de color/proximitat; la imatge i la sessió el mostren llegint una targeta, sense atribuir-li reconeixement d’objectes. Les lliçons 19–20 (interruptors tàctils), 31–32 (ultrasons) i 33–34 (tira LED) depenen dels mòduls Neuron i queden fora mentre no es confirme que són a la dotació. La pàgina oficial remet a materials docents que requereixen accés de compte; aquesta adaptació crea reptes, seqüència i visuals propis a partir de la informació pública i no afirma reproduir instruccions privades. La llista general de les 24 lliçons CSTA de Codey Rocky es troba en la [pàgina de Codey Rocky de Makeblock](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids).

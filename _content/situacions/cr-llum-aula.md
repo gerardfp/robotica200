@@ -5,7 +5,7 @@ description: "Investiguem com varien les lectures relatives del sensor de llum d
 robot: "codey-rocky"
 robot_label: "Codey Rocky"
 cycle: "segon-cicle"
-cycle_label: "Segon cicle d’Educació Primària"
+cycle_label: "Segon cicle"
 subject: "medi"
 subject_label: "Coneixement del Medi, Ciències i Tecnologia"
 theme: "sostenibilitat"

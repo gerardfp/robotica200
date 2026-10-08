@@ -95,7 +95,7 @@ Decidiu quin botó tria una opció i quin l’atura o la canvia. El programa no 
 
 #### Fase 3 · Expliquem i registrem
 
-Una parella fa d’ordinador i executa literalment les instruccions. Registreu les proves de no activació, opció 1, opció 2, canvi d’opció, aturada i un cas inesperat.
+Una parella fa d’ordinador i executa literalment les instruccions. Completeu una taula amb **estat inicial, entrada, eixida esperada, eixida observada i resultat**. Incloeu com a mínim: cap entrada (es manté apagat), botó A (mostra l’opció 1), botó B (mostra l’opció 2), una segona pulsació (canvia o manté l’opció segons la regla escrita) i ordre d’aturada (torna a neutre). Afegiu un cas inesperat, com ara deixar passar el temps sense prémer cap botó. No cal registrar noms ni opinions personals.
 
 #### Fase 4 · Apliquem i millorem
 
@@ -109,15 +109,19 @@ Verifiqueu que el diagrama inclou entrada, selecció, eixida i retorn a estat ne
 
 #### Fase 1 · Activem i prediem
 
-Predigueu com es podrà activar i aturar el prototip abans de muntar-lo. Comproveu que la prova es pot fer amb simulador, captura estàtica o paper, sense mirar el patró.
+Predigueu com es podrà activar i aturar el prototip abans de muntar-lo. Comproveu que la prova es pot fer amb simulador, captura estàtica o paper, sense mirar el patró. Assigneu una persona al programa, una altra a llegir els casos de prova i una tercera a registrar eixides; canvieu els rols abans de la revisió final.
 
 #### Fase 2 · Explorem i construïm
 
-Col·loqueu la micro:bit en un suport estable sense tapar botons ni pantalla, o deixeu-la plana si així és més fàcil controlar-la. Implementeu l’algoritme amb entrades, selecció, una repetició limitada i eixida estàtica; no afegiu automatismes que observen la classe.
+Col·loqueu la micro:bit en un suport estable sense tapar botons ni matriu LED, o deixeu-la plana si així és més fàcil controlar-la. Implementeu l’algoritme amb entrades, selecció, una repetició limitada i eixida estàtica; no afegiu automatismes que observen la classe.
+
+![Prototip propi amb una micro:bit en suport de cartó, una mà que tria un botó i targetes impreses amb dos símbols estàtics i una opció neutra.](../../_assets/imatges/sa-mb-aula-sensorial-opcions.webp)
+
+_La persona pot triar el senyal, fer servir les targetes de paper o deixar el dispositiu apagat._
 
 #### Fase 3 · Expliquem i registrem
 
-Recorreu els casos de la sessió anterior i anoteu eixida esperada i real. Reviseu un error i torneu a executar-lo. Els comentaris de la galeria seran sobre el disseny, no sobre les reaccions de cap persona.
+Recorreu els sis casos de la sessió anterior i anoteu eixida esperada i real. Si la taula mostra una diferència, reproduïu només eixe cas, localitzeu si l’error està en l’entrada, la condició o l’eixida i torneu a provar-lo després del canvi. Els comentaris de la galeria seran sobre el disseny, no sobre les reaccions de cap persona.
 
 #### Fase 4 · Apliquem i millorem
 
@@ -129,7 +133,7 @@ Presenteu el codi, els criteris i un límit conegut. **Evidència:** prototip, p
 
 ## 📊 Avaluació i evidències
 
-Guardeu l’encàrrec fictici, mapa d’entorn, comparació d’ajudes, criteris, pseudocodi, diagrama d’estats, codi i resultats esperat/reals de cinc casos. Valoreu si l’equip (1) justifica per què una opció pot respondre a l’encàrrec sense dir que convé a tothom; (2) representa entrada, selecció, eixida i repetició; (3) programa el comportament triat i previsible; (4) prova i depura casos; i (5) comunica una alternativa i un límit. La rúbrica avalua decisions de disseny i funcionament tècnic, no una resposta sensorial “correcta”.
+Guardeu l’encàrrec fictici, mapa d’entorn, comparació d’ajudes, criteris, pseudocodi, diagrama d’estats, codi i resultats esperats/reals dels sis casos. Valoreu si l’equip (1) justifica per què una opció pot respondre a l’encàrrec sense dir que convé a tothom; (2) representa entrada, selecció, eixida i repetició; (3) programa el comportament triat i previsible; (4) prova i depura casos, incloent-hi estat apagat i aturada; i (5) comunica una alternativa i un límit. La rúbrica avalua decisions de disseny i funcionament tècnic, no una resposta sensorial “correcta”.
 
 ## 🛡️ Consentiment, accessibilitat i privacitat
 

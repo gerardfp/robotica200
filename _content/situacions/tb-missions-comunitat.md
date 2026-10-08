@@ -4,8 +4,8 @@ title: "Missions de comunitat amb Tale-Bot"
 description: "Deu missions globals de Tale-Bot per a construir relats, recórrer serveis i planificar rutes amb seqüències i bucles."
 robot: "tale-bot"
 robot_label: "Tale-Bot"
-cycle: "segon-cicle-infantil"
-cycle_label: "Infantil i primer cicle"
+cycle: "infantil"
+cycle_label: "Educació Infantil"
 subject: "pensament-computacional"
 subject_label: "Llenguatge, Medi Social i Pensament Computacional"
 theme: "entorn"
@@ -121,6 +121,10 @@ Trieu una llista de compra inventada per la docent i predigueu quantes parades c
 #### Fase 2 · Explorem i construïm
 
 Col·loqueu els aliments dibuixats i una caixa en el mapa. Prepareu un missatge «Necessite comprar…» amb una gravació consentida si la funció existeix o una targeta de narració.
+
+![Tale-Bot real segueix una ruta de fites en un mercat de barri fictici; les targetes il·lustren l’ordre de visita a la fleca, la fruiteria i la floristeria.](../../_assets/imatges/sa-tb-missions-mercat.webp)
+
+_Les parades i els productes són una maqueta narrativa creada per a l’activitat, no una representació d’un comerç concret._
 
 #### Fase 3 · Expliquem i registrem
 

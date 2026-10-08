@@ -5,7 +5,7 @@ description: "Dissenyem expressions digitals per a personatges ficticis amb la p
 robot: "codey-rocky"
 robot_label: "Codey Rocky"
 cycle: "segon-cicle"
-cycle_label: "Segon cicle d’Educació Primària"
+cycle_label: "Segon cicle"
 subject: "llengua"
 subject_label: "Llengua, Educació Artística i Tecnologia"
 theme: "salut"

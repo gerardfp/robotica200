@@ -1,16 +1,16 @@
 ---
 active: true
 title: "La fira de descobertes de l'escola"
-description: "Set propostes pròpies amb Tale-Bot per explorar l'escola, els sentits, la botiga, els nombres, les formes i la creació artística."
+description: "Una sessió inicial i set propostes pròpies amb Tale-Bot per explorar l'escola, els sentits, la botiga, els nombres, les formes i la creació artística."
 robot: "tale-bot"
 robot_label: "Tale-Bot"
-cycle: "segon-cicle-infantil"
-cycle_label: "Infantil i primer cicle"
+cycle: "infantil"
+cycle_label: "Educació Infantil"
 subject: "medi"
 subject_label: "Coneixement del Medi, Matemàtiques, Llenguatge i Educació Artística"
 theme: "comunitat"
 theme_label: "Escola i barri"
-duration: "7 sessions"
+duration: "8 sessions"
 challenge: "Com podem preparar una fira on cada ruta del robot convide a observar, comptar, conversar i crear?"
 ---
 
@@ -22,15 +22,43 @@ _Els set estands de la fira es construeixen amb targetes i materials senzills de
 
 La classe organitza una fira de descobertes per a una altra aula. Tale-Bot visita estands de l'escola, una parada de fruita, un espai de formes i una taula d'art. En cada sessió, l'alumnat formula una pregunta, representa les ordres amb targetes, prediu el trajecte i prova el programa. El mapa, els materials, els personatges i les consignes són originals i s'adapten als llocs propers al centre.
 
-Aquesta seqüència pren com a referència els títols públicament visibles de les lliçons 3–9 del currículum Tale-Bot Pro de nivell 1. Els plans complets d'aquestes lliçons no s'han pogut consultar; per tant, les sessions adapten el tema i la progressió pública, sense atribuir al fabricant objectius o passos que no es poden verificar.
+Aquesta seqüència comença amb una sessió pròpia que adapta els objectius públics de la primera lliçó del nivell 1 —reconéixer Tale-Bot Pro i les seues parts i botons, practicar l’encesa/apagada i tractar el robot amb cura— i continua amb propostes temàtiques basades en els títols públics de les lliçons 3–9. La segona lliçó («On són els animals de la granja?») té una adaptació separada a [El rastre del corral](../../situacio/index.html?id=tb-rastre-corral). Els plans complets de les lliçons 3–9 no s’han pogut consultar; les sessions corresponents adapten els temes i la progressió pública, sense atribuir al fabricant objectius o passos que no es poden verificar.
 
-## 🗺 Set estands, set reptes
+## 🗺 Una benvinguda i set estands
+
+### **Hola, Tale-Bot: el coneixem i el cuidem (40 min).**
+
+#### Fase 1 · Activem i prediem (5 min)
+
+Presenteu el Tale-Bot Pro del centre com una màquina que respon a instruccions. Compareu-lo amb una persona i amb un vehicle de joguina: quines accions pot fer cadascun, què necessiten per funcionar i quines idees són només suposicions? L’objectiu és despertar curiositat i reconéixer que el robot no té intencions humanes: el grup decideix les instruccions i comprova la resposta. Acordeu també una norma observable de cura, com ara esperar que el robot s’ature abans d’alçar-lo.
+
+#### Fase 2 · Explorem i construïm (10 min)
+
+Amb un Tale-Bot apagat, observeu-ne el cos, les rodes, els botons i els indicadors lluminosos. Useu una maqueta o silueta de paper pròpia per assenyalar cada part i relacionar-la amb una funció que després comprovareu. Si el kit del centre els inclou, mostreu les ales i el suport per a dibuixar o construir; són peces de caracterització o accessoris, no parts que el robot puga moure de manera autònoma. Prepareu deu gots de paper lleugers com a fites per a una ruta, no com a obstacles per colpejar.
+
+![Tale-Bot Pro de la dotació al costat d’una silueta pròpia dels controls i d’una fila de gots lleugers per marcar una zona d’exploració.](../../_assets/imatges/sa-tb-coneguem-tale-bot.webp)
+
+_La silueta i els gots són recursos didàctics propis; el robot il·lustrat correspon al Tale-Bot Pro del kit._
+
+#### Fase 3 · Expliquem i registrem (10 min)
+
+En parelles, ordeneu targetes pròpies de «encendre», «introduir una ordre», «prémer *Play*» i «observar». Amb supervisió, cada equip encén i apaga el robot segons la guia del centre i comprova les quatre ordres de moviment bàsic —avant, arrere, esquerra i dreta— en una superfície plana. Abans de prémer *Play*, observeu els indicadors que corresponen a les ordres introduïdes; després, comproveu si el recorregut coincideix amb la predicció. Anoteu què han fet realment els botons i quina part del procés depén de les persones.
+
+#### Fase 4 · Apliquem i millorem (10 min)
+
+Prepareu una zona plana, neta i allunyada de vores. Col·loqueu els deu gots com a dues files de fites i creeu una destinació pròpia amb una targeta «hola»; la ruta ha de passar per un corredor ample sense tocar els gots. Una parella tria el punt d’inici, orienta el robot i prediu les ordres; l’altra observa els indicadors i comprova el trajecte. Si no coincideixen, canvieu una sola ordre o corregiu l’orientació i torneu a provar. Qui no manipule el robot pot dirigir la seqüència amb targetes, portar el registre o assenyalar l’accessori que s’està observant.
+
+#### Fase 5 · Comprovem i reflexionem (5 min)
+
+**Evidència:** maqueta de paper anotada, demostració d’encesa/apagada, seqüència de quatre ordres i indicadors observats, predicció/resultat de la ruta i una norma de cura explicada amb un exemple.
+
+**Pregunta docent:** quines parts del recorregut ha decidit el programa i quines decisions continuen sent de les persones?
 
 ### **Sessió 1 · L'escola de Tale-Bot — «Matatalab School».**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+Observeu la planta simplificada de l’aula i les tres destinacions. Trieu una ruta entre dos llocs i feu una predicció amb targetes: quantes ordres cap avant necessitarà Tale-Bot si comença orientat cap a la biblioteca? Assenyaleu inici, orientació i meta abans de programar.
 
 #### Fase 2 · Explorem i construïm
 
@@ -38,21 +66,21 @@ Dibuixem una planta senzilla de l'aula amb tres llocs d'interés (biblioteca, ho
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+Representeu la ruta amb una tira d’ordres i expliqueu cada pas amb «des de… avance… caselles». Registreu la casella inicial, l’orientació, la meta, la seqüència prevista i la posició final observada. Una altra parella ha de poder reconstruir el trajecte només amb el registre.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+Feu que una parella diferent execute la mateixa seqüència des del mateix inici i sense explicacions orals durant el moviment. Si arriba a una casella diferent, reviseu primer l’orientació i després una ordre cada vegada. Marqueu la versió inicial i la corregida i comproveu si una visita pot seguir el mapa sense ajuda.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Evidència:** planta amb llegenda, dues rutes amb inicis orientats, tira d’ordres inicial/final i comprovació d’una parella visitant. Expliqueu quina informació del mapa ha evitat una instrucció ambigua i què encara s’ha de dir en veu alta.
 
 ### **Sessió 2 · Un robot, moltes respostes — «Versatile Matatalab Robot».**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+Mireu tres targetes de repte: arribar a una casella, fer una dansa i dibuixar un traç. Predigueu quines accions corresponen a ordres de moviment i quines necessiten una funció o accessori. Distingiu una resposta que el robot pot executar d’una interpretació humana com ara «estar content».
 
 #### Fase 2 · Explorem i construïm
 
@@ -60,21 +88,21 @@ Preparem tres microreptes en un mateix mapa: arribar a una casella, fer una paus
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+Completeu una taula de tres columnes: seqüència introduïda, resultat observable i material necessari. En la prova de dibuix, anoteu si el suport i el retolador estaven muntats; en la dansa, descriviu el moviment que s’ha vist, sense afirmar que el robot haja triat una emoció o entenga la música.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+Proveu primer cada microrepte per separat i esborreu la seqüència abans del següent. Després, combineu moviment i una acció final en un programa curt. Si el dibuix ix del full, fixeu millor el paper o canvieu el recorregut; no canvieu alhora el programa i el muntatge. La dansa i el dibuix són opcions, no requisits si el kit no porta els accessoris corresponents.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Evidència:** tres microprogrames separats, un programa combinat i taula d’observació. Expliqueu què canvia quan s’afegeix una ordre i quina acció depén d’un accessori; la dansa aleatòria no és una ordre coreogràfica que l’alumnat puga especificar.
 
 ### **Sessió 3 · El recorregut dels cinc sentits — «My Five Senses».**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+Trieu tres pictogrames d’estació i decidiu un ordre de visita. Abans de moure cap material, predigueu quina seqüència de moviments serà necessària i quina característica es podrà observar en cada parada. Recordeu que Tale-Bot no té sensors de gust, olfacte, tacte, oïda o visió: l’observació la fan les persones.
 
 #### Fase 2 · Explorem i construïm
 
@@ -90,21 +118,21 @@ _Les imatges indiquen llocs d'observació, no instruccions perquè el robot perc
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+Una persona narra les ordres i una altra registra cada parada amb un pictograma o una característica visible/descrita pel docent. Separeu en el full dues columnes: «què ha fet el robot» i «què hem observat nosaltres». No anoteu preferències, salut, noms ni experiències personals.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+Canvieu l’ordre de dues estacions i predigueu si cal una seqüència diferent. Executeu-la des del mateix punt d’inici i compareu només el recorregut; manteniu les mateixes targetes i la mateixa orientació. Oferiu una ruta alternativa de mirar o assenyalar, sense tocar, tastar ni olorar cap material.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Evidència:** ruta amb tres parades, registre pictogràfic i comparació entre ordre inicial i reordenat. Expliqueu una observació feta per les persones i una acció executada pel robot, sense confondre-les.
 
 ### **Sessió 4 · La botiga de temporada — «Matata Grocery Store».**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+Llegiu una comanda de dos productes dibuixats i mireu el plànol de la parada. Predigueu quin producte visitareu primer, quantes ordres necessita el trajecte i quin serà el cost total si les fitxes indiquen preus. Els preus són dades del joc, no preus actuals del mercat.
 
 #### Fase 2 · Explorem i construïm
 
@@ -112,21 +140,21 @@ Dissenyem una parada amb imatges de productes de mercat local i fitxes de preus 
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+Traceu el programa sobre una graella i anoteu el recompte de moviments entre cada producte. En un registre diferent, sumeu els dos preus i escriviu l’operació. La persona que rep la comanda comprova la seqüència i la suma per separat: una ruta correcta no garanteix una suma correcta.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+Intercanvieu la comanda amb una altra parella. Feu una primera prova de ruta, lliureu una fitxa per producte i reviseu si la llista i la suma coincideixen. Si hi ha error, indiqueu si és de moviment, ordre de visita o càlcul; canvieu-ne només un i torneu a provar des del mateix inici.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Evidència:** comanda marcada, programa amb inici orientat, dues fitxes lliurades i suma comprovada. Expliqueu com heu distingit el recorregut del càlcul i per què les etiquetes «horta» o «mercat» no representen dades de compra reals.
 
 ### **Sessió 5 · Quantes maduixes hi ha? — «Count Strawberries I».**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+Observeu les caselles amb grups de maduixes de paper i trieu una ruta. Predigueu el total abans de comptar i decidiu com marcareu cada casella visitada perquè cap grup es compte dues vegades ni se n’oblide cap.
 
 #### Fase 2 · Explorem i construïm
 
@@ -134,21 +162,21 @@ Situem grups de maduixes de paper en diverses caselles. Abans de programar, cada
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+Useu una taula amb casella, quantitat observada i subtotal acumulat. En cada parada, marqueu la casella només després de mirar-la; després, una segona persona torna a comptar els grups sense seguir el robot per comprovar el total per una via independent.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+Canvieu la posició d’un grup de maduixes, manteniu la resta igual i torneu a calcular el total. Compareu la predicció i el recompte abans/després. Si el total no canvia, expliqueu per què; si canvia, identifiqueu la casella modificada sense modificar també la ruta.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Evidència:** ruta, caselles marcades, predicció inicial, taula de subtotals i recompte independent. Expliqueu quina estratègia ha evitat duplicar una casella i recordeu que les maduixes són fitxes de joc, no una collita observada.
 
 ### **Sessió 6 · El monstre de les formes — «Shape Monster I».**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+Compareu les targetes de triangle, quadrat, cercle i rectangle. Trieu-ne una i predigueu quantes caselles o canvis de direcció caldran per visitar els punts de la seua vora en ordre, començant en una marca orientada.
 
 #### Fase 2 · Explorem i construïm
 
@@ -156,21 +184,25 @@ Cada equip rep una silueta geomètrica gran i la descompon en fites de la graell
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+Registreu el nombre de trams rectes, les caselles de cada tram i els canvis de direcció observats. Una persona uneix els punts després del recorregut i identifica la forma; compareu el contorn amb la targeta sense dir que Tale-Bot dibuixa si no porta el suport i el retolador.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+Intercanvieu la ruta amb una parella que no coneix la forma triada. Si el contorn reconstruït no coincideix, reviseu una instrucció o un punt de gir i repetiu des del mateix inici. Compareu dues formes i determineu si el nombre de trams rectes basta per distingir-les o si també cal observar-ne la disposició.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Evidència:** targeta seleccionada, ruta marcada, registre de trams/girs i forma reconstruïda per una altra parella. Expliqueu quina observació permet identificar la forma i quin paper ha tingut la persona que ha unit els punts.
+
+![Tale-Bot Pro real de la dotació al costat d’una graella amb targetes de triangle, quadrat, cercle i rectangle i una ruta de fletxes.](../../_assets/imatges/sa-tb-formes-monstre.webp)
+
+_La imatge mostra una ruta de caselles i targetes geomètriques; les formes les identifica l’alumnat, no el robot._
 
 ### **Sessió 7 · L'eruga artista — «Matata Artist—Caterpillar».**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+Observeu una eruga formada per cercles de paper i trieu una regla senzilla, com ara blau–groc–blau–groc o gran–menut–gran–menut. Predigueu quin segment vindrà després i en quin ordre haurà de visitar Tale-Bot les parts del patró.
 
 #### Fase 2 · Explorem i construïm
 
@@ -178,15 +210,15 @@ A partir d'una eruga de cercles de paper, triem un patró de colors o formes i c
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+Dibuixeu la unitat que es repeteix i escriviu-la en una tira de targetes. Registreu quantes vegades apareix i assenyaleu el punt on la seqüència deixa de seguir la regla. Si utilitzeu el suport de retolador, descriviu el traç com un resultat del moviment, no com una forma que el robot reconega.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+Una altra parella continua el patró amb una peça tapada i programa una ruta que visite els segments en ordre. Compareu el programa amb la tira de targetes, corregiu només el primer punt on discrepen i torneu a executar. Si s’usa retolador, feu primer una prova curta en paper recuperable i fixeu el full; sense accessori, completeu la mateixa activitat amb fitxes i mapa.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Evidència:** unitat del patró, continuació de la seqüència, ruta de visita i una correcció justificada. Expliqueu com heu sabut què faltava i distingiu entre seguir un patró i dibuixar-lo amb un accessori.
 
 ## Intencions d'aprenentatge i criteris d'èxit
 
@@ -257,4 +289,4 @@ Repartim els rols de planificació, programació amb targetes, conducció, recom
 
 ## 🔗 Font oficial i abast
 
-La pàgina del [currículum Tale-Bot Pro](https://matatalab.com/zh-hans/tbp) descriu el nivell 1 com una progressió de 16 lliçons sobre ordres, programes, seqüències, descomposició i patrons. La llista pública del fabricant mostra títols addicionals en el seu [arxiu de lliçons](https://matatalab.com/zh-hans/node?page=11); els plans i adjunts complets de la lliçó 3 en avant remeten a permisos de curs o no són consultables des de les pàgines verificades. Ací s'adapten els set títols i es crea una seqüència pròpia, però no s'afirma cobertura íntegra dels materials docents no disponibles. El fabricant també inclou al kit base un [Challenge Booklet amb 14 missions](https://shop.matatastudio.com/products/matatastudio-tale-bot-pro); el contingut de les missions encara no s'ha pogut consultar i no es considera adaptat en aquesta fitxa. Les 42 activitats de les [Activity Cards](https://matatalab.com/en/lesson4.4) ja tenen cobertura específica en les fitxes A–D del portal.
+La pàgina del [currículum Tale-Bot Pro](https://matatalab.com/zh-hans/tbp) descriu el nivell 1 com una progressió de 16 lliçons sobre ordres, programes, seqüències, descomposició i patrons. La pàgina oficial de la [lliçó 1, «Hola, robot Matata!»](https://matatalab.com/en/node/827) publica el focus (estructura, botons i ús pràctic), objectius (reconéixer parts i funcions, engegar/apagar correctament, distingir el robot de les persones, despertar curiositat i cuidar-lo) i materials (robot, maqueta de paper, ales, suport de dibuix/construcció, deu gots, cinta i full d’activitat). Aquesta sessió els adapta a una ruta de fites amb gots i targetes originals; no reutilitza el full, la presentació ni els gràfics oficials. La pàgina enllaça el pla complet, però el PDF adjunt no ha sigut consultable des del visor; per tant, es declara adaptació dels objectius i materials públics, no reproducció de cada pas del document. La llista pública del fabricant mostra títols addicionals en el seu [arxiu de lliçons](https://matatalab.com/zh-hans/node?page=11); els plans i adjunts complets de les lliçons 3–9 remeten a permisos de curs o no són consultables des de les pàgines verificades. Les set sessions següents adapten els temes visibles, però no s'afirma cobertura íntegra d'aquests materials docents. El fabricant també inclou al kit base un [Challenge Booklet amb 14 missions](https://shop.matatastudio.com/products/matatastudio-tale-bot-pro); el contingut de les missions encara no s'ha pogut consultar i no es considera adaptat en aquesta fitxa. Les 42 activitats de les [Activity Cards](https://matatalab.com/en/lesson4.4) ja tenen cobertura específica en les fitxes A–D del portal.

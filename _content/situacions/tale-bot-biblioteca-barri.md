@@ -5,7 +5,7 @@ description: "Quina ruta pot seguir el robot per visitar tres espais de lectura,
 robot: "tale-bot"
 robot_label: "Tale-Bot"
 cycle: "infantil"
-cycle_label: "Educació Infantil (4-5 anys)"
+cycle_label: "Educació Infantil"
 subject: "llengua"
 subject_label: "Llengua i Literatura"
 theme: "societat"

@@ -67,6 +67,10 @@ Compareu la predicció amb la matriu i valoreu si el públic ha reconegut el tre
 
 **Construïm i prediem (10 min).** Dibuixeu en les dues cares d’un disc de cartolina una figura i un canvi menut —per exemple, una au quieta i l’au amb l’ala en una altra posició—. Alineeu el centre de les imatges abans d’enganxar el pal o les nanses de paper; proveu el gir lentament i anoteu quan costa llegir el canvi.
 
+![Dues graelles 5 × 5 amb un ocell de píxels i un canvi en la posició de les ales, al costat d’un disc de cartolina per girar.](../../_assets/imatges/sa-mb-animacions-taumatrop.webp)
+
+_Les dues graelles són fotogrames estàtics per planificar el canvi; el disc de paper serveix per explorar com dos dibuixos poden suggerir moviment._
+
 #### Fase 2 · Explorem i construïm
 
 **Storyboard LED (8 min).** Representeu els dos fotogrames en dues graelles 5 × 5, numerant-los i descrivint què canvia; una altra persona comprova que la diferència siga llegible. **Animació contínua (12 min).** Programeu fotograma 1, pausa, fotograma 2 i pausa dins d’un bucle continu. Executeu-lo en simulador o placa, canvieu només el temps de pausa i compareu si encara es perceben els dos dibuixos. L’objectiu és fer comprensible la seqüència, no buscar el parpelleig més ràpid. **Animació comptada (10 min).** Repetiu la parella de fotogrames un nombre fix de voltes amb un bucle de recompte; després, netegeu la matriu o mostreu una icona final i distingiu aquest comportament del bucle infinit.

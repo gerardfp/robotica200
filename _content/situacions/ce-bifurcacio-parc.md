@@ -78,6 +78,10 @@ Abans de muntar, mostreu el mapa de dues branques i pregunteu quina informació 
 
 Munteu la via en Y, col·loqueu una destinació en cada branca i situeu maons d’acció perquè el tren puga aturar-se, d’acord amb les funcions que el grup ja ha comprovat. La conductora rep un bitllet, verbalitza o assenyala la regla i mou l’agulla roja abans d’engegar el tren.
 
+![El tren Coding Express de la dotació arriba a una bifurcació amb l’agulla manual; un parc i una biblioteca marquen els dos destins.](../../_assets/imatges/sa-ce-bifurcacio-agulla.webp)
+
+_La targeta orienta la persona que controla l’agulla: el tren no llig el bitllet ni tria el ramal per si mateix._
+
 #### Fase 3 · Expliquem i registrem
 
 Una altra persona posa una figura passatgera al tren; la resta observa per separat el moviment de l’agulla i el punt on el tren s’atura. Registreu símbol del bitllet, branca triada, posició de l’agulla, estació observada i si coincideix amb la predicció.

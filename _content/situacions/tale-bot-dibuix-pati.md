@@ -5,7 +5,7 @@ description: "Dissenyem un plànol de pati amb Tale-Bot, formes, seqüències i 
 robot: "tale-bot"
 robot_label: "Tale-Bot"
 cycle: "infantil"
-cycle_label: "Educació Infantil (4–5 anys)"
+cycle_label: "Educació Infantil"
 subject: "artistica"
 subject_label: "Educació Artística"
 theme: "ciutat"

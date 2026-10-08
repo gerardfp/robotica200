@@ -99,27 +99,33 @@ Per al seguiment continu, alterneu detecció de fosc i clar amb moviments ràpid
 
 **Evidència:** lectures, ruta anotada i explicació de la millora. L’extensió de S4 és comparar els modes de sensor; el color i la llum reflectida són lectures diferents.
 
-### **S4 · Missió guiada: elevar el pont de mostreig · [The Guided Mission 2026–27](https://education.lego.com/en-us/lessons/prime-competition-ready/spike-prime-guided-mission-2627/) (45–90 min).**
+### **S4 · Missió guiada: elevar el pont de mostreig · [The Guided Mission 2026–27](https://education.lego.com/en-us/lessons/prime-competition-ready/spike-prime-guided-mission-2627/) (90 min; versió breu 45 min).**
 
-#### Fase 1 · Activem i prediem
+#### Fase 1 · Activem i prediem (10 min)
 
-**Pregunta:** com alineem la base, seguim una línia, activem un mecanisme i acabem amb precisió? Dibuixeu una ruta que ix de l’esquerra, arriba a una comporta pròpia i acaba a la dreta.
+**Pregunta:** com equilibrem velocitat i precisió per a seguir una línia, accionar un mecanisme i acabar en una zona concreta? En un camp propi de la marjal, la base ix de l’àrea esquerra, passa al costat de dues estacions de cartó inactives, arriba al pont de mostreig i acaba a la zona dreta. Abans de construir, dibuixeu el recorregut, assenyaleu on caldrà alinear la base i definiu què vol dir «missió completada»: el pont articulat s’alça, la ruta no desplaça cap estació i el robot s’atura dins de la zona final.
 
-#### Fase 2 · Explorem i construïm
+#### Fase 2 · Explorem i construïm (25 min)
 
-Fabriqueu un camp breu de l’Albufera amb línia guia i connector que cal alçar o obrir. Escriviu un programa amb sensor de color perquè la base arribe al model i l’active.
+Munteu la base de conducció amb el sensor de color SPIKE Prime i reviseu-ne l’orientació i l’alçada respecte del camp. Feu una línia negra ampla sobre una pista clara i un model original amb una palanca de cartó articulada: una peça lleugera a la part frontal empeny la palanca perquè eleve el pont; no useu el model ni el tapet LEGO de la temporada. Proveu la palanca a mà i després amb el robot a potència baixa. Afegiu una zona d’eixida a cada costat i marqueu dos punts d’alineament propers al mecanisme. El pont ha de ser lleuger, estable i sense vores tallants.
 
-#### Fase 3 · Expliquem i registrem
+![Robot SPIKE Prime de la dotació segueix una línia fins a una palanca de cartó que eleva un pont de mostreig entre dues zones de prova.](../../_assets/imatges/sa-sp-missio-pont.webp)
 
-Practiqueu diversos alineaments manuals sense moure el robot durant la missió. Registreu sortida, activació, arribada i qualsevol desviació.
+_Il·lustració generada amb IA del prototip local; el muntatge és conceptual i no reprodueix cap model oficial de FIRST LEGO League._
 
-#### Fase 4 · Apliquem i millorem
+#### Fase 3 · Expliquem i registrem (15 min)
 
-Afegiu una segona tasca pròpia i comproveu que la ruta passa prop d’altres estacions sense interferir. Com a ampliació, feu partir el robot de la dreta i proveu la ruta inversa.
+Calibreu el sensor sobre la línia i el fons en el mode triat —color o intensitat de llum reflectida— i anoteu lectures repetides. Escriviu un programa propi: iniciar en la zona esquerra; seguir la línia amb girs curts a baixa potència; arribar al punt de contacte; empényer la palanca fins que el pont s’alce; continuar cap a la zona dreta i parar. Registreu la posició de partida, el llindar o color seleccionat, la velocitat, l’estat del pont i el lloc d’aturada. Si el sensor no discrimina amb estabilitat, useu una línia més ampla i torneu a mesurar abans de canviar el programa.
 
-#### Fase 5 · Comprovem i reflexionem
+#### Fase 4 · Apliquem i millorem (30 min)
 
-**Evidència:** diagrama, programa anotat, alineaments i explicació de cada membre sobre l’estratègia. El camp i el mecanisme són propis; no copieu el tapet ni la missió FLL.
+Feu quatre intents comparables: dos a baixa velocitat i dos a velocitat moderada, amb la mateixa col·locació inicial i el mateix camp. En cada prova, anoteu si segueix la línia, activa la palanca, passa al costat de les dues estacions sense tocar-les i arriba a la zona final; mesureu també la desviació lateral en acabar. Després canvieu una sola variable —alineament, llindar o velocitat— i repetiu dues vegades. Compareu la fiabilitat amb la rapidesa i justifiqueu quin ajust és més útil, sense convertir el repte en una cursa. Com a extensió, afegiu una segona parada pròpia després del pont i comproveu si la base pot completar les dues tasques en una mateixa ruta; o comenceu des de la zona dreta i redissenyeu el seguiment.
+
+#### Fase 5 · Comprovem i reflexionem (10 min)
+
+Cada membre explica una part de la missió mostrant el robot, el programa i les dades de prova. La graella docent observa quatre indicadors: seguir la línia amb un criteri mesurat; activar el pont; completar la ruta evitant les estacions; explicar una decisió de velocitat/alineament amb evidència. En l’autoavaluació, marqueu «missió iniciada», «missió completada» o «equip ha completat també una segona parada»; no es comparen punts ni temps entre equips. Una parella revisora aporta un comentari concret i una proposta de millora per a la següent execució.
+
+**Evidència:** camp i palanca propis, programa anotat, taula de quatre intents, mesura de desviació, graella d’observació i explicació col·laborativa. La pàgina LEGO indica que la lliçó oficial prepara la Driving Base amb Color Sensor, configura un model de missió, activa el connector, practica l’eixida esquerra–arribada dreta, evita altres missions i conversa sobre la compensació entre rapidesa i precisió. Aquesta proposta adapta eixos d’aprenentatge semblants en un camp i un mecanisme locals, sense reproduir el tapet, el model ni la missió de FIRST LEGO League.
 
 ### **S5 · Una base modular construïda en equip · [Assembling an Advanced Driving Base](https://education.lego.com/en-us/lessons/prime-competition-ready/assembling-an-advanced-driving-base/) (90–120 min).**
 

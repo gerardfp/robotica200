@@ -4,8 +4,8 @@ title: "Explorem el barri amb Tale-Bot"
 description: "Quinze activitats de llenguatge, ciència, matemàtiques i art amb Tale-Bot i una quadrícula pròpia."
 robot: "tale-bot"
 robot_label: "Tale-Bot"
-cycle: "segon-cicle-infantil"
-cycle_label: "Infantil i primer cicle"
+cycle: "infantil"
+cycle_label: "Educació Infantil"
 subject: "pensament-computacional"
 subject_label: "Ciències, Matemàtiques, Llenguatge i Art"
 theme: "entorn"
@@ -296,71 +296,83 @@ Programeu Tale-Bot i compareu el recorregut amb la predicció. Si entra en una c
 
 **Evidència:** dues parelles persona–eina justificades, dues rutes que eviten zones tancades i una correcció o comprovació independent. Si no hi ha robot disponible, useu una fitxa i identifiqueu la prova com a desconnectada. És una representació de serveis quotidians, no d’emergències.
 
-### **B-13 · Del més lent al més ràpid.**
+### **B-13 · Del més lent al més ràpid (2 sessions, 2 hores).**
 
 #### Fase 1 · Activem i prediem
 
-Observeu tractor, camió de bombers i tren maglev. Ordeneu-los oralment del més lent al més ràpid segons el que sabeu dels vehicles.
+**Sessió 1 — comparem el model.** Observeu les tres fitxes de la targeta: tractor, camió de bombers i tren maglev. Abans de classificar-les, llegiu el context que acompanya cada vehicle; la velocitat depén del model, el recorregut i les condicions, així que no deduïu un valor universal només pel dibuix. Per a fer la comparació matemàtica, acordeu una simulació: en el mateix interval de temps, el tractor avança una casella, el camió dues i el tren tres. Aquests nombres són **dades fictícies del joc**, no velocitats reals.
 
 #### Fase 2 · Explorem i construïm
 
-Col·loqueu les tres fitxes i una destinació en una ruta marcada. Partiu de la casella del tractor i compteu les ordres necessàries per recórrer el trajecte.
+Representem les tres distàncies amb fitxes de colors damunt de tres tires iguals de temps. Compteu caselles i ordeneu els vehicles de la menor a la major distància recorreguda en el mateix interval. Després, en una quadrícula nova, situeu les fitxes dels tres vehicles i una destinació —l’estació— en una ruta pròpia que connecte l’horta, el servei de bombers i el tren. Comenceu al tractor i traceu amb llapis un itinerari continu fins a la destinació.
+
+![Tale-Bot sense accessoris sobre un mapa de l’horta i l’estació, amb fitxes de tractor, camió de bombers i tren i una ruta traçada a mà.](../../_assets/imatges/sa-tb-velocitats-relatives.webp)
+
+_Les fitxes i els comptadors representen un model de distància en intervals iguals; el robot estàndard només segueix les ordres de la ruta._
 
 #### Fase 3 · Expliquem i registrem
 
-Anoteu l’ordre de les fitxes i la seqüència de moviment. Expliqueu la diferència entre la comparació de velocitats dels vehicles i el trajecte de Tale-Bot.
+**Sessió 2 — preparem un únic recorregut.** Registreu en una taula la distància simulada de cada vehicle en un interval, l’ordre resultant i la destinació final. Una parella transforma el traç en targetes de comandament; l’altra comprova el punt d’inici, l’orientació, cada gir i el nombre de caselles fins a la meta. Feu una simulació manual amb una fitxa de robòtica abans de tocar el robot.
 
 #### Fase 4 · Apliquem i millorem
 
-Programeu el robot una sola vegada perquè recórrega el trajecte complet. Si no arriba, reviseu l’orientació inicial i les ordres.
+Introduïu tota la seqüència en Tale-Bot i executeu-la **una vegada**, com proposa el repte. Compareu la posició final amb la destinació i localitzeu en el mapa la primera desviació si no coincideixen. Reviseu en paper quin comandament caldria canviar; una segona execució és una extensió opcional i s’anota com a nova prova, no com si fora la primera.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** classificació raonada i ruta completada. Tale-Bot no simula ni mesura les velocitats reals.
+**Evidència:** ordenació argumentada amb la simulació de distància/temps, taula de dades fictícies, mapa amb ruta, seqüència de comandaments i resultat de l’execució única. Expliqueu per què el robot no ha anat més ràpid quan ha passat pel tren: els comptadors modelen una comparació matemàtica, però Tale-Bot no mesura ni reprodueix la velocitat real dels vehicles. No extrapoleu la classificació del joc al trànsit real.
 
 ### **B-14 · Taller d’artista I.**
 
 #### Fase 1 · Activem i prediem
 
-Trieu una forma per al mapa del barri i predigueu quines ordres podrien traçar-ne els costats o una corba aproximada.
+Observeu el suport multifunció, els punts on es pot subjectar un retolador i la distància entre la punta i el cos del robot. En un full, dibuixeu una forma tancada —com un quadrat— i marqueu amb fletxes quin tram correspon a cada ordre. Predigueu què passarà si una ordre de gir o d’avanç es repeteix una vegada més.
 
 #### Fase 2 · Explorem i construïm
 
-Comproveu si hi ha suport multifunció i retoladors compatibles. Si n’hi ha, fixeu el full de manera estable; si no, prepareu una quadrícula de paper per a representar la ruta.
+Comproveu físicament que el kit del centre inclou el suport de dibuix i que el retolador queda subjecte sense tocar les rodes. Fixeu un full gran perquè no llisque i feu una prova d’un sol tram amb el robot aturat abans d’iniciar el programa. Si el centre té una versió diferent del suport o no el té, no forceu peces: prepareu una quadrícula i representeu la mateixa seqüència amb una fitxa.
+
+![Tale-Bot Pro traça una forma quadrada amb un retolador subjecte al suport de dibuix.](../../_assets/imatges/sa-tb-artista-un-retolador.webp)
+
+_La primera exploració prova el muntatge i relaciona cada tram del traç amb una ordre planificada._
 
 #### Fase 3 · Expliquem i registrem
 
-Abans de dibuixar, anoteu la seqüència d’ordres i assenyaleu quin tram del codi correspon a cada part de la forma.
+Planifiqueu una forma amb una seqüència curta de moviments i girs. Abans de prémer Play, feu que una parella represente les ordres sobre la quadrícula amb una fitxa; l’altra comprova orientació, punt d’inici i nombre de passos. Registreu el programa previst i el nombre d’ordres de cada costat.
 
 #### Fase 4 · Apliquem i millorem
 
-Programeu el traçat amb un retolador només si el suport real ho permet. Sense accessori, feu la mateixa seqüència a mà sobre la quadrícula i reviseu les ordres si la forma no tanca.
+Executeu el traç amb un sol retolador. Compareu el dibuix amb la predicció: la forma tanca?, els costats s’assemblen?, on s’ha desviat el marcador? Canvieu només una decisió —un pas, un gir o l’orientació inicial— i repetiu sobre un full nou. Si la línia no tanca, conserveu el primer resultat i marqueu el punt on cal revisar la seqüència.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** forma i seqüència amb correspondència explicada. El traçat amb robot depén de l’accessori comprovat; la versió manual no es presenta com a dibuix automatitzat.
+**Evidència:** forma original, seqüència anotada i comparació entre el traç esperat i l’observat. Expliqueu què ha canviat en la segona prova. Sense accessori, la parella traça el recorregut amb una fitxa i un retolador a mà; aquesta alternativa treballa l’algorisme, però no es presenta com un dibuix automatitzat.
 
 ### **B-15 · Taller d’artista II.**
 
 #### Fase 1 · Activem i prediem
 
-Recupereu una forma del primer taller i imagineu com podria convertir-se en un jardí, mercat o plaça del barri.
+Recupereu la forma i el programa del taller anterior. En parelles, trieu dues formes que puguen combinar-se per representar un espai del barri —per exemple, un jardí amb un camí o una plaça amb un estany— i decidiu quina es dibuixarà primer. Predigueu què veurà el full si s’hi col·loquen dos retoladors i les línies coincideixen o se separen.
 
 #### Fase 2 · Explorem i construïm
 
-Afegiu una segona forma amb un color diferent. Repartiu rols de disseny, codificació, comprovació i il·lustració.
+Comproveu si el suport disponible permet fixar dos retoladors alhora i si les dues puntes poden tocar el paper sense que els cossos xoquen. Feu una prova curta amb el robot estacionari i retireu la segona punta si el muntatge fa força o s’encalla. Assigneu rols de disseny, programació, comprovació del suport i registre; prepareu també una alternativa amb una forma per retolador.
 
 #### Fase 3 · Expliquem i registrem
 
-Anoteu quines instruccions creen cada forma i afegiu detalls que expliquen una història. Identifiqueu una decisió artística del grup.
+![Tale-Bot Pro traça una composició de formes amb dos retoladors de colors subjectes al suport.](../../_assets/imatges/sa-tb-artista-dos-retoladors.webp)
+
+_La segona activitat contrasta el traç d’un retolador amb una composició de dos colors abans d’afegir-hi detalls a mà._
+
+Escriviu i dibuixeu el pla abans de programar: forma, punt inicial, orientació, color i ordres associades. Indiqueu si els dos colors apareixen al mateix temps o en execucions separades, segons el suport real. Després de cada traç, l’alumnat pot acolorir les formes a mà i afegir detalls que expliquen una escena; distingiu clarament el que ha fet el robot del que s’ha completat manualment.
 
 #### Fase 4 · Apliquem i millorem
 
-Feu el dibuix amb el suport de Tale-Bot si l’accessori està disponible; si no, representeu les mateixes formes a mà. Reviseu una decisió de composició a partir del resultat.
+Executeu primer cada forma per separat i després, si el muntatge és estable, proveu la composició amb dos retoladors. Compareu les dues versions i decidiu si el solapament ajuda a comunicar l’escena. Si el suport no admet dos retoladors o el traç no és consistent, feu les formes en dues passades o representeu la ruta en paper; no pressioneu el robot ni l’accessori per a forçar el contacte.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** escena del barri i presentació de la decisió artística revisada. Compareu la versió automatitzada i la manual sense confondre les seues capacitats.
+En grup, acoloriu i amplieu els traços amb materials de papereria. Presenteu una decisió de composició que hàgeu revisat després de veure el resultat i demaneu a una altra parella què interpreta de la imatge. **Evidència:** composició final, programa o seqüència manual, registre de les proves amb un i dos retoladors, i una explicació de què s’ha dibuixat automàticament i què s’ha afegit a mà. Si la configuració de dos retoladors no és compatible amb el model de suport del centre, l’equip documenta la comprovació fallida i usa la variant de dues passades.
 
 ## 🎯 Aprenentatges i vocabulari
 
@@ -383,4 +395,4 @@ Oferiu el mapa en format gran, amb inici ben contrastat i pictogrames a més de 
 
 ## 🔗 Referent oficial adaptat
 
-Adaptació de les 15 activitats oficials de categoria B —*My Five Senses*, *Counting Game*, *Shape Monster*, *Fruits & Veggies Challenge*, *Frog Life Cycle*, *Sunflower Life Cycle*, *Music Park I/II*, *Trouble Traps*, *Solar System*, *Magnetic Collector*, *Community Helpers*, *Slowest to Fastest* i *Tale-Bot is an Artist I/II*— de les [Activity Cards per a Tale-Bot Pro](https://matatalab.com/en/lesson4.4). Les tasques, mapes i dades són propis; les capacitats de dibuix i veu es verifiquen segons el model disponible.
+Adaptació de les 15 activitats oficials de categoria B —*My Five Senses*, *Counting Game*, *Shape Monster*, *Fruits & Veggies Challenge*, *Frog Life Cycle*, *Sunflower Life Cycle*, *Music Park I/II*, *Trouble Traps*, *Solar System*, *Magnetic Collector*, *Community Helpers*, *Slowest to Fastest* i *Tale-Bot is an Artist I/II*— de les [Activity Cards per a Tale-Bot Pro](https://matatalab.com/en/lesson4.4). El marc oficial confirma l’estructura 10/15/7/10 ([Lesson 4.4: Activity Cards](https://matatalab.com/zh-hans/node/814)); el fabricant també ofereix una [mostra en la pàgina de descàrregues](https://www.matatastudio.com/download.html). En B-14 i B-15, la proposta adapta l’exploració del suport de dibuix, els traços amb un retolador i dos, i l’ampliació artística en grup; el funcionament del suport es comprova amb el model real del centre. Les tasques, mapes i dades són propis.

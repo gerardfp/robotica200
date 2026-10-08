@@ -16,7 +16,7 @@ challenge: "Com podem identificar una necessitat, prototipar alternatives i mill
 
 ![Un prototip LEGO SPIKE Prime de baixa alçada recorre la maqueta d’una exposició accessible.](../../_assets/imatges/sa-sp-museu.webp)
 
-_La fira de prototips investiga necessitats reals sense donar per fet què necessita una persona._
+_La fira investiga necessitats sense pressuposar-les. Il·lustració conceptual generada amb IA d’un muntatge possible amb peces SPIKE Prime; no és una instrucció de construcció ni una solució d’accessibilitat validada._
 
 ## 🌱 Situació i intenció
 

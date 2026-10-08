@@ -135,8 +135,8 @@ def main():
             if target is not None and not target.exists():
                 problems.append(f"{markdown_path.relative_to(ROOT)}: missing Markdown link {ref}")
 
-    if len(active) != 100:
-        problems.append(f"expected 100 active Markdown situations, found {len(active)}")
+    if len(active) != 101:
+        problems.append(f"expected 101 active Markdown situations, found {len(active)}")
     for robot in sorted(EXPECTED_ROBOTS):
         if robot_counts[robot] < 5:
             problems.append(f"robot {robot}: expected at least 5 situations, found {robot_counts[robot]}")

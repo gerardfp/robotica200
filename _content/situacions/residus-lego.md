@@ -5,7 +5,7 @@ description: "Dissenyem un prototip SPIKE Prime que separa mostres per color i i
 robot: "spike"
 robot_label: "SPIKE Prime"
 cycle: "tercer-cicle"
-cycle_label: "Tercer cicle d’Educació Primària"
+cycle_label: "Tercer cicle"
 subject: "medi"
 subject_label: "Coneixement del Medi, Ciències i Tecnologia"
 theme: "sostenibilitat"

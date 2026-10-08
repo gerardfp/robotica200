@@ -5,7 +5,7 @@ description: "Inventem un conte de la marjal, programem el recorregut de Tale-Bo
 robot: "tale-bot"
 robot_label: "Tale-Bot Pro"
 cycle: "infantil"
-cycle_label: "Educació Infantil (4–5 anys)"
+cycle_label: "Educació Infantil"
 subject: "llengua"
 subject_label: "Llenguatge, Educació Artística i Pensament Computacional"
 theme: "narracio"

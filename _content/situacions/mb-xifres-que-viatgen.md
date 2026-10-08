@@ -70,6 +70,10 @@ Abans de construir el disc, decidiu quines lletres i signes es transformaran. Ac
 
 Fabriqueu dos cercles de cartó amb les lletres A–Z i marqueu un desplaçament acordat. Xifreu una frase breu inventada i intercanvieu-la amb un altre equip, que l’ha de desxifrar amb la mateixa clau. En «PLAÇA», per exemple, només es transformen P, L i A; la Ç es manté.
 
+![Disc de Cèsar propi, amb dos cercles de cartó superposats, una fletxa que indica el desplaçament i targetes de missatge inventat.](../../_assets/imatges/sa-mb-xifres-disc-caesar.webp)
+
+_La il·lustració representa les posicions amb marques de colors; en el material de l’aula, cada posició correspon a una lletra A–Z._
+
 #### Fase 3 · Expliquem i registrem
 
 Anoteu la convenció al costat de cada missatge i descriviu els passos que heu seguit per xifrar-lo. Registreu la clau, el text original i el resultat per poder repetir el procés en sentit invers.

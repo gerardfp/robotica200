@@ -50,6 +50,10 @@ Inicieu una conversa curta sobre els senyals que l’alumnat recorda haver vist 
 
 Mostreu els quatre senyals de la dotació Coding Express, un per un. Observeu-ne forma i color abans de proposar una interpretació. El docent contrasta les idees amb informació fiable i explica qualsevol diferència entre la peça de joguina i un senyal real.
 
+![Maqueta de ciutat amb el tren Coding Express, un pas de joguina, una barrera i fitxes de senyals inventades per a observar i predir.](../../_assets/imatges/sa-ce-cami-segur-senyals.webp)
+
+_Les fitxes de la imatge són pictogrames per al joc de maqueta; no substitueixen ni reprodueixen la senyalització viària oficial._
+
 #### Fase 3 · Expliquem i registrem
 
 Feu una targeta amb el senyal observat, la interpretació inicial i l’explicació contrastada o revisada. Marqueu quines parts són informació comprovada i quines són una regla inventada per al joc.

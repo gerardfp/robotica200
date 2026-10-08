@@ -228,7 +228,7 @@
     const chunks = [];
     let current = '';
     for (const sentence of sentences) {
-      const candidate = current + sentence;
+      const candidate = current ? `${current} ${sentence}` : sentence;
       const delimitersBalanced = value => {
         const bold = (value.match(/\*\*/g) || []).length;
         const italic = (value.match(/(?<!\*)\*(?!\*)/g) || []).length;
@@ -247,10 +247,10 @@
     const value = title.replace(/^[^\p{L}\p{N}]+/u, '').trim().toLowerCase();
     const suffixMatch = title.match(/\s*(?:·|—)\s*(.+)$/);
     const suffix = suffixMatch ? ` · ${suffixMatch[1]}` : '';
-    if (/^repte\s+\d+/i.test(value)) return { key: 'sequence', title: `📅 ${title.replace(/^[^\p{L}\p{N}]+/u, '')}` };
-    if (/^(seqüèn|seqüen|itinerari|sessions\b|passos\b|lliçons\b|fases\b|activitats\b|desenvolupament\b|projecte en\b|set (?:reptes|estands)\b|deu reptes\b|guió de treball\b|conducció de les sessions\b|ritme i conducció\b|procés de disseny\b|detall de les sis experiències\b)/.test(value)) return { key: 'sequence', title: `📅 Seqüència didàctica${suffix}` };
-    if (/^reptes(?!\s+oficial)/i.test(value)) return { key: 'sequence', title: `📅 Seqüència didàctica · ${title.replace(/^[^\p{L}\p{N}]+/u, '')}` };
-    if (/^com usar\b/i.test(value)) return { key: 'intro', title: `🧭 ${title.replace(/^[^\p{L}\p{N}]+/u, '')}` };
+    if (/^repte\s+\d+/i.test(value)) return { key: 'sequence', title: '📅 Seqüència didàctica' };
+    if (/^(seqüèn|seqüen|itinerari|sessions\b|passos\b|lliçons\b|fases\b|activitats\b|desenvolupament\b|projecte en\b|set (?:reptes|estands)\b|deu reptes\b|guió de treball\b|conducció de les sessions\b|ritme i conducció\b|procés de disseny\b|detall de les sis experiències\b)/.test(value)) return { key: 'sequence', title: '📅 Seqüència didàctica' };
+    if (/^reptes(?!\s+oficial)/i.test(value)) return { key: 'sequence', title: '📅 Seqüència didàctica' };
+    if (/^com usar\b/i.test(value)) return { key: 'intro', title: '🌱 Situació, repte i intenció' };
     if (/^(repte\b|situació|situacio|punt de partida|punt de trobada|sentit i intenció|context\b|propòsit|proposit)/.test(value)) return { key: 'intro', title: '🌱 Situació, repte i intenció' };
     if (/^(participació|participacio|participar|accessibilitat|inclusió|inclusio|privacitat|seguretat|salvaguardes|diferenciació|diferenciacio|variacions|benestar|confort sensorial)/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };
     if (/^(aprenent|vocabulari|objectius|resultats d.aprenentatge|què aprendrem|que aprendrem|competències clau)/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
@@ -337,7 +337,10 @@
       const displayTitle = plainTitle
         .replace(/^(?:(?:sess(?:ió|io)|lliç(?:ó|o)|lesson|session)\s+\d+|s\d+)\s*[·—:.-]\s*/i, '')
         .replace(/^(?:[a-z]{1,3}-?\d+)\s*[·—:.-]\s*/i, '')
-        .replace(/^\d+[.)]\s*/, '')
+        // Old merged SDAs sometimes put the step number directly before the
+        // title (for example, "1Auditem..."). The wizard already numbers
+        // every item, so remove that duplicate whether or not it has a dot.
+        .replace(/^\d+(?:[.)]\s*|\s+|(?=[A-ZÀ-ÖØ-Þ]))/, '')
           .replace(/[.!?]+$/, '')
           .trim();
         const id = slugify(plainTitle);
@@ -470,7 +473,7 @@
       <div class="learning-wizard-progress" role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" :aria-valuemax="steps.length" :aria-valuenow="step + 1" :aria-valuetext="'Pas ' + (step + 1) + ' de ' + steps.length">
         <span :style="'width: ' + ((step + 1) / steps.length * 100) + '%'" aria-hidden="true"></span>
       </div>
-      <ol class="learning-wizard-picker" aria-label="Tria un pas"><template x-for="(item, index) in steps" :key="item.id"><li><button type="button" class="learning-wizard-step" x-on:click="step = index" :aria-label="'Obrir pas ' + (index + 1) + ': ' + item.title" :aria-current="step === index ? 'step' : null"><span class="learning-wizard-step-number" aria-hidden="true" x-text="index + 1"></span><span class="learning-wizard-step-separator" aria-hidden="true"> · </span><span class="learning-wizard-step-title" x-text="item.title"></span></button></li></template></ol>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><template x-for="(item, index) in steps" :key="item.id"><li><button type="button" class="learning-wizard-step" x-on:click="step = index" :aria-label="'Obrir pas ' + (index + 1) + ': ' + item.title" :aria-current="step === index ? 'step' : null"><span class="learning-wizard-step-number" aria-hidden="true" x-text="index + 1"></span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span x-text="item.title"></span></span></button></li></template></ol>
       <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" x-on:click="step = Math.max(0, step - 1)" :disabled="step === 0">← Pas anterior</button><button type="button" class="btn-wizard-step primary" x-on:click="step = Math.min(steps.length - 1, step + 1)" :disabled="step === steps.length - 1">Pas següent →</button></div>
     </nav>` : '';
     const rendered = output.join('\n').replace('<!--LEARNING_WIZARD-->', stepIndex);
