@@ -49,7 +49,9 @@ La placa micro:bit no és per si sola una font adequada per alimentar qualsevol 
 
 ### Preguntes per comprovar
 
-Quina lectura fas servir com a entrada? El servomotor rep energia de la placa o d'una alimentació apropiada? Com has confirmat la connexió comuna?
+- Quina lectura fas servir com a entrada?
+- El servomotor rep energia de la placa o d'una alimentació apropiada?
+- Com has confirmat la connexió comuna?
 
 ## ♿ Accessibilitat i seguretat
 

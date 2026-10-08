@@ -66,6 +66,7 @@ Registreu tres valors del potenciòmetre, tres intents per a cada gest i cinc mi
 - En quines condicions s’ha rebut el missatge IR amb més fiabilitat?
 - Què hauria de fer el programa si no arriba cap missatge?
 
+
 ## ♿ Accessibilitat i seguretat
 
 La inclinació i la sacsejada són opcions; permeteu introduir el mateix codi amb botons, potenciòmetre o targetes. Manteniu els robots quiets durant les proves de recepció i no els feu córrer cap a persones. El so és breu i opcional, amb senyal visual equivalent. No envieu missatges personals.

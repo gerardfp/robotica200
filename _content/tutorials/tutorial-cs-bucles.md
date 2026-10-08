@@ -47,7 +47,9 @@ Escriu la ruta sencera primer com una seqüència de moviments i després agrupa
 
 ### Preguntes per comprovar
 
-On comença i acaba la repetició? Què canviaria si el nombre de vegades fos diferent?
+- On comença i acaba la repetició?
+- Què canviaria si el nombre de vegades fos diferent?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

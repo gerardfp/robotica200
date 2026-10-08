@@ -48,7 +48,9 @@ Prova una seqüència de moviments amb una variable que l'alumnat pugui observar
 
 ### Preguntes per comprovar
 
-Què representa aquest paràmetre al repte? Quin és el canvi mínim que podem provar?
+- Què representa aquest paràmetre al repte?
+- Quin és el canvi mínim que podem provar?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

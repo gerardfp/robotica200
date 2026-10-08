@@ -49,7 +49,9 @@ Prova el sensor de color amb targetes del mateix material i distància fixos; re
 
 ### Preguntes per comprovar
 
-Quins colors s'han detectat en les mateixes condicions? Què passa quan canviem llum o distància?
+- Quins colors s'han detectat en les mateixes condicions?
+- Què passa quan canviem llum o distància?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

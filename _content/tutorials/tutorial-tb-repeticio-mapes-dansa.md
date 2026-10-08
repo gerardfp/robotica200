@@ -23,7 +23,8 @@ Abans de començar, comproveu les tecles físiques de moviment, Play, esborrat, 
 
 ## 🧩 Funcions del robot treballades
 
-- Botó de repetició per repetir la seqüència introduïda i indicadors per seguir les ordres enregistrades.
+- Botó de repetició per repetir unitats d’ordres del programa complet; no permet repetir només un fragment d’un programa més llarg.
+- Indicadors de color per seguir les ordres enregistrades.
 - Botó de dansa aleatòria amb moviments predefinits.
 - Lectura OID del mapa compatible i instruccions de veu contextuals.
 - Gravació i reproducció d’àudio, diferenciades de la interpretació de parla.
@@ -33,7 +34,7 @@ Abans de començar, comproveu les tecles físiques de moviment, Play, esborrat, 
 
 ### 1. Programeu i repetiu una seqüència
 
-Trieu una ruta de dues o tres ordres i escriviu-la primer amb targetes. Introduïu-la amb els botons del robot, comproveu els indicadors i activeu la repetició per observar quantes vegades s’executa la seqüència segons el comandament del vostre model. Feu una execució curta i esborreu les ordres abans de canviar de repte. Si el moviment queda interromput, reinicieu el programa i repetiu-lo amb menys ordres.
+Trieu un patró curt que es repetisca, com ara avançar i girar, i escriviu-lo primer amb targetes. Introduïu-lo amb els botons, comproveu els indicadors i useu el comandament de repetició per repetir el programa. El fabricant especifica que la repetició s’aplica quan el programa complet conté unitats d’ordres repetides: no permet seleccionar només un fragment si després hi ha altres ordres. Feu una prova amb un patró repetit com a programa complet i una altra afegint-hi una ordre final; observeu i registreu aquesta limitació abans de dissenyar la ruta.
 
 ### 2. Compareu la dansa predefinida
 
@@ -57,10 +58,12 @@ Feu tres execucions de la ruta: sense repetició, amb repetició i amb una ordre
 
 ### Preguntes per comprovar
 
-- Quina part de la seqüència es repeteix i quina acció fa començar-la?
+- Què passa quan el programa complet és el patró repetit? I quan hi afegim una ordre final?
+- Per què no podem demanar al botó que repetisca només un fragment intermedi?
 - La dansa és programada amb les targetes o és un moviment predefinit?
 - Quina diferència hi ha entre la veu gravada per l’usuari i la instrucció OID del mapa?
 - El mapa imprés i el mapa OID ofereixen exactament la mateixa funció?
+
 
 ## ♿ Accessibilitat i seguretat
 
@@ -72,4 +75,4 @@ Recolliu el mapa de ruta, la seqüència de targetes, el registre de les tres ex
 
 ## 🔗 Fonts oficials i límits
 
-El [curs oficial de Tale-Bot Pro de Matatalab](https://matatalab.com/en/lesson4.2) descriu botons, indicadors, gravació/reproducció, dansa i repetició. Les [instruccions oficials de l’Activity Box](https://matatalab.com/en/lesson4.3) documenten l’ús dels mapes interactius i les entrades OID. La gravació no és reconeixement de parla; la dansa no és una seqüència creada per l’usuari; i la lectura de mapa requereix material OID compatible.
+El [curs oficial de Tale-Bot Pro de Matatalab](https://matatalab.com/en/lesson4.2) descriu botons, indicadors, gravació/reproducció, dansa i repetició. Les [instruccions oficials de l’Activity Box](https://matatalab.com/en/lesson4.3) documenten l’ús dels mapes interactius i les entrades OID. La gravació no és reconeixement de parla; la dansa no és una seqüència creada per l’usuari; la repetició no permet seleccionar una subseqüència dins d’un programa més llarg; i la lectura de mapa requereix material OID compatible.

@@ -62,6 +62,7 @@ Afegiu una parada o canvieu la posició d’una estació. Repetiu la predicció 
 - Si afegim una parada, quina part del pla hem de revisar?
 - Una via tancada és el mateix que un bucle en un programa? Què comparteixen i què no?
 
+
 ## ♿ Accessibilitat i seguretat
 
 Per a una primera prova, feu una volta amb només dues estacions i una persona que assenyali el punt de retorn. Es pot participar movent passatgers, ordenant targetes o registrant voltes sense manipular el tren. Com a extensió, compareu dues rutes que visiten les mateixes parades en ordres diferents i justifiqueu quina és més clara per als viatgers.

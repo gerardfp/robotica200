@@ -47,7 +47,9 @@ Assegura el retolador dins del suport i prova sobre paper fixat a una taula plan
 
 ### Preguntes per comprovar
 
-Es tanca la forma? El punt d'inici i el final coincideixen? Quin factor de fricció o de muntatge pot explicar una diferència?
+- Es tanca la forma?
+- El punt d'inici i el final coincideixen?
+- Quin factor de fricció o de muntatge pot explicar una diferència?
 
 ## ♿ Accessibilitat i seguretat
 

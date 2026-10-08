@@ -48,7 +48,9 @@ Escriu un símbol de 5 × 5, vincula'l a un polsador i transfereix el codi a la 
 
 ### Preguntes per comprovar
 
-Quina entrada activa el programa? El resultat apareix amb cada pulsació o un sol cop?
+- Quina entrada activa el programa?
+- El resultat apareix amb cada pulsació o un sol cop?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

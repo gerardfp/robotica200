@@ -60,6 +60,7 @@ Executeu tres vegades la ruta amb totes les ordres escrites i tres vegades amb f
 - Quina diferència hi ha entre una funció creada per vosaltres i una dansa predefinida?
 - Quin complement caldria per compondre una melodia amb notes pròpies?
 
+
 ## ♿ Accessibilitat i seguretat
 
 Permeteu planificar primer amb targetes grans o dir les ordres a una persona que les col·loca. Manteniu la torre i el tauler en una superfície estable, sense peces soltes prop de la trajectòria del robot. Si la música incomoda, silencieu-la o substituïu l’observació sonora per un registre visual del bloc i del moviment.

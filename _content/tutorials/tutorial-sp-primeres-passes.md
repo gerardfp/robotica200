@@ -1,6 +1,6 @@
 ---
 title: 'Primeres passes: El Hub intel·ligent i el primer programa'
-description: Connexió del Hub per Bluetooth a l'App SPIKE, gestió de la matriu 5x5 de LEDs i bateria recarregable.
+description: Connectar el Hub SPIKE Prime, explorar la matriu 5 × 5, els sis ports i el sensor d’orientació.
 robot: spike
 level: Iniciació
 duration: 35 min
@@ -10,13 +10,13 @@ image: _assets/tutorials/sp-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-- Actualitzar el firmware i emparellar el Hub amb l'ordinador.
+- Comprovar la càrrega del Hub i connectar-lo per BLE amb SPIKE App.
 - Programar la matriu de 25 píxels per mostrar icones i animacions.
-- Comprendre la numeració dels 6 ports universals (A, B, C, D, E, F).
+- Identificar els sis ports d’entrada/eixida A–F del Hub gran SPIKE Prime.
 
 ## 🧰 Materials i preparació
 
-- Hub SPIKE Prime o Essential
+- Hub gran SPIKE Prime (model 45601)
 - App LEGO SPIKE instal·lada
 - Cable USB
 
@@ -27,27 +27,29 @@ image: _assets/tutorials/sp-primeres-passes.png
 
 ## 👣 Seqüència guiada
 
-### 1. Connexió Bluetooth
+### 1. Enceneu i connecteu el Hub Prime
 
-Prem el botó central del Hub. Obre l'app LEGO Education SPIKE i selecciona 'Connecta per Bluetooth'.
+Comproveu que el Hub estiga carregat. Manteniu premut el botó central per encendre’l; després premeu el botó Bluetooth del Hub i, des de SPIKE App, obriu un projecte i seleccioneu la icona del Hub al llenç per triar-lo. Poseu-li un nom únic si hi ha diversos hubs a l’aula. L’actualització del sistema del Hub només cal quan l’app ho demana; per actualitzar, LEGO recomana la connexió USB quan siga possible.
 
-### 2. Primer bloc de llum
+### 2. Mostreu una icona a la matriu
 
-Crea un projecte nou i arrossega: 'Quan comenci el programa' → 'Mostra a la pantalla el cor'.
+Creeu un projecte amb blocs de paraules o d’icones. Quan comence el programa, mostreu una icona a la matriu 5 × 5 i esborreu-la. Comproveu que es tracta d’una matriu de llum del Hub i no d’una pantalla de píxels a color.
 
-### 3. Prova del sensor giroscòpic
+### 3. Llegiu el sensor d’orientació
 
-Programa: 'Quan s'inclini cap a l'esquerra' → Mostra fletxa esquerra.
+Poseu el Hub sobre la taula i mostreu una fletxa en respondre a una inclinació o gir detectat. Proveu una sola orientació cada vegada, torneu el Hub a una posició estable i compareu l’indicador amb el moviment físic. Aquest sensor de sis eixos combina giroscopi i acceleròmetre; no és una brúixola que indique el nord.
 
 > **💡 Consell docent per a la sessió:** Posa una etiqueta de color o número a cada Hub perquè els alumnes no es connectin per Bluetooth al robot del grup del costat.
 
 ## 🧪 Prova, depura i reflexiona
 
-Identifica quin port s'utilitza per al motor abans d'executar la seqüència. Prepara un moviment curt, una pausa i una icona de hub que ajudi a veure quan comença i acaba.
+Connecteu un motor angular a un port lliure i llegiu el nom del port a l’app. Escriviu-lo al registre abans d’executar un moviment curt i lent. Desconnecteu-lo només amb els motors aturats. Si els sis ports estan disponibles, identifiqueu-los un per un sense connectar tots els components alhora.
 
 ### Preguntes per comprovar
 
-Què diu la icona durant l'execució? Quin valor de motor has triat? Què fa la pausa en la seqüència?
+- Què diu la icona durant l'execució?
+- Quin valor de motor has triat?
+- Què fa la pausa en la seqüència?
 
 ## ♿ Accessibilitat i seguretat
 
@@ -59,4 +61,4 @@ Un programa executat, el registre de ports i una predicció verbal del moviment.
 
 ## 🔗 Fonts oficials i límits
 
-LEGO Education · SPIKE Prime technical specifications · [https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La [fitxa tècnica i guia oficial de SPIKE Prime](https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/) descriu el Hub gran amb sis ports, matriu 5 × 5, BLE, altaveu, sensor de sis eixos i bateria recarregable, així com els passos de connexió i actualització. Aquesta guia és per al Hub gran SPIKE Prime; SPIKE Essential té un hub diferent amb només dos ports. LEGO indica que continuarà donant suport a SPIKE App fins al 30 de juny de 2031 ([actualització de LEGO Education](https://education.lego.com/en-us/spike-update-2026/)).

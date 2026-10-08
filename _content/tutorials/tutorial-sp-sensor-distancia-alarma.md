@@ -61,6 +61,7 @@ Prepareu una matriu amb distància inicial, distància llegida, llindar, espai f
 - Què heu canviat per millorar l’angle de gir i quina dada ho demostra?
 - Quin avís alternatiu veu l’usuari si no vol sentir el so?
 
+
 ## ♿ Accessibilitat i seguretat
 
 Useu velocitat baixa, un obstacle tou i una zona de prova delimitada. Manteniu el botó d’aturada accessible i no confieu en el sensor com a sistema de protecció. Oferiu taula de dades o simulador si una persona prefereix no conduir el robot; el senyal LED ha d’oferir la mateixa informació que el so.

@@ -46,7 +46,9 @@ Assegura't que l'emissor i el receptor utilitzen el mateix grup de ràdio; comen
 
 ### Preguntes per comprovar
 
-Com sabeu a qui pertany un missatge? Què passaria si dos equips comparteixen el grup? Pot rebre'l algú que no esperàvem?
+- Com sabeu a qui pertany un missatge?
+- Què passaria si dos equips comparteixen el grup?
+- Pot rebre'l algú que no esperàvem?
 
 ## ♿ Accessibilitat i seguretat
 

@@ -49,7 +49,9 @@ Fixa la pinça sobre la taula i utilitza un objecte de prova resistent i tou, am
 
 ### Preguntes per comprovar
 
-Què indica el sensor de força en aquest model? Quin llindar provaràs i quines unitats permet llegir realment el dispositiu?
+- Què indica el sensor de força en aquest model?
+- Quin llindar provaràs i quines unitats permet llegir realment el dispositiu?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

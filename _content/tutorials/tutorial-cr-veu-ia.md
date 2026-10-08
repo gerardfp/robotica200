@@ -46,7 +46,9 @@ Abans de fer servir un servei de veu, comprova si és compatible amb la versió 
 
 ### Preguntes per comprovar
 
-Què ha sentit el programa? Què succeeix amb una frase semblant o quan no pot reconèixer l'ordre?
+- Què ha sentit el programa?
+- Què succeeix amb una frase semblant o quan no pot reconèixer l'ordre?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

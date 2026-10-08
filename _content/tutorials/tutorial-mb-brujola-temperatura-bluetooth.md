@@ -61,6 +61,7 @@ Repetiu tres vegades quatre rumbs marcats i dues lectures tèrmiques en condicio
 - Quines funcions requereixen micro:bit V2?
 - Quina diferència observable hi ha entre emparellar per Bluetooth i enviar dades per ràdio?
 
+
 ## ♿ Accessibilitat i seguretat
 
 Permeteu llegir els resultats en veu alta, en pantalla o en una taula impresa. El tacte és opcional i es pot substituir per A/B. No compartiu identificadors personals ni emparelleu dispositius sense seguir les normes digitals del centre; esborreu la connexió en acabar. No useu imants forts prop de la brúixola durant les proves.

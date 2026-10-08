@@ -47,7 +47,9 @@ Compara la resposta d'un circuit curt amb obstacles a diferents posicions; ajust
 
 ### Preguntes per comprovar
 
-El valor registrat continua sent útil si varies la distància a l'obstacle? Què hauria de fer Rocky si la lectura no és clara?
+- El valor registrat continua sent útil si varies la distància a l'obstacle?
+- Què hauria de fer Rocky si la lectura no és clara?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

@@ -651,7 +651,7 @@ for (const item of catalog.situacions) {
 }
 const expectedDetailKinds = [
   ["activitat", "activity", "activitats", "activitat-", 10, catalog.activitats],
-  ["tutorial", "tutorial", "tutorials", "tutorial-", 29, catalog.tutorials],
+  ["tutorial", "tutorial", "tutorials", "tutorial-", 34, catalog.tutorials],
   ["robot", "robot", "robots", "robot-", 6, catalog.robots],
   ["guia", "guide", "pages", "guia-", 3, null]
 ];

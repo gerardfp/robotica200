@@ -62,6 +62,7 @@ Registreu una taula amb condició, lectura/estat, eixida esperada, eixida observ
 - Quina targeta ha donat una lectura més difícil de distingir? Quina variable podria explicar-ho?
 - El robot segueix la línia millor després d’ajustar la velocitat o la posició del sensor?
 
+
 ## ♿ Accessibilitat i seguretat
 
 Manteniu el robot a velocitat baixa i dins d’un recorregut delimitat, lluny de vores i dits. No useu sons forts, no enregistreu veus i no feu inferències sobre les persones a partir del nivell de so. Oferiu lectures simulades o targetes impreses a qui no vulga participar en una prova sonora; es poden comparar resultats sense conduir el robot.

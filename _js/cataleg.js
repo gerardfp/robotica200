@@ -1741,10 +1741,10 @@ window.CATALEG = {
       "robotLabel": "Coding Express",
       "url": "tutorial/index.html?id=ce-bifurcacions",
       "imatge": "_assets/tutorials/ce-bifurcacions.png",
-      "titol": "Canvis d'agulla i bifurcacions en Y",
+      "titol": "Canvis d’agulla i bifurcacions en Y",
       "dificultat": "Intermedi",
       "durada": "45 min",
-      "descripcio": "Utilitzar peces de canvi de via per crear rutes alternatives i prendre decisions de transport segons"
+      "descripcio": "Dissenyar itineraris alternatius amb la via en Y, el canvi d’agulla manual i els maons d’acció del Coding Express."
     },
     {
       "id": "tutorial-ce-bucles",
@@ -1765,10 +1765,10 @@ window.CATALEG = {
       "robotLabel": "Coding Express",
       "url": "tutorial/index.html?id=ce-motors-sensors",
       "imatge": "_assets/tutorials/ce-motors-sensors.png",
-      "titol": "Motors i sensors: Els maons d'acció de colors",
+      "titol": "Maons d’acció: sons, llums i aturades",
       "dificultat": "Iniciació",
       "durada": "45 min",
-      "descripcio": "Descobrir la relació causa-efecte col·locant els 5 maons de colors a les vies per activar sensors,"
+      "descripcio": "Investigar com els maons d’acció de colors canvien el viatge del tren i registrar les respostes observades."
     },
     {
       "id": "tutorial-ce-primeres-passes",
@@ -1777,10 +1777,10 @@ window.CATALEG = {
       "robotLabel": "Coding Express",
       "url": "tutorial/index.html?id=ce-primeres-passes",
       "imatge": "_assets/tutorials/ce-primeres-passes.png",
-      "titol": "Primeres passes: El circuit bàsic i el motor Push & Go",
+      "titol": "Primeres passes: encendre, impulsar i aturar Coding Express",
       "dificultat": "Iniciació",
-      "durada": "30 min",
-      "descripcio": "Com encendre la locomotora, comprendre la mecànica 'empeny per arrencar i atura amb la mà' i muntar"
+      "durada": "35 min",
+      "descripcio": "Posar en marxa el tren de la dotació, provar el moviment Push & Go i construir una via segura amb estació i destinació."
     },
     {
       "id": "tutorial-cr-giroscopi-ir-control",
@@ -1817,6 +1817,18 @@ window.CATALEG = {
       "dificultat": "Iniciació",
       "durada": "35 min",
       "descripcio": "Connectar Codey al software de l'ordinador o tauleta i programar animacions facials i missatges lliscants."
+    },
+    {
+      "id": "tutorial-cr-python-upload",
+      "slug": "cr-python-upload",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-python-upload",
+      "imatge": "_assets/tutorials/cr-python-upload.webp",
+      "titol": "Codey Rocky: del programa de blocs a Python en mBlock",
+      "dificultat": "Avançat",
+      "durada": "50 min",
+      "descripcio": "Connectar Codey Rocky, carregar un programa de blocs i inspeccionar o editar la traducció Python del mode Upload."
     },
     {
       "id": "tutorial-cr-sensors-llum-so-linia",
@@ -1879,6 +1891,18 @@ window.CATALEG = {
       "descripcio": "Optimitzar el codi combinant les fitxes direccionals amb blocs de números (1, 2, 3, 4, 5) per estalviar"
     },
     {
+      "id": "tutorial-cs-obstacles-bandera",
+      "slug": "cs-obstacles-bandera",
+      "robot": "coding-set",
+      "robotLabel": "Coding Set",
+      "url": "tutorial/index.html?id=cs-obstacles-bandera",
+      "imatge": "_assets/tutorials/cs-obstacles-bandera.png",
+      "titol": "Coding Set: obstacles, banderes i rutes alternatives",
+      "dificultat": "Intermedi",
+      "durada": "45 min",
+      "descripcio": "Planificar una ruta del MatataBot que evite obstacles i arribe a una bandera, provar-la i depurar els girs."
+    },
+    {
       "id": "tutorial-cs-primeres-passes",
       "slug": "cs-primeres-passes",
       "robot": "coding-set",
@@ -1937,6 +1961,18 @@ window.CATALEG = {
       "dificultat": "Iniciació",
       "durada": "30 min",
       "descripcio": "Com programar la placa des del navegador web MakeCode sense instal·lar cap programa i descarregar l'arxiu"
+    },
+    {
+      "id": "tutorial-mb-python-microbit",
+      "slug": "mb-python-microbit",
+      "robot": "microbit",
+      "robotLabel": "Micro:bit",
+      "url": "tutorial/index.html?id=mb-python-microbit",
+      "imatge": "_assets/tutorials/mb-python-editor.webp",
+      "titol": "micro:bit: programar amb MicroPython i depurar amb el simulador",
+      "dificultat": "Avançat",
+      "durada": "50 min",
+      "descripcio": "Llegir els botons A/B en Python, mostrar icones, provar la indentació i enviar el programa a una micro:bit."
     },
     {
       "id": "tutorial-mb-radio-mesh",
@@ -2008,7 +2044,19 @@ window.CATALEG = {
       "titol": "Primeres passes: El Hub intel·ligent i el primer programa",
       "dificultat": "Iniciació",
       "durada": "35 min",
-      "descripcio": "Connexió del Hub per Bluetooth a l'App SPIKE, gestió de la matriu 5x5 de LEDs i bateria recarregable."
+      "descripcio": "Connectar el Hub SPIKE Prime, explorar la matriu 5 × 5, els sis ports i el sensor d’orientació."
+    },
+    {
+      "id": "tutorial-sp-python-motor",
+      "slug": "sp-python-motor",
+      "robot": "spike",
+      "robotLabel": "Spike",
+      "url": "tutorial/index.html?id=sp-python-motor",
+      "imatge": "_assets/tutorials/spike-prime-python.webp",
+      "titol": "SPIKE Prime: del programa de blocs a Python",
+      "dificultat": "Avançat",
+      "durada": "50 min",
+      "descripcio": "Canviar a l’editor Python de MicroPython, controlar un motor angular i depurar una instrucció modificant un valor cada vegada."
     },
     {
       "id": "tutorial-sp-sensor-distancia-alarma",
@@ -2021,6 +2069,18 @@ window.CATALEG = {
       "dificultat": "Intermedi",
       "durada": "55 min",
       "descripcio": "Programar una parada basada en ultrasons, mesurar un gir amb el giroscopi i fer sonar l’altaveu del Hub."
+    },
+    {
+      "id": "tutorial-tb-esborrat-depuracio",
+      "slug": "tb-esborrat-depuracio",
+      "robot": "tale-bot",
+      "robotLabel": "Tale-Bot",
+      "url": "tutorial/index.html?id=tb-esborrat-depuracio",
+      "imatge": "_assets/tutorials/tb-esborrat-depuracio.png",
+      "titol": "Tale-Bot Pro: esborrar una ordre i depurar el recorregut",
+      "dificultat": "Iniciació",
+      "durada": "35 min",
+      "descripcio": "Comparar la pulsació curta i llarga de Clear per retirar l’última ordre o buidar tot el programa abans de tornar-lo a provar."
     },
     {
       "id": "tutorial-tb-motors-sensors",
@@ -2100,7 +2160,7 @@ window.CATALEG = {
       ],
       "order": 2,
       "url": "robot/index.html?id=tale-bot",
-      "tutorials": 4
+      "tutorials": 5
     },
     {
       "id": "robot-coding-set",
@@ -2115,7 +2175,7 @@ window.CATALEG = {
       ],
       "order": 3,
       "url": "robot/index.html?id=coding-set",
-      "tutorials": 4
+      "tutorials": 5
     },
     {
       "id": "robot-codey-rocky",
@@ -2130,7 +2190,7 @@ window.CATALEG = {
       ],
       "order": 4,
       "url": "robot/index.html?id=codey-rocky",
-      "tutorials": 5
+      "tutorials": 6
     },
     {
       "id": "robot-spike",
@@ -2145,7 +2205,7 @@ window.CATALEG = {
       ],
       "order": 5,
       "url": "robot/index.html?id=spike",
-      "tutorials": 5
+      "tutorials": 6
     },
     {
       "id": "robot-microbit",
@@ -2160,7 +2220,7 @@ window.CATALEG = {
       ],
       "order": 6,
       "url": "robot/index.html?id=microbit",
-      "tutorials": 6
+      "tutorials": 7
     }
   ]
 };

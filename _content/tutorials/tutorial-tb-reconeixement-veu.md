@@ -46,7 +46,9 @@ Comprova amb el manual del teu model si el micròfon reconeix ordres o grava i r
 
 ### Preguntes per comprovar
 
-Quan comença i acaba la gravació? L'ordre es reprodueix o el robot la interpreta per moure's?
+- Quan comença i acaba la gravació?
+- L'ordre es reprodueix o el robot la interpreta per moure's?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

@@ -47,7 +47,9 @@ Dibuixa en un mapa gran on són la posició inicial i la destinació. Una parell
 
 ### Preguntes per comprovar
 
-Cap a on mira el robot abans del primer gir? Quina instrucció física elimina si ha premut una tecla per error?
+- Cap a on mira el robot abans del primer gir?
+- Quina instrucció física elimina si ha premut una tecla per error?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

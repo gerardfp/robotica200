@@ -47,7 +47,9 @@ Dibuixa una expressió de cinc píxels a la matriu i lliga una segona expressió
 
 ### Preguntes per comprovar
 
-Quina acció comença el programa? La cara es mostra durant el temps esperat?
+- Quina acció comença el programa?
+- La cara es mostra durant el temps esperat?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

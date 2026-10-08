@@ -46,7 +46,9 @@ Identifica primer si les plaques són V2 i comprova el micròfon i el bloc dispo
 
 ### Preguntes per comprovar
 
-La placa detecta parla o només nivells de so? Què passa si varia el soroll de fons?
+- La placa detecta parla o només nivells de so?
+- Què passa si varia el soroll de fons?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 

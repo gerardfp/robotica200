@@ -57,6 +57,7 @@ El nombre de voltes dona una parada anticipada que es pot calcular, però depén
 - Què ha canviat quan heu modificat la velocitat?
 - En quin cas el robot s’atura abans del contacte i en quin cas espera a tocar?
 
+
 ## ♿ Accessibilitat i seguretat
 
 Per començar, facilita una taula de conversions roda-voltes-distància o una distància que corresponga a voltes completes. Com a extensió, compareu rodes de diàmetres diferents o representeu les proves en un gràfic. Repartiu els rols: conducció, mesura i registre.

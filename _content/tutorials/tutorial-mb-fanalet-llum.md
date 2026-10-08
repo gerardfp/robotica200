@@ -56,6 +56,7 @@ La lectura va de 0 (molt fosc) a 255 (molt clar). L’algoritme revisa contínua
 - Què passa si el llindar és més alt? I si és més baix?
 - Com podem saber si el canvi és causat per la llum o per haver mogut la placa?
 
+
 ## ♿ Accessibilitat i seguretat
 
 Facilita un projecte inicial amb el bucle preparat i deixa que cada parella trie la icona o el llindar. Com a extensió, recolliu cinc lectures per espai i compareu-les; manteniu la placa en la mateixa orientació per fer una comparació més justa.

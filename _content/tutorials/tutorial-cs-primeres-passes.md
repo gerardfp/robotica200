@@ -48,7 +48,9 @@ Presenta el tauler, la torre i dues peces de moviment: demana a cada parella ord
 
 ### Preguntes per comprovar
 
-Quina peça creus que es llegeix primer? Com pots saber si el robot ha seguit l'ordre del tauler?
+- Quina peça creus que es llegeix primer?
+- Com pots saber si el robot ha seguit l'ordre del tauler?
+- Quina prova faríeu a continuació per comprovar-ho?
 
 ## ♿ Accessibilitat i seguretat
 
