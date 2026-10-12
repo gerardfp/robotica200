@@ -12,6 +12,7 @@ theme: "ciutat"
 theme_label: "Mobilitat quotidiana i orientació"
 duration: "3 sessions"
 challenge: "Quin nombre de l’app necessita el tren per arribar a cada estació i com comprovem que ha fet el trajecte esperat?"
+official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/"
 ---
 
 ![Un tren Coding Express de la dotació recorre una via de doble extrem amb una estació de biblioteca i una altra de mercat.](../../_assets/imatges/sa-ce-distancia-estacions.webp)
@@ -71,6 +72,10 @@ Abans de moure el tren, connecteu-lo a l’app i mireu quins nombres es poden se
 #### Fase 2 · Explorem i construïm
 
 En grup menut, construïu dos o tres models senzills de parada i una via de doble extrem. Poseu les destinacions al costat de la via, des de prop de l’origen fins a més lluny. Ordeneu els nombres amb targetes només si coincideix amb la interfície observada.
+
+![El Coding Express real, tres destinacions de maqueta, unitats de paper iguals i una tauleta amb opcions abstractes de moviment.](../../_assets/imatges/sa-ce-distancies-unitats-app.png)
+
+_Les unitats comparen trams de la maqueta; les opcions de l’app s’han de provar en la via del centre i no equivalen a metres._
 
 #### Fase 3 · Expliquem i registrem
 

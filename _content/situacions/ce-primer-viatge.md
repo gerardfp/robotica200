@@ -12,6 +12,7 @@ theme: "societat"
 theme_label: "Convivència i ciutadania"
 duration: "3 sessions"
 challenge: "Quins elements necessitem per preparar una ruta clara perquè el tren visite una estació i puga tornar al punt de partida?"
+official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/first-trip/"
 ---
 
 ![El tren Coding Express de la dotació recorre una via amb una estació i maons d’acció de colors.](../../_assets/imatges/sa-ce-primer-viatge.webp)
@@ -71,6 +72,10 @@ Recupereu la ruta i pregunteu com es pot aturar el tren amb seguretat. En una vi
 #### Fase 2 · Explorem i construïm
 
 La persona conductora executa la prova; l’observadora assenyala el lloc real i la registradora marca el resultat amb una icona o una paraula. Repetiu el protocol amb el maó d’acció roig i el maó roig d’aturada només si tots dos formen part de la dotació.
+
+![Tres escenes amb el Coding Express real comparen l’aturada manual, el maó d’acció roig i el maó roig d’aturada.](../../_assets/imatges/sa-ce-primer-viatge-aturades.png)
+
+_Els panells representen les tres modalitats descrites per LEGO; comproveu quines peces roges hi ha en el set del centre i on s’atura realment el tren._
 
 #### Fase 3 · Expliquem i registrem
 

@@ -71,6 +71,10 @@ Useu una situació inventada de recollida del pati. Consulteu la guia local de s
 
 Dissenyeu la interfície: A canvia la categoria, B suma una unitat i una combinació d’ordres reinicia el recompte; associeu una icona constant a cada categoria. Creeu variables independents per categoria i, si és útil, un total derivat. Eviteu que canviar de categoria incremente el recompte.
 
+![Una micro:bit de la dotació mostra una icona mentre l’alumnat tria una categoria en una graella de recompte amb mostres netes i un apartat per a casos dubtosos.](../../_assets/imatges/sa-mb-comptador-residus-prova.png)
+
+_La placa registra la categoria que tria una persona amb els botons; no identifica ni classifica els residus automàticament._
+
 #### Fase 3 · Expliquem i registrem
 
 Escriviu una taula de proves amb entrada, categoria seleccionada, valor previst i valor mostrat. Incloeu una entrada de cada tipus, dos elements seguits de la mateixa categoria, canvi de categoria abans d’incrementar, reinici i categoria dubtosa.
@@ -115,4 +119,4 @@ Oferiu icones tàctils o d’alt contrast, targetes de categoria, dictat de dade
 
 ## 🔗 Unitat oficial adaptada
 
-[Barefoot · Litter hunt](https://microbit.org/teach/lessons/barefoot-litter-hunt/) consta de dues lliçons. La [primera](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-1/) treballa botons i sensors per a mostrar imatges, variables i un joc de resposta; la [segona](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-2/) presenta el repte d’una organització ambiental, dissenya el comptador, registra deixalles locals i fa una recollida. Aquesta proposta conserva els objectius de programació i registre, substitueix la cursa ràpida per proves accessibles, incorpora normativa local de separació i separa l’observació de la manipulació segura de residus. La sessió de verificació i proposta és una ampliació pròpia; no reutilitza els materials visuals oficials.
+[Barefoot · Litter hunt](https://microbit.org/teach/lessons/barefoot-litter-hunt/) consta de dues lliçons oficials per a 7–11 anys amb MakeCode. La [primera](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-1/) fixa com a objectius explicar botons i sensors, programar-los i guardar dades amb variables; la pàgina descriu també imatges a la matriu i un joc de prémer el botó ràpidament. La [segona](https://microbit.org/teach/lessons/barefoot-litter-hunt-lesson-2/) demana dissenyar i programar un comptador i usar-lo per registrar residus locals, inclosa la identificació dels que es poden reciclar. Aquesta proposta conserva els objectius de programació i registre, adapta el joc sense rànquing de velocitat, consulta la normativa local de separació i separa l’observació de la manipulació segura de residus. La tercera sessió de verificació i proposta és una ampliació pròpia; no reutilitza els materials visuals oficials. Els plans docents descarregables apareixen enllaçats a les pàgines, però no s’han pogut recuperar en aquesta auditoria; per això la correspondència es limita als objectius i la descripció pública i no afirma una adaptació pas a pas dels documents docents.

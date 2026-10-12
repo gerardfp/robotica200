@@ -45,6 +45,10 @@ En parelles, construïu o adapteu un indicador de paper amb agulla motoritzada. 
 
 Anoteu ciutat, data i hora, unitat i període de la dada. Comproveu si el bloc proporciona el total setmanal o set valors diaris; si són diaris, sumeu una sola vegada els set dies del mateix període i escriviu l’operació. No barregeu dies incomplets ni una previsió amb observacions. Dibuixeu l’esquema i indiqueu quina variable no es mesura: el model no incorpora humitat del sòl.
 
+![Model SPIKE Prime real al costat de tres representacions separades: previsió meteorològica, pluja observada i perfil de sòl amb una planta de maqueta.](../../_assets/imatges/sa-sp-reg-hort-dades.png)
+
+_El model motoritzat representa una dada triada; no mesura la pluja ni la humitat del sòl._
+
 #### Fase 4 · Apliquem i millorem
 
 Compareu la dada amb el que representa l’agulla i reviseu l’escala inicial si les unitats o el període no queden clars. Manteniu separats les dades en viu i les arxivades.
@@ -67,6 +71,10 @@ Programeu una resposta proporcional entre la dada `p` i l’angle del motor, des
 
 Proveu els cinc valors de referència (0, 15, 30, 45 i 60 mm) i anoteu valor, angle esperat, angle observat i diferència. Reinicieu la posició del motor abans de cada prova i feu dues lectures per cas. Una altra parella revisa els desajustos i n’explica una causa possible: alineament inicial, lectura de la dada, sentit de gir o relació de conversió.
 
+![Model SPIKE Prime de la dotació al costat d’un indicador semicircular de paper amb agulla motoritzada i cinc targetes de gotes per a provar una escala proporcional.](../../_assets/imatges/sa-sp-reg-hort-calibratge.png)
+
+_La il·lustració és una guia conceptual: l’escala impresa i el muntatge s’han de construir i validar amb el kit del centre._
+
 #### Fase 4 · Apliquem i millorem
 
 Canvieu una sola regla d’escala cada vegada i torneu a provar els mateixos valors de referència. Si amplieu el rang perquè la previsió el supera, actualitzeu alhora l’etiqueta de l’escala i la conversió del programa. Documenteu una iteració i comproveu si la nova conversió millora la lectura sense ocultar dades fora de rang.
@@ -79,7 +87,7 @@ Expliqueu com la dada s’ha transformat en moviment i què significa l’error 
 
 #### Fase 1 · Activem i prediem
 
-Sense canviar el muntatge, predigueu per què no es pot reutilitzar directament la conversió de precipitació: pluja setmanal acumulada en mil·límetres i temperatura en graus són magnituds i unitats diferents. Identifiqueu la nova variable, la unitat que mostra l’app i un rang que incloga els valors previstos; si treballeu en °C, no pressuposeu que la temperatura mínima siga zero.
+Sense canviar el muntatge, predigueu per què no es pot reutilitzar directament la conversió de precipitació: pluja setmanal acumulada en mil·límetres i temperatura en graus són magnituds i unitats diferents. Identifiqueu la nova variable, la unitat que mostra l’app i un rang que incloga els valors previstos; si treballeu en °C, no pressuposeu que la temperatura mínima siga zero. Trieu també una targeta pròpia de necessitats d’aigua per a un cultiu fictici i distingiu-la de les dades meteorològiques: és una condició del repte, no una dada científica ni una ordre de reg.
 
 #### Fase 2 · Explorem i construïm
 
@@ -87,7 +95,7 @@ Recalibreu l’escala per a la temperatura prevista: definiu `t_min` i `t_max`, 
 
 #### Fase 3 · Expliquem i registrem
 
-Compareu ciutats o períodes amb dades datades. Prepareu una targeta amb font, data, variable, unitats i la regla d’escala. Si és possible, contrasteu l’indicador amb una entrevista a una persona agricultora o horticultora; si no, useu una font divulgativa fiable, sense demanar ubicacions privades ni recomanacions per a un cultiu concret.
+Compareu ciutats o períodes amb dades datades. Prepareu una targeta amb font, data, variable, unitats i la regla d’escala. Si és possible, contrasteu l’indicador amb una entrevista a una persona agricultora o horticultora; si no, useu una font divulgativa fiable, sense demanar ubicacions privades ni recomanacions per a un cultiu concret. Pregunteu quins instruments reals s’utilitzen i compareu-los amb el tomato-meter: quina magnitud mesuren, quines unitats donen i quina informació addicional necessitaria una decisió de reg? Les professions i els instruments són una extensió d’investigació, no una validació del prototip.
 
 #### Fase 4 · Apliquem i millorem
 
@@ -95,7 +103,7 @@ Reviseu l’explicació perquè separe dada prevista, representació de l’esca
 
 #### Fase 5 · Comprovem i reflexionem
 
-Presenteu les dues escales calibrades i la conclusió amb els seus límits. **Evidència:** dues escales, targeta explicativa amb font i data i conclusió que separa observació, interpretació i decisió pendent.
+Presenteu les dues escales calibrades i la conclusió amb els seus límits. Cada persona tria una autoavaluació: **blau**, puc moure l’agulla segons una dada; **groc**, represente correctament el total setmanal; **violeta**, puc mostrar una temperatura en una escala recalibrada. Una parella aporta un comentari concret i una proposta de millora per a la prova següent. **Evidència:** dues escales, targeta de necessitats fictícia, fitxa explicativa amb font i data, comparació amb un instrument o una font professional i conclusió que separa observació, interpretació i decisió pendent.
 
 ![Hub SPIKE Prime unit a un motor que mou una agulla sobre una escala sense etiquetes, amb una tomaquera i una targeta amb gotes de pluja al costat.](../../_assets/imatges/sa-sp-hort-indicador.webp)
 

@@ -12,6 +12,7 @@ theme: "python"
 theme_label: "Projecte culminant: transport i Python"
 duration: "10 lliçons · 10–14 sessions"
 challenge: "Com podem dissenyar i programar en Python un prototip SPIKE que transporte materials de maqueta per una ruta escolar definida, i comunicar amb dades què resol i què encara no?"
+official_source: "https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us"
 ---
 
 ![Base mòbil LEGO SPIKE Prime amb una càrrega de targetes de paper que segueix una ruta de maqueta fins a una aula i una biblioteca.](../../_assets/imatges/sa-sp-python-projecte-transport.webp)
@@ -22,7 +23,7 @@ _El projecte final integra mecànica, Python, sensors, dades, proves iteratives 
 
 La comunitat escolar necessita moure materials compartits (targetes, peces grans o llibres de maqueta) entre dos punts d’una aula o biblioteca simulada. Cada equip investiga una necessitat concreta, defineix criteris d’èxit i restriccions, compara idees, construeix una base SPIKE Prime o un mecanisme de transport, programa amb Python una ruta repetible i documenta proves i millores. La mostra final explica la solució i les dades que la sustenten.
 
-És una adaptació de la branca *Transportation Project* anunciada com a projecte culminant de LEGO Education *Introduction to Python Programming · Course 2*. El projecte mobilitza les competències de final de curs que la guia enumera: dissenyar i iterar un prototip, usar algoritmes, dades, sensors, bucles i condicions compostes, depurar maquinari/programari, escriure pseudocodi, descompondre el problema, documentar proves i feedback, considerar biaix/accessibilitat i comunicar la solució. La guia accessible diu que el projecte ocupa entre 10 i 12 lliçons de 45–60 minuts i que té diari i rúbrica pròpia, però el PDF publicat no inclou un guió detallat d’aquestes sessions ni els descriptors de la rúbrica. Per això, aquesta seqüència de deu lliçons és una proposta didàctica original, traçada als resultats publicats, i no una adaptació pas a pas d’instruccions no disponibles.
+És una adaptació de la branca *Transportation Project* anunciada com a projecte culminant de LEGO Education [*Introduction to Python Programming · Course 2*](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us). El projecte mobilitza les competències de final de curs que la guia enumera: dissenyar i iterar un prototip, usar algoritmes, dades, sensors, bucles i condicions compostes, depurar maquinari/programari, escriure pseudocodi, descompondre el problema, documentar proves i feedback, considerar biaix/accessibilitat i comunicar la solució. La guia accessible diu que el projecte ocupa entre 10 i 12 lliçons de 45–60 minuts i que té diari i rúbrica pròpia, però el PDF publicat no inclou un guió detallat d’aquestes sessions ni els descriptors de la rúbrica. Per això, aquesta seqüència de deu lliçons és una proposta didàctica original, traçada als resultats publicats, i no una adaptació pas a pas d’instruccions no disponibles.
 
 ## 🎯 Resultats d’aprenentatge i vocabulari
 

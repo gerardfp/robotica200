@@ -34,11 +34,37 @@ Trieu un hàbitat pròxim i una pregunta sobre espècies que el grup puga invest
 
 #### Fase 2 · Explorem i construïm
 
-Consulteu fonts seleccionades i creeu una clau d’identificació amb observacions accessibles, com forma, mida aproximada o nombre de fulles, sempre que la font les documente.
+Consulteu fonts seleccionades i creeu una clau d’identificació amb observacions accessibles, com forma, mida aproximada o nombre de fulles, sempre que la font les documente. Trieu dues espècies observables en un hàbitat pròxim —o dues espècies de fitxes docents si no hi ha eixida— i feu una targeta de llegenda. En MakeCode, creeu dos comptadors: el botó A suma una observació de l’espècie 1 i el botó B suma una observació de l’espècie 2. La micro:bit registra l’acció humana; no reconeix ni identifica l’espècie.
+
+```javascript
+let especie1 = 0
+let especie2 = 0
+
+input.onButtonPressed(Button.A, function () {
+    especie1 += 1
+    basic.showNumber(especie1)
+})
+
+input.onButtonPressed(Button.B, function () {
+    especie2 += 1
+    basic.showNumber(especie2)
+})
+
+input.onGesture(Gesture.Shake, function () {
+    basic.showString("E1")
+    basic.showNumber(especie1)
+    basic.showString("E2")
+    basic.showNumber(especie2)
+})
+```
+
+![Una micro:bit real de la dotació amb targetes de dues espècies de la marjal, una clau d’identificació i una fitxa de registre de botons A i B.](../../_assets/imatges/sa-mb-comptador-especies.png)
+
+_La placa només suma les observacions que introdueix una persona; les targetes i la llegenda són materials propis._
 
 #### Fase 3 · Expliquem i registrem
 
-Programeu un comptador manual per registrar observacions en una eixida guiada o treballeu amb dades simulades. Anoteu la font i el criteri de recompte.
+Proveu cada botó tres vegades, agiteu la placa per consultar els dos totals i compareu-los amb un recompte manual en paper. Feu una prova amb zero, una observació i una observació repetida; decidiu com evitar comptar dues vegades el mateix indici. Anoteu espècie, lloc general (sense coordenades sensibles), data, font, criteri i si cada pressió ha incrementat només el comptador corresponent. Si useu fitxes, etiqueteu el registre com a simulat.
 
 #### Fase 4 · Apliquem i millorem
 
@@ -90,7 +116,7 @@ Canvieu una sola condició cada vegada i depureu primer el cas de grups diferent
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidències:** diagrama emissor–canal–receptor, programa amb el grup compartit, taula dels cinc casos amb tres repeticions i una explicació d’un límit tècnic i un límit ètic. La proposta adapta el repte oficial de crear una alarma sense reproduir-ne els materials; les històries, la maqueta i el codi són propis. El prototip només comunica una ordre manual de prova: no detecta caça, tala ni moviment, no localitza fauna i no garanteix que cada missatge arribe. No poseu dispositius a cap animal. [La lliçó oficial Anti-poaching collar](https://microbit.org/teach/lessons/protecting-animals-poaching/) presenta un repte de disseny amb ràdio per a alumnat de 7–11 anys; l’adaptació manté aquest focus i canvia el desplegament animal per una simulació escolar segura.
+**Evidències:** diagrama emissor–canal–receptor, programa amb el grup compartit, taula dels cinc casos amb tres repeticions i una explicació d’un límit tècnic i un límit ètic. La proposta adapta el repte oficial de crear una alarma sense reproduir-ne els materials; les històries, la maqueta i el codi són propis. El prototip només comunica una ordre manual de prova: no detecta caça, tala ni moviment, no localitza fauna i no garanteix que cada missatge arribe. No poseu dispositius a cap animal. [La lliçó oficial Anti-poaching collar](https://microbit.org/teach/lessons/protecting-animals-poaching/) presenta un repte de disseny amb ràdio per a alumnat de 7–11 anys; l’adaptació manté aquest focus i canvia el desplegament animal per una simulació escolar segura. Com a referència tècnica complementària, la guia oficial [Investigating biodiversity](https://microbit.org/teach/playground-survey/investigating-biodiversity/) mostra dos comptadors amb variables, botons A/B i una consulta separada dels totals; ací s’adapta aquesta mecànica per a dos comptadors etiquetats per l’equip, sense atribuir-la al codi de la lliçó original.
 
 ## 🌊 Repte 2 · Criatures marines
 
@@ -257,23 +283,41 @@ Canvieu només el llindar o el temps de bloqueig entre deteccions, no tots dos a
 
 #### Fase 1 · Activem i prediem
 
-Estudieu la desigualtat d’accés a l’aigua amb fonts contextualitzades. Predigueu què podria mostrar un comptador i quina part del context quedaria fora.
+Partiu de l’accés quotidià a l’aigua potable al centre i contrasteu-lo amb una font pública sobre infants que han de fer trajectes per a obtindre’n. La situació oficial *Walking for water* (7–11 anys) proposa dissenyar un comptador de passos; no convertiu eixa experiència en una cursa ni la compareu com si una ruta escolar valenciana fora equivalent. Pregunteu què pot mostrar un comptador i què deixa fora: disponibilitat, càrrega, terreny, temps i condicions de vida.
 
 #### Fase 2 · Explorem i construïm
 
-Programeu un comptador per a un objecte en moviment o prepareu registres ficticis. No cal que cap alumne camine per completar el repte.
+Construïu un comptador de polsos simulats amb la micro:bit. Cada pressió d’A representa una fitxa que avança una casella en un itinerari de paper entre l’aula i un punt d’aigua del centre; B reinicia el total. Aquest model permet practicar la variable i l’esdeveniment sense portar la placa al cos, caminar ni carregar aigua. No l’anomeneu mesurador de passos reals: el programa no llig el moviment de la persona.
+
+```javascript
+let polsosSimulats = 0
+
+input.onButtonPressed(Button.A, function () {
+    polsosSimulats += 1
+    basic.showNumber(polsosSimulats)
+})
+
+input.onButtonPressed(Button.B, function () {
+    polsosSimulats = 0
+    basic.clearScreen()
+})
+```
+
+![Una micro:bit de la dotació al costat d’un itinerari de paper amb fitxes de polsos i gotes d’aigua, preparat com a simulació de taula.](../../_assets/imatges/sa-mb-comptador-trajecte.png)
+
+_Cada pols és una entrada manual de prova; no representa els passos ni l’experiència real de cap persona._
 
 #### Fase 3 · Expliquem i registrem
 
-Anoteu quantes deteccions registra el programa en una prova de maqueta i compareu-ho amb un recompte manual.
+Executeu quatre sèries de 0, 1, 5 i 10 polsos. Una persona prem A, una altra mou una fitxa per cada pressió i una tercera anota el recompte manual; després, consulteu el total amb B i compareu-lo. Repetiu una sèrie amb dues pressions seguides i comproveu que el programa suma dues entrades, no una distància ni un temps. Registreu cada resultat com a «polsos simulats».
 
 #### Fase 4 · Apliquem i millorem
 
-Reviseu falsos recomptes i expliqueu què representa i què no representa cada pas comptat. Connecteu el debat amb l’accés equitatiu a l’aigua potable.
+Reviseu dobles pressions i esborrats, i expliqueu què representa i què no representa cada pols simulat. Compareu el plànol del centre amb la informació de la font sense calcular distàncies o càrregues a partir del model. Connecteu el debat amb l’accés equitatiu a l’aigua potable sense dramatitzar ni representar físicament l’esforç d’altres infants.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** registre, comparació i reflexió contextualitzada. No convertiu experiències de pobresa en joc ni feu competicions de distància.
+**Evidències:** codi funcional, quatre sèries de polsos simulats, comparació amb el registre manual, font consultada i una reflexió sobre allò que el comptador no mesura. La proposta adapta l’objectiu oficial de dissenyar un comptador i en canvia l’entrada per una simulació accessible; no afirma que mesure passos reals. No convertiu experiències de pobresa en joc ni feu competicions de distància. [Walking for water](https://microbit.org/teach/lessons/walking-for-water/) és la tercera activitat oficial de *Being active*.
 
 ## 🌙 Repte 4 · Visibilitat i desplaçaments nocturns
 
@@ -283,67 +327,135 @@ Adapta [Night safety](https://microbit.org/teach/lessons/night-safety/) en tres 
 
 #### Fase 1 · Activem i prediem
 
-Prepareu una maqueta d’itinerari i predigueu quins factors afecten la visibilitat d’un objecte. Consulteu normes i recomanacions viàries en fonts fiables.
+El repte oficial demana comprendre els riscos de visibilitat nocturna i dissenyar un *Night sensor* que recorde «Be Safe: Be Seen». Llegiu la descripció de [micro:bit Foundation](https://microbit.org/teach/lessons/night-sensor/) i consulteu una font pública de seguretat viària. En una situació fictícia de camí escolar, distingiu visibilitat, il·luminació i seguretat: un senyal no evita col·lisions ni substitueix infraestructura, supervisió o elements homologats. Acordeu tres criteris observables per al prototip de taula: activar-se amb un llindar acordat, mostrar un símbol fàcil d’identificar i poder comprovar en quines condicions falla.
 
 #### Fase 2 · Explorem i construïm
 
-Programeu un avís amb el sensor de llum integrat de micro:bit, si el model i l’orientació permeten la lectura prevista. Representeu l’itinerari a escala de maqueta.
+Situeu la micro:bit sobre una maqueta de cartó al costat d’una bossa de paper; feu ombra amb una targeta, mai amb una llanterna potent apuntada als ulls. La lectura [`input.lightLevel()`](https://makecode.microbit.org/reference/input/light-level) usa la matriu LED com a sensor aproximat de 0 a 255, no un sensor de llum separat. En V1 i V2, la placa i la seua orientació poden canviar la lectura; en V2 es pot cobrir la fila superior i obtindre una lectura pròxima a zero ([detall tècnic oficial](https://support.microbit.org/support/solutions/articles/19000024023-how-does-the-light-sensing-feature-on-the-micro-bit-work-)). Buideu la pantalla abans de mesurar i feu una primera lectura d’escalfament, perquè la primera crida pot retornar zero. El llindar `80` d’aquest exemple és una elecció local de partida, que s’ha de calibrar a l’aula; no és una xifra oficial ni una norma de seguretat.
+
+```javascript
+let llindar = 80
+basic.clearScreen()
+basic.pause(500)
+input.lightLevel() // lectura inicial: pot retornar 0
+basic.pause(200)
+
+basic.forever(function () {
+    basic.clearScreen()
+    basic.pause(200)
+    let nivell = input.lightLevel()
+    if (nivell < llindar) {
+        basic.showIcon(IconNames.SmallDiamond)
+        basic.pause(700)
+    }
+    basic.clearScreen()
+    basic.pause(700)
+})
+```
+
+La icona només queda encesa breument després de cada lectura per no mantindre la matriu il·luminada mentre es torna a mesurar. Aquesta seqüència és una demostració de llindar, no una llum portàtil contínua ni un dispositiu per a circular.
+
+![Una micro:bit de la dotació mesura la llum sobre la taula al costat d’una bossa de paper i una maqueta de pas de vianants; una targeta crea una ombra controlada.](../../_assets/imatges/sa-mb-night-sensor-maqueta.webp)
+
+_La maqueta permet provar el llindar en condicions controlades; no s’utilitza en cap trajecte real._
 
 #### Fase 3 · Expliquem i registrem
 
-Proveu el programa amb llum ambiental diferent i anoteu les condicions i l’avís. Compareu-lo amb materials reflectors físics de la maqueta.
+Feu cinc lectures en cadascuna de tres condicions repetibles: llum de l’aula, ombra parcial amb cartó i ombra més ampla. Abans de cada intent, deixeu la pantalla apagada, espereu 200 ms i anoteu la lectura, l’estat esperat de la icona i el resultat observat. Afegiu dos casos de frontera: lectura igual al llindar i una pròxima per damunt. Compareu la icona amb una mostra de material reflector sota la mateixa llum; registreu quina es veu millor des de tres costats del model i no confongueu una prova a poca distància amb visibilitat viària.
 
 #### Fase 4 · Apliquem i millorem
 
-Reviseu el llindar amb diverses proves i expliqueu els casos en què l’avís podria fallar. No proveu el prototip en un desplaçament real.
+Canvieu només una decisió per iteració: llindar, icona o duració de l’avís. Repetiu els mateixos casos i compareu falses activacions, absència d’avís i facilitat d’interpretació. Si la lectura canvia en girar la placa, documenteu l’orientació i expliqueu que la matriu LED també fa d’eixida. Demaneu a una altra parella que identifique què vol dir el símbol sense donar-li pistes. No proveu el prototip en una persona ni en un desplaçament real.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** registre de proves i comparació de solucions. Cap eixida de micro:bit substitueix il·luminació homologada ni garanteix seguretat.
+**Evidències:** programa MakeCode, taula de quinze lectures amb condicions i orientació, comparació amb el reflector i una decisió de millora justificada per resultats. Expliqueu almenys dos límits: la lectura de la matriu és aproximada i sensible a la posició; una micro:bit no és un element homologat ni garanteix que una persona siga vista.
 
 ### **Roda visible en maqueta (Flashing wheels).**
 
 #### Fase 1 · Activem i prediem
 
-Consulteu fonts de disseny universal i predigueu quines característiques farien visible una peça en una maqueta, sense demanar a ningú que simule una discapacitat.
+La lliçó oficial proposa dissenyar, provar i presentar un prototip de llum intermitent per a millorar la visibilitat nocturna d’una persona usuària de cadira de rodes. Llegiu els seus objectius a [Flashing wheels](https://microbit.org/teach/lessons/flashing-wheels/), consulteu criteris de disseny inclusiu i separeu què podem avaluar en una maqueta del que només pot valorar una persona usuària en context real. No demaneu a l’alumnat que simule una discapacitat ni parle en nom de persones amb experiències diferents. Acordeu requisits de prototip: senyal distingible, control d’encesa/apagat accessible, absència de pampallugues ràpides i cap peça que puga tocar rodes o enganxar-se.
 
 #### Fase 2 · Explorem i construïm
 
-Dissenyeu una peça visual per a un model de cadira de rodes. Si useu LED, trieu un patró lent i un interruptor accessible.
+Construïu una roda i una estructura de cartó, amb una micro:bit fixada al suport de taula, no a una cadira real. En la versió base, la matriu mostra una icona durant un segon i queda apagada durant un segon; A activa la seqüència i B l’atura. Aquest patró lent és només per comparar dissenys en classe, no una recomanació per a trànsit. Un LED extern és una ampliació opcional: només useu-lo amb resistor adequat, connexió revisada per una persona adulta i placa desconnectada durant el muntatge.
+
+```javascript
+let activa = false
+input.onButtonPressed(Button.A, function () {
+    activa = true
+})
+input.onButtonPressed(Button.B, function () {
+    activa = false
+    basic.clearScreen()
+})
+
+basic.forever(function () {
+    if (activa) {
+        basic.showIcon(IconNames.SmallDiamond)
+        basic.pause(1000)
+        basic.clearScreen()
+        basic.pause(1000)
+    } else {
+        basic.clearScreen()
+        basic.pause(100)
+    }
+})
+```
+
+![Micro:bit de la dotació sobre una maqueta de cadira de rodes de cartó, al costat de mostres reflectores i una fitxa de comprovació d’angles.](../../_assets/imatges/sa-mb-flashing-wheels-maqueta.webp)
+
+_La placa i les mostres només es proven en un model de taula, mai sobre una cadira real o en circulació._
 
 #### Fase 3 · Expliquem i registrem
 
-Proveu estabilitat, visibilitat des de diversos angles i resposta de l’interruptor. Anoteu les condicions de cada observació.
+Executeu cinc intents d’encesa amb A i cinc d’aturada amb B; anoteu si l’estat observat coincideix amb l’esperat. Situeu el model en tres orientacions i observeu la matriu des de davant, costat i darrere; repetiu amb llum ambiental diferent. Registreu visibilitat de la peça reflectora, senyal LED, estabilitat del suport i si es pot aturar sense moure el model. La prova mesura només la maqueta i el punt de vista de l’aula, no una distància de detecció en carretera.
 
 #### Fase 4 · Apliquem i millorem
 
-Feu una revisió de la peça amb els criteris acordats i corregiu un punt d’inestabilitat o poca visibilitat.
+Compareu dues solucions: reflector sense codi i matriu programada amb reflector. Demaneu retorn a una parella que no haja construït el model; reviseu una característica per torn (posició, estabilitat, patró o control) i torneu a provar els mateixos casos. Si alguna persona necessita evitar llum intermitent, useu la versió estàtica o només el reflector. No augmenteu freqüència ni intensitat per a «guanyar» visibilitat.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** maqueta revisada i registre de criteris. No s’utilitza en trànsit real ni representa l’experiència d’una persona usuària.
+**Evidències:** prototip de cartó, programa amb controls A/B, taula d’encesa/aturada, registre de visibilitat en tres orientacions i canvi fet després del retorn. Presenteu què no s’ha provat: ús per una persona real, fixació segura, visibilitat a distància i adequació normativa. No s’utilitza en trànsit real ni representa l’experiència d’una persona usuària.
 
 ### **Bossa per a un trajecte (A bag for Juliane).**
 
 #### Fase 1 · Activem i prediem
 
-Presenteu un personatge fictici i un trajecte imaginat en el context local. Predigueu quins elements de disseny poden fer visible una bossa en la maqueta.
+La [proposta oficial *A bag for Juliane*](https://microbit.org/teach/lessons/a-bag-for-juliane/) conta que Juliane, una xiqueta refugiada de Zimbàbue, ha arribat a Anglaterra i planteja dissenyar-li una bossa més visible per al camí a l’escola. Presenteu la història amb respecte, sense dramatitzar-la ni demanar a ningú que compartisca experiències pròpies de migració o refugi. Després, traslladeu el repte de disseny a un itinerari fictici de barri valencià: qui usa la bossa tria què necessita i pot rebutjar qualsevol funció. Distingiu ajuda visual, reflector i mesures comunitàries de seguretat.
 
 #### Fase 2 · Explorem i construïm
 
-Creeu un accessori reflectant i una llum de maqueta amb materials disponibles. Eviteu reproduir estereotips o convertir l’experiència refugiada en un joc.
+Creeu una bossa de paper o una mostra plana de tela, tres opcions reflectores i un suport de cartó per a la micro:bit. En el model base, A mostra una icona i B l’apaga: el senyal és una funció que l’usuari controla, no un rastrejador ni una balisa de localització. El reflector funciona sense placa i queda com a alternativa si el centre no té micro:bit disponible.
+
+```javascript
+basic.clearScreen() // comença sense senyal actiu
+
+input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.SmallDiamond)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.clearScreen()
+})
+```
+
+![Micro:bit de la dotació al costat d’una bossa de cartó, materials reflectors i un itinerari escolar fictici dibuixat com a maqueta.](../../_assets/imatges/sa-mb-bag-juliane-prototip.webp)
+
+_El mapa i la bossa són models didàctics; no mostren una adreça ni un recorregut real de Juliane o de cap alumne._
 
 #### Fase 3 · Expliquem i registrem
 
-Proveu la visibilitat en diverses condicions de llum i registreu des de quins angles es veu l’accessori.
+En encendre la placa, comproveu primer que la matriu està apagada. Feu una prova de taula amb la bossa sense afegits, amb reflector, amb icona LED i amb reflector més icona. Des de davant, darrere i un costat, anoteu què es veu en llum d’aula i en ombra parcial, si A activa el senyal i si B l’apaga. Repetiu tres vegades i manteniu la mateixa distància i posició del llum; no useu foscor completa, persones en moviment ni llanternes dirigides als ulls. Registreu també una limitació del disseny que no siga resoluble amb la placa, com ara el traçat, l’enllumenat o l’acompanyament.
 
 #### Fase 4 · Apliquem i millorem
 
-Reviseu la col·locació del reflector o la llum a partir de les observacions. Parleu de quines mesures depenen del disseny de l’entorn i de la comunitat.
+Una altra parella revisa si el senyal és recognoscible, si la persona fictícia conserva el control i si la bossa evita dades personals. Canvieu una sola peça —posició del reflector, mida del símbol o control— i repetiu la prova. Prepareu un missatge curt per a una audiència escolar que presente la millora sense prometre seguretat: compareu què pot fer un objecte individual i què depén de l’entorn, l’accessibilitat i les decisions comunitàries.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** accessori de maqueta, registre de visibilitat i proposta de millora. La seguretat del trajecte és una responsabilitat comunitària, no individual.
+**Evidències:** bossa de paper, programa amb activació i cancel·lació, matriu de resultats de quatre versions, retorn d’una parella i missatge públic amb límits. Preserveu el context de la història oficial sense convertir-lo en joc de rols: l’activitat escolar no resol la situació de refugi ni garanteix un trajecte segur. La seguretat depén també de l’entorn i de les responsabilitats col·lectives.
 
 ## 🐬 Repte 5 · Salut dels oceans
 

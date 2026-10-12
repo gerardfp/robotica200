@@ -46,6 +46,8 @@ assert.match(veggieLove.html, /0, 15, 30, 45 i 60 mm[\s\S]*0°, 45°, 90°, 135�
 assert.match(veggieLove.html, /fora d’escala/i, "Veggie Love no retalla silenciosament dades fora del rang calibrat");
 assert.match(veggieLove.html, /t − t_min[\s\S]*t_max − t_min/, "Veggie Love recalibra la temperatura amb una conversió independent");
 assert.match(veggieLove.html, /−5, 15 i 35 °C[\s\S]*0°, 90° i 180°/, "Veggie Love comprova una temperatura negativa i els dos extrems");
+assert.match(veggieLove.html, /sa-sp-reg-hort-dades\.png/, "Veggie Love il·lustra la diferència entre previsió, observació i humitat del sòl");
+assert.match(veggieLove.html, /sa-sp-reg-hort-calibratge\.png/, "Veggie Love il·lustra la prova de calibratge de l’agulla");
 assert.match(wind.html, /markdown-note-materials/, "els materials es presenten en un bloc identificable");
 assert.match(wind.html, /markdown-note-evidence/, "les evidències es presenten en un bloc identificable");
 const trainingTrackers = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/sp-rampa-dades.md"), "utf8"), "https://example.test/_content/situacions/sp-rampa-dades.md");
@@ -85,6 +87,40 @@ assert.equal((libraryRoute.html.match(/class="sa-illustration"/g) || []).length,
 assert.match(libraryRoute.html, /el robot no rep coordenades ni transporta llibres/i, "la llegenda diferencia el mapa de les instruccions tangibles i del transport físic");
 const tangibleMarket = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/mercat-tangible.md"), "utf8"), "https://example.test/_content/situacions/mercat-tangible.md");
 assert.match(tangibleMarket.html, /sa-mercat-codingset-v2\.webp/, "el mercat Coding Set mostra el MatataBot i la torre reals revisats");
+const trainConcert = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-concert-pati.md"), "utf8"), "https://example.test/_content/situacions/ce-concert-pati.md");
+assert.equal(trainConcert.steps.length, 3, "Music – Animal Concert conserva les tres sessions adaptades");
+assert.match(trainConcert.html, /sa-ce-concert-maons-app\.png/, "la prova de maons incorpora una il·lustració pròpia del Coding Express i l'app");
+assert.match(trainConcert.html, /resposta sonora i la configuració de cada maó s’han de comprovar/i, "la llegenda no atribueix efectes fixos no verificats als colors");
+const trainSound = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-missatges-estacio.md"), "utf8"), "https://example.test/_content/situacions/ce-missatges-estacio.md");
+assert.equal(trainSound.steps.length, 3, "Train Sound conserva les tres sessions adaptades");
+assert.match(trainSound.html, /sa-ce-missatges-tunel-llum\.png/, "la prova del túnel intercala una il·lustració pròpia amb el tren real");
+assert.match(trainSound.html, /quan s’encén i s’apaga la llum/i, "la imatge del túnel remet a la comprovació del comportament físic");
+const firstTrip = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-primer-viatge.md"), "utf8"), "https://example.test/_content/situacions/ce-primer-viatge.md");
+assert.equal(firstTrip.steps.length, 3, "First Trip conserva les tres sessions adaptades");
+assert.match(firstTrip.html, /sa-ce-primer-viatge-aturades\.png/, "la comparació d'aturades incorpora una il·lustració pròpia del tren real");
+assert.match(firstTrip.html, /tres modalitats descrites per LEGO/i, "la llegenda limita la imatge als mètodes indicats per la font oficial");
+const trainDistance = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-distancies-estacions.md"), "utf8"), "https://example.test/_content/situacions/ce-distancies-estacions.md");
+assert.equal(trainDistance.steps.length, 3, "Math – Distance conserva les tres sessions adaptades");
+assert.match(trainDistance.html, /sa-ce-distancies-unitats-app\.png/, "la investigació dels nombres incorpora una il·lustració pròpia del tren i la maqueta");
+assert.match(trainDistance.html, /no equivalen a metres/i, "la llegenda diferencia les unitats de maqueta de les opcions de l'app");
+const trainRoutes = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-reptes-rutes.md"), "utf8"), "https://example.test/_content/situacions/ce-reptes-rutes.md");
+assert.equal(trainRoutes.steps.length, 4, "Advancing with Coding Express conserva les quatre lliçons oficials adaptades");
+assert.match(trainRoutes.html, /sa-ce-reptes-rutes-senyals-app\.png/, "la sessió d'incidències intercala una il·lustració pròpia amb el tren real");
+assert.match(trainRoutes.html, /no les targetes/i, "la llegenda diferencia els senyals de paper dels maons detectats pel tren");
+assert.match(trainRoutes.html, /mercat municipal/i, "la bifurcació situa la ruta en un context local" );
+assert.match(trainRoutes.html, /pla docent oficial en PDF/i, "la situació enllaça la font docent oficial usada per a la verificació");
+const trainLoops = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/ce-bucles-relats.md"), "utf8"), "https://example.test/_content/situacions/ce-bucles-relats.md");
+assert.equal(trainLoops.steps.length, 4, "Introduction to Looping conserva les quatre lliçons oficials adaptades");
+assert.match(trainLoops.html, /sa-ce-bucles-relats-conte-circular\.png/, "el relat circular intercala una il·lustració pròpia amb el tren real");
+assert.match(trainLoops.html, /no les llig ni decideix quan acaba/i, "la llegenda no atribueix lectura de targetes ni control de bucle al tren");
+assert.match(trainLoops.html, /llocs propers que el grup conega/i, "el relat circular parteix de referents locals triats pel grup");
+const microbitWaste = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/mb-comptador-residus.md"), "utf8"), "https://example.test/_content/situacions/mb-comptador-residus.md");
+assert.equal(microbitWaste.steps.length, 3, "Litter hunt conserva les dues lliçons oficials i la sessió local de verificació");
+assert.match(microbitWaste.html, /sa-mb-comptador-residus-prova\.png/, "el disseny del comptador intercala una il·lustració pròpia de micro:bit");
+assert.match(microbitWaste.html, /no identifica ni classifica els residus automàticament/i, "la llegenda no atribueix visió artificial a micro:bit");
+assert.match(microbitWaste.html, /guia local de separació/i, "la pràctica adapta la classificació a les normes de residus locals");
+assert.match(microbitWaste.html, /7–11 anys amb MakeCode/i, "la fitxa registra l'edat i l'entorn oficials de Litter hunt");
+assert.match(microbitWaste.html, /no afirma una adaptació pas a pas dels documents docents/i, "la fitxa delimita la traçabilitat quan el DOCX oficial no s'ha recuperat");
 
 assert.match(trainingTrackers.html, /rotacions × circumferència/i, "Aim for It converteix les rotacions en distància abans de trobar la velocitat");
 assert.match(trainingTrackers.html, /velocitat màxima inicial/i, "Aim for It calcula l'energia a partir de la velocitat màxima observada");
@@ -95,6 +131,14 @@ for (const file of ["hivernacle-microbit.md", "sp-prime-combinat.md"]) {
   assert.equal((record.html.match(/data-section-group="sequence"/g) || []).length, 1, `${file} té una sola secció de seqüència`);
   assert.equal((record.html.match(/data-section-group="official"/g) || []).length, 1, `${file} classifica els reptes oficials com a referents, no com a passos`);
 }
+const plantPrototypes = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/hivernacle-microbit.md"), "utf8"), "https://example.test/_content/situacions/hivernacle-microbit.md");
+assert.equal(plantPrototypes.steps.length, 4, "Helping plants grow manté les quatre sessions locals amb wizard comú");
+assert.match(plantPrototypes.html, /lectura_llum &lt; llindar_llum_de_prova/, "Auto-farmer separa la regla de llum");
+assert.match(plantPrototypes.html, /lectura_humitat &lt; llindar_humitat_de_prova/, "Auto-farmer separa la regla d'humitat");
+assert.match(plantPrototypes.html, /aturada = cert/, "la maqueta implementa una aturada manual persistent");
+assert.match(plantPrototypes.html, /HORT-01/, "Tree protector substitueix les coordenades per un identificador fictici");
+assert.match(plantPrototypes.html, /sa-hivernacle-nodes-relle\.png/, "la situació intercala la il·lustració pròpia dels dos prototips");
+assert.match(plantPrototypes.html, /Helping plants grow|Auto-farmer/, "la fitxa conserva els noms de les activitats oficials adaptades");
 const computingFoundations = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/mb-fonaments-computacio.md"), "utf8"), "https://example.test/_content/situacions/mb-fonaments-computacio.md");
 assert.equal(computingFoundations.steps.length, 6, "Computing fundamentals conserva les sis lliçons oficials");
 assert.equal((computingFoundations.html.match(/class="learning-phase"/g) || []).length, 30, "les sis lliçons de Computing fundamentals comparteixen cinc fases cadascuna dins del wizard");
@@ -173,6 +217,7 @@ assert.match(codeyCourse.html, /quan es prem A.{0,100}B.{0,100}C/s, "la lliçó 
 assert.match(codeyCourse.html, /esdeveniment d’inici/, "la lliçó 2 diferencia inici i botó com a esdeveniments");
 assert.match(codeyCourse.html, /Cada parella presenta una resposta/, "la lliçó 2 acaba amb presentació i comprovació entre equips");
 assert.match(codeyCourse.html, /quatre illots de la marjal/, "la lliçó 5 contextualitza la repetició comptada en un itinerari local");
+assert.match(codeyCourse.html, /ruta de 20 m amb quatre plantacions.{0,180}quatre vegades la mateixa seqüència/i, "la lliçó 5 conserva el model oficial de quatre iteracions i el transforma en una història local");
 assert.match(codeyCourse.html, /repeteix \(4\)/, "la lliçó 5 fa visible el recompte del bucle en el repte propi");
 assert.match(codeyCourse.html, /Codey Rocky no es desplaça pels illots/i, "la lliçó 5 delimita l'animació de pantalla del moviment físic del robot");
 assert.match(codeyCourse.html, /icona final[\s\S]*canvieu el recompte a 3/i, "la lliçó 5 comprova dos recomptes i l'acció posterior al bucle");
@@ -180,6 +225,8 @@ assert.match(codeyCourse.html, /equip visitant prediu quantes iteracions farà/i
 assert.match(codeyCourse.html, /cicle de llum i foscor/, "la lliçó 6 adapta el patró cíclic infinit a un context de marjal");
 assert.match(codeyCourse.html, /repeteix/, "la lliçó 6 manté una animació comptada per comparar");
 assert.match(codeyCourse.html, /per sempre/, "la lliçó 6 construeix l'animació amb bucle infinit");
+assert.match(codeyCourse.html, /so opcional o afegiu una llum RGB estable/i, "la lliçó 6 incorpora l'efecte opcional de llum de la guia docent complementària");
+assert.match(codeyCourse.html, /so opcional o afegiu una llum RGB estable/i, "la lliçó 6 manté com a ampliació les llums/sons opcionals de la guia docent oficial");
 assert.match(codeyCourse.html, /Si la versió de mBlock ofereix.{0,240}Si no hi són, useu el control d’aturada de mBlock/s, "la lliçó 6 diferencia la disponibilitat de l'aturada per C de l'aturada des de l'aplicació");
 assert.match(codeyCourse.html, /MicroPython.{0,220}aquesta API no implica que el mateix bloc estiga disponible en mBlock/s, "la lliçó 6 no confon la API MicroPython amb els blocs de mBlock");
 assert.match(codeyCourse.html, /botó C només si.{0,180}control de mBlock/s, "la lliçó 6 demana registrar la via de parada realment provada");
@@ -335,7 +382,7 @@ assert.match(codeyLesson21, /si el cotxe no toca la línia blava[\s\S]*estableix
 assert.match(codeyLesson21, /resposta sonora opcional[\s\S]*alternativa visual silenciosa/i, "la lliçó 21 adapta el feedback sonor oficial amb alternativa visual accessible");
 assert.match(codeyLesson21, /temps personal[\s\S]*cap temps es publica ni es compara/i, "la lliçó 21 conserva el repte temporitzat sense classificar persones");
 assert.match(codeyLesson21, /diverses voltes o una segona meta roja/i, "la lliçó 21 incorpora les extensions de voltes i segona meta");
-assert.match(codeyLesson21, /sa-cr-fast-and-furious\.webp/i, "la lliçó 21 té una il·lustració pròpia de Codey com a comandament del joc virtual");
+assert.match(codeyLesson21, /sa-cr-fast-and-furious-v2\.png/i, "la lliçó 21 mostra Codey Rocky quiet al costat del joc digital");
 const codeyLesson22 = codeyCourseSource.slice(codeyCourseSource.indexOf("### **L22 ·"), codeyCourseSource.indexOf("### **L23 ·"));
 assert.match(codeyLesson22, /dues rodes motrius/i, "la lliçó 22 explica el model diferencial de dues rodes");
 assert.match(codeyLesson22, /potència de les rodes de Rocky \(0–100\)/i, "la lliçó 22 conserva el control de potència del quadern oficial");
@@ -402,7 +449,21 @@ for (const step of codingExpressLine.steps) {
 const codingSetStation = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/cs-estacions-codi.md"), "utf8"), "https://example.test/_content/situacions/cs-estacions-codi.md");
 assert.equal(codingSetStation.steps.length, 12, "Learning Station conserva les dotze lliçons en una seqüència navegable");
 assert.equal((codingSetStation.html.match(/class="learning-phase"/g) || []).length, 60, "les dotze lliçons de Learning Station comparteixen cinc fases cadascuna");
+const codingSetStationSource = fs.readFileSync(path.join(root, "_content/situacions/cs-estacions-codi.md"), "utf8");
+for (const label of ["Objectius d’aprenentatge", "Preparació docent", "Vocabulari clau", "Temps orientatiu local"]) {
+  assert.equal(codingSetStationSource.split(`**${label}:**`).length - 1, 12,
+    `cada lliçó de Learning Station declara ${label.toLowerCase()}`);
+}
 assert.match(codingSetStation.html, /sa-cs-learning-station-laberint\.webp/, "la sessió d'obstacles intercala una il·lustració pròpia amb MatataBot real");
+assert.match(codingSetStation.html, /sa-cs-laberint-amb-matata\.png/, "la creació de laberint intercala una imatge IA pròpia amb el MatataBot de la dotació");
+assert.match(codingSetStation.html, /sa-cs-graella-matata\.png/, "la sessió de graella intercala una il·lustració IA de Coding Set en un mapa didàctic");
+assert.match(codingSetStation.html, /sa-cs-creacio-oberta\.png/, "la sessió final intercala una il·lustració IA per a la creació oberta amb el kit real");
+const codingSetLessons = codingSetStationSource.split(/^### Sessió /m).slice(1);
+assert.equal(codingSetLessons.length, 12, "la verificació visual cobreix les dotze lliçons de Learning Station");
+for (const lesson of codingSetLessons) {
+  assert.match(lesson, /!\[[^\]]+\]\(\.\.\/\.\.\/_assets\/imatges\//,
+    `la lliçó ${lesson.match(/^\d+/)?.[0] || "sense número"} intercala almenys una imatge local pertinent`);
+}
 assert.match(codingSetStation.html, /sa-cs-aprenentatge-bandera-v2\.webp/, "la sessió de reptes il·lustra amb el Coding Set de la dotació la bandera i la ruta entre obstacles");
 assert.match(codingSetStation.html, /destinacions fictícies inspirades en espais pròxims[\s\S]*una parella visite el repte[\s\S]*autoavaluació/i, "la sessió 4 integra context local, intercanvi del repte i tancament reflexiu");
 assert.match(codingSetStation.html, /sa-cs-angulos-estrella\.webp/, "la sessió geomètrica intercala una il·lustració pròpia de l'alternativa amb paper");
@@ -472,6 +533,13 @@ assert.match(taleBotCommands.html, /exactament eixe nombre d’ordres/, "A-1 ada
 assert.match(taleBotCommands.html, /colors dels indicadors de codificació/, "A-1 conserva la comprovació visual dels indicadors del robot");
 assert.match(taleBotCommands.html, /sa-tb-instruccions-v2\.webp/, "A-1 usa la il·lustració revisada dels botons físics del Tale-Bot");
 assert.match(taleBotCommands.html, /La torre de gots pertany a A-2/, "A-1 i A-2 tenen continguts oficials diferenciats");
+const taleBotA5 = taleBotCommandsSource.split("### **A-5", 2)[1].split("### **A-6", 1)[0];
+assert.match(taleBotA5, /més d’un segon per enregistrar[\s\S]*fins a 30 segons/i, "A-5 respecta el temps d’enregistrament documentat per al Tale-Bot Pro");
+assert.match(taleBotA5, /pulsació curta per tornar a usar l’últim enregistrament/i, "A-5 reutilitza la gravació existent en compte de tornar-la a enregistrar");
+assert.match(taleBotA5, /personatge[\s\S]*primera parada[\s\S]*segona parada/i, "A-5 adapta les dues tasques oficials de gravació en una ruta local");
+assert.match(taleBotA5, /dues reproduccions/i, "A-5 comprova la repetició del mateix àudio en dos punts");
+assert.match(taleBotA5, /sa-tb-missatge-carlotes\.png/, "A-5 intercala una imatge IA pròpia del Tale-Bot de la dotació i la ruta d’àudio");
+assert.match(taleBotA5, /no arreplega ni reconeix aliments/i, "A-5 no atribueix al Tale-Bot reconeixement ni recollida d’aliments");
 const taleBotExplorationSource = fs.readFileSync(path.join(root, "_content/situacions/tb-explora-el-barri.md"), "utf8");
 const taleBotExploration = renderer.parse(taleBotExplorationSource, "https://example.test/_content/situacions/tb-explora-el-barri.md");
 assert.match(taleBotExploration.html, /programeu Tale-Bot i compareu el recorregut amb la predicció/i, "B-12 prova el trajecte entre la persona i l’eina del servei");
@@ -551,6 +619,7 @@ assert.match(codingSetStations.html, /obstacles i les banderes físics del Codin
 assert.match(codingSetStations.html, /no detecta els obstacles automàticament/i, "la proposta no atribueix sensors inexistents al Coding Set");
 assert.match(codingSetStations.html, /sa-cs-learning-station\.webp/, "la portada representa el robot, la torre, els blocs i els mapes del currículum");
 assert.match(codingSetStations.html, /sa-cs-learning-station-laberint\.webp/, "la sessió de laberint té un visual propi contextualitzat");
+assert.match(codingSetStations.html, /sa-cs-laberint-amb-matata\.png/, "la sessió de creació de laberint mostra el kit real en el context de la marjal");
 assert.match(codingSetStations.html, /sa-cs-angulos-estrella\.webp/, "la sessió d’angles diferencia el treball en paper dels accessoris opcionals");
 assert.match(codingSetStations.html, /bandera de destí[\s\S]*dos o tres obstacles reals del set/i, "el repte de laberint usa obstacles i bandera com en el material oficial");
 assert.match(codingSetStations.html, /caselles de <strong>10 × 10 cm<\/strong>/i, "la graella física del Coding Set conserva la mida oficial de 10 cm");
@@ -583,6 +652,8 @@ const oceanMonitorLesson = planetChallenges.steps.find(step => step.title.starts
 const oilRouteLesson = planetChallenges.steps.find(step => step.title.startsWith("Ruta eficient per a una taca simulada"));
 const fitnessFriendLesson = planetChallenges.steps.find(step => step.title.startsWith("Recordatori triat per l’usuari"));
 const heartRateLesson = planetChallenges.steps.find(step => step.title.startsWith("Mesura crítica de pols"));
+const speciesCounterLesson = planetChallenges.steps.find(step => step.title.startsWith("Detectius d’espècies"));
+const walkingForWaterLesson = planetChallenges.steps.find(step => step.title.startsWith("Comptador d’un trajecte"));
 assert.ok(bycatchLesson, "el repte de xarxes és un pas identificable de la col·lecció micro:bit");
 assert.ok(turtleBeachLesson, "el repte de tortugues és un pas identificable de la col·lecció micro:bit");
 assert.ok(collarLesson, "el repte de protecció d'espècies és un pas identificable de la col·lecció micro:bit");
@@ -590,6 +661,14 @@ assert.ok(oceanMonitorLesson, "el monitor d'oceà és un pas identificable de la
 assert.ok(oilRouteLesson, "l'algorisme de neteja d'oceà és un pas identificable de la col·lecció micro:bit");
 assert.ok(fitnessFriendLesson, "Fitness friend és un pas identificable de la col·lecció micro:bit");
 assert.ok(heartRateLesson, "Heart rate monitor és un pas identificable de la col·lecció micro:bit");
+assert.ok(speciesCounterLesson, "Spot the species és un pas identificable de la col·lecció micro:bit");
+assert.ok(walkingForWaterLesson, "Walking for water és un pas identificable de la col·lecció micro:bit");
+assert.match(planetChallengeSource, /let especie1 = 0[\s\S]*Button\.A[\s\S]*Button\.B[\s\S]*Gesture\.Shake/, "Spot the species adapta el comptador amb dues variables, entrades A/B i consulta separada");
+assert.match(planetChallengeSource, /no reconeix ni identifica l’espècie[\s\S]*sa-mb-comptador-especies\.png/i, "el comptador de biodiversitat intercala imatge pròpia i aclareix que la micro:bit no identifica fauna o flora");
+assert.match(planetChallengeSource, /let polsosSimulats = 0[\s\S]*Button\.A[\s\S]*Button\.B[\s\S]*sa-mb-comptador-trajecte\.png/, "Walking for water incorpora un comptador funcional de polsos simulats i una il·lustració pròpia");
+assert.match(planetChallengeSource, /no llig el moviment de la persona[\s\S]*no afirma que mesure passos reals/i, "Walking for water diferencia la simulació manual d’un mesurador de passos real");
+assert.match(planetChallengeSource, /teach\/playground-survey\/investigating-biodiversity/, "la mecànica del comptador s’enllaça amb una referència tècnica oficial complementària");
+assert.match(planetChallengeSource, /teach\/lessons\/walking-for-water/, "la fitxa enllaça l’activitat oficial Walking for water");
 const bycatchStart = planetChallenges.html.indexOf(`id="${bycatchLesson.id}"`);
 const bycatchEnd = planetChallenges.html.indexOf('<section class="learning-step', bycatchStart + 10);
 const bycatchMarkup = planetChallenges.html.slice(bycatchStart, bycatchEnd < 0 ? undefined : bycatchEnd);
@@ -676,9 +755,37 @@ assert.match(competitionReadySource, /quatre intents comparables[\s\S]*dos a bai
 assert.match(competitionReadySource, /la base ix de l’àrea esquerra[\s\S]*acaba a la zona dreta/i, "The Guided Mission conserva els punts d'eixida i d'arribada de la lliçó oficial en un camp local");
 assert.match(competitionReadySource, /empényer la palanca fins que el pont s’alce[\s\S]*dues estacions sense tocar-les/i, "la missió guiada adapta l'activació del connector i el pas prop d'altres missions");
 assert.match(competitionReady.html, /sa-sp-missio-pont\.webp/, "la missió guiada intercala una il·lustració IA pròpia del sensor, la palanca i el pont locals");
-assert.match(competitionReadySource, /missió iniciada[\s\S]*missió completada[\s\S]*segona parada/i, "l'avaluació adapta els nivells de progrés oficials sense classificar els equips");
+assert.match(competitionReadySource, /hem completat una missió[\s\S]*segona parada[\s\S]*totes les persones hem presentat programa i estratègia/i, "l'autoavaluació adapta els nivells oficials de missió, ampliació i presentació amb participació de tot l'equip");
+assert.match(competitionReadySource, /retorn constructiu[\s\S]*proposta comprovable/i, "la missió guiada incorpora coavaluació amb feedback accionable");
+assert.match(competitionReadySource, /el temps només compara les iteracions del mateix equip/i, "la missió usa el temps com a dada de millora sense classificar grups");
+assert.match(competitionReadySource, /equip de quatre[\s\S]*quatre instruccions de muntatge/i, "la base avançada adapta el treball en equip de quatre parts de muntatge");
+assert.match(competitionReadySource, /dos motors grans per a propulsió[\s\S]*dos motors mitjans[\s\S]*dos sensors de color/i, "la base avançada identifica els components i les funcions del model oficial");
+assert.match(competitionReadySource, /instruccions d’un sol costat[\s\S]*complete l’altre per simetria/i, "l'ampliació adapta la construcció d'un costat sense instruccions");
+assert.match(competitionReadySource, /coavaluació amb observació i suggeriment concret[\s\S]*violeta/i, "la base avançada incorpora autoavaluació i feedback entre iguals");
+assert.match(competitionReadySource, /dos marcadors[\s\S]*My Block.{0,3}de mostra[\s\S]*ruta quadrada/i, "My Code, Our Program parteix de dos marcadors i un bloc d'exemple abans de crear-ne un");
+assert.match(competitionReadySource, /blocs separats per a cercle aproximat i triangle/i, "la lliçó crea blocs reutilitzables per a les tres figures oficials");
+assert.match(competitionReadySource, /he creat un.{0,8}My Block[\s\S]*n’he creat dos o més[\s\S]*he reordenat/i, "l'autoavaluació de My Blocks segueix els tres nivells oficials");
+assert.match(competitionReadySource, /mesureu la distància recorreguda en una rotació[\s\S]*circumferència de la roda/i, "la lliçó inclou l'extensió matemàtica oficial per estimar distància");
+assert.match(competitionReadySource, /fixeu-los amb els connectors rojos[\s\S]*quatre caixes/i, "Time for an Upgrade adapta l'assemblatge oficial dels útils i les quatre caixes");
+assert.match(competitionReadySource, /reinicialitzar la posició dels motors/i, "la seqüència de prova dels útils inclou el reinici de motors");
+assert.match(competitionReadySource, /dos arrays[\s\S]*compareu els elements del mateix índex/i, "la lliçó treballa dos arrays alineats per índex");
+assert.match(competitionReadySource, /he usat un array[\s\S]*n’he creat un segon[\s\S]*més d’una operació amb arrays/i, "l'autoavaluació dels arrays segueix els tres nivells oficials");
+assert.match(competitionReadySource, /comentari constructiu amb una prova següent/i, "Time for an Upgrade incorpora coavaluació i una prova de seguiment");
+assert.match(competitionReadySource, /mòdul de joc de cartó[\s\S]*camí propi i dos marcadors[\s\S]*cinc fites originals/i, "Mission Ready crea una pista local amb els elements de missió necessaris");
+assert.match(competitionReadySource, /fins a sis fitxes d’incidència[\s\S]*no resten punts ni serveixen per comparar equips/i, "les incidències de la missió tenen un protocol explícit sense rànquing");
+assert.match(competitionReadySource, /una marca addicional si arreplega les quatre mostres[\s\S]*lliurament segur de 50 cm/i, "la missió conserva recollida de quatre i lliurament segur amb criteris locals clars");
+assert.match(competitionReadySource, /blau[\s\S]*almenys una fita[\s\S]*groc[\s\S]*les cinc[\s\S]*violeta[\s\S]*totes les persones/i, "l'autoavaluació de Mission Ready cobreix assoliment parcial, complet i presentació d'equip");
+assert.match(competitionReadySource, /retorn constructiu[\s\S]*millora comprovable/i, "Mission Ready incorpora coavaluació amb una revisió concreta");
+assert.match(competitionReadySource, /temporització suma 45 minuts \(10 \+ 15 \+ 10 \+ 5 \+ 5\)/i, "Mission Training conserva la temporització oficial de 45 minuts");
+assert.match(competitionReadySource, /portar una mostra[\s\S]*activar un dispositiu[\s\S]*rescatar una llavor[\s\S]*voltejar una fitxa/i, "Mission Training adapta els quatre tipus de repte oficials");
+assert.match(competitionReadySource, /Identifiquem[\s\S]*Ideem[\s\S]*Creem[\s\S]*Iterem[\s\S]*Comuniquem/i, "Mission Training explicita el cicle complet de disseny");
+assert.match(competitionReadySource, /una mà[\s\S]*dues mans[\s\S]*mans enlaire/i, "Mission Training manté els tres nivells d'autoavaluació individual");
+assert.match(competitionReadySource, /sa-sp-mission-training-prototip\.png/, "Mission Training intercala una il·lustració original del repte desconnectat");
+assert.match(competitionReadySource, /no calen el set SPIKE Prime, peces LEGO ni programari/i, "Mission Training declara que no requereix el kit ni programari");
 assert.match(competitionReady.html, /sense reproduir el tapet, el model ni la missió de FIRST LEGO League/i, "la situació no reutilitza el camp ni el model oficial protegit");
-assert.match(competitionReady.html, /no necessita robot ni tasca motoritzada/i, "Mission Training continua sent una activitat desconnectada completa");
+assert.match(competitionReady.html, /no calen el set SPIKE Prime, peces LEGO ni programari/i, "Mission Training continua sent una activitat desconnectada completa");
+assert.match(taleBotExplorationSource, /B-9 · Viatge pel sistema solar[\s\S]*B-10 · Recollida magnètica[\s\S]*B-11 · Paranys i tresors/i, "les activitats B-9–B-11 segueixen els encapçalaments detallats del quadern");
+assert.match(taleBotExplorationSource, /Tale-Bot no detecta magnetisme/i, "l'adaptació de Magnetic Collector no atribueix detecció magnètica al robot");
 const testingSolutions = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/sp-proves-avaluacio.md"), "utf8"), "https://example.test/_content/situacions/sp-proves-avaluacio.md");
 assert.equal(testingSolutions.steps.length, 8, "Testing and Evaluating Solutions conserva les huit lliçons");
 assert.equal((testingSolutions.html.match(/class="learning-phase"/g) || []).length, 40, "les huit lliçons d’avaluació comparteixen les cinc fases");

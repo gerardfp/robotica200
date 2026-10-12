@@ -141,7 +141,7 @@ Canvieu una sola instrucció, torneu a executar el mateix cas i comproveu si s�
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Recupereu la seqüència d’animació de L3. En una tira de quatre vinyetes, representeu una granota dibuixada que es prepara, salta, aterra i es prepara de nou mentre travessa quatre illots de la marjal. Marqueu quin fragment es repeteix quatre vegades i quines accions passen només abans o després del bucle. Aclarim que és una història mostrada a la matriu LED: Codey Rocky no es desplaça pels illots.
+Recupereu la seqüència d’animació de L3. En una tira de quatre vinyetes, representeu una granota dibuixada que es prepara, salta, aterra i es prepara de nou mentre travessa quatre illots de la marjal. Marqueu quin fragment es repeteix quatre vegades i quines accions passen només abans o després del bucle. Feu explícita la correspondència amb l’exemple oficial: una ruta de 20 m amb quatre plantacions repeteix quatre vegades la mateixa seqüència d’accions. Ací es manté el recompte i es transforma l’escena en un relat animat dels illots, sense calcular distàncies ni representar una ruta real. Aclarim que és una història mostrada a la matriu LED: Codey Rocky no es desplaça pels illots.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
@@ -185,7 +185,7 @@ _El paisatge de dia i nit és una metàfora de paper; la placa no mesura el cicl
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-En parelles, canvieu les imatges, l’ordre, una pausa o el so opcional i proveu si la història continua sent comprensible en tots dos programes. L’equip revisor comprova que la versió comptada acaba sola i que la versió contínua respon a l’aturada. No feu pampallugues ràpides ni sons sobtats; qui ho preferisca pot analitzar les targetes de fotogrames en paper, amb la mateixa predicció de bucle.
+En parelles, canvieu les imatges, l’ordre, una pausa, el so opcional o afegiu una llum RGB estable i suau; proveu si la història continua sent comprensible en tots dos programes. L’equip revisor comprova que la versió comptada acaba sola i que la versió contínua respon a l’aturada. No feu pampallugues ràpides ni sons sobtats; qui ho preferisca pot analitzar les targetes de fotogrames en paper, amb la mateixa predicció de bucle.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
@@ -887,13 +887,13 @@ Recupereu la ruta virtual de L19–L20 i completeu-ne les condicions de victòri
 
 Dibuixeu una pista tancada i prou ampla, una línia blava de meta, una zona fora de pista i un obstacle gràfic. Col·loqueu l’inici just després de la línia blava i marqueu-lo com a «encara no ha eixit» fins que el personatge passe per la meta una primera vegada; així no guanya en començar. Useu A/B de Codey per enviar missatges al personatge en mBlock; si no hi ha connexió, manteniu el control amb teclat o targetes. Prepareu un senyal visual de victòria i una resposta sonora opcional, sempre amb una alternativa visual silenciosa.
 
-![Codey Rocky de la dotació al costat d’un circuit virtual amb meta blava, personatge de joc i obstacle.](../../_assets/imatges/sa-cr-fast-and-furious.webp)
+![Codey Rocky real de la dotació està quiet al costat d’un ordinador que mostra el circuit virtual, el cotxe digital, la meta blava i un obstacle.](../../_assets/imatges/sa-cr-fast-and-furious-v2.png)
 
 _El cotxe és un personatge digital controlat per Codey; la unitat física no es mou durant aquesta activitat._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Implementeu estats excloents. Si el personatge ix de la pista o toca el ratpenat, perd la volta: torna a l’inici i reinicia `ha_eixit_meta` a fals. Si no s’ha produït una pèrdua, marqueu `ha_eixit_meta` quan el personatge ja no toque la línia blava; només quan aquesta variable és certa i el cotxe torna a tocar la línia, completa una volta, mostra un senyal de victòria i pot reproduir un so breu. Per a una extensió de diverses voltes, augmenteu `voltes` en cada creuament vàlid, poseu `ha_eixit_meta` a fals mentre travessa la línia i continueu fins a l’objectiu triat; una línia roja pot definir una segona meta amb un altre resultat. Registreu l’estat abans i després de cada esdeveniment. Comproveu que la posició d’inici no activa la victòria i que només el retorn a la línia després del recorregut compta com a volta.
+Implementeu estats excloents. Si el personatge ix de la pista o toca el ratpenat, perd la volta. Mostreu un senyal visual de retorn i, si el grup ho tria, reproduïu un avís neutre i breu (mai una explosió); després, torna a l’inici i reinicia `ha_eixit_meta` a fals. Si no s’ha produït una pèrdua, marqueu `ha_eixit_meta` quan el personatge ja no toque la línia blava; només quan aquesta variable és certa i el cotxe torna a tocar la línia, completa una volta, mostra un senyal de victòria i pot reproduir un so breu. Per a una extensió de diverses voltes, augmenteu `voltes` en cada creuament vàlid, poseu `ha_eixit_meta` a fals mentre travessa la línia i continueu fins a l’objectiu triat; una línia roja pot definir una segona meta amb un altre resultat. Registreu l’estat abans i després de cada esdeveniment. Comproveu que la posició d’inici no activa la victòria i que només el retorn a la línia després del recorregut compta com a volta.
 
 ```blocks
 quan comença la partida
@@ -903,6 +903,8 @@ quan comença la partida
 
 mentre estat és «en curs»
   si el cotxe ix de la pista o toca l'obstacle
+    mostra l'avís visual de retorn
+    reprodueix un avís neutre (opcional)
     torna el cotxe a l'inici
     estableix ha_eixit_meta a fals
     reinicia la partida
@@ -921,7 +923,7 @@ Convideu una parella a provar el joc i observar si entén la meta, el reinici i 
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** pista digital amb línia blava, obstacle i missatges de control; diagrama d’estats; proves d’inici sense victòria, volta completada, eixida de pista i contacte amb obstacle; i, si s’activa, una ampliació de diverses voltes o meta roja. El registre confirma que so i resposta visual tenen funcions equivalents i que una revisió ve del playtesting.
+**Evidència:** pista digital amb línia blava, obstacle i missatges de control; diagrama d’estats; proves d’inici sense victòria, volta completada, eixida de pista i contacte amb obstacle; i, si s’activa, una ampliació de diverses voltes o meta roja. El registre confirma que el retorn per derrota té feedback visual i sonor opcional, que so i imatge tenen alternatives equivalents i que una revisió ve del playtesting.
 
 **Pregunta docent:** com sap el programa que el cotxe ha completat una volta i no acaba de començar-la?
 

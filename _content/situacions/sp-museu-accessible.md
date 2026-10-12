@@ -14,7 +14,7 @@ duration: "8–10 sessions"
 challenge: "Com podem identificar una necessitat, prototipar alternatives i millorar una solució accessible amb proves justes?"
 ---
 
-![Un prototip LEGO SPIKE Prime de baixa alçada recorre la maqueta d’una exposició accessible.](../../_assets/imatges/sa-sp-museu.webp)
+![Un prototip LEGO SPIKE Prime i targetes de colors per crear una història sonora en una maqueta d’aiguamoll.](../../_assets/imatges/sa-sp-museu.webp)
 
 _La fira investiga necessitats sense pressuposar-les. Il·lustració conceptual generada amb IA d’un muntatge possible amb peces SPIKE Prime; no és una instrucció de construcció ni una solució d’accessibilitat validada._
 
@@ -35,23 +35,27 @@ Adaptació de la unitat *Invention Squad* per al context d’un centre educatiu 
 
 #### Fase 1 · Activem i prediem
 
-introduïu el repte amb una situació fictícia i recordeu separar observació de suposició.
+Dediqueu cinc minuts a introduir una situació fictícia i a recordar la diferència entre una observació i una suposició. Pregunteu què sabem de la maqueta i què només estem imaginant sobre el personatge.
 
 #### Fase 2 · Explorem i construïm
 
-en lloc d’interpretar un animal domèstic, fem servir una escultura pròpia de l’aiguamoll i una història de ficció en un espai triat (aiguamoll, museu o camí de l’horta). El sensor de color llig tres fitxes i activa primer una seqüència inicial de referència i després una història nova de tres sons, un per cada color. En un minut, cada parella anota tots els problemes possibles que podria tindre el personatge; no resol encara res. Per donar suport, restringiu l’escenari a un lloc i oferiu exemples de diferència entre fet observat i inferència; per ampliar, elimineu una interpretació evident i demaneu una descripció creativa del problema.
+En lloc d’interpretar un animal domèstic, fem servir una escultura pròpia de l’aiguamoll i una història de ficció en un espai triat (aiguamoll, museu o camí de l’horta). El sensor de color llig tres fitxes i activa primer una seqüència inicial de referència i després una història nova de tres sons, un per cada color. En un minut, cada parella anota tots els problemes possibles que podria tindre el personatge; no resol encara res. El sensor llig les fitxes: no detecta animals ni interpreta la història. Per donar suport, restringiu l’escenari a un lloc i oferiu exemples de diferència entre fet observat i inferència; per ampliar, elimineu una interpretació evident i demaneu una descripció creativa del problema.
+
+![Prototip SPIKE Prime, escultura de l’aiguamoll i targetes de colors per preparar una història de tres sons.](../../_assets/imatges/sa-sp-help-museu.webp)
+
+_Il·lustració IA d’un muntatge possible amb peces del kit i materials d’aula. La història és fictícia; les targetes representen entrades de color i no són una funció de detecció d’éssers vius._
 
 #### Fase 3 · Expliquem i registrem
 
-compareu les llistes en parelles d’equips, expliqueu quins sons sustenten cada hipòtesi i redacteu un enunciat de problema. Després, els equips intercanvien «històries sonores»: creen tres sons propis perquè una altra parella definisca un problema diferent.
+Compareu les llistes en parelles d’equips, expliqueu quins sons sustenten cada hipòtesi i redacteu un enunciat de problema. Després, els equips intercanvien «històries sonores»: creen tres sons propis perquè una altra parella definisca un problema diferent.
 
 #### Fase 4 · Apliquem i millorem
 
-establiu criteris i restriccions per a una solució (missatge interpretable, volum adequat, cap dada personal), trieu una necessitat definida, genereu almenys una resposta, reviseu-la segons els criteris i compartiu feedback positiu/constructiu. Deixeu temps per a guardar les peces.
+Establiu criteris i restriccions per a una solució (missatge interpretable, volum adequat, cap dada personal), trieu una necessitat definida, genereu almenys una resposta, reviseu-la segons els criteris i compartiu feedback positiu/constructiu. Deixeu temps per a guardar les peces.
 
 #### Fase 5 · Comprovem i reflexionem
 
-observeu si es defineix el problema amb detalls observables, si el grup separa definició del problema de la solució i si proposa criteris/restriccions pertinents. Autoavaluació privada en tres nivells: identificar un problema; afegir criteris i una idea; provar la idea contra els criteris i millorar-la. Acabeu amb conversa o presentació breu i feedback positiu i constructiu. **Evidència:** prediccions després de cada seqüència, llista inicial d’un minut, comparació de problemes, història pròpia de tres colors/sons, criteris, idea de solució i millora. Els sons no descriuen animals reals: són codis ficticis per practicar observació i definició de necessitats.
+Observeu si es defineix el problema amb detalls observables, si el grup separa definició del problema de la solució i si proposa criteris/restriccions pertinents. Feu una autoavaluació privada en tres nivells: identificar un problema; afegir criteris i una idea; provar la idea contra els criteris i millorar-la. Acabeu amb conversa o presentació breu i feedback positiu i constructiu. **Evidència:** prediccions després de cada seqüència, llista inicial d’un minut, comparació de problemes, història pròpia de tres colors/sons, criteris, idea de solució i millora. Els sons no descriuen animals reals: són codis ficticis per practicar observació i definició de necessitats.
 
 ### **S2 · Dissenyem potes per a una prova de recorregut ([Hopper Race](https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/), 30–45 min).**
 
@@ -62,6 +66,10 @@ Dediqueu uns cinc minuts a parlar de prototips: què és una primera versió, pe
 #### Fase 2 · Explorem i construïm
 
 Durant uns 25 minuts, construïu el model base amb el muntatge disponible al centre i executeu el programa de partida per observar com es mou. Dissenyeu almenys dos jocs de potes que impulsen el cos cap avant; no useu rodes com a sistema de locomoció. Proveu una alternativa, torneu a la base quan calga i busqueu una segona solució encara que la primera funcione. Una persona pot comparar la longitud de les potes o gambades i una altra el programa o la velocitat del motor; després intercanvien els rols. No cal que tots els prototips funcionen per a aportar evidència.
+
+![Prototip SPIKE Prime amb potes articulades i dues alternatives de mecanisme sense rodes.](../../_assets/imatges/sa-sp-hopper-potes.webp)
+
+_Il·lustració IA orientativa d’una prova de *Hopper Race*. Les potes són variants de prototip construïdes amb peces del kit; cal comprovar el muntatge disponible i mantindre el carril lliure._
 
 #### Fase 3 · Expliquem i registrem
 
@@ -85,6 +93,10 @@ Dediqueu uns cinc minuts a la pregunta «com decidiríem quin agafador és millo
 
 Durant uns vint minuts, munteu en parella el controlador manual i els dos agafadors de prova. Repartiu la construcció —una persona fa el primer agafador; l’altra, el segon i el controlador— i després intercanvieu qui programa o manipula. El primer disseny flexible s’adapta millor a objectes lleugers; el segon, amb la boca partida, a objectes més grans. Executeu el programa de prova per entendre com s’obri i es tanca cada mecanisme abans de començar a recollir dades. Prepareu materials d’aula no fràgils i sense valor personal: per exemple, peces LEGO o boles de paper de diferents mides. Per variar el pes amb la mateixa forma, useu capsetes iguals tancades amb quantitats diferents de peces LEGO. No utilitzeu vidre, aliments ni objectes personals.
 
+![Dos agafadors SPIKE Prime de formes diferents, amb objectes lleugers i una taula de comparació.](../../_assets/imatges/sa-sp-super-cleanup-agafadors.webp)
+
+_Il·lustració IA de dos prototips de pinça i materials de prova segurs. Les formes són exemples; construïu i compareu els mecanismes reals amb les peces disponibles._
+
 #### Fase 3 · Expliquem i registrem
 
 Durant uns deu minuts, feu dues proves i registreu cada resultat en una taula: **Prova 1**, objectes de mides diferents i pesos semblants; **Prova 2**, objectes de pesos diferents i mides semblants. En cada prova, passeu els mateixos objectes pels dos agafadors. Manteniu constants el punt de partida, l’operador i el criteri d’èxit; anoteu també els intents necessaris. Si cal reduir la càrrega, proveu només una mostra gran i una de menuda i conserveu la comparació dels dos dissenys.
@@ -107,6 +119,10 @@ Obriu amb una conversa breu sobre què fem quan un objecte deixa de funcionar i 
 
 Dediqueu fins a 35 minuts a construir per parelles la màquina sabent que ha de quedar inicialment inoperativa. Repartiu les tasques de muntatge del bastidor superior/motors i de la base/carro del llapis; després comproveu que el paper entra per la base i que el suport manté el llapis en contacte. Abans d’activar els motors, escriviu un pseudocodi o expliqueu oralment què fa cada pas del programa. Executeu-lo una vegada a baixa velocitat, observeu la diferència entre el dibuix esperat i el real i documenteu els símptomes; a partir d’eixes observacions, proposeu causes possibles. Useu el paper pautat de prova a escala original, sense redimensionar-lo, o una graella local de mida comprovada.
 
+![Traçadora de dos eixos construïda amb hub, motors i bigues SPIKE Prime, al costat del quadern d’observació.](../../_assets/imatges/sa-sp-broken-tracadora.webp)
+
+_Il·lustració IA d’una màquina de paper basada en peces SPIKE Prime. El prototip representat no identifica les avaries: l’alumnat les ha de deduir de les proves._
+
 #### Fase 3 · Expliquem i registrem
 
 Reserveu uns deu minuts per a compartir les observacions. Per a cada símptoma, anoteu què no funciona, què hauria de passar, una causa possible i una prova que permeta distingir-la d’altres hipòtesis. Reviseu si el problema correspon a l’eix X, a l’alimentació del paper/eix Y, a una fixació o al programa. **Clau docent —no la faciliteu abans de la investigació:** el model oficial incorpora quatre errors: falta una roda alimentadora del paper i l’eix Y no avança bé; la part superior no està ben unida a la base; els engranatges alimentadors estan invertits i el paper avança massa de pressa; el carro del llapis no està fixat i altera l’eix X. L’objectiu és que l’alumnat localitze les causes, no donar-li la llista abans de la prova.
@@ -128,6 +144,10 @@ Dediqueu uns quinze minuts a obrir una conversa sobre disseny assistiu i funcion
 #### Fase 2 · Explorem i construïm
 
 En la primera trobada, feu una pluja d’idees individual i en parella sobre funcions possibles d’una eina de taula. En 30 minuts, acoteu la tasca a una funció concreta —per exemple, agafar un objecte gran, subjectar una targeta o girar una maneta de maqueta— i trieu dues idees que vulgueu provar. Descriviu el context, la persona usuària de manera no identificable, els criteris d’èxit i les restriccions. La necessitat pot ser fictícia o aportada voluntàriament per una persona adulta col·laboradora, que pot modificar-la o retirar-se en qualsevol moment.
+
+![Dues idees de prototip per a una taula de treball: un suport per a targetes i una palanca per moure un objecte lleuger.](../../_assets/imatges/sa-sp-design-someone-prototips.webp)
+
+_Il·lustració IA de prototips primerencs fets amb bigues SPIKE Prime, cartó i paper. Són exemples per a provar amb objectes, no pròtesis ni dispositius per a l’ús sobre persones._
 
 #### Fase 3 · Expliquem i registrem
 

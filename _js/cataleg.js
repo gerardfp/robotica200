@@ -150,7 +150,7 @@ window.CATALEG = {
       "materia": "pensament-computacional",
       "materiaLabel": "Pensament computacional, música i llenguatge",
       "sessions": "4 sessions de 30–40 minuts",
-      "repte": "Com podem representar una repetició amb una ruta i explicar quan deixa de repetir-se?"
+      "repte": "Com convertim llocs del nostre entorn en una història circular i expliquem quan acaba?"
     },
     {
       "id": "situacio-sa-ce-cami-segur",
@@ -309,8 +309,8 @@ window.CATALEG = {
       "tematicaLabel": "Sistemes, rutes i resolució de problemes",
       "materia": "pensament-computacional",
       "materiaLabel": "Pensament computacional, descoberta de l’entorn i llenguatge",
-      "sessions": "4 sessions",
-      "repte": "Com dissenyem una ruta comprensible i la millorem quan apareix un problema?"
+      "sessions": "4 sessions · 195 min",
+      "repte": "Com dissenyem una ruta pel nostre poble i la millorem quan apareix un problema?"
     },
     {
       "id": "situacio-sa-ce-sequencia-histories",

@@ -1,7 +1,7 @@
 ---
 active: true
 title: "El tren que torna"
-description: "Quatre reptes amb Coding Express per descobrir repeticions en recorreguts, concerts i històries."
+description: "Quatre reptes amb Coding Express per descobrir patrons repetits en rutes, concerts i històries inspirades en llocs propers."
 robot: "coding-express"
 robot_label: "Coding Express"
 cycle: "infantil"
@@ -11,7 +11,7 @@ subject_label: "Pensament computacional, música i llenguatge"
 theme: "repeticio"
 theme_label: "Bucles i patrons que es repeteixen"
 duration: "4 sessions de 30–40 minuts"
-challenge: "Com podem representar una repetició amb una ruta i explicar quan deixa de repetir-se?"
+challenge: "Com convertim llocs del nostre entorn en una història circular i expliquem quan acaba?"
 ---
 
 ![El tren Coding Express recorre una via tancada i passa repetidament per un jardí de paper.](../../_assets/imatges/sa-ce-bucles-relats.webp)
@@ -105,7 +105,7 @@ Canvieu només un so i torneu a interpretar la seqüència. Compareu què ha can
 
 #### Fase 1 · Activem i prediem
 
-Escolteu o llegiu un relat breu propi en què l’últim esdeveniment pot portar de nou al primer. Predigueu quina escena farà de connexió amb l’inici.
+Escolteu o llegiu un relat breu propi en què l’últim esdeveniment pot portar de nou al primer. Trieu llocs propers que el grup conega —la plaça, l’horta, la font o el camí a l’escola— i predigueu quina escena farà de connexió amb l’inici.
 
 #### Fase 2 · Explorem i construïm
 
@@ -117,7 +117,11 @@ Col·loqueu un maó de bucle on comença la tornada i proveu de contar el relat 
 
 #### Fase 4 · Apliquem i millorem
 
-Si la història es trenca —falta una escena, una parada queda fora d’ordre o no s’entén on torna a començar— localitzeu el problema, canvieu la posició d’un maó o una instrucció i torneu a contar-la. En grup menut, inventeu un conte circular propi amb escenari original i decidiu quantes voltes fareu abans de tancar-lo.
+Si la història es trenca —falta una escena, una parada queda fora d’ordre o no s’entén on torna a començar— localitzeu el problema, canvieu la posició d’un maó o una instrucció i torneu a contar-la. En grup menut, inventeu un conte circular propi amb escenari original del municipi o del barri i decidiu quantes voltes fareu abans de tancar-lo.
+
+![El tren Coding Express real de la dotació recorre una via circular amb maons d’acció i targetes de paper que representen escenes d’un conte local.](../../_assets/imatges/sa-ce-bucles-relats-conte-circular.png)
+
+_Les targetes ajuden a ordenar i narrar les escenes; el tren no les llig ni decideix quan acaba el relat. El grup limita manualment les voltes._
 
 #### Fase 5 · Comprovem i reflexionem
 

@@ -12,6 +12,7 @@ theme: "llengua"
 theme_label: "Llengua i comunicació"
 duration: "3 sessions · 120 min"
 challenge: "Quina informació necessita cada estació per rebre el tren i com podem transmetre-la amb sons o símbols que tot el grup entenga?"
+official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/train-sound/"
 ---
 
 ![El tren Coding Express arriba a una estació amb pictogrames de campana, ocell i petjades.](../../_assets/imatges/sa-ce-missatges-so.webp)
@@ -99,6 +100,10 @@ Construïu un túnel de cartó o useu una targeta de túnel amb espai suficient 
 #### Fase 2 · Explorem i construïm
 
 Col·loqueu un maó blanc abans i un després del túnel, si el set els inclou. Feu una sola passada i compareu el resultat amb la predicció. La peça blanca controla la llum en aquest sistema; si no hi ha túnel o maons blancs, representeu el canvi amb una targeta «llum encesa/apagada» i identifiqueu-ho com a model de paper.
+
+![El tren real de Coding Express passa per un túnel de cartó, amb maons blancs de llum abans i després i pictogrames de jardí i biblioteca.](../../_assets/imatges/sa-ce-missatges-tunel-llum.png)
+
+_La il·lustració mostra el muntatge de prova: comproveu en el tren del centre quan s’encén i s’apaga la llum._
 
 #### Fase 3 · Expliquem i registrem
 

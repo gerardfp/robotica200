@@ -22,7 +22,7 @@ _Els set estands de la fira es construeixen amb targetes i materials senzills de
 
 La classe organitza una fira de descobertes per a una altra aula. Tale-Bot visita estands de l'escola, una parada de fruita, un espai de formes i una taula d'art. En cada sessió, l'alumnat formula una pregunta, representa les ordres amb targetes, prediu el trajecte i prova el programa. El mapa, els materials, els personatges i les consignes són originals i s'adapten als llocs propers al centre.
 
-Aquesta seqüència comença amb una sessió pròpia que adapta els objectius públics de la primera lliçó del nivell 1 —reconéixer Tale-Bot Pro i les seues parts i botons, practicar l’encesa/apagada i tractar el robot amb cura— i continua amb propostes temàtiques basades en els títols públics de les lliçons 3–9. La segona lliçó («On són els animals de la granja?») té una adaptació separada a [El rastre del corral](../../situacio/index.html?id=tb-rastre-corral). Els plans complets de les lliçons 3–9 no s’han pogut consultar; les sessions corresponents adapten els temes i la progressió pública, sense atribuir al fabricant objectius o passos que no es poden verificar.
+Aquesta seqüència comença amb una sessió pròpia que adapta els objectius públics de la [primera lliçó del nivell 1](https://matatalab.com/en/node/827) —reconéixer Tale-Bot Pro i les seues parts i botons, practicar l’encesa/apagada i tractar el robot amb cura— i continua amb propostes temàtiques basades en els títols públics de les lliçons 3–9. La segona lliçó («On són els animals de la granja?») té una adaptació separada a [El rastre del corral](../../situacio/index.html?id=tb-rastre-corral). Els plans complets de les lliçons 3–9 no s’han pogut consultar; les sessions corresponents adapten els temes i la progressió pública, sense atribuir al fabricant objectius o passos que no es poden verificar.
 
 ## 🗺 Una benvinguda i set estands
 
@@ -34,7 +34,7 @@ Presenteu el Tale-Bot Pro del centre com una màquina que respon a instruccions.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Amb un Tale-Bot apagat, observeu-ne el cos, les rodes, els botons i els indicadors lluminosos. Useu una maqueta o silueta de paper pròpia per assenyalar cada part i relacionar-la amb una funció que després comprovareu. Si el kit del centre els inclou, mostreu les ales i el suport per a dibuixar o construir; són peces de caracterització o accessoris, no parts que el robot puga moure de manera autònoma. Prepareu deu gots de paper lleugers com a fites per a una ruta, no com a obstacles per colpejar.
+Amb un Tale-Bot apagat, observeu-ne el cos, les rodes, els botons i els indicadors lluminosos. Useu una maqueta o silueta de paper pròpia per assenyalar cada part i relacionar-la amb una funció que després comprovareu. Si el kit del centre els inclou, mostreu les ales i el suport per a dibuixar o construir; són peces de caracterització o accessoris, no parts que el robot puga moure de manera autònoma. Prepareu deu gots de paper lleugers com a fites per a una ruta, no com a obstacles per colpejar, i cinta de pintor per a fixar el mapa sense deixar adhesiu al robot. La pàgina pública de la [lliçó 1](https://matatalab.com/en/node/827) enumera el robot, una maqueta de paper, ales, suports per a dibuix/construcció, deu gots i cinta entre els materials; els accessoris s’usen només si formen part de la dotació del centre.
 
 ![Tale-Bot Pro real amb targetes visuals de direcció, Play i mapa per a explorar el vocabulari de les seues funcions.](../../_assets/imatges/sa-tb-coneguem-tale-bot-v2.webp)
 

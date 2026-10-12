@@ -1,7 +1,7 @@
 ---
 active: true
 title: "Rutes amb decisions"
-description: "Quatre reptes avançats amb Coding Express per investigar el sistema, triar camins, resoldre incidències i llegir mapes."
+description: "Quatre reptes amb Coding Express per investigar el sistema i planificar rutes locals entre l’escola, el mercat i altres llocs del poble."
 robot: "coding-express"
 robot_label: "Coding Express"
 cycle: "infantil"
@@ -10,8 +10,8 @@ subject: "pensament-computacional"
 subject_label: "Pensament computacional, descoberta de l’entorn i llenguatge"
 theme: "resolucio-problemes"
 theme_label: "Sistemes, rutes i resolució de problemes"
-duration: "4 sessions"
-challenge: "Com dissenyem una ruta comprensible i la millorem quan apareix un problema?"
+duration: "4 sessions · 195 min"
+challenge: "Com dissenyem una ruta pel nostre poble i la millorem quan apareix un problema?"
 ---
 
 ![El tren Coding Express arriba a una bifurcació en una maqueta de barri amb una ruta alternativa marcada.](../../_assets/imatges/sa-ce-reptes-rutes.webp)
@@ -20,7 +20,7 @@ _Una bifurcació ofereix opcions: cal conéixer el mapa, justificar una tria i p
 
 ## ❓ Repte i intenció
 
-Les quatre sessions amplien la seqüenciació amb observació del sistema, bifurcacions, planificació de desviaments i representació de rutes en un mapa. L’alumnat documenta què ha fet i què ha passat abans d’atribuir una causa. Les vies i blocs disponibles varien segons el set; es poden simular les alternatives amb targetes si el tren no permet controlar una bifurcació de manera directa.
+Les quatre sessions amplien la seqüenciació amb observació del sistema, bifurcacions, planificació de desviaments i representació de rutes en un mapa del poble: l’escola, el mercat, la biblioteca, l’horta o altres llocs que l’alumnat conega. Trieu topònims reals del municipi o del barri i marqueu-los en un plànol simplificat, sense atribuir al tren una navegació autònoma. L’alumnat documenta què ha fet i què ha passat abans d’atribuir una causa. Les vies i blocs disponibles varien segons el set; es poden simular les alternatives amb targetes si el tren no permet controlar una bifurcació de manera directa.
 
 ## 🎯 Aprenentatges i vocabulari
 
@@ -35,7 +35,7 @@ Prepareu el tren Coding Express, vies i peces del vostre lot, targetes de direcc
 
 ## 📅 Seqüència didàctica · 4 lliçons adaptades
 
-### **Com funciona el sistema? · How Does It Work?**
+### **Com funciona el sistema? · How Does It Work? (45 min)**
 
 #### Fase 1 · Activem i prediem
 
@@ -49,6 +49,8 @@ Observeu el tren en cadascuna d’aquestes condicions. Identifiqueu el sensor de
 
 Proveu l’app amb els maons disponibles i registreu què fa el tren. Expliqueu que el maquinari llig el color i que el programari n’indica la resposta.
 
+Si el set inclou un vagó que roda solt, compareu sobre una superfície plana una empenta suau i una estirada curta amb el tren apagat; si no, feu-ho amb una fitxa de paper. Separeu aquest model de forces del funcionament del motor: no empenyeu ni estireu el tren quan estiga encés.
+
 #### Fase 4 · Apliquem i millorem
 
 Amb el tren aturat, tapeu temporalment el sensor amb una cartolina fosca i feu una prova supervisada: prediu si podrà llegir els maons, comproveu-ho a baixa velocitat i retireu la cartolina quan el tren estiga parat.
@@ -57,11 +59,11 @@ Amb el tren aturat, tapeu temporalment el sensor amb una cartolina fosca i feu u
 
 **Evidència:** dibuix abans/després, vocabulari maquinari–programari–sensor–app i explicació de la prova. Què ha canviat respecte de la predicció?
 
-### **La bifurcació del barri · Y-Shaped Track.**
+### **La bifurcació cap al mercat · Y-Shaped Track (45 min)**
 
 #### Fase 1 · Activem i prediem
 
-Comenceu amb un joc de bitllets: anomeneu almenys tres parades de l’aula o la maqueta, poseu una fitxa de color a cada destinació i doneu un bitllet del mateix color a cada passatger. Predigueu quin ramal correspondrà a cada bitllet.
+Comenceu amb un joc de bitllets: trieu almenys tres llocs pròxims —per exemple, l’escola, el mercat municipal i la biblioteca—, poseu una fitxa de color a cada destinació i doneu un bitllet del mateix color a cada passatger. Predigueu quin ramal correspondrà a cada bitllet.
 
 #### Fase 2 · Explorem i construïm
 
@@ -79,29 +81,33 @@ Com a ampliació, proveu els dos desviaments per crear una tercera branca o una 
 
 **Evidència:** parelles bitllet–destinació, instrucció condicional i mapa dels camins provats. Quines parts de la decisió depenen de la persona que mou l’agulla?
 
-### **Obres en el camí · Journey—Trouble on the Road.**
+### **Obres en el camí · Journey—Trouble on the Road (45 min)**
 
 #### Fase 1 · Activem i prediem
 
-Converseu sobre què recorden els senyals i interpreteu els quatre senyals de trànsit inclosos en el set. Representeu decisions a escala de maqueta, sense córrer ni simular perills reals.
+Converseu sobre per què les normes de trànsit ajuden a coordinar-se i interpreteu els quatre senyals de trànsit inclosos en el set amb el seu significat comprovat. Representeu decisions a escala de maqueta, sense córrer ni simular perills reals. Si el lot no té algun senyal, feu una targeta pròpia i marqueu-la com a substitució.
 
 #### Fase 2 · Explorem i construïm
 
-Al costat d’una via Y i de models propis, col·loqueu a l’atzar els maons d’acció. Connecteu el tren a l’app i exploreu-ne els botons abans de començar el recorregut.
+Al costat d’una via Y i de models propis, col·loqueu a l’atzar els maons d’acció. Connecteu el tren a l’app i exploreu-ne els botons abans de començar el recorregut. Trieu un maó que l’app permeta configurar, anoteu-ne el comportament inicial i canvieu una sola opció; repetiu el mateix tram per comprovar si la resposta s’ha modificat. Si la versió de l’app o el set no ofereix aquest control, registreu-ho i manteniu l’observació com a exploració, sense simular un canvi físic.
 
 #### Fase 3 · Expliquem i registrem
 
-Feu circular el tren per torns. Quan aparega un problema fictici en l’app o una targeta d’incidència, identifiqueu què ha passat i registreu la predicció, el senyal triat i la resposta observada.
+Feu circular el tren per torns. Quan aparega un problema fictici en l’app o una targeta d’incidència, identifiqueu què ha passat i registreu la predicció, el senyal triat, el maó/app que l’equip ha programat i la resposta observada. Els senyals físics són models per a interpretar una situació: el tren llig el color dels maons, no reconeix ni interpreta els senyals de trànsit.
+
+![El tren Coding Express de la dotació recorre una via en Y amb maons d’acció, mentre targetes de senyal i una tauleta serveixen de recursos per a planificar la ruta.](../../_assets/imatges/sa-ce-reptes-rutes-senyals-app.png)
+
+_Les targetes representen senyals per a la conversa de classe; el tren detecta els maons de color de la via, no les targetes._
 
 #### Fase 4 · Apliquem i millorem
 
-Proveu la resposta, empreu tots els senyals en una nova ronda i inventeu-ne un de propi amb un model o pictograma. Poseu-lo al mapa i justifiqueu-ne la ubicació.
+Proveu la resposta, empreu els quatre senyals disponibles en una nova ronda i inventeu-ne un de propi amb un model o pictograma. Poseu-lo al mapa i justifiqueu-ne la ubicació. Compareu una seqüència repetida de parades i expliqueu quina instrucció o configuració canvia quan l’incident és diferent.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** incidència, senyal triat, predicció, resposta observada i explicació de per què la ubicació ajuda. La maqueta no és una guia viària real.
+**Evidència:** incidència, senyal triat, maó/configuració triada, predicció, resposta observada i explicació de per què la ubicació ajuda. La maqueta no és una guia viària real.
 
-### **Un mapa per compartir · Story Maps.**
+### **Un mapa per compartir · Story Maps (60 min)**
 
 #### Fase 1 · Activem i prediem
 
@@ -133,4 +139,4 @@ Reduïu el mapa a dos camins ben diferenciats i useu símbols tàctils o amb alt
 
 ## 🔗 Unitat oficial i adaptació
 
-Adaptació de les quatre lliçons de [Advancing with Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/computer-science-lessons/): How Does It Work?, Y-Shaped Track, Journey—Trouble on the Road i Story Maps. Els reptes mantenen investigació, bifurcació, desviament i mapatge amb exemples i recursos propis, ajustats al kit real del centre.
+Adaptació de les quatre lliçons de [Advancing with Coding Express](https://education.lego.com/en-us/product-resources/coding-express/additional-lesson-plans/computer-science-lessons/): How Does It Work?, Y-Shaped Track, Journey—Trouble on the Road i Story Maps, contrastades amb el [pla docent oficial en PDF](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt02986198e04c3fad/634fbf21885d1d218e487e79/Advancing_with_Coding_Express_Unit_Grade_K.pdf?locale=en-us). Els reptes mantenen investigació, bifurcació, desviament i mapatge amb exemples i recursos propis, ajustats al kit real del centre; la prova de configuració de l’app és condicional a les opcions que mostre la versió disponible.

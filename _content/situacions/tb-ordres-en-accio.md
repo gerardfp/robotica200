@@ -119,23 +119,27 @@ Una altra parella rep la targeta de colors sense veure el robot i reprodueix la 
 
 #### Fase 1 · Activem i prediem
 
-Col·loqueu Tale-Bot i una figureta o targeta de personatge en la mateixa línia. Trieu una salutació pròpia i predigueu quantes ordres necessita el robot per arribar-hi.
+Col·loqueu Tale-Bot Pro i una targeta de personatge en la mateixa línia. En aquesta adaptació, el personatge arriba a l’hort escolar i vol saludar dues parades de carlotes de paper. Trieu una salutació curta, sense dades personals, i predigueu quantes ordres necessita el robot per arribar al primer punt i després al segon.
 
 #### Fase 2 · Explorem i construïm
 
-Practiqueu el botó de gravació només si el model ofereix aquesta funció. Manteniu-lo premut més d’un segon per enregistrar; feu una pulsació breu per reproduir només si el model ho permet.
+Manteniu premut el botó de gravació més d’un segon per enregistrar un missatge breu (fins a 30 segons). El robot el reprodueix perquè l’equip el puga comprovar. Feu una pulsació curta per tornar a usar l’últim enregistrament; així es podrà repetir el mateix missatge sense tornar a gravar-lo.
 
 #### Fase 3 · Expliquem i registrem
 
-Representeu la ruta amb targetes i decidiu com s’expressarà la salutació: àudio consentit, pictograma o missatge oral en directe.
+Representeu amb targetes la seqüència completa: arribar al personatge, activar l’enregistrament, continuar cap a la primera parada i reproduir-lo amb una pulsació curta; després, arribar a la segona parada i tornar-lo a reproduir. Marqueu les ordres de moviment i les dues ordres de gravació en un full de registre. Com a alternativa accessible, l’equip pot fer servir una salutació no gravada amb pictograma o veu en directe.
+
+![Tale-Bot Pro de la dotació arriba a dues targetes de carlota en una ruta de l’hort escolar i reprodueix un missatge enregistrat.](../../_assets/imatges/sa-tb-missatge-carlotes.png)
+
+_La persona i les carlotes són targetes de paper; el robot executa la ruta i el missatge, no arreplega ni reconeix aliments._
 
 #### Fase 4 · Apliquem i millorem
 
-Programeu el recorregut fins al personatge i feu la salutació en arribar. Reviseu la seqüència si no acaba en la casella prevista.
+Enregistreu una salutació de grup —o useu-ne una preparada per l’adult— i executeu la ruta fins al personatge i les dues parades. Comproveu que el missatge sona una vegada en cadascun dels dos punts i que Tale-Bot acaba en la casella prevista. Si falla el trajecte o es reprodueix en un lloc inadequat, canvieu una sola ordre i repetiu la prova. El robot no reconeix la targeta, la carlota ni la salutació: totes les accions depenen de la seqüència programada.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** ruta i salutació triada pel grup. La veu és voluntària; no cal enregistrar-la per completar el repte.
+**Evidència:** seqüència amb dues reproduccions, ruta provada i registre del resultat en cada parada. L’enregistrament de veus infantils és voluntari; es pot usar una frase fictícia dita per l’adult o l’alternativa pictogràfica. No enregistreu noms ni informació identificable; si no voleu guardar cap àudio al robot, completeu la mateixa seqüència amb pictogrames.
 
 ### **A-6 · Taller de dansa.**
 

@@ -12,6 +12,7 @@ theme: "sostenibilitat"
 theme_label: "Biodiversitat i cultiu"
 duration: "4 sessions · 200 min"
 challenge: "Com podem enviar un avís de protecció i representar un sensor de cultiu sense exposar la placa a l’aigua o al sòl?"
+official_source: "https://microbit.org/teach/lessons/helping-plants-grow-trees/"
 ---
 
 ![Una placa micro:bit acompanya una planta en test i targetes d’observació per imaginar un sistema d’avís.](../../_assets/imatges/sa-hivernacle-microbit.webp)
@@ -20,7 +21,7 @@ _Els muntatges són prototips de ràdio i sensor; no vigilen boscos ni controlen
 
 ## 🌱 Situació i intenció
 
-Una classe de tercer cicle investiga dues preguntes sobre un hort i un espai verd escolar: com podria un node avisar que cal revisar una zona de planter, i com podríem representar una lectura d’humitat abans de decidir què fer? Els dos reptes oficials s’adapten en un prototip de comunicació i un de lectura/decisió. Les proves es fan amb maquetes i valors de laboratori: cap placa vigila un bosc, pren imatges, controla una bomba ni decideix el reg d’una planta real.
+Una classe de tercer cicle investiga dues preguntes sobre un hort i un espai verd escolar: com podria un node avisar que cal revisar una zona de planter, i com podríem representar lectures de llum i humitat abans de decidir què fer? Els dos reptes oficials s’adapten en un prototip de comunicació i un de lectura/decisió. Les proves es fan amb maquetes i valors de laboratori: cap placa vigila un bosc, pren imatges, controla una bomba ni decideix el reg d’una planta real.
 
 La fundació presenta les activitats per a 11–14 i 14–16 anys. Aquesta versió les escala a tercer cicle de primària: simplifica la instrumentació, modela els sensors externs i posa l’accent en el disseny, les dades, la ràdio i els límits. No es presenta com una equivalència d’edat ni com un sistema IoT desplegable.
 
@@ -28,12 +29,13 @@ La fundació presenta les activitats per a 11–14 i 14–16 anys. Aquesta versi
 
 - Convertir una necessitat de protecció o cultiu en criteris observables per a un prototip.
 - Programar emissor i receptor de ràdio i comprovar recepció amb missatges ficticis i intents repetits.
+- Comparar dues entrades independents —llum i humitat—, una regla per a cada eixida i una aturada manual del prototip.
 - Interpretar lectures simulades o d’un sensor addicional només després de verificar el maquinari i el programa.
 - Explicar que el prototip no vigila fauna, no controla un cultiu real i no ha d’exposar la placa a l’aigua o al sòl.
 
 ## 🧰 Preparació, materials i coneixements
 
-Necessiteu una o preferiblement dues plaques micro:bit, MakeCode, ordinador o tauleta, cable USB, targetes de condició/missatge, full de dades i materials secs per a construir una maqueta. La ràdio i els botons són funcions integrades. La micro:bit no té sensor d’humitat del sòl, relé ni connexió a internet integrats; per a fer la lectura amb maquinari real cal un sensor analògic i un circuit de baixa tensió compatible que el centre verifique. Si no es disposa d’aquests components, els botons A/B seleccionen valors simulats que s’identifiquen clarament com a dades de prova. No connecteu probes descobertes a terra humida ni cap càrrega a tensió de xarxa.
+Necessiteu una o preferiblement dues plaques micro:bit, MakeCode, ordinador o tauleta, cable USB, targetes de condició/missatge, full de dades i materials secs per a construir una maqueta. La ràdio i els botons són funcions integrades; en V1 i V2, la matriu LED també pot llegir el nivell de llum ambiental, encara que aquesta lectura depén de l’entorn i la mateixa matriu s’utilitza com a eixida. La micro:bit no té sensor d’humitat del sòl, relé ni connexió a internet integrats; per a fer la lectura amb maquinari real cal un sensor analògic i un circuit de baixa tensió compatible que el centre verifique. Si no es disposa d’aquests components, els botons A/B seleccionen valors simulats que s’identifiquen clarament com a dades de prova. No connecteu probes descobertes a terra humida ni cap càrrega a tensió de xarxa.
 
 Abans de la sessió, proveu que les dues plaques comparteixen el mateix grup de ràdio i que poden enviar/rebre missatges; prepareu un receptor de reserva si la connexió falla. Definiu què compta com a “sec” només per a la simulació de classe. No traduïu el valor de maqueta a un llindar de reg real: els sensors, el sòl, l’espècie i l’entorn canvien la lectura.
 
@@ -47,7 +49,7 @@ Llegiu una fitxa fictícia d’un viver o d’un arbre jove del pati i relacione
 
 #### Fase 2 · Explorem i construïm
 
-En un diagrama IPO, escriviu l’entrada que inicia la prova (botó que simula una vibració o una incidència), el procés de decidir si cal avisar i les eixides possibles.
+En un diagrama IPO, escriviu l’entrada que inicia la prova (inclinació llegida per l’acceleròmetre o, si cal, botó de simulació), la decisió d’enviar un avís i les eixides possibles. El disseny oficial usa el sensor d’acceleració/caiguda lliure com a indici i adverteix que s’ha de provar el llindar; en aquesta aula no es deixa caure ni s’enganxa la placa a cap arbre. Afegiu una targeta de «passarel·la» entre el node local i un servei d’Internet per representar l’arquitectura IoT descrita per la font oficial. Aquesta passarel·la és un model de paper: la micro:bit només envia dades per ràdio a l’altra placa i no es connecta a Internet per si mateixa.
 
 #### Fase 3 · Expliquem i registrem
 
@@ -55,7 +57,7 @@ Dibuixeu el node sensor, el missatge per ràdio, el node receptor i la persona r
 
 #### Fase 4 · Apliquem i millorem
 
-Acordeu quatre criteris mesurables: només s’envia el codi acordat, el receptor el mostra, un altre codi no es confon amb l’alerta i cap dada identifica persones o llocs sensibles.
+Acordeu cinc criteris mesurables: el node detecta una inclinació de prova o rep una entrada simulada; només envia el codi acordat amb l’identificador fictici de la maqueta; el receptor el mostra; un altre codi no es confon amb l’alerta; i el missatge no inclou coordenades ni dades personals. La font oficial modela l’entrada amb l’acceleròmetre i contempla coordenades GPS; ací l’etiqueta `HORT-01` representa una zona fictícia i no geolocalitza res.
 
 #### Fase 5 · Comprovem i reflexionem
 
@@ -69,7 +71,7 @@ Trieu dos codis curts i inequívocs, com `REVISA` i `PROVA`, que no incloguen no
 
 #### Fase 2 · Explorem i construïm
 
-En una placa, establiu grup de ràdio i envieu el missatge només quan es prema el botó seleccionat; afegiu una icona que indique que s’ha enviat.
+En una placa, establiu grup de ràdio i envieu el missatge només quan es prema el botó seleccionat; afegiu una icona que indique que s’ha enviat. Incloeu un identificador fictici i no geolocalitzable, com `HORT-01`, perquè el receptor puga distingir quina maqueta ha generat l’avís. Aquest codi és una etiqueta de classe: la micro:bit no té GPS i no determina la ubicació d’un arbre.
 
 #### Fase 3 · Expliquem i registrem
 
@@ -77,29 +79,29 @@ En l’altra placa, espereu el missatge i mostreu una icona o paraula curta quan
 
 #### Fase 4 · Apliquem i millorem
 
-Feu cinc intents a distància curta amb el mateix grup; registreu enviaments i recepcions. Repetiu amb un grup diferent per comprovar que no es barregen les proves. No cal allunyar plaques del docent ni provar cobertura fora de l’aula.
+Feu cinc intents a distància curta amb el mateix grup; registreu enviaments i recepcions. Repetiu amb un grup diferent per comprovar que no es barregen les proves. Després d’aquesta línia de base, trieu una millora de prototip —per exemple, que el receptor retorne `REBUT` o mostre una icona de confirmació— i repetiu els casos afectats per comprovar l’efecte. No cal allunyar plaques del docent ni provar cobertura fora de l’aula.
 
 #### Fase 5 · Comprovem i reflexionem
 
 Marqueu falsos avisos, missatges perduts i una millora. Amb una sola placa, una persona pot fer d’emissor i una altra de receptor amb targetes de paper, però aquesta alternativa no es compta com a transmissió de ràdio provada.
 
-### **Sessió 3 · Dades d’humitat i decisió de l’Auto-farmer.**
+### **Sessió 3 · Llum, humitat i decisions de l’Auto-farmer.**
 
 #### Fase 1 · Activem i prediem
 
-Compareu què vol dir “sec”, “intermedi” i “humit” en tres mostres simulades; si hi ha sensor extern, consulteu les seues instruccions, calibreu-lo segons el centre i manteniu-lo separat de la placa.
+Compareu dues entrades separades: llum ambiental (fosca/intermèdia/il·luminada) i humitat del sòl (seca/intermèdia/humida). Useu targetes o valors de prova per a cada variable; si es vol llegir el sensor de llum integrat, feu una comprovació inicial sense projectar llum sobre la matriu LED. Per a la humitat real cal un sensor extern: consulteu-ne les instruccions, calibreu-lo segons el centre i manteniu-lo separat de la placa.
 
 #### Fase 2 · Explorem i construïm
 
-Useu A/B per seleccionar valors inventats (per exemple 250, 500 i 750) o llegiu l’entrada analògica disponible; mostreu número o barra LED.
+Useu A/B per seleccionar una entrada cada vegada i anoteu si és simulada o mesurada. Per a la llum, proveu valors de l’escala de lectura que expose la versió de MakeCode del centre; per a la humitat, useu un conjunt de prova propi o l’entrada analògica d’un sensor extern calibrat. Mostreu l’entrada seleccionada amb un número o una barra LED i no compareu les escales entre si.
 
 #### Fase 3 · Expliquem i registrem
 
-Formuleu una regla com “si lectura simulada < llindar de prova, mostrar ‘cal revisar’”; representeu eixida com a icona, missatge o LED, no com a reg efectiu.
+Formuleu dues regles independents: «si la llum baixa del llindar de prova, representar l’eixida de llum» i «si la humitat baixa del llindar de prova, representar l’eixida de reg». Useu una icona o un missatge com a substitut del relé; no activeu cap llum ni bomba real.
 
 #### Fase 4 · Apliquem i millorem
 
-Proveu valors just per davall, iguals i per damunt del llindar i anoteu què mostra el programa.
+Per a cada variable, proveu un valor per davall, un d’igual i un per damunt del seu llindar; anoteu les dues eixides separadament. Això permet comprovar que una alerta de llum no activa per error la regla d’humitat.
 
 #### Fase 5 · Comprovem i reflexionem
 
@@ -113,15 +115,34 @@ Representeu un planter de maqueta i decidiu quina placa fa de node de dades i qu
 
 #### Fase 2 · Explorem i construïm
 
-Combineu lectura simulada o externa, comparació amb llindar i missatge de ràdio; feu que l’avís diga “revisió necessària” i no “reg automàtic”.
+Combineu les dues entrades simulades o externes amb les regles de llum i humitat; representeu els dos relés del repte oficial amb targetes o icones LED. Una eixida de maqueta no encén una làmpada ni activa el reg. Afegiu un interruptor d’aturada del prototip: mantindre premuts A+B activa un estat de parada que força les dues eixides a «OFF»; reinicieu el programa per a tornar a provar. Només si el centre té relés compatibles verificats es pot estudiar el circuit de baixa tensió segons les instruccions del fabricant; no són components integrats i no es connecten a bombes ni a la xarxa elèctrica.
+
+![Dues micro:bit de la dotació representen un avís de ràdio amb identificador fictici i un prototip d’hort amb dues eixides simulades i un botó d’aturada.](../../_assets/imatges/sa-hivernacle-nodes-relle.png)
+
+_La passarel·la, les eixides, l’identificador i l’aturada són elements de maqueta o representació; les plaques no controlen relés ni identifiquen una ubicació real._
+
+```text
+aturada = fals  # en iniciar el programa
+quan es premen A+B:
+    aturada = cert
+si aturada:
+    llum = OFF
+    reg = OFF
+altrament:
+    llum = ON si lectura_llum < llindar_llum_de_prova, si no OFF
+    reg = ON si lectura_humitat < llindar_humitat_de_prova, si no OFF
+    envia «HORT-01:REVISA» si cal revisió
+```
+
+_Pseudocodi propi per a la maqueta: «llum» i «reg» són eixides representades, no relés reals. En MakeCode, l’estat d’aturada es reinicia en iniciar el programa i A+B el manté actiu fins que es reinicia; la placa permet detectar la pulsació conjunta._
 
 #### Fase 3 · Expliquem i registrem
 
-Executeu una matriu de cinc casos, incloent lectura baixa, igual al llindar, alta, cap missatge i grup incorrecte; compareu criteris acordats amb resultats.
+Executeu una matriu de casos combinats: llum baixa/alta, humitat baixa/alta, una lectura exactament al llindar, grup de ràdio incorrecte, absència de missatge i aturada A+B. Comproveu que cada relé simulat respon només a la seua entrada i que, després de l’aturada, les dues eixides queden apagades. Compareu els criteris amb els resultats i registreu qualsevol fals positiu.
 
 #### Fase 4 · Apliquem i millorem
 
-Dibuixeu quin sensor compatible o relé de baixa tensió verificat caldria per avançar el prototip, quin risc o error s’hauria de resoldre i qui supervisaria una prova real.
+Dibuixeu quin sensor compatible o relé de baixa tensió verificat caldria per avançar el prototip, quin risc o error s’hauria de resoldre i qui supervisaria una prova real. Trieu una millora addicional del node —confirmació de recepció, avís diferenciat o registre de dades— i repetiu els casos de prova corresponents; no activeu cap reg real.
 
 #### Fase 5 · Comprovem i reflexionem
 
@@ -129,7 +150,7 @@ Presenteu diagrama, dades, prototip i límit principal a un altre equip, que dei
 
 ## 📋 Criteris d’èxit i avaluació
 
-La proposta és satisfactòria quan l’equip (1) diferencia ràdio integrada, sensor extern, relé i passarel·la; (2) programa un missatge enviat per una condició acordada i comprova que arriba al receptor; (3) representa valors d’humitat amb una font identificada —simulada o externa— i prova el llindar per baix, igual i per damunt; (4) manté una persona en la decisió final; i (5) comunica què no permet concloure el seu prototip. Recolliu diagrama IPO/xarxa, fragments de codi o pseudocodi, taula dels cinc intents, matriu d’entrada/eixida, proposta d’ampliació i reflexió. Valoreu exactitud del registre, depuració basada en evidència i justificació; no es puntua que el senyal arribe lluny ni que la maqueta regue.
+La proposta és satisfactòria quan l’equip (1) diferencia ràdio integrada, sensor extern, relé i passarel·la; (2) envia i rep un missatge que inclou un identificador fictici no geolocalitzable; (3) separa les lectures de llum i humitat i prova per a cadascuna els valors inferior, igual i superior al llindar; (4) mostra dues eixides simulades independents; (5) comprova que l’aturada A+B deixa totes dues eixides en «OFF»; (6) afegeix i prova una millora; i (7) explica què no permet concloure el prototip. Recolliu diagrama IPO/xarxa, fragments de codi o pseudocodi, taula dels intents, matriu d’entrada/eixida, proposta d’ampliació i reflexió. Valoreu exactitud del registre, depuració basada en evidència i justificació; no es puntua que el senyal arribe lluny ni que la maqueta regue.
 
 ## ♿ Accessibilitat, privacitat i seguretat
 
@@ -137,4 +158,4 @@ Oferiu missatges amb icones i paraules, opcions de resposta no oral, valors en t
 
 ## 🔗 Reptes oficials adaptats
 
-[Tree protector](https://www.microbit.org/teach/lessons/helping-plants-grow-trees/) proposa usar la ràdio de micro:bit per enviar alertes des d’un sensor prototip i introduir com els nodes IoT es connecten mitjançant passarel·les; el repte destaca l’ODS 15, el producte que compleix criteris i una ampliació. [Auto-farmer](https://www.microbit.org/teach/lessons/helping-plants-grow-auto-farmer/) proposa relés i sensors d’humitat casolans per detectar cultius secs, transmetre dades i estalviar aigua. Aquesta adaptació manté el problema de disseny, el flux de dades, les condicions i la revisió del prototip, però modela les entrades/actuacions quan la dotació no inclou sensor o relé. Les pàgines oficials indiquen franges d’11–14 i 14–16 anys i enllacen guies, diapositives i fulls; el pla local per a primària és una adaptació simplificada pròpia, no una reproducció d’aquests materials docents.
+[Tree protector](https://www.microbit.org/teach/lessons/helping-plants-grow-trees/) proposa usar la ràdio de micro:bit per enviar alertes des d’un sensor prototip i introduir com els nodes IoT es connecten mitjançant passarel·les; el repte destaca l’ODS 15, el producte que compleix criteris i una ampliació. La guia tècnica complementària del [sensor i l’acceleròmetre micro:bit](https://microbit.org/get-started/features/overview/) confirma les funcions integrades, mentre que l’etiqueta fictícia `HORT-01` substitueix les coordenades GPS del projecte font i no geolocalitza res. [Auto-farmer](https://microbit.org/teach/lessons/helping-plants-grow-auto-farmer/) proposa relés i sensors d’humitat casolans per detectar cultius secs, transmetre dades i estalviar aigua; la situació representa separadament llum, humitat, les dues eixides de relé i una aturada manual, sense activar actuadors. Una còpia consultable del [manual Arm School Program allotjada per Scoilnet](https://www.scoilnet.ie/uploads/resources/35898/35666.pdf) detalla el llindar de llum, els dos relés i el *kill switch*; els documents/ZIP enllaçats des de les pàgines micro:bit no s’han pogut llegir directament en aquesta sessió, així que no s’atribueixen preguntes o passos no verificats. Les pàgines oficials indiquen franges d’11–14 i 14–16 anys. El pla local per a primària és una adaptació simplificada pròpia.
