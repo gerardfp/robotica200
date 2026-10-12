@@ -31,7 +31,7 @@ MatataBot és el visitant nou. Cada equip investiga quatre espais públics del c
 
 ## 🧰 Materials i preparació docent
 
-Prepareu el Coding Set complet, paper gran per al mapa, regles, retalls de cartó i paper, cinta de pintor, targetes de símbols, llapis, fulls de recerca i un full de registre. Demaneu abans a l’escola informació pública o autoritzada sobre la història i cultura del centre, i delimiteu quins espais es poden observar i representar. No fotografieu persones ni inclogueu horaris, codis d’accés, noms complets o informació de seguretat. Si no hi ha plànol compartible, mesureu o estimeu només relacions de proximitat entre espais amb permís docent, i indiqueu que el mapa és esquemàtic. Feu una prova de desplaçament del robot per comprovar quina longitud correspon a cada ordre i quines caselles reals caben en el full.
+Prepareu el Coding Set complet, paper gran per al mapa, regles, retalls de cartó i paper, cinta de pintor, targetes de símbols, llapis, fulls de recerca i un full de registre. Demaneu abans a l’escola informació pública o autoritzada sobre la història i cultura del centre, i delimiteu quins espais es poden observar i representar. No fotografieu persones ni inclogueu horaris, codis d’accés, noms complets o informació de seguretat. Si no hi ha plànol compartible, mesureu o estimeu només relacions de proximitat entre espais amb permís docent, i indiqueu que el mapa és esquemàtic. Per a una prova física, dibuixeu la quadrícula amb caselles de 10 × 10 cm segons l’especificació de Matatalab; comproveu l’alineació del pas del model local amb una ordre curta i registreu desviacions abans de programar la ruta. Un mapa a escala diferent només s’usa per a planificar o simular.
 
 Les coordenades (x, y) són una eina per a trobar i comunicar una ubicació en el mapa; MatataBot no rep parelles de coordenades com a codi. L’alumnat tradueix un itinerari entre punts en blocs físics d’avanç, retrocés i gir, tenint en compte l’orientació inicial.
 
@@ -78,6 +78,10 @@ Creeu maquetes tridimensionals simples de paper per als edificis o espais repres
 #### Fase 4 · Apliquem i millorem
 
 Feu que cada persona trobe una destinació a partir d’una parella ordenada. Contrasteu que les maquetes i els símbols conserven la posició relativa al mapa i que l’escala no ha canviat.
+
+![MatataBot, la torre i el tauler Coding Set de la dotació al costat d’un mapa miniatura de biblioteca, racó de lectura i hort escolar.](../../_assets/imatges/sa-cs-ruta-biblioteca-plano.webp)
+
+_La graella localitza els espais al mapa; l’alumnat tradueix la ruta a fitxes físiques perquè MatataBot es moga, ja que el robot no rep coordenades ni transporta llibres._
 
 #### Fase 5 · Comprovem i reflexionem
 

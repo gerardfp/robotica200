@@ -30,7 +30,7 @@ llegir una graella, transformar un itinerari en ordres tangibles, anticipar la p
 
 ## 🧰 Materials i preparació
 
-Prepareu el MatataBot i la torre de programació del Coding Set, un mapa original en quadrícula, blocs físics de moviment, targetes amb símbols per a les parades, fitxes d’observació i una figura lleugera per representar el «quadern de camp». Reviseu la càrrega i les instruccions del kit. Mesureu la quadrícula segons el moviment real del vostre robot: la informació del fabricant descriu moviments d’avanç de 10 cm i girs de 90°, però la distància efectiva s’ha de verificar amb el model, el terra i les peces disponibles al centre.
+Prepareu el MatataBot i la torre de programació del Coding Set, un mapa original en quadrícula, blocs físics de moviment, targetes amb símbols per a les parades, fitxes d’observació i una figura lleugera per representar el «quadern de camp». Reviseu la càrrega i les instruccions del kit. Si MatataBot recorrerà el mapa, feu caselles de 10 × 10 cm, com indica el fabricant perquè coincidisquen amb el moviment del robot; comproveu amb una ordre d’avanç que el model s’alinea amb la casella sobre la superfície disponible i registreu qualsevol desviació abans de continuar. Si el mapa és esquemàtic i no està a escala, useu-lo per a planificar o simular, no com a recorregut físic.
 
 Fixeu el mapa sobre una superfície plana, poseu cada destí al centre d’una casella i manteniu les caselles i ordres visibles per a tot el grup. Comenceu amb un recorregut curt, sense obstacles estrets. Si la torre o el robot no està disponible, una fitxa sobre la mateixa graella i targetes de fletxa permeten fer el mateix treball de seqüenciació, però la prova física del robot quedarà pendent.
 

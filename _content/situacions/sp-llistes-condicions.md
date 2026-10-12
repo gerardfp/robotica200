@@ -126,6 +126,10 @@ Useu dades en directe per comprovar què detecta el sensor, feu una primera volt
 
 Modifiqueu una sola cosa per prova. Afegiu deliberadament una línia de color no acordada i observeu si la regla la confon. Descomponeu el programa en blocs propis amb noms funcionals —per exemple `SeguirPista` i `AturarEnMarca`— i torneu a cridar-los des del programa principal.
 
+![SPIKE Prime de la dotació al costat de dues seqüències de targetes de color; una targeta diferent es revisa amb una lupa abans de provar la ruta.](../../_assets/imatges/sa-sp-llistes-condicions-sequencies.webp)
+
+_Les targetes modelen dues llistes ordenades; la lupa assenyala la primera diferència que cal comprovar. No és una lectura automàtica del robot._
+
 #### Fase 5 · Comprovem i reflexionem
 
 Compareu la llegibilitat del programa original i del reutilitzable. **Evidència:** pista provada, registre d’una iteració i explicació dels límits: el seguiment no és robust en qualsevol superfície o il·luminació.

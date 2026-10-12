@@ -32,6 +32,7 @@ _La maqueta mostra dades consultades al núvol; no mesura el vent que fa al pati
 - Construir i calibrar un indicador amb intervals que es puguen distingir i provar.
 - Afegir una segona condició o direcció i comprovar com canvia la representació.
 - Comunicar que el prototip representa dades i no mesura el vent ni substitueix els avisos oficials.
+- Elaborar un missatge divulgatiu breu amb font, ubicació, hora i límits de la previsió; relacionar el treball amb tasques de meteorologia, ciència de dades i enginyeria.
 
 ## 📅 Seqüència didàctica · 3 sessions
 
@@ -61,7 +62,7 @@ Expliqueu què representa l’agulla i què no permet concloure la maqueta. **Ev
 
 #### Fase 1 · Activem i prediem
 
-Ordeneu targetes de velocitat i associeu cada banda amb el color acordat. Manteniu les unitats visibles: **blau · força 1–3:** 0,5–5,5 m/s; **verd · força 4–6:** 5,5–13,8 m/s; **groc · força 7–9:** 13,8–24,4 m/s; **roig · força 10–12:** 24,4–32,7 m/s. Predigueu com tractareu els valors de frontera i la calma (0 m/s).
+Ordeneu targetes de velocitat i associeu cada banda amb el color acordat. Manteniu les unitats visibles: **calma · força 0:** 0–<0,5 m/s; **blau · forces 1–3:** 0,5–<5,5 m/s; **verd · forces 4–6:** 5,5–<13,8 m/s; **groc · forces 7–9:** 13,8–<24,4 m/s; **roig · forces 10–12:** ≥24,4 m/s. Els quatre colors agrupen forces segons el resum de LEGO; no són els tretze trams complets de l’escala Beaufort. La força 12 no té límit superior. Predigueu el resultat en cada frontera.
 
 ![Quatre grups de línies de vent que augmenten d’intensitat, de blau a verd, groc i roig.](../../_assets/imatges/sa-sp-vent-beaufort.webp)
 
@@ -73,8 +74,8 @@ Com a bastida, podeu començar amb dos intervals; el repte compartit és arribar
 
 1. Escriviu una taula de llindars amb unitats coherents i decidiu a quin tram pertany cada valor de frontera.
 2. Programeu condicions *si / si no* perquè cada tram active el color o l’angle assignat.
-3. Tracteu **0 m/s com a calma**, fora de les quatre bandes codificades.
-4. Proveu valors dins de cada tram, valors propers als llindars i un valor superior al rang.
+3. Tracteu **0 ≤ velocitat < 0,5 m/s com a calma (força 0)**, separada dels quatre colors.
+4. Proveu 0; 0,49; 0,5; 5,49; 5,5; 13,79; 13,8; 24,39; 24,4; 32,7 i 32,71 m/s. Cada valor vàlid ha de rebre una sola classificació; una dada absent, negativa o no numèrica s’ha de marcar com a invàlida, no com a calma.
 5. Anoteu si cada cas queda classificat com esperàveu i corregiu les condicions quan calga.
 
 #### Fase 3 · Expliquem i registrem
@@ -83,7 +84,7 @@ Descriviu com les condicions transformen dades contínues en grups discrets. Des
 
 #### Fase 4 · Apliquem i millorem
 
-Proveu valors dins de cada tram, valors just per davall i per damunt dels llindars i un valor superior al rang. Anoteu si cada cas es classifica com esperàveu i corregiu les condicions quan calga; torneu a executar els casos afectats.
+Repetiu les proves de frontera, inclòs un valor superior a 32,7 m/s, que continua dins de la força 12. Comproveu també que l’entrada invàlida queda diferenciada de la calma. Anoteu si cada cas es classifica com esperàveu i corregiu les condicions quan calga; torneu a executar els casos afectats.
 
 #### Fase 5 · Comprovem i reflexionem
 
@@ -109,11 +110,11 @@ Prepareu una taula que compare ubicació, hora, font, velocitat, categoria i dir
 
 #### Fase 4 · Apliquem i millorem
 
-Reviseu una categoria o recalibreu l’indicador si els resultats de dues ubicacions no concorden amb les dades. Si useu un segon motor, proveu el dial de direcció; si no, manteniu la matriu LED com a opció base. Contrasteu l’explicació amb una font divulgativa fiable o una persona experta, si és possible.
+Reviseu una categoria o recalibreu l’indicador si els resultats de dues ubicacions no concorden amb les dades. Si useu un segon motor, proveu el dial de direcció; si no, manteniu la matriu LED com a opció base. Contrasteu l’explicació amb una font divulgativa fiable o una persona experta, si és possible. Com a extensió de comunicació, prepareu un missatge oral, escrit o pictogràfic de 30 segons amb la ciutat, l’hora, la velocitat prevista, la direcció, la font i una limitació del model. Ha de presentar-se com una previsió didàctica, mai com una alerta meteorològica ni una indicació per a suspendre activitats. Si hi ha temps, investigueu una tasca concreta de meteorologia, ciència de dades o enginyeria relacionada amb mesurar o comunicar el vent, i contrasteu-la amb una font identificada.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Presenteu la comparació citant font, ubicació i hora. Indiqueu que la previsió correspon a un lloc i moment determinats i que la maqueta no mesura el vent de l’aula o del pati ni substitueix avisos oficials. **Evidència:** comparació de tres ubicacions, programa amb velocitat i direcció, registre de calibratge i missatge sobre els límits del model.
+Presenteu la comparació citant font, ubicació i hora. Indiqueu que la previsió correspon a un lloc i moment determinats i que la maqueta no mesura el vent de l’aula o del pati ni substitueix avisos oficials. Apagueu i retorneu els materials al set. **Evidència:** comparació de tres ubicacions, programa amb velocitat i direcció, registre de calibratge, missatge divulgatiu amb la seua limitació i, si s’ha fet l’extensió, una nota amb la professió investigada i la font.
 
 ## 🧰 Materials i preparació
 
@@ -154,4 +155,4 @@ Recolliu una carpeta de procés amb:
 
 ## 🔗 Lliçó oficial adaptada
 
-La seqüència adapta [Wind Speed](https://education.lego.com/en-us/lessons/prime-life-hacks/wind-speed/), quarta lliçó de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/). Conserva el muntatge en parelles i l’alineament del motor, la consulta d’una ciutat, la representació de dades del núvol, les quatre bandes Beaufort amb condicions, la comparació d’ubicacions i l’ampliació a la direcció del vent. També incorpora la classificació desconnectada, proves dels llindars, registre de dades i límits d’ús. La situació, el registre, la programació i les il·lustracions són propis; els materials docents complets remeten a l’app SPIKE.
+La seqüència adapta [Wind Speed](https://education.lego.com/en-us/lessons/prime-life-hacks/wind-speed/), quarta lliçó de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/). Conserva el muntatge en parelles i l’alineament del motor, la consulta d’una ciutat, la representació de dades del núvol, les quatre bandes de color, la comparació d’ubicacions, l’ampliació a la direcció del vent i el recalibratge a 180°. Les bandes de color reprodueixen l’agrupació resumida de LEGO per a forces 1–12; la calma (força 0) es tracta a banda i la força 12 no té màxim. Les fronteres es proven amb intervals sense buits ni solapaments, d’acord amb la [taula de l’escala Beaufort del Met Office](https://weather.metoffice.gov.uk/guides/coast-and-sea/beaufort-scale) i la [referència del National Weather Service](https://www.weather.gov/media/wrh/online_publications/TMs/TM-218.pdf). També adapta l’extensió oficial de comunicació i els itineraris professionals, sense convertir la previsió en una alerta real; incorpora classificació desconnectada, registre de dades i límits d’ús. La situació, el registre, la programació i les il·lustracions són propis; els materials docents complets remeten a l’app SPIKE.

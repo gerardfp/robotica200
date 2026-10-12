@@ -10,17 +10,17 @@ subject: "pensament-computacional"
 subject_label: "Pensament computacional, Llenguatge i Matemàtiques"
 theme: "programacio"
 theme_label: "Seqüències i instruccions"
-duration: "10 activitats breus"
+duration: "10 activitats · 20–30 min cadascuna"
 challenge: "Com podem donar instruccions clares perquè Tale-Bot arribe, salude, dance i complete una missió?"
 ---
 
-![Tale-Bot real al costat d’una quadrícula, targetes de fletxes, fruites i gots de colors.](../../_assets/imatges/sa-tb-instruccions.webp)
+![Tale-Bot Pro real al costat d’una quadrícula i targetes de fletxes mentre una mà prepara una ordre amb els botons físics del robot.](../../_assets/imatges/sa-tb-instruccions-v2.webp)
 
 _Les instruccions es planifiquen amb targetes i es comproven al mapa; els materials i la història són propis._
 
 ## 🌱 Punt de partida
 
-La classe organitza una fira de jocs de barri. Els equips aprenen a llegir els botons, anticipar el recorregut i corregir errors abans de prémer «Play». La progressió adapta les deu activitats oficials de la categoria A de les Activity Cards amb objectes, mapes i consignes elaborats per l’aula. Cada repte es pot resoldre també amb una graella de paper si el robot no està disponible.
+La classe organitza una fira de jocs de barri. Els equips aprenen a llegir els botons, anticipar el recorregut i corregir errors abans de prémer «Play». La progressió adapta les deu activitats oficials de la categoria A de les Activity Cards amb objectes, mapes i consignes elaborats per l’aula. Seguint les orientacions oficials, cada proposta es planifica per a infants de 3–5 anys, parelles i 20–30 minuts; repartiu i alterneu els rols de programar i comprovar, i ajusteu l’objectiu si cal perquè l’error es puga revisar sense pressa. Abans de cada repte, carregueu Tale-Bot, comproveu la versió del robot i prepareu una taula o terra nets i plans. Les targetes i graelles d’aquesta adaptació són pròpies: només useu adhesius OID o funcions de l’Activity Box quan el centre en tinga i els haja verificat; un mapa imprés no activa per si mateix respostes del robot.
 
 ## 🧭 Seqüència · 10 reptes d’una sessió
 

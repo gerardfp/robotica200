@@ -33,7 +33,7 @@ La classe organitza tres espais de descoberta. En cada un, els equips fan una pr
 
 Comproveu que el Coding Set inclou el robot, la torre de control i la taula de programació. Prepareu una graella pròpia, targetes grans amb aliments ficticis i formes, paper quadriculat, retoladors solubles i cartolines. Per a les activitats de traçat, useu l’Artist Add-On només si forma part de la dotació; si no, el robot recorre la figura sobre una quadrícula i l’alumnat dibuixa el resultat en paper.
 
-Marqueu una distància de casella constant d’acord amb el desplaçament real del robot. Feu una prova curta amb el grup abans de fixar el nombre de caselles de les graelles.
+Useu caselles de **10 × 10 cm** quan MatataBot haja de recórrer físicament la graella: és la mida recomanada pel fabricant perquè coincidisca amb un avanç. Abans de començar, comproveu l’alineació amb una ordre curta i registreu qualsevol desviació; no canvieu l’escala del mapa per compensar-la. Les làmines de xifres són representacions originals sobre graella, no programes oficials ni una promesa que el robot puga dibuixar sense accessori.
 
 ## 📅 Seqüència didàctica
 
@@ -81,15 +81,15 @@ Si la ruta no funciona, registreu on s’ha desviat i corregiu una sola ordre. E
 
 **Evidència:** classificació argumentada i seqüència provada. Quina instrucció heu revisat i quin resultat us ha permés comprovar-la?
 
-### **Una data que es pot llegir.**
+### **Del 0 al 9: xifres en ruta.**
 
 #### Fase 1 · Activem i prediem
 
-Compareu una xifra escrita a mà amb el traçat que podria produir un programa de moviments. Predigueu quins trams es poden representar amb línies rectes i quins canvis d’orientació faran falta.
+Compareu una xifra escrita a mà amb una xifra construïda sobre una graella de trams rectes. Expliqueu que les formes de la fitxa són glifs geomètrics simplificats: no reprodueixen el traç cal·ligràfic de cada persona. Predigueu quins trams requereixen avançar, retrocedir o girar i quins no es poden unir en un únic recorregut sense alçar el llapis o reposicionar el robot.
 
 #### Fase 2 · Explorem i construïm
 
-En paper quadriculat, descomposeu 0, 1 i 7 en trams i convertiu-los en instruccions amb les ordres del kit.
+En equips, descomposeu les deu xifres (0–9) en trams ortogonals d’una graella pròpia. Comenceu amb 0, 1 i 7; després repartiu 2–6, 8 i 9 entre els equips i intercanvieu les targetes perquè una altra parella reconstruïsca cada forma. Marqueu l’orientació inicial, numereu els trams i convertiu-los en ordres disponibles del kit. Per a una línia discontínua o una xifra que exigisca alçar el llapis, tanqueu el programa, reposicioneu el robot i registreu cada subtraçat per separat.
 
 #### Fase 3 · Expliquem i registrem
 
@@ -97,11 +97,15 @@ Registreu els trams, els girs i el nombre d’ordres de cada xifra. Creeu una xi
 
 #### Fase 4 · Apliquem i millorem
 
-Proveu on convé repetir moviments amb un bucle. El robot no necessita dibuixar amb retolador: pot recórrer la línia de caselles mentre una persona comprova la forma.
+Executeu cada recorregut des del mateix punt inicial i compareu-lo amb la targeta. Si hi ha Artist Add-On compatible, fixeu-hi el retolador segons les instruccions del fabricant i proveu el traçat sobre paper gran; amb el kit base, MatataBot recorre les caselles sense dibuixar i l’alumnat ressegueix o marca el camí a mà. Identifiqueu una repetició útil —per exemple, els quatre costats d’un contorn quadrat— i compareu la seqüència desplegada amb el bucle. Després, creeu un codi de data fictícia triat per la classe (com ara el número d’una setmana o d’una parada), mai una data de naixement o una altra dada personal.
+
+![MatataBot del Coding Set i les seues peces al costat de deu targetes originals de xifres geomètriques sobre una graella.](../../_assets/imatges/sa-cs-xifres-graella.png)
+
+_Les xifres són models didàctics sobre quadrícula; el MatataBot del kit base recorre les caselles, però no deixa tinta sense el complement de dibuix._
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** tres xifres amb instruccions i una repetició justificada. Quina part del traçat es repeteix i com ho heu representat?
+**Evidència:** col·lecció de les deu targetes 0–9 amb orientació, trams i seqüència; prova o simulació identificada de cada ruta; i una data fictícia codificada. Quina xifra ha requerit més subtraçats i quines ordres heu pogut substituir per un bucle?
 
 ### **Triangles que giren.**
 

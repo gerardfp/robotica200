@@ -95,6 +95,10 @@ Feu tres intents per cadascuna de tres altures previstes. Registreu altura previ
 
 Subjecteu al mateix marcador dues masses lleugeres conegudes, d’una en una, i manteniu l’altura final igual. Calculeu Ep amb la massa i l’altura mesurades; compareu els resultats i expliqueu quin factor ha canviat. Si useu acceleració integrada, vídeo o temps, etiqueteu el resultat com a estimació: la integració acumula error i cap d’aquests mètodes dona directament una altura exacta.
 
+![Vehicle SPIKE Prime de la dotació al costat d’un sensor de distància que llig el moviment vertical d’un marcador lleuger; una regla i tres gràfiques buides ajuden a comparar les proves.](../../_assets/imatges/sa-sp-energia-sensor-distancia.webp)
+
+_La il·lustració mostra una configuració conceptual del sensor i del marcador. Cal fixar-los de manera estable amb les peces reals disponibles i comprovar el rang abans de mesurar._
+
 #### Fase 5 · Comprovem i reflexionem
 
 **Comprovació:** el programa registra dades del sensor en un gràfic; l’equip interpreta els valors, calcula Ep amb unitats i explica com intervenen massa i altura. Feu una autoavaluació amb els mateixos tres nivells de la unitat i una revisió entre parelles: «Quina dada sosté el càlcul?» i «Quin límit cal explicar?». **Evidència:** codi o blocs, gràfica, taula de nou proves de distància/regla, càlcul amb masses conegudes i nota sobre incertesa. Exportar CSV és opcional. No afirmem haver mesurat un salt humà ni un valor energètic exacte.

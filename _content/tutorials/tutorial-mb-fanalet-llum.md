@@ -11,6 +11,8 @@ image: _assets/tutorials/mb-fanalet-llum.png
 
 ![Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum.](_assets/imatges/microbit-fanalet.webp)
 
+Construeix un fanalet que responga a la llum ambiental i ajusta el llindar amb proves en espais diferents. La matriu LED de micro:bit pot funcionar alhora com a eixida visual i com a sensor de llum.
+
 - Entendre que la matriu LED també pot llegir la llum ambiental.
 - Utilitzar una lectura de sensor dins d’una condició i un bucle.
 - Ajustar un llindar a partir de proves en diferents espais.
@@ -62,8 +64,7 @@ La lectura va de 0 (molt fosc) a 255 (molt clar). L’algoritme revisa contínua
 Facilita un projecte inicial amb el bucle preparat i deixa que cada parella trie la icona o el llindar. Com a extensió, recolliu cinc lectures per espai i compareu-les; manteniu la placa en la mateixa orientació per fer una comparació més justa.
 
 ## ✅ Evidències d’aprenentatge
-
-Guardeu el projecte MakeCode, la taula de lectures i una explicació del llindar final. La placa només mostra llum en la seua matriu; no és una llum potent per il·luminar una habitació.
+- Guardeu el projecte MakeCode, la taula de lectures i una explicació del llindar final. La placa només mostra llum en la seua matriu; no és una llum potent per il·luminar una habitació.
 
 ## 🔗 Fonts oficials i límits
 

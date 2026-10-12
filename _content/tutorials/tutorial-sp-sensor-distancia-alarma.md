@@ -12,6 +12,10 @@ image: _assets/tutorials/sp-sensor-distancia-alarma.webp
 
 Construïu una base mòbil que s’acoste a un obstacle, s’ature mantenint un espai segur i emeta un senyal curt. Compareu la lectura real del sensor d’ultrasons amb la parada calculada per voltes de roda, i feu un gir controlat amb el giroscopi del Hub. La distància de sensor i l’estimació de moviment són mesures diferents.
 
+- Calibrar les lectures del sensor d’ultrasons a distàncies conegudes.
+- Comparar una parada basada en sensor amb una distància estimada per voltes de roda.
+- Mesurar un gir aproximat i comunicar l’estat amb un so del Hub.
+
 ## 🧰 Materials i preparació
 
 - Hub SPIKE Prime carregat, dos motors angulars i una base de conducció estable.
@@ -67,8 +71,7 @@ Prepareu una matriu amb distància inicial, distància llegida, llindar, espai f
 Useu velocitat baixa, un obstacle tou i una zona de prova delimitada. Manteniu el botó d’aturada accessible i no confieu en el sensor com a sistema de protecció. Oferiu taula de dades o simulador si una persona prefereix no conduir el robot; el senyal LED ha d’oferir la mateixa informació que el so.
 
 ## ✅ Evidències d’aprenentatge
-
-Guardeu el programa, l’esquema dels ports, la taula de lectures repetides i els resultats de distància i angle. En la conclusió, separeu la mesura ultrasònica, l’estimació basada en les rodes i l’aturada per contacte; expliqueu toleràncies i condicions de prova.
+- Guardeu el programa, l’esquema dels ports, la taula de lectures repetides i els resultats de distància i angle. En la conclusió, separeu la mesura ultrasònica, l’estimació basada en les rodes i l’aturada per contacte; expliqueu toleràncies i condicions de prova.
 
 ## 🔗 Fonts oficials i límits
 

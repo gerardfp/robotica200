@@ -107,7 +107,7 @@ Corregiu una sola cosa i repetiu des del mateix punt. Expliqueu quina ruta era m
 
 ## Conducció de les sessions
 
-La lliçó pública de Matatalab organitza aproximadament 10 minuts de presentació guiada, 30 de pràctica en parelles i 5 de retorn. Aquesta adaptació la distribueix en tres trobades breus per poder construir el mapa, fer cinc intents amb calma i revisar els errors sense pressa. Si es disposa d'una sessió llarga, es pot mantindre la mateixa seqüència amb una pausa entre la pràctica guiada i els intents autònoms.
+La pàgina pública de Matatalab descriu l’objectiu de preparar un mapa propi i completar-hi una tasca amb ordres cap avant, però no mostra al text consultable la durada ni el detall del flux docent. Aquesta adaptació distribueix el repte propi en tres trobades per poder construir el mapa, fer cinc intents amb calma i revisar els errors; aquesta temporalització no s’atribueix al fabricant. La pàgina enumera un PDF i una presentació adjunts, però el seu contingut no s’ha pogut llegir en aquesta auditoria.
 
 En la primera trobada, modeleu només una ruta, amb l'inici i l'orientació assenyalats. En la segona, doneu temps per a les cinc metes: abans de cada prova, l'equip anuncia files/columnes, recompte de caselles i nombre d'ordres; després, un company verifica els indicadors de codificació del robot. En la tercera, compareu les seqüències en una tira comuna i trieu-ne una per depurar. No reprogramar la ruta sencera quan una ordre falla ajuda a mantindre el focus en el pas que cal revisar.
 
@@ -123,4 +123,4 @@ Reduïu la graella a poques caselles, marqueu el nord del recorregut o oferiu fl
 
 ## 🔗 Lliçó oficial i adaptació
 
-Adapta la segona lliçó del primer nivell de Tale-Bot Pro, [«On són els animals de la granja?»](https://matatalab.com/zh-hans/node/829). La pàgina i el PDF adjunt especifiquen introducció a animals, recompte de files i columnes, marca d’inici orientada, metes identificades al mapa, seqüències amb ordres cap avant, comprovació per indicadors lluminosos, recollida de cinc animals i comparació de quina ruta en requereix més o menys. La fitxa pròpia conserva aquests aprenentatges i els trasllada a una quadrícula i targetes originals; no reutilitza la presentació, el full de treball, les imatges ni el mapa del fabricant.
+Adapta la segona lliçó del primer nivell de Tale-Bot Pro, [«On són els animals de la granja?»](https://matatalab.com/zh-hans/node/829). La pàgina pública fixa l’objectiu d’inventar una tasca en un mapa i resoldre-la amb ordres cap avant; també enumera robot, mapa en blanc, targetes de comandament, adhesius i full d’activitat. La fitxa pròpia amplia aquest punt de partida amb files i columnes, inici orientat, cinc metes d’animals, comprovació dels indicadors i comparació de rutes. Són decisions de disseny local, no detalls que atribuïm al PDF o a la presentació adjunts, perquè no s’han pogut consultar. No reutilitza els seus materials gràfics.

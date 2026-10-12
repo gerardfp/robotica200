@@ -37,115 +37,115 @@ Cada lliçó oficial dura 30–45 minuts; les sessions següents reserven també
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+**Activació (5 min):** què vol dir que tot l’equip avance cap a un objectiu compartit? Parleu de responsabilitats, torns i ajuda entre iguals. Formeu equips de 2–3 persones i anoteu una predicció: quines decisions faran que la pinça puga passar una peça amb seguretat? Trieu una persona coordinadora per a la primera ronda; el rol canviarà en cada repte.
 
 #### Fase 2 · Explorem i construïm
 
-**Activació (5 min):** què vol dir que tot l’equip avance cap a un objectiu compartit? Formeu un nombre parell d’equips de 2–3 persones i trieu qui coordina la primera prova. Durant 5 minuts, munteu i proveu una pinça pròpia amb peces SPIKE i sis fitxes grans de mostra, treballant cap a un objectiu compartit. Després feu tres reptes més i canvieu qui coordina abans de cadascun: (1) cada membre trasllada d’una en una les sis fitxes entre dues safates; (2) disposeu de 3 minuts per apilar peces grans per torns; si cau la torre, qui ha col·locat l’última peça explica què ha observat i coordina una reconstrucció amb ajuda de l’equip, sense penalització personal; (3) emparelleu equips: una pinça passa una fitxa a l’altre equip a mig camí i la segona pinça la duu fins a la safata final. El hub pot obrir/tancar la pinça amb els botons esquerre/dret; com a extensió, feu servir la inclinació o un sensor de força. Per facilitar-ho, reduïu el nombre de reptes o doneu a la persona coordinadora 1–2 minuts previs per ordenar les instruccions i proporcioneu una pauta clara. Com a ampliació, afegiu requisits com moure la fitxa blava al final, col·locar una peça roja al fons de la torre o treballar només amb una mà; observeu com canvien la planificació i l’ajuda entre iguals. **Registre:** passades, caigudes i temps per ronda. Registreu que cada membre ha tingut un torn i una responsabilitat identificable. Tanqueu amb retorn entre iguals i autoavaluació: hem treballat cap a una meta comuna? Hem ajudat cada persona a contribuir i assolir un repte?
+**Exploració (10 min):** construïu una mà robòtica amb el motor i les peces SPIKE Prime disponibles; podeu consultar les instruccions oficials de l’app o fer un prototip propi segur. Prepareu sis maons lleugers i grans per a moure’ls, i proveu que el mecanisme obri i tanque la pinça. El control base pot usar els botons esquerre i dret del hub. La inclinació o el sensor de força són extensions, no requisits. Si el mecanisme no subjecta bé, ajusteu una sola peça i torneu a provar abans d’iniciar els reptes.
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+**Reptes 2 i 3 (15 min):** en el primer, cada membre fa un torn per traslladar d’un en un els sis maons del punt A al punt B amb la mà robòtica; canvieu la persona coordinadora i anoteu el nombre de passades completades i les peces caigudes. Després, durant tres minuts, apileu els maons d’un en un per torns i observeu quina altura aconseguiu. Si cau la torre, la persona que acaba de jugar explica què ha observat i l’equip planifica la reconstrucció; no hi ha penalització individual. Registreu el temps i l’altura de la torre per ronda, i assegureu-vos que cada persona tinga un torn i una responsabilitat.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+**Repte 4 (10 min):** ajunteu dos equips i trieu una nova persona coordinadora. L’equip A passa un maó amb la pinça a una persona de l’altre equip en un punt intermedi; l’equip B el rep amb la seua pinça i el porta a la safata final. Feu torns perquè totes les persones participen. Proveu una sola variació de disseny o instrucció i repetiu el relleu en condicions comparables; anoteu què ha canviat. Com a ampliació, afegiu una regla acordada —per exemple, passar primer el maó blau— o una limitació de moviment accessible; no convertiu les rondes en una competició de velocitat.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Avaluació i retorn (5 min):** compareu les prediccions amb les dades de cada repte. Feu un recompte o una comparació de temps agregats per ronda; si hi ha diverses repeticions, calculeu-ne la mitjana, sense publicar classificacions d’equips ni atribuir errors a una persona. Cada alumne tria una targeta d’autoavaluació: blava (hem resolt el repte junts), groga (hem animat totes les persones a participar) o violeta (hem ajudat tothom i ens hem proposat un repte nou). Una altra parella aporta un comentari concret i una proposta de millora. Expliqueu què ha fet més fiable el relleu i recolliu les peces.
 
 ### **Sessió 2 · Idees en temps limitat · [Ideas, the LEGO way!](https://education.lego.com/en-us/lessons/prime-extra-resources/ideas-the-lego-way/).**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+**Activació (5 min):** trieu una rutina del centre que es podria millorar, com preparar el material d’una eixida o deixar el taller a punt. Què costa fer-la? Qui hi participa? Abans d’idear solucions, anoteu una predicció sobre què ajuda a generar idees diverses. No partiu de la premissa que cal automatitzar la rutina.
 
 #### Fase 2 · Explorem i construïm
 
-**Repte propi:** millorar una rutina quotidiana del centre sense donar per fet que cal automatitzar-la (preparar material per a una eixida, organitzar l’esmorzar o deixar el taller a punt). Obriu amb 5 minuts de conversa sobre una rutina del centre que es podria millorar i què fa difícil aquesta tasca; no pressuposarem que automatitzar-la siga la millor solució. En la fase d’exploració (8 min), cada persona genera idees durant 3 minuts i després en dibuixa o construeix individualment una durant 5 minuts amb paper, llapis, tisores, cinta o peces LEGO. El hub SPIKE pot fer de compte arrere amb els programes de 3 i 5 minuts; un temporitzador extern o docent també és vàlid. En la fase d’explicació (10 min), compartiu les idees en equip durant 5 minuts i dediqueu-ne 5 a triar-ne una amb criteris acordats: necessitat concreta, persona beneficiària, facilitat d’ús i manera de comprovar-la. En la fase d’elaboració (15 min), construïu durant 5 minuts una maqueta conceptual —no cal que funcione— i useu el temps restant per preparar un vídeo explicatiu, una presentació oral o un document creatiu individual que descriga la millor idea de cada persona; reserveu també temps de recollida. **Avaluació:** comprovem si cada persona ha generat diverses idees, ha usat eines per expressar-les, ha participat en la selecció amb criteris i pot explicar la proposta a altres. Feu autoavaluació individual i feedback constructiu entre iguals. Per simplificar, limiteu la conversa a una tasca concreta, treballeu com a classe sencera per controlar els temps o useu un rellotge extern en lloc del hub; com a ampliació, feu una posada en comú general o repetiu una segona sessió un altre dia per comparar com han evolucionat les idees. No es puntua la quantitat de peces ni s’exigeix una solució robòtica.
+**Ideació individual (8 min):** feu servir el compte arrere del hub SPIKE o un temporitzador extern. Durant els primers 3 minuts, cada persona anota tantes idees com puga per a la necessitat triada, sense valorar-les encara. Dediqueu els 5 minuts següents a dibuixar o construir individualment una idea amb paper, llapis, tisores, cinta o peces LEGO. La maqueta pot ser esquemàtica; no s’espera que funcione.
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+**Compartim i seleccionem (10 min):** durant 5 minuts, cada persona explica la seua idea a l’equip. Durant els 5 minuts següents, trieu-ne una amb criteris explícits: respon a una necessitat concreta, identifica qui se’n beneficiaria, es pot entendre i té una manera raonable de comprovar-la. Registreu les alternatives que no s’han triat i el motiu de la decisió; la selecció no és un judici sobre qui ha tingut la millor idea.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+**Prototip conceptual (15 min):** dediqueu 5 minuts a construir en equip una maqueta ràpida de la idea triada. Pot combinar maons LEGO amb cartó o paper i no necessita ser funcional: ha de comunicar el principi. En el temps restant, prepareu un vídeo breu, una presentació oral o un document visual que explique la necessitat, la idea i com es podria comprovar. Reserveu temps per recollir els materials. Si el centre ho prefereix, cada persona pot descriure també per escrit la seua idea individual.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Avaluació i reflexió:** comproveu si cada persona ha generat diverses idees, ha utilitzat un mitjà per expressar-ne una, ha participat en la selecció amb criteris i pot descriure la proposta a altres. Feu autoavaluació individual i demaneu a una altra parella un comentari constructiu. Per facilitar-ho, centreu-vos en una tasca concreta, treballeu com a grup-classe o substituïu el temporitzador del hub per un rellotge extern. Com a ampliació, feu una posada en comú general o repetiu l’activitat un altre dia i compareu com han canviat les idees. No puntueu la quantitat de peces ni exigiu una solució robòtica.
 
 ### **Sessió 3 · Inventem una cosa i n’expliquem l’ús · [What is this?](https://education.lego.com/en-us/lessons/prime-extra-resources/what-is-this/).**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+**Activació (3 min):** parleu de com comuniquem una idea i distingim una afirmació d’una prova: què és un argument? Quina evidència podria convéncer una altra persona? Anoteu què espereu descobrir quan observeu un mecanisme sense conéixer-ne l’ús.
 
 #### Fase 2 · Explorem i construïm
 
-**Seqüència (3 + 12 + 10 + 15 min):** obriu amb preguntes sobre què fa que una explicació siga convincent i com distingim una prova d’una afirmació. En parelles, observeu i proveu una maqueta pròpia amb un motor que gire un element d’un costat a l’altre, però sense revelar-ne la funció. Inventeu un ús útil per a una persona o un espai del centre; definiu nom, usuari, necessitat, acció, benefici i límit, i modifiqueu mecanisme o programa perquè es puga comunicar millor. Per exemple, podria mostrar per torn etiquetes d’una exposició. Una segona parella ha d’inferir la funció a partir d’una demostració i una presentació d’un minut, sense pistes: després pregunteu quina característica n’ha servit de prova i quin detall convé millorar. Com a entrada opcional, el sensor de força pot iniciar/aturar el mecanisme i el de distància detectar acostament. Per simplificar, centreu la sessió en un àmbit concret (per exemple, el pati o una joguina) i doneu al grup una targeta que ajude a definir l’usuari. Com a ampliació, cada equip incorpora almenys un sensor al model final, o repetiu la sessió un altre dia amb la consigna de no reutilitzar cap idea de la primera volta. També podeu organitzar una fira escolar del prototip o un intercanvi de rols «equip emprenedor / equip patrocinador», sempre demanant que les afirmacions es recolzen en les proves. **Evidència:** diagrama entrada–acció–propòsit, primera i segona explicació i retorn rebut; valoreu si l’alumnat descriu la funció, relaciona les característiques amb la necessitat i defensa una afirmació amb proves, no que el concepte siga un producte fabricable. Feu una autoavaluació breu i un comentari constructiu entre equips.
+**Exploració (12 min):** en parelles, construïu i executeu el mecanisme motoritzat que LEGO proposa: un element gira d’un costat a l’altre. Observeu-ne el moviment abans de posar-li nom o explicar-ne l’ús. Anoteu què podeu afirmar a partir de l’observació i què encara és només una hipòtesi. No cal que el prototip tinga un acabat final.
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+**Definim i modifiquem (10 min):** inventeu un ús útil per a una persona o un espai del centre. Especifiqueu usuari, necessitat, acció, benefici i límit. Per exemple, el mecanisme podria mostrar per torn etiquetes d’una exposició escolar. Modifiqueu el model o el programa perquè responga al propòsit i dibuixeu un diagrama d’entrada–acció–propòsit. Si el model ho permet, podeu afegir un sensor de força per iniciar o parar el moviment, o un sensor de distància per detectar acostament; registreu què canvia i no presenteu aquests sensors com a obligatoris.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+**Fira de prototips (15 min):** cada equip presenta la seua versió i explica per què podria ser útil. Una altra parella observa una demostració d’un minut i intenta inferir-ne la funció sense pistes; després, qui ha dissenyat el model mostra quina característica sosté la seua afirmació. Recolliu una pregunta i un suggeriment concret, feu una modificació si és viable i reserveu temps per a recollir les peces. L’audiència avalua la claredat de l’explicació, no si el prototip és un producte fabricable.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Avaluació i reflexió:** observeu si cada equip descriu la funció, relaciona les característiques amb la necessitat d’una persona i defensa les afirmacions amb proves. Cada alumne tria una targeta: blava (puc descriure com funciona), groga (puc explicar-ne el funcionament i què resol bé) o violeta (puc convéncer amb arguments i evidències). Una altra parella dona retorn constructiu. Per facilitar la ideació, limiteu la sessió a un àmbit com el pati o una joguina i oferiu una targeta de necessitats. Com a ampliació, repetiu-la un altre dia sense reutilitzar idees, exigiu un sensor al prototip final si hi ha temps, o feu una fira escolar amb rols alterns d’equip emprenedor i equip patrocinador.
 
 ### **Sessió 4 · Estimar, calcular i parar · [Going the Distance](https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/).**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+**Activació (3 min):** quan apreneu a utilitzar un objecte nou, llegiu el manual, consulteu una guia ràpida o proveu fins a entendre’l? Predigueu què haureu de mesurar per a aturar una base mòbil prop d’una peça sense tocar-la.
 
 #### Fase 2 · Explorem i construïm
 
-**Seqüència (3 + 12 + 10 + 15 min):** activeu preguntant com aprendríeu a usar un objecte: manual, guia ràpida o prova i error. Munteu en parelles una base de conducció pròpia; podeu repartir bastidor i frontal en dues parts i unir-les després. Per estalviar temps, feu els dos reptes calculats només amb la base i afegiu el frontal amb el sensor de força per a la prova final. Poseu el robot a un metre d’una fitxa dreta i programeu-lo perquè avance fins a quedar-ne tan a prop com puga sense tocar-la. Mesureu la circumferència de la roda i estimeu les rotacions; per a les rodes LEGO Rhino de diàmetre 5,6 cm, una volta equival aproximadament a 17,6 cm, però mesureu les rodes de la vostra base perquè l’estructura pot variar. Registreu càlcul, programa i error. Reutilitzeu el càlcul per resoldre un segon objectiu: una distància total de 120 cm des de l’eixida, amb una única prova. Expliqueu per què les rotacions són més transferibles que els segons quan canvia la velocitat. Finalment, afegiu un sensor de força al davant de la base i programeu que els motors paren quan toque suaument una paret de cartó ampla: compareu control calculat i retroacció del sensor. El sensor de força inclòs al set SPIKE Prime és el necessari per a aquesta prova (no el confongueu amb el sensor de distància); si el centre no el té disponible, anoteu una activació manual com a alternativa adaptada, no com un equivalent al sensor. **Matemàtiques i diferenciació:** feu una taula de voltes i distàncies. Per a la roda Rhino oficial (diàmetre 5,6 cm), cinc voltes són uns 88 cm; mesureu la roda real de la base, comenceu amb voltes senceres i programeu per rotacions o graus, no per segons. Com a extensió, compareu velocitats del 75% i del 25%, o proveu rodes més menudes. Predigueu també quantes voltes calen per a 2,5 m, 400 cm i 3500 mm, justificant les conversions. L’avaluació comprova si l’equip usa les observacions per a millorar el programa, segueix un mètode sistemàtic i aplica el càlcul d’un metre al repte nou d’una sola prova; cada alumne explica i defensa el mètode amb arguments. No col·loqueu les mans en la trajectòria.
+**Construcció i primera prova (12 min):** munteu en parelles el model Rhino de l’app o, si no teniu accés a les instruccions, una base de conducció pròpia. Es pot dividir el muntatge en cos i cap; per a estalviar temps, utilitzeu només la base en els reptes calculats. Situeu-la a un metre d’un maó LEGO dret i programeu-la perquè avance i s’ature tan prop com puga sense tocar-lo. Mesureu la circumferència de les rodes: en el Rhino oficial, el diàmetre és 5,6 cm i cada rotació recorre 17,6 cm; si heu fet una base diferent, mesureu les seues rodes i feu els càlculs amb el valor real. Anoteu la predicció, els valors de programació, la distància final i l’error per a reutilitzar les dades.
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+**Compare i transferència (10 min):** compareu com cada parella ha calculat el recorregut d’un metre i expliqueu quin procediment s’ajusta millor a les observacions. A partir de les dades anteriors, calculeu els valors per a desplaçar-vos 120 cm des de l’eixida. Feu **un únic intent** d’aquesta segona prova: abans d’executar, registreu el càlcul i la predicció; després, mesureu el resultat i compareu-lo amb l’esperat. Preferiu rotacions o graus a segons, perquè el temps de recorregut canvia quan varia la potència del motor.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+**Parada amb sensor (15 min):** afegiu el cap i el sensor de força al frontal. Programeu els motors perquè s’aturen quan el sensor contacte suaument amb una paret ampla de maons. Compareu aquesta parada per contacte amb l’aturada calculada per rotacions: què detecta cada mètode i quina incertesa conserva? No confongueu el sensor de força amb el de distància. Si no teniu disponible el sensor, registreu una activació manual com a alternativa didàctica, però no la presenteu com una prova equivalent del sensor. Recolliu les peces i manteniu les mans fora del recorregut mentre la base es mou.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Avaluació, extensió i retorn:** valoreu si l’equip ha usat les observacions per millorar el resultat, ha seguit un mètode sistemàtic i ha transferit el càlcul a una distància nova. Autoavaluació amb targetes: blava (he estimat), groga (he estimat i calculat) o violeta (he trobat una solució precisa i pròpia); una altra parella ofereix retorn constructiu. Com a extensió matemàtica, feu una taula de rotacions i distàncies i estimeu les voltes per a 2,5 m, 400 cm i 3500 mm. També podeu comparar una potència del 25% amb una del 75% o provar rodes més menudes, canviant una sola variable cada vegada. Expliqueu el mètode triat al grup; les dades proven el comportament d’aquesta base i aquestes condicions, no una precisió universal.
 
 ### **Sessió 5 · Creem un joc de taula cooperatiu · [Goal!](https://education.lego.com/en-us/lessons/prime-extra-resources/goal/).**
 
 #### Fase 1 · Activem i prediem
 
-Llegiu el repte de la sessió i acordeu què espereu que passe. Anoteu una predicció abans de començar.
+**Activació (5 min):** acordeu una meta comuna per al joc de taula i descriviu què vol dir col·laborar. Diferencieu-ho del treball en equip dirigit per una única persona: ací totes les persones proposen i decideixen juntes. Definiu rols temporals (muntar, provar, registrar o observar la seguretat), com sereu honestos quan hi haja una errada i com rotareu perquè totes les idees puguen entrar en el repte.
 
 #### Fase 2 · Explorem i construïm
 
-**Seqüència (5 + 10 + 10 + 15 min):** acordeu un objectiu comú, assigneu rols concrets (control del mecanisme, registre/puntuació i observació de la seguretat; en parelles, es poden combinar i després alternar) i decidiu com donar resposta honesta als errors. Distingiu el treball en equip amb una persona coordinadora de la col·laboració entre iguals, on tothom comparteix decisions i idees. En parelles, munteu un mecanisme propi per impulsar una fitxa lleugera i proveu el programa. Feu el repte de referència: anoteu quants gols podeu marcar en un minut. Després cada equip dissenya un repte nou incorporant idees de totes les persones i convida un altre equip a jugar-lo: dibuixeu la pista, les regles, la puntuació i com es reinicia. Repartiu els rols també en l’equip visitant i recolliu-ne retorn; en una segona ronda, barregeu els equips perquè apliquen els suggeriments rebuts. Es pot afegir un segon disc, obstacles lleugers, zones de punts de colors o un sensor de força com a accionador; adapteu el joc perquè siga segur per a totes les persones. **Extensió matemàtica:** manteniu el mateix disc i camp, feu proves a diversos nivells de potència del motor i mesureu sempre des del mateix punt la distància recorreguda; representeu-ne la relació en una gràfica. Registreu per separat el nombre de tirs, tirs a porteria, gols i passades encertades, i calculeu estadístiques senzilles per comparar partides. **Evidència:** reglament il·lustrat, rols assumits, dades del minut inicial i del repte propi, explicació de com s’han combinat les idees del grup, comentaris de l’equip visitant i una millora provada en la segona ronda. Puntuar més no substitueix col·laborar ni fer un joc comprensible i segur.
+**Construcció i exploració (10 min):** en parelles, munteu un mecanisme de taula que impulse un disc lleuger i proveu el programa abans de jugar. Delimiteu una pista curta, estable i buida al voltant; no apunteu cap mecanisme ni peça a les persones. Repartiu el control, la preparació del camp i l’observació, però preneu les decisions de disseny conjuntament.
 
 #### Fase 3 · Expliquem i registrem
 
-Feu explícit el procediment: registreu la seqüència, les decisions i el resultat perquè una altra parella puga entendre què heu provat.
+**Repte de referència (10 min):** cada equip disposa d’un minut per marcar tants gols com puga en la porteria de maqueta. Registreu el resultat i una dada de col·laboració observable: com s’han repartit els torns, quines decisions han pres juntes i com han respost a una fallada. Si compareu equips, feu-ho per millorar la regla o el prototip; no publiqueu una classificació de persones.
 
 #### Fase 4 · Apliquem i millorem
 
-Trieu una sola decisió o instrucció per revisar, repetiu la prova en condicions comparables i anoteu què ha canviat.
+**Dissenyem i compartim (15 min):** cada equip crea un repte propi amb regles escrites i il·lustrades: dibuixeu el camp, la porteria, el sistema de puntuació i com es reinicia la ronda. Combineu idees de totes les persones i proveu el joc amb un altre equip; després canvieu els equips o els rols, recolliu suggeriments i feu una millora. Si el kit ho permet, podeu afegir un segon disc, un obstacle de cartó, una zona de punts o un sensor de força que inicie cada colp del mecanisme. L’obstacle o la porteria poden ser una silueta de paper; no cal minifigura ni accessori no confirmat. Manteniu les peces lleugeres i el mecanisme orientat cap a la pista.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Compareu el resultat amb la predicció i expliqueu què heu aprés, quina evidència ho sosté i quin límit conserva la conclusió.
+**Avaluació, dades i reflexió:** valoreu si l’equip ha col·laborat durant tota la sessió, ha aclarit els rols i ha integrat les idees de totes les persones. Autoavaluació amb targetes: blava (hem col·laborat en el repte), groga (hem creat un repte original) o violeta (hem combinat les idees del grup en una nova regla); una altra parella dona retorn constructiu. Com a extensió matemàtica, manteniu el mateix disc i camp, proveu diferents potències i representeu la relació entre potència i distància. Registreu per separat tirs, tirs a porteria, gols i passades encertades, i resumiu les dades amb estadístiques senzilles. Expliqueu què es pot concloure d’aquestes proves i què no es pot generalitzar a altres mecanismes o camps.
 
 ## 🧰 Materials i preparació
 
-Set SPIKE Prime amb hub, motor gran i motor mitjà, sensor de força per al repte de parada, peces per a una pinça i un accessori propulsor, cinta de paper o cartó, regla o cinta mètrica, safates, sis fitxes grans lleugeres, targetes i cronòmetre (pot ser un temporitzador del hub). Per a prototips conceptuals, paper i llapis. El sensor de distància és una extensió possible a la sessió 3, no un requisit de l’adaptació. La base Rhino LEGO no és necessària: munteu una base escolar estable que puga avançar i aturar-se. Delimiteu la pista i comproveu el mecanisme amb velocitat baixa abans de començar.
+Set SPIKE Prime amb hub, motors, sensor de força (necessari en la prova de la sessió 4, opcional com a ampliació en les sessions 1 i 5), peces per a una pinça i un mecanisme propulsor, un disc gran i lleuger, maons de LEGO, cinta de paper o cartó, regla o cinta mètrica, safates, sis fitxes lleugeres, targetes i cronòmetre (pot ser el temporitzador del hub). Per als prototips conceptuals, paper i llapis. El sensor de distància és una extensió possible a la sessió 3, no un requisit. El model Rhino no és necessari: munteu una base escolar estable que puga avançar i aturar-se. Delimiteu la pista i comproveu els mecanismes a baixa velocitat abans de començar.
 
 ## 🧪 Evidències i avaluació
 

@@ -10,6 +10,8 @@ image: _assets/tutorials/cr-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
+Dona vida a una expressió de Codey i fes que responga a una acció de l’alumnat. La primera pràctica connecta el dispositiu, la matriu de 16 × 8 LEDs i els botons amb un programa que es pot provar i ajustar.
+
 - Connectar el dispositiu per cable USB o Bluetooth a mBlock 5.
 - Dibuixar a la graella de píxels de 16x8 de la pantalla.
 - Gestionar esdeveniments bàsics: 'Quan es prem el botó A'.
@@ -23,13 +25,14 @@ image: _assets/tutorials/cr-primeres-passes.png
 ## 🧩 Funcions del robot treballades
 
 - Connexió a mBlock 5, pantalla LED 16 × 8 i botons programables A/B.
+- Lectura del nivell de bateria disponible a mBlock per comprovar l’estat d’alimentació abans d’una prova.
 - Execució en viu i càrrega de codi segons la connexió triada.
 
 ## 👣 Seqüència guiada
 
 ### 1. Afegir el dispositiu
 
-A mBlock 5, fes clic a 'Dispositius' → 'Afegir' i selecciona 'Codey'. Prem 'Connectar'.
+A mBlock 5, fes clic a 'Dispositius' → 'Afegir' i selecciona 'Codey'. Prem 'Connectar'. Si la versió ofereix el bloc de nivell de bateria, mostra la lectura a la pantalla i registra-la abans de començar; així podeu distingir un programa que no s’executa d’un robot que necessita càrrega.
 
 ### 2. Dibuixar una cara somrient
 
@@ -49,16 +52,15 @@ Dibuixa una expressió de cinc píxels a la matriu i lliga una segona expressió
 
 - Quina acció comença el programa?
 - La cara es mostra durant el temps esperat?
-- Quina prova faríeu a continuació per comprovar-ho?
+- Quina icona apareix en iniciar i quina apareix en prémer el botó assignat?
 
 ## ♿ Accessibilitat i seguretat
 
 Proporciona una plantilla de 16 × 8 i deixa triar símbol, seqüència o missatge a cada equip.
 
 ## ✅ Evidències d’aprenentatge
-
-El programa de l'alumne, una predicció abans de prémer el botó i el resultat observat. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- El programa de l'alumne, una predicció abans de prémer el botó i el resultat observat. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 
-Makeblock · Codey Rocky · [https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+Makeblock · Codey Rocky · [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) i [Display the battery level](https://support.makeblock.com/hc/en-us/articles/7462863296535-Case-7-Display-the-battery-level). La lectura depén del bloc disponible en la versió de mBlock instal·lada.

@@ -69,7 +69,6 @@ Feu tres proves i registreu per a cadascuna el tipus d’inici, la manera d’at
 Assigneu rols rotatius: muntar la via, comprovar unions, donar la instrucció d’inici i registrar el resultat. Qui no vulga tocar el tren pot predir el recorregut, assenyalar pictogrames o fer el registre. Feu servir una ruta curta, manteniu-la lluny de vores i cabells, i atureu el tren abans de moure vies o maons.
 
 ## ✅ Evidències d’aprenentatge
-
 - Dibuix del recorregut amb inici, destinació i punt d’aturada.
 - Registre de tres proves que indique com s’ha iniciat i aturat el tren.
 - Explicació oral, escrita o amb pictogrames de la diferència entre Push & Go i una ordre de programa digital.

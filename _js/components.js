@@ -300,7 +300,8 @@
           const guideBack = {
             'pensament-computacional': [`${root}pensament-computacional/index.html`, 'Activitats de pensament computacional', 'pensament'],
             'robotica-educativa': [`${root}robotica-educativa/index.html`, 'Catàleg de robòtica', 'robots'],
-            'situacions-aprenentatge': [`${root}situacions-aprenentatge/index.html`, "Situacions d'aprenentatge", 'situacions']
+            'situacions-aprenentatge': [`${root}situacions-aprenentatge/index.html`, "Situacions d'aprenentatge", 'situacions'],
+            'fira-descobertes': [`${root}situacions-aprenentatge/index.html`, "Situacions d'aprenentatge", 'situacions']
           }[safeId] || [`${root}index.html`, 'Inici', 'inici'];
           const backTarget = kind === 'activity' ? `${root}pensament-computacional/index.html`
             : kind === 'tutorial' ? `${root}robot/index.html?id=${data.robot || safeId.split('-')[0]}`

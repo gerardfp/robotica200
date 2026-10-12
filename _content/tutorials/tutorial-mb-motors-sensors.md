@@ -11,6 +11,8 @@ image: _assets/tutorials/mb-motors-sensors.png
 
 ## 🎯 Repte i objectius
 
+Connecta una entrada externa a la micro:bit i transforma les lectures en una resposta visible. La prova compara un senyal digital amb una lectura analògica i deixa clar què mesura la placa i què correspon al circuit afegit.
+
 - Diferenciar senyals digitals (0 o 1) de senyals analògics continus (0 a 1023).
 - Connectar un sensor resistiu casolà amb 2 claus a P0 i GND.
 - Controlar l'angle d'un servomotor de 0 a 180 graus des del pin P1.
@@ -58,8 +60,7 @@ La placa micro:bit no és per si sola una font adequada per alimentar qualsevol 
 Simula primer l'entrada de la humitat amb nombres en pantalla. Reserva la connexió del motor per a grups que segueixin l'esquema de la placa auxiliar del centre.
 
 ## ✅ Evidències d’aprenentatge
-
-L'esquema etiquetat, dues lectures repetides i una explicació de la relació entre lectura i moviment. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- L'esquema etiquetat, dues lectures repetides i una explicació de la relació entre lectura i moviment. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

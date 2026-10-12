@@ -36,7 +36,7 @@ Presenteu el Tale-Bot Pro del centre com una màquina que respon a instruccions.
 
 Amb un Tale-Bot apagat, observeu-ne el cos, les rodes, els botons i els indicadors lluminosos. Useu una maqueta o silueta de paper pròpia per assenyalar cada part i relacionar-la amb una funció que després comprovareu. Si el kit del centre els inclou, mostreu les ales i el suport per a dibuixar o construir; són peces de caracterització o accessoris, no parts que el robot puga moure de manera autònoma. Prepareu deu gots de paper lleugers com a fites per a una ruta, no com a obstacles per colpejar.
 
-![Tale-Bot Pro de la dotació al costat d’una silueta pròpia dels controls i d’una fila de gots lleugers per marcar una zona d’exploració.](../../_assets/imatges/sa-tb-coneguem-tale-bot.webp)
+![Tale-Bot Pro real amb targetes visuals de direcció, Play i mapa per a explorar el vocabulari de les seues funcions.](../../_assets/imatges/sa-tb-coneguem-tale-bot-v2.webp)
 
 _La silueta i els gots són recursos didàctics propis; el robot il·lustrat correspon al Tale-Bot Pro del kit._
 
@@ -106,19 +106,15 @@ Trieu tres pictogrames d’estació i decidiu un ordre de visita. Abans de moure
 
 #### Fase 2 · Explorem i construïm
 
-Preparem cinc estacions de taula amb pictogrames: una composició de colors per a la vista, un enregistrament ambiental triat pel docent per a l’oïda, retalls nets de tela per al tacte, una targeta de fruita per al gust i un pot tancat amb una herba culinària coneguda per a l’olfacte. No s’hi tasten aliments ni s’acosten recipients al nas; cada infant pot triar una estació alternativa de mirar o assenyalar. Abans de moure el robot, distingim què pot fer Tale-Bot —seguir ordres i marcar una parada— i què fan les persones —observar i descriure—. En equips, ordenem tres estacions, representem el recorregut amb targetes de moviment i comprovem la ruta sobre el mapa. A cada parada, l’observador tria un pictograma o una paraula per registrar una característica de l’objecte o del so, sense anotar gustos ni experiències personals. Després, canviem l’ordre de dues parades i comparem si la seqüència de moviments també canvia. Tanquem explicant quina instrucció ha indicat cada lloc i quina observació s’hi ha fet; la ruta del robot no és una mesura sensorial.
+Prepareu cinc estacions amb pictogrames: colors, un so ambiental suau triat pel docent, retalls nets de tela, una imatge de fruita i un recipient tancat amb una herba culinària coneguda. No tasteu aliments ni obriu ni acosteu recipients al nas. Qualsevol infant pot passar una estació o participar mirant i assenyalant. Trieu tres parades, ordeneu-les amb targetes i traceu la ruta sobre el mapa. Tale-Bot només indica el recorregut; les persones observen i descriuen.
 
 ![Tale-Bot Pro de la dotació al centre d'una ruta amb cinc estacions visuals: fulles de colors, ones sonores, retalls de tela, una targeta de fruita i un pot tancat amb herbes.](../../_assets/imatges/sa-tb-cinc-sentits.webp)
 
 _Les imatges indiquen llocs d'observació, no instruccions perquè el robot perceba sabors, olors, sons o textures._
 
-**Conducció de la parada (30 min):** reserveu 5 minuts per anticipar el recorregut i recordar les opcions de participació; 7 per seleccionar tres estacions i construir la seqüència amb targetes; 10 per provar la ruta i completar observacions breus per torns; 5 per intercanviar l’ordre de dues parades i depurar una instrucció; i 3 per compartir què ha indicat el robot i què han observat les persones. Amb un únic robot, la resta d’equips anticipen el programa en una graella de paper mentre esperen.
-
-**Evidència:** mapa amb inici orientat, seqüència de targetes abans i després de la prova, i tres registres pictogràfics o orals de característiques observades. Es pot demostrar l’aprenentatge assenyalant, dictant o movent peces; no cal tocar, olorar ni parlar davant del grup.
-
 #### Fase 3 · Expliquem i registrem
 
-Una persona narra les ordres i una altra registra cada parada amb un pictograma o una característica visible/descrita pel docent. Separeu en el full dues columnes: «què ha fet el robot» i «què hem observat nosaltres». No anoteu preferències, salut, noms ni experiències personals.
+En parella, repartiu els rols de programar i observar. En cada parada, registreu una característica amb pictograma o paraula i distingiu dues columnes: «què ha fet el robot» i «què hem observat nosaltres». No anoteu preferències, salut, noms ni experiències personals. Si només hi ha un robot, els altres equips planifiquen la ruta en paper mentre esperen torn.
 
 #### Fase 4 · Apliquem i millorem
 
@@ -220,73 +216,28 @@ Una altra parella continua el patró amb una peça tapada i programa una ruta qu
 
 **Evidència:** unitat del patró, continuació de la seqüència, ruta de visita i una correcció justificada. Expliqueu com heu sabut què faltava i distingiu entre seguir un patró i dibuixar-lo amb un accessori.
 
-## Intencions d'aprenentatge i criteris d'èxit
+**Ampliació inspirada en un estudi d’aula publicat per Matatalab:** prepareu una quadrícula pròpia amb triangles de paper repartits en diverses caselles. La parella programa Tale-Bot perquè visite les posicions acordades; són els infants qui recullen les fitxes i les compten, perquè el robot no les pot agafar ni reconéixer. Conteu-les en valencià i, si el grup ho tria, en una altra llengua. Amb les fitxes, construïu un avet de paper i expliqueu quina figura plana forma cada peça. Si el model del centre incorpora la targeta de micròfon, podeu enregistrar una frase fictícia breu i reproduir-la; també és vàlid narrar-la en directe o usar un pictograma. No graveu noms ni veus identificables sense autorització i esborreu els enregistraments en acabar.
 
-- Llegir una graella amb inici orientat, destí i llegenda, i descriure el recorregut amb ordres que una altra parella puga seguir.
+![Tale-Bot Pro de la dotació recorre un mapa de paper amb triangles; al costat, les fitxes formen un avet i una icona indica la narració opcional.](../../_assets/imatges/sa-tb-triangles-memoria.png)
 
-- Anticipar el resultat abans de prémer Play, registrar què ha passat i corregir una sola instrucció quan la ruta no coincideix.
+_L'itinerari només guia la visita: són les persones qui compten i arrepleguen les fitxes i munten la figura._
 
-- Usar els accessoris i funcions disponibles segons la tasca, distingint moviment del robot, dansa aleatòria, gravació i dibuix.
+## 🎯 Aprenentatges i criteris d’èxit
 
-- Comparar, comptar o crear patrons amb materials ficticis i explicar el criteri emprat.
-
-- Presentar una parada de la fira amb llenguatge, gest, pictograma o demostració, sense exposar dades personals.
-
-Una evidència d'èxit no és que la primera execució funcione: és que l'equip puga descriure una predicció, observar el resultat i justificar un canvi o explicar per què manté el programa. Per a Infantil, accepteu una resposta d'un pas; qui ja tinga pràctica pot comparar dues rutes o simplificar la seqüència.
-
-## Ritme i conducció de cada sessió
-
-Reserveu aproximadament 5 minuts per presentar la pregunta amb objectes o imatges, 5 per planificar amb una fitxa i targetes, 15 per executar i revisar, i 5 per explicar què s'ha descobert. Amb un únic Tale-Bot, un equip opera mentre els altres resolen una predicció en paper; canvieu l'equip de torn en cada sessió. Manteniu la seqüència curta i el temps d'espera suficient perquè la màquina no avance abans que les persones hagen fet una predicció.
-
-### **Escola:**
-
-els equips reben tres targetes de lloc i dos possibles punts d'inici. Marquen amb una fletxa cap a on mira el robot i comparen dues rutes cap a la biblioteca. Una parella externa prova les instruccions sense que l'autor les explique mentre el robot es mou.
-
-### **Funcions:**
-
-feu una taula de quatre columnes —botons de moviment, Play/Clear, dansa i dibuix/gravació— i indiqueu quin resultat s'espera i si requereix accessori. Proveu una funció cada vegada, esborreu el programa entre proves i descriviu una diferència observable; no suposeu que el robot interpreta ordres de veu.
-
-### **Cinc sentits:**
-
-useu pictogrames i pistes segures preparades pel docent. L'alumnat decideix quina informació pot observar a distància i quina podria resultar molesta; es pot passar qualsevol estació. No es tasten aliments, no s'oloren substàncies desconegudes i no es toca cap persona com a part del repte.
-
-### **Botiga:**
-
-creeu una targeta de comanda amb dos productes dibuixats, una ruta i una suma opcional de preus ficticis. Separeu el càlcul matemàtic del codi de moviment: el robot porta una fitxa, mentre el grup comprova en paper si els productes i la suma concorden amb la comanda.
-
-### **Recompte:**
-
-agrupeu les fruites de paper en conjunts visibles de dos o tres. Marqueu cada casella visitada perquè cap grup es compte dues vegades; compareu el total de la ruta amb una suma feta per una altra parella i reviseu la discrepància casella per casella.
-
-### **Formes:**
-
-comenceu en una quadrícula amb pocs vèrtexs i una fletxa d'inici. Una persona mou el robot, una altra assenyala el vèrtex següent i una tercera registra girs i trams. Uniu punts després de la ruta i compareu el dibuix amb la silueta objectiu sense exigir un traçat perfecte.
-
-### **Eruga artista:**
-
-construïu un patró de tres peces —per exemple cercle gran/cercle menut/cercle gran—, demaneu al grup que el continue i convertiu l'ordre de visita en una ruta. Amb retolador, proveu primer en un tros de paper recuperable; sense suport, retolador o full segur, useu targetes per representar el traç i manteniu intacte el mateix criteri de patró.
-
-## Diari de proves i mostra final
-
-Useu una única fitxa de registre per a totes les parades: pregunta, targetes o materials, inici i orientació, seqüència prevista, resultat, canvi provat i explicació final. Les fotografies opcionals han d'enquadrar només el mapa i el robot, sense cares, noms ni treballs identificables. Al final, cada parella guia un visitant per una ruta i li demana que la torne a explicar amb les seues paraules.
-
-La graella d'observació docent recull si l'infant identifica inici i meta, espera el torn, anticipa una ordre, interpreta una diferència entre predicció i resultat, usa un recompte o patró i comunica una decisió. Un mateix alumne pot demostrar-ho amb accions diferents en sessions diferents; no cal exigir totes les habilitats en cada parada. Tanqueu preguntant quina instrucció ha sigut més clara per a qui visitava la fira i quin material canviaria el grup en una nova versió.
-
-## 🎯 Aprenentatges i vocabulari
-
-- Explorar espais de l’escola amb instruccions de moviment i destinacions fictícies o autoritzades.
-- Usar recompte, formes, vocabulari i observació en reptes breus de la fira.
-- Crear una proposta artística o narrativa i presentar-la amb veu, pictogrames o demostració.
-- Provar les rutes i revisar-les perquè una altra classe puga seguir-les amb claredat.
+Llegir una graella, anticipar el resultat, provar una seqüència, comparar-la amb l’observació i justificar una correcció. Els criteris i les bastides per a diferents ritmes estan desenvolupats en la [guia docent complementària](../../guia/index.html?id=fira-descobertes).
 
 ## 🧰 Materials i preparació
 
-Tale-Bot Pro de la dotació, retolador rentable i suport de dibuix del kit base, mapa gran de paper o quadrícula al terra, targetes de fletxes, siluetes i fitxes reutilitzables, imatges de fruita/productes i llapis. Feu una prova del traç amb el robot abans de la sessió i utilitzeu un full prou gran, fixat a la taula. Si la unitat disponible no inclou el retolador o el suport, manteniu el repte com a recorregut de caselles i targetes, sense afegir accessoris no disponibles.
+Tale-Bot Pro de la dotació, mapes i targetes propis, fitxes reutilitzables i materials indicats en cada sessió. Comproveu els accessoris abans d’utilitzar-los; la [guia docent](../../guia/index.html?id=fira-descobertes) amplia la preparació i les alternatives.
 
-## ♿ Participació i evidències
+## 🧪 Avaluació i evidències
 
-Repartim els rols de planificació, programació amb targetes, conducció, recompte i explicació, i els fem rotar. La ruta es pot recórrer amb robot o amb una persona sobre una graella, i es pot respondre parlant, assenyalant pictogrames, movent peces o dictant una seqüència. Guardem la predicció, les targetes del programa, el registre de recompte i una breu explicació oral o visual de cada equip. No publiquem enregistraments de veu ni dades personals de l'alumnat.
+Cada sessió demana una predicció, un registre de la prova i una explicació o canvi justificat. La graella d’observació i el diari de proves es troben en la [guia docent complementària](../../guia/index.html?id=fira-descobertes).
+
+## ♿ Participació, accessibilitat i seguretat
+
+Les rutes es poden anticipar en paper i les respostes es poden donar oralment, amb pictogrames o manipulant targetes. Les opcions sensorials, la privacitat i les normes dels accessoris estan detallades en la [guia docent](../../guia/index.html?id=fira-descobertes).
 
 ## 🔗 Font oficial i abast
 
-La pàgina del [currículum Tale-Bot Pro](https://matatalab.com/zh-hans/tbp) descriu el nivell 1 com una progressió de 16 lliçons sobre ordres, programes, seqüències, descomposició i patrons. La pàgina oficial de la [lliçó 1, «Hola, robot Matata!»](https://matatalab.com/en/node/827) publica el focus (estructura, botons i ús pràctic), objectius (reconéixer parts i funcions, engegar/apagar correctament, distingir el robot de les persones, despertar curiositat i cuidar-lo) i materials (robot, maqueta de paper, ales, suport de dibuix/construcció, deu gots, cinta i full d’activitat). Aquesta sessió els adapta a una ruta de fites amb gots i targetes originals; no reutilitza el full, la presentació ni els gràfics oficials. La pàgina enllaça el pla complet, però el PDF adjunt no ha sigut consultable des del visor; per tant, es declara adaptació dels objectius i materials públics, no reproducció de cada pas del document. La llista pública del fabricant mostra títols addicionals en el seu [arxiu de lliçons](https://matatalab.com/zh-hans/node?page=11); els plans i adjunts complets de les lliçons 3–9 remeten a permisos de curs o no són consultables des de les pàgines verificades. Les set sessions següents adapten els temes visibles, però no s'afirma cobertura íntegra d'aquests materials docents. El fabricant també inclou al kit base un [Challenge Booklet amb 14 missions](https://shop.matatastudio.com/products/matatastudio-tale-bot-pro); el contingut de les missions encara no s'ha pogut consultar i no es considera adaptat en aquesta fitxa. Les 42 activitats de les [Activity Cards](https://matatalab.com/en/lesson4.4) ja tenen cobertura específica en les fitxes A–D del portal.
+La sessió inicial adapta els objectius públics de L1; els plans complets de L3–L9 no s’han pogut consultar i ací només s’adapten els seus temes visibles. L’ampliació dels triangles parteix d’un estudi d’aula italià publicat pel fabricant, no d’una lliçó numerada ni d’un pla docent complet. La proposta crea mapa, fitxes, seqüència i evidències pròpies, i delimita les accions humanes i l’ús opcional de veu. L’auditoria de fonts i les limitacions estan documentades en la [guia docent de la fira](../../guia/index.html?id=fira-descobertes).

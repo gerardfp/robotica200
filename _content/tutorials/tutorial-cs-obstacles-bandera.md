@@ -59,7 +59,7 @@ Poseu el robot a l’inici amb la mateixa orientació que al dibuix i executeu e
 
 ### 5. Depureu canviant una sola instrucció
 
-Compareu la ruta prevista amb la ruta real i canvieu només la primera fitxa que explique l’error. Torneu a executar i anoteu què ha canviat. Quan funcione, busqueu una segona ruta que arribe a la mateixa bandera amb una seqüència diferent i expliqueu quina és més fàcil de llegir.
+Compareu la ruta prevista amb la ruta real i canvieu només la primera fitxa que explique l’error. Torneu a executar i anoteu què ha canviat. Quan funcione, busqueu una segona ruta que arribe a la mateixa bandera amb una seqüència diferent i expliqueu quina és més fàcil de llegir. Si el centre té el Sensor Add-on, identifiqueu les seues peces «Obstacle/No Obstacle» i contrasteu-les amb les barreres del mapa: només el complement aporta eixes ordres de detecció; les barreres físiques del Coding Set base no són llegides pel robot.
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -79,8 +79,7 @@ Feu almenys tres execucions: una ruta inicial, una ruta corregida i una alternat
 Es pot fer la planificació amb una quadrícula gran, pictogrames o peces tàctils abans de transferir-la al tauler. Repartiu rols rotatius: cartògraf/a, programador/a, verificador/a i observador/a. Si manipular les peces menudes és difícil, una persona pot dictar la seqüència i una altra col·locar-la. Manteniu dits i cables fora del recorregut del robot; no forceu el moviment ni presenteu la ruta com una detecció automàtica d’obstacles.
 
 ## ✅ Evidències d’aprenentatge
-
-Deseu el mapa anotat, la seqüència de fitxes, el registre de les tres proves i una breu explicació de la correcció. La fotografia és opcional; enquadreu només el material i eviteu cares, noms i veus. L’evidència ha de deixar clar quines decisions ha pres l’alumnat i quines accions ha executat el robot.
+- Deseu el mapa anotat, la seqüència de fitxes, el registre de les tres proves i una breu explicació de la correcció. La fotografia és opcional; enquadreu només el material i eviteu cares, noms i veus. L’evidència ha de deixar clar quines decisions ha pres l’alumnat i quines accions ha executat el robot.
 
 ## 🔗 Fonts oficials i límits
 

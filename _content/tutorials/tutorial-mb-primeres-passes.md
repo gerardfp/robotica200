@@ -11,6 +11,8 @@ image: _assets/tutorials/mb-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
+Construeix un dau electrònic que reaccione a una sacsejada i mostra’l tant al simulador com a la placa. La seqüència presenta MakeCode, els esdeveniments de l’acceleròmetre, la matriu de 5 × 5 i la transferència del programa.
+
 - Conèixer l'entorn de programació MakeCode i el seu simulador interactiu.
 - Crear un dau digital que mostri un número a l'atzar en sacsejar la placa.
 - Passar l'arxiu compilat .hex a la unitat micro:bit com si fos un llapis de memòria USB.
@@ -44,21 +46,20 @@ Connecta la micro:bit per USB i prem el botó 'Descarregar'. En pocs segons el d
 
 ## 🧪 Prova, depura i reflexiona
 
-Escriu un símbol de 5 × 5, vincula'l a un polsador i transfereix el codi a la placa. Mantingues la sessió de creació independent de l'activitat opcional de ràdio.
+Escriu un símbol de 5 × 5, vincula'l al polsador A i transfereix el codi a la placa. Prem A tres vegades i registra si el símbol apareix en cada execució; compara-ho amb una prova del botó B sense associar-hi cap acció. Mantingues la sessió de creació independent de l'activitat opcional de ràdio.
 
 ### Preguntes per comprovar
 
 - Quina entrada activa el programa?
 - El resultat apareix amb cada pulsació o un sol cop?
-- Quina prova faríeu a continuació per comprovar-ho?
+- Què mostra la placa quan premeu A, B i A+B, i coincideix amb la predicció del programa?
 
 ## ♿ Accessibilitat i seguretat
 
 Dona una icona impresa com a referència; deixa que cada parella triï com modificar-la i anoti la diferència.
 
 ## ✅ Evidències d’aprenentatge
-
-El codi guardat, el símbol personalitzat i una demostració dels dos polsadors. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- El codi guardat, el símbol personalitzat i una demostració dels dos polsadors. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

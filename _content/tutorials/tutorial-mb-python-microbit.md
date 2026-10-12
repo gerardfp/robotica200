@@ -98,8 +98,7 @@ Feu quatre proves al simulador i a la placa: A, B, cap botó i A+B alhora. Regis
 Proporcioneu el codi imprés amb els nivells d’indentació marcats i permeteu arrossegar fragments en lloc d’escriure’ls tots. El simulador és una alternativa per practicar sense dispositiu; una parella pot llegir el codi mentre l’altra prova els botons. Desconnecteu el cable agafant-ne el connector i no pressioneu ni doblegueu la vora daurada de la placa.
 
 ## ✅ Evidències d’aprenentatge
-
-Guardeu els dos programes separats i etiquetats com a MicroPython i MakeCode Python, una taula de les quatre proves i una anotació de l’error d’indentació corregit. Indiqueu si l’execució és simulada o s’ha verificat a la placa física i quina versió de micro:bit heu utilitzat.
+- Guardeu els dos programes separats i etiquetats com a MicroPython i MakeCode Python, una taula de les quatre proves i una anotació de l’error d’indentació corregit. Indiqueu si l’execució és simulada o s’ha verificat a la placa física i quina versió de micro:bit heu utilitzat.
 
 ## 🔗 Fonts oficials i límits
 

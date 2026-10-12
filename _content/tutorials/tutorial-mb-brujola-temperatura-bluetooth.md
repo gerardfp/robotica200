@@ -12,6 +12,10 @@ image: _assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp
 
 Construïu una estació de camp que indique orientació, mostre una lectura tèrmica aproximada i comunique un resultat a un dispositiu connectat. Compareu les dades amb instruments de referència i identifiqueu què canvia entre micro:bit V1 i V2. No useu el prototip per a prendre decisions meteorològiques o de seguretat.
 
+- Calibrar la brúixola i comparar rumbs amb una referència.
+- Contrastar la temperatura interna aproximada amb un termòmetre.
+- Distingir l’entrada tàctil de V2 i la connexió Bluetooth de la ràdio.
+
 ## 🧰 Materials i preparació
 
 - Placa BBC micro:bit i ordinador amb MakeCode o editor compatible.
@@ -67,8 +71,7 @@ Repetiu tres vegades quatre rumbs marcats i dues lectures tèrmiques en condicio
 Permeteu llegir els resultats en veu alta, en pantalla o en una taula impresa. El tacte és opcional i es pot substituir per A/B. No compartiu identificadors personals ni emparelleu dispositius sense seguir les normes digitals del centre; esborreu la connexió en acabar. No useu imants forts prop de la brúixola durant les proves.
 
 ## ✅ Evidències d’aprenentatge
-
-Guardeu el projecte, les taules de rumb i temperatura, els intents de tacte segons versió i un esquema de la connexió. La conclusió ha de separar mesura, aproximació i simulació, i enumerar les limitacions de calibratge, precisió i compatibilitat.
+- Guardeu el projecte, les taules de rumb i temperatura, els intents de tacte segons versió i un esquema de la connexió. La conclusió ha de separar mesura, aproximació i simulació, i enumerar les limitacions de calibratge, precisió i compatibilitat.
 
 ## 🔗 Fonts oficials i límits
 

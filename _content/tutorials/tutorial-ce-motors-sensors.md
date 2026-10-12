@@ -28,6 +28,7 @@ Comproveu que el tren està carregat o té piles en bon estat i que les vies est
 ## 🧩 Funcions del robot treballades
 
 - Motorització i lectura dels maons d’acció que passen sota el tren.
+- Sensor òptic inferior: interpreta els maons d’acció codificats de la via; no mesura el color de superfícies ni detecta obstacles.
 - Maó roig: ordre d’aturada del tren.
 - Maons groc i blau: sons associats al tren, que cal escoltar i descriure en el model disponible.
 - Maó blanc: encén o apaga la llum del tren segons la lliçó oficial.
@@ -37,7 +38,7 @@ Comproveu que el tren està carregat o té piles en bon estat i que les vies est
 
 ### 1. Prepareu la predicció
 
-Poseu un únic maó d’acció en un tram recte i deixeu espai lliure després. Mostreu el color sense explicar-ne la resposta. Cada equip tria una predicció —aturar-se, fer un so, canviar la llum o una altra— i la representa amb una targeta o un dibuix.
+Poseu un únic maó d’acció en un tram recte i deixeu espai lliure després. Mostreu el color sense explicar-ne la resposta. El sensor òptic de la part inferior del tren llig el codi del maó quan passa per damunt; no és un sensor de color ambiental. Cada equip tria una predicció —aturar-se, fer un so, canviar la llum o una altra— i la representa amb una targeta o un dibuix.
 
 ### 2. Proveu el roig i els sons
 
@@ -70,7 +71,6 @@ Completeu una taula per als colors que tingueu. Si una prova no coincideix amb l
 Prepareu una targeta de predicció per color amb icones grans. L’alumnat pot anticipar la resposta sense manipular el tren i registrar-la amb veu, dibuix o selecció de pictogrames. Manteniu el volum moderat, feu la prova sobre una via estable i atureu el tren abans de canviar els maons.
 
 ## ✅ Evidències d’aprenentatge
-
 - Taula amb color, predicció i resposta real observada.
 - Seqüència dibuixada que mostra l’ordre dels maons al llarg de la ruta.
 - Explicació de la diferència entre una ordre del maó d’acció i un sensor que detectaria l’entorn.

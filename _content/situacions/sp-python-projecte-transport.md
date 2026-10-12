@@ -204,6 +204,10 @@ Anoteu lectura del sensor, valor esperat, resposta, aturada i variació. Classif
 
 Canvieu una sola causa i repetiu. Si la consola no mostra error però el robot falla, reviseu l’especificació i la lectura abans d’assumir que el codi és correcte. Decidiu si cal continuar o simplificar l’abast.
 
+![Base mòbil SPIKE Prime de la dotació amb una targeta lleugera en una ruta plana entre aula i biblioteca de maqueta; al costat hi ha un regle i un registre de proves sense text.](../../_assets/imatges/sa-sp-python-projecte-transport-proves.webp)
+
+_La ruta de prova és plana; la rampa que apareix apartada no forma part de l’assaig. Es comparen el punt de partida, l’aturada i la càrrega lleugera._
+
 #### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** proves repetides, hipòtesi revisada i versió d’app/API. Atribuïu qualsevol funció o fragment extern reutilitzat.

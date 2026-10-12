@@ -10,6 +10,8 @@ image: _assets/tutorials/tb-reconeixement-veu.png
 
 ## 🎯 Repte i objectius
 
+Enregistra missatges breus perquè Tale-Bot els reproduïsca durant una ruta i crea una narració amb veu pròpia. El repte diferencia clarament l’enregistrament d’àudio del reconeixement de parla: el robot no interpreta ordres parlades.
+
 - Treballar l'expressió oral i la dicció clara.
 - Vincular missatges de veu a esdeveniments de programació.
 - Crear rutes narratives de contacontes interactius.
@@ -48,15 +50,14 @@ Comprova amb el manual del teu model si el micròfon reconeix ordres o grava i r
 
 - Quan comença i acaba la gravació?
 - L'ordre es reprodueix o el robot la interpreta per moure's?
-- Quina prova faríeu a continuació per comprovar-ho?
+- En quina part del procés s’emmagatzema la veu i com podeu reproduir-la sense donar cap ordre de moviment?
 
 ## ♿ Accessibilitat i seguretat
 
 Ofereix un conjunt de targetes d'ordres i una resposta enregistrada per l'adult. Participar parlant i consentir l'enregistrament són opcions separades.
 
 ## ✅ Evidències d’aprenentatge
-
-Una demostració de l'acció triada i un mapa que separa clarament gravació, reproducció i comandament. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Una demostració de l'acció triada i un mapa que separa clarament gravació, reproducció i comandament. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

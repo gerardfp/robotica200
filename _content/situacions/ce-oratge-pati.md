@@ -119,6 +119,10 @@ Registreu què observeu i representeu en una maqueta, amb colors, quines zones r
 
 Predigueu com canviaria l’ombra en un altre moment del dia i construïu un segon model per comparar la predicció. El tren serveix per visitar i descriure les zones, no per mesurar-ne la temperatura.
 
+![El tren Coding Express de la dotació s’atura al costat d’una maqueta de pati amb una zona assolellada i una zona sota un tendal; dues targetes mostren els pictogrames de sol i ombra.](../../_assets/imatges/sa-ce-oratge-sol-ombra.webp)
+
+_La maqueta ajuda a observar la distribució de la llum i l’ombra; el tren no mesura la temperatura ni prediu l’oratge._
+
 #### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** mapa observacional «sol/ombra», model amb llegenda i una predicció diferenciada de l’observació. Què hem observat directament i què hem predit?

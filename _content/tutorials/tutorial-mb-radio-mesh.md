@@ -11,6 +11,8 @@ image: _assets/tutorials/mb-radio-mesh.png
 
 ## 🎯 Repte i objectius
 
+Fes que dues plaques intercanvien missatges curts i observa com el canal i el grup de ràdio afecten la comunicació. La pràctica tracta la ràdio de micro:bit com a comunicació local entre dispositius, no com una connexió a Internet.
+
 - Entendre què és un canal de ràdio freqüència i com evitar interferències.
 - Enviar paquets de dades (números i cadenes de text).
 - Crear una estació meteorològica exterior que envia dades a una pantalla interior.
@@ -18,6 +20,8 @@ image: _assets/tutorials/mb-radio-mesh.png
 ## 🧰 Materials i preparació
 
 - 2 o més plaques micro:bit amb portapiles
+- Ordinador amb MakeCode per preparar i transferir el mateix programa a cada placa.
+- Full de registre per anotar grup, missatge enviat i missatge rebut.
 
 ## 🧩 Funcions del robot treballades
 
@@ -42,7 +46,7 @@ A la placa de classe: 'en rebre per ràdio [receivedNumber]' → 'mostra el núm
 
 ## 🧪 Prova, depura i reflexiona
 
-Assegura't que l'emissor i el receptor utilitzen el mateix grup de ràdio; comença enviant una dada inventada des de dos equips separats.
+Assegura't que l'emissor i el receptor utilitzen el mateix grup de ràdio. Envia una dada inventada cinc vegades des de dos equips separats i registra quants missatges rep el destinatari; canvia després només el grup del receptor i comprova que deixa de rebre'ls. Torna a posar el grup correcte abans de concloure la prova.
 
 ### Preguntes per comprovar
 
@@ -55,8 +59,7 @@ Assegura't que l'emissor i el receptor utilitzen el mateix grup de ràdio; comen
 Evita enviar dades personals. Una activitat amb missatges públics simulats funciona també sense wi-fi; proporciona les plaques ja carregades si l'objectiu és el protocol.
 
 ## ✅ Evidències d’aprenentatge
-
-Un esquema emissor–receptor, el missatge de prova i una descripció del límit de privadesa. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Un esquema emissor–receptor, el missatge de prova i una descripció del límit de privadesa. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

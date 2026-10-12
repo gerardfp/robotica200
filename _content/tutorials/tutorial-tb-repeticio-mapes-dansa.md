@@ -12,6 +12,10 @@ image: _assets/tutorials/tb-repeticio-mapes-dansa.webp
 
 Prepareu una ruta narrativa curta amb una part repetida, una dansa final i un mapa interactiu. L’objectiu és identificar quines ordres executa el robot, quina informació ofereix la superfície OID i com es pot esborrar o corregir un programa. Aquesta guia requereix Tale-Bot Pro; confirmeu que el mapa i els accessoris de la dotació són compatibles.
 
+- Comparar un programa repetit amb un programa que inclou ordres addicionals.
+- Diferenciar una dansa predefinida d’una seqüència programada amb els botons.
+- Explorar la lectura OID i la gravació només amb accessoris compatibles.
+
 ## 🧰 Materials i preparació
 
 - Tale-Bot Pro carregat, en una superfície plana.
@@ -70,8 +74,7 @@ Feu tres execucions de la ruta: sense repetició, amb repetició i amb una ordre
 Oferiu la ruta en format visual, oral o tàctil i permeteu treballar amb mapes impresos quan el mapa interactiu no estiga disponible. Manteniu mans i retoladors lluny de les rodes i esborreu el programa abans de moure el robot. La gravació és opcional i es pot substituir per un missatge de l’adult o una targeta; no publiqueu noms ni veus identificables.
 
 ## ✅ Evidències d’aprenentatge
-
-Recolliu el mapa de ruta, la seqüència de targetes, el registre de les tres execucions i una explicació que distingisca repetició, dansa predefinida, gravació i lectura OID. Identifiqueu quin accessori s’ha utilitzat i quines funcions no estaven disponibles al vostre kit.
+- Recolliu el mapa de ruta, la seqüència de targetes, el registre de les tres execucions i una explicació que distingisca repetició, dansa predefinida, gravació i lectura OID. Identifiqueu quin accessori s’ha utilitzat i quines funcions no estaven disponibles al vostre kit.
 
 ## 🔗 Fonts oficials i límits
 

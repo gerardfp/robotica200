@@ -78,8 +78,7 @@ Feu una prova en Live i una altra en Upload. En cada cas, registreu si Codey con
 Oferiu una versió impresa dels blocs i de la vista Python, amb colors o marques que connecten cada esdeveniment amb la instrucció equivalent. Una persona pot llegir el codi i una altra provar els botons. Manteniu el robot quiet mentre feu les primeres proves; abans d’afegir motors, deixeu lliure la zona i tingueu a mà l’aturada del programa.
 
 ## ✅ Evidències d’aprenentatge
-
-Deseu el projecte de blocs, una captura o transcripció de la vista Python, el registre comparatiu Live/Upload i la prova final en A i B. Indiqueu la versió de mBlock, si el codi Python s’ha pogut editar directament i si el programa s’ha provat amb maquinari o només en la vista de codi.
+- Deseu el projecte de blocs, una captura o transcripció de la vista Python, el registre comparatiu Live/Upload i la prova final en A i B. Indiqueu la versió de mBlock, si el codi Python s’ha pogut editar directament i si el programa s’ha provat amb maquinari o només en la vista de codi.
 
 ## 🔗 Fonts oficials i límits
 

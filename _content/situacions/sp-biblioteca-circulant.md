@@ -160,11 +160,11 @@ Afegiu la condició composta al programa i proveu, una per una, les quatre combi
 
 #### Fase 1 · Activem i prediem
 
-Delimiteu una àrea per guardar prototips entre classes i prepareu una llibreta d’inventor amb espais per a esbossos, prediccions, problemes, proves i decisions. Observeu sistemes de classificació i discutiu què detecten, com saben on són i quins detalls fan que el moviment siga repetible. Definiu el repte propi: classificar fitxes-paquet fictícies per destinació.
+En els deu minuts inicials, pregunteu com treballen els robots de fàbrica: què poden detectar, com saben on estan i quines decisions milloren la precisió i la repetibilitat. Delimiteu una àrea per a guardar els prototips entre classes i prepareu una llibreta d’inventor amb espais per a esbossos, pseudocodi, prediccions, problemes i proves. Definiu el repte propi: enviar fitxes-paquet fictícies a tres destinacions de la mediateca segons el seu color. Acordeu quina relació hi ha entre cada color i cada safata, i quins criteris indiquen una classificació correcta.
 
 #### Fase 2 · Explorem i construïm
 
-Cada equip identifica les parts clau del problema, esbossa almenys dues solucions i en tria una amb criteris explícits: precisió, facilitat de revisió, estabilitat i ús de materials. Escriviu pseudocodi i construïu un primer ajudant; combineu rols i anoteu qualsevol problema en lloc d’amagar-lo.
+Durant 35–55 minuts, cada equip identifica les parts clau del problema, genera idees, esbossa almenys dues solucions i en tria una amb criteris explícits: llegir el color assignat, dirigir la fitxa a la safata corresponent, repetir el moviment amb precisió i facilitar la revisió. Escriviu pseudocodi abans de construir i programeu només la detecció de color que permet el sensor. La forma, el text o el símbol de la fitxa són pistes per a les persones i no entren en la decisió automàtica: el sensor no llig paraules ni reconeix formes. Combineu rols i anoteu els problemes en lloc d’amagar-los. Si cal suport, comenceu d’un model base i milloreu-lo.
 
 ![Model SPIKE Prime de la dotació comprova targetes de retorn de colors i les deriva cap a tres safates de prova.](../../_assets/imatges/sa-sp-classificador-retorns.webp)
 
@@ -172,41 +172,41 @@ _Prototip conceptual amb fitxes i safates fictícies; el sensor i el mecanisme s
 
 #### Fase 3 · Expliquem i registrem
 
-Atureu-vos per descriure un problema observat, mostrar les dades inicials i decidir quin canvi provareu. Modifiqueu una variable per tanda i anoteu la relació entre canvi i resultat en la llibreta d’inventor.
+Reserveu deu minuts per identificar i documentar els problemes que han aparegut durant el desenvolupament. Descriviu què hauria d’haver passat, què ha passat realment i quina part del mecanisme, la calibració o el programa podria explicar la diferència. Trieu una hipòtesi i modifiqueu una variable per tanda; anoteu la relació entre canvi i resultat en la llibreta d’inventor.
 
 #### Fase 4 · Apliquem i millorem
 
-Completeu programa i mecanisme; feu proves amb targetes de diferents colors, formes i paraules; registreu classificacions correctes i errors. Presenteu la solució a la classe i, amb prototips prou estables, connecteu-los en una línia de triatge per observar com cooperarien. Comenceu amb un model bàsic modificable si cal suport; amplieu afegint funcions o un carretó que connecte estacions. Reserveu temps per a ordenar el material.
+En una segona o tercera sessió d’uns 60 minuts, completeu el programa i el mecanisme. Proveu primer una fitxa de cada color; després, repetiu el test canviant la forma o la paraula impresa però mantenint el mateix color per comprovar que el sistema continua classificant únicament per color. Registreu encerts, errors i calibratge. Presenteu la solució a la classe i, quan els prototips siguen prou estables, connecteu-los en una línia de triatge o afegiu un carretó de lliurament entre estacions. L’ampliació pot afegir funcions noves, però cadascuna ha d’estar descrita en el pseudocodi i comprovada amb una prova pròpia. Reserveu temps per a ordenar el material.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** llibreta amb idees alternatives, pseudocodi, taula de resultats, decisió de redisseny i presentació amb esquemes o fotografies pròpies i límits identificats. Observeu si l’alumnat identifica elements del problema, treballa amb autonomia cap a una solució funcional i creativa, i comunica idees amb claredat. Autoavaluació («funciona», «resol creativament», «ho explique amb claredat») i coavaluació amb una pregunta i una millora. El sistema només classifica objectes de joc combinant color, forma i paraula; no classifica persones ni substitueix la catalogació real.
+**Evidència:** llibreta amb idees alternatives, pseudocodi, taula amb color previst/color llegit/destinació/resultat, decisió de redisseny i presentació amb esquemes o fotografies pròpies i límits identificats. Observeu si l’alumnat identifica els elements del problema, treballa amb autonomia per a crear una solució funcional i creativa, i comunica clarament les idees. Autoavaluació individual: **blau**, he creat un ajudant funcional; **groc**, resol el problema d’una manera creativa; **violeta**, a més, he presentat les idees clarament. Una altra parella aporta feedback concret i una proposta de millora. El sistema classifica les fitxes de joc pel color; les formes i paraules només les interpreten les persones. No classifica persones ni substitueix la catalogació real.
 
 ### **S7 · Instruccions d’esquena a esquena ([Back to Back](https://education.lego.com/en-us/lessons/prime-kickstart-a-business/back-to-back/), 45 min, híbrida i desconnectada).**
 
 #### Fase 1 · Activem i prediem
 
-Activeu idees prèvies amb «què és un codi?» i construïu definicions compartides d’algorisme, error, descomposició i pseudocodi. Compareu una instrucció quotidiana ordenada amb una seqüència de blocs descrita en paraules: què fa que siga clara i executable?
+Dediqueu deu minuts a recuperar les idees prèvies amb «què és un codi?» i construir definicions compartides d’algorisme, error, descomposició i pseudocodi. Compareu una instrucció quotidiana amb una seqüència de blocs explicada amb paraules: què fa que les instruccions siguen clares, ordenades i executables? Cada persona tindrà dos fulls per a esbossar i escriure el seu pseudocodi.
 
 #### Fase 2 · Explorem i construïm
 
-Cadascú dissenya, sense mostrar-lo, un animal de maqueta inspirat en la fauna d’aiguamoll valencià amb cinc peces o menys. Escriu instruccions curtes, ordenades i precises perquè una altra persona el puga reconstruir. L’activitat és híbrida: es pot fer amb peces soltes de SPIKE Prime, altres peces, dibuixos o cartes, i no necessita hub ni programari.
+En quinze minuts, cadascú tria fins a cinc peces i construeix, sense instruccions, un animal inventat inspirat en la fauna de l’aiguamoll valencià; l’exemple docent pot inspirar, però no cal copiar-lo. Després escriu en un full els passos necessaris perquè una altra persona el puga muntar exactament. Es pot fer amb peces de SPIKE Prime o altres peces de construcció. Si no hi ha peces disponibles, l’alumnat dibuixa o retalla formes i les usa com a components; el repte continua sent ordenar instruccions per a construir. No cal hub, sensor ni programari.
 
 #### Fase 3 · Expliquem i registrem
 
-En parelles, una persona segueix exactament les instruccions i després canvieu els rols. Compareu original i reconstrucció i feu retorn amable amb un exemple concret: «aquesta instrucció era clara» o «ací faltava indicar…». Identifiqueu una ambigüitat o pas absent i anoteu com el resultat ajuda a depurar el pseudocodi.
+Durant deu minuts, en parelles, una persona llig el pseudocodi i l’altra construeix seguint-lo exactament, sense completar passos de memòria ni demanar informació que no aparega escrita. Després canvieu els rols amb el segon model. Compareu original i reconstrucció i doneu feedback respectuós amb un exemple: «aquesta instrucció era clara» o «ací faltava indicar…». Identifiqueu una ambigüitat o pas absent i anoteu com el resultat ajuda a depurar el pseudocodi. Pregunteu-vos quins passos es poden agrupar i quins detalls són necessaris per a evitar interpretacions diferents.
 
 #### Fase 4 · Apliquem i millorem
 
-Reviseu les instruccions i feu una segona reconstrucció, o redacteu una versió millorada per a un model nou. Vinculeu l’experiència amb el treball en parella de programació: una persona escriu i l’altra executa el codi. Si es fa a distància, compartiu les instruccions en una videotrucada o document i reconstruïu-les en un espai de treball adequat.
+En cinc minuts, imagineu un segon animal o una altra figura i reviseu com faríeu les instruccions més fàcils de seguir. Marqueu una frase que caldria reescriure o dos passos que es podrien agrupar; si no hi ha temps per a una nova construcció, guardeu la proposta per a la pròxima classe. Relacioneu l’exercici amb la programació per parelles: una persona escriu i l’altra executa. En modalitat remota síncrona, es pot fer la lectura en veu alta a una parella o grup reduït; en modalitat asíncrona, es comparteix només el pseudocodi i una reflexió escrita o dibuixada, sense exigir una videotrucada ni fotografies de casa.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Autoavalueu-vos amb tres graons («necessite una pauta», «escric i depure», «puc ensenyar-ho a una altra parella») i deseu el pseudocodi inicial i el final. **Evidència:** instruccions i reconstrucció amb una anotació de la millora concreta. Reserveu temps per a compartir una estratègia que haja fet les instruccions més precises.
+En els cinc minuts finals, cada alumne comparteix un exemple d’instrucció que descriu un algorisme pas a pas i un problema que ha identificat i corregit. Autoavaluació privada amb tres colors: **roig**, amb ajuda puc escriure pseudocodi i depurar-lo; **groc**, puc explicar com escriure’l i depurar-lo; **verd**, puc ensenyar-ho a una altra persona. **Evidència:** model original de cinc peces com a màxim, pseudocodi inicial, reconstrucció del company, error detectat i versió revisada.
 
 ## 🧰 Materials i preparació
 
-SPIKE Prime, graella de paper, fitxes fictícies, cartró i sensor de color i sensor de força del set SPIKE Prime, verificats amb el hub i l’app del centre. Aquesta situació és una maqueta didàctica: no gestiona préstecs, panys ni comandes reals de la biblioteca.
+Per a S1–S6: SPIKE Prime, graella de paper, fitxes fictícies, cartró i els sensors que cada repte requerisca, comprovats amb el hub i l’app del centre. Per a S7: dos fulls per alumne i llapis; les peces de construcció són opcionals i no s’utilitza hub ni programari. Aquesta situació és una maqueta didàctica: no gestiona préstecs, panys ni comandes reals de la biblioteca.
 
 ## 🎯 Evidències i avaluació
 

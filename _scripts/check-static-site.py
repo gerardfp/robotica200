@@ -94,7 +94,7 @@ def main():
         if not component or component.group(1) != kind:
             problems.append(f"{page_name}: content kind should be {kind}")
         paths = sorted((ROOT / "_content" / folder).glob(f"{prefix}*.md"))
-        if kind == "guide": paths = [p for p in paths if p.stem in {"guia-pensament-computacional", "guia-robotica-educativa", "guia-situacions-aprenentatge"}]
+        if kind == "guide": paths = [p for p in paths if p.stem in {"guia-pensament-computacional", "guia-robotica-educativa", "guia-situacions-aprenentatge", "guia-fira-descobertes"}]
         if not paths:
             problems.append(f"_content/{folder}: no Markdown records for {kind}")
         for markdown_path in paths:

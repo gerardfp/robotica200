@@ -11,6 +11,8 @@ image: _assets/tutorials/sp-motors-sensors.png
 
 ## 🎯 Repte i objectius
 
+Construeix una transmissió amb engranatges i relaciona els graus del motor amb el moviment de les rodes. La prova combina el muntatge físic i la programació del motor angular del Hub SPIKE Prime.
+
 - Calcular la relació de transmissió entre un engranatge petit de 8 dents i un de gran de 24 dents.
 - Moure el motor exactament un nombre de graus o rotacions determinades.
 - Utilitzar el sensor de color en mode detecció de color directe.
@@ -51,15 +53,14 @@ Prova el sensor de color amb targetes del mateix material i distància fixos; re
 
 - Quins colors s'han detectat en les mateixes condicions?
 - Què passa quan canviem llum o distància?
-- Quina prova faríeu a continuació per comprovar-ho?
+- Quina lectura ha activat el canvi de moviment i quina variable heu mantingut constant?
 
 ## ♿ Accessibilitat i seguretat
 
 Deixa una targeta de prova de cada color i afegeix un registre de falses lectures. Treballa amb les peces del conjunt que s'utilitza al centre.
 
 ## ✅ Evidències d’aprenentatge
-
-La taula d'assaigs i la condició del programa triada pel grup. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- La taula d'assaigs i la condició del programa triada pel grup. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

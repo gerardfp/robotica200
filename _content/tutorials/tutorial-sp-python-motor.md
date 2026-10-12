@@ -94,8 +94,7 @@ Feu tres intents: 360° a velocitat 400, 180° a velocitat 400 i 360° a velocit
 Oferiu el programa imprés amb indentació marcada i el mateix moviment representat amb blocs. Es poden assignar rols de lectura de codi, comprovació del port, predicció i registre sense exigir que tothom escriga al teclat. Subjecteu el muntatge, treballeu a baixa velocitat i manteniu mans, cabells i roba fora de l’eix i de les peces mòbils. Atureu l’execució abans de modificar el programa o desconnectar el cable.
 
 ## ✅ Evidències d’aprenentatge
-
-Conserveu el programa final, les tres prediccions i observacions, la correspondència entre port del codi i port físic, i una explicació breu d’un error corregit. Si feu captures, retalleu noms d’usuari i qualsevol dada personal; una transcripció del programa i la taula de proves són suficients.
+- Conserveu el programa final, les tres prediccions i observacions, la correspondència entre port del codi i port físic, i una explicació breu d’un error corregit. Si feu captures, retalleu noms d’usuari i qualsevol dada personal; una transcripció del programa i la taula de proves són suficients.
 
 ## 🔗 Fonts oficials i límits
 

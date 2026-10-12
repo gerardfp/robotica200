@@ -18,12 +18,15 @@ official_resources:
 - title: Primers projectes amb MakeCode
   href: https://microbit.org/teach/lessons/first-lessons-with-makecode-and-the-microbit/
   description: Itinerari per practicar seqüències, bucles, entrades, sortides i sensors.
+- title: Registre de dades
+  href: https://microbit.org/get-started/user-guide/data-logging/
+  description: Capturar dades de sensors amb micro:bit V2, recuperar-les i analitzar-les.
 - title: 'Make it: code it'
   href: https://www.microbit.org/projects/make-it-code-it/
   description: Projectes filtrables per nivell, tema, llenguatge i característica de la placa.
 ---
 
-La BBC micro:bit és una petita placa programable amb una matriu de 25 LEDs, dos polsadors, acceleròmetre, brúixola i ràdio. Les funcions de maquinari depenen de la revisió: la V2 incorpora logotip tàctil, micròfon i altaveu; altres funcions i connexions poden variar. Identifica la versió abans de dissenyar una activitat.
+La BBC micro:bit és una petita placa programable amb una matriu de 25 LEDs, dos polsadors, acceleròmetre, brúixola i ràdio. Les funcions de maquinari depenen de la revisió: la V2 incorpora logotip tàctil, micròfon, altaveu i registre persistent de dades de sensors amb MakeCode; altres funcions i connexions poden variar. Identifica la versió abans de dissenyar una activitat.
 
 ## Una placa per mesurar el món
 

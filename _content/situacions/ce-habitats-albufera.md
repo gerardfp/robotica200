@@ -143,6 +143,10 @@ Distingiu informació de la font i inferència pròpia. Construïu models que ex
 
 Prepareu la seqüència de maons perquè el tren s’ature a cada lloc. Els passatgers visitants fan de naturalistes; cada grup presenta l’hàbitat i respon com es relacionen la planta i l’animal. La ruta és una exposició, no una afirmació que les espècies conviuen o es desplacen entre llocs contigus.
 
+![El tren Coding Express de la dotació s’atura entre dues maquetes separades: aiguamoll amb canyissar i au de paper, i dunes de la Devesa amb vegetació i una sargantana de paper.](../../_assets/imatges/sa-ce-habitats-parades.webp)
+
+_Les parades són escenaris d’exposició separats; la il·lustració no afirma que les espècies compartisquen un hàbitat ni que el tren mesure l’entorn._
+
 #### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** notes de recerca, mapa de parades, seqüència dels maons i explicació de naturalista amb font i pregunta pendent. Quina afirmació ve de la font i quina és una inferència pròpia?

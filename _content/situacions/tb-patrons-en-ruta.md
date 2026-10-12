@@ -10,7 +10,7 @@ subject: "pensament-computacional"
 subject_label: "Matemàtiques, Música i Pensament Computacional"
 theme: "programacio"
 theme_label: "Patrons i repetició"
-duration: "7 reptes"
+duration: "7 reptes · 20–30 min cadascun"
 challenge: "Quina part d’una ruta es repeteix i com podem expressar-la amb menys ordres sense perdre precisió?"
 ---
 
@@ -20,7 +20,7 @@ _Els grups detecten patrons en paper, els tradueixen a ordres i comparen la ruta
 
 ## 🌱 Punt de partida
 
-El parc del barri prepara una gimcana i necessita rutes repetibles. L’alumnat busca unitats que tornen a aparéixer, crea bucles amb la tecla física de repetició quan el model la incorpora i valida el programa amb una execució. Aquesta seqüència adapta les set targetes de reconeixement de patrons de la categoria C.
+El parc del barri prepara una gimcana i necessita rutes repetibles. L’alumnat busca unitats que tornen a aparéixer, crea bucles amb la tecla física de repetició quan el model la incorpora i valida el programa amb una execució. Aquesta seqüència adapta les set targetes de reconeixement de patrons de la categoria C. Seguint les orientacions oficials, cada proposta es planifica per a infants de 3–5 anys, parelles i 20–30 minuts; alterneu qui construeix el patró i qui el comprova, amb opcions de resposta oral, visual o amb targetes. Abans de cada repte, carregueu Tale-Bot, comproveu la versió del robot i prepareu una taula o terra nets i plans. Els patrons i mapes són propis; useu adhesius OID o funcions de l’Activity Box només si el centre en disposa i els ha verificat.
 
 ## 🔁 Set reptes
 

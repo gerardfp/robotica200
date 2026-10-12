@@ -10,6 +10,8 @@ image: _assets/tutorials/cs-bucles.png
 
 ## 🎯 Repte i objectius
 
+Redueix una seqüència llarga de moviments a una instrucció que es repetix. Amb les peces de bucle del Coding Set, compara el programa inicial amb la seua versió compacta i comprova que totes dues arriben a la mateixa destinació.
+
 - Comprendre el concepte de bucle (Loop).
 - Distingir el bloc d'inici de bucle i el de tancament.
 - Programar el recorregut d'un quadrat perfecte amb només 4 fitxes.
@@ -43,21 +45,20 @@ Posa la fitxa morada de tancament. En prémer Play, el robot repetirà 4 cops el
 
 ## 🧪 Prova, depura i reflexiona
 
-Escriu la ruta sencera primer com una seqüència de moviments i després agrupa'n una part amb el bucle físic. Compara quantes peces necessites i si la sortida és idèntica.
+Escriu la ruta sencera com una seqüència de moviments i executa-la al tauler. Després substitueix el tram repetit per un bucle físic; comprova l’orientació i la posició final en tres execucions de cada versió. Registra quantes peces has estalviat i si el MatataBot arriba a la mateixa casella. Si no coincideix, revisa el nombre de repeticions i l’ordre de les peces abans de canviar la ruta.
 
 ### Preguntes per comprovar
 
 - On comença i acaba la repetició?
 - Què canviaria si el nombre de vegades fos diferent?
-- Quina prova faríeu a continuació per comprovar-ho?
+- Quantes peces de moviment heu estalviat amb el bucle i s’ha mantingut el mateix destí?
 
 ## ♿ Accessibilitat i seguretat
 
 En grups inicials, treballa amb un sol bucle curt. Quan estigui clar, combina'l amb una funció reutilitzada.
 
 ## ✅ Evidències d’aprenentatge
-
-El codi físic, una ruta prevista i una explicació de quines ordres s'estalvia el bucle. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- El codi físic, una ruta prevista i una explicació de quines ordres s'estalvia el bucle. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

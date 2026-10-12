@@ -37,77 +37,81 @@ La classe prepara una mostra interactiva per al pati i l’hort escolar. Cada eq
 
 #### Fase 1 · Activem i prediem
 
-En parelles, imagineu una figura de dansa motoritzada i repartiu el muntatge perquè totes dues persones participen. Predigueu com es poden sincronitzar moviment i llum sense necessitat de música ni moviment corporal de l’alumnat.
+Dediqueu cinc minuts a parlar de per què convé fer pauses de moviment quan passem molta estona asseguts i de quins senyals ens les poden recordar. El recordatori és una invitació voluntària, mai una ordre ni una avaluació de la salut o l’activitat física de ningú. Predigueu com es poden sincronitzar les cames del ballarí i els píxels de la matriu del hub.
 
 #### Fase 2 · Explorem i construïm
 
-Construïu la figura i comenceu sincronitzant cames amb un patró lluminós de la matriu del hub; després afegiu braços i, si el grup ho vol, una seqüència sonora.
+Durant vint minuts, construïu el ballarí en parelles amb rols de muntatge superior i inferior perquè totes dues persones participen. Executeu el programa inicial i ajusteu el moviment de les cames perquè coincidisca amb el parpelleig de la matriu. Canvieu un paràmetre cada vegada i registreu quina combinació funciona millor. No cal que l’alumnat balle: es pot centrar en el model i observar-ne la seqüència.
 
 #### Fase 3 · Expliquem i registrem
 
-Feu que cada acció ocupe un interval repetible. Compareu el programa amb un metrònom o palmades i anoteu el temps, els graus o les rotacions del motor.
+En cinc minuts, converseu sobre què vol dir sincronitzar i afegiu moviment als braços. Compareu les cames i els braços amb els píxels de la matriu: anoteu el desfasament observat i un ajust proposat. Distingiu el temps en segons, la velocitat del motor i els graus o les rotacions; no són unitats intercanviables.
 
 #### Fase 4 · Apliquem i millorem
 
-Corregiu una desincronització cada vegada. Personalitzeu la coreografia per a una mostra del pati i, si ho desitgeu, programeu un senyal triat pel grup cada 30 segons per recordar una pausa activa voluntària. Com a ampliació, coordineu dues figures o useu el tercer motor i el sensor d’ultrasons si queden disponibles.
+Durant quinze minuts, afegiu sons o notes que encaixen amb els moviments i proveu quants elements podeu sincronitzar sense perdre el ritme. Després, programeu —si el grup ho tria— un senyal a intervals regulars, per exemple cada 30 segons, com a recordatori per a qui vulga alçar-se o moure’s; ningú no ha de seguir-lo. Com a ampliació, coordineu dues figures com una mostra del pati o, si el kit està complet i disponible, afegiu un tercer motor i el sensor d’ultrasons per a sincronitzar un altre element i la llum del sensor. Deixeu temps per a recollir.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** diagrama de temps, codi i demostració en què el grup explica com ha sincronitzat llum, moviments i ritme. La música i el moviment corporal són opcionals; es pot ampliar amb fraccions o polirítmies.
+La rúbrica docent observa si l’alumnat comprén ritme, temps i sincronització, observa el ballarí amb precisió i corregeix el programa amb eficàcia. Autoavaluació individual: **blau**, les cames se sincronitzen amb la llum; **groc**, també hi ha braços sincronitzats; **violeta**, el ballarí es mou a intervals regulars amb ritmes sonors coordinats. Una altra parella dona feedback constructiu. **Evidència:** diagrama temporal, valors de motor (segons, velocitat, graus o rotacions), programa i explicació d’una correcció. Com a extensió, exploreu fraccions de compàs o polirítmies com 2/4 amb 3/8; no són necessàries per assolir l’objectiu bàsic. La música, les notes i el moviment corporal de l’alumnat són opcionals.
 
 ### **S2 · Repeticions i variables que expliquen el programa ([Repeat 5 Times](https://education.lego.com/en-us/lessons/prime-life-hacks/repeat-5-times/), 45 min).**
 
 #### Fase 1 · Activem i prediem
 
-Construïu en parelles un mecanisme original de comptatge per al festival, que execute cinc moviments repetits d’una bandera de paper. Representeu una variable amb un pot i cinc fitxes: què guarda, quan canvia i quin valor tindrà al final?
+Dediqueu cinc minuts a parlar de situacions quotidianes en què comptem esdeveniments. Presenteu el repte: programar un mecanisme per a la mostra del pati que repetisca un moviment de bandera cinc vegades i puga informar de quantes n’ha fet. Representeu una variable amb un pot i fitxes: què guarda, quan canvia i quin valor esperem al final? La variable descriu el programa, no el cos ni l’activitat de l’alumnat.
 
 #### Fase 2 · Explorem i construïm
 
-Feu que una variable numèrica compte els cicles del robot. Com a segon valor, calculeu «punts de moviment simulats» amb un factor inventat i explícit; mai calories reals ni una mesura del cos.
+En quinze minuts, construïu en parelles una figura mecànica amb SPIKE Prime que puga alçar o girar una bandera de paper. Comproveu que els motors estan alineats i executeu el programa base perquè el mecanisme funcione abans d’afegir el recompte. Utilitzeu un bloc de repetició per a fer cinc moviments; no cal que l’alumnat faça cap exercici físic.
 
 #### Fase 3 · Expliquem i registrem
 
-Separeu dos ritmes —dos cicles lents i tres ràpids—, compteu-los en variables diferents i mostreu els valors. Si hi ha pauses, distingiu el temps d’acció del temps d’espera.
+En deu minuts, creeu una variable numèrica amb un nom clar, com ara `moviments`, que comence en 0 i augmente en 1 cada vegada que el mecanisme complete un moviment. Executeu el programa i comproveu que, després de cinc repeticions, la variable mostra 5. Expliqueu què representa i en quin punt del programa s’actualitza; distingiu la quantitat de moviments del temps que el motor ha estat actiu.
 
 #### Fase 4 · Apliquem i millorem
 
-Canvieu el nombre de repeticions i feu una taula o gràfic cicles–punts per interpretar una relació lineal simple. Qui ho necessite pot començar amb el pot i les fitxes desconnectades; com a extensió, compareu dues categories de cicle amb comptadors separats.
+Dins dels quinze minuts d’elaboració —que inclouen el tancament i l’autoavaluació—, afegiu una segona variable per a calcular **punts de moviment simulats** amb una regla inventada i visible, per exemple dos punts per cada moviment completat: `punts = moviments × 2`. Modifiqueu el nombre de repeticions, executeu el programa i registreu nombre de moviments i punts en una taula; representeu després la relació en un gràfic senzill. Els punts són una convenció de l’activitat, no calories, despesa energètica ni una mesura de l’esforç humà. Per a ampliar, alterneu dos moviments lents i tres ràpids, useu comptadors separats i mostreu els valors finals. Per a donar suport, torneu al pot i les fitxes o compteu cada repetició amb marques en paper.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** pseudocodi, variables amb noms clars, operació d’acumulació, taula de valors i gràfic simple. No es calculen calories ni s’arrepleguen dades corporals.
+En els últims cinc minuts d’elaboració, observeu si l’alumnat descriu correctament una variable, la crea i l’actualitza, i la fa servir per a comptar un valor del programa. Autoavaluació individual: **blau**, he creat una variable que compta els moviments; **groc**, he afegit una segona variable de punts simulats; **violeta**, he modificat el programa per a comptar ritmes o seqüències diferents. Una altra parella dona feedback concret sobre el nom de les variables o el lloc on s’actualitzen. **Evidència:** pseudocodi, variables ben anomenades, recompte final de cinc moviments, operació de la segona variable, taula i gràfic. No es calculen calories, no s’arrepleguen dades corporals i els punts no s’interpreten com una mesura fisiològica.
 
 ### **S3 · Pronòstic qualitatiu per al pati ([Rain or Shine?](https://education.lego.com/en-us/lessons/prime-life-hacks/rain-or-shine/), 45 min).**
 
 #### Fase 1 · Activem i prediem
 
-Amb connexió a internet, trieu una ciutat pública i predigueu quina categoria meteorològica poden mostrar els blocs disponibles per a les pròximes hores. No cal compartir cap ubicació personal.
+Dediqueu cinc minuts a parlar de previsions meteorològiques i dades al núvol: d’on venen i com poden controlar una eixida del programa? Predigueu com podria mostrar la maqueta un dia de pluja o de sol. La proposta treballa amb ciutats públiques, mai amb ubicacions personals.
 
 #### Fase 2 · Explorem i construïm
 
-Construïu una maqueta de previsió, introduïu el nom de la ciutat i useu els blocs meteorològics de l’app SPIKE per a mostrar si plourà. Escriviu una condició IF/ELSE.
+Durant 25 minuts, construïu en parelles el *weathercaster* i comproveu que els motors queden a la posició zero quan els braços estan abaixats. Amb connexió a internet, introduïu una ciutat pública i executeu el programa per observar les dades meteorològiques del bloc de l’app SPIKE. Afegiu una condició `IF/ELSE` perquè el model mostre si la previsió indica pluja. Els blocs meteorològics consulten previsions al núvol i només funcionen en línia; no llegeixen la pluja ni la nuvolositat del pati.
+
+![Model SPIKE Prime de la dotació amb un braç indicador davant de fitxes de sol i pluja, com a maqueta de visualització de la previsió.](../../_assets/imatges/sa-sp-weathercaster-clouds.webp)
+
+_Il·lustració pròpia del prototip indicador: la previsió ve del bloc meteorològic de l’app per internet; el model no incorpora cap sensor atmosfèric ni pronostica el temps per si mateix._
 
 #### Fase 3 · Expliquem i registrem
 
-Amplieu la resposta a «parcialment ennuvolat», «ennuvolat», «pluja» o altres categories disponibles. Feu que el motor o la matriu indique la categoria i registreu l’hora, la ciutat, la font i la predicció.
+En cinc minuts, converseu sobre com una dada del núvol pot controlar una eixida i què podria passar si canvieu de ciutat o país. Amplieu el programa perquè represente, si l’app les ofereix, categories com «parcialment ennuvolat», «ennuvolat», «pluja», «neu» o «boira». Feu que el motor, la matriu o un altre indicador mostre la categoria. Anoteu l’hora de consulta, la ciutat, la categoria retornada i la decisió del programa; les dades són previsions, no observacions actuals.
 
 #### Fase 4 · Apliquem i millorem
 
-Cinc hores després, compareu la predicció amb el temps observat i amb una segona ciutat. Si el centre no té connexió, useu una captura o fitxa datada i identifiqueu-la com a simulació desconnectada; no afirmeu que els blocs consulten el núvol.
+Durant deu minuts, registreu en una taula la previsió per a almenys dues ciutats i les hores seleccionades dins de les pròximes cinc hores. Compareu-la amb les condicions observades cinc hores després, en la sessió següent o amb dades observades datades preparades prèviament; registreu font i hora i no presenteu la captura arxivada com una consulta en viu. Si es fa la comparació amb una mostra, calculeu el percentatge de coincidències només d’eixa mostra i no com una mesura universal de precisió del servei. Si el centre no té connexió, executeu la versió amb dades guardades com a simulació desconnectada: els blocs meteorològics no funcionen fora de línia. Deixeu temps per a recollir.
 
 #### Fase 5 · Comprovem i reflexionem
 
-Parleu de dades al núvol, latència, límits i diferència entre previsió i observació. **Evidència:** programa condicional i taula de predicció/resultat amb font i data.
+Autoavaluació individual: **blau**, he programat la previsió d’una ciutat; **groc**, he comparat dues ciutats amb dades registrades; **violeta**, he justificat quin dels dos llocs triaria per a una activitat exterior del centre i he explicat els límits de la mostra. Una altra parella revisa si la condició correspon a la categoria registrada i si la taula separa previsió d’observació. **Evidència:** programa condicional, configuració de motors a zero, taula de dues ubicacions amb hora, font, previsió i observació posterior. Parleu de dades al núvol, connexió, latència i diferència entre previsió i realitat; cap resultat d’una sola sessió garanteix què passarà ni s’ha d’usar per a decisions de seguretat.
 
 ### **S4 · Un indicador de vent i escala de Beaufort ([Wind Speed](https://education.lego.com/en-us/lessons/prime-life-hacks/wind-speed/), 45–60 min).**
 
 #### Fase 1 · Activem i prediem
 
-Trieu una ciutat pública i predigueu quina de quatre bandes de velocitat podria mostrar el valor de vent consultat. Identifiqueu per endavant el cas de calma o de dades fora d’escala.
+Trieu una ciutat pública i predigueu la classificació del valor de vent consultat. Distingiu la calma (0–<0,5 m/s, força 0) dels quatre colors: blau 0,5–<5,5; verd 5,5–<13,8; groc 13,8–<24,4; roig ≥24,4 m/s. Els colors agrupen forces segons el resum de LEGO; la força 12 no té límit superior.
 
 #### Fase 2 · Explorem i construïm
 
-Construïu un indicador mecànic amb motor i una agulla sobre quatre zones pròpies. Llegiu el valor quantitatiu que retorna el bloc meteorològic i programeu condicions IF/ELSE per als intervals: 0,5–<5,5 m/s, 5,5–<13,8 m/s, 13,8–<24,4 m/s i 24,4–32,7 m/s.
+Construïu un indicador mecànic amb motor i una agulla sobre quatre zones pròpies, més una marca diferenciada per a la calma. Llegiu el valor quantitatiu que retorna el bloc meteorològic i programeu condicions IF/ELSE per als intervals anteriors. Valideu valors de frontera i rebutgeu entrades negatives, absents o no numèriques; una velocitat superior a 32,7 m/s continua en la banda roja.
 
 #### Fase 3 · Expliquem i registrem
 
@@ -115,7 +119,7 @@ Feu visible la classificació amb el marcador i representeu la direcció amb fle
 
 #### Fase 4 · Apliquem i millorem
 
-Proveu cada límit amb dades artificials i reviseu que el codi no tinga buits ni solapaments. Com a extensió, redissenyeu el marcador perquè es recalibre amb una escala diferent; sense xarxa, treballeu amb dades d’exemple datades.
+Proveu 0; 0,49; 0,5; 5,49; 5,5; 13,79; 13,8; 24,39; 24,4; 32,7 i 32,71 m/s, a més d’una entrada invàlida, i reviseu que cada dada vàlida tinga una sola classificació. Com a extensió, redissenyeu el marcador perquè es recalibre amb una escala diferent; sense xarxa, treballeu amb dades d’exemple datades.
 
 #### Fase 5 · Comprovem i reflexionem
 
@@ -143,27 +147,39 @@ Proveu una escala de temperatura i expliqueu per què cal recalibrar-la. La maqu
 
 **Evidència:** taula de conversió, dues calibracions i justificació de què permet concloure la previsió i què no.
 
-### **S6 · Un joc de memòria amb dues llistes ([Brain Game](https://education.lego.com/en-us/lessons/prime-life-hacks/brain-game/), 60–90 min).**
+### **S6 · Un joc de memòria amb dues llistes ([Brain Game](https://education.lego.com/en-us/lessons/prime-life-hacks/brain-game/), 45–90 min).**
 
 #### Fase 1 · Activem i prediem
 
-Prepareu cinc fitxes planes de color en una tira. Amb un exemple de tres peces, prediu les dues llistes, el resultat de cada índex i què canviarà si la segona persona reordena una fitxa.
+Presenteu un repte de memòria cooperatiu: dues persones llegiran seqüències de peces de colors i el robot indicarà en quines posicions coincideixen. Abans de construir, ordeneu tres targetes i predigueu què passa si es canvia de lloc una sola peça. Expliqueu que l’activitat practica patrons i dades; no diagnostica ni entrena cap capacitat cognitiva o de salut.
 
 #### Fase 2 · Explorem i construïm
 
-La primera persona passa la seqüència pel lector amb sensor de color i el programa guarda els resultats en una llista; la segona fa el mateix amb una altra seqüència en una segona llista. Per simplificar, comenceu amb comparació en paper abans d’afegir el sensor.
+Durant 15 minuts, munteu en parella el cap i el cos del model *Game Master*, repartint tasques perquè totes dues persones participen. Comproveu que el sensor de color queda alineat amb la peça abans de programar. La primera persona passa una tira de cinc peces i el programa registra, en ordre, les lectures en `llista_1`; la segona passa la seua tira i ompli `llista_2`. Comenceu amb tres peces si cal i augmenteu a cinc quan les lectures siguen repetibles. Si una peça no es reconeix amb prou estabilitat, repetiu la lectura o useu una seqüència de targetes identificada com a simulació.
+
+![Model SPIKE Prime amb sensor de color al costat de dues seqüències de cinc peces i indicadors que assenyalen les posicions coincidents.](../../_assets/imatges/sa-sp-joc-memoria-llistes.webp)
+
+_Les seqüències són dades de prova pròpies; la fila d’indicadors il·lustra la comparació per posició, no una peça física del robot._
 
 #### Fase 3 · Expliquem i registrem
 
-El programa compara posició per posició i encén una fila o icona de la matriu quan els colors coincideixen. Registreu el resultat de cada índex amb pseudocodi o un diagrama de les dues llistes.
+En els 10 minuts d’explicació, programeu la lectura de cada seqüència en una llista i compareu els valors pel mateix índex. En cada posició, feu que la matriu LED indique si hi ha coincidència; registreu també les lectures reals per detectar una fallada del sensor abans de culpar el programa. Traceu una prova curta en paper i expliqueu per què l’ordre de les dades importa.
+
+```text
+per cada posició de les dues llistes:
+  si llista_1[posició] = llista_2[posició]:
+    mostra coincidència
+  si no:
+    mostra diferència
+```
 
 #### Fase 4 · Apliquem i millorem
 
-Amplieu a cinc posicions, establiu un límit opcional d’intents i proveu casos de coincidència total, parcial i nul·la. Milloreu la resposta LED per diferenciar encert i error. Com a ampliació, registreu anònimament temps i intents per explorar-los en un gràfic; no guardeu noms ni compareu persones.
+Durant 15 minuts, proveu coincidència total, parcial i nul·la. Després de veure el resultat, la segona persona pot reordenar les peces per acostar-se a la primera seqüència; si trieu jugar amb un límit, feu-lo de cinc intents i mostreu clarament quants en queden. Canvieu el patró LED perquè encerts i diferències siguen fàcils de distingir, també sense dependre només del color (per exemple, afegiu una forma o un nombre de polsos). Com a ampliació, afegiu més colors només després de comprovar que el sensor els discrimina, o registreu anònimament temps i intents de cada ronda per representar dues variables en un gràfic. No guardeu noms ni utilitzeu els resultats per comparar persones.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** diagrama de dues llistes, pseudocodi de comparació, casos provats i regla del joc que una altra parella pot seguir. Expliqueu oralment índex, llista, probabilitat, mitjana i valor mitjà si s’ha fet l’extensió estadística.
+Una parella revisora comprova el joc amb una seqüència de prova que conega, confirma la coincidència per índex i dona una proposta concreta de millora. Autoavaluació: **blau**, puc explicar i usar una llista; **groc**, puc crear i comparar una segona llista; **violeta**, puc aplicar més d’una operació o resoldre una variant del joc. **Evidència:** model construït, dues seqüències registrades, pseudocodi o blocs de comparació, casos total/parcial/zero, una ronda de reordenació i feedback. En l’ampliació estadística, expliqueu *índex*, *probabilitat*, *mitjana* i *valor mitjà* amb les dades anònimes del joc.
 
 ### **S7 · Un entrenador per a practicar una habilitat ([The Coach](https://education.lego.com/en-us/lessons/prime-life-hacks/the-coach/), projecte de 2–3 sessions).**
 

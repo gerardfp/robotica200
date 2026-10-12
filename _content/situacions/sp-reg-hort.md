@@ -43,7 +43,7 @@ En parelles, construïu o adapteu un indicador de paper amb agulla motoritzada. 
 
 #### Fase 3 · Expliquem i registrem
 
-Anoteu ciutat, moment de consulta, unitat retornada i període de la dada. Dibuixeu l’esquema i indiqueu quina variable no es mesura: el model no incorpora humitat del sòl.
+Anoteu ciutat, data i hora, unitat i període de la dada. Comproveu si el bloc proporciona el total setmanal o set valors diaris; si són diaris, sumeu una sola vegada els set dies del mateix període i escriviu l’operació. No barregeu dies incomplets ni una previsió amb observacions. Dibuixeu l’esquema i indiqueu quina variable no es mesura: el model no incorpora humitat del sòl.
 
 #### Fase 4 · Apliquem i millorem
 
@@ -57,19 +57,19 @@ Expliqueu què representa l’indicador i què no permet concloure sobre el reg.
 
 #### Fase 1 · Activem i prediem
 
-Llegiu la suma de precipitació prevista per a la setmana i decidiu quina escala física la representarà. Marqueu mínim, màxim i divisions abans de moure l’agulla; predigueu la posició per a diversos valors.
+Llegiu el total setmanal de precipitació prevista i decidiu quina escala física el representarà. Per a una primera prova comuna, useu una escala didàctica de **0–60 mm** en **0–180°**; no és un màxim meteorològic ni una necessitat de reg. Marqueu els dos extrems i les divisions abans de moure l’agulla. Predigueu on cauran 0, 15, 30, 45 i 60 mm.
 
 #### Fase 2 · Explorem i construïm
 
-Programeu una resposta proporcional entre la dada i l’angle del motor. Si cal, proporcioneu una primera regla de conversió; com a ampliació, canvieu el rang o les divisions del mateix model.
+Programeu una resposta proporcional entre la dada `p` i l’angle del motor, després d’alinear i posar l’agulla a zero: `angle = (p / 60) × 180`. Així, 0, 15, 30, 45 i 60 mm han d’apuntar, respectivament, a 0°, 45°, 90°, 135° i 180°. Si l’entrada és absent, negativa o no numèrica, indiqueu error i no la convertiu en zero. Si `p` supera 60 mm, mostreu «fora d’escala» i decidiu si amplieu el màxim; no retalleu silenciosament la dada a 60. Com a ampliació, canvieu el rang amb una regla documentada.
 
 #### Fase 3 · Expliquem i registrem
 
-Proveu almenys tres valors i anoteu valor, posició predita, posició observada i error. Una altra parella revisa els desajustos i n’explica una causa possible.
+Proveu els cinc valors de referència (0, 15, 30, 45 i 60 mm) i anoteu valor, angle esperat, angle observat i diferència. Reinicieu la posició del motor abans de cada prova i feu dues lectures per cas. Una altra parella revisa els desajustos i n’explica una causa possible: alineament inicial, lectura de la dada, sentit de gir o relació de conversió.
 
 #### Fase 4 · Apliquem i millorem
 
-Canvieu una regla d’escala cada vegada i torneu a provar els mateixos valors. Documenteu una iteració i comproveu si la nova conversió millora la lectura.
+Canvieu una sola regla d’escala cada vegada i torneu a provar els mateixos valors de referència. Si amplieu el rang perquè la previsió el supera, actualitzeu alhora l’etiqueta de l’escala i la conversió del programa. Documenteu una iteració i comproveu si la nova conversió millora la lectura sense ocultar dades fora de rang.
 
 #### Fase 5 · Comprovem i reflexionem
 
@@ -79,11 +79,11 @@ Expliqueu com la dada s’ha transformat en moviment i què significa l’error 
 
 #### Fase 1 · Activem i prediem
 
-Sense canviar el muntatge, predigueu per què no es pot reutilitzar directament la conversió de precipitació per mostrar temperatura prevista. Identifiqueu quina variable, unitat i rang caldrà definir de nou.
+Sense canviar el muntatge, predigueu per què no es pot reutilitzar directament la conversió de precipitació: pluja setmanal acumulada en mil·límetres i temperatura en graus són magnituds i unitats diferents. Identifiqueu la nova variable, la unitat que mostra l’app i un rang que incloga els valors previstos; si treballeu en °C, no pressuposeu que la temperatura mínima siga zero.
 
 #### Fase 2 · Explorem i construïm
 
-Recalibreu l’escala per a la temperatura prevista de la setmana. Com a ampliació, creeu targetes pròpies de necessitats d’aigua per a cultius ficticis o useu la mateixa escala per representar velocitat del vent o temperatures de diversos moments; expliqueu si cal recalibrar.
+Recalibreu l’escala per a la temperatura prevista: definiu `t_min` i `t_max`, assigneu-los als dos extrems angulars i useu `angle = ((t − t_min) / (t_max − t_min)) × 180`. En una prova didàctica de −5 a 35 °C, −5, 15 i 35 °C han de donar 0°, 90° i 180°; si el rang real de la previsió queda fora, marqueu «fora d’escala» i torneu a calibrar. Manteniu aquesta conversió separada de la precipitació. Com a ampliació, creeu targetes pròpies de necessitats d’aigua per a cultius ficticis o representeu velocitat del vent/temperatura en moments diferents, definint de nou la variable, la unitat i el rang.
 
 #### Fase 3 · Expliquem i registrem
 
@@ -91,7 +91,7 @@ Compareu ciutats o períodes amb dades datades. Prepareu una targeta amb font, d
 
 #### Fase 4 · Apliquem i millorem
 
-Reviseu l’explicació perquè separe observació, interpretació i decisió pendent. Indiqueu què caldria comprovar abans de prendre una decisió real; la previsió no és una mesura del sòl ni una instrucció de reg.
+Reviseu l’explicació perquè separe dada prevista, representació de l’escala i decisió pendent. Comproveu que els valors negatius de temperatura siguen possibles dins del rang i que no s’hagen interpretat com a error; només una entrada absent o incompatible es rebutja. Indiqueu què caldria comprovar abans de prendre una decisió real: la previsió no és una mesura del sòl ni una instrucció de reg.
 
 #### Fase 5 · Comprovem i reflexionem
 
@@ -107,7 +107,7 @@ Set SPIKE Prime, hub, motor i peces per a un indicador de paper; ordinador o tau
 
 ## 🧪 Evidències i avaluació
 
-Recolliu l’esbós i el muntatge, el registre de consulta, la regla de conversió, les proves amb valors diferents, l’error d’escala, la recalibració i la comunicació final. Valoreu si l’alumnat tria una escala coherent amb les unitats, representa proporcionalment el valor, explica com l’ha transformat i recalibra el mecanisme quan canvia la variable. Autoavaluació amb tres indicadors: faig moure l’agulla segons una dada; represente la precipitació setmanal; recalibre per representar temperatura. El retorn entre parelles ha d’indicar una millora concreta i una limitació.
+Recolliu l’esbós i el muntatge, el registre de consulta, les dues regles de conversió, les taules amb valors esperats i observats, l’error d’escala, les dades fora de rang, la recalibració i la comunicació final. Valoreu si l’alumnat diferencia suma setmanal i temperatura, tria unitats i rang coherents, prova valors de referència, explica un error i recalibra sense reutilitzar una conversió incompatible. Autoavaluació: **blau**, faig moure l’agulla segons una dada; **groc**, represente el total setmanal amb una escala provada; **violeta**, recalibre per a temperatura i explique què faig amb valors negatius o fora de rang. El retorn entre parelles ha d’indicar una millora concreta i una limitació.
 
 ## ♿ Participació, privacitat i límits
 
@@ -115,4 +115,4 @@ Repartiu rols de consulta, programació, lectura d’escala i documentació, amb
 
 ## 🔗 Lliçó oficial adaptada
 
-Aquesta fitxa adapta [Veggie Love](https://education.lego.com/en-us/lessons/prime-life-hacks/veggie-love/), cinquena lliçó de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/): muntatge en parelles del tomato-meter, selecció d’una ciutat, lectura de precipitació prevista, moviment proporcional de l’agulla, suma setmanal, ajuda entre parelles, extensió a la temperatura, recalibració, targetes de necessitats d’aigua i avaluació de la fiabilitat de l’escala. La situació, les explicacions, els registres i la imatge són propis; les instruccions i el full d’alumnat del fabricant continuen a l’app SPIKE.
+Aquesta fitxa adapta [Veggie Love](https://education.lego.com/en-us/lessons/prime-life-hacks/veggie-love/), cinquena lliçó de [Life Hacks](https://education.lego.com/en-us/lessons/prime-life-hacks/): muntatge en parelles del tomato-meter, selecció d’una ciutat, lectura de precipitació prevista, moviment proporcional de l’agulla, suma setmanal, ajuda entre parelles, extensió a la temperatura, recalibració, targetes de necessitats d’aigua i avaluació de la fiabilitat de l’escala. La proposta fa observable la proporcionalitat amb una escala d’exemple 0–60 mm → 0–180°, cinc punts de prova i detecció d’entrades fora de rang; la temperatura usa una conversió separada que admet valors negatius. Aquestes escales són eines didàctiques, no paràmetres universals ni recomanacions agronòmiques. La situació, les explicacions, els registres i la imatge són propis; les instruccions i el full d’alumnat del fabricant continuen a l’app SPIKE.

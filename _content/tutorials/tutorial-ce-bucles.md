@@ -12,6 +12,10 @@ image: _assets/tutorials/ce-bucles.png
 
 La biblioteca mòbil ha de visitar tres parades i tornar a començar la ruta perquè hi puguin pujar nous lectors. Com podem fer que repeteixi el mateix recorregut i com podem demostrar que ha completat una volta?
 
+- Representar una rutina que es repeteix amb una seqüència d’accions.
+- Construir i comparar una via tancada i una via oberta.
+- Registrar les voltes sense atribuir al tren un comptador que no té.
+
 
 ![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](_assets/imatges/coding-express-bucles.webp)
 
@@ -55,6 +59,8 @@ Afegiu una parada o canvieu la posició d’una estació. Repetiu la predicció 
 
 ## 🧪 Prova, depura i reflexiona
 
+Feu dues execucions del circuit tancat i registreu cada pas per una estació; després repetiu-ho en la via oberta. Compareu l’ordre previst amb el recorregut real i canvieu només una peça de via entre proves. Si el tren s’atura o descarrila, atureu-lo i reviseu les unions abans de tornar a començar.
+
 ### Preguntes per comprovar
 
 - Quina part del recorregut es repeteix? On torna a començar?
@@ -70,7 +76,6 @@ Per a una primera prova, feu una volta amb només dues estacions i una persona q
 Munteu les vies en una zona delimitada i manteniu els dits fora del mecanisme mentre el tren es mou. Atureu la locomotora abans de canviar vies o peces d’acció.
 
 ## ✅ Evidències d’aprenentatge
-
 - Un esbós que mostra les estacions i el punt on el recorregut torna a començar.
 - Una predicció de l’ordre de les parades i un registre del que ha passat.
 - Una explicació que distingeix el cicle de la via d’una repetició escrita en un programa.

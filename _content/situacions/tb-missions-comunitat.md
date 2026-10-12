@@ -10,7 +10,7 @@ subject: "pensament-computacional"
 subject_label: "Llenguatge, Medi Social i Pensament Computacional"
 theme: "entorn"
 theme_label: "Relats i serveis comunitaris"
-duration: "10 activitats"
+duration: "10 activitats · 20–30 min cadascuna"
 challenge: "Com organitzem un recorregut que visite diversos llocs i conte una història que el grup puga canviar?"
 ---
 
@@ -20,7 +20,7 @@ _La classe construeix mapes narratius del seu entorn amb destinacions i missatge
 
 ## 🌱 Punt de partida
 
-La biblioteca del barri prepara un festival de relats itinerants. Els infants creen llocs, personatges i missatges i programen visites en un ordre triat pel grup. Els deu reptes adapten la categoria D de les Activity Cards: combina seqüències, bucles, expressió oral i orientació, però manté totes les històries obertes a diferents finals.
+La biblioteca del barri prepara un festival de relats itinerants. Els infants creen llocs, personatges i missatges i programen visites en un ordre triat pel grup. Els deu reptes adapten la categoria D de les Activity Cards: combina seqüències, bucles, expressió oral i orientació, però manté totes les històries obertes a diferents finals. Seguint les orientacions oficials, cada proposta es planifica per a infants de 3–5 anys, parelles i 20–30 minuts; alterneu els rols i permeteu explicar el relat amb paraules, pictogrames o una seqüència de targetes. Abans de cada repte, carregueu Tale-Bot, comproveu la versió del robot i prepareu una taula o terra nets i plans. Les històries i mapes d’aquesta adaptació són propis; useu adhesius OID o funcions de l’Activity Box només quan el centre en tinga i els haja verificat.
 
 ## 📚 Deu reptes globals
 

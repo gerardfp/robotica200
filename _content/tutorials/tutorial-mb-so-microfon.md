@@ -11,6 +11,8 @@ image: _assets/tutorials/mb-so-microfon.png
 
 ## 🎯 Repte i objectius
 
+Dissenya un indicador que reaccione al nivell sonor de l’entorn i compare lectures en condicions diferents. La proposta identifica la versió de la placa abans d’utilitzar el micròfon, disponible de manera integrada en micro:bit V2.
+
 - Calibrar el nivell de soroll ambiental de l'aula.
 - Crear un semàfor de silenci que mostri una icona d'alerta si hi ha massa xivarri.
 - Reproduir melodies d'èxit amb l'altaveu integrat.
@@ -18,6 +20,8 @@ image: _assets/tutorials/mb-so-microfon.png
 ## 🧰 Materials i preparació
 
 - micro:bit V2 (amb micròfon i altaveu integrats)
+- Ordinador amb MakeCode i cable USB per transferir el programa.
+- Espai on provar sons breus a volum moderat; una placa V1 necessita un perifèric extern compatible.
 
 ## 🧩 Funcions del robot treballades
 
@@ -28,7 +32,7 @@ image: _assets/tutorials/mb-so-microfon.png
 
 ### 1. Esdeveniment d'aplaudiment
 
-Fes servir el bloc 'a l'escoltar un so fort': canvia l'estat d'una variable 'llum' entre encès i apagat.
+En una placa micro:bit V2, el micròfon integrat permet provar l’esdeveniment «quan s’escolta un so fort». Fes servir eixe bloc per canviar l’estat d’una variable `llum` entre encés i apagat; en V1 aquesta funció requerix un mòdul extern compatible.
 
 ### 2. Mesurador continu de decibels
 
@@ -36,7 +40,7 @@ Fes que una barra de LEDs s'ompli proporcionalment al nivell de so ambiental (0 
 
 ### 3. Alarma acústica
 
-Si el so supera el llindar 180 durant més de 3 segons, fes sonar un to greu per recordar baixar el to de veu.
+Si el nivell de so supera el llindar que heu calibrat durant més de tres segons, fes sonar un to breu amb l’altaveu integrat de V2 per indicar que cal baixar el volum. El valor no mesura decibels calibrats ni identifica qui ha parlat.
 
 > **💡 Consell docent per a la sessió:** Els nens i nenes aprendran a autoregular el volum de treball cooperatiu mirant el semàfor.
 
@@ -48,15 +52,14 @@ Identifica primer si les plaques són V2 i comprova el micròfon i el bloc dispo
 
 - La placa detecta parla o només nivells de so?
 - Què passa si varia el soroll de fons?
-- Quina prova faríeu a continuació per comprovar-ho?
+- Quin nivell s’ha llegit en silenci i quin després del so, i quantes vegades heu repetit cada mesura?
 
 ## ♿ Accessibilitat i seguretat
 
 La sessió no necessita enregistrar veus ni reconèixer paraules. Permet que qui ho prefereixi activi la prova amb un senyal visual o un so generat per l'adult.
 
 ## ✅ Evidències d’aprenentatge
-
-Dues mesures de so en condicions definides i una explicació de què pot detectar aquest muntatge. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Dues mesures de so en condicions definides i una explicació de què pot detectar aquest muntatge. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

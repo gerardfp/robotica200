@@ -11,6 +11,8 @@ image: _assets/tutorials/tb-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
+Programa un recorregut curt amb els botons físics i comprova com s’afegeixen i s’esborren les instruccions. La pràctica introdueix la seqüència, l’orientació del robot i la repetició de proves sobre una quadrícula.
+
 - Distingir les tecles Endavant, Enrere, Gir Dreta i Gir Esquerra.
 - Aprendre la rutina del botó Delete (X) per evitar acumular ordres velles.
 - Calcular desplaçaments de casella en casella.
@@ -43,21 +45,20 @@ Prem dos cops 'Endavant' i el botó taronja central 'Play'. TaleBot caminarà ex
 
 ## 🧪 Prova, depura i reflexiona
 
-Dibuixa en un mapa gran on són la posició inicial i la destinació. Una parella crea la seqüència i una altra la traça amb el dit abans de prémer els botons.
+Dibuixa en un mapa gran la posició inicial i la destinació. Una parella crea la seqüència i una altra la traça amb el dit abans de prémer els botons; anota la casella final prevista, executa-la i compara-la amb la posició on ha arribat el Tale-Bot. Si difereixen, revisa orientació inicial i una ordre cada vegada.
 
 ### Preguntes per comprovar
 
 - Cap a on mira el robot abans del primer gir?
 - Quina instrucció física elimina si ha premut una tecla per error?
-- Quina prova faríeu a continuació per comprovar-ho?
+- Quantes ordres direccionals heu programat i en quin punt del mapa s’ha aturat el Tale-Bot?
 
 ## ♿ Accessibilitat i seguretat
 
 Comença amb una ruta de dues accions i demostra la funció d'eliminar abans d'afegir-hi més peces de seqüència.
 
 ## ✅ Evidències d’aprenentatge
-
-Un mapa de la ruta i l'explicació de com comprovar i esborrar una instrucció. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Un mapa de la ruta i l'explicació de com comprovar i esborrar una instrucció. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

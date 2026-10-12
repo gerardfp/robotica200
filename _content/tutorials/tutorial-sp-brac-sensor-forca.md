@@ -11,6 +11,8 @@ image: _assets/tutorials/sp-brac-sensor-forca.png
 
 ## 🎯 Repte i objectius
 
+Utilitza el sensor de força SPIKE Prime per detectar una pressió i activar una resposta del Hub. L’equip compararà lectures, provarà un llindar i distingirà la força aplicada al sensor d’una mesura calibrada en newtons.
+
 - Explorar el sensor de força i observar què es pot inferir de les seves lectures.
 - Programar el motor en posició relativa de graus per obrir i tancar la pinça.
 - Evitar que el motor es forci utilitzant el sensor de força com a parada.
@@ -51,15 +53,14 @@ Fixa la pinça sobre la taula i utilitza un objecte de prova resistent i tou, am
 
 - Què indica el sensor de força en aquest model?
 - Quin llindar provaràs i quines unitats permet llegir realment el dispositiu?
-- Quina prova faríeu a continuació per comprovar-ho?
+- En quin valor s’ha activat l’aturada i la pinça ha deixat anar l’objecte sense aixafar-lo?
 
 ## ♿ Accessibilitat i seguretat
 
 Comença amb detecció de contacte. El sensor de SPIKE Prime mesura entre 2,5 i 10 N amb una precisió indicada de ±0,65 N; comprova què exposeu a l’aplicació i [consulta la fitxa tècnica del fabricant](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt23df304b05e587b2/5f8801ba721f8178f2e5e626/techspecs_technicforcesensor.pdf?locale=en-us).
 
 ## ✅ Evidències d’aprenentatge
-
-Un muntatge identificat, els valors enregistrats amb llurs unitats i el límit de força que han triat. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Un muntatge identificat, els valors enregistrats amb llurs unitats i el límit de força que han triat. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
 
 ## 🔗 Fonts oficials i límits
 

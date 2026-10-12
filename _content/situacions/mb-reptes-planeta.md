@@ -76,9 +76,9 @@ radio.onReceivedString(function (message) {
 })
 ```
 
-![Dues micro:bit de la dotació es comuniquen per ràdio en una maqueta seca amb una silueta d’animal de cartó; una mà prem el botó de prova i l’altra placa mostra la recepció en una estació.](../../_assets/imatges/sa-mb-collar-radio-prototip.webp)
+![Dues plaques micro:bit de la dotació es comuniquen per ràdio entre una estació de cartó i una taula de control; al fons hi ha un mapa esquemàtic i una silueta de fauna, sense cap dispositiu sobre l’animal.](../../_assets/imatges/sa-mb-radio-estacio-fauna-v2.webp)
 
-_És una maqueta de comunicació activada manualment: no és un collar funcional ni detecta animals o incidents._
+_És una maqueta escolar de comunicació activada manualment: no es col·loca cap dispositiu sobre la fauna i el sistema no detecta animals ni incidents._
 
 #### Fase 3 · Expliquem i registrem
 

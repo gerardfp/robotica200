@@ -12,6 +12,10 @@ image: _assets/tutorials/ce-app-musica-distancia.webp
 
 Dissenyeu una ruta de tres parades que explique una història amb sons i emocions. Mesureu i compareu els trams i comproveu quines respostes dels maons d’acció canvien quan s’utilitza l’app Coding Express. El motor del tren no mesura la distància: la classe marca i mesura els trams a la via.
 
+- Personalitzar una resposta dels maons amb l’app, si la versió disponible ho permet.
+- Crear i comparar dues seqüències sonores amb els maons d’acció.
+- Mesurar una distància externament i distingir-la d’una lectura del tren.
+
 ## 🧰 Materials i preparació
 
 - Tren LEGO DUPLO Coding Express de la dotació, via i maons d’acció disponibles.
@@ -67,8 +71,7 @@ Repetiu tres vegades el tram curt i el llarg i anoteu la predicció, la distànc
 Manteniu el tren a baixa velocitat, sobre una via estable i lluny de vores. Si el so molesta, feu la seqüència en silenci amb targetes de color o pictogrames. La ruta i la música es poden planificar en paper sense connexió ni dispositiu; l’app és una extensió de la pràctica i no un requisit per a participar.
 
 ## ✅ Evidències d’aprenentatge
-
-Guardeu el mapa de tres parades, la taula de distàncies amb unitats, la seqüència sonora i una comparació abans/després de personalitzar l’acció. Indiqueu si s’ha utilitzat app o alternativa desconnectada i quin comportament heu observat al tren físic.
+- Guardeu el mapa de tres parades, la taula de distàncies amb unitats, la seqüència sonora i una comparació abans/després de personalitzar l’acció. Indiqueu si s’ha utilitzat app o alternativa desconnectada i quin comportament heu observat al tren físic.
 
 ## 🔗 Fonts oficials i límits
 

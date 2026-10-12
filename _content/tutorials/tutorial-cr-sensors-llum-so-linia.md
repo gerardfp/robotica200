@@ -12,6 +12,10 @@ image: _assets/tutorials/cr-sensors-llum-so-linia.webp
 
 Dissenyeu una estació de senyalització que reaccione a la llum i al so, i feu que Rocky seguisca una línia de prova. El repte és identificar quina entrada canvia, quina eixida respon i quines condicions fan que la lectura falle. No mesureu ni classifiqueu el soroll de persones: utilitzeu sons breus creats voluntàriament per l’equip o targetes de valors simulats.
 
+- Calibrar els sensors de llum i so amb proves controlades.
+- Relacionar la lectura del sensor infraroig/color amb una línia i els motors.
+- Explicar per què els llindars depenen de la superfície i de la llum de l’aula.
+
 ## 🧰 Materials i preparació
 
 - Codey Rocky de la dotació, carregat i muntat correctament.
@@ -68,8 +72,7 @@ Registreu una taula amb condició, lectura/estat, eixida esperada, eixida observ
 Manteniu el robot a velocitat baixa i dins d’un recorregut delimitat, lluny de vores i dits. No useu sons forts, no enregistreu veus i no feu inferències sobre les persones a partir del nivell de so. Oferiu lectures simulades o targetes impreses a qui no vulga participar en una prova sonora; es poden comparar resultats sense conduir el robot.
 
 ## ✅ Evidències d’aprenentatge
-
-Conserveu el projecte mBlock, l’esquema entrada–procés–eixida, la taula de proves repetides i una nota sobre el llindar triat i les limitacions del sensor. La verificació del fabricant identifica el sensor de llum, el sensor de veu/so, els botons i l’indicador RGB de Codey, i les funcions de color, obstacle i seguiment de Rocky; la pràctica només afirma les funcions que s’han comprovat en la unitat del centre.
+- Conserveu el projecte mBlock, l’esquema entrada–procés–eixida, la taula de proves repetides i una nota sobre el llindar triat i les limitacions del sensor. La verificació del fabricant identifica el sensor de llum, el sensor de veu/so, els botons i l’indicador RGB de Codey, i les funcions de color, obstacle i seguiment de Rocky; la pràctica només afirma les funcions que s’han comprovat en la unitat del centre.
 
 ## 🔗 Fonts oficials i límits
 

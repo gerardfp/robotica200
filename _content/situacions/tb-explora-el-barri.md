@@ -10,7 +10,7 @@ subject: "pensament-computacional"
 subject_label: "Ciències, Matemàtiques, Llenguatge i Art"
 theme: "entorn"
 theme_label: "Exploració de l’entorn"
-duration: "15 activitats"
+duration: "15 activitats · 20–30 min cadascuna"
 challenge: "Com podem utilitzar una ruta programada per a observar, ordenar i contar històries sobre el nostre entorn?"
 ---
 
@@ -20,7 +20,7 @@ _Mapes i targetes elaborats a classe connecten la programació amb l’entorn pr
 
 ## 🌱 Punt de partida
 
-La classe crea un mapa d’exploració del municipi: jardí, mercat, escola, plaça i espai d’aigua. En quinze reptes curts, Tale-Bot ajuda a ordenar idees, comparar rutes, descriure patrons i crear composicions. Les consignes parteixen de les 15 activitats oficials de categoria B, amb contingut local revisable i sense exigir mapes addicionals de la caixa comercial.
+La classe crea un mapa d’exploració del municipi: jardí, mercat, escola, plaça i espai d’aigua. En quinze reptes, Tale-Bot ajuda a ordenar idees, comparar rutes, descriure patrons i crear composicions. Les consignes parteixen de les 15 activitats oficials de categoria B, amb contingut local revisable i sense exigir mapes addicionals de la caixa comercial. Seguint les orientacions oficials, cada proposta es planifica per a infants de 3–5 anys, parelles i 20–30 minuts; alterneu els rols de programar, observar i contar el resultat, i ajusteu l’objectiu per facilitar una experiència d’èxit. Abans de cada repte, carregueu Tale-Bot, comproveu la versió del robot i prepareu una taula o terra nets i plans. Els mapes i materials d’aquesta adaptació són propis; useu adhesius OID o funcions de l’Activity Box només quan el centre en tinga i els haja verificat.
 
 ## 🗺️ Seqüència · 15 activitats d’exploració
 

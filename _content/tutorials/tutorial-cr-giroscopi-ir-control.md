@@ -12,6 +12,10 @@ image: _assets/tutorials/cr-giroscopi-ir-control.webp
 
 Prepareu un comandament gestual que mostre un senyal visual i sonor, i envieu una ordre senzilla a un segon Codey Rocky mitjançant l’infraroig. El repte combina giroscopi/acceleròmetre, potenciòmetre, altaveu i transmissor/receptor IR. La comunicació IR necessita dos dispositius compatibles, orientació adequada i absència d’obstacles opacs entre els sensors.
 
+- Comparar el valor variable del potenciòmetre amb una lectura d’orientació.
+- Associar un gest a una resposta visual i sonora.
+- Enviar i rebre un codi IR entre dos Codey Rocky, si n’hi ha dos disponibles.
+
 ## 🧰 Materials i preparació
 
 - Dos Codey Rocky de la dotació, si es vol provar transmissió entre robots; amb un sol kit, la comunicació IR es pot simular amb targetes.
@@ -72,8 +76,7 @@ Registreu tres valors del potenciòmetre, tres intents per a cada gest i cinc mi
 La inclinació i la sacsejada són opcions; permeteu introduir el mateix codi amb botons, potenciòmetre o targetes. Manteniu els robots quiets durant les proves de recepció i no els feu córrer cap a persones. El so és breu i opcional, amb senyal visual equivalent. No envieu missatges personals.
 
 ## ✅ Evidències d’aprenentatge
-
-Conserveu els programes emissor i receptor, la taula de gestos i potenciòmetre, els cinc casos de comunicació i un esquema que identifique transmissió IR i resposta del receptor. Indiqueu quines proves s’han fet amb maquinari i quines s’han simulat.
+- Conserveu els programes emissor i receptor, la taula de gestos i potenciòmetre, els cinc casos de comunicació i un esquema que identifique transmissió IR i resposta del receptor. Indiqueu quines proves s’han fet amb maquinari i quines s’han simulat.
 
 ## 🔗 Fonts oficials i límits
 

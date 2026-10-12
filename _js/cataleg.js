@@ -1637,7 +1637,7 @@ window.CATALEG = {
       "tematicaLabel": "Exploració de l’entorn",
       "materia": "pensament-computacional",
       "materiaLabel": "Ciències, Matemàtiques, Llenguatge i Art",
-      "sessions": "15 activitats",
+      "sessions": "15 activitats · 20–30 min cadascuna",
       "repte": "Com podem utilitzar una ruta programada per a observar, ordenar i contar històries sobre el nostre entorn?"
     },
     {
@@ -1653,7 +1653,7 @@ window.CATALEG = {
       "tematicaLabel": "Relats i serveis comunitaris",
       "materia": "pensament-computacional",
       "materiaLabel": "Llenguatge, Medi Social i Pensament Computacional",
-      "sessions": "10 activitats",
+      "sessions": "10 activitats · 20–30 min cadascuna",
       "repte": "Com organitzem un recorregut que visite diversos llocs i conte una història que el grup puga canviar?"
     },
     {
@@ -1669,7 +1669,7 @@ window.CATALEG = {
       "tematicaLabel": "Seqüències i instruccions",
       "materia": "pensament-computacional",
       "materiaLabel": "Pensament computacional, Llenguatge i Matemàtiques",
-      "sessions": "10 activitats breus",
+      "sessions": "10 activitats · 20–30 min cadascuna",
       "repte": "Com podem donar instruccions clares perquè Tale-Bot arribe, salude, dance i complete una missió?"
     },
     {
@@ -1685,7 +1685,7 @@ window.CATALEG = {
       "tematicaLabel": "Patrons i repetició",
       "materia": "pensament-computacional",
       "materiaLabel": "Matemàtiques, Música i Pensament Computacional",
-      "sessions": "7 reptes",
+      "sessions": "7 reptes · 20–30 min cadascun",
       "repte": "Quina part d’una ruta es repeteix i com podem expressar-la amb menys ordres sense perdre precisió?"
     },
     {
@@ -1783,6 +1783,18 @@ window.CATALEG = {
       "descripcio": "Posar en marxa el tren de la dotació, provar el moviment Push & Go i construir una via segura amb estació i destinació."
     },
     {
+      "id": "tutorial-cr-expressions-so-bateria",
+      "slug": "cr-expressions-so-bateria",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-expressions-so-bateria",
+      "imatge": "_assets/tutorials/cr-expressions-so-bateria.webp",
+      "titol": "Codey Rocky: expressions, sons i energia",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Personalitzar la matriu LED, programar sons i dansa i comprovar el nivell de bateria del robot."
+    },
+    {
       "id": "tutorial-cr-giroscopi-ir-control",
       "slug": "cr-giroscopi-ir-control",
       "robot": "codey-rocky",
@@ -1801,10 +1813,10 @@ window.CATALEG = {
       "robotLabel": "Codey Rocky",
       "url": "tutorial/index.html?id=cr-motors-sensors",
       "imatge": "_assets/tutorials/cr-motors-sensors.png",
-      "titol": "Motors i sensors: Esquivador d'obstacles amb infrarojos",
+      "titol": "Codey Rocky: obstacles, color i seguiment de línia",
       "dificultat": "Intermedi",
-      "durada": "45 min",
-      "descripcio": "Utilitzar les erugues de Rocky i el sensor frontal per aturar-se o girar abans de xocar contra una"
+      "durada": "50 min",
+      "descripcio": "Orientar el sensor infraroig/color, provar una resposta als obstacles i comparar-la amb el seguiment d’una línia."
     },
     {
       "id": "tutorial-cr-primeres-passes",
@@ -1849,10 +1861,10 @@ window.CATALEG = {
       "robotLabel": "Codey Rocky",
       "url": "tutorial/index.html?id=cr-veu-ia",
       "imatge": "_assets/tutorials/cr-veu-ia.png",
-      "titol": "Reconeixement de veu i Intel·ligència Artificial",
+      "titol": "Veu i IA: funció externa i simulació amb Codey Rocky",
       "dificultat": "Avançat",
       "durada": "50 min",
-      "descripcio": "Utilitzar l'extensió de Serveis Cognitius per controlar el moviment del robot mitjançant ordres de"
+      "descripcio": "Distingir el sensor de so integrat del reconeixement de parla, provar una extensió en línia només si està disponible i simular les ordres amb seguretat."
     },
     {
       "id": "tutorial-cs-bucles",
@@ -1885,10 +1897,10 @@ window.CATALEG = {
       "robotLabel": "Coding Set",
       "url": "tutorial/index.html?id=cs-motors-sensors",
       "imatge": "_assets/tutorials/cs-motors-sensors.png",
-      "titol": "Motors i paràmetres numèrics",
+      "titol": "Coding Set: blocs numèrics i paràmetres de moviment",
       "dificultat": "Intermedi",
       "durada": "40 min",
-      "descripcio": "Optimitzar el codi combinant les fitxes direccionals amb blocs de números (1, 2, 3, 4, 5) per estalviar"
+      "descripcio": "Comparar les ordres d’avanç amb i sense paràmetre numèric i comprovar quins moviments accepten aquest bloc."
     },
     {
       "id": "tutorial-cs-obstacles-bandera",
@@ -1985,6 +1997,18 @@ window.CATALEG = {
       "dificultat": "Intermedi",
       "durada": "45 min",
       "descripcio": "Connectar diverses micro:bits de l'aula entre si utilitzant l'antena de ràdio integrada sense necessitat"
+    },
+    {
+      "id": "tutorial-mb-registre-dades",
+      "slug": "mb-registre-dades",
+      "robot": "microbit",
+      "robotLabel": "Micro:bit",
+      "url": "tutorial/index.html?id=mb-registre-dades",
+      "imatge": "_assets/tutorials/mb-data-logging.webp",
+      "titol": "micro:bit V2: registrar i analitzar dades",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Configurar el registre de MakeCode, recollir lectures de llum i temperatura i analitzar el fitxer sense perdre de vista els límits de la placa."
     },
     {
       "id": "tutorial-mb-so-microfon",
@@ -2089,10 +2113,10 @@ window.CATALEG = {
       "robotLabel": "Tale-Bot",
       "url": "tutorial/index.html?id=tb-motors-sensors",
       "imatge": "_assets/tutorials/tb-motors-sensors.png",
-      "titol": "Motors i sensors: Dibuix geomètric amb retoladors",
+      "titol": "Tale-Bot Pro: dibuix i transport amb accessoris",
       "dificultat": "Intermedi",
       "durada": "45 min",
-      "descripcio": "Inserir dos retoladors a les ales de TaleBot per traçar formes geomètriques de colors exactes sobre"
+      "descripcio": "Programar formes amb el suport de retoladors i provar els braços per a transportar un objecte lleuger."
     },
     {
       "id": "tutorial-tb-primeres-passes",
@@ -2190,7 +2214,7 @@ window.CATALEG = {
       ],
       "order": 4,
       "url": "robot/index.html?id=codey-rocky",
-      "tutorials": 6
+      "tutorials": 7
     },
     {
       "id": "robot-spike",
@@ -2220,7 +2244,7 @@ window.CATALEG = {
       ],
       "order": 6,
       "url": "robot/index.html?id=microbit",
-      "tutorials": 7
+      "tutorials": 8
     }
   ]
 };

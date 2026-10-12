@@ -12,6 +12,10 @@ image: _assets/tutorials/cs-funcions-fun-blocks.webp
 
 Reduïu una ruta llarga a un programa més curt reutilitzant una funció i acabeu amb una sortida creativa del MatataBot. Aprendreu a distingir una funció definida per l’equip dels blocs divertits preprogramats. El Coding Set base inclou funcions i blocs de moviment aleatori/música/dansa; compondre melodies amb notes pertany al complement Musician.
 
+- Definir i cridar una funció per reutilitzar una seqüència de moviments.
+- Comparar la versió amb funció amb la seqüència escrita completa.
+- Provar els tres blocs divertits i distingir-los d’un programa creat per l’equip.
+
 ## 🧰 Materials i preparació
 
 - Matatalab Coding Set complet: torre de control, tauler, MatataBot i blocs de moviment, funció, bucle, número i diversió.
@@ -66,8 +70,7 @@ Executeu tres vegades la ruta amb totes les ordres escrites i tres vegades amb f
 Permeteu planificar primer amb targetes grans o dir les ordres a una persona que les col·loca. Manteniu la torre i el tauler en una superfície estable, sense peces soltes prop de la trajectòria del robot. Si la música incomoda, silencieu-la o substituïu l’observació sonora per un registre visual del bloc i del moviment.
 
 ## ✅ Evidències d’aprenentatge
-
-Guardeu els dos programes comparats, el recompte de peces, les sis execucions de ruta i el registre dels blocs divertits. Expliqueu quina seqüència s’ha creat amb funcions pròpies i quins comportaments venen preprogramats; anoteu explícitament si la caixa del centre inclou algun complement.
+- Guardeu els dos programes comparats, el recompte de peces, les sis execucions de ruta i el registre dels blocs divertits. Expliqueu quina seqüència s’ha creat amb funcions pròpies i quins comportaments venen preprogramats; anoteu explícitament si la caixa del centre inclou algun complement.
 
 ## 🔗 Fonts oficials i límits
 

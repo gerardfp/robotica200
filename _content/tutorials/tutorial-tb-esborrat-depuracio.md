@@ -77,8 +77,7 @@ Feu tres comprovacions: una pulsació curta després d’introduir almenys tres 
 Useu una tira de fletxes gran, pictogrames o ordres dites en veu alta per anticipar la seqüència. El temps es pot comptar amb «curt» i «mantín» abans de provar-lo amb el criteri inferior o superior a un segon. Repartiu els rols de programació, observació dels indicadors i registre. Manteniu el robot quiet durant la correcció i no pressioneu diverses tecles alhora.
 
 ## ✅ Evidències d’aprenentatge
-
-Conserveu la tira de la seqüència inicial i la corregida, una taula que compare Clear curt i llarg, i el resultat de l’execució final. L’evidència ha de mostrar que l’equip ha conservat les ordres útils en la correcció parcial i ha confirmat l’apagat dels indicadors en l’esborrat complet. No cal gravar veus ni fotografiar l’alumnat.
+- Conserveu la tira de la seqüència inicial i la corregida, una taula que compare Clear curt i llarg, i el resultat de l’execució final. L’evidència ha de mostrar que l’equip ha conservat les ordres útils en la correcció parcial i ha confirmat l’apagat dels indicadors en l’esborrat complet. No cal gravar veus ni fotografiar l’alumnat.
 
 ## 🔗 Fonts oficials i límits
 

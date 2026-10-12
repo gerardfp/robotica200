@@ -11,6 +11,8 @@ image: _assets/tutorials/sp-distancia.png
 
 ![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](_assets/imatges/spike-parada-distancia.webp)
 
+Estima quant avançarà la base motriu i compara el resultat amb la distància real al bloc. La pràctica utilitza els graus del motor i la geometria de les rodes per planificar la parada, i reserva el sensor de força per detectar el contacte en una prova comparativa.
+
 - Relacionar els girs de les rodes amb la distància que recorre la base.
 - Fer una estimació, provar-la i ajustar-la amb dades.
 - Distingir una parada calculada d’una parada activada per contacte.
@@ -63,8 +65,7 @@ El nombre de voltes dona una parada anticipada que es pot calcular, però depén
 Per començar, facilita una taula de conversions roda-voltes-distància o una distància que corresponga a voltes completes. Com a extensió, compareu rodes de diàmetres diferents o representeu les proves en un gràfic. Repartiu els rols: conducció, mesura i registre.
 
 ## ✅ Evidències d’aprenentatge
-
-Recolliu una taula amb les prediccions i resultats, una explicació de l’ajust triat i una demostració de cada tipus de parada. Eviteu fotografiar cares o dades personals.
+- Recolliu una taula amb les prediccions i resultats, una explicació de l’ajust triat i una demostració de cada tipus de parada. Eviteu fotografiar cares o dades personals.
 
 ## 🔗 Fonts oficials i límits
 

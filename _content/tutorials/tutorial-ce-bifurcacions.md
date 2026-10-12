@@ -68,7 +68,6 @@ Feu dues proves per destí i canvieu una sola variable cada vegada. Marqueu en e
 Feu servir pictogrames grans i diferenciats per als destins i accepteu respostes assenyalades, orals o amb una targeta. Repartiu els rols de planificació, canvi d’agulla i registre. Atureu el tren abans de moure la palanca o tocar els rails; no poseu els dits entre les rodes i les vies.
 
 ## ✅ Evidències d’aprenentatge
-
 - Mapa de la via amb les dues branques, els destins i les posicions de l’agulla.
 - Taula de prediccions i resultats per a cada ruta.
 - Explicació d’una regla «si… aleshores…» que distingisca la decisió humana del moviment del tren.
