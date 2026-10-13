@@ -14,9 +14,9 @@ duration: "3 sessions"
 challenge: "Com podem crear una seqüència sonora breu inspirada en el pati i ordenar-la perquè cada so aparega en el moment acordat?"
 ---
 
-![El tren Coding Express connecta una via de joguina amb un escenari de concert d’un ocell i una granota.](../../_assets/imatges/sa-ce-concert-pati.webp)
+![El tren LEGO Education Coding Express de la dotació recorre una via circular amb maons d’acció prop d’un xicotet escenari de titelles.](../../_assets/imatges/sa-ce-concert-pati-v2.png)
 
-_El tren Coding Express connecta una via de joguina amb un escenari de concert d’un ocell i una granota._
+_Els maons d’acció poden activar respostes del tren segons el model; les figures i l’escenari són recursos narratius de l’aula._
 
 ## ❓ Repte i intenció
 

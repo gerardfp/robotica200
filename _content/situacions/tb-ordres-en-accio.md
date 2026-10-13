@@ -119,15 +119,15 @@ Una altra parella rep la targeta de colors sense veure el robot i reprodueix la 
 
 #### Fase 1 · Activem i prediem
 
-Col·loqueu Tale-Bot Pro i una targeta de personatge en la mateixa línia. En aquesta adaptació, el personatge arriba a l’hort escolar i vol saludar dues parades de carlotes de paper. Trieu una salutació curta, sense dades personals, i predigueu quantes ordres necessita el robot per arribar al primer punt i després al segon.
+Col·loqueu Tale-Bot Pro, un personatge i dues parades de carlotes de paper en un recorregut curt d’hort escolar. Trieu una salutació breu, sense dades personals, i predigueu les ordres necessàries per arribar primer al personatge i després a cada parada. Acordeu quina frase es gravarà una sola vegada i com es reutilitzarà.
 
 #### Fase 2 · Explorem i construïm
 
-Manteniu premut el botó de gravació més d’un segon per enregistrar un missatge breu (fins a 30 segons). El robot el reprodueix perquè l’equip el puga comprovar. Feu una pulsació curta per tornar a usar l’últim enregistrament; així es podrà repetir el mateix missatge sense tornar a gravar-lo.
+Manteniu premut el botó de gravació mentre parleu i deixeu-lo anar en acabar; l’enregistrament pot durar com a màxim 30 segons. El Tale-Bot reprodueix l’àudio en acabar perquè l’equip el comprove. Per reutilitzar l’últim missatge, feu una pulsació de menys d’un segon en el botó de gravació. No confongueu aquest gest amb el botó *Clear*: la pulsació de més d’un segon correspon a esborrar tota la seqüència.
 
 #### Fase 3 · Expliquem i registrem
 
-Representeu amb targetes la seqüència completa: arribar al personatge, activar l’enregistrament, continuar cap a la primera parada i reproduir-lo amb una pulsació curta; després, arribar a la segona parada i tornar-lo a reproduir. Marqueu les ordres de moviment i les dues ordres de gravació en un full de registre. Com a alternativa accessible, l’equip pot fer servir una salutació no gravada amb pictograma o veu en directe.
+Primer feu la tasca de salutació: programeu l’arribada a un personatge de joguet o de paper i inseriu una pulsació curta del botó de gravació perquè reproduïsca el missatge que acabeu de provar. Després, sense tornar a gravar, programeu l’arribada a dues parades de carlota i inseriu una pulsació curta en cada parada per reutilitzar el mateix àudio. Marqueu en el registre les tres ordres de reproducció i distingiu-les de l’enregistrament inicial. Com a alternativa accessible, l’equip pot fer servir una salutació no gravada amb pictograma o veu en directe.
 
 ![Tale-Bot Pro de la dotació arriba a dues targetes de carlota en una ruta de l’hort escolar i reprodueix un missatge enregistrat.](../../_assets/imatges/sa-tb-missatge-carlotes.png)
 
@@ -135,33 +135,37 @@ _La persona i les carlotes són targetes de paper; el robot executa la ruta i el
 
 #### Fase 4 · Apliquem i millorem
 
-Enregistreu una salutació de grup —o useu-ne una preparada per l’adult— i executeu la ruta fins al personatge i les dues parades. Comproveu que el missatge sona una vegada en cadascun dels dos punts i que Tale-Bot acaba en la casella prevista. Si falla el trajecte o es reprodueix en un lloc inadequat, canvieu una sola ordre i repetiu la prova. El robot no reconeix la targeta, la carlota ni la salutació: totes les accions depenen de la seqüència programada.
+Executeu primer la ruta al personatge i comproveu la salutació; després, proveu la ruta a les dues parades. El mateix àudio ha de sonar una vegada en cada punt i Tale-Bot ha d’acabar en la casella prevista. Si falla el trajecte o es reprodueix en un lloc inadequat, canvieu una sola ordre i repetiu la prova. El robot no reconeix la targeta, la carlota ni la salutació: totes les accions depenen de la seqüència programada.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** seqüència amb dues reproduccions, ruta provada i registre del resultat en cada parada. L’enregistrament de veus infantils és voluntari; es pot usar una frase fictícia dita per l’adult o l’alternativa pictogràfica. No enregistreu noms ni informació identificable; si no voleu guardar cap àudio al robot, completeu la mateixa seqüència amb pictogrames.
+**Evidència:** una gravació, tres reproduccions programades (personatge i dues parades), rutes provades i registre del resultat en cada punt. L’enregistrament de veus infantils és voluntari; es pot usar una frase fictícia dita per l’adult o l’alternativa pictogràfica. No enregistreu noms ni informació identificable; si no voleu guardar cap àudio al robot, completeu la mateixa seqüència amb pictogrames.
 
 ### **A-6 · Taller de dansa.**
 
 #### Fase 1 · Activem i prediem
 
-Poseu Tale-Bot i una targeta d’escenari en la mateixa línia. Predigueu el tram d’anada i el de tornada perquè el robot acabe al punt d’inici.
+Poseu Tale-Bot i una targeta d’escenari en la mateixa línia. Predigueu el tram d’anada i el de tornada perquè el robot acabe al punt d’inici. Distingiu la ruta, que sí que programeu, de la dansa, que s’escull aleatòriament entre sis moviments predefinits.
 
 #### Fase 2 · Explorem i construïm
 
-Planifiqueu les ordres cap avant i arrere i decidiu on s’activarà la dansa, si el model incorpora aquesta funció.
+Planifiqueu les ordres cap avant i arrere i afegiu el botó de dansa aleatòria al punt triat. Tale-Bot Pro incorpora sis danses predefinides i cada activació en reprodueix una a l’atzar; no permet triar ni editar la coreografia.
 
 #### Fase 3 · Expliquem i registrem
 
-Dibuixeu la ruta i registreu la distància de cada tram en ordres. Indiqueu quina acció del programa correspon a l’escenari.
+Dibuixeu la ruta i registreu la distància de cada tram en ordres. Indiqueu quina ordre activa la dansa i anoteu que el resultat no és determinista.
+
+![Tale-Bot Pro real de la dotació sobre una ruta de quadrícula, al costat de sis targetes de paper amb traces de moviment; una targeta assenyala la dansa observada en aquesta prova.](../../_assets/imatges/sa-tb-dansa-aleatoria-v2.png)
+
+_Les targetes són un registre visual creat per a l’activitat; no són accessoris ni coreografies programables del robot._
 
 #### Fase 4 · Apliquem i millorem
 
-Proveu quatre disposicions de distància diferent i reinicieu sempre des de la mateixa marca. Ajusteu les ordres si el robot no torna a l’inici.
+Proveu quatre disposicions de distància diferent i reinicieu sempre des de la mateixa marca. Registreu la ruta i la dansa observada en cada intent; no exigiu que les danses siguen diferents. Ajusteu les ordres si el robot no torna a l’inici.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** quatre rutes de prova amb un retorn verificat. La dansa és una acció del robot; cap infant no ha de ballar si no vol.
+**Evidència:** quatre rutes de prova amb un retorn verificat i registre de la dansa aleatòria observada. La coreografia és predefinida pel robot; cap infant no ha de ballar si no vol.
 
 ### **A-7 · Gir a esquerra o dreta?**
 
@@ -211,23 +215,27 @@ Executeu els sis programes i compareu moviment, girs i missatge amb la targeta m
 
 #### Fase 1 · Activem i prediem
 
-Trieu una fruita de temporada per al mapa propi i predigueu quina ruta arriba des de Tale-Bot fins a la casella.
+Trieu una fruita de temporada per al mapa propi i predigueu quina ruta arriba des de Tale-Bot fins a la casella. Si incloeu una dansa de celebració, tingueu present que el robot en tria una a l’atzar entre sis opcions predefinides.
 
 #### Fase 2 · Explorem i construïm
 
 Dibuixeu el recorregut amb retolador esborrable, traduïu-lo a targetes d’ordre i marqueu el punt d’inici.
 
+![Tale-Bot Pro real de la dotació segueix una ruta de paper cap a targetes il·lustrades de taronja i caqui en una maqueta d’hort valencià.](../../_assets/imatges/sa-tb-collim-fruita-v2.png)
+
+_Les fruites són destins representats amb targetes; l’alumnat les mou i les registra, però Tale-Bot no les arreplega ni les identifica._
+
 #### Fase 3 · Expliquem i registrem
 
-Anoteu la seqüència i decidiu quina acció de celebració s’activarà en arribar. Una frase gravada és opcional i requereix consentiment i funció compatible.
+Anoteu la seqüència i decidiu si activareu el botó de dansa aleatòria en arribar; l’alumnat no selecciona una coreografia concreta. Una frase gravada és opcional i requereix consentiment i funció compatible.
 
 #### Fase 4 · Apliquem i millorem
 
-Programeu el robot per arribar a la fruita i fer una dansa si el model ho permet. Esborreu la ruta abans que un altre equip prove una trajectòria diferent.
+Programeu el robot per arribar a la fruita i activar la dansa aleatòria. Esborreu la ruta abans que un altre equip prove una trajectòria diferent; no canvieu la coreografia, que forma part de les sis opcions predefinides.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** ruta prevista i executada, més una celebració triada. Expliqueu què s’ha mantingut igual i què ha canviat en la ruta del segon equip.
+**Evidència:** ruta prevista i executada, més el registre de l’activació i la dansa observada. Expliqueu què s’ha mantingut igual i què ha canviat en la ruta del segon equip, encara que la dansa puga variar aleatòriament.
 
 ### **A-10 · Guardes del parc I.**
 
@@ -242,6 +250,10 @@ Dibuixeu el camí i representeu les instruccions amb targetes. Comproveu que el 
 #### Fase 3 · Expliquem i registrem
 
 Anoteu les ordres de cada tram al voltant de l’objecte i indiqueu el punt on el robot ha de reprendre la direcció inicial.
+
+![Tale-Bot Pro real de la dotació recorre una quadrícula amb una ruta dibuixada que passa al voltant d’un arbre i d’un banc de maqueta, entre inici i destí.](../../_assets/imatges/sa-tb-guardes-parc-v2.png)
+
+_El recorregut està planificat per l’alumnat i deixa marge als objectes; el robot no els detecta._
 
 #### Fase 4 · Apliquem i millorem
 

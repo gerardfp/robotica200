@@ -14,9 +14,9 @@ duration: "4 sessions de 30–40 minuts"
 challenge: "Com convertim llocs del nostre entorn en una història circular i expliquem quan acaba?"
 ---
 
-![El tren Coding Express recorre una via tancada i passa repetidament per un jardí de paper.](../../_assets/imatges/sa-ce-bucles-relats.webp)
+![El tren LEGO Education Coding Express de la dotació recorre una via tancada, amb targetes pròpies de seqüència i un jardí de paper.](../../_assets/imatges/sa-ce-bucles-relats-v2.png)
 
-_El recorregut tancat fa visible una repetició; l’equip decideix quan començar i acabar._
+_La via mostra el bucle físic i les targetes representen la història; el tren no tria la ruta ni detecta els elements del jardí._
 
 ## ❓ Repte i intenció
 

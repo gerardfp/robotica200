@@ -14,9 +14,9 @@ duration: "6 sessions"
 challenge: "Com passem d’un problema quotidià a un algorisme precís, un programa provat i una explicació de com cooperen maquinari i programari?"
 ---
 
-![Placa micro:bit, pantalla amb blocs de programació i diagrama de flux en paper.](../../_assets/imatges/sa-mb-fonaments-computacio.webp)
+![Micro:bit de la dotació, amb matriu LED, botons A/B i contactes daurats, al costat d’una pantalla amb blocs visuals i un diagrama de flux en paper.](../../_assets/imatges/sa-mb-fonaments-computacio-v2.png)
 
-_Algorismes, codi i components són parts diferents d’un mateix sistema._
+_La placa és el maquinari; els blocs de la pantalla i el diagrama són representacions del programa, no funcions que la placa detecte automàticament._
 
 ## 🌱 Situació i intenció
 

@@ -14,9 +14,9 @@ duration: "10–15 sessions · selecció de reptes"
 challenge: "Quin prototip podem dissenyar per a respondre a un repte real sense prometre una protecció que la tecnologia no pot garantir?"
 ---
 
-![Micro:bit al costat de maquetes de bosc, platja, oceà i pista de proves per a projectes escolars.](../../_assets/imatges/sa-mb-reptes-planeta.webp)
+![Micro:bit real de la dotació al centre de quatre maquetes de taula: aiguamoll, mapa oceànic, camí costaner i pista escolar de proves.](../../_assets/imatges/sa-mb-reptes-planeta-v2.png)
 
-_Els projectes són prototips educatius: qualsevol ús real requereix validació experta i participació de les comunitats afectades._
+_Les escenes són maquetes de paper i cartó al voltant de la placa real; no representen dispositius instal·lats, proves en trànsit o protecció de fauna._
 
 ## 🌍 Com usar aquesta col·lecció
 

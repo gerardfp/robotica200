@@ -14,9 +14,9 @@ duration: "3 sessions"
 challenge: "Quines situacions poden interrompre un trajecte i com podem representar decisions prudents en una maqueta sense confondre-la amb una senyalització real?"
 ---
 
-![El tren Coding Express travessa un pas de vianants i una barrera de maqueta en una ciutat de joguina.](../../_assets/imatges/sa-ce-ruta-segura.webp)
+![El tren LEGO Education Coding Express de la dotació s’acosta a una barrera i un pas de vianants de maqueta, sobre una taula d’aula.](../../_assets/imatges/sa-ce-ruta-segura-v2.png)
 
-_El tren Coding Express travessa un pas de vianants i una barrera de maqueta en una ciutat de joguina._
+_La maqueta serveix per conversar sobre una ruta segura; el tren no detecta vianants ni controla la barrera._
 
 ## ❓ Repte i intenció
 

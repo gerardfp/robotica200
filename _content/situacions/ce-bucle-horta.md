@@ -14,9 +14,9 @@ duration: "3 sessions · 120 min"
 challenge: "Què es repeteix quan el tren completa una volta a l’hort i com podem anticipar quantes vegades passarà pel mateix punt?"
 ---
 
-![El tren Coding Express recorre un bucle al voltant d’un hort de joguina amb bancals i arbres.](../../_assets/imatges/sa-ce-bucle-horta.webp)
+![El tren LEGO Education Coding Express de la dotació completa una via tancada al voltant d’un hort escolar senzill en una escena 3D d’estudi.](../../_assets/imatges/sa-ce-bucle-horta-v2.png)
 
-_El tren Coding Express recorre un bucle al voltant d’un hort de joguina amb bancals i arbres._
+_La via tancada fa visible la repetició del recorregut; les parades i l’hort són una maqueta de classe._
 
 ## ❓ Repte i intenció
 

@@ -14,9 +14,9 @@ duration: "5 sessions"
 challenge: "Com podem preparar un pati acollidor per a diferents condicions d’oratge?"
 ---
 
-![El tren Coding Express travessa una maqueta de pati amb símbols de sol, pluja, vent i estacions.](../../_assets/imatges/sa-ce-oratge-pati.webp)
+![El tren LEGO Education Coding Express de la dotació recorre una maqueta de pati amb ombra, refugi de pluja, jardí i pictogrames de paper.](../../_assets/imatges/sa-ce-oratge-pati-v2.png)
 
-_Els símbols i les maquetes ajuden a parlar de l’oratge sense presentar una predicció fictícia com si fora real._
+_Els pictogrames són targetes fetes a classe; el tren segueix la via i no mesura ni prediu l’oratge._
 
 ## ❓ Repte i intenció
 

@@ -14,9 +14,9 @@ duration: "6 sessions"
 challenge: "Com podem representar dos estats d’un pas urbà amb senyals comprensibles per més d’un canal i provar-los en una maqueta?"
 ---
 
-![Placa micro:bit de la dotació connectada a un senyal prototip al costat d’un pas de vianants de maqueta amb paviment tàctil representat.](../../_assets/imatges/sa-ciutat-accessible.webp)
+![Placa micro:bit de la dotació al costat d’un pas de vianants de cartó, paviment tàctil representat i targetes de dos estats per a una maqueta escolar.](../../_assets/imatges/sa-ciutat-accessible-v2.png)
 
-_És una maqueta per estudiar comunicació i accessibilitat; no controla ni valida un pas real._
+_Il·lustració IA pròpia basada en la placa micro:bit de la dotació. La maqueta representa estats per estudiar comunicació i accessibilitat; no controla ni valida un pas real._
 
 ## 🏙️ Repte, context i aprenentatges
 

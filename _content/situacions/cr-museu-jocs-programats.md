@@ -14,7 +14,7 @@ duration: "24 sessions de 40 minuts"
 challenge: "Com dissenyem una exposició de jocs que es puga entendre, provar, depurar i recórrer amb Codey Rocky?"
 ---
 
-![Codey Rocky real amb pantalla LED i erugues al costat d’una ruta de joc i targetes de colors.](../../_assets/imatges/sa-cr-jocs-24.webp)
+![Codey Rocky real de la dotació al costat d’una ruta de joc de paper i targetes de colors en una aula-museu.](../../_assets/imatges/sa-cr-jocs-24-v2.png)
 
 _El museu és una proposta pròpia; cada mòdul construeix un joc petit amb codi visible i proves repetibles._
 
@@ -55,9 +55,9 @@ Connecteu Codey amb el cable USB, enceneu-lo i seleccioneu el port sèrie correc
 
 **Evidència:** inventari de Codey/Rocky, diagrama idea-programa-acció, captura o dibuix dels blocs, resultat de la prova i una dificultat resolta. Tanqueu amb les frases «hui he aprés…», «el problema era…» i «l’he resolt…»; es pot respondre amb text, dibuix o explicació oral.
 
-![Codey Rocky de la dotació al costat d’un ordinador amb blocs de programació i quatre targetes de seqüència en blanc.](../../_assets/imatges/sa-cr-primeres-lliçons.webp)
+![Codey Rocky real de la dotació al costat d’un portàtil amb blocs de programació sense text i quatre targetes de seqüència en blanc.](../../_assets/imatges/sa-cr-primeres-lliçons-v2.png)
 
-_Les targetes i la interfície són una representació pròpia; el robot parteix del model Codey Rocky treballat a classe._
+_La interfície de blocs i les targetes són materials propis; el robot representa el model Codey Rocky de la dotació._
 
 ### **L2 · Botons i expressions programades (40 min).**
 
@@ -69,9 +69,9 @@ Recordeu una entrada i una eixida de la lliçó anterior. Presenteu una situaci�
 
 Feu una versió pròpia del joc desconnectat «Segueix les instruccions»: assigneu tres o quatre senyals geomètrics a accions simples de paper, com alçar una targeta, dibuixar una forma o girar una fitxa. Una persona mostra el senyal i el grup executa l’acció acordada; proveu una ronda lenta i una amb els senyals en un altre ordre. Qui preferisca no fer moviments pot ser qui mostra les targetes, marca la seqüència o comprova si la resposta correspon al senyal.
 
-![Codey Rocky de la dotació respon a una pulsació amb una icona a la matriu LED; una mà prem el botó del mòdul Codey.](../../_assets/imatges/sa-cr-botons-expressions.webp)
+![Una mà prem un dels botons frontals del Codey Rocky real de la dotació, que mostra una icona abstracta a la matriu LED.](../../_assets/imatges/sa-cr-botons-expressions-v2.png)
 
-_La imatge mostra una entrada física i una resposta visual programada; els símbols no descriuen emocions reals._
+_La imatge mostra una entrada física i una resposta visual programada; la icona és una eixida del codi, no una lectura de les emocions de ningú._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
@@ -103,7 +103,7 @@ Obriu un programa amb l’esdeveniment «quan es prem A» i encadeneu quatre fot
 
 Dibuixeu un fotograma en una graella LED de cinc per cinc. Dupliqueu-ne el bloc, canvieu uns pocs píxels i repetiu la seqüència fins que una altra parella puga reconéixer el moviment o missatge. Carregueu-la i ajusteu l’ordre o la duració a partir d’una observació concreta.
 
-![Codey Rocky de la dotació al costat d’una graella de ruta i targetes de seqüència, com a suport per ordenar els fotogrames d’una animació.](../../_assets/imatges/sa-cr-sequencia-animacio.webp)
+![Codey Rocky real de la dotació al costat de quatre targetes de graella 5×5 amb un patró de píxels que canvia en seqüència.](../../_assets/imatges/sa-cr-sequencia-animacio-v2.png)
 
 _La graella i les targetes són materials didàctics propis; l’animació s’executa a la matriu LED del robot._
 
@@ -115,27 +115,27 @@ _La graella i les targetes són materials didàctics propis; l’animació s’e
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Expliqueu que un *bug* és un defecte del programa que provoca una diferència entre el resultat esperat i l’observat. Poseu un exemple quotidià —una instrucció que omet una parada— i distingiu-lo d’una limitació del sensor o d’un problema de connexió.
+Recupereu què és una seqüència: una sèrie d’instruccions que s’executen en un ordre determinat. Expliqueu que un *bug* és un error del programa que impedeix obtindre el resultat previst; no és un insecte, una avaria del robot ni un sensor amb un límit propi. Anuncieu que revisareu tres programes d’una exposició escolar línia per línia, de dalt a baix, i que abans de tocar-los cal descriure què esperàveu que passara.
 
 #### Fase 2 · Explorem i construïm (15 min)
 
-Prepareu tres programes curts amb un error cadascun: una ruta de maqueta que no arriba a una clau dibuixada; una parada que no s’activa abans d’un obstacle tou; i un compte arrere que no acaba mostrant el missatge final. L’últim cas substitueix la bomba fictícia del material d’origen per una càpsula de missatge segura. Abans d’executar, cada parella escriu el resultat esperat; després registra el punt on la prova es desvia.
+Prepareu tres programes de pantalla amb un error cadascun, inspirats en els exercicis oficials i recontextualitzats per a l’exposició del centre: (1) una seqüència d’icones d’un cotxe de servei que no arranca perquè li falta l’esdeveniment d’inici; (2) un compte arrere per obrir l’exposició amb els valors 5, 3, 4, 1, 2, 0, fora d’ordre; (3) una animació d’una eruga dibuixada que queda interrompuda per un fotograma alié a la història. El segon programa és només un comptatge de preparació. Abans d’executar, cada parella anota el resultat esperat i marca en quin bloc sospita que es trenca la seqüència.
 
-![Codey Rocky de la dotació amb targetes de seqüència; una targeta separada marca el punt on l’equip investiga un error de programa.](../../_assets/imatges/sa-cr-depuracio.webp)
+![Codey Rocky real de la dotació al costat de tres seqüències de paper: una sense inici, un compte arrere desordenat i un fotograma alié apartat.](../../_assets/imatges/sa-cr-depuracio-v2.png)
 
-_Les targetes són material propi de prova; el robot no detecta errors de programa automàticament._
+_Les targetes i els exemples són materials didàctics propis; Codey Rocky mostra el programa, però no detecta ni corregeix els errors automàticament._
 
 #### Fase 3 · Expliquem i registrem (5 min)
 
-Descriviu el símptoma i compareu-lo amb el programa. Reviseu esdeveniment inicial, ordre, valor i condició; separeu els errors de codi dels errors de maquinari. No canvieu simultàniament diversos blocs.
+Llegiu cada programa de dalt a baix i compareu el resultat amb la predicció. En el primer, localitzeu que falta un bloc d’esdeveniment; en el segon, compareu la posició dels nombres i reconstruïu 5–4–3–2–1–0; en el tercer, identifiqueu el fotograma que no pertany a l’animació. Distingiu aquests errors de programació d’una pantalla apagada o d’un problema de connexió. No canvieu diversos blocs alhora.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Canvieu una sola instrucció, torneu a executar el mateix cas i comproveu si s’ha resolt la desviació. Si no, desfeu el canvi i proveu una hipòtesi diferent. Una parella revisora intenta reproduir el resultat amb les mateixes condicions.
+Repareu cada programa amb el canvi mínim: afegiu un esdeveniment d’inici al primer; ordeneu els valors del compte arrere al segon; retireu el fotograma alié del tercer. Executeu de nou el mateix exemple després de cada reparació i registreu si ara coincideixen resultat i predicció. Una parella revisora rep el programa sense l’explicació de l’autoria, el prova i comprova si pot justificar el canvi.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** predicció, símptoma, hipòtesi, canvi únic, resultat i conclusió. Marqueu si la causa era un bloc, una connexió o una expectativa mal definida; no doneu per corregit un error fins que una prova ho confirme.
+**Evidència:** per als tres programes, registreu predicció, símptoma, bloc o ordre que cal revisar, canvi mínim, resultat de la nova prova i conclusió. L’error només es considera corregit quan la parella revisora reprodueix el comportament previst.
 
 ### **L5 · Bucle comptat (40 min).**
 
@@ -147,7 +147,7 @@ Recupereu la seqüència d’animació de L3. En una tira de quatre vinyetes, re
 
 Ordeneu tres targetes de paper —preparar la granota, saltar i aterrar— i afegiu una pausa perquè es puga llegir cada fotograma. Feu que una altra parella execute el fragment quatre vegades. Després, compareu la tira de tres instruccions dins d’un únic bucle comptat amb la mateixa tira copiada quatre vegades; marqueu què queda dins de `repeteix` i què s’executa només una vegada abans o després.
 
-![Codey Rocky de la dotació davant d’un mapa escolar de la marjal amb quatre marques repetides de ruta i fitxes de recompte.](../../_assets/imatges/sa-cr-bucle-comptat.webp)
+![Codey Rocky real al costat d’un mapa de paper de la marjal amb quatre parades de canyís connectades per fletxes i quatre fitxes de recompte.](../../_assets/imatges/sa-cr-bucle-comptat-v2.png)
 
 _Les quatre marques modelen el nombre d’iteracions; el robot no identifica hàbitats ni compta les parades per si mateix._
 
@@ -179,7 +179,7 @@ En mBlock, feu una animació finita amb un esdeveniment de botó i un `repeteix`
 
 Compareu els programes bloc a bloc: quin té un nombre de voltes definit i quin no incorpora cap eixida natural? Executeu-los i registreu inici, dos cicles observats, ordre d’aturada i resposta final. Verifiqueu la via de parada que heu triat: el botó C només si heu pogut programar-lo en l’entorn disponible; si no, el control de mBlock. Anoteu quin mètode ha funcionat i expliqueu per què un bucle infinit necessita un control de parada accessible.
 
-![Codey Rocky de la dotació amb una seqüència cíclica de símbols i una targeta de pausa, al costat d’un model de paper de dia i nit.](../../_assets/imatges/sa-cr-bucle-continu.webp)
+![Codey Rocky real de la dotació al costat d’una maqueta de paper de dia i nit, una targeta de cicle i una targeta independent de pausa.](../../_assets/imatges/sa-cr-bucle-continu-v2.png)
 
 _El paisatge de dia i nit és una metàfora de paper; la placa no mesura el cicle natural en aquesta activitat._
 
@@ -245,7 +245,7 @@ Recupereu les condicions vertadera/falsa de L7 i compareu diverses instruccions 
 
 Construïu amb llibres o cartó una estació en forma d’U, amb tres costats tancats, una única eixida i una recta de pista davant; prepareu també un túnel curt de cartolina per a la prova de llum, separada de la ruta. Situeu el robot en les tres orientacions inicials del repte, sempre dins de l’U i amb espai lliure per a girar. Gireu el sensor IR cap avant i comproveu que detecta les parets; useu el sensor de llum integrat només en la prova del túnel. Abans d’engegar, retireu qualsevol objecte solt i valideu la distància d’aturada a potència baixa.
 
-![Codey Rocky ix d’una estació de servei de cartó cap a un circuit pla i un túnel de prova a la marjal.](../../_assets/imatges/sa-cr-estacio-servei.webp)
+![Codey Rocky real de la dotació dins d’una estació de proves en U feta de cartó, amb una eixida ampla i un túnel de paper separat.](../../_assets/imatges/sa-cr-estacio-servei-v2.png)
 
 _Il·lustració pròpia de la maqueta de L8; el túnel i el traçat són materials d’aula, no un escenari oficial ni una construcció real de l’Albufera._
 
@@ -320,7 +320,7 @@ per sempre
 | 20 | Barra mitjana | Límit assignat a la franja central per convenció local |
 | 21 | Barra alta | Major que 20 |
 
-![Codey Rocky de la dotació mostra tres altures de barra en la matriu LED.](../../_assets/imatges/sa-cr-barra-sonora.webp)
+![Codey Rocky real mostra tres columnes de punts a la matriu LED al costat de barres de paper de tres altures.](../../_assets/imatges/sa-cr-barra-sonora-v2.png)
 
 _Representació visual de tres nivells: la pantalla mostra una resposta programada, no un valor de decibels ni una gravació._
 
@@ -344,7 +344,7 @@ Recupereu una condició de L9 i expliqueu què fa el programa si és certa o fal
 En equips, repartiu targetes amb funcions fictícies d’obertura (preparar la pantalla, mostrar la icona, fer una pausa, reproduir un so opcional) i algunes que no corresponen a l’esdeveniment. Doneu un nom clar a cada grup d’accions, trieu quines funcions cal cridar quan Codey s’inicia i ordeneu-les. Compareu si alguna sobra, si una s’ha cridat dues vegades o si el nom no descriu les accions. Es pot llegir la seqüència sense representar-la corporalment.
 
 
-![Codey Rocky de la dotació amb una icona d’inici a la matriu i targetes agrupades com a rutines reutilitzables.](../../_assets/imatges/sa-cr-funcions-entrada.webp)
+![Codey Rocky real al costat de targetes de paper agrupades com a rutines reutilitzables i una ruta de maqueta cap a l’observatori de la marjal.](../../_assets/imatges/sa-cr-funcions-entrada-v2.png)
 
 _Les targetes modelen funcions creades per l’alumnat; no són blocs ni accessoris oficials del kit._
 
@@ -385,7 +385,7 @@ Recupereu la funció `benvinguda_marjal` de L10: què vol dir definir-la i què 
 Marqueu la ruta sobre paper gran o amb cinta de pintor en una zona de terra lliure i plana; manteniu el robot allunyat de taules, escales i passadissos de circulació. Mesureu la distància que recorre Codey Rocky durant un segon a una potència baixa i repetible; repetiu tres vegades i calculeu `velocitat = distància ÷ temps` amb la mitjana de les tres lectures. Anoteu costat, connexió, potència, durada i distància observada. El valor d’exemple del manual (14 cm per costat i 7 cm/s a potència 50%) és només una dada per practicar el càlcul: mesureu el robot real abans d’usar-lo.
 
 
-![Codey Rocky de la dotació al costat d’un plànol de dos quadrats connectats i una regla per calibrar la ruta.](../../_assets/imatges/sa-cr-patrulla-quadrats.webp)
+![Codey Rocky real al costat d’un mapa de paper amb dues rutes quadrades connectades, marques d’inici i final i una regla.](../../_assets/imatges/sa-cr-patrulla-quadrats-v2.png)
 
 _El plànol representa una patrulla en superfície plana; les distàncies i el temps s’han de mesurar amb el robot disponible._
 
@@ -494,7 +494,7 @@ Prepareu el registre amb `reserva = 10` i targetes que adapten tota la partida o
 La temperatura és una entrada simulada en una targeta: Codey Rocky no la mesura en aquesta activitat. Les fitxes són valors del joc, no llavors reals ni indicacions per a recollir-les de l’entorn. Amb una targeta de temperatura simulada de 6 °C i les rondes guanyar/perdre/empat, la traça és `10 → 8 → 18 → 15 → 20 → 17 → 13 → 13 → 12 → 5`. Registreu cada pas i comproveu els dos llindars també per separat: `4 < 5` activa la reposició i `5 < 5` no; `13 > 12` activa la resposta i `12 > 12` no.
 
 
-![Codey Rocky de la dotació amb una caixa de fitxes de llavors i safates per modelar els canvis d’una variable.](../../_assets/imatges/sa-cr-variable-llavors.webp)
+![Codey Rocky real amb un pot de fitxes de llavors de paper, dues safates buides i targetes d’operació en una fira escolar de l’horta.](../../_assets/imatges/sa-cr-variable-llavors-v2.png)
 
 _Les fitxes representen valors de programació; el robot no pesa ni detecta les llavors._
 
@@ -522,7 +522,7 @@ Obriu un marcador fictici que comença a zero. Predigueu què mostrarà després
 Creeu una variable `marcador` i assigneu-li el valor 0 en iniciar el programa. Configureu A perquè l’incremente en 1 i B perquè el decremente en 1. Mostreu el resultat en la matriu LED després de cada canvi. Compareu l’operació manual amb el bloc de canvi de variable i observeu què significa restar quan el valor és zero.
 
 
-![Codey Rocky de la dotació amb fitxes agrupades i targetes de suma i resta per representar operacions sobre el marcador.](../../_assets/imatges/sa-cr-operacions-marcador.webp)
+![Codey Rocky real al costat de safates amb fitxes agrupades i pictogrames d’operacions per representar un marcador.](../../_assets/imatges/sa-cr-operacions-marcador-v2.png)
 
 _Els materials són un model de classe; les operacions les calcula el programa, no la imatge ni un sensor del robot._
 
@@ -555,30 +555,29 @@ Canvieu el valor inicial i el factor (per exemple, de 2 a 3), i repetiu les prov
 **Evidència:** les dues versions diferenciades, inicialització de la variable, taula d’entrades/operacions/resultats per a casos positius, negatius i imparells, i comparació entre càlcul manual i pantalla.
 
 **Pregunta docent:** per què cal guardar el resultat nou en la mateixa variable perquè el marcador continue acumulant els canvis?
-### **L15 · La càpsula d’arribada (40 min).**
+### **L15 · El comptador de la fira de l’horta (40 min).**
 
-El pla oficial treballa variables, compte arrere i aleatorietat dins d’un joc d’explosió. Ací en conservem la lògica de programació i eliminem l’explosiu, la por i el pas ràpid del robot entre persones: usem una càpsula de missatge en una taula estable, amb cancel·lació clara i senyal final neutre.
+El pla oficial treballa variables, compte arrere i aleatorietat amb dues tasques: un compte arrere cooperatiu i un joc de nombre objectiu. En aquesta adaptació, la classe prepara l’obertura d’una fira escolar de l’horta i compta fitxes de cistelles de paper. Es mantenen les trenta iteracions d’un segon, l’objectiu aleatori entre 1 i 20, el comptador i la comparació d’igualtat; desapareixen l’explosiu, la pressió per acabar de pressa i el pas del robot entre persones. Les fruites i les fitxes són una maqueta: Codey Rocky no les detecta ni en fa inventari.
 
 #### Fase 1 · Activem i prediem (5 min)
 
-Mostreu una variable `temps` que comença en 30 i una càpsula de paper. Predigueu quantes actualitzacions hi haurà si el programa resta una unitat cada segon i què ha de mostrar la pantalla quan arribe a zero.
+Mostreu una parada de fira de paper encara tancada i una variable `temps` que comença en 30. Predigueu quantes actualitzacions hi haurà si cada segon es resta una unitat i què indicarà Codey Rocky quan el compte arribe a zero. Acordeu que és una simulació de l’obertura, no un cronòmetre per a pressionar cap participant.
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-En iniciar, assigneu 30 a `temps` i mostreu-lo en la matriu. En prémer A, comenceu el compte arrere: espereu un segon, resteu 1, mostreu el valor i repetiu 30 vegades. Quan `temps` arriba a 0, atureu el bucle i mostreu «missatge llest» amb una llum d’un color acordat; ometeu el so intens del recurs i oferiu sempre una versió silenciosa. El robot no es passa de mà en mà: els equips roten una targeta de torn.
+En iniciar, assigneu 30 a `temps` i mostreu-lo en la matriu. En prémer A, comenceu el compte arrere: espereu un segon, resteu 1, mostreu el valor i repetiu 30 vegades. Quan `temps` arriba a 0, atureu el bucle i mostreu una icona de fulla o parada oberta amb una llum acordada; el so és opcional i ha de tindre una alternativa silenciosa. El robot roman sobre una taula estable: per repartir torns, l’equip mou una targeta de paper, no el dispositiu.
 
+![Codey Rocky real de la dotació al costat d’una parada de fira escolar de l’horta, fitxes de colors i targetes de fruita en paper.](../../_assets/imatges/sa-cr-comptador-fira-horta-v1.png)
 
-![Codey Rocky de la dotació al costat d’una càpsula de missatge, fitxes de compte arrere i una targeta de pausa.](../../_assets/imatges/sa-cr-compte-capsula.webp)
-
-_La càpsula substitueix el context d’explosiu del recurs d’origen; no hi ha objectes ni sons d’amenaça._
+_Les fruites i les fitxes són una maqueta per al joc de variables; el robot no identifica aliments ni compta objectes reals._
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Traceu els primers tres segons i el final. Comproveu que el valor inicial, la repetició i la condició d’aturada donen 30 actualitzacions, no 29 ni 31. Registreu què passa si el programa s’inicia dues vegades i si una persona prem el control abans que acabe. La cancel·lació és una ampliació pròpia i s’assaja en un projecte separat; no pot deixar scripts del compte arrere executant-se en segon pla.
+Traceu els tres primers segons i el final. Comproveu que el valor inicial, la repetició i la condició d’aturada produeixen exactament 30 actualitzacions, no 29 ni 31. Registreu què passa si s’inicia el programa dues vegades i proveu la cancel·lació abans del final. La cancel·lació és una ampliació pròpia en un projecte separat: no pot deixar actiu cap script del temporitzador.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
-Feu dues ampliacions com a projectes separats. En una còpia del compte arrere, afegiu B com a cancel·lació: ha d’aturar els scripts de temps i mostrar «pausa»; verifiqueu que el temporitzador no continua després. En un segon projecte, adapteu la tasca oficial *The Explosive Number* a un comptador cooperatiu de fitxes: inicialitzeu `objectiu` i `comptador` a zero; en prémer A, genereu un objectiu aleatori d’1 a 20 i reinicieu el comptador; cada pulsació de B suma 1 i mostra el nou valor. Quan `comptador = objectiu`, mostreu «missatge llest» i una llum neutra, sense efectes d’explosió. No programeu el compte arrere i el comptador en els mateixos botons.
+Feu dues ampliacions com a projectes separats. En una còpia del compte arrere, assigneu B a cancel·lar: ha d’aturar els scripts de temps i mostrar una icona neutra de pausa; comproveu que el temporitzador no continua en segon pla. En el segon projecte, adapteu *The Explosive Number* com un recompte cooperatiu de cistelles de paper: inicialitzeu `objectiu` i `comptador` a zero; en prémer A, genereu un objectiu aleatori d’1 a 20 i reinicieu el comptador; cada pulsació de B suma 1 i mostra el valor. Quan `comptador = objectiu`, mostreu la icona de parada oberta. Aquesta puntuació representa només pulsacions programades, no existències ni una classificació real de la collita. No combineu els dos projectes en els mateixos botons.
 
 ```blocks
 quan Codey inicia
@@ -594,17 +593,18 @@ quan es prem B
   canvia comptador en 1
   mostra comptador
   si comptador = objectiu
-    mostra «missatge llest»
+    mostra icona de parada oberta
     encén la llum neutra
 ```
 
-Per provar-ho sense esperar a l’atzar, substituïu temporalment l’assignació aleatòria per objectius fixos 1 i 20; després proveu `objectiu − 1`, `objectiu` i `objectiu + 1`. Només la igualtat ha d’activar el missatge. Restaureu el bloc aleatori i comproveu que cada A reinicia `comptador` abans d’una ronda nova. L’atzar serveix per al joc, no per a seguretat o xifratge.
+Per provar la condició sense dependre de l’atzar, substituïu temporalment l’assignació per objectius fixos 1 i 20; després proveu `objectiu − 1`, `objectiu` i `objectiu + 1`. Només la igualtat ha d’activar el missatge. Restaureu el bloc aleatori i comproveu que cada A reinicia `comptador` abans d’una ronda nova. L’atzar serveix per al joc, no per a seguretat, prediccions de collita o xifratge.
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** diagrama d’estats, traça de 30 actualitzacions, cancel·lació provada en un projecte separat i taula de proves del comptador amb objectius fixos, igualtat i valors adjacents; després, comprovació del reinici amb l’objectiu aleatori.
+**Evidència:** diagrama d’estats, traça de les 30 actualitzacions, cancel·lació provada en un projecte separat i taula de proves del comptador amb objectius fixos, igualtat i valors adjacents; tanqueu amb una comprovació que una ronda nova reinicia el comptador.
 
-**Pregunta docent:** quina part de la lògica continua sent útil quan canviem el context de bomba a càpsula de missatge?
+**Pregunta docent:** quines parts del compte arrere i del nombre aleatori continuen sent les mateixes quan el joc passa a representar l’obertura d’una fira escolar?
+
 ### **L16 · Pedra, paper i tisora (40 min).**
 
 #### Fase 1 · Activem i prediem (5 min)
@@ -615,7 +615,7 @@ Representeu les tres opcions amb símbols neutres i acordeu la regla: pedra guan
 
 Inicialitzeu `gest`, `guanys`, `derrotes` i `empats` a zero. Quan Codey Rocky es sacseja, assigneu a `gest` un nombre aleatori entre 0 i 2 i mostreu el símbol corresponent en la matriu LED. En el quadern d’alumnat i el manual docent, la correspondència és **0 = pedra, 1 = tisora, 2 = paper**; un altre resum oficial de la unitat intercanvia els valors de tisora i paper. Ací seguim la correspondència del repte docent i la mantindrem igual en totes les targetes i proves. Si mBlock no exposa el giroscopi o l’atzar, useu A i targetes de nombres, i identifiqueu-ho com a simulació.
 
-![Codey Rocky de la dotació al costat de targetes pròpies amb símbols de pedra, paper i tisora.](../../_assets/imatges/sa-cr-pedra-paper-tisora.webp)
+![Codey Rocky real al costat de targetes de paper amb pedra, tisora i mà oberta; la pantalla mostra un símbol abstracte.](../../_assets/imatges/sa-cr-pedra-paper-tisora-v2.png)
 
 _Les targetes fan visibles les tres opcions del joc; la matriu del robot mostra el gest generat pel programa._
 
@@ -673,7 +673,7 @@ Mostreu tres referències de jocs (o dibuixos propis) i compareu com el color, l
 En mBlock, dibuixeu o munteu un fons original amb pista ampla i distingible, línia d’inici, línia roja de meta i una zona fora de pista d’un color uniforme. Creeu un personatge digital original o adapteu-ne un de la biblioteca, assigneu-li un nom i establiu una posició inicial. Programeu les fletxes amunt, avall, esquerra i dreta amb desplaçaments curts; afegiu una alternativa de tecles en pantalla o targetes de direcció perquè no calga prémer ràpidament.
 
 
-![Codey Rocky de la dotació estacionari al costat d’un mapa de joc amb una ruta, un vehicle virtual i una meta.](../../_assets/imatges/sa-cr-my-speedway.webp)
+![Codey Rocky real de la dotació, quiet al costat d’un ordinador que mostra el recorregut digital pel barri, un vehicle virtual i la meta roja.](../../_assets/imatges/sa-cr-my-speedway-v3.png)
 
 _El robot envia controls al joc de pantalla; no és un cotxe físic ni una prova de conducció._
 
@@ -717,7 +717,7 @@ Compareu com es controla un joc en ordinador, mòbil o consola i trieu una idea 
 Dissenyeu una escena i un personatge originals en mBlock. Creeu els esdeveniments **Codey inclinat a l’esquerra** i **Codey inclinat a la dreta**; cadascun mostra una icona i envia el missatge corresponent. Configureu el cotxe virtual perquè, en rebre el missatge, s’ature primer qualsevol altre script del mateix sprite i després comence un gir continu en el sentit indicat. Manteniu Codey sobre la taula i inclineu-lo suaument, sense alçar-lo ni sacsar-lo. Si el calibratge del giroscopi està disponible en la versió de l’entorn, calibreu-lo abans de provar.
 
 
-![Codey Rocky de la dotació al costat d’un laberint virtual i indicadors de gir per provar el control amb el giroscopi.](../../_assets/imatges/sa-cr-controls-giroscopi.webp)
+![Codey Rocky real de la dotació, quiet al costat d’un ordinador amb un laberint virtual, un personatge digital i una meta; dues fletxes indiquen l’entrada d’inclinació.](../../_assets/imatges/sa-cr-controls-giroscopi-v2.png)
 
 _El moviment representat és del personatge virtual; el robot es manté quiet mentre envia les entrades._
 
@@ -778,7 +778,7 @@ Recupereu el joc de recorregut de L17 i convertiu-lo en una ruta virtual per a u
 
 Dibuixeu una pista ampla amb inici, meta i una zona exterior ben diferenciada; useu colors diferents per al canal, l’exterior i la meta, i no els feu tocar-se. En aquesta primera versió no afegiu obstacles ni cronòmetre. En mBlock, connecteu Codey i feu que A i B envien missatges de control a la barqueta; si la connexió no és disponible, useu les fletxes del teclat o targetes equivalents. Definiu en una targeta de regles què vol dir «dins de la pista», què passa quan se n’ix i com es reconeix l’arribada.
 
-![Codey Rocky de la dotació al costat d’un mapa de canal amb inici, meta i una barqueta dins i fora de la ruta.](../../_assets/imatges/sa-cr-mecanica-joc.webp)
+![Codey Rocky real de la dotació, quiet al costat d’un ordinador amb el joc digital d’una barqueta que recorre un canal i una meta.](../../_assets/imatges/sa-cr-mecanica-joc-v2.png)
 
 _El mapa il·lustra la regla de límit del joc; la barqueta és un personatge digital i no un robot físic._
 
@@ -826,7 +826,7 @@ Recupereu el prototip de L19 i distingiu tres maneres de crear conflicte: un obs
 
 Afegiu una branca a la deriva que baixa des de la part superior de la pantalla. Si toca la barqueta, aquesta torna a l’inici; després d’una pausa breu, la branca reapareix des de dalt. Si no hi ha contacte i la branca arriba al marge inferior, desapareix i la ruta continua. Feu-la gran i lenta en la primera prova, i afegiu controls visibles per a pausar o reiniciar.
 
-![Codey Rocky al costat d’un canal de joc amb una barqueta, un obstacle mòbil, una fitxa i dues opcions de ruta.](../../_assets/imatges/sa-cr-obstacles-joc.webp)
+![Codey Rocky real de la dotació, quiet al costat d’un ordinador amb el joc digital de la barqueta, l’obstacle, el missatge col·leccionable i les dues rutes.](../../_assets/imatges/sa-cr-obstacles-joc-v2.png)
 
 _L’escena representa un obstacle, un objecte col·leccionable i dues rutes; les regles concretes es proven al prototip de mBlock._
 
@@ -937,7 +937,7 @@ Recordeu que Rocky es mou amb dues rodes motrius. Representeu-les amb dues fitxe
 
 En mBlock, localitzeu el bloc de moviment que permet ajustar la potència de les rodes de Rocky (0–100) i prepareu una pista ampla de paper, amb inici i parada ben visibles. Proveu primer un tram recte amb potències iguals; després, una volta circular i una semicircular modificant la diferència entre les dues rodes. Manteniu una potència baixa, deixeu espai lliure al voltant i atureu el programa abans de recol·locar el robot. No cal perseguir una forma geomètrica perfecta: el propòsit és relacionar la diferència de velocitat de les rodes amb la curvatura observada.
 
-![Codey Rocky de la dotació al costat de trajectòries corbes per a una volta circular, una semicircumferència, una corba en S i un repte en forma de huit.](../../_assets/imatges/sa-cr-fem-un-gir.webp)
+![Codey Rocky real al punt inicial d’una pista de paper amb una volta circular, una semicircumferència, una corba en S i un huit.](../../_assets/imatges/sa-cr-fem-un-gir-v2.png)
 
 _Les trajectòries són una representació pròpia del repte de corbes; les potències indicades en mBlock s’han de provar amb el robot disponible._
 
@@ -976,7 +976,7 @@ per sempre
     avança amb potència baixa durant 1 s
 ```
 
-![Codey Rocky de la dotació davant d’un obstacle tou en una pista de paper, amb la trajectòria de desviament marcada.](../../_assets/imatges/sa-cr-gir-obstacles.webp)
+![Codey Rocky real aturat a distància segura d’un bloc tou, amb fletxes de paper que mostren una ruta alternativa.](../../_assets/imatges/sa-cr-gir-obstacles-v2.png)
 
 _El recorregut és una maqueta pròpia per provar la resposta del sensor IR; no representa una instrucció per circular en un espai públic._
 
@@ -1004,7 +1004,7 @@ Dissenyeu una maqueta de ruta entre un centre d’interpretació de l’Albufera
 
 Comproveu que el sensor inferior i el bloc de lectura de llum reflectida funcionen. Mostreu el valor en la matriu LED de Codey en temps real i prepareu targetes amb superfícies diferents. Mesureu primer la superfície clara i després la cinta negra; repetiu la lectura amb el punt RGB situat a la vora de la línia, tal com proposa el quadern. Feu tres lectures per superfície, anoteu-ne els valors i calculeu un llindar inicial entre els valors típics de fons i línia. Registreu cada valor sense anomenar-lo lux ni suposar que serà igual en tots els robots.
 
-![Codey Rocky de la dotació amb el sensor RGB frontal inferior orientat a la vora d’una línia negra sobre una pista clara.](../../_assets/imatges/sa-cr-segueix-linia.webp)
+![Codey Rocky real sobre una línia negra de paper; el sensor inferior queda orientat cap a la superfície de prova.](../../_assets/imatges/sa-cr-segueix-linia-v2.png)
 
 _La il·lustració assenyala el punt de lectura que es compara amb les superfícies clares i fosques._
 

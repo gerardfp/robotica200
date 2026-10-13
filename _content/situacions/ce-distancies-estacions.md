@@ -15,9 +15,9 @@ challenge: "Quin nombre de l’app necessita el tren per arribar a cada estació
 official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/"
 ---
 
-![Un tren Coding Express de la dotació recorre una via de doble extrem amb una estació de biblioteca i una altra de mercat.](../../_assets/imatges/sa-ce-distancia-estacions.webp)
+![El tren Coding Express de la dotació, amb locomotora groga i blava, vagó blau de sostre roig i via grisa, entre maquetes de biblioteca i mercat.](../../_assets/imatges/sa-ce-distancia-estacions-v2.png)
 
-_Comptem, comparem i comprovem distàncies de joguina amb Coding Express._
+_El tren es mesura sobre la via de maqueta; les peces blaves són unitats de referència col·locades per l’alumnat, no un sensor de distància del tren._
 
 ## ❓ Repte i intenció
 

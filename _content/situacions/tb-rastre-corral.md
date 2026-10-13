@@ -12,6 +12,7 @@ theme: "entorn"
 theme_label: "Animals i entorn"
 duration: "3 sessions"
 challenge: "Com podem preparar un mapa amb files, columnes i una orientació inicial perquè Tale-Bot trobe cinc animals amb ordres cap avant que puguem comptar i comprovar?"
+official_source: "https://matatalab.com/zh-hans/node/829"
 ---
 
 ![Tale-Bot Pro de la dotació comença una ruta en una graella amb cinc targetes de destí: ovella, gallina, cavall, vaca i ànec.](../../_assets/imatges/sa-tb-granja-prova.webp)
@@ -57,6 +58,10 @@ Marqueu files i columnes amb lletres, nombres o un altre codi visual. Practiqueu
 
 Col·loqueu cinc animals i una marca d’inici orientada. Si trieu fauna valenciana, contrasteu els noms amb una font local fiable. Torneu a col·locar el mapa igual després de cada ronda.
 
+![Tale-Bot Pro real al costat d’una quadrícula en blanc, targetes originals d’animals i fletxes de paper per preparar el mapa de l’aula.](../../_assets/imatges/sa-tb-rastre-corral-mapa-aula-v1.png)
+
+_La graella, les targetes i la maqueta són recursos propis; el robot no reconeix els adhesius ni els animals._
+
 #### Fase 5 · Comprovem i reflexionem
 
 **Evidència:** mapa amb llegenda, files, columnes, inici orientat i cinc metes. Una altra parella pot descriure correctament una destinació?
@@ -78,6 +83,10 @@ Verbalitzeu la predicció. Abans de prémer *Play*, compteu els indicadors llumi
 #### Fase 4 · Apliquem i millorem
 
 Executeu la ruta, recolliu un marcador en arribar i repetiu amb els altres quatre animals, reiniciant des de la marca orientada. Si Tale-Bot no arriba, compareu la posició final amb la predicció abans de canviar el programa.
+
+![Tale-Bot Pro real segueix fletxes de moviment cap avant sobre una graella amb cinc targetes pròpies d’animals de granja.](../../_assets/imatges/sa-tb-rastre-corral-mapa-v1.png)
+
+_El robot executa la seqüència de moviment; les persones identifiquen la targeta de destí i comproven l’arribada._
 
 #### Fase 5 · Comprovem i reflexionem
 

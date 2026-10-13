@@ -14,9 +14,9 @@ duration: "4 sessions"
 challenge: "Com podem traçar un recorregut pel barri que siga fàcil de seguir, segur i còmode per a diferents persones?"
 ---
 
-![Tale-Bot Pro recorre un mapa propi amb carrers, un autobús, una bicicleta, un pas de vianants i una biblioteca.](../../_assets/imatges/sa-tb-carrers-amables.webp)
+![Tale-Bot Pro real sobre una maqueta de barri amb biblioteca, parada d’autobús, carril bici i pas de vianants; targetes de paper mostren una ruta.](../../_assets/imatges/sa-tb-carrers-amables-v2.png)
 
-_El barri representat és una maqueta de paper: el robot segueix una ruta i no controla cap vehicle real._
+_El barri, els senyals i la ruta són una maqueta de paper; Tale-Bot no controla vehicles ni detecta vianants o obstacles._
 
 ## ❓ Repte i intenció
 

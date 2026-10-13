@@ -14,9 +14,9 @@ duration: "15 activitats · 20–30 min cadascuna"
 challenge: "Com podem utilitzar una ruta programada per a observar, ordenar i contar històries sobre el nostre entorn?"
 ---
 
-![Tale-Bot sobre un mapa de quadrícula amb cicle de granota, flors, botiga i escola, al costat de targetes de formes.](../../_assets/imatges/sa-tb-exploracions.webp)
+![Tale-Bot Pro real, amb panell lateral taronja i botons direccionals, sobre un mapa de quadrícula amb animals, plantes i espais comunitaris.](../../_assets/imatges/sa-tb-exploracions-v2.png)
 
-_Mapes i targetes elaborats a classe connecten la programació amb l’entorn pròxim i les ciències._
+_Les imatges del mapa són targetes manuals perquè l’alumnat les interprete; Tale-Bot només executa el recorregut programat._
 
 ## 🌱 Punt de partida
 

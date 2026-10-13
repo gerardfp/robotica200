@@ -115,9 +115,9 @@ Predigueu com es podrà activar i aturar el prototip abans de muntar-lo. Comprov
 
 Col·loqueu la micro:bit en un suport estable sense tapar botons ni matriu LED, o deixeu-la plana si així és més fàcil controlar-la. Implementeu l’algoritme amb entrades, selecció, una repetició limitada i eixida estàtica; no afegiu automatismes que observen la classe.
 
-![Prototip propi amb una micro:bit en suport de cartó, una mà que tria un botó i targetes impreses amb dos símbols estàtics i una opció neutra.](../../_assets/imatges/sa-mb-aula-sensorial-opcions.webp)
+![Micro:bit real de la dotació en un suport de cartó, al costat de targetes de paper amb un sol, una fulla i una opció neutra en blanc.](../../_assets/imatges/sa-mb-aula-sensorial-opcions-v2.png)
 
-_La persona pot triar el senyal, fer servir les targetes de paper o deixar el dispositiu apagat._
+_La placa presenta un patró visual triat; no observa l’aula ni interpreta emocions. La persona pot fer servir les targetes de paper o deixar el dispositiu apagat._
 
 #### Fase 3 · Expliquem i registrem
 

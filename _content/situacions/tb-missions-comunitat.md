@@ -14,9 +14,9 @@ duration: "10 activitats · 20–30 min cadascuna"
 challenge: "Com organitzem un recorregut que visite diversos llocs i conte una història que el grup puga canviar?"
 ---
 
-![Tale-Bot sobre un mapa il·lustrat de biblioteca, mercat, escola, parc i centre comunitari amb targetes narratives.](../../_assets/imatges/sa-tb-missions-global.webp)
+![Tale-Bot Pro real al costat d’un llibre il·lustrat i de targetes pròpies amb escenes de granja, mercat, castell, zoològic i tresor, preparades per a crear relats amb una ruta de paper.](../../_assets/imatges/sa-tb-missions-global-v2.png)
 
-_La classe construeix mapes narratius del seu entorn amb destinacions i missatges inventats._
+_El llibre, les targetes i la ruta són materials propis de paper; Tale-Bot executa una seqüència de comandaments i no reconeix les escenes ni tria les destinacions._
 
 ## 🌱 Punt de partida
 

@@ -14,9 +14,9 @@ duration: "8–10 sessions"
 challenge: "Com podem identificar una necessitat, prototipar alternatives i millorar una solució accessible amb proves justes?"
 ---
 
-![Un prototip LEGO SPIKE Prime i targetes de colors per crear una història sonora en una maqueta d’aiguamoll.](../../_assets/imatges/sa-sp-museu.webp)
+![Model construït amb SPIKE Prime al costat d’un prototip de cartó separat, amb un botó gran, una targeta d’alt contrast i peces tàctils per a una ruta de prova.](../../_assets/imatges/sa-sp-laboratori-accessible-v2.png)
 
-_La fira investiga necessitats sense pressuposar-les. Il·lustració conceptual generada amb IA d’un muntatge possible amb peces SPIKE Prime; no és una instrucció de construcció ni una solució d’accessibilitat validada._
+_Il·lustració IA basada en el model SPIKE Prime de la dotació. El botó, la targeta i la ruta són un prototip manual separat: no estan connectats al robot ni validen per si mateixos una solució d’accessibilitat._
 
 ## 🌱 Situació i intenció
 

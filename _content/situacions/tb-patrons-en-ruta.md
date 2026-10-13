@@ -14,9 +14,9 @@ duration: "7 reptes · 20–30 min cadascun"
 challenge: "Quina part d’una ruta es repeteix i com podem expressar-la amb menys ordres sense perdre precisió?"
 ---
 
-![Tale-Bot de la dotació al costat d’un mapa de flors amb seqüències repetides i targetes de fletxes.](../../_assets/imatges/sa-tb-patrons.webp)
+![Tale-Bot Pro de la dotació, amb el panell lateral taronja i els botons direccionals, al costat d’un mapa de flors amb seqüències repetides i targetes de fletxes.](../../_assets/imatges/sa-tb-patrons-v2.png)
 
-_Els grups detecten patrons en paper, els tradueixen a ordres i comparen la ruta amb bucle._
+_Les flors i l’abella són marcadors de paper; Tale-Bot executa les ordres introduïdes amb els botons i no detecta els dibuixos._
 
 ## 🌱 Punt de partida
 

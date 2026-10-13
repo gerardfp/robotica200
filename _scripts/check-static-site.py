@@ -3,6 +3,7 @@
 
 from collections import Counter
 from html.parser import HTMLParser
+import json
 from pathlib import Path
 import re
 from urllib.parse import unquote, urlparse
@@ -135,8 +136,14 @@ def main():
             if target is not None and not target.exists():
                 problems.append(f"{markdown_path.relative_to(ROOT)}: missing Markdown link {ref}")
 
-    if len(active) != 101:
-        problems.append(f"expected 101 active Markdown situations, found {len(active)}")
+    catalog_text = (ROOT / "_js/cataleg.js").read_text(encoding="utf-8")
+    catalog = json.loads(catalog_text[catalog_text.index("{"):].rstrip().removesuffix(";"))
+    active_slugs = {path.stem for path in active}
+    catalog_slugs = {item.get("slug") for item in catalog.get("situacions", [])}
+    if active_slugs != catalog_slugs:
+        missing = sorted(active_slugs - catalog_slugs)
+        stale = sorted(catalog_slugs - active_slugs)
+        problems.append(f"catalog situation mismatch: missing={missing}, stale={stale}")
     for robot in sorted(EXPECTED_ROBOTS):
         if robot_counts[robot] < 5:
             problems.append(f"robot {robot}: expected at least 5 situations, found {robot_counts[robot]}")

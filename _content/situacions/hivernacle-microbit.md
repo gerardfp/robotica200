@@ -15,9 +15,9 @@ challenge: "Com podem enviar un avís de protecció i representar un sensor de c
 official_source: "https://microbit.org/teach/lessons/helping-plants-grow-trees/"
 ---
 
-![Una placa micro:bit acompanya una planta en test i targetes d’observació per imaginar un sistema d’avís.](../../_assets/imatges/sa-hivernacle-microbit.webp)
+![Dues plaques micro:bit reals sobre suports secs al costat d’una maqueta de jardí i de targetes de llum i aigua per a simular proves de ràdio.](../../_assets/imatges/sa-hivernacle-microbit-v2.png)
 
-_Els muntatges són prototips de ràdio i sensor; no vigilen boscos ni controlen el reg real._
+_Il·lustració IA pròpia basada en la placa micro:bit de la dotació. Les plantes i targetes són materials de maqueta; no hi ha cap sensor de sòl integrat, les plaques es mantenen seques i el muntatge no vigila boscos ni controla el reg real._
 
 ## 🌱 Situació i intenció
 

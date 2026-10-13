@@ -14,9 +14,9 @@ duration: "5 sessions"
 challenge: "Què necessiten els éssers vius per habitar un lloc, i com podem representar canvis que ajuden a conservar-lo?"
 ---
 
-![El tren LEGO Education Coding Express recorre una maqueta pròpia d’aiguamoll amb vegetació i aus representades amb figures de paper.](../../_assets/imatges/sa-ce-habitat-albufera.webp)
+![El tren LEGO Education Coding Express de la dotació passa al costat d’una maqueta seca d’aiguamoll amb vegetació, targetes de necessitats i fauna de paper.](../../_assets/imatges/sa-ce-habitat-albufera-v2.png)
 
-_La maqueta mostra un hàbitat de paper i el tren real de Coding Express; no es fa cap prova amb fauna._
+_La maqueta i les figures representen un hàbitat escolar; el tren no identifica necessitats, no modifica l’entorn ni s’acosta a fauna real._
 
 ## ❓ Repte i intenció
 
@@ -143,7 +143,7 @@ Distingiu informació de la font i inferència pròpia. Construïu models que ex
 
 Prepareu la seqüència de maons perquè el tren s’ature a cada lloc. Els passatgers visitants fan de naturalistes; cada grup presenta l’hàbitat i respon com es relacionen la planta i l’animal. La ruta és una exposició, no una afirmació que les espècies conviuen o es desplacen entre llocs contigus.
 
-![El tren Coding Express de la dotació s’atura entre dues maquetes separades: aiguamoll amb canyissar i au de paper, i dunes de la Devesa amb vegetació i una sargantana de paper.](../../_assets/imatges/sa-ce-habitats-parades.webp)
+![El tren LEGO Education Coding Express de la dotació s’atura entre dos models separats: un aiguamoll amb canyissar i una au de paper, i dunes de la Devesa amb vegetació i una sargantana.](../../_assets/imatges/sa-ce-habitats-parades-v2.png)
 
 _Les parades són escenaris d’exposició separats; la il·lustració no afirma que les espècies compartisquen un hàbitat ni que el tren mesure l’entorn._
 

@@ -93,6 +93,10 @@ Sense canviar el muntatge, predigueu per què no es pot reutilitzar directament 
 
 Recalibreu l’escala per a la temperatura prevista: definiu `t_min` i `t_max`, assigneu-los als dos extrems angulars i useu `angle = ((t − t_min) / (t_max − t_min)) × 180`. En una prova didàctica de −5 a 35 °C, −5, 15 i 35 °C han de donar 0°, 90° i 180°; si el rang real de la previsió queda fora, marqueu «fora d’escala» i torneu a calibrar. Manteniu aquesta conversió separada de la precipitació. Com a ampliació, creeu targetes pròpies de necessitats d’aigua per a cultius ficticis o representeu velocitat del vent/temperatura en moments diferents, definint de nou la variable, la unitat i el rang.
 
+![Model SPIKE Prime de la dotació al costat d’un indicador motoritzat i dues targetes separades: precipitació amb gotes i temperatura amb termòmetre; una tomaquera de maqueta completa l’escena.](../../_assets/imatges/sa-sp-reg-hort-recalibratge-v2.png)
+
+_Les targetes representen entrades de dades diferents; el prototip recalibra l’escala i no mesura ni la pluja ni la temperatura._
+
 #### Fase 3 · Expliquem i registrem
 
 Compareu ciutats o períodes amb dades datades. Prepareu una targeta amb font, data, variable, unitats i la regla d’escala. Si és possible, contrasteu l’indicador amb una entrevista a una persona agricultora o horticultora; si no, useu una font divulgativa fiable, sense demanar ubicacions privades ni recomanacions per a un cultiu concret. Pregunteu quins instruments reals s’utilitzen i compareu-los amb el tomato-meter: quina magnitud mesuren, quines unitats donen i quina informació addicional necessitaria una decisió de reg? Les professions i els instruments són una extensió d’investigació, no una validació del prototip.
@@ -104,10 +108,6 @@ Reviseu l’explicació perquè separe dada prevista, representació de l’esca
 #### Fase 5 · Comprovem i reflexionem
 
 Presenteu les dues escales calibrades i la conclusió amb els seus límits. Cada persona tria una autoavaluació: **blau**, puc moure l’agulla segons una dada; **groc**, represente correctament el total setmanal; **violeta**, puc mostrar una temperatura en una escala recalibrada. Una parella aporta un comentari concret i una proposta de millora per a la prova següent. **Evidència:** dues escales, targeta de necessitats fictícia, fitxa explicativa amb font i data, comparació amb un instrument o una font professional i conclusió que separa observació, interpretació i decisió pendent.
-
-![Hub SPIKE Prime unit a un motor que mou una agulla sobre una escala sense etiquetes, amb una tomaquera i una targeta amb gotes de pluja al costat.](../../_assets/imatges/sa-sp-hort-indicador.webp)
-
-_L’agulla representa la previsió triada; ni la planta ni la targeta són sensors d’humitat o de pluja observada._
 
 ## 🧰 Materials i preparació
 

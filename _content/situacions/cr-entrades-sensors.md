@@ -134,27 +134,31 @@ Repetiu una ruta i marqueu ordres perdudes o repetides. Si només hi ha un robot
 
 **Evidència:** registre emissor/receptor i una millora proposada per fer les ordres més fiables. Calen dos dispositius IR compatibles per a validar la comunicació entre robots.
 
-### **Sessió 6 · *When Codey Meets Codey*.**
+### **Sessió 6 · Un missatge entre dos Codey.**
 
 #### Fase 1 · Activem i prediem
 
-Imagineu una conversa entre dos robots amb tres icones i definiu què significa cadascuna. Predigueu com es detectaria un missatge desconegut.
+Recordeu la sessió anterior: localitzeu en cada Codey Rocky l’emissor i el receptor IR segons el manual del model, i expliqueu quin paper fa cadascun. En parelles, inventeu una història breu situada en un espai pròxim —per exemple, dos missatges per orientar una visita a l’hort escolar— i definiu tres codis numèrics amb significat acordat. Predigueu què hauria de mostrar el receptor si rep un codi vàlid, un de desconegut o cap missatge. No empreu noms, ubicacions particulars ni missatges personals.
 
 #### Fase 2 · Explorem i construïm
 
-Amb dos dispositius compatibles, programeu l’emissor perquè envie un missatge i el receptor perquè responga amb una expressió LED. Escriviu el codi compartit en una llegenda visible.
+Prepareu dos Codey Rocky i dos ordinadors amb mBlock compatible; si cal, connecteu-los per USB o amb els dispositius Bluetooth disponibles. Un equip programa l’emissor amb els blocs IR i l’altre configura el receptor perquè llija el valor rebut, el guarde en una variable i trie una resposta visual. Abans de provar, feu que una altra parella puga llegir la taula de codis. Si la dotació només té un robot o no es pot verificar l’enllaç IR, completeu el disseny amb targetes i marqueu la prova física com a pendent.
 
 #### Fase 3 · Expliquem i registrem
 
-Proveu missatges vàlids i invàlids i anoteu què ha enviat l’emissor, què ha mostrat el receptor i si la interpretació coincideix amb la llegenda.
+Escriviu un guió de tres moments —inici, missatge i resposta— i executeu-lo amb els dos robots. Registreu per a cada prova el codi enviat, el valor rebut, la variable i la resposta LED; compareu el relat previst amb el que realment s’ha mostrat. La història i els símbols són creació de l’equip, no contingut incorporat al robot.
+
+![Dos Codey Rocky de la dotació intercanvien un senyal IR representat de manera conceptual mentre l’equip prepara targetes de relat sobre un entorn pròxim.](../../_assets/imatges/sa-cr-when-codey-meets-codey-v1.png)
+
+_El senyal i les targetes són una representació didàctica; cal comprovar l’orientació i la recepció en el maquinari disponible._
 
 #### Fase 4 · Apliquem i millorem
 
-Afegiu una regla per a missatges desconeguts i repetiu l’intercanvi canviant els rols. Si la dotació només té un robot, assageu el protocol amb targetes i identifiqueu que la comunicació física resta pendent d’un segon dispositiu.
+Afegiu una resposta segura per a un valor no reconegut, com ara una icona neutral i cap moviment. Proveu almenys cinc casos: cada codi vàlid; un valor que no figure en la taula; cap emissió; i una repetició del missatge. Alterneu emissor i receptor i compareu si la història s’entén quan canvia qui inicia l’intercanvi. No atribuïu al robot confirmació d’entrega, abast garantit ni comunicació a través d’obstacles: anoteu només el resultat observat en les condicions de l’aula.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** llegenda del codi i registres d’un missatge vàlid i un d’invàlid. Expliqueu què necessiten emissor i receptor per interpretar el senyal de la mateixa manera.
+**Evidència:** guió original de tres moments, taula de codis, captura o descripció del programa amb la variable i el registre dels cinc casos. Expliqueu què necessiten emissor i receptor per interpretar el senyal de la mateixa manera i quin cas ha obligat a revisar la regla.
 
 ### **Sessió 7 · *Volume Control*.**
 
@@ -316,4 +320,4 @@ Cada equip lliura sis registres d'entrada i resposta, diagrames o fragments de c
 
 ## 🔗 Font oficial i abast de l'adaptació
 
-La traçabilitat parteix de les lliçons 17, 18 i 21–30 de [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery), segons els títols i objectius publicats per Makeblock. La guia oficial [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) identifica el mòdul IR del xassís Rocky com a sensor de color/proximitat; la imatge i la sessió el mostren llegint una targeta, sense atribuir-li reconeixement d’objectes. Les lliçons 19–20 (interruptors tàctils), 31–32 (ultrasons) i 33–34 (tira LED) depenen dels mòduls Neuron i queden fora mentre no es confirme que són a la dotació. La pàgina oficial remet a materials docents que requereixen accés de compte; aquesta adaptació crea reptes, seqüència i visuals propis a partir de la informació pública i no afirma reproduir instruccions privades. La llista general de les 24 lliçons CSTA de Codey Rocky es troba en la [pàgina de Codey Rocky de Makeblock](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids).
+La traçabilitat parteix de les lliçons 17, 18 i 21–30 de [Codey Rocky & Neuron Discovery](https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery), segons els títols i objectius publicats per Makeblock. Per a la sessió 6, la [guia docent oficial, lliçó 24 “When Codey Meets Codey”](https://qiniu.makeblock.com/education-makeblock-com/CodeyRockyNeuronTeachersBook.pdf), concreta l’ús dels emissors/receptors IR, els blocs infrarojos, les variables i una tasca d’escriptura d’història; la proposta en conserva aquests objectius amb una narració pròpia i casos de prova. La guia oficial [About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) identifica el mòdul IR del xassís Rocky com a sensor de color/proximitat; les sessions el mostren llegint targetes, sense atribuir-li reconeixement d’objectes. Les lliçons 19–20 (interruptors tàctils), 31–32 (ultrasons) i 33–34 (tira LED) depenen dels mòduls Neuron i queden fora mentre no es confirme que són a la dotació. La resta de materials docents del curs pot requerir accés de compte; aquesta adaptació crea reptes, seqüència i visuals propis a partir de la informació consultable i no afirma reproduir instruccions privades. La llista general de les 24 lliçons CSTA de Codey Rocky es troba en la [pàgina de Codey Rocky de Makeblock](https://www.makeblock.com/pages/codey-rocky-robot-toys-for-kids).
