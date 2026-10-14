@@ -841,6 +841,22 @@ window.CATALEG = {
       "repte": "Com planifiquem una ruta que passe al voltant de més d’un objecte i arribe a la bandera si MatataBot no pot detectar cap obstacle?"
     },
     {
+      "id": "situacio-sa-cs-ruta-segura-marjal",
+      "slug": "cs-ruta-segura-marjal",
+      "url": "situacio/index.html?id=cs-ruta-segura-marjal",
+      "titol": "Una ruta segura per la marjal",
+      "robot": "coding-set",
+      "robotLabel": "Coding Set",
+      "cicle": "primer-cicle",
+      "cicleLabel": "Primer cicle",
+      "tematica": "entorn-local",
+      "tematicaLabel": "Marjal i cura dels hàbitats",
+      "materia": "pensament-computacional",
+      "materiaLabel": "Pensament computacional, Matemàtiques i Medi",
+      "sessions": "3 sessions de 45 minuts",
+      "repte": "Com podem guiar MatataBot fins a dos punts de la marjal sense travessar una zona protegida i explicar a un altre equip com ho hem aconseguit?"
+    },
+    {
       "id": "situacio-sa-cs-rutes-laberint-horta",
       "slug": "cs-rutes-laberint-horta",
       "url": "situacio/index.html?id=cs-rutes-laberint-horta",
@@ -1749,7 +1765,7 @@ window.CATALEG = {
       "tematicaLabel": "Projecte culminant: transport i Python",
       "materia": "tecnologia",
       "materiaLabel": "Tecnologia, Matemàtiques i Programació",
-      "sessions": "10 lliçons · 10–14 sessions",
+      "sessions": "10 lliçons · 10–12 sessions",
       "repte": "Com podem dissenyar i programar en Python un prototip SPIKE que transporte materials de maqueta per una ruta escolar definida, i comunicar amb dades què resol i què encara no?"
     },
     {

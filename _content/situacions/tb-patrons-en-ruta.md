@@ -34,6 +34,10 @@ Repartiu tires pròpies amb patrons de fruites, formes i sons del paisatge de l�
 
 Encerclau la unitat mínima que es repeteix i representeu la regla amb targetes, veu o moviment voluntari. Compteu quantes vegades apareix.
 
+![Tale-Bot Pro real al costat d’una tira amb una seqüència de fruita, fulla i nota musical que torna a començar.](../../_assets/imatges/sa-tb-patrons-c1-v1.webp)
+
+_Les imatges són targetes de paper: el grup identifica la unitat repetida; Tale-Bot no reconeix els símbols._
+
 #### Fase 3 · Expliquem i registrem
 
 Completeu una seqüència nova en què falta l’últim grup i registreu la unitat repetida i el recompte.
@@ -55,6 +59,10 @@ Prepareu cinc programes breus de dificultat creixent: acció única, canvi de di
 #### Fase 2 · Explorem i construïm
 
 Introduïu els programes i anoteu els indicadors de codi i bucle que observeu. Comproveu quines funcions mostra realment el model de la dotació.
+
+![Tale-Bot Pro real al costat d’una ruta curta, una seqüència d’ordres repetides i la versió compacta amb una targeta de bucle.](../../_assets/imatges/sa-tb-patrons-c2-v1.webp)
+
+_La targeta de bucle és un recurs didàctic local; comproveu al robot només les ordres i indicadors que tinga la unitat del centre._
 
 #### Fase 3 · Expliquem i registrem
 
@@ -78,6 +86,10 @@ Prepareu cinc seqüències pròpies de fletxes amb una part repetida. Predigueu 
 
 Marqueu la unitat repetida, compteu-ne les ocurrències i decidiu quantes vegades cal usar el comandament de repetició.
 
+![Una quadrícula amb la ruta de Tale-Bot Pro i dues seqüències de targetes equivalents: el codi llarg i la representació compacta amb una repetició.](../../_assets/imatges/sa-tb-patrons-c3-v1.webp)
+
+_Les targetes comparen dues representacions del mateix programa; no són una lectura automàtica del robot._
+
 #### Fase 3 · Expliquem i registrem
 
 Registreu la seqüència llarga, la unitat identificada, el nombre de repeticions i la posició final prevista.
@@ -99,6 +111,10 @@ Col·loqueu flors de paper del mateix color en una maqueta del jardí escolar. P
 #### Fase 2 · Explorem i construïm
 
 Dibuixeu una ruta que visite cada flor. La docent presenta una tira d’instruccions i el grup observa quins botons i indicadors s’activen.
+
+![Tale-Bot Pro real al costat d’una ruta dibuixada que visita flors de paper del mateix color en un jardí de maqueta.](../../_assets/imatges/sa-tb-patrons-c4-v1.webp)
+
+_La flor i l’abella són figures planes de paper; el robot no detecta flors ni representa una pol·linització real._
 
 #### Fase 3 · Expliquem i registrem
 
@@ -122,6 +138,10 @@ Poseu un objecte tou gran damunt d’una illa de cartó. Predigueu una ruta que 
 
 Traceu la ruta amb targetes i copieu les ordres en paper. Encerclau els trams iguals que podrien formar un bucle.
 
+![Tale-Bot Pro real al costat d’una ruta de paper que rodeja una illa de cartó i torna al punt d’inici, amb trams repetits.](../../_assets/imatges/sa-tb-patrons-c5-v1.webp)
+
+_La ruta segura es planifica amb les persones; Tale-Bot no detecta l’illa ni evita obstacles per si mateix._
+
 #### Fase 3 · Expliquem i registrem
 
 Registreu el codi llarg, els trams repetits i l’orientació inicial. Indiqueu on ha de quedar el robot quan complete el recorregut.
@@ -144,6 +164,10 @@ Col·loqueu tres fitxes de carlota en un mapa de bancals inspirat en l’horta v
 
 Marqueu la ruta amb retolador rentable sobre el mapa o amb una tira de caselles. Codifiqueu el trajecte que visita les tres fitxes.
 
+![Tale-Bot Pro real al costat de tres bancals de maqueta amb carlotes de cartó, targetes de direcció i una graella de registre.](../../_assets/imatges/sa-tb-patrons-c6-v1.webp)
+
+_Les carlotes són fitxes de joc: l’alumnat les compta i registra; el robot només segueix les ordres introduïdes._
+
 #### Fase 3 · Expliquem i registrem
 
 Localitzeu les ordres repetides i registreu el codi llarg i el nombre de visites previst.
@@ -165,6 +189,10 @@ Dissenyeu un repte final amb peces grans de carabassa i una ruta marcada. Incloe
 #### Fase 2 · Explorem i construïm
 
 Planifiqueu les ordres amb targetes i escriviu el programa llarg. Identifiqueu cada unitat repetida i el nombre de repeticions.
+
+![Tale-Bot Pro real davant d’un mapa de paper amb tres parades de carabasses i targetes que mostren dos fragments repetits.](../../_assets/imatges/sa-tb-patrons-c7-v1.webp)
+
+_Les carabasses de cartó són fites simbòliques i les recull l’alumnat; Tale-Bot no les identifica ni les arreplega._
 
 #### Fase 3 · Expliquem i registrem
 

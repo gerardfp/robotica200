@@ -43,6 +43,8 @@ anticipar l’efecte d’una seqüència, distingir ordre i orientació, provar 
 - Full de registre amb quatre columnes: **predicció**, **ordres**, **resultat observat** i **canvi provat**. Prepareu també targetes amb les paraules *davant*, *darrere*, *gir*, *casella*, *inici* i *destí*.
 - L’Artist Add-On i el Musician Add-On són opcionals i no es pressuposen en la dotació. Les sessions 11 i 12 ofereixen una via completa amb materials de paper si no hi són.
 
+**Organització comuna contrastada amb el curs autoguiat oficial, lliçó 2.7:** treballeu en equips de fins a quatre amb rols explícits de programador/a i inspector/a; els rols locals de mapa i portaveu es roten per repartir la participació. Reserveu temps perquè el grup explore i useu preguntes per a orientar-lo sense anticipar-li la solució. La proposta amplia els 20 minuts oficials de cada lliçó a 45 per incloure predicció, prova, registre i retorn entre iguals.
+
 Abans d’iniciar la seqüència, comproveu amb una ordre curta que el robot recorre una casella de 10 cm i anoteu qualsevol desviació del model, la superfície o l’alineació. Manteniu la mida oficial de la quadrícula; si el moviment observat no hi correspon, reviseu la posició inicial, l’estat del robot i la superfície abans de començar. Un mapa de caselles simbòliques amb una altra escala es pot usar per a planificar o simular, però no com a mapa de recorregut físic.
 
 ## 🎯 Itinerari de dotze sessions
@@ -272,7 +274,7 @@ Canvieu la bandera de casella sense moure els obstacles i expliqueu què ha canv
 
 
 
-**Objectius d’aprenentatge:** Dissenyar i explicar un laberint amb almenys una ruta viable, programar-la, contrastar el resultat i revisar el mapa després d’una prova entre equips.
+**Objectius d’aprenentatge:** Dissenyar i explicar un laberint amb almenys una ruta viable, programar-la, contrastar el resultat entre equips i crear un relat o poema breu en què les parades i els moviments del MatataBot formen part de la història.
 
 **Preparació docent:** Prepareu paper o graella física de 10 × 10 cm, llegenda accessible, inici, bandera i peces reals disponibles. Reserveu temps perquè un altre equip interprete el repte sense ajuda oral.
 
@@ -282,11 +284,11 @@ Canvieu la bandera de casella sense moure els obstacles i expliqueu què ha canv
 
 #### Fase 1 · Activem i prediem
 
-Cada equip tria un espai valencià imaginari —una marjal, un jardí escolar o un camí entre parades del mercat— i fixa una entrada i una bandera final. Acordeu una llegenda que diferencie camí, peça d’obstacle i destí sense dependre només del color.
+Cada equip tria un espai valencià imaginari —una marjal, un jardí escolar o un camí entre parades del mercat— i fixa una entrada i una bandera final. Acordeu una llegenda que diferencie camí, peça d’obstacle i destí sense dependre només del color. Presenteu també el repte narratiu: cada parada important del recorregut haurà de fer avançar una història o un poema del lloc.
 
 #### Fase 2 · Explorem i construïm
 
-Dissenyeu un laberint propi amb carrers amples i dos o tres obstacles reals del set; afegiu una bandera de destí i comproveu amb una fitxa que hi ha almenys una ruta completa. Si no disposeu de les peces, les targetes planes són l’alternativa. Una altra parella revisa que inici, obstacle, bandera i llegenda siguen inequívocs abans de programar.
+Dissenyeu un laberint propi amb carrers amples i dos o tres obstacles reals del set; afegiu una bandera de destí i comproveu amb una fitxa que hi ha almenys una ruta completa. Si no disposeu de les peces, les targetes planes són l’alternativa. Una altra parella revisa que inici, obstacle, bandera i llegenda siguen inequívocs abans de programar. Trieu tres parades i escriviu una frase o un vers breu per a cadascuna; les frases han de poder-se llegir en l’ordre del recorregut.
 
 ![MatataBot i la torre de control Coding Set de la dotació al costat d’un laberint de paper de l’Albufera, amb ruta marcada i una bandera final.](../../_assets/imatges/sa-cs-laberint-amb-matata.png)
 
@@ -294,15 +296,15 @@ _Il·lustració IA pròpia amb el model de MatataBot de la dotació; el mapa, la
 
 #### Fase 3 · Expliquem i registrem
 
-Col·loqueu la seqüència de blocs i executeu-la des del mateix inici. Compareu la posició final amb la bandera i comproveu que el robot no ha xocat amb cap obstacle. Si el programa no arriba, canvieu una sola instrucció i repetiu la prova. Després, creeu una segona solució si el laberint permet més d’un camí; el robot no identifica quin camí és segur, ho decideix qui programa.
+Col·loqueu la seqüència de blocs i executeu-la des del mateix inici. Compareu la posició final amb la bandera i comproveu que el robot no ha xocat amb cap obstacle. Si el programa no arriba, canvieu una sola instrucció i repetiu la prova. Després, creeu una segona solució si el laberint permet més d’un camí; el robot no identifica quin camí és segur, ho decideix qui programa. Vinculeu cada vers o frase a una casella o parada perquè el text es puga narrar mentre una persona executa la ruta.
 
 #### Fase 4 · Apliquem i millorem
 
-Intercanvieu laberints. L’equip visitant traça el recorregut i prova el programa; l’equip autor registra una millora del mapa o de les instruccions. Com a extensió pròpia, afegiu un relat o poema curt que done sentit a la destinació.
+Intercanvieu laberints i relats. L’equip visitant interpreta la llegenda, reconstrueix la ruta, prova el programa i narra el text en les parades acordades; l’equip autor registra una millora del mapa, de les instruccions o de l’ordre narratiu. Aquesta combinació de laberint, moviment i creació de relats/poemes adapta el propòsit general publicat per a les lliçons 5–7; les tres parades i el format breu són decisions pròpies d’aquesta proposta.
 
 #### Fase 5 · Comprovem i reflexionem
 
-**Evidència:** Laberint amb inici/final, ruta dibuixada, programa provat, resultat observat i una revisió posterior al retorn.
+**Evidència:** Laberint amb inici/final, ruta dibuixada, programa provat, relat o poema vinculat a almenys tres parades i una revisió posterior al retorn.
 ### Sessió 8 · Crear un mapa esquemàtic de l’entorn (45 min)
 
 
@@ -492,7 +494,7 @@ Feu un esbós amb inici, fites i final o amb les parts del patró. Assigneu rols
 
 #### Fase 3 · Expliquem i registrem
 
-Convertiu el disseny en una seqüència llegible: ordre de blocs, repeticions que el kit base admeta, girs, obstacles representats i missatge final. Si hi ha Musician, distingiu la nota (tria de to) de la melodia predefinida; per a les notes, barregeu els blocs de Do a Ti per seleccionar l’escala i comproveu l’ordre amb una targeta de pràctica. Una nota té un compàs predeterminat d’1/4; combinada amb el bloc numèric 2 passa a 2/4. Registreu el patró curt de notes i ritmes com a creació original i contrasteu què canvia en variar només el nombre. En una fitxa pròpia, distingiu «funció comprovada», «simulació» i «idea per provar». Abans d’executar, una parella predix què farà el robot o com recorrerà el visitant l’obra.
+Convertiu el disseny en una seqüència llegible: ordre de blocs, repeticions que el kit base admeta, girs, obstacles representats i missatge final. Si hi ha Musician, distingiu la nota (tria de to) de la melodia predefinida; per a les notes, barregeu els blocs de Do a Ti per seleccionar l’escala i comproveu l’ordre amb una targeta de pràctica. La guia oficial indica que cada bloc de música té un valor rítmic predeterminat d’1/4; combinat amb el bloc numèric 2, passa a 2/4. Ací «1/4» i «2/4» indiquen el valor que descriu la guia, no un compàs complet. Registreu el patró curt de notes i ritmes com a creació original i contrasteu què canvia en variar només el nombre. En una fitxa pròpia, distingiu «funció comprovada», «simulació» i «idea per provar». Abans d’executar, una parella predix què farà el robot o com recorrerà el visitant l’obra.
 
 ![MatataBot i torre Coding Set reals al costat d’un mapa creat per l’alumnat amb aiguamoll, camins i targetes de símbols; les ordres tangibles es veuen sobre la torre.](../../_assets/imatges/sa-cs-creacio-oberta.png)
 
@@ -500,7 +502,7 @@ _El mapa i les targetes són una creació pròpia de paper. La il·lustració no
 
 #### Fase 4 · Apliquem i millorem
 
-Feu una prova amb MatataBot si el disseny usa rutes; manteniu el mateix inici i compareu predicció/resultat. Si és una composició sonora i hi ha Musician Add-On, proveu primer un patró curt de notes amb una duració 1/4; repetiu-lo amb el bloc numèric 2 i compareu el compàs escoltat. Després, compareu-lo amb un bloc de melodia predefinida i expliqueu què podeu modificar i què ja ve fixat. No copieu una cançó publicada. Si no hi ha complement, representeu el patró amb paper, ritme silenciós i símbols. Una classe visitant prova o interpreta la proposta sense indicacions de l’equip autor; el grup registra un comentari i aplica una millora concreta.
+Feu una prova amb MatataBot si el disseny usa rutes; manteniu el mateix inici i compareu predicció/resultat. Si és una composició sonora i hi ha Musician Add-On, proveu primer un patró curt amb un bloc de música (valor rítmic 1/4); repetiu-lo amb el bloc numèric 2 (valor 2/4) i compareu la duració percebuda. Després, compareu-lo amb un bloc de melodia predefinida i expliqueu què podeu modificar i què ja ve fixat. No copieu una cançó publicada. Si no hi ha complement, representeu el patró amb paper, ritme silenciós i símbols. Una classe visitant prova o interpreta la proposta sense indicacions de l’equip autor; el grup registra un comentari i aplica una millora concreta.
 
 ![MatataBot, torre i tauler reals del Coding Set al costat d’una tira de colors creada en paper i d’uns blocs abstractes sense símbols per representar el Musician Add-On opcional.](../../_assets/imatges/sa-cs-composicio-musical-v1.png)
 
@@ -536,8 +538,10 @@ Manteniu el robot sobre una superfície plana, deixeu lliure el seu recorregut i
 - Matatalab, [Teacher Resource Guide · Learning Station Curriculum (PDF complet publicat)](https://matatalab.com/cdn/ff/Vz0MsyTfj9_BIp7xKGB0hyr_QXjABpbIlXHSS3VcPg4/1637831178/public/2021-11/Learning%20Station%20Curriculum.pdf): guia docent oficial de 2021. L’índex públic situa les lliçons 5–7, 8–10 i 11–12 a les pàgines 30, 41 i 55. La còpia de 29 pàgines disponible per a lectura acaba abans; el lector web no ha pogut extraure el PDF complet (11 MB). S’han contrastat directament els objectius i les activitats de les lliçons 1–4 a les pàgines 19–23; les 5–12 continuen sense verificació pas a pas.
 - Matatalab, [Matatalab Edu Teacher’s Resource Guide (2020)](https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf): guia institucional alternativa de 24 pàgines. Descriu el Learning Station a nivell de currículum i unitats, però no inclou els plans docents detallats de les lliçons 5–12.
 - Matatalab, [guia oficial del Coding Set](https://matatalab.com/en/node/60): enumera els obstacles i les banderes entre els elements del kit base i descriu les categories de blocs. La proposta usa estes peces per a planificar les rutes; no atribueix a MatataBot detecció automàtica d’obstacles.
-- Matatalab, [Loop](https://matatalab.com/en/node/62), [Function](https://matatalab.com/en/node/63), [Artist](https://matatalab.com/en/node/64) i [Musician](https://matatalab.com/en/node/65): guies oficials complementàries que verifiquen les combinacions de blocs, les restriccions de disposició de bucles/funcions, els valors d’angle, les tres targetes d’escalfament (sis mostres) i les funcions de notes/melodies. No es presenten com el pla docent complet de les lliçons 10–12 de Learning Station.
+- Matatalab, [Loop](https://matatalab.com/en/node/62), [Function](https://matatalab.com/en/node/63), [Artist](https://matatalab.com/en/node/64) i [Musician](https://matatalab.com/en/node/65): guies oficials complementàries que verifiquen les combinacions de blocs, les restriccions de disposició de bucles/funcions, els valors d’angle, les tres targetes d’escalfament (sis mostres) i les funcions de notes/melodies. Musician especifica 16 blocs per a cadascuna de les dues claus, 10 melodies, selecció de notes Do–Ti i el valor rítmic d’1/4 que passa a 2/4 amb el bloc numèric 2; per això no es descriu com un compàs. No es presenten com el pla docent complet de les lliçons 10–12 de Learning Station.
 - MatataStudio, [curs oficial autoguiat](https://www.matatastudio.com/Self-Guided.html), lliçons 2.3–2.6: explica la parella inici/final i el nombre del bucle, la col·locació de definició i crida de funció, l’ús dels blocs d’angle amb moviment i els complements Artist i Musician. S’ha utilitzat per contrastar les instruccions tècniques de les sessions 10–12; és una guia de producte per al professorat i no substitueix els plans de classe complets de Learning Station.
+- MatataStudio, [curs oficial autoguiat](https://www.matatastudio.com/Self-Guided.html), lliçó 2.7 «Learning Station Curriculum»: confirma que són 12 lliçons de 20 minuts i que la guia docent recomana grups de quatre, rols de programador/a i inspector/a, temps suficient d’exploració i preguntes de suport. És una orientació metodològica comuna, no el desenvolupament de les tasques particulars de les lliçons 5–12.
+- MatataStudio, [llista oficial de descàrregues](https://www.matatastudio.com/download.html): el 13 d’octubre de 2026 mostra «MatataStudio Learning Station TG-sample.pdf», de 70,09 MB i 108 pàgines, actualitzat el 2 de desembre de 2025. L’enllaç de descàrrega es resol dinàmicament i no s’ha pogut recuperar en aquesta consulta; el contingut de la mostra nova queda pendent de comparació.
 - Matatalab, [catàleg d’activitats Coding Set](https://matatalab.com/en/activity): font complementària per comprovar el producte i les activitats públiques; no substituïx el pla docent complet.
 
 La seqüència local conserva la progressió temàtica pública i crea context, materials de paper, consignes, registres i avaluació originals. Per a les sessions 11–12, la pàgina oficial i l’índex del PDF enumeren angles, pentagrames o estrelles i creació lliure; la proposta els converteix en una roseta de l’entorn i una obra oberta, sense afirmar una correspondència exacta de cada subtema amb una lliçó perquè no s’ha pogut inspeccionar el PDF complet. Les dues sessions separen l’ús real d’un accessori de l’alternativa desconnectada. Continua pendent el contrast integral de les lliçons 5–12 i dels exercicis individuals del quadern, ja que la descàrrega oficial excedeix el límit de lectura disponible.

@@ -25,6 +25,10 @@ La biblioteca del barri prepara un festival de relats itinerants. Els infants cr
 ## 📚 Deu reptes globals
 
 ### **D-1 · El meu poble.**
+![Tale-Bot Pro real recorre un mapa tridimensional de paper amb plaça, escola, mercat i biblioteca mentre una mà prepara targetes de direcció.](../../_assets/imatges/sa-tb-poble-d1-v1.webp)
+
+_El poble és una maqueta pròpia i les parades les tria l’alumnat; el robot no reconeix edificis ni redacta el relat._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -47,6 +51,10 @@ Executeu el recorregut i comproveu les parades. Canvieu una destinació d’ordr
 **Evidència:** mapa, seqüència i relat breu. Expliqueu per què el grup ha triat eixe ordre.
 
 ### **D-2 · Visitem un parc zoològic.**
+![Tale-Bot Pro real segueix una ruta de paper entre targetes il·lustrades de girafa, elefant i pingüí.](../../_assets/imatges/sa-tb-zoo-d2-v1.webp)
+
+_Els animals són targetes, no hi ha fauna real; el robot no identifica animals ni els seus hàbitats._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -69,6 +77,10 @@ Programeu Tale-Bot perquè repetisca el recorregut. Després canvieu l’ordre d
 **Evidència:** seqüència programada i relat d’una visita pròpia. L’activitat no requereix animals reals ni apropar-se a fauna.
 
 ### **D-3 · El xicotet missatger.**
+![Tale-Bot Pro real recorre una quadrícula de paper entre una targeta de sobre i dos personatges retallables.](../../_assets/imatges/sa-tb-missatger-d3-v1.webp)
+
+_El sobre i els personatges són materials narratius; el missatge el porta la seqüència programada o una persona, no una xarxa._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -91,6 +103,10 @@ Programeu Tale-Bot fins al sobre i des d’allí fins al destinatari. Si el traj
 **Evidència:** ruta completa i missatge transmés amb gravació consentida, targeta o narració en directe.
 
 ### **D-4 · La granja I.**
+![Tale-Bot Pro real segueix una ruta de paper entre una targeta de tractor i una ovella en una maqueta de granja.](../../_assets/imatges/sa-tb-granja-d4-v1.webp)
+
+_El tractor i l’animal són targetes estàtiques; Tale-Bot no els identifica ni interactua amb animals._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -139,6 +155,10 @@ Programeu una sola seqüència per visitar els productes i acabar a la caixa. Si
 **Evidència:** llista completada i ruta fins a la caixa. Useu només aliments dibuixats; no demaneu informació de compres ni de dietes familiars.
 
 ### **D-6 · Ruta de patrulla com a conte.**
+![Tale-Bot Pro real recorre un mapa de ficció entre un pont i un jardí comunitari amb un camí segur.](../../_assets/imatges/sa-tb-conte-patrulla-d6-v1.webp)
+
+_És una història de convivència sobre el mapa, sense vigilància, detencions ni emergències reals._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -161,6 +181,10 @@ Programeu Tale-Bot amb un sol programa i proveu el recorregut complet. Si una in
 **Evidència:** ruta i conte de ficció explicats. No representeu detencions, emergències ni vigilància real.
 
 ### **D-7 · La granja II.**
+![Tale-Bot Pro real recorre una ruta entre targetes de paper amb una vaca, una ovella, un ànec i un cavall.](../../_assets/imatges/sa-tb-canço-granja-d7-v1.webp)
+
+_La cançó i la seqüència les interpreta l’alumnat; el robot només executa les ordres de moviment._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -183,6 +207,10 @@ Programeu Tale-Bot perquè visite les icones en l’ordre acordat. Reviseu la se
 **Evidència:** ruta i seqüència oral o visual. Conteu-la de nou i expliqueu com heu comprovat l’ordre.
 
 ### **D-8 · Una missió cooperativa al castell.**
+![Tale-Bot Pro real recorre targetes d’escenes al costat d’un castell de paper i dos personatges que s’ajuden.](../../_assets/imatges/sa-tb-castell-cooperatiu-d8-v1.webp)
+
+_Les figures i l’ajuda formen un conte inventat; el robot no manipula els personatges ni reconeix les escenes._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -205,6 +233,10 @@ Continueu fins a completar el recorregut i arribar al desenllaç. Canvieu qui aj
 **Evidència:** ruta i relat reconstruït a partir de la fila de targetes. Expliqueu què fa que l’ajuda siga cooperativa.
 
 ### **D-9 · Cerca del tresor.**
+![Tale-Bot Pro real segueix un camí de paper cap a targetes de pista i un cofre final.](../../_assets/imatges/sa-tb-tresor-d9-v1.webp)
+
+_L’alumnat ordena les pistes i programa el trajecte; Tale-Bot no les troba ni arreplega el tresor._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -227,6 +259,10 @@ Continueu fins al tresor i reconteu la història seguint les pistes. Creeu una s
 **Evidència:** seqüència de pistes, ruta i relat final. L’objectiu és completar i narrar la seqüència, no trobar el camí amb menys ordres.
 
 ### **D-10 · El nostre llibre de contes preferit.**
+![Tale-Bot Pro real passa per escenes de paper originals d’una platja, un vaixell, un far i un pícnic.](../../_assets/imatges/sa-tb-contes-d10-v1.webp)
+
+_Les targetes són originals i les crea el grup; el robot no llig el conte ni el narra._
+
 
 #### Fase 1 · Activem i prediem
 

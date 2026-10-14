@@ -963,16 +963,23 @@ Recupereu les traces corbes de L22 i presenteu un tram recte del camí escolar a
 
 #### Fase 2 · Explorem i construïm (10 min)
 
-Comproveu que el mòdul de color del Rocky, que incorpora el sensor de proximitat IR, mira cap avant i que mBlock ofereix el bloc de detecció d’obstacles. En una pista plana, ampla i sense vores exposades, programeu l’inici amb A i una condició: si el sensor detecta l’obstacle, gireu a la dreta, avanceu un tram curt a potència reduïda, gireu a l’esquerra i continueu; si no en detecta cap, avanceu a baixa potència. Si «Els meus blocs» està disponible, agrupeu la maniobra en `esquivar_obstacle()`; altrament, conserveu-la com una seqüència de blocs visible. Si el sensor o el firmware no són compatibles, simuleu l’entrada amb targetes i etiqueteu la prova com a simulació.
+Comproveu que el mòdul de color del Rocky, que incorpora el sensor de proximitat IR, mira cap avant i que mBlock ofereix el bloc de detecció d’obstacles. En una pista plana, ampla i sense vores exposades, programeu l’inici amb A i una condició: si el sensor detecta l’obstacle, gireu a la dreta, avanceu un tram curt a potència reduïda, gireu a l’esquerra i torneu a llegir el sensor; si no en detecta cap, avanceu a baixa potència. Afegiu un comptador de desviacions: després de tres intents seguits sense alliberar el pas, atureu els motors i mostreu un avís, en lloc de continuar provant indefinidament. Reinicieu el comptador quan el camí torne a estar lliure. Si «Els meus blocs» està disponible, agrupeu la maniobra en `esquivar_obstacle()`; altrament, conserveu-la com una seqüència de blocs visible. Si el sensor o el firmware no són compatibles, simuleu l’entrada amb targetes i etiqueteu la prova com a simulació.
 
 ```blocks
 quan es prem A
+  fixa intents seguits a 0
 per sempre
   si obstacle detectat
-    gira a la dreta 90°
-    avança amb potència baixa durant 1 s
-    gira a l’esquerra 90°
+    si intents seguits < 3
+      gira a la dreta
+      avança un tram curt a potència baixa
+      gira a l’esquerra per recuperar l’orientació
+      suma 1 a intents seguits
+    altrament
+      atura els motors
+      mostra avís de camí bloquejat
   altrament
+    fixa intents seguits a 0
     avança amb potència baixa durant 1 s
 ```
 
@@ -982,7 +989,7 @@ _El recorregut és una maqueta pròpia per provar la resposta del sensor IR; no 
 
 #### Fase 3 · Expliquem i registrem (10 min)
 
-Executeu primer el programa amb el camí lliure i després amb l’obstacle tou al davant, sempre des de la mateixa marca. Registreu l’estat esperat, la lectura o resposta del sensor, les ordres executades i si Rocky recupera el sentit inicial del recorregut. Repetiu cada cas una vegada sense canviar el programa. Si la lectura apareix com una distància, anoteu-la com a valor aproximat del sensor; no la convertiu en una garantia sobre objectes, persones o distàncies reals.
+Executeu primer el programa amb el camí lliure i després amb l’obstacle tou al davant, sempre des de la mateixa marca. Registreu l’estat esperat, la lectura o resposta del sensor, les ordres executades i si Rocky recupera el sentit inicial del recorregut. Repetiu cada cas una vegada sense canviar el programa. En una prova controlada, col·loqueu l’obstacle de manera que no es puga esquivar i comproveu que el tercer intent atura els motors i mostra l’avís; retireu-lo i verifiqueu que el comptador es reinicia. Si la lectura apareix com una distància, anoteu-la com a valor aproximat del sensor; no la convertiu en una garantia sobre objectes, persones o distàncies reals.
 
 #### Fase 4 · Apliquem i millorem (10 min)
 
@@ -990,7 +997,7 @@ Canvieu el sentit de la desviació per provar l’extensió oficial d’esquivar
 
 #### Fase 5 · Comprovem i reflexionem (5 min)
 
-**Evidència:** mapa de la desviació, programa o funció visible, taula amb els casos lliure/obstacle, dues execucions per cas i un canvi justificat. Si s’activa el feedback, registreu també l’expressió LED i el so opcional, amb la seua alternativa visual.
+**Evidència:** mapa de la desviació, programa o funció visible, taula amb els casos lliure/obstacle i bloqueig persistent, execucions repetides, aturada després del tercer intent i reinici del comptador quan el camí queda lliure. Afegiu un canvi justificat i, si s’activa el feedback, registreu també l’expressió LED i el so opcional amb la seua alternativa visual.
 
 **Pregunta docent:** quina part del recorregut depén de la lectura IR i quines situacions reals no podem donar per resoltes amb aquesta prova?
 

@@ -26,6 +26,11 @@ La classe organitza una fira de jocs de barri. Els equips aprenen a llegir els b
 
 ### **A-1 · Hola, Tale-Bot i al repte.**
 
+![Tale-Bot Pro real al costat d’un esquema propi dels controls i de targetes de moviment i recompte de l’1 al 10.](../../_assets/imatges/sa-tb-targetes-a1-v1.webp)
+
+_L’esquema i les targetes són materials de paper per observar i representar ordres; el robot no els llig._
+
+
 **Objectiu:** identificar les parts i els botons, entendre què és una ordre i un programa, i comprovar visualment la seqüència introduïda.
 
 **Preparació:** Tale-Bot Pro, esquema propi de les parts, targetes pròpies amb els botons de moviment, *Play* i esborrat, targetes de nombre de l’1 al 10 i una graella breu. Els accessoris s’exploren només si formen part del kit del centre.
@@ -51,6 +56,11 @@ Si els recomptes no coincideixen, esborreu i corregiu només el tram necessari. 
 **Evidència:** esquema de parts i controls, nombre triat, seqüència comptada, predicció, resultat i norma de cura. Expliqueu que un programa és un conjunt ordenat d’instruccions. La torre de gots pertany a A-2.
 ### **A-2 · Avança, avança.**
 
+![Tale-Bot Pro real avança per una franja lliure de paper cap a una torre de deu gots buits i lleugers.](../../_assets/imatges/sa-tb-gots-a2-v1.webp)
+
+_Els gots representen la fita de la prova; si es comprova el contacte, useu material lleuger i una zona supervisada. La imatge no implica que el robot detecte els gots._
+
+
 #### Fase 1 · Activem i prediem
 
 Construïu una torre de deu gots buits i lleugers. Predigueu quantes ordres cap avant necessita Tale-Bot per arribar-hi des d’una línia d’inici marcada.
@@ -73,6 +83,11 @@ Recol·loqueu els gots i reinicieu Tale-Bot des de la mateixa línia per fer una
 
 ### **A-3 · Quants avanços?**
 
+![Tale-Bot Pro real al costat d’una graella de paper amb cinc punts d’inici, metes i piles de targetes d’avanç.](../../_assets/imatges/sa-tb-avanços-a3-v1.webp)
+
+_Les metes, la graella i les ordres són representacions preparades per l’alumnat; el robot només executa les ordres programades._
+
+
 #### Fase 1 · Activem i prediem
 
 Dibuixeu una graella pròpia amb cinc inicis al costat inferior (A1–E1) i una meta davant de cadascun. Predigueu quina ruta necessita més avanços.
@@ -94,6 +109,11 @@ Executeu les cinc rutes i compareu les distàncies en ordres. Si un trajecte no 
 **Evidència:** graella amb seqüències verificades. Compareu quina ruta requereix més o menys ordres mantenint la fila i l’orientació inicial.
 
 ### **A-4 · Codi de l’aula I.**
+
+![Tale-Bot Pro real al costat de seqüències visuals de fletxes i targetes de colors per comparar programes.](../../_assets/imatges/sa-tb-programes-a4-v1.webp)
+
+_Les tires de fletxes i les fitxes de colors són codis de paper creats per a la pràctica, no targetes oficials ni una lectura automàtica del robot._
+
 
 #### Fase 1 · Activem i prediem
 
@@ -169,6 +189,11 @@ Proveu quatre disposicions de distància diferent i reinicieu sempre des de la m
 
 ### **A-7 · Gir a esquerra o dreta?**
 
+![Tale-Bot Pro real en una bifurcació de paper entre dues metes, amb targetes de gir a esquerra i a dreta.](../../_assets/imatges/sa-tb-girs-a7-v1.webp)
+
+_Les metes i les fletxes grans són targetes pròpies; l’equip determina el gir des de la perspectiva inicial del robot._
+
+
 #### Fase 1 · Activem i prediem
 
 Prepareu quatre parelles de targetes d’antònims i mapes propis. Abans de donar una ordre, una persona assenyala esquerra o dreta des del punt de vista del robot.
@@ -190,6 +215,11 @@ Executeu les quatre rutes. Si hi ha desviació, canvieu només el gir que la cau
 **Evidència:** quatre programes depurats i un repte nou creat per l’alumnat amb la seua solució.
 
 ### **A-8 · Codi de l’aula II.**
+
+![Tale-Bot Pro real al costat d’un mapa de fira escolar amb parades de paper i sis seqüències de moviment.](../../_assets/imatges/sa-tb-programes-a8-v1.webp)
+
+_Les parades i les seqüències són una maqueta de paper; el robot no reconeix els llocs ni els missatges, sinó que executa les ordres introduïdes._
+
 
 #### Fase 1 · Activem i prediem
 

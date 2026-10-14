@@ -436,7 +436,8 @@ assert.match(codeyLesson22, /intercanvieu el mapa/i, "la lliçó 22 adapta l'int
 assert.match(codeyLesson22, /sa-cr-fem-un-gir-v2\.png/i, "la lliçó 22 intercala una il·lustració específica de les trajectòries corbes");
 const codeyLesson23 = codeyCourseSource.slice(codeyCourseSource.indexOf("### **L23 ·"), codeyCourseSource.indexOf("### **L24 ·"));
 assert.match(codeyLesson23, /mòdul de color del Rocky[\s\S]*sensor de proximitat IR[\s\S]*mira cap avant/i, "la lliçó 23 comprova l'orientació del sensor IR integrat en el mòdul de color");
-assert.match(codeyLesson23, /si obstacle detectat[\s\S]*gira a la dreta 90°[\s\S]*potència baixa[\s\S]*gira a l’esquerra 90°[\s\S]*altrament[\s\S]*avança/i, "la lliçó 23 manté separades les branques oficials amb i sense obstacle");
+assert.match(codeyLesson23, /si obstacle detectat[\s\S]*gira a la dreta[\s\S]*potència baixa[\s\S]*gira a l’esquerra[\s\S]*altrament[\s\S]*avança/i, "la lliçó 23 manté separades les branques amb i sense obstacle");
+assert.match(codeyLesson23, /intents seguits < 3[\s\S]*atur[a-z]* els motors[\s\S]*fixa intents seguits a 0/i, "la lliçó 23 limita les esquives i reinicia el comptador quan queda lliure");
 assert.match(codeyLesson23, /«Els meus blocs»[\s\S]*esquivar_obstacle/i, "la lliçó 23 encapsula la maniobra com a funció local opcional");
 assert.match(codeyLesson23, /expressió a la matriu LED i un so breu i suau[\s\S]*senyal visual equivalent/i, "la lliçó 23 conserva el feedback expressiu i sonor opcional amb alternativa visual");
 assert.match(codeyLesson23, /sa-cr-gir-obstacles-v2\.png/i, "la lliçó 23 té una il·lustració pròpia de l'esquiva física");
@@ -495,6 +496,12 @@ assert.equal((codingSetStation.html.match(/class="learning-phase"/g) || []).leng
 const codingSetStationSource = fs.readFileSync(path.join(root, "_content/situacions/cs-estacions-codi.md"), "utf8");
 assert.match(codingSetStationSource, /https:\/\/www\.matatastudio\.com\/Self-Guided\.html/, "Learning Station enllaça el curs autoguiat oficial en anglès com a font verificable");
 assert.match(codingSetStationSource, /grups cooperatius de quatre[\s\S]*programador\/a i inspector\/a/i, "la preparació de Learning Station reflecteix els rols cooperatius recomanats pel fabricant");
+assert.match(codingSetStationSource, /Reserveu temps perquè el grup explore i useu preguntes per a orientar-lo/i, "Learning Station aplica la recomanació oficial de donar espai a l’exploració i guiar amb preguntes");
+const codingSetMazeLessons = codingSetStationSource.split("### Sessió 7 ·", 2)[1].split("### Sessió 8 ·", 1)[0];
+assert.match(codingSetMazeLessons, /relat o poema breu[\s\S]*tres parades[\s\S]*narra el text/i, "les lliçons de laberint converteixen el propòsit oficial de crear històries/poemes en una evidència local executable");
+assert.match(codingSetMazeLessons, /adapta el propòsit general publicat[\s\S]*les tres parades i el format breu són decisions pròpies/i, "la proposta diferencia l’objectiu oficial general dels seus detalls creats localment");
+assert.match(codingSetStationSource, /valor rítmic predeterminat d’1\/4[\s\S]*bloc numèric 2, passa a 2\/4/i, "Learning Station descriu els valors rítmics de Musician segons la guia oficial");
+assert.doesNotMatch(codingSetStationSource, /nota té un compàs predeterminat|compàs escoltat/i, "Learning Station no confon els valors rítmics de Musician amb compassos");
 assert.match(codingSetStationSource, /superfície anivellada[\s\S]*robot i torre carregats/i, "la preparació incorpora les condicions d'ús del material que indica la guia oficial");
 for (const label of ["Objectius d’aprenentatge", "Preparació docent", "Vocabulari clau", "Temps orientatiu local"]) {
   assert.equal(codingSetStationSource.split(`**${label}:**`).length - 1, 12,
@@ -548,6 +555,7 @@ assert.match(farmTrail.html, /Són decisions de disseny local[\s\S]*no detalls q
 const taleBotDiscoveries = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/tb-escola-descobertes.md"), "utf8"), "https://example.test/_content/situacions/tb-escola-descobertes.md");
 assert.equal(taleBotDiscoveries.steps.length, 8, "la fira de Tale-Bot té una sessió inicial i set sessions temàtiques, sense encapçalaments de pas duplicats");
 assert.equal((taleBotDiscoveries.html.match(/class="learning-phase"/g) || []).length, 40, "les huit sessions de la fira comparteixen exactament les cinc fases comunes");
+assert.equal((taleBotDiscoveries.html.match(/class="sa-illustration"/g) || []).length, 10, "la fira intercala visuals pertinents en les sessions amb materials o proves destacables");
 assert.equal(taleBotDiscoveries.steps[0].title, "Hola, Tale-Bot: el coneixem i el cuidem (40 min)", "la sessió d'iniciació de Tale-Bot té un títol únic i accessible al wizard");
 assert.match(taleBotDiscoveries.html, /sa-tb-coneguem-tale-bot-v2\.webp/, "la sessió d'iniciació usa la il·lustració revisada amb el model real de Tale-Bot");
 assert.match(taleBotDiscoveries.html, /guia\/index\.html\?id=fira-descobertes/, "la situació principal enllaça els recursos docents en una pàgina separada");
@@ -555,23 +563,51 @@ assert.doesNotMatch(taleBotDiscoveries.html, /Intencions d'aprenentatge i criter
 const taleBotFairGuide = renderer.parse(fs.readFileSync(path.join(root, "_content/pages/guia-fira-descobertes.md"), "utf8"), "https://example.test/_content/pages/guia-fira-descobertes.md");
 assert.match(taleBotFairGuide.html, /aquesta pàgina reuneix els recursos docents ampliats/i, "la guia docent complementària té un context propi");
 assert.match(taleBotFairGuide.html, /Challenge Booklet[\s\S]*tampoc no es considera adaptat fins que se’n puga verificar/i, "la guia manté explícit el límit de verificació del quadern oficial");
+assert.match(taleBotFairGuide.html, /reduïu la ruta a dues destinacions[\s\S]*canvieu només una ordre/i, "la guia ofereix una bastida clara quan l'equip encara no arriba a la fita");
+assert.match(taleBotFairGuide.html, /apague Tale-Bot[\s\S]*retorne les targetes i els accessoris/i, "la guia converteix la cura del robot i els materials en una rutina observable");
+assert.match(taleBotFairGuide.html, /curs docent oficial de Tale-Bot Pro/i, "la guia atribueix els consells de suport docent a una font del fabricant");
 assert.match(fs.readFileSync(path.join(root, "_js/components.js"), "utf8"), /'fira-descobertes': \[`\$\{root\}situacions-aprenentatge\/index\.html`/, "la pàgina docent ofereix una tornada accessible al catàleg de situacions");
 assert.match(taleBotDiscoveries.html, /no té intencions humanes/i, "la sessió d'iniciació diferencia el comportament programat de la intencionalitat humana");
 assert.match(taleBotDiscoveries.html, /deu gots de paper lleugers/i, "la sessió d'iniciació adapta el material públic dels deu gots com a fites segures");
+assert.match(taleBotDiscoveries.html, /sa-tb-benvigut-gots-v1\.png/, "la sessió inicial intercala un visual propi dels deu gots i el Tale-Bot real");
+for (const image of ["sa-tb-fira-mapa-escola-v1.png", "sa-tb-fira-respostes-v1.png", "sa-tb-fira-botiga-v1.png", "sa-tb-fira-maduixes-v1.png"]) {
+  assert.match(taleBotDiscoveries.html, new RegExp(image.replaceAll(".", "\\.")), `la fira intercala la il·lustració ${image}`);
+  assert.ok(fs.existsSync(path.join(root, "_assets/imatges", image)), `la il·lustració ${image} existeix localment`);
+}
+assert.match(taleBotDiscoveries.html, /no identifica els espais/i, "la imatge de l'escola no atribueix reconeixement visual al Tale-Bot");
+assert.match(taleBotDiscoveries.html, /el robot només recorre la seqüència programada/i, "la imatge de recompte delimita la funció real del Tale-Bot");
 assert.match(taleBotDiscoveries.html, /maqueta de paper anotada[\s\S]*demostració d’encesa\/apagada/i, "la sessió d'iniciació avalua les parts del robot i l'ús correcte dels controls d'alimentació");
 assert.match(taleBotFairGuide.html, /parts i funcions[\s\S]*distingir el robot de les persones[\s\S]*deu gots/i, "la guia docent documenta la correspondència amb els objectius i materials públics de L1");
 assert.match(taleBotDiscoveries.html, /Predigueu el total abans de comptar[\s\S]*casella, quantitat observada i subtotal acumulat/i, "la sessió de recompte inclou predicció, registre i control de dobles recomptes");
+assert.match(taleBotDiscoveries.html, /sis danses predefinides a l’atzar/i, "la sessió de funcions registra que la dansa no és seleccionable");
+assert.match(taleBotDiscoveries.html, /limit[a-zà-ú ]*cada enregistrament a 30 segons/i, "la sessió d'àudio conserva el límit temporal de la guia oficial");
+assert.match(taleBotDiscoveries.html, /pulsació breu \(menys d’un segon\) per reutilitzar l’àudio/i, "la sessió diferencia reproduir i reutilitzar una gravació");
+assert.match(taleBotDiscoveries.html, /mode infinit només es representa amb targetes/i, "la sessió evita executar físicament una ordre repetida infinita");
+assert.match(taleBotDiscoveries.html, /no atribueix aquesta seqüència pròpia al pla docent no consultable de L4/i, "la fira separa les funcions verificades del guió oficial no accessible");
 assert.match(taleBotDiscoveries.html, /unitat del patró[\s\S]*correcció justificada/i, "la sessió artística avalua la regla del patró i una revisió explicada");
 assert.match(taleBotDiscoveries.html, /sa-tb-formes-monstre\.webp/, "la sessió de formes incorpora una il·lustració pròpia i pertinent");
 assert.doesNotMatch(taleBotDiscoveries.html, /Llegiu el repte de la sessió|Feu explícit el procediment: registreu la seqüència|Trieu una sola decisió o instrucció per revisar|Compareu el resultat amb la predicció i expliqueu què heu aprés/, "les sessions temàtiques de la fira no conserven fases genèriques de plantilla");
 const taleBotCommandsSource = fs.readFileSync(path.join(root, "_content/situacions/tb-ordres-en-accio.md"), "utf8");
 const taleBotCommands = renderer.parse(taleBotCommandsSource, "https://example.test/_content/situacions/tb-ordres-en-accio.md");
+const taleBotMissionsSource = fs.readFileSync(path.join(root, "_content/situacions/tb-missions-comunitat.md"), "utf8");
+const taleBotMissions = renderer.parse(taleBotMissionsSource, "https://example.test/_content/situacions/tb-missions-comunitat.md");
 const taleBotCardCategories = [
   [taleBotCommands, 10, "A"],
   [renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/tb-explora-el-barri.md"), "utf8"), "https://example.test/_content/situacions/tb-explora-el-barri.md"), 15, "B"],
   [renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/tb-patrons-en-ruta.md"), "utf8"), "https://example.test/_content/situacions/tb-patrons-en-ruta.md"), 7, "C"],
-  [renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/tb-missions-comunitat.md"), "utf8"), "https://example.test/_content/situacions/tb-missions-comunitat.md"), 10, "D"]
+  [taleBotMissions, 10, "D"]
 ];
+assert.equal((taleBotCommands.html.match(/class="sa-illustration"/g) || []).length, 11, "els deu reptes A tenen cadascun un visual intercalat a més de la portada");
+const taleBotPatterns = taleBotCardCategories[2][0];
+assert.equal((taleBotPatterns.html.match(/class="sa-illustration"/g) || []).length, 8, "els set reptes de patrons tenen cadascun un visual intercalat a més de la portada");
+for (let index = 1; index <= 7; index += 1) {
+  const image = `sa-tb-patrons-c${index}-v1.webp`;
+  assert.match(taleBotPatterns.html, new RegExp(image.replaceAll(".", "\\.")), `el repte C-${index} intercala el visual ${image}`);
+  assert.ok(fs.existsSync(path.join(root, "_assets/imatges", image)), `el visual ${image} existeix localment`);
+}
+assert.match(taleBotPatterns.html, /el grup identifica la unitat repetida; Tale-Bot no reconeix els símbols/i, "el visual de patrons no atribueix lectura de símbols al robot");
+assert.match(taleBotPatterns.html, /Tale-Bot no detecta l’illa ni evita obstacles/i, "el visual de la ruta al voltant de l'illa explicita el rol de planificació humana");
+assert.match(taleBotPatterns.html, /Tale-Bot no les identifica ni les arreplega/i, "el visual de les carabasses no atribueix detecció o recollida al robot");
 for (const [record, expectedActivities, category] of taleBotCardCategories) {
   assert.equal(record.steps.length, expectedActivities, `la categoria ${category} adapta totes les activitats oficials esperades`);
   assert.equal((record.html.match(/class="learning-phase"/g) || []).length, expectedActivities * 5, `cada activitat de la categoria ${category} segueix les cinc fases comunes`);
@@ -583,6 +619,20 @@ assert.match(taleBotCommands.html, /exactament eixe nombre d’ordres/, "A-1 ada
 assert.match(taleBotCommands.html, /colors dels indicadors de codificació/, "A-1 conserva la comprovació visual dels indicadors del robot");
 assert.match(taleBotCommands.html, /sa-tb-instruccions-v2\.webp/, "A-1 usa la il·lustració revisada dels botons físics del Tale-Bot");
 assert.match(taleBotCommands.html, /La torre de gots pertany a A-2/, "A-1 i A-2 tenen continguts oficials diferenciats");
+const taleBotAVisuals = [
+  [1, "sa-tb-targetes-a1-v1.webp", /robot no els llig/i],
+  [2, "sa-tb-gots-a2-v1.webp", /imatge no implica que el robot detecte els gots/i],
+  [3, "sa-tb-avanços-a3-v1.webp", /només executa les ordres programades/i],
+  [4, "sa-tb-programes-a4-v1.webp", /no targetes oficials ni una lectura automàtica/i],
+  [7, "sa-tb-girs-a7-v1.webp", /l’equip determina el gir/i],
+  [8, "sa-tb-programes-a8-v1.webp", /no reconeix els llocs ni els missatges/i]
+];
+for (const [activity, filename, boundary] of taleBotAVisuals) {
+  const activitySource = taleBotCommandsSource.split(`### **A-${activity}`, 2)[1].split("\n### **", 1)[0];
+  assert.match(activitySource, new RegExp(filename.replaceAll(".", "\\.")), `A-${activity} intercala la il·lustració pròpia de la seua activitat`);
+  assert.ok(fs.existsSync(path.join(root, "_assets/imatges", filename)), `la il·lustració de A-${activity} existeix localment`);
+  assert.match(activitySource, boundary, `A-${activity} explica els límits de la representació visual`);
+}
 const taleBotA5 = taleBotCommandsSource.split("### **A-5", 2)[1].split("### **A-6", 1)[0];
 assert.match(taleBotA5, /manteniu premut el botó de gravació mentre parleu[\s\S]*deixeu-lo anar en acabar[\s\S]*com a màxim 30 segons/i, "A-5 aplica el protocol oficial de gravació i el límit de durada");
 assert.match(taleBotA5, /per reutilitzar l’últim missatge[\s\S]*pulsació de menys d’un segon/i, "A-5 reutilitza la gravació amb una pulsació curta del botó Record");
@@ -608,6 +658,46 @@ assert.match(taleBotA10, /sa-tb-guardes-parc-v2\.png/, "A-10 intercala una imatg
 assert.match(taleBotA10, /el robot no els detecta/i, "A-10 explica que el recorregut al voltant d'objectes depén de la planificació humana");
 const taleBotExplorationSource = fs.readFileSync(path.join(root, "_content/situacions/tb-explora-el-barri.md"), "utf8");
 const taleBotExploration = renderer.parse(taleBotExplorationSource, "https://example.test/_content/situacions/tb-explora-el-barri.md");
+assert.equal((taleBotExploration.html.match(/class="sa-illustration"/g) || []).length, 16, "les quinze activitats B tenen cadascuna un visual intercalat a més de la portada");
+const taleBotBVisuals = [
+  [1, "sa-tb-sentits-b1-v1.webp", /no percep olors, gustos, sons ni textures/i],
+  [2, "sa-tb-mercat-b2-v1.webp", /el recompte i la tria els fa l’alumnat/i],
+  [3, "sa-tb-formes-b3-v1.webp", /no reconeix figures/i],
+  [4, "sa-tb-colors-b4-v1.webp", /no identifica aliments ni colors/i],
+  [5, "sa-tb-granota-b5-v1.webp", /només recorre les ordres programades/i],
+  [6, "sa-tb-girasol-b6-v1.webp", /no detecta el desenvolupament de la planta/i],
+  [7, "sa-tb-musica-b7-v1.webp", /el robot només es desplaça/i],
+  [8, "sa-tb-estels-b8-v1.webp", /no llig partitures ni reprodueix la cançó/i],
+  [9, "sa-tb-sistema-solar-b9-v1.webp", /no identifica planetes/i],
+  [10, "sa-tb-magnetisme-b10-v1.webp", /no porta imant ni detecta materials/i],
+  [11, "sa-tb-tresor-b11-v1.webp", /no detecta obstacles ni arreplega el tresor/i],
+  [12, "sa-tb-serveis-b12-v1.webp", /Tale-Bot no els reconeix/i]
+];
+for (const [activity, filename, boundary] of taleBotBVisuals) {
+  const activitySource = taleBotExplorationSource.split(`### **B-${activity}`, 2)[1].split("\n### **", 1)[0];
+  assert.match(activitySource, new RegExp(filename.replaceAll(".", "\\.")), `B-${activity} intercala la il·lustració pròpia de la seua activitat`);
+  assert.ok(fs.existsSync(path.join(root, "_assets/imatges", filename)), `la il·lustració de B-${activity} existeix localment`);
+  assert.match(activitySource, boundary, `B-${activity} explica els límits de la representació visual`);
+}
+const taleBotDVisuals = [
+  [1, "sa-tb-poble-d1-v1.webp", /no reconeix edificis/i],
+  [2, "sa-tb-zoo-d2-v1.webp", /no identifica animals ni els seus hàbitats/i],
+  [3, "sa-tb-missatger-d3-v1.webp", /no una xarxa/i],
+  [4, "sa-tb-granja-d4-v1.webp", /no els identifica ni interactua amb animals/i],
+  [5, "sa-tb-missions-mercat.webp", /no una representació d’un comerç concret/i],
+  [6, "sa-tb-conte-patrulla-d6-v1.webp", /sense vigilància, detencions ni emergències reals/i],
+  [7, "sa-tb-canço-granja-d7-v1.webp", /només executa les ordres de moviment/i],
+  [8, "sa-tb-castell-cooperatiu-d8-v1.webp", /no manipula els personatges ni reconeix les escenes/i],
+  [9, "sa-tb-tresor-d9-v1.webp", /no les troba ni arreplega el tresor/i],
+  [10, "sa-tb-contes-d10-v1.webp", /no llig el conte ni el narra/i]
+];
+assert.equal((taleBotMissions.html.match(/class="sa-illustration"/g) || []).length, 11, "els deu reptes D tenen cadascun un visual intercalat a més de la portada");
+for (const [activity, filename, boundary] of taleBotDVisuals) {
+  const activitySource = taleBotMissionsSource.split(`### **D-${activity}`, 2)[1].split("\n### **", 1)[0];
+  assert.match(activitySource, new RegExp(filename.replaceAll(".", "\\.")), `D-${activity} intercala la il·lustració pròpia de la seua activitat`);
+  assert.ok(fs.existsSync(path.join(root, "_assets/imatges", filename)), `la il·lustració de D-${activity} existeix localment`);
+  assert.match(activitySource, boundary, `D-${activity} explica els límits de la representació visual`);
+}
 assert.match(taleBotExploration.html, /programeu Tale-Bot i compareu el recorregut amb la predicció/i, "B-12 prova el trajecte entre la persona i l’eina del servei");
 assert.match(taleBotExploration.html, /eviten zones tancades/i, "B-12 manté les zones tancades amb una adaptació local segura");
 const taleBotArtistI = taleBotExplorationSource.slice(taleBotExplorationSource.indexOf("### **B-14"), taleBotExplorationSource.indexOf("### **B-15"));
@@ -906,10 +996,20 @@ assert.equal((planetChallenges.html.match(/class="learning-phase"/g) || []).leng
 assert.match(planetChallenges.html, /no poseu dispositius a cap animal/i, "els prototips de biodiversitat no es despleguen en animals");
 assert.match(planetChallenges.html, /no mesureu el pols de companys/i, "el repte de pulsacions evita dades biomètriques de l’alumnat");
 const pythonTransportProject = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/sp-python-projecte-transport.md"), "utf8"), "https://example.test/_content/situacions/sp-python-projecte-transport.md");
+const pythonTransportSource = fs.readFileSync(path.join(root, "_content/situacions/sp-python-projecte-transport.md"), "utf8");
 assert.equal(pythonTransportProject.steps.length, 10, "el projecte de transport en Python conserva les deu lliçons");
 assert.equal((pythonTransportProject.html.match(/class="learning-phase"/g) || []).length, 50, "les deu lliçons del projecte de transport comparteixen les cinc fases");
+assert.match(pythonTransportSource, /^duration: "10 lliçons · 10–12 sessions"$/m, "la durada local del projecte respecta el rang oficial de 10–12 lliçons");
 assert.match(pythonTransportProject.html, /tres intents del mateix cas nominal/i, "el projecte conserva la calibració amb proves repetides");
 assert.match(pythonTransportProject.html, /no autònom ni apte per a transportar materials o persones en espais reals/i, "la mostra declara els límits del prototip");
+for (const [lesson, image] of [[3, "disseny"], [5, "mecanica"], [6, "python"], [10, "fira"]]) {
+  const lessonSource = pythonTransportSource.split(`### **Lliçó ${lesson} ·`, 2)[1].split("\n### **Lliçó ", 1)[0].split("\n## ", 1)[0];
+  assert.match(lessonSource, new RegExp(`sa-sp-python-projecte-transport-${image}\\.webp`), `la lliçó ${lesson} intercala el visual pertinent de l'etapa del projecte`);
+  assert.match(pythonTransportProject.html, new RegExp(`sa-sp-python-projecte-transport-${image}\\.webp`), `el visual de la lliçó ${lesson} es renderitza`);
+  assert.ok(fs.existsSync(path.join(root, `_assets/imatges/sa-sp-python-projecte-transport-${image}.webp`)), `el visual de la lliçó ${lesson} existeix localment`);
+}
+assert.match(pythonTransportProject.html, /prototips de cartó separats[\s\S]*no són accessoris/i, "el visual de disseny distingeix les maquetes pròpies de les peces SPIKE");
+assert.match(pythonTransportProject.html, /pantalla representa codi textual[\s\S]*API s’han de comprovar/i, "el visual de Python identifica la pantalla com a representació i manté pendent la versió d'API");
 const pythonGames = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/sp-python-jocs.md"), "utf8"), "https://example.test/_content/situacions/sp-python-jocs.md");
 assert.equal(pythonGames.steps.length, 8, "la unitat Python de jocs conserva les huit lliçons oficials");
 assert.equal((pythonGames.html.match(/class="learning-phase"/g) || []).length, 40, "les huit lliçons de jocs comparteixen les cinc fases");
@@ -1175,8 +1275,24 @@ const officialCycles = {
   "tercer-cicle": "Tercer cicle"
 };
 const activeSituations = fs.readdirSync(path.join(root, "_content/situacions")).filter(file => file.endsWith(".md") && /^active:\s*true\s*$/m.test(fs.readFileSync(path.join(root, "_content/situacions", file), "utf8")));
+const equippedRobots = ["coding-express", "tale-bot", "coding-set", "codey-rocky", "spike", "microbit"];
+const situationCountByRobot = Object.fromEntries(equippedRobots.map(robot => [robot, 0]));
+const imageOwnerByPath = new Map();
 for (const file of activeSituations) {
-  const parsedSituation = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions", file), "utf8"), `https://example.test/_content/situacions/${file}`);
+  const situationPath = path.join(root, "_content/situacions", file);
+  const situationSource = fs.readFileSync(situationPath, "utf8");
+  const imageSources = [...situationSource.matchAll(/!\[[^\]]*\]\(([^)]+)\)/g)].map(match => match[1]);
+  assert.ok(imageSources.length > 0, `${file}: té almenys una imatge pròpia referenciada`);
+  for (const imageSource of imageSources) {
+    assert.doesNotMatch(imageSource, /^https?:\/\//i, `${file}: la imatge queda allotjada localment`);
+    const imagePath = path.resolve(path.dirname(situationPath), imageSource);
+    assert.ok(fs.existsSync(imagePath), `${file}: existeix la imatge ${imageSource}`);
+    const previousOwner = imageOwnerByPath.get(imagePath);
+    assert.ok(!previousOwner || previousOwner === file, `${file}: no reutilitza una imatge pròpia de ${previousOwner}`);
+    imageOwnerByPath.set(imagePath, file);
+  }
+  const parsedSituation = renderer.parse(situationSource, `https://example.test/_content/situacions/${file}`);
+  if (Object.hasOwn(situationCountByRobot, parsedSituation.data.robot)) situationCountByRobot[parsedSituation.data.robot] += 1;
   assert.ok(parsedSituation.steps.length > 0, `${file} té passos navegables`);
   assert.ok(Object.hasOwn(officialCycles, parsedSituation.data.cycle), `${file}: usa un dels quatre cicles oficials`);
   assert.equal(parsedSituation.data.cycle_label, officialCycles[parsedSituation.data.cycle], `${file}: l'etiqueta del cicle coincideix amb la nomenclatura oficial`);
@@ -1192,6 +1308,9 @@ for (const file of activeSituations) {
   }
 }
 assert.equal(activeSituations.length, activeFiles.length, "el format comú es comprova en totes les SDAs actives");
+for (const robot of equippedRobots) {
+  assert.ok(situationCountByRobot[robot] >= 5, `${robot}: la dotació té almenys cinc SDAs pròpies actives`);
+}
 assert.ok(componentSource.includes('contentHasChallenge = /<h2\\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html)'), "el repte no es duplica si ja té una secció pròpia");
 assert.match(styles, /\.learning-step\[hidden\]/, "els passos no actius es retiren de la lectura visual");
 
@@ -1202,6 +1321,14 @@ assert.match(artistNet, /Artist Add-On Curriculum[\s\S]*no ha sigut consultable/
 assert.match(artistNet, /no plega paper[\s\S]*no dibuixa les línies/, "la fitxa no atribueix funcions del complement al Coding Set base");
 assert.match(artistNet, /sa-cs-artist-net-paraules-v1\.png[\s\S]*sa-cs-artist-net-ruta-v1\.png/, "la fitxa té visuals de portada i procés");
 assert.equal(artistNetParsed.data.official_source, "https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf", "la fitxa conserva la font oficial del currículum Artist");
+const wetlandRoute = fs.readFileSync(path.join(root, "_content/situacions/cs-ruta-segura-marjal.md"), "utf8");
+const wetlandRouteParsed = renderer.parse(wetlandRoute, "https://example.test/_content/situacions/cs-ruta-segura-marjal.md");
+assert.equal(wetlandRouteParsed.steps.length, 3, "l’adaptació oficial d’obstacles té tres sessions navegables");
+assert.match(wetlandRoute, /The Wolf is Coming[\s\S]*lliçó 3/i, "la SDA identifica la lliçó oficial que adapta");
+assert.match(wetlandRoute, /intercanvien tasques[\s\S]*permutacions/i, "la proposta conserva el canvi de rols i el repte de permutacions de la font");
+assert.match(wetlandRoute, /no el reconeix ni l’evita automàticament/i, "la proposta no atribueix detecció d’obstacles al robot base");
+assert.ok(fs.existsSync(path.join(root, "_assets/imatges/sa-cs-ruta-marjal-obstacles.webp")), "la SDA té la il·lustració IA generada per al Coding Set real");
+assert.match(wetlandRoute, /sa-cs-ruta-marjal-obstacles\.webp/, "la SDA referencia la seua il·lustració local");
 const extracurricular = fs.readFileSync(path.join(root, "_content/situacions/cs-extracurricular-marjal.md"), "utf8");
 const extracurricularParsed = renderer.parse(extracurricular, "https://example.test/_content/situacions/cs-extracurricular-marjal.md");
 assert.equal(extracurricularParsed.steps.length, 12, "l’adaptació Extracurricular té dotze sessions navegables");
