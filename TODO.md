@@ -6,3 +6,5 @@
 
 - [ ] Els titols que estan en lletra sora, haurien de ser color #0c1a4a
 - [ ] La lletra en general hauria de ser color blau oscur
+
+- [ ] Les pàgines guia, què fem en elles? Què fem en general en _content/pages?
