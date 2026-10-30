@@ -1,5 +1,11 @@
 /* _css/styles.css - Disseny minimalista, ampli i de baixa densitat d'informació */
 
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+
 :root {
   --font-heading: 'Sora', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -264,22 +270,48 @@ robot-hero + .page-content,
   padding-top: 1.25rem;
 }
 
-/* Pàgines amb hero de secció: el fons ocupa el 100% de la finestra i s'enganxa a la capçalera */
+/* Pàgines amb hero de secció o de robot: el fons ocupa el 100% de la finestra i s'enganxa a la capçalera */
 .container.page-content:has(.robots-hero),
 .container.page-content:has(.section-hero),
+.container.page-content:has(.robot-hero),
+.container.page-content:has(robot-hero),
 .container.page-content.page-content-hero,
 .page-content:has(.robots-hero),
 .page-content:has(.section-hero),
+.page-content:has(.robot-hero),
+.page-content:has(robot-hero),
 .page-content.page-content-hero {
   max-width: 100%;
   padding-top: 0;
   padding-inline: 0;
 }
 
-/* El contingut restant de la pàgina (graella, filtres, etc.) es manté centrat al contenidor */
-.page-content:has(.robots-hero) > :not(.robots-hero):not(.section-hero),
-.page-content:has(.section-hero) > :not(.robots-hero):not(.section-hero),
-.page-content.page-content-hero > :not(.robots-hero):not(.section-hero) {
+/* El contingut restant de la pàgina (graella, filtres, detalls, etc.) es manté centrat al contenidor */
+.page-content:has(.robots-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+.page-content:has(.section-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+.page-content:has(.robot-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+.page-content:has(robot-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+.page-content.page-content-hero > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page) {
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Integració de robot-hero dins de content-detail-page: l'hero és d'amplada 100% i els blocs posteriors es mantenen centrats */
+content-detail-page {
+  display: block;
+  width: 100%;
+}
+
+content-detail-page:has(.robot-hero) > div,
+content-detail-page:has(robot-hero) > div {
+  width: 100%;
+}
+
+content-detail-page:has(.robot-hero) > div > :not(.robot-hero):not(robot-hero),
+content-detail-page:has(robot-hero) > div > :not(.robot-hero):not(robot-hero) {
   max-width: 1120px;
   margin-inline: auto;
   padding-inline: 1.5rem;
@@ -301,16 +333,26 @@ robot-hero + .page-content,
   }
   .container.page-content:has(.robots-hero),
   .container.page-content:has(.section-hero),
+  .container.page-content:has(.robot-hero),
+  .container.page-content:has(robot-hero),
   .container.page-content.page-content-hero,
   .page-content:has(.robots-hero),
   .page-content:has(.section-hero),
+  .page-content:has(.robot-hero),
+  .page-content:has(robot-hero),
   .page-content.page-content-hero {
     padding-top: 0;
     padding-inline: 0;
   }
-  .page-content:has(.robots-hero) > :not(.robots-hero):not(.section-hero),
-  .page-content:has(.section-hero) > :not(.robots-hero):not(.section-hero),
-  .page-content.page-content-hero > :not(.robots-hero):not(.section-hero) {
+  .page-content:has(.robots-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content:has(.section-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content:has(.robot-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content:has(robot-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content.page-content-hero > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page) {
+    padding-inline: 1.25rem;
+  }
+  content-detail-page:has(.robot-hero) > div > :not(.robot-hero):not(robot-hero),
+  content-detail-page:has(robot-hero) > div > :not(.robot-hero):not(robot-hero) {
     padding-inline: 1.25rem;
   }
 }
@@ -329,16 +371,26 @@ robot-hero + .page-content,
   }
   .container.page-content:has(.robots-hero),
   .container.page-content:has(.section-hero),
+  .container.page-content:has(.robot-hero),
+  .container.page-content:has(robot-hero),
   .container.page-content.page-content-hero,
   .page-content:has(.robots-hero),
   .page-content:has(.section-hero),
+  .page-content:has(.robot-hero),
+  .page-content:has(robot-hero),
   .page-content.page-content-hero {
     padding-top: 0;
     padding-inline: 0;
   }
-  .page-content:has(.robots-hero) > :not(.robots-hero):not(.section-hero),
-  .page-content:has(.section-hero) > :not(.robots-hero):not(.section-hero),
-  .page-content.page-content-hero > :not(.robots-hero):not(.section-hero) {
+  .page-content:has(.robots-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content:has(.section-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content:has(.robot-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content:has(robot-hero) > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page),
+  .page-content.page-content-hero > :not(.robots-hero):not(.section-hero):not(.robot-hero):not(robot-hero):not(content-detail-page) {
+    padding-inline: 1rem;
+  }
+  content-detail-page:has(.robot-hero) > div > :not(.robot-hero):not(robot-hero),
+  content-detail-page:has(robot-hero) > div > :not(.robot-hero):not(robot-hero) {
     padding-inline: 1rem;
   }
 }
@@ -875,202 +927,20 @@ robot-hero + .page-content,
 }
 
 /* ==========================================================================
-   NOU SISTEMA VISUAL: HERO I TARGETES (ROBOTS, PC I SITUACIONS)
+   NOU SISTEMA VISUAL: HERO I TARGETES (ROBOTS, PC, SITUACIONS I DETALL DE ROBOT)
    ========================================================================== */
 
-/* Hero unificat de les seccions (Robots, Pensament Computacional, Situacions) */
+/* Hero unificat de les seccions (Robots, Pensament Computacional, Situacions) i de cada Robot */
 .section-hero,
-.robots-hero {
-  width: 100%;
-  background-color: #ebf5fd;
-  border: none;
-  border-radius: 0;
-  margin: 0 0 3rem 0;
-  padding: 2.25rem 0 2rem;
-  position: relative;
-  overflow: visible;
-  z-index: 10;
-}
-
-.section-hero-inner,
-.robots-hero-inner {
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  align-items: start;
-  gap: 0 2rem;
-  position: relative;
-  min-height: 230px;
-}
-
-/* Nav-back al hero: sempre alineat a la part superior esquerra */
-.section-hero-inner > nav-back,
-.robots-hero-inner > nav-back {
-  grid-column: 1;
-  grid-row: 1;
-  align-self: start;
-  margin-bottom: 0.75rem;
-}
-
-/* Suport si nav-back està dins del contenidor de contingut */
-.section-hero-inner:has(.robots-hero-content > nav-back),
-.robots-hero-inner:has(.robots-hero-content > nav-back),
-.section-hero-inner:has(.section-hero-content > nav-back),
-.robots-hero-inner:has(.section-hero-content > nav-back) {
-  align-items: start;
-}
-
-.section-hero-content,
-.robots-hero-content {
-  grid-column: 1;
-  grid-row: 2;
-  align-self: start;
-  display: flex;
-  flex-direction: column;
-}
-
-.section-hero-content > nav-back,
-.robots-hero-content > nav-back {
-  align-self: flex-start;
-  margin-bottom: 1.25rem;
-}
-
-.section-hero .btn-back,
-.robots-hero .btn-back {
-  margin-left: -0.8rem;
-}
-
-/* Retrocompatibilitat si no s'utilitza contenidor intern */
-.section-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)),
-.robots-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)) {
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  align-items: start;
-  gap: 1.5rem 2rem;
-  padding: 2.25rem 1.5rem;
-}
-
-@media (max-width: 860px) {
-  .section-hero,
-  .robots-hero {
-    margin-bottom: 2rem;
-    padding: 1.75rem 0 2rem;
-    overflow: visible;
-  }
-  .section-hero-inner,
-  .robots-hero-inner {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-    min-height: auto;
-  }
-  .section-hero-inner > nav-back,
-  .robots-hero-inner > nav-back {
-    grid-column: auto;
-    grid-row: auto;
-    margin-bottom: 0.5rem;
-  }
-  .section-hero-content,
-  .robots-hero-content {
-    grid-column: auto;
-    grid-row: auto;
-  }
-  .section-hero-media,
-  .robots-hero-media {
-    grid-column: auto;
-    grid-row: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    justify-content: center;
-  }
-  .section-hero-img,
-  .robots-hero-img {
-    max-height: 220px;
-    object-position: center;
-  }
-}
-
-@media (max-width: 580px) {
-  .section-hero,
-  .robots-hero {
-    margin-bottom: 1.75rem;
-  }
-}
-
-.section-hero-title,
-.robots-hero-title {
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 3.8vw, 2.75rem);
-  font-weight: 800;
-  color: #010b40;
-  letter-spacing: -0.025em;
-  margin: 0 0 0.85rem;
-  line-height: 1.15;
-}
-
-.section-hero-desc,
-.robots-hero-desc {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  line-height: 1.55;
-  margin-bottom: 1.35rem;
-  max-width: 520px;
-}
-
-.accent-dashes,
-accent-dashes {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.dash {
-  width: 24px;
-  height: 5px;
-  border-radius: var(--radius-full);
-  display: inline-block;
-}
-
-.dash-red { background: #EF4444; }
-.dash-yellow { background: #F59E0B; }
-.dash-blue { background: #3B82F6; }
-
-.section-hero-media,
-.robots-hero-media {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  align-self: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  margin-top: -2.25rem;
-  margin-bottom: -3.75rem;
-  z-index: 5;
-  pointer-events: none;
-}
-
-.section-hero-img,
-.robots-hero-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  max-height: 330px;
-  object-fit: contain;
-  object-position: right center;
-  filter: drop-shadow(0 12px 28px rgba(1, 11, 64, 0.08));
-}
-
-/* ==========================================================================
-   HERO INDIVIDUAL DE ROBOT (Més compacte que el de secció)
-   ========================================================================== */
-
+.robots-hero,
 .robot-hero,
 robot-hero {
   width: 100%;
   background-color: var(--robot-hero-bg, #ebf5fd);
   border: none;
   border-radius: 0;
-  margin: 0;
-  padding: 1.75rem 0 1.5rem;
+  margin: 0 0 3rem 0;
+  padding: 2.25rem 0 2rem;
   position: relative;
   overflow: visible;
   z-index: 10;
@@ -1125,22 +995,42 @@ robot-hero[robot="microbit"],
   background-color: #edf5f8;
 }
 
+.section-hero-inner,
+.robots-hero-inner,
 .robot-hero-inner {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1.08fr 0.92fr;
   align-items: start;
   gap: 0 2rem;
   position: relative;
-  min-height: 175px;
+  min-height: 230px;
 }
 
+/* Nav-back al hero: sempre alineat a la part superior esquerra */
+.section-hero-inner > nav-back,
+.robots-hero-inner > nav-back,
 .robot-hero-inner > nav-back {
   grid-column: 1;
   grid-row: 1;
   align-self: start;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
+/* Suport si nav-back està dins del contenidor de contingut */
+.section-hero-inner:has(.robots-hero-content > nav-back),
+.robots-hero-inner:has(.robots-hero-content > nav-back),
+.section-hero-inner:has(.section-hero-content > nav-back),
+.robots-hero-inner:has(.section-hero-content > nav-back),
+.section-hero-inner:has(.robot-hero-content > nav-back),
+.robots-hero-inner:has(.robot-hero-content > nav-back),
+.robot-hero-inner:has(.robots-hero-content > nav-back),
+.robot-hero-inner:has(.section-hero-content > nav-back),
+.robot-hero-inner:has(.robot-hero-content > nav-back) {
+  align-items: start;
+}
+
+.section-hero-content,
+.robots-hero-content,
 .robot-hero-content {
   grid-column: 1;
   grid-row: 2;
@@ -1149,24 +1039,128 @@ robot-hero[robot="microbit"],
   flex-direction: column;
 }
 
+.section-hero-content > nav-back,
+.robots-hero-content > nav-back,
+.robot-hero-content > nav-back {
+  align-self: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.section-hero .btn-back,
+.robots-hero .btn-back,
+.robot-hero .btn-back {
+  margin-left: -0.8rem;
+}
+
+/* Retrocompatibilitat si no s'utilitza contenidor intern */
+.section-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)):not(:has(.robot-hero-inner)),
+.robots-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)):not(:has(.robot-hero-inner)),
+.robot-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)):not(:has(.robot-hero-inner)),
+robot-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)):not(:has(.robot-hero-inner)) {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: start;
+  gap: 1.5rem 2rem;
+  padding: 2.25rem 1.5rem;
+}
+
+@media (max-width: 860px) {
+  .section-hero,
+  .robots-hero,
+  .robot-hero,
+  robot-hero {
+    margin-bottom: 2rem;
+    padding: 1.75rem 0 2rem;
+    overflow: visible;
+  }
+  .section-hero-inner,
+  .robots-hero-inner,
+  .robot-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    min-height: auto;
+  }
+  .section-hero-inner > nav-back,
+  .robots-hero-inner > nav-back,
+  .robot-hero-inner > nav-back {
+    grid-column: auto;
+    grid-row: auto;
+    margin-bottom: 0.5rem;
+  }
+  .section-hero-content,
+  .robots-hero-content,
+  .robot-hero-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .section-hero-media,
+  .robots-hero-media,
+  .robot-hero-media {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    justify-content: center;
+  }
+  .section-hero-img,
+  .robots-hero-img,
+  .robot-hero-img {
+    max-height: 220px;
+    object-position: center;
+  }
+}
+
+@media (max-width: 580px) {
+  .section-hero,
+  .robots-hero,
+  .robot-hero,
+  robot-hero {
+    margin-bottom: 1.75rem;
+  }
+}
+
+.section-hero-title,
+.robots-hero-title,
 .robot-hero-title {
   font-family: var(--font-heading);
-  font-size: clamp(1.85rem, 3.2vw, 2.35rem);
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
   font-weight: 800;
   color: #010b40;
   letter-spacing: -0.025em;
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.85rem;
   line-height: 1.15;
 }
 
+.section-hero-desc,
+.robots-hero-desc,
 .robot-hero-sub {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--text-muted);
-  line-height: 1.45;
-  margin-bottom: 0.85rem;
+  line-height: 1.55;
+  margin-bottom: 1.35rem;
   max-width: 520px;
 }
 
+.accent-dashes,
+accent-dashes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash {
+  width: 24px;
+  height: 5px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+}
+
+.dash-red { background: #EF4444; }
+.dash-yellow { background: #F59E0B; }
+.dash-blue { background: #3B82F6; }
+
+.section-hero-media,
+.robots-hero-media,
 .robot-hero-media {
   grid-column: 2;
   grid-row: 1 / span 2;
@@ -1175,53 +1169,22 @@ robot-hero[robot="microbit"],
   align-items: center;
   justify-content: flex-end;
   position: relative;
-  margin-top: -1.75rem;
-  margin-bottom: -2.75rem;
+  margin-top: -2.25rem;
+  margin-bottom: -3.75rem;
   z-index: 5;
   pointer-events: none;
 }
 
+.section-hero-img,
+.robots-hero-img,
 .robot-hero-img {
   width: auto;
   max-width: 100%;
   height: auto;
-  max-height: 205px;
+  max-height: 330px;
   object-fit: contain;
   object-position: right center;
-  filter: drop-shadow(0 10px 22px rgba(1, 11, 64, 0.08));
-}
-
-@media (max-width: 860px) {
-  .robot-hero,
-  robot-hero {
-    padding: 1.5rem 0 1.75rem;
-    overflow: visible;
-  }
-  .robot-hero-inner {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    min-height: auto;
-  }
-  .robot-hero-inner > nav-back {
-    grid-column: auto;
-    grid-row: auto;
-    margin-bottom: 0.5rem;
-  }
-  .robot-hero-content {
-    grid-column: auto;
-    grid-row: auto;
-  }
-  .robot-hero-media {
-    grid-column: auto;
-    grid-row: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    justify-content: center;
-  }
-  .robot-hero-img {
-    max-height: 160px;
-    object-position: center;
-  }
+  filter: drop-shadow(0 12px 28px rgba(1, 11, 64, 0.08));
 }
 
 /* Targeta de Robot Redissenyada (vora degradada 4px, border-radius 12px) */

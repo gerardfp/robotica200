@@ -89,6 +89,13 @@ def main():
         "robot/index.html": ("robot", "robots", "robot-"),
         "guia/index.html": ("guide", "pages", "guia-"),
     }
+    required_fields = {
+        "activity": ("title", "description", "topic", "cycle_label", "duration", "order"),
+        "tutorial": ("title", "description", "robot", "level", "duration", "order", "image"),
+        "robot": ("title",),
+        "guide": ("title",),
+    }
+    active_by_kind = {"activity": set(), "tutorial": set()}
     for page_name, (kind, folder, prefix) in shared_content.items():
         page = ROOT / page_name
         component = re.search(r'<content-detail-page\b[^>]*kind=["\']([^"\']+)', page.read_text(encoding="utf-8"))
@@ -100,8 +107,13 @@ def main():
             problems.append(f"_content/{folder}: no Markdown records for {kind}")
         for markdown_path in paths:
             editorial, body = read_frontmatter(markdown_path)
-            if not editorial.get("title"):
-                problems.append(f"{markdown_path.relative_to(ROOT)}: missing title")
+            if editorial.get("active", "true").lower() != "true":
+                continue
+            if kind in active_by_kind:
+                active_by_kind[kind].add(markdown_path.stem.removeprefix(prefix))
+            for required in required_fields.get(kind, ("title",)):
+                if not editorial.get(required):
+                    problems.append(f"{markdown_path.relative_to(ROOT)}: missing front matter '{required}'")
             for ref in re.findall(r"(?<!!)\[[^\]]+\]\(([^)]+)\)|!\[[^\]]*\]\(([^)]+)\)", body):
                 link = ref[0] or ref[1]
                 target = local_target(markdown_path, link)
@@ -112,6 +124,8 @@ def main():
     content_dir = ROOT / "_content/situacions"
     active = []
     for markdown_path in sorted(content_dir.glob("*.md")):
+        if markdown_path.name.startswith("TEMPLATE-"):
+            continue
         editorial, body = read_frontmatter(markdown_path)
         if editorial.get("active", "").lower() != "true":
             continue
@@ -138,12 +152,16 @@ def main():
 
     catalog_text = (ROOT / "_js/cataleg.js").read_text(encoding="utf-8")
     catalog = json.loads(catalog_text[catalog_text.index("{"):].rstrip().removesuffix(";"))
-    active_slugs = {path.stem for path in active}
-    catalog_slugs = {item.get("slug") for item in catalog.get("situacions", [])}
-    if active_slugs != catalog_slugs:
-        missing = sorted(active_slugs - catalog_slugs)
-        stale = sorted(catalog_slugs - active_slugs)
-        problems.append(f"catalog situation mismatch: missing={missing}, stale={stale}")
+    for label, expected_slugs, catalog_key in (
+        ("situation", {path.stem for path in active}, "situacions"),
+        ("activity", active_by_kind["activity"], "activitats"),
+        ("tutorial", active_by_kind["tutorial"], "tutorials"),
+    ):
+        catalog_slugs = {item.get("slug") for item in catalog.get(catalog_key, [])}
+        if expected_slugs != catalog_slugs:
+            missing = sorted(expected_slugs - catalog_slugs)
+            stale = sorted(catalog_slugs - expected_slugs)
+            problems.append(f"catalog {label} mismatch (run python3 _scripts/sync-catalog.py): missing={missing}, stale={stale}")
     for robot in sorted(EXPECTED_ROBOTS):
         if robot_counts[robot] < 5:
             problems.append(f"robot {robot}: expected at least 5 situations, found {robot_counts[robot]}")

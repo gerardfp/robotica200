@@ -147,7 +147,7 @@
       this.innerHTML = `
         <header class="header">
           <div class="container header-inner">
-            <a href="${root}index.html" x-target.push="page-content" class="logo">
+            <a href="${root}index.html" class="logo">
               <span class="logo-badge"><img src="${root}_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
               <div class="logo-text">
                 <span class="logo-name">Robòtica<sup>200</sup></span>
@@ -155,10 +155,10 @@
               </div>
             </a>
             <nav class="header-nav" aria-label="Navegació principal">
-              <a href="${root}index.html" x-target.push="page-content" class="nav-btn ${active === 'inici' ? 'active' : ''}">Inici</a>
-              <a href="${root}pensament-computacional/index.html" x-target.push="page-content" class="nav-btn ${active === 'pensament' ? 'active' : ''}">Pensament computacional</a>
-              <a href="${root}robotica-educativa/index.html" x-target.push="page-content" class="nav-btn ${active === 'robots' || active === 'robotica' || active === 'robotica-educativa' ? 'active' : ''}">Robòtica educativa</a>
-              <a href="${root}situacions-aprenentatge/index.html" x-target.push="page-content" class="nav-btn ${active === 'situacions' ? 'active' : ''}">Situacions d'aprenentatge</a>
+              <a href="${root}index.html" class="nav-btn ${active === 'inici' ? 'active' : ''}">Inici</a>
+              <a href="${root}pensament-computacional/index.html" class="nav-btn ${active === 'pensament' ? 'active' : ''}">Pensament computacional</a>
+              <a href="${root}robotica-educativa/index.html" class="nav-btn ${active === 'robots' || active === 'robotica' || active === 'robotica-educativa' ? 'active' : ''}">Robòtica educativa</a>
+              <a href="${root}situacions-aprenentatge/index.html" class="nav-btn ${active === 'situacions' ? 'active' : ''}">Situacions d'aprenentatge</a>
             </nav>
           </div>
         </header>
@@ -241,7 +241,7 @@
       }
       this.innerHTML = `
         <div class="section-nav-back">
-          <a href="${href}" x-target.replace="page-content" class="btn-back">
+          <a href="${href}" class="btn-back">
             <span class="btn-back-arrow" aria-hidden="true">←</span>
             <span class="btn-back-text">${label}</span>
           </a>

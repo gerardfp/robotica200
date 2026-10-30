@@ -8,11 +8,11 @@ duration: 40 min
 order: 4
 ---
 
-## 🎯 Objectiu de l'activitat
+## 🎯 Què aprendrem?
 
 Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes per planificar un camí abans d'executar-lo. Quan troben un obstacle, aprenen a aïllar l'ordre equivocada.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Cinta de pintor o rajoles de l'aula com a graella
 - Fletxes de paper (amunt, avall, esquerra, dreta)
@@ -34,7 +34,11 @@ Si la fletxa ens porta a una casella bloquejada, aturem el pas, assenyalem quina
 
 > **💡 Consell per a l'aula:** Normalitza l'error: en programació equivocar-se no és un fracàs, sinó una oportunitat per depurar.
 
-## 🧭 Registre de depuració
+## ✅ Evidències d'aprenentatge
+
+Guardeu el primer programa i la versió revisada. L'alumnat explica per què ha canviat una instrucció i prova que el recorregut encara acaba al lloc acordat.
+
+### Registre de depuració
 
 Abans de començar, numereu les fletxes i feu que qui les executa repeteixi la regla en veu alta. En detectar una desviació, manteniu la seqüència original, assenyaleu la primera ordre que deixa de coincidir amb el trajecte i anoteu-ne la correcció en una segona columna.
 
@@ -42,16 +46,12 @@ Abans de començar, numereu les fletxes i feu que qui les executa repeteixi la r
 | --- | --- | --- | --- |
 | 1 | Arribar a la casella veïna | Coincideix / no coincideix | Canvi d'una instrucció |
 
-## 🗣️ Preguntes per fer pensar
+### Preguntes per fer pensar
 
 - Quin és el primer lloc on el recorregut esperat i el real divergeixen?
 - Com distingim l'ordre que causa un problema d'un error a l'executar-la?
 - Com sabríem que la solució també funciona amb una sortida diferent?
 
-## ♿ Adaptacions i aprofundiment
+## ♿ Variants i inclusió
 
 Comenceu amb dues fletxes i sense obstacle; mostreu la seqüència al costat de la graella. Per aprofundir, feu que el laberint amagui un segon error o compareu una solució fàcil de depurar amb una de més curta.
-
-## ✅ Evidències observables
-
-Guardeu el primer programa i la versió revisada. L'alumnat explica per què ha canviat una instrucció i prova que el recorregut encara acaba al lloc acordat.

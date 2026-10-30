@@ -1111,7 +1111,7 @@ const groups = ["intro", "learning", "materials", "sequence", "assessment", "acc
 const positions = groups.map(group => normalizedOrder.html.indexOf(`data-section-group="${group}"`));
 assert.ok(positions.every((position, index) => position >= 0 && (index === 0 || positions[index - 1] < position)), "les seccions de les SDAs s'ordenen amb una jerarquia comuna");
 const navigationLink = renderer.parse('[Obri la situació](../../situacio/index.html?id=sp-exemple)', 'https://example.test/_content/situacions/exemple.md');
-assert.match(navigationLink.html, /x-target\.push="page-content"/, "els enllaços Markdown interns activen Alpine AJAX");
+assert.doesNotMatch(navigationLink.html, /x-target/, "els enllaços Markdown interns usen navegació estàndard sense Alpine AJAX");
 assert.doesNotMatch(navigationLink.html, /target="_blank"/, "els enllaços interns no s'obrin com si foren externs");
 
 const contentDir = path.join(root, "_content/situacions");
@@ -1206,23 +1206,63 @@ const expectedDetailKinds = [
   ["robot", "robot", "robots", "robot-", 6, catalog.robots],
   ["guia", "guide", "pages", "guia-", 4, null]
 ];
-for (const [route, kind, folder, prefix, expected, entries] of expectedDetailKinds) {
+for (const [route, kind, folder, prefix, minExpected, entries] of expectedDetailKinds) {
   const page = fs.readFileSync(path.join(root, route, "index.html"), "utf8");
   assert.match(page, new RegExp(`<content-detail-page kind="${kind}"`), `${route} utilitza el component compartit`);
   assert.match(page, /_js\/components\.js\?v=/, `${route} invalida la memòria cau del router actualitzat`);
   const docs = fs.readdirSync(path.join(root, "_content", folder)).filter(file => file.startsWith(prefix) && file.endsWith(".md"));
-  assert.equal(docs.length, expected, `${route} té el nombre esperat de documents Markdown`);
+  const activeDocs = docs.filter(file => {
+    const source = fs.readFileSync(path.join(root, "_content", folder, file), "utf8");
+    return !/^active:\s*false\s*$/m.test(source);
+  });
+  assert.ok(activeDocs.length >= minExpected, `${route} té almenys els ${minExpected} documents Markdown base`);
   assert.equal(fs.readdirSync(path.join(root, route)).filter(file => fs.existsSync(path.join(root, route, file, "index.html"))).length, 0, `${route} no manté shells HTML per document`);
   if (entries) {
-    assert.equal(entries.length, expected, `catàleg ${route} sincronitzat des del Markdown`);
+    assert.equal(entries.length, activeDocs.length, `catàleg ${route} sincronitzat amb tots els Markdown actius`);
     assert.ok(entries.every(item => item.url.startsWith(`${route}/index.html?id=`)), `les targetes ${route} usen una ruta compartida`);
   }
 }
+const activitiesDir = path.join(root, "_content/activitats");
+assert.ok(fs.existsSync(path.join(activitiesDir, "TEMPLATE-ACTIVITAT.md")), "existeix la plantilla base TEMPLATE-ACTIVITAT.md");
+const activityFiles = fs.readdirSync(activitiesDir)
+  .filter(file => file.startsWith("activitat-") && file.endsWith(".md"))
+  .sort();
+const requiredActivityHeadings = [
+  "## 🎯 Què aprendrem?",
+  "## 🧰 Materials i preparació",
+  "## 👣 Desenvolupament pas a pas",
+  "## ✅ Evidències d'aprenentatge",
+  "## ♿ Variants i inclusió"
+];
+for (const file of activityFiles) {
+  const source = fs.readFileSync(path.join(activitiesDir, file), "utf8");
+  if (/^active:\s*false\s*$/m.test(source)) continue;
+  const rendered = renderer.parse(source, `https://example.test/_content/activitats/${file}`);
+  for (const field of ["title", "description", "topic", "cycle_label", "duration", "order"]) {
+    assert.ok(rendered.data[field], `${file}: declara la propietat obligatòria ${field}`);
+  }
+  const h2Headings = source.split("\n").filter(line => line.startsWith("## "));
+  const expectedHeadings = h2Headings.includes("## 🔗 Referent consultat")
+    ? [...requiredActivityHeadings, "## 🔗 Referent consultat"]
+    : requiredActivityHeadings;
+  assert.deepEqual(h2Headings, expectedHeadings, `${file}: manté exactament els encapçalaments canònics d'activitat`);
+  assert.match(source, /^### Preguntes per fer pensar$/m, `${file}: inclou la subsecció de preguntes de reflexió`);
+  assert.ok(rendered.steps.length >= 3, `${file}: organitza l'activitat en almenys tres passos al wizard`);
+  const expectedGroups = h2Headings.includes("## 🔗 Referent consultat")
+    ? ["learning", "materials", "sequence", "assessment", "access", "official"]
+    : ["learning", "materials", "sequence", "assessment", "access"];
+  assert.deepEqual(
+    [...rendered.html.matchAll(/data-section-group="([a-z]+)"/g)].map(match => match[1]),
+    expectedGroups,
+    `${file}: renderitza totes les seccions visuals en el mateix ordre canònic`
+  );
+  assert.doesNotMatch(rendered.html, /class="detail-subsection-title"/, `${file}: no fusiona seccions principals com a subtítols`);
+}
 for (const pageName of ["pensament-computacional", "robotica-educativa", "situacions-aprenentatge"]) {
   const page = fs.readFileSync(path.join(root, pageName, "index.html"), "utf8");
-  assert.match(page, /alpine-ajax@/, `${pageName} carrega Alpine AJAX`);
+  assert.doesNotMatch(page, /alpine-ajax@/, `${pageName} no depén d'Alpine AJAX`);
   assert.match(page, /alpinejs@/, `${pageName} carrega Alpine`);
-  assert.match(page, /id="page-content"/, `${pageName} defineix la vista AJAX compartida`);
+  assert.match(page, /id="page-content"/, `${pageName} defineix el contenidor principal compartit`);
 }
 const situationCatalogPage = fs.readFileSync(path.join(root, "situacions-aprenentatge/index.html"), "utf8");
 assert.match(situationCatalogPage, /x-data="\{[\s\S]*?matches\(item\)/, "els filtres es defineixen declarativament en Alpine");
@@ -1248,7 +1288,8 @@ for (const templateId of ["situation-page-template", "situation-page-loading-tem
 }
 assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statSync(path.join(root, "situacio", name)).isDirectory()).length, 0, "no hi ha shells HTML individuals");
 assert.match(componentSource, /new URLSearchParams\(window\.location\.search\)/, "la pàgina tria el Markdown a partir de l'ID de la URL");
-assert.match(componentSource, /x-target\.push="page-content"/, "els enllaços del catàleg usen Alpine AJAX");
+assert.doesNotMatch(componentSource, /x-target\./, "la navegació compartida no depén d'Alpine AJAX");
+assert.match(styles, /@view-transition\s*\{\s*navigation:\s*auto;\s*\}/, "el full d'estils activa View Transitions entre pàgines");
 assert.doesNotMatch(componentSource, /addEventListener\('popstate'/, "l'historial no es manté amb un router manual");
 assert.doesNotMatch(componentSource, /class (?:ActivityGrid|SituationGrid|TutorialGrid|RobotGrid|SituationFilters|RobotHero|AccentDashes)/, "els catàlegs i les peces de presentació ja no tenen renderitzadors JavaScript propis");
 assert.match(pageTemplate, /x-data=/, "les plantilles de detall usen estat declaratiu d'Alpine");

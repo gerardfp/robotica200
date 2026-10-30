@@ -13,14 +13,14 @@ order: 5
 
 Un programa pot comprovar una condició i triar què fa després. En aquesta activitat, l’alumnat interpreta una regla «si... llavors... si no...», prediu la resposta abans d’actuar i comprova què passa amb entrades diferents. Les dades són símbols inventats, no característiques personals.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Targetes grans amb tres símbols: estrela, cercle i triangle. Es poden dibuixar o retallar.
 - Una fitxa per equip i dues zones de resposta, una amb un cercle blau i una altra amb un quadrat coral.
 - Targetes amb les regles, o pissarra per escriure-les en lletra gran.
 - Una graella senzilla per registrar entrada, condició, decisió i resultat.
 
-## 🧑‍🤝‍🧑 Rols de l’equip
+### Rols de l’equip
 
 Repartiu quatre rols i canvieu-los després de cada ronda:
 
@@ -66,7 +66,11 @@ Feu servir primer dues targetes d’exemple per a cada combinació i anoteu quin
 
 > **💡 Connexió amb la robòtica:** una targeta fa de senyal d’entrada i la fitxa mostra la resposta. En un robot, un sensor aporta dades; el programa les compara amb una condició i tria una acció.
 
-## 🗣️ Preguntes per fer pensar
+## ✅ Evidències d'aprenentatge
+
+Recolliu la regla escrita o enregistrada amb pictogrames, una predicció i els resultats de tres targetes. L’alumnat ha de poder explicar quina dada ha comprovat, per què ha triat aquella branca i què faria amb un exemple nou. Valoreu també que detecte una regla ambigua i propose una manera d’aclarir-la.
+
+### Preguntes per fer pensar
 
 - Com podem comprovar que la condició és certa o falsa?
 - Què passa amb el triangle si la regla només parla de l’estrela?
@@ -76,10 +80,6 @@ Feu servir primer dues targetes d’exemple per a cada combinació i anoteu quin
 ## ♿ Variants i inclusió
 
 Manteniu les targetes visibles i llegiu la regla en veu alta. Oferiu símbols grans d’alt contrast i permeteu respondre parlant, assenyalant, mirant la zona triada o col·locant una fitxa. El moviment corporal és opcional i es pot fer des de la cadira. Comenceu amb dues formes i una sola condició; afegiu una tercera forma quan el grup ja puga explicar les dues branques.
-
-## ✅ Evidències observables
-
-Recolliu la regla escrita o enregistrada amb pictogrames, una predicció i els resultats de tres targetes. L’alumnat ha de poder explicar quina dada ha comprovat, per què ha triat aquella branca i què faria amb un exemple nou. Valoreu també que detecte una regla ambigua i propose una manera d’aclarir-la.
 
 ## 🔗 Referent consultat
 

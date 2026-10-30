@@ -11,13 +11,13 @@ order: 7
 
 Un bucle és una instrucció que demana repetir una seqüència. El grup distingeix entre escriure una ordre moltes vegades i definir el patró una sola vegada amb un nombre de repeticions.
 
-## 🧺 Material
+## 🧰 Materials i preparació
 
 - Targetes amb accions: picar de mans, fer un pas, girar i tocar-se les espatlles.
 - Targetes amb nombres de l'1 al 8 i una targeta «repeteix».
 - Espai lliure perquè cada equip pugui actuar sense xocar amb altres grups.
 
-## 👣 Desenvolupament
+## 👣 Desenvolupament pas a pas
 
 ### 1. Segueix la seqüència
 
@@ -35,16 +35,6 @@ Escriviu la seqüència completa sense bucle. Després substituïu-la per «repe
 
 Una persona modifica només el nombre del bucle. Abans d'actuar, la resta prediu quants moviments farà cada participant.
 
-## 🔎 Preguntes del docent
-
-- On comença i on acaba el patró que repetim?
-- Si el repetim una vegada més, què canvia i què es manté?
-- Hi ha una instrucció que no necessitem perquè es pot expressar amb un bucle?
-
-## ♿ Variants i inclusió
-
-Es pot fer la coreografia asseguts o representar-la només amb pictogrames i gestos de mà. A Infantil, limiteu-vos a dues accions i una repetició; a Secundària, compareu dos bucles niats i calculeu quantes accions s'executen.
-
 ## ✅ Evidències d'aprenentatge
 
 - L'alumnat identifica el tros que forma el patró.
@@ -52,6 +42,16 @@ Es pot fer la coreografia asseguts o representar-la només amb pictogrames i ges
 - Simplifica una llista llarga d'ordres sense alterar la seqüència.
 
 > **💡 Per anar més enllà:** Demaneu a un altre equip que interpreti les targetes sense cap explicació oral. Les instruccions han de ser prou clares per funcionar per si soles.
+
+### Preguntes per fer pensar
+
+- On comença i on acaba el patró que repetim?
+- Si el repetim una vegada més, què canvia i què es manté?
+- Hi ha una instrucció que no necessitem perquè es pot expressar amb un bucle?
+
+## ♿ Variants i inclusió
+
+Es pot fer la coreografia asseguts o representar-la només amb pictogrames i gestos de mà. A Educació Infantil, limiteu-vos a dues accions i una repetició; al tercer cicle, compareu dos bucles niats i calculeu quantes accions s'executen.
 
 ## 🔗 Referent consultat
 

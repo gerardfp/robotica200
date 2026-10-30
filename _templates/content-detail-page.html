@@ -16,7 +16,7 @@
         <p class="robot-hero-sub" x-text="description" x-show="description"></p>
         <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
       </div>
-      <div class="robot-hero-media"><img :src="root + '_assets/robots/' + robotSlug + '.png'" :alt="title" class="robot-hero-img" width="600" height="448"></div>
+      <div class="robot-hero-media"><img :src="root + '_assets/robots/' + robotSlug + '.png'" :alt="title" class="robot-hero-img" width="800" height="600"></div>
     </div>
   </section>
   <nav-back data-back x-show="!robot" x-cloak></nav-back>
@@ -47,14 +47,14 @@
             </div>
             <img :src="'../_assets/icons/' + item.robot + '.svg'" alt="" class="card-robot-icon" width="28" height="28">
           </div>
-          <a :href="'../' + item.url" x-target.push="page-content" class="tutorial-card-media-link" :aria-label="item.titol">
+          <a :href="'../' + item.url" class="tutorial-card-media-link" :aria-label="item.titol">
             <div class="tutorial-card-media"><img :src="'../' + (item.imatge || ('_assets/robots/' + item.robot + '.png'))" :alt="item.titol" class="tutorial-card-img" loading="lazy"></div>
           </a>
-          <h3 class="tutorial-card-title"><a :href="'../' + item.url" x-target.push="page-content" x-text="item.titol"></a></h3>
+          <h3 class="tutorial-card-title"><a :href="'../' + item.url" x-text="item.titol"></a></h3>
           <p class="tutorial-card-desc" x-text="item.descripcio"></p>
           <div class="tutorial-card-footer">
-            <a :href="'../' + item.url" x-target.push="page-content" class="btn-step-by-step">Pas a pas d'aula →</a>
-            <a :href="'../' + item.url" x-target.push="page-content" class="btn-open-tutorial">Obrir tutorial →</a>
+            <a :href="'../' + item.url" class="btn-step-by-step">Pas a pas d'aula →</a>
+            <a :href="'../' + item.url" class="btn-open-tutorial">Obrir tutorial →</a>
           </div>
         </article>
       </template>

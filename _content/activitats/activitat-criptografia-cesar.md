@@ -8,14 +8,18 @@ duration: 50 min
 order: 6
 ---
 
-## 🎯 Objectiu de l'activitat
+## 🎯 Què aprendrem?
 
 Construcció d'una roda de xifratge de dos cercles concèntrics per comprendre com es protegeix la informació a Internet desplaçant les lletres de l'alfabet un nombre fix de posicions.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
-- Plantilla de roda de Cèsar retallable (2 cercles)
-- Una agulla d'enquadernar de dues potes per unir el centre
+- Plantilla de roda de Cèsar retallable (2 cercles).
+- Una agulla d'enquadernar de dues potes per unir el centre.
+
+### El missatge i la clau
+
+Fixeu una convenció d'alfabet per a tot el grup abans de començar: useu A–Z sense accents i decidiu que els espais es mantenen. Escriviu la clau acordada al marge, sense barrejar missatges xifrats amb claus diferents. Un segon equip ha de poder reproduir tant el xifratge com el desxifratge.
 
 ## 👣 Desenvolupament pas a pas
 
@@ -33,18 +37,20 @@ Cada parella s'intercanvia missatges codificats i ha d'endevinar la clau o aplic
 
 > **💡 Consell per a l'aula:** Una introducció a les substitucions i als límits d’un xifratge amb molt poques claus. No l’utilitzeu per protegir contrasenyes o missatges reals.
 
-## 🔐 El missatge i la clau
+## ✅ Evidències d'aprenentatge
 
-Fixeu una convenció d'alfabet per a tot el grup abans de començar: useu A–Z sense accents i decidiu que els espais es mantenen. Escriviu la clau acordada al marge, sense barrejar missatges xifrats amb claus diferents. Un segon equip ha de poder reproduir tant el xifratge com el desxifratge.
+Comproveu si l'alumnat pot aplicar una mateixa clau en els dos sentits i si diferencia l'aprenentatge del joc de la protecció real de dades. Tanca preguntant què caldria saber per valorar la seguretat d'un sistema.
 
-## ⚖️ Debat de seguretat
+### Debat de seguretat
 
 El xifratge Cèsar és una activitat històrica per entendre substitucions; la seva clau reduïda és fàcil d'endevinar. **No protegeix contrasenyes ni missatges reals.** Proposeu als equips que comptin les claus possibles i comparin aquest nombre amb la quantitat de claus que podem triar en una contrasenya real.
 
-## ♿ Adaptacions i aprofundiment
+### Preguntes per fer pensar
+
+- Quantes claus diferents es poden triar en aquesta roda abans que l'alfabet torni al punt inicial?
+- Què passa si dos equips no acorden abans com tractar els espais o els accents?
+- Per què un sistema amb poques claus possibles no és segur per a contrasenyes reals?
+
+## ♿ Variants i inclusió
 
 Dona una roda de lletres ja preparada i proveu primer només una paraula. Aprofundiu comparant tres claus, utilitzant una tira alfabètica en lloc de retallar cercles, i detectant per què repetir lletres freqüents facilita esbrinar una substitució.
-
-## ✅ Evidències observables
-
-Comproveu si l'alumnat pot aplicar una mateixa clau en els dos sentits i si diferencia l'aprenentatge del joc de la protecció real de dades. Tanca preguntant què caldria saber per valorar la seguretat d'un sistema.

@@ -45,6 +45,12 @@ def read_markdown_frontmatter(path):
         metadata[field.group(1)] = value
     return metadata
 
+def parse_order(value, default=9999):
+    try:
+        return int(str(value).strip())
+    except (TypeError, ValueError):
+        return default
+
 def scan_activities():
     activities = []
     for path in sorted((ROOT_DIR / '_content/activitats').glob('activitat-*.md')):
@@ -52,14 +58,15 @@ def scan_activities():
         if data.get('active', 'true').lower() != 'true':
             continue
         slug = path.stem.removeprefix('activitat-')
-        activities.append({
+        activities.append((parse_order(data.get('order')), slug, {
             "id": f"activitat-{slug}", "slug": slug,
             "url": f"activitat/index.html?id={slug}",
             "titol": data.get('title', slug), "tag": data.get('topic', ''),
             "cicle": data.get('cycle_label', data.get('cycle', '')),
             "durada": data.get('duration', ''), "descripcio": data.get('description', '')
-        })
-    return activities
+        }))
+    activities.sort(key=lambda item: (item[0], item[1]))
+    return [item[2] for item in activities]
 
 def scan_situations():
     situations = []
@@ -73,6 +80,8 @@ def scan_situations():
         "desendollat": "Desendollat (Sense robot)"
     }
     for markdown_path in sorted((ROOT_DIR / '_content/situacions').glob('*.md')):
+        if markdown_path.name.startswith('TEMPLATE-'):
+            continue
         editorial = read_markdown_frontmatter(markdown_path)
         if editorial.get('active', '').lower() != 'true':
             continue
@@ -127,14 +136,15 @@ def scan_tutorials():
         image = data.get('image', '')
         if not image:
             image = next((f"_assets/tutorials/{slug}{ext}" for ext in ['.png', '.webp', '.jpg', '.jpeg'] if (ROOT_DIR / f"_assets/tutorials/{slug}{ext}").exists()), f"_assets/tutorials/{slug}.png")
-        tutorials.append({
+        tutorials.append((robot, parse_order(data.get('order')), slug, {
             "id": f"tutorial-{slug}", "slug": slug, "robot": robot,
             "robotLabel": data.get('robot_label', def_label),
             "url": f"tutorial/index.html?id={slug}", "imatge": image,
             "titol": data.get('title', slug), "dificultat": data.get('level', ''),
             "durada": data.get('duration', ''), "descripcio": data.get('description', '')
-        })
-    return tutorials
+        }))
+    tutorials.sort(key=lambda item: (item[0], item[1], item[2]))
+    return [item[3] for item in tutorials]
 
 def scan_robots(tutorials):
     robot_meta = [

@@ -95,7 +95,8 @@ const guidedCapabilities = {
   ],
 };
 
-assert.equal(tutorials.length, 36, 'el catàleg local conté les 36 fitxes de tutorials esperades');
+assert.ok(tutorials.length >= 36, 'el catàleg local conté almenys les 36 fitxes base de tutorials');
+assert.ok(fs.existsSync(path.join(tutorialsDir, 'TEMPLATE-TUTORIAL.md')), 'existeix la plantilla base TEMPLATE-TUTORIAL.md');
 
 const corpusByRobot = new Map();
 for (const name of tutorials) {
@@ -145,8 +146,11 @@ for (const name of tutorials) {
   assert.equal(rendered.steps.length, steps.length, `${name}: cada pas Markdown es converteix en un pas del wizard compartit`);
   assert.equal((rendered.html.match(/class="learning-step"/g) || []).length, steps.length,
     `${name}: tots els tutorials comparteixen la mateixa presentació de passos`);
-  assert.match(rendered.html, /class="detail-section[^>]*data-section-group="intro"/,
-    `${name}: el repte ocupa el mateix contenidor introductori`);
+  assert.deepEqual(
+    [...rendered.html.matchAll(/data-section-group="([a-z]+)"/g)].map(match => match[1]),
+    ['intro', 'learning', 'materials', 'sequence', 'assessment', 'access', 'official'],
+    `${name}: renderitza exactament els set apartats canònics en el mateix ordre`
+  );
   const challengeSection = source.split(commonHeadings[0], 2)[1].split('\n## ', 1)[0].trim();
   assert.ok(challengeSection.split('\n\n').some(block => block && !block.startsWith('- ') && !block.startsWith('![')),
     `${name}: presenta una introducció al repte abans o entre els objectius`);

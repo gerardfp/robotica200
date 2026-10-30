@@ -6,4 +6,3 @@
 
 - [ ] Els titols que estan en lletra sora, haurien de ser color #0c1a4a
 - [ ] La lletra en general hauria de ser color blau oscur
-- [ ] Fer una animacio en el logo principal que siga un canvi de barrets amb barrets de color dels dashes

@@ -11,13 +11,13 @@ order: 10
 
 Els ordinadors utilitzen dades codificades i regles de classificació. En aquest repte treballarem amb informació fictícia sobre objectes, no amb informació personal de l'alumnat.
 
-## 🧺 Material
+## 🧰 Materials i preparació
 
 - Targetes inventades amb objectes, formes i propietats visibles.
 - Tres cèrcols o cartells de classificació i notes adhesives.
 - Una graella per anotar quin criteri ha utilitzat cada equip.
 
-## 👣 Desenvolupament
+## 👣 Desenvolupament pas a pas
 
 ### 1. Prepareu una col·lecció
 
@@ -35,10 +35,6 @@ Un altre equip afegeix una targeta nova, parcialment tapada o amb una propietat 
 
 Representeu una propietat amb una marca simple: 1 si compleix la regla i 0 si no. Compareu amb quantes marques podem descriure la col·lecció i quina informació es perd.
 
-## ♿ Variants i inclusió
-
-Comenceu amb dues categories clarament visibles i peces manipulables. Com a ampliació, proposeu classificar la mateixa col·lecció amb dues regles i analitzeu com canvia l'agrupació.
-
 ## ✅ Evidències d'aprenentatge
 
 - Formula una regla que una altra persona pot aplicar.
@@ -46,6 +42,16 @@ Comenceu amb dues categories clarament visibles i peces manipulables. Com a ampl
 - Distingeix dades fictícies d'informació personal que cal protegir.
 
 > **💡 Connexió amb ciutadania digital:** La qualitat d'una decisió automàtica depèn de les dades i de la regla que nosaltres triem. Debatem qui podria quedar fora d'una classificació i com ho podríem detectar.
+
+### Preguntes per fer pensar
+
+- Què passa quan una targeta nova compleix dues regles alhora o no en compleix cap?
+- Quina informació de l'objecte es conserva i quina es perd quan el representem només amb 0 i 1?
+- Per què utilitzem objectes inventats i no dades personals del grup per fer proves de classificació?
+
+## ♿ Variants i inclusió
+
+Comenceu amb dues categories clarament visibles i peces manipulables. Com a ampliació, proposeu classificar la mateixa col·lecció amb dues regles i analitzeu com canvia l'agrupació.
 
 ## 🔗 Referent consultat
 

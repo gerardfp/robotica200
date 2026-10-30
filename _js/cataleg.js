@@ -3,14 +3,44 @@
 window.CATALEG = {
   "activitats": [
     {
-      "id": "activitat-bucles-coreografia",
-      "slug": "bucles-coreografia",
-      "url": "activitat/index.html?id=bucles-coreografia",
-      "titol": "La Coreografia dels Bucles",
-      "tag": "Bucles i Repetició",
-      "cicle": "Primer, segon i tercer cicle",
+      "id": "activitat-robot-huma",
+      "slug": "robot-huma",
+      "url": "activitat/index.html?id=robot-huma",
+      "titol": "El Robot Humà i el Llenguatge Precís",
+      "tag": "Algorismes i Precisió",
+      "cicle": "Educació Infantil i primer cicle",
       "durada": "45 min",
-      "descripcio": "Repetiu una seqüència de moviments i busqueu la manera més clara d'explicar-la amb poques instruccions."
+      "descripcio": "Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb"
+    },
+    {
+      "id": "activitat-pixels-binaris",
+      "slug": "pixels-binaris",
+      "url": "activitat/index.html?id=pixels-binaris",
+      "titol": "Dibuix per Píxels i Imatges Binàries",
+      "tag": "Representació de Dades (Binari)",
+      "cicle": "Primer i segon cicle",
+      "durada": "45 min",
+      "descripcio": "Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules"
+    },
+    {
+      "id": "activitat-xarxa-ordenacio",
+      "slug": "xarxa-ordenacio",
+      "url": "activitat/index.html?id=xarxa-ordenacio",
+      "titol": "Xarxa d'Ordenació al Terra (Sorting Networks)",
+      "tag": "Algorismes de Comparació i Processament Paral·lel",
+      "cicle": "Segon i tercer cicle",
+      "durada": "50 min",
+      "descripcio": "Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les"
+    },
+    {
+      "id": "activitat-laberint-debugging",
+      "slug": "laberint-debugging",
+      "url": "activitat/index.html?id=laberint-debugging",
+      "titol": "El Laberint d'Instruccions i Detecció d'Errors",
+      "tag": "Depuració (Debugging) i Seqüenciació",
+      "cicle": "Educació Infantil i primer cicle",
+      "durada": "40 min",
+      "descripcio": "Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes"
     },
     {
       "id": "activitat-condicionals-moviment",
@@ -33,34 +63,14 @@ window.CATALEG = {
       "descripcio": "Construcció d'una roda de xifratge de dos cercles concèntrics per comprendre com es protegeix la informació"
     },
     {
-      "id": "activitat-dades-classificacio",
-      "slug": "dades-classificacio",
-      "url": "activitat/index.html?id=dades-classificacio",
-      "titol": "El Museu de les Dades",
-      "tag": "Dades, Classificació i Privadesa",
+      "id": "activitat-bucles-coreografia",
+      "slug": "bucles-coreografia",
+      "url": "activitat/index.html?id=bucles-coreografia",
+      "titol": "La Coreografia dels Bucles",
+      "tag": "Bucles i Repetició",
       "cicle": "Primer, segon i tercer cicle",
-      "durada": "50 min",
-      "descripcio": "Recolliu dades inventades, trieu com classificar-les i representeu-les amb una regla clara."
-    },
-    {
-      "id": "activitat-descomposicio-receptes",
-      "slug": "descomposicio-receptes",
-      "url": "activitat/index.html?id=descomposicio-receptes",
-      "titol": "Receptes amb Instruccions de Robot",
-      "tag": "Descomposició i Algorismes",
-      "cicle": "Primer, segon i tercer cicle",
-      "durada": "50 min",
-      "descripcio": "Descomposeu una tasca quotidiana en instruccions precises i proveu què passa si en canvieu l'ordre."
-    },
-    {
-      "id": "activitat-laberint-debugging",
-      "slug": "laberint-debugging",
-      "url": "activitat/index.html?id=laberint-debugging",
-      "titol": "El Laberint d'Instruccions i Detecció d'Errors",
-      "tag": "Depuració (Debugging) i Seqüenciació",
-      "cicle": "Educació Infantil i primer cicle",
-      "durada": "40 min",
-      "descripcio": "Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes"
+      "durada": "45 min",
+      "descripcio": "Repetiu una seqüència de moviments i busqueu la manera més clara d'explicar-la amb poques instruccions."
     },
     {
       "id": "activitat-patrons-simetries",
@@ -73,34 +83,24 @@ window.CATALEG = {
       "descripcio": "Observeu seqüències de formes i sons, expliqueu la regla i predigueu quin element ve després."
     },
     {
-      "id": "activitat-pixels-binaris",
-      "slug": "pixels-binaris",
-      "url": "activitat/index.html?id=pixels-binaris",
-      "titol": "Dibuix per Píxels i Imatges Binàries",
-      "tag": "Representació de Dades (Binari)",
-      "cicle": "Primer i segon cicle",
-      "durada": "45 min",
-      "descripcio": "Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imatges senzilles en quadrícules"
-    },
-    {
-      "id": "activitat-robot-huma",
-      "slug": "robot-huma",
-      "url": "activitat/index.html?id=robot-huma",
-      "titol": "El Robot Humà i el Llenguatge Precís",
-      "tag": "Algorismes i Precisió",
-      "cicle": "Educació Infantil i primer cicle",
-      "durada": "45 min",
-      "descripcio": "Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb"
-    },
-    {
-      "id": "activitat-xarxa-ordenacio",
-      "slug": "xarxa-ordenacio",
-      "url": "activitat/index.html?id=xarxa-ordenacio",
-      "titol": "Xarxa d'Ordenació al Terra (Sorting Networks)",
-      "tag": "Algorismes de Comparació i Processament Paral·lel",
-      "cicle": "Segon i tercer cicle",
+      "id": "activitat-descomposicio-receptes",
+      "slug": "descomposicio-receptes",
+      "url": "activitat/index.html?id=descomposicio-receptes",
+      "titol": "Receptes amb Instruccions de Robot",
+      "tag": "Descomposició i Algorismes",
+      "cicle": "Primer, segon i tercer cicle",
       "durada": "50 min",
-      "descripcio": "Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les"
+      "descripcio": "Descomposeu una tasca quotidiana en instruccions precises i proveu què passa si en canvieu l'ordre."
+    },
+    {
+      "id": "activitat-dades-classificacio",
+      "slug": "dades-classificacio",
+      "url": "activitat/index.html?id=dades-classificacio",
+      "titol": "El Museu de les Dades",
+      "tag": "Dades, Classificació i Privadesa",
+      "cicle": "Primer, segon i tercer cicle",
+      "durada": "50 min",
+      "descripcio": "Recolliu dades inventades, trieu com classificar-les i representeu-les amb una regla clara."
     }
   ],
   "situacions": [
@@ -2091,16 +2091,112 @@ window.CATALEG = {
   ],
   "tutorials": [
     {
-      "id": "tutorial-ce-app-musica-distancia",
-      "slug": "ce-app-musica-distancia",
-      "robot": "coding-express",
-      "robotLabel": "Coding Express",
-      "url": "tutorial/index.html?id=ce-app-musica-distancia",
-      "imatge": "_assets/tutorials/ce-app-musica-distancia.webp",
-      "titol": "Coding Express: app, melodies i distàncies",
+      "id": "tutorial-cr-primeres-passes",
+      "slug": "cr-primeres-passes",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-primeres-passes",
+      "imatge": "_assets/tutorials/cr-primeres-passes.png",
+      "titol": "Primeres passes: Connexió a mBlock 5 i cares a la matriu LED",
+      "dificultat": "Iniciació",
+      "durada": "35 min",
+      "descripcio": "Connectar Codey al software de l'ordinador o tauleta i programar animacions facials i missatges lliscants."
+    },
+    {
+      "id": "tutorial-cr-motors-sensors",
+      "slug": "cr-motors-sensors",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-motors-sensors",
+      "imatge": "_assets/tutorials/cr-motors-sensors.png",
+      "titol": "Codey Rocky: obstacles, color i seguiment de línia",
       "dificultat": "Intermedi",
       "durada": "50 min",
-      "descripcio": "Personalitzar les respostes dels maons d’acció amb l’app, compondre una seqüència sonora i comparar distàncies en una via."
+      "descripcio": "Orientar el sensor infraroig/color, provar una resposta als obstacles i comparar-la amb el seguiment d’una línia."
+    },
+    {
+      "id": "tutorial-cr-veu-ia",
+      "slug": "cr-veu-ia",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-veu-ia",
+      "imatge": "_assets/tutorials/cr-veu-ia.png",
+      "titol": "Veu i IA: funció externa i simulació amb Codey Rocky",
+      "dificultat": "Avançat",
+      "durada": "50 min",
+      "descripcio": "Distingir el sensor de so integrat del reconeixement de parla, provar una extensió en línia només si està disponible i simular les ordres amb seguretat."
+    },
+    {
+      "id": "tutorial-cr-sensors-llum-so-linia",
+      "slug": "cr-sensors-llum-so-linia",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-sensors-llum-so-linia",
+      "imatge": "_assets/tutorials/cr-sensors-llum-so-linia.webp",
+      "titol": "Codey Rocky: llum, so, RGB i seguiment de línia",
+      "dificultat": "Intermedi",
+      "durada": "55 min",
+      "descripcio": "Explorar els sensors de llum, so i infraroig/color i combinar-los amb l’indicador RGB i els motors de Rocky."
+    },
+    {
+      "id": "tutorial-cr-giroscopi-ir-control",
+      "slug": "cr-giroscopi-ir-control",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-giroscopi-ir-control",
+      "imatge": "_assets/tutorials/cr-giroscopi-ir-control.webp",
+      "titol": "Codey Rocky: giroscopi, control i comunicació infraroja",
+      "dificultat": "Avançat",
+      "durada": "60 min",
+      "descripcio": "Llegir la inclinació i el potenciòmetre, usar l’altaveu i enviar un senyal IR entre robots Codey Rocky."
+    },
+    {
+      "id": "tutorial-cr-python-upload",
+      "slug": "cr-python-upload",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-python-upload",
+      "imatge": "_assets/tutorials/cr-python-upload.webp",
+      "titol": "Codey Rocky: del programa de blocs a Python en mBlock",
+      "dificultat": "Avançat",
+      "durada": "50 min",
+      "descripcio": "Connectar Codey Rocky, carregar un programa de blocs i inspeccionar o editar la traducció Python del mode Upload."
+    },
+    {
+      "id": "tutorial-cr-expressions-so-bateria",
+      "slug": "cr-expressions-so-bateria",
+      "robot": "codey-rocky",
+      "robotLabel": "Codey Rocky",
+      "url": "tutorial/index.html?id=cr-expressions-so-bateria",
+      "imatge": "_assets/tutorials/cr-expressions-so-bateria.webp",
+      "titol": "Codey Rocky: expressions, sons i energia",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Personalitzar la matriu LED, programar sons i dansa i comprovar el nivell de bateria del robot."
+    },
+    {
+      "id": "tutorial-ce-primeres-passes",
+      "slug": "ce-primeres-passes",
+      "robot": "coding-express",
+      "robotLabel": "Coding Express",
+      "url": "tutorial/index.html?id=ce-primeres-passes",
+      "imatge": "_assets/tutorials/ce-primeres-passes.png",
+      "titol": "Primeres passes: encendre, impulsar i aturar Coding Express",
+      "dificultat": "Iniciació",
+      "durada": "35 min",
+      "descripcio": "Posar en marxa el tren de la dotació, provar el moviment Push & Go i construir una via segura amb estació i destinació."
+    },
+    {
+      "id": "tutorial-ce-motors-sensors",
+      "slug": "ce-motors-sensors",
+      "robot": "coding-express",
+      "robotLabel": "Coding Express",
+      "url": "tutorial/index.html?id=ce-motors-sensors",
+      "imatge": "_assets/tutorials/ce-motors-sensors.png",
+      "titol": "Maons d’acció: sons, llums i aturades",
+      "dificultat": "Iniciació",
+      "durada": "45 min",
+      "descripcio": "Investigar com els maons d’acció de colors canvien el viatge del tren i registrar les respostes observades."
     },
     {
       "id": "tutorial-ce-bifurcacions",
@@ -2127,112 +2223,40 @@ window.CATALEG = {
       "descripcio": "Explorar la repetició amb una via tancada, fer prediccions i comparar el bucle físic amb una seqüència d’accions."
     },
     {
-      "id": "tutorial-ce-motors-sensors",
-      "slug": "ce-motors-sensors",
+      "id": "tutorial-ce-app-musica-distancia",
+      "slug": "ce-app-musica-distancia",
       "robot": "coding-express",
       "robotLabel": "Coding Express",
-      "url": "tutorial/index.html?id=ce-motors-sensors",
-      "imatge": "_assets/tutorials/ce-motors-sensors.png",
-      "titol": "Maons d’acció: sons, llums i aturades",
-      "dificultat": "Iniciació",
-      "durada": "45 min",
-      "descripcio": "Investigar com els maons d’acció de colors canvien el viatge del tren i registrar les respostes observades."
-    },
-    {
-      "id": "tutorial-ce-primeres-passes",
-      "slug": "ce-primeres-passes",
-      "robot": "coding-express",
-      "robotLabel": "Coding Express",
-      "url": "tutorial/index.html?id=ce-primeres-passes",
-      "imatge": "_assets/tutorials/ce-primeres-passes.png",
-      "titol": "Primeres passes: encendre, impulsar i aturar Coding Express",
-      "dificultat": "Iniciació",
-      "durada": "35 min",
-      "descripcio": "Posar en marxa el tren de la dotació, provar el moviment Push & Go i construir una via segura amb estació i destinació."
-    },
-    {
-      "id": "tutorial-cr-expressions-so-bateria",
-      "slug": "cr-expressions-so-bateria",
-      "robot": "codey-rocky",
-      "robotLabel": "Codey Rocky",
-      "url": "tutorial/index.html?id=cr-expressions-so-bateria",
-      "imatge": "_assets/tutorials/cr-expressions-so-bateria.webp",
-      "titol": "Codey Rocky: expressions, sons i energia",
+      "url": "tutorial/index.html?id=ce-app-musica-distancia",
+      "imatge": "_assets/tutorials/ce-app-musica-distancia.webp",
+      "titol": "Coding Express: app, melodies i distàncies",
       "dificultat": "Intermedi",
       "durada": "50 min",
-      "descripcio": "Personalitzar la matriu LED, programar sons i dansa i comprovar el nivell de bateria del robot."
+      "descripcio": "Personalitzar les respostes dels maons d’acció amb l’app, compondre una seqüència sonora i comparar distàncies en una via."
     },
     {
-      "id": "tutorial-cr-giroscopi-ir-control",
-      "slug": "cr-giroscopi-ir-control",
-      "robot": "codey-rocky",
-      "robotLabel": "Codey Rocky",
-      "url": "tutorial/index.html?id=cr-giroscopi-ir-control",
-      "imatge": "_assets/tutorials/cr-giroscopi-ir-control.webp",
-      "titol": "Codey Rocky: giroscopi, control i comunicació infraroja",
-      "dificultat": "Avançat",
-      "durada": "60 min",
-      "descripcio": "Llegir la inclinació i el potenciòmetre, usar l’altaveu i enviar un senyal IR entre robots Codey Rocky."
-    },
-    {
-      "id": "tutorial-cr-motors-sensors",
-      "slug": "cr-motors-sensors",
-      "robot": "codey-rocky",
-      "robotLabel": "Codey Rocky",
-      "url": "tutorial/index.html?id=cr-motors-sensors",
-      "imatge": "_assets/tutorials/cr-motors-sensors.png",
-      "titol": "Codey Rocky: obstacles, color i seguiment de línia",
-      "dificultat": "Intermedi",
-      "durada": "50 min",
-      "descripcio": "Orientar el sensor infraroig/color, provar una resposta als obstacles i comparar-la amb el seguiment d’una línia."
-    },
-    {
-      "id": "tutorial-cr-primeres-passes",
-      "slug": "cr-primeres-passes",
-      "robot": "codey-rocky",
-      "robotLabel": "Codey Rocky",
-      "url": "tutorial/index.html?id=cr-primeres-passes",
-      "imatge": "_assets/tutorials/cr-primeres-passes.png",
-      "titol": "Primeres passes: Connexió a mBlock 5 i cares a la matriu LED",
+      "id": "tutorial-cs-primeres-passes",
+      "slug": "cs-primeres-passes",
+      "robot": "coding-set",
+      "robotLabel": "Coding Set",
+      "url": "tutorial/index.html?id=cs-primeres-passes",
+      "imatge": "_assets/tutorials/cs-primeres-passes.png",
+      "titol": "Primeres passes: La torre de lectura i el tauler físic",
       "dificultat": "Iniciació",
-      "durada": "35 min",
-      "descripcio": "Connectar Codey al software de l'ordinador o tauleta i programar animacions facials i missatges lliscants."
+      "durada": "30 min",
+      "descripcio": "Descobrir la connexió entre la torre d'escaneig i el MatataBot, i l'ordre seqüencial d'esquerra a dreta."
     },
     {
-      "id": "tutorial-cr-python-upload",
-      "slug": "cr-python-upload",
-      "robot": "codey-rocky",
-      "robotLabel": "Codey Rocky",
-      "url": "tutorial/index.html?id=cr-python-upload",
-      "imatge": "_assets/tutorials/cr-python-upload.webp",
-      "titol": "Codey Rocky: del programa de blocs a Python en mBlock",
-      "dificultat": "Avançat",
-      "durada": "50 min",
-      "descripcio": "Connectar Codey Rocky, carregar un programa de blocs i inspeccionar o editar la traducció Python del mode Upload."
-    },
-    {
-      "id": "tutorial-cr-sensors-llum-so-linia",
-      "slug": "cr-sensors-llum-so-linia",
-      "robot": "codey-rocky",
-      "robotLabel": "Codey Rocky",
-      "url": "tutorial/index.html?id=cr-sensors-llum-so-linia",
-      "imatge": "_assets/tutorials/cr-sensors-llum-so-linia.webp",
-      "titol": "Codey Rocky: llum, so, RGB i seguiment de línia",
+      "id": "tutorial-cs-motors-sensors",
+      "slug": "cs-motors-sensors",
+      "robot": "coding-set",
+      "robotLabel": "Coding Set",
+      "url": "tutorial/index.html?id=cs-motors-sensors",
+      "imatge": "_assets/tutorials/cs-motors-sensors.png",
+      "titol": "Coding Set: blocs numèrics i paràmetres de moviment",
       "dificultat": "Intermedi",
-      "durada": "55 min",
-      "descripcio": "Explorar els sensors de llum, so i infraroig/color i combinar-los amb l’indicador RGB i els motors de Rocky."
-    },
-    {
-      "id": "tutorial-cr-veu-ia",
-      "slug": "cr-veu-ia",
-      "robot": "codey-rocky",
-      "robotLabel": "Codey Rocky",
-      "url": "tutorial/index.html?id=cr-veu-ia",
-      "imatge": "_assets/tutorials/cr-veu-ia.png",
-      "titol": "Veu i IA: funció externa i simulació amb Codey Rocky",
-      "dificultat": "Avançat",
-      "durada": "50 min",
-      "descripcio": "Distingir el sensor de so integrat del reconeixement de parla, provar una extensió en línia només si està disponible i simular les ordres amb seguretat."
+      "durada": "40 min",
+      "descripcio": "Comparar les ordres d’avanç amb i sense paràmetre numèric i comprovar quins moviments accepten aquest bloc."
     },
     {
       "id": "tutorial-cs-bucles",
@@ -2259,18 +2283,6 @@ window.CATALEG = {
       "descripcio": "Definir i cridar una funció amb blocs físics i explorar moviment aleatori, música predefinida i dansa del MatataBot."
     },
     {
-      "id": "tutorial-cs-motors-sensors",
-      "slug": "cs-motors-sensors",
-      "robot": "coding-set",
-      "robotLabel": "Coding Set",
-      "url": "tutorial/index.html?id=cs-motors-sensors",
-      "imatge": "_assets/tutorials/cs-motors-sensors.png",
-      "titol": "Coding Set: blocs numèrics i paràmetres de moviment",
-      "dificultat": "Intermedi",
-      "durada": "40 min",
-      "descripcio": "Comparar les ordres d’avanç amb i sense paràmetre numèric i comprovar quins moviments accepten aquest bloc."
-    },
-    {
       "id": "tutorial-cs-obstacles-bandera",
       "slug": "cs-obstacles-bandera",
       "robot": "coding-set",
@@ -2281,54 +2293,6 @@ window.CATALEG = {
       "dificultat": "Intermedi",
       "durada": "45 min",
       "descripcio": "Planificar una ruta del MatataBot que evite obstacles i arribe a una bandera, provar-la i depurar els girs."
-    },
-    {
-      "id": "tutorial-cs-primeres-passes",
-      "slug": "cs-primeres-passes",
-      "robot": "coding-set",
-      "robotLabel": "Coding Set",
-      "url": "tutorial/index.html?id=cs-primeres-passes",
-      "imatge": "_assets/tutorials/cs-primeres-passes.png",
-      "titol": "Primeres passes: La torre de lectura i el tauler físic",
-      "dificultat": "Iniciació",
-      "durada": "30 min",
-      "descripcio": "Descobrir la connexió entre la torre d'escaneig i el MatataBot, i l'ordre seqüencial d'esquerra a dreta."
-    },
-    {
-      "id": "tutorial-mb-brujola-temperatura-bluetooth",
-      "slug": "mb-brujola-temperatura-bluetooth",
-      "robot": "microbit",
-      "robotLabel": "Micro:bit",
-      "url": "tutorial/index.html?id=mb-brujola-temperatura-bluetooth",
-      "imatge": "_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp",
-      "titol": "Micro:bit: brúixola, temperatura, tacte i Bluetooth",
-      "dificultat": "Intermedi",
-      "durada": "50 min",
-      "descripcio": "Llegir el rumb i la temperatura aproximada, provar el logotip tàctil de V2 i distingir Bluetooth de ràdio."
-    },
-    {
-      "id": "tutorial-mb-fanalet-llum",
-      "slug": "mb-fanalet-llum",
-      "robot": "microbit",
-      "robotLabel": "Micro:bit",
-      "url": "tutorial/index.html?id=mb-fanalet-llum",
-      "imatge": "_assets/tutorials/mb-fanalet-llum.png",
-      "titol": "micro:bit: un fanalet que respon a la llum",
-      "dificultat": "Iniciació",
-      "durada": "35 min",
-      "descripcio": "Llegir la llum ambiental amb la matriu LED i encendre una icona quan l’entorn s’enfosqueix."
-    },
-    {
-      "id": "tutorial-mb-motors-sensors",
-      "slug": "mb-motors-sensors",
-      "robot": "microbit",
-      "robotLabel": "Micro:bit",
-      "url": "tutorial/index.html?id=mb-motors-sensors",
-      "imatge": "_assets/tutorials/mb-motors-sensors.png",
-      "titol": "Motors i sensors: Sensor d'humitat i servomotors",
-      "dificultat": "Intermedi",
-      "durada": "50 min",
-      "descripcio": "Connectar sensors externs als pins de la vora (P0, P1, P2) amb pinces de cocodril per automatitzar"
     },
     {
       "id": "tutorial-mb-primeres-passes",
@@ -2343,16 +2307,16 @@ window.CATALEG = {
       "descripcio": "Com programar la placa des del navegador web MakeCode sense instal·lar cap programa i descarregar l'arxiu"
     },
     {
-      "id": "tutorial-mb-python-microbit",
-      "slug": "mb-python-microbit",
+      "id": "tutorial-mb-motors-sensors",
+      "slug": "mb-motors-sensors",
       "robot": "microbit",
       "robotLabel": "Micro:bit",
-      "url": "tutorial/index.html?id=mb-python-microbit",
-      "imatge": "_assets/tutorials/mb-python-editor.webp",
-      "titol": "micro:bit: programar amb MicroPython i depurar amb el simulador",
-      "dificultat": "Avançat",
+      "url": "tutorial/index.html?id=mb-motors-sensors",
+      "imatge": "_assets/tutorials/mb-motors-sensors.png",
+      "titol": "Motors i sensors: Sensor d'humitat i servomotors",
+      "dificultat": "Intermedi",
       "durada": "50 min",
-      "descripcio": "Llegir els botons A/B en Python, mostrar icones, provar la indentació i enviar el programa a una micro:bit."
+      "descripcio": "Connectar sensors externs als pins de la vora (P0, P1, P2) amb pinces de cocodril per automatitzar"
     },
     {
       "id": "tutorial-mb-radio-mesh",
@@ -2367,6 +2331,54 @@ window.CATALEG = {
       "descripcio": "Connectar diverses micro:bits de l'aula entre si utilitzant l'antena de ràdio integrada sense necessitat"
     },
     {
+      "id": "tutorial-mb-so-microfon",
+      "slug": "mb-so-microfon",
+      "robot": "microbit",
+      "robotLabel": "Micro:bit",
+      "url": "tutorial/index.html?id=mb-so-microfon",
+      "imatge": "_assets/tutorials/mb-so-microfon.png",
+      "titol": "Micròfon i so: Detector de soroll i aplaudiments (V2)",
+      "dificultat": "Iniciació",
+      "durada": "35 min",
+      "descripcio": "Utilitzar el micròfon MEMS de la versió 2 per controlar el nivell de decibels de l'aula o encendre"
+    },
+    {
+      "id": "tutorial-mb-fanalet-llum",
+      "slug": "mb-fanalet-llum",
+      "robot": "microbit",
+      "robotLabel": "Micro:bit",
+      "url": "tutorial/index.html?id=mb-fanalet-llum",
+      "imatge": "_assets/tutorials/mb-fanalet-llum.png",
+      "titol": "micro:bit: un fanalet que respon a la llum",
+      "dificultat": "Iniciació",
+      "durada": "35 min",
+      "descripcio": "Llegir la llum ambiental amb la matriu LED i encendre una icona quan l’entorn s’enfosqueix."
+    },
+    {
+      "id": "tutorial-mb-brujola-temperatura-bluetooth",
+      "slug": "mb-brujola-temperatura-bluetooth",
+      "robot": "microbit",
+      "robotLabel": "Micro:bit",
+      "url": "tutorial/index.html?id=mb-brujola-temperatura-bluetooth",
+      "imatge": "_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp",
+      "titol": "Micro:bit: brúixola, temperatura, tacte i Bluetooth",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Llegir el rumb i la temperatura aproximada, provar el logotip tàctil de V2 i distingir Bluetooth de ràdio."
+    },
+    {
+      "id": "tutorial-mb-python-microbit",
+      "slug": "mb-python-microbit",
+      "robot": "microbit",
+      "robotLabel": "Micro:bit",
+      "url": "tutorial/index.html?id=mb-python-microbit",
+      "imatge": "_assets/tutorials/mb-python-editor.webp",
+      "titol": "micro:bit: programar amb MicroPython i depurar amb el simulador",
+      "dificultat": "Avançat",
+      "durada": "50 min",
+      "descripcio": "Llegir els botons A/B en Python, mostrar icones, provar la indentació i enviar el programa a una micro:bit."
+    },
+    {
       "id": "tutorial-mb-registre-dades",
       "slug": "mb-registre-dades",
       "robot": "microbit",
@@ -2379,16 +2391,28 @@ window.CATALEG = {
       "descripcio": "Configurar el registre de MakeCode, recollir lectures de llum i temperatura i analitzar el fitxer sense perdre de vista els límits de la placa."
     },
     {
-      "id": "tutorial-mb-so-microfon",
-      "slug": "mb-so-microfon",
-      "robot": "microbit",
-      "robotLabel": "Micro:bit",
-      "url": "tutorial/index.html?id=mb-so-microfon",
-      "imatge": "_assets/tutorials/mb-so-microfon.png",
-      "titol": "Micròfon i so: Detector de soroll i aplaudiments (V2)",
+      "id": "tutorial-sp-primeres-passes",
+      "slug": "sp-primeres-passes",
+      "robot": "spike",
+      "robotLabel": "Spike",
+      "url": "tutorial/index.html?id=sp-primeres-passes",
+      "imatge": "_assets/tutorials/sp-primeres-passes.png",
+      "titol": "Primeres passes: El Hub intel·ligent i el primer programa",
       "dificultat": "Iniciació",
       "durada": "35 min",
-      "descripcio": "Utilitzar el micròfon MEMS de la versió 2 per controlar el nivell de decibels de l'aula o encendre"
+      "descripcio": "Connectar el Hub SPIKE Prime, explorar la matriu 5 × 5, els sis ports i el sensor d’orientació."
+    },
+    {
+      "id": "tutorial-sp-motors-sensors",
+      "slug": "sp-motors-sensors",
+      "robot": "spike",
+      "robotLabel": "Spike",
+      "url": "tutorial/index.html?id=sp-motors-sensors",
+      "imatge": "_assets/tutorials/sp-motors-sensors.png",
+      "titol": "Motors i sensors: Tren d'engranatges i sensor de color",
+      "dificultat": "Intermedi",
+      "durada": "50 min",
+      "descripcio": "Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una"
     },
     {
       "id": "tutorial-sp-brac-sensor-forca",
@@ -2415,42 +2439,6 @@ window.CATALEG = {
       "descripcio": "Ajustar el recorregut d’una base motriu amb girs de roda i comparar el càlcul amb una parada per contacte."
     },
     {
-      "id": "tutorial-sp-motors-sensors",
-      "slug": "sp-motors-sensors",
-      "robot": "spike",
-      "robotLabel": "Spike",
-      "url": "tutorial/index.html?id=sp-motors-sensors",
-      "imatge": "_assets/tutorials/sp-motors-sensors.png",
-      "titol": "Motors i sensors: Tren d'engranatges i sensor de color",
-      "dificultat": "Intermedi",
-      "durada": "50 min",
-      "descripcio": "Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una"
-    },
-    {
-      "id": "tutorial-sp-primeres-passes",
-      "slug": "sp-primeres-passes",
-      "robot": "spike",
-      "robotLabel": "Spike",
-      "url": "tutorial/index.html?id=sp-primeres-passes",
-      "imatge": "_assets/tutorials/sp-primeres-passes.png",
-      "titol": "Primeres passes: El Hub intel·ligent i el primer programa",
-      "dificultat": "Iniciació",
-      "durada": "35 min",
-      "descripcio": "Connectar el Hub SPIKE Prime, explorar la matriu 5 × 5, els sis ports i el sensor d’orientació."
-    },
-    {
-      "id": "tutorial-sp-python-motor",
-      "slug": "sp-python-motor",
-      "robot": "spike",
-      "robotLabel": "Spike",
-      "url": "tutorial/index.html?id=sp-python-motor",
-      "imatge": "_assets/tutorials/spike-prime-python.webp",
-      "titol": "SPIKE Prime: del programa de blocs a Python",
-      "dificultat": "Avançat",
-      "durada": "50 min",
-      "descripcio": "Canviar a l’editor Python de MicroPython, controlar un motor angular i depurar una instrucció modificant un valor cada vegada."
-    },
-    {
       "id": "tutorial-sp-sensor-distancia-alarma",
       "slug": "sp-sensor-distancia-alarma",
       "robot": "spike",
@@ -2463,28 +2451,16 @@ window.CATALEG = {
       "descripcio": "Programar una parada basada en ultrasons, mesurar un gir amb el giroscopi i fer sonar l’altaveu del Hub."
     },
     {
-      "id": "tutorial-tb-esborrat-depuracio",
-      "slug": "tb-esborrat-depuracio",
-      "robot": "tale-bot",
-      "robotLabel": "Tale-Bot",
-      "url": "tutorial/index.html?id=tb-esborrat-depuracio",
-      "imatge": "_assets/tutorials/tb-esborrat-depuracio.png",
-      "titol": "Tale-Bot Pro: esborrar una ordre i depurar el recorregut",
-      "dificultat": "Iniciació",
-      "durada": "35 min",
-      "descripcio": "Comparar la pulsació curta i llarga de Clear per retirar l’última ordre o buidar tot el programa abans de tornar-lo a provar."
-    },
-    {
-      "id": "tutorial-tb-motors-sensors",
-      "slug": "tb-motors-sensors",
-      "robot": "tale-bot",
-      "robotLabel": "Tale-Bot",
-      "url": "tutorial/index.html?id=tb-motors-sensors",
-      "imatge": "_assets/tutorials/tb-motors-sensors.png",
-      "titol": "Tale-Bot Pro: dibuix i transport amb accessoris",
-      "dificultat": "Intermedi",
-      "durada": "45 min",
-      "descripcio": "Programar formes amb el suport de retoladors i provar els braços per a transportar un objecte lleuger."
+      "id": "tutorial-sp-python-motor",
+      "slug": "sp-python-motor",
+      "robot": "spike",
+      "robotLabel": "Spike",
+      "url": "tutorial/index.html?id=sp-python-motor",
+      "imatge": "_assets/tutorials/spike-prime-python.webp",
+      "titol": "SPIKE Prime: del programa de blocs a Python",
+      "dificultat": "Avançat",
+      "durada": "50 min",
+      "descripcio": "Canviar a l’editor Python de MicroPython, controlar un motor angular i depurar una instrucció modificant un valor cada vegada."
     },
     {
       "id": "tutorial-tb-primeres-passes",
@@ -2511,6 +2487,18 @@ window.CATALEG = {
       "descripcio": "Gravar pistes d'àudio i diàlegs personalitzats amb la veu de l'alumnat a cada etapa del recorregut."
     },
     {
+      "id": "tutorial-tb-motors-sensors",
+      "slug": "tb-motors-sensors",
+      "robot": "tale-bot",
+      "robotLabel": "Tale-Bot",
+      "url": "tutorial/index.html?id=tb-motors-sensors",
+      "imatge": "_assets/tutorials/tb-motors-sensors.png",
+      "titol": "Tale-Bot Pro: dibuix i transport amb accessoris",
+      "dificultat": "Intermedi",
+      "durada": "45 min",
+      "descripcio": "Programar formes amb el suport de retoladors i provar els braços per a transportar un objecte lleuger."
+    },
+    {
       "id": "tutorial-tb-repeticio-mapes-dansa",
       "slug": "tb-repeticio-mapes-dansa",
       "robot": "tale-bot",
@@ -2521,6 +2509,18 @@ window.CATALEG = {
       "dificultat": "Intermedi",
       "durada": "50 min",
       "descripcio": "Provar els comandaments de repetició i dansa, escoltar la guia OID del mapa i depurar una seqüència sense confondre gravació amb reconeixement de parla."
+    },
+    {
+      "id": "tutorial-tb-esborrat-depuracio",
+      "slug": "tb-esborrat-depuracio",
+      "robot": "tale-bot",
+      "robotLabel": "Tale-Bot",
+      "url": "tutorial/index.html?id=tb-esborrat-depuracio",
+      "imatge": "_assets/tutorials/tb-esborrat-depuracio.png",
+      "titol": "Tale-Bot Pro: esborrar una ordre i depurar el recorregut",
+      "dificultat": "Iniciació",
+      "durada": "35 min",
+      "descripcio": "Comparar la pulsació curta i llarga de Clear per retirar l’última ordre o buidar tot el programa abans de tornar-lo a provar."
     }
   ],
   "robots": [

@@ -11,13 +11,13 @@ order: 8
 
 Reconèixer regularitats permet resumir molta informació amb una regla. L'alumnat descriu un patró, el representa amb diferents materials i comprova si una predicció és correcta.
 
-## 🧺 Material
+## 🧰 Materials i preparació
 
 - Peces de construcció de dues o tres formes i colors.
 - Instruments senzills o el cos per crear seqüències de sons i gestos.
 - Tires de paper amb espais buits per completar.
 
-## 👣 Desenvolupament
+## 👣 Desenvolupament pas a pas
 
 ### 1. Mira, escolta i descriu
 
@@ -35,10 +35,6 @@ El mateix patró es representa amb color, peces, sons o moviments. Comparem quin
 
 Cada parella inventa una seqüència per a una altra parella. L'autor ha de poder explicar la regla i l'altra parella ha de justificar la continuació.
 
-## ♿ Variants i inclusió
-
-Oferiu peces grans i contrastades, permeteu respondre parlant, assenyalant o manipulant i presenteu una instrucció cada vegada. Per aprofundir, utilitzeu patrons amb tres elements o una unitat repetitiva de dues peces, com vermell-vermell-blau.
-
 ## ✅ Evidències d'aprenentatge
 
 - Descriu la unitat que es repeteix en lloc de limitar-se a dir el color següent.
@@ -46,3 +42,13 @@ Oferiu peces grans i contrastades, permeteu respondre parlant, assenyalant o man
 - Explica amb quina observació justifica la predicció.
 
 > **💡 Connexió amb la programació:** Un ordinador executa instruccions; el patró ajuda l'alumnat a decidir quines instruccions es poden reutilitzar.
+
+### Preguntes per fer pensar
+
+- Quina és la unitat mínima que es repeteix en aquesta seqüència?
+- Què es manté igual quan representem el mateix patró amb sons en comptes de formes?
+- Quants elements ens cal veure com a mínim per estar segurs de la regla que segueix el patró?
+
+## ♿ Variants i inclusió
+
+Oferiu peces grans i contrastades, permeteu respondre parlant, assenyalant o manipulant i presenteu una instrucció cada vegada. Per aprofundir, utilitzeu patrons amb tres elements o una unitat repetitiva de dues peces, com vermell-vermell-blau.

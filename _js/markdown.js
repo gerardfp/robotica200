@@ -78,19 +78,12 @@
       const url = escapeHTML(resolved);
       const titleAttr = title ? ` title="${escapeHTML(title)}"` : '';
       let external = '';
-      let ajaxTarget = '';
       try {
         const destination = new URL(resolved, base);
         const source = new URL(base);
         if (destination.origin !== source.origin) external = ' target="_blank" rel="noopener noreferrer"';
-        else if (!destination.hash) {
-          const path = destination.pathname;
-          if (/\/(?:activitat|tutorial|robot|guia|situacio)\/index\.html$/.test(path) || /\/(?:index\.html)?$/.test(path)) {
-            ajaxTarget = ' x-target.push="page-content"';
-          }
-        }
       } catch (_) { /* Keep malformed or unsupported links as ordinary links. */ }
-      return stash(`<a href="${url}"${titleAttr}${ajaxTarget}${external}>${escapeHTML(label)}</a>`);
+      return stash(`<a href="${url}"${titleAttr}${external}>${escapeHTML(label)}</a>`);
     });
     value = escapeHTML(value);
     value = value.replace(/`([^`]+)`/g, '<code>$1</code>');
@@ -253,11 +246,12 @@
     if (/^com usar\b/i.test(value)) return { key: 'intro', title: '🌱 Situació, repte i intenció' };
     if (/^(repte\b|situació|situacio|punt de partida|punt de trobada|sentit i intenció|context\b|propòsit|proposit)/.test(value)) return { key: 'intro', title: '🌱 Situació, repte i intenció' };
     if (/^(participació|participacio|participar|accessibilitat|inclusió|inclusio|privacitat|seguretat|salvaguardes|diferenciació|diferenciacio|variacions|benestar|confort sensorial)/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };
-    if (/^(aprenent|vocabulari|objectius|resultats d.aprenentatge|què aprendrem|que aprendrem|competències clau)/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
-    const assessmentSignal = /evidèn|eviden|avaluació|avaluacio|autoavaluació|rúbrica|criteris? d.èxit|registre de prova|registres de prova|documentació i retroacció|diari de proves|producte final i evidències|observació|mostra final/.test(value);
-    if (!assessmentSignal && /aprenent|objectius|resultats d.aprenentatge|vocabulari|què aprendrem|que aprendrem|competències clau/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
-    if (/materials|preparació|preparacio|abans de començar|maquinari|programari|requisits?|muntatge|organització i materials/.test(value)) return { key: 'materials', title: '🧰 Materials i preparació' };
+    if (/^(aprenent|vocabulari|objectius?|resultats d.aprenentatge|què aprendrem|que aprendrem|competències clau|funcions del robot)/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
+    const assessmentSignal = /evidèn|eviden|avaluació|avaluacio|autoavaluació|rúbrica|criteris? d.èxit|registre de prova|registres de prova|registre de depuració|documentació i retroacció|diari de proves|producte final i evidències|observació|mostra final|prova, depura i reflexiona|preguntes per (?:fer pensar|comprovar)|preguntes del docent/.test(value);
+    if (!assessmentSignal && /aprenent|objectius?|resultats d.aprenentatge|vocabulari|què aprendrem|que aprendrem|competències clau/.test(value)) return { key: 'learning', title: '🎯 Aprenentatges i vocabulari' };
+    if (!/material oficial/.test(value) && /materials?|preparació|preparacio|abans de començar|maquinari|programari|requisits?|muntatge|organització i materials/.test(value)) return { key: 'materials', title: '🧰 Materials i preparació' };
     if (assessmentSignal) return { key: 'assessment', title: '🧪 Evidències i avaluació' };
+    if (/^(fonts? oficials|referent)/.test(value)) return { key: 'official', title: '🔗 Referents i adaptació' };
     if (/participació|participacio|manera de participar|inclusió|inclusio|accessibilitat|privacitat|seguretat|salvaguardes|límits|limites|adaptacions|ús responsable|variacions|benestar|confort sensorial|diferenciació|diferenciacio|inclusió i variacions/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };
     if (/oficial|adaptació|adaptacio|referent|fonts?|recursos|unitat oficial|dotació i fonts/.test(value)) return { key: 'official', title: '🔗 Referents i adaptació' };
     if (/rols|organitzaci[oó]|disseny accessible|equitat|consentiment|dades responsables/.test(value)) return { key: 'access', title: '♿ Participació, accessibilitat i seguretat' };

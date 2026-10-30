@@ -8,14 +8,18 @@ duration: 45 min
 order: 1
 ---
 
-## 🎯 Objectiu de l'activitat
+## 🎯 Què aprendrem?
 
 Una persona fa de robot sobre una graella o mou una fitxa seguint instruccions precises com «un pas endavant» i «gira 90° a la dreta».
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Graella de paper, cinta de pintor o una quadrícula sobre la taula
 - Fitxa que faci de robot i targetes amb les instruccions acordades
+
+### Organització i seguretat
+
+Treballa per parelles en una graella de paper o cinta de pintor. Una persona dicta instruccions i una altra desplaça una fitxa; ningú no camina amb els ulls tapats ni a cegues per l'aula. Marca la sortida, l'orientació inicial i una casella d'arribada abans de començar.
 
 ## 👣 Desenvolupament pas a pas
 
@@ -37,20 +41,16 @@ Si la fitxa arriba a una casella no prevista, localitzem l'ordre que ho ha provo
 
 > **💡 Consell per a l'aula:** És ideal per treballar la lateralitat i la importància de donar ordres sense ambigüitats.
 
-## 🧑‍🤝‍🧑 Organització i seguretat
+## ✅ Evidències d'aprenentatge
 
-Treballa per parelles en una graella de paper o cinta de pintor. Una persona dicta instruccions i una altra desplaça una fitxa; ningú no camina amb els ulls tapats ni a cegues per l'aula. Marca la sortida, l'orientació inicial i una casella d'arribada abans de començar.
+Registra si l'equip ha acordat l'orientació, si executa una instrucció cada vegada i si pot rectificar una sola ordre justificant el canvi. Tanca demanant que un membre expliqui la ruta sense moure la fitxa.
 
-## 🗣️ Preguntes per fer pensar
+### Preguntes per fer pensar
 
 - Què vol dir exactament «gira a la dreta» si el robot mira en una altra direcció?
 - Quantes ordres cal repetir per fer dos passos endavant?
 - En quin punt hem detectat l'error? Com ho podem comprovar sense tornar a començar?
 
-## ♿ Adaptacions i aprofundiment
+## ♿ Variants i inclusió
 
 Fes servir fletxes grans amb pictogrames i limita el primer recorregut a una graella de 3 × 3. Una persona pot donar les ordres assenyalant les cartes en comptes de parlar. Com a ampliació, introdueix una instrucció nova, «repeteix», o demana comparar dues rutes i comptar-ne els girs.
-
-## ✅ Evidències observables
-
-Registra si l'equip ha acordat l'orientació, si executa una instrucció cada vegada i si pot rectificar una sola ordre justificant el canvi. Tanca demanant que un membre expliqui la ruta sense moure la fitxa.

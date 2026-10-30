@@ -8,14 +8,18 @@ duration: 50 min
 order: 3
 ---
 
-## 🎯 Objectiu de l'activitat
+## 🎯 Què aprendrem?
 
-Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les línies; en cada encreuament es comparen de dos en dos i el més petit sempre va cap a l'esquerra.
+Dibuixem una xarxa de línies amb guix al terra. Sis alumnes amb números desordenats avancen per les línies; en cada encreuament es comparen de dos en dos i el més petit sempre va cap a l'esquerra.
 
-## 📦 Material necessari
+## 🧰 Materials i preparació
 
 - Guix de colors per dibuixar la xarxa al terra
 - Targetes de cartolina amb números de l'1 al 6
+
+### Abans de dibuixar la xarxa
+
+Prepareu un recorregut d'entrada a sortida amb comparadors encreuats i comproveu-lo vosaltres amb una sèrie petita abans que hi participi el grup. A cada comparador només hi arriben dos nombres: el menor pren la sortida acordada a l'esquerra i l'altre, la de la dreta. Manteniu la convenció visible.
 
 ## 👣 Desenvolupament pas a pas
 
@@ -37,20 +41,16 @@ En arribar al final de la xarxa, tots els alumnes surten ordenats de menor a maj
 
 > **💡 Consell per a l'aula:** Demostra de manera kinestèsica com els ordinadors processen i ordenen milions de dades per comparacions paral·leles.
 
-## 🧭 Abans de dibuixar la xarxa
+## ✅ Evidències d'aprenentatge
 
-Prepareu un recorregut d'entrada a sortida amb comparadors encreuats i comproveu-lo vosaltres amb una sèrie petita abans que hi participi el grup. A cada comparador només hi arriben dos nombres: el menor pren la sortida acordada a l'esquerra i l'altre, la de la dreta. Manteniu la convenció visible.
+Observeu si tothom entén la mateixa regla de comparació, si pot anticipar quina línia seguirà una targeta i si el resultat és ordenat. Demaneu després que descriguin el treball simultani sense afirmar que tots els passos són paral·lels: fixeu-vos en quins comparadors independents poden actuar alhora.
 
-## 🗣️ Preguntes per fer pensar
+### Preguntes per fer pensar
 
 - Poden comparar dos nombres alhora sense esperar que la comparació anterior acabi?
 - Què ha de passar si tots els nombres ja són ordenats? I si els llegim en sentit invers?
 - La mateixa xarxa serveix per a dues ordenacions diferents?
 
-## ♿ Adaptacions i aprofundiment
+## ♿ Variants i inclusió
 
 Comenceu amb quatre participants, valors diferenciats i una xarxa revisada. Es pot participar des d'un lloc fix movent targetes sobre una taula. Per aprofundir, proposeu empats, multipliqueu la xarxa i mesureu la llargada del camí de comparació més llarg.
-
-## ✅ Evidències observables
-
-Observeu si tothom entén la mateixa regla de comparació, si pot anticipar quina línia seguirà una targeta i si el resultat és ordenat. Demaneu després que descriguin el treball simultani sense afirmar que tots els passos són paral·lels: fixeu-vos en quins comparadors independents poden actuar alhora.

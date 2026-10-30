@@ -11,13 +11,13 @@ order: 9
 
 Un algorisme és una seqüència d'instruccions que porta d'una situació inicial a un resultat. Abans de provar-lo, aprendrem a dividir una tasca en passos observables i a detectar quan una instrucció és ambigua.
 
-## 🧺 Material
+## 🧰 Materials i preparació
 
 - Targetes en blanc, llapis i un joc de peces de construcció per equip.
 - Dues imatges: la situació inicial i el resultat que volem aconseguir.
 - Una plantilla amb tres columnes: ordre, acció, què ha passat?
 
-## 👣 Desenvolupament
+## 👣 Desenvolupament pas a pas
 
 ### 1. Trieu una tasca
 
@@ -35,10 +35,6 @@ Un equip diferent fa d'autòmat: només pot seguir les targetes, sense inferir q
 
 Canvieu una instrucció, executeu de nou i anoteu si ha resolt l'ambigüitat. Guardeu les dues versions per explicar què ha millorat.
 
-## ♿ Variants i inclusió
-
-Les instruccions es poden dibuixar amb pictogrames o fotografiar peça per peça. En reptes avançats, afegiu una bifurcació: «si la peça és rodona, col·loca-la al cercle; si no, al quadrat».
-
 ## ✅ Evidències d'aprenentatge
 
 - Divideix la tasca en accions que es poden veure o comprovar.
@@ -46,3 +42,13 @@ Les instruccions es poden dibuixar amb pictogrames o fotografiar peça per peça
 - Pot explicar quin canvi ha resolt l'error i per què.
 
 > **💡 Consell docent:** No corregiu de seguida l'equip que ha escrit les ordres. La diferència entre el que volien dir i el que s'ha executat és la informació més útil del repte.
+
+### Preguntes per fer pensar
+
+- Quina paraula de la instrucció ha fet que l'altre equip la interpretés d'una manera diferent?
+- Quins passos es poden canviar d'ordre sense alterar el resultat i quins depenen del pas anterior?
+- Com podríem dividir un pas complex en dues instruccions més simples i comprovables?
+
+## ♿ Variants i inclusió
+
+Les instruccions es poden dibuixar amb pictogrames o fotografiar peça per peça. En reptes avançats, afegiu una bifurcació: «si la peça és rodona, col·loca-la al cercle; si no, al quadrat».

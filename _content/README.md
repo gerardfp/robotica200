@@ -6,4 +6,7 @@ Les pàgines compartides són `activitat/index.html?id=slug`, `tutorial/index.ht
 
 La publicació continua sent estàtica: no hi ha pas de build ni dependències npm. Cal servir el repositori per HTTP (per exemple, `python3 -m http.server`) perquè el navegador puga llegir el Markdown amb `fetch`. El mateix comportament funciona a GitHub Pages.
 
-Consulta [`situacions/TEMPLATE-SITUACIO.md`](situacions/TEMPLATE-SITUACIO.md) per a l’esquema de les situacions: sessions, imatges, blocs de programació i exemples amb ressaltat de sintaxi.
+Consulta les plantilles base per mantindre la mateixa estructura editorial i visual en totes les fitxes:
+- Activitats de pensament computacional: [`activitats/TEMPLATE-ACTIVITAT.md`](activitats/TEMPLATE-ACTIVITAT.md) (`_content/activitats/activitat-[slug].md`).
+- Tutorials de robòtica educativa: [`tutorials/TEMPLATE-TUTORIAL.md`](tutorials/TEMPLATE-TUTORIAL.md) (`_content/tutorials/tutorial-[prefix]-[slug].md`).
+- Situacions d'aprenentatge: [`situacions/TEMPLATE-SITUACIO.md`](situacions/TEMPLATE-SITUACIO.md) (`_content/situacions/[slug].md`).
