@@ -309,12 +309,34 @@
                 : guideBack[0];
           const backLabel = kind === 'activity' ? 'Pensament computacional'
             : kind === 'tutorial' ? (data.robot || 'robots')
-              : kind === 'robot' ? 'Catàleg de robòtica' : guideBack[1];
+              : kind === 'robot' ? 'Robòtica educativa' : guideBack[1];
           const fragment = copy('content-detail-template');
           const back = fragment.querySelector('[data-back]'); back.setAttribute('href', backTarget); back.setAttribute('label', backLabel);
           const robotBack = fragment.querySelector('[data-robot-back]');
           robotBack.setAttribute('href', backTarget); robotBack.setAttribute('label', backLabel);
           fragment.querySelector('[data-title]').textContent = title;
+          if (kind === 'robot') {
+            const heroTitle = fragment.querySelector('.robot-hero-title');
+            if (heroTitle) heroTitle.textContent = title;
+            const heroSub = fragment.querySelector('.robot-hero-sub');
+            if (heroSub) heroSub.textContent = description;
+            const overviewSec = fragment.querySelector('.robot-overview-section');
+            if (overviewSec) {
+              overviewSec.setAttribute('data-robot', safeId);
+              overviewSec.classList.add('robot-overview-' + safeId);
+            }
+            const hlCard = fragment.querySelector('.robot-highlight-card');
+            if (hlCard) {
+              hlCard.setAttribute('data-robot', safeId);
+              hlCard.classList.add('robot-highlight-' + safeId);
+            }
+            const leadP = fragment.querySelector('.robot-overview-lead p');
+            if (leadP && rendered.robotLead) leadP.innerHTML = rendered.robotLead;
+            const hlTitle = fragment.querySelector('.robot-highlight-title');
+            if (hlTitle && rendered.robotHighlightTitle) hlTitle.textContent = rendered.robotHighlightTitle;
+            const hlDesc = fragment.querySelector('.robot-highlight-desc');
+            if (hlDesc && rendered.robotHighlightBody) hlDesc.innerHTML = rendered.robotHighlightBody;
+          }
           const badgeItems = [];
           const badge = (text, primary = false) => { if (text) badgeItems.push({ text, primary }); };
           if (kind === 'activity') { badge(data.topic, true); badge(data.cycle_label || data.cycle); badge(data.duration ? `⏱️ ${data.duration}` : ''); }
@@ -328,7 +350,7 @@
           ensureDocumentHead(root, title, description);
           document.title = `${title} | Robòtica²⁰⁰`;
           this.replaceChildren(fragment);
-          const alpineRoot = this.querySelector('.detail-page-card');
+          const alpineRoot = this.firstElementChild || this.querySelector('.detail-page-card');
           if (alpineRoot) setTimeout(() => {
             alpineRoot.dispatchEvent(new CustomEvent('detail-ready', {
               bubbles: true,
@@ -336,7 +358,10 @@
                 title, description, badges: badgeItems, content: rendered.html, steps: rendered.steps, step: 0,
                 robot: kind === 'robot', robotSlug: safeId, root,
                 resources: data.official_resources || [], statusNote: data.status_note || '',
-                statusSource: data.status_source || '', statusSourceLabel: data.status_source_label || '', specs: data.specs || []
+                statusSource: data.status_source || '', statusSourceLabel: data.status_source_label || '', specs: data.specs || [],
+                robotLead: rendered.robotLead || '',
+                robotHighlightTitle: rendered.robotHighlightTitle || '',
+                robotHighlightBody: rendered.robotHighlightBody || ''
               }
             }));
             this.querySelector('[data-tutorial-grid]')?.dispatchEvent(new CustomEvent('tutorials-ready', {

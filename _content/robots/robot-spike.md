@@ -23,6 +23,7 @@ official_resources:
 - title: SPIKE Prime Activity Briefs
   href: https://education.lego.com/en-us/product-resources/spike-prime/teacher-resources/activity-briefs/
   description: Reptes oberts en què hi ha diverses solucions possibles.
+tech_info: La denominació «SPIKE» cobreix diferents conjunts. Aquestes propostes de motors angulars i sensors parteixen de SPIKE Prime: comprova la versió del hub i les peces disponibles. LEGO Education ha anunciat la retirada comercial de SPIKE Essential i Prime, però mantindrà el suport de l’aplicació fins al 30 de juny de 2031. Si el centre ja té el kit, pot continuar fent-lo servir a l’aula. Consulta la [fitxa de disponibilitat i suport de LEGO Education](https://www.education.lego.com/en-us/spike-update-2026/) i la [pàgina tècnica oficial de SPIKE Prime](https://education.lego.com/en-us/product-resources/spike-prime/downloads/technical-specifications/).
 ---
 
 LEGO Education SPIKE Prime és un conjunt de construcció STEAM per a primària avançada i secundària. El hub gran té 6 ports; el conjunt Prime inclou motors angulars i sensors de distància, color i força. SPIKE Essential té maquinari i accessoris diferents: adapta la proposta al conjunt que hi ha al centre.
@@ -31,15 +32,3 @@ LEGO Education SPIKE Prime és un conjunt de construcció STEAM per a primària 
 
 SPIKE combina construcció, una unitat programable, motors i sensors per proposar preguntes d'enginyeria que es poden provar. El professorat pot demanar un moviment quantificat o una decisió basada en lectura; en tots dos casos, l'equip necessita predir què canviarà abans d'ajustar el muntatge.
 
-### Organització de la sessió
-
-- Explora els ports i els connectors amb el mateix model de robot que faran servir els equips.
-- Acorda una trajectòria curta i registra el punt de partida i el programa inicial.
-- Assigna rotativament disseny, programació, proves i quadern de laboratori.
-- Compara almenys dues execucions i fes canviar una sola variable a cada prova.
-
-### Pensament d'enginyeria
-
-Després del repte, demana que identifiquin una limitació: adherència de les rodes, llum ambient, angle d'un sensor o temps de recorregut. Una solució útil explica tant el resultat com les condicions en què l'han provada.
-
-La denominació «SPIKE» cobreix diferents conjunts. Aquestes propostes de motors angulars i sensors parteixen de SPIKE Prime: comprova la versió del hub i les peces disponibles. LEGO Education ha anunciat la retirada comercial de SPIKE Essential i Prime, però mantindrà el suport de l’aplicació fins al 30 de juny de 2031. Si el centre ja té el kit, pot continuar fent-lo servir a l’aula. Consulta la [fitxa de disponibilitat i suport de LEGO Education](https://www.education.lego.com/en-us/spike-update-2026/) i la [pàgina tècnica oficial de SPIKE Prime](https://education.lego.com/en-us/product-resources/spike-prime/downloads/technical-specifications/).

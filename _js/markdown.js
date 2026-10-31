@@ -285,6 +285,28 @@
 
   function renderMarkdown(source, sourceURL) {
     const { data, body: sourceBody } = splitFrontMatter(source);
+    let robotLead = '';
+    let robotHighlightTitle = '';
+    let robotHighlightBody = '';
+
+    const bodyTrimmed = sourceBody.trim();
+    const h2Index = bodyTrimmed.search(/^##\s+/m);
+    if (h2Index >= 0) {
+      const rawLead = bodyTrimmed.slice(0, h2Index).trim();
+      robotLead = rawLead.split(/\n\s*\n/).map(p => inline(p.trim(), sourceURL)).join('</p><p>');
+      const afterH2 = bodyTrimmed.slice(h2Index);
+      const firstLineEnd = afterH2.indexOf('\n');
+      if (firstLineEnd >= 0) {
+        robotHighlightTitle = inline(afterH2.slice(0, firstLineEnd).replace(/^##\s+/, '').trim(), sourceURL);
+        const rawHighlightBody = afterH2.slice(firstLineEnd + 1).trim();
+        robotHighlightBody = rawHighlightBody.split(/\n\s*\n/).map(p => inline(p.trim(), sourceURL)).join('</p><p>');
+      } else {
+        robotHighlightTitle = inline(afterH2.replace(/^##\s+/, '').trim(), sourceURL);
+      }
+    } else if (bodyTrimmed) {
+      robotLead = bodyTrimmed.split(/\n\s*\n/).map(p => inline(p.trim(), sourceURL)).join('</p><p>');
+    }
+
     const body = normalizeSectionOrder(sourceBody);
     const lines = body.replace(/\r\n?/g, '\n').split('\n');
     const output = [];
@@ -471,7 +493,7 @@
       <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" x-on:click="step = Math.max(0, step - 1)" :disabled="step === 0">← Pas anterior</button><button type="button" class="btn-wizard-step primary" x-on:click="step = Math.min(steps.length - 1, step + 1)" :disabled="step === steps.length - 1">Pas següent →</button></div>
     </nav>` : '';
     const rendered = output.join('\n').replace('<!--LEARNING_WIZARD-->', stepIndex);
-    return { data, html: orderDetailSections(rendered), steps };
+    return { data, html: orderDetailSections(rendered), steps, robotLead, robotHighlightTitle, robotHighlightBody };
   }
 
   global.RoboticsMarkdown = { parse: renderMarkdown, splitFrontMatter };
