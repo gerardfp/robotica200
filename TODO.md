@@ -8,3 +8,11 @@
 - [ ] La lletra en general hauria de ser color blau oscur
 
 - [ ] Les pàgines guia, què fem en elles? Què fem en general en _content/pages?
+
+- [ ] colors:
+    - coding-express: roig
+    - tale-bot: taronja
+    - coding-set: verd
+    - codey-rocky: blau
+    - spike: groc
+    - microbit: rosa    

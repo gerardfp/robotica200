@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Prova de Renderitzat de Blocs | Robòtica200</title>
+  <meta name="description" content="Pàgina de prova per al renderitzat de codi de blocs per als robots Micro:bit, Codey Rocky i LEGO SPIKE Prime.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../_css/styles.css?v=5">
+  <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
+  <script src="../_js/components.js?v=guide-route-2"></script>
+  <script src="../_js/makecode-blocks.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+</head>
+<body>
+  <site-header id="site-header" active="robotica-educativa" root="../"></site-header>
+
+  <main id="page-content" class="container page-content page-content-hero">
+    <!-- Hero Secció -->
+    <div class="robots-hero">
+      <div class="container robots-hero-inner">
+        <nav-back href="../robotica-educativa/index.html" label="Robòtica educativa"></nav-back>
+        <div class="robots-hero-content">
+          <h1 class="robots-hero-title">Programes de blocs</h1>
+          <p class="robots-hero-desc">Pàgina de prova de renderitzat de programes visuals de blocs per a Micro:bit, Codey Rocky i LEGO SPIKE Prime.</p>
+          <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
+        </div>
+        <div class="robots-hero-media">
+          <img src="../_assets/banners/robotica.png" alt="Robòtica Educativa" class="robots-hero-img" width="800" height="600">
+        </div>
+      </div>
+    </div>
+
+    <section class="blocks-test-section">
+      <!-- Targeta d'introducció tècnica -->
+      <div class="blocks-intro-card">
+        <div class="blocks-intro-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <div class="blocks-intro-text">
+          <h2>Arquitectura híbrida de renderitzat</h2>
+          <p>Aquesta prova valida dues vies complementàries per mostrar blocs de programació: l'<strong>embed oficial MakeCode</strong> (renderització dinàmica en viu pel maquinari Micro:bit) i els <strong>ScratchBlocks personalitzats en build-step</strong> (generació estàtica de fitxers SVG purs per a Codey Rocky i Spike Prime, amb 0ms de cost d'execució al navegador).</p>
+        </div>
+      </div>
+
+      <!-- Graella de Demostració dels 3 Robots -->
+      <div class="blocks-showcase-grid">
+
+        <!-- 1. MICRO:BIT (MakeCode Blocks Embed) -->
+        <article class="blocks-showcase-card card-microbit" id="test-microbit">
+          <header class="blocks-card-header">
+            <div class="blocks-card-title-group">
+              <div class="blocks-robot-icon-wrap">
+                <img src="../_assets/icons/microbit.svg" alt="Micro:bit" class="blocks-robot-icon">
+              </div>
+              <div>
+                <h3 class="blocks-card-title">Micro:bit</h3>
+                <p class="blocks-card-subtitle">👤 9-18 anys • Paleta oficial: #047fdf + #4a515d</p>
+              </div>
+            </div>
+            <div class="blocks-badge-group">
+              <span class="tech-pill tech-pill-makecode makecode-live-badge badge-loading">
+                ⚡ MakeCode Blocks Embed (En viu)
+              </span>
+            </div>
+          </header>
+
+          <div class="blocks-card-body">
+            <!-- Columna visual -->
+            <div class="blocks-visual-col">
+              <div class="blocks-col-heading">
+                <span>Blocs visuals oficials</span>
+                <span class="tag-badge">MakeCode iframe API</span>
+              </div>
+              <div class="blocks-visual-frame makecode-preview-wrap">
+                <div class="makecode-loading">
+                  <div class="content-loading-spinner" aria-hidden="true"></div>
+                  <span>Renderitzant blocs amb MakeCode...</span>
+                </div>
+                <!-- El target que MakeCode embed substitueix automàticament -->
+                <pre style="display:none;"><code class="language-blocks" id="code-microbit-sample">basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(500)
+    basic.clearScreen()
+    basic.pause(500)
+})
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Hola!")
+    basic.showIcon(IconNames.Happy)
+})</code></pre>
+              </div>
+              <div class="blocks-meta-bar">
+                <span>Motor: Microsoft MakeCode micro:bit v2</span>
+                <span>Generació dinàmica vectorial</span>
+              </div>
+            </div>
+
+            <!-- Columna codi -->
+            <div class="blocks-code-col">
+              <div class="blocks-col-heading">
+                <span>Codi font MakeCode</span>
+                <span class="tag-badge">TypeScript / Blocks</span>
+              </div>
+              <div class="blocks-code-panel">
+                <div class="blocks-code-panel-header">
+                  <span>main.ts (Micro:bit)</span>
+                  <span>input & display</span>
+                </div>
+                <pre><code>basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(500)
+    basic.clearScreen()
+    basic.pause(500)
+})
+
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Hola!")
+    basic.showIcon(IconNames.Happy)
+})</code></pre>
+              </div>
+              <div class="blocks-tech-notes">
+                <strong>Integració:</strong> Utilitza el protocol oficial de missatges <code>postMessage</code> amb l'iframe segur de MakeCode (<code>--docs?render=1</code>). El navegador envia el fragment de codi i MakeCode retorna l'estructura SVG original dels blocs oficials de micro:bit.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. CODEY ROCKY (ScratchBlocks personalitzats - Build-step) -->
+        <article class="blocks-showcase-card card-codey-rocky" id="test-codey-rocky">
+          <header class="blocks-card-header">
+            <div class="blocks-card-title-group">
+              <div class="blocks-robot-icon-wrap">
+                <img src="../_assets/icons/codey-rocky.svg" alt="Codey Rocky" class="blocks-robot-icon">
+              </div>
+              <div>
+                <h3 class="blocks-card-title">Codey Rocky</h3>
+                <p class="blocks-card-subtitle">👤 6-12 anys • Paleta oficial: #0079dc + #fdc80a</p>
+              </div>
+            </div>
+            <div class="blocks-badge-group">
+              <span class="tech-pill tech-pill-mblock">
+                ✓ ScratchBlocks personalitzats (Build-step SVG)
+              </span>
+            </div>
+          </header>
+
+          <div class="blocks-card-body">
+            <!-- Columna visual -->
+            <div class="blocks-visual-col">
+              <div class="blocks-col-heading">
+                <span>Blocs visuals mBlock 5</span>
+                <span class="tag-badge">SVG estàtic pur</span>
+              </div>
+              <div class="blocks-visual-frame">
+                <img src="../_assets/blocks/codey-rocky-sample.svg" alt="Programa de blocs per a Codey Rocky" class="blocks-rendered-svg" loading="lazy">
+              </div>
+              <div class="blocks-meta-bar">
+                <span>Renderitzat al build-step: <code>_assets/blocks/codey-rocky-sample.svg</code></span>
+                <span>0ms execució JS client</span>
+              </div>
+            </div>
+
+            <!-- Columna codi -->
+            <div class="blocks-code-col">
+              <div class="blocks-col-heading">
+                <span>Definició ScratchBlocks</span>
+                <span class="tag-badge">mBlock 5 Syntax</span>
+              </div>
+              <div class="blocks-code-panel">
+                <div class="blocks-code-panel-header">
+                  <span>codey-rocky.scratchblocks</span>
+                  <span>Tracció + Matriu LED + Sons</span>
+                </div>
+                <pre><code>quan s'iniciï Codey :: hat #0079dc
+mostra la imatge [cor v] :: #0096ff
+per sempre :: cstart #ffab19
+  mou endavant a potència (50) % :: #0079dc
+  si &lt;obstacle detectat? :: #00bebe&gt; aleshores :: cstart #ffab19
+    reprodueix el so [alarma v] :: #8a3ffc
+    atura el moviment :: #0079dc
+    mostra la imatge [sorpresa v] :: #0096ff
+    gira a la dreta (90) graus :: #0079dc
+  fi :: cend
+fi :: cend</code></pre>
+              </div>
+              <div class="blocks-tech-notes">
+                <strong>Integració:</strong> Compilat pel script de compilació <code>_scripts/render-scratchblocks.js</code>. Assigna els colors corporatius de mBlock 5 (xassís/moviment <code>#0079dc</code>, pantalla LED <code>#0096ff</code>, sensor d'infrarojos <code>#00bebe</code> i altaveu <code>#8a3ffc</code>). El client rep directament el fitxer vectorial sense necessitar biblioteques pesades.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. LEGO SPIKE PRIME (ScratchBlocks personalitzats - Build-step) -->
+        <article class="blocks-showcase-card card-spike" id="test-spike">
+          <header class="blocks-card-header">
+            <div class="blocks-card-title-group">
+              <div class="blocks-robot-icon-wrap">
+                <img src="../_assets/icons/spike.svg" alt="LEGO SPIKE" class="blocks-robot-icon">
+              </div>
+              <div>
+                <h3 class="blocks-card-title">LEGO SPIKE Prime</h3>
+                <p class="blocks-card-subtitle">👤 10-16 anys • Paleta oficial: #d82098 + #fddc3e</p>
+              </div>
+            </div>
+            <div class="blocks-badge-group">
+              <span class="tech-pill tech-pill-scratchblocks">
+                ✓ ScratchBlocks personalitzats (Build-step SVG)
+              </span>
+            </div>
+          </header>
+
+          <div class="blocks-card-body">
+            <!-- Columna visual -->
+            <div class="blocks-visual-col">
+              <div class="blocks-col-heading">
+                <span>Blocs visuals LEGO Education</span>
+                <span class="tag-badge">SVG estàtic pur</span>
+              </div>
+              <div class="blocks-visual-frame">
+                <img src="../_assets/blocks/spike-sample.svg" alt="Programa de blocs per a LEGO SPIKE Prime" class="blocks-rendered-svg" loading="lazy">
+              </div>
+              <div class="blocks-meta-bar">
+                <span>Renderitzat al build-step: <code>_assets/blocks/spike-sample.svg</code></span>
+                <span>0ms execució JS client</span>
+              </div>
+            </div>
+
+            <!-- Columna codi -->
+            <div class="blocks-code-col">
+              <div class="blocks-col-heading">
+                <span>Definició ScratchBlocks</span>
+                <span class="tag-badge">SPIKE App Syntax</span>
+              </div>
+              <div class="blocks-code-panel">
+                <div class="blocks-code-panel-header">
+                  <span>spike-prime.scratchblocks</span>
+                  <span>Motors + Sensor Distància + Matriu 5x5</span>
+                </div>
+                <pre><code>quan comenci el programa :: hat #fddc3e
+assigna els motors de moviment a [B + C v] :: #cf2478
+defineix la velocitat de moviment al (50) % :: #cf2478
+encén la matriu 5x5 amb [somriure v] durant (2) segons :: #00a8a8
+mou [endavant v] durant (20) cm :: #cf2478
+espera fins que &lt;distància sensor &lt; (15) cm :: #047fdf&gt;
+reprodueix el to (60) durant (0.5) s :: #785ef0
+activa el motor [A v] durant (1) rotacions :: #d82098
+atura-ho tot :: cap #ff8c00</code></pre>
+              </div>
+              <div class="blocks-tech-notes">
+                <strong>Integració:</strong> Compilat prèviament mitjançant <code>_scripts/render-scratchblocks.js</code> amb les paletes oficials de l'app SPIKE Prime (motors individuals <code>#d82098</code>, parella de moviment <code>#cf2478</code>, matriu 5x5 <code>#00a8a8</code>, sensor ultrasònic de distància <code>#047fdf</code> i esdeveniments en groc <code>#fddc3e</code>).
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Callout resum de beneficis -->
+      <div class="catalog-callout" style="margin-top: 3.5rem;">
+        <div class="callout-icon" aria-hidden="true">💡</div>
+        <div class="callout-content">
+          <h4>Resum pedagògic i tècnic de la solució</h4>
+          <p>
+            Aquesta arquitectura permet que el professorat visualitzi de manera fidel exactament els mateixos blocs que trobarà a les aplicacions oficials de cada robot:
+          </p>
+          <ul style="margin: 0.5rem 0 0.75rem 1.25rem; line-height: 1.6; color: var(--text-muted);">
+            <li><strong>Micro:bit:</strong> Es beneficia del manteniment continuat de Microsoft per als blocs oficials MakeCode, sense mantenir gràfics manuals.</li>
+            <li><strong>Codey Rocky i SPIKE Prime:</strong> Els blocs pre-renderitzats en SVG garateixen que les guies didàctiques carreguin instantàniament, siguin imprimibles en alta resolució i funcionin fins i tot en aules sense connexió a internet.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
