@@ -65,7 +65,6 @@
 <p>La situació adapta les sis lliçons de la unitat 10 <em>Lists</em> de LEGO Education <em>Introduction to Python Programming · Course 2</em>: crear i consultar llistes de lletres amb condicions; construir una rutina seqüenciada amb valors del sensor de moviment; comparar dues llistes en un joc de raonament; afegir a una llista dades de proves d’un mecanisme; fer un joc de paraules amb més d’una llista i el sensor de color; i donar/usar feedback.</p>
 <p>Canviem ioga, salts i jocs de marca per seqüències de moviment de maqueta, mesures mecàniques no corporals i microrelats de llocs imaginaris o coneguts del municipi, mantenint explícits l’ordre, les dades i la comparació.</p>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Crear una llista en Python, accedir a valors per índex i explicar que la numeració comença en zero.</li><li>Usar una variable d’índex i una condició composta per recórrer o validar elements triats.</li><li>Organitzar dues llistes relacionades (per exemple, llocs i accions), comparar-les i detectar correspondències, diferències o posicions sense parella.</li><li>Afegir dades mesurades de proves a una col·lecció i documentar-ne unitats, condicions i interpretació.</li><li>Combinar una lectura de sensor amb una selecció de llista de manera que l’entrada no reconeguda tinga resposta explícita.</li><li>Descompondre el joc en lectura, selecció, verificació, missatge i moviment; provar funcions i condicions sense dependre que el mecanisme funcione perfectament.</li><li>Fer feedback específic sobre l’ordre, la regla i l’accessibilitat del joc, i revisar el codi sense reescriure el treball d’un altre equip.</li></ul>
 <p><strong>Llista:</strong> seqüència ordenada de valors que es guarda amb un sol nom. <strong>Element:</strong> una dada dins d’una llista. <strong>Índex:</strong> posició numèrica d’un element, habitualment des de 0 en Python. <strong>Correspondència:</strong> relació prevista entre elements de dues llistes.</p><aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Lectura del sensor</h4><p>valor que el dispositiu detecta en unes condicions concretes; no és una etiqueta semàntica que Python entenga automàticament.</p></div></aside>
@@ -76,7 +75,6 @@ posicio = <span class="syntax-number">1</span>
 print(llocs[posicio], accions[posicio])</code></pre></figure>
 <p>Aquest exemple general associa valors que comparteixen índex; si les llistes no tenen la mateixa llargària, cal tractar-ho abans d’accedir-hi. En SPIKE, la lectura del sensor, els ports i les funcions de llum/so/motor s’han de consultar en la Knowledge Base de la versió local.</p>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
 <p>Un set SPIKE Prime per equip, hub carregat, app SPIKE amb Python disponible, sensor de color, sensor de força opcional per a una entrada de confirmació, sensor de moviment de l’hub si es prova una seqüència de gir del dispositiu, motor i peces Technic per a un indicador lent opcional, targetes grans de formes/colors, cartó i cinta de paper, regle, diari de programació i ordinador o paper per a codi compartit.</p>
 <p>La construcció pot ser estàtica: cap activitat depén d’un robot mòbil ni de reproduir instruccions LEGO.</p>
@@ -84,7 +82,6 @@ print(llocs[posicio], accions[posicio])</code></pre></figure>
 <p>Per a les proves del mecanisme, useu una fitxa gran i lleugera, recorregut curt i motor a baixa potència. Eviteu registrar dades de moviment o salut d’alumnes; si es gira l’hub per obtindre valors d’orientació, subjecteu-lo amb un suport i considereu-los dades del dispositiu.</p>
 <p>Organitzeu rols rotatius: qui redacta i explica la llista; qui prova índexs i casos buits; qui prepara targetes/sensor; qui registra resultats i accés a la història. Acordeu prèviament que qualsevol relat inventat és voluntari, respectuós i revisat pel grup.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-sis-llicons">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -199,20 +196,18 @@ print(llocs[posicio], accions[posicio])</code></pre></figure>
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
 <p>Portafolis d’equip: llistes anotades; taula índex–element; codi amb comentaris i gestió d’índex fora de rang; diagrama que relaciona colors amb índexs; lectures de sensor i condicions de calibratge; llistes comparades amb casos iguals/diferents i llargàries distintes; dades de proves mecàniques amb unitats; resultat del joc de paraules; instruccions de partida; feedback rebut i canvi incorporat. Valoreu quatre dimensions: <strong>ús de llista i índex</strong> (consulta valors i preveu límits); <strong>comparació i condicions</strong> (distingeix ordre, correspondència i casos absents);</p>
 <p><strong>integració de dades</strong> (relaciona sensor, valor, regla i sortida);</p><aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>disseny col·laboratiu</h4><p>(documenta, prova, incorpora o justifica feedback i ofereix accés alternatiu). Una execució afortunada no substitueix la prova de llistes buides, divergents o no reconegudes.</p></div></aside>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Les llistes es poden treballar amb targetes físiques grans, text ampliat, dictat, símbols i seqüències d’àudio opcional; no cal llegir ràpid ni distingir colors sense alternativa. La sortida del sensor també es pot seleccionar manualment. Els microrelats són ficticis o de llocs públics triats amb cura; no s’hi guarden noms, domicilis, històries personals ni trajectes. Eviteu compartir codi o text fora de l’aula sense acord. Manteniu el robot sobre taula i freneu abans de manipular-lo;</p>
 <p>si hi ha moviment, establiu límits suaus i allunyeu les mans. La seqüència de moviments és d’una maqueta, no una rutina física obligatòria ni una avaluació corporal.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
-<p>Adapta les sis lliçons de la unitat 10 <em>Lists</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 2*</a>: <em>Listing Letters</em>, <em>Stretch Your Muscles and Lists</em>, <em>Mind Games</em>, <em>Jumping for Lists</em>, <em>Word Games with Lists</em> i <em>Ideas to Help with Word Games with Lists</em>. Manté l’estructura de llista/índex i condicions compostes, valors de sensor i seqüenciació, comparació de dues llistes, registre de dades de proves, integració de llistes i sensor de color en un joc, i feedback entre equips.</p>
-<p>Les referències a ioga/salts es transformen en estats d’un mecanisme de taula i mesures de prototip, sense capturar informació corporal d’alumnes. L’escenari de vocabulari, fitxes, dades d’exemple i imatge són propis; el programa i la construcció s’adapten a la dotació real i no copien instruccions oficials. L’app i l’API s’han de verificar en el dispositiu local.</p>
+<p>Adapta les sis lliçons de la unitat 10 <em>Lists</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer"><em>Introduction to Python Programming · Course 2</em></a>: <em>Listing Letters</em>, <em>Stretch Your Muscles and Lists</em>, <em>Mind Games</em>, <em>Jumping for Lists</em>, <em>Word Games with Lists</em> i <em>Ideas to Help with Word Games with Lists</em>.</p>
+<p>Manté l’estructura de llista/índex i condicions compostes, valors de sensor i seqüenciació, comparació de dues llistes, registre de dades de proves, integració de llistes i sensor de color en un joc, i feedback entre equips. Les referències a ioga/salts es transformen en estats d’un mecanisme de taula i mesures de prototip, sense capturar informació corporal d’alumnes. L’escenari de vocabulari, fitxes, dades d’exemple i imatge són propis; el programa i la construcció s’adapten a la dotació real i no copien instruccions oficials.</p>
+<p>L’app i l’API s’han de verificar en el dispositiu local.</p>
 </section></div>
       </div>
     </article>

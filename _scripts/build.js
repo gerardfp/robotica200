@@ -12,6 +12,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const renderer = require('./lib/markdown');
+const { buildAllBlocks } = require('./lib/blocks');
+const { warmMakeCodeCache } = require('./lib/makecode-cache');
 
 const { HomePage } = require('../_templates/pages/home-page');
 const { ActivitiesCatalogPage } = require('../_templates/pages/activities-catalog-page');
@@ -453,7 +455,36 @@ function buildSituations() {
   return situations;
 }
 
-function main() {
+function scanMakeCodeSnippets() {
+  const contentDir = path.join(ROOT_DIR, '_content');
+  const snippets = [];
+  function scan(dir) {
+    if (!fs.existsSync(dir)) return;
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      const full = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        scan(full);
+      } else if (entry.isFile() && entry.name.endsWith('.md')) {
+        const text = fs.readFileSync(full, 'utf8');
+        const matches = text.matchAll(/```(?:makecode)\s*([\s\S]*?)```/gi);
+        for (const m of matches) {
+          const code = m[1].trim();
+          if (code) snippets.push(code);
+        }
+      }
+    }
+  }
+  scan(contentDir);
+  return snippets;
+}
+
+async function main() {
+  const snippets = scanMakeCodeSnippets();
+  if (snippets.length > 0) {
+    await warmMakeCodeCache(snippets);
+  }
+
+  const blocks = buildAllBlocks();
   const activitats = buildActivities();
   const tutorials = buildTutorials();
   const robots = buildRobots(tutorials);
@@ -495,10 +526,14 @@ function main() {
   console.log(`  - ${robots.length} robots (/robot/<slug>/index.html)`);
   console.log(`  - ${guidesCount} guies docents (/guia/<slug>/index.html)`);
   console.log(`  - ${situacions.length} situacions d'aprenentatge (/situacio/<slug>/index.html)`);
+  console.log(`  - ${blocks.length} diagrames de blocs SVG (_assets/blocks/*.svg)`);
 }
 
 if (require.main === module) {
-  main();
+  main().catch(err => {
+    console.error('✗ Error durant el build:', err);
+    process.exit(1);
+  });
 }
 
 module.exports = { main };

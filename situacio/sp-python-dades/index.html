@@ -65,7 +65,6 @@
 <p>Aquesta situació adapta les set lliçons de la unitat 9 <em>Data and Math Functions</em> de LEGO Education <em>Introduction to Python Programming · Course 2</em>: obtindre dades amb sensors; variar velocitat amb operacions; usar variables i comparacions per comptar moviments; transformar graus de motor en canvis de direcció; practicar càlculs en un aparcament de maqueta; dissenyar un vehicle/ruta de transport fins a l’escola; i fer feedback i millores.</p>
 <p>L’objectiu no és entrenar una habilitat física ni fer un pla real de mobilitat, sinó comprendre la cadena mesura → càlcul → decisió → comprovació.</p>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Llegir dades de sensors SPIKE, interpretar el valor i la unitat, mostrar-lo en consola i reconéixer quan una lectura no és vàlida o no està disponible.</li><li>Canviar un valor numèric amb addició/resta i relacions matemàtiques sense eixir dels límits segurs de potència o recorregut.</li><li>Usar variables per comptar, estimar distància i calcular velocitat; convertir mil·límetres a centímetres i mil·lisegons a segons.</li><li>Aplicar <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>==</code> i <code>!=</code> en regles que separen casos de prova.</li><li>Explicar soroll, llindar, calibratge, repetició i error de mesura; comparar previsió amb observació sense presentar una dada com a exacta.</li><li>Representar direcció i velocitat en una ruta simulada, relacionant magnituds del motor amb girs aproximats i comprovant les instruccions en una pista segura.</li><li>Documentar les decisions, comunicar limitacions i revisar una solució amb les perspectives d’altres equips.</li></ul>
 <aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Lectura</h4><p>valor que retorna el sensor en una instantània de la prova. <strong>Mostreig:</strong> moment o freqüència amb què llegim dades. <strong>Calibrar:</strong> ajustar una regla de lectura a les condicions i materials reals de la prova. <strong>Variable:</strong> nom que guarda una dada que pot canviar. <strong>Velocitat:</strong> distància recorreguda dividida pel temps. <strong>Mitjana:</strong> suma de valors dividida pel nombre de mesures; no oculta la dispersió entre intents.</p></div></aside>
@@ -76,7 +75,6 @@ velocitat_cm_s = distancia_cm / temps_s
 print(<span class="syntax-string">&quot;cm:&quot;</span>, distancia_cm, <span class="syntax-string">&quot;cm/s:&quot;</span>, velocitat_cm_s)</code></pre></figure>
 <p>El fragment Python usa dades de mostra per explicar unitats. La mesura física, els ports i el moviment del vehicle s’han d’implementar amb les funcions disponibles en l’app SPIKE local; la compatibilitat entre versions s’ha de provar abans de classe.</p>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
 <p>Un set SPIKE Prime per equip amb hub carregat i base mòbil estable (o una plataforma amb una sola roda motriu si l’equip vol estudiar el gir), dos motors, sensor de força, sensor de distància i sensor de moviment integrat a l’hub; dispositiu amb SPIKE Python, cinta de paper, cartó per a carrils i aparcament, regla o cinta mètrica, cronòmetre extern opcional, targetes de forma/color per a fites, calculadora i diari de dades.</p>
 <p>No és necessari usar tots els sensors alhora: adapteu el repte al maquinari disponible.</p>
@@ -84,7 +82,6 @@ print(<span class="syntax-string">&quot;cm:&quot;</span>, distancia_cm, <span cl
 <p>El sensor de moviment de l’hub dona orientació/angle, que no és directament un recompte de passos humans: aquesta situació evita recollir dades corporals i, si usa l’angle, gira el hub o un suport amb cura sobre la taula. Consulteu la Knowledge Base per a API actual i límits de motors.</p>
 <p>Prepareu un full de dades amb columnes per a hipòtesi, entrada, unitat, valor esperat, valor mesurat, diferència, decisió de codi i observacions. Assigneu rols rotatius de programació, conducció, mesura i registre. Acordeu un límit de velocitat baix i una ordre d’aturada abans d’engegar motors.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-set-llicons">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -215,19 +212,16 @@ print(<span class="syntax-string">&quot;cm:&quot;</span>, distancia_cm, <span cl
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-criteris-d-avaluacio">🧪 Evidències i avaluació</h2>
 <p>Portafolis: esquema dels sensors i ports reals; captures o transcripció de dades de mostra sense informació personal; conversió entre mm/cm i ms/s; codi Python comentat; pseudocodi i mapa de ruta; mesures manuals, repeticions, mitjanes i rangs; taula de casos de sensor absents; mesura de girs; registre de depuració; decisions de redisseny; diagrama o taula comparativa de rutes de maqueta; feedback entre iguals; i explicació de límits del prototip.</p>
 <p>Valoreu quatre dimensions: <strong>tractament de dades</strong> (registra valor, unitat i condicions de mesura); <strong>raonament matemàtic</strong> (converteix unitats i calcula distància/temps amb operacions adequades); <strong>programació</strong> (variables, comparacions, condicions, sortida i aturada comprovables); i <strong>mètode experimental</strong> (repeteix, compara, registra incertesa i modifica una variable cada vegada). Afegiu comunicació i col·laboració al retorn final. Una ruta que es completa una vegada no demostra fiabilitat; un càlcul ben documentat que troba una fallada també és una evidència valuosa.</p>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Oferiu mesures amb regle sobre paper si la connexió o el sensor no està disponible; totes les proves poden fer-se en taula. Les fites tenen forma, símbol i color; eviteu dependre d’una única pista visual o auditiva. Hi ha rols de registre, disseny de ruta, codi i observació, amb rotació. No mesureu ni publiqueu dades corporals, passos, activitat, domicilis o trajectes personals d’alumnes. Les rutes són inventades i les dades són del robot o de targetes sintètiques.</p>
 <p>Manteniu la base sobre una superfície horitzontal amb marges i topalls tous, velocitat baixa i aturada manual; no feu circular robots per passadissos amb persones ni a prop d’escales. Desconnecteu motors abans d’ajustar la construcció.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
-<p>Adapta les set lliçons de la unitat 9 <em>Data and Math Functions</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 2*</a>: <em>Get Moving to Get Data</em>, <em>Bike Riding for Data</em>, <em>Counting Your Steps</em>, <em>Make It Move</em>, <em>Parking Lot</em>, <em>My Transportation</em> i <em>Ideas to Help with My Transportation</em>.</p>
+<p>Adapta les set lliçons de la unitat 9 <em>Data and Math Functions</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer"><em>Introduction to Python Programming · Course 2</em></a>: <em>Get Moving to Get Data</em>, <em>Bike Riding for Data</em>, <em>Counting Your Steps</em>, <em>Make It Move</em>, <em>Parking Lot</em>, <em>My Transportation</em> i <em>Ideas to Help with My Transportation</em>.</p>
 <p>Conserva lectura de sensors i consola, distància en mm amb conversió a cm, ajust de velocitat amb variable, sensor de moviment i llindars/estat per a evitar dobles recomptes, càlcul de distància i velocitat, girs amb operacions, depuració de crides, aparcament, disseny de transport, planificació i feedback. El repte de passos corporals es transforma en gir del hub/seqüència sintètica i declara explícitament que no és un pedòmetre; el trajecte és una maqueta i les dades no són sobre mobilitat personal.</p>
 <p>Les instruccions de construcció i els programes complets oficials no es reprodueixen; els exemples de codi de la fitxa són conceptuals i l’API es comprova en la versió local.</p>
 </section></div>

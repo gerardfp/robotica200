@@ -64,7 +64,6 @@
 <p>Les proves se centren en com els motors responen a temps, velocitat, posició i graus, com es coordinen dos motors i quines variables físiques alteren el trajecte.</p>
 <p>Aquesta proposta adapta la progressió de la unitat 2 <em>Motors</em> de LEGO Education <em>Introduction to Python Programming · Course 1</em>: control individual de motors amb paràmetres, moviments cap a posicions/quantitats definides, automatització d’una tasca, sincronització de dos motors i desplaçament d’un model sense rodes, trajecte amb passos i girs i feedback entre equips. La situació situa eixos objectius en un servei escolar fictici; no representa una solució real de mobilitat ni assumeix que el robot navegue sense supervisió.</p>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Identificar el motor com a actuador i descriure com el programa Python li envia ordres segons la biblioteca i la versió de l’app.</li><li>Comparar moviment per temps, velocitat, posició i angle de gir del motor; entendre que graus de l’eix no equivalen automàticament a graus de gir del robot.</li><li>Fer que dos motors actuen individualment i en parella; explicar què canvia quan giren alhora o en sentits diferents.</li><li>Descompondre una tasca automàtica en inici, acció, espera, senyalització i aturada; escriure-la abans com a pseudocodi.</li><li>Programar i traçar una seqüència de trams i girs per arribar a una fita en una pista coneguda.</li><li>Calibrar una relació motor-distància amb la mateixa roda, superfície, càrrega i bateria, i documentar les fonts de variació.</li><li>Fer proves repetides amb una variable canviada cada vegada, registrar diferències i decidir si un canvi millora el criteri triat.</li><li>Donar feedback específic sobre el disseny i el codi sense prendre el control del projecte d’un altre equip.</li></ul>
 <p><strong>Actuador:</strong> component que produeix moviment o una altra eixida. <strong>Velocitat:</strong> ritme de gir ordenat al motor. <strong>Posició:</strong> angle de l’eix respecte d’un referent definit. <strong>Graus:</strong> unitat angular per descriure una rotació. <strong>Calibratge:</strong> obtindre una relació de treball amb proves del muntatge real. <strong>Repetibilitat:</strong> semblança entre resultats d’assajos repetits sota condicions comparables.</p>
@@ -74,7 +73,6 @@ trams = [<span class="syntax-string">&quot;recte&quot;</span>, <span class="synt
     print(<span class="syntax-string">&quot;provar:&quot;</span>, tram)</code></pre></figure>
 <p>Aquest fragment no és codi de motor. L’API exacta (ports, motor individual, parella, <code>runloop</code>, posició, velocitat i frenada) depén de la versió local de l’app SPIKE. Consulteu-ne la Knowledge Base i proveu les ordres amb la base suspesa o en una pista segura abans d’adaptar-les.</p>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio-docent">🧰 Materials i preparació</h2>
 <p>Un set SPIKE Prime 45678 per equip, hub carregat, dos motors, rodes i peces Technic per a una base mòbil baixa o un mecanisme acotat, dispositiu amb editor Python i consola, cinta de paper, cartó per a fites i topalls tous, regla, transportador opcional, fitxa lleugera de missatgeria, diari d’enginyeria i temporitzador. Per al repte de moviment sincronitzat sense rodes, oferiu una construcció articulada lleugera de baixa altura feta amb les peces de la caixa;</p>
 <p>no cal que imite un animal ni reproduïsca cap model oficial.</p>
@@ -82,7 +80,6 @@ trams = [<span class="syntax-string">&quot;recte&quot;</span>, <span class="synt
 <p>Prepareu una base de referència i tres distàncies de prova, però deixeu que l’alumnat calibre el seu propi prototip.</p>
 <p>Rols rotatius de Python/prova, construcció/seguretat i mesura/registre. Cada equip manté una configuració de prova fixa durant una comparació i escriu quan ha canviat superfície, rodes, muntatge o càrrega. No compareu resultats de robots diferents com si les seues magnituds foren transferibles.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-sis-llicons">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -196,20 +193,17 @@ trams = [<span class="syntax-string">&quot;recte&quot;</span>, <span class="synt
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
 <p>El dossier conté esquema de maquinari i ports, registre de versió de l’app/API, diagrama de posicions, pseudocodi de ruta, codi Python anotat, prediccions, taula de temps/velocitat/graus i distància mesurada, proves del mecanisme automatitzat, comparació de crides individuals i de parella, mapa de ruta, tres resultats finals, feedback, canvi seleccionat i explicació de límits. El producte és una maqueta de lliurament i una nota tècnica d’una pàgina que separa instrucció, resposta física i evidència.</p>
 <p>Avalueu amb quatre criteris:</p><aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>model del motor</h4><p>(interpreta temps, velocitat, posició i graus sense confondre magnituds); <strong>programació</strong> (organitza crides i coordina motors a partir d’un pseudocodi); <strong>enginyeria experimental</strong> (manté condicions, registra més d’un intent i justifica un ajust); <strong>col·laboració i comunicació</strong> (participa en el feedback i declara què encara no funciona). Per a cadascun, descriviu quatre nivells: amb modelatge, amb suport, de manera autònoma i amb transferència justificada.</p></div></aside>
 <p>Un recorregut que no arribe a la fita encara pot aportar evidència rigorosa si està ben diagnosticat.</p>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="inclusio-seguretat-i-sostenibilitat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Oferiu pista impresa, simulació de moviments en paper i accés a consola amb lectura compartida. Distribuïu rols entre codi, construcció, mesura i comunicació, i feu-los rotar. Permeteu més temps i trams grans; la velocitat no és criteri d’èxit. Useu carrils delimitats, zona de parada, càrrega tova, distància curta i baixa potència; apagueu motors abans d’ajustar eixos, rodes o cables. Manteniu dits, cabells i roba lluny d’elements en moviment.</p>
 <p>Recupereu totes les peces després de la prova i no useu passadissos, rampes altes o escales.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-decisions-d-adaptacio">🔗 Referents i adaptació</h2>
-<p>Adapta Unit 2 <em>Motors</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 1*</a>. El PDF oficial consultat confirma les lliçons <em>Hopper Run</em> (dos motors simultanis i model sense rodes) i <em>Race Day</em> (programa amb seqüència de passos i girs i ús de la parella de motors), a més de la sessió de feedback <em>Ideas to Help with Race Day</em>. La progressió de motors individuals, posició i automatització s’ha contrastat amb els objectius indexats del pla oficial;</p>
+<p>Adapta Unit 2 <em>Motors</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us" target="_blank" rel="noopener noreferrer"><em>Introduction to Python Programming · Course 1</em></a>. El PDF oficial consultat confirma les lliçons <em>Hopper Run</em> (dos motors simultanis i model sense rodes) i <em>Race Day</em> (programa amb seqüència de passos i girs i ús de la parella de motors), a més de la sessió de feedback <em>Ideas to Help with Race Day</em>. La progressió de motors individuals, posició i automatització s’ha contrastat amb els objectius indexats del pla oficial;</p>
 <p>les funcions de Python s’han de validar en l’app del centre. El repte, el context, el guió docent, els fulls de registre i la imatge són propis; no es reprodueixen instruccions de construcció LEGO ni s’afirma que la maqueta completa siga un model oficial.</p>
 </section></div>
       </div>

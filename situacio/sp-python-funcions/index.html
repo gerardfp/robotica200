@@ -64,7 +64,6 @@
 <p>La pregunta d’enginyeria és com separar un procediment llarg en accions amb nom, com repetir-lo amb dades diferents i com demostrar que la reutilització manté el comportament esperat.</p>
 <p>La seqüència adapta les sis lliçons de la unitat 7 <em>Functions</em> de LEGO Education <em>Introduction to Python Programming · Course 2</em>. Progressa des de la descomposició d’una acció, passa per diverses funcions i funcions amb paràmetres, i arriba a un prototip ambiental investigat, provat i revisat amb feedback. La programació és Python textual: el pseudocodi ajuda a planificar, però no substitueix les funcions i crides de Python.</p>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-llenguatge">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Descompondre una tasca en subproblemes i donar noms clars a accions que es repetiran.</li><li>Definir una funció amb <code>def</code>, indentació i cos; explicar la diferència entre definir-la i cridar-la.</li><li>Crear i cridar diverses funcions en un ordre deliberat, evitant duplicar instruccions.</li><li>Usar paràmetres com a noms d’entrada dins d’una funció i arguments com a valors concrets en la crida; anticipar errors de quantitat o ordre.</li><li>Separar lectura del sensor, decisió de classificació i actuació mecànica perquè es puguen provar independentment.</li><li>Provar casos coneguts i no assignats, registrar resultats, depurar una causa cada vegada i justificar redissenys.</li><li>Comunicar límits del prototip: una lectura de color no és identificació material ni una recomanació real de reciclatge.</li></ul>
 <p><strong>Funció:</strong> bloc de codi amb nom que es pot executar quan es crida. <strong>Paràmetre:</strong> nom declarat entre els parèntesis de la definició; rep una dada quan la funció és cridada. <strong>Argument:</strong> valor concret que passem en una crida. <strong>Descomposició:</strong> dividir una tasca complexa en parts que es poden entendre, construir i provar.</p><aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Cas de prova</h4><p>entrada, comportament esperat i resultat observat.</p></div></aside>
@@ -74,7 +73,6 @@
 mostrar_estat(<span class="syntax-string">&quot;Mostra A&quot;</span>, <span class="syntax-string">&quot;blau&quot;</span>)</code></pre></figure>
 <p>En l’exemple, <code>etiqueta</code> i <code>color</code> són paràmetres; <code>&quot;Mostra A&quot;</code> i <code>&quot;blau&quot;</code> són arguments. És Python general vàlid per entendre la idea. Les ordres SPIKE de motors, sensors i runloop s’han de consultar en la Knowledge Base de la versió de l’app instal·lada: no s’ha de copiar aquest exemple com si fóra un programa de maquinari complet.</p>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio-docent">🧰 Materials i preparació</h2>
 <p>Un set SPIKE Prime per equip, hub carregat, dispositiu amb app SPIKE i editor Python disponible, sensor de color del set, un motor i peces Technic per a una pinça o porta de triatge senzilla, cartó per a canals i contenidors, fitxes grans de colors mats, cinta de paper, diari de disseny, cronòmetre extern opcional i ordinador/projector per mostrar fragments curts. El model pot ser fix sobre la taula: la base mòbil no és necessària per a la tasca.</p>
 <p>Eviteu instruccions de construcció privades o copiar models de marca; cada equip dissenya una solució amb peces de la seua caixa.</p>
@@ -82,7 +80,6 @@ mostrar_estat(<span class="syntax-string">&quot;Mostra A&quot;</span>, <span cla
 <p>Poseu el mecanisme a baixa velocitat, amb topalls de recorregut i dits lluny de la pinça.</p>
 <p>Equips de 2–3 persones: programació/lectura del codi, cura del mecanisme i registre de proves. Feu rotació de rols a cada lliçó. La persona que observa té dret a demanar una pausa abans d’executar qualsevol canvi físic.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-sis-llicons">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -199,23 +196,20 @@ mostrar_estat(<span class="syntax-string">&quot;Mostra A&quot;</span>, <span cla
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="evidencies-avaluacio-i-producte-final">🧪 Evidències i avaluació</h2>
 <p>El portafolis d’equip conté: definició de la necessitat i límits; dos esbossos i una decisió amb criteris; pseudocodi; mapa de funcions i crides; codi Python comentat; explicació de paràmetres i arguments amb un exemple propi; taula d’entrades esperades/no assignades i resultats; registre de depuració; proves repetides; feedback rebut i decisió de redisseny; i una targeta d’ús amb les limitacions del prototip.</p>
 <p>El producte final és una maqueta de triatge de fitxes netes, una demostració de menys de dos minuts i una explicació oral o escrita que distingeix dada, regla i actuació.</p>
 <p>Observeu quatre dimensions amb descriptors: <strong>estructura</strong> (identifica i crida funcions en un ordre coherent), <strong>paràmetres</strong> (diferencia definició, paràmetre i argument i comprova quantitat/ordre), <strong>validació</strong> (prova casos assignats i no assignats, registra evidència i explica un canvi), i <strong>comunicació/col·laboració</strong> (documenta el codi, respon al feedback i declara límits). En cada dimensió, useu nivells “encara necessita modelatge / ho fa amb suport / ho fa amb autonomia / ho transfereix i ho justifica”.</p>
 <p>La valoració no depén només que el robot es moga: una funció ben provada i una limitació ben comunicada també són evidència d’aprenentatge.</p>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-seguretat-i-sostenibilitat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Permeteu pseudocodi oral, tauler de crides en paper, fragments Python amb tipografia ampliada o lectura compartida; els rols de disseny, registre, proves i programació tenen valor equivalent i roten. Les etiquetes s’identifiquen amb color i forma/textura o símbol triat per l’alumnat, sense dependre només de la visió del color. Useu peces grans, netes i lleugeres; manteniu la pinça a la taula, amb velocitat limitada, recorregut curt i aturada manual. No executeu canvis mentre hi ha mans prop del mecanisme.</p>
 <p>No introduïu residus, menjar, líquids ni objectes punxants. Recolliu i reutilitzeu les fitxes. Eviteu dades personals, etiquetes amb noms, imatges d’alumnes i afirmacions sobre pràctiques ambientals del centre que no s’hagen comprovat.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-decisions-d-adaptacio">🔗 Referents i adaptació</h2>
-<p>Adapta les sis lliçons de la unitat 7 <em>Functions</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 2*</a>: <em>Turtle Trouble</em>, <em>Clean Up with Multiple Functions</em>, <em>Clean Indicator</em>, <em>Automate the Clean Up</em>, <em>Taking Care of My Environment</em> i <em>Ideas to Help with My Environment</em>. Conserva la progressió de descomposició i funcions, diverses funcions per a mecanismes diferents, paràmetres i depuració de les crides, triatge amb dades, repte de disseny ambiental en context autèntic, documentació, proves i feedback.</p>
-<p>La tortuga i la neteja de residus es transformen en una necessitat de circulació de materials nets triada localment; les regles de colors són una simulació acordada per l’aula, i no es diu que el sensor reconega materials. S’han creat relat, activitats, evidències i il·lustració propis; no es copien instruccions de construcció ni codi complet del fabricant.</p>
-<p>La guia oficial especifica lliçons de 45 minuts, amb activitats de 90 minuts per a l’automatització i el projecte ambiental, i una sessió final de feedback; aquesta proposta manté sis lliçons i distribueix la durada segons la disponibilitat del centre.</p>
+<p>Adapta les sis lliçons de la unitat 7 <em>Functions</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer"><em>Introduction to Python Programming · Course 2</em></a>: <em>Turtle Trouble</em>, <em>Clean Up with Multiple Functions</em>, <em>Clean Indicator</em>, <em>Automate the Clean Up</em>, <em>Taking Care of My Environment</em> i <em>Ideas to Help with My Environment</em>.</p>
+<p>Conserva la progressió de descomposició i funcions, diverses funcions per a mecanismes diferents, paràmetres i depuració de les crides, triatge amb dades, repte de disseny ambiental en context autèntic, documentació, proves i feedback. La tortuga i la neteja de residus es transformen en una necessitat de circulació de materials nets triada localment; les regles de colors són una simulació acordada per l’aula, i no es diu que el sensor reconega materials. S’han creat relat, activitats, evidències i il·lustració propis;</p>
+<p>no es copien instruccions de construcció ni codi complet del fabricant. La guia oficial especifica lliçons de 45 minuts, amb activitats de 90 minuts per a l’automatització i el projecte ambiental, i una sessió final de feedback; aquesta proposta manté sis lliçons i distribueix la durada segons la disponibilitat del centre.</p>
 </section></div>
       </div>
     </article>

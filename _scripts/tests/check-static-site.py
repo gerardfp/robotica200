@@ -7,7 +7,7 @@ from pathlib import Path
 import re
 from urllib.parse import unquote, urlparse
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parents[2]
 EXPECTED_ROBOTS = {
     "coding-express", "tale-bot", "coding-set", "codey-rocky", "spike", "microbit"
 }

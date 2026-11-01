@@ -58,16 +58,13 @@
 <aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Prepareu un registre curt de condicions de l’aula amb una micro:bit V2. L’equip decidirà quines dades necessita, cada quant les llegirà, com confirmarà que el registre està actiu i com les recuperarà per interpretar-les. El registrador desa valors al dispositiu; no els envia automàticament a Internet ni converteix les lectures en una mesura científica calibrada.</p></div></aside>
 <ul><li>Crear columnes identificables per a les lectures que es volen recollir.</li><li>Iniciar i aturar una captura manual amb un control comprensible.</li><li>Recuperar les dades de la memòria i representar-les en una taula o gràfic.</li><li>Diferenciar una variació observada d’una conclusió sobre tota l’aula o el dia.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Registre de dades de MakeCode en micro:bit V2 amb l’extensió <code>datalogger</code>.</li><li>Sensor de llum de la matriu i lectura tèrmica interna per a observacions aproximades.</li><li>Emmagatzematge local que es conserva en desconnectar l’alimentació fins que s’esborra o se sobreescriu el registre.</li><li>Recuperació de les files en connectar la placa a un ordinador; visualització en taula o gràfic i exportació quan el navegador/editor ho ofereix.</li><li>La guia no atribueix el registre persistent a V1 ni considera la temperatura del processador un termòmetre ambiental calibrat.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
 <ul><li>micro:bit V2 identificada per la marca de versió i amb firmware compatible amb MakeCode Data logging.</li><li>Ordinador amb MakeCode i connexió USB per transferir el programa i recuperar les dades.</li><li>Termòmetre de referència i targetes clara/fosca; són comparadors externs, no sensors connectats.</li><li>Full de planificació amb variables, unitats o escala, interval de captura i duració de la prova.</li></ul>
 <p>En MakeCode, creeu un projecte nou i afegiu l’extensió oficial <code>datalogger</code>. Abans de transferir el programa, comproveu que el simulador mostra la funció de registre i assageu el control. Decidiu si la prova durarà pocs minuts i qui podrà consultar el fitxer. Eviteu enregistrar noms, veus, ubicacions personals o dades identificables.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -106,7 +103,6 @@
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
 <p>Compareu les cinc files registrades amb les condicions anotades en paper. Comproveu que hi ha cinc mostres, que cada valor ocupa la columna correcta i que la marca temporal segueix l’ordre de captura. Repetiu una lectura si hi ha una fila buida o una condició anotada incorrectament; no esborreu la memòria fins a haver conservat les dades útils. Si utilitzeu el simulador, identifiqueu-ne clarament les lectures com a simulades i no les barregeu amb les de la placa.</p>
 <h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
@@ -114,11 +110,9 @@
 <h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
 <ul><li>Projecte MakeCode amb títols de columna clars i captura manual.</li><li>Cinc files recuperades i relacionades amb les condicions observades.</li><li>Taula o gràfic amb una conclusió limitada a les mostres recollides.</li><li>Nota que identifique versió de la placa, simulació o maquinari, i moment en què s’ha conservat o esborrat el registre.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Permeteu que una persona manipule A i una altra anote les condicions; també es pot assajar primer amb el simulador i una taula en paper. La placa pot mostrar una icona per confirmar cada registre. Manteniu el dispositiu pla, no tapeu els components amb materials que acumulen calor i feu la captura en un espai acordat. No registreu ni compartiu informació personal.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
 <p>La guia oficial de <a href="https://microbit.org/get-started/user-guide/data-logging/" target="_blank" rel="noopener noreferrer">registre de dades de micro:bit</a> descriu l’extensió <code>datalogger</code>, la captura manual i automàtica, la recuperació i l’emmagatzematge local de micro:bit V2. La <a href="https://microbit.org/get-started/features/overview/" target="_blank" rel="noopener noreferrer">vista general de funcions</a> detalla les diferències entre V1 i V2. Les lectures depenen del sensor i de les condicions de la prova; el registre no calibra els instruments ni valida per si mateix una hipòtesi.</p>
 </section></div>

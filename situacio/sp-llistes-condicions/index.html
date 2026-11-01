@@ -63,14 +63,12 @@
 <aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>L’escola prepara una jornada de portes obertes i necessita assajar, només en maqueta, com donar indicacions a visitants, ordenar targetes de ruta i avisar quan una seqüència no coincideix amb el pla. Els equips programaran llistes de lectures de color, compararan dues seqüències posició per posició, faran que una base seguisca una línia i cree blocs propis per reutilitzar procediments. Al mini-repte final construiran un senyalador de taula que reacciona a un moviment de maqueta i a una targeta de color acordada.</p></div></aside>
 <p>La situació adapta les sis lliçons de la unitat 7 <em>Arrays, Boolean Expressions, and Conditionals</em> de <em>Foundations of Physical Computing</em>. Les targetes i rutes representen informació inventada: cap muntatge identifica persones, controla portes o protegeix cap espai.</p>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-continguts">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Crear i llegir una <strong>llista</strong> com una seqüència ordenada, distingint-ne els elements i les posicions; comprendre que l’ordre i la repetició tenen significat.</li><li>Usar sensors per a afegir valors a una llista, interpretar les lectures que genera el sensor de color i verificar-les amb una mostra de referència, sense donar per fet que qualsevol paper es detecta igual.</li><li>Comparar dues llistes element a element, detectar la primera diferència, i emprar condicions amb <code>i</code>, <code>o</code>, <code>no</code>, igualtat i desigualtat.</li><li>Construir una condició composta a partir de predicats simples; predir-ne el resultat amb una taula de casos abans d’executar-la.</li><li>Descompondre el programa en subprocediments reutilitzables (“els meus blocs”), documentar-ne la funció i depurar per components.</li><li>Modelar el seguiment d’una línia amb sensor de color, ajustar-lo mitjançant proves i comunicar els límits del prototip.</li><li>Relacionar el disseny de serveis escolars amb professions de turisme, acollida i administració pública.</li></ul>
 <h3 class="detail-subsection-title" id="model-de-raonament">🧩 Model de raonament</h3>
 <p>Abans de programar, representeu verbalment les condicions i després comproveu-les amb casos. Per a una estació de maqueta, <code>prop_i_color_correcte</code> només és certa si les dues proves són certes; si falta qualsevol lectura, el senyal no s’activa. Una regla inclusiva de ruta pot ser <code>color_blau_o_color_vermell</code>. Una taula de veritat amb totes les combinacions impedeix confiar només en el cas feliç i fa visible què significa cada operador. Per a llistes, escriviu les posicions inicials i compareu els elements en el mateix ordre.</p>
 <p>Aquesta notació és suport conceptual: els blocs exactes, la gestió d’índexs i els valors disponibles poden variar segons la versió de l’app.</p>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="preparacio-del-repte">🧰 Materials i preparació</h2>
 <p>Abans de començar, munteu una base mòbil estable amb el sensor de color orientat cap avall i comproveu que els ports coincideixen amb el programa. Prepareu una pista curta sobre cartolina mate, amb trams blancs i negres i una zona d’aturada en un color que el sensor puga llegir consistentment; afegiu al costat una tira de colors que servisca de control. Feu una prova amb la llum real de l’aula, la distància al paper i el llindar de detecció.</p>
 <p>Marqueu una àrea de circulació lliure i limiteu la velocitat. Si no hi ha sensor o la lectura no és estable, l’alumnat pot introduir les lectures en una taula manual i provar la mateixa lògica sense robot; anoteu que és simulació.</p>
@@ -79,7 +77,6 @@
 <p>Set SPIKE Prime 45678, hub carregat, base mòbil amb sensor de color i, per al mini-repte, sensor de distància; dispositiu amb app SPIKE, cartolina clara/mate, cinta opaca per a línies, targetes de color de mostra, tires de seqüències, peces grans de classificació, obstacles tous, paper i quadern. No es requereixen els models oficials Game Master o Quality Check Robot. Prepareu targetes accessibles amb paraules/símbols a més del color, i una variant manual completa quan la lectura del sensor no siga fiable.</p>
 <p>Reduïu velocitat, manteniu la base dins de la pista i atureu el programa abans de reposicionar-la.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-d-aprenentatge-sis-llicons">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -207,19 +204,16 @@ print(lectures)</code></pre></figure>
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="avaluacio-i-evidencies">🧪 Evidències i avaluació</h2>
 <p>Guardeu llistes d’exemple, pseudocodi llegit per un altre equip, registres de sensor, comparador provat amb coincidència/diferència/desigualtat de longitud, taules de veritat, programa segmentat en blocs propis, registre d’iteracions del seguidor de línia i matriu de proves del mini-repte. Useu una escala descriptiva de quatre nivells per a: (1) estructura i ordre de les llistes; (2) correcció de condicions i operadors; (3) proves que inclouen casos límit i depuració documentada; (4) reutilització clara de blocs; (5) comunicació de límits i col·laboració.</p>
 <p>No puntueu només que el robot “funcione”: l’alumnat pot demostrar comprensió amb simulació en paper o explicació traçada quan hi ha limitacions de maquinari. Coavaluació: identifica una prova que falta i proposa com afegir-la.</p>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-privacitat-i-cura">♿ Participació, accessibilitat i seguretat</h2>
 <p>Permeteu treballar amb seqüències tàctils, targetes etiquetades i pseudocodi en lloc de discriminar colors visualment. Cap alumne ha d’actuar com a “visitant” sota una falsa alarma, compartir interessos professionals personals ni descriure situacions de seguretat de sa casa. Totes les dades són inventades i referides a targetes o objectes de maqueta. Eviteu tons d’alarma intensos; oferiu senyal visual, patró suau o text equivalent.</p>
 <p>Distribuïu els rols i assegureu que tothom pot contribuir a una part tècnica o de disseny sense haver de conduir el robot.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
-<p>Adapta les sis lliçons de la unitat 7 <em>Arrays, Boolean Expressions, and Conditionals</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb" target="_blank" rel="noopener noreferrer">*Foundations of Physical Computing*</a>: <em>Intro to Arrays (Lists) &amp; Compound Conditionals</em>, <em>Comparing Arrays (Lists)</em>, <em>Conditionals and Simplifying Code</em>, <em>Conditionals and Boolean Expressions</em>, <em>Mini-Challenge: Security Alarm Using Operators</em> i <em>Connecting to Careers: Hospitality &amp; Tourism and Government &amp; Public Administration</em>.</p>
+<p>Adapta les sis lliçons de la unitat 7 <em>Arrays, Boolean Expressions, and Conditionals</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb" target="_blank" rel="noopener noreferrer"><em>Foundations of Physical Computing</em></a>: <em>Intro to Arrays (Lists) &amp; Compound Conditionals</em>, <em>Comparing Arrays (Lists)</em>, <em>Conditionals and Simplifying Code</em>, <em>Conditionals and Boolean Expressions</em>, <em>Mini-Challenge: Security Alarm Using Operators</em> i <em>Connecting to Careers: Hospitality &amp; Tourism and Government &amp; Public Administration</em>.</p>
 <p>Manté la creació i lectura de llistes amb sensor, la seqüència aleatòria/reposició com a idea de repte, la comparació de seqüències, el seguiment de línia i els blocs propis, la lògica composta, la prova iterativa d’un dispositiu i la recerca professional; canvia els jocs, objectes i contextos per recursos originals d’una jornada escolar. El prototip d’indicador és expressament no segur i no es fa servir per protegir persones o espais.</p>
 </section></div>
       </div>

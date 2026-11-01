@@ -16,6 +16,7 @@ const http = require('node:http');
 const fs = require('node:fs');
 const path = require('node:path');
 const { execFile } = require('node:child_process');
+const { setCachedMakeCodeSVG, setCachedMakeCodeByHash } = require('./lib/makecode-cache');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const BUILD_SCRIPT = path.join(__dirname, 'build.js');
@@ -151,8 +152,10 @@ function setupWatchers() {
   const changedFiles = new Set();
 
   function triggerChange(relPath) {
-    // Evitem reaccionar si s'edita el propi dev.js
+    // Evitem reaccionar si s'edita el propi dev.js, la memòria cau o si el build està escrivint SVGs a _assets/blocks
     if (relPath === '_scripts/dev.js') return;
+    if (relPath.startsWith('_cache' + path.sep)) return;
+    if (isBuilding && relPath.startsWith(path.join('_assets', 'blocks') + path.sep)) return;
 
     changedFiles.add(relPath);
     if (
@@ -195,7 +198,7 @@ function setupWatchers() {
     }, 80);
   }
 
-  for (const folder of ['_content', '_templates', '_scripts', '_css', '_js', '_assets']) {
+  for (const folder of ['_content', '_templates', '_scripts', '_css', '_js', '_assets', 'test-blocks']) {
     watchTree(path.join(ROOT_DIR, folder), triggerChange);
   }
 }
@@ -216,6 +219,36 @@ function createServer() {
       res.write(': connected\n\n');
       clients.add(res);
       req.on('close', () => clients.delete(res));
+      return;
+    }
+
+    // Endpoint API per actualitzar la memòria cau de blocs MakeCode
+    if (pathname === '/__api/cache-makecode' && req.method === 'POST') {
+      let body = '';
+      req.on('data', chunk => { body += chunk; });
+      req.on('end', () => {
+        try {
+          const data = JSON.parse(body);
+          let hash = data.hash;
+          if (data.code && data.svg) {
+            hash = setCachedMakeCodeSVG(data.code, data.svg);
+          } else if (data.hash && data.svg) {
+            hash = setCachedMakeCodeByHash(data.hash, data.svg);
+          }
+          console.log(`[makecode-cache] Desa a memòria cau: ${hash}.svg`);
+          res.writeHead(200, {
+            'Content-Type': 'application/json; charset=utf-8',
+            'Access-Control-Allow-Origin': '*'
+          });
+          res.end(JSON.stringify({ ok: true, hash }));
+        } catch (err) {
+          res.writeHead(400, {
+            'Content-Type': 'application/json; charset=utf-8',
+            'Access-Control-Allow-Origin': '*'
+          });
+          res.end(JSON.stringify({ ok: false, error: err.message }));
+        }
+      });
       return;
     }
 

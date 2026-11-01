@@ -22,7 +22,7 @@ El lloc web manté la definició editorial íntegrament en fitxers **Markdown** 
   1. Executa `node _scripts/dev.js` per iniciar el servidor local (`http://localhost:8000`) amb **recompilació automàtica** i **Live Reload** al navegador.
   2. Crea o edita un fitxer Markdown a `_content/` o qualsevol plantilla a `_templates/`, `_css/` o `_js/`: el servidor recompilarà i actualitzarà la pàgina oberta al navegador automàticament.
   3. Per compilar manualment sense servidor, executa `node _scripts/build.js`.
-  4. Valida el lloc amb `python3 _scripts/check-static-site.py` i `node _scripts/test-markdown-renderer.js`.
+  4. Valida tot el lloc amb `node _scripts/test.js`.
 
 ---
 
@@ -67,17 +67,29 @@ robotica200/
 │   ├── layout/                          # Capa 1: Document, SiteHeader, SiteFooter, NavBack, utils
 │   ├── components/                      # Capa 2: SectionHero, LearningWizard, Notes, CodePanel, Cards
 │   └── pages/                           # Capa 3: Plantilles de pàgines de catàleg i detall
+├── _cache/
+│   └── makecode/                        # Memòria cau en fitxers (<hash>.svg) per a blocs MakeCode
 ├── _css/
 │   └── styles.css                       # Full d'estils unificat (Sora + Plus Jakarta Sans)
 ├── _js/
 │   └── ui.js                            # Controlador lleuger Vanilla JS (wizards, filtres, animació)
 ├── _scripts/
-│   ├── build.js                         # Generador estàtic principal (Node.js, 0 dependències)
-│   ├── dev.js                           # Servidor de desenvolupament amb watch + Live Reload SSE
-│   ├── lib/markdown.js                  # Compilador Markdown → HTML de build-time
-│   ├── check-static-site.py             # Validació d'enllaços, imatges i cobertura estàtica
-│   ├── test-markdown-renderer.js        # Suite de tests del compilador i estructura editorial
-│   └── test-tutorial-format.js          # Validació de format canònic dels 36 tutorials
+│   ├── build.js                         # CLI: Generador estàtic principal (Markdown → HTML + Blocs SVG)
+│   ├── dev.js                           # CLI: Servidor de desenvolupament amb watch + Live Reload SSE
+│   ├── test.js                          # CLI: Executor unificat de totes les proves i validacions
+│   ├── lib/
+│   │   ├── markdown.js                  # Fase 1: Front-matter YAML + markdown-it (HTML estàndard)
+│   │   ├── semantic-html.js             # Fase 2: Transformador semàntic sobre el DOM HTML
+│   │   ├── html-dom.js                  # Parser i serialitzador DOM lleuger
+│   │   ├── blocks.js                    # Renderitzador SVG de blocs (mBlock 5 / SPIKE App / ScratchBlocks)
+│   │   └── makecode-cache.js            # Gestor de memòria cau en fitxers per a blocs MakeCode
+│   ├── vendor/
+│   │   ├── markdown-it.min.js           # Motor Markdown estàndard (markdown-it v14.3.3)
+│   │   └── scratchblocks.js             # Motor gràfic de blocs (scratchblocks v3.6.4)
+│   └── tests/
+│       ├── check-static-site.py         # Validació d'enllaços, imatges i cobertura estàtica
+│       ├── test-markdown-renderer.js    # Suite de tests del pipeline Markdown → HTML semàntic
+│       └── test-tutorial-format.js      # Validació de format canònic dels 36 tutorials
 ├── docs/
 │   └── ADAPTACIO-SITUACIONS.md          # Registre de fonts i cobertura d'adaptacions
 └── _assets/

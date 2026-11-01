@@ -4,9 +4,9 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const renderer = require("./lib/markdown.js");
+const renderer = require("../lib/markdown.js");
 
-const root = path.resolve(__dirname, "..");
+const root = path.resolve(__dirname, "../..");
 const pilotPath = path.join(root, "_content/situacions/sp-llistes-condicions.md");
 const pilot = renderer.parse(fs.readFileSync(pilotPath, "utf8"), "https://example.test/_content/situacions/sp-llistes-condicions.md");
 assert.equal(pilot.data.title, "Lògica per a una escola oberta");
@@ -1373,9 +1373,64 @@ for (const image of ["sa-cs-extracurricular-marjal-v1.png", "sa-cs-extracurricul
 assert.equal(extracurricularParsed.data.official_source, "https://matatalab.com/zh-hans/node/67", "la fitxa apunta al resum oficial del currículum Extracurricular");
 
 const unsafe = renderer.parse('## Prova\n\n<script>alert(1)</script>\n\n[x](javascript:alert(1))', "https://example.test/a.md");
-assert.doesNotMatch(unsafe.html, /<script>/, "el Markdown no interpreta HTML cru");
+assert.doesNotMatch(unsafe.html, /<script>/, "el pipeline neutralitza etiquetes <script>");
 assert.doesNotMatch(unsafe.html, /href="javascript:/i, "els enllaços amb esquemes no permesos es rebutgen");
-assert.match(unsafe.html, /&lt;script&gt;/, "el contingut HTML cru s'escapa com a text");
+assert.match(unsafe.html, /&lt;script&gt;/, "les etiquetes <script> s'escapen com a text");
+
+const htmlAndBlocksSample = renderer.parse(`---
+title: Prova HTML i Blocs
+---
+## Seqüència didàctica
+
+<div class="custom-html-banner">Contingut <strong>HTML</strong> directe</div>
+
+### Sessió 1 · Blocs visuals i HTML
+
+#### Fase 1 · Activem i prediem
+
+Premeu <kbd>Botó A</kbd> per començar.
+
+<details class="hint-box"><summary>Pista docent</summary><p>Text intern</p></details>
+
+\`\`\`makecode
+basic.forever(function () {
+    basic.showIcon(IconNames.Heart)
+})
+\`\`\`
+
+\`\`\`mblock
+quan s'iniciï Codey
+mostra la imatge [cor v]
+\`\`\`
+
+\`\`\`spikeapp
+quan comenci el programa
+mou [endavant v] durant (20) cm
+atura-ho tot
+\`\`\`
+`, "https://example.test/_content/situacions/html-blocks.md");
+
+assert.equal(htmlAndBlocksSample.steps.length, 1, "la fase 2 detecta learning-step a partir de l'HTML de markdown-it");
+assert.match(htmlAndBlocksSample.html, /<div class="custom-html-banner">Contingut <strong>HTML<\/strong> directe<\/div>/, "el pipeline conserva blocs HTML escrits al fitxer Markdown");
+assert.match(htmlAndBlocksSample.html, /<kbd>Botó A<\/kbd>/, "el pipeline conserva etiquetes HTML inline");
+assert.match(htmlAndBlocksSample.html, /<details class="hint-box"><summary>Pista docent<\/summary><p>Text intern<\/p><\/details>/, "el pipeline conserva elements HTML interactius com <details> dins dels passos");
+assert.match(htmlAndBlocksSample.html, /data-block-engine="makecode"[\s\S]*?data-block-hash="[0-9a-f]{16}"[\s\S]*?<svg\b/, "els blocs makecode es compilen a SVG al servidor i s'associen al seu hash de memòria cau");
+assert.match(htmlAndBlocksSample.html, /data-block-engine="mblock"[\s\S]*?<svg\b/, "els blocs mblock es compilen a SVG visual al build-step");
+assert.match(htmlAndBlocksSample.html, /data-block-engine="spikeapp"[\s\S]*?fill="#fddc3e"/, "els blocs spikeapp es compilen a SVG visual amb la paleta oficial LEGO SPIKE");
+
+const makecodeCache = require("../lib/makecode-cache");
+const testCode = 'basic.showString("Test")';
+const testHash = makecodeCache.getMakeCodeHash(testCode);
+assert.equal(testHash.length, 16, "el hash del codi MakeCode té 16 caràcters hex");
+const testResult = makecodeCache.renderOrGetMakeCodeSVG(testCode, {
+  fallbackRenderer: () => '<svg id="test-cache"><text>Test</text></svg>'
+});
+assert.equal(testResult.hash, testHash, "renderOrGetMakeCodeSVG retorna el hash correcte");
+assert.equal(makecodeCache.hasCachedMakeCode(testCode), true, "hasCachedMakeCode detecta el fitxer desat a _cache/makecode/");
+assert.equal(makecodeCache.getCachedMakeCodeSVG(testCode), '<svg id="test-cache"><text>Test</text></svg>', "getCachedMakeCodeSVG recupera el contingut del fitxer en disc");
+const secondResult = makecodeCache.renderOrGetMakeCodeSVG(testCode);
+assert.equal(secondResult.fromCache, true, "la segona crida és un cache hit directe des de disc");
+
 
 
 const taleMissions = fs.readFileSync(path.join(root, "_content/situacions/tb-missions-comunitat.md"), "utf8");

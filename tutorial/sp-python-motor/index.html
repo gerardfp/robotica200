@@ -59,16 +59,13 @@
 <p>En acabar, podreu:</p>
 <ul><li>obrir un projecte de Python a SPIKE App i connectar el Hub Prime;</li><li>associar el motor físic al port declarat al codi;</li><li>interpretar <code>async</code>, <code>await</code> i la crida <code>runloop.run(...)</code> en un exemple curt;</li><li>predir què canvia quan modifiqueu els graus o la velocitat;</li><li>llegir un error de sintaxi o de connexió i corregir-lo amb una prova controlada.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Editor de Python de SPIKE App, basat en MicroPython, a més dels blocs d’icones i de paraules.</li><li>Control del motor angular connectat a un port del Hub mitjançant <code>motor.run_for_degrees</code>.</li><li>Execució d’una funció asíncrona amb <code>runloop.run</code> i <code>await</code>.</li><li>Connexió amb el Hub Prime i observació de l’execució o dels missatges d’error de l’app.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
 <ul><li>Hub gran LEGO Education SPIKE Prime i SPIKE App en ordinador o tauleta compatible.</li><li>Un motor angular connectat al port A; si useu un altre port, canvieu també la constant al codi.</li><li>Cable USB o Bluetooth BLE i bateria carregada.</li><li>Base de muntatge estable per subjectar el motor o un braç lleuger que puga girar sense atrapar dits.</li><li>Targeta de paper amb les equivalències «port», «angle en graus» i «velocitat».</li></ul>
 <p>Obriu un projecte de Python a SPIKE App i connecteu el Hub. Si la interfície no ofereix l’editor Python en el dispositiu o la versió instal·lada, feu el mateix repte amb blocs de paraules i anoteu aquesta diferència; no instal·leu programari alié al flux oficial del centre. Manteniu lliure la zona de gir del motor i no subjecteu l’eix amb els dits mentre s’executa.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -115,7 +112,6 @@ runloop.run(main())</code></pre></figure>
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
 <p>Feu tres intents: 360° a velocitat 400, 180° a velocitat 400 i 360° a velocitat 200. Registreu predicció, valor modificat, moviment observat i qualsevol missatge de l’app. Per depurar, comproveu en aquest ordre: motor al port correcte, Hub connectat, <code>import motor</code>, <code>port.A</code> escrit igual que al programa, indentació del cos de <code>main</code>, i crida final a <code>runloop.run(main())</code>. Corregiu una sola causa cada vegada.</p>
 <h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
@@ -123,11 +119,9 @@ runloop.run(main())</code></pre></figure>
 <h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
 <ul><li>Conserveu el programa final, les tres prediccions i observacions, la correspondència entre port del codi i port físic, i una explicació breu d’un error corregit. Si feu captures, retalleu noms d’usuari i qualsevol dada personal; una transcripció del programa i la taula de proves són suficients.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Oferiu el programa imprés amb indentació marcada i el mateix moviment representat amb blocs. Es poden assignar rols de lectura de codi, comprovació del port, predicció i registre sense exigir que tothom escriga al teclat. Subjecteu el muntatge, treballeu a baixa velocitat i manteniu mans, cabells i roba fora de l’eix i de les peces mòbils. Atureu l’execució abans de modificar el programa o desconnectar el cable.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
 <p>La <a href="https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/" target="_blank" rel="noopener noreferrer">guia tècnica i FAQ oficial de SPIKE Prime</a> confirma sis ports al Hub Prime i que SPIKE App inclou blocs d’icones, blocs de paraules i editor de Python. La lliçó oficial <a href="https://education.lego.com/en-us/lessons/get-moving-with-motors/" target="_blank" rel="noopener noreferrer">Get Moving with Motors</a> treballa motors amb Python, i l’exemple de <a href="https://education.lego.com/en-us/lessons/spike-python-u5-playing-games-with-simple-conditions/spike-python-u5l6-score-/" target="_blank" rel="noopener noreferrer">Score!</a> documenta <code>motor.run_for_degrees</code>. La sintaxi i les funcions poden variar entre versions: seguiu les indicacions de l’editor instal·lat i no useu biblioteques externes en aquesta activitat.</p>
 </section></div>

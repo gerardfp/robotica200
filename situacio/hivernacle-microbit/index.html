@@ -64,17 +64,14 @@
 <p>Les proves es fan amb maquetes i valors de laboratori: cap placa vigila un bosc, pren imatges, controla una bomba ni decideix el reg d’una planta real.</p>
 <p>La fundació presenta les activitats per a 11–14 i 14–16 anys. Aquesta versió les escala a tercer cicle de primària: simplifica la instrumentació, modela els sensors externs i posa l’accent en el disseny, les dades, la ràdio i els límits. No es presenta com una equivalència d’edat ni com un sistema IoT desplegable.</p>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Convertir una necessitat de protecció o cultiu en criteris observables per a un prototip.</li><li>Programar emissor i receptor de ràdio i comprovar recepció amb missatges ficticis i intents repetits.</li><li>Comparar dues entrades independents —llum i humitat—, una regla per a cada eixida i una aturada manual del prototip.</li><li>Interpretar lectures simulades o d’un sensor addicional només després de verificar el maquinari i el programa.</li><li>Explicar que el prototip no vigila fauna, no controla un cultiu real i no ha d’exposar la placa a l’aigua o al sòl.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="preparacio-materials-i-coneixements">🧰 Materials i preparació</h2>
 <p>Necessiteu una o preferiblement dues plaques micro:bit, MakeCode, ordinador o tauleta, cable USB, targetes de condició/missatge, full de dades i materials secs per a construir una maqueta. La ràdio i els botons són funcions integrades; en V1 i V2, la matriu LED també pot llegir el nivell de llum ambiental, encara que aquesta lectura depén de l’entorn i la mateixa matriu s’utilitza com a eixida. La micro:bit no té sensor d’humitat del sòl, relé ni connexió a internet integrats;</p>
 <p>per a fer la lectura amb maquinari real cal un sensor analògic i un circuit de baixa tensió compatible que el centre verifique. Si no es disposa d’aquests components, els botons A/B seleccionen valors simulats que s’identifiquen clarament com a dades de prova. No connecteu probes descobertes a terra humida ni cap càrrega a tensió de xarxa.</p>
 <p>Abans de la sessió, proveu que les dues plaques comparteixen el mateix grup de ràdio i que poden enviar/rebre missatges; prepareu un receptor de reserva si la connexió falla. Definiu què compta com a “sec” només per a la simulació de classe. No traduïu el valor de maqueta a un llindar de reg real: els sensors, el sòl, l’espècie i l’entorn canvien la lectura.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-quatre-sessions-de-50-minuts">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -155,7 +152,7 @@ quan es premen A+B:
     llum = ON <span class="syntax-keyword">si</span> lectura_llum &lt; llindar_llum_de_prova, <span class="syntax-keyword">si</span> no OFF
     reg = ON <span class="syntax-keyword">si</span> lectura_humitat &lt; llindar_humitat_de_prova, <span class="syntax-keyword">si</span> no OFF
     envia «HORT-<span class="syntax-number">01</span>:REVISA» <span class="syntax-keyword">si</span> cal revisió</code></pre></figure>
-<p>_Pseudocodi propi per a la maqueta: «llum» i «reg» són eixides representades, no relés reals. En MakeCode, l’estat d’aturada es reinicia en iniciar el programa i A+B el manté actiu fins que es reinicia; la placa permet detectar la pulsació conjunta._</p>
+<p><em>Pseudocodi propi per a la maqueta: «llum» i «reg» són eixides representades, no relés reals. En MakeCode, l’estat d’aturada es reinicia en iniciar el programa i A+B el manté actiu fins que es reinicia; la placa permet detectar la pulsació conjunta.</em></p>
 </section>
 <section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
 <p>Executeu una matriu de casos combinats: llum baixa/alta, humitat baixa/alta, una lectura exactament al llindar, grup de ràdio incorrecte, absència de missatge i aturada A+B. Comproveu que cada relé simulat respon només a la seua entrada i que, després de l’aturada, les dues eixides queden apagades. Compareu els criteris amb els resultats i registreu qualsevol fals positiu.</p>
@@ -168,20 +165,17 @@ quan es premen A+B:
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="criteris-d-exit-i-avaluacio">🧪 Evidències i avaluació</h2>
 <p>La proposta és satisfactòria quan l’equip (1) diferencia ràdio integrada, sensor extern, relé i passarel·la; (2) envia i rep un missatge que inclou un identificador fictici no geolocalitzable; (3) separa les lectures de llum i humitat i prova per a cadascuna els valors inferior, igual i superior al llindar; (4) mostra dues eixides simulades independents; (5) comprova que l’aturada A+B deixa totes dues eixides en «OFF»; (6) afegeix i prova una millora; i (7) explica què no permet concloure el prototip.</p>
 <p>Recolliu diagrama IPO/xarxa, fragments de codi o pseudocodi, taula dels intents, matriu d’entrada/eixida, proposta d’ampliació i reflexió. Valoreu exactitud del registre, depuració basada en evidència i justificació; no es puntua que el senyal arribe lluny ni que la maqueta regue.</p>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Oferiu missatges amb icones i paraules, opcions de resposta no oral, valors en targetes de mida gran i rols alterns de programació, observació, registre i explicació. Les transmissions són codis de laboratori, sense noms, ubicacions detallades ni dades personals. Manteniu plaques i circuits secs, useu només alimentació USB/baixa tensió dins les especificacions del fabricant i no connecteu bombes, relés de xarxa o vàlvules. Cap prototip s’instal·la en arbres, boscos, hivernacles ni espais públics.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="reptes-oficials-adaptats">🔗 Referents i adaptació</h2>
 <p><a href="https://www.microbit.org/teach/lessons/helping-plants-grow-trees/" target="_blank" rel="noopener noreferrer">Tree protector</a> proposa usar la ràdio de micro:bit per enviar alertes des d’un sensor prototip i introduir com els nodes IoT es connecten mitjançant passarel·les; el repte destaca l’ODS 15, el producte que compleix criteris i una ampliació. La guia tècnica complementària del <a href="https://microbit.org/get-started/features/overview/" target="_blank" rel="noopener noreferrer">sensor i l’acceleròmetre micro:bit</a> confirma les funcions integrades, mentre que l’etiqueta fictícia <code>HORT-01</code> substitueix les coordenades GPS del projecte font i no geolocalitza res.</p>
-<p><a href="https://microbit.org/teach/lessons/helping-plants-grow-auto-farmer/" target="_blank" rel="noopener noreferrer">Auto-farmer</a> proposa relés i sensors d’humitat casolans per detectar cultius secs, transmetre dades i estalviar aigua; la situació representa separadament llum, humitat, les dues eixides de relé i una aturada manual, sense activar actuadors. Una còpia consultable del <a href="https://www.scoilnet.ie/uploads/resources/35898/35666.pdf" target="_blank" rel="noopener noreferrer">manual Arm School Program allotjada per Scoilnet</a> detalla el llindar de llum, els dos relés i el <em>kill switch</em>; els documents/ZIP enllaçats des de les pàgines micro:bit no s’han pogut llegir directament en aquesta sessió, així que no s’atribueixen preguntes o passos no verificats.</p>
-<p>Les pàgines oficials indiquen franges d’11–14 i 14–16 anys. El pla local per a primària és una adaptació simplificada pròpia.</p>
+<p><a href="https://microbit.org/teach/lessons/helping-plants-grow-auto-farmer/" target="_blank" rel="noopener noreferrer">Auto-farmer</a> proposa relés i sensors d’humitat casolans per detectar cultius secs, transmetre dades i estalviar aigua; la situació representa separadament llum, humitat, les dues eixides de relé i una aturada manual, sense activar actuadors. Una còpia consultable del <a href="https://www.scoilnet.ie/uploads/resources/35898/35666.pdf" target="_blank" rel="noopener noreferrer">manual Arm School Program allotjada per Scoilnet</a> detalla el llindar de llum, els dos relés i el <em>kill switch</em>;</p>
+<p>els documents/ZIP enllaçats des de les pàgines micro:bit no s’han pogut llegir directament en aquesta sessió, així que no s’atribueixen preguntes o passos no verificats. Les pàgines oficials indiquen franges d’11–14 i 14–16 anys. El pla local per a primària és una adaptació simplificada pròpia.</p>
 </section></div>
       </div>
     </article>

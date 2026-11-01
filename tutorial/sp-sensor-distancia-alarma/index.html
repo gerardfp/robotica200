@@ -58,16 +58,13 @@
 <aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Construïu una base mòbil que s’acoste a un obstacle, s’ature mantenint un espai segur i emeta un senyal curt. Compareu la lectura real del sensor d’ultrasons amb la parada calculada per voltes de roda, i feu un gir controlat amb el giroscopi del Hub. La distància de sensor i l’estimació de moviment són mesures diferents.</p></div></aside>
 <ul><li>Calibrar les lectures del sensor d’ultrasons a distàncies conegudes.</li><li>Comparar una parada basada en sensor amb una distància estimada per voltes de roda.</li><li>Mesurar un gir aproximat i comunicar l’estat amb un so del Hub.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Sensor de distància ultrasònic per detectar un objecte dins del seu camp de lectura.</li><li>Giroscopi de sis eixos del Hub per mesurar orientació i completar un gir aproximat.</li><li>Altaveu integrat del Hub per emetre un to curt com a eixida.</li><li>Condicionals, aturada de motors i prova dels límits de lectura; el sensor no garanteix una parada de seguretat industrial.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
 <ul><li>Hub SPIKE Prime carregat, dos motors angulars i una base de conducció estable.</li><li>Sensor de distància Technic i cables connectats als ports identificats en el programa.</li><li>Paret de blocs o caixa de cartó estable, regle i cinta per marcar línies de prova.</li><li>Espai pla lliure de persones i objectes fràgils.</li></ul>
 <p>El sensor oficial usa ultrasons i especifica una lectura de 50–2000 mm amb tolerància de ±20 mm (50–300 mm en lectura ràpida, ±15 mm). L’app pot no exposar totes les funcions descrites a la fitxa tècnica. Verifiqueu quin mode i unitat mostra la versió de SPIKE App disponible.</p>
 </section>
-
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
       <strong>Seqüència de treball</strong>
@@ -100,7 +97,6 @@
 </section>
 </div></section>
 </section>
-
 <section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
 <p>Prepareu una matriu amb distància inicial, distància llegida, llindar, espai final, angle final i senyal observat. Feu tres intents per a cada distància inicial; compareu la lectura d’ultrasons amb una prova per voltes de roda, mantenint velocitat i muntatge tant constants com siga possible. Proveu una caixa ampla i una superfície inclinada només amb el robot quiet per observar com canvia la lectura. Registreu errors i atureu la prova si la lectura no és estable.</p>
 <h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
@@ -108,11 +104,9 @@
 <h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
 <ul><li>Guardeu el programa, l’esquema dels ports, la taula de lectures repetides i els resultats de distància i angle. En la conclusió, separeu la mesura ultrasònica, l’estimació basada en les rodes i l’aturada per contacte; expliqueu toleràncies i condicions de prova.</li></ul>
 </section>
-
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
 <p>Useu velocitat baixa, un obstacle tou i una zona de prova delimitada. Manteniu el botó d’aturada accessible i no confieu en el sensor com a sistema de protecció. Oferiu taula de dades o simulador si una persona prefereix no conduir el robot; el senyal LED ha d’oferir la mateixa informació que el so.</p>
 </section>
-
 <section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
 <p>La fitxa tècnica LEGO del <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt64c2b9534cf10f68/5f8801b8bc43790f5c4389ea/techspecs_technicdistancesensor.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">sensor de distància Technic</a> descriu la tecnologia ultrasònica i els rangs; les <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltf512a371e82f6420/5f8801baf4f4cf0fa39d2feb/techspecs_techniclargehub.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">especificacions del Hub Prime</a> documenten altaveu i sensor de sis eixos. La lliçó oficial <a href="https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/" target="_blank" rel="noopener noreferrer">Going the Distance</a> contrasta càlcul per rodes amb aturada per contacte. Les lectures depenen de la superfície i de la versió de l’app; no és un sistema de seguretat certificat.</p>
 </section></div>

@@ -19,16 +19,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Compilar pàgines HTML des de Markdown
         run: node _scripts/build.js
-      - name: Validar enllaços i situacions
-        run: python3 _scripts/check-static-site.py
       - name: Comprovar JavaScript
         run: |
           node --check _js/ui.js
           node --check _scripts/build.js
-      - name: Validar renderitzador Markdown i format de tutorials
-        run: |
-          node _scripts/test-markdown-renderer.js
-          node _scripts/test-tutorial-format.js
+          node --check _scripts/dev.js
+          node --check _scripts/test.js
+      - name: Executar suite de validació (HTML estàtic, Markdown semàntic i tutorials)
+        run: node _scripts/test.js
       - name: Preparar web estàtica descarregable
         uses: actions/upload-artifact@v4
         with:
