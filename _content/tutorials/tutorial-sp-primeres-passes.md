@@ -39,19 +39,9 @@ Comproveu la càrrega de la bateria. Manteniu premut el botó central per encend
 
 Creeu un projecte amb blocs de paraules o d’icones. Quan comence el programa, mostreu una icona a la matriu 5 × 5 i esborreu-la. Comproveu que es tracta d’una matriu de llum del Hub i no d’una pantalla de píxels a color.
 
-```makecode   
-basic.forever(function () {
-    basic.showIcon(IconNames.Heart)
-    basic.pause(500)
-    basic.clearScreen()
-    basic.pause(500)
-})
-
-input.onButtonPressed(Button.A, function () {
-    basic.showString("Hola!")
-    basic.showIcon(IconNames.Happy)
-})
-
+```spikeapp   
+brick.showImage(Images.HAPPY)
+brick.clearScreen()   
 ```
 
 ### 3. Llegiu el sensor d’orientació

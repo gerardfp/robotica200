@@ -9,6 +9,8 @@
 
 - [ ] Les pàgines guia, què fem en elles? Què fem en general en _content/pages?
 
+- [ ] Les pàgines se descopronen quan se mostra un svg de blocks
+
 - [ ] colors:
     - coding-express: roig
     - tale-bot: taronja

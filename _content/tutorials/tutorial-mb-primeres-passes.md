@@ -38,6 +38,13 @@ Entra a makecode.microbit.org i crea un projecte nou anomenat 'El meu dau'.
 
 A la categoria 'Entrada', agafa 'si es sacseja' i a dins posa 'mostra el número [tria a l'atzar de l'1 al 6]'.
 
+
+```makecode
+input.onGesture(Gesture.Shake, function () {
+    basic.showNumber(randint(1, 6))
+})
+```
+
 ### 3. Descarregar a la placa
 
 Connecta la micro:bit per USB i prem el botó 'Descarregar'. En pocs segons el dau funcionarà de manera autònoma.
