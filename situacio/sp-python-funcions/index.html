@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Funcions que fan equip | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Sis lliçons de Python amb SPIKE Prime per descompondre programes en funcions, passar paràmetres i dissenyar un prototip de triatge escolar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-python-funcions" class="btn-back" data-preserve-filters="sp-python-funcions">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Matemàtiques i Programació</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 6 lliçons · 6–8 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Funcions que fan equip</h1>
+        <span class="tag-badge" data-theme>🏷️ Python: funcions i paràmetres</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-funcions-reciclatge.webp" alt="Robot LEGO SPIKE Prime real amb pinça mecànica classificant fitxes de materials de colors sobre una taula de prova." width="600" height="448" loading="lazy"><figcaption>Una funció concentra una acció; els paràmetres permeten reutilitzar-la amb valors diferents.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-sentit">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>La comunitat educativa vol preparar una jornada de reutilització de materials i necessita ordenar fitxes netes de cartó, paper i envasos simulats en una maqueta de taula. Un equip construeix un mecanisme simple amb peces SPIKE Prime i escriu en Python un programa que classifica mostres de colors acordats. El robot no identifica materials reals ni decideix què es recicla: en aquesta maqueta, el color és una etiqueta creada per la classe, i les persones comproven i validen la classificació.</p></div></aside>
+<p>La pregunta d’enginyeria és com separar un procediment llarg en accions amb nom, com repetir-lo amb dades diferents i com demostrar que la reutilització manté el comportament esperat.</p>
+<p>La seqüència adapta les sis lliçons de la unitat 7 <em>Functions</em> de LEGO Education <em>Introduction to Python Programming · Course 2</em>. Progressa des de la descomposició d’una acció, passa per diverses funcions i funcions amb paràmetres, i arriba a un prototip ambiental investigat, provat i revisat amb feedback. La programació és Python textual: el pseudocodi ajuda a planificar, però no substitueix les funcions i crides de Python.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-llenguatge">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Descompondre una tasca en subproblemes i donar noms clars a accions que es repetiran.</li><li>Definir una funció amb <code>def</code>, indentació i cos; explicar la diferència entre definir-la i cridar-la.</li><li>Crear i cridar diverses funcions en un ordre deliberat, evitant duplicar instruccions.</li><li>Usar paràmetres com a noms d’entrada dins d’una funció i arguments com a valors concrets en la crida; anticipar errors de quantitat o ordre.</li><li>Separar lectura del sensor, decisió de classificació i actuació mecànica perquè es puguen provar independentment.</li><li>Provar casos coneguts i no assignats, registrar resultats, depurar una causa cada vegada i justificar redissenys.</li><li>Comunicar límits del prototip: una lectura de color no és identificació material ni una recomanació real de reciclatge.</li></ul>
+<p><strong>Funció:</strong> bloc de codi amb nom que es pot executar quan es crida. <strong>Paràmetre:</strong> nom declarat entre els parèntesis de la definició; rep una dada quan la funció és cridada. <strong>Argument:</strong> valor concret que passem en una crida. <strong>Descomposició:</strong> dividir una tasca complexa en parts que es poden entendre, construir i provar.</p><aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Cas de prova</h4><p>entrada, comportament esperat i resultat observat.</p></div></aside>
+<figure class="code-panel"><figcaption>Exemple de programació · python</figcaption><pre class="code-block" tabindex="0"><code class="language-python"><span class="syntax-keyword">def</span> mostrar_estat(etiqueta, color):
+    print(etiqueta, color)
+
+mostrar_estat(<span class="syntax-string">&quot;Mostra A&quot;</span>, <span class="syntax-string">&quot;blau&quot;</span>)</code></pre></figure>
+<p>En l’exemple, <code>etiqueta</code> i <code>color</code> són paràmetres; <code>&quot;Mostra A&quot;</code> i <code>&quot;blau&quot;</code> són arguments. És Python general vàlid per entendre la idea. Les ordres SPIKE de motors, sensors i runloop s’han de consultar en la Knowledge Base de la versió de l’app instal·lada: no s’ha de copiar aquest exemple com si fóra un programa de maquinari complet.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio-docent">🧰 Materials i preparació</h2>
+<p>Un set SPIKE Prime per equip, hub carregat, dispositiu amb app SPIKE i editor Python disponible, sensor de color del set, un motor i peces Technic per a una pinça o porta de triatge senzilla, cartó per a canals i contenidors, fitxes grans de colors mats, cinta de paper, diari de disseny, cronòmetre extern opcional i ordinador/projector per mostrar fragments curts. El model pot ser fix sobre la taula: la base mòbil no és necessària per a la tasca.</p>
+<p>Eviteu instruccions de construcció privades o copiar models de marca; cada equip dissenya una solució amb peces de la seua caixa.</p>
+<p>Abans de classe, comproveu que l’editor Python detecta el hub, que el sensor i motor estan connectats als ports acordats i que es pot aturar l’execució. Les versions de l’app poden oferir API diferents. Prepareu quatre etiquetes de color provades amb la llum de l’aula, una etiqueta sense correspondència, una entrada manual alternativa per si el sensor falla i còpies desconnectades de crides correctes i incorrectes. Desactiveu motors abans de connectar o canviar cables.</p>
+<p>Poseu el mecanisme a baixa velocitat, amb topalls de recorregut i dits lluny de la pinça.</p>
+<p>Equips de 2–3 persones: programació/lectura del codi, cura del mecanisme i registre de proves. Feu rotació de rols a cada lliçó. La persona que observa té dret a demanar una pausa abans d’executar qualsevol canvi físic.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-sis-llicons">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 6 · Una tasca, moltes accions amb nom (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" aria-valuetext="Pas 1 de 6">
+        <span data-wizard-bar style="width: 16.67%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Una tasca, moltes accions amb nom (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una tasca, moltes accions amb nom (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Dues pinces, dues funcions de captura (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dues pinces, dues funcions de captura (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Una funció, entrades diferents: paràmetres (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una funció, entrades diferents: paràmetres (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Una estació de triatge automàtica en maqueta (90 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una estació de triatge automàtica en maqueta (90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Investigar una necessitat de l’entorn escolar (90 min)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Investigar una necessitat de l’entorn escolar (90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="5" aria-label="Obrir pas 6: Idees per millorar i retorn entre equips (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">6</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Idees per millorar i retorn entre equips (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="llico-1-una-tasca-moltes-accions-amb-nom-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Una tasca, moltes accions amb nom (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Activació (8 min)</h4><p>demaneu que descriguen oralment un gest repetible —per exemple, alçar un cartell i tornar-lo a la posició inicial— i marqueu on reapareixen les mateixes instruccions. Escriviu-les en pseudocodi i pregunteu què canviaria si repetírem el gest amb un altre missatge.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Model (10 min)</h4><p>compareu una seqüència amb les mateixes línies copiades tres vegades i una seqüència que defineix <code>saludar()</code> una vegada i la crida en tres punts. No executeu encara el mecanisme; feu traça en paper per comprovar definició, crida i ordre.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Repte (20 min):</strong> construir una xicoteta aleta/indicador articulat amb un motor SPIKE que faça un senyal d’inici, un senyal de “mostra preparada” i un retorn a la posició inicial. Descomponeu el comportament en <code>preparar()</code>, <code>indicar()</code> i <code>tornar()</code>; definiu-los amb <code>def</code> i crideu-los en l’ordre del pseudocodi. Consulteu la Knowledge Base per a ordres de motor compatibles. Proveu primer cada funció amb mecanisme desconnectat o sense càrrega, després amb un moviment curt i lent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Evidència i conversa (7 min):</strong> dibuixeu les crides com una línia temporal i expliqueu quina instrucció s’executa primer i per què el codi dins una definició no corre fins que la funció és cridada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-extension"><span class="markdown-note-icon" aria-hidden="true">🚀</span><div><h4>Extensió</h4><p>canvieu l’ordre de dues crides i predigueu el comportament abans de provar-lo.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-2-dues-pinces-dues-funcions-de-captura-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Dues pinces, dues funcions de captura (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Pregunta d’investigació:</strong> com pot el mateix programa controlar accessoris amb agafades diferents? Dissenyeu en esbós dues puntes intercanviables —una ampla i lleugera per a una fitxa gran i una més estreta per a una fitxa menuda— sense que cap peça puga caure de la taula. No cal fabricar ambdues si el temps o les peces no ho permeten: una pinça i una palanca de cartó poden representar la segona variant.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Descomposició (8 min):</strong> feu una seqüència com ara esperar ordre, tancar fins a límit segur, indicar captura i obrir. Marqueu quines accions són comunes i quines depenen de la forma de l’accessori.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Construcció i Python (25 min)</h4><p>creeu dues funcions amb noms que expliquen la diferència (per exemple, <code>agafar_fitxa_gran()</code> i <code>agafar_fitxa_menuda()</code>) i un programa principal que crida la funció adequada segons una etiqueta triada per l’equip. Compareu aquest disseny amb una llarga còpia de codi duplicat: compteu quines línies canvien i quines es repeteixen. Calibreu cada recorregut amb la pinça buida, sense posar dits en la zona de tancament.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Proves (7 min)</h4><p>proveu tres vegades una mateixa fitxa amb cada variant; registreu si l’agafa, si llisca, si es deforma i si la deixa al contenidor.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Reflexió:</strong> per què ajuda tindre funcions separades quan cada accessori necessita un moviment distint? En quins casos seria millor compartir una funció comuna i canviar només una dada?</p>
+</section>
+</div></section>
+<section class="learning-step" id="llico-3-una-funcio-entrades-diferents-parametres-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Una funció, entrades diferents: paràmetres (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Activació corporal (7 min)</h4><p>feu un gràfic humà de preferències amb quatre opcions neutres (per exemple, quin tipus de missatge visual es comprén millor); compteu les respostes sense guardar noms. Relacioneu categories i quantitats amb la necessitat d’enviar dades a una mateixa acció.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Modelatge (10 min)</h4><p>escriviu una funció de programari general <code>informar(etiqueta, color)</code> i crideu-la amb dos conjunts d’arguments. L’alumnat assenyala què és fix i què varia. Contrasteu-la amb una funció sense paràmetres i observeu que definir paràmetres obliga a proporcionar arguments en cridar-la.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Estació SPIKE (20 min):</strong> el sensor llig una de quatre fitxes mat provades; el programa assigna una resposta de la maqueta (posició curta/mitjana/llarga del motor i missatge de consola). Separeu la funció que informa de les dades i la part que llig el sensor: una funció d’actuació rep arguments ja decidits per la regla. Per exemple, el programa pot cridar <code>indicar(20, &quot;paper&quot;)</code> o <code>indicar(45, &quot;cartró&quot;)</code>; traduïu les posicions a l’API disponible només després de consultar-la.</p>
+<p>Incloeu un color sense assignació que no tanque la pinça i mostre “sense lectura”.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Depuració guiada (8 min)</h4><p>compareu crides amb dos arguments, un argument i arguments intercanviats. Predigueu quines fallen immediatament i quines podrien executar-se però mostrar una etiqueta incorrecta. Registreu definició, crida, error/sortida i correcció.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Eixida</h4><p>cada alumne completa “el paràmetre és…, el valor concret que he passat és…”.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-4-una-estacio-de-triatge-automatica-en-maqueta-90-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Una estació de triatge automàtica en maqueta (90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Repte i criteris (12 min):</strong> programar un prototip que reba una fitxa d’una en una i la porte al contenidor assignat pel codi de colors acordat per la classe. No es tracta d’identificar el material real. Fixeu criteris: no agafar fitxes no assignades; col·locar la fitxa dins una zona marcada; mantindre les peces senceres; respondre amb un indicador comprensible; permetre una aturada manual. Registreu les limitacions abans de construir.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Ideació i maqueta (18 min)</h4><p>esbosseu dos mecanismes possibles (braç/pinça, porta desviadora o canal accionat); compareu nombre de peces, recorregut i risc d’encallament; seleccioneu-ne un i construïu-lo amb una fitxa de prova, sense reproduir cap model oficial.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Pseudocodi (10 min):</strong> descriviu una volta: esperar activació; llegir color; seleccionar regla; cridar funció de triatge amb arguments; mostrar confirmació o “no reconegut”; esperar nova mostra.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Programa (20 min)</h4><p>organitzeu funcions per responsabilitat: per exemple, <code>llegir_mostra()</code>, <code>informar_resultat(etiqueta, posicio)</code> i una rutina d’actuació de cada mecanisme. La lectura del sensor de color, els valors previstos i les ordres del motor depenen de la versió de l’app i han de consultar-se en la Knowledge Base. Manteniu separada la regla escolar de classificació de l’acció física del robot.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Proves (20 min)</h4><p>creeu una taula amb entrada, resultat esperat, observació i decisió: cada color assignat, un color no assignat, absència de fitxa, peça girada i dos intents seguits. Feu tres assajos per color assignat; compteu encerts sobre intents, errors de lectura, encallaments i temps aproximat, sense presentar el recompte com una certificació. Canvieu només una variable cada vegada (llum, posició del sensor, llindar, geometria o argument).</p></div></aside>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Tancament (10 min)</h4><p>expliqueu un error que la funció reusable ha evitat i un límit del sensor que l’equip encara ha de comunicar a l’usuari.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-5-investigar-una-necessitat-de-l-entorn-escolar-90-min" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Investigar una necessitat de l’entorn escolar (90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Exploració (15 min)</h4><p>trieu amb el centre un flux de materials nets que existisca a l’aula o en una activitat escolar: repartir targetes, ordenar peces reutilitzables o tornar material a safates. No manipuleu residus reals ni fotografieu persones. Si no hi ha temps per a una visita, useu una planta de l’espai o un escenari inventat clarament identificat com a simulació. Escriviu qui fa la tasca, què costa o es confon i quina dada permetria prendre una decisió millor;</p></div></aside>
+<p>no convertiu una observació puntual en afirmació sobre tota l’escola.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Defineix i idea (15 min):</strong> formuleu una necessitat en una frase neutral, seleccioneu usuari i condicions d’ús, i redacteu dos criteris mesurables i dues restriccions (temps, peces, estabilitat o accessibilitat). Esbosseu individualment dues solucions abans de consensuar un prototip.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Construcció i funcions (30 min)</h4><p>munteu una ajuda de taula que classifique o indique el pas d’una fitxa simulada. Decomposeu-la en subproblemes: rebre, detectar o seleccionar, actuar, informar i reiniciar. Escriviu funcions amb noms coherents, paràmetres per a les dades variables i comentaris per explicar decisions no òbvies. Eviteu una funció monolítica que llig sensor, tria categoria, mou motor i imprimeix tot a la vegada.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Pla de prova i revisió (20 min):</strong> prepareu casos normals, frontera/no assignat i repetició; deixeu un marge físic al voltant de l’accessori i una parada manual. Executeu-los, registreu predicció/resultat i canvieu un element per iteració.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Comunicació (10 min)</h4><p>escriviu una targeta d’ús que explique entrada, resultat, què fer amb “sense lectura” i què el prototip no pot determinar. Si la necessitat s’ha identificat al centre, demaneu a una persona adulta que confirme que la descripció és respectuosa i no conté dades personals.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-6-idees-per-millorar-i-retorn-entre-equips-45-min" data-step="6" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 6</span><h3>Idees per millorar i retorn entre equips (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Preparació (8 min)</h4><p>cada equip deixa un programa curt comentat, una taula amb almenys dos casos, la targeta d’ús i una pregunta oberta. Compartiu només dades simulades i codi necessari per entendre la maqueta; no publiqueu informació del centre.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Revisió (12 min)</h4><p>un altre equip segueix pseudocodi o prova la maqueta amb el permís de l’equip autor. El retorn descriu evidència amb una pauta: “he observat…”, “esperava…”, “un cas que encara provaria és…”. No es canvia ni es reescriu el projecte d’un altre grup.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Decisió (5 min)</h4><p>l’equip autor marca quina idea adopta, quina deixa per més avant i amb quina evidència ho justifica.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Redisseny (12 min):</strong> feu una única millora: aclarir un nom, reorganitzar crides, validar un argument, afegir resposta a entrada no assignada o fer més llegible l’indicador. Repetiu el cas que va motivar-la i un cas diferent per comprovar que no s’ha trencat una resposta existent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Autoavaluació (8 min):</strong> cada persona registra una contribució pròpia, una ajuda que ha rebut, una pràctica de codi que entén millor i una pregunta que queda oberta. Escala privada d’1–3 per a ús del temps i cura del material, amb un objectiu de millora, sense comparar alumnat.</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-avaluacio-i-producte-final">🧪 Evidències i avaluació</h2>
+<p>El portafolis d’equip conté: definició de la necessitat i límits; dos esbossos i una decisió amb criteris; pseudocodi; mapa de funcions i crides; codi Python comentat; explicació de paràmetres i arguments amb un exemple propi; taula d’entrades esperades/no assignades i resultats; registre de depuració; proves repetides; feedback rebut i decisió de redisseny; i una targeta d’ús amb les limitacions del prototip.</p>
+<p>El producte final és una maqueta de triatge de fitxes netes, una demostració de menys de dos minuts i una explicació oral o escrita que distingeix dada, regla i actuació.</p>
+<p>Observeu quatre dimensions amb descriptors: <strong>estructura</strong> (identifica i crida funcions en un ordre coherent), <strong>paràmetres</strong> (diferencia definició, paràmetre i argument i comprova quantitat/ordre), <strong>validació</strong> (prova casos assignats i no assignats, registra evidència i explica un canvi), i <strong>comunicació/col·laboració</strong> (documenta el codi, respon al feedback i declara límits). En cada dimensió, useu nivells “encara necessita modelatge / ho fa amb suport / ho fa amb autonomia / ho transfereix i ho justifica”.</p>
+<p>La valoració no depén només que el robot es moga: una funció ben provada i una limitació ben comunicada també són evidència d’aprenentatge.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-seguretat-i-sostenibilitat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Permeteu pseudocodi oral, tauler de crides en paper, fragments Python amb tipografia ampliada o lectura compartida; els rols de disseny, registre, proves i programació tenen valor equivalent i roten. Les etiquetes s’identifiquen amb color i forma/textura o símbol triat per l’alumnat, sense dependre només de la visió del color. Useu peces grans, netes i lleugeres; manteniu la pinça a la taula, amb velocitat limitada, recorregut curt i aturada manual. No executeu canvis mentre hi ha mans prop del mecanisme.</p>
+<p>No introduïu residus, menjar, líquids ni objectes punxants. Recolliu i reutilitzeu les fitxes. Eviteu dades personals, etiquetes amb noms, imatges d’alumnes i afirmacions sobre pràctiques ambientals del centre que no s’hagen comprovat.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-decisions-d-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta les sis lliçons de la unitat 7 <em>Functions</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 2*</a>: <em>Turtle Trouble</em>, <em>Clean Up with Multiple Functions</em>, <em>Clean Indicator</em>, <em>Automate the Clean Up</em>, <em>Taking Care of My Environment</em> i <em>Ideas to Help with My Environment</em>. Conserva la progressió de descomposició i funcions, diverses funcions per a mecanismes diferents, paràmetres i depuració de les crides, triatge amb dades, repte de disseny ambiental en context autèntic, documentació, proves i feedback.</p>
+<p>La tortuga i la neteja de residus es transformen en una necessitat de circulació de materials nets triada localment; les regles de colors són una simulació acordada per l’aula, i no es diu que el sensor reconega materials. S’han creat relat, activitats, evidències i il·lustració propis; no es copien instruccions de construcció ni codi complet del fabricant.</p>
+<p>La guia oficial especifica lliçons de 45 minuts, amb activitats de 90 minuts per a l’automatització i el projecte ambiental, i una sessió final de feedback; aquesta proposta manté sis lliçons i distribueix la durada segons la disponibilitat del centre.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

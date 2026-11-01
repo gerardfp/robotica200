@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Un prototip per a un repte real | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Projecte final SPIKE Prime de 500 minuts: triar un problema, investigar-lo, dissenyar i programar un prototip, provar-lo i presentar evidències i límits.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-projecte-computacio-fisica" class="btn-back" data-preserve-filters="sp-projecte-computacio-fisica">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Ciències, Matemàtiques i Disseny</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 500 min · 10–12 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Un prototip per a un repte real</h1>
+        <span class="tag-badge" data-theme>🏷️ Projecte de computació física</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-projecte-final.webp" alt="Base mòbil LEGO SPIKE Prime en una maqueta comunitària amb zona de jardí, neteja simulada d’un rierol i caixes de paper." width="600" height="448" loading="lazy"><figcaption>El prototip representa una idea que s’ha d’investigar, provar i situar dins dels seus límits reals.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-proposit">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Els equips trien una necessitat documentada de l’entorn, la descomponen en parts i desenvolupen un model programat que il·lustra una possible contribució. El producte final inclou una afirmació concreta sobre el problema, fonts i persones afectades consultades amb cura, esbossos, pseudocodi, maqueta SPIKE Prime, codi documentat, proves repetides, canvis després del feedback, anàlisi de l’impacte i presentació.</p></div></aside>
+<p>Aquesta situació adapta el projecte final de 500 minuts de <em>Foundations of Physical Computing</em>, que ofereix sis àmbits: recursos naturals, transport, salut/STEM, fabricació, gestió pública/emergències i agricultura. Cada equip tria un repte delimitat dins d’un àmbit; no cal que tots els grups inventen robots mòbils ni que automatitzen una tasca.</p>
+<p>El model és una representació escolar, mai una màquina preparada per operar en ecosistemes, hospitals, trànsit, incendis o explotacions reals. Cap prototip transporta persones, intervé en fauna/flora, pren decisions mèdiques, actua en una emergència o gestiona substàncies i càrregues perilloses. El treball se centra en definir bé el problema, usar maquinari disponible, recollir evidència proporcionada i explicar què faltaria per provar una solució fora de l’aula.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="resultats-d-aprenentatge">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Investigar diverses necessitats possibles i justificar una elecció en base a fonts, viabilitat temporal, criteris i impacte social/ambiental.</li><li>Descompondre el problema; planificar on fan falta motor, sensors, llums, sons, condicions, bucles i blocs propis, sense afegir tecnologia si no resol una necessitat.</li><li>Construir i programar un prototip propi, depurar per parts, documentar les versions i incorporar feedback pertinent.</li><li>Planificar proves repetibles amb resultats esperats i observats, descriure limitacions del sensor/mecanisme i no generalitzar des d’una sola execució.</li><li>Treballar amb rols equilibrats en equips de 2–4, compartir decisions i deixar evidència del procés al diari d’enginyeria.</li><li>Comunicar una proposta, la seua interacció persona–ordinador, efectes socials i ambientals, riscos no resolts i pròxima prova necessària.</li><li>Avaluar el producte, el procés d’equip i la pròpia participació amb criteris coneguts des de l’inici.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-organitzacio">🧰 Materials i preparació</h2>
+<p>Set SPIKE Prime 45678 i dispositiu amb l’app SPIKE per parella; sensors, hub, motors i peces necessaris per a cada proposta; materials de maqueta lleugers (cartó, paper, cinta, targetes de colors mate, fitxes grans, tubs de paper i regles); ordinador/dispositiu per a recerca; diari d’enginyeria; rúbrica i calendari de sessions. No compartiu peces entre sets durant el muntatge; feu inventari ràpid a l’inici/final i registreu si falta material.</p>
+<p>Si el projecte necessita sensors externs, càmeres, transmissió a Internet, accessoris comercials o programari addicional, l’equip ha de redissenyar el prototip per al material disponible o marcar l’element com a proposta futura no provada.</p>
+<p>Equips de 2–4 persones; ningú treballa tot sol en aquesta tasca. Rols rotatius possibles: recerca i fonts, disseny/muntatge, programació/proves, registre/comunicació. Els rols no assignen permanentment el codi a una sola persona: cada membre explica almenys un component i participa en una decisió. La docent actua de mentora mitjançant preguntes i fa revisions de fase; les revisions confirmen que l’equip pot continuar, no garanteixen que el model funcione en un ús real.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sis-ambits-per-triar-el-repte">📅 Seqüència didàctica</h2>
+<p>L’equip pot triar qualsevol repte viable relacionat amb els àmbits oficials; les propostes següents són punts d’arrancada locals, no encàrrecs tancats. Abans de triar, compareu-ne l’interés, l’evidència disponible, els materials necessaris i les persones/entitats amb què caldria parlar. Si el tema tracta una necessitat d’un grup concret, no el definiu en nom seu: feu servir fonts públiques o una consulta voluntària, anònima i supervisada.</p>
+<ul><li><strong>Recursos naturals i cura ambiental:</strong> dissenyar una estació de triatge de residus nets de maqueta, comptar usos de recursos simulats o mostrar com es podria registrar una neteja d’un espai dibuixat. No es recullen residus en hàbitats ni es manipula fauna/flora; el comptador no identifica materials de manera universal.</li><li><strong>Transport i logística:</strong> moure fitxes entre punts d’una mediateca simulada, dissenyar una ruta de material escolar o explorar recorreguts lunars com a ficció científica. No es prova prop de trànsit, no es transporten persones i no s’afirma que el sensor garantisca evitar obstacles. Per a projectes marins, tot és en una maqueta seca; no s’introdueixen robots a l’aigua ni s’acosta l’equip a ecosistemes.</li><li><strong>Salut, ciència i STEM:</strong> crear un joc de seqüències, memòria o agudesa matemàtica amb diferents formats de resposta. No es mesura salut, capacitat cognitiva o diagnòstic; les tasques són lúdiques, modificables i sense classificació personal.</li><li><strong>Fabricació:</strong> simular una cadena de muntatge amb peces grans, fitxes de color, zona d’emmagatzematge i comanda fictícia; registrar errors de triatge i dissenyar una indicació de revisió humana. No es fabriquen productes destinats a consum ni s’usa maquinària real.</li><li><strong>Administració pública i preparació davant d’incidències:</strong> construir una maqueta que organitza informació pública fictícia, mostra un missatge preparat o ajuda a explorar rutes sobre un plànol inventat. No crea alertes, ordres d’evacuació, recerca/rescat ni instruccions que competisquen amb emergències oficials; en la Comunitat Valenciana, qualsevol conversa sobre inundacions/incendis remet a informació pública i protocols vigents revisats per la docent.</li><li><strong>Agricultura i alimentació:</strong> simular el moviment de caixes buides, comptar torns d’una tasca fictícia o mostrar dades d’humitat inventades per practicar condicions. No es controla reg real, no es decideix tractament d’aliments i no es manipulen pesos, eines ni productes químics.</li></ul>
+<h3 class="detail-subsection-title" id="desenvolupament-del-projecte-quatre-fases">📅 Desenvolupament del projecte · quatre fases</h3>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Investiguem i delimitem · 2–3 sessions (100–120 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Investiguem i delimitem · 2–3 sessions (100–120 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Investiguem i delimitem · 2–3 sessions (100–120 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Planifiquem el model i revisem el disseny · 2 sessions (100–120 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Planifiquem el model i revisem el disseny · 2 sessions (100–120 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Construïm, programem i iterem · 3–4 sessions (180–200 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Construïm, programem i iterem · 3–4 sessions (180–200 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Presentem, avaluem i tanquem · 1–2 sessions (80–100 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Presentem, avaluem i tanquem · 1–2 sessions (80–100 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="investiguem-i-delimitem-2-3-sessions-100-120-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Investiguem i delimitem · 2–3 sessions (100–120 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Feu una rotació breu per les sis propostes (cinc minuts de presentació per àmbit). Individualment, cada alumne anota dues preguntes o necessitats possibles sense revelar dades personals. Predigueu quines necessitats es poden investigar de manera segura i quines dades caldria consultar abans de proposar una solució.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Examineu fonts recomanades i verificables. En grup, genereu almenys tres problemes delimitats i compareu qui es veu afectat, què se sap, què encara és incert i quina acció queda dins de les possibilitats escolars. Escriviu una frase de problema (“A [context fictici/espai investigat] costa… perquè…; volem explorar si…”) i dues o tres idees de solució.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Definiu una persona usuària com a perfil de disseny sense atribuir-li experiències que no s’han consultat. Registreu les fonts, les preguntes obertes, els efectes socials i ambientals possibles i els límits del que es pot afirmar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Analitzeu interacció humà–ordinador, biaix, accessibilitat, conseqüències imprevistes, privacitat i materials. Feu un primer càlcul de viabilitat: temps disponible, set, peces, sensors i dades. Si falta informació o hi ha risc de confondre maqueta amb aplicació real, ajusteu la pregunta o trieu un altre repte.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Mostreu a la docent el problema, les fonts, la idea triada, l’efecte social/ambiental i els límits.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>frase del problema, fonts consultades, dues o tres idees inicials i una justificació de la selecció.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="planifiquem-el-model-i-revisem-el-disseny-2-sessions-100-120-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Planifiquem el model i revisem el disseny · 2 sessions (100–120 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Recupereu la necessitat i els criteris acordats. Abans d’esbossar, cada membre dibuixa una idea i prediu quina entrada, acció i resposta observable podria resoldre una part del problema.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Feu esbossos des de dalt i de costat, marqueu dimensions i peces que es mouen, connectors/ports, punts d’entrada i eixida, llums/sons i llocs on el sensor pren una lectura. Escriviu pseudocodi i, quan ajude, diagrama de flux; descomponeu el programa en subcomponents o blocs propis.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Definiu una funció mesurable per a cada component i què constitueix un resultat correcte. El pla explica com el sensor i el motor col·laboren; no és necessari usar-los tots si el repte es resol millor amb entrada manual, llum o so. Prepareu casos de prova abans de construir, incloent almenys un cas límit i un d’error.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Demaneu feedback a dos companys: s’entén què intenta fer el projecte? quina part podria fallar o excloure algú? què funciona o resulta atractiu? Registreu cada comentari, si s’accepta o es rebutja, i la justificació. Després de la revisió docent, documenteu qualsevol canvi del disseny.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Reviseu amb la docent l’esbós, el maquinari/programari, el pseudocodi, els criteris i el feedback.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>esbós anotat, pseudocodi, casos de prova i registre de les decisions de disseny.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="construim-programem-i-iterem-3-4-sessions-180-200-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Construïm, programem i iterem · 3–4 sessions (180–200 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu un subcomponent prioritari i formuleu què espereu que passe quan reba una entrada. Abans de construir, acordeu una aturada manual clara i les condicions inicials de la primera prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Construïu una prova mínima d’un sol subcomponent i programeu una resposta observable. Abans d’afegir funcionalitats, proveu si la base o el mecanisme es mou com s’espera i si la lectura del sensor és consistent en l’entorn previst.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Documenteu la primera versió en una taula amb condicions inicials, predicció, resultat i observació. Integreu subsistemes d’un en un; comenteu blocs, anomeneu variables i proveu les condicions esperades i inesperades.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Feu almenys dues iteracions justificades: una pot ser mecànica (estabilitat, agarre, alineació) i una altra de programació (llindar, ordre, bucle o condició). Canvieu una variable per prova sempre que siga possible. Si la prova falla, conserveu el resultat i decidiu si reviseu hipòtesi, mecanisme, sensor o criteri.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>La docent revisa codi, interacció, seguretat, registre i una iteració. L’equip només passa a la mostra quan pot demostrar una funció reduïda i explicar-ne els límits.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>dues versions comparables i decisions justificades amb dades. L’èxit és el procés informat, no una automatització completa.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="presentem-avaluem-i-tanquem-1-2-sessions-80-100-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Presentem, avaluem i tanquem · 1–2 sessions (80–100 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Prepareu una presentació breu de 3–5 minuts amb necessitat, font principal, criteris, model i programa. Trieu una prova que funciona i una que ha fallat o queda pendent; predigueu quins límits o preguntes convé explicar amb més claredat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Feu una demostració amb espai delimitat, velocitat baixa i aturada controlada. Si el prototip és inestable, presenteu un vídeo només del model o executeu la prova amb simulació en paper, explicant quin format s’ha utilitzat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Incloeu el feedback incorporat, els efectes previstos i els límits. Altres equips fan preguntes i donen una observació favorable, una pregunta i una proposta; cada equip anota quin comentari canviaria el disseny amb més temps.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Avalueu el producte amb la rúbrica docent/equip, després el funcionament cooperatiu i finalment la participació individual. Useu les preguntes rebudes per concretar una millora possible, sense presentar-la com a resultat provat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Desmunteu els models, classifiqueu peces, feu inventari dels sets i registreu elements que falten o sobren. Cada persona pot completar una autoavaluació confidencial sobre contribució, feedback, temps i gestió de material, amb exemples del rol.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>presentació, retorn rebut, rúbrica i inventari final.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="documents-del-portafolis">🧪 Evidències i avaluació</h2>
+<ul><li><strong>Problema i recerca:</strong> tres opcions considerades, criteris de selecció, frase del problema, fonts/autor/data de consulta i efectes socials/ambientals previstos.</li><li><strong>Disseny:</strong> esbossos, model del maquinari, ports/sensors/motors, pseudocodi, subcomponents, diagrama i requisits d’accessibilitat.</li><li><strong>Construcció:</strong> llista de materials, versions del model i del codi, fotos de la maqueta sense dades personals, comentaris i problemes trobats.</li><li><strong>Proves:</strong> criteris, casos, prediccions, lectures, resultats, repeticions, error/incertesa, decisions d’iteració i comparació amb una alternativa manual.</li><li><strong>Comunicació i reflexió:</strong> guió, preguntes/feedback, canvis incorporats, afirmació final proporcionada a les proves, limitacions i pròxim pas.</li></ul>
+<h3 class="detail-subsection-title" id="rubrica-transparent">📊 Rúbrica transparent</h3>
+<p>Docent i equip valoren sis dimensions amb escala de tres nivells; el nivell mitjà significa que s’han complit els requisits principals, no és un judici sobre l’alumne. La rúbrica completa s’explica abans de triar el tema.</p>
+<ul><li><strong>1. Pla i col·laboració:</strong> 3 — diari complet des d’idees i recerca fins a decisions i obstacles; repartiment equitatiu, feedback cuidat i aportació de totes les persones. 2 — pla i registre de la major part del procés; repartiment generalment equilibrat. 1 — documentació escassa i tasques concentrades sense revisió.</li><li><strong>2. Programa:</strong> registre de per què convé programar i com s’usa llum/so, blocs propis, seqüències/bucles i condicions. 3 — codi original ben descompost, comentat i justificat, amb repetició/condicions adequades. 2 — codi funcional i explicable, amb una estructura reutilitzable. 1 — programa incomplet o sense estructura explicable. No es penalitza una alternativa manual/visual si és la millor solució justificada al problema.</li><li><strong>3. Disseny d’enginyeria:</strong> ús intencional i justificat de motors/sensors, estabilitat, interacció i iterations. 3 — model fa la funció delimitada, s’ha iterat amb proves i feedback i l’equip explica els canvis. 2 — hi ha funció demostrable i alguna revisió. 1 — model o iteracions sense relació clara amb criteris.</li><li><strong>4. Procés de resolució:</strong> 3 — defineix problema, compara opcions, investiga, fa proves, depura, revisa feedback i tria segons criteris. 2 — recorre la major part del procés amb evidència parcial. 1 — passa ràpid d’una idea a un model sense provar alternatives.</li><li><strong>5. Artifact computacional:</strong> 3 — tria les eines adequades, descompon, programa, depura i millora, i justifica la funció que resol el problema. 2 — construeix/programa i corregeix els errors principals. 1 — prototip i codi inicial sense correcció o argumentació suficient.</li><li><strong>6. Comunicació:</strong> 3 — mostra el model amb evidències en més d’un format, contesta preguntes i declara límits. 2 — comunica la proposta i la demostració de manera comprensible. 1 — la presentació no permet entendre el problema, el funcionament o les proves.</li></ul>
+<p>La rúbrica no exigeix incorporar cada suggeriment de feedback, un nombre fix de sensors o un motor quan no és pertinent. Valora la justificació i la qualitat de les proves en relació amb el repte que l’equip ha delimitat.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="etica-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>La docent examina abans els temes relacionats amb salut, dades personals, espècies protegides, emergències i transport. Useu només dades públiques, fictícies o anonimitzades; cap persona ha d’explicar una experiència mèdica, situació de desastre o necessitat personal. Demaneu permís abans de consulta; escolteu fonts d’usuari expertes sense convertir cap company en portaveu d’un grup. Les interaccions tenen alternatives (botó, instrucció visual, text, resposta manual), i el prototip no es fa passar per producte accessible acabat.</p>
+<p>Manteniu motors lents, trajecte de maqueta lliure, càrregues lleugeres i cap peça voladora; no introduïu aigua, menjar, animals, eines tallants, foc o accessos reals. Les simulacions d’emergència no alteren protocols escolars; s’usen missatges neutres de pràctica i la docent atura qualsevol activitat confusa.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta el projecte final de 500 minuts de LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb" target="_blank" rel="noopener noreferrer">*Foundations of Physical Computing*</a>. Conserva l’elecció entre sis àmbits (recursos naturals, transport —amb quatre opcions—, salut/STEM, fabricació, gestió pública/emergències i agricultura), la investigació i delimitació de dues o tres necessitats, quatre fases amb revisions, esbossos/ports/sensors/motors/subcomponents/llums/sons/pseudocodi, revisió entre iguals, programació i iteració, mostra final, sis criteris de rúbrica, autoavaluació i inventari. Adapta exemples que en la font proposen recollida oceànica, vehicles mèdics o de desastre a models segurs de taula;</p>
+<p>no reprodueix el manual LEGO ni afirma validar cap servei real.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

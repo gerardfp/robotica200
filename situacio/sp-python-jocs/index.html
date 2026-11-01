@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Fira de jocs amb regles clares | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Vuit lliçons de Python SPIKE Prime sobre condicions simples, sensor d&#39;inclinació, jocs, puntuació, bucles i depuració.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-python-jocs" class="btn-back" data-preserve-filters="sp-python-jocs">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Matemàtiques i Programació</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 8 lliçons · 8–12 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Fira de jocs amb regles clares</h1>
+        <span class="tag-badge" data-theme>🏷️ Python: condicions simples i jocs</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-python-jocs.webp" alt="Mecanisme de joc fet amb LEGO SPIKE Prime, hub, motor i urpa lleugera que juga amb fitxes grans i símbols en un tauler de taula." width="600" height="448" loading="lazy"><figcaption>Una regla de joc és un contracte: cal poder anticipar la resposta, provar-la i entendre la puntuació.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-sentit">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Una escola prepara una fira de jocs cooperatius inspirada en les festes i fires locals.</p></div></aside>
+<p>Un grup crea una estació interactiva amb SPIKE Prime: la inclinació del hub pot seleccionar una direcció, un mecanisme lleuger pot recollir una fitxa de paper, el sensor de color pot llegir una peça de prova i un marcador de llum o moviment comunica el resultat. Les regles han de ser públiques, provar-se amb casos previstos i inesperats i permetre una partida sense rapidesa física, so obligatori ni informació personal.</p>
+<p>Aquesta proposta adapta la unitat 5 <em>Playing Games with Simple Conditions</em> de LEGO Education <em>Introduction to Python Programming · Course 1</em>: <em>Controlling Motion with Tilt</em>, <em>Claw Machine</em>, <em>Charting Game Decisions</em>, <em>Guess Which Color</em>, <em>Guessing Game</em>, <em>Score!</em>, <em>Game Time</em> i <em>Ideas to Help with Game Time</em>. Progressa des de l’entrada d’inclinació i la condició simple cap a un mecanisme amb bucle, diagrama de decisions, sensor de color, condicions <code>if/elif/else</code> i depuració, puntuació amb matriu/moviment, disseny de joc i revisió entre equips.</p>
+<p>Totes les regles, taulers i exemples d’aquesta fitxa són propis.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Explicar que una condició Python avalua una expressió i decideix si executa una branca.</li><li>Llegir valors d’inclinació o orientació del sensor de moviment del hub en la forma que expose l’API local; mapar-los a accions limitades i reversibles.</li><li>Relacionar un bucle de joc amb la ronda d’una partida i definir explícitament quan comença, continua i acaba.</li><li>Descompondre les regles en un diagrama de flux abans d’implementar-les, incloent resposta per entrada desconeguda i cas de partida acabada.</li><li>Programar una decisió basada en color amb valors mesurats en la llum real de l’aula; distingir el color llegit de la interpretació o regla que l’equip li assigna.</li><li>Usar <code>if</code>, <code>elif</code>, <code>else</code> i comparacions per seleccionar una resposta; depurar sintaxi, indentació, branca inaccessible o condició invertida.</li><li>Gestionar puntuació amb una variable i un senyal de matriu o moviment senzill, comprovant que la puntuació s’actualitza una vegada per esdeveniment.</li><li>Provar el joc amb diferents persones, demanar consentiment, oferir modes d’accés alternatius i aplicar feedback específic.</li></ul>
+<p><strong>Condició:</strong> expressió booleana que és vertadera o falsa. <strong>Branca:</strong> camí que s’executa segons la condició. <strong>Sensor de moviment del hub:</strong> component integrat que informa orientació/inclinació dins dels límits de la seua API. <strong>Estat:</strong> situació actual del joc (espera, ronda, puntuació, acabat). <strong>Puntuació:</strong> comptador acordat pel disseny, no mesura de valor personal. <strong>Cas límit:</strong> entrada que posa a prova una frontera o situació no ordinària.</p>
+<figure class="code-panel"><figcaption>Exemple de programació · python</figcaption><pre class="code-block" tabindex="0"><code class="language-python"><span class="syntax-comment"># Python general: tres respostes explícites per a una entrada ja triada</span>
+<span class="syntax-keyword">if</span> direccio == <span class="syntax-string">&quot;nord&quot;</span>:
+    resposta = <span class="syntax-string">&quot;avança una casella&quot;</span>
+<span class="syntax-keyword">elif</span> direccio == <span class="syntax-string">&quot;sud&quot;</span>:
+    resposta = <span class="syntax-string">&quot;torna a la zona inicial&quot;</span>
+<span class="syntax-keyword">else</span>:
+    resposta = <span class="syntax-string">&quot;espera i demana una nova selecció&quot;</span></code></pre></figure>
+<p>Aquest exemple usa dades fictícies i no llig inclinació ni controla el robot. Els noms i mètodes de lectura de sensor, motors, llums, matriu i bucle asíncron varien segons la versió de l’app SPIKE. Adapteu el codi a la documentació local i comenceu les proves amb motors aturats.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio-docent">🧰 Materials i preparació</h2>
+<p>Un set SPIKE Prime 45678 per equip, hub carregat, sensor de color, motor mitjà, peces per a una urpa o porta lleugera amb recorregut limitat, tauleta/ordinador amb SPIKE Python, fitxes grans mates amb colors i formes coincidents, cartó, cinta, paper, marcador i diari de programació. El sensor de moviment està integrat al hub. Cap material exigeix el set d’expansió.</p>
+<p>Si el model d’urpa resulta difícil, substituïu-lo per un indicador articulat o joc en pantalla/tauler: l’objectiu curricular és la decisió programada, no la destresa mecànica.</p>
+<p>Proveu prèviament els colors i eviteu fons brillants o llum directa. Definiu una urpa que només s’acoste a fitxes planes de cartó, amb topalls, baixa potència i ample suficient perquè no puga atrapar dits. Trieu un tauler que puga jugar-se assegut; creeu regles impreses amb icona, paraula i color. Prepareu tres variants de joc: selecció per inclinació, selecció manual en targeta i simulació de lectures. Acordeu que les puntuacions són del joc/equip, no de l’alumnat.</p>
+<p>Rols rotatius de programació, lectura de regles, prova, accessibilitat/observació i cura del model. El joc es prova en una taula tancada i estable; cap robot es mou cap a una persona ni es deixa executar sense supervisió.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-huit-llicons">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 8 · Inclina i tria una acció (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1" aria-valuetext="Pas 1 de 8">
+        <span data-wizard-bar style="width: 12.50%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Inclina i tria una acció (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Inclina i tria una acció (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Urpa de taula amb regles de captura (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Urpa de taula amb regles de captura (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Dibuixar totes les decisions abans de jugar (45–90 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dibuixar totes les decisions abans de jugar (45–90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Una fitxa, un color, una resposta (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una fitxa, un color, una resposta (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Endevina la regla i depura el programa (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Endevina la regla i depura el programa (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="5" aria-label="Obrir pas 6: Marcador visible i puntuació justa (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">6</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Marcador visible i puntuació justa (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="6" aria-label="Obrir pas 7: Construir un joc complet per a la fira (90 min)"><span class="learning-wizard-step-number" aria-hidden="true">7</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Construir un joc complet per a la fira (90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="7" aria-label="Obrir pas 8: Feedback i millora de la fira (30–45 min)"><span class="learning-wizard-step-number" aria-hidden="true">8</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Feedback i millora de la fira (30–45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="llico-1-inclina-i-tria-una-accio-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Inclina i tria una acció (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Amb una targeta gran de brúixola, definiu com una inclinació podria representar «dreta», «esquerra» o «espera». Predigueu quina acció correspon a cada orientació i oferiu una opció manual equivalent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Consulteu el sensor de moviment del hub i anoteu com canvien les lectures en quatre orientacions segures, sense sacsejar ni deixar caure el hub.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Escriviu pseudocodi per a una sola regla i registreu lectura, orientació i resposta esperada. Identifiqueu quin llindar utilitzareu.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Programeu una indicació lluminosa o una rotació curta, amb motors alçats/apagats de manera segura. Si les lectures menudes alternen les ordres, afegiu una zona neutra i repetiu la prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>prova amb inclinació clara a cada costat, hub pla i valor intermedi. Expliqueu quin llindar és convencional i per què no és universal entre hubs.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-2-urpa-de-taula-amb-regles-de-captura-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Urpa de taula amb regles de captura (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Definiu una ronda: el jugador selecciona una de tres zones i el mecanisme intenta agafar una fitxa gran. Acordeu qui inicia, quants intents hi ha i què significa «capturar».</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Dissenyeu una palanca o urpa de cartó o peces Technic amb límit de recorregut. Poseu la fitxa dins d’una safata plana i comproveu que no hi ha risc d’atrapar dits.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Creeu un bucle finit d’intents, una acció d’obrir/tancar i una condició per al resultat triat manualment. Identifiqueu l’entrada, l’acció i el resultat que una persona ha de confirmar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu primer sense peça i després amb una fitxa lleugera. Atureu els motors abans d’ajustar el mecanisme; no afirmeu que detecta una captura si no hi ha sensor verificat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>regla de ronda, codi i registre de dues proves. Expliqueu quina part del resultat confirma l’operador en aquest prototip inicial.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-3-dibuixar-totes-les-decisions-abans-de-jugar-45-90-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Dibuixar totes les decisions abans de jugar (45–90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Proposeu un minijoc de fira que use una elecció i fins a tres resultats. Predigueu quines entrades i respostes necessita per ser comprensible.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Creeu un diagrama amb estat inicial, entrada, condicions en ordre, eixida de cada cas, puntuació i finalització. Afegiu resposta per a entrada desconeguda i cancel·lació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una altra parella segueix el diagrama amb targetes. Marqueu si sempre arriba a una resposta, si hi ha una branca inassolible i quina eixida correspon a cada cas.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Implementeu branques amb valors fixos abans d’afegir sensors. Compareu l’ordre de les condicions i les igualtats amb el diagrama; proveu totes les entrades previstes i una absent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>diagrama traçat i instrucció amb llenguatge clar i pictogrames. Si hi ha 90 minuts, programeu el prototip; amb 45, deixeu el codi per a una sessió pròpia.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-4-una-fitxa-un-color-una-resposta-45-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Una fitxa, un color, una resposta (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu fitxes planes i predigueu quines distingirà el sensor. Acordeu que cada resposta tindrà també una forma o símbol, no només un color.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Col·loqueu les fitxes sota el sensor a una distància constant i registreu la lectura de cada color. Feu tres lectures per peça i, si és possible, repetiu amb una altra llum.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Assigneu a cada color reconegut un moviment o missatge i creeu una eixida neutral per a «cap/altre». Anoteu lectura, branca i resposta esperada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Implementeu la condició Python. Executeu primer amb motors quiets; després, si és segur, activeu una resposta visual o una rotació curta. Reviseu les categories que es confonen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>casos amb colors reconeguts, desconegut, sense fitxa i targeta girada. Expliqueu com la llum i la distància afecten la decisió; no suposeu valors exactes ni distinció universal de colors.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-5-endevina-la-regla-i-depura-el-programa-45-min" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Endevina la regla i depura el programa (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu una targeta secreta que complisca una propietat pública, com «color primari» o «forma amb tres costats». Predigueu quines respostes donarà el joc sense emmagatzemar dades personals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Escriviu una seqüència <code>if/elif/else</code> i un bucle finit de torns. Dibuixeu casos per a cada branca i exemples que no hi pertanyen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Analitzeu tres programes amb errors: sintaxi/indentació, condició invertida i <code>else</code> prematur. Predigueu el resultat de cadascun abans de corregir-lo.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Canvieu una línia cada vegada i proveu-la amb els casos de la taula. Implementeu la vostra versió en Python general o amb el hub quiet i comproveu el màxim de torns.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>codi corregit i prova de cada branca. Expliqueu la diferència entre un error de sintaxi i una regla lògica errònia.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-6-marcador-visible-i-puntuacio-justa-45-min" data-step="6" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 6</span><h3>Marcador visible i puntuació justa (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Creeu una regla senzilla, com un punt per encert fins a un màxim de tres. Predigueu com es mostrarà una puntuació sense comparar capacitats personals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Afegiu una variable <code>punts</code> i representeu-la amb la matriu del hub o un indicador de moviment. Actualitzeu-la una vegada després d’un esdeveniment vàlid.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Prepareu casos d’encert, error, torn repetit, partida acabada, puntuació màxima i reinici. Compareu el valor de la variable amb la llum o moviment observat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Comproveu si una entrada sostinguda o acció repetida suma punts més d’una vegada. Proveu per separat l’increment i el reinici i corregiu qualsevol discrepància.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>registre dels sis casos de prova i marcador coherent. Proposeu una manera de mostrar la participació sense classificar persones.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-7-construir-un-joc-complet-per-a-la-fira-90-min" data-step="7" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 7</span><h3>Construir un joc complet per a la fira (90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Definiu objectiu, regles en tres passos, nombre de rondes, respostes, marcador i alternatives d’accés. El joc usarà condicions Python i un component SPIKE; el sensor és opcional si ja s’ha calibrat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Feu un diagrama d’estats i matriu de casos per a inici, resultats, entrada ambigua/no reconeguda, màxim de punts, nova ronda i cancel·lació/reinici. Munteu un suport estable i delimiteu la peça mòbil i la zona de mans.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Implementeu en parts l’entrada, la condició, la resposta, la puntuació i el final. Documenteu qualsevol exemple de codi reutilitzat i vinculeu cada regla amb un cas del diagrama.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu tots els casos i verifiqueu que cada ronda acaba i el reinici neteja la puntuació. Prepareu instruccions clares, mode sense so/color i una resposta per a lectura invàlida.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>joc funcional amb pla de proves i instruccions. Valoreu la coherència entre especificació i codi, no qui aconsegueix més punts.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-8-feedback-i-millora-de-la-fira-30-45-min" data-step="8" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 8</span><h3>Feedback i millora de la fira (30–45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Un altre equip llig les instruccions i prova el minijoc. Els autors observen la primera ronda sense donar pistes; no recolliu noms ni puntuacions individuals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>El revisor anota una cosa que ha entés, una regla confusa i un cas límit que afegiria. L’equip autor tria un suggeriment relacionat amb l’objectiu.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Registreu quin suggeriment s’ha triat i quina regla, entrada o missatge afectarà. Predigueu quin resultat hauria de canviar i quin cas hauria de continuar funcionant.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Canvieu una condició, missatge, entrada o regla. Executeu de nou el cas que va motivar el canvi i un cas que ja funcionava.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>demostració, diagrama i limitació identificada. Si no és possible una mostra pública, feu la revisió en paper o entre equips.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-avaluacio-i-producte-final">🧪 Evidències i avaluació</h2>
+<p>Recolliu regles inicials, captures/dibuixos de lectura de sensor sense dades personals, diagrames de flux, taula de veritat/casos, pseudocodi, versions de <code>if/elif/else</code>, fragments depurats, registre de puntuació, prova de matriu/actuador, instruccions de joc, observació anònima entre parelles i comparació abans/després. Producte: joc de fira d’una estació, jugable tant en mode manual com en mode robot, amb regla, puntuació i instrucció accessibles.</p>
+<p>Avalueu quatre dimensions: <strong>lògica condicional</strong> (preveu i codifica les branques); <strong>integració i estat</strong> (sensor o entrada, resposta, puntuació i reinici concorden);</p><aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>proves i depuració</h4><p>(prova casos no estàndard i corregeix amb evidència); <strong>disseny inclusiu/col·laboració</strong> (regles transparents, alternatives, rols i feedback específic). Nivells: necessita modelatge, ho resol amb suport, treballa autònomament, ho transfereix i justifica. Valoreu que el joc responga segons l’especificació, no la destresa, rapidesa o puntuació de qui hi juga.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="inclusio-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Cada regla combina símbol i paraula amb color; hi ha mode manual i mode sense so, i els torns no depenen de velocitat de reacció. Permeteu llegir, explicar, programar, registrar o construir amb valor equivalent. No useu contrasenyes, cares, noms ni dades personals. Manteniu joc i mecanisme a taula, urpa limitada a fitxes de cartó, velocitat baixa i motors aturats en qualsevol ajust. Sensor i inclinació no són dispositius de seguretat ni garanteixen una detecció. Cap peça s’apropa a cossos; supervisió contínua.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-decisions-d-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta la unitat 5 <em>Playing Games with Simple Conditions</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt834b554cdaa246f7/6584064fd082f7672425e7ea/File_1_Units12345_Intro_to_Python_Course_TG_Course.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 1*</a>: <em>Controlling Motion with Tilt</em>, <em>Claw Machine</em>, <em>Charting Game Decisions</em>, <em>Guess Which Color</em>, <em>Guessing Game</em>, <em>Score!</em>, <em>Game Time</em> i <em>Ideas to Help with Game Time</em>. Es conserva la pràctica de sensor de moviment, bucle d’interacció, representació de decisions, sensor de color amb condicions, <code>if/elif/else</code> i depuració, moviment/matriu com a resposta de joc, projecte integrat amb seqüència d’esdeveniments i revisió per companys.</p>
+<p>El joc de fira, el tauler, les regles i l’avaluació són propis; la instrucció de maquinari i els noms d’API s’han de validar en l’app disponible. Les durades oficials indexades indiquen jocs de 45 minuts, projecte de 90 minuts i revisió de 30–45 minuts; la planificació ací permet dividir el projecte en més d’una sessió.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

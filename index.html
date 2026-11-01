@@ -8,19 +8,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="_css/styles.css?v=5">
+  <link rel="stylesheet" href="_css/styles.css?v=7">
   <link rel="icon" type="image/svg+xml" href="_assets/icons/logo.svg">
-  <script src="_js/components.js?v=guide-route-2"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <script defer src="_js/ui.js?v=1"></script>
 </head>
 <body>
-  <site-header id="site-header" active="inici" root=""></site-header>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-badge"><img src="_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="index.html" class="nav-btn active">Inici</a>
+        <a href="pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="situacions-aprenentatge/index.html" class="nav-btn">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
   <main id="page-content" class="container page-content">
 <div class="home-intro">
-  <button type="button" class="home-hero-icon" aria-label="Interactua amb el robot de Robòtica 200"
-    x-data="{ animation: '', animations: [['robot-anim-blink', 400], ['robot-anim-antenna', 700], ['robot-anim-alert', 800], ['robot-anim-glitch', 500], ['robot-anim-look', 1150], ['robot-anim-happy', 700], ['robot-anim-tilt', 1000], ['robot-anim-scan', 900], ['robot-anim-dashes', 1700]], last: -1, timer: null, animationTimer: null, play(index) { clearTimeout(this.animationTimer); this.animation = ''; this.$nextTick(() => { this.animation = this.animations[index][0]; this.animationTimer = setTimeout(() => this.animation = '', this.animations[index][1] + 50); }); }, next() { let index; do { index = Math.floor(Math.random() * this.animations.length); } while (index === this.last); this.last = index; this.play(index); this.timer = setTimeout(() => this.next(), 2000 + Math.random() * 2000); }, start() { this.timer = setTimeout(() => this.next(), 600); }, greet() { clearTimeout(this.timer); this.last = 5; this.play(5); this.timer = setTimeout(() => this.next(), 700); } }"
-    x-init="start()" @click="greet()">
-    <svg viewBox="0 0 73.025 75.142" class="home-hero-svg" :class="animation" role="img" aria-label="Robot Robòtica 200" xmlns="http://www.w3.org/2000/svg">
+  <button type="button" class="home-hero-icon" data-home-robot aria-label="Interactua amb el robot de Robòtica 200">
+    <svg viewBox="0 0 73.025 75.142" class="home-hero-svg" data-home-robot-svg role="img" aria-label="Robot Robòtica 200" xmlns="http://www.w3.org/2000/svg">
       <rect id="antenna" x="27.252" y="0" width="18.521" height="7.408" rx="3.175" fill="#f59e0b"/>
       <g class="antenna-dashes" aria-hidden="true">
         <rect class="antenna-dash antenna-dash-red" x="18.512" y="2.104" width="10" height="3.2" rx="1.6" fill="#ef4444"/>
@@ -39,22 +52,128 @@
 </div>
 <div class="three-pillars">
   <a href="pensament-computacional/index.html" class="pillar-card">
-<div class="pillar-media"><img src="_assets/banners/pensament-computacional.png" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Pensament computacional</h2>
+    <div class="pillar-media"><img src="_assets/banners/pensament-computacional.png" alt="" class="pillar-banner-img" width="800" height="600"></div>
+    <h2 class="pillar-title">Pensament computacional</h2>
     <p class="pillar-desc">Activitats desendollades de PC per treballar la lògica, els algorismes i la resolució de problemes sense pantalles.</p>
     <div class="pillar-action">Explorar activitats →</div>
   </a>
   <a href="robotica-educativa/index.html" class="pillar-card">
-<div class="pillar-media"><img src="_assets/banners/robotica.png" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Robòtica educativa</h2>
+    <div class="pillar-media"><img src="_assets/banners/robotica.png" alt="" class="pillar-banner-img" width="800" height="600"></div>
+    <h2 class="pillar-title">Robòtica educativa</h2>
     <p class="pillar-desc">Tutorials i guies dels 6 robots d'aula.</p>
     <div class="pillar-action">Veure els 6 robots →</div>
   </a>
   <a href="situacions-aprenentatge/index.html" class="pillar-card">
-<div class="pillar-media"><img src="_assets/banners/situacions-aprenentatge.png" alt="" class="pillar-banner-img" width="800" height="600"></div>    <h2 class="pillar-title">Situacions d'aprenentatge</h2>
+    <div class="pillar-media"><img src="_assets/banners/situacions-aprenentatge.png" alt="" class="pillar-banner-img" width="800" height="600"></div>
+    <h2 class="pillar-title">Situacions d'aprenentatge</h2>
     <p class="pillar-desc">Catàleg curricular filtrable per robot, cicle educatiu, temàtica transversal i matèria d'aprenentatge.</p>
     <div class="pillar-action">Obrir catàleg →</div>
   </a>
 </div>
   </main>
-  <site-footer></site-footer>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

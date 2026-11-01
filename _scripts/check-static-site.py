@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
-"""Validate local references and shared Markdown learning-situation coverage."""
+"""Validate local references and pre-rendered static HTML coverage from Markdown sources."""
 
 from collections import Counter
 from html.parser import HTMLParser
-import json
 from pathlib import Path
 import re
 from urllib.parse import unquote, urlparse
@@ -18,19 +17,14 @@ class PageParser(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.refs = []
-        self.has_situation_page = False
-        self.has_content_detail = False
-        self.content_kinds = []
+        self.has_legacy_redirect = False
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
         if tag.lower() == "dialog":
             self.refs.append(("FORBIDDEN", "<dialog> elements are not allowed"))
-        if tag.lower() == "situation-page":
-            self.has_situation_page = True
-        if tag.lower() == "content-detail-page":
-            self.has_content_detail = True
-            self.content_kinds.append(attrs.get("kind", ""))
+        if "data-legacy-redirect" in attrs:
+            self.has_legacy_redirect = True
         for attr in ("href", "src"):
             value = attrs.get(attr, "").strip()
             if value:
@@ -67,6 +61,14 @@ def main():
     robot_counts = Counter()
     pages = sorted(p for p in ROOT.rglob("*.html") if not any(part.startswith(".") for part in p.relative_to(ROOT).parts))
 
+    redirect_routes = {
+        Path("situacio/index.html"),
+        Path("activitat/index.html"),
+        Path("tutorial/index.html"),
+        Path("robot/index.html"),
+        Path("guia/index.html"),
+    }
+
     for page in pages:
         parser = PageParser()
         parser.feed(page.read_text(encoding="utf-8"))
@@ -78,16 +80,14 @@ def main():
             target = local_target(page, ref)
             if target is not None and not target.exists():
                 problems.append(f"{relative}: missing local {kind} {ref}")
-        if relative == Path("situacio/index.html") and not parser.has_situation_page:
-            problems.append("situacio/index.html: missing shared <situation-page>")
-        if relative in {Path("activitat/index.html"), Path("tutorial/index.html"), Path("robot/index.html"), Path("guia/index.html")} and not parser.has_content_detail:
-            problems.append(f"{relative}: missing shared <content-detail-page>")
+        if relative in redirect_routes and not parser.has_legacy_redirect:
+            problems.append(f"{relative}: missing data-legacy-redirect compatibility section")
 
     shared_content = {
-        "activitat/index.html": ("activity", "activitats", "activitat-"),
-        "tutorial/index.html": ("tutorial", "tutorials", "tutorial-"),
-        "robot/index.html": ("robot", "robots", "robot-"),
-        "guia/index.html": ("guide", "pages", "guia-"),
+        "activitat": ("activity", "activitats", "activitat-"),
+        "tutorial": ("tutorial", "tutorials", "tutorial-"),
+        "robot": ("robot", "robots", "robot-"),
+        "guia": ("guide", "pages", "guia-"),
     }
     required_fields = {
         "activity": ("title", "description", "topic", "cycle_label", "duration", "order"),
@@ -95,34 +95,38 @@ def main():
         "robot": ("title",),
         "guide": ("title",),
     }
-    active_by_kind = {"activity": set(), "tutorial": set()}
-    for page_name, (kind, folder, prefix) in shared_content.items():
-        page = ROOT / page_name
-        component = re.search(r'<content-detail-page\b[^>]*kind=["\']([^"\']+)', page.read_text(encoding="utf-8"))
-        if not component or component.group(1) != kind:
-            problems.append(f"{page_name}: content kind should be {kind}")
+
+    for route, (kind, folder, prefix) in shared_content.items():
         paths = sorted((ROOT / "_content" / folder).glob(f"{prefix}*.md"))
-        if kind == "guide": paths = [p for p in paths if p.stem in {"guia-pensament-computacional", "guia-robotica-educativa", "guia-situacions-aprenentatge", "guia-fira-descobertes"}]
+        if kind == "guide":
+            paths = [p for p in paths if p.stem in {
+                "guia-pensament-computacional",
+                "guia-robotica-educativa",
+                "guia-situacions-aprenentatge",
+                "guia-fira-descobertes",
+            }]
         if not paths:
             problems.append(f"_content/{folder}: no Markdown records for {kind}")
         for markdown_path in paths:
             editorial, body = read_frontmatter(markdown_path)
             if editorial.get("active", "true").lower() != "true":
                 continue
-            if kind in active_by_kind:
-                active_by_kind[kind].add(markdown_path.stem.removeprefix(prefix))
+            slug = markdown_path.stem.removeprefix(prefix)
+            rendered_page = ROOT / route / slug / "index.html"
+            if not rendered_page.is_file():
+                problems.append(f"{markdown_path.relative_to(ROOT)}: missing pre-rendered HTML at {rendered_page.relative_to(ROOT)} (run node _scripts/build.js)")
             for required in required_fields.get(kind, ("title",)):
                 if not editorial.get(required):
                     problems.append(f"{markdown_path.relative_to(ROOT)}: missing front matter '{required}'")
             for ref in re.findall(r"(?<!!)\[[^\]]+\]\(([^)]+)\)|!\[[^\]]*\]\(([^)]+)\)", body):
                 link = ref[0] or ref[1]
                 target = local_target(markdown_path, link)
-                # Shared detail URLs use a page query; their target path must exist.
                 if target is not None and not target.exists():
                     problems.append(f"{markdown_path.relative_to(ROOT)}: missing Markdown reference {link}")
 
     content_dir = ROOT / "_content/situacions"
     active = []
+    situations_catalog_html = (ROOT / "situacions-aprenentatge/index.html").read_text(encoding="utf-8")
     for markdown_path in sorted(content_dir.glob("*.md")):
         if markdown_path.name.startswith("TEMPLATE-"):
             continue
@@ -130,6 +134,12 @@ def main():
         if editorial.get("active", "").lower() != "true":
             continue
         active.append(markdown_path)
+        slug = markdown_path.stem
+        rendered_page = ROOT / "situacio" / slug / "index.html"
+        if not rendered_page.is_file():
+            problems.append(f"{markdown_path.relative_to(ROOT)}: missing pre-rendered HTML at {rendered_page.relative_to(ROOT)} (run node _scripts/build.js)")
+        if f"../situacio/{slug}/index.html" not in situations_catalog_html:
+            problems.append(f"situacions-aprenentatge/index.html: missing card link for {slug} (run node _scripts/build.js)")
         for required in ("title", "description", "robot", "cycle", "subject", "theme", "duration", "challenge"):
             if not editorial.get(required):
                 problems.append(f"{markdown_path.relative_to(ROOT)}: missing front matter '{required}'")
@@ -150,18 +160,6 @@ def main():
             if target is not None and not target.exists():
                 problems.append(f"{markdown_path.relative_to(ROOT)}: missing Markdown link {ref}")
 
-    catalog_text = (ROOT / "_js/cataleg.js").read_text(encoding="utf-8")
-    catalog = json.loads(catalog_text[catalog_text.index("{"):].rstrip().removesuffix(";"))
-    for label, expected_slugs, catalog_key in (
-        ("situation", {path.stem for path in active}, "situacions"),
-        ("activity", active_by_kind["activity"], "activitats"),
-        ("tutorial", active_by_kind["tutorial"], "tutorials"),
-    ):
-        catalog_slugs = {item.get("slug") for item in catalog.get(catalog_key, [])}
-        if expected_slugs != catalog_slugs:
-            missing = sorted(expected_slugs - catalog_slugs)
-            stale = sorted(catalog_slugs - expected_slugs)
-            problems.append(f"catalog {label} mismatch (run python3 _scripts/sync-catalog.py): missing={missing}, stale={stale}")
     for robot in sorted(EXPECTED_ROBOTS):
         if robot_counts[robot] < 5:
             problems.append(f"robot {robot}: expected at least 5 situations, found {robot_counts[robot]}")
@@ -176,7 +174,7 @@ def main():
         for problem in problems:
             print(f"- {problem}")
         return 1
-    print(f"Static site validation passed: {len(pages)} HTML pages, one shared situation page, {len(active)} active Markdown situations, no broken local references.")
+    print(f"Static site validation passed: {len(pages)} pre-rendered HTML pages, {len(active)} active Markdown situations, no broken local references.")
     return 0
 
 

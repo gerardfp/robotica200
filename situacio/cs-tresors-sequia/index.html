@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Tresors entre séquies | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Dibuixem un laberint inspirat en la marjal, programem una ruta amb blocs de moviment i nombre i arribem a un o dos tresors.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-cs-tresors-sequia" class="btn-back" data-preserve-filters="cs-tresors-sequia">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Segon cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Pensament computacional i Matemàtiques</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 3 sessions de 45 minuts</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Tresors entre séquies</h1>
+        <span class="tag-badge" data-theme>🏷️ Séquia i marjal</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-tresors-sequia-v1.png" alt="MatataBot i la torre del Coding Set reals al costat d’un laberint de paper inspirat en séquies, amb dos tresors de cartó en punts diferents." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA pròpia basada en el kit real. El laberint i els tresors són materials de paper; el robot executa els blocs i no detecta, arreplega ni identifica les peces.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Una classe dissenya un mapa de séquies per a una missió fictícia de l’aiguamoll. En una quadrícula plastificada, cada equip dibuixa canals i marges que deixen un passadís continu des de l’inici fins a un tresor. MatataBot ha de recórrer el passadís i arribar a la casella del testimoni. Quan la ruta funciona amb un tresor, l’equip n’afegeix un segon i adapta el programa perquè visite tots dos abans d’acabar.</p></div></aside>
+<p>La situació adapta la targeta oficial <strong>B-1 · Maze Adventure I</strong> de les <em>Coding Activity Cards</em>. El procediment visible demana crear laberints amb retoladors esborrables, posar-hi tresors en punts indicats, programar MatataBot amb blocs de moviment i nombre per trobar-los i afegir un tresor més a cada mapa per provar si es poden trobar tots dos amb un programa. El mapa, el vocabulari local, els tresors de paper, les proves entre parelles i la seqüència didàctica són propis.</p>
+<p>El robot no segueix les línies ni detecta tresors: les persones planifiquen el camí i comproven la casella final.</p>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>com podem passar d’un laberint dibuixat a una seqüència de blocs que arribe al tresor, i què cal canviar quan n’afegim un altre?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Dissenyar un laberint amb inici, passadís accessible i una o més destinacions.</li><li>Llegir una ruta en quadrícula i traduir trams rectes a blocs de moviment i nombre disponibles.</li><li>Registrar la posició i l’orientació després de cada gir.</li><li>Provar una seqüència, localitzar la primera divergència i revisar-la amb una nova prova.</li><li>Ampliar una ruta perquè visite dos tresors amb un únic programa.</li><li>Diferenciar la planificació humana de la detecció o recollida automàtica, que el robot no fa.</li></ul>
+<p><strong>Vocabulari clau:</strong> laberint, passadís, marge, casella, tresor, destinació, orientació, moviment, nombre, ruta, seqüència, depuració.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Coding Set de la dotació: MatataBot, torre de control, tauler i blocs de moviment. Useu blocs de nombre només si el kit els inclou i la torre els reconeix.</li><li>Mapa propi plastificat o funda esborrable amb quadrícula; retolador esborrable i drap suau. Feu una prova d’esborrat en un racó abans de la sessió.</li><li>Fitxes de paper o cartó grans com a tresors, amb una cara d’inici i una de meta; no són codis que el robot puga llegir.</li><li>Plantilla amb <strong>dibuix del laberint</strong>, <strong>ruta prevista</strong>, <strong>blocs</strong>, <strong>orientació</strong>, <strong>tresor visitat</strong>, <strong>resultat observat</strong> i <strong>canvi provat</strong>.</li><li>Fitxa de robot de paper i targetes de fletxes per a resoldre el mapa sense activar el dispositiu.</li></ul>
+<p>Dibuixeu una quadrícula gran i assegureu-vos que les caselles que corresponen a un desplaçament físic tenen l’escala adequada al model i la superfície. Deixeu passadissos prou amples per a les rodes i eviteu cruïlles massa estretes. Fixeu el mapa a una taula plana, col·loqueu els tresors al centre de les caselles acordades i carregueu MatataBot i la torre. No poseu retoladors, dits ni tresors menuts al recorregut mentre el robot es mou.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 3 · Dibuixem i resolem el primer laberint (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-valuetext="Pas 1 de 3">
+        <span data-wizard-bar style="width: 33.33%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Dibuixem i resolem el primer laberint (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dibuixem i resolem el primer laberint (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Programem la ruta fins a un tresor (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Programem la ruta fins a un tresor (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Afegim un segon tresor al mateix programa (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Afegim un segon tresor al mateix programa (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-dibuixem-i-resolem-el-primer-laberint-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Dibuixem i resolem el primer laberint (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu un mapa en blanc amb una casella d’inici i una meta. Pregunteu quines decisions cal prendre perquè una altra parella puga trobar el tresor sense que l’autoria li explique el camí. Acordeu com es representen els passadissos, els marges i les caselles bloquejades.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En parelles, dibuixeu amb retolador esborrable un laberint original amb una única entrada, almenys dos girs i un passadís continu fins al tresor. Poseu el testimoni en una casella marcada. Una altra persona ressegueix el passadís amb la fitxa de paper i assenyala qualsevol bifurcació que permeta més d’una lectura.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Marqueu al mapa la posició inicial i cap on mira MatataBot. Dibuixeu una ruta possible sense alçar la fitxa ni travessar els marges. Anoteu cada tram recte i cada canvi d’orientació en una taula; si hi ha dues rutes, compareu-les sense declarar-ne cap com l’única solució correcta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Intercanvieu mapes. La parella visitant ha de poder arribar al tresor amb les seues fletxes. Si no pot, l’equip autor revisa una bifurcació o fa més ample el passadís i torna a donar el mapa a una tercera parella. No modifiqueu el mapa mentre l’altre equip el resol.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>laberint propi, ruta traçada i una revisió a partir de la lectura d’un altre equip. <strong>Pregunta:</strong> quina part del mapa ha fet que la ruta fora ambigua o impossible?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-programem-la-ruta-fins-a-un-tresor-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Programem la ruta fins a un tresor (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu un mapa validat i col·loqueu-hi el robot al punt inicial. Abans de construir els blocs, cada equip prediu la casella després de tres ordres i assenyala quan MatataBot haurà de girar per seguir el passadís.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Traduïu els trams rectes a blocs de moviment. Si el vostre Coding Set té blocs numèrics, useu-los només amb avançar o retrocedir segons les instruccions del kit; els nombres no s’apliquen als girs. Col·loqueu els blocs en l’ordre de lectura del tauler i simuleu la seqüència amb la fitxa de robot abans d’executar-la.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Registreu bloc a bloc les caselles previstes i l’orientació després de cada gir. Una parella observadora segueix el programa sobre el mapa i comprova si travessa una vora, entra en un passadís tancat o arriba a la casella del tresor.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu la ruta física amb el robot i observeu-ne la posició final. Si no coincideix amb la predicció, identifiqueu la primera instrucció divergent i reviseu només eixe tram. Torneu a començar des de la mateixa posició inicial; no desplaceu el tresor per fer que el resultat parega correcte.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>seqüència de blocs i taula de posicions previstes i observades. <strong>Pregunta:</strong> quina ordre ha determinat el gir o el nombre de caselles avançades?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-afegim-un-segon-tresor-al-mateix-programa-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Afegim un segon tresor al mateix programa (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Afegiu un segon testimoni al mapa sense canviar l’inici. Cada equip decideix en quin ordre visitarà els tresors i prediu si el programa actual pot arribar als dos sense esborrar-se ni iniciar una segona execució.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Planifiqueu una única ruta que passe per la primera i la segona casella amb tresor. Afegiu els blocs necessaris i registreu cada segment. Si les dues destinacions exigeixen un gir o una seqüència llarga, compteu els moviments abans d’executar; el robot no s’aturarà en veure el primer testimoni.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una altra parella comprova que el programa complet visita les dues caselles en l’ordre acordat. Marqueu <strong>tresor 1 visitat</strong> i <strong>tresor 2 visitat</strong> només a partir del recorregut observat. Distingiu “passar per la casella” de “recollir el testimoni”: una persona el retira després que el robot s’haja aturat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu el programa únic i anoteu si arriba als dos punts. Si la ruta no completa el segon tresor, localitzeu l’última casella correcta, corregiu el tram final i repetiu des de l’inici. Com a extensió, afegiu un tercer testimoni al mapa i discutiu quina informació caldria registrar per a verificar-lo sense confondre aquesta extensió amb el pas oficial de dos tresors.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Evidència final:</strong> mapa revisat, un programa que visita dos tresors, resultats observats i targeta de límits del robot. Tanqueu amb: «Hem comprovat els dos tresors perquè…» i «El robot no els ha identificat ni recollit; nosaltres…».</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu els mapes de paper, la ruta de fletxes, la seqüència física, la taula de proves i una nota sobre la revisió feta després del primer intent. Observeu si l’alumnat:</p>
+<ul><li>dibuixa un passadís continu i situacions reproduïbles;</li><li>conserva la posició i l’orientació inicials en planificar;</li><li>utilitza blocs de nombre només en els trams compatibles del kit;</li><li>visita dos punts amb una sola execució del programa;</li><li>justifica una correcció amb la primera diferència observada;</li><li>separa arribada al tresor de la seua retirada manual.</li></ul>
+<p>No avalueu la rapidesa, l’estètica del laberint ni l’encert al primer intent.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu laberints preparats amb alt contrast i pocs passadissos, quadrícula gran, parets tàctils o fletxes amples. Es pot participar dibuixant, dictant una seqüència, movent la fitxa de paper, col·locant blocs o registrant les proves. Eviteu superfícies brillants que dificulten la lectura de la torre; netegeu el retolador abans de guardar el mapa. Retireu els testimonis només amb el robot aturat i useu peces grans que no puguen entrar sota les rodes.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-i-adaptacio">🔗 Referents i adaptació</h2>
+<ul><li>Matatalab, <a href="https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf" target="_blank" rel="noopener noreferrer">*Coding Activity Cards*, targeta B-1 · *Maze Adventure I* (PDF oficial)</a>: proposa fer laberints amb retoladors esborrables, col·locar tresors, programar MatataBot amb blocs de moviment i nombre i afegir un segon tresor per trobar-ne dos en un únic programa. La mostra consultada inclou exemples gràfics de dos mapes; aquesta proposta crea mapes locals propis i no n’assegura una correspondència geomètrica exacta.</li><li>Matatalab, <a href="https://matatalab.com/en/node/88" target="_blank" rel="noopener noreferrer">*Hello Matatalab Robots!*</a>: font de comprovació per a la lectura dels blocs direccionals, l’orientació i els girs del Coding Set.</li></ul>
+<p>La proposta manté el cicle complet de la targeta: crear un laberint esborrable, posar-hi un tresor, trobar-lo amb blocs de moviment i nombre i afegir-ne un altre per resoldre dues destinacions amb un sol programa. El mapa i les peces són materials locals; la presa de decisions és humana i el MatataBot només executa la seqüència.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

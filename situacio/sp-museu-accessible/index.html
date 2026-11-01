@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Laboratori de solucions accessibles | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Com podem identificar una necessitat, prototipar alternatives i millorar una solució accessible amb proves justes?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-museu-accessible" class="btn-back" data-preserve-filters="sp-museu-accessible">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Disseny i Matemàtiques</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 8–10 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Laboratori de solucions accessibles</h1>
+        <span class="tag-badge" data-theme>🏷️ Disseny per a la comunitat</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-laboratori-accessible-v2.png" alt="Model construït amb SPIKE Prime al costat d’un prototip de cartó separat, amb un botó gran, una targeta d’alt contrast i peces tàctils per a una ruta de prova." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA basada en el model SPIKE Prime de la dotació. El botó, la targeta i la ruta són un prototip manual separat: no estan connectats al robot ni validen per si mateixos una solució d’accessibilitat.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Adaptació de la unitat <em>Invention Squad</em> per al context d’un centre educatiu valencià. Cada sessió conserva l’objectiu oficial i el tradueix en un repte, materials i criteris propis; quan una activitat del pla és híbrida o no requereix el hub, s’indica expressament en la sessió.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Identificar barreres en una situació fictícia i convertir-les en requisits de disseny verificables.</li><li>Construir alternatives de mecanisme i comparar-les amb una prova justa i el mateix criteri.</li><li>Iterar un prototip a partir de les observacions de persones voluntàries, sense inferir necessitats individuals.</li><li>Explicar què millora la solució, per a qui s’ha provat i quines barreres continuen presents.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<p>SPIKE Prime i els seus motors per a les cinc lliçons del set; per a S6, dues fulles de paper per alumne, llapis o retoladors, peces de construcció corrents i materials lleugers reutilitzats com cartó. Prepareu una taula estable i neta per fer prototips i proves. S6 es pot fer sense cap set de robòtica; cap part no pressuposa BricQ Motion.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-6-reptes-8-10-sessions">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 6 · Interpretem tres senyals del museu ([Help!](https://education.lego.com/en-us/lessons/prime-invention-squad/help/), 60 min + neteja)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" aria-valuetext="Pas 1 de 6">
+        <span data-wizard-bar style="width: 16.67%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Interpretem tres senyals del museu ([Help!](https://education.lego.com/en-us/lessons/prime-invention-squad/help/), 60 min + neteja)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Interpretem tres senyals del museu ([Help!](https://education.lego.com/en-us/lessons/prime-invention-squad/help/), 60 min + neteja)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Dissenyem potes per a una prova de recorregut ([Hopper Race](https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/), 30–45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dissenyem potes per a una prova de recorregut ([Hopper Race](https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/), 30–45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Quin agafador serveix per a cada objecte? ([Super Cleanup](https://education.lego.com/en-us/lessons/prime-invention-squad/super-cleanup/), 30–45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Quin agafador serveix per a cada objecte? ([Super Cleanup](https://education.lego.com/en-us/lessons/prime-invention-squad/super-cleanup/), 30–45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Quatre causes d’una traçadora que no dibuixa ([Broken](https://education.lego.com/en-us/lessons/prime-invention-squad/broken/), 45–90 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Quatre causes d’una traçadora que no dibuixa ([Broken](https://education.lego.com/en-us/lessons/prime-invention-squad/broken/), 45–90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Dissenyem una eina per a una tasca triada ([Design for Someone](https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-someone/), projecte de 120+ min en diverses sessions)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dissenyem una eina per a una tasca triada ([Design for Someone](https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-someone/), projecte de 120+ min en diverses sessions)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="5" aria-label="Obrir pas 6: Un ajudant per a la taula de preparació ([Design for You](https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-you/), 45 min, híbrida)"><span class="learning-wizard-step-number" aria-hidden="true">6</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Un ajudant per a la taula de preparació ([Design for You](https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-you/), 45 min, híbrida)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="s1-interpretem-tres-senyals-del-museu-help-https-education-lego-com-en-us-lessons-prime-invention-squad-help-60-min-neteja" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Interpretem tres senyals del museu (<a href="https://education.lego.com/en-us/lessons/prime-invention-squad/help/" target="_blank" rel="noopener noreferrer">Help!</a>, 60 min + neteja)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Dediqueu cinc minuts a introduir una situació fictícia i a recordar la diferència entre una observació i una suposició. Pregunteu què sabem de la maqueta i què només estem imaginant sobre el personatge.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En lloc d’interpretar un animal domèstic, fem servir una escultura pròpia de l’aiguamoll i una història de ficció en un espai triat (aiguamoll, museu o camí de l’horta). El sensor de color llig tres fitxes i activa primer una seqüència inicial de referència i després una història nova de tres sons, un per cada color. En un minut, cada parella anota tots els problemes possibles que podria tindre el personatge; no resol encara res.</p>
+<p>El sensor llig les fitxes: no detecta animals ni interpreta la història. Per donar suport, restringiu l’escenari a un lloc i oferiu exemples de diferència entre fet observat i inferència; per ampliar, elimineu una interpretació evident i demaneu una descripció creativa del problema.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-help-museu.webp" alt="Prototip SPIKE Prime, escultura de l’aiguamoll i targetes de colors per preparar una història de tres sons." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA d’un muntatge possible amb peces del kit i materials d’aula. La història és fictícia; les targetes representen entrades de color i no són una funció de detecció d’éssers vius.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu les llistes en parelles d’equips, expliqueu quins sons sustenten cada hipòtesi i redacteu un enunciat de problema. Després, els equips intercanvien «històries sonores»: creen tres sons propis perquè una altra parella definisca un problema diferent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Establiu criteris i restriccions per a una solució (missatge interpretable, volum adequat, cap dada personal), trieu una necessitat definida, genereu almenys una resposta, reviseu-la segons els criteris i compartiu feedback positiu/constructiu. Deixeu temps per a guardar les peces.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Observeu si es defineix el problema amb detalls observables, si el grup separa definició del problema de la solució i si proposa criteris/restriccions pertinents. Feu una autoavaluació privada en tres nivells: identificar un problema; afegir criteris i una idea; provar la idea contra els criteris i millorar-la. Acabeu amb conversa o presentació breu i feedback positiu i constructiu.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>prediccions després de cada seqüència, llista inicial d’un minut, comparació de problemes, història pròpia de tres colors/sons, criteris, idea de solució i millora.</p></div></aside>
+<p>Els sons no descriuen animals reals: són codis ficticis per practicar observació i definició de necessitats.</p>
+</section>
+</div></section>
+<section class="learning-step" id="s2-dissenyem-potes-per-a-una-prova-de-recorregut-hopper-race-https-education-lego-com-en-us-lessons-prime-invention-squad-hopper-race-30-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Dissenyem potes per a una prova de recorregut (<a href="https://education.lego.com/en-us/lessons/prime-invention-squad/hopper-race/" target="_blank" rel="noopener noreferrer">Hopper Race</a>, 30–45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Dediqueu uns cinc minuts a parlar de prototips: què és una primera versió, per què convé comparar opcions i com podem generar idees abans de construir. Presenteu el repte central de <em>Hopper Race</em>: fer avançar un robot sense rodes. Com a criteris locals, acordem també que no es bolque i que les proves es facen en un carril lliure de persones i objectes fràgils. Cada parella dibuixa dues idees abans d’obrir el muntatge.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Durant uns 25 minuts, construïu el model base amb el muntatge disponible al centre i executeu el programa de partida per observar com es mou. Dissenyeu almenys dos jocs de potes que impulsen el cos cap avant; no useu rodes com a sistema de locomoció. Proveu una alternativa, torneu a la base quan calga i busqueu una segona solució encara que la primera funcione.</p>
+<p>Una persona pot comparar la longitud de les potes o gambades i una altra el programa o la velocitat del motor; després intercanvien els rols. No cal que tots els prototips funcionen per a aportar evidència.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-hopper-potes.webp" alt="Prototip SPIKE Prime amb potes articulades i dues alternatives de mecanisme sense rodes." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA orientativa d’una prova de <em>Hopper Race</em>. Les potes són variants de prototip construïdes amb peces del kit; cal comprovar el muntatge disponible i mantindre el carril lliure.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Reserveu uns cinc minuts per descriure com cada canvi ha afectat el moviment. Registreu per a cada prototip el dibuix, la longitud de pota o gambada, la velocitat configurada, la superfície i què heu observat. Distingiu les variables que heu canviat de les que heu mantingut constants; predigueu quin disseny recorrerà millor la mateixa pista i expliqueu per què.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Prepareu una pista curta amb línies d’eixida i arribada. En els deu minuts finals, feu una ronda de fins a cinc minuts per provar i millorar els models i després la cursa comparativa. Useu la mateixa distància, superfície i condició d’inici; mesureu el temps o la distància i anoteu si el robot completa el recorregut sense bolcar. La cursa és una manera de comparar, no l’únic resultat: mostreu també una solució que no haja funcionat i què heu aprés.</p>
+<p>Si queda temps, afegiu caràcter amb peces lleugeres o creeu un tram desigual amb peces soltes ben fixades fora del pas de persones; tracteu-lo com un canvi de criteri i torneu a provar només si és segur. Doneu temps per a recollir.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Useu una escala d’observació de tres nivells per valorar si l’equip explica el problema, genera diverses idees i dissenya diverses solucions, funcionen o no. Cada alumne pot triar en privat el color que millor representa el procés: blau, un joc de potes funcional; groc, dos o més; violeta, diverses modificacions que han millorat l’eficiència. Una parella d’un altre equip dona un comentari específic i una proposta per a la pròxima iteració. <strong>Evidències:</strong> esbossos de diverses potes, incloses les que no funcionen;</p>
+<p>taula de prova comparable; predicció i resultat; justificació de la decisió i retorn rebut. Com a ampliació matemàtica, estimeu la velocitat mitjana en cm/s i useu distància = velocitat × temps per predir el recorregut després de 8, 16 i 24 segons. Compareu predicció i mesura sense assumir que la velocitat es manté en una superfície diferent. Com a ampliació lingüística, prepareu una explicació breu de biomimètica: quina característica d’un animal inspira el prototip i en què no és equivalent.</p>
+<p>La puntuació no depén de guanyar la cursa.</p>
+</section>
+</div></section>
+<section class="learning-step" id="s3-quin-agafador-serveix-per-a-cada-objecte-super-cleanup-https-education-lego-com-en-us-lessons-prime-invention-squad-super-cleanup-30-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Quin agafador serveix per a cada objecte? (<a href="https://education.lego.com/en-us/lessons/prime-invention-squad/super-cleanup/" target="_blank" rel="noopener noreferrer">Super Cleanup</a>, 30–45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Dediqueu uns cinc minuts a la pregunta «com decidiríem quin agafador és millor?». Acordeu abans de provar dos criteris observables, com ara si subjecta l’objecte sense deixar-lo caure i si el pot alçar sense deformar-lo. Predigueu quin dels dos dissenys funcionarà millor amb un objecte menut i un de voluminós. No hi ha un agafador millor per a tots els usos.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Durant uns vint minuts, munteu en parella el controlador manual i els dos agafadors de prova. Repartiu la construcció —una persona fa el primer agafador; l’altra, el segon i el controlador— i després intercanvieu qui programa o manipula. El primer disseny flexible s’adapta millor a objectes lleugers; el segon, amb la boca partida, a objectes més grans. Executeu el programa de prova per entendre com s’obri i es tanca cada mecanisme abans de començar a recollir dades.</p>
+<p>Prepareu materials d’aula no fràgils i sense valor personal: per exemple, peces LEGO o boles de paper de diferents mides. Per variar el pes amb la mateixa forma, useu capsetes iguals tancades amb quantitats diferents de peces LEGO. No utilitzeu vidre, aliments ni objectes personals.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-super-cleanup-agafadors.webp" alt="Dos agafadors SPIKE Prime de formes diferents, amb objectes lleugers i una taula de comparació." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA de dos prototips de pinça i materials de prova segurs. Les formes són exemples; construïu i compareu els mecanismes reals amb les peces disponibles.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Durant uns deu minuts, feu dues proves i registreu cada resultat en una taula: <strong>Prova 1</strong>, objectes de mides diferents i pesos semblants; <strong>Prova 2</strong>, objectes de pesos diferents i mides semblants. En cada prova, passeu els mateixos objectes pels dos agafadors. Manteniu constants el punt de partida, l’operador i el criteri d’èxit; anoteu també els intents necessaris. Si cal reduir la càrrega, proveu només una mostra gran i una de menuda i conserveu la comparació dels dos dissenys.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Dediqueu uns deu minuts a posar en comú els resultats i discutir si les proves han sigut justes. Trieu un objecte habitual de l’aula, predigueu quin agafador convé i justifiqueu la decisió amb les dades. Com a ampliació, definiu un criteri nou o redissenyeu un agafador i repetiu la comparació; no barregeu els resultats del prototip nou amb els del disseny inicial.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Evidències:</strong> predicció inicial, taula de les dues proves amb mides/pesos i resultats separats, conclusió basada en les dades i recomanació per a un ús concret. La rúbrica docent observa si l’equip defineix criteris, manté una comparació justa i comunica una conclusió. Autoavaluació individual: blau, ha provat un agafador; groc, n’ha provat dos; violeta, ha utilitzat els resultats per decidir quin és més adequat. Una altra parella dona un comentari concret i una idea de millora.</p>
+<p>Per a l’extensió matemàtica, assigneu pesos a criteris com seguretat, portabilitat, cost i facilitat d’ús fins a sumar 100%; valoreu cada disseny amb −1 o +1 per criteri i calculeu la puntuació ponderada. Comproveu si canviar els pesos altera la recomanació: representen prioritats del projecte, no una mesura universal. Com a extensió lingüística, prepareu una presentació oral o una ressenya breu amb avantatges i limitacions; no cal gravar ni publicar vídeos.</p>
+</section>
+</div></section>
+<section class="learning-step" id="s4-quatre-causes-d-una-tracadora-que-no-dibuixa-broken-https-education-lego-com-en-us-lessons-prime-invention-squad-broken-45-90-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Quatre causes d’una traçadora que no dibuixa (<a href="https://education.lego.com/en-us/lessons/prime-invention-squad/broken/" target="_blank" rel="noopener noreferrer">Broken</a>, 45–90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Obriu amb una conversa breu sobre què fem quan un objecte deixa de funcionar i com podem esbrinar-ne la causa abans de reparar-lo. Presenteu la traçadora CNC com una màquina que mou un llapis sobre dos eixos per dibuixar una forma. L’encàrrec local és recuperar una traçadora que ha de dibuixar una etiqueta o un plànol senzill per a l’exposició. Expliqueu que el prototip s’ha preparat expressament amb errors; no avanceu quins són ni com es resolen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Dediqueu fins a 35 minuts a construir per parelles la màquina sabent que ha de quedar inicialment inoperativa. Repartiu les tasques de muntatge del bastidor superior/motors i de la base/carro del llapis; després comproveu que el paper entra per la base i que el suport manté el llapis en contacte. Abans d’activar els motors, escriviu un pseudocodi o expliqueu oralment què fa cada pas del programa.</p>
+<p>Executeu-lo una vegada a baixa velocitat, observeu la diferència entre el dibuix esperat i el real i documenteu els símptomes; a partir d’eixes observacions, proposeu causes possibles. Useu el paper pautat de prova a escala original, sense redimensionar-lo, o una graella local de mida comprovada.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-broken-tracadora.webp" alt="Traçadora de dos eixos construïda amb hub, motors i bigues SPIKE Prime, al costat del quadern d’observació." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA d’una màquina de paper basada en peces SPIKE Prime. El prototip representat no identifica les avaries: l’alumnat les ha de deduir de les proves.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Reserveu uns deu minuts per a compartir les observacions. Per a cada símptoma, anoteu què no funciona, què hauria de passar, una causa possible i una prova que permeta distingir-la d’altres hipòtesis. Reviseu si el problema correspon a l’eix X, a l’alimentació del paper/eix Y, a una fixació o al programa. <strong>Clau docent —no la faciliteu abans de la investigació:</strong> el model oficial incorpora quatre errors: falta una roda alimentadora del paper i l’eix Y no avança bé;</p>
+<p>la part superior no està ben unida a la base; els engranatges alimentadors estan invertits i el paper avança massa de pressa; el carro del llapis no està fixat i altera l’eix X. L’objectiu és que l’alumnat localitze les causes, no donar-li la llista abans de la prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>En els 25 minuts d’ampliació, trieu una causa cada vegada, canvieu només el mecanisme o el paràmetre relacionat i repetiu la prova. Registreu si la correcció acosta el resultat a la forma prevista; compartiu les solucions i feu una iteració final. Per donar suport, oferiu una selecció de peces candidates sense assenyalar quina és la solució.</p>
+<p>Per ampliar, programeu una forma amb corbes i augmenteu gradualment un rectangle dins de l’àrea imprimible: mesureu base i altura i calculeu l’àrea, expliqueu el límit físic i proposeu com l’actualitzaríeu. Com a conversa lingüística, representeu una consulta tècnica «mans fora»: una persona descriu el símptoma i l’altra guia la comprovació sense tocar la màquina.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Evidències:</strong> pseudocodi previ, dibuix esperat, taula símptoma–funció prevista–causa–prova–reparació, resultats de cada intent, dibuix final i dimensions/àrea de la forma. La rúbrica observa si l’equip descriu estructura i funció, troba causes arrel, tria reparacions que satisfan el criteri i millora el disseny després de provar-lo. Autoavaluació: blau, explique com funciona la màquina; groc, puc reparar-la perquè complisca la funció prevista; violeta, puc proposar una millora d’eficiència. Una altra parella dona feedback constructiu. Atureu el programa abans de tocar engranatges, paper o llapis;</p>
+<p>no forceu eixos i feu les proves amb velocitat baixa.</p>
+</section>
+</div></section>
+<section class="learning-step" id="s5-dissenyem-una-eina-per-a-una-tasca-triada-design-for-someone-https-education-lego-com-en-us-lessons-prime-invention-squad-design-for-someone-projecte-de-120-min-en-diverses-sessions" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Dissenyem una eina per a una tasca triada (<a href="https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-someone/" target="_blank" rel="noopener noreferrer">Design for Someone</a>, projecte de 120+ min en diverses sessions)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Dediqueu uns quinze minuts a obrir una conversa sobre disseny assistiu i funcions que les eines poden facilitar. La lliçó oficial connecta el procés amb pròtesis; ací observem exemples documentats amb fonts fiables i distingim un prototip escolar d’un producte clínic. No demaneu a ningú que imagine una discapacitat pròpia ni que parle en nom d’una persona amb discapacitat. La proposta local no simula discapacitats, no diagnostica ningú ni fabrica una pròtesi d’ús humà.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En la primera trobada, feu una pluja d’idees individual i en parella sobre funcions possibles d’una eina de taula. En 30 minuts, acoteu la tasca a una funció concreta —per exemple, agafar un objecte gran, subjectar una targeta o girar una maneta de maqueta— i trieu dues idees que vulgueu provar. Descriviu el context, la persona usuària de manera no identificable, els criteris d’èxit i les restriccions.</p>
+<p>La necessitat pot ser fictícia o aportada voluntàriament per una persona adulta col·laboradora, que pot modificar-la o retirar-se en qualsevol moment.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-design-someone-prototips.webp" alt="Dues idees de prototip per a una taula de treball: un suport per a targetes i una palanca per moure un objecte lleuger." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA de prototips primerencs fets amb bigues SPIKE Prime, cartó i paper. Són exemples per a provar amb objectes, no pròtesis ni dispositius per a l’ús sobre persones.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Useu una segona trobada d’uns 45 minuts per construir i provar les dues solucions triades. Si és útil per a començar, oferiu un mecanisme de mostra com a punt de partida opcional, però deixeu que cada parella el modifique. Prepareu una taula pròpia amb criteri, procediment, resultat i observacions; manteniu iguals l’objecte, la càrrega i el nombre d’intents per a comparar les dues propostes. Per ampliar el projecte, convideu una persona especialista només si està disponible i d’acord;</p>
+<p>feu servir peces fabricades o tallades únicament si el centre ja en disposa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>En una tercera trobada d’uns 45 minuts, presenteu els resultats a la classe amb el quadern de disseny —text, esquemes, fotografies del prototip sense persones o taules— i expliqueu com cada idea ha respost als criteris. Compareu les dades, descriviu un cas en què cada solució no funciona i rebeu preguntes i feedback constructiu. Si queda temps, trieu una millora justificada per les proves i registreu-la com a següent iteració, sense presentar-la com a solució validada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>quadern de disseny amb context i necessitat, criteris/restriccions, pluja d’idees, dues opcions triades, taula de les proves, dades, presentació i millora proposada. La seqüència de referència suma 135 minuts en tres parts (15 min de conversa, 30 min d’ideació, 45 min de construcció/prova i 45 min de presentació); es pot repartir en diverses classes i afegir temps de muntatge. Avalueu si l’alumnat identifica elements clau del problema, treballa amb autonomia/creativitat i comunica les idees amb claredat.</p></div></aside>
+<p>Autoavaluació privada i feedback constructiu entre parelles. Si hi ha una col·laboradora real, només reviseu els requisits amb el seu consentiment i possibilitat de canviar-los; sense consulta, indiqueu que la necessitat no està validada. El producte és un prototip escolar per a un objecte, no una pròtesi mèdica ni un dispositiu recomanat o provat sobre persones.</p>
+</section>
+</div></section>
+<section class="learning-step" id="s6-un-ajudant-per-a-la-taula-de-preparacio-design-for-you-https-education-lego-com-en-us-lessons-prime-invention-squad-design-for-you-45-min-hibrida" data-step="6" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 6</span><h3>Un ajudant per a la taula de preparació (<a href="https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-you/" target="_blank" rel="noopener noreferrer">Design for You</a>, 45 min, híbrida)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Dediqueu deu minuts a conversar sobre d’on venen les idees d’invents i quins problemes quotidians de l’espai de treball es poden resoldre. Useu com a context la taula on preparem l’exposició del museu escolar: cal mantindre dretes les etiquetes, ordenar targetes o separar peces reutilitzables? Definiu entre tots què és un prototip i els criteris inicials d’èxit, com ara estabilitat, facilitat d’ús i que no ocupe massa espai. Cada alumne tria una necessitat de la seua pròpia taula;</p>
+<p>no cal afirmar que el prototip resoldrà la necessitat de tota la classe.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Dins de quinze minuts, dissenyeu individualment un ajudant d’escriptori amb paper, llapis i materials de construcció corrents o reutilitzats. No hi ha instruccions ni model final obligatori; les imatges de referència només inspiren. Feu una pluja d’idees, construïu un prototip ràpid i proveu-lo amb els criteris acordats. Si una idea no funciona, torneu al cicle de disseny una segona o tercera vegada si el temps ho permet. L’activitat híbrida no necessita SPIKE Prime, BricQ ni hub.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-ajudant-taula-preparacio.webp" alt="Prototips d’escriptori fets amb blocs de construcció i cartó per a mantindre una etiqueta dreta, ordenar peces i guardar llapis; no hi ha robots ni electrònica." width="600" height="448" loading="lazy"><figcaption>Exemple visual d’un prototip obert per a la taula de preparació del museu escolar; és una inspiració, no un model que cal copiar.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Dediqueu deu minuts a explicar el prototip a una parella i a donar-vos feedback respectuós. Qui presenta explica: quin problema de la seua taula ha triat, com ha generat idees i com ha provat el prototip. Qui escolta comenta un detall concret, formula una pregunta i proposa una millora; no avalua la persona. Alterneu els rols i distingiu un prototip de prova d’un producte acabat. Podeu usar frases com «M’ha ajudat…», «Voldria saber…» o «Et propose provar…».</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reserveu cinc minuts per a anotar una millora a partir del feedback i explicar per què podria ajudar. Si ja coneixeu SPIKE Prime, dibuixeu com transformaríeu el prototip en un mecanisme amb el hub; és una proposta futura, no cal construir-la ni motoritzar-la.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Dediqueu els cinc minuts finals a mostrar com el prototip podria ajudar a la taula i què heu canviat o canviaríeu després de provar-lo. Autoavaluació privada amb una fitxa de tres nivells: <strong>roig</strong>, amb ajuda puc definir el problema i comparar solucions; <strong>groc</strong>, puc explicar com definir-lo i avaluar opcions; <strong>verd</strong>, puc ensenyar a una altra persona a fer-ho. <strong>Evidències:</strong> necessitat triada, criteri d’èxit, esbós o pluja d’idees, prototip, nota de prova, feedback i millora proposada.</p>
+<p>La comunicació pot ser oral, escrita o amb un dibuix; no cal motoritzar el prototip ni publicar fotos de casa o de l’aula.</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Carpeta d’equip: problema definit amb observacions, criteris i restriccions; dos prototips de locomoció amb tres registres per prova; taula comparativa de pinces; registre de depuració; fitxa de disseny col·laboratiu amb retorn de la persona usuària o constància que falta validar-lo; i esbós/prova d’ús de l’ajudant d’escriptori. La rúbrica observa si l’alumnat diferencia problema i solució, compara evidències amb els criteris, documenta una iteració i comunica una limitació. No es puntua si el robot «guanya» ni s’aprova un prototip per a ús real.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-i-inclusio">♿ Participació, accessibilitat i seguretat</h2>
+<p>La participació de persones amb necessitats d’accessibilitat és voluntària i informada; no simulem una discapacitat amb venda o guants. Si no hi ha una persona consultora, analitzem barreres del context amb fonts fiables i marquem la validació com a pendent. Repartim rols de disseny, programació, prova i documentació.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="unitat-oficial-i-tracabilitat">🔗 Referents i adaptació</h2>
+<p>La seqüència adapta les sis entrades de la unitat LEGO Education <a href="https://education.lego.com/en-us/lessons/prime-invention-squad/" target="_blank" rel="noopener noreferrer">Invention Squad</a>: <em>Help!</em>, <em>Hopper Race</em>, <em>Super Cleanup</em>, <em>Broken</em>, <em>Design for Someone</em> i <a href="https://education.lego.com/en-us/lessons/prime-invention-squad/design-for-you/" target="_blank" rel="noopener noreferrer">*Design for You*</a>. Les cinc primeres especifiquen el set SPIKE Prime; la sisena és híbrida i permet peces LEGO corrents o materials reutilitzats, sense necessitat de cap hub. El context, els guions, les dades, el camp de proves, les activitats i la imatge són propis. Els muntatges i sensors es comproven amb el set disponible al centre.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

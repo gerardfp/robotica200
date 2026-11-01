@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Veu i IA: funció externa i simulació amb Codey Rocky | Robòtica²⁰⁰</title>
+  <meta name="description" content="Distingir el sensor de so integrat del reconeixement de parla, provar una extensió en línia només si està disponible i simular les ordres amb seguretat.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn active">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../robot/codey-rocky/index.html" class="btn-back">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Codey Rocky</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      
+      <span>Codey Rocky</span>
+    </span><span class="tag-badge">
+      
+      <span>Avançat</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 50 min</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Veu i IA: funció externa i simulació amb Codey Rocky</h1>
+        <p class="detail-intro" data-description>Distingir el sensor de so integrat del reconeixement de parla, provar una extensió en línia només si està disponible i simular les ordres amb seguretat.</p>
+      </div>
+      <div class="prose" data-content><section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-objectius">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Investigueu què pot fer Codey Rocky quan escolta un so i què exigiria una funció de reconeixement de parla. El robot base incorpora un sensor que detecta el nivell sonor, però no inclou un mòdul que reconega paraules. El reconeixement, quan l’editor i el servei en línia encara l’ofereixen, depén del programari, la connexió, el compte i les condicions de privacitat del centre.</p></div></aside>
+<ul><li>Comparar una lectura de so ambiental amb una ordre de veu interpretada per programari.</li><li>Comprovar si l’extensió de serveis cognitius està disponible abans de basar-hi l’activitat.</li><li>Vincular una entrada de prova a una resposta visible i segura, sense activar moviments inesperats.</li><li>Reconéixer quines dades ixen del dispositiu quan s’utilitza un servei de veu en línia.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Sensor de so integrat de Codey: permet llegir intensitat sonora i fer que una condició responga a un llindar; no transcriu ni entén paraules.</li><li>Pantalla LED, indicador RGB i altaveu com a eixides per comunicar un estat de prova.</li><li>Reconeixement de parla com a funció de programari o mòdul Neuron compatible, no com a sensor integrat del Codey Rocky base.</li><li>Connexió i serveis en línia com a dependències externes que poden no estar disponibles o tindre límits d’idioma i compte.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Codey Rocky de la dotació amb bateria suficient i espai de treball delimitat.</li><li>Ordinador amb mBlock 5, micròfon del dispositiu i connexió de xarxa només si el servei en línia està autoritzat.</li><li>Targetes grans amb les ordres fictícies «marxa», «para» i «gira» per a una simulació sense veu.</li><li>Un registre per anotar component, programa, resposta i dependències de cada prova.</li></ul>
+<p>Obriu el projecte amb el dispositiu Codey i comproveu si la versió de mBlock disponible ofereix una extensió de veu compatible. No creeu un compte ni envieu cap enregistrament fins que el centre haja verificat les condicions del servei i el consentiment necessari. Si l’extensió no hi és, la guia es pot completar sencera amb targetes: la simulació no és una capacitat del robot.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Mesureu el so amb el robot base</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Mesureu el so amb el robot base" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Mesureu el so amb el robot base</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Reviseu si hi ha reconeixement de parla"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Reviseu si hi ha reconeixement de parla</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Proveu una resposta controlada, si el servei està autoritzat"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Proveu una resposta controlada, si el servei està autoritzat</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Simuleu les mateixes ordres sense enviar veu"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Simuleu les mateixes ordres sense enviar veu</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="1-mesureu-el-so-amb-el-robot-base" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Mesureu el so amb el robot base</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Programa Codey perquè mostre una lectura del sensor de so o encenga l’indicador RGB quan el nivell supere un llindar. Proveu primer en silenci i després amb un so breu, com una palmada a distància; repetiu tres vegades i anoteu els valors o estats que expose el bloc. Feu servir un volum còmode. Si el bloc només dona un estat de so fort, registreu-lo com a estat i no com a decibels calibrats.</p>
+</section>
+</div></section>
+<section class="learning-step" id="2-reviseu-si-hi-ha-reconeixement-de-parla" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Reviseu si hi ha reconeixement de parla</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Exploreu les extensions disponibles a mBlock sense activar la captura d’àudio. Anoteu el nom exacte, el dispositiu o servei al qual pertany i les llengües que indica la interfície. Si no trobeu una opció funcional, marqueu-la com a «no disponible en aquesta configuració» i passeu a la simulació. No interpreteu una lectura alta del sensor de so com si el robot haguera entés «marxa» o «para».</p>
+</section>
+</div></section>
+<section class="learning-step" id="3-proveu-una-resposta-controlada-si-el-servei-esta-autoritzat" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Proveu una resposta controlada, si el servei està autoritzat</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Només si el centre autoritza el servei i l’extensió funciona en la versió instal·lada, feu una prova amb una frase fictícia i mostreu una icona quan el resultat coincidisca amb una paraula prevista. Comenceu amb un missatge visual o un so breu: no poseu en marxa els motors, perquè una transcripció errònia podria generar un moviment no previst. Registreu també una frase diferent i un cas sense parlar per observar falsos reconeixements o absència de resultat.</p>
+</section>
+</div></section>
+<section class="learning-step" id="4-simuleu-les-mateixes-ordres-sense-enviar-veu" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Simuleu les mateixes ordres sense enviar veu</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Si el servei no està disponible o no es pot utilitzar, una persona tria una targeta sense mostrar-la al programador. El programador aplica la mateixa lògica a l’entrada de text fictícia —«marxa», «para» o «gira»— i Codey mostra una icona associada. Compareu la resposta amb la prova de veu, si n’hi ha, i etiqueteu clarament quina entrada s’ha simulat. La simulació permet estudiar condicionals, però no comprova el reconeixement acústic.</p>
+<figure class="sa-illustration"><img src="../../_assets/tutorials/cr-veu-ia.png" alt="Codey Rocky de la dotació mostra una resposta visual mentre una entrada de veu es representa com una funció externa de programari." width="600" height="448" loading="lazy"><figcaption>El núvol és una dependència de programari: el robot base no incorpora reconeixement de parla.</figcaption></figure>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
+<p>Compareu tres casos: silenci, so breu i, si està autoritzat, una frase de prova. Anoteu què ha llegit el sensor del robot, què ha retornat l’extensió i quina resposta s’ha mostrat. Repetiu el mateix cas sense canviar la distància ni el volum. Si el servei de veu no està disponible, completeu la comparació amb targetes i identifiqueu les dades com a simulades; no presenteu aquest resultat com a reconeixement real.</p>
+<h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
+<ul><li>Quina informació llig el sensor de so del Codey i quina no pot determinar?</li><li>Quin component o servei hauria d’interpretar les paraules parlades?</li><li>Quina diferència hi ha entre una resposta visual simulada i un reconeixement acústic real?</li><li>Quins permisos i quina connexió calen abans d’enviar veu a un servei extern?</li></ul>
+<h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
+<ul><li>Programa del sensor de so amb el llindar i la resposta visual.</li><li>Taula que separa lectura integrada, resultat d’un servei extern i entrada simulada.</li><li>Registre de tres casos de prova, amb les dependències tècniques disponibles.</li><li>Explicació breu de per què Codey Rocky no reconeix parla de manera autònoma.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>La veu és opcional: oferiu targetes, text fictici o botons com a entrada equivalent. Eviteu noms, converses personals i enregistraments d’infants. No useu el control de veu per activar motors en aquesta prova; delimiteu l’espai i manteniu una resposta visual o sonora suau. Si el servei envia àudio fora del dispositiu, seguiu les normes de privacitat i autorització del centre.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
+<p>Makeblock descriu el <a href="https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky" target="_blank" rel="noopener noreferrer">sensor de so integrat de Codey Rocky</a> com una lectura del nivell sonor, i a les <a href="https://support.makeblock.com/hc/en-us/articles/1500004266501-FAQs-on-Codey-Rocky" target="_blank" rel="noopener noreferrer">FAQ oficials</a> indica que el model base no té un mòdul de reconeixement de parla; la veu requeriria un mòdul Neuron compatible. La <a href="https://support.makeblock.com/hc/en-us/articles/7463171094295-Case-11-Voice-activated-RGB-LED-indicator" target="_blank" rel="noopener noreferrer">guia oficial del cas de veu</a> treballa el nivell de so, no la transcripció de paraules. Les extensions d’IA i els serveis en línia depenen de la versió i de la xarxa del centre.</p>
+</section></div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

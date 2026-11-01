@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Un temporitzador d’activitats responsable | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Com podem explicar què és la IA, netejar dades de moviment i avaluar amb responsabilitat un model en micro:bit?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-mb-ia-exercici-responsable" class="btn-back" data-preserve-filters="mb-ia-exercici-responsable">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/microbit.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>micro:bit</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Ciències, Matemàtiques i Ciutadania Digital</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 8 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Un temporitzador d’activitats responsable</h1>
+        <span class="tag-badge" data-theme>🏷️ IA, moviment i disseny responsable</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-mb-ia-exercici-responsable.webp" alt="Una placa micro:bit i una maqueta interactiva amb targetes de dades representen un temporitzador d’activitats basat en patrons de moviment." width="600" height="448" loading="lazy"><figcaption>El sistema és una demostració de classificació i temporització; no és un entrenador ni una eina de salut.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>La fira de ciència del centre vol mostrar com dades i decisions de disseny afecten un sistema d’IA. Els equips creen un temporitzador que reacciona a moviments assignats a una maqueta, no a perfils d’alumnat. La seqüència adapta les vuit lliçons oficials de <em>Developing AI literacy with the micro:bit</em>, incloent-hi activitats desconnectades, CreateAI, codi MakeCode, biaix i una targeta del model.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Distingir un sistema basat en regles d’un model que aprén patrons a partir de dades.</li><li>Netejar i separar conjunts d’entrenament i prova, documentant exclusions i condicions.</li><li>Calcular encerts, errors i dubtes, revisar biaixos i iterar sense usar dades personals o biomètriques.</li><li>Construir una eixida controlable per a una maqueta i presentar una model card amb usos, riscos i límits.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="requisits-i-alternativa-didactica">🧰 Materials i preparació</h2>
+<p>CreateAI, MakeCode, navegador o app compatible, micro:bit V2, alimentació i cable de dades; una segona placa pot ser necessària segons el Bluetooth de l’ordinador. El servei guarda projectes al navegador o dispositiu i el fitxer HEX pot incloure dades, model i codi. Si no es pot usar l’eina, les lliçons 1, 2, 5 i 8 continuen amb targetes; les sessions de ML es poden fer amb un classificador en paper identificat com a simulació, sense afirmar que s’ha entrenat un model.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-8-sessions">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 8 · Parlar d’IA (Talking about AI)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="8" aria-valuenow="1" aria-valuetext="Pas 1 de 8">
+        <span data-wizard-bar style="width: 12.50%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Parlar d’IA (Talking about AI)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Parlar d’IA (Talking about AI)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Importància de les dades (Exploring AI: the importance of data)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Importància de les dades (Exploring AI: the importance of data)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Avaluar les dades (Exploring ML: evaluating data)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Avaluar les dades (Exploring ML: evaluating data)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Provar l’exactitud (Exploring ML: testing accuracy)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Provar l’exactitud (Exploring ML: testing accuracy)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Considerar biaixos (Exploring ML: considering bias)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Considerar biaixos (Exploring ML: considering bias)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="5" aria-label="Obrir pas 6: Fer millores (Exploring ML: making improvements)"><span class="learning-wizard-step-number" aria-hidden="true">6</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Fer millores (Exploring ML: making improvements)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="6" aria-label="Obrir pas 7: Programar amb el model (Exploring ML: coding with your model)"><span class="learning-wizard-step-number" aria-hidden="true">7</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Programar amb el model (Exploring ML: coding with your model)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="7" aria-label="Obrir pas 8: Avaluar disseny i impactes (Evaluating AI project design and impacts)"><span class="learning-wizard-step-number" aria-hidden="true">8</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Avaluar disseny i impactes (Evaluating AI project design and impacts)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-parlar-d-ia-talking-about-ai" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Parlar d’IA (Talking about AI)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu la fira de ciència i el temporitzador de maqueta. Abans de definir IA, l’alumnat dibuixa què imagina que passa entre una inclinació de la base i una icona que apareix a la placa. Pregunteu quines parts creuen que decideixen persones i quines podria fer el sistema.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Classifiqueu targetes de tecnologies familiars —alarma, calculadora, mapa digital, llum amb sensor— segons si segueixen una regla explícita o si aprenen patrons amb dades. Reviseu missatges publicitaris que diuen que una màquina «entén» o «decideix com una persona» i marqueu quines afirmacions caldria comprovar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu les classificacions i descriviu una regla fixa amb l’estructura «si passa X, fes Y». Distingiu aquesta instrucció d’un model entrenat amb exemples i anoteu en un diagrama qui defineix les classes, tria les dades i decideix què significa el resultat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Escriviu en equip una definició pròpia d’IA i una de ML per a la fira. Reviseu-les amb una parella: elimineu expressions que atribuïsquen intencions o comprensió humana al model i afegiu-hi un exemple de regla fixa per contrastar-les.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>classificació de tecnologies, diagrama de decisions humanes i dues definicions revisades. Comproveu si l’alumnat pot explicar la diferència entre regla i aprenentatge amb un exemple. Pregunta de tancament: «Qui és responsable quan el sistema dona una resposta inesperada?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-importancia-de-les-dades-exploring-ai-the-importance-of-data" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Importància de les dades (Exploring AI: the importance of data)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Recupereu el temporitzador i pregunteu quina informació necessitaria per mostrar una icona. Cada equip prediu si cal registrar la identitat, l’edat o qualsevol dada personal per reconéixer l’orientació d’una maqueta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Ordeneu targetes fictícies amb diverses regles —per exemple, direcció, angle o durada— i proveu una classificació que use només una característica cada vegada. Incloeu targetes incompletes o amb dues característiques barrejades perquè el grup decidisca si pot classificar-les.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu els resultats de cada regla i anoteu quines targetes canvien de grup. Parleu de consentiment, context, minimització i usos inesperats; identifiqueu les dades que no caldria recollir per a un temporitzador d’exposició.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Revisiteu el protocol del temporitzador i traieu qualsevol dada que no servisca per a respondre a l’orientació de l’objecte. Escriviu una regla d’eliminació de dades i una situació en què no s’hauria de reutilitzar el conjunt recollit.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>dues classificacions, comparació de resultats i llista de dades necessàries/innecessàries. Pregunteu: «Què canvia quan canviem la regla? Qui hauria de donar permís per a recollir una dada i per a quin ús?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-avaluar-les-dades-exploring-ml-evaluating-data" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Avaluar les dades (Exploring ML: evaluating data)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Definiu el propòsit limitat: reconéixer dues orientacions d’una maqueta per canviar un panell. Acordeu què vol dir cada etiqueta i quina posició quedarà «sense classe». Predigueu quina mostra podria resultar ambigua si es comença des d’una posició diferent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Poseu la micro:bit sobre una base de cartó marcada amb dos angles i recolliu mostres amb el seu acceleròmetre en CreateAI. Manteniu la mateixa posició inicial per al primer conjunt, useu codis anònims i registreu diverses repeticions de cada orientació. No demaneu que ningú faça un gest corporal concret.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Reviseu les dades i localitzeu mostres amb orientació errònia o amb dues classes barrejades. Per a cada mostra dubtosa, anoteu si el problema és l’etiqueta, el moviment de la placa durant la captura o una mostra incompleta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Netegeu les mostres que no representen la classe definida i documenteu el motiu d’exclusió. Si la confusió ve del protocol, corregiu la posició inicial i feu una nova captura controlada en lloc d’afegir dades indistintes.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>definicions d’etiqueta, taula de mostres acceptades/excloses i motius verificables. Comproveu que les categories descriuen l’orientació de l’objecte, no una persona. Pregunta final: «Quina decisió nostra ha canviat el conjunt de dades?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-provar-l-exactitud-exploring-ml-testing-accuracy" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Provar l’exactitud (Exploring ML: testing accuracy)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Separeu abans d’entrenar les mostres que es reservaran per a la prova. Predigueu quina classe podria confondre’s i expliqueu per què no s’haurien d’usar les dades de prova per ajustar el model.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Entreneu el model amb el conjunt assignat i proveu-lo amb mostres que no s’han usat per entrenar. Per cada intent, anoteu classe esperada, resposta del model i si és encert, error o dubte.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Completeu una targeta de resultats amb recompte per classe. Debateu què permet concloure eixa mostra i què no, especialment si hi ha pocs casos o una classe té menys exemples. Distingiu exactitud del model i validesa del propòsit.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu si les dades de moviment del dispositiu són apropiades per al prototip i quin consentiment i control calen. Proposeu una millora concreta del protocol i torneu a provar amb un conjunt nou, sense barrejar-lo amb les mostres reservades inicialment.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>separació dels conjunts, targeta d’encerts/errors/dubtes i justificació de l’ús de dades. Pregunteu: «Quina prova addicional necessitaríem abans de dir que el prototip és fiable?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-5-considerar-biaixos-exploring-ml-considering-bias" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Considerar biaixos (Exploring ML: considering bias)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu un cas fictici: el model ha vist només una orientació estable i confon una altra inclinació de la base. Predigueu què pot passar si el temporitzador s’exposa en una taula diferent o si la maqueta es mou més lentament.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Amb targetes de prova inventades, variegeu angle, velocitat o suport, una característica cada vegada. Classifiqueu els resultats correctes, les confusions i els casos sense resposta; no useu dades personals ni inferiu característiques de qui manipula el dispositiu.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Formuleu preguntes per revisar biaix i dades absents: quines condicions no apareixen?, quina classe té menys mostres?, a qui podria perjudicar un fals resultat si algú l’aplicara fora de la maqueta? Registreu cada hipòtesi amb una evidència del conjunt fictici.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Redissenyeu el protocol perquè represente millor les variacions de la maqueta i proposeu una prova que podria refutar la vostra hipòtesi. Manteniu l’avís que el model no classifica persones ni serveix per a prendre decisions sobre elles.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>cas de biaix analitzat, condició absent i prova proposada. Expliqueu per què el biaix pot aparéixer per les decisions de recollida i etiquetatge. Pregunta de tancament: «Quin ús hauríem de rebutjar encara que el model semblara encertar?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-6-fer-millores-exploring-ml-making-improvements" data-step="6" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 6</span><h3>Fer millores (Exploring ML: making improvements)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Reviseu la targeta de resultats i trieu un buit concret observat, com una orientació que apareix poc o una transició confosa. Escriviu quina classe podria millorar i quin resultat indicaria que la predicció era incorrecta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Afegiu només les dades que resolen el buit observat. Comproveu etiquetes, condicions de captura i proporció entre classes abans d’entrenar de nou; no augmenteu totes les dades sense una justificació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu la targeta d’exactitud abans i després, amb nombre de casos per classe, encerts, errors i dubtes. Marqueu si el resultat millora en la classe prevista i si apareix una regressió en una altra.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si la millora no és consistent, preserveu la versió original, repetiu la prova amb un conjunt diferent i expliqueu la incertesa. Decidiu si convé redefinir l’etiqueta, corregir el muntatge o mantindre l’eixida neutral.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>comparació abans/després i justificació de conservar o rebutjar el canvi. Pregunteu: «Quines proves sostenen la millora? Quines dades encara falten per valorar-la?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-7-programar-amb-el-model-exploring-ml-coding-with-your-model" data-step="7" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 7</span><h3>Programar amb el model (Exploring ML: coding with your model)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Recupereu les classes del model i dibuixeu què hauria de mostrar el temporitzador per a cada orientació. Predigueu també què veurà l’usuari quan no hi haja classificació i com podrà aturar o reiniciar el sistema.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Incorporeu les etiquetes ML a MakeCode i programeu un temporitzador visual curt per a la maqueta. Definiu tres estats clars: preparat, activitat de maqueta i pausa/aturat; useu una icona i una durada breu, sense calcular puntuacions.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Traceu el flux de les entrades del model fins a cada estat. Afegiu «sense classificar» com a eixida neutral i comproveu que no activa el temporitzador per error. Registreu les transicions esperades abans d’executar el programa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Afegiu pausa manual i botó d’aturada, que ha de funcionar des de qualsevol estat. Proveu el codi en micro:bit i verifiqueu que es pot usar sense seguir cap activitat corporal real; si no hi ha dispositiu compatible, marqueu clarament la prova com a simulació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>programa anotat i taula de transicions amb classificació coneguda, desconeguda, pausa i aturada. Expliqueu quina part aporta el model i quina respon a regles de MakeCode. No envieu alertes ni calculeu cap puntuació de rendiment.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-8-avaluar-disseny-i-impactes-evaluating-ai-project-design-and-impacts" data-step="8" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 8</span><h3>Avaluar disseny i impactes (Evaluating AI project design and impacts)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Abans de presentar el prototip, cada equip prediu quina pregunta crítica pot fer una persona visitant sobre dades, errors o ús del temporitzador. Reviseu el propòsit i confirmeu que està restringit a la maqueta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Completeu una fitxa del model amb propòsit, origen i tractament de dades, categories, resultats, límits i impactes possibles. Incloeu les dades excloses, el conjunt de prova separat i les opcions d’aturada manual.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Presenteu el sistema com una combinació de dades, model, codi i maquinari. Mostreu els resultats agregats, expliqueu una confusió i responeu quines parts continuen sota control humà; no projecteu dades brutes ni identificables.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Rebeu preguntes d’una altra parella i reviseu la fitxa per fer explícit qualsevol límit que no s’havia entés. Decidiu quines circumstàncies invalidarien una resposta o exigirien aturar el temporitzador.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>fitxa final del model, presentació i decisió documentada sobre quan no s’ha d’utilitzar. Una parella revisora ha de poder identificar en menys d’un minut per a què serveix i per a què no. Tanqueu preguntant: «Quin impacte podria tindre una resposta incorrecta si algú ignorara els límits?».</p></div></aside>
+</section>
+</div></section>
+<h3 class="detail-subsection-title" id="codi-del-temporitzador-i-model-card">Codi del temporitzador i model card</h3>
+<p>En la sessió 7, definiu tres estats: «preparat», «activitat de maqueta» i «pausa/aturat». El programa només mostra una icona i una durada breu després d&#39;una classificació prevista; quan el model no reconeix el patró, roman en estat neutral i espera una acció manual. Proveu cada transició i assegureu-vos que el botó d&#39;aturada funciona des de qualsevol estat. No s&#39;envia cap alerta ni es calcula cap puntuació.</p>
+<p>La targeta del model final conté: propòsit restringit, dades usades i dades excloses, etiquetes i qui les va definir, com s&#39;han netejat mostres, conjunt de prova separat, encerts/errors/dubtes, limitacions i possibles efectes si algú intentara usar-lo amb persones. Una parella revisora ha de poder identificar en menys d&#39;un minut per a què serveix el model i per a què no serveix. L&#39;exposició mostra només resultats anònims del prototip, sense dades brutes identificables.</p>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Carpeta amb classificació desconnectada, categories i etiquetes, mostres netejades, targetes de prova, codi amb estat neutral, model card i reflexió sobre impacte. Valoreu la comprensió del paper de les dades, la diversitat de proves, la depuració i la comunicació dels límits, no l’exactitud absoluta del model.</p>
+<h3 class="detail-subsection-title" id="registre-de-dades-i-sequencia-de-proves">Registre de dades i seqüència de proves</h3>
+<p>En les sessions 1 i 2, distingiu una regla fixa («si la targeta mostra una inclinació, classifica-la com a A») d&#39;un model que ajusta patrons a exemples. Classifiqueu targetes fictícies de moviments i discutiu dues ordenacions possibles. Acordeu abans de recollir res què significa cada classe, qui controla les dades i com s&#39;elimina el fitxer de prova. Si CreateAI no està disponible, conserveu les discussions i useu fitxes com a simulació; no anomeneu «entrenat» el classificador de paper.</p>
+<p>En la sessió 3, poseu la micro:bit damunt d&#39;una base de cartó marcada amb dos angles i recolliu diverses mostres de cada orientació, sempre amb la mateixa posició inicial. Identifiqueu una mostra mal etiquetada o un moviment que barreja les dues categories. Abans d&#39;eliminar-la, escriviu una raó verificable: etiqueta equivocada, placa que s&#39;ha mogut durant la captura o mostra incompleta. Eviteu noms de fitxer amb identitats i no demaneu que cap alumne faça un gest físic concret.</p>
+<p>En la sessió 4, separeu les mostres de prova de les dades d&#39;entrenament. Registreu nombre de proves, encerts, errors i casos dubtosos; expliqueu què no es pot inferir d&#39;una mostra petita. En la sessió 5, reviseu un cas de biaix de dades fictici: un model ha vist només una orientació i classifica malament una altra. Pregunteu qui podria quedar fora si el prototip s&#39;utilitzara amb persones i decidiu no fer eixe ús.</p>
+<p>En la sessió 6, afegiu exemples que cobreixen la variació de la maqueta, torneu a provar amb un conjunt nou i compareu els resultats sense ocultar cap regressió.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="consentiment-seguretat-i-benestar">♿ Participació, accessibilitat i seguretat</h2>
+<p>Useu dades anònimes de moviments d’un objecte o maqueta sempre que siga possible. No enregistreu noms, imatges, veu ni dades de salut; cap moviment ni prova és obligatori. No compartiu fitxers amb dades brutes fora del dispositiu del centre i esborreu-los segons la pauta docent. El temporitzador no és un assessor d’exercici, no mesura rendiment i no ha de classificar persones.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="unitat-oficial-adaptada">🔗 Referents i adaptació</h2>
+<p>Aquesta situació adapta les vuit lliçons de micro:bit <a href="https://microbit.org/teach/lessons/developing-ai-literacy-with-the-microbit/" target="_blank" rel="noopener noreferrer">Developing AI literacy with the micro:bit</a>: parlar d’IA, dades, recollir/netejar, provar, biaix, millorar, programar amb el model i avaluar disseny/impacte. El context de maqueta, l’ús de dades d’objecte i els criteris del temporitzador són propis.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

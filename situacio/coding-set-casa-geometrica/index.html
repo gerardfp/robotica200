@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Un plànol geomètric amb MatataBot | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Quantes ordres necessitem per dibuixar el contorn d’una casa i com podem simplificar el programa quan repetim moviments?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-coding-set-casa-geometrica" class="btn-back" data-preserve-filters="coding-set-casa-geometrica">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Primer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Matemàtiques</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 4 sessions · 180 min</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Un plànol geomètric amb MatataBot</h1>
+        <span class="tag-badge" data-theme>🏷️ Art, música i expressió</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-casa-geometrica.webp" alt="El Coding Set i MatataBot acompanyen un mapa de caselles amb una casa geomètrica i una ruta tancada." width="600" height="448" loading="lazy"><figcaption>El Coding Set i MatataBot acompanyen un mapa de caselles amb una casa geomètrica i una ruta tancada.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>En quatre sessions, l’alumnat investiga com els moviments i els girs creen figures, escriu programes repetits i transforma cartó net recuperat en una maqueta col·lectiva. Cada casa combina un contorn quadrat, un sostre triangular i una porta quadrada més menuda. L’encàrrec conserva les quatre cases, el muntatge i la decoració del projecte oficial; situa el resultat en un barri valencià imaginari i fa visible quina part traça el robot i quina construeix l’alumnat.</p></div></aside>
+<p>Les tisores i la cinta formen part del treball manual, no són un requisit perquè MatataBot dibuixe directament.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Construir un recorregut que represente els costats d’un quadrat i distingir moviment recte i gir.</li><li>Compondre una casa amb formes geomètriques i explicar com s’ha obtingut cada contorn.</li><li>Usar cartró recuperat per crear una maqueta i relacionar-la amb el dibuix programat.</li><li>Canviar una forma, tornar a provar el programa i defensar el disseny amb una evidència.</li></ul>
+<h3 class="detail-subsection-title" id="sostenibilitat-i-connexio-local">🌱 Sostenibilitat i connexió local</h3>
+<p>La maqueta representa un barri de la Comunitat Valenciana amb habitatges, ombra, pati i espais compartits; eviteu afirmar que una sola forma de casa és més sostenible sense dades. Les peces recuperades s’identifiquen i es reutilitzen abans de reciclar-les, i els equips poden registrar quant material nou han necessitat. Aquesta comparació descriu només la maqueta de classe, no l’impacte ambiental complet d’un edifici.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<p>Prepareu Coding Set complet, quadrícula pròpia, paper quadriculat o cartó pla gran, retalls nets de capses, llapis de colors, cinta o cola, tisores d’aula, regle, plantilla d’angles de 60°, 90° i 120°, targetes amb moviments i bucles i una graella de registre. El traçat amb tinta requereix l’Artist Add-On compatible, retoladors i el suport corresponent; comproveu que el centre en disposa i seguiu-ne les instruccions.</p>
+<p>Sense el complement, MatataBot recorre les línies de caselles i l’alumnat trasllada el disseny al paper: aquesta alternativa no atribueix dibuix al Coding Set base. Trieu cartó net, sec, sense grapes ni vores esmolades, i talleu-lo amb supervisió.</p>
+<p>Feu una prova de calibratge curta per comprovar quant avança MatataBot amb una ordre i com l’angle programat afecta la direcció. No pressuposeu que cada costat dibuixat coincideix amb una casella exacta. Marqueu el punt inicial i l’orientació del robot en cada intent.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-quatre-sessions-de-45-minuts">📅 Seqüència didàctica</h2>
+<p>El pla oficial <em>MatataBot’s Cozy House</em> dura 55 minuts (10 guiats, 30 d’activitat i 15 de retorn). Ací es reparteix en quatre sessions de 45 minuts per a poder predir, provar, construir i revisar amb més calma; la temporalització local no és l’oficial.</p>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Del residu a la forma</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Del residu a la forma" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Del residu a la forma</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Una casa és una composició de formes"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una casa és una composició de formes</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Quatre cases amb cartró recuperat"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Quatre cases amb cartró recuperat</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Canviem una forma i defensem el disseny"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Canviem una forma i defensem el disseny</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-del-residu-a-la-forma" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Del residu a la forma</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu l’encàrrec de convertir cartó net recuperat en una xicoteta maqueta útil per explicar geometria. Pregunteu quines parts del cartó encara es poden aprofitar i com distingim reutilitzar d’enviar un residu al reciclatge. Mostreu una casa feta amb un quadrat i un triangle; distingiu costat, vèrtex, angle interior i trajectòria, i demaneu que l’alumnat prediga quin gir necessita el robot per passar d’un costat al següent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Amb una fitxa que representa MatataBot, recorreu un quadrat i un triangle equilàter. Mesureu els angles interiors amb una plantilla i anoteu quant gira el robot quan passa d’un costat al següent. El docent modela com es combinen moviment, gir, angle i bucle per representar la paret quadrada i el sostre triangular; identifiqueu quines peces són del kit base i quines pertanyen a l’Artist Add-On.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Programeu un costat recte i un gir; compareu un gir de 90° amb un de 120°. Dibuixeu i etiqueteu l’angle interior i el gir exterior.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Expliqueu que en un triangle equilàter cada angle interior és 60° i que el gir exterior per continuar el contorn és 120°. En parelles, una persona prediu i l’altra col·loca els blocs; executeu i canvieu de rol. Els blocs numèrics indiquen la longitud del moviment recte; el gir es defineix amb el bloc d’angle corresponent, sense aplicar-li un bloc numèric.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Completeu «el gir programat és … perquè l’angle interior és …».</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>dos croquis amb gir interior/exterior etiquetat i predicció comprovada. <strong>Pregunta docent:</strong> què podem tornar a utilitzar del cartó net i quina funció té el bucle en la figura?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-una-casa-es-una-composicio-de-formes" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Una casa és una composició de formes</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Dibuixeu una casa amb parets quadrades, sostre triangular i porta quadrada més menuda. Predigueu quants segments i girs caldran i decidiu on comença i acaba cada tram.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Prepareu un programa que combine el contorn quadrat de la casa i el sostre triangular en una mateixa seqüència, fent servir blocs de moviment, d’angle i de bucle; els blocs numèrics poden ajustar els trams rectes quan el kit ho permet, però no són un paràmetre del bloc de gir. Marqueu el punt d’inici i planifiqueu l’ordre dels trams perquè el sostre quede connectat al contorn. Cada casa incorpora una porta quadrada més menuda.</p>
+<p>Si el muntatge o el suport del retolador obliga a reposicionar MatataBot, tracteu la porta com un traçat separat i anoteu-ho; no afirmeu que el robot alça el llapis.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Proveu com el bloc de bucle repeteix el patró costat–gir d’una forma regular. Compareu el programa amb i sense bucle i anoteu què es repeteix i què queda fora de la repetició. Una parella comprova si el programa combinat representa parets i sostre sense confondre el gir del robot amb l’angle interior del dibuix.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si el robot no tanca el contorn, comproveu primer l’orientació i el nombre de repeticions; després reviseu la distància. Dibuixeu la seqüència final de la casa i la porta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>diagrama que relaciona forma, moviment, gir i repetició. Quina part del programa s’ha pogut simplificar amb el bucle?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-quatre-cases-amb-cartro-recuperat" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Quatre cases amb cartró recuperat</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Classifiqueu retalls nets per mida i decidiu què es pot reutilitzar sense comprar material nou. Cada equip prediu quins elements de la casa podrà construir amb els retalls disponibles.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Dissenyeu almenys quatre cases A–D. En cadascuna manteniu un cos quadrat, un sostre triangular i una porta quadrada més menuda; canvieu una sola decisió de disseny —proporció, orientació o decoració— per a poder comparar resultats.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Proveu els quatre recorreguts sobre la graella o amb l’Artist Add-On disponible. Traslladeu els contorns a cartó recuperat, retalleu les quatre cases i les seues portes quadrades, i uniu les peces amb cinta o cola per muntar una maqueta de barri. Registreu la quantitat de cartó recuperat que heu utilitzat —per nombre de peces o per àrea aproximada— i separeu els retalls nets que encara es puguen reutilitzar.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-casa-geometrica-maquetes-v1.png" alt="Quatre cases de cartó recuperat amb cos quadrat, sostre triangular i porta menuda al costat del MatataBot i la torre reals del Coding Set." width="600" height="448" loading="lazy"><figcaption>Les cases són manualitats de l’alumnat; MatataBot programa recorreguts geomètrics i no talla, munta ni transporta les peces.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reaprofiteu retalls de portes i sostres com a finestres, camins o peces de pati, si continuen nets i segurs. Uniu les cases en un barri sense cobrir els recorreguts necessaris per a la prova. Compareu l’ús de cartó recuperat amb la previsió inicial; aquesta dada descriu els materials de la maqueta, no l’impacte ambiental complet d’un habitatge.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>quatre dissenys identificables, un programa provat i una nota sobre l’ús dels materials. Expliqueu quin retall heu pogut reutilitzar i com.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-canviem-una-forma-i-defensem-el-disseny" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Canviem una forma i defensem el disseny</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu un triangle rectangle o obtusangle, un rectangle o una estrella de cinc puntes i predigueu quins girs calen. Identifiqueu quines formes es poden provar amb els blocs d’angle de l’Artist Add-On que té el centre; les figures no disponibles es modelen en paper i no es presenten com a traçades pel robot.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Construïu el traçat amb blocs quan siga possible. Si un valor no es pot programar exactament, completeu-lo amb una maqueta manual i identifiqueu clarament les dues representacions.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Canvieu una variable cada vegada —llargària, gir, repeticions o punt d’inici— i registreu si el contorn es tanca i quantes ordres calen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Una altra parella llig el diagrama i intenta repetir el programa. A partir del resultat, reviseu una instrucció o expliqueu per què la versió actual és reproduïble. Si decoreu MatataBot, feu-ho amb una targeta o una escena al costat del robot; no enganxeu materials al cos ni tapeu càmera, obertures, rodes o peces de programació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Mostreu el barri i expliqueu una decisió geomètrica, una reparació del codi i una manera concreta de reaprofitar els retalls. <strong>Preguntes de tancament:</strong> com descriu el bucle el patró costat–gir?, quina altra forma podríeu programar?, i com podeu reutilitzar el cartó sense confondre la maqueta amb un dibuix fet per MatataBot?</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>programa final anotat, comentari d’un altre equip i justificació dels límits del dibuix o del kit.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="registre-i-criteris-d-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Per a cada figura, anoteu nom, costats, gir programat, angle interior previst, nombre d’ordres, si el contorn es tanca i canvi entre versions. Valoreu si l’equip descompon la casa en figures, diferencia gir exterior i angle interior, usa una repetició amb sentit, manté un punt d’inici i comprova una errada amb una prova, i explica què s’ha pogut reutilitzar. La precisió artística no és el criteri central: importa justificar l’estratègia i distingir el resultat del robot del dibuix manual que s’hi inspira.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="acces-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu quadrícules ampliades, punt d’inici en relleu, peces de gir impreses en gran i plantilles de casa amb alguns trams preparats. L’alumnat pot participar com a planificador/a, operador/a de blocs, observador/a de trajectòria, registrador/a, constructor/a de cartró o relator/a; no cal manipular tisores ni blocs per contribuir. Per a una primera prova, useu un únic quadrat; com a ampliació, compareu un triangle equilàter amb un rectangle, paral·lelogram o figura de més costats.</p>
+<p>Tallar i enganxar es fa amb materials nets i tisores adequades, sense agulles, grapes ni plàstics tallants.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-oficials-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta <a href="https://matatalab.com/en/node/85" target="_blank" rel="noopener noreferrer">MatataBot’s Cozy House</a>, que proposa 10 minuts de modelatge de protecció ambiental i dels blocs de moviment, angle, nombre i bucle; 30 minuts per a programar almenys quatre cases amb cos quadrat, sostre triangular i porta quadrada més menuda, retallar-les, muntar-les i decorar-les; i 15 minuts de reflexió sobre reutilització i ampliació a formes complexes. Aquesta proposta redistribueix el projecte en quatre sessions locals de 45 minuts per a fer visibles predicció, prova, registres, accessibilitat i revisió entre parelles;</p>
+<p>aquesta duració és pròpia, no la temporalització oficial. Conserva els quatre prototips, les portes, el programa combinat, la manualitat, el muntatge, la decoració i les preguntes sobre bucles, residus i altres formes. Els blocs numèrics s’associen als moviments rectes i els blocs d’angle als girs; no es descriuen com a paràmetres intercanviables. La decoració es trasllada a una targeta o escena al costat de MatataBot per no cobrir cap peça del set.</p>
+<p>També incorpora <a href="https://matatalab.com/en/node/84" target="_blank" rel="noopener noreferrer">Draw triangles</a>: el gir de 120° traça un angle interior de 60° en el triangle equilàter, i l’alumnat contrasta després triangles aguts, rectangles i obtusangles. Sense Artist Add-On, el robot recorre una graella i l’alumnat completa el traçat en paper; la figura no s’atribueix al robot com si dibuixara directament. Els mapes, esbossos, targetes, criteris i visuals IA són propis.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

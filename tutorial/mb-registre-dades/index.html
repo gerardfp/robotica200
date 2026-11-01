@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">micro:bit V2: registrar i analitzar dades | Robòtica²⁰⁰</title>
+  <meta name="description" content="Configurar el registre de MakeCode, recollir lectures de llum i temperatura i analitzar el fitxer sense perdre de vista els límits de la placa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn active">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../robot/microbit/index.html" class="btn-back">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Micro:bit</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      
+      <span>Micro:bit</span>
+    </span><span class="tag-badge">
+      
+      <span>Intermedi</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 50 min</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>micro:bit V2: registrar i analitzar dades</h1>
+        <p class="detail-intro" data-description>Configurar el registre de MakeCode, recollir lectures de llum i temperatura i analitzar el fitxer sense perdre de vista els límits de la placa.</p>
+      </div>
+      <div class="prose" data-content><section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-objectius">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Prepareu un registre curt de condicions de l’aula amb una micro:bit V2. L’equip decidirà quines dades necessita, cada quant les llegirà, com confirmarà que el registre està actiu i com les recuperarà per interpretar-les. El registrador desa valors al dispositiu; no els envia automàticament a Internet ni converteix les lectures en una mesura científica calibrada.</p></div></aside>
+<ul><li>Crear columnes identificables per a les lectures que es volen recollir.</li><li>Iniciar i aturar una captura manual amb un control comprensible.</li><li>Recuperar les dades de la memòria i representar-les en una taula o gràfic.</li><li>Diferenciar una variació observada d’una conclusió sobre tota l’aula o el dia.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Registre de dades de MakeCode en micro:bit V2 amb l’extensió <code>datalogger</code>.</li><li>Sensor de llum de la matriu i lectura tèrmica interna per a observacions aproximades.</li><li>Emmagatzematge local que es conserva en desconnectar l’alimentació fins que s’esborra o se sobreescriu el registre.</li><li>Recuperació de les files en connectar la placa a un ordinador; visualització en taula o gràfic i exportació quan el navegador/editor ho ofereix.</li><li>La guia no atribueix el registre persistent a V1 ni considera la temperatura del processador un termòmetre ambiental calibrat.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>micro:bit V2 identificada per la marca de versió i amb firmware compatible amb MakeCode Data logging.</li><li>Ordinador amb MakeCode i connexió USB per transferir el programa i recuperar les dades.</li><li>Termòmetre de referència i targetes clara/fosca; són comparadors externs, no sensors connectats.</li><li>Full de planificació amb variables, unitats o escala, interval de captura i duració de la prova.</li></ul>
+<p>En MakeCode, creeu un projecte nou i afegiu l’extensió oficial <code>datalogger</code>. Abans de transferir el programa, comproveu que el simulador mostra la funció de registre i assageu el control. Decidiu si la prova durarà pocs minuts i qui podrà consultar el fitxer. Eviteu enregistrar noms, veus, ubicacions personals o dades identificables.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 5 · Planifiqueu les dades</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" aria-valuetext="Pas 1 de 5">
+        <span data-wizard-bar style="width: 20.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Planifiqueu les dades" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Planifiqueu les dades</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Prepareu el registre"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Prepareu el registre</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Feu una captura controlada"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Feu una captura controlada</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Recupera i interpreta les files"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Recupera i interpreta les files</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Esborreu només després de conservar l’evidència"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Esborreu només després de conservar l’evidència</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="1-planifiqueu-les-dades" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Planifiqueu les dades</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Trieu una pregunta acotada: per exemple, si la lectura de llum canvia entre una taula il·luminada i una zona d’ombra. Escriviu els noms de les columnes, la freqüència i la duració abans de programar. Per a aquesta primera prova, useu una captura manual amb A i registreu una fila cada vegada; així podeu controlar quantes mostres s’han afegit i evitar omplir la memòria sense adonar-vos-en.</p>
+</section>
+</div></section>
+<section class="learning-step" id="2-prepareu-el-registre" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Prepareu el registre</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Afegiu l’extensió <code>datalogger</code> i el bloc per establir els títols de columna, com ara <code>llum</code> i <code>temperatura_aproximada</code>, i un esdeveniment de botó A que afegisca una fila amb les lectures disponibles. Mostreu una icona breu quan la fila s’haja registrat. Si una versió del bloc no permet una de les lectures triades, retireu-la de les columnes i expliqueu-ho: no inventeu un valor de sensor.</p>
+<figure class="code-panel"><figcaption>Exemple de programació · blocks</figcaption><pre class="code-block" tabindex="0"><code class="language-blocks"><span class="program-line"><span class="block-chip block-action">en iniciar:</span></span><span class="program-line"><span class="block-chip block-action">  posa els títols de columna a [llum, temperatura_aproximada]</span></span><span class="program-line"><span class="block-chip block-action">en prémer el botó A:</span></span><span class="program-line"><span class="block-chip block-action">  registra una fila amb [nivell de llum, temperatura]</span></span><span class="program-line"><span class="block-chip block-output">  mostra la icona ✓ durant 1 segon</span></span></code></pre></figure>
+</section>
+</div></section>
+<section class="learning-step" id="3-feu-una-captura-controlada" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Feu una captura controlada</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Transfereix el programa a la placa V2, desconnecta el cable només quan haja acabat la transferència i fes cinc lectures: tres amb la matriu orientada cap a la zona clara i dues amb la targeta d’ombra a la mateixa distància. Prem A una vegada per mostra i anota en paper quina condició correspon a cada fila. Mantén la placa immòbil i no tapes els LED amb la mà durant tota la captura.</p>
+</section>
+</div></section>
+<section class="learning-step" id="4-recupera-i-interpreta-les-files" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Recupera i interpreta les files</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Connecta de nou la micro:bit a l’ordinador i recupera les dades registrades obrint la visualització de dades de MakeCode segons la guia oficial. Revisa els títols, l’ordre, els valors i les marques de temps; compara les files amb les anotacions de camp. Si el navegador permet exportar-les, desa una còpia sense dades personals i fes un gràfic. No combines captures si els encapçalaments o el rellotge s’han reiniciat sense documentar-ho.</p>
+<figure class="sa-illustration"><img src="../../_assets/tutorials/mb-data-logging.webp" alt="Placa micro:bit V2 de la dotació amb lectures i una gràfica de dades de llum i temperatura aproximada." width="600" height="448" loading="lazy"><figcaption>El gràfic és una representació per analitzar les mostres; no és una pantalla ni una funció visual integrada a la placa.</figcaption></figure>
+</section>
+</div></section>
+<section class="learning-step" id="5-esborreu-nomes-despres-de-conservar-l-evidencia" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Esborreu només després de conservar l’evidència</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Guardeu primer el fitxer o una captura de la taula i confirmeu que les dades corresponen a la prova. La transferència d’un programa nou pot invalidar el registre anterior; per això, no torneu a descarregar codi fins que hàgeu recuperat el que necessiteu. Després d’una còpia verificada, reinicieu el registre amb el procediment de MakeCode i comproveu que apareixen els títols abans de començar una nova sèrie.</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
+<p>Compareu les cinc files registrades amb les condicions anotades en paper. Comproveu que hi ha cinc mostres, que cada valor ocupa la columna correcta i que la marca temporal segueix l’ordre de captura. Repetiu una lectura si hi ha una fila buida o una condició anotada incorrectament; no esborreu la memòria fins a haver conservat les dades útils. Si utilitzeu el simulador, identifiqueu-ne clarament les lectures com a simulades i no les barregeu amb les de la placa.</p>
+<h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
+<ul><li>Quina pregunta concreta respon el conjunt de dades i quines columnes ajuden a respondre-la?</li><li>Com sabem que s’ha enregistrat cada fila i quin control inicia una mostra?</li><li>Quina diferència hi ha entre el valor de llum i la temperatura interna aproximada?</li><li>Què es conserva quan desconnectem la placa i quina acció podria esborrar o reemplaçar les dades?</li></ul>
+<h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
+<ul><li>Projecte MakeCode amb títols de columna clars i captura manual.</li><li>Cinc files recuperades i relacionades amb les condicions observades.</li><li>Taula o gràfic amb una conclusió limitada a les mostres recollides.</li><li>Nota que identifique versió de la placa, simulació o maquinari, i moment en què s’ha conservat o esborrat el registre.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Permeteu que una persona manipule A i una altra anote les condicions; també es pot assajar primer amb el simulador i una taula en paper. La placa pot mostrar una icona per confirmar cada registre. Manteniu el dispositiu pla, no tapeu els components amb materials que acumulen calor i feu la captura en un espai acordat. No registreu ni compartiu informació personal.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
+<p>La guia oficial de <a href="https://microbit.org/get-started/user-guide/data-logging/" target="_blank" rel="noopener noreferrer">registre de dades de micro:bit</a> descriu l’extensió <code>datalogger</code>, la captura manual i automàtica, la recuperació i l’emmagatzematge local de micro:bit V2. La <a href="https://microbit.org/get-started/features/overview/" target="_blank" rel="noopener noreferrer">vista general de funcions</a> detalla les diferències entre V1 i V2. Les lectures depenen del sensor i de les condicions de la prova; el registre no calibra els instruments ni valida per si mateix una hipòtesi.</p>
+</section></div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

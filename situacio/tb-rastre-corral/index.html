@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">El rastre del corral | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Una ruta creada per l’aula ajuda Tale-Bot a trobar targetes d’animals i a practicar instruccions de moviment cap avant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-tb-rastre-corral" class="btn-back" data-preserve-filters="tb-rastre-corral">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/tale-bot.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Tale-Bot Pro</span>
+    </span><span class="tag-badge">
+      
+      <span>Educació Infantil</span>
+    </span><span class="tag-badge">
+      
+      <span>Descoberta de l’entorn i Pensament Computacional</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 3 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>El rastre del corral</h1>
+        <span class="tag-badge" data-theme>🏷️ Animals i entorn</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-tb-granja-prova.webp" alt="Tale-Bot Pro de la dotació comença una ruta en una graella amb cinc targetes de destí: ovella, gallina, cavall, vaca i ànec." width="600" height="448" loading="lazy"><figcaption>El mapa i les cinc targetes d’animals són materials propis; Tale-Bot conserva el disseny del robot real.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Situació</h4><p>Una aula prepara un mapa d’un corral o d’un paisatge agrari valencià perquè Tale-Bot visite cinc animals. El mapa, les imatges i les targetes són originals; la classe practica la mateixa idea central de la lliçó pública: preparar un mapa i completar-hi un repte amb ordres cap avant.</p></div></aside>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>Quantes ordres cap avant necessita el robot per a arribar a cada animal, i com podem comprovar que el programa és correcte?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Orientar-se en una graella amb files, columnes i un punt inicial acordat.</li><li>Programar rutes a cinc destinacions amb ordres cap avant que es puguen comptar.</li><li>Comparar predicció i trajecte i corregir una instrucció concreta quan no coincideixen.</li><li>Explicar les decisions amb un mapa de paper sense atribuir al robot la capacitat d’identificar animals.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="abans-de-comencar">🧰 Materials i preparació</h2>
+<aside class="markdown-note markdown-note-materials"><span class="markdown-note-icon" aria-hidden="true">🧰</span><div><h4>Materials</h4><p>Tale-Bot, graella plana en blanc, targetes pròpies de fletxes, cinc imatges grans d’animals, fitxes adhesives o marcadors reposicionables i una marca d’inici orientada. Les targetes pròpies fan la funció de les targetes de comandament i els adhesius del material oficial, sense reutilitzar-ne els elements gràfics.</p></div></aside>
+<p>Comproveu la distància de moviment en el Tale-Bot disponible: el valor predeterminat és d’uns 10 cm i alguns models permeten configurar 15 cm. Consulteu <a href="../../tutorial/tb-primeres-passes/index.html">Primeres passes amb Tale-Bot Pro</a> abans de definir la graella. Per a practicar només ordres cap avant, poseu les metes en el corredor davant del robot i reorienteu-lo en reiniciar cada repte.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-3-sessions">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 3 · Dissenyem i llegim el mapa</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-valuetext="Pas 1 de 3">
+        <span data-wizard-bar style="width: 33.33%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Dissenyem i llegim el mapa" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dissenyem i llegim el mapa</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Programem cinc arribades"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Programem cinc arribades</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Comparem, depurem i expliquem"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Comparem, depurem i expliquem</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-dissenyem-i-llegim-el-mapa" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Dissenyem i llegim el mapa</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Exploreu què representa el mapa i predigueu com es pot indicar una destinació sense tapar les caselles.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Observeu què indiquen les targetes de fletxes i com es poden moure les fitxes adhesives sense cobrir el recorregut.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Marqueu files i columnes amb lletres, nombres o un altre codi visual. Practiqueu descriure una posició i compteu les caselles.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Col·loqueu cinc animals i una marca d’inici orientada. Si trieu fauna valenciana, contrasteu els noms amb una font local fiable. Torneu a col·locar el mapa igual després de cada ronda.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-tb-rastre-corral-mapa-aula-v1.png" alt="Tale-Bot Pro real al costat d’una quadrícula en blanc, targetes originals d’animals i fletxes de paper per preparar el mapa de l’aula." width="600" height="448" loading="lazy"><figcaption>La graella, les targetes i la maqueta són recursos propis; el robot no reconeix els adhesius ni els animals.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa amb llegenda, files, columnes, inici orientat i cinc metes. Una altra parella pot descriure correctament una destinació?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-programem-cinc-arribades" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Programem cinc arribades</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Una persona tria un animal i l’equip localitza la destinació al mapa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Compteu les caselles entre inici i meta i col·loqueu les targetes «avant» en l’ordre previst.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Verbalitzeu la predicció. Abans de prémer <em>Play</em>, compteu els indicadors lluminosos i comproveu que n’hi ha un per cada ordre.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu la ruta, recolliu un marcador en arribar i repetiu amb els altres quatre animals, reiniciant des de la marca orientada. Si Tale-Bot no arriba, compareu la posició final amb la predicció abans de canviar el programa.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-tb-rastre-corral-mapa-v1.png" alt="Tale-Bot Pro real segueix fletxes de moviment cap avant sobre una graella amb cinc targetes pròpies d’animals de granja." width="600" height="448" loading="lazy"><figcaption>El robot executa la seqüència de moviment; les persones identifiquen la targeta de destí i comproven l’arribada.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>cinc seqüències amb predicció, destinació i comprovació dels indicadors. Quina comprovació us ha permés detectar abans una ordre absent?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-comparem-depurem-i-expliquem" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Comparem, depurem i expliquem</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Ordeneu les cinc rutes de la que necessita menys ordres a la que en necessita més i predigueu quina serà més llarga.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Poseu els recomptes costat per costat i comproveu que tots parteixen de la mateixa casella, orientació i destinació. Marqueu en el mapa els trams rectes i els girs: dues rutes poden tindre el mateix nombre d’ordres i longitud diferent, o a l’inrevés. Si hi ha desacord, reconstruïu una ruta amb una fitxa abans de tornar a programar Tale-Bot. Registreu també si la diferència prové del recorregut o de com s’ha comptat una ordre.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Trieu una ruta que haja acabat abans o després de la fita. Comproveu recompte, mida de la quadrícula, orientació i indicadors; anoteu on va deixar de coincidir amb la predicció.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Corregiu una sola cosa i repetiu des del mateix punt. Expliqueu quina ruta era més llarga o més curta i quin indici ha ajudat a trobar l’error.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>seqüència abans/després, correcció explicada i resposta oral, gestual o pictogràfica. Quina ordre heu canviat i quina observació justifica la decisió?</p></div></aside>
+</section>
+</div></section>
+<h3 class="detail-subsection-title" id="conduccio-de-les-sessions">Conducció de les sessions</h3>
+<p>La pàgina pública de Matatalab descriu l’objectiu de preparar un mapa propi i completar-hi una tasca amb ordres cap avant, però no mostra al text consultable la durada ni el detall del flux docent. Aquesta adaptació distribueix el repte propi en tres trobades per poder construir el mapa, fer cinc intents amb calma i revisar els errors; aquesta temporalització no s’atribueix al fabricant.</p>
+<p>La pàgina enumera un PDF i una presentació adjunts, però el seu contingut no s’ha pogut llegir en aquesta auditoria.</p>
+<p>En la primera trobada, modeleu només una ruta, amb l&#39;inici i l&#39;orientació assenyalats. En la segona, doneu temps per a les cinc metes: abans de cada prova, l&#39;equip anuncia files/columnes, recompte de caselles i nombre d&#39;ordres; després, un company verifica els indicadors de codificació del robot. En la tercera, compareu les seqüències en una tira comuna i trieu-ne una per depurar. No reprogramar la ruta sencera quan una ordre falla ajuda a mantindre el focus en el pas que cal revisar.</p>
+<p>El pas de 10 cm és la configuració predeterminada descrita al manual; la targeta de configuració permet una opció de 15 cm en el model corresponent. Per tant, la quadrícula local ha d&#39;usar la mesura activa al robot concret. Si una casella no coincideix exactament, marqueu el mapa com a model aproximat i feu una prova d&#39;alineament abans de col·locar les metes.</p>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="avaluacio-i-evidencies">🧪 Evidències i avaluació</h2>
+<p>Observeu si cada infant pot reconèixer files i columnes, descriure una casella o coordenada, orientar el robot, comptar caselles, traduir el recompte en ordres cap avant, comparar l’extensió de programes i usar els indicadors com a comprovació visual. Arxiveu el mapa, la seqüència, la predicció, el resultat i la revisió d’un error. Valoreu que l’alumnat puga explicar com ha sabut quina ordre canviar, no la velocitat.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="mes-d-una-manera-de-participar">♿ Participació, accessibilitat i seguretat</h2>
+<p>Reduïu la graella a poques caselles, marqueu el nord del recorregut o oferiu fletxes amb relleu. Es pot assenyalar la destinació, dictar el programa, moure una fitxa que represente Tale-Bot o observar i registrar-ne el recorregut.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="llico-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta la segona lliçó del primer nivell de Tale-Bot Pro, <a href="https://matatalab.com/zh-hans/node/829" target="_blank" rel="noopener noreferrer">«On són els animals de la granja?»</a>. La pàgina pública fixa l’objectiu d’inventar una tasca en un mapa i resoldre-la amb ordres cap avant; també enumera robot, mapa en blanc, targetes de comandament, adhesius i full d’activitat. La fitxa pròpia amplia aquest punt de partida amb files i columnes, inici orientat, cinc metes d’animals, comprovació dels indicadors i comparació de rutes.</p>
+<p>Són decisions de disseny local, no detalls que atribuïm al PDF o a la presentació adjunts, perquè no s’han pogut consultar. No reutilitza els seus materials gràfics.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

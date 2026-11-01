@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">La desfilada de les caminades impossibles | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Com podem fer avançar un model LEGO SPIKE Prime sense rodes i quins canvis de les potes n’alteren el moviment?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-caminada-impossible" class="btn-back" data-preserve-filters="sp-caminada-impossible">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Física, Matemàtiques i Tecnologia</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 5 sessions · 250 min</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>La desfilada de les caminades impossibles</h1>
+        <span class="tag-badge" data-theme>🏷️ Moviment i disseny</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-caminades.webp" alt="Un hub SPIKE Prime amb matriu de llums i bigues LEGO impulsa dues potes articulades que avancen sense rodes." width="600" height="448" loading="lazy"><figcaption>El model caminador usa el hub, les peces estructurals i els mecanismes de pota del set SPIKE Prime, sense rodes ni cara fictícia.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Per a la mostra de ciència del centre, cada equip construeix un caminador SPIKE Prime que avança sense rodes i explica com ho aconsegueix. La pista de prova representa paviments que l’alumnat reconeix al seu entorn —rajola llisa, junta de pedra, superfície rugosa— amb mostres de cartó, paper i goma escuma preparades a l’aula. No s’entra en calçades ni es fan proves amb vianants; el repte és mecànic i controlat sobre una taula.</p></div></aside>
+<p>El full oficial deixa oberta la construcció i pregunta com la llargària de les potes afecta el moviment i com impulsar el robot sense rodes. Ací convertim eixes preguntes en una investigació: predir, fer un muntatge inicial, canviar una variable cada vegada, repetir i comunicar els límits. No busquem una «caminada correcta»: un prototip que vibra, gira o no avança també aporta evidència si l’equip la registra i la usa per decidir el pas següent.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="objectius-i-criteris-de-disseny">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Identificar quines peces giren, quines articulen les potes i quins punts contacten amb la pista.</li><li>Relacionar la llargària i l’ancoratge de les potes amb la distància, la direcció i l’estabilitat.</li><li>Programar rotacions i pauses, i comparar moviments de dos motors coordinats o alternats.</li><li>Planificar una prova justa, repetir-la almenys tres vegades i explicar variacions en els resultats.</li><li>Descriure una millora amb dades i aclarir en quines condicions és vàlida la conclusió.</li></ul>
+<p>Els criteris comuns són: cap roda; el model es manté sobre la pista durant la prova; el recorregut pot mesurar-se; l’equip pot aturar-lo abans d’ajustar-lo; i els resultats es presenten sense exagerar què demostra una única superfície o tres intents.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-preparacio-i-programacio">🧰 Materials i preparació</h2>
+<p>SPIKE Prime 45678 amb hub, un o dos motors, bigues i connectors; cinta per marcar el carril; regle o cinta mètrica; cronòmetre; full de dades; bases de cartó i retalls plans de diferents textures. Un sensor del set és opcional. Prepareu una superfície plana i una barrera ampla d’escuma només per a la prova de sensor; manteniu lliure la vora de les taules i recolliu peces soltes.</p>
+<p>En blocs, programeu una seqüència de gir amb velocitat i nombre de rotacions explícits, i una pausa entre accions quan corresponga. No interpreteu «temps» i «rotacions» com a proves equivalents si les condicions d’inici difereixen. Python és una extensió per a qui ja coneix l’entorn; el codi d’exemple oficial correspon a SPIKE Legacy, per això cal comprovar la versió disponible.</p>
+<p>Si no hi ha dispositiu, l’equip pot simular el cicle motor-pota amb una roda de paper i fitxes de moviment, però la conclusió es marca com a model de paper i no com a resultat del robot físic.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-5-sessions-de-50-minuts">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 5 · Descomponem la caminada</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" aria-valuetext="Pas 1 de 5">
+        <span data-wizard-bar style="width: 20.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Descomponem la caminada" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Descomponem la caminada</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Construïm el primer model sense rodes"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Construïm el primer model sense rodes</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Una variable cada vegada"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una variable cada vegada</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Programem el ritme i comparem la pista"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Programem el ritme i comparem la pista</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Desfilada de prototips i explicació"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Desfilada de prototips i explicació</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-descomponem-la-caminada" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Descomponem la caminada</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Observeu el model de referència i una demostració lenta. Marqueu amb fletxes les peces que giren, els punts d’unió de les bieles i les parts que toquen el terra. Predigueu quina configuració avançarà, oscil·larà o podria bolcar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En parelles, esbosseu dues maneres de fixar les potes al motor: mateixa llargària amb ancoratges diferents o llargàries diferents amb punts d’unió iguals. Prepareu un plànol amb línia d’eixida, carril i zona d’aturada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>La classe tria una superfície inicial comuna i una durada curta. Repartiu rols de muntatge, programació, observació i registre, amb rotació prevista. Anoteu per què espereu cada resultat i dibuixeu la trajectòria de les potes.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu el protocol abans de comparar dissenys: manteniu la mateixa pista i indiqueu com s’aturarà el model. Useu targetes amb «gira / empeny / toca / s’estabilitza» si cal.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu quina hipòtesi provareu primer.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>diagrama anotat, predicció i protocol inicial.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-construim-el-primer-model-sense-rodes" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Construïm el primer model sense rodes</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Feu una base baixa amb hub, motor i peces estructurals. Afegiu dues potes o un parell d’extremitats articulades, sense rodes. Predigueu com es mourà en una ordre lenta i curta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Comproveu que les unions estan fixades i que les potes no colpegen la taula amb força. Amb el model apagat, moveu-lo a mà només si la construcció ho permet sense forçar-la; busqueu bloquejos abans d’engegar-lo.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Executeu una ordre lenta i curta. Mesureu distància des de la línia d’eixida, temps fins a l’aturada i estat final: dret, tombat, girat o sense desplaçament.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si només vibra, poseu a prova una hipòtesi concreta —per exemple, si les potes empenyen cap avant o només cap avall— en lloc de començar de nou. Canvieu una part del muntatge i torneu a provar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Compareu moviment observat i predicció.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>dibuix o fotografia del muntatge, codi inicial i registre del primer resultat.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-una-variable-cada-vegada" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Una variable cada vegada</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu una característica per modificar: llargària de la pota, separació dels suports, posició de la biela o velocitat. Predigueu com canviarà distància, direcció o estabilitat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Feu servir la mateixa pista, durada de programa i punt d’inici. Executeu tres intents per a la versió A i tres per a la B; registreu distància, temps, estabilitat i incidències.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Calculeu mitjana o mediana amb la fórmula que conega el grup i compareu també la dispersió. Una mitjana més gran no basta si el robot bolca o els intents varien molt.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu què s’ha mantingut igual, quina variable ha canviat i quin resultat no esperàveu. Si la prova no és comparable perquè el motor va iniciar-se des d’un angle diferent, marqueu la incidència i repetiu-la.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Decidiu si conserveu o revertiu la modificació a partir de les dades.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>taula de sis intents i decisió justificada.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-programem-el-ritme-i-comparem-la-pista" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Programem el ritme i comparem la pista</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Programeu una pausa entre rotacions i predigueu com es diferenciarà del moviment continu. Després trieu dos valors baixos de velocitat mantenint la seqüència.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Si el model té dos motors, compareu-los coordinats i alternats; abans de cada prova dibuixeu quina pota avança en cada moment. No canvieu alhora velocitat, potes i superfície.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Quan la construcció siga estable, repetiu la configuració guanyadora en una segona superfície plana feta de materials d’aula. Etiqueteu el material i descriviu només allò observat —llisa, rugosa o flexible—; no generalitzeu a tots els paviments reals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Com a extensió, proveu si un caminador de dos motors es pot simplificar a un i compareu quina coordinació es perd o millora. També es pot afegir un sensor per aturar-se davant d’una barrera ampla d’escuma, però no és un dispositiu de seguretat ni un objectiu obligatori.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu quina variable heu canviat i com ha afectat el resultat.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>pseudocodi o flux de moviments, resultats de ritme i nota sobre la segona superfície.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-5-desfilada-de-prototips-i-explicacio" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Desfilada de prototips i explicació</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Prepareu una afirmació delimitada, com «en aquesta pista i amb aquest programa, la versió B ha recorregut…». Predigueu quin detall del diagrama necessitarà més explicació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Un equip visitant rep el diagrama sense instrucció oral i comprova si identifica el sentit d’avanç, les potes i el motor. Feu la desfilada a baixa velocitat, d’un en un, amb carril separat de la vora de la taula.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Anoteu què ha entés l’equip visitant i quin detall del dibuix o muntatge demana aclariment. Cada equip comparteix una decisió canviada a partir de dades i un error útil.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu el diagrama o l’explicació per fer visible la trajectòria o el punt d’unió. Indiqueu una limitació i una prova que encara falta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Tanqueu amb «al principi pensava…», «la prova que m’ha fet revisar-ho és…» i «encara no puc afirmar que…».</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>cartel·la o explicació oral, diagrama revisat i reflexió final.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>La carpeta de procés conté esbossos de potes, predicció, protocol, muntatge, programa, taules d’intents, incidències, comparació d’una variable i explicació final. La rúbrica formativa mira si l’equip:</p>
+<ul><li>assenyala peces motrius i de suport al diagrama;</li><li>canvia una variable i manté les altres condicions de la prova;</li><li>registra repeticions i interpreta tant distància com estabilitat;</li><li>usa pauses o alternança amb una raó explícita;</li><li>descriu el resultat per a la superfície provada i evita generalitzar-lo;</li><li>comparteix rols i incorpora una pregunta o observació d’un altre equip.</li></ul>
+<p>Autoavaluació: «la meua prova més justa ha sigut…», «la dada que ha canviat el meu disseny és…» i «una condició que no he provat encara és…». El feedback entre equips descriu allò que s’ha observat, en lloc de votar quin caminador és el millor.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu plantilles de pista i registre amb columnes ja preparades, demostració a baixa velocitat i instruccions visuals del cicle. Els rols de disseny, construcció, codi, mesura i comunicació roten; també es pot contribuir amb el diagrama, l’anàlisi de dades o la presentació sense manipular el robot. Useu pictogrames i patrons a més del color per identificar superfícies.</p>
+<p>Atureu el programa i apagueu el hub abans d’ajustar potes o engranatges. Manteniu les mans fora de les bieles mentre el model es mou, assegureu les peces, feu carreres sobre una taula baixa i sense vora pròxima, i no llanceu ni peseu el robot. El sensor davant d’una paret de prova és una demostració de detecció limitada, no una funció de prevenció d’accidents.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="brief-oficial-adaptat">🔗 Referents i adaptació</h2>
+<p>Aquesta situació adapta el repte obert <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltf117b333c6076b7e/6324c41d5a8acf5d92ccf395/LE_14x8.5_LessonMat_SillyWalks_WB_Mech_NoCrops.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">SPIKE Activity Brief: Silly Walks</a> i el seu <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt8ca5fc78a2b2847a/5f880121b8b59a77a945d126/le_activitybrief_sillywalks_python.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">exemple Python</a>. Conserva les preguntes sobre llargària i ancoratge de les potes, l’avanç sense rodes, les peces versàtils, el ritme i les pauses, els motors coordinats o alternats, el repte d’un sol motor i l’extensió de sensor davant d’una paret. El marc de paviments de l’entorn escolar, el protocol de repetició, les dades, la presentació i els materials són propis. L’exemple Python oficial és per a SPIKE Legacy;</p>
+<p>la versió amb blocs és completa.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

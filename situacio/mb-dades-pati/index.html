@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Dades que parlen del pati | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Com podem recollir dades del pati i convertir una lectura de sensor en una ajuda amb límits clars?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-mb-dades-pati" class="btn-back" data-preserve-filters="mb-dades-pati">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/microbit.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>micro:bit</span>
+    </span><span class="tag-badge">
+      
+      <span>Segon cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Ciències, Matemàtiques i Tecnologia</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 5 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Dades que parlen del pati</h1>
+        <span class="tag-badge" data-theme>🏷️ Observació i dades responsables</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-mb-dades-pati.webp" alt="Una placa micro:bit, targetes de dades i un gràfic en blanc representen una investigació escolar del pati." width="600" height="448" loading="lazy"><figcaption>Les dades descriuen l’entorn i la prova; no es fan perfils de les persones que l’utilitzen.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>El consell escolar demana una observació senzilla del pati: quins llocs tenen més llum, quines zones són més fresques o com es poden mostrar avisos útils? Els equips aprenen a classificar dades, explorar sensors, dissenyar un gadget i programar una condició. La placa mostra un prototip d’aula, no és un termòmetre calibrat ni un assistent que escolta converses.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Distingir una observació, una dada i una interpretació, i registrar font i condicions de mesura.</li><li>Comparar lectures repetides i descriure variabilitat, casos dubtosos i límits del sensor.</li><li>Dissenyar un prototip amb una regla explícita que transforma una entrada en una resposta.</li><li>Comunicar una proposta útil sense recollir dades personals ni presentar una lectura com a mesura professional.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<p>BBC micro:bit, MakeCode, ordinador, targetes, llapis i full de registre. Els sensors de llum, brúixola, acceleròmetre i temperatura varien segons la versió i l’entorn; confirmeu els blocs i les limitacions de la placa disponible. No cal connexió a internet ni compte d’usuari.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-5-sessions">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 5 · Què és una dada? (What is data?)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" aria-valuetext="Pas 1 de 5">
+        <span data-wizard-bar style="width: 20.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Què és una dada? (What is data?)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Què és una dada? (What is data?)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Caça de dades (Data treasure hunt)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Caça de dades (Data treasure hunt)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Dissenyar un gadget (Sensor gadget design)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dissenyar un gadget (Sensor gadget design)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Dades, condicions i selecció (Data conditions &amp; selection)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dades, condicions i selecció (Data conditions &amp; selection)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Un assistent digital (Digital assistants)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Un assistent digital (Digital assistants)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-que-es-una-dada-what-is-data" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Què és una dada? (What is data?)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu la petició del consell escolar i mostreu tres exemples breus: una lectura de llum, el recompte agregat de targetes i l’opinió «m’agrada aquesta zona». Abans de classificar-los, l’alumnat prediu quins es poden comprovar i quins necessiten una explicació personal.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Classifiqueu targetes fictícies d’observacions ambientals, registres i opinions. Afegiu exemples de dades personals, dades agregades i dades de l’entorn; useu persones inventades i no demaneu a l’alumnat que expose informació pròpia. Cada equip escriu el criteri que ha utilitzat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu les classificacions i analitzeu un cas fictici d’ús inadequat de dades que podria perjudicar algú. Distingiu l’observació «la placa mostra 120», la interpretació «ací hi ha menys llum» i l’opinió «preferisc aquesta zona»; anoteu quina prova podria revisar cada afirmació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu què necessita saber el prototip per ajudar amb una pregunta ambiental i elimineu les dades supèrflues. Acordeu una norma de classe: no es recullen noms, imatges, veus, rutes individuals ni dades de salut; les proves se centren en l’entorn i es fan en llocs autoritzats.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>classificació argumentada, tres columnes d’observació/interpretació/opinió i norma de recollida. Comproveu si l’equip identifica una dada que no necessita i explica per què. Pregunta de tancament: «Com pot canviar el significat d’una dada segons qui la use i amb quin propòsit?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-caca-de-dades-data-treasure-hunt" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Caça de dades (Data treasure hunt)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu una pregunta ambiental que es puga respondre en dos o tres punts autoritzats del pati, com ara si les lectures de llum canvien entre ombra i sol. Predigueu què hauria de mantindre’s igual per a comparar els punts i quina variació podria alterar la lectura.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Feu una caça de dades amb un mapa senzill i codis de lloc genèrics. Amb micro:bit, programeu lectures en MakeCode o useu el simulador identificant-lo com a tal. Si mesureu temperatura, recordeu que la placa reflecteix aproximadament la temperatura del processador i pot diferir de la de l’aire; no és un termòmetre per a salut o seguretat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>En cada punt compareu lectures repetides, mantenint orientació i altura semblants. Registreu hora aproximada, ubicació genèrica, unitat i condicions (ombra, núvol, llum pròxima); no anoteu qui hi era. Separeu la lectura observada de la inferència que en feu.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si les dades varien molt, repetiu la lectura i reviseu si s’ha mogut la placa o ha canviat la llum natural. Si no disposeu del sensor o del bloc necessari en la versió del kit, feu servir un conjunt fictici i marqueu-lo clarament com a simulat, no com una mesura real.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa de punts, programa o simulació etiquetada, i taula amb repeticions, unitats i condicions. Pregunteu: «Quin patró podem descriure? Què no podem afirmar amb aquests pocs punts?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-dissenyar-un-gadget-sensor-gadget-design" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Dissenyar un gadget (Sensor gadget design)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Reviseu el patró de la caça de dades i trieu un públic i una necessitat de maqueta: per exemple, un indicador de llum per a un hort escolar en cartró. Predigueu què hauria de fer l’ajuda en una lectura baixa, intermèdia i alta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En equips, dissenyeu el gadget amb una activitat desconnectada: una targeta de lectura entra, una regla s’aplica i una icona o missatge ix. Escriviu un algorisme amb repetició per a tornar a llegir el sensor i una selecció per a triar resposta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Dibuixeu el diagrama d’entrada–procés–eixida i trieu criteris verificables: resposta llegible, regla justificable, eixida neutral i cap dada personal. Indiqueu quin sensor integrat o accessori extern s’utilitzaria i quines limitacions té.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Intercanvieu els esbossos amb un altre equip i demaneu-li que execute l’algorisme amb tres targetes de lectura. Reviseu una instrucció ambigua o una eixida sense camí de retorn. Si el sensor no forma part de la dotació, manteniu el prototip com a simulació, sense atribuir-li una lectura real.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>esquema, algorisme amb repetició/selecció i comprovació amb targetes. Comproveu que el disseny respon a una necessitat concreta i que la resposta es pot explicar. Pregunteu: «Què faria el sistema si la lectura quedara entre dos casos?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-dades-condicions-i-seleccio-data-conditions-selection" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Dades, condicions i selecció (Data conditions &amp; selection)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Recupereu els criteris del gadget i trieu un llindar justificat per les lectures locals, no un valor universal. Predigueu què hauria de passar per davall, exactament al llindar i per damunt; decidiu quin missatge neutral apareixerà si la lectura és dubtosa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Programeu una repetició de lectures i una condició que compare la dada amb el llindar, per exemple mostrar una icona si la llum és baixa. Representeu el codi amb pseudocodi o blocs i marqueu on entra la lectura, on es pren la decisió i quina eixida es mostra.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Proveu tres valors —baix, igual al llindar i alt— i registreu lectura, condició activada i icona esperada. Compareu valors al voltant del llindar i expliqueu com canvia l’eixida quan canvia la dada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Proveu el comportament en un altre punt autoritzat i reviseu falses alertes. Si una ombra o l’orientació altera el resultat, ajusteu el muntatge o el llindar i torneu a passar els tres casos; no amagueu les proves anteriors.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>programa, taula de casos i canvi de depuració justificat. El resultat és un avís informatiu, mai una alarma tèrmica o de seguretat. Pregunteu: «Quines lectures poden fer que la condició es comporte d’una manera inesperada?».</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-5-un-assistent-digital-digital-assistants" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Un assistent digital (Digital assistants)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mireu exemples d’assistents digitals i pregunteu quines entrades reben i qui ha escrit les possibles respostes. Predigueu com es podria fer una ajuda local sense micròfon ni connexió: un menú de dues opcions per a l’hort o el joc de pati.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Construïu un assistent de menú que respon a A/B amb una proposta preprogramada: observar l’ombra, revisar una planta o triar una ruta de joc. Escriviu primer les targetes d’opció i assigneu una resposta concreta a cada botó.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Dibuixeu el mapa d’estats: inici, opció A, opció B i retorn. Indiqueu quines dades usa el programa —botó premut i regla triada— i quines no usa —veu, ubicació individual, identitat o dades de salut—. Expliqueu que les respostes les ha escrit l’equip.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Una altra parella prova cada botó sense rebre instruccions dels autors i registra si arriba a l’opció prevista. Depureu una eixida sense camí de retorn o un botó sense resposta, i repetiu la prova després del canvi.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>programa, mapa d’estats i registre de prova creuada amb una millora. No hi ha micròfon, conversa ni decisió intel·ligent: és una seqüència local amb condicions escrites per l’equip. Pregunta final: «Què fa que aquesta ajuda siga digital i què continua depenent de les persones que l’han dissenyada?».</p></div></aside>
+</section>
+</div></section>
+<h3 class="detail-subsection-title" id="del-patro-observat-al-prototip">Del patró observat al prototip</h3>
+<p>Després de representar les lectures amb una taula o pictograma, cada equip selecciona una necessitat concreta del projecte escolar. Dibuixa una cadena d&#39;entrada, procés i eixida: el sensor obté una lectura; una condició la compara amb un llindar; la placa mostra una icona o un missatge. El grup justifica el llindar amb les seues pròpies proves i anota què passaria just per damunt o per davall.</p>
+<p>Proveu tres valors —baix, igual al llindar i alt— i confirmeu l&#39;eixida esperada abans de provar el programa en un altre lloc.</p>
+<p>Per al menú de l&#39;assistent digital, feu un mapa d&#39;estats senzill: inici, opció A, opció B i retorn. Un company prova cada botó sense rebre instruccions dels autors i registra si arriba a l&#39;opció prevista. Aquest control d&#39;estats ajuda a detectar una eixida sense camí de retorn o un botó sense resposta; no implique cap processament de veu ni intel·ligència artificial.</p>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu una classificació de dades, pla de mostreig, taula amb unitats i condicions, diagrama d’entrada-procés-eixida, programa amb condició i proves al voltant del llindar. Valoreu si les conclusions respecten els límits del sensor i si el gadget resol una necessitat concreta sense recollir dades personals.</p>
+<h3 class="detail-subsection-title" id="fitxa-de-recerca-i-sequencia-de-treball">Fitxa de recerca i seqüència de treball</h3>
+<p>Per a cada lectura, l&#39;equip completa: pregunta, lloc genèric, sensor o font, valor i unitat, condició observada, repetició i dubte. En la sessió 1, compareu una observació («la placa mostra 120») amb una interpretació («ací hi ha menys llum») i una opinió («preferisc aquesta zona»). Separeu-les en tres columnes i acordeu quina es pot comprovar amb una prova.</p>
+<p>En la caça de dades, feu dos o tres punts de mesura comparables i repetiu cada lectura mantenint orientació i altura semblants. No cal cobrir tot el pati: un mostreig menut i ben explicat és més útil que una col·lecció de valors sense procediment. Anoteu si una ombra, un núvol o l&#39;escalfament de la placa poden haver canviat el resultat.</p>
+<p>Si el sensor no està disponible o els blocs varien entre versions, feu servir un conjunt fictici marcat com a simulat i no el presenteu com a mesura real.</p>
+<h3 class="detail-subsection-title" id="rubrica-i-retorn-entre-equips">Rúbrica i retorn entre equips</h3>
+<p>Reviseu cinc criteris amb «amb suport / en procés / de manera clara»: classifica dades i opinions; documenta condicions de mesura; representa el sistema amb entrada, procés i eixida; prova el llindar amb casos propers; i comunica una limitació concreta del sensor. Cada equip mostra el prototip a una altra parella, que intenta seguir les instruccions i proposa una pregunta, no una nota. La versió revisada inclou almenys un canvi justificat a partir d&#39;aquest retorn.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="privacitat-i-fiabilitat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Mesureu espais amb autorització i no anoteu qui hi era. Repetiu lectures i registreu variacions d’orientació, ombres o escalfament de la placa. Les lectures són aproximades; un canvi o una correlació no demostra per si sol una causa ni permet generalitzar a tot el centre.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="unitat-oficial-adaptada">🔗 Referents i adaptació</h2>
+<p>Aquesta situació adapta les cinc lliçons de micro:bit <a href="https://microbit.org/teach/lessons/data-handling-unit-summary/" target="_blank" rel="noopener noreferrer">Data handling</a>: <em>What is data?</em>, <em>Data treasure hunt</em>, <em>Sensor gadget design</em>, <em>Data conditions &amp; selection</em> i <em>Digital assistants</em>. Els punts de recollida, el gadget, les dades d’exemple i les preguntes són propis; es mantenen els objectius de dades, sensors, algoritmes, condicions, disseny i depuració.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

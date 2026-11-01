@@ -17,14 +17,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Sincronitzar catàleg filtrable
-        run: python3 _scripts/sync-catalog.py
+      - name: Compilar pàgines HTML des de Markdown
+        run: node _scripts/build.js
       - name: Validar enllaços i situacions
         run: python3 _scripts/check-static-site.py
       - name: Comprovar JavaScript
-        run: node --check _js/components.js
-      - name: Validar renderitzador Markdown
-        run: node _scripts/test-markdown-renderer.js
+        run: |
+          node --check _js/ui.js
+          node --check _scripts/build.js
+      - name: Validar renderitzador Markdown i format de tutorials
+        run: |
+          node _scripts/test-markdown-renderer.js
+          node _scripts/test-tutorial-format.js
       - name: Preparar web estàtica descarregable
         uses: actions/upload-artifact@v4
         with:

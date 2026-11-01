@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Micro:bit: brúixola, temperatura, tacte i Bluetooth | Robòtica²⁰⁰</title>
+  <meta name="description" content="Llegir el rumb i la temperatura aproximada, provar el logotip tàctil de V2 i distingir Bluetooth de ràdio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn active">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../robot/microbit/index.html" class="btn-back">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Micro:bit</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      
+      <span>Micro:bit</span>
+    </span><span class="tag-badge">
+      
+      <span>Intermedi</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 50 min</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Micro:bit: brúixola, temperatura, tacte i Bluetooth</h1>
+        <p class="detail-intro" data-description>Llegir el rumb i la temperatura aproximada, provar el logotip tàctil de V2 i distingir Bluetooth de ràdio.</p>
+      </div>
+      <div class="prose" data-content><section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-objectius">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Construïu una estació de camp que indique orientació, mostre una lectura tèrmica aproximada i comunique un resultat a un dispositiu connectat. Compareu les dades amb instruments de referència i identifiqueu què canvia entre micro:bit V1 i V2. No useu el prototip per a prendre decisions meteorològiques o de seguretat.</p></div></aside>
+<ul><li>Calibrar la brúixola i comparar rumbs amb una referència.</li><li>Contrastar la temperatura interna aproximada amb un termòmetre.</li><li>Distingir l’entrada tàctil de V2 i la connexió Bluetooth de la ràdio.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Magnetòmetre/brúixola integrada: rumb i calibratge, amb interferències identificades.</li><li>Sensor tèrmic intern: lectura aproximada, no termòmetre ambiental calibrat.</li><li>Logotip tàctil capacitiu i funcions de so només en micro:bit V2; V1 no incorpora aquestes peces.</li><li>Bluetooth per a connexió amb dispositius compatibles, diferenciat de la ràdio local entre plaques.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Placa BBC micro:bit i ordinador amb MakeCode o editor compatible.</li><li>Brúixola i termòmetre de referència; tots dos poden ser analògics.</li><li>Dispositiu compatible amb Bluetooth i editor/app adient, si la connexió està disponible.</li><li>Portapiles opcional per a separar la placa de l’ordinador.</li></ul>
+<p>Comproveu la versió impresa a la placa. La brúixola pot requerir calibratge i es pot veure afectada per imants, altaveus, taules metàl·liques o cables amb corrent. El sensor tèrmic és dins del processador i només dona una aproximació de la temperatura de la placa/entorn.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Calibreu i compareu el rumb</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Calibreu i compareu el rumb" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Calibreu i compareu el rumb</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Compareu la temperatura amb un instrument"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Compareu la temperatura amb un instrument</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Proveu el logotip tàctil segons la versió"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Proveu el logotip tàctil segons la versió</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Distingiu Bluetooth de ràdio"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Distingiu Bluetooth de ràdio</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="1-calibreu-i-compareu-el-rumb" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Calibreu i compareu el rumb</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Obriu un programa que mostre el rumb de la brúixola en graus. Seguiu la indicació de calibratge del dispositiu i feu la prova lluny d’imants, ordinadors i superfícies metàl·liques. Orienteu la placa cap a quatre direccions marcades amb una brúixola de referència; registreu diferències aproximades i repetiu una lectura després de girar la placa. No interpreteu el valor com una direcció fiable si la lectura oscil·la.</p>
+</section>
+</div></section>
+<section class="learning-step" id="2-compareu-la-temperatura-amb-un-instrument" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Compareu la temperatura amb un instrument</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Mostreu la lectura de temperatura del micro:bit i del termòmetre de referència deixant-los uns minuts al mateix lloc, a l’ombra i sense tocar el processador. Registreu hora, ubicació general i valors, sense dades personals. Repetiu després de canviar de sala només si la temperatura s’ha estabilitzat. Expliqueu que la lectura deriva de la temperatura del xip i pot diferir de la temperatura de l’aire.</p>
+</section>
+</div></section>
+<section class="learning-step" id="3-proveu-el-logotip-tactil-segons-la-versio" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Proveu el logotip tàctil segons la versió</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>En una micro:bit V2, programeu l’esdeveniment de tocar el logotip per mostrar una icona o alternar un estat. Proveu tocar, deixar anar i mantenir el contacte com a esdeveniments diferents si l’editor els ofereix. En V1, substituïu l’entrada per A/B o un pin tàctil extern adequat; no presenteu la placa V1 com si tinguera logotip sensible al tacte.</p>
+</section>
+</div></section>
+<section class="learning-step" id="4-distingiu-bluetooth-de-radio" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Distingiu Bluetooth de ràdio</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Seguiu la guia de connexió de l’editor i emparelleu la placa amb un dispositiu compatible. Envieu una lectura fictícia o un número de prova a la interfície disponible i comproveu si arriba. Compareu el procediment amb <code>radio</code> entre dues plaques: Bluetooth crea una connexió amb un dispositiu compatible, mentre que el bloc ràdio de MakeCode envia missatges entre plaques del grup. Si l’editor o el dispositiu no admeten la connexió, feu el diagrama de missatges en paper i anoteu-ho com a simulació.</p>
+<figure class="sa-illustration"><img src="../../_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp" alt="Una micro:bit de la dotació en suport de cartó, al costat d’una brúixola i un termòmetre de referència; un telèfon mostra el símbol abstracte de Bluetooth." width="600" height="448" loading="lazy"><figcaption>La brúixola i el termòmetre són instruments de comparació, no accessoris connectats a la placa.</figcaption></figure>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
+<p>Repetiu tres vegades quatre rumbs marcats i dues lectures tèrmiques en condicions anotades. A V2, compareu cinc intents de tacte i cinc de no tacte; en V1, registreu l’entrada alternativa utilitzada. Proveu la connexió Bluetooth una vegada amb dispositiu compatible i documenteu el resultat, o feu la simulació desconnectada. Si la brúixola canvia en acostar-la a un objecte, separeu l’objecte i repetiu abans de canviar el programa.</p>
+<h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
+<ul><li>Què s’ha calibrat i quina font d’interferència heu descartat?</li><li>Per què la temperatura del processador pot diferir de la temperatura de l’aire?</li><li>Quines funcions requereixen micro:bit V2?</li><li>Quina diferència observable hi ha entre emparellar per Bluetooth i enviar dades per ràdio?</li></ul>
+<h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
+<ul><li>Guardeu el projecte, les taules de rumb i temperatura, els intents de tacte segons versió i un esquema de la connexió. La conclusió ha de separar mesura, aproximació i simulació, i enumerar les limitacions de calibratge, precisió i compatibilitat.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Permeteu llegir els resultats en veu alta, en pantalla o en una taula impresa. El tacte és opcional i es pot substituir per A/B. No compartiu identificadors personals ni emparelleu dispositius sense seguir les normes digitals del centre; esborreu la connexió en acabar. No useu imants forts prop de la brúixola durant les proves.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
+<p>La <a href="https://microbit.org/get-started/features/overview/" target="_blank" rel="noopener noreferrer">vista general oficial de micro:bit</a> descriu botons, brúixola, acceleròmetre, ràdio/Bluetooth, pins i les diferències de V2; la guia oficial de <a href="https://microbit.org/get-started/features/sensors/" target="_blank" rel="noopener noreferrer">sensors</a> documenta la temperatura aproximada i el logotip tàctil. Consulteu també la <a href="https://makecode.microbit.org/reference/bluetooth" target="_blank" rel="noopener noreferrer">referència Bluetooth de MakeCode</a>. El Bluetooth depén de l’editor/dispositiu compatible; el sensor intern de temperatura no és un instrument calibrat.</p>
+</section></div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

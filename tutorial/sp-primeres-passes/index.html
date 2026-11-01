@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Primeres passes: El Hub intel·ligent i el primer programa | Robòtica²⁰⁰</title>
+  <meta name="description" content="Connectar el Hub SPIKE Prime, explorar la matriu 5 × 5, els sis ports i el sensor d’orientació.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn active">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../robot/spike/index.html" class="btn-back">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Spike</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      
+      <span>Spike</span>
+    </span><span class="tag-badge">
+      
+      <span>Iniciació</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 35 min</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Primeres passes: El Hub intel·ligent i el primer programa</h1>
+        <p class="detail-intro" data-description>Connectar el Hub SPIKE Prime, explorar la matriu 5 × 5, els sis ports i el sensor d’orientació.</p>
+      </div>
+      <div class="prose" data-content><section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-objectius">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Connecta el Hub gran SPIKE Prime i explora els elements que permeten programar un primer prototip. El repte combina la matriu 5 × 5, el sensor d’orientació, els ports A–F i una primera prova amb un component connectat.</p></div></aside>
+<ul><li>Comprovar la càrrega del Hub i connectar-lo per BLE amb SPIKE App o USB quan siga necessari.</li><li>Programar la matriu de 25 píxels per mostrar icones i animacions.</li><li>Identificar els sis ports d’entrada/eixida A–F i els botons del Hub gran SPIKE Prime.</li><li>Distingir les lectures d’inclinació del sensor de sis eixos de gestos com sacsejar o tocar el Hub.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Hub SPIKE Prime: matriu LED 5 × 5, botó central, botons laterals, ports i sensor d’orientació de sis eixos.</li><li>Connexió i programació amb SPIKE App; els ports i elements connectats s’han d’identificar en cada muntatge.</li><li>Bateria recarregable del Hub; l’estat de càrrega i els indicadors poden variar segons la versió de l’app.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Hub gran SPIKE Prime (model 45601)</li><li>App LEGO SPIKE instal·lada</li><li>Cable USB</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Enceneu i connecteu el Hub Prime</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Enceneu i connecteu el Hub Prime" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Enceneu i connecteu el Hub Prime</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Mostreu una icona a la matriu"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Mostreu una icona a la matriu</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Llegiu el sensor d’orientació"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Llegiu el sensor d’orientació</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Exploreu els botons i els indicadors"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Exploreu els botons i els indicadors</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="1-enceneu-i-connecteu-el-hub-prime" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Enceneu i connecteu el Hub Prime</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Comproveu la càrrega de la bateria. Manteniu premut el botó central per encendre el Hub; després premeu el botó Bluetooth i, des de SPIKE App, obriu un projecte i seleccioneu la icona del Hub al llenç per triar-lo. Poseu-li un nom únic si hi ha diversos hubs a l’aula. L’actualització del sistema només cal quan l’app ho demana; per actualitzar, LEGO recomana la connexió USB quan siga possible.</p>
+</section>
+</div></section>
+<section class="learning-step" id="2-mostreu-una-icona-a-la-matriu" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Mostreu una icona a la matriu</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Creeu un projecte amb blocs de paraules o d’icones. Quan comence el programa, mostreu una icona a la matriu 5 × 5 i esborreu-la. Comproveu que es tracta d’una matriu de llum del Hub i no d’una pantalla de píxels a color.</p>
+</section>
+</div></section>
+<section class="learning-step" id="3-llegiu-el-sensor-d-orientacio" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Llegiu el sensor d’orientació</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Poseu el Hub sobre la taula i mostreu una fletxa en respondre a una inclinació o gir detectat. Proveu una sola orientació cada vegada, torneu el Hub a una posició estable i compareu l’indicador amb el moviment físic. Aquest sensor de sis eixos combina giroscopi i acceleròmetre; no és una brúixola que indique el nord.</p>
+</section>
+</div></section>
+<section class="learning-step" id="4-exploreu-els-botons-i-els-indicadors" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Exploreu els botons i els indicadors</h3></header><div class="learning-step-content">
+<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
+<p>Amb el Hub desconnectat del muntatge, useu els botons esquerre i dret per recórrer els programes disponibles i el botó central per iniciar-ne un. Observeu el color de l’indicador central durant l’estat de connexió i en iniciar un programa. Si l’app i la versió del Hub exposen gestos, proveu una sacsejada o un toc suau i compareu-la amb la lectura d’inclinació; anoteu quines entrades estan disponibles en la configuració real.</p>
+<aside class="markdown-callout"><p><strong>💡 Consell docent per a la sessió:</strong> Posa una etiqueta de color o número a cada Hub perquè els alumnes no es connectin per Bluetooth al robot del grup del costat.</p></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
+<p>Connecteu un motor angular a un port lliure i llegiu el nom del port a l’app. Escriviu-lo al registre abans d’executar un moviment curt i lent. Desconnecteu-lo només amb els motors aturats. Si els sis ports estan disponibles, identifiqueu-los un per un sense connectar tots els components alhora. Compareu també la connexió BLE amb la connexió USB per transferir o actualitzar el Hub, seguint el missatge de l’app i comprovant abans que la bateria té càrrega suficient.</p>
+<h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
+<ul><li>Quins elements mostren informació d’estat mentre el Hub està encés o connectat?</li><li>Quina diferència hi ha entre orientar el Hub i sacsejar-lo?</li><li>Quin port ha detectat l’app per al motor i què cal comprovar abans de desconnectar-lo?</li></ul>
+<h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
+<ul><li>Un programa executat, el registre dels ports i botons identificats, la predicció de moviment i les entrades de moviment que admet la versió provada. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l&#39;activitat.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Segueix el procediment del hub concret i de la versió de l&#39;aplicació disponible; practica sense connexions addicionals abans de muntar el repte.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
+<p>La <a href="https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/" target="_blank" rel="noopener noreferrer">fitxa tècnica i guia oficial de SPIKE Prime</a> descriu el Hub gran amb sis ports, matriu 5 × 5, BLE, altaveu, sensor de sis eixos i bateria recarregable, així com els passos de connexió i actualització. Aquesta guia és per al Hub gran SPIKE Prime; SPIKE Essential té un hub diferent amb només dos ports. LEGO indica que continuarà donant suport a SPIKE App fins al 30 de juny de 2031 (<a href="https://education.lego.com/en-us/spike-update-2026/" target="_blank" rel="noopener noreferrer">actualització de LEGO Education</a>).</p>
+</section></div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

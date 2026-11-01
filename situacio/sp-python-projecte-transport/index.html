@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Un trajecte útil, un prototip que aprén | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Projecte final de 10 lliçons amb SPIKE Prime i Python: investigar, dissenyar, programar i provar un prototip de transport escolar de materials.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-python-projecte-transport" class="btn-back" data-preserve-filters="sp-python-projecte-transport">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Matemàtiques i Programació</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 10 lliçons · 10–12 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Un trajecte útil, un prototip que aprén</h1>
+        <span class="tag-badge" data-theme>🏷️ Projecte culminant: transport i Python</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-python-projecte-transport.webp" alt="Base mòbil LEGO SPIKE Prime amb una càrrega de targetes de paper que segueix una ruta de maqueta fins a una aula i una biblioteca." width="600" height="448" loading="lazy"><figcaption>El projecte final integra mecànica, Python, sensors, dades, proves iteratives i comunicació de límits.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-de-projecte-i-tracabilitat">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>La comunitat escolar necessita moure materials compartits (targetes, peces grans o llibres de maqueta) entre dos punts d’una aula o biblioteca simulada. Cada equip investiga una necessitat concreta, defineix criteris d’èxit i restriccions, compara idees, construeix una base SPIKE Prime o un mecanisme de transport, programa amb Python una ruta repetible i documenta proves i millores. La mostra final explica la solució i les dades que la sustenten.</p></div></aside>
+<p>És una adaptació de la branca <em>Transportation Project</em> anunciada com a projecte culminant de LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 2*</a>. El projecte mobilitza les competències de final de curs que la guia enumera: dissenyar i iterar un prototip, usar algoritmes, dades, sensors, bucles i condicions compostes, depurar maquinari/programari, escriure pseudocodi, descompondre el problema, documentar proves i feedback, considerar biaix/accessibilitat i comunicar la solució.</p>
+<p>La guia accessible diu que el projecte ocupa entre 10 i 12 lliçons de 45–60 minuts i que té diari i rúbrica pròpia, però el PDF publicat no inclou un guió detallat d’aquestes sessions ni els descriptors de la rúbrica. Per això, aquesta seqüència de deu lliçons és una proposta didàctica original, traçada als resultats publicats, i no una adaptació pas a pas d’instruccions no disponibles.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="resultats-d-aprenentatge-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Investigar i reformular una necessitat de transport de materials de maqueta sense recopilar trajectes personals ni exposar persones a vehicles.</li><li>Definir criteris mesurables (arribar a destí, mantindre la càrrega, respectar zona d’aturada) i restriccions de temps, peces, dimensions i seguretat.</li><li>Descompondre ruta, seguiment de línia/fites, decisions, aturada, càrrega i feedback en funcions/subproblemes.</li><li>Escriure en Python una seqüència de moviment amb funcions, variables, llistes, bucles, condicionals, lògica booleana i dades de sensor, segons els conceptes treballats en Course 2.</li><li>Calibrar i registrar distància, color o contacte només quan el sensor disponible siga adequat; distingir dada mesurada, regla escrita per l’equip i decisió del programa.</li><li>Depurar errors mecànics, de connexió, sintaxi, execució o lògica amb hipòtesis i proves controlades.</li><li>Iterar a partir de resultats i comentaris, documentar els canvis i comunicar límits del prototip i evidència d’èxit.</li><li>Treballar en equip amb rols rotatius i considerar si la interfície, la pista i la càrrega són accessibles a persones amb diferents capacitats.</li></ul>
+<p><strong>Necessitat:</strong> dificultat observada i descrita sense atribuir defectes a una persona. <strong>Criteri:</strong> condició que defineix si la solució compleix el propòsit. <strong>Restricció:</strong> límit que el disseny ha de respectar. <strong>Iteració:</strong> canvi basat en una prova seguit d’una nova prova.</p><aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Prototip</h4><p>model per aprendre i comparar, no un sistema certificat de transport. <strong>Evidència:</strong> registre o observació que permet a una altra persona valorar una afirmació.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="recursos-organitzacio-i-preparacio">🧰 Materials i preparació</h2>
+<p>Per equip: set SPIKE Prime, hub carregat, app amb Python i consola, base mòbil de dos motors o estructura alternativa dissenyada per l’alumnat, sensor de color/distància/força només si ajuda a un criteri definit, fitxes grans simulant càrregues, cartó per a carrils i topalls, cinta de paper, regle, cronòmetre opcional, diari de projecte, llapis i ordinador per a la mostra. No calen sensors addicionals, càmeres, telèfons personals ni connexió a Internet durant la prova.</p>
+<p>Les instruccions de muntatge i API es consulten en la versió de l’app i el set locals; les API de Python varien segons versió.</p>
+<p>La docent prepara una zona tancada de taula o terra llis amb marges, una ruta de prova assequible a tots els equips, una càrrega fictícia i lleugera, una estació d’eixida i una destinació marcada amb forma i text gran. Preveu una ruta manual en quadrícula i un programa de simulació si el robot o un sensor fallen. Cap maqueta transporta objectes fràgils, menjar, líquids ni persones. Els motors s’aturen abans de manipular el robot i funcionen a baixa velocitat;</p>
+<p>s’eviten desnivells, passadissos oberts i escales.</p>
+<p>Durant les deu lliçons, roten quatre responsabilitats: investigació/documentació, construcció/seguretat, Python/proves i comunicació/accessibilitat. Totes les persones han de tenir oportunitat de llegir o explicar una part del programa i una evidència. La docent fa minirevisions al final de les lliçons 2, 4, 6 i 8 perquè el projecte puga redirigir-se sense perdre el calendari.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="projecte-en-deu-llicons">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 10 · Escoltar, observar i definir el repte (45–60 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" aria-valuetext="Pas 1 de 10">
+        <span data-wizard-bar style="width: 10.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Escoltar, observar i definir el repte (45–60 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Escoltar, observar i definir el repte (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Investigar dades, materials i restriccions (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Investigar dades, materials i restriccions (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Generar opcions i triar amb criteris (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Generar opcions i triar amb criteris (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Planificar el programa i els casos de prova (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Planificar el programa i els casos de prova (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Construir el prototip i validar la mecànica (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Construir el prototip i validar la mecànica (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="5" aria-label="Obrir pas 6: Escriure el primer programa Python integrat (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">6</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Escriure el primer programa Python integrat (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="6" aria-label="Obrir pas 7: Calibrar, provar i depurar amb evidència (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">7</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Calibrar, provar i depurar amb evidència (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="7" aria-label="Obrir pas 8: Revisar accessibilitat i millorar el sistema complet (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">8</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Revisar accessibilitat i millorar el sistema complet (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="8" aria-label="Obrir pas 9: Tancar documentació, demostració i rúbrica (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">9</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Tancar documentació, demostració i rúbrica (45–60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="9" aria-label="Obrir pas 10: Fira de prototips i reflexió final (45–60 min)"><span class="learning-wizard-step-number" aria-hidden="true">10</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Fira de prototips i reflexió final (45–60 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="llico-1-escoltar-observar-i-definir-el-repte-45-60-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Escoltar, observar i definir el repte (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu el mandat: traslladar materials lleugers entre dos punts d’una maqueta de classe amb un prototip SPIKE. Useu un escenari escolar fictici; no pregunteu qui porta materials a casa ni com arriba a escola. Predigueu quines condicions farien clara i ordenada l’entrega.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Examineu una escena de maqueta o parleu amb una persona adulta voluntària sobre què fa que una entrega siga clara i accessible. Registreu necessitats anònimes com a observacions i preguntes, no com a opinions sobre persones.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Redacteu una frase de problema, usuari, objectiu, dos criteris d’èxit i tres restriccions. Un criteri possible és arribar a la destinació en 3 de 4 intents, sense caiguda de la càrrega i amb aturada manual accessible.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Decidiu si la ruta seguirà una línia de cinta, fites de color o ordres prefixades. No pressuposeu cap sensor fins a comprovar la dotació; ajusteu els criteris si el material disponible no els pot verificar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>problema definit, usuari, criteris, restriccions i una pregunta oberta. Expliqueu una cosa que el prototip no pretén resoldre.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-2-investigar-dades-materials-i-restriccions-45-60-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Investigar dades, materials i restriccions (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Dibuixeu l’origen, els trams, els girs, la zona de càrrega, la destinació i els punts d’aturada. Predigueu quins materials o dades poden limitar la ruta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Mesureu amplària de pista i longitud dels trams; descriviu la càrrega com a lleugera o mitjana sense necessitat de bàscula. Consulteu les funcions del sensor a la Knowledge Base i anoteu port, unitat i rang llegible.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu dues solucions manuals i dos mecanismes de maqueta, com base amb safata, empenyedor o pinça sense tancament arriscat. Registreu estabilitat, accessibilitat i peces necessàries; no copieu models protegits.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu els criteris amb la informació recollida i anoteu allò que no s’ha pogut comprovar. Afegiu la restricció d’utilitzar només càrrega de prova lleugera.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa del sistema, inventari de dades i comparació de mecanismes. La docent comprova que el repte és possible amb les peces i el temps disponibles.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-3-generar-opcions-i-triar-amb-criteris-45-60-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Generar opcions i triar amb criteris (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Cada membre dibuixa una idea individual sense discutir-la ni jutjar-la. Predigueu quin criteri serà més difícil de satisfer.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Combineu aportacions i prepareu almenys tres conceptes diferents, inclosa una opció no motoritzada. Feu esbossos prou clars per comparar-los.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-python-projecte-transport-disseny.webp" alt="Robot SPIKE Prime de la dotació al costat de tres prototips de cartó separats: safata, empenyedor i plataforma, amb targetes de ruta i criteris visuals." width="600" height="448" loading="lazy"><figcaption>Els tres conceptes són maquetes pròpies per comparar; no són accessoris ni mecanismes inclosos en el set.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu cada idea per seguretat, estabilitat de càrrega, funcions Python, adaptació a usuaris, peces i facilitat de prova. Useu escala 1–3 amb comentaris; si una dada falta, marqueu-la com a desconeguda.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Trieu una idea i anoteu el compromís que implica i una característica d’una alternativa que podríeu incorporar. Presenteu l’esbós a un altre equip i pregunteu què entén del criteri abans de construir.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>tres conceptes, matriu raonada i decisió. L’escala orienta la conversa; no és una puntuació científica de les idees.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-4-planificar-el-programa-i-els-casos-de-prova-45-60-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Planificar el programa i els casos de prova (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Representeu una ruta i predigueu què pot fallar: sensor absent, fita desconeguda, càrrega desplaçada o necessitat d’aturada manual.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Descomponeu el programa en iniciar, conduir tram, llegir fita, corregir, arribar/aturar i comunicar error. Creeu funcions per a les accions que realment es repeteixen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Dibuixeu l’algoritme o pseudocodi. Indiqueu on poden servir llistes de punts, condicions compostes, bucles, paràmetres de velocitat i registre de dades.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Prepareu casos nominals i límit: ruta amb gir, color no assignat, càrrega ampla, inici mal orientat i aturada manual. Predigueu el resultat i què fareu si falla; deseu una còpia del pla.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>diagrama, pseudocodi i pla de proves. La docent comprova que cap regla depén d’un sensor que no estiga disponible.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-5-construir-el-prototip-i-validar-la-mecanica-45-60-min" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Construir el prototip i validar la mecànica (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Abans de muntar, prediu què podria fer inestable la càrrega o dificultar un gir. Recordeu que el prototip transporta només materials lleugers de maqueta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Construïu per subsistemes la base, el suport de càrrega i el sensor si escau. Proveu la safata buida i després amb càrrega de cartó molt lleugera; observeu recta i gir. No subjecteu la càrrega amb persones ni useu pinces que tanquen sobre dits.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-python-projecte-transport-mecanica.webp" alt="Base mòbil SPIKE Prime de la dotació amb una safata buida de cartó, un carril pla i un regle per a comprovar estabilitat i espai." width="600" height="448" loading="lazy"><figcaption>La safata és un prototip de l’equip; la imatge no pressuposa cap accessori oficial de transport.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Amb el muntatge apagat, proveu manualment el recorregut si és segur. Anoteu encallaments, cables que arrosseguen, rodes que freguen o centre de càrrega alt.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Escriviu una única ordre curta amb la funció API verificada; no intenteu encara un programa autònom complet. Dibuixeu la versió 1, anoteu què funciona i decidiu un ajust.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>esquema de muntatge i primer registre de prova. Valoreu la construcció pels criteris acordats, no per la semblança amb un model comercial.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-6-escriure-el-primer-programa-python-integrat-45-60-min" data-step="6" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 6</span><h3>Escriure el primer programa Python integrat (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Predigueu com es dividirà el programa i quina informació necessitareu per depurar una ruta curta. Acordeu qui pot autoritzar l’arrencada i qui té el control de l’aturada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Organitzeu constants i ports al principi, funcions amb noms clars al mig i seqüència principal al final. Comenteu les unitats de velocitat/distància i l’origen dels llindars.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Programeu un tram, una aturada controlada i la seqüència cap al tram següent. Comproveu aïlladament cada sensor abans d’afegir-lo; si no està disponible, useu fites o ordres manuals identificades com a simulació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Useu una llista per a punts o accions si redueix repeticions i afegiu una condició per a dades no reconegudes. Executeu una ruta curta amb velocitat baixa, zona lliure i una persona responsable d’aturar; no feu el programa tan llarg que siga difícil de depurar.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-python-projecte-transport-python.webp" alt="SPIKE Prime real de la dotació sobre una ruta de proves de colors, al costat d’un ordinador amb editor textual de Python i targetes de test." width="600" height="448" loading="lazy"><figcaption>La pantalla representa codi textual; el programa, els ports i l’API s’han de comprovar en la versió d’app instal·lada al centre.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>sortida de consola i registre de posició final, detecció, temps i error. Una sola prova no demostra que el criteri s’haja complit.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-7-calibrar-provar-i-depurar-amb-evidencia-45-60-min" data-step="7" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 7</span><h3>Calibrar, provar i depurar amb evidència (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu una causa probable d’una fallada: orientació, fricció, unitat, llindar, ordre, dada absent o funció API incorrecta. Escriviu què espereu observar si la hipòtesi és correcta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Feu tres intents del mateix cas nominal amb inici i superfície constants. Afegiu després un cas amb fita absent o diferent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Anoteu lectura del sensor, valor esperat, resposta, aturada i variació. Classifiqueu l’error com a muntatge, connexió, sintaxi, execució o lògica.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Canvieu una sola causa i repetiu. Si la consola no mostra error però el robot falla, reviseu l’especificació i la lectura abans d’assumir que el codi és correcte. Decidiu si cal continuar o simplificar l’abast.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-python-projecte-transport-proves.webp" alt="Base mòbil SPIKE Prime de la dotació amb una targeta lleugera en una ruta plana entre aula i biblioteca de maqueta; al costat hi ha un regle i un registre de proves sense text." width="600" height="448" loading="lazy"><figcaption>La ruta de prova és plana; la rampa que apareix apartada no forma part de l’assaig. Es comparen el punt de partida, l’aturada i la càrrega lleugera.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>proves repetides, hipòtesi revisada i versió d’app/API. Atribuïu qualsevol funció o fragment extern reutilitzat.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-8-revisar-accessibilitat-i-millorar-el-sistema-complet-45-60-min" data-step="8" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 8</span><h3>Revisar accessibilitat i millorar el sistema complet (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Una parella d’un altre equip observa la pista i intenta seguir les instruccions sense ajuda. Predigueu quines barreres podrien dificultar l’ús: llegenda poc clara, color difícil de distingir o aturada difícil de trobar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Comproveu si la meta té paraula o símbol a més de color, si hi ha alternativa quan el sensor no distingeix una marca i si la ruta evita exigir reflexos ràpids.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Recolliu retorn amb frases d’evidència: «he vist…», «no he sabut…», «esperava…». Valoreu l’accessibilitat de l’artefacte, no l’habilitat personal de qui el prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Trieu un canvi d’estructura, programa o instrucció. Actualitzeu el pseudocodi, apliqueu una edició cada vegada i torneu a executar dos casos.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>retorn, canvi i dues proves posteriors. Registreu una possible barrera, un sensor sense calibrar o una afirmació que excedeix les dades, i com ho heu abordat.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-9-tancar-documentacio-demostracio-i-rubrica-45-60-min" data-step="9" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 9</span><h3>Tancar documentació, demostració i rúbrica (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Reviseu què ha d’entendre l’audiència sobre el repte i predigueu quina evidència sustenta cada afirmació de la presentació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Completeu el diari amb problema, criteris/restriccions, tres idees, diagrama, ports, codi comentat, pla/resultats de prova, fallada important, canvi, retorn i limitació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Prepareu una mostra de tres minuts: necessitat, usuari i criteris, construcció, fragment Python, proves repetides, millora i què no resol. Si el robot no està disponible, useu una imatge estàtica o simulació identificada com a tal.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Autoapliqueu la rúbrica d’equip en Python, integració física, proves/depuració, accessibilitat i comunicació. Useu nivells inicial, en desenvolupament, competent i transferible amb una evidència concreta del diari.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>diari complet i guió revisat entre parelles. Comproveu que cada afirmació de la presentació té una dada o observació al darrere.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-10-fira-de-prototips-i-reflexio-final-45-60-min" data-step="10" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 10</span><h3>Fira de prototips i reflexió final (45–60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Delimiteu carril, càrrega i zona de públic i trieu una demostració curta. Predigueu quina condició de prova pot mostrar una limitació del prototip.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Prepareu l’estació i comproveu que l’aturada manual és fàcil de trobar. Manteniu la càrrega lleugera i el recorregut dins de la zona marcada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Presenteu almenys un cas d’èxit i una condició que el sistema no resol. Accepteu preguntes sobre dades, sensors, decisions, mecanisme i proves; no compareu equips per rapidesa ni per nombre de peces.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-python-projecte-transport-fira.webp" alt="Prototip SPIKE Prime de la dotació amb una càrrega lleugera recorre un carril de maqueta fins a una zona de parada mentre un quadern mostra un gràfic de proves." width="600" height="448" loading="lazy"><figcaption>La demostració és de taula i no representa un sistema autònom per a passadissos ni transport real.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Recolliu una nota concreta del públic i una pregunta respectuosa. Cada membre explica la seua contribució i una aportació d’una altra persona que haja canviat el projecte.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>demostració, retorn i següent experiment proposat. Compareu estimació inicial i final del criteri, no el valor personal. El model és educatiu, no autònom ni apte per a transportar materials o persones en espais reals.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="producte-final-i-evidencies">🧪 Evidències i avaluació</h2>
+<p>La mostra inclou un prototip de transport per a fitxes o paquets buits i lleugers, programa Python que usa almenys una funció pròpia, un sensor SPIKE quan siga pertinent/disponible, i una parada; trajecte i instruccions accessibles; diari de disseny; pseudocodi/diagrama; codi comentat amb atribució; mapa de ports; taula amb criteri, intent, resultat, dada, unitat i ajust; documentació d’una fallada i la seua depuració; revisió entre iguals; estimació de límits/impacte; i una presentació de 3 minuts.</p>
+<p>Rúbrica formativa (4 nivells per dimensió): <strong>ús de Python</strong> —programa poc estructurat / seqüència parcial / funcions i control de flux coherents / estructura documentada que es pot reutilitzar i justificar; <strong>integració física</strong> —muntatge o ports no verificats / acció bàsica / mecanisme i sensors responen als criteris / el grup explica calibratge i alternatives; <strong>prova/iteració</strong> —resultat anecdòtic / una prova registrada / casos variats i una revisió basada en dades / repeticions comparables, causes aïllades i límits explícits;</p>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>disseny per a les persones</h4><p>—no hi ha instrucció/aturada clara / una barrera reconeguda / alternatives d’entrada i indicadors / perspectives revisades amb iteració; <strong>comunicació/equip</strong> —afirmacions sense registre / evidència parcial / rols i aportacions explicats amb respecte / decisions i desacords documentats amb arguments i proves. La rúbrica s’utilitza per orientar millores, no per certificar un transportista real.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-dades-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>El repte pot ser resolt en simulació, amb una maqueta estacionària o amb un vehicle de taula. La ruta es representa amb símbols, text ampliat, formes i colors redundants; es pot donar una ordre manual per a provar la lògica. No es fan enquestes identificables, no es registren domicilis ni trajectes de l’alumnat i no s’avalua capacitat física. Es recullen només dades del prototip i d’entrades sintètiques. Qualsevol observació sobre l’espai escolar s’anonimitza i es valida amb l’adult responsable.</p>
+<p>Els motors funcionen en una zona controlada de baixa velocitat; cap equip prova al passadís, prop d’escales, persones o càrrega fràgil. En cas d’error, s’atura el robot abans de canviar peces o cables.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referent-oficial-abast-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>El referent és el projecte culminant de <em>Introduction to Python Programming · Course 2</em> de LEGO Education, que s’anuncia com a <em>Environmental Impact or Transportation Project</em>. La guia declara que els projectes tenen 10–12 lliçons de 45–60 minuts i inclouen documentació amb diari i rúbrica; també explicita disseny iteratiu, debugging de maquinari/programari, dades, sensors, condicions compostes, pseudocodi, descomposició, accessibilitat, biaix i presentació.</p>
+<p>Aquest itinerari adapta la branca de transport a la logística de materials de maqueta de l’escola i ofereix un artefacte, dades, restriccions, proves, rols i rúbrica originals. El PDF consultable no desglossa el guió docent ni els criteris detallats del projecte de 10–12 lliçons, per tant no atribuïm a LEGO la seqüència de deu sessions ací creada ni afirmem que reproduïsca els seus materials privats. La construcció i l’API Python s’ajusten al set i la versió SPIKE presents al centre.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

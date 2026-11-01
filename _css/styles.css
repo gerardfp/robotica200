@@ -1009,7 +1009,10 @@ robot-hero[robot="microbit"],
 /* Nav-back al hero: sempre alineat a la part superior esquerra */
 .section-hero-inner > nav-back,
 .robots-hero-inner > nav-back,
-.robot-hero-inner > nav-back {
+.robot-hero-inner > nav-back,
+.section-hero-inner > .section-nav-back,
+.robots-hero-inner > .section-nav-back,
+.robot-hero-inner > .section-nav-back {
   grid-column: 1;
   grid-row: 1;
   align-self: start;
@@ -1025,7 +1028,16 @@ robot-hero[robot="microbit"],
 .robots-hero-inner:has(.robot-hero-content > nav-back),
 .robot-hero-inner:has(.robots-hero-content > nav-back),
 .robot-hero-inner:has(.section-hero-content > nav-back),
-.robot-hero-inner:has(.robot-hero-content > nav-back) {
+.robot-hero-inner:has(.robot-hero-content > nav-back),
+.section-hero-inner:has(.robots-hero-content > .section-nav-back),
+.robots-hero-inner:has(.robots-hero-content > .section-nav-back),
+.section-hero-inner:has(.section-hero-content > .section-nav-back),
+.robots-hero-inner:has(.section-hero-content > .section-nav-back),
+.section-hero-inner:has(.robot-hero-content > .section-nav-back),
+.robots-hero-inner:has(.robot-hero-content > .section-nav-back),
+.robot-hero-inner:has(.robots-hero-content > .section-nav-back),
+.robot-hero-inner:has(.section-hero-content > .section-nav-back),
+.robot-hero-inner:has(.robot-hero-content > .section-nav-back) {
   align-items: start;
 }
 
@@ -1041,7 +1053,10 @@ robot-hero[robot="microbit"],
 
 .section-hero-content > nav-back,
 .robots-hero-content > nav-back,
-.robot-hero-content > nav-back {
+.robot-hero-content > nav-back,
+.section-hero-content > .section-nav-back,
+.robots-hero-content > .section-nav-back,
+.robot-hero-content > .section-nav-back {
   align-self: flex-start;
   margin-bottom: 1.25rem;
 }
@@ -1082,7 +1097,10 @@ robot-hero:not(:has(.section-hero-inner)):not(:has(.robots-hero-inner)):not(:has
   }
   .section-hero-inner > nav-back,
   .robots-hero-inner > nav-back,
-  .robot-hero-inner > nav-back {
+  .robot-hero-inner > nav-back,
+  .section-hero-inner > .section-nav-back,
+  .robots-hero-inner > .section-nav-back,
+  .robot-hero-inner > .section-nav-back {
     grid-column: auto;
     grid-row: auto;
     margin-bottom: 0.5rem;

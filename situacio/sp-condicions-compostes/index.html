@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">El repte de les tres pistes | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Cinc lliçons SPIKE Prime sobre variables, condicions compostes, prototips de joc, restriccions i professions d’arquitectura i STEM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-condicions-compostes" class="btn-back" data-preserve-filters="sp-condicions-compostes">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Matemàtiques, Disseny i Orientació</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 5 lliçons · 7–9 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>El repte de les tres pistes</h1>
+        <span class="tag-badge" data-theme>🏷️ Jocs lògics i arquitectura escolar</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-condicions-compostes.webp" alt="Base mòbil LEGO SPIKE Prime al costat d’un joc de pistes de taula amb estacions de colors, targetes i una capsa de paper oberta." width="600" height="448" loading="lazy"><figcaption>Les condicions compostes coordinen diverses regles; una maqueta permet provar-les sense bloquejar ni protegir res real.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-context">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>La classe dissenya una activitat de descoberta per a una mostra de tecnologia. Els visitants, sempre lliures de continuar o aturar-se, resolen una seqüència de pistes sobre una taula; el programa mostra si cada resposta compleix les regles i actualitza una puntuació compartida. Les variables conserven el resultat d’una partida, els operadors combinen requisits, i el SPIKE Prime dona respostes de llum, so o moviment curt.</p></div></aside>
+<p>En les sessions centrals, la classe investiga com una condició composta pot simular una contrasenya i compara usabilitat, nombre de combinacions i accessibilitat. Aquesta situació adapta les cinc lliçons de la unitat 8 <em>Compound Conditionals</em> de LEGO Education <em>Foundations of Physical Computing</em>. “Obrir una caixa” i “eixir d’una sala” s’interpreten com a metàfores de joc en una maqueta: l’alumnat mai queda tancat, cap objecte valuós depén del prototip i no s’hi introdueixen dades o credencials reals.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="objectius-d-aprenentatge">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Dissenyar una activitat de dos participants amb torns i puntuació mantinguda per variables, i comunicar-ne unes regles prou clares perquè un altre grup puga jugar sense explicació oral addicional.</li><li>Expressar una condició simple i composta amb llenguatge quotidià, diagrama, pseudocodi i blocs; distingir què implica <code>i</code>, <code>o</code> i <code>no</code>.</li><li>Programar una seqüència de comprovacions en l’ordre acordat, incloent casos correctes, incorrectes, incomplets, reinici i límits de repetició.</li><li>Construir un model segur que combine entrades reals del kit —botons del hub, color o distància segons la disponibilitat— amb una resposta comprensible, sense afirmar que és un sistema d’autenticació fiable.</li><li>Planificar un repte tipus breakout que es resolga des de fora o al voltant d’una taula oberta, identificar restriccions i iterar el joc a partir de proves d’altres equips.</li><li>Relacionar els continguts amb tasques d’arquitectura, construcció, enginyeria, ciència i matemàtiques, incloent formació, habilitats i col·laboració entre perfils.</li></ul>
+<h3 class="detail-subsection-title" id="continguts-i-llenguatge">🧠 Continguts i llenguatge</h3>
+<p><strong>Variable de puntuació:</strong> valor amb nom que s’inicialitza abans de la partida i s’actualitza segons una regla publicada. <strong>Condició simple:</strong> una expressió que és certa o falsa. <strong>Condició composta:</strong> dues o més condicions relacionades amb un operador lògic. Per exemple, “el color és blau <em>i</em> el botó ha sigut premut” exigeix ambdues coses; “el color és groc <em>o</em> verd” permet qualsevol dels casos, i en aquesta unitat l’OR és inclusiu. <strong>Seqüència:</strong> ordre de comprovacions que forma part de la regla.</p>
+<p><strong>Restricció:</strong> requisit que limita disseny i comportament, com ara poder reiniciar o no usar contrasenyes personals.</p>
+<p>La seguretat digital real depén de molts factors que no es modelen en el kit. Una seqüència de colors vista o enregistrada no és un secret segur; l’objectiu matemàtic és comprendre les regles i els compromisos entre facilitat d’ús i complexitat, no ensenyar a protegir comptes mitjançant un robot escolar.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="preparacio-i-materials">🧰 Materials i preparació</h2>
+<p>Per equip: set SPIKE Prime 45678, dispositiu amb l’app SPIKE i hub carregat; base mòbil o model senzill amb sensor de color i sensor de distància si estan disponibles; targetes gruixudes de resposta; cartolina, cinta de paper, peces per a una capsa de maqueta que no tanque ni puga bloquejar-se, fulls de regles i diari d’enginyeria. Prepareu una pista de taula amb codis ficticis i un sistema de puntuació que no premie la rapidesa física ni penalitze errors d’accés.</p>
+<p>Verifiqueu abans quines lectures i botons admet la versió d’app del centre. Si falten sensors o les lectures varien, empreu targetes/observador com a entrada simulada i assenyaleu-ho explícitament. Cap llum o so ha de semblar una alarma d’emergència.</p>
+<p>Feu una anàlisi prèvia de riscos amb l’alumnat: la maqueta queda oberta, la partida no té límit que obligue a córrer i tothom pot eixir de l’activitat en qualsevol moment. En lloc d’un qüestionari personal, recolliu comentaris anònims sobre llegibilitat i opcions de pista. Rols rotatius: responsable de regles, programació, muntatge/seguretat i observació d’usabilitat.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-d-aprenentatge-cinc-llicons">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 5 · Joc amb variables: punts que es poden explicar (60–90 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" aria-valuetext="Pas 1 de 5">
+        <span data-wizard-bar style="width: 20.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Joc amb variables: punts que es poden explicar (60–90 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Joc amb variables: punts que es poden explicar (60–90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Dues comprovacions per a una acció (90 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dues comprovacions per a una acció (90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Compondre regles i pensar en més d’un factor (90 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Compondre regles i pensar en més d’un factor (90 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Mini-repte: breakout de pistes obertes (90–135 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Mini-repte: breakout de pistes obertes (90–135 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Arquitectura, construcció i STEM (60–90 min)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Arquitectura, construcció i STEM (60–90 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="llico-1-joc-amb-variables-punts-que-es-poden-explicar-60-90-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Joc amb variables: punts que es poden explicar (60–90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Compareu jocs de taula, cartes, esports i videojocs. Cada persona pot parlar d’un joc conegut o analitzar-ne un de neutre preparat per la docent. Predigueu com se sap que s’ha guanyat i com es registra la puntuació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Inventeu un joc de taula per a dues persones amb una fitxa que recorre una pista i targetes de situació. Definiu com es guanyen o perden punts, quants torns hi ha i quan acaba. Escriviu les regles en passos numerats i feu una ronda manual.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Creeu variables <code>punts_jugador_a</code> i <code>punts_jugador_b</code>, inicialitzeu-les a zero a l’inici de cada partida, canvieu de torn explícitament i afegiu una resposta de llum o so quan canvia la puntuació. Registreu almenys quatre torns en una taula de traça.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Un segon equip juga només amb les regles escrites i anota cada desacord. Compareu la puntuació en paper i en el programa després de cada ronda i reviseu una regla a partir del retorn.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu com sumar, canviar de torn i començar de nou.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>regles finals, taula de quatre torns, esquema del programa i nota sobre inicialització de variables.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-2-dues-comprovacions-per-a-una-accio-90-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Dues comprovacions per a una acció (90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Cada parella crea un codi fictici de tres xifres i prova d’endevinar els nombres triats per l’altra. No anoteu contrasenyes habituals, PIN personals o dades privades. Calculeu quantes combinacions hi ha per a un, dos i tres dígits si cada posició val 0–9; parleu de l’equilibri entre opcions i facilitat de record.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En un full de decisions, assigneu una regla a una capsa de paper oberta: la peça de joc rep un senyal només quan la targeta de color és la correcta <strong>i</strong> s’ha premut el botó d’inici. Completeu les quatre files de la taula de veritat: color correcte/incorrecte × botó premut/no premut.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Useu una entrada de color i un botó del hub o dues entrades simulades. Feu que el programa responga de manera diferent a acceptació i rebuig i que permeta començar de nou. Deseu taula de veritat, pseudocodi i registre de proves.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Proveu deliberadament els quatre casos, llegiu cada fila abans d’executar i compareu resultat esperat i real. Afegiu el cas d’una lectura que el sensor no reconeix i decidiu si es repeteix, es demana ajuda o es cancel·la.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu què significa «més segur» en aquest model i què no pot demostrar una maqueta.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>taula de veritat, pseudocodi, registre d’errors i límit d’ús explícit.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-3-compondre-regles-i-pensar-en-mes-d-un-factor-90-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Compondre regles i pensar en més d’un factor (90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Parleu de per què algú voldria protegir informació o materials i qui podria quedar exclòs per una regla mal dissenyada. Amb targetes fictícies, compareu una comprovació amb dues de tipus diferent, com targeta de color i acció deliberada del botó.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Representeu les regles com a portes lògiques. Dissenyeu un prototip de taula que autoritza l’avanç d’una fitxa només si coincideixen dos senyals; pot donar un punt de llum o moure una barrera de cartró molt lleugera que no tanque res. Abans de construir, redacteu requisits, diagrama de flux i condicions.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Definiu casos de prova: correcte, entrada tardana, incorrecta, repetida o absent. Combineu operadors booleans en el programa i etiqueteu cada comentari amb el requisit corresponent; incloeu una resposta de recuperació, no un bloqueig permanent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Un altre equip prova el prototip amb una guia accessible i comenta si entén què ha de fer i com rectificar. Reviseu el disseny: massa factors poden dificultar l’ús legítim, i més combinacions per si soles no fan un sistema segur. Documenteu què recolzen les proves i quines comprovacions professionals faltarien.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu els compromisos entre usabilitat, nombre de combinacions i accessibilitat, sense presentar el dispositiu com a autenticació fiable.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>requisits, diagrama, codi comentat, matriu de proves i revisió d’usabilitat.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-4-mini-repte-breakout-de-pistes-obertes-90-135-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Mini-repte: breakout de pistes obertes (90–135 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu el repte com un joc de taula obert: ningú entra en una sala tancada i cap eixida física depén del programa. Trieu un problema fictici, com ordenar peces d’una exposició abans d’obrir una capsa de cartó. Recolliu comentaris anònims sobre formats de pista agradables —visual, tàctil, text o so opcional— i alternatives per a qui no distingeix colors o prefereix no usar so.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Definiu tres restriccions mesurables: una acció segura, dues condicions que s’han de complir i un ordre de pistes; afegiu reinici i pista d’ajuda. Escriviu pseudocodi i esquema de connexions. Creeu una matriu amb camí correcte, un error per cada condició, ordre erroni, entrada no detectada i reinici.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Construïu un mecanisme d’indicació amb peces de baixa energia o només llums/sons del hub i programeu la seqüència amb variables de progrés. Proveu cada subcomponent aïllat abans del codi complet i registreu cada resultat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Canvieu una cosa per iteració i torneu a executar tota la matriu. Intercanvieu el joc amb almenys tres equips si el temps ho permet; si no, feu una prova creuada i completeu la resta amb casos en paper. Els participants poden aturar-se sense perdre puntuació ni justificar-se. Reviseu instruccions, dificultat, temps sense compte enrere pressionant i accessibilitat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Lliureu la versió revisada i anoteu què ha canviat a partir de proves reals.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>joc, matriu de proves completa, retorn d’usabilitat i registre d’iteracions.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-5-arquitectura-construccio-i-stem-60-90-min" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Arquitectura, construcció i STEM (60–90 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Repasseu els jocs i localitzeu coneixements d’arquitectura i construcció, enginyeria, ciències i matemàtiques: mesura, estructura, forces, programació, dades, planificació i treball en equip. Predigueu quins perfils professionals podrien col·laborar en un projecte.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Classifiqueu targetes de professions: arquitecta, electricista, lampista, fuster/a, enginyera biomèdica, tècnica de manteniment, estadístic/a, química/enginyer químic i personal de construcció. Eviteu associar oficis a un gènere o a un nivell d’estudis únic. Consulteu fonts públiques actuals triades per la docent i descriviu tasques, entorns, habilitats, formació i col·laboracions.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Trieu dos perfils complementaris i feu una fitxa que relacione les seues tasques amb una evidència o font per afirmació. Construïu amb peces una estructura o mostra interactiva, definiu-ne un requisit i afegiu una regla booleana només si aporta valor.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu la fitxa perquè les fonts sostinguen les afirmacions i el prototip responga al requisit. No cal automatitzar la construcció per parlar de tecnologia.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Feu una presentació d’un minut amb el problema, dos rols professionals, la decisió lògica i allò que una maqueta no pot certificar. La reflexió individual sobre interessos és privada i voluntària; es pot respondre sobre una professió investigada.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>fitxa professional amb fonts, prototip i presentació.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Portafolis d’equip: regles del joc i nom triat, taula de puntuacions a mà/codi, taules de veritat, pseudocodi i diagrama, codi comentat, matriu de proves amb resultat esperat i real, fotografies només de models (mai d’alumnat sense autorització), registre d’iteracions, feedback anonimitzat d’usabilitat i fitxa professional amb fonts. Avalueu quatre dimensions amb descriptors: (1) condicions formalitzades sense ambigüitat; (2) variable inicialitzada i actualitzada en el torn correcte; (3) proves que cobreixen èxit, error, entrada absent i reinici; (4) explicació de limitacions i accessibilitat.</p>
+<p>En autoavaluació privada, puntueu de l’1 al 3 la cura de materials, gestió del temps i contribució; afegiu un exemple concret de col·laboració i una decisió canviada per les dades. La partida no determina la nota ni es fa classificació entre persones.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="inclusio-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Les pistes tenen alternativa no cromàtica (paraula, forma o relleu), les instruccions s’ofereixen en text breu i esquema, i els efectes sonors són opcionals amb equivalent visual. Eviteu codis personals, recollida de credencials, dades d’identitat i enquestes sobre interessos que obliguen a revelar preferències. Els jocs se situen sobre una superfície, no bloquegen passadissos i no impliquen portes, panys, rutes d’evacuació ni espais reals.</p>
+<p>Poseu a prova el límit entre una regla pedagògica i una afirmació de seguretat: el SPIKE de l’activitat no autentica usuaris ni detecta intrusions. Atureu motors en fer canvis i manteniu peces menudes organitzades.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta les cinc lliçons de la unitat 8 <em>Compound Conditionals</em> de LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt1b4345f429fde833/64d3828c455bf62b71f9b840/Foundation_of_Physical_Computing_Course_SPIKE_3_2022.pdf?locale=en-gb" target="_blank" rel="noopener noreferrer">*Foundations of Physical Computing*</a>: <em>Game with Variables</em>, <em>Compound Conditionals</em>, <em>Compounding Conditionals</em>, <em>Mini-Challenge: Break Out Room</em> i <em>Connecting to Careers: Architecture &amp; Construction and Science, Technology, Engineering &amp; Mathematics</em>. Manté el joc de dos participants amb marcador, l’exploració de codis i combinacions, el disseny d’un dispositiu que interpreta més d’un factor, el repte de seqüència tipus breakout, la prova entre equips i la recerca de professions;</p>
+<p>canvia els models, codis, context i regles per una mostra escolar segura, oberta i accessible.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

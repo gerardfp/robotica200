@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Dades que orienten el trajecte | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Set lliçons de Python i SPIKE Prime per llegir dades de sensors, fer càlculs, controlar un vehicle de maqueta i comparar opcions de transport.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-sp-python-dades" class="btn-back" data-preserve-filters="sp-python-dades">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/spike.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>SPIKE Prime</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Matemàtiques i Ciències Socials</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 7 lliçons · 7–10 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Dades que orienten el trajecte</h1>
+        <span class="tag-badge" data-theme>🏷️ Python, dades i mobilitat escolar</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-sp-dades-transport.webp" alt="Base mòbil LEGO SPIKE Prime en una ruta de paper amb marcadors geomètrics, una plaça de parada de cartó i una escala de mesura." width="600" height="448" loading="lazy"><figcaption>El sensor dona una lectura; el programa n’indica les unitats, la transforma i l’usa en una decisió que podem provar.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-context">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Una classe vol comparar, amb dades fictícies i proves en maqueta, diverses maneres d’arribar a una activitat de barri. Els equips construeixen o adapten una base SPIKE Prime, mesuren el seu moviment en una ruta de paper, llegeixen entrades dels sensors, converteixen unitats i calculen velocitat o gir.</p></div></aside>
+<p>Després dissenyen una ruta de transport escolar en miniatura i expliquen què pot demostrar un prototip, què depén de la prova i què no es pot inferir sobre les rutes o preferències reals de l’alumnat.</p>
+<p>Aquesta situació adapta les set lliçons de la unitat 9 <em>Data and Math Functions</em> de LEGO Education <em>Introduction to Python Programming · Course 2</em>: obtindre dades amb sensors; variar velocitat amb operacions; usar variables i comparacions per comptar moviments; transformar graus de motor en canvis de direcció; practicar càlculs en un aparcament de maqueta; dissenyar un vehicle/ruta de transport fins a l’escola; i fer feedback i millores.</p>
+<p>L’objectiu no és entrenar una habilitat física ni fer un pla real de mobilitat, sinó comprendre la cadena mesura → càlcul → decisió → comprovació.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Llegir dades de sensors SPIKE, interpretar el valor i la unitat, mostrar-lo en consola i reconéixer quan una lectura no és vàlida o no està disponible.</li><li>Canviar un valor numèric amb addició/resta i relacions matemàtiques sense eixir dels límits segurs de potència o recorregut.</li><li>Usar variables per comptar, estimar distància i calcular velocitat; convertir mil·límetres a centímetres i mil·lisegons a segons.</li><li>Aplicar <code>&lt;</code>, <code>&lt;=</code>, <code>&gt;</code>, <code>&gt;=</code>, <code>==</code> i <code>!=</code> en regles que separen casos de prova.</li><li>Explicar soroll, llindar, calibratge, repetició i error de mesura; comparar previsió amb observació sense presentar una dada com a exacta.</li><li>Representar direcció i velocitat en una ruta simulada, relacionant magnituds del motor amb girs aproximats i comprovant les instruccions en una pista segura.</li><li>Documentar les decisions, comunicar limitacions i revisar una solució amb les perspectives d’altres equips.</li></ul>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Lectura</h4><p>valor que retorna el sensor en una instantània de la prova. <strong>Mostreig:</strong> moment o freqüència amb què llegim dades. <strong>Calibrar:</strong> ajustar una regla de lectura a les condicions i materials reals de la prova. <strong>Variable:</strong> nom que guarda una dada que pot canviar. <strong>Velocitat:</strong> distància recorreguda dividida pel temps. <strong>Mitjana:</strong> suma de valors dividida pel nombre de mesures; no oculta la dispersió entre intents.</p></div></aside>
+<figure class="code-panel"><figcaption>Exemple de programació · python</figcaption><pre class="code-block" tabindex="0"><code class="language-python">distancia_mm = <span class="syntax-number">235</span>
+distancia_cm = distancia_mm / <span class="syntax-number">10</span>
+temps_s = <span class="syntax-number">5</span>
+velocitat_cm_s = distancia_cm / temps_s
+print(<span class="syntax-string">&quot;cm:&quot;</span>, distancia_cm, <span class="syntax-string">&quot;cm/s:&quot;</span>, velocitat_cm_s)</code></pre></figure>
+<p>El fragment Python usa dades de mostra per explicar unitats. La mesura física, els ports i el moviment del vehicle s’han d’implementar amb les funcions disponibles en l’app SPIKE local; la compatibilitat entre versions s’ha de provar abans de classe.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<p>Un set SPIKE Prime per equip amb hub carregat i base mòbil estable (o una plataforma amb una sola roda motriu si l’equip vol estudiar el gir), dos motors, sensor de força, sensor de distància i sensor de moviment integrat a l’hub; dispositiu amb SPIKE Python, cinta de paper, cartó per a carrils i aparcament, regla o cinta mètrica, cronòmetre extern opcional, targetes de forma/color per a fites, calculadora i diari de dades.</p>
+<p>No és necessari usar tots els sensors alhora: adapteu el repte al maquinari disponible.</p>
+<p>Prepareu una ruta recta curta amb topall de cartó tou, carrils independents i una zona d’aturada clara. Mesureu distàncies manualment abans d’executar. Verifiqueu que el sensor de distància té camp de visió lliure, que la superfície de la ruta no rellisca i que el hub mostra lectures en la consola. El sensor de distància del repertori SPIKE retorna mil·límetres; feu explícita la conversió a centímetres.</p>
+<p>El sensor de moviment de l’hub dona orientació/angle, que no és directament un recompte de passos humans: aquesta situació evita recollir dades corporals i, si usa l’angle, gira el hub o un suport amb cura sobre la taula. Consulteu la Knowledge Base per a API actual i límits de motors.</p>
+<p>Prepareu un full de dades amb columnes per a hipòtesi, entrada, unitat, valor esperat, valor mesurat, diferència, decisió de codi i observacions. Assigneu rols rotatius de programació, conducció, mesura i registre. Acordeu un límit de velocitat baix i una ordre d’aturada abans d’engegar motors.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-set-llicons">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 7 · Llegir i mostrar dades del sensor (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="7" aria-valuenow="1" aria-valuetext="Pas 1 de 7">
+        <span data-wizard-bar style="width: 14.29%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Llegir i mostrar dades del sensor (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Llegir i mostrar dades del sensor (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Ajustar velocitat amb operacions i límits (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Ajustar velocitat amb operacions i límits (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Comptar oscil·lacions sense comptar-les dues vegades (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Comptar oscil·lacions sense comptar-les dues vegades (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Moure i girar amb proporcions conegudes (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Moure i girar amb proporcions conegudes (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Aparcament de maqueta i gestió de dades (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Aparcament de maqueta i gestió de dades (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="5" aria-label="Obrir pas 6: Un trajecte escolar simulat (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">6</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Un trajecte escolar simulat (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="6" aria-label="Obrir pas 7: Feedback i millora del trajecte (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">7</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Feedback i millora del trajecte (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="llico-1-llegir-i-mostrar-dades-del-sensor-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Llegir i mostrar dades del sensor (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Activació (7 min)</h4><p>compareu quina informació caldria per descriure un trajecte en una maqueta: distància, durada, pressió sobre un botó, gir. Diferencieu una estimació d’una lectura mesurada.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Exploració de l’editor (8 min)</h4><p>connecteu hub SPIKE i mireu dades en viu del sensor de força; després acosteu/allunyeu un cartó del sensor de distància. El model es mou amb la mà només si està apagat. Anoteu què varia i què es manté.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Programa de lectura (15 min)</h4><p>examineu tres patrons en Python: llegir una vegada i imprimir; llegir en bucle amb pausa; llegir només quan el sensor de força es prem. Compareu quin és millor per respondre una pregunta concreta i per què imprimir sense pausa ompli massa la consola. Creeu una versió mínima que llegisca distància i escriga <code>mm:</code> amb la unitat.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Conversió i test (10 min):</strong> compareu mm amb cm dividint per deu i proveu objectes a distàncies conegudes (per exemple 100, 200 i 300 mm, ajustades a la taula). Si no hi ha lectura, no la tracteu com zero: anoteu “absent/desconeguda”.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Sortida (5 min)</h4><p>indiqueu quina part és dada mesurada, quina és conversió i quina és unitat de representació. Expliqueu un error que s’introduiria si es mostrara 200 com a cm quan el sensor retorna mm.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-2-ajustar-velocitat-amb-operacions-i-limits-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Ajustar velocitat amb operacions i límits (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Discussió (5 min):</strong> parleu de com es regula un ritme i per què un valor de programa no equival automàticament a la mateixa distància en diferents superfícies.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Base i control (10 min):</strong> prepareu una base SPIKE en pista recta. En Python, guardeu la velocitat en una variable numèrica, mostreu-la com a text a la matriu del hub (conversió explícita amb <code>str()</code> quan calga) i escriviu una funció de recorregut que use el valor actual.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Modificar amb botons (15 min):</strong> configureu un botó per reduir i un altre per augmentar un pas acordat, per exemple 20 unitats; definiu mínim i màxim per impedir ordres negatives o massa ràpides. Proveu primer el límit en pseudocodi i després a velocitat baixa, mantenint fixa la distància i les condicions de la pista.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Dades (10 min):</strong> per a tres valors de velocitat, feu tres intents i mesureu distància final i temps. Calculeu mitjanes i anoteu també rang (mínim–màxim), no sols una xifra central.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Reflexió (5 min)</h4><p>expliqueu si augmentar la potència va canviar el temps, la distància o ambdós, i quines altres variables (bateria, fricció, alineació) podrien explicar diferències.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-3-comptar-oscil-lacions-sense-comptar-les-dues-vegades-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Comptar oscil·lacions sense comptar-les dues vegades (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Situació (5 min):</strong> mostreu una sèrie de lectures d’angle d’un hub que gira a una banda i torna: 0°, 40°, 82°, 95°, 66°, −10°, −81°, −90°. Pregunteu quantes oscil·lacions s’hi veuen i per què comptar cada lectura per damunt de 75° donaria un nombre massa gran.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Model i control de valors (10 min)</h4><p>en una taula, apliqueu comparacions <code>&gt;</code>, <code>&lt;</code>, igualtat i desigualtat a les lectures i establiu un llindar com a part del model, no com a veritat universal.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Programa de comptatge (20 min)</h4><p>useu el sensor de moviment integrat a l’hub en una base de taula o feu servir seqüències de dades prèviament preparades. Manteniu una variable <code>comptat_en_aquesta_banda</code> per sumar només quan l’angle travessa el llindar i rearmeu-la quan torna a la zona neutra. Afegiu un botó per acabar i mostrar el recompte. Imprimiu lectura crua i estat del comptador en consola perquè es puga auditar.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Validació (7 min)</h4><p>feu una seqüència amb 0, 1, 3 moviments complets i diversos valors que oscil·len a prop del llindar; compareu recompte previst i observat.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Debrief (3 min)</h4><p>què canviaria si el llindar fora 60° o 90°? Especifiqueu que és un comptador de rotacions de demostració, no un podòmetre ni una mesura fiable d’activitat física d’una persona.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-4-moure-i-girar-amb-proporcions-conegudes-45-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Moure i girar amb proporcions conegudes (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Planificació (7 min)</h4><p>dibuixeu una ruta de dos trams amb un gir a l’esquerra o a la dreta; convertiu cada tram en una ordre (avançar, aturar, girar) i marqueu les unitats.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Programa inicial (15 min)</h4><p>en una base SPIKE, controleu parell de motors per a avançar i useu variables per a velocitat i graus de gir. Mostreu el valor triat a la matriu/console. Expliqueu que el gir d’un vehicle depén de la separació de les rodes, la superfície, la velocitat i el lliscament: la relació entre una rotació i un quart de volta al terra és una aproximació del model d’exemple, no constant universal.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Prova matemàtica (13 min):</strong> mesurau el gir resultant en una quadrícula gran de cartó per a dos valors de motor, repetiu tres vegades i calculeu desviació de l’angle previst. Relacioneu divisió/multiplicació amb l’ajust; canvieu una variable cada vegada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Depuració (7 min)</h4><p>analitzeu un fragment desconnectat al qual falta la quantitat de graus d’una crida de motor. Llegiu el missatge d’error i identifiqueu si assenyala exactament la línia problemàtica; corregiu-lo en una còpia i traceu quan s’executa la crida.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Tancament (3 min)</h4><p>anoteu quina dada s’ha de tornar a calibrar després de canviar rodes o superfície.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-5-aparcament-de-maqueta-i-gestio-de-dades-45-min" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Aparcament de maqueta i gestió de dades (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Repte (5 min):</strong> estacionar la base en una zona ampla de cartó identificada amb forma i color, sense tocar límits ni competir en velocitat. És una simulació, no una funció de conducció autònoma segura.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Mesura i algoritme (10 min):</strong> mesureu longitud i amplada de la zona, distància d’aproximació i amplària de la base. Escriviu pseudocodi per avançar, llegir distància, reduir velocitat abans de la zona i aturar-se; declareu tolerància explícita i casos d’entrada absent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Implementació (15 min)</h4><p>useu comparacions numèriques per detectar “més lluny que”, “dins de la tolerància” o “lectura no vàlida”; convertiu mm/cm de manera explícita. Una marca de color pot ajudar a indicar posició, però no substitueix el sensor de distància si necessiteu una lectura mètrica. Afegiu parada manual i velocitat mínima per als últims centímetres.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Proves (10 min)</h4><p>tres punts d’inici, dues distàncies i dues situacions de sensor (lectura/cap lectura). Registreu intents, error en cm i si el prototip ha quedat dins de la zona. No compareu resultats entre equips com a classificació: identifiqueu factors que poden variar.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Debrief (5 min)</h4><p>un valor de distància pot ser prou precís per aquesta maqueta? Què caldria abans d’aplicar-lo a un vehicle real? Resposta esperada: un prototip educatiu no és un dispositiu de seguretat ni de transport real.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="llico-6-un-trajecte-escolar-simulat-45-min" data-step="6" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 6</span><h3>Un trajecte escolar simulat (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Definició (7 min)</h4><p>cada equip tria un punt d’origen fictici, un destí escolar de maqueta i dues opcions de ruta construïdes amb paper. No es demana a ningú que revele el seu trajecte, domicili, mode de transport o temps personal. Redacteu una pregunta mesurable: quina ruta té menys longitud de pista? quina requereix menys girs?</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Disseny (8 min)</h4><p>establiu restriccions: base SPIKE ha de seguir una ruta de cartó, evitar una zona marcada, aturar-se en una parada i comunicar la velocitat triada. L’equip proposa un vehicle i un procediment de prova en un esbós amb dues alternatives.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Construcció/programació (18 min):</strong> construïu o ajusteu la base i programeu un recorregut amb una funció per avançar, una per girar i una rutina de registre. El programa calcula la longitud de ruta sumant trams i pot convertir la lectura de distància en unitats comunes. Afegiu un control d’aturada; no sobrecarregueu el model amb pesos.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Comprovació (8 min):</strong> executeu ruta A i B tres vegades, registreu trams, durada, girs, lectures de distància i fallades. La taula només descriu el prototip sobre aquella superfície; no és una comparació de modes de transport ni un estudi de trànsit.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Mostra (4 min):</strong> expliqueu quines dades han influït en una decisió de disseny i quines no s’han mesurat.</p>
+</section>
+</div></section>
+<section class="learning-step" id="llico-7-feedback-i-millora-del-trajecte-45-min" data-step="7" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 7</span><h3>Feedback i millora del trajecte (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Preparació (7 min)</h4><p>cada equip comparteix un diagrama de ruta, el codi comentat, un gràfic/taula amb intents i una pregunta sobre calibratge o accessibilitat.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Prova creuada (12 min):</strong> l’equip revisor usa una còpia de la ruta o repeteix el procediment amb permís. Dona feedback concret sobre llegibilitat, unitats, casos de sensor absent, seguretat de la pista i coherència entre objectiu i mesura. No se sol·liciten dades de trajecte de persones.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Planificació de canvi (5 min)</h4><p>els autors trien una millora a partir d’una evidència (recol·locar sensor, corregir conversió, canviar llindar, aclarir unitat o dividir una funció).</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Iteració (13 min)</h4><p>feu el canvi i repetiu almenys el cas que va motivar-lo i un altre cas per assegurar que no s’ha degradat la resposta.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Avaluació individual (8 min)</h4><p>expliqueu per què una mitjana sola pot ocultar la variació, quin càlcul del projecte podeu recrear i una limitació que contaríeu a qui veja la maqueta. Autoavaluació privada d’ús del temps, cura del material i col·laboració, amb una acció següent concreta.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-criteris-d-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Portafolis: esquema dels sensors i ports reals; captures o transcripció de dades de mostra sense informació personal; conversió entre mm/cm i ms/s; codi Python comentat; pseudocodi i mapa de ruta; mesures manuals, repeticions, mitjanes i rangs; taula de casos de sensor absents; mesura de girs; registre de depuració; decisions de redisseny; diagrama o taula comparativa de rutes de maqueta; feedback entre iguals; i explicació de límits del prototip.</p>
+<p>Valoreu quatre dimensions: <strong>tractament de dades</strong> (registra valor, unitat i condicions de mesura); <strong>raonament matemàtic</strong> (converteix unitats i calcula distància/temps amb operacions adequades); <strong>programació</strong> (variables, comparacions, condicions, sortida i aturada comprovables); i <strong>mètode experimental</strong> (repeteix, compara, registra incertesa i modifica una variable cada vegada). Afegiu comunicació i col·laboració al retorn final. Una ruta que es completa una vegada no demostra fiabilitat; un càlcul ben documentat que troba una fallada també és una evidència valuosa.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu mesures amb regle sobre paper si la connexió o el sensor no està disponible; totes les proves poden fer-se en taula. Les fites tenen forma, símbol i color; eviteu dependre d’una única pista visual o auditiva. Hi ha rols de registre, disseny de ruta, codi i observació, amb rotació. No mesureu ni publiqueu dades corporals, passos, activitat, domicilis o trajectes personals d’alumnes. Les rutes són inventades i les dades són del robot o de targetes sintètiques.</p>
+<p>Manteniu la base sobre una superfície horitzontal amb marges i topalls tous, velocitat baixa i aturada manual; no feu circular robots per passadissos amb persones ni a prop d’escales. Desconnecteu motors abans d’ajustar la construcció.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta les set lliçons de la unitat 9 <em>Data and Math Functions</em> del curs LEGO Education <a href="https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us" target="_blank" rel="noopener noreferrer">*Introduction to Python Programming · Course 2*</a>: <em>Get Moving to Get Data</em>, <em>Bike Riding for Data</em>, <em>Counting Your Steps</em>, <em>Make It Move</em>, <em>Parking Lot</em>, <em>My Transportation</em> i <em>Ideas to Help with My Transportation</em>.</p>
+<p>Conserva lectura de sensors i consola, distància en mm amb conversió a cm, ajust de velocitat amb variable, sensor de moviment i llindars/estat per a evitar dobles recomptes, càlcul de distància i velocitat, girs amb operacions, depuració de crides, aparcament, disseny de transport, planificació i feedback. El repte de passos corporals es transforma en gir del hub/seqüència sintètica i declara explícitament que no és un pedòmetre; el trajecte és una maqueta i les dades no són sobre mobilitat personal.</p>
+<p>Les instruccions de construcció i els programes complets oficials no es reprodueixen; els exemples de codi de la fitxa són conceptuals i l’API es comprova en la versió local.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

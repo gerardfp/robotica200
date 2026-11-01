@@ -1,7 +1,7 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const renderer = require('../_js/markdown.js');
+const renderer = require('./lib/markdown.js');
 
 const root = path.resolve(__dirname, '..');
 const tutorialsDir = path.join(root, '_content', 'tutorials');

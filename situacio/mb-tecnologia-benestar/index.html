@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Tecnologia per al benestar quotidià | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Investiguem necessitats de benestar i dissenyem un prototip responsable amb micro:bit, sense fer diagnòstics ni recollir dades de salut.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-mb-tecnologia-benestar" class="btn-back" data-preserve-filters="mb-tecnologia-benestar">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/microbit.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>micro:bit</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Ciències i Ciutadania</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 5 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Tecnologia per al benestar quotidià</h1>
+        <span class="tag-badge" data-theme>🏷️ Disseny responsable i benestar</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-mb-tecnologia-benestar.webp" alt="Prototip de cartó amb micro:bit i polsador gran per demanar ajuda o una pausa a l’aula." width="600" height="448" loading="lazy"><figcaption>El prototip comunica una petició triada per l’usuari; no avalua salut ni substitueix l’acompanyament humà.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>El centre vol millorar una rutina quotidiana: demanar una pausa, recordar una tasca de descans visual o avisar discretament que cal suport. Els equips investiguen exemples de tecnologia de salut i benestar, delimiten què pot fer un prototip escolar i dissenyen una ajuda amb micro:bit. El repte parteix de necessitats fictícies o consultades voluntàriament amb persones adultes; ningú ha de revelar informació personal.</p></div></aside>
+<p>La proposta transforma la unitat oficial en un projecte de disseny accessible. La placa mostra icones o missatges breus quan l’usuari prem un botó; la decisió de quan usar-la continua sent seua. No hi ha sensors corporals, monitoratge, diagnòstic ni registre d’identitat.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Investigar un repte de rutina amb situacions fictícies i criteris definits per les persones usuàries.</li><li>Dissenyar un prototip opcional amb entrada, resposta, cancel·lació i aturada accessibles.</li><li>Provar diversos casos d’ús i revisar si la persona manté el control i pot ignorar o desactivar l’ajuda.</li><li>Comunicar que el prototip no diagnostica, vigila ni substitueix el suport d’una persona adulta.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-programacio">🧰 Materials i preparació</h2>
+<p>Micro:bit, ordinador amb MakeCode, cable USB i cartó reutilitzat. La placa incorpora botons, matriu LED, acceleròmetre i sensor de llum; aquesta proposta només necessita els botons i la matriu. Si es munta un interruptor extern, reviseu connexions i pin disponible abans d’afirmar-ne la compatibilitat. La simulació de MakeCode i un guió de paper permeten provar l’algorisme sense placa.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-5-sessions">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 5 · Investiguem tecnologia per a la salut (Health of the nation)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" aria-valuetext="Pas 1 de 5">
+        <span data-wizard-bar style="width: 20.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Investiguem tecnologia per a la salut (Health of the nation)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Investiguem tecnologia per a la salut (Health of the nation)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Definim una necessitat i ideem solucions (Health tech innovations)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Definim una necessitat i ideem solucions (Health tech innovations)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Algorisme, programa i depuració (Prototyping innovations)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Algorisme, programa i depuració (Prototyping innovations)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Completem i preparem la presentació (Preparing presentations)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Completem i preparem la presentació (Preparing presentations)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Mostra i avaluació (Health tech showcase)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Mostra i avaluació (Health tech showcase)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-investiguem-tecnologia-per-a-la-salut-health-of-the-nation" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Investiguem tecnologia per a la salut (Health of the nation)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Llegiu tres casos preparats pel docent: una ajuda per comunicar una elecció, un temporitzador de pausa i un senyal d’accessibilitat. Predigueu quin problema pràctic aborda cada cas i qui decideix activar-lo.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Analitzeu cada tecnologia i completeu una fitxa amb benefici, usuari, dades necessàries, risc, supervisió humana i manera d’aturar-la. No investigueu la salut de companys ni demaneu relats personals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Distingiu suport a la comunicació, accessibilitat, rutina de benestar i diagnòstic. Creeu un glossari de salut digital i assenyaleu quines dades no són necessàries per als casos ficticis.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu les fitxes i retireu qualsevol dada personal o funció de vigilància que no siga necessària. Afegiu una alternativa de suport humà quan la tecnologia no funciona o no és adequada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Compartiu un benefici i un risc de cada exemple i expliqueu per què el prototip escolar no serà un dispositiu mèdic.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>casos analitzats, glossari i mapa de dades necessàries/innecessàries.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-definim-una-necessitat-i-ideem-solucions-health-tech-innovations" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Definim una necessitat i ideem solucions (Health tech innovations)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu una situació fictícia —per exemple, demanar una pausa o recordar una rutina— i redacteu-la com una oportunitat de disseny, no com una etiqueta sobre una persona: «cal una manera senzilla d’indicar que vull fer una pausa».</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Si es consulta una persona usuària voluntària, demaneu consentiment i permeteu que no participe; també podeu treballar només amb un perfil inventat. Dibuixeu tres solucions possibles i compareu-les per claredat, control de l’usuari, privacitat, materials i facilitat d’aturada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Anoteu els criteris d’èxit i per què cada idea els compleix o no. Registreu qui activa el sistema, quines dades necessita i com es cancel·la; no inclogueu diagnòstics ni informació personal.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Seleccioneu una idea i construïu un model inicial de cartó. Reviseu si la persona manté el control, pot ignorar o desactivar l’ajuda i pot triar entre resposta visual o sonora.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu per què la idea triada respon millor als criteris i què encara caldrà provar.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa de necessitat fictícia, tres esbossos, criteris de selecció i maqueta inicial.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-algorisme-programa-i-depuracio-prototyping-innovations" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Algorisme, programa i depuració (Prototyping innovations)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Escriviu pseudocodi amb inici, entrada, resposta, cancel·lació i retorn a l’estat inicial. Predigueu què ha de passar amb una pulsació breu, una de repetida i cap activació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Programeu el botó A de micro:bit perquè mostre una icona pròpia. Si es necessita un avís sonor, useu només un accessori compatible i volum baix, amb una alternativa visual. La simulació de MakeCode i les targetes permeten completar el mateix flux sense placa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Proveu activació breu, activació repetida, absència d’activació, reinici i cancel·lació. Registreu la resposta prevista i observada i anoteu errors del prototip, no de les persones.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si apareix una resposta inesperada, reviseu l’esdeveniment i l’estat del programa. Canvieu una part i repetiu la prova; no canvieu la necessitat definida per adaptar-la a un error del codi.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Comproveu que el sistema respon als casos previstos i torna a l’estat de repòs.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>pseudocodi, programa, taula de cinc proves i una depuració documentada.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-completem-i-preparem-la-presentacio-preparing-presentations" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Completem i preparem la presentació (Preparing presentations)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Reviseu la maqueta i predigueu si una persona que no ha programat entendrà com iniciar, cancel·lar i interpretar la resposta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Refineu el muntatge, afegiu instruccions clares i prepareu una fitxa d’ús amb propòsit, passos, manera de demanar ajuda i límits. El text indicarà que la persona controla quan usa el prototip i que no envia avisos a cap servei real.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Prepareu un diagrama del programa i una demostració sense dades personals. Registreu la decisió de privacitat, els casos provats i l’alternativa d’accés o cancel·lació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Feu una prova d’ús amb consentiment; la persona pot rebutjar-la. Reviseu les instruccions, la icona o la disposició dels botons si l’observació mostra una dificultat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Comproveu que la presentació descriu tant la utilitat com les limitacions del prototip.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>fitxa d’ús, diagrama, demostració i revisió basada en una prova voluntària.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-5-mostra-i-avaluacio-health-tech-showcase" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Mostra i avaluació (Health tech showcase)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Abans de la mostra, cada equip identifica un cas en què el prototip no seria adequat i una persona o servei que podria oferir suport real.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Presenteu el prototip a l’audiència i demostreu inici, resposta, cancel·lació i retorn a repòs. No feu servir registres personals ni presenteu l’activitat com una prova de salut.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Recolliu comentaris sobre accessibilitat i claredat. Separeu l’observació del prototip de qualsevol afirmació sobre les necessitats de persones o grups.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu el prototip o les instruccions a partir del retorn. Expliqueu quin canvi heu incorporat i què no heu resolt.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Contesteu: en quin cas no seria adequat usar-lo i qui hauria de donar suport real?</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>presentació, valoració de l’audiència, millora i límit d’ús justificat.</p></div></aside>
+</section>
+</div></section>
+<h3 class="detail-subsection-title" id="proces-de-disseny-en-cinc-fases">Procés de disseny en cinc fases</h3>
+<p><strong>Investigar:</strong> analitzeu tres casos preparats pel docent —una ajuda per comunicar una elecció, un temporitzador de pausa i un senyal d&#39;accessibilitat— i completeu una fitxa: quin problema pràctic aborda?, qui decideix activar-lo?, quines dades necessita?, com s&#39;atura?, qui pot donar suport si no funciona? No investigueu la salut de companys ni demaneu relats personals. <strong>Idear:</strong> redacteu la necessitat com una oportunitat de disseny, no com una etiqueta sobre una persona; per exemple, «cal una manera senzilla d&#39;indicar que vull fer una pausa».</p>
+<p>Dibuixeu tres solucions i compareu-les amb criteris de claredat, control de l&#39;usuari, privacitat, materials i facilitat d&#39;aturada.</p>
+<p><strong>Prototipar:</strong> construïu una maqueta de cartó amb un botó de paper i dues possibles eixides LED. Escriviu pseudocodi que incloga inici, acció, resposta, cancel·lació i estat de repòs. Després programeu un botó real o simulat i proveu cinc casos: activació breu, activació repetida, cap activació, reinici i cancel·lació. Si apareix una resposta inesperada, reviseu l&#39;esdeveniment i l&#39;estat del programa; no canvieu la necessitat definida per adaptar-la a un error del codi.</p>
+<p><strong>Preparar la presentació:</strong> creeu una fitxa d&#39;ús amb el propòsit, els passos, com demanar ajuda i què no fa el dispositiu. El text ha de dir clarament que la persona controla quan usa el prototip i que no envia cap avís a un servei real. <strong>Mostrar i revisar:</strong> una audiència prova el prototip amb consentiment i pot rebutjar la prova; aporta retorn sobre si sap iniciar-lo, cancel·lar-lo i entendre la icona.</p>
+<p>L&#39;equip incorpora un canvi i explica què ha millorat i què encara no ha resolt.</p>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Carpeta de casos investigats, mapa de necessitat fictícia, tres esbossos, criteris de selecció, pseudocodi, programa, proves d’ús voluntàries i millores. Valoreu la justificació del disseny, la depuració, l’accessibilitat i la capacitat d’explicar dades que deliberadament no s’han recollit.</p>
+<h3 class="detail-subsection-title" id="criteris-d-avaluacio-i-limits">Criteris d&#39;avaluació i límits</h3>
+<p>Valoreu si l&#39;equip defineix una necessitat sense estigmatitzar, considera opcions abans de construir, representa tots els estats del programa, prova entrades vàlides i repetides, incorpora una alternativa accessible i declara un límit concret. El prototip només és una demostració de comunicació local amb micro:bit. No contacta amb famílies, personal sanitari ni emergències, i no pot substituir una conversa o un pla de suport del centre. Esborreu qualsevol projecte de prova al final segons les normes del centre.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="privacitat-seguretat-i-inclusio">♿ Participació, accessibilitat i seguretat</h2>
+<p>No recolliu diagnòstics, noms, imatges, veu, ritmes corporals ni registres d’ús. La persona ha de poder no participar, aturar el dispositiu i triar si vol resposta visual o sonora. Eviteu llums intermitents ràpides i sons inesperats; oferiu instruccions en text, pictogrames i demostració. Expliqueu que és un prototip educatiu, no un dispositiu mèdic ni un servei d’emergència.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="unitat-oficial-adaptada">🔗 Referents i adaptació</h2>
+<p>Adapta les cinc lliçons de <a href="https://microbit.org/teach/lessons/health-tech-unit-of-work/" target="_blank" rel="noopener noreferrer">Health tech</a>: <em>Health of the nation</em>, <em>Health tech innovations</em>, <em>Prototyping innovations</em>, <em>Preparing presentations</em> i <em>Health tech showcase</em>. El context de rutines escolars i el prototip de comunicació són propis; s’han exclòs aplicacions diagnòstiques i mesures de salut.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

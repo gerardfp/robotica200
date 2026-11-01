@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Un circuit de l&#39;horta per a un cotxe de paper | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Dissenyem un cotxe desmuntable i un circuit propi, i programem MatataBot amb seqüències, angles, paràmetres, bucles i funcions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-cs-circuit-cursa-horta" class="btn-back" data-preserve-filters="cs-circuit-cursa-horta">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Segon cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Matemàtiques i Disseny</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 2 sessions de 60 minuts</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Un circuit de l&#39;horta per a un cotxe de paper</h1>
+        <span class="tag-badge" data-theme>🏷️ Fira de l&#39;horta</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-circuit-cursa-horta-v2.png" alt="MatataBot i torre reals del Coding Set, intactes, al costat d’un circuit de paper i d’una carcassa de cotxe desmuntable que no està col·locada sobre el robot." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA basada en el Coding Set real de la dotació. MatataBot i la torre es mostren intactes; el cotxe de paper és una maqueta separada, no una modificació del robot.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>El centre organitza una fira de circuits inspirats en camins de l&#39;horta. En equips de quatre, l&#39;alumnat dissenya una carcassa lleugera per al MatataBot i un circuit de paper amb eixida, arribada i girs; després programa el robot perquè complete una volta. La carcassa és una peça de manualitat independent: no s&#39;enganxa al robot, no tapa l&#39;ull lector i es retira si el moviment o la lectura de blocs se&#39;n veuen afectats.</p></div></aside>
+<p>Aquesta fitxa adapta les lliçons 3 i 4 del currículum extracurricular de Matatalab. La lliçó 3 introdueix el disseny del vehicle i del recorregut, i explora blocs d&#39;angle i altres blocs avançats; la lliçó 4 programa una volta o diverses, prova paràmetres, bucles i funcions, depura i presenta el resultat. La situació conserva el disseny col·laboratiu, els esbossos, la prova dels girs, la volta completa, el diari i les preguntes de reflexió.</p>
+<p>El circuit, la fira i les targetes de planificació són propis.</p>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>com transformem el mapa d&#39;un circuit en una seqüència que el robot puga executar i revisar?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Representar un circuit amb inici, final, trams, girs i una volta completa.</li><li>Combinar blocs de moviment amb paràmetres i, si la dotació els inclou, blocs d&#39;angle.</li><li>Reconéixer una seqüència reutilitzable com a funció i repetir-la amb blocs de bucle.</li><li>Provar el programa, localitzar una desviació i modificar una instrucció cada vegada.</li><li>Repartir rols, documentar decisions i presentar un disseny amb evidències de prova.</li></ul>
+<p><strong>Vocabulari clau:</strong> mapa, graella, algoritme, seqüència, angle, grau, paràmetre, funció, bucle, inici, meta, volta, prova i depuració.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Un Coding Set complet per equip: MatataBot, torre de control, tauler de control i blocs de direcció/moviment, nombre/paràmetre, bucle i funció que estiguen disponibles al centre.</li><li>Blocs d&#39;angle <strong>només si formen part de la dotació</strong>; no es pressuposa l&#39;Artist Add-On. Sense aquests blocs, adapteu el circuit a girs de 90° sobre quadrícula i manteniu els objectius de seqüència, repetició i funció.</li><li>Gots de paper o recipients lleugers nets per a una carcassa desmuntable, cartolina, retoladors, tisores d&#39;aula, cinta i cola només per a la maqueta separada; paper gran per al circuit i quadern de registre.</li><li>Targeta de planificació amb dibuix, inici/meta, ordre dels girs, programa provat, incidència i canvi aplicat.</li></ul>
+<p>Abans de la classe, carregueu MatataBot i la torre. Proveu els blocs i el circuit en una superfície plana, sense carcassa. Si es construeix una carcassa, comproveu que descansa sense pressió sobre el cos i no toca cap element lector ni bloqueja les rodes. El fabricant especifica que la carcassa de cursa ha d&#39;ajustar-se al robot sense enganxar-s&#39;hi. Manteniu les tisores sota supervisió i no feu competicions de velocitat.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 2 · Dissenyem el cotxe i el circuit (60 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="2" aria-valuenow="1" aria-valuetext="Pas 1 de 2">
+        <span data-wizard-bar style="width: 50.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Dissenyem el cotxe i el circuit (60 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dissenyem el cotxe i el circuit (60 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Programem una volta i depurem (60 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Programem una volta i depurem (60 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-dissenyem-el-cotxe-i-el-circuit-60-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Dissenyem el cotxe i el circuit (60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Activació (10 min)</h4><p>mostreu un mapa senzill d&#39;un camí de l&#39;horta i pregunteu quina informació necessita una persona per seguir-ne la ruta. Relacioneu el traçat amb les ordres de MatataBot: avançar, retrocedir i girar. Compareu un gir recte amb un d&#39;obert i anticipeu què pot passar si l&#39;angle del mapa i el del programa no coincideixen. Presenteu el repte: crear una carcassa que puga retirar-se i un circuit amb inici i meta.</p></div></aside>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Esbossos i prova (20 min):</strong> en grups de quatre, assigneu rols rotatius de disseny, lectura de mapa, programació i registre. Dibuixeu el cotxe i el circuit al quadern abans d&#39;usar els materials. Feu una carcassa amb un got o cartolina que puga posar-se i llevar-se sense cola; si no encaixa sense forçar ni cobrir l&#39;ull lector, deixeu-la com a maqueta al costat del robot. Sobre paper gran, traceu un circuit que torne al punt d&#39;eixida.</p>
+<p>Podeu incloure girs oberts només si disposeu dels blocs d&#39;angle reals; si no, useu una graella amb girs de 90°.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Angles i seqüències (10 min):</strong> marqueu cada tram i gir de la ruta. Si hi ha blocs d&#39;angle, proveu-los primer en un tros curt i anoteu que el valor representa el gir codificat segons el bloc, no necessàriament l&#39;angle interior que dibuixa la cantonada. Si no n&#39;hi ha, representeu els girs rectes sobre la quadrícula. Compareu la seqüència dibuixada amb l&#39;ordre físic dels blocs al tauler.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Primera volta (15 min):</strong> executeu una ruta curta del circuit sense la carcassa. Si el robot se&#39;n desvia, marqueu al mapa on ocorre i canvieu una sola instrucció: nombre de moviments, ordre o gir. Després de comprovar una volta, col·loqueu la carcassa només si l&#39;ajust i la lectura continuen sent fiables; repetiu el mateix tram per comprovar si la maqueta altera el moviment.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-phase"><span class="markdown-note-icon" aria-hidden="true">🧩</span><div><h4>Tancament (5 min)</h4><p>cada equip dibuixa la ruta que ha provat i encercla el gir més difícil. Responeu al quadern: què és un angle?, per què és important en una ruta?, i quina prova ha ajudat a decidir si el programa funcionava? <strong>Evidència:</strong> esbós del vehicle i del mapa, seqüència inicial i anotació d&#39;una prova.</p></div></aside>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-circuit-cursa-programa-v1.png" alt="MatataBot i la torre Coding Set reals davant d&#39;un circuit de paper amb inici, meta i girs; la carcassa de paper està separada per mostrar que no s&#39;enganxa al robot." width="600" height="448" loading="lazy"><figcaption>La imatge és una proposta visual de planificació, no una instrucció de muntatge. Comproveu el tauler, els blocs i la lectura real de la torre amb el kit del centre.</figcaption></figure>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-programem-una-volta-i-depurem-60-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Programem una volta i depurem (60 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Recordem els blocs (10 min):</strong> recupereu el mapa i els blocs avançats. Expliqueu amb exemples físics que el paràmetre indica quantes vegades s&#39;aplica un moviment, que el bucle repeteix un grup d&#39;instruccions i que una funció dona un nom a una seqüència que es pot reutilitzar. No presenteu una disposició exacta de blocs si no l&#39;heu comprovat amb la versió concreta del tauler.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Preparem el programa (15 min):</strong> els equips planifiquen una volta completa o una ruta amb diversos trams. Marqueu quines ordres es repeteixen i quina seqüència podria agrupar-se en una funció. Amb els blocs presents al set, munteu primer una versió curta al tauler; una altra persona llig les peces d&#39;esquerra a dreta i de dalt a baix, segons l&#39;ordre que reconeix el kit.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p><strong>Predicció i casos de prova (10 min):</strong> abans d&#39;executar, recorreu el mapa amb el dit i anoteu on hauria d&#39;acabar el robot després de cada seqüència. Afegiu un segon cas: repetir el mateix tram dues vegades o reduir el nombre de repeticions. Registreu què canvia en usar un paràmetre, una funció o un bucle i quina part del codi es manté igual.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p><strong>Completem i depurem la cursa (20 min):</strong> executeu la volta a baixa velocitat d&#39;acord amb el moviment normal del kit. Si no arriba a la meta, compareu posició prevista i real, localitzeu la primera ordre divergent i canvieu-ne una. Repetiu després d&#39;una modificació. Quan complete la volta, proveu una segona volta amb un bucle o una funció reutilitzada, sempre que els blocs estiguen disponibles.</p>
+<p>Cada grup presenta el cotxe de paper al costat del robot —sense enganxar-lo—, el mapa i la seqüència provada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Diari i retorn (5 min):</strong> responeu: quins blocs avançats hem utilitzat?, quin ens ha ajudat més a completar la ruta i per què?, què canviaríem per fer el disseny més fiable? Una altra parella aporta una observació concreta i una pregunta. <strong>Evidència final:</strong> programa físic registrat o fotografiat pel centre, mapa amb volta, incidència detectada, canvi provat i explicació del paper dels paràmetres, bucles i funcions.</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu els esbossos, el mapa, la seqüència de blocs, el diari de depuració i la presentació. Observeu si l&#39;alumnat identifica inici i meta; manté el circuit consistent amb les ordres; explica quan una instrucció es repeteix; usa una seqüència reutilitzable quan el bloc de funció està disponible; i argumenta una modificació a partir del punt on s&#39;ha desviat el robot. La carcassa estètica, el temps i la rapidesa no són criteris d&#39;avaluació.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu un mapa d&#39;alt contrast, una ruta curta o una quadrícula tàctil; assigneu rols de disseny, lectura, programació, observació i registre perquè cada persona puga participar sense manipular el robot. L&#39;alumnat pot explicar la ruta oralment, amb fletxes o amb una seqüència de targetes. Useu només carcasses lleugeres i desmuntables, supervisió amb tisores i superfícies planes. No pegueu cap peça al robot ni tapeu l&#39;ull lector; retireu la carcassa si afecta el moviment.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-i-adaptacio">🔗 Referents i adaptació</h2>
+<ul><li>Matatalab, <a href="https://matatalab.com/cdn/ff/CrQPo-NarPZLUtZnP3JKbo4oDvbv3Nr4L9nQ_5l4kdc/1653550757/public/2022-05/Extracurricular%20Curriculum.pdf" target="_blank" rel="noopener noreferrer">Extracurricular Curriculum · lliçons 3 i 4, *Sequences of Coding* (PDF oficial)</a>: dues sessions de 60 minuts. La lliçó 3 crea una carcassa de cursa que encaixe sense enganxar-se al robot i un circuit, introdueix els blocs d&#39;angle i prova seqüències; la lliçó 4 programa una o diverses voltes amb paràmetres, bucles, funcions i blocs d&#39;angle, depura i presenta el resultat. També inclou diari, reflexió, extensió a altres vehicles i connexions amb mapes i seqüències quotidianes.</li><li>Matatalab, <a href="https://www.matatastudio.com/Self-Guided.html" target="_blank" rel="noopener noreferrer">guia autoguiada de Coding Set</a>: referència de consulta per a la lectura i funció dels blocs de moviment, nombre, bucle i funció. Els blocs d&#39;angle i el suport de retolador depenen de l&#39;Artist Add-On.</li></ul>
+<p>La fira de l&#39;horta, el mapa, els criteris d&#39;avaluació i les imatges IA són originals. Aquesta fitxa adapta <strong>les lliçons 3 i 4</strong>, no les dotze lliçons del currículum extracurricular complet. L&#39;ús de blocs d&#39;angle i de carcassa està condicionat a la dotació real; la versió base amb quadrícula conserva seqüències, nombres, bucles i funcions sense atribuir complements inexistents.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

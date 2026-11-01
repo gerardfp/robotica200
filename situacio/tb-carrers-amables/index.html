@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Un barri que es mou amb cura | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Amb Tale-Bot i un mapa del barri, l’alumnat compara itineraris i dissenya cruïlles més segures i accessibles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-tb-carrers-amables" class="btn-back" data-preserve-filters="tb-carrers-amables">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/tale-bot.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Tale-Bot Pro</span>
+    </span><span class="tag-badge">
+      
+      <span>Educació Infantil</span>
+    </span><span class="tag-badge">
+      
+      <span>Medi, Matemàtiques i Pensament Computacional</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 4 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Un barri que es mou amb cura</h1>
+        <span class="tag-badge" data-theme>🏷️ Mobilitat i convivència</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-tb-carrers-amables-v2.png" alt="Tale-Bot Pro real sobre una maqueta de barri amb biblioteca, parada d’autobús, carril bici i pas de vianants; targetes de paper mostren una ruta." width="600" height="448" loading="lazy"><figcaption>El barri, els senyals i la ruta són una maqueta de paper; Tale-Bot no controla vehicles ni detecta vianants o obstacles.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Partim de la temàtica de cotxes de les etiquetes interactives de l’Activity Box per imaginar carrers compartits. Tale-Bot es mou per un mapa pla de l’aula; l’equip decideix com connectar habitatges, biblioteca, plaça i transport públic, i com representar un pas de vianants accessible. Els cotxes apareixen com a dibuixos i no hi ha cap moviment de vehicles reals.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Llegir un mapa de maqueta i descriure itineraris amb orientació, parades i cruïlles.</li><li>Comparar recorreguts amb criteris acordats de llegibilitat i accessibilitat, sense simular experiències personals.</li><li>Programar i depurar una ruta amb Tale-Bot i proposar una millora de disseny de la cruïlla.</li><li>Explicar que el mapa és una representació escolar i no una avaluació de seguretat del carrer real.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="abans-de-comencar">🧰 Materials i preparació</h2>
+<p>Prepareu una graella amb interseccions amples, targetes pròpies de llocs del municipi i peces planes que representen bancs, arbres o obres. Incloeu opcions de transport diverses. No poseu obstacles al pas del robot ni feu l’activitat en una via pública. L’ús de l’adhesiu temàtic de cotxes és opcional i depén de la disponibilitat del centre.</p>
+<h3 class="detail-subsection-title" id="opcio-amb-els-mapes-interactius-de-l-activity-box">Opció amb els mapes interactius de l’Activity Box</h3>
+<p>Aquest itinerari propi funciona amb mapa de paper. Si el centre disposa de l’Activity Box compatible, podeu substituir-lo o ampliar-lo amb un mapa interactiu, sense canviar l’objectiu d’accessibilitat:</p>
+<ol><li>Poseu Tale-Bot a l’entrada principal de la cantonada superior esquerra i escolteu la consigna completa.</li><li>Quan la veu indique una entrada secundària, traslladeu el robot a eixe punt. Abans de programar, localitzeu en el mapa el destí, les cruïlles i una ruta possible.</li><li>Programeu i executeu la seqüència. Si el robot arriba a un lloc equivocat, useu l’avís del mapa com una dada per a revisar la ruta, no com una valoració de l’equip.</li><li>En una entrada o punt d’inici, una nova consigna pot substituir l’anterior en moure-hi el robot. Si el robot ja es desplaça i cal interrompre la veu, useu <em>Play</em>; la resta de botons no la cancel·len.</li><li>Useu els mapes interactius i els adhesius interactius per separat. Si canvieu d’un mapa a un tema d’adhesius, reinicieu el robot abans de començar el nou tema. Si la caixa o el mapa de la dotació no coincidix amb aquestes funcions, torneu a la graella pròpia i no pressuposeu la resposta sonora.</li></ol>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>seqüència de targetes, consigna escoltada o llegida, error detectat i una modificació provada. Sense Activity Box, feu servir la mateixa evidència amb un mapa propi i una targeta de destí.</p></div></aside>
+<h3 class="detail-subsection-title" id="materials-representacio-i-evidencies">Materials, representació i evidències</h3>
+<p>Feu una graella de caselles grans sobre paper reutilitzable, símbols impresos en alt contrast, un full de llegenda, targetes de gir i una fitxa alternativa per assajar sense robot. Una còpia en relleu o línies amb cordill pot facilitar l&#39;exploració tàctil. Les evidències mínimes són el mapa inicial, les dues rutes, una tira d&#39;ordres amb predicció, el registre d&#39;una depuració i una justificació oral, escrita o pictogràfica de la decisió final.</p>
+<p>L’Activity Box és opcional. En la versió descrita per Matatalab inclou cinc mapes interactius de doble cara, un mapa en blanc de doble cara, 32 targetes de comandament i adhesius; comproveu la caixa concreta abans de preparar la sessió, perquè altres paquets del fabricant tenen inventaris diferents.</p>
+<p>Useu una escala formativa: encara necessita suport / ho resol amb una pista / ho explica de manera autònoma. Observeu si l&#39;equip manté l&#39;ordre de les instruccions, localitza l&#39;error amb una prova i usa els criteris acordats per comparar opcions. No avalueu suposades necessitats d&#39;accessibilitat de companys ni demaneu a ningú que simule una discapacitat.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<h3 class="detail-subsection-title" id="sequencia-d-aprenentatge-quatre-sessions">📅 Seqüència d’aprenentatge · quatre sessions</h3>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Què fa fàcil seguir una ruta? (25–30 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Què fa fàcil seguir una ruta? (25–30 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Què fa fàcil seguir una ruta? (25–30 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Construïm la maqueta i les alternatives (25–30 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Construïm la maqueta i les alternatives (25–30 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Programem, provem i depurem (25–30 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Programem, provem i depurem (25–30 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Explica la proposta i els seus límits (25–30 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Explica la proposta i els seus límits (25–30 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-que-fa-facil-seguir-una-ruta-25-30-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Què fa fàcil seguir una ruta? (25–30 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu un mapa fictici amb biblioteca, plaça, parada i punt d’inici. Cada equip tria una destinació i predigueu com la trobaria algú que no coneix el barri.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Creeu perfils ficticis —una persona que camina, algú que empeny un cotxet o viatja en cadira de rodes, una criatura acompanyada— com a perspectives de disseny, sense assignar necessitats a l’alumnat ni demanar experiències personals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Parleu de quina informació del mapa ajudaria cada viatge. Trieu dos criteris observables, com nombre de girs i presència d’una zona de pas lliure, i deixeu-los visibles.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu la llegenda del mapa perquè una persona que no coneix el barri puga trobar la destinació. Afegiu un símbol si falta informació per orientar-se.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>criteris triats pel grup i llegenda inicial. Expliqueu què fa còmoda o fàcil de seguir una ruta dins de la maqueta.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-construim-la-maqueta-i-les-alternatives-25-30-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Construïm la maqueta i les alternatives (25–30 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu biblioteca, plaça, parada i punt d’inici, i prediu per on passaria una ruta directa. Acordeu quina incidència fictícia farà necessari pensar en una alternativa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En una graella plana, col·loqueu tres llocs i una intersecció. Afegiu una incidència simulada amb una targeta que es puga llevar; no poseu barreres davant de les rodes.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Dibuixeu una ruta directa i una altra que evite la incidència. Seguiu-les amb una fitxa, marqueu els girs i comproveu que la casella d’arribada està definida.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si les cruïlles són difícils d’interpretar, feu més ampla la graella o canvieu el símbol. Comproveu que les peces no bloquegen físicament Tale-Bot.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa amb dues opcions de recorregut i llegenda clara. Indiqueu quina modificació ha fet que el mapa siga més fàcil de llegir.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-programem-provem-i-depurem-25-30-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Programem, provem i depurem (25–30 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>En parelles, codifiqueu una ruta directa i una ruta alternativa amb les tecles de moviment. Abans d’iniciar-les, una persona prediu la casella final i l’altra assenyala els girs.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Introduïu la seqüència al Tale-Bot i demaneu a una altra parella que llija la ruta del mapa. Comproveu l’orientació inicial i el punt de partida.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu on acaba el robot amb la predicció. Anoteu l’ordre dels girs, el nombre de passos i el resultat observat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si no arriba, reviseu l’ordre de cada gir, el nombre de passos o l’orientació. Canvieu una instrucció per prova i registreu quin ajust resol el desajust.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>dos programes, prediccions i registre d’una depuració. El temps que tarda el robot no s’utilitza per comparar equips.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-explica-la-proposta-i-els-seus-limits-25-30-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Explica la proposta i els seus límits (25–30 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Intercanvieu mapes entre equips i demaneu a qui els rep que trobe la biblioteca utilitzant només la llegenda. Predigueu quins símbols poden resultar confusos.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Recolliu les preguntes de l’altre equip i afegiu una millora al mapa o al pas accessible. Compareu les opcions segons distància en caselles, nombre de girs i pas lliure.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Cada equip presenta la ruta triada i el criteri que ha prioritzat. Anoteu una cosa que la maqueta pot representar i una que no pot comprovar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Si la classe vol continuar, consulteu amb la docent un mapa públic del municipi i compareu-ne les representacions. No feu una observació de carrer sense planificació i supervisió del centre.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>ruta justificada i una pregunta per investigar. El plànol de paper no certifica la seguretat ni l’accessibilitat d’un carrer real.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="avaluacio-i-evidencies">🧪 Evidències i avaluació</h2>
+<p>Valoreu que l’alumnat puga ordenar ordres, anticipar el resultat, rectificar un error i comparar dues rutes amb criteris explícits. Guardeu el plànol, els programes i una breu explicació de la decisió. No es pressuposa que la maqueta prove l’accessibilitat o la seguretat d’un carrer real.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="seguretat-participacio-i-transferencia">♿ Participació, accessibilitat i seguretat</h2>
+<p>El mapa s&#39;utilitza només en un espai interior pla i sense circulació de persones; la maqueta no representa controls viaris reals. Les observacions en carrer, si es fan, requereixen planificació i supervisió del centre i no formen part d&#39;aquesta activitat. Roteu els rols de cartògraf/a, planificador/a, programador/a i observador/a. Oferiu ruta de taula, pictogrames, lectura oral o participació com a observador. L&#39;adhesiu oficial de cotxes és opcional: la situació funciona amb un plànol en blanc i símbols creats per l&#39;alumnat.</p>
+<h3 class="detail-subsection-title" id="mes-d-una-manera-de-participar">♿ Més d’una manera de participar</h3>
+<p>Oferiu un mapa amb relleu, poques interseccions i símbols d’alt contrast; permeteu respostes amb gestos, pictogrames o explicació oral. Els rols de planificació, programació, registre i presentació roten, i qualsevol equip pot proposar una ruta alternativa sense competir en temps.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="material-oficial-reinterpretat">🔗 Referents i adaptació</h2>
+<p>La temàtica parteix dels adhesius de cotxes de l’<a href="https://matatalab.com/en/lesson4.3" target="_blank" rel="noopener noreferrer">Activity Box oficial de Tale-Bot Pro</a>. La guia oficial descriu cinc mapes interactius de doble cara, un mapa en blanc, 32 targetes de comandament, adhesius i les regles de les consignes de veu; l’opció anterior les adapta a una missió pròpia. Aquesta és una ampliació didàctica, no una activitat numerada de les 42 Activity Cards ni una reproducció dels mapes o materials gràfics originals.</p>
+<p>Les activitats amb mapa propi continuen disponibles si la caixa no és a la dotació.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -8,52 +8,261 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../_css/styles.css?v=5">
+  <link rel="stylesheet" href="../_css/styles.css?v=7">
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
-  <script src="../_js/cataleg.js?v=10a126d"></script>
-  <script src="../_js/components.js?v=guide-route-2"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <script defer src="../_js/ui.js?v=1"></script>
 </head>
 <body>
-  <site-header id="site-header" active="robotica-educativa" root="../"></site-header>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-badge"><img src="../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../index.html" class="nav-btn">Inici</a>
+        <a href="../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../robotica-educativa/index.html" class="nav-btn active">Robòtica educativa</a>
+        <a href="../situacions-aprenentatge/index.html" class="nav-btn">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
   <main id="page-content" class="container page-content page-content-hero">
   <div class="robots-hero">
     <div class="container robots-hero-inner">
-      <nav-back href="../index.html" label="inici"></nav-back>
+      <div class="section-nav-back">
+    <a href="../index.html" class="btn-back">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a inici</span>
+    </a>
+  </div>
       <div class="robots-hero-content">
         <h1 class="robots-hero-title">Robòtica educativa</h1>
-        <p class="robots-hero-desc">Selecciona un robot per accedir a la seva pàgina d'aprenentatge i tutorials específics.</p>
+        <p class="robots-hero-desc">Selecciona un robot per accedir a la seva pàgina d&#39;aprenentatge i tutorials específics.</p>
         <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
       </div>
       <div class="robots-hero-media">
-        <img src="../_assets/banners/robotica.png" alt="Robots d'Aula" class="robots-hero-img" width="800" height="600">
+        <img src="../_assets/banners/robotica.png" alt="Robots d&#39;Aula" class="robots-hero-img" width="800" height="600">
       </div>
     </div>
   </div>
-    <div class="clean-grid" x-data="{ robots: window.CATALEG.robots, tutorials: window.CATALEG.tutorials, tutorialCount(item) { return item.tutorials ?? this.tutorials.filter(tutorial => tutorial.robot === item.slug).length; } }">
-      <template x-for="item in robots" :key="item.id">
-        <a :id="item.id" :href="'../' + item.url" class="robot-card" :class="'robot-' + item.prefix">
-          <div class="robot-card-media">
-            <span class="robot-age-badge"><span class="badge-icon">👤</span> <span x-text="item.edat"></span></span>
-            <img :src="'../_assets/robots/' + item.slug + '.png'" :alt="item.nom" class="robot-card-img" width="400" height="225" loading="lazy">
-          </div>
-          <div class="robot-card-body">
-            <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
-            <h3 class="robot-card-title" x-text="item.nom"></h3>
-            <p class="robot-card-desc" x-text="item.descripcio"></p>
-            <div class="robot-card-footer">
-              <span class="robot-tutorials-count">
-                <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                <span x-text="tutorialCount(item) + (tutorialCount(item) === 1 ? ' tutorial' : ' tutorials')"></span>
-              </span>
-              <span class="robot-card-action">Entrar a la pàgina →</span>
-            </div>
-          </div>
-        </a>
-      </template>
+    <div class="clean-grid" id="robots-grid">
+      <a id="robot-coding-express" href="../robot/coding-express/index.html" class="robot-card robot-ce">
+    <div class="robot-card-media">
+      <span class="robot-age-badge"><span class="badge-icon">👤</span> <span>Educació Infantil (2-5 anys)</span></span>
+      <img src="../_assets/robots/coding-express.png" alt="Coding Express" class="robot-card-img" width="400" height="225" loading="lazy">
     </div>
-
+    <div class="robot-card-body">
+      <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
+      <h3 class="robot-card-title">Coding Express</h3>
+      <p class="robot-card-desc">El tren interactiu dels colors i el pensament computacional primerenc</p>
+      <div class="robot-card-footer">
+        <span class="robot-tutorials-count">
+          <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>5 tutorials</span>
+        </span>
+        <span class="robot-card-action">Entrar a la pàgina →</span>
+      </div>
+    </div>
+  </a>
+      <a id="robot-tale-bot" href="../robot/tale-bot/index.html" class="robot-card robot-tb">
+    <div class="robot-card-media">
+      <span class="robot-age-badge"><span class="badge-icon">👤</span> <span>Educació Infantil i primer cicle (3-7 anys)</span></span>
+      <img src="../_assets/robots/tale-bot.png" alt="Tale-Bot" class="robot-card-img" width="400" height="225" loading="lazy">
+    </div>
+    <div class="robot-card-body">
+      <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
+      <h3 class="robot-card-title">Tale-Bot</h3>
+      <p class="robot-card-desc">El robot narrador que parla, llegeix mapes interactius i dibuixa</p>
+      <div class="robot-card-footer">
+        <span class="robot-tutorials-count">
+          <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>5 tutorials</span>
+        </span>
+        <span class="robot-card-action">Entrar a la pàgina →</span>
+      </div>
+    </div>
+  </a>
+      <a id="robot-coding-set" href="../robot/coding-set/index.html" class="robot-card robot-cs">
+    <div class="robot-card-media">
+      <span class="robot-age-badge"><span class="badge-icon">👤</span> <span>Educació Infantil i primària (4-9 anys)</span></span>
+      <img src="../_assets/robots/coding-set.png" alt="Coding Set" class="robot-card-img" width="400" height="225" loading="lazy">
+    </div>
+    <div class="robot-card-body">
+      <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
+      <h3 class="robot-card-title">Coding Set</h3>
+      <p class="robot-card-desc">Programació tangible sense pantalles amb Matatalab</p>
+      <div class="robot-card-footer">
+        <span class="robot-tutorials-count">
+          <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>5 tutorials</span>
+        </span>
+        <span class="robot-card-action">Entrar a la pàgina →</span>
+      </div>
+    </div>
+  </a>
+      <a id="robot-codey-rocky" href="../robot/codey-rocky/index.html" class="robot-card robot-cr">
+    <div class="robot-card-media">
+      <span class="robot-age-badge"><span class="badge-icon">👤</span> <span>Primària (6-12 anys)</span></span>
+      <img src="../_assets/robots/codey-rocky.png" alt="Codey Rocky" class="robot-card-img" width="400" height="225" loading="lazy">
+    </div>
+    <div class="robot-card-body">
+      <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
+      <h3 class="robot-card-title">Codey Rocky</h3>
+      <p class="robot-card-desc">El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues</p>
+      <div class="robot-card-footer">
+        <span class="robot-tutorials-count">
+          <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>7 tutorials</span>
+        </span>
+        <span class="robot-card-action">Entrar a la pàgina →</span>
+      </div>
+    </div>
+  </a>
+      <a id="robot-spike" href="../robot/spike/index.html" class="robot-card robot-sp">
+    <div class="robot-card-media">
+      <span class="robot-age-badge"><span class="badge-icon">👤</span> <span>Tercer cicle (10-12 anys)</span></span>
+      <img src="../_assets/robots/spike.png" alt="Spike" class="robot-card-img" width="400" height="225" loading="lazy">
+    </div>
+    <div class="robot-card-body">
+      <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
+      <h3 class="robot-card-title">Spike</h3>
+      <p class="robot-card-desc">Mecatrònica, engranatges i sensors d&#39;alta precisió de LEGO Education</p>
+      <div class="robot-card-footer">
+        <span class="robot-tutorials-count">
+          <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>6 tutorials</span>
+        </span>
+        <span class="robot-card-action">Entrar a la pàgina →</span>
+      </div>
+    </div>
+  </a>
+      <a id="robot-microbit" href="../robot/microbit/index.html" class="robot-card robot-mb">
+    <div class="robot-card-media">
+      <span class="robot-age-badge"><span class="badge-icon">👤</span> <span>Segon i tercer cicle (8-12 anys)</span></span>
+      <img src="../_assets/robots/microbit.png" alt="Micro:bit" class="robot-card-img" width="400" height="225" loading="lazy">
+    </div>
+    <div class="robot-card-body">
+      <div class="robot-color-dots"><span class="dot dot-1"></span><span class="dot dot-2"></span></div>
+      <h3 class="robot-card-title">Micro:bit</h3>
+      <p class="robot-card-desc">La placa microcontroladora per a projectes oberts i ciutadans</p>
+      <div class="robot-card-footer">
+        <span class="robot-tutorials-count">
+          <svg class="icon-book" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>8 tutorials</span>
+        </span>
+        <span class="robot-card-action">Entrar a la pàgina →</span>
+      </div>
+    </div>
+  </a>
+    </div>
   </main>
-  <site-footer></site-footer>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

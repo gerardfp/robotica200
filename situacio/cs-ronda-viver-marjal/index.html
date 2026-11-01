@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Una ronda pel viver de la marjal | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Dissenyem una ruta programada que passe al voltant d’un o més objectes del viver escolar sense tocar-los.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-cs-ronda-viver-marjal" class="btn-back" data-preserve-filters="cs-ronda-viver-marjal">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Primer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Pensament computacional i medi</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 3 sessions de 45 minuts</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Una ronda pel viver de la marjal</h1>
+        <span class="tag-badge" data-theme>🏷️ El viver escolar de la marjal</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-ronda-viver-marjal-v1.png" alt="MatataBot i torre de control reals del Coding Set recorren una quadrícula al voltant d’un planter i una regadora de maqueta fins a una bandera." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA pròpia basada en el kit real del Coding Set. Els objectes són marques fixes que les persones col·loquen i el robot evita amb una ruta prèviament programada; no hi ha sensor que els detecte.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>El grup prepara una maqueta de viver amb un planter, una regadora i una bandera que marca l’espai on es deixaran les eines. MatataBot ha de fer una ronda al voltant dels objectes sense tocar-los i acabar a la bandera. Els objectes són materials estàtics, no obstacles que el robot puga reconéixer: l’equip observa el mapa, planifica i programa tota la ruta abans de començar.</p></div></aside>
+<p>La proposta adapta la targeta oficial <strong>A-4 · MatataBot Guard</strong> de les <em>Coding Activity Cards</em>. La targeta situa MatataBot i una joguina sobre una superfície plana, demana programar-lo perquè es moga al voltant de l’objecte i proposa com a ampliació repetir la ruta amb més d’una joguina en un programa. Ací el viver, els marcadors, el mapa, l’objectiu de bandera, el registre i les imatges són propis. La ruta és intencional i fixa: MatataBot no busca, detecta ni esquiva res automàticament.</p>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>quines instruccions ens permeten passar al voltant de cada objecte i arribar a la bandera sense dependre que el robot detecte el que hi ha al mapa?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Representar objectes i destinacions en una graella amb inici i orientació marcats.</li><li>Dissenyar una ruta que passe al voltant d’un marcador sense tocar-lo.</li><li>Ampliar una seqüència perquè passe al voltant de més d’un objecte en un sol programa.</li><li>Predir, executar i registrar el moviment real, i revisar el primer punt de divergència.</li><li>Distingir una ruta programada d’una esquiva automàtica amb sensors.</li></ul>
+<p><strong>Vocabulari clau:</strong> marcador, obstacle representat, ruta, voltant, inici, orientació, gir, seqüència, bandera, prova, depuració.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Coding Set real: MatataBot, torre de control, tauler i blocs direccionals disponibles.</li><li>Graella plana pròpia de 4 × 4 caselles; si s’utilitza una quadrícula física del kit, comproveu-ne escala i dimensions abans de fer prediccions.</li><li>Un planter de maqueta de base àmplia, una regadora de paper o escuma i una bandera gran; han de ser objectes lleugers, estables, no punxants i més alts que les rodes.</li><li>Fitxa de robot de paper per a planificar; mapa amb les caselles lliures, els objectes, la meta i la posició inicial del robot.</li><li>Full de registre amb <strong>objectes</strong>, <strong>inici/orientació</strong>, <strong>seqüència</strong>, <strong>caselles de pas</strong>, <strong>contacte sí/no</strong>, <strong>arribada a la bandera sí/no</strong> i <strong>canvi provat</strong>.</li></ul>
+<p>Carregueu MatataBot i la torre, fixeu la graella i proveu una seqüència curta sobre la mateixa superfície. Situeu els objectes al centre de caselles marcades i deixeu espai de pas superior a l’amplària del robot. No useu aigua real ni plantes vives. Durant la prova, retireu les mans de la graella; atureu el robot abans de moure qualsevol marcador.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 3 · Fem una ronda al voltant d’un objecte (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-valuetext="Pas 1 de 3">
+        <span data-wizard-bar style="width: 33.33%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Fem una ronda al voltant d’un objecte (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Fem una ronda al voltant d’un objecte (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Una ruta per al planter i la regadora (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una ruta per al planter i la regadora (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Revisem la ronda d’un altre equip (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Revisem la ronda d’un altre equip (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-fem-una-ronda-al-voltant-d-un-objecte-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Fem una ronda al voltant d’un objecte (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu el viver de maqueta, el planter i la bandera. Demaneu com podria passar el robot al voltant del planter sense tocar-lo. Compareu una ruta que passa per davant amb una que fa un recorregut per dos costats; el grup assenyala inici, orientació i final abans de programar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Col·loqueu un únic objecte en una casella central i marqueu la bandera en una altra. En parelles, assageu una ruta amb la fitxa de paper i col·loqueu una fletxa en cada canvi d’orientació. Traduïu després el recorregut als blocs físics del Coding Set, tenint present que un bloc de gir fa girar el robot sobre el lloc.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una persona llig la seqüència i l’altra ressegueix la ruta. Marqueu les caselles per on passarà MatataBot i comproveu que la línia no travessa la casella ocupada per l’objecte. Escriviu una predicció observable: «el robot passarà per aquestes caselles i no tocarà el planter».</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu la seqüència des del mateix inici. Observeu si el robot passa pels punts previstos i manté separació del marcador. Si el toca o se n’ix de la ruta, registreu la primera diferència entre mapa i moviment real, canvieu una sola ordre i repetiu la prova amb la mateixa disposició.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa anotat, programa d’una ronda i registre del resultat. <strong>Pregunta:</strong> com sabem que el robot ha passat al voltant de l’objecte i no simplement per davant?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-una-ruta-per-al-planter-i-la-regadora-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Una ruta per al planter i la regadora (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Afegiu una regadora de maqueta al mapa. Cada equip prediu com canviarà la ruta perquè passe al voltant dels dos objectes i arribe a la bandera en una sola seqüència. Determineu quina casella serà el punt de gir més exigent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Torneu a planificar la ruta amb una fitxa de paper, en aquest ordre: iniciar, passar al voltant del planter, allunyar-se’n, passar al voltant de la regadora i acabar a la bandera. Escriviu tota la seqüència abans d’executar-la; no dividiu el repte en dos programes independents.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una altra parella verifica al mapa que hi ha un tram lliure al voltant de cada objecte i que la ruta arriba a la bandera. Registreu les caselles de pas i feu que qui ha programat explique quina instrucció inicia cada desviació al voltant dels marcadors.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu el programa complet. Si MatataBot toca un objecte, no el retireu per fer passar el robot: atureu-lo, anoteu el contacte i reviseu la ruta. Podeu moure un marcador i repetir, però tracteu-ho com una prova nova i actualitzeu el mapa abans de canviar el codi.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>ruta única amb dos objectes, caselles previstes i observades, i registre de cada contacte. <strong>Pregunta:</strong> quina instrucció ha permés envoltar cada objecte en un mateix programa?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-revisem-la-ronda-d-un-altre-equip-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Revisem la ronda d’un altre equip (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Els equips intercanvien els mapes sense mostrar els programes. La parella visitant prediu una ruta possible i assenyala un lloc on un gir imprecís podria acostar el robot massa al planter o a la regadora.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>La parella autora entrega la seqüència i la visitant la reconstrueix amb blocs o fletxes. Si les caselles del mapa no permeten una interpretació clara, afegiu orientació inicial, llegenda o coordenada; no interpreteu el moviment del robot com a una decisió autònoma.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Executeu la seqüència amb els dos objectes en les posicions indicades. La parella visitant marca cada pas observat i confirma per separat <strong>ha passat pels dos costats de cada marcador</strong>, <strong>no hi ha hagut contacte</strong> i <strong>ha arribat a la bandera</strong>.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Retorneu una observació concreta a l’equip autor: una instrucció clara i un punt que convé revisar. L’equip aplica un canvi i torna a provar el programa complet. Si les dades mostren que el robot es desplaça lleugerament, ajusteu el marge de la ruta al mapa i documenteu el canvi.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Evidència final:</strong> mapa i programa revisats, comprovació per una altra parella i explicació del límit del kit. Tanqueu amb: «La ruta estava planificada perquè…» i «MatataBot no ha detectat els objectes; l’equip…».</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu els mapes de les dues rondes, les seqüències, la comparació entre predicció i resultat, i la revisió feta després de la prova externa. Observeu si l’alumnat:</p>
+<ul><li>representa posició i orientació inicials;</li><li>traça una ruta que passa al voltant de l’objecte sense travessar-ne la casella;</li><li>incorpora dos marcadors a un únic programa;</li><li>localitza i corregeix una divergència a partir d’una observació concreta;</li><li>explica que els objectes no són detectats automàticament pel robot.</li></ul>
+<p>No avalueu la rapidesa, l’absència d’errors al primer intent ni l’habilitat motriu per a manipular els objectes.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Proporcioneu mapes grans, fletxes tàctils, codis de forma a més del color i seqüències impreses. Es pot participar dibuixant la ruta, llegint blocs, observant el moviment o registrant dades. Useu només objectes lleugers i estables; deixeu les mans fora del recorregut mentre MatataBot està actiu i pareu-lo abans de canviar un marcador. No plantegeu el robot com un sistema de vigilància o seguretat del viver: és una seqüència programada dins d’una maqueta escolar.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-i-adaptacio">🔗 Referents i adaptació</h2>
+<ul><li>Matatalab, <a href="https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf" target="_blank" rel="noopener noreferrer">*Coding Activity Cards*, targeta A-4 · *MatataBot Guard* (PDF oficial)</a>: demana situar MatataBot i una joguina sobre una superfície plana, programar el robot perquè es moga al voltant de l’objecte i proposa com a extensió incloure més d’una joguina en un programa. La mostra és parcial; la proposta local concreta aquesta mecànica amb dos marcadors estàtics i una meta.</li><li>Matatalab, <a href="https://matatalab.com/en/node/88" target="_blank" rel="noopener noreferrer">*Hello Matatalab Robots!*</a>: referència per verificar blocs direccionals, girs i orientació en la programació tangible del Coding Set.</li></ul>
+<p>L’adaptació conserva la seqüència oficial d’una joguina i l’ampliació a més d’un objecte en un programa. El viver i els seus elements són una maqueta de l’entorn local; cap objecte és detectat ni esquivat automàticament, i la ruta s’ha de planificar abans d’iniciar el robot.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

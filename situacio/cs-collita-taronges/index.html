@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">La collita que sona | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Programem el MatataBot perquè visite una o més taronges de paper en una sola seqüència i tanque la ruta amb una melodia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-cs-collita-taronges" class="btn-back" data-preserve-filters="cs-collita-taronges">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Primer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Pensament computacional i medi</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 4 sessions de 45 minuts</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>La collita que sona</h1>
+        <span class="tag-badge" data-theme>🏷️ La collita de cítrics</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-collita-taronges-v1.png" alt="El MatataBot i la torre reals del Coding Set en una graella de collita; una taronja de paper avança cap a una cistella i el programa acaba amb el bloc de música." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA pròpia basada en el model real del Coding Set. La fruita és una peça lleugera de maqueta que el robot empeny; una persona la col·loca a la cistella. El robot no té pinça ni recull objectes de manera autònoma.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>La cooperativa escolar prepara una parada de productes de temporada. En un mapa de quadrícula hi ha una o més taronges de paper i una cistella marcada com a punt de recollida. Els equips planifiquen una ruta perquè MatataBot arribe a cada peça, l’empenya amb cura fins a una zona acordada i tanque el programa amb música. Després, una persona recull cada peça i la posa manualment a la cistella.</p></div></aside>
+<p>La proposta adapta dues targetes oficials de les <em>Coding Activity Cards</em>: <strong>A-2 · Fruit Picking</strong>, amb una peça i música de celebració, i <strong>A-3 · MatataBot Loves Candy</strong>, que amplia la tasca a dues peces i després a tres o més en un únic programa. El material oficial representa una ruta en quadrícula i, en A-2, un bloc musical al final.</p>
+<p>La versió local transforma la “recollida” en una acció observable i segura: el robot empeny testimonis lleugers, sense pinça ni mecanisme inventat; l’alumnat completa manualment el pas de posar-los a la cistella. El context de cítrics, el mapa, la seqüència didàctica, el registre i les imatges són propis.</p>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>quines ordres necessitem perquè el robot arribe a la fruita, la desplace sense eixir del camí i faça sonar la melodia només després de completar la ruta?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Llegir una ruta en quadrícula tenint en compte la posició i l’orientació inicials.</li><li>Traduir una ruta a blocs de moviment del Coding Set i predir-ne el resultat.</li><li>Comprovar com canvia la posició d’un objecte quan el robot hi arriba i l’empeny.</li><li>Col·locar el bloc de música després dels moviments i verificar l’ordre de la seqüència.</li><li>Distingir les accions programades del robot de la recollida manual de la fruita.</li><li>Descompondre una ruta amb diversos testimonis i visitar-los tots amb un únic programa.</li></ul>
+<p><strong>Vocabulari clau:</strong> inici, orientació, casella, ruta, avançar, girar, empényer, destinació, seqüència, prova, melodia.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Coding Set real: MatataBot, torre de control, tauler i blocs de moviment i música presents al kit del centre.</li><li>Mapa propi de 4 × 4 caselles amb inici, zona de fruita i cistella; useu la quadrícula del kit si el centre en disposa i confirmeu-ne les dimensions abans de fer prediccions.</li><li>Una o dues fruites de paper gruixut o escuma lleugera, amb vores arrodonides; una cistella ampla i baixa fora del recorregut del robot.</li><li>Full de registre amb <strong>posició inicial</strong>, <strong>orientació</strong>, <strong>ordres</strong>, <strong>posició final</strong>, <strong>fruit desplaçat sí/no</strong>, <strong>música al final sí/no</strong> i <strong>canvi per a la prova següent</strong>.</li><li>Cinta de pintor per immobilitzar el mapa, targetes grans amb les instruccions i una fitxa de MatataBot de paper per simular abans d’encendre el robot.</li></ul>
+<p>Carregueu la torre i el robot. En una superfície plana, comproveu que la torre reconeix els blocs que fareu servir i que el bloc musical sona a volum moderat. Proveu la peça lleugera abans de la classe: si es queda atrapada sota el robot, es desvia de la ruta o bloqueja les rodes, substituïu-la per una targeta plana que puga lliscar. Manteniu mans i dits fora del recorregut mentre el robot es mou. No useu fruita real ni aliments.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Del mapa a la primera ruta (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Del mapa a la primera ruta (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Del mapa a la primera ruta (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Provem l’empenta i depurem (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Provem l’empenta i depurem (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Afegim la música i compartim la solució (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Afegim la música i compartim la solució (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Una seqüència per a tota la collita (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una seqüència per a tota la collita (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-del-mapa-a-la-primera-ruta-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Del mapa a la primera ruta (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu la parada fictícia de la cooperativa i mostreu el mapa amb inici, fruita i cistella. Demaneu que l’alumnat descriga el trajecte amb paraules espacials. Aclariu que MatataBot pot seguir ordres i reproduir música, però no sap què és una taronja ni decideix quan s’ha collit.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Poseu una sola fruita lleugera en una casella que es puga assolir des de l’inici. En parelles, col·loqueu una fitxa de robot de paper sobre la graella, marqueu cap on mira i assageu el camí fins al testimoni. Prepareu una seqüència de blocs de moviment; deixeu el bloc musical separat, encara sense afegir-lo.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una persona llig les ordres i l’altra ressegueix la ruta amb el dit. Anoteu cada casella prevista i el punt on el robot hauria de tocar la fruita. Abans de provar, una parella visitant ha de poder reconstruir el trajecte a partir del mapa i les ordres, sense explicacions addicionals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu només la ruta fins a la fruita. Observeu si el robot hi arriba amb l’orientació prevista i si la peça es desplaça de manera controlada. Si la fruita és massa lleugera o bloqueja el robot, atureu-lo, canvieu la peça i repetiu la mateixa seqüència; no canvieu alhora el programa i el material.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa amb ruta prevista, seqüència de blocs i registre de la primera prova. <strong>Pregunta:</strong> quina diferència hi ha entre arribar a la fruita i posar-la dins de la cistella?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-provem-l-empenta-i-depurem-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Provem l’empenta i depurem (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Recupereu el registre anterior. Cada equip anticipa si la fruita acabarà dins de la zona de recollida o si caldrà que una persona la col·loque manualment. Marqueu el lloc d’inici i l’orientació abans de moure cap bloc.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Manteniu la mateixa fruita i el mateix mapa. Executeu la ruta completa fins al contacte i observeu cap a on es desplaça el testimoni. Si l’empeny fora de la zona marcada, localitzeu la primera casella on la predicció i el resultat divergeixen; reviseu una sola instrucció o la posició inicial. No poseu les mans davant del robot en moviment.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Anoteu la seqüència provada, la casella final del robot i la posició final de la fruita. Distingiu tres resultats: <strong>el robot ha arribat</strong>, <strong>ha empés la peça</strong> i <strong>la peça ha quedat dins de la zona</strong>. Una marca en el full no compta com a resultat observat si no s’ha fet la prova física.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Canvieu una sola variable: el punt inicial, l’orientació, una instrucció o la forma de la peça. Repetiu el programa i compareu els dos registres. Quan la fruita quede en una zona accessible i segura, una persona la posa manualment dins de la cistella i l’equip marca aquesta acció com a manual.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>dos registres comparables i una explicació del canvi que ha ajudat. <strong>Pregunta:</strong> quina part del resultat ha causat el programa i quina part ha completat una persona?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-afegim-la-musica-i-compartim-la-solucio-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Afegim la música i compartim la solució (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu la seqüència ja depurada i pregunteu quan té sentit fer sonar la celebració. Cada equip prediu què passaria si el bloc musical apareguera abans que el robot arribara al testimoni.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Afegiu el bloc de música després dels moviments de la ruta, seguint la disposició que admeta el tauler del vostre model. Comproveu visualment que queda al final de la seqüència. Si el centre té més d’un MatataBot, feu les proves en torns o abaixeu el volum per a evitar que els sons se superposen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Escriviu o dibuixeu la seqüència completa i separeu en el registre <strong>moviment</strong>, <strong>contacte amb la fruita</strong>, <strong>acció manual</strong> i <strong>música</strong>. Prepareu una explicació breu perquè una altra parella puga repetir la ruta i identificar què no fa el robot.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>La parella visitant prepara el mapa i programa la seqüència sense rebre la resposta. Comprova si MatataBot arriba a la fruita, si l’empeny cap a la zona, si la música sona després del recorregut i si la cistella s’ompli amb l’acció manual acordada. L’equip autor revisa una instrucció ambigua i repetix la prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Evidència final:</strong> mapa, seqüència amb el bloc musical, dos registres de prova i una targeta que diferencia accions del robot i de les persones. Tanqueu amb: «La melodia sona després de…» i «MatataBot no arreplega la fruita; nosaltres…».</p>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-una-sequencia-per-a-tota-la-collita-45-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Una seqüència per a tota la collita (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu l’ampliació de la targeta oficial <strong>A-3 · MatataBot Loves Candy</strong>: la targeta col·loca dues peces i demana visitar-les totes amb un programa; després proposa repetir el repte amb tres o més. Ací les llaminadures es converteixen en taronges de paper i la recollida continua sent manual. Cada equip prediu quantes ordres addicionals necessitarà per a arribar a totes les peces.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Col·loqueu dues fruites en caselles diferents i planifiqueu una ruta que passe per totes dues abans de la cistella. Registreu l’orientació després de cada gir i escriviu el programa complet abans d’executar-lo; no esborreu la primera destinació per a començar un programa nou. Si la seqüència és massa llarga per a una prova segura, reduïu la distància entre caselles, no el nombre de fruites.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una parella visitant comprova al mapa que la seqüència arriba a la primera i a la segona peça i que acaba en la zona prevista. Després, anoteu el resultat de la prova, l’ordre de visita i quines peces ha empés realment el robot. Diferencieu programa únic de dues seqüències executades per separat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu el programa amb dues peces; atureu el robot i registreu cada contacte. Si funciona, afegiu una tercera fruita i prediu si cal afegir ordres o reordenar el recorregut. Canvieu una sola part del programa i torneu a provar. Una persona col·loca manualment a la cistella els testimonis quan el robot ha acabat i està aturat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa amb dues o tres destinacions, una seqüència única provada, registres de les peces desplaçades i comprovació manual de la cistella. <strong>Pregunta:</strong> com sabem que hem visitat totes les fruites amb un sol programa?</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu el mapa, la seqüència inicial i la depurada, els registres d’observació, la targeta de comunicació i una breu explicació final. Observeu si l’alumnat:</p>
+<ul><li>té en compte orientació i posició en predir el recorregut;</li><li>relaciona una instrucció concreta amb el moviment observat;</li><li>revisa una variable cada vegada i usa el registre per explicar el canvi;</li><li>situa el bloc musical després del trajecte;</li><li>diferencia arribar/empenyer d’arreplegar i posar la peça dins la cistella.</li></ul>
+<p>No s’avaluen la velocitat, l’encert al primer intent, la qualitat del so ni la destresa per a manipular la peça.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu mapa en gran format, fletxes en relleu, símbols amb formes a més dels colors i una seqüència impresa perquè es puga participar sense manipular blocs menuts. Repartiu rols rotatius de planificació, lectura de blocs, observació i registre; qualsevol alumne pot triar el rol sense tocar un robot en moviment. Useu una melodia breu i volum baix, amb una alternativa visual de targeta de celebració. Atureu el robot abans de reposicionar la fruita;</p>
+<p>no poseu mans en el seu recorregut ni useu peces menudes o aliments.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-i-adaptacio">🔗 Referents i adaptació</h2>
+<ul><li>Matatalab, <a href="https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf" target="_blank" rel="noopener noreferrer">*Coding Activity Cards*, targetes A-2 · *Fruit Picking* i A-3 · *MatataBot Loves Candy* (PDF oficial)</a>: A-2 situa MatataBot i una fruita al mapa i demana programar l’arribada/recollida i una música de celebració; A-3 passa de dues peces a tres o més i les visita amb un programa. La mostra consultada presenta una ruta en quadrícula i el bloc musical al final d’A-2; és una mostra parcial del quadern de 40 targetes, no el procediment complet de la resta.</li><li>Matatalab, <a href="https://matatalab.com/en/node/88" target="_blank" rel="noopener noreferrer">*Hello Matatalab Robots!*</a>: referència per comprovar el moviment tangible del Coding Set, l’orientació de MatataBot i la interpretació dels blocs direccionals.</li></ul>
+<p>La proposta conserva el nucli observable de les dues targetes —ruta cap a una o més peces, programa únic per a diverses destinacions i música final— i concreta la interacció física amb testimonis que el MatataBot real pot empényer. La persona completa manualment la recollida. La taronja, la cistella i la narrativa de collita són materials locals; no s’hi atribueix reconeixement d’objectes ni un mecanisme de pinça.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

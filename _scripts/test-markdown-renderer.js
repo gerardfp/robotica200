@@ -4,7 +4,7 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
-const renderer = require("../_js/markdown.js");
+const renderer = require("./lib/markdown.js");
 
 const root = path.resolve(__dirname, "..");
 const pilotPath = path.join(root, "_content/situacions/sp-llistes-condicions.md");
@@ -12,9 +12,9 @@ const pilot = renderer.parse(fs.readFileSync(pilotPath, "utf8"), "https://exampl
 assert.equal(pilot.data.title, "Lògica per a una escola oberta");
 assert.equal(pilot.data.robot, "spike");
 assert.equal(pilot.steps.length, 6, "cada lliçó ha de ser una targeta navegable");
-assert.match(pilot.html, /x-for="\(item, index\) in steps"/, "els controls del wizard són HTML d'Alpine generat amb la plantilla");
+assert.match(pilot.html, /data-learning-wizard/, "els controls del wizard es pre-renderitzen en HTML estàtic");
 assert.match(pilot.html, /learning-wizard-step-separator/, "el número i el nom del pas tenen un separador visible consistent");
-assert.match(pilot.html, /x-show="step === 0" x-cloak/, "el pas actiu es controla amb Alpine");
+assert.match(pilot.html, /data-step="1"[\s\S]*?data-step="2" hidden/, "el pas actiu es mostra i la resta queden ocults amb l'atribut natiu hidden");
 assert.equal((pilot.html.match(/class="learning-phase"/g) || []).length, 30, "cada lliçó mostra les cinc fases comunes");
 assert.equal((pilot.html.match(/class="code-panel"/g) || []).length, 2, "els exemples pseudocodi i Python es renderitzen com a blocs");
 assert.equal((pilot.html.match(/class="sa-illustration"/g) || []).length, 2, "la situació renderitza la portada i la il·lustració intercalada com a figures");
@@ -535,7 +535,7 @@ const wasteSource = fs.readFileSync(path.join(root, "_content/situacions/residus
 const waste = renderer.parse(wasteSource, "https://example.test/_content/situacions/residus-lego.md");
 assert.equal(waste.steps.length, 5, "la situació de residus conserva les cinc sessions");
 assert.equal(waste.steps[0].title, "Auditem un problema sense tocar residus (50 min)", "els noms dels passos no acaben amb puntuació sobrant");
-assert.match(waste.html, /class="learning-wizard-step-number" aria-hidden="true" x-text="index \+ 1"><\/span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;<\/span><span x-text="item\.title"/, "el número i el títol dels botons tenen espais no separables al voltant del punt");
+assert.match(waste.html, /class="learning-wizard-step-number" aria-hidden="true">1<\/span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;<\/span><span>/, "el número i el títol dels botons tenen espais no separables al voltant del punt");
 assert.equal((waste.html.match(/class="learning-phase"/g) || []).length, 25, "les cinc sessions comparteixen exactament les cinc fases comunes");
 assert.equal((waste.html.match(/class="markdown-note markdown-note-evidence"/g) || []).length, 5, "cada sessió té la seua evidència destacada");
 assert.equal((waste.html.match(/class="markdown-note markdown-note-question"/g) || []).length, 5, "cada sessió té la seua pregunta docent destacada");
@@ -558,7 +558,7 @@ assert.equal((taleBotDiscoveries.html.match(/class="learning-phase"/g) || []).le
 assert.equal((taleBotDiscoveries.html.match(/class="sa-illustration"/g) || []).length, 10, "la fira intercala visuals pertinents en les sessions amb materials o proves destacables");
 assert.equal(taleBotDiscoveries.steps[0].title, "Hola, Tale-Bot: el coneixem i el cuidem (40 min)", "la sessió d'iniciació de Tale-Bot té un títol únic i accessible al wizard");
 assert.match(taleBotDiscoveries.html, /sa-tb-coneguem-tale-bot-v2\.webp/, "la sessió d'iniciació usa la il·lustració revisada amb el model real de Tale-Bot");
-assert.match(taleBotDiscoveries.html, /guia\/index\.html\?id=fira-descobertes/, "la situació principal enllaça els recursos docents en una pàgina separada");
+assert.match(taleBotDiscoveries.html, /guia\/fira-descobertes\/index\.html/, "la situació principal enllaça els recursos docents en una pàgina separada");
 assert.doesNotMatch(taleBotDiscoveries.html, /Intencions d'aprenentatge i criteris d'èxit|Diari de proves i mostra final/, "els recursos extensos no tornen a carregar-se al final de la situació principal");
 const taleBotFairGuide = renderer.parse(fs.readFileSync(path.join(root, "_content/pages/guia-fira-descobertes.md"), "utf8"), "https://example.test/_content/pages/guia-fira-descobertes.md");
 assert.match(taleBotFairGuide.html, /aquesta pàgina reuneix els recursos docents ampliats/i, "la guia docent complementària té un context propi");
@@ -566,7 +566,7 @@ assert.match(taleBotFairGuide.html, /Challenge Booklet[\s\S]*tampoc no es consid
 assert.match(taleBotFairGuide.html, /reduïu la ruta a dues destinacions[\s\S]*canvieu només una ordre/i, "la guia ofereix una bastida clara quan l'equip encara no arriba a la fita");
 assert.match(taleBotFairGuide.html, /apague Tale-Bot[\s\S]*retorne les targetes i els accessoris/i, "la guia converteix la cura del robot i els materials en una rutina observable");
 assert.match(taleBotFairGuide.html, /curs docent oficial de Tale-Bot Pro/i, "la guia atribueix els consells de suport docent a una font del fabricant");
-assert.match(fs.readFileSync(path.join(root, "_js/components.js"), "utf8"), /'fira-descobertes': \[`\$\{root\}situacions-aprenentatge\/index\.html`/, "la pàgina docent ofereix una tornada accessible al catàleg de situacions");
+assert.match(fs.readFileSync(path.join(root, "guia/fira-descobertes/index.html"), "utf8"), /href="\.\.\/\.\.\/situacions-aprenentatge\/index\.html"/, "la pàgina docent ofereix una tornada accessible al catàleg de situacions");
 assert.match(taleBotDiscoveries.html, /no té intencions humanes/i, "la sessió d'iniciació diferencia el comportament programat de la intencionalitat humana");
 assert.match(taleBotDiscoveries.html, /deu gots de paper lleugers/i, "la sessió d'iniciació adapta el material públic dels deu gots com a fites segures");
 assert.match(taleBotDiscoveries.html, /sa-tb-benvigut-gots-v1\.png/, "la sessió inicial intercala un visual propi dels deu gots i el Tale-Bot real");
@@ -1153,8 +1153,8 @@ for (const item of activeFiles) {
   assert.ok(rendered.steps.every(step => !/^[a-z]{1,3}-?\d+\s*[·—:.-]/i.test(step.title)), `${slug} no repeteix codis de sessió o lliçó al títol visible`);
   assert.deepEqual([...rendered.html.matchAll(/data-section-group="([^"]+)"/g)].map(match => match[1]), ["intro", "learning", "materials", "sequence", "assessment", "access", "official"], `${slug} presenta les mateixes seccions i en el mateix ordre`);
   assert.equal((rendered.html.match(/class="learning-step-index learning-wizard"/g) || []).length, 1, `${slug} usa una única seqüència de navegació comuna`);
-  assert.equal((rendered.html.match(/class="learning-wizard-step-number"/g) || []).length, 1, `${slug} defineix el marcador numèric comú del selector`);
-  assert.equal((rendered.html.match(/class="learning-wizard-step-title"/g) || []).length, 1, `${slug} defineix el títol en un element separat del número`);
+  assert.equal((rendered.html.match(/class="learning-wizard-step-number"/g) || []).length, rendered.steps.length, `${slug} defineix el marcador numèric per a cada pas del selector`);
+  assert.equal((rendered.html.match(/class="learning-wizard-step-title"/g) || []).length, rendered.steps.length, `${slug} defineix el títol en un element separat del número per a cada pas`);
   assert.equal((rendered.html.match(/class="learning-step"/g) || []).length, rendered.steps.length, `${slug} representa cada pas amb la mateixa plantilla visual`);
   assert.equal((rendered.html.match(/class="learning-step-content"/g) || []).length, rendered.steps.length, `${slug} embolcalla cada pas amb el contenidor comú`);
   assert.ok((rendered.html.match(/class="learning-phase(?: learning-phase-default)?"/g) || []).length >= rendered.steps.length, `${slug} presenta cada pas dins d'una fase visual`);
@@ -1193,33 +1193,31 @@ for (const item of activeFiles) {
 for (const robot of ["coding-express", "tale-bot", "coding-set", "codey-rocky", "spike", "microbit"]) {
   assert.ok((robotSituationCounts.get(robot) || 0) >= 5, `${robot} necessita almenys cinc situacions actives pròpies o adaptades`);
 }
-const catalogText = fs.readFileSync(path.join(root, "_js/cataleg.js"), "utf8");
-const catalog = JSON.parse(catalogText.slice(catalogText.indexOf("{")).replace(/;\s*$/, ""));
 assert.equal(new Set([...imageOwners.values()]).size, activeFiles.length, "cada SDA activa té almenys una imatge pròpia i no compartida amb una altra fitxa");
-assert.equal(catalog.situacions.length, activeFiles.length, "el catàleg conté totes les SDAs actives");
-for (const item of catalog.situacions) {
-  assert.equal(item.url, `situacio/index.html?id=${item.slug}`, `${item.slug} enllaça amb la pàgina compartida`);
+const situationCatalogPage = fs.readFileSync(path.join(root, "situacions-aprenentatge/index.html"), "utf8");
+for (const slug of slugs) {
+  assert.ok(fs.existsSync(path.join(root, "situacio", slug, "index.html")), `${slug} té la seua pàgina HTML pre-renderitzada`);
+  assert.match(situationCatalogPage, new RegExp(`href="\\.\\./situacio/${slug}/index\\.html"`), `${slug} enllaça des del catàleg d'SDAs`);
 }
 const expectedDetailKinds = [
-  ["activitat", "activity", "activitats", "activitat-", 10, catalog.activitats],
-  ["tutorial", "tutorial", "tutorials", "tutorial-", 36, catalog.tutorials],
-  ["robot", "robot", "robots", "robot-", 6, catalog.robots],
-  ["guia", "guide", "pages", "guia-", 4, null]
+  ["activitat", "activitats", "activitat-", 10],
+  ["tutorial", "tutorials", "tutorial-", 36],
+  ["robot", "robots", "robot-", 6],
+  ["guia", "pages", "guia-", 4]
 ];
-for (const [route, kind, folder, prefix, minExpected, entries] of expectedDetailKinds) {
-  const page = fs.readFileSync(path.join(root, route, "index.html"), "utf8");
-  assert.match(page, new RegExp(`<content-detail-page kind="${kind}"`), `${route} utilitza el component compartit`);
-  assert.match(page, /_js\/components\.js\?v=/, `${route} invalida la memòria cau del router actualitzat`);
+for (const [route, folder, prefix, minExpected] of expectedDetailKinds) {
+  const redirectPage = fs.readFileSync(path.join(root, route, "index.html"), "utf8");
+  assert.match(redirectPage, /data-legacy-redirect=/, `${route}/index.html ofereix redirecció de compatibilitat per a ?id=slug`);
+  assert.match(redirectPage, /_js\/ui\.js\?v=/, `${route} carrega el controlador lleuger d'interfície`);
   const docs = fs.readdirSync(path.join(root, "_content", folder)).filter(file => file.startsWith(prefix) && file.endsWith(".md"));
   const activeDocs = docs.filter(file => {
     const source = fs.readFileSync(path.join(root, "_content", folder, file), "utf8");
     return !/^active:\s*false\s*$/m.test(source);
   });
   assert.ok(activeDocs.length >= minExpected, `${route} té almenys els ${minExpected} documents Markdown base`);
-  assert.equal(fs.readdirSync(path.join(root, route)).filter(file => fs.existsSync(path.join(root, route, file, "index.html"))).length, 0, `${route} no manté shells HTML per document`);
-  if (entries) {
-    assert.equal(entries.length, activeDocs.length, `catàleg ${route} sincronitzat amb tots els Markdown actius`);
-    assert.ok(entries.every(item => item.url.startsWith(`${route}/index.html?id=`)), `les targetes ${route} usen una ruta compartida`);
+  for (const file of activeDocs) {
+    const slug = file.slice(prefix.length, -3);
+    assert.ok(fs.existsSync(path.join(root, route, slug, "index.html")), `${route}/${slug}/index.html s'ha generat al build`);
   }
 }
 const activitiesDir = path.join(root, "_content/activitats");
@@ -1261,44 +1259,31 @@ for (const file of activityFiles) {
 for (const pageName of ["pensament-computacional", "robotica-educativa", "situacions-aprenentatge"]) {
   const page = fs.readFileSync(path.join(root, pageName, "index.html"), "utf8");
   assert.doesNotMatch(page, /alpine-ajax@/, `${pageName} no depén d'Alpine AJAX`);
-  assert.match(page, /alpinejs@/, `${pageName} carrega Alpine`);
+  assert.doesNotMatch(page, /alpinejs@/, `${pageName} no depén d'Alpine en el client`);
+  assert.match(page, /_js\/ui\.js\?v=/, `${pageName} carrega el controlador lleuger d'interfície`);
   assert.match(page, /id="page-content"/, `${pageName} defineix el contenidor principal compartit`);
 }
-const situationCatalogPage = fs.readFileSync(path.join(root, "situacions-aprenentatge/index.html"), "utf8");
-assert.match(situationCatalogPage, /x-data="\{[\s\S]*?matches\(item\)/, "els filtres es defineixen declarativament en Alpine");
-assert.match(situationCatalogPage, /x-effect="sync\(\)"/, "els filtres mantenen l'estat en la URL amb Alpine");
+assert.match(situationCatalogPage, /data-situations-catalog/, "el catàleg d'SDAs declara el contenidor filtrable");
+assert.match(situationCatalogPage, /data-filter="robot"[\s\S]*?data-filter="cicle"[\s\S]*?data-filter="tematica"[\s\S]*?data-filter="materia"/, "els quatre filtres es renderitzen amb atributs de dades semàntics");
 assert.doesNotMatch(situationCatalogPage, /filters\.js/, "el catàleg no carrega un controlador de filtres separat");
-for (const file of ["pensament-computacional/index.html", "robotica-educativa/index.html", "situacions-aprenentatge/index.html", "_templates/content-detail-page.html", "_templates/situation-page.html"]) {
-  const markup = fs.readFileSync(path.join(root, file), "utf8");
-  for (const [, expression] of markup.matchAll(/x-data="([\s\S]*?)"/g)) {
-    assert.doesNotThrow(() => new Function(`return (${expression})`), `${file} té una expressió x-data vàlida`);
-  }
-}
 const robotMarkdown = fs.readFileSync(path.join(root, "_content/robots/robot-spike.md"), "utf8");
 const robotRecord = renderer.parse(robotMarkdown, "https://example.test/_content/robots/robot-spike.md");
 assert.equal(robotRecord.data.specs.length, 5, "les especificacions de robot es llegeixen del front matter");
 assert.equal(robotRecord.data.official_resources.length, 2, "els recursos oficials de robot es llegeixen del front matter");
 const sharedPage = fs.readFileSync(path.join(root, "situacio/index.html"), "utf8");
-const pageTemplate = fs.readFileSync(path.join(root, "_templates/situation-page.html"), "utf8");
-const componentSource = fs.readFileSync(path.join(root, "_js/components.js"), "utf8");
+const uiSource = fs.readFileSync(path.join(root, "_js/ui.js"), "utf8");
+const buildSource = fs.readFileSync(path.join(root, "_scripts/build.js"), "utf8");
 const styles = fs.readFileSync(path.join(root, "_css/styles.css"), "utf8");
-assert.match(sharedPage, /<situation-page root="\.\.\/">/, "hi ha una única pàgina de detall compartida");
-for (const templateId of ["situation-page-template", "situation-page-loading-template", "situation-page-error-template"]) {
-  assert.match(pageTemplate, new RegExp(`id="${templateId}"`), `falta la plantilla ${templateId}`);
-}
-assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statSync(path.join(root, "situacio", name)).isDirectory()).length, 0, "no hi ha shells HTML individuals");
-assert.match(componentSource, /new URLSearchParams\(window\.location\.search\)/, "la pàgina tria el Markdown a partir de l'ID de la URL");
-assert.doesNotMatch(componentSource, /x-target\./, "la navegació compartida no depén d'Alpine AJAX");
+assert.match(sharedPage, /data-legacy-redirect=/, "situacio/index.html redirigeix els enllaços antics ?id=slug");
+assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statSync(path.join(root, "situacio", name)).isDirectory()).length, activeFiles.length, "totes les SDAs actives tenen la seua pàgina pre-renderitzada");
+assert.match(uiSource, /new URLSearchParams\(window\.location\.search\)/, "el controlador gestiona els paràmetres de cerca de la URL");
+assert.doesNotMatch(uiSource, /x-target\./, "la navegació no depén d'Alpine AJAX");
 assert.match(styles, /@view-transition\s*\{\s*navigation:\s*auto;\s*\}/, "el full d'estils activa View Transitions entre pàgines");
-assert.doesNotMatch(componentSource, /addEventListener\('popstate'/, "l'historial no es manté amb un router manual");
-assert.doesNotMatch(componentSource, /class (?:ActivityGrid|SituationGrid|TutorialGrid|RobotGrid|SituationFilters|RobotHero|AccentDashes)/, "els catàlegs i les peces de presentació ja no tenen renderitzadors JavaScript propis");
-assert.match(pageTemplate, /x-data=/, "les plantilles de detall usen estat declaratiu d'Alpine");
-assert.match(componentSource, /loadFromLocation\(\)/, "el component carrega Markdown segons la URL actual");
-assert.match(componentSource, /heading\.focus\(\{ preventScroll: true \}\)/, "el canvi de contingut mou el focus al títol");
-assert.match(pageTemplate, /x-on:situation-ready/, "la plantilla SDA rep les dades amb Alpine");
-assert.doesNotMatch(componentSource, /initializeLearningWizard/, "el wizard no necessita un controlador JavaScript propi");
-assert.match(pilot.html, /:aria-valuetext=/, "el progrés del wizard té una descripció accessible");
-assert.match(pilot.html, /class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;<\/span><span x-text="item\.title"/, "el selector separa visualment número i títol amb espais no separables");
+assert.doesNotMatch(uiSource, /addEventListener\('popstate'/, "l'historial no es manté amb un router manual");
+assert.match(uiSource, /data-learning-wizard/, "el controlador inicialitza el wizard de passos");
+assert.match(uiSource, /focus\(\{ preventScroll: true \}\)/, "la navegació conserva la gestió accessible del focus");
+assert.match(pilot.html, /aria-valuetext="Pas 1 de 6"/, "el progrés del wizard té una descripció accessible");
+assert.match(pilot.html, /class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;<\/span><span>/, "el selector separa visualment número i títol amb espais no separables");
 assert.match(styles, /\.learning-wizard-step\s*\{[^}]*column-gap:/, "el selector del wizard separa el número del títol amb espai explícit");
 assert.match(styles, /\.learning-wizard-step\s*\{[^}]*grid-template-columns: 1\.8rem minmax\(0, 1fr\);[^}]*column-gap: \.8rem/s, "el selector reserva un espai fix i visible entre el número i el títol");
 assert.match(styles, /\.learning-wizard-step-title\s*\{[^}]*grid-template-columns: auto minmax\(0, 1fr\)/s, "el separador del títol no pot quedar enganxat al número encara que el títol ocupe dues línies");
@@ -1352,7 +1337,7 @@ assert.equal(activeSituations.length, activeFiles.length, "el format comú es co
 for (const robot of equippedRobots) {
   assert.ok(situationCountByRobot[robot] >= 5, `${robot}: la dotació té almenys cinc SDAs pròpies actives`);
 }
-assert.ok(componentSource.includes('contentHasChallenge = /<h2\\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html)'), "el repte no es duplica si ja té una secció pròpia");
+assert.ok(buildSource.includes('contentHasChallenge = /<h2\\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html)'), "el repte no es duplica si ja té una secció pròpia");
 assert.match(styles, /\.learning-step\[hidden\]/, "els passos no actius es retiren de la lectura visual");
 
 const artistNet = fs.readFileSync(path.join(root, "_content/situacions/cs-artist-net-paraules.md"), "utf8");

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Senyalització inclusiva en una maqueta | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Investiguem com comunicar estats diferents en una maqueta de pas urbà amb micro:bit, sense presentar el prototip com un dispositiu de seguretat real.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-ciutat-accessible" class="btn-back" data-preserve-filters="ciutat-accessible">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/microbit.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Micro:bit</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Tecnologia, Coneixement del Medi i Disseny</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 6 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Senyalització inclusiva en una maqueta</h1>
+        <span class="tag-badge" data-theme>🏷️ Accessibilitat i disseny urbà</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-ciutat-accessible-v2.png" alt="Placa micro:bit de la dotació al costat d’un pas de vianants de cartó, paviment tàctil representat i targetes de dos estats per a una maqueta escolar." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA pròpia basada en la placa micro:bit de la dotació. La maqueta representa estats per estudiar comunicació i accessibilitat; no controla ni valida un pas real.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-context-i-aprenentatges">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Els equips estudien un recorregut pròxim al centre a partir de fotografies autoritzades, mapes o observació des d’un lloc segur amb permís escolar. Identifiquen elements que ajuden a orientar-se i possibles barreres físiques o d’informació, sense atribuir necessitats a persones que no han participat. Després creen una maqueta de pas urbà i programen una micro:bit perquè represente dos estats acordats amb icones de la matriu LED. Si la placa i els accessoris ho permeten, afegeixen so com a canal complementari.</p></div></aside>
+<p>El projecte no instal·la un semàfor, no guia persones al carrer i no afirma resoldre necessitats de mobilitat o visió. Una micro:bit sola no és un senyal homologat, no detecta si el pas està lliure i no pot garantir que siga segur travessar. La finalitat és practicar disseny inclusiu, programació d’entrades i eixides, i avaluació de prototips a escala.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<p>observar sense inferir experiències alienes, definir un repte, programar estats amb esdeveniments, comparar formes d’informació, construir una maqueta llegible, provar-la amb observadors voluntaris i comunicar límits d’un prototip.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-compatibilitat">🧰 Materials i preparació</h2>
+<p>Prepareu micro:bit de la dotació, portapiles o USB, MakeCode, cartró i paper per a la maqueta, pictogrames, material tàctil de manualitats, targetes de prova i full de registre. Identifiqueu si cada placa és V1 o V2 abans de programar so. La matriu 5×5 i els botons funcionen com a sortida i entrada bàsiques; la placa V2 incorpora altaveu.</p>
+<p>La V1 necessita una eixida d’àudio compatible, com un altaveu o auriculars connectats correctament als pins, i qualsevol cablejat s’ha de preparar i supervisar per una persona adulta.</p>
+<p>Si no sabeu quina versió teniu, dissenyeu primer una resposta visual i useu targetes o un senyal oral separat per comparar canals; no carregueu blocs exclusius de V2 en una placa V1. La guia de MakeCode indica que aquests blocs poden mostrar un error 927 en hardware V1. No cal afegir accessoris per completar el nucli de l’activitat.</p>
+<aside class="markdown-note markdown-note-vocabulary"><span class="markdown-note-icon" aria-hidden="true">💬</span><div><h4>Vocabulari</h4><p>entrada, estat, esdeveniment, pictograma, contrast, canal visual, canal sonor, prototip, accessibilitat, observació i validació. «Més d’un canal» no significa que tots els canals siguen adequats per a totes les persones; es tracta d’oferir alternatives i demanar retorn amb respecte.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-sis-sessions-de-45-minuts">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 6 · Observem el recorregut i fem preguntes (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1" aria-valuetext="Pas 1 de 6">
+        <span data-wizard-bar style="width: 16.67%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Observem el recorregut i fem preguntes (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Observem el recorregut i fem preguntes (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Definim els dos estats del model (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Definim els dos estats del model (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Programem i provem la micro:bit (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Programem i provem la micro:bit (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Construïm el prototip a escala (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Construïm el prototip a escala (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: Fem proves d’ús sense simular discapacitats (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Fem proves d’ús sense simular discapacitats (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="5" aria-label="Obrir pas 6: Presentem el disseny i la seua frontera d’ús (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">6</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Presentem el disseny i la seua frontera d’ús (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="observem-el-recorregut-i-fem-preguntes-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Observem el recorregut i fem preguntes (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Useu un mapa de l’entorn escolar o fotografies que no mostren cares, matrícules, rutes de casa ni informació identificable. Predigueu quina informació es pot observar directament i quina exigiria consultar persones usuàries i el context.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Si l’escola autoritza l’observació exterior, feu-la des d’un recorregut segur, amb supervisió i sense interrompre cap vianant. Registreu només elements visibles: pas, vorera, desnivell, senyal, semàfor existent o informació llegible. També podeu treballar amb el mapa o fotografies autoritzades.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Separeu fets de preguntes: «hi ha una vorada» és una observació; «impedeix passar a qualsevol persona amb cadira de rodes» requeriria consultar persones usuàries i context. Formuleu preguntes abordables a escala, com «com indiquem en una maqueta que l’estat ha canviat?». Registreu dues preguntes amb llenguatge prudent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu les preguntes per evitar atribuir experiències a persones que no han participat. No simuleu ceguesa, no demaneu a ningú fingir una discapacitat i no assumiu que una persona represente un grup sencer.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Compartiu què heu vist directament i quina informació necessitaríeu d’una persona usuària que vulga participar.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa d’observacions i dues preguntes de disseny. <strong>Pregunta docent:</strong> què hem vist directament i què necessitaríem saber abans de fer una afirmació més àmplia?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="definim-els-dos-estats-del-model-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Definim els dos estats del model (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Descriviu què hauria de comunicar una maqueta quan canvia d’estat. Trieu dos estats ficticis, per exemple «espera» i «simulació de canvi», i predigueu quina entrada —botó A o B— activarà cadascun.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Construïu una maqueta de taula amb carrer, voreres i pas dibuixat. Les textures tàctils són recursos per representar materials, no una guia de dimensions normatives. Afegiu l’etiqueta visible «PROTOTIP ESCOLAR — NO S’UTILITZA AL CARRER». Esbosseu senyals amb més d’una representació: icona LED, targeta física i, només si el model ho admet, un to breu.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Especifiqueu els dos estats, les entrades i els canals triats i justifiqueu-los. Anoteu com sabrà l’observador que és una simulació; eviteu símbols confusos amb un semàfor real o instruccions com «creua ara».</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Compareu els esbossos i reviseu qualsevol canal que no siga necessari o que puga resultar inadequat. El so no és necessàriament accessible en tots els entorns; el silenci o la targeta també són opcions.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu quina acció canvia l’estat i com es comunica el caràcter simulat del prototip.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>maqueta inicial i especificació d’estats, esdeveniments i canals amb justificació. <strong>Pregunta docent:</strong> com pot saber una persona observadora que la mostra és una simulació?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="programem-i-provem-la-micro-bit-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Programem i provem la micro:bit (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Abans de programar, una persona llig els esdeveniments previstos i una altra anticipa quina resposta hauria d’aparéixer en cada estat. Comproveu la versió de la placa abans d’incloure so.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En MakeCode, associeu el botó A a una icona pròpia per a «espera» i el botó B a una altra per a l’estat simulat. Proveu la matriu LED amb la llum real de la sala i reviseu que les icones siguen diferents i simples. Si useu so, comproveu l’eixida: altaveu integrat en V2 o accessori compatible en V1. Manteniu un volum moderat i una opció de silenci; el so no ha de ser l’única diferència entre estats.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una parella llig el codi, una altra prem els botons en l’ordre de prova i una tercera anota resposta esperada i observada. Incloeu almenys quatre proves i registreu també què ocorre després d’un reinici.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu les icones o els esdeveniments si la resposta no és clara. Torneu a provar les entrades i comproveu si la pantalla conserva o esborra el senyal després del reinici.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu quina entrada ha activat cada resposta i què veuria o sentiria algú que encara no coneix el codi.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>programa amb dos esdeveniments, taula de quatre o més proves i una revisió. <strong>Pregunta docent:</strong> quina entrada ha activat la resposta i com ho sabem?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="construim-el-prototip-a-escala-45-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Construïm el prototip a escala (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Reviseu l’especificació dels estats i predigueu si es podrà entendre el model sense que un membre de l’equip l’explique. Identifiqueu quina part és el dispositiu i quina representa el carrer.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Useu cartró reutilitzat per fer el carrer i suports independents per a la placa. Manteniu micro:bit i piles fora de qualsevol zona que puga mullar-se o quedar comprimida. Col·loqueu el prototip a una altura visible per a observadors asseguts i dempeus, si és viable. El paviment tàctil es pot representar amb paper rugós o peces, identificat com a símbol.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Afegiu una llegenda dels símbols i documenteu l’etiquetatge del prototip, el suport de la placa i les alternatives de representació. No feu afirmacions de compliment normatiu a partir d’una maqueta escolar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Comproveu que targetes, icones i estats no es contradiguen. Si useu color, afegiu també una forma o paraula llegible perquè la interpretació no depenga només de distingir colors.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Demaneu a una altra parella que interprete la maqueta sense explicació prèvia i anoteu què ha entés.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>maqueta amb etiqueta de prototip, placa fixa, llegenda i retorn inicial. <strong>Pregunta docent:</strong> es pot entendre el model sense que l’equip l’explique?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="fem-proves-d-us-sense-simular-discapacitats-45-min" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Fem proves d’ús sense simular discapacitats (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Convidem companys o personal del centre a observar voluntàriament el prototip i descriure què entenen. Expliqueu que no se’ls assignarà cap diagnòstic ni se’ls demanarà parlar en nom d’una comunitat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Registreu interpretació dels pictogrames, visibilitat des de dos punts i si el so resulta molest. Si participa una persona amb experiència d’accessibilitat, acordeu abans què vol revisar i respecteu el dret a no donar consell. Registreu comentaris d’eixes persones concretes, no com a prova universal.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Descriviu literalment què ha dit cada observador i separeu-ho de les conclusions de l’equip. Identifiqueu què no es pot generalitzar a partir d’aquesta prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu un element a partir del retorn: mida de la icona, contrast, seqüència, etiqueta o canal opcional. Si apareix una preocupació de seguretat real, comuniqueu-la al personal responsable del centre perquè use els canals establits; no intenteu resoldre-la amb el prototip.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Compareu el prototip inicial i el revisat i indiqueu quina limitació continua oberta.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>comentaris anònims, canvi documentat i limitació identificada. <strong>Pregunta docent:</strong> què ha dit cada observador i què no podem generalitzar?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="presentem-el-disseny-i-la-seua-frontera-d-us-45-min" data-step="6" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 6</span><h3>Presentem el disseny i la seua frontera d’ús (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Prepareu una exposició amb maqueta, diagrama de blocs, prova d’entrades i canvis fets després del retorn. Predigueu quines preguntes podria fer el públic sobre l’ús real del prototip.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Demostreu els estats només sobre la maqueta i amb l’etiqueta de prototip a la vista. Incloeu les condicions d’ús: escala escolar, no connectat a infraestructures, no instal·lable al carrer, no certifica accessibilitat i no determina que siga segur travessar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Expliqueu quin problema de programació s’ha resolt i què queda fora de l’abast. Registreu en un cartell quines validacions requeriria una solució real: disseny professional, consulta de les persones afectades, revisió normativa i autorització de l’administració responsable.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Useu les preguntes del públic per aclarir el diagrama o la descripció dels límits. No cal que l’alumnat proveïsca les validacions professionals per acabar la situació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Presenteu la versió final i expliqueu quines decisions reals no es poden prendre amb aquesta placa.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>presentació, codi, registre de proves i llista de validacions fora de l’abast escolar. <strong>Pregunta docent:</strong> quin problema de programació hem resolt i quines decisions reals continuen fora del model?</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="avaluacio-i-evidencies">🧪 Evidències i avaluació</h2>
+<p>Recolliu mapa d’observació, definició d’estats, programa, registre de proves i presentació de límits. Observeu si l’alumnat:</p>
+<ul><li>separa observacions pròpies d’inferències sobre les necessitats d’altres persones;</li><li>programa entrades i sortides identificables per als dos estats del prototip;</li><li>ofereix representacions complementàries i considera la versió concreta de la placa;</li><li>usa comentaris voluntaris per revisar el disseny sense generalitzar-los;</li><li>explica clarament per què la maqueta no és un dispositiu de seguretat real.</li></ul>
+<p>No s’avalua si el prototip resol necessitats d’una persona amb discapacitat ni si seria apte per a l’espai públic. S’avaluen el procés de disseny, la programació i la qualitat de la reflexió crítica.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>La participació de persones usuàries és voluntària i no es grava ni se n’arrepleguen dades personals. No feu jocs de rol de discapacitat. Oferiu instruccions anticipades, icones amb bon contrast, formats tàctils de maqueta i alternatives a l’àudio. Es pot contribuir amb cartografia, programació, construcció, observació o presentació. Qualsevol recorregut exterior necessita permís del centre i supervisió; la maqueta no s’instal·la ni es prova en un pas real.</p>
+<p>La placa i els cables es mantenen fora de l’aigua i de les zones de pas.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referencies-tecniques-i-adaptacio-propia">🔗 Referents i adaptació</h2>
+<p>La pantalla 5×5 i els esdeveniments dels botons són funcions programables de micro:bit. La <a href="https://makecode.microbit.org/device/v2" target="_blank" rel="noopener noreferrer">referència MakeCode sobre micro:bit V2</a> especifica quins blocs són exclusius d’aquesta versió i l’error 927 en hardware V1. La <a href="https://www.microbit.org/accessibility/visual-impairment/" target="_blank" rel="noopener noreferrer">guia oficial micro:bit sobre accessibilitat visual</a> descriu opcions d’eixida de so segons versió i accessori. El repte, la maqueta, els estats, les proves i els materials són propis; abans d’usar àudio, comproveu sempre la placa disponible.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

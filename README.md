@@ -1,26 +1,28 @@
 # 🤖 Robòtica²⁰⁰ — Robòtica per a docents
 
-Portal educatiu obert de robòtica educativa, pensament computacional i situacions d'aprenentatge curriculars per a mestres i professors d'Infantil, Primària i Secundària.
+Portal educatiu obert de robòtica educativa, pensament computacional i situacions d'aprenentatge curriculars per a mestres i docents d'Educació Infantil i Primària.
 
 ---
 
-## Arquitectura estàtica amb Alpine i Web Components
+## 🏗️ Arquitectura estàtica pre-renderitzada (Build-step en Node.js)
 
-La web és estàtica i està construïda amb **HTML5, CSS modern, Alpine.js i Web Components natius**. Les plantilles HTML defineixen la presentació amb directives Alpine; els Web Components es reserven als elements d'estructura reutilitzables. Les fitxes editorials es carreguen des de Markdown en temps d’execució, sense compilar ni generar HTML. Es poden servir localment amb qualsevol servidor estàtic o publicar directament a GitHub Pages. Alpine es carrega des de CDN; el renderitzador, els continguts i les imatges són locals.
+El lloc web manté la definició editorial íntegrament en fitxers **Markdown** (`_content/`) i genera totes les pàgines **HTML5 estàtiques** en un pas de compilació propi (`node _scripts/build.js`) sense cap dependència externa de `npm`.
 
-- **Sense pas de compilació:** No requereix Node, npm ni dependències Python per mostrar o publicar les pàgines. En local, és preferible servir la carpeta amb `python3 -m http.server` perquè les rutes relatives funcionen de la mateixa manera que al web.
-- **Interfície declarativa i navegació nativa:**
-  - Els catàlegs i els filtres es defineixen en HTML amb `x-data`, `x-for`, `x-model` i `x-show`; les fitxes Markdown omplin les plantilles separades d'`_templates/` amb bindings Alpine.
-  - La navegació entre pàgines utilitza enllaços estàndard i transicions natives de navegador (`@view-transition { navigation: auto; }`), garantint la càrrega completa de dades de catàleg i l'historial natiu.
-- **Web Components estructurals (`_js/components.js`):**
-  - **Elements d'estructura:** `<site-header>`, `<site-footer>`, `<nav-back>`.
-  - **Plantilla de detall compartida:** `<content-detail-page kind="activity|tutorial|robot|guide">` llig `?id=slug` i carrega el Markdown corresponent. El layout editable és a `_templates/content-detail-page.html`.
-  - **Situacions d’aprenentatge:** `<situation-page root="../">` llig `?id=slug`; el layout amb passos i estat de càrrega és a `_templates/situation-page.html`.
-- **Catàleg derivat del front matter:** Per afegir una activitat, tutorial o situació, crea un Markdown seguint [`_content/activitats/TEMPLATE-ACTIVITAT.md`](_content/activitats/TEMPLATE-ACTIVITAT.md), [`_content/tutorials/TEMPLATE-TUTORIAL.md`](_content/tutorials/TEMPLATE-TUTORIAL.md) o [`_content/situacions/TEMPLATE-SITUACIO.md`](_content/situacions/TEMPLATE-SITUACIO.md). Després executa `python3 _scripts/sync-catalog.py` (també s'executa automàticament al `pre-commit` i a GitHub Actions) perquè el catàleg actualitze l'índex i l'ordre (`order`) definit al front matter.
-- **Validació estàtica:** `python3 _scripts/check-static-site.py` comprova les referències locals, l'estructura de les fitxes de situacions i el mínim de cinc situacions per robot. GitHub Actions també verifica el renderitzador Markdown i la sintaxi del JavaScript abans de publicar.
-- **Cobertura de situacions oficials:** [`docs/ADAPTACIO-SITUACIONS.md`](docs/ADAPTACIO-SITUACIONS.md) relaciona les fonts oficials amb les fitxes pròpies i registra el progrés d’auditoria. SPIKE Prime té identificades 36 lliçons de les unitats temàtiques (inclosa la missió guiada 2026–27), cinc *Activity Briefs*, cinc lliçons suplementàries, l’activitat híbrida *Design for You* i dos reptes *Prime Combined*. La identificació i l’associació de fitxes no es consideren adaptació integral fins que es complete la revisió de cada seqüència.
-- **Contingut editorial:** Activitats, tutorials, robots, guies i les 105 situacions d’aprenentatge tenen Markdown com a font única. Les pàgines compartides (`activitat/index.html?id=slug`, `tutorial/index.html?id=slug`, `robot/index.html?id=slug`, `guia/index.html?id=slug` i `situacio/index.html?id=slug`) carreguen el document triat. Les metadades alimenten també els catàlegs i els filtres.
-- **Light DOM:** Els components utilitzen el DOM estàndard, de manera que [`_css/styles.css`](_css/styles.css) aplica estils de forma global i coherent a tot el lloc web sense necessitat d'encapsulació aïllada.
+- **Zero fetch ni parseig Markdown al client:** El navegador rep directament l'HTML complet de cada pàgina amb temps de càrrega immediat (LCP òptim), indexació directa i URLs netes per a cada recurs (`/activitat/<slug>/`, `/robot/<slug>/`, `/tutorial/<slug>/`, `/situacio/<slug>/`, `/guia/<slug>/`).
+- **Plantilles modulars per components (`_templates/`):** Dissenyades com a funcions JavaScript pures (Template Literals) organitzades en 3 capes:
+  1. **Layout (`_templates/layout/`):** Estructura global de pàgina (`document.js`, `site-header.js`, `site-footer.js`, `nav-back.js`, `utils.js`).
+  2. **Components (`_templates/components/`):** Peces visuals reutilitzables (`section-hero.js`, `badge-list.js`, `learning-wizard.js`, `markdown-note.js`, `code-panel.js`, `activity-card.js`, `robot-card.js`, `tutorial-card.js`, `situation-card.js`).
+  3. **Pàgines (`_templates/pages/`):** Ensamblatge de cada tipus de vista (`home-page.js`, `activities-catalog-page.js`, `robots-catalog-page.js`, `situations-catalog-page.js`, `detail-page.js`, `robot-page.js`, `situation-page.js`, `redirect-page.js`).
+- **Micro-interactivitat al client (`_js/ui.js`):** Un únic controlador lleuger en Vanilla JS (~215 línies, 0 dependències externes, sense Alpine.js ni Web Components) gestiona:
+  - El pas a pas interactiu dels wizards (`.learning-wizard`).
+  - El filtratge instantani del catàleg de situacions d'aprenentatge i la sincronització amb la URL (`?robot=...&cicle=...`).
+  - Les micro-animacions del robot a la portada (`index.html`).
+  - La redirecció automàtica d'URLs antigues (`?id=slug` → `./<slug>/index.html`).
+- **Flux d'edició de continguts i desenvolupament en local:**
+  1. Executa `node _scripts/dev.js` per iniciar el servidor local (`http://localhost:8000`) amb **recompilació automàtica** i **Live Reload** al navegador.
+  2. Crea o edita un fitxer Markdown a `_content/` o qualsevol plantilla a `_templates/`, `_css/` o `_js/`: el servidor recompilarà i actualitzarà la pàgina oberta al navegador automàticament.
+  3. Per compilar manualment sense servidor, executa `node _scripts/build.js`.
+  4. Valida el lloc amb `python3 _scripts/check-static-site.py` i `node _scripts/test-markdown-renderer.js`.
 
 ---
 
@@ -28,20 +30,18 @@ La web és estàtica i està construïda amb **HTML5, CSS modern, Alpine.js i We
 
 Els 6 robots oficials del projecte i els seus identificadors únics (slugs) normalitzats a tot el repositori:
 
-| Robot | Slug Oficial | Prefix Tutorials | Carpeta Fitxa | Carpetes de Tutorials |
+| Robot | Slug Oficial | Prefix Tutorials | Ruta Fitxa | Rutes de Tutorials |
 | :--- | :--- | :--- | :--- | :--- |
-| **Coding Express** | `coding-express` | `ce-` | `robot/index.html?id=coding-express` | `tutorial/ce-*/` |
-| **Tale-Bot** | `tale-bot` | `tb-` | `robot/index.html?id=tale-bot` | `tutorial/tb-*/` |
-| **Coding Set** | `coding-set` | `cs-` | `robot/index.html?id=coding-set` | `tutorial/cs-*/` |
-| **Codey Rocky** | `codey-rocky` | `cr-` | `robot/index.html?id=codey-rocky` | `tutorial/cr-*/` |
-| **Spike** | `spike` | `sp-` | `robot/index.html?id=spike` | `tutorial/sp-*/` |
-| **Micro:bit** | `microbit` | `mb-` | `robot/index.html?id=microbit` | `tutorial/mb-*/` |
+| **Coding Express** | `coding-express` | `ce-` | `robot/coding-express/index.html` | `tutorial/ce-*/index.html` |
+| **Tale-Bot** | `tale-bot` | `tb-` | `robot/tale-bot/index.html` | `tutorial/tb-*/index.html` |
+| **Coding Set** | `coding-set` | `cs-` | `robot/coding-set/index.html` | `tutorial/cs-*/index.html` |
+| **Codey Rocky** | `codey-rocky` | `cr-` | `robot/codey-rocky/index.html` | `tutorial/cr-*/index.html` |
+| **Spike** | `spike` | `sp-` | `robot/spike/index.html` | `tutorial/sp-*/index.html` |
+| **Micro:bit** | `microbit` | `mb-` | `robot/microbit/index.html` | `tutorial/mb-*/index.html` |
 
 ---
 
-## 📂 Estructura de Carpetes i rutes compartides
-
-El repositori s'organitza en directoris amb `index.html` per oferir rutes i URLs netes, separant les carpetes navegables dels recursos tècnics (marcats amb prefix `_`):
+## 📂 Estructura de Carpetes
 
 ```
 robotica200/
@@ -52,40 +52,39 @@ robotica200/
 │   └── index.html                       # Catàleg dels 6 robots d'aula (/robotica-educativa/)
 ├── situacions-aprenentatge/
 │   └── index.html                       # Catàleg curricular filtrable (/situacions-aprenentatge/)
-├── activitat/
-│   └── index.html                       # Detall compartit (?id=slug)
-├── robot/
-│   └── index.html                       # Detall compartit (?id=slug)
-├── tutorial/
-│   └── index.html                       # Detall compartit (?id=slug)
-├── situacio/
-│   └── index.html                      # Pàgina compartida de detall (?id=slug)
-├── guia/
-│   └── index.html                       # Detall compartit (?id=slug)
+├── activitat/<slug>/index.html          # Pàgines pre-renderitzades de les 10 activitats
+├── robot/<slug>/index.html              # Pàgines pre-renderitzades dels 6 robots
+├── tutorial/<slug>/index.html           # Pàgines pre-renderitzades dels 36 tutorials
+├── situacio/<slug>/index.html           # Pàgines pre-renderitzades de les 124 situacions
+├── guia/<slug>/index.html               # Pàgines pre-renderitzades de les 4 guies docents
 ├── _content/
-│   ├── activitats/                      # 10 activitats en Markdown
-│   ├── tutorials/                       # 36 tutorials en Markdown
-│   ├── robots/                          # 6 fitxes de robot en Markdown
-│   ├── pages/                           # 3 guies docents en Markdown
-│   └── situacions/                      # 105 situacions d'aprenentatge
+│   ├── activitats/                      # 10 activitats en Markdown (font editorial)
+│   ├── tutorials/                       # 36 tutorials en Markdown (font editorial)
+│   ├── robots/                          # 6 fitxes de robot en Markdown (font editorial)
+│   ├── pages/                           # 4 guies docents en Markdown (font editorial)
+│   └── situacions/                      # 124 situacions d'aprenentatge actives en Markdown
+├── _templates/
+│   ├── layout/                          # Capa 1: Document, SiteHeader, SiteFooter, NavBack, utils
+│   ├── components/                      # Capa 2: SectionHero, LearningWizard, Notes, CodePanel, Cards
+│   └── pages/                           # Capa 3: Plantilles de pàgines de catàleg i detall
 ├── _css/
 │   └── styles.css                       # Full d'estils unificat (Sora + Plus Jakarta Sans)
-├── _templates/
-│   ├── content-detail-page.html         # Layout compartit de contingut i estats
-│   └── situation-page.html              # Layout de situació, càrrega i error
 ├── _js/
-│   ├── components.js                    # Comportament dels Web Components
-│   └── markdown.js                      # Renderitzador client dels continguts Markdown
+│   └── ui.js                            # Controlador lleuger Vanilla JS (wizards, filtres, animació)
 ├── _scripts/
-│   ├── sync-catalog.py                  # Sincronitza metadades a _js/cataleg.js
-│   └── check-static-site.py             # Validació de referències i estructura
+│   ├── build.js                         # Generador estàtic principal (Node.js, 0 dependències)
+│   ├── dev.js                           # Servidor de desenvolupament amb watch + Live Reload SSE
+│   ├── lib/markdown.js                  # Compilador Markdown → HTML de build-time
+│   ├── check-static-site.py             # Validació d'enllaços, imatges i cobertura estàtica
+│   ├── test-markdown-renderer.js        # Suite de tests del compilador i estructura editorial
+│   └── test-tutorial-format.js          # Validació de format canònic dels 36 tutorials
 ├── docs/
 │   └── ADAPTACIO-SITUACIONS.md          # Registre de fonts i cobertura d'adaptacions
 └── _assets/
     ├── banners/                         # Banners il·lustrats lineless (format 4:3)
-    ├── icons/                           # Icones PNG transparents (512×512) i logotip SVG
-    ├── imatges/                         # Il·lustracions i fotografies d'aula en WebP
-    └── robots/                          # Imatges oficials lineless dels 6 robots d'aula
+    ├── icons/                           # Icones PNG/SVG transparents i logotip SVG
+    ├── imatges/                         # Il·lustracions d'aula i diagrames
+    └── robots/                          # Imatges oficials lineless dels 6 robots i fons SVG
 ```
 
 ---

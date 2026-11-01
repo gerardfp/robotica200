@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Contes de ruta pel marjal | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Creem un relat per escenes i programem MatataBot perquè recórrega una maqueta de l’Albufera amb ordres tangibles que una altra parella puga interpretar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-cs-contes-marjal" class="btn-back" data-preserve-filters="cs-contes-marjal">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Primer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Llengua, expressió i pensament computacional</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 4 sessions de 45 minuts</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Contes de ruta pel marjal</h1>
+        <span class="tag-badge" data-theme>🏷️ Relats de l’Albufera</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-historia-marjal-v1.png" alt="MatataBot i la torre reals del Coding Set recorren una maqueta de l’Albufera amb escenes de paper, camins i targetes de relat." width="600" height="448" loading="lazy"><figcaption>La maqueta, les escenes i les targetes són materials narratius propis. MatataBot no reconeix els paisatges ni interpreta la història: només executa les ordres programades.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Una classe crea un conte col·lectiu sobre un viatge imaginari pel marjal: MatataBot ix d’un embarcador de maqueta, passa per un observatori, una séquia i un ullal, i arriba a una barraca de paper. Cada parada aporta una escena que l’alumnat descriu amb una frase, un so vocal o una targeta de vocabulari. Després, un altre equip rep el mapa i el programa, però no el relat; ha d’executar la ruta i reconstruir la història a partir de les escenes on arriba.</p></div></aside>
+<p>La proposta adapta <em>MatataBot’s Adventure</em>, activitat oficial de Matatalab Lite. El pla oficial presenta el mode de control, les ordres de moviment i la música, demana crear en grup una història d’exploració, decorar-ne l’escena i representar-la controlant el robot, i tanca amb una presentació i preguntes de reflexió. Ací el context del bosc es transforma en un paisatge local de maqueta i el control del producte Lite es tradueix a una seqüència tangible del Coding Set.</p>
+<p>Aquesta equivalència és una adaptació didàctica: el tauler del Coding Set no és el comandament de control de Matatalab Lite. La decoració es col·loca en l’escena, mai damunt del robot ni de la torre.</p>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>quina informació necessita un altre equip per a executar la ruta i contar una història coherent sense conéixer la nostra intenció?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Descompondre un relat en escenes ordenades i associar cada escena a una parada concreta del mapa.</li><li>Transformar una ruta dibuixada en una seqüència de moviments i girs del Coding Set.</li><li>Predir el recorregut a partir dels blocs, provar-lo i corregir la primera divergència observable.</li><li>Explicar una història oralment, amb pictogrames, gestos o frases breus, i interpretar la d’un altre equip a partir d’evidències.</li><li>Diferenciar les accions humanes de les funcions del robot: l’alumnat crea, narra i interpreta; MatataBot no veu ni comprén les escenes.</li></ul>
+<aside class="markdown-note markdown-note-vocabulary"><span class="markdown-note-icon" aria-hidden="true">💬</span><div><h4>Paraules clau</h4><p>escena, relat, seqüència, mapa, casella, orientació, programa, predicció, prova, depuració.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul class="markdown-structured-list"><li>Coding Set de la dotació: MatataBot, torre, tauler i blocs de moviment. Comproveu càrrega, connexió i lectura d’una seqüència curta segons el model del centre.</li><li>Graella pròpia de 5 × 5 caselles, amb punt d’inici, orientació marcada i quatre parades separades per camins transitables. Ajusteu la mida de les caselles al pas real del robot i fixeu el paper perquè no llisque.</li><li>Quatre escenes planes de cartó o paper —embarcador, observatori, séquia i ullal—, targetes amb pictogrames i fulls grans per al relat. Les escenes han d’estar al costat de la graella, sense obstruir-la.</li><li>Full de registre amb <strong>escena</strong>, <strong>frase o pictograma</strong>, <strong>ordre de visita</strong>, <strong>seqüència prevista</strong>, <strong>resultat</strong> i <strong>canvi provat</strong>; targetes de fletxes per a planificar abans de col·locar blocs.</li><li class="markdown-list-item markdown-list-item-extension"><span class="markdown-list-label markdown-list-label-extension">Ampliació</span><span class="markdown-list-detail">un instrument senzill per a crear un efecte vocal en directe. No es necessita cap accessori de música, sensor, càmera ni aplicació.</span></li></ul>
+<p>Abans de començar, proveu cada casella i els girs sobre la mateixa superfície de l’activitat. Marqueu la posició i l’orientació inicials; trieu parades que es puguen visitar en més d’un ordre perquè hi haja decisions narratives i de ruta. No poseu peces menudes ni elements solts davant del robot. Si no es pot usar el robot, la mateixa seqüència es pot representar amb una fitxa de paper i una persona que llig les ordres.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Un paisatge es converteix en escenes (45 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Un paisatge es converteix en escenes (45 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Un paisatge es converteix en escenes (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Escrivim una ruta que es puga llegir (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Escrivim una ruta que es puga llegir (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Representem el conte amb el robot (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Representem el conte amb el robot (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Publica un conte que una altra classe puga jugar (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Publica un conte que una altra classe puga jugar (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-un-paisatge-es-converteix-en-escenes-45-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Un paisatge es converteix en escenes (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Presenteu quatre imatges o pictogrames del marjal sense donar-los encara un ordre. En grups, inventeu una situació inicial i una destinació: per exemple, una barqueta de paper que porta un missatge a l’observatori. Pregunteu quines escenes fan falta perquè el relat s’entenga i com podríem mostrar-les sense escriure un text llarg.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Col·loqueu les quatre escenes al voltant d’una graella plana i deixeu un corredor lliure per a MatataBot. Amb una fitxa de paper, assageu trajectes possibles des de l’embarcador. Identifiqueu caselles, girs i punts on la història podria canviar; distingiu el mapa de la seqüència d’ordres que el robot pot executar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Cada equip tria un ordre de visita i crea una frase, un pictograma o un gest per a cada parada. Anoteu l’escena i la pista narrativa en quatre targetes separades. Una altra persona del grup comprova si les pistes permeten entendre què passa abans i després, sense haver d’endevinar dades que no apareixen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Canvieu de lloc dues escenes i reviseu si el relat continua sent coherent. Si no, reescriviu una pista o canvieu l’ordre narratiu; manteniu el mapa i el programa en blanc fins que la seqüència de la història estiga clara.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>quatre escenes ordenades amb una pista comprensible per a cada una i un mapa amb inici i destinació. <strong>Pregunta:</strong> quina pista ajuda més a entendre la relació entre dues escenes consecutives?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-escrivim-una-ruta-que-es-puga-llegir-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Escrivim una ruta que es puga llegir (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Recupereu el mapa i les targetes narratives. Abans de moure el robot, cada parella assenyala la ruta amb el dit i prediu quants moviments i girs necessitarà. Marqueu on espera arribar després de tres ordres concretes.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Convertiu la ruta en una tira de blocs físics. Llegiu-la en veu alta d’esquerra a dreta i comproveu que cada gir canvia l’orientació sense desplaçar el robot lateralment. Feu una passada de paper: una persona llig cada ordre i l’altra mou una fitxa per la graella. Canvieu de rol i reviseu qualsevol casella amb més d’una interpretació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Registreu la correspondència entre cada tram i l’escena a què porta. Una parella revisora ha de poder seguir el programa sense que l’equip autor li indique amb el dit quin és el camí correcte. Afegiu al full les ordres de moviment, els girs i el text o pictograma que es llegirà en cada parada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu primer una ruta de dues escenes. Si MatataBot no arriba on s’esperava, localitzeu la primera divergència, comproveu orientació i recompte, canvieu una sola ordre i torneu a provar. Després, completeu la seqüència sencera des del mateix punt inicial.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>tira de blocs llegible per una altra parella i registre de predicció/resultat per a cada parada. <strong>Pregunta:</strong> com podem saber si el problema és una ordre mal col·locada o una casella mal representada al mapa?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-representem-el-conte-amb-el-robot-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Representem el conte amb el robot (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Repartiu els rols de programació, narració, observació i registre. Cada equip llig el seu conte mentre una altra persona recorre el mapa amb el dit. Abans de prémer <em>Play</em>, l’equip observador prediu en quina escena arribarà MatataBot després de cada gir.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Carregueu els blocs al tauler, comproveu de nou l’orientació i executeu la ruta a baixa velocitat d’aula i amb l’espai lliure. En cada parada, l’alumnat llig la frase, mostra el pictograma o fa el gest acordat; el robot no activa ni reconeix cap senyal. Si una ordre falla, atureu l’activitat, anoteu la posició observada i reviseu la seqüència abans d’una nova execució.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Registreu la ruta real i contrasteu-la amb la prevista. Graveu només si el centre ja disposa d’un mitjà autoritzat i hi ha consentiment; com a opció ordinària, feu la narració en directe o useu targetes impreses. Les evidències poden ser el mapa anotat i les frases, sense enregistrar veus ni imatges de l’alumnat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Intercanvieu les històries entre equips. La parella visitant rep les escenes i els blocs, però no l’explicació de l’autoria. Primer reconstrueix el relat a partir de l’ordre de parades i les pistes; després executa el programa i comprova si la seqüència arriba a totes les escenes. Qui ha creat el conte pot aclarir les regles, però no revelar la narració final abans de la prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>programa executat, quatre parades registrades i una reconstrucció del relat feta per un altre equip. <strong>Pregunta:</strong> quina informació ha sigut suficient perquè la parella visitant reconstruïra la història?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-publica-un-conte-que-una-altra-classe-puga-jugar-45-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Publica un conte que una altra classe puga jugar (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Cada equip selecciona un conte que es puga completar en una ruta curta. Predigueu quines instruccions necessita una classe que no ha vist la planificació: inici, orientació, ordre de visita, significat de les pistes i condició d’arribada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Prepareu un paquet reutilitzable: mapa amb llegenda, seqüència de blocs dibuixada, targetes d’escena i instruccions breus. Afegiu una alternativa desconnectada en què una persona fa de robot i només pot moure’s quan escolta una ordre vàlida. No poseu adorns damunt del robot ni presenteu les escenes com a sensors o peces del kit.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Una altra parella prova el paquet sense ajuda oral de l’autoria. Registreu quines instruccions ha entés, on s’ha aturat, quines pistes ha interpretat i si ha pogut arribar al final. Si el mapa no és accessible, accepteu que la parella descriga, assenyale o ordene targetes en lloc d’escriure.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Repareu una ambigüitat cada vegada i torneu a provar amb una tercera persona. Manteniu el mateix programa mentre reviseu el text; si modifiqueu blocs, anoteu la nova versió i compareu-ne el recorregut amb la prova anterior.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>conte jugable per un altre equip, registre de la prova externa i una revisió justificada. <strong>Tancament:</strong> «La instrucció que hem fet més clara és…; ho sabem perquè…».</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu el mapa anotat, les quatre escenes i pistes, el programa en blocs, les prediccions abans de cada prova, el registre de divergències i la interpretació de la parella visitant. Observeu si l’alumnat (1) ordena les escenes amb sentit, (2) tradueix la ruta a moviments i girs compatibles amb la graella, (3) comprova el programa i localitza la primera diferència, (4) interpreta les pistes amb evidència i (5) millora instruccions després d’una prova externa. Valoreu la claredat, la revisió i la cooperació;</p>
+<p>no la velocitat ni la capacitat d’improvisar oralment.</p>
+<p>Autoavaluació: «He predit la ruta abans d’executar-la», «he distingit el relat de les ordres del robot» i «he fet una revisió a partir d’una prova». Coavaluació: la parella visitant marca les instruccions que ha pogut seguir i assenyala una escena que necessita una pista més clara.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu targetes grans d’alt contrast, pictogrames amb forma i textura, frases model, suport oral o gestual i una graella ampliada. Permeteu que cada alumne trie entre narrar, programar, moure la fitxa, comprovar el mapa o registrar les proves. L’alternativa desconnectada conserva el mateix repte i no és una activitat de menor valor. Manteniu el robot en una superfície plana, fora de la vora de la taula, i deixeu lliure el recorregut;</p>
+<p>les maquetes no han de tindre peces menudes ni vores que puguen enganxar-se. No calen dades, veus ni imatges personals.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-i-adaptacio">🔗 Referents i adaptació</h2>
+<ul><li>Matatalab, <a href="https://matatalab.com/en/node/89" target="_blank" rel="noopener noreferrer">*MatataBot’s Adventure*</a>: l’activitat oficial introdueix el mode de control de Matatalab Lite, les ordres endavant/enrere/esquerra/dreta i música, proposa que grups creen una història d’exploració, decoren l’escena, representen el relat amb el robot i el presenten. El tancament oficial inclou preguntes sobre el procés creatiu i les dificultats amb el comandament. La proposta conserva la creació narrativa, l’escena, la representació i la presentació; trasllada la temàtica del bosc al marjal i les ordres del mode Lite a una programació tangible del Coding Set. No afirma que el tauler del Coding Set funcione com el comandament de Lite.</li><li>Matatalab, <a href="https://matatalab.com/en/node/88" target="_blank" rel="noopener noreferrer">*Hello Matatalab Robots!*</a>: font complementària per a verificar la connexió MatataBot–torre–tauler i les ordres tangibles d’avanç, retrocés i gir. Les escenes, el conte, el mapa, els registres i les proves entre parelles són materials originals.</li></ul>
+<p>La imatge IA pròpia mostra el MatataBot i la torre basats en la dotació real, amb un paisatge de maqueta de paper. El paisatge no és un mapa real ni una capacitat de percepció del robot.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

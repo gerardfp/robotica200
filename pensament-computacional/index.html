@@ -4,25 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="page-title">Pensament Computacional Desendollat | Robòtica200</title>
-  <meta name="description" content="Activitats desendollades de pensament computacional per a l'aula.">
+  <meta name="description" content="Activitats desendollades de pensament computacional per a l&#39;aula.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../_css/styles.css?v=5">
+  <link rel="stylesheet" href="../_css/styles.css?v=7">
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
-  <script src="../_js/cataleg.js?v=10a126d"></script>
-  <script src="../_js/components.js?v=guide-route-2"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <script defer src="../_js/ui.js?v=1"></script>
 </head>
 <body>
-  <site-header id="site-header" active="pensament" root="../"></site-header>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-badge"><img src="../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../index.html" class="nav-btn">Inici</a>
+        <a href="../pensament-computacional/index.html" class="nav-btn active">Pensament computacional</a>
+        <a href="../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../situacions-aprenentatge/index.html" class="nav-btn">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
   <main id="page-content" class="container page-content page-content-hero">
   <div class="robots-hero">
     <div class="container robots-hero-inner">
-      <nav-back href="../index.html" label="inici"></nav-back>
+      <div class="section-nav-back">
+    <a href="../index.html" class="btn-back">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a inici</span>
+    </a>
+  </div>
       <div class="robots-hero-content">
         <h1 class="robots-hero-title">Pensament Computacional</h1>
-        <p class="robots-hero-desc">Activitats desendollades per treballar instruccions, patrons, decisions i dades amb el cos i materials d'aula.</p>
+        <p class="robots-hero-desc">Activitats desendollades per treballar instruccions, patrons, decisions i dades amb el cos i materials d&#39;aula.</p>
         <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
       </div>
       <div class="robots-hero-media">
@@ -30,21 +49,202 @@
       </div>
     </div>
   </div>
-    <div class="clean-grid" x-data="{ items: window.CATALEG.activitats }">
-      <template x-for="item in items" :key="item.id">
-        <a :id="item.id" :href="'../' + item.url" class="item-card">
-          <div class="card-top">
-            <span class="tag-badge primary" x-text="item.tag"></span>
-            <span class="tag-badge" x-show="item.cicle" x-text="item.cicle"></span>
-          </div>
-          <h3 class="item-title" x-text="item.titol"></h3>
-          <p class="item-desc" x-text="item.descripcio"></p>
-          <div class="item-footer"><span x-text="'⏱️ ' + item.durada"></span><span>Veure activitat →</span></div>
-        </a>
-      </template>
+    <div class="clean-grid" id="activities-grid">
+      <a id="activitat-robot-huma" href="../activitat/robot-huma/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Algorismes i Precisió</span>
+      <span class="tag-badge">Educació Infantil i primer cicle</span>
     </div>
-
+    <h3 class="item-title">El Robot Humà i el Llenguatge Precís</h3>
+    <p class="item-desc">Una persona interpreta el robot sobre una graella, i una altra programa un recorregut amb</p>
+    <div class="item-footer"><span>⏱️ 45 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-pixels-binaris" href="../activitat/pixels-binaris/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Representació de Dades (Binari)</span>
+      <span class="tag-badge">Primer i segon cicle</span>
+    </div>
+    <h3 class="item-title">Dibuix per Píxels i Imatges Binàries</h3>
+    <p class="item-desc">Com &#39;veu&#39; i guarda un ordinador un dibuix? L&#39;alumnat codifica i descodifica imatges senzilles en quadrícules</p>
+    <div class="item-footer"><span>⏱️ 45 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-xarxa-ordenacio" href="../activitat/xarxa-ordenacio/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Algorismes de Comparació i Processament Paral·lel</span>
+      <span class="tag-badge">Segon i tercer cicle</span>
+    </div>
+    <h3 class="item-title">Xarxa d&#39;Ordenació al Terra (Sorting Networks)</h3>
+    <p class="item-desc">Dibuixem una xarxa de línies amb guix al pati. Sis alumnes amb números desordenats avancen per les</p>
+    <div class="item-footer"><span>⏱️ 50 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-laberint-debugging" href="../activitat/laberint-debugging/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Depuració (Debugging) i Seqüenciació</span>
+      <span class="tag-badge">Educació Infantil i primer cicle</span>
+    </div>
+    <h3 class="item-title">El Laberint d&#39;Instruccions i Detecció d&#39;Errors</h3>
+    <p class="item-desc">Sobre una graella gegant al terra amb fitxes de cartolina, els alumnes col·loquen targetes de fletxes</p>
+    <div class="item-footer"><span>⏱️ 40 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-condicionals-moviment" href="../activitat/condicionals-moviment/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Estructures de Control Condicional</span>
+      <span class="tag-badge">Tots els cicles</span>
+    </div>
+    <h3 class="item-title">El joc dels condicionals: si... llavors... si no...</h3>
+    <p class="item-desc">Practiqueu les decisions amb targetes inventades i representeu què passa quan una condició és certa o falsa.</p>
+    <div class="item-footer"><span>⏱️ 35 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-criptografia-cesar" href="../activitat/criptografia-cesar/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Ciberseguretat i Criptografia</span>
+      <span class="tag-badge">Segon i tercer cicle</span>
+    </div>
+    <h3 class="item-title">Missatges Secrets i Xifratge Cèsar</h3>
+    <p class="item-desc">Construcció d&#39;una roda de xifratge de dos cercles concèntrics per comprendre com es protegeix la informació</p>
+    <div class="item-footer"><span>⏱️ 50 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-bucles-coreografia" href="../activitat/bucles-coreografia/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Bucles i Repetició</span>
+      <span class="tag-badge">Primer, segon i tercer cicle</span>
+    </div>
+    <h3 class="item-title">La Coreografia dels Bucles</h3>
+    <p class="item-desc">Repetiu una seqüència de moviments i busqueu la manera més clara d&#39;explicar-la amb poques instruccions.</p>
+    <div class="item-footer"><span>⏱️ 45 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-patrons-simetries" href="../activitat/patrons-simetries/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Patrons i Abstracció</span>
+      <span class="tag-badge">Educació Infantil, primer i segon cicle</span>
+    </div>
+    <h3 class="item-title">Detectius de Patrons i Repeticions</h3>
+    <p class="item-desc">Observeu seqüències de formes i sons, expliqueu la regla i predigueu quin element ve després.</p>
+    <div class="item-footer"><span>⏱️ 40 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-descomposicio-receptes" href="../activitat/descomposicio-receptes/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Descomposició i Algorismes</span>
+      <span class="tag-badge">Primer, segon i tercer cicle</span>
+    </div>
+    <h3 class="item-title">Receptes amb Instruccions de Robot</h3>
+    <p class="item-desc">Descomposeu una tasca quotidiana en instruccions precises i proveu què passa si en canvieu l&#39;ordre.</p>
+    <div class="item-footer"><span>⏱️ 50 min</span><span>Veure activitat →</span></div>
+  </a>
+      <a id="activitat-dades-classificacio" href="../activitat/dades-classificacio/index.html" class="item-card">
+    <div class="card-top">
+      <span class="tag-badge primary">Dades, Classificació i Privadesa</span>
+      <span class="tag-badge">Primer, segon i tercer cicle</span>
+    </div>
+    <h3 class="item-title">El Museu de les Dades</h3>
+    <p class="item-desc">Recolliu dades inventades, trieu com classificar-les i representeu-les amb una regla clara.</p>
+    <div class="item-footer"><span>⏱️ 50 min</span><span>Veure activitat →</span></div>
+  </a>
+    </div>
   </main>
-  <site-footer></site-footer>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

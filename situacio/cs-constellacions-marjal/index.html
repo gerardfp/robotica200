@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Constel·lacions de la marjal amb MatataBot | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Creem una constel·lació artística inspirada en l’Albufera i provem com els blocs de moviment i angle poden convertir un traçat en una ruta programada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-cs-constellacions-marjal" class="btn-back" data-preserve-filters="cs-constellacions-marjal">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Segon cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Matemàtiques, Ciències i Educació Artística</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 3 sessions de 50 minuts</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Constel·lacions de la marjal amb MatataBot</h1>
+        <span class="tag-badge" data-theme>🏷️ La marjal i el cel nocturn</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-constellacions-marjal-v1.png" alt="La torre i el MatataBot reals del Coding Set al costat d’una constel·lació de paper creada per l’alumnat, inspirada en la marjal." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA pròpia basada en el model real del Coding Set. La constel·lació és una representació artística inventada per a l’aula, no un mapa astronòmic ni una funció de reconeixement del robot.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>La classe prepara una mostra de constel·lacions imaginades a partir de formes de la marjal: una boga, una llavor d’arròs, una barca o un ocell. Cada equip tria punts, decideix en quin ordre els connecta i presenta la seua forma com una creació artística. El repte és fer que una altra parella puga seguir el mateix recorregut a partir d’una representació clara.</p></div></aside>
+<p>La proposta adapta la targeta oficial <strong>A-1 · Zodiac Constellations</strong> del paquet <em>Artist Add-on Activity Cards</em>. En la mostra consultada, el fabricant proposa presentar els blocs de nombre i angle, explicar que els blocs d’angle van sota els girs esquerra/dreta, dibuixar una constel·lació amb blocs de moviment, nombre i angle, crear vectors propis en paper gran i decorar-los amb retoladors de colors. La mostra disponible detalla aquesta targeta, però no les altres nou del paquet.</p>
+<p>Ací canviem els signes zodiacals per una constel·lació local inventada i afegim planificació, proves entre parelles i una alternativa completa amb el kit base.</p>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>quina informació necessitem per a reconstruir el recorregut d’una constel·lació i com comprovem si les ordres coincideixen amb el nostre disseny?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Distingir una constel·lació artística creada a classe d’un mapa astronòmic o d’una observació científica.</li><li>Representar punts i vectors en un ordre acordat i comunicar-ne l’orientació.</li><li>Identificar els blocs de moviment, nombre i angle que hi ha realment al kit.</li><li>Provar una ruta amb els blocs disponibles i comparar el resultat amb la predicció.</li><li>Explicar quines parts ha executat MatataBot i quines s’han dibuixat o decorat manualment.</li></ul>
+<p><strong>Vocabulari clau:</strong> punt, vector, recorregut, orientació, moviment, gir, angle, predicció, prova, constel·lació imaginada.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Coding Set: torre de comandament, tauler, MatataBot i blocs de moviment.</li><li>Si el centre disposa de l’Artist Add-On compatible: blocs de nombre i d’angle, suport de llapis i retoladors. Inventarieu les peces abans de preparar el programa; no pressuposeu que l’accessori forma part del kit base.</li><li>Paper gran, llapis, regle, retoladors, targetes amb punts numerats i full de registre amb columnes <strong>punt</strong>, <strong>ordre</strong>, <strong>gir previst</strong>, <strong>prova</strong> i <strong>revisió</strong>.</li><li>Per a la via sense accessori: quadrícula de paper o de 10 × 10 cm si es farà un recorregut físic, fitxes per a marcar els punts i retoladors per a dibuixar la figura a mà.</li></ul>
+<p>Abans de la sessió, carregueu el robot i la torre, comproveu que el tauler llig els blocs disponibles i feu una prova breu en una superfície plana. En el muntatge amb Artist, el manual del complement indica que els blocs d’angle només es col·loquen sota els blocs de gir esquerra/dreta; consulteu les instruccions del model abans de fer la prova.</p>
+<p>Si el centre no té l’accessori, el robot pot recórrer una ruta amb els blocs base, però no dibuixa amb tinta: l’alumnat crea la constel·lació sobre paper.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 3 · Imaginem una constel·lació de la marjal (50 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-valuetext="Pas 1 de 3">
+        <span data-wizard-bar style="width: 33.33%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Imaginem una constel·lació de la marjal (50 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Imaginem una constel·lació de la marjal (50 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Provem els blocs d’angle disponibles (50 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Provem els blocs d’angle disponibles (50 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Creem i presentem vectors propis (50 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Creem i presentem vectors propis (50 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-imaginem-una-constel-lacio-de-la-marjal-50-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Imaginem una constel·lació de la marjal (50 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu una imatge o una il·lustració del paisatge de la marjal i la targeta de constel·lació oficial com a exemple d’una figura formada per punts connectats. Aclariu que l’equip crearà una figura artística pròpia; no identificarà estrelles reals ni afirmarà que les formes representen animals o plantes observats al cel. Pregunteu què fa que un conjunt de punts es puga llegir com una figura.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En equips de tres o quatre, proposeu quatre inspiracions locals —boga, llavor d’arròs, barca i ocell— i deixeu que cada grup en trie una o en propose una altra. Dibuixeu entre cinc i huit punts grans en un full; numereu-los i decidiu un punt d’inici. Encara no connecteu els punts: cada persona prediu quin ordre farà més recognoscible la forma.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Connecteu els punts amb segments rectes en l’ordre triat. Afegiu fletxes per a indicar el sentit del recorregut i una llegenda que identifique inici i final. Registreu la idea inicial amb un nom propi i una frase que diga que és una constel·lació imaginada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Intercanvieu els fulls. La parella visitant ha de reconstruir la seqüència dels punts sense que l’equip autor li explique l’ordre. Si hi ha més d’una lectura possible, afegiu una fletxa, un número o un punt d’inici més visible; no canvieu la figura fins que la instrucció siga comprensible.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>primer disseny amb punts numerats, fletxes i una nota sobre què ha hagut d’aclarir la parella visitant. <strong>Pregunta docent:</strong> una persona que no ha vist el dibuix pot saber on començar i en quin sentit unir els punts?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-provem-els-blocs-d-angle-disponibles-50-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Provem els blocs d’angle disponibles (50 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Recupereu el disseny i localitzeu-ne dos canvis de direcció. Compareu el gir que faria una persona seguint el traçat amb el bloc que podria necessitar el robot. Cada parella marca una predicció sobre el paper abans de tocar les peces.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Inventarieu els blocs de moviment, nombre i angle presents. Si hi ha Artist Add-On, recordeu que el bloc d’angle se situa sota un gir esquerra/dreta i feu una prova curta en paper gran abans de programar tota la figura. Trieu un vèrtex i proveu un únic canvi de direcció. Si falta l’accessori, representeu el gir amb una fletxa en una quadrícula i anoteu que es tracta d’una simulació en paper.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Traduïu una secció del dibuix en una llista ordenada de blocs. En el registre, separeu <strong>gir que volem representar</strong>, <strong>bloc disponible</strong> i <strong>resultat observat</strong>. No deduïu un valor que el kit no mostre ni forceu blocs que no encaixen; si el manual o la versió local no permet confirmar una combinació, deixeu-la com a pregunta per a verificar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Amb l’Artist Add-On compatible, col·loqueu el suport i el llapis segons el manual, programeu només els punts necessaris per a una part de la constel·lació i executeu-la sobre paper subjectat. Compareu el traçat amb la predicció i canvieu una sola instrucció cada vegada. Sense el complement, executeu la ruta sobre una quadrícula amb MatataBot i dibuixeu manualment la línia equivalent al paper; manteniu les dues evidències diferenciades.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>seqüència física o simulada, predicció del gir i registre del resultat. <strong>Pregunta docent:</strong> quina part del programa ha determinat el canvi de direcció i quina part de la figura hem completat manualment?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-creem-i-presentem-vectors-propis-50-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Creem i presentem vectors propis (50 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Cada equip revisa el disseny i tria quins punts pot provar amb el robot segons el kit disponible. Predigueu quina part es podrà executar i quina part requerirà una representació de paper o decoració manual.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Prepareu una versió final en paper gran amb punts, segments, fletxes, nom i llegenda. Si hi ha l’accessori, proveu el traçat del robot per trams, deixant espai entre línies; sense ell, useu el robot per a recórrer els punts de la quadrícula i dibuixeu els segments al paper. Decoreu la constel·lació amb colors o textures després de la prova, de manera que la decoració no tape els punts de pas.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Escriviu una instrucció breu perquè una altra parella puga reproduir la ruta: punt inicial, ordre dels punts, blocs de moviment utilitzats i girs que s’han provat. Marqueu de manera visible qualsevol segment que siga una extensió dibuixada a mà.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Feu una mostra entre equips. La parella visitant segueix la seqüència o la simula amb targetes i anota una observació concreta. L’equip autor revisa una instrucció amb retorn de la parella i torna a provar el tram modificat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Evidència final:</strong> constel·lació local imaginada, targeta d’instruccions, registre d’una prova i una explicació de les funcions que depenien de l’Artist Add-On. Tanqueu amb la frase «La nostra figura és una creació artística perquè…» i «El robot ha pogut comprovar…».</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu l’esbós inicial, la seqüència ordenada, la prova de lectura entre parelles, el registre de girs i la composició final. Observeu si l’alumnat:</p>
+<ul><li>ordena i comunica els punts sense dependre d’explicacions orals de l’equip autor;</li><li>prediu un canvi de direcció i comprova què ha executat el robot;</li><li>identifica si la prova s’ha fet amb l’Artist Add-On, amb el kit base o només sobre paper;</li><li>diferencia la representació artística d’una afirmació d’observació astronòmica.</li></ul>
+<p>No s’avaluen l’habilitat per a dibuixar, la rapidesa del robot ni la coincidència amb una constel·lació zodiacal concreta.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu punts grans en relleu, fletxes tàctils, plantilles d’alt contrast i rols diversos: disseny, ordre de blocs, lectura de la llegenda, registre i presentació. L’alumnat pot participar sense manipular el llapis ni executar el robot. Subjecteu el paper, manteniu mans i retoladors fora del recorregut mentre el robot es mou i superviseu l’ús de tisores si cal retallar la composició.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-i-adaptacio">🔗 Referents i adaptació</h2>
+<ul><li>Matatalab, <a href="https://matatalab.com/cdn/ff/8WH9-onMKYze-IoBs5maVP6sFW3Yq0SrSJWVzSehBjs/1637739616/public/2021-11/Artist%20Add-on%20Activity%20Cards.pdf" target="_blank" rel="noopener noreferrer">Artist Add-on Activity Cards</a>, targeta 1 <em>Zodiac Constellations</em>: presenta blocs de nombre i angle, indica que els blocs d’angle es col·loquen sota girs esquerra/dreta, proposa traçar una constel·lació amb blocs de moviment/angle/nombre i demana crear vectors propis en paper gran i decorar-los amb retoladors. El PDF oficial consultat és una mostra de sis pàgines: conté l’índex del paquet de deu targetes i el desenvolupament complet visible de les targetes 1 i 2; aquesta fitxa adapta només la targeta 1.</li><li>Matatalab, <a href="https://matatalab.com/en/node/64" target="_blank" rel="noopener noreferrer">Artist Add-On</a>: guia tècnica per a comprovar els blocs d’angle i les combinacions disponibles al kit del centre.</li></ul>
+<p>La temàtica, els punts de partida, les constel·lacions de la marjal, les targetes de registre i la seqüència de tres sessions són propis. L’ús del llapis i el dibuix automatitzat només s’afirma quan s’ha comprovat que el centre disposa de l’Artist Add-On compatible.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

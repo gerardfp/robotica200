@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Un repte cooperatiu de futbol de taula | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Com podem programar una ruta de passada perquè la pilota arribe a una zona acordada i tothom puga participar en el repte?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-coding-set-futbol-cooperatiu" class="btn-back" data-preserve-filters="coding-set-futbol-cooperatiu">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Primer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Matemàtiques i Educació Física</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 4 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Un repte cooperatiu de futbol de taula</h1>
+        <span class="tag-badge" data-theme>🏷️ Convivència i ciutadania</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-futbol.webp" alt="El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zones de passada." width="600" height="448" loading="lazy"><figcaption>El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zones de passada.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Practicar seqüenciació, orientació espacial i presa de decisions en un joc cooperatiu amb criteris de participació i seguretat.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Llegir una graella i planificar una ruta de passada fins a una zona acordada.</li><li>Programar, provar i depurar ordres de moviment mantenint una convenció comuna.</li><li>Canviar rols i ajustar la dificultat perquè l’èxit depenga de la cooperació i no de la velocitat individual.</li><li>Comparar una predicció amb el resultat i comunicar una millora del repte.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="abans-de-comencar">🧰 Materials i preparació</h2>
+<p>Dibuixeu una pista de taula amb caselles amples i dues zones de destinació. Useu una pilota lleugera que no bloquege sensors ni pose en risc el robot; si el kit no la pot empényer amb seguretat, feu que el robot la visite i que una persona la moga després.</p>
+<h3 class="detail-subsection-title" id="preparacio-materials-i-llenguatge-de-programacio">🧰 Preparació, materials i llenguatge de programació</h3>
+<aside class="markdown-note markdown-note-materials"><span class="markdown-note-icon" aria-hidden="true">🧰</span><div><h4>Materials</h4><p>Coding Set complet (MatataBot, torre de comandaments i tauler), quadrícula de 16 caselles, cinta de paper, targetes amb obstacles, porteria de cartó, pilota de paper lleugera, llapis i full de registre. El mapa oficial té 16 caselles de 10 × 10 cm; marqueu una quadrícula equivalent si no teniu el tapet específic. El braç/pala és una peça auxiliar de paper lleuger i només s’usa després de provar que no bloqueja el robot ni danya el material.</p></div></aside>
+<p>Si no es pot fixar amb seguretat, el robot acaba la ruta al costat de la pilota i una persona la col·loca en la porteria, registrant l’adaptació.</p>
+<p>Useu un vocabulari compartit: <em>inici</em>, <em>orientació</em>, <em>casella</em>, <em>ordre</em>, <em>obstacle</em>, <em>destinació</em> i <em>depuració</em>. Per a girar, l’alumnat indica primer cap a on mira el robot i després el costat del gir. La seqüència es llig d’esquerra a dreta; cada avanç o retrocés correspon a un pas del robot. No confongueu “girar” amb “avançar una casella”.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-quatre-sessions-de-45-minuts">📅 Seqüència didàctica</h2>
+<p>La proposta amplia el repte oficial de 45 minuts en una investigació de quatre sessions: primer s’aprén a llegir el camp i programar una ruta; després s’alternen els rols de defensa i atac; finalment, cada equip dissenya i comunica una variant pròpia. Si només disposeu d’una sessió, feu la sessió 1 i una ronda curta de la sessió 2.</p>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · Del mapa a la seqüència</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Del mapa a la seqüència" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Del mapa a la seqüència</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Defensa i atac amb rols intercanviables (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Defensa i atac amb rols intercanviables (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Dissenyar un repte equilibrat (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Dissenyar un repte equilibrat (45 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Galeria, explicació i transferència (45 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Galeria, explicació i transferència (45 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-del-mapa-a-la-sequencia" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Del mapa a la seqüència</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>En una graella de 4 × 4 caselles de 10 cm, indiqueu inici, porteria i tres obstacles de cartó. Abans de programar, cada parella anticipa quins girs haurà de fer MatataBot.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>L’adult pensa en veu alta com orientar MatataBot i traduir cada tram en ordres; l’alumnat compara avançar, retrocedir i girar 90°.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Dibuixeu dues rutes possibles amb fletxes, escriviu el programa amb targetes de comanda i compteu ordres i caselles.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu una ruta, marqueu on queda el robot i localitzeu la primera diferència entre predicció i moviment. Corregiu només l’ordre necessària i torneu a provar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu què heu canviat.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa anotat, seqüència inicial/corregida i explicació del primer error.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-defensa-i-atac-amb-rols-intercanviables-45-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Defensa i atac amb rols intercanviables (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Prepareu la mateixa graella i una pilota de paper lleugera amb porteria ampla. Un equip defensor situa tres obstacles sense tapar el robot ni crear passos massa estrets; l’equip atacant observa el camp i prediu una ruta possible.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>L’equip atacant planifica una ruta fins a una casella des d’on una pala ampla de paper puga empényer la pilota suaument cap a la porteria. Dediqueu deu minuts a modelar la regla i preparar la primera ronda.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Jugueu la primera ronda durant deu minuts i registreu si s’ha arribat a la zona de colp, si la pilota ha entrat, quantes ordres s’han usat i quin obstacle ha condicionat la ruta.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Feu una pausa de cinc minuts per intercanviar rols i jugueu una segona ronda de deu minuts. Si la pala no es pot fixar sense bloquejar o danyar el robot, acabeu la ruta al costat de la pilota i que una persona la col·loque, registrant aquesta adaptació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Tanqueu amb cinc minuts de comparació. El punt és col·lectiu: atac i defensa guanyen quan poden justificar una decisió amb el mapa i les dades, no per rapidesa.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>dos registres amb rols intercanviats i una comparació de resultats.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-dissenyar-un-repte-equilibrat-45-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Dissenyar un repte equilibrat (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Cada parella crea un mapa nou amb quatre obstacles i una condició clara per a l’equip contrari. Predigueu quines rutes poden ser vàlides abans d’intercanviar els mapes.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Una altra parella comprova si la porteria és accessible, si hi ha almenys una ruta vàlida i si totes les instruccions caben en el mapa. Si no hi ha solució, reduïu un obstacle o canvieu-ne la posició.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Intercanvieu mapes, proveu la ruta amb el robot i compteu ordres. Anoteu la ruta provada, els girs i si s’ha arribat a la destinació.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu els obstacles i ajusteu el mapa després de la prova. Com a extensió, demaneu dues rutes i compareu nombre d’ordres, girs i marge d’error; no declareu una ruta «òptima» si només n’heu provat dues.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Expliqueu per què la solució és verificable amb el mapa i les ordres.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa provat, registre dels canvis i justificació de la ruta.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-galeria-explicacio-i-transferencia-45-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Galeria, explicació i transferència (45 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu el mapa, la predicció, el programa i el registre de proves. Predigueu si una altra parella podrà executar la ruta sense que els autors l’expliquen.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Una parella visitant intenta repetir les ordres seguint només les fletxes i la convenció de gir acordada. L’equip autor observa sense donar instruccions addicionals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Recolliu una pregunta del grup visitant i una proposta concreta de millora. Anoteu en quin punt s’ha interpretat o executat de manera diferent.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Decidiu si accepteu la proposta i comproveu-la amb una nova prova. Reviseu la llegenda o el programa perquè una altra parella puga reproduir-lo.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Trieu una situació pròxima —repartir llibres en una biblioteca fictícia, arribar a una parada o portar una fitxa a un punt de recollida— i expliqueu quines parts del mètode es podrien reutilitzar.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>mapa i programa revisats, retorn de la parella i explicació de transferència.</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="registre-de-prova-i-criteris-d-exit">🧪 Evidències i avaluació</h2>
+<p>Per cada intent, anoteu: equip i rol, mapa/versió, ruta prevista, ordres totals, caselles recorregudes, obstacles evitats, arribada a la zona de colp, resultat de la pilota i canvi fet després de la prova. Valoreu quatre aspectes amb una escala descriptiva —encara amb ajuda / quasi autònom / autònom i explicat—: orientació espacial, correspondència entre fletxes i ordres, depuració a partir del primer punt de desviació i cooperació amb rols rotatius.</p>
+<p>L’èxit no depén de marcar gol: una ruta que identifica l’error i es corregeix amb evidència també és una solució satisfactòria.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-ajustos-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu instruccions en fletxes grans, pictogrames o paraules; es pot anticipar la seqüència amb una fitxa que recórrega la quadrícula abans de programar. Les persones poden triar entre planificar, col·locar obstacles, programar, observar, registrar o narrar, amb rotació voluntària dels rols. Reduïu el nombre d’obstacles, amplieu la porteria, lleveu el límit d’ordres i jugueu sense cronòmetre quan ajude a comprendre el repte.</p>
+<p>Manteniu el camp sobre una taula estable, useu només una pilota de paper, deixeu les mans fora del recorregut mentre el robot es mou i atureu-lo abans de reposicionar obstacles.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referent-oficial-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>Adapta <a href="https://matatalab.com/en/node/81" target="_blank" rel="noopener noreferrer">Soccer Match</a>, activitat oficial de Coding Set per a 5–7 anys: el pla proposa una introducció guiada de 10 minuts, 30 minuts de joc en què defensa col·loca obstacles i atac programa una ruta amb ordres d’avanç/retrocés/gir, i 5 minuts de reflexió i extensió.</p>
+<p>La proposta pròpia conserva la planificació de rutes, els obstacles, els rols alterns i la prova del robot, però amplia la pràctica en quatre sessions, crea mapes i criteris locals i substitueix el rànquing per evidències de cooperació i depuració. No reutilitza el mapa ni les imatges oficials.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

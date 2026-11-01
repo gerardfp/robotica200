@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Alertes per al bosc i l’hort | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Com poden ajudar les comunicacions de micro:bit a protegir un arbre i com representar un sensor de cultiu amb seguretat?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-hivernacle-microbit" class="btn-back" data-preserve-filters="hivernacle-microbit">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/microbit.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>micro:bit</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Ciències, Tecnologia i Matemàtiques</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 4 sessions · 200 min</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Alertes per al bosc i l’hort</h1>
+        <span class="tag-badge" data-theme>🏷️ Biodiversitat i cultiu</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-hivernacle-microbit-v2.png" alt="Dues plaques micro:bit reals sobre suports secs al costat d’una maqueta de jardí i de targetes de llum i aigua per a simular proves de ràdio." width="600" height="448" loading="lazy"><figcaption>Il·lustració IA pròpia basada en la placa micro:bit de la dotació. Les plantes i targetes són materials de maqueta; no hi ha cap sensor de sòl integrat, les plaques es mantenen seques i el muntatge no vigila boscos ni controla el reg real.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Una classe de tercer cicle investiga dues preguntes sobre un hort i un espai verd escolar: com podria un node avisar que cal revisar una zona de planter, i com podríem representar lectures de llum i humitat abans de decidir què fer? Els dos reptes oficials s’adapten en un prototip de comunicació i un de lectura/decisió.</p></div></aside>
+<p>Les proves es fan amb maquetes i valors de laboratori: cap placa vigila un bosc, pren imatges, controla una bomba ni decideix el reg d’una planta real.</p>
+<p>La fundació presenta les activitats per a 11–14 i 14–16 anys. Aquesta versió les escala a tercer cicle de primària: simplifica la instrumentació, modela els sensors externs i posa l’accent en el disseny, les dades, la ràdio i els límits. No es presenta com una equivalència d’edat ni com un sistema IoT desplegable.</p>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Convertir una necessitat de protecció o cultiu en criteris observables per a un prototip.</li><li>Programar emissor i receptor de ràdio i comprovar recepció amb missatges ficticis i intents repetits.</li><li>Comparar dues entrades independents —llum i humitat—, una regla per a cada eixida i una aturada manual del prototip.</li><li>Interpretar lectures simulades o d’un sensor addicional només després de verificar el maquinari i el programa.</li><li>Explicar que el prototip no vigila fauna, no controla un cultiu real i no ha d’exposar la placa a l’aigua o al sòl.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="preparacio-materials-i-coneixements">🧰 Materials i preparació</h2>
+<p>Necessiteu una o preferiblement dues plaques micro:bit, MakeCode, ordinador o tauleta, cable USB, targetes de condició/missatge, full de dades i materials secs per a construir una maqueta. La ràdio i els botons són funcions integrades; en V1 i V2, la matriu LED també pot llegir el nivell de llum ambiental, encara que aquesta lectura depén de l’entorn i la mateixa matriu s’utilitza com a eixida. La micro:bit no té sensor d’humitat del sòl, relé ni connexió a internet integrats;</p>
+<p>per a fer la lectura amb maquinari real cal un sensor analògic i un circuit de baixa tensió compatible que el centre verifique. Si no es disposa d’aquests components, els botons A/B seleccionen valors simulats que s’identifiquen clarament com a dades de prova. No connecteu probes descobertes a terra humida ni cap càrrega a tensió de xarxa.</p>
+<p>Abans de la sessió, proveu que les dues plaques comparteixen el mateix grup de ràdio i que poden enviar/rebre missatges; prepareu un receptor de reserva si la connexió falla. Definiu què compta com a “sec” només per a la simulació de classe. No traduïu el valor de maqueta a un llindar de reg real: els sensors, el sòl, l’espècie i l’entorn canvien la lectura.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica-quatre-sessions-de-50-minuts">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · De la necessitat al criteri del protector d’arbres</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: De la necessitat al criteri del protector d’arbres" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>De la necessitat al criteri del protector d’arbres</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Construir i provar un avís de ràdio"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Construir i provar un avís de ràdio</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Llum, humitat i decisions de l’Auto-farmer"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Llum, humitat i decisions de l’Auto-farmer</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Integrar els nodes i comunicar-ne els límits"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Integrar els nodes i comunicar-ne els límits</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="sessio-1-de-la-necessitat-al-criteri-del-protector-d-arbres" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>De la necessitat al criteri del protector d’arbres</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Llegiu una fitxa fictícia d’un viver o d’un arbre jove del pati i relacioneu-la amb la protecció de la biodiversitat i l’ODS 15.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En un diagrama IPO, escriviu l’entrada que inicia la prova (inclinació llegida per l’acceleròmetre o, si cal, botó de simulació), la decisió d’enviar un avís i les eixides possibles. El disseny oficial usa el sensor d’acceleració/caiguda lliure com a indici i adverteix que s’ha de provar el llindar; en aquesta aula no es deixa caure ni s’enganxa la placa a cap arbre.</p>
+<p>Afegiu una targeta de «passarel·la» entre el node local i un servei d’Internet per representar l’arquitectura IoT descrita per la font oficial. Aquesta passarel·la és un model de paper: la micro:bit només envia dades per ràdio a l’altra placa i no es connecta a Internet per si mateixa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Dibuixeu el node sensor, el missatge per ràdio, el node receptor i la persona responsable que interpreta l’avís; distingiu aquesta xarxa local de prova d’una instal·lació real amb passarel·la a internet.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Acordeu cinc criteris mesurables: el node detecta una inclinació de prova o rep una entrada simulada; només envia el codi acordat amb l’identificador fictici de la maqueta; el receptor el mostra; un altre codi no es confon amb l’alerta; i el missatge no inclou coordenades ni dades personals. La font oficial modela l’entrada amb l’acceleròmetre i contempla coordenades GPS; ací l’etiqueta <code>HORT-01</code> representa una zona fictícia i no geolocalitza res.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Anoteu una limitació o una situació en què l’avís podria ser fals. Evidència: diagrama, criteris i taula de casos previstos.</p>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-2-construir-i-provar-un-avis-de-radio" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Construir i provar un avís de ràdio</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Trieu dos codis curts i inequívocs, com <code>REVISA</code> i <code>PROVA</code>, que no incloguen noms, coordenades ni informació sobre una persona. Abans d’enviar-los, cada equip escriu quin missatge espera veure al receptor i què hauria de passar si arriba un codi diferent. Llegiu les regles de ràdio acordades i comproveu que els dos dispositius comparteixen el mateix grup; amb una sola placa, feu la predicció amb targetes i marqueu-la com a simulació, no com a recepció provada.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En una placa, establiu grup de ràdio i envieu el missatge només quan es prema el botó seleccionat; afegiu una icona que indique que s’ha enviat. Incloeu un identificador fictici i no geolocalitzable, com <code>HORT-01</code>, perquè el receptor puga distingir quina maqueta ha generat l’avís. Aquest codi és una etiqueta de classe: la micro:bit no té GPS i no determina la ubicació d’un arbre.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>En l’altra placa, espereu el missatge i mostreu una icona o paraula curta quan arribe; no feu que el receptor active actuadors.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Feu cinc intents a distància curta amb el mateix grup; registreu enviaments i recepcions. Repetiu amb un grup diferent per comprovar que no es barregen les proves. Després d’aquesta línia de base, trieu una millora de prototip —per exemple, que el receptor retorne <code>REBUT</code> o mostre una icona de confirmació— i repetiu els casos afectats per comprovar l’efecte. No cal allunyar plaques del docent ni provar cobertura fora de l’aula.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Marqueu falsos avisos, missatges perduts i una millora. Amb una sola placa, una persona pot fer d’emissor i una altra de receptor amb targetes de paper, però aquesta alternativa no es compta com a transmissió de ràdio provada.</p>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-3-llum-humitat-i-decisions-de-l-auto-farmer" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Llum, humitat i decisions de l’Auto-farmer</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Compareu dues entrades separades: llum ambiental (fosca/intermèdia/il·luminada) i humitat del sòl (seca/intermèdia/humida). Useu targetes o valors de prova per a cada variable; si es vol llegir el sensor de llum integrat, feu una comprovació inicial sense projectar llum sobre la matriu LED. Per a la humitat real cal un sensor extern: consulteu-ne les instruccions, calibreu-lo segons el centre i manteniu-lo separat de la placa.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Useu A/B per seleccionar una entrada cada vegada i anoteu si és simulada o mesurada. Per a la llum, proveu valors de l’escala de lectura que expose la versió de MakeCode del centre; per a la humitat, useu un conjunt de prova propi o l’entrada analògica d’un sensor extern calibrat. Mostreu l’entrada seleccionada amb un número o una barra LED i no compareu les escales entre si.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Formuleu dues regles independents: «si la llum baixa del llindar de prova, representar l’eixida de llum» i «si la humitat baixa del llindar de prova, representar l’eixida de reg». Useu una icona o un missatge com a substitut del relé; no activeu cap llum ni bomba real.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Per a cada variable, proveu un valor per davall, un d’igual i un per damunt del seu llindar; anoteu les dues eixides separadament. Això permet comprovar que una alerta de llum no activa per error la regla d’humitat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Distingiu lectura, interpretació i decisió humana. Evidència: pseudocodi, codi i taula valor/eixida.</p>
+</section>
+</div></section>
+<section class="learning-step" id="sessio-4-integrar-els-nodes-i-comunicar-ne-els-limits" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Integrar els nodes i comunicar-ne els límits</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Representeu un planter de maqueta i decidiu quina placa fa de node de dades i quina rep el missatge.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Combineu les dues entrades simulades o externes amb les regles de llum i humitat; representeu els dos relés del repte oficial amb targetes o icones LED. Una eixida de maqueta no encén una làmpada ni activa el reg. Afegiu un interruptor d’aturada del prototip: mantindre premuts A+B activa un estat de parada que força les dues eixides a «OFF»; reinicieu el programa per a tornar a provar.</p>
+<p>Només si el centre té relés compatibles verificats es pot estudiar el circuit de baixa tensió segons les instruccions del fabricant; no són components integrats i no es connecten a bombes ni a la xarxa elèctrica.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-hivernacle-nodes-relle.png" alt="Dues micro:bit de la dotació representen un avís de ràdio amb identificador fictici i un prototip d’hort amb dues eixides simulades i un botó d’aturada." width="600" height="448" loading="lazy"><figcaption>La passarel·la, les eixides, l’identificador i l’aturada són elements de maqueta o representació; les plaques no controlen relés ni identifiquen una ubicació real.</figcaption></figure>
+<figure class="code-panel"><figcaption>Exemple de programació · text</figcaption><pre class="code-block" tabindex="0"><code class="language-text">aturada = fals  <span class="syntax-comment"># en iniciar el programa</span>
+quan es premen A+B:
+    aturada = cert
+<span class="syntax-keyword">si</span> aturada:
+    llum = OFF
+    reg = OFF
+<span class="syntax-keyword">altrament</span>:
+    llum = ON <span class="syntax-keyword">si</span> lectura_llum &lt; llindar_llum_de_prova, <span class="syntax-keyword">si</span> no OFF
+    reg = ON <span class="syntax-keyword">si</span> lectura_humitat &lt; llindar_humitat_de_prova, <span class="syntax-keyword">si</span> no OFF
+    envia «HORT-<span class="syntax-number">01</span>:REVISA» <span class="syntax-keyword">si</span> cal revisió</code></pre></figure>
+<p>_Pseudocodi propi per a la maqueta: «llum» i «reg» són eixides representades, no relés reals. En MakeCode, l’estat d’aturada es reinicia en iniciar el programa i A+B el manté actiu fins que es reinicia; la placa permet detectar la pulsació conjunta._</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Executeu una matriu de casos combinats: llum baixa/alta, humitat baixa/alta, una lectura exactament al llindar, grup de ràdio incorrecte, absència de missatge i aturada A+B. Comproveu que cada relé simulat respon només a la seua entrada i que, després de l’aturada, les dues eixides queden apagades. Compareu els criteris amb els resultats i registreu qualsevol fals positiu.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Dibuixeu quin sensor compatible o relé de baixa tensió verificat caldria per avançar el prototip, quin risc o error s’hauria de resoldre i qui supervisaria una prova real. Trieu una millora addicional del node —confirmació de recepció, avís diferenciat o registre de dades— i repetiu els casos de prova corresponents; no activeu cap reg real.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Presenteu diagrama, dades, prototip i límit principal a un altre equip, que deixa una pregunta. Evidència: sistema en maqueta, matriu de proves i revisió de disseny.</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="criteris-d-exit-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>La proposta és satisfactòria quan l’equip (1) diferencia ràdio integrada, sensor extern, relé i passarel·la; (2) envia i rep un missatge que inclou un identificador fictici no geolocalitzable; (3) separa les lectures de llum i humitat i prova per a cadascuna els valors inferior, igual i superior al llindar; (4) mostra dues eixides simulades independents; (5) comprova que l’aturada A+B deixa totes dues eixides en «OFF»; (6) afegeix i prova una millora; i (7) explica què no permet concloure el prototip.</p>
+<p>Recolliu diagrama IPO/xarxa, fragments de codi o pseudocodi, taula dels intents, matriu d’entrada/eixida, proposta d’ampliació i reflexió. Valoreu exactitud del registre, depuració basada en evidència i justificació; no es puntua que el senyal arribe lluny ni que la maqueta regue.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="accessibilitat-privacitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu missatges amb icones i paraules, opcions de resposta no oral, valors en targetes de mida gran i rols alterns de programació, observació, registre i explicació. Les transmissions són codis de laboratori, sense noms, ubicacions detallades ni dades personals. Manteniu plaques i circuits secs, useu només alimentació USB/baixa tensió dins les especificacions del fabricant i no connecteu bombes, relés de xarxa o vàlvules. Cap prototip s’instal·la en arbres, boscos, hivernacles ni espais públics.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="reptes-oficials-adaptats">🔗 Referents i adaptació</h2>
+<p><a href="https://www.microbit.org/teach/lessons/helping-plants-grow-trees/" target="_blank" rel="noopener noreferrer">Tree protector</a> proposa usar la ràdio de micro:bit per enviar alertes des d’un sensor prototip i introduir com els nodes IoT es connecten mitjançant passarel·les; el repte destaca l’ODS 15, el producte que compleix criteris i una ampliació. La guia tècnica complementària del <a href="https://microbit.org/get-started/features/overview/" target="_blank" rel="noopener noreferrer">sensor i l’acceleròmetre micro:bit</a> confirma les funcions integrades, mentre que l’etiqueta fictícia <code>HORT-01</code> substitueix les coordenades GPS del projecte font i no geolocalitza res.</p>
+<p><a href="https://microbit.org/teach/lessons/helping-plants-grow-auto-farmer/" target="_blank" rel="noopener noreferrer">Auto-farmer</a> proposa relés i sensors d’humitat casolans per detectar cultius secs, transmetre dades i estalviar aigua; la situació representa separadament llum, humitat, les dues eixides de relé i una aturada manual, sense activar actuadors. Una còpia consultable del <a href="https://www.scoilnet.ie/uploads/resources/35898/35666.pdf" target="_blank" rel="noopener noreferrer">manual Arm School Program allotjada per Scoilnet</a> detalla el llindar de llum, els dos relés i el <em>kill switch</em>; els documents/ZIP enllaçats des de les pàgines micro:bit no s’han pogut llegir directament en aquesta sessió, així que no s’atribueixen preguntes o passos no verificats.</p>
+<p>Les pàgines oficials indiquen franges d’11–14 i 14–16 anys. El pla local per a primària és una adaptació simplificada pròpia.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

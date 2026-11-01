@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Angles que dibuixen la ceràmica | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="Investiguem com els girs del MatataBot formen triangles i convertim les proves en una roseta inspirada en la ceràmica valenciana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-cs-angles-ceramica" class="btn-back" data-preserve-filters="cs-angles-ceramica">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Tercer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Matemàtiques i educació artística</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 4 sessions de 50 minuts</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>Angles que dibuixen la ceràmica</h1>
+        <span class="tag-badge" data-theme>🏷️ Geometria i ceràmica valenciana</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-angulos-ceramica-v1.png" alt="MatataBot i la torre del Coding Set al costat d&#39;una làmina de triangles i una roseta geomètrica inspirada en la ceràmica valenciana." width="600" height="448" loading="lazy"><figcaption>La làmina és una composició pròpia. El dibuix amb tinta només es fa si el centre disposa de l&#39;Artist Add-On; amb el kit base, MatataBot recorre la seqüència sense dibuixar.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="situacio-repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>El grup prepara una mostra de geometria per a un passadís de l&#39;escola. A partir de patrons de ceràmica i rajoles de l&#39;entorn, cada parella dissenya una roseta pròpia i investiga com representar-hi triangles diferents. El repte és distingir l&#39;angle interior de la figura del gir que executa el robot: quan MatataBot completa un costat i gira per continuar el contorn, el bloc d&#39;angle representa el gir exterior suplementari.</p></div></aside>
+<p>La proposta adapta l&#39;activitat pública <em>Draw triangles</em> de Matatalab: recupera el triangle equilàter, la suma dels angles interiors, la prova amb angles rectes, aguts i obtusos, el treball per parelles i l&#39;extensió amb un pentagrama o paral·lelogram. La seqüència, la roseta, les targetes de repte i els registres són originals. Si no hi ha Artist Add-On, les parelles fan que el robot recórrega una quadrícula sense llapis i traslladen el traçat al paper; aquesta alternativa no atribueix dibuix al Coding Set base.</p>
+<aside class="markdown-note markdown-note-question"><span class="markdown-note-icon" aria-hidden="true">❓</span><div><h4>Pregunta guia</h4><p>com podem saber quin gir ha de fer el robot quan volem construir un angle interior determinat?</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Classificar angles aguts, rectes i obtusos, i reconéixer-los dins de triangles.</li><li>Comprovar que els angles interiors d&#39;un triangle sumen 180° i que els tres angles d&#39;un triangle equilàter mesuren 60°.</li><li>Relacionar l&#39;angle interior amb el gir exterior suplementari que necessita el robot per continuar el contorn.</li><li>Escriure, provar i depurar una seqüència de blocs d&#39;angle i moviment amb una predicció explícita.</li><li>Crear una composició geomètrica original i comunicar quina part és una ruta del robot i quina part és decoració manual.</li></ul>
+<p><strong>Vocabulari clau:</strong> vèrtex, costat, angle interior, gir exterior, suplementari, agut, recte, obtús, equilàter, programa, repetició.</p>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
+<ul><li>Coding Set: MatataBot, torre, tauler, blocs de moviment, gir, angle i bucle disponibles al centre.</li><li>Artist Add-On compatible només si el centre el té: suport, llapis i blocs d&#39;angle. La guia oficial enumera deu valors amb dos blocs per valor (30°, 36°, 45°, 60°, 72°, 108°, 120°, 135°, 144° i 150°); inventarieu les peces físiques abans de planificar el traçat i no forceu cap bloc.</li><li>Paper gran, regla, llapis, cartolina, targetes originals amb angles interiors i una quadrícula amb punt d&#39;inici i orientació marcats.</li><li>Full de registre amb columnes <strong>figura</strong>, <strong>angle interior previst</strong>, <strong>bloc de gir</strong>, <strong>predicció</strong>, <strong>resultat observat</strong> i <strong>revisió</strong>.</li></ul>
+<p>Comproveu el terra o la superfície del tauler, la càrrega del robot i la lectura correcta de la torre. En la prova amb llapis, assegureu el paper perquè no es desplace. No confongueu el nombre imprés en un bloc d&#39;angle amb l&#39;angle interior dibuixat: la guia del fabricant indica que el robot traça el seu suplementari. Amb el kit base, feu la mateixa prova com a recorregut sobre quadrícula i registreu que la figura de paper l&#39;ha dibuixada l&#39;alumnat.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 4 · De la rajola al triangle (50 min)</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-valuetext="Pas 1 de 4">
+        <span data-wizard-bar style="width: 25.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: De la rajola al triangle (50 min)" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>De la rajola al triangle (50 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: Un gir exterior per a cada vèrtex (50 min)"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Un gir exterior per a cada vèrtex (50 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Reptes de triangles: recte, agut i obtús (50 min)"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Reptes de triangles: recte, agut i obtús (50 min)</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Una roseta pròpia per a l&#39;escola (50 min)"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Una roseta pròpia per a l&#39;escola (50 min)</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="de-la-rajola-al-triangle-50-min" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>De la rajola al triangle (50 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu una rajola o una fotografia de ceràmica i una plantilla original amb tres triangles. L&#39;alumnat marca vèrtexs i costats, classifica els angles com a aguts, rectes o obtusos i prediu si tots els triangles poden tindre els mateixos angles.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Amb regle i transportador opcional, construïu un triangle equilàter gran sobre paper. Mesureu els tres angles i anoteu les dades abans de provar el robot. Una parella construeix una segona còpia amb tires de paper; si les longituds són iguals, compareu-ne els angles sense dependre del color de la plantilla.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Completeu una taula amb els tres angles interiors. Comproveu que cadascun és de 60° i que junts sumen 180°. Dibuixeu una fletxa al vèrtex per indicar la direcció en què continuarà el robot després d&#39;arribar-hi.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Un equip explica la figura sense dir la resposta i l&#39;altre comprova les mesures. Si els costats o angles no concorden, reviseu la construcció abans de programar; així separeu un error de dibuix d&#39;un error de seqüència.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>triangle amb vèrtexs i mesures anotades, suma dels angles i predicció escrita. <strong>Pregunta docent:</strong> quina prova tenim que la figura és equilàtera i no només sembla regular?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="un-gir-exterior-per-a-cada-vertex-50-min" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Un gir exterior per a cada vèrtex (50 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Col·loqueu MatataBot amb el nas orientat al primer costat del triangle. En un vèrtex, compareu l&#39;angle interior de 60° amb el canvi de direcció necessari per seguir el contorn. Cada parella dibuixa les dues mesures en colors o símbols diferents i prediu quin valor haurà d&#39;indicar el bloc d&#39;angle.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Reviseu la guia del fabricant i prepareu la seqüència amb tres costats i girs repetits. En la versió amb Artist Add-On, feu primer una prova curta sobre paper; en la versió base, col·loqueu el robot sobre una quadrícula i compteu els passos de cada costat. La proposta oficial assenyala que per al triangle equilàter es fan servir blocs de gir de 120°, no de 60°, perquè el valor del traç interior i el gir del robot són suplementaris.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Registreu la relació 60° + 120° = 180°. Indiqueu clarament en quina columna està l&#39;angle de la figura i en quina el bloc que utilitza el robot. Si la interfície o el bloc del centre no mostra un valor comprovat, descriviu el gir observat i no inventeu la peça necessària.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu o simuleu una volta completa i observeu si el robot torna prop del punt inicial i amb una orientació coherent. Canvieu una variable cada vegada: angle del bloc, longitud del costat o punt d&#39;inici. Amb l&#39;accessori, retireu el llapis durant les proves de posició per evitar marques superposades.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>seqüència anotada, dibuix dels dos angles i comparació entre predicció i resultat. <strong>Criteri:</strong> l&#39;equip explica per què 60° és l&#39;angle interior mentre 120° és el gir exterior del triangle equilàter.</p></div></aside>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-angulos-gir-exterior-v1.png" alt="MatataBot i la torre reals del Coding Set al costat d’un triangle equilàter: el sector interior i la fletxa exterior representen dos angles diferents en el mateix vèrtex." width="600" height="448" loading="lazy"><figcaption>Esquema conceptual del gir: el bloc d’angle només es prova amb Artist Add-On; amb el kit base es valida la seqüència com a recorregut, sense dibuix amb tinta.</figcaption></figure>
+</section>
+</div></section>
+<section class="learning-step" id="reptes-de-triangles-recte-agut-i-obtus-50-min" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Reptes de triangles: recte, agut i obtús (50 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Prepareu tres targetes originals amb reptes de triangle: un amb un angle recte, un amb angles aguts i un amb un angle obtús. Abans de col·locar blocs, cada parella dibuixa l&#39;angle interior desitjat i escriu quin gir exterior l&#39;ajudaria a continuar el costat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Per torns, una persona proposa el repte i l&#39;altra prepara primer el gir al vèrtex i després una seqüència de moviment per completar els costats. La guia oficial planteja que el costat final pot quedar inicialment massa llarg o curt: useu-ho com a dada de calibratge, mesureu la diferència i anoteu quin bloc cal ajustar. Si no hi ha Artist Add-On, el robot recorre la ruta en la quadrícula i l&#39;equip completa el triangle en paper.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Compareu l&#39;angle interior del dibuix amb el gir codificat. Classifiqueu el resultat i expliqueu què ha passat amb el tancament del triangle. No canvieu alhora longitud i gir; manteniu el registre prou clar perquè una altra parella puga repetir la prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Intercanvieu les targetes amb una altra parella. L&#39;equip visitant comprova si el programa correspon al repte i prova una sola millora. Si el tauler del centre només admet girs en valors fixos, trieu un repte possible amb els blocs reals o presenteu la part no executable com a model de paper, no com a funció provada del robot.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>tres targetes amb mesures, seqüències i una nota de depuració. <strong>Pregunta docent:</strong> com has distingit que calia canviar l&#39;angle d&#39;un vèrtex i no la llargària del costat?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="una-roseta-propia-per-a-l-escola-50-min" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Una roseta pròpia per a l&#39;escola (50 min)</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Observeu les proves i identifiqueu una figura que es puga repetir al voltant d&#39;un centre. Cada equip dibuixa una roseta geomètrica inspirada en formes de l&#39;entorn, sense copiar una rajola concreta; marqueu quins elements es poden recórrer amb el robot i quins es completaran a mà.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Dissenyeu una composició pròpia amb triangles i una repetició senzilla. Si el centre disposa de l&#39;accessori, proveu el traçat amb blocs d&#39;angle i bucle seguint el manual; sense ell, programeu el recorregut de vèrtexs i dibuixeu la roseta amb regla i llapis. L&#39;extensió opcional és plantejar un paral·lelogram o pentagrama com a problema per a una altra sessió, no assumir que el programa quedarà resolt amb una seqüència que no s&#39;ha comprovat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Afegiu una llegenda amb els angles interiors mesurats i els girs provats. Una altra parella ha de poder identificar el punt d&#39;inici, l&#39;ordre de les peces i quines parts de la composició són manuals.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Feu una prova d&#39;intercanvi: el grup visitant interpreta la llegenda i reconstrueix el recorregut o la simulació. Registreu on dubta, reviseu una instrucció i torneu-la a provar. Manteniu els materials de retall i adhesiu en una estació amb supervisió.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>roseta, llegenda, seqüència, registre de la prova d&#39;una altra parella i una explicació del límit entre accessori i kit base. <strong>Tancament:</strong> «El gir que més ens ha sorprés és… perquè…».</p></div></aside>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="evidencies-i-avaluacio">🧪 Evidències i avaluació</h2>
+<p>Recolliu les plantilles mesurades, les targetes de repte, els programes o simulacions, les proves abans/després i la roseta final. Valoreu si l&#39;alumnat classifica els angles, comprova la suma de 180°, distingeix interior i exterior, canvia una variable cada vegada i comunica els límits de la seua prova. La precisió de dibuix, l&#39;ús del color i la velocitat no són criteris d&#39;èxit.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="participacio-accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu plantilles amb angles en relleu, peces grans per a representar vèrtexs, quadrícules d&#39;alt contrast i mesures impreses per a qui no puga usar el transportador. Es pot participar com a programador/a, mesurador/a, verificador/a, relator/a o dissenyador/a de targetes. L&#39;audició i la manipulació fina no són necessàries. Manteniu els dits fora de la trajectòria del robot, assegureu el paper i useu tisores escolars amb supervisió; no munteu l&#39;accessori de llapis si no teniu el model i les instruccions compatibles.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-i-adaptacio">🔗 Referents i adaptació</h2>
+<ul><li>Matatalab, <a href="https://matatalab.com/en/node/84" target="_blank" rel="noopener noreferrer">Draw triangles</a>: activitat pública que treballa classificació d&#39;angles i triangles, suma de 180°, triangle equilàter, gir de 120° per al contorn, proves amb triangles rectangles/aguts/obtusos, intercanvi de reptes en parelles i extensió amb paral·lelogram o pentagrama.</li><li>Matatalab, <a href="https://matatalab.com/en/node/64" target="_blank" rel="noopener noreferrer">Artist Add-On</a>: inventari de deu valors de bloc d&#39;angle, instruccions per combinar blocs d&#39;angle amb moviment i gir, i aclariment que el bloc descriu el gir suplementari.</li></ul>
+<p>Aquesta situació amplia els objectius i procediments públics amb una seqüència original de quatre sessions, proves calibrables, una temàtica de ceràmica local, accessibilitat i una alternativa completa amb el kit base. No reprodueix les imatges, materials gràfics ni redacció de Matatalab; el traçat amb tinta queda condicionat a l&#39;Artist Add-On real i compatible del centre.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

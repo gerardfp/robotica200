@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">La fira de formes, nombres i estrelles | Situació d’aprenentatge | Robòtica²⁰⁰</title>
+  <meta name="description" content="MatataBot ajuda a preparar una fira de matemàtiques amb classificació de formes, recorreguts numèrics i art geomètric inspirat en el cel nocturn.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../_css/styles.css?v=7">
+  <link rel="icon" type="image/svg+xml" href="../../_assets/icons/logo.svg">
+  <script defer src="../../_js/ui.js?v=1"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo">
+        <span class="logo-badge"><img src="../../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../../index.html" class="nav-btn">Inici</a>
+        <a href="../../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
+  <main id="page-content" class="container page-content">
+    <div class="section-nav-back">
+    <a href="../../situacions-aprenentatge/index.html#situacio-sa-coding-set-fira-matematica" class="btn-back" data-preserve-filters="coding-set-fira-matematica">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a Situacions d&#39;Aprenentatge</span>
+    </a>
+  </div>
+    <article class="detail-page-card" data-wizard-container>
+      <div class="detail-page-header">
+        <div class="detail-page-badges">
+    <span class="tag-badge primary">
+      <img src="../../_assets/icons/coding-set.png" alt="" class="tag-badge-icon" width="20" height="20">
+      <span>Coding Set</span>
+    </span><span class="tag-badge">
+      
+      <span>Primer cicle</span>
+    </span><span class="tag-badge">
+      
+      <span>Matemàtiques, llengües i educació artística</span>
+    </span><span class="tag-badge">
+      
+      <span>⏱️ 5 sessions</span>
+    </span>
+  </div>
+        <h1 class="detail-page-title" data-title>La fira de formes, nombres i estrelles</h1>
+        <span class="tag-badge" data-theme>🏷️ Ciència i entorn</span>
+      </div>
+      <div class="prose">
+        <div data-markdown-content><figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-matematiques-cosmos-v2.png" alt="La torre i el tauler reals del Coding Set, amb MatataBot sobre una graella de cel nocturn i targetes de formes i recorreguts." width="600" height="448" loading="lazy"><figcaption>La torre llig els blocs físics del tauler; les formes, els nombres i les figures del mapa són materials de paper que interpreta l’alumnat, no senyals que MatataBot reconega.</figcaption></figure>
+<section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-intencio">🌱 Situació, repte i intenció</h2>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>La classe organitza tres espais de descoberta. En cada un, els equips fan una predicció, preparen una seqüència amb els blocs tangibles i comproven què ha fet MatataBot. La fira posa el focus en explicar les decisions i comparar procediments, no en acabar primer.</p></div></aside>
+</section>
+
+<section class="detail-section" data-section-group="learning"><h2 id="aprenentatges-i-vocabulari">🎯 Aprenentatges i vocabulari</h2>
+<ul><li>Interpretar ordres tangibles i convertir-les en instruccions que una altra persona puga seguir.</li><li>Classificar formes i representar nombres amb les peces, la graella i les convencions de la fira.</li><li>Aplicar girs i repeticions per construir una figura geomètrica i una constel·lació pròpia.</li><li>Explicar les estratègies matemàtiques als visitants i revisar una estació a partir del retorn rebut.</li></ul>
+</section>
+
+<section class="detail-section" data-section-group="materials"><h2 id="abans-de-comencar">🧰 Materials i preparació</h2>
+<p>Comproveu que el Coding Set inclou el robot, la torre de control i la taula de programació. Prepareu una graella pròpia, targetes grans amb aliments ficticis i formes, paper quadriculat, retoladors solubles i cartolines.</p>
+<p>Per al joc de la parada, afegiu una graella física 4 × 4 de 10 × 10 cm, setze targetes planes d’aliments amb silueta clara, quatre mòduls de forma, una segona còpia de les quatre formes per a triar el repte a l’atzar, un dau manual de sis cares i un full de registre de torns. Aquesta segona còpia i el registre són materials propis per fer transparent el sorteig.</p>
+<p>Per a les activitats de traçat, useu l’Artist Add-On només si forma part de la dotació; si no, el robot recorre la figura sobre una quadrícula i l’alumnat dibuixa el resultat en paper.</p>
+<p>Useu caselles de <strong>10 × 10 cm</strong> quan MatataBot haja de recórrer físicament la graella: és la mida recomanada pel fabricant perquè coincidisca amb un avanç. Abans de començar, comproveu l’alineació amb una ordre curta i registreu qualsevol desviació; no canvieu l’escala del mapa per compensar-la. Les làmines de xifres són representacions originals sobre graella, no programes oficials ni una promesa que el robot puga dibuixar sense accessori.</p>
+</section>
+
+<section class="detail-section" data-section-group="sequence"><h2 id="sequencia-didactica">📅 Seqüència didàctica</h2>
+<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
+      <strong>Seqüència de treball</strong>
+      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de 5 · Obrim la fira i llegim ordres</p>
+      <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="5" aria-valuenow="1" aria-valuetext="Pas 1 de 5">
+        <span data-wizard-bar style="width: 20.00%" aria-hidden="true"></span>
+      </div>
+      <ol class="learning-wizard-picker" aria-label="Tria un pas"><li><button type="button" class="learning-wizard-step" data-step-target="0" aria-label="Obrir pas 1: Obrim la fira i llegim ordres" aria-current="step"><span class="learning-wizard-step-number" aria-hidden="true">1</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Obrim la fira i llegim ordres</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="1" aria-label="Obrir pas 2: La parada de formes del mercat"><span class="learning-wizard-step-number" aria-hidden="true">2</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>La parada de formes del mercat</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="2" aria-label="Obrir pas 3: Del 0 al 9: xifres en ruta"><span class="learning-wizard-step-number" aria-hidden="true">3</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Del 0 al 9: xifres en ruta</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="3" aria-label="Obrir pas 4: Triangles que giren: angle interior i gir del robot ([Draw triangles](https://matatalab.com/en/node/84))"><span class="learning-wizard-step-number" aria-hidden="true">4</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>Triangles que giren: angle interior i gir del robot ([Draw triangles](https://matatalab.com/en/node/84))</span></span></button></li><li><button type="button" class="learning-wizard-step" data-step-target="4" aria-label="Obrir pas 5: El cel de la fira: viatgem per l’univers ([Travel in universe](https://matatalab.com/en/node/83))"><span class="learning-wizard-step-number" aria-hidden="true">5</span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;</span><span>El cel de la fira: viatgem per l’univers ([Travel in universe](https://matatalab.com/en/node/83))</span></span></button></li></ol>
+      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next>Pas següent →</button></div>
+    </nav>
+<section class="learning-step" id="obrim-la-fira-i-llegim-ordres" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Obrim la fira i llegim ordres</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Mostreu les tres parts principals del Coding Set: MatataBot, torre de control i tauler. En grups de quatre, assigneu els rols de connexió, observació, programació i registre; identifiqueu cada peça i expliqueu com penseu que es comuniquen. Comproveu que el robot i la torre estan carregats, engegueu-los i feu l’aparellament segons la guia del model del centre. Abans d’executar, cada equip prediu què llegirà la torre i què farà MatataBot amb una ordre.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En una quadrícula pròpia, marqueu una casella d’inici, una bandera com a destinació i dues banderes d’altres equips que no es poden travessar. Llegiu els blocs disponibles d’esquerra a dreta i feu que cada grup cree una seqüència amb avançar, retrocedir, girar a l’esquerra o girar a la dreta. Primer assageu la ruta amb el dit; després, col·loqueu les peces al tauler, comproveu que la seqüència està completa i executeu-la.</p>
+<p>MatataBot no llig les banderes ni evita les d’altres equips: les persones han de planificar i validar el recorregut.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Distingiu amb el cos i amb una fitxa de robot dos conceptes: «gira a l’esquerra» canvia l’orientació sobre la mateixa casella; «avança» desplaça el robot cap a la casella que té davant. No existeix una ordre de desplaçament lateral en aquest repte. Registreu la seqüència i dibuixeu l’orientació de MatataBot abans i després de cada gir.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Busqueu una segona ruta vàlida fins a la mateixa bandera sense travessar les destinacions dels altres equips. Compareu les dues seqüències i comproveu quina usa menys ordres de moviment, mantenint separats els girs del recompte. Si la posició final no coincideix amb la predicció, localitzeu la primera ordre que ha provocat la diferència, canvieu només eixa peça i repetiu la prova.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Abans de canviar de repte, amb l’acompanyament docent, retireu els blocs del tauler i torneu-los al seu lloc; així el programa anterior no es barreja amb el següent. Tanqueu amb preguntes concretes: com s’anomenen les tres parts del set?, quina peça fa girar sense avançar?, heu arribat a la bandera sense travessar-ne cap altra?, i quina prova us ha permés confirmar-ho?</p>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>programa ordenat, predicció i ruta observada, comparació amb una segona solució i explicació d’un gir. L’objectiu és una ruta vàlida i comprensible, no ser el grup més ràpid.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="la-parada-de-formes-del-mercat" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>La parada de formes del mercat</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Introduïu una parada fictícia del mercat de l’horta amb targetes d’aliments representats com a formes senzilles: una coca triangular, un formatge quadrat, una taronja circular i un pa rectangular. Aclariu que són pictogrames de joc: no afirmen que els aliments reals tinguen sempre eixa forma. Mostreu com es juga, expliqueu les regles i modeleu una ruta fins a una targeta. <strong>Temps orientatiu:</strong> 10 minuts de presentació guiada, com en el pla oficial.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>Prepareu una graella de 4 × 4 caselles de 10 × 10 cm per a la prova física i repartiu-hi targetes planes d’aliments. Col·loqueu els quatre mòduls de forma —triangle, quadrat, cercle i rectangle— aleatòriament al costat oposat al punt d’inici. Barregeu la segona còpia de formes perquè qui juga trie una categoria pendent a l’atzar. El dau té quatre cares de forma, una cara «atura la ronda» i una «torna a tirar».</p>
+<p>En parelles, alterneu qui tria el repte, qui programa i qui comprova la ruta. Cada persona té un llançament per ronda; interpreteu «torna a tirar» com l’única excepció permesa, amb una tirada addicional com a màxim. Si ix «atura», la ronda acaba; si ix una forma diferent de la seleccionada, espereu el torn següent. Si la categoria ja s’ha completat, la persona registra el torn i passa el dau; no queda eliminada del joc.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Quan el dau coincidisca amb la categoria seleccionada, busqueu en la graella una targeta d’aliment amb eixa silueta. Si el camí que té davant no porta a cap targeta d’eixa forma, traslladeu MatataBot a un altre punt d’inici al costat del mapa, orientat cap a l’objectiu; no modifiqueu les ordres per a simular un sensor. Anoteu forma, ubicació inicial, orientació i seqüència prevista.</p>
+<p>Planifiqueu el recorregut amb els blocs de moviment i gir de 90° del kit, i comproveu la ruta amb el dit abans de programar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Completeu la programació en un sol intent. Si MatataBot arriba a la targeta, una persona l’arreplega manualment i la posa al mòdul de forma corresponent; el robot no reconeix la silueta ni recull l’aliment. Si no hi arriba, registreu la primera diferència i no torneu a programar dins d’eixe torn, tal com indica el repte oficial. Reviseu l’error després de la ronda o en una estació de pràctica sense dau; així es conserva la regla del joc sense penalitzar l’aprenentatge.</p>
+<p>Si una targeta admet més d’una interpretació, l’equip justifica la seua classificació amb el contorn geomètric acordat.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-biga-eater-mercat-v1.png" alt="MatataBot, torre i tauler reals del Coding Set al costat d’una graella amb pictogrames plans d’aliments i quatre categories geomètriques per al joc cooperatiu del mercat." width="600" height="448" loading="lazy"><figcaption>Les targetes i el dau són materials de paper. Una persona retira la targeta quan el robot hi arriba; MatataBot no reconeix formes ni arreplega aliments.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p>Continueu fins que les quatre categories tinguen una targeta o s’acabe el temps acordat. Una categoria ja completada no rep una segona targeta; si el dau la torna a indicar, qui té el torn passa a ser observador/a i registra la ruta abans de cedir-lo. <strong>Temps orientatiu:</strong> 30 minuts de joc en parelles i 5 minuts de retorn.</p>
+<p>Tanqueu amb preguntes concretes: quins altres aliments o objectes tenen estes formes?, què canvia quan el punt d’inici és fix?, i com heu planificat una ruta des de l’orientació inicial?</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>quatre categories amb targeta, registre de torns, una ruta prevista i el resultat observat. La rapidesa no puntua.</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="del-0-al-9-xifres-en-ruta" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Del 0 al 9: xifres en ruta</h3></header><div class="learning-step-content">
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p>Compareu una xifra escrita a mà amb una xifra construïda sobre una graella de trams rectes. Expliqueu que les formes de la fitxa són glifs geomètrics simplificats: no reprodueixen el traç cal·ligràfic de cada persona. Predigueu quins trams requereixen avançar, retrocedir o girar i quins no es poden unir en un únic recorregut sense alçar el llapis o reposicionar el robot.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p>En equips, descomposeu les deu xifres (0–9) en trams ortogonals d’una graella pròpia. Comenceu amb 0, 1 i 7; després repartiu 2–6, 8 i 9 entre els equips i intercanvieu les targetes perquè una altra parella reconstruïsca cada forma. Marqueu l’orientació inicial, numereu els trams i convertiu-los en ordres disponibles del kit. Per a una línia discontínua o una xifra que exigisca alçar el llapis, tanqueu el programa, reposicioneu el robot i registreu cada subtraçat per separat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Registreu els trams, els girs i el nombre d’ordres de cada xifra. Creeu una xifra de l’aula inventada, sense utilitzar una data personal real.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Executeu cada recorregut des del mateix punt inicial i compareu-lo amb la targeta. Si hi ha Artist Add-On compatible, fixeu-hi el retolador segons les instruccions del fabricant i proveu el traçat sobre paper gran; amb el kit base, MatataBot recorre les caselles sense dibuixar i l’alumnat ressegueix o marca el camí a mà. Identifiqueu una repetició útil —per exemple, els quatre costats d’un contorn quadrat— i compareu la seqüència desplegada amb el bucle.</p>
+<p>Després, creeu un codi de data fictícia triat per la classe (com ara el número d’una setmana o d’una parada), mai una data de naixement o una altra dada personal.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-xifres-graella.png" alt="MatataBot del Coding Set i les seues peces al costat de deu targetes originals de xifres geomètriques sobre una graella." width="600" height="448" loading="lazy"><figcaption>Les xifres són models didàctics sobre quadrícula; el MatataBot del kit base recorre les caselles, però no deixa tinta sense el complement de dibuix.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>col·lecció de les deu targetes 0–9 amb orientació, trams i seqüència; prova o simulació identificada de cada ruta; i una data fictícia codificada. Quina xifra ha requerit més subtraçats i quines ordres heu pogut substituir per un bucle?</p></div></aside>
+</section>
+</div></section>
+<section class="learning-step" id="triangles-que-giren-angle-interior-i-gir-del-robot-draw-triangles-https-matatalab-com-en-node-84" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Triangles que giren: angle interior i gir del robot (<a href="https://matatalab.com/en/node/84" target="_blank" rel="noopener noreferrer">Draw triangles</a>)</h3></header><div class="learning-step-content">
+<p><strong>Objectiu:</strong> comprovar que els tres angles interiors d’un triangle equilàter són de 60° i sumen 180°, i descobrir per què el bloc de gir ha de mesurar 120°. La fitxa oficial pressuposa que l’alumnat ja coneix els tipus d’angles i triangles; en aquesta adaptació, oferiu una plantilla visual i una construcció corporal abans de passar a la programació. La proposta oficial s’adreça a 6–11 anys; ací les ajudes i la complexitat es regulen per l’edat i els coneixements del grup.</p>
+<aside class="markdown-note markdown-note-materials"><span class="markdown-note-icon" aria-hidden="true">🧰</span><div><h4>Materials</h4><p>Coding Set; si n’hi ha, Artist Add-On o Pro Set amb els blocs d’angle i retolador compatible; paper blanc, retoladors esborrables a l’aigua i ceres. Sense el complement, feu les proves de gir sobre la graella i representeu les figures en paper.</p></div></aside>
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Temps orientatiu: 5 minuts.</strong> Repasseu angles aguts, rectes i obtusos i els triangles que els contenen. Amb una plantilla, modeleu un triangle equilàter i mostreu un programa que en recórrega el contorn. Pregunteu quina magnitud representa el bloc: l’angle interior dibuixat o el gir que fa el robot per continuar.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Temps orientatiu: 30 minuts per a les fases 2–4.</strong> Amb el complement, traceu un triangle equilàter sobre paper: useu un bloc de gir de 120° en cada vèrtex i compareu-lo amb l’angle interior de 60°. Representeu els tres angles interiors i comproveu que sumen 180°. Expliqueu que el valor del bloc és l’angle suplementari al de la figura: <code>180° − 120° = 60°</code>. Amb el kit base, feu el gir en una graella de prova i dibuixeu el contorn a mà;</p>
+<p>no afirmeu que MatataBot dibuixa sense l’accessori.</p>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-triangles-girs-v1.png" alt="MatataBot i torre reals del Coding Set al costat d’un triangle equilàter i targetes que representen els girs als vèrtexs." width="600" height="448" loading="lazy"><figcaption>El triangle i les targetes són representacions de paper. El traçat automàtic requereix Artist Add-On o Pro Set; amb el kit base, la figura es dibuixa a mà.</figcaption></figure>
+<p>Proveu també blocs per a girs de 90°, aguts i obtusos. Anoteu el valor del bloc i l’angle interior observat en una taula amb les columnes <strong>gir programat</strong>, <strong>angle interior</strong>, <strong>tipus de triangle</strong> i <strong>resultat del traç</strong>. Compareu si l’angle dibuixat és sempre suplementari al gir programat.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>En parelles, una persona planteja un repte —triangle rectangle, agut o obtús— i l’altra programa primer el gir i després usa blocs d’avanç per a completar el tercer costat; accepteu que el costat final puga quedar més llarg o més curt en la primera prova. Canvieu els rols i compareu les figures. Com a depuració, reviseu una ordre de gir cada vegada. Si el model del centre ho permet, proveu i anoteu si els blocs numèrics poden combinar-se amb els de gir;</p>
+<p>no pressuposeu que un paràmetre d’avanç modifica l’angle.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Temps orientatiu: 10 minuts.</strong> Compartiu les figures i reviseu la diferència entre gir i angle interior.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>una figura anotada, la taula de valors i l’explicació de per què el triangle equilàter usa un gir de 120° per a obtindre un angle interior de 60°. <strong>Preguntes:</strong> què passaria amb un triangle equilàter més gran? Per què un bucle és útil per a repetir tres girs i tres costats? Podríeu adaptar la idea a un paral·lelogram o a un pentagrama?</p></div></aside>
+<p>Aquestes dues figures són extensions opcionals, no requisits de la tasca principal.</p>
+</section>
+</div></section>
+<section class="learning-step" id="el-cel-de-la-fira-viatgem-per-l-univers-travel-in-universe-https-matatalab-com-en-node-83" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>El cel de la fira: viatgem per l’univers (<a href="https://matatalab.com/en/node/83" target="_blank" rel="noopener noreferrer">Travel in universe</a>)</h3></header><div class="learning-step-content">
+<p><strong>Objectiu:</strong> crear en equip una imatge de l’univers amb formes programades, acolorir-la i explicar-ne els elements. El pla oficial no requereix coneixements previs; en aquesta versió, abans de programar recordem les formes bàsiques i els girs practicats en les sessions anteriors.</p>
+<aside class="markdown-note markdown-note-materials"><span class="markdown-note-icon" aria-hidden="true">🧰</span><div><h4>Materials</h4><p>un full blanc gran, ceres i retoladors esborrables a l’aigua; Coding Set; i, només si el centre en disposa, Artist Add-On o Pro Set amb els retoladors compatibles. Prepareu també paper de prova per a calibrar el traçat i targetes pròpies de cercle, triangle, quadrat i estrela de cinc puntes.</p></div></aside>
+<section class="learning-phase"><h4>Fase 1 · Activem i prediem</h4>
+<p><strong>Temps orientatiu: 5 minuts.</strong> Observeu una imatge de l’univers i repasseu com s’usa MatataBot per a dibuixar formes. Presenteu el vocabulari <em>univers</em>, <em>triangle</em>, <em>quadrat</em>, <em>cercle</em> i <em>pentagrama</em>; cada equip tria quins elements vol incloure en el mural i els situa en un esbós. El robot no necessita «entendre» l’univers: són les persones qui decideixen i expliquen què representa cada forma.</p>
+</section>
+<section class="learning-phase"><h4>Fase 2 · Explorem i construïm</h4>
+<p><strong>Temps orientatiu: 30 minuts.</strong> Repartiu els rols de disseny, programació, observació i acolorit. Amb Artist Add-On o Pro Set disponible, proveu primer cada forma sobre paper esborrable i, quan la ruta siga llegible, traceu-la en el full gran; programeu figures per separat i afegiu-les a una composició conjunta.</p>
+<p>Sense el complement, useu el robot per a recórrer una ruta en la graella i dibuixeu les formes a mà sobre el mural: aquesta alternativa no presenta el Coding Set base com un robot que dibuixa.</p>
+<figure class="sa-illustration"><img src="../../_assets/imatges/sa-cs-univers-mural-v1.png" alt="MatataBot i la torre reals del Coding Set al costat d’un mural de l’univers acolorit a mà amb cercle, triangle, quadrat i estrela." width="600" height="448" loading="lazy"><figcaption>El mural és una creació manual de l’alumnat. El traçat amb robot requereix Artist Add-On o Pro Set; amb el kit base, MatataBot només recorre una ruta i el dibuix es fa a mà.</figcaption></figure>
+</section>
+<section class="learning-phase"><h4>Fase 3 · Expliquem i registrem</h4>
+<p>Anoteu quines ordres i valors s’han emprat per a cada figura, qui l’ha programada i si s’ha traçat amb accessori o completat a mà. Cada equip explica una forma geomètrica i assenyala quina part del dibuix és pròpia; no presenteu els valors de gir com si foren els angles interiors de la figura.</p>
+</section>
+<section class="learning-phase"><h4>Fase 4 · Apliquem i millorem</h4>
+<p>Reviseu el traç sobre el paper de prova; si la figura no tanca, canvieu una sola ordre o duració i torneu a provar-la. Acoloreu el mural amb ceres i retoladors i connecteu les figures en una composició d’equip. Si s’intercanvien «gir a l’esquerra» i «gir a la dreta», predigueu si canvia la figura, l’orientació o totes dues coses i comproveu-ho en una mostra menuda.</p>
+</section>
+<section class="learning-phase"><h4>Fase 5 · Comprovem i reflexionem</h4>
+<p><strong>Temps orientatiu: 10 minuts.</strong> Presenteu els elements del mural i conteu un viatge imaginat per l’univers. Mostreu una predicció i el canvi que ha fet falta per a millorar el resultat.</p><aside class="markdown-note markdown-note-evidence"><span class="markdown-note-icon" aria-hidden="true">🔎</span><div><h4>Evidència</h4><p>obra col·laborativa acolorida, registre d’ordres i una explicació oral o visual. <strong>Preguntes per al retorn:</strong> el bloc de graus indica l’angle interior de la figura o el gir del robot? Què passa al dibuix si canviem esquerra i dreta?</p></div></aside>
+<p>Si poguéreu viatjar per l’univers, triaríeu MatataBot o una nau imaginària, i per què?</p>
+</section>
+</div></section>
+</section>
+
+<section class="detail-section" data-section-group="assessment"><h2 id="avaluacio-i-evidencies">🧪 Evidències i avaluació</h2>
+<p>Recolliu la predicció inicial, el programa tangible, el registre de proves i l’explicació final. Observeu si l’alumnat: classifica formes amb un criteri explícit; ordena moviments i girs; relaciona l’angle exterior de gir amb l’angle interior del triangle; identifica una repetició útil; i revisa el programa a partir del resultat observat. Valoreu també que l’explicació siga comprensible per a un altre equip.</p>
+<h3 class="detail-subsection-title" id="rotacio-de-grups-i-retorn">Rotació de grups i retorn</h3>
+<p>Organitzeu equips de tres: planificador/a, operador/a i observador/a. Amb un sol kit, els grups passen per les estacions en rotació; mentre esperen, poden provar el programa amb una fitxa sobre la quadrícula o resoldre la classificació i la predicció en paper. En cada canvi de rol, la persona observadora registra si el robot es va desviar, quin indici van usar i quina instrucció van canviar. En la mostra final, cada equip explica una decisió matemàtica i una limitació del dibuix automatitzat.</p>
+<p>La coavaluació se centra en claredat de la llegenda, coherència entre predicció i resultat i respecte dels torns, no en la bellesa ni la velocitat.</p>
+</section>
+
+<section class="detail-section" data-section-group="access"><h2 id="mes-d-una-manera-de-participar">♿ Participació, accessibilitat i seguretat</h2>
+<p>Oferiu targetes amb contrast alt i relleu, quadrícules grans amb punt de partida marcat i programes amb menys ordres. Qui no manipule les peces pot fer de persona que prediu, de registradora de proves, de narradora o de responsable de comprovar les formes. L’Artist Add-On és opcional: totes les missions es poden completar amb el Coding Set i materials de paper.</p>
+</section>
+
+<section class="detail-section" data-section-group="official"><h2 id="referents-oficials-i-adaptacio">🔗 Referents i adaptació</h2>
+<p>La primera sessió reinterpreta la presentació del robot, la torre, la taula de control i les ordres de <a href="https://matatalab.com/en/node/88" target="_blank" rel="noopener noreferrer">Hello Matatalab Robots!</a>. La segona adapta <a href="https://matatalab.com/en/node/80" target="_blank" rel="noopener noreferrer">Big Eater</a>: classificar quatre tipus d’aliments per forma; preparar una graella de 16 caselles, quatre mòduls i un dau amb quatre formes, «atura» i «torna a tirar»; triar una categoria, planificar i programar una ruta en un sol intent; i retirar manualment la targeta només quan el robot hi arriba.</p>
+<p>El pla oficial indica 10 minuts de modelatge, 30 de joc en parelles i 5 de retorn, i inclou una extensió amb inici fix i la cerca de formes en objectes quotidians. La pàgina també diu que cada alumne té una tirada per ronda i inclou una cara de «torna a tirar»; ací interpretem aquesta cara com una excepció d’una única tirada addicional i ho marquem com a decisió local.</p>
+<p>Les sessions següents adapten, en un context propi, <a href="https://matatalab.com/en/node/87" target="_blank" rel="noopener noreferrer">Draw Arabic numbers with Matatalab!</a> (traçat de xifres amb moviments i bucles), <a href="https://matatalab.com/en/node/84" target="_blank" rel="noopener noreferrer">Draw triangles</a> (girs exteriors i angles interiors) i <a href="https://matatalab.com/en/node/83" target="_blank" rel="noopener noreferrer">Travel in universe</a> (composició d’una obra geomètrica col·laborativa). Les targetes, graelles, preguntes i imatges són originals; les activitats de dibuix directe requereixen Artist Add-On, per això s’ofereix una alternativa completa amb paper.</p>
+</section></div>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

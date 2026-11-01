@@ -3,130 +3,1807 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="page-title">Situacions d'Aprenentatge Curriculars | Robòtica200</title>
-  <meta name="description" content="Catàleg de situacions d'aprenentatge curriculars de robòtica i pensament computacional.">
+  <title id="page-title">Situacions d&#39;Aprenentatge Curriculars | Robòtica200</title>
+  <meta name="description" content="Catàleg de situacions d&#39;aprenentatge curriculars de robòtica i pensament computacional.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../_css/styles.css?v=5">
+  <link rel="stylesheet" href="../_css/styles.css?v=7">
   <link rel="icon" type="image/svg+xml" href="../_assets/icons/logo.svg">
-  <script src="../_js/cataleg.js?v=10a126d"></script>
-  <script src="../_js/components.js?v=guide-route-2"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+  <script defer src="../_js/ui.js?v=1"></script>
 </head>
 <body>
-  <site-header id="site-header" active="situacions" root="../"></site-header>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-badge"><img src="../_assets/icons/logo.svg" alt="Robòtica200" class="logo-badge-img"></span>
+        <div class="logo-text">
+          <span class="logo-name">Robòtica<sup>200</sup></span>
+          <span class="logo-subtitle">Robòtica per a docents</span>
+        </div>
+      </a>
+      <nav class="header-nav" aria-label="Navegació principal">
+        <a href="../index.html" class="nav-btn">Inici</a>
+        <a href="../pensament-computacional/index.html" class="nav-btn">Pensament computacional</a>
+        <a href="../robotica-educativa/index.html" class="nav-btn">Robòtica educativa</a>
+        <a href="../situacions-aprenentatge/index.html" class="nav-btn active">Situacions d'aprenentatge</a>
+      </nav>
+    </div>
+  </header>
   <main id="page-content" class="container page-content page-content-hero">
   <div class="robots-hero">
     <div class="container robots-hero-inner">
-      <nav-back href="../index.html" label="inici"></nav-back>
+      <div class="section-nav-back">
+    <a href="../index.html" class="btn-back">
+      <span class="btn-back-arrow" aria-hidden="true">←</span>
+      <span class="btn-back-text">Tornar a inici</span>
+    </a>
+  </div>
       <div class="robots-hero-content">
-        <h1 class="robots-hero-title">Situacions d'Aprenentatge</h1>
-        <p class="robots-hero-desc">Propostes curriculars i reptes d'aula per connectar la robòtica i el pensament computacional amb contextos significatius.</p>
+        <h1 class="robots-hero-title">Situacions d&#39;Aprenentatge</h1>
+        <p class="robots-hero-desc">Propostes curriculars i reptes d&#39;aula per connectar la robòtica i el pensament computacional amb contextos significatius.</p>
         <div class="accent-dashes" aria-hidden="true"><span class="dash dash-red"></span><span class="dash dash-yellow"></span><span class="dash dash-blue"></span></div>
       </div>
       <div class="robots-hero-media">
-        <img src="../_assets/banners/situacions-aprenentatge.png" alt="Situacions d'Aprenentatge" class="robots-hero-img" width="800" height="600">
+        <img src="../_assets/banners/situacions-aprenentatge.png" alt="Situacions d&#39;Aprenentatge" class="robots-hero-img" width="800" height="600">
       </div>
     </div>
   </div>
-    <div x-data="{
-      robot: new URLSearchParams(location.search).get('robot') || 'all',
-      cicle: new URLSearchParams(location.search).get('cicle') || 'all',
-      tematica: new URLSearchParams(location.search).get('tematica') || 'all',
-      materia: new URLSearchParams(location.search).get('materia') || 'all',
-      situations: window.CATALEG.situacions,
-      robotOptions: [
-        ['coding-express', 'Coding Express'], ['tale-bot', 'Tale-Bot'], ['coding-set', 'Coding Set'],
-        ['codey-rocky', 'Codey Rocky'], ['spike', 'SPIKE Prime'], ['microbit', 'Micro:bit'], ['desendollat', 'Desendollat (sense robot)']
-      ],
-      cycleOptions: [
-        ['infantil', 'Educació Infantil'], ['segon-cicle-infantil', 'Infantil i primer cicle'],
-        ['primer-cicle', 'Primer cicle'], ['segon-cicle', 'Segon cicle'], ['tercer-cicle', 'Tercer cicle']
-      ],
-      topicOptions: Array.from(new Map(window.CATALEG.situacions.map(item => [item.tematica, item.tematicaLabel])).entries()),
-      subjectOptions: Array.from(new Map(window.CATALEG.situacions.map(item => [item.materia, item.materiaLabel])).entries()),
-      matches(item) {
-        return ['robot', 'cicle', 'tematica', 'materia'].every(key => {
-          const values = String(item[key] || '').split(/\s+/);
-          return this[key] === 'all' || values.includes(this[key]) || (key === 'cicle' && values.includes('tots'));
-        });
-      },
-      withFilters(href) {
-        const url = new URL(href, location.href);
-        ['robot', 'cicle', 'tematica', 'materia'].forEach(key => {
-          if (this[key] === 'all') url.searchParams.delete(key);
-          else url.searchParams.set(key, this[key]);
-        });
-        return url.href;
-      },
-      count() { return this.situations.filter(item => this.matches(item)).length; },
-      total() { return this.situations.length; },
-      sync() {
-        const params = new URLSearchParams();
-        ['robot', 'cicle', 'tematica', 'materia'].forEach(key => { if (this[key] !== 'all') params.set(key, this[key]); });
-        history.replaceState(history.state || {}, '', location.pathname + (params.size ? '?' + params : '') + location.hash);
-      },
-      reset() { this.robot = this.cicle = this.tematica = this.materia = 'all'; }
-    }"
-      x-effect="sync()"
-      x-init="$nextTick(() => location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)))?.focus({ preventScroll: true }))">
+    <div data-situations-catalog data-total="124">
       <div class="filters-bar">
         <div class="filter-group">
           <label class="filter-label" for="filter-robot"><img src="../_assets/icons/pack/robot.png" alt="" class="filter-label-icon" height="36">Robot</label>
-          <select id="filter-robot" class="filter-select" x-model="robot">
+          <select id="filter-robot" class="filter-select" data-filter="robot">
             <option value="all">Tots els robots</option>
-            <template x-for="option in robotOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+            <option value="coding-express">Coding Express</option><option value="tale-bot">Tale-Bot</option><option value="coding-set">Coding Set</option><option value="codey-rocky">Codey Rocky</option><option value="spike">SPIKE Prime</option><option value="microbit">Micro:bit</option><option value="desendollat">Desendollat (sense robot)</option>
           </select>
         </div>
         <div class="filter-group">
           <label class="filter-label" for="filter-cicle"><img src="../_assets/icons/pack/cicle.png" alt="" class="filter-label-icon" height="36">Cicle</label>
-          <select id="filter-cicle" class="filter-select" x-model="cicle">
+          <select id="filter-cicle" class="filter-select" data-filter="cicle">
             <option value="all">Tots els cicles</option>
-            <template x-for="option in cycleOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+            <option value="infantil">Educació Infantil</option><option value="primer-cicle">Primer cicle</option><option value="segon-cicle">Segon cicle</option><option value="tercer-cicle">Tercer cicle</option>
           </select>
         </div>
         <div class="filter-group">
           <label class="filter-label" for="filter-tematica"><img src="../_assets/icons/pack/tematica.png" alt="" class="filter-label-icon" height="36">Temàtica</label>
-          <select id="filter-tematica" class="filter-select" x-model="tematica">
+          <select id="filter-tematica" class="filter-select" data-filter="tematica">
             <option value="all">Totes les temàtiques</option>
-            <template x-for="option in topicOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+            <option value="ciutat">Ciutat intel·ligent i accessibilitat</option><option value="sostenibilitat">Medi ambient i sostenibilitat</option><option value="repeticio">Bucles i patrons que es repeteixen</option><option value="art">Relat, natura i expressió</option><option value="llengua">Vocabulari i representació</option><option value="entorn">Animals i entorn</option><option value="societat">Mobilitat i convivència</option><option value="desconnectada">Seqüències sense pantalles ni robot</option><option value="resolucio-problemes">Sistemes, rutes i resolució de problemes</option><option value="narracio">Contes, seqüències i entorn valencià</option><option value="ciencia">Materials i circuits</option><option value="tecnologia">Sensors i interacció</option><option value="benestar">Entorn sonor i benestar compartit</option><option value="programacio">Patrons i repetició</option><option value="entorn-local">Vocabulari de l’Albufera</option><option value="albufera">Projecte de descoberta de la marjal</option><option value="horta-valenciana">Fira de l&#39;horta</option><option value="patrimoni-local-i-global">La Llotja i el patrimoni del món</option><option value="salut">Alimentació i vida quotidiana</option><option value="natura">Observació i representació</option><option value="ciutadania">Disseny responsable i benestar</option><option value="dades">Variables, mesures i gestió</option><option value="innovacio">Dades, models i patrimoni</option><option value="historia">Missatges i patrimoni</option><option value="reptes">Jocs lògics i arquitectura escolar</option><option value="depuracio">Depuració i mobilitat</option><option value="disseny">Disseny iteratiu i comunicació</option><option value="espai">Exploració i enginyeria espacial</option><option value="robotica">Computació física i professions</option><option value="professions">Professions i comunitat</option><option value="logica">Llistes, condicions i serveis escolars</option><option value="projecte">Projecte de computació física</option><option value="enginyeria">Disseny, energia i ús responsable</option><option value="python">Python: sensors i decisions</option><option value="logistica">Sensors i logística escolar</option><option value="comunitat">Escola i barri</option>
           </select>
         </div>
         <div class="filter-group">
           <label class="filter-label" for="filter-materia"><img src="../_assets/icons/pack/materia.png" alt="" class="filter-label-icon" height="36">Matèria</label>
-          <select id="filter-materia" class="filter-select" x-model="materia">
+          <select id="filter-materia" class="filter-select" data-filter="materia">
             <option value="all">Totes les matèries</option>
-            <template x-for="option in subjectOptions" :key="option[0]"><option :value="option[0]" x-text="option[1]"></option></template>
+            <option value="matematiques">Matemàtiques, Tecnologia i Ciutadania Digital</option><option value="pensament-computacional">Descoberta de l’entorn i Pensament Computacional</option><option value="medi">Coneixement del medi</option><option value="artistica">Educació Artística</option><option value="llengua">Llengua i Literatura</option><option value="tecnologia">Tecnologia, Matemàtiques i Economia</option><option value="matematiques-i-educacio-artistica">Matemàtiques, educació artística i tecnologia</option><option value="ciencies">Ciències, matemàtiques i tecnologia</option><option value="llenguatge-i-pensament-computacional">Llengua, expressió i pensament computacional</option><option value="coneixement-medi">Coneixement del medi i pensament computacional</option><option value="musica">Música i pensament computacional</option><option value="educacio-fisica">Educació Física, Matemàtiques i Tecnologia</option>
           </select>
         </div>
         <div class="filter-count">
-          <span id="situations-count" role="status" aria-live="polite" x-text="'Mostrant ' + count() + ' de ' + total() + ' situacions'"></span>
-          <button type="button" class="btn-reset-filters" x-on:click="reset()">Restablir filtres</button>
+          <span id="situations-count" data-filter-count role="status" aria-live="polite">Mostrant 124 de 124 situacions</span>
+          <button type="button" class="btn-reset-filters" data-filter-reset>Restablir filtres</button>
         </div>
       </div>
       <div class="clean-grid" id="situations-grid">
-        <template x-for="item in situations" :key="item.id">
-          <a :id="item.id" :href="withFilters('../' + item.url)" x-show="matches(item)" class="item-card sa-card"
-             :data-robot="item.robot" :data-cicle="item.cicle" :data-tematica="item.tematica" :data-materia="item.materia">
-            <div class="card-top">
-              <div class="card-robot-info">
-                <template x-if="item.robot"><img :src="'../_assets/icons/' + item.robot + '.png'" alt="" class="card-robot-sa-icon" width="36" height="36"></template>
-                <span class="tag-badge primary" x-text="item.robotLabel"></span>
-              </div>
-              <span class="tag-badge" x-text="item.cicleLabel"></span>
-            </div>
-            <h3 class="item-title" x-text="item.titol"></h3>
-            <div class="sa-challenge" x-text="'“' + item.repte + '”'"></div>
-            <div class="card-tags"><span class="tag-pill" x-text="item.materiaLabel"></span><span class="tag-pill" x-text="item.tematicaLabel"></span></div>
-            <div class="item-footer"><span x-text="'⏱️ ' + (item.sessions || item.durada)"></span><span>Obrir situació →</span></div>
-          </a>
-        </template>
+        <a id="situacio-sa-ce-bifurcacio-parc" href="../situacio/ce-bifurcacio-parc/index.html" data-base-href="../situacio/ce-bifurcacio-parc/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="ciutat" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
       </div>
-      <p id="situations-empty" x-show="count() === 0" x-cloak>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>
+      <span class="tag-badge">Educació Infantil</span>
     </div>
-
+    <h3 class="item-title">Dues rutes, una decisió</h3>
+    <div class="sa-challenge">“Quina informació ens ajuda a decidir per quina branca ha de continuar el tren i com comprovem si ha arribat al destí triat?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i Descoberta de l’entorn</span><span class="tag-pill">Ciutat intel·ligent i accessibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions · 120 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-bucle-horta" href="../situacio/ce-bucle-horta/index.html" data-base-href="../situacio/ce-bucle-horta/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="sostenibilitat" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">El bucle de l’horta escolar</h3>
+    <div class="sa-challenge">“Què es repeteix quan el tren completa una volta a l’hort i com podem anticipar quantes vegades passarà pel mateix punt?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i Descoberta de l’entorn</span><span class="tag-pill">Medi ambient i sostenibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions · 120 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-bucles-relats" href="../situacio/ce-bucles-relats/index.html" data-base-href="../situacio/ce-bucles-relats/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="repeticio" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">El tren que torna</h3>
+    <div class="sa-challenge">“Com convertim llocs del nostre entorn en una història circular i expliquem quan acaba?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, música i llenguatge</span><span class="tag-pill">Bucles i patrons que es repeteixen</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 30–40 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-cami-segur" href="../situacio/ce-cami-segur/index.html" data-base-href="../situacio/ce-cami-segur/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="ciutat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Un camí tranquil fins a l’escola</h3>
+    <div class="sa-challenge">“Quines situacions poden interrompre un trajecte i com podem representar decisions prudents en una maqueta sense confondre-la amb una senyalització real?”</div>
+    <div class="card-tags"><span class="tag-pill">Descoberta de l’entorn</span><span class="tag-pill">Ciutat intel·ligent i accessibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-concert-pati" href="../situacio/ce-concert-pati/index.html" data-base-href="../situacio/ce-concert-pati/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="art" data-materia="artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Un concert de sons del pati</h3>
+    <div class="sa-challenge">“Com podem crear una seqüència sonora breu inspirada en el pati i ordenar-la perquè cada so aparega en el moment acordat?”</div>
+    <div class="card-tags"><span class="tag-pill">Educació Artística i Música</span><span class="tag-pill">Art, música i expressió</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-distancies-estacions" href="../situacio/ce-distancies-estacions/index.html" data-base-href="../situacio/ce-distancies-estacions/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="ciutat" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Distàncies entre estacions</h3>
+    <div class="sa-challenge">“Quin nombre de l’app necessita el tren per arribar a cada estació i com comprovem que ha fet el trajecte esperat?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i Descoberta de l’entorn</span><span class="tag-pill">Mobilitat quotidiana i orientació</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-habitats-albufera" href="../situacio/ce-habitats-albufera/index.html" data-base-href="../situacio/ce-habitats-albufera/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Hàbitats vius de l’Albufera</h3>
+    <div class="sa-challenge">“Què necessiten els éssers vius per habitar un lloc, i com podem representar canvis que ajuden a conservar-lo?”</div>
+    <div class="card-tags"><span class="tag-pill">Descoberta de l’entorn, Ciències i Llenguatge</span><span class="tag-pill">Biodiversitat i cura de l’entorn</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-missatges-estacio" href="../situacio/ce-missatges-estacio/index.html" data-base-href="../situacio/ce-missatges-estacio/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="llengua" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Missatges per a l’estació</h3>
+    <div class="sa-challenge">“Quina informació necessita cada estació per rebre el tren i com podem transmetre-la amb sons o símbols que tot el grup entenga?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua i Literatura</span><span class="tag-pill">Llengua i comunicació</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions · 120 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-oratge-pati" href="../situacio/ce-oratge-pati/index.html" data-base-href="../situacio/ce-oratge-pati/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="entorn" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Un pati per a cada oratge</h3>
+    <div class="sa-challenge">“Com podem preparar un pati acollidor per a diferents condicions d’oratge?”</div>
+    <div class="card-tags"><span class="tag-pill">Descoberta de l’entorn, Ciències i Llenguatge</span><span class="tag-pill">Oratge, estacions i espais de joc</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-parades-emocions" href="../situacio/ce-parades-emocions/index.html" data-base-href="../situacio/ce-parades-emocions/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="societat" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Com se sent el personatge del tren?</h3>
+    <div class="sa-challenge">“Com podem escoltar diferents interpretacions d’un personatge de ficció i representar-les sense decidir què sent una persona real?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua i Educació emocional</span><span class="tag-pill">Convivència i ciutadania</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions · 120 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-primer-viatge" href="../situacio/ce-primer-viatge/index.html" data-base-href="../situacio/ce-primer-viatge/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="societat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Explorem les peces de la via</h3>
+    <div class="sa-challenge">“Quins elements necessitem per preparar una ruta clara perquè el tren visite una estació i puga tornar al punt de partida?”</div>
+    <div class="card-tags"><span class="tag-pill">Descoberta de l’entorn</span><span class="tag-pill">Convivència i ciutadania</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-reptes-desconnectats" href="../situacio/ce-reptes-desconnectats/index.html" data-base-href="../situacio/ce-reptes-desconnectats/index.html" class="item-card sa-card" data-robot="desendollat" data-cicle="infantil" data-tematica="desconnectada" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/desendollat.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Activitat desconnectada</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">El tren es queda al taller</h3>
+    <div class="sa-challenge">“Podem resoldre els mateixos reptes amb el cos, targetes i paper?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, llenguatge i matemàtiques</span><span class="tag-pill">Seqüències sense pantalles ni robot</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-reptes-rutes" href="../situacio/ce-reptes-rutes/index.html" data-base-href="../situacio/ce-reptes-rutes/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="resolucio-problemes" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Rutes amb decisions</h3>
+    <div class="sa-challenge">“Com dissenyem una ruta pel nostre poble i la millorem quan apareix un problema?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, descoberta de l’entorn i llenguatge</span><span class="tag-pill">Sistemes, rutes i resolució de problemes</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 195 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ce-sequencia-histories" href="../situacio/ce-sequencia-histories/index.html" data-base-href="../situacio/ce-sequencia-histories/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="narracio" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Històries que viatgen en tren</h3>
+    <div class="sa-challenge">“Quina seqüència d’ordres permet contar una història clara amb el tren?”</div>
+    <div class="card-tags"><span class="tag-pill">Llenguatge, descoberta de l’entorn i pensament computacional</span><span class="tag-pill">Seqüències, sons i relats</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-ciutat-accessible" href="../situacio/ciutat-accessible/index.html" data-base-href="../situacio/ciutat-accessible/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="ciutat" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Senyalització inclusiva en una maqueta</h3>
+    <div class="sa-challenge">“Com podem representar dos estats d’un pas urbà amb senyals comprensibles per més d’un canal i provar-los en una maqueta?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Coneixement del Medi i Disseny</span><span class="tag-pill">Accessibilitat i disseny urbà</span></div>
+    <div class="item-footer"><span>⏱️ 6 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-coding-set-casa-geometrica" href="../situacio/coding-set-casa-geometrica/index.html" data-base-href="../situacio/coding-set-casa-geometrica/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="art" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Un plànol geomètric amb MatataBot</h3>
+    <div class="sa-challenge">“Quantes ordres necessitem per dibuixar el contorn d’una casa i com podem simplificar el programa quan repetim moviments?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques</span><span class="tag-pill">Art, música i expressió</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 180 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-coding-set-fira-matematica" href="../situacio/coding-set-fira-matematica/index.html" data-base-href="../situacio/coding-set-fira-matematica/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="ciencia" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">La fira de formes, nombres i estrelles</h3>
+    <div class="sa-challenge">“Com podem convertir les ordres de MatataBot en una fira on classifiquem formes, escrivim nombres i dibuixem constel·lacions?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques, llengües i educació artística</span><span class="tag-pill">Ciència i entorn</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-coding-set-futbol-cooperatiu" href="../situacio/coding-set-futbol-cooperatiu/index.html" data-base-href="../situacio/coding-set-futbol-cooperatiu/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="societat" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Un repte cooperatiu de futbol de taula</h3>
+    <div class="sa-challenge">“Com podem programar una ruta de passada perquè la pilota arribe a una zona acordada i tothom puga participar en el repte?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i Educació Física</span><span class="tag-pill">Convivència i ciutadania</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-coding-set-parc-observadors" href="../situacio/coding-set-parc-observadors/index.html" data-base-href="../situacio/coding-set-parc-observadors/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">MatataBot · Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Una ronda d’observació al parc</h3>
+    <div class="sa-challenge">“Com podem programar una ruta que visite diversos espais i ens ajude a observar-los sense tocar ni molestar els éssers vius?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del Medi, Matemàtiques i Tecnologia</span><span class="tag-pill">Natura pròxima i sostenibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-coding-set-ruta-biblioteca" href="../situacio/coding-set-ruta-biblioteca/index.html" data-base-href="../situacio/coding-set-ruta-biblioteca/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="societat" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">La ruta dels llibres viatgers</h3>
+    <div class="sa-challenge">“Com podem programar MatataBot per a visitar quatre espais mentre presentem un llibre fictici i una recomanació original?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua i Literatura</span><span class="tag-pill">Convivència i ciutadania</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 180 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-conte-tale-bot" href="../situacio/conte-tale-bot/index.html" data-base-href="../situacio/conte-tale-bot/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="narracio" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot Pro</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">El pont de la marjal</h3>
+    <div class="sa-challenge">“Com podem ordenar les escenes i les ordres perquè Tale-Bot travesse el pont i altres persones puguen seguir el nostre conte?”</div>
+    <div class="card-tags"><span class="tag-pill">Llenguatge, Educació Artística i Pensament Computacional</span><span class="tag-pill">Contes, seqüències i entorn valencià</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-coreografia-codey" href="../situacio/coreografia-codey/index.html" data-base-href="../situacio/coreografia-codey/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="primer-cicle" data-tematica="art" data-materia="artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Una dansa robòtica per a la festa de l’escola</h3>
+    <div class="sa-challenge">“Com podem convertir un ritme propi en una seqüència de moviments, expressions i llums que el robot puga repetir?”</div>
+    <div class="card-tags"><span class="tag-pill">Educació Artística, Música i Tecnologia</span><span class="tag-pill">Ritme, dansa i expressió</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cr-entrades-sensors" href="../situacio/cr-entrades-sensors/index.html" data-base-href="../situacio/cr-entrades-sensors/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="tercer-cicle" data-tematica="tecnologia" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">El laboratori de sensors de Codey Rocky</h3>
+    <div class="sa-challenge">“Com pot Codey Rocky percebre senyals del seu entorn i convertir-los en respostes que siguen útils, clares i comprovables?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciències</span><span class="tag-pill">Sensors i interacció</span></div>
+    <div class="item-footer"><span>⏱️ 12 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cr-llum-aula" href="../situacio/cr-llum-aula/index.html" data-base-href="../situacio/cr-llum-aula/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="segon-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">El mapa de llum de l’aula</h3>
+    <div class="sa-challenge">“Com podem comparar la llum de diferents espais amb un procediment repetible i explicar els límits de la mesura?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del Medi, Ciències i Tecnologia</span><span class="tag-pill">Entorn escolar i ús responsable de l’energia</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cr-mapa-sonor" href="../situacio/cr-mapa-sonor/index.html" data-base-href="../situacio/cr-mapa-sonor/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="tercer-cicle" data-tematica="benestar" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un mapa sonor per a llegir l’aula</h3>
+    <div class="sa-challenge">“Com podem descriure i comparar l’ambient sonor d’un espai sense identificar qui parla ni confondre una lectura del sensor amb una mesura clínica o en decibels?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del Medi, Matemàtiques i Tecnologia</span><span class="tag-pill">Entorn sonor i benestar compartit</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions · 225–250 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cr-museu-jocs-programats" href="../situacio/cr-museu-jocs-programats/index.html" data-base-href="../situacio/cr-museu-jocs-programats/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="segon-cicle" data-tematica="programacio" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Museu de jocs programats</h3>
+    <div class="sa-challenge">“Com dissenyem una exposició de jocs que es puga entendre, provar, depurar i recórrer amb Codey Rocky?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques, Art i Pensament Computacional</span><span class="tag-pill">Projectes interactius i robòtica</span></div>
+    <div class="item-footer"><span>⏱️ 24 sessions de 40 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cr-repartiment" href="../situacio/cr-repartiment/index.html" data-base-href="../situacio/cr-repartiment/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="segon-cicle" data-tematica="ciutat" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Repartiment amb una ruta segura</h3>
+    <div class="sa-challenge">“Com pot un vehicle programat avançar per una ruta de repartiment i reaccionar davant d’un obstacle previsible?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i Tecnologia</span><span class="tag-pill">Entorn i mobilitat</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cr-ruta-colors" href="../situacio/cr-ruta-colors/index.html" data-base-href="../situacio/cr-ruta-colors/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="segon-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Arxiu de colors de l’horta</h3>
+    <div class="sa-challenge">“Com podem descriure i classificar els colors que observem a l’horta sense confondre una lectura del sensor amb la identificació d’un objecte?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del Medi / Ciències</span><span class="tag-pill">Medi ambient i sostenibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-angles-ceramica" href="../situacio/cs-angles-ceramica/index.html" data-base-href="../situacio/cs-angles-ceramica/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="tercer-cicle" data-tematica="entorn-local" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Angles que dibuixen la ceràmica</h3>
+    <div class="sa-challenge">“Com podem programar un gir interior concret i comprovar quin bloc d’angle necessita MatataBot per dibuixar cada triangle?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i educació artística</span><span class="tag-pill">Geometria i ceràmica valenciana</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 50 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-animals-visites" href="../situacio/cs-animals-visites/index.html" data-base-href="../situacio/cs-animals-visites/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="infantil" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Quatre animals, quatre visites i una ruta de memòria</h3>
+    <div class="sa-challenge">“Podem recordar on hem deixat cada animal i programar MatataBot perquè hi torne sense que el robot veja ni arreplegue les peces?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, llenguatge i entorn</span><span class="tag-pill">Serveis del poble i animals de granja</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-artist-net-paraules" href="../situacio/cs-artist-net-paraules/index.html" data-base-href="../situacio/cs-artist-net-paraules/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="albufera" data-materia="matematiques-i-educacio-artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Del pla a la paraula: formes del marjal</h3>
+    <div class="sa-challenge">“Com podem passar d’una xarxa plana a una forma 3D i representar una paraula amb una seqüència que el robot puga recórrer?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques, educació artística i tecnologia</span><span class="tag-pill">Maqueta i vocabulari de l’Albufera</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-benvinguda-barqueta" href="../situacio/cs-benvinguda-barqueta/index.html" data-base-href="../situacio/cs-benvinguda-barqueta/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Una benvinguda a la barqueta</h3>
+    <div class="sa-challenge">“Com preparem MatataBot i una barqueta de paper en una mateixa línia perquè el robot hi arribe i faça sonar una salutació musical?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional i medi</span><span class="tag-pill">La barqueta de l’Albufera</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-cami-digestiu" href="../situacio/cs-cami-digestiu/index.html" data-base-href="../situacio/cs-cami-digestiu/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="horta-valenciana" data-materia="ciencies">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">El viatge d&#39;una fruita: una ruta digestiva</h3>
+    <div class="sa-challenge">“Com podem representar, programar i explicar el recorregut dels aliments sense confondre el mapa amb el funcionament real del cos?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, matemàtiques i tecnologia</span><span class="tag-pill">Horta i cos humà</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 50 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-circuit-cursa-horta" href="../situacio/cs-circuit-cursa-horta/index.html" data-base-href="../situacio/cs-circuit-cursa-horta/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="horta-valenciana" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Un circuit de l&#39;horta per a un cotxe de paper</h3>
+    <div class="sa-challenge">“Com podem dissenyar un vehicle lleuger i un circuit de l&#39;horta, i crear una seqüència de blocs que complete una volta?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Disseny</span><span class="tag-pill">Fira de l&#39;horta</span></div>
+    <div class="item-footer"><span>⏱️ 2 sessions de 60 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-collita-taronges" href="../situacio/cs-collita-taronges/index.html" data-base-href="../situacio/cs-collita-taronges/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">La collita que sona</h3>
+    <div class="sa-challenge">“Com podem programar una ruta perquè MatataBot arribe a una o més peces de fruita, les acoste a la zona de recollida i faça sonar la celebració sense atribuir-li una pinça que no té?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional i medi</span><span class="tag-pill">La collita de cítrics</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-compara-nombres-mercat" href="../situacio/cs-compara-nombres-mercat/index.html" data-base-href="../situacio/cs-compara-nombres-mercat/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="horta-valenciana" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Dos parades, una ruta de nombres</h3>
+    <div class="sa-challenge">“Com podem programar MatataBot fins a dues quantitats diferents i justificar quina és major, menor o igual?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i tecnologia</span><span class="tag-pill">Fira i mercat de l&#39;horta</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 50 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-constellacions-marjal" href="../situacio/cs-constellacions-marjal/index.html" data-base-href="../situacio/cs-constellacions-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="entorn-local" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Constel·lacions de la marjal amb MatataBot</h3>
+    <div class="sa-challenge">“Com podem representar una idea inspirada en la marjal com una constel·lació pròpia i comunicar-ne el recorregut amb instruccions clares?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques, Ciències i Educació Artística</span><span class="tag-pill">La marjal i el cel nocturn</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 50 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-contes-marjal" href="../situacio/cs-contes-marjal/index.html" data-base-href="../situacio/cs-contes-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="albufera" data-materia="llenguatge-i-pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Contes de ruta pel marjal</h3>
+    <div class="sa-challenge">“Com podem contar una història amb una ruta que el robot puga executar i una altra parella puga explicar sense que li revelem el relat?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua, expressió i pensament computacional</span><span class="tag-pill">Relats de l’Albufera</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-distintiu-marjal" href="../situacio/cs-distintiu-marjal/index.html" data-base-href="../situacio/cs-distintiu-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="albufera" data-materia="matematiques-i-educacio-artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Un distintiu per a cada equip del marjal</h3>
+    <div class="sa-challenge">“Com podem crear un distintiu que represente l’encàrrec del nostre equip i fer que una altra parella puga comprovar l’ordre de les formes amb MatataBot?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques, educació artística i tecnologia</span><span class="tag-pill">Equips d’exploració de l’Albufera</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-eixim-albufera" href="../situacio/cs-eixim-albufera/index.html" data-base-href="../situacio/cs-eixim-albufera/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Eixim d’excursió: una ruta amb encàrrecs</h3>
+    <div class="sa-challenge">“Com podem completar tots els encàrrecs abans d’eixir, respectar l’ordre necessari entre preparar i menjar l’esmorzar, i trobar una ruta curta que una altra parella puga comprovar?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional i medi</span><span class="tag-pill">Preparar una excursió a l’Albufera</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-estacions-codi" href="../situacio/cs-estacions-codi/index.html" data-base-href="../situacio/cs-estacions-codi/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Estacions de codi: del bloc al mapa</h3>
+    <div class="sa-challenge">“Com podem passar d’unes ordres tangibles a una història i un mapa que una altra classe puga comprendre i recórrer?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, llengües i expressió artística</span><span class="tag-pill">Entorn i comunitat</span></div>
+    <div class="item-footer"><span>⏱️ 12 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-extracurricular-marjal" href="../situacio/cs-extracurricular-marjal/index.html" data-base-href="../situacio/cs-extracurricular-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="albufera" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Del codi a un projecte del marjal</h3>
+    <div class="sa-challenge">“Com podem crear una experiència de joc i descoberta del marjal amb ordres, música, mapes i una proposta pròpia?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, música, coneixement del medi i educació artística</span><span class="tag-pill">Projecte de descoberta de la marjal</span></div>
+    <div class="item-footer"><span>⏱️ 12 sessions de 60 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-gelat-horta" href="../situacio/cs-gelat-horta/index.html" data-base-href="../situacio/cs-gelat-horta/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="entorn-local" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Un gelat geomètric de l’horta</h3>
+    <div class="sa-challenge">“Com podem programar un triangle de mida adequada i convertir-lo en una creació de paper que una altra classe puga reconstruir?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i educació artística</span><span class="tag-pill">Sabors i mercat de l’horta</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-parelles-horta" href="../situacio/cs-parelles-horta/index.html" data-base-href="../situacio/cs-parelles-horta/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="horta-valenciana" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Parelles de fruita al mapa del mercat</h3>
+    <div class="sa-challenge">“Com podem programar una ruta que connecte dues fruites iguals i justificar quina de les rutes vàlides és més curta?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques i tecnologia</span><span class="tag-pill">Mercat i fruita de temporada</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 50 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-patrimoni-rutes" href="../situacio/cs-patrimoni-rutes/index.html" data-base-href="../situacio/cs-patrimoni-rutes/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="patrimoni-local-i-global" data-materia="coneixement-medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Patrimoni en ruta</h3>
+    <div class="sa-challenge">“Com podem usar una targeta de país per trobar el lloc patrimonial corresponent i programar una ruta que no toque les altres targetes?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del medi i pensament computacional</span><span class="tag-pill">La Llotja i el patrimoni del món</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-ronda-viver-marjal" href="../situacio/cs-ronda-viver-marjal/index.html" data-base-href="../situacio/cs-ronda-viver-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Una ronda pel viver de la marjal</h3>
+    <div class="sa-challenge">“Com planifiquem una ruta que passe al voltant de més d’un objecte i arribe a la bandera si MatataBot no pot detectar cap obstacle?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional i medi</span><span class="tag-pill">El viver escolar de la marjal</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-ruta-segura-marjal" href="../situacio/cs-ruta-segura-marjal/index.html" data-base-href="../situacio/cs-ruta-segura-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Una ruta segura per la marjal</h3>
+    <div class="sa-challenge">“Com podem guiar MatataBot fins a dos punts de la marjal sense travessar una zona protegida i explicar a un altre equip com ho hem aconseguit?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, Matemàtiques i Medi</span><span class="tag-pill">Marjal i cura dels hàbitats</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-rutes-laberint-horta" href="../situacio/cs-rutes-laberint-horta/index.html" data-base-href="../situacio/cs-rutes-laberint-horta/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Rutes i laberints de l’horta</h3>
+    <div class="sa-challenge">“Com podem planificar i provar una ruta tangible, primer amb ordres simples i després amb paràmetres, bucles i funcions?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, Matemàtiques i Medi</span><span class="tag-pill">Rutes de l’horta</span></div>
+    <div class="item-footer"><span>⏱️ 2 sessions · 120 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-sons-marjal" href="../situacio/cs-sons-marjal/index.html" data-base-href="../situacio/cs-sons-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="entorn-local" data-materia="musica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Sons que dibuixen la marjal</h3>
+    <div class="sa-challenge">“Com podem representar i ordenar sons més aguts i més greus perquè una altra classe puga llegir i interpretar una peça pròpia?”</div>
+    <div class="card-tags"><span class="tag-pill">Música i pensament computacional</span><span class="tag-pill">Paisatge sonor de la marjal</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-tresors-sequia" href="../situacio/cs-tresors-sequia/index.html" data-base-href="../situacio/cs-tresors-sequia/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="segon-cicle" data-tematica="entorn-local" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Tresors entre séquies</h3>
+    <div class="sa-challenge">“Com podem dissenyar un laberint clar i programar MatataBot per visitar un tresor, i després dos, en una sola seqüència?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional i Matemàtiques</span><span class="tag-pill">Séquia i marjal</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-cs-vocabulari-marjal" href="../situacio/cs-vocabulari-marjal/index.html" data-base-href="../situacio/cs-vocabulari-marjal/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="entorn-local" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Paraules en ruta per la marjal</h3>
+    <div class="sa-challenge">“Com podem comunicar una paraula, localitzar-ne la imatge en un mapa i corregir el programa si MatataBot arriba a una altra targeta?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengües i coneixement del medi</span><span class="tag-pill">Vocabulari de l’Albufera</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-desendollada-cripto" href="../situacio/desendollada-cripto/index.html" data-base-href="../situacio/desendollada-cripto/index.html" class="item-card sa-card" data-robot="desendollat" data-cicle="tercer-cicle" data-tematica="societat" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/desendollat.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Desendollat (sense robot)</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Espies escolars: missatges i privacitat</h3>
+    <div class="sa-challenge">“Com podem transmetre un missatge de manera que el destinatari el puga recuperar, i què ens ensenya això sobre la privacitat digital?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques</span><span class="tag-pill">Convivència i ciutadania digital</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 50 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-emocions-codey" href="../situacio/emocions-codey/index.html" data-base-href="../situacio/emocions-codey/index.html" class="item-card sa-card" data-robot="codey-rocky" data-cicle="segon-cicle" data-tematica="salut" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/codey-rocky.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Codey Rocky</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Caretes de la plaça</h3>
+    <div class="sa-challenge">“Com pot una expressió digital ajudar-nos a contar una història, i per què no és suficient per saber com se sent una persona?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua, Educació Artística i Tecnologia</span><span class="tag-pill">Benestar i convivència</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-hivernacle-microbit" href="../situacio/hivernacle-microbit/index.html" data-base-href="../situacio/hivernacle-microbit/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Alertes per al bosc i l’hort</h3>
+    <div class="sa-challenge">“Com podem enviar un avís de protecció i representar un sensor de cultiu sense exposar la placa a l’aigua o al sòl?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Tecnologia i Matemàtiques</span><span class="tag-pill">Biodiversitat i cultiu</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 200 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-laberint-mart" href="../situacio/laberint-mart/index.html" data-base-href="../situacio/laberint-mart/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="entorn" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Missió de robòtica cooperativa</h3>
+    <div class="sa-challenge">“Com podem dissenyar un robot fiable que complete missions de cura de l’entorn i explique amb proves les decisions de l’equip?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciències</span><span class="tag-pill">L’Albufera i la cura de l’entorn</span></div>
+    <div class="item-footer"><span>⏱️ 12–15 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-animacio-volca" href="../situacio/mb-animacio-volca/index.html" data-base-href="../situacio/mb-animacio-volca/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="segon-cicle" data-tematica="ciencia" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Una erupció en píxels</h3>
+    <div class="sa-challenge">“Com podem descompondre un procés en fotogrames i repetir-los en una animació LED comprensible?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Geografia i Tecnologia</span><span class="tag-pill">Fenòmens geològics i animació</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions · 225 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-animacions-aiguamoll" href="../situacio/mb-animacions-aiguamoll/index.html" data-base-href="../situacio/mb-animacions-aiguamoll/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="primer-cicle" data-tematica="natura" data-materia="artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Animacions de l’aiguamoll</h3>
+    <div class="sa-challenge">“Com podem explicar una observació de la natura amb una icona LED i una animació programada?”</div>
+    <div class="card-tags"><span class="tag-pill">Educació Artística, Medi i Tecnologia</span><span class="tag-pill">Natura i expressió digital</span></div>
+    <div class="item-footer"><span>⏱️ 2 sessions · 100 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-art-de-la-natura" href="../situacio/mb-art-de-la-natura/index.html" data-base-href="../situacio/mb-art-de-la-natura/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="primer-cicle" data-tematica="natura" data-materia="artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Art de la natura en píxels</h3>
+    <div class="sa-challenge">“Quins trets d’una forma natural podem conservar quan la representem primer amb materials i després amb cinc per cinc píxels?”</div>
+    <div class="card-tags"><span class="tag-pill">Educació Artística, Medi i Tecnologia</span><span class="tag-pill">Observació i representació</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 180 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-aula-sensorial" href="../situacio/mb-aula-sensorial/index.html" data-base-href="../situacio/mb-aula-sensorial/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="ciutadania" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Una aula amb opcions sensorials</h3>
+    <div class="sa-challenge">“Com podem crear un recurs visual opcional i configurable que ajude a fer més previsible una rutina de l’aula?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Ciències i Inclusió</span><span class="tag-pill">Disseny accessible</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 200 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-clau-segura" href="../situacio/mb-clau-segura/index.html" data-base-href="../situacio/mb-clau-segura/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="ciutadania" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Clau segura, dades protegides</h3>
+    <div class="sa-challenge">“Com podem explicar els riscos digitals i provar un algorisme de contrasenyes amb dades completament fictícies?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciutadania Digital</span><span class="tag-pill">Seguretat i privacitat</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 200 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-comptador-residus" href="../situacio/mb-comptador-residus/index.html" data-base-href="../situacio/mb-comptador-residus/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Comptem residus amb cura</h3>
+    <div class="sa-challenge">“Com podem dissenyar un comptador de micro:bit que registre residus per categoria i ens ajude a fer una proposta responsable?”</div>
+    <div class="card-tags"><span class="tag-pill">Medi, Matemàtiques i Tecnologia</span><span class="tag-pill">Residus i entorn escolar</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions · 150 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-dades-pati" href="../situacio/mb-dades-pati/index.html" data-base-href="../situacio/mb-dades-pati/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="segon-cicle" data-tematica="dades" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Dades que parlen del pati</h3>
+    <div class="sa-challenge">“Com podem recollir dades de l’entorn del pati i transformar-les en un prototip útil sense exposar informació personal?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques i Tecnologia</span><span class="tag-pill">Observació i dades responsables</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-energia-aula" href="../situacio/mb-energia-aula/index.html" data-base-href="../situacio/mb-energia-aula/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">La llum que usem</h3>
+    <div class="sa-challenge">“Què ens diuen les lectures de llum sobre l’ús de la il·luminació i quina proposta podem defensar amb dades?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques i Tecnologia</span><span class="tag-pill">Energia i dades del centre</span></div>
+    <div class="item-footer"><span>⏱️ 6 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-fonaments-computacio" href="../situacio/mb-fonaments-computacio/index.html" data-base-href="../situacio/mb-fonaments-computacio/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="programacio" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Fonaments per a pensar amb ordinadors</h3>
+    <div class="sa-challenge">“Com passem d’un problema quotidià a un algorisme precís, un programa provat i una explicació de com cooperen maquinari i programari?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Pensament Computacional</span><span class="tag-pill">Fonaments de computació</span></div>
+    <div class="item-footer"><span>⏱️ 6 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-ia-exercici-responsable" href="../situacio/mb-ia-exercici-responsable/index.html" data-base-href="../situacio/mb-ia-exercici-responsable/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="innovacio" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un temporitzador d’activitats responsable</h3>
+    <div class="sa-challenge">“Com podem crear un temporitzador de maqueta amb aprenentatge automàtic i explicar amb honestedat quan falla?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques i Ciutadania Digital</span><span class="tag-pill">IA, moviment i disseny responsable</span></div>
+    <div class="item-footer"><span>⏱️ 8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-ia-tastet" href="../situacio/mb-ia-tastet/index.html" data-base-href="../situacio/mb-ia-tastet/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="ciutadania" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Primer tast d’intel·ligència artificial</h3>
+    <div class="sa-challenge">“Com podem explicar què és la IA i provar si un model reconeix dos moviments que no ha vist abans?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciutadania Digital</span><span class="tag-pill">Dades i intel·ligència artificial</span></div>
+    <div class="item-footer"><span>⏱️ 2 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-models-moviment" href="../situacio/mb-models-moviment/index.html" data-base-href="../situacio/mb-models-moviment/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="innovacio" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Una maqueta que aprén patrons</h3>
+    <div class="sa-challenge">“Com podem fer que una maqueta reconega patrons de moviment, provar-ne els errors i explicar per a qui funciona?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciències</span><span class="tag-pill">Dades, models i patrimoni</span></div>
+    <div class="item-footer"><span>⏱️ 7 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-moviment-cooperatiu" href="../situacio/mb-moviment-cooperatiu/index.html" data-base-href="../situacio/mb-moviment-cooperatiu/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="salut" data-materia="educacio-fisica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Moviment cooperatiu i dades</h3>
+    <div class="sa-challenge">“Com podem crear un selector de jocs de moviment amb variables i atzar sense convertir les dades en puntuacions personals?”</div>
+    <div class="card-tags"><span class="tag-pill">Educació Física, Matemàtiques i Tecnologia</span><span class="tag-pill">Joc, dades i benestar</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-provador-conductivitat" href="../situacio/mb-provador-conductivitat/index.html" data-base-href="../situacio/mb-provador-conductivitat/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="segon-cicle" data-tematica="ciencia" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Un provador de materials</h3>
+    <div class="sa-challenge">“Com podem usar una entrada de micro:bit i una condició per investigar quins materials condueixen electricitat?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques i Tecnologia</span><span class="tag-pill">Materials i circuits</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-raco-lectura" href="../situacio/mb-raco-lectura/index.html" data-base-href="../situacio/mb-raco-lectura/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="segon-cicle" data-tematica="art" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Sis projectes per a la biblioteca</h3>
+    <div class="sa-challenge">“Com podem combinar entrades, eixides, sensors i aleatorietat per crear sis projectes útils i lúdics per a la biblioteca?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua, Matemàtiques i Tecnologia</span><span class="tag-pill">Lectura i creació digital</span></div>
+    <div class="item-footer"><span>⏱️ 6 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-reptes-planeta" href="../situacio/mb-reptes-planeta/index.html" data-base-href="../situacio/mb-reptes-planeta/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Reptes micro:bit per a cuidar l’entorn i les persones</h3>
+    <div class="sa-challenge">“Quin prototip podem dissenyar per a respondre a un repte real sense prometre una protecció que la tecnologia no pot garantir?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Ciències i Ciutadania</span><span class="tag-pill">Reptes de disseny amb impacte</span></div>
+    <div class="item-footer"><span>⏱️ 10–15 sessions · selecció de reptes</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-ritmes-pati" href="../situacio/mb-ritmes-pati/index.html" data-base-href="../situacio/mb-ritmes-pati/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="segon-cicle" data-tematica="art" data-materia="artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Segon cicle</span>
+    </div>
+    <h3 class="item-title">Ritmes del pati en codi</h3>
+    <div class="sa-challenge">“Com podem convertir una idea rítmica en instruccions que altres persones i la micro:bit puguen interpretar?”</div>
+    <div class="card-tags"><span class="tag-pill">Música i Tecnologia</span><span class="tag-pill">Música i expressió</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-targetes-paraules" href="../situacio/mb-targetes-paraules/index.html" data-base-href="../situacio/mb-targetes-paraules/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="primer-cicle" data-tematica="llengua" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Paraules en targetes digitals</h3>
+    <div class="sa-challenge">“Com podem dissenyar una targeta digital que ajude a recordar vocabulari amb icones, seqüències i temps d’espera?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengües, Art i Tecnologia</span><span class="tag-pill">Vocabulari i representació</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-tecnologia-benestar" href="../situacio/mb-tecnologia-benestar/index.html" data-base-href="../situacio/mb-tecnologia-benestar/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="ciutadania" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Tecnologia per al benestar quotidià</h3>
+    <div class="sa-challenge">“Com podem dissenyar una ajuda tecnològica senzilla que facilite una rutina de benestar sense vigilar ni diagnosticar ningú?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Ciències i Ciutadania</span><span class="tag-pill">Disseny responsable i benestar</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mb-xifres-que-viatgen" href="../situacio/mb-xifres-que-viatgen/index.html" data-base-href="../situacio/mb-xifres-que-viatgen/index.html" class="item-card sa-card" data-robot="microbit" data-cicle="tercer-cicle" data-tematica="historia" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/microbit.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">micro:bit</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Xifres que viatgen</h3>
+    <div class="sa-challenge">“Com podem codificar i descodificar un missatge amb un algorisme, i quins límits té el xifrat de Cèsar?”</div>
+    <div class="card-tags"><span class="tag-pill">Història, Matemàtiques i Programació</span><span class="tag-pill">Missatges i patrimoni</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions · 200 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-mercat-tangible" href="../situacio/mercat-tangible/index.html" data-base-href="../situacio/mercat-tangible/index.html" class="item-card sa-card" data-robot="coding-set" data-cicle="primer-cicle" data-tematica="salut" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-set.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Set</span>
+      </div>
+      <span class="tag-badge">Primer cicle</span>
+    </div>
+    <h3 class="item-title">Ruta Saludable pel Mercat del Barri</h3>
+    <div class="sa-challenge">“Com podem planificar la compra de fruites i verdures de temporada al mercat gastant el pressupost just i fent el camí més curt?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques</span><span class="tag-pill">Salut, hàbits i benestar</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-residus-lego" href="../situacio/residus-lego/index.html" data-base-href="../situacio/residus-lego/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Què pot saber un sensor de color?</h3>
+    <div class="sa-challenge">“Podem crear una màquina que classifique mostres de prova i explicar amb honestedat què no sap identificar?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del Medi, Ciències i Tecnologia</span><span class="tag-pill">Residus, consum i sostenibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-ajudant-receptes" href="../situacio/sp-ajudant-receptes/index.html" data-base-href="../situacio/sp-ajudant-receptes/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="salut" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un ajudant de receptes en maqueta</h3>
+    <div class="sa-challenge">“Com podem prototipar un ajudant mecànic per a una tasca de cuina i fer que siga fàcil i segur d’utilitzar?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del Medi, Matemàtiques i Tecnologia</span><span class="tag-pill">Alimentació i vida quotidiana</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions · 250 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-benvinguda" href="../situacio/sp-benvinguda/index.html" data-base-href="../situacio/sp-benvinguda/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="societat" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Una benvinguda amb moviment</h3>
+    <div class="sa-challenge">“Com podem dissenyar una màquina amb SPIKE Prime que reba les persones amb un moviment amable i fàcil d’entendre?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua, Art i Tecnologia</span><span class="tag-pill">Acollida i convivència</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions · 250 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-biblioteca-circulant" href="../situacio/sp-biblioteca-circulant/index.html" data-base-href="../situacio/sp-biblioteca-circulant/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="societat" data-materia="matematiques">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">El centre logístic de la biblioteca</h3>
+    <div class="sa-challenge">“Com podem preparar, traçar, protegir i verificar un paquet de llibres en una maqueta sense exposar dades personals?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques, Tecnologia i Ciutadania Digital</span><span class="tag-pill">Biblioteca i comunitat</span></div>
+    <div class="item-footer"><span>⏱️ 7 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-caminada-impossible" href="../situacio/sp-caminada-impossible/index.html" data-base-href="../situacio/sp-caminada-impossible/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="art" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">La desfilada de les caminades impossibles</h3>
+    <div class="sa-challenge">“Com podem fer avançar un model LEGO SPIKE Prime sense rodes i quins canvis de les potes n’alteren el moviment?”</div>
+    <div class="card-tags"><span class="tag-pill">Física, Matemàtiques i Tecnologia</span><span class="tag-pill">Moviment i disseny</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions · 250 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-condicions-compostes" href="../situacio/sp-condicions-compostes/index.html" data-base-href="../situacio/sp-condicions-compostes/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="reptes" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">El repte de les tres pistes</h3>
+    <div class="sa-challenge">“Com podem crear un joc de pistes que responga a una seqüència de condicions sense confondre una simulació amb una protecció real?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques, Disseny i Orientació</span><span class="tag-pill">Jocs lògics i arquitectura escolar</span></div>
+    <div class="item-footer"><span>⏱️ 5 lliçons · 7–9 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-dades-pati" href="../situacio/sp-dades-pati/index.html" data-base-href="../situacio/sp-dades-pati/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">El pati: dades, ritme i decisions</h3>
+    <div class="sa-challenge">“Com podem dissenyar programes amb variables i dades per a un festival escolar, comprovant la fiabilitat de cada decisió?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques, Música i Tecnologia</span><span class="tag-pill">Pati, clima i cura de l’hort</span></div>
+    <div class="item-footer"><span>⏱️ 10–12 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-debug-rutes" href="../situacio/sp-debug-rutes/index.html" data-base-href="../situacio/sp-debug-rutes/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="depuracio" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Depurar per arribar-hi</h3>
+    <div class="sa-challenge">“Com distingim un error de muntatge d’un error de programa i com demostrem que una ruta autònoma funciona de manera fiable?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Pensament Computacional</span><span class="tag-pill">Depuració i mobilitat</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 7–10 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-disseny-iteratiu" href="../situacio/sp-disseny-iteratiu/index.html" data-base-href="../situacio/sp-disseny-iteratiu/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="disseny" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Dissenyar, provar i compartir</h3>
+    <div class="sa-challenge">“Com transformem una idea útil en un prototip provat i en una explicació que ajude altres persones a valorar-la?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Llengües i Emprenedoria</span><span class="tag-pill">Disseny iteratiu i comunicació</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 7–9 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-eines-missio-eva" href="../situacio/sp-eines-missio-eva/index.html" data-base-href="../situacio/sp-eines-missio-eva/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="espai" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Eines per a una missió de servei espacial</h3>
+    <div class="sa-challenge">“Com podem dissenyar una eina que ajude una persona amb guants a moure peces o guiar un cable en una reparació simulada?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Tecnologia i Disseny</span><span class="tag-pill">Exploració i enginyeria espacial</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions · 250 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-fira-torre-gots" href="../situacio/sp-fira-torre-gots/index.html" data-base-href="../situacio/sp-fira-torre-gots/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="horta-valenciana" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">La fira de les torres de gots</h3>
+    <div class="sa-challenge">“Com podem planificar, programar i millorar una ruta que evite obstacles i tombe una torre de gots amb seguretat?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciències</span><span class="tag-pill">Fira de l&#39;horta</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 50 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-fonaments-fisics" href="../situacio/sp-fonaments-fisics/index.html" data-base-href="../situacio/sp-fonaments-fisics/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="robotica" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Robots que ens ajuden</h3>
+    <div class="sa-challenge">“Què fa que una màquina siga un robot i com podem combinar maquinari, programa i treball en equip per resoldre una necessitat real?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Ciències i Orientació</span><span class="tag-pill">Computació física i professions</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 6–8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-itineraris-professionals" href="../situacio/sp-itineraris-professionals/index.html" data-base-href="../situacio/sp-itineraris-professionals/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="professions" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Camins, habilitats i possibilitats</h3>
+    <div class="sa-challenge">“Quines persones, competències i itineraris formatius fan possible una fira tecnològica accessible, i com podem investigar opcions sense predir el futur de ningú?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Orientació i Competència Digital</span><span class="tag-pill">Professions i comunitat</span></div>
+    <div class="item-footer"><span>⏱️ 3 lliçons · 5–6 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-llistes-condicions" href="../situacio/sp-llistes-condicions/index.html" data-base-href="../situacio/sp-llistes-condicions/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="logica" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Lògica per a una escola oberta</h3>
+    <div class="sa-challenge">“Com pot una maqueta llegir una seqüència, aplicar regles explícites i respondre a una ruta sense tractar-la com un sistema de seguretat real?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Educació en Valors</span><span class="tag-pill">Llistes, condicions i serveis escolars</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 8–10 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-museu-accessible" href="../situacio/sp-museu-accessible/index.html" data-base-href="../situacio/sp-museu-accessible/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="societat" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Laboratori de solucions accessibles</h3>
+    <div class="sa-challenge">“Com podem identificar una necessitat, prototipar alternatives i millorar una solució accessible amb proves justes?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Disseny i Matemàtiques</span><span class="tag-pill">Disseny per a la comunitat</span></div>
+    <div class="item-footer"><span>⏱️ 8–10 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-prime-combinat" href="../situacio/sp-prime-combinat/index.html" data-base-href="../situacio/sp-prime-combinat/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Casa eficient i collita delicada</h3>
+    <div class="sa-challenge">“Com podem automatitzar una acció quotidiana de menor impacte i dissenyar una eina que manege el fruit amb suavitat?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Tecnologia i Matemàtiques</span><span class="tag-pill">Energia i agricultura de proximitat</span></div>
+    <div class="item-footer"><span>⏱️ 7–8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-projecte-computacio-fisica" href="../situacio/sp-projecte-computacio-fisica/index.html" data-base-href="../situacio/sp-projecte-computacio-fisica/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="projecte" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un prototip per a un repte real</h3>
+    <div class="sa-challenge">“Quin problema concret de la comunitat podem investigar i representar amb un prototip SPIKE Prime, i quines proves necessitem per explicar-ne el valor i els límits?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Ciències, Matemàtiques i Disseny</span><span class="tag-pill">Projecte de computació física</span></div>
+    <div class="item-footer"><span>⏱️ 500 min · 10–12 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-proves-avaluacio" href="../situacio/sp-proves-avaluacio/index.html" data-base-href="../situacio/sp-proves-avaluacio/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="enginyeria" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Provar abans de decidir</h3>
+    <div class="sa-challenge">“Quines proves i dades necessitem abans de dir que un prototip funciona o que un robot és millor per a una tasca?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Ciències, Matemàtiques i Orientació</span><span class="tag-pill">Disseny, energia i ús responsable</span></div>
+    <div class="item-footer"><span>⏱️ 8 lliçons · 9–12 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-bucles" href="../situacio/sp-python-bucles/index.html" data-base-href="../situacio/sp-python-bucles/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un mosaic de moviments repetits</h3>
+    <div class="sa-challenge">“Com podem programar una màquina de mosaic de taula amb patrons repetibles, controlar quantes vegades actua i evitar que un bucle continue quan ja ha acabat la tasca?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques, Art i Programació</span><span class="tag-pill">Python: bucles i repetició</span></div>
+    <div class="item-footer"><span>⏱️ 7 lliçons · 7–10 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-comunicacio" href="../situacio/sp-python-comunicacio/index.html" data-base-href="../situacio/sp-python-comunicacio/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Missatges que arriben</h3>
+    <div class="sa-challenge">“Com podem crear un senyal escolar inclusiu amb Python, llum i so, i comprovar que el missatge s’entén en diferents condicions d’ús?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Llengües i Programació</span><span class="tag-pill">Python: maquinari, programari i comunicació</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons oficials + 1 ampliació · 7–9 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-condicions" href="../situacio/sp-python-condicions/index.html" data-base-href="../situacio/sp-python-condicions/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Una decisió, dues comprovacions</h3>
+    <div class="sa-challenge">“Com podem combinar comprovacions en Python per decidir quan una maqueta de préstec de material pot mostrar una resposta, i com provem que no confon casos?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Programació</span><span class="tag-pill">Python: condicions i seguretat digital</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 6–8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-dades" href="../situacio/sp-python-dades/index.html" data-base-href="../situacio/sp-python-dades/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Dades que orienten el trajecte</h3>
+    <div class="sa-challenge">“Com podem recollir dades amb sensors SPIKE, comprovar-les i usar càlculs en Python per planificar un trajecte simulat de manera comprensible?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciències Socials</span><span class="tag-pill">Python, dades i mobilitat escolar</span></div>
+    <div class="item-footer"><span>⏱️ 7 lliçons · 7–10 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-depuracio" href="../situacio/sp-python-depuracio/index.html" data-base-href="../situacio/sp-python-depuracio/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Python: el laboratori de depuració</h3>
+    <div class="sa-challenge">“Com podem localitzar si un comportament inesperat prové del disseny, d’una connexió, d’un error de sintaxi o de la lògica del programa Python?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Programació</span><span class="tag-pill">Python i depuració de prototips</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 5–6 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-funcions" href="../situacio/sp-python-funcions/index.html" data-base-href="../situacio/sp-python-funcions/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Funcions que fan equip</h3>
+    <div class="sa-challenge">“Com podem dividir el triatge d’una jornada escolar en accions reutilitzables i ensenyar un prototip SPIKE a executar-les amb dades diferents?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Programació</span><span class="tag-pill">Python: funcions i paràmetres</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 6–8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-jocs" href="../situacio/sp-python-jocs/index.html" data-base-href="../situacio/sp-python-jocs/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Fira de jocs amb regles clares</h3>
+    <div class="sa-challenge">“Com podem crear un joc de fira amb regles transparents en què una condició Python canvie una resposta del model, el marcador siga fiable i tothom puga participar?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Programació</span><span class="tag-pill">Python: condicions simples i jocs</span></div>
+    <div class="item-footer"><span>⏱️ 8 lliçons · 8–12 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-llistes" href="../situacio/sp-python-llistes/index.html" data-base-href="../situacio/sp-python-llistes/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Paraules en llista, històries en ruta</h3>
+    <div class="sa-challenge">“Com pot una llista Python organitzar dades en ordre, comparar col·leccions i convertir senyals de color en peces d’una història col·laborativa?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Llengües i Programació</span><span class="tag-pill">Python: llistes i joc de paraules</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 8–12 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-motors" href="../situacio/sp-python-motors/index.html" data-base-href="../situacio/sp-python-motors/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Moviment amb motiu</h3>
+    <div class="sa-challenge">“Com podem programar un mecanisme SPIKE que complete moviments útils i repetibles en una ruta de transport simulada, i demostrar-ne la precisió amb proves?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Programació</span><span class="tag-pill">Python: motors, posició i automatització</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 6–8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-projecte-transport" href="../situacio/sp-python-projecte-transport/index.html" data-base-href="../situacio/sp-python-projecte-transport/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un trajecte útil, un prototip que aprén</h3>
+    <div class="sa-challenge">“Com podem dissenyar i programar en Python un prototip SPIKE que transporte materials de maqueta per una ruta escolar definida, i comunicar amb dades què resol i què encara no?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Programació</span><span class="tag-pill">Projecte culminant: transport i Python</span></div>
+    <div class="item-footer"><span>⏱️ 10 lliçons · 10–12 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-python-sensors" href="../situacio/sp-python-sensors/index.html" data-base-href="../situacio/sp-python-sensors/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="python" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Una parada a temps</h3>
+    <div class="sa-challenge">“Com podem fer que un prototip SPIKE prime una ordre amb sensor de força, reconega una zona d’aturada amb distància i transporte una càrrega lleugera sense eixir del recorregut?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Ciències i Programació</span><span class="tag-pill">Python: sensors i decisions</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 6–8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-rampa-dades" href="../situacio/sp-rampa-dades/index.html" data-base-href="../situacio/sp-rampa-dades/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Energia en una pista de proves</h3>
+    <div class="sa-challenge">“Què podem inferir sobre energia i moviment amb un vehicle de maqueta, i com descrivim l’error de les nostres mesures?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques i Tecnologia</span><span class="tag-pill">Moviment i energia</span></div>
+    <div class="item-footer"><span>⏱️ 6 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-reg-hort" href="../situacio/sp-reg-hort/index.html" data-base-href="../situacio/sp-reg-hort/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un indicador de reg per a l’hort escolar</h3>
+    <div class="sa-challenge">“Com podem transformar la previsió de pluja d’una setmana en un indicador calibrat i útil per a prendre una decisió sobre una maqueta d’hort?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques i Tecnologia</span><span class="tag-pill">Agricultura i dades meteorològiques</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45–60 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-reptes-cooperatius" href="../situacio/sp-reptes-cooperatius/index.html" data-base-href="../situacio/sp-reptes-cooperatius/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="societat" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Reptes cooperatius de taller</h3>
+    <div class="sa-challenge">“Com podem generar idees, explicar per a què serveixen i convertir-les en un repte mecànic cooperatiu?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Llengua</span><span class="tag-pill">Cooperació i creativitat</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-sensors-logistica" href="../situacio/sp-sensors-logistica/index.html" data-base-href="../situacio/sp-sensors-logistica/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="logistica" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Sensors al servei de la biblioteca</h3>
+    <div class="sa-challenge">“Com pot un robot detectar condicions, actuar amb seguretat i coordinar-se amb altres equips sense confondre la simulació amb un servei real?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Ciències Socials</span><span class="tag-pill">Sensors i logística escolar</span></div>
+    <div class="item-footer"><span>⏱️ 8 lliçons · 10–14 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-titelles-moviment" href="../situacio/sp-titelles-moviment/index.html" data-base-href="../situacio/sp-titelles-moviment/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="art" data-materia="artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Titelles mecàniques de l’Albufera</h3>
+    <div class="sa-challenge">“Com podem transformar el gir d’un motor en el moviment expressiu d’una titella que conta una història local?”</div>
+    <div class="card-tags"><span class="tag-pill">Educació Artística, Llengua i Tecnologia</span><span class="tag-pill">Relat, natura i expressió</span></div>
+    <div class="item-footer"><span>⏱️ 5 sessions · 250 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-variables-distancia" href="../situacio/sp-variables-distancia/index.html" data-base-href="../situacio/sp-variables-distancia/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="dades" data-materia="tecnologia">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Mesurar per decidir</h3>
+    <div class="sa-challenge">“Com fem servir variables i mesures repetibles per a decidir quina ruta de servei escolar convé en una maqueta?”</div>
+    <div class="card-tags"><span class="tag-pill">Tecnologia, Matemàtiques i Economia</span><span class="tag-pill">Variables, mesures i gestió</span></div>
+    <div class="item-footer"><span>⏱️ 6 lliçons · 7–9 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-sp-vent-model" href="../situacio/sp-vent-model/index.html" data-base-href="../situacio/sp-vent-model/index.html" class="item-card sa-card" data-robot="spike" data-cicle="tercer-cicle" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/spike.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">SPIKE Prime</span>
+      </div>
+      <span class="tag-badge">Tercer cicle</span>
+    </div>
+    <h3 class="item-title">Un indicador per a llegir dades de vent</h3>
+    <div class="sa-challenge">“Com podem convertir la velocitat prevista del vent en una representació calibrada, comparable i comprensible?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques i Tecnologia</span><span class="tag-pill">Meteorologia i dades</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions de 45–60 min</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tale-bot-biblioteca-barri" href="../situacio/tale-bot-biblioteca-barri/index.html" data-base-href="../situacio/tale-bot-biblioteca-barri/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="societat" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Una ruta de contes per la biblioteca</h3>
+    <div class="sa-challenge">“Quina ruta pot seguir el robot per visitar tres espais de lectura, i com podem inventar una història diferent en cada parada?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua i Literatura</span><span class="tag-pill">Convivència i ciutadania</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tale-bot-cami-llavors" href="../situacio/tale-bot-cami-llavors/index.html" data-base-href="../situacio/tale-bot-cami-llavors/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot Pro</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">El camí de les llavors</h3>
+    <div class="sa-challenge">“Com podem preparar una ruta per a cada llavor de paper i contar què necessitarà la planta quan comence a créixer?”</div>
+    <div class="card-tags"><span class="tag-pill">Descoberta de l’entorn, llenguatge i matemàtiques</span><span class="tag-pill">Hort escolar i sostenibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tale-bot-dibuix-pati" href="../situacio/tale-bot-dibuix-pati/index.html" data-base-href="../situacio/tale-bot-dibuix-pati/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="ciutat" data-materia="artistica">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Dibuixem un pati que convida a jugar</h3>
+    <div class="sa-challenge">“Quines formes i espais podem representar perquè el plànol del pati siga fàcil d’entendre i permeta més d’una manera de jugar?”</div>
+    <div class="card-tags"><span class="tag-pill">Educació Artística</span><span class="tag-pill">Ciutat intel·ligent i accessibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 20–25 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tale-bot-mapa-sonor" href="../situacio/tale-bot-mapa-sonor/index.html" data-base-href="../situacio/tale-bot-mapa-sonor/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="societat" data-materia="llengua">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">El mapa sonor del barri</h3>
+    <div class="sa-challenge">“Com podem representar sons i veus d’un barri imaginari sense confondre el mapa amb una gravació real del nostre entorn?”</div>
+    <div class="card-tags"><span class="tag-pill">Llengua i Literatura</span><span class="tag-pill">Convivència i ciutadania</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 20–25 minuts</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tb-carrers-amables" href="../situacio/tb-carrers-amables/index.html" data-base-href="../situacio/tb-carrers-amables/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="societat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot Pro</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Un barri que es mou amb cura</h3>
+    <div class="sa-challenge">“Com podem traçar un recorregut pel barri que siga fàcil de seguir, segur i còmode per a diferents persones?”</div>
+    <div class="card-tags"><span class="tag-pill">Medi, Matemàtiques i Pensament Computacional</span><span class="tag-pill">Mobilitat i convivència</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tb-escola-descobertes" href="../situacio/tb-escola-descobertes/index.html" data-base-href="../situacio/tb-escola-descobertes/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="comunitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">La fira de descobertes de l&#39;escola</h3>
+    <div class="sa-challenge">“Com podem preparar una fira on cada ruta del robot convide a observar, comptar, conversar i crear?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del Medi, Matemàtiques, Llenguatge i Educació Artística</span><span class="tag-pill">Escola i barri</span></div>
+    <div class="item-footer"><span>⏱️ 8 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tb-explora-el-barri" href="../situacio/tb-explora-el-barri/index.html" data-base-href="../situacio/tb-explora-el-barri/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="entorn" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Explorem el barri amb Tale-Bot</h3>
+    <div class="sa-challenge">“Com podem utilitzar una ruta programada per a observar, ordenar i contar històries sobre el nostre entorn?”</div>
+    <div class="card-tags"><span class="tag-pill">Ciències, Matemàtiques, Llenguatge i Art</span><span class="tag-pill">Exploració de l’entorn</span></div>
+    <div class="item-footer"><span>⏱️ 15 activitats · 20–30 min cadascuna</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tb-missions-comunitat" href="../situacio/tb-missions-comunitat/index.html" data-base-href="../situacio/tb-missions-comunitat/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="entorn" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Missions de comunitat amb Tale-Bot</h3>
+    <div class="sa-challenge">“Com organitzem un recorregut que visite diversos llocs i conte una història que el grup puga canviar?”</div>
+    <div class="card-tags"><span class="tag-pill">Llenguatge, Medi Social i Pensament Computacional</span><span class="tag-pill">Relats i serveis comunitaris</span></div>
+    <div class="item-footer"><span>⏱️ 10 activitats · 20–30 min cadascuna</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tb-ordres-en-accio" href="../situacio/tb-ordres-en-accio/index.html" data-base-href="../situacio/tb-ordres-en-accio/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="programacio" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Ordres en acció amb Tale-Bot</h3>
+    <div class="sa-challenge">“Com podem donar instruccions clares perquè Tale-Bot arribe, salude, dance i complete una missió?”</div>
+    <div class="card-tags"><span class="tag-pill">Pensament computacional, Llenguatge i Matemàtiques</span><span class="tag-pill">Seqüències i instruccions</span></div>
+    <div class="item-footer"><span>⏱️ 10 activitats · 20–30 min cadascuna</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tb-patrons-en-ruta" href="../situacio/tb-patrons-en-ruta/index.html" data-base-href="../situacio/tb-patrons-en-ruta/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="programacio" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">Patrons en ruta amb Tale-Bot</h3>
+    <div class="sa-challenge">“Quina part d’una ruta es repeteix i com podem expressar-la amb menys ordres sense perdre precisió?”</div>
+    <div class="card-tags"><span class="tag-pill">Matemàtiques, Música i Pensament Computacional</span><span class="tag-pill">Patrons i repetició</span></div>
+    <div class="item-footer"><span>⏱️ 7 reptes · 20–30 min cadascun</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tb-rastre-corral" href="../situacio/tb-rastre-corral/index.html" data-base-href="../situacio/tb-rastre-corral/index.html" class="item-card sa-card" data-robot="tale-bot" data-cicle="infantil" data-tematica="entorn" data-materia="pensament-computacional">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/tale-bot.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Tale-Bot Pro</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">El rastre del corral</h3>
+    <div class="sa-challenge">“Com podem preparar un mapa amb files, columnes i una orientació inicial perquè Tale-Bot trobe cinc animals amb ordres cap avant que puguem comptar i comprovar?”</div>
+    <div class="card-tags"><span class="tag-pill">Descoberta de l’entorn i Pensament Computacional</span><span class="tag-pill">Animals i entorn</span></div>
+    <div class="item-footer"><span>⏱️ 3 sessions</span><span>Obrir situació →</span></div>
+  </a>
+        <a id="situacio-sa-tren-transport" href="../situacio/tren-transport/index.html" data-base-href="../situacio/tren-transport/index.html" class="item-card sa-card" data-robot="coding-express" data-cicle="infantil" data-tematica="sostenibilitat" data-materia="medi">
+    <div class="card-top">
+      <div class="card-robot-info">
+        <img src="../_assets/icons/coding-express.png" alt="" class="card-robot-sa-icon" width="36" height="36">
+        <span class="tag-badge primary">Coding Express</span>
+      </div>
+      <span class="tag-badge">Educació Infantil</span>
+    </div>
+    <h3 class="item-title">La línia verda: un tren per al barri</h3>
+    <div class="sa-challenge">“Com podem connectar l&#39;horta, el mercat i l&#39;escola amb un recorregut que el tren puga completar i que totes les persones entenguen?”</div>
+    <div class="card-tags"><span class="tag-pill">Coneixement del medi</span><span class="tag-pill">Medi ambient i sostenibilitat</span></div>
+    <div class="item-footer"><span>⏱️ 4 sessions de 35–40 minuts</span><span>Obrir situació →</span></div>
+  </a>
+      </div>
+      <p id="situations-empty" data-filter-empty hidden>No hi ha situacions amb aquests filtres. Prova de canviar-los o restablir-los.</p>
+    </div>
   </main>
-  <site-footer></site-footer>
+  <footer class="site-footer">
+    <div class="site-footer-waves" aria-hidden="true">
+      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+      </svg>
+    </div>
+    <div class="container site-footer-inner">
+      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+      <div class="footer-accent-dashes" aria-hidden="true">
+        <span class="dash dash-red"></span>
+        <span class="dash dash-yellow"></span>
+        <span class="dash dash-blue"></span>
+      </div>
+      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+      <div class="footer-robots" aria-hidden="true">
+        <div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ff5a5f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#e4242b" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#b3151b" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fec002" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ff5a5f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#e4242b" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#b3151b" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fec002" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ffa368" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#fc8439" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#d4621c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#804cbd" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ffa368" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#fc8439" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#d4621c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#804cbd" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#8bd152" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#60a62d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#437a1c" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fc7813" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#8bd152" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#60a62d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#437a1c" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fc7813" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#3d9cf0" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#0079dc" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#005aa6" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fdc80a" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#3d9cf0" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#0079dc" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#005aa6" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fdc80a" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#ef54b8" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#d82098" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#a3126f" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#fddc3e" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#ef54b8" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#d82098" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#a3126f" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#fddc3e" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div><div class="fbot">
+  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
+    <polygon fill="#475569" points="24,37.5 35.3,44 24,50.5 12.7,44"/><polygon fill="#334155" points="12.7,44 24,50.5 24,54.5 12.7,48"/><polygon fill="#1e293b" points="24,50.5 35.3,44 35.3,48 24,54.5"/>
+    <polygon fill="#7a828f" points="24,24 34.4,30 24,36 13.6,30"/><polygon fill="#4a515d" points="13.6,30 24,36 24,50 13.6,44"/><polygon fill="#30353d" points="24,36 34.4,30 34.4,44 24,50"/>
+    <g><polygon fill="#047fdf" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
+    <g>
+      <polygon fill="#7a828f" points="24,17 30.9,21 24,25 17.1,21"/><polygon fill="#4a515d" points="17.1,21 24,25 24,34 17.1,30"/><polygon fill="#30353d" points="24,25 30.9,21 30.9,30 24,34"/>
+      <g fill="#e0f2fe">
+        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
+        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
+      </g>
+      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
+      <polygon fill="#047fdf" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
+    </g>
+  </svg></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
