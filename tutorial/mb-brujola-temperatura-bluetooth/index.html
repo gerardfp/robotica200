@@ -55,7 +55,7 @@
         <p class="detail-intro" data-description>Llegir el rumb i la temperatura aproximada, provar el logotip tàctil de V2 i distingir Bluetooth de ràdio.</p>
       </div>
       <div class="prose" data-content><section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-objectius">🌱 Situació, repte i intenció</h2>
-<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Construïu una estació de camp que indique orientació, mostre una lectura tèrmica aproximada i comunique un resultat a un dispositiu connectat. Compareu les dades amb instruments de referència i identifiqueu què canvia entre micro:bit V1 i V2. No useu el prototip per a prendre decisions meteorològiques o de seguretat.</p></div></aside>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Feu que la micro:bit mostre la direcció i una temperatura aproximada. Compareu-les amb una brúixola i un termòmetre; després exploreu el logotip tàctil de V2 i la connexió Bluetooth si teniu els dispositius necessaris.</p></div></aside>
 <ul><li>Calibrar la brúixola i comparar rumbs amb una referència.</li><li>Contrastar la temperatura interna aproximada amb un termòmetre.</li><li>Distingir l’entrada tàctil de V2 i la connexió Bluetooth de la ràdio.</li></ul>
 </section>
 <section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
@@ -77,12 +77,22 @@
     </nav>
 <section class="learning-step" id="1-calibreu-i-compareu-el-rumb" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Calibreu i compareu el rumb</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Obriu un programa que mostre el rumb de la brúixola en graus. Seguiu la indicació de calibratge del dispositiu i feu la prova lluny d’imants, ordinadors i superfícies metàl·liques. Orienteu la placa cap a quatre direccions marcades amb una brúixola de referència; registreu diferències aproximades i repetiu una lectura després de girar la placa. No interpreteu el valor com una direcció fiable si la lectura oscil·la.</p>
+<p>Obriu MakeCode i prepareu dos botons:</p>
+<ol><li>En <strong>Entrada</strong>, afegiu «en prémer el botó A». Dins, poseu «mostra el número» i, al seu espai, la lectura de brúixola.</li><li>Afegiu un altre bloc de botó i canvieu-lo a <strong>B</strong>. Dins, poseu «mostra el número» amb la lectura de temperatura.</li></ol>
+<p>El botó A mostrarà la direcció i el B, la temperatura aproximada. Si preferiu copiar el programa, obriu <strong>JavaScript</strong> en MakeCode, enganxeu aquest text i torneu a <strong>Blocs</strong> per veure les peces:</p>
+<figure class="code-panel"><figcaption>Exemple de programació · javascript</figcaption><pre class="code-block" tabindex="0"><code class="language-javascript">input.onButtonPressed(Button.A, function () {
+    basic.showNumber(input.compassHeading())
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(input.temperature())
+})</code></pre></figure>
+<p>Descarregueu-lo a la placa i premeu A. Si demana calibrar-la, seguiu les indicacions de la pantalla. Manteniu-la plana, amb la vora superior cap a la direcció que voleu mesurar. Proveu quatre direccions lluny d’imants i objectes metàl·lics; compareu les lectures amb una brúixola de referència.</p>
+<p>Podeu consultar el <a href="https://makecode.microbit.org/reference/input/compass-heading" target="_blank" rel="noopener noreferrer">bloc i l’exemple oficial de brúixola</a> per identificar la peça en MakeCode.</p>
 </section>
 </div></section>
 <section class="learning-step" id="2-compareu-la-temperatura-amb-un-instrument" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Compareu la temperatura amb un instrument</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Mostreu la lectura de temperatura del micro:bit i del termòmetre de referència deixant-los uns minuts al mateix lloc, a l’ombra i sense tocar el processador. Registreu hora, ubicació general i valors, sense dades personals. Repetiu després de canviar de sala només si la temperatura s’ha estabilitzat. Expliqueu que la lectura deriva de la temperatura del xip i pot diferir de la temperatura de l’aire.</p>
+<p>Deixeu la placa i un termòmetre uns minuts al mateix lloc, a l’ombra. Premeu B i compareu els nombres. Anoteu-los sense tocar la placa durant la lectura: la micro:bit mesura la temperatura del xip, que pot ser diferent de la de l’aire.</p>
 </section>
 </div></section>
 <section class="learning-step" id="3-proveu-el-logotip-tactil-segons-la-versio" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Proveu el logotip tàctil segons la versió</h3></header><div class="learning-step-content">
@@ -92,13 +102,14 @@
 </div></section>
 <section class="learning-step" id="4-distingiu-bluetooth-de-radio" data-step="4" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 4</span><h3>Distingiu Bluetooth de ràdio</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Seguiu la guia de connexió de l’editor i emparelleu la placa amb un dispositiu compatible. Envieu una lectura fictícia o un número de prova a la interfície disponible i comproveu si arriba. Compareu el procediment amb <code>radio</code> entre dues plaques: Bluetooth crea una connexió amb un dispositiu compatible, mentre que el bloc ràdio de MakeCode envia missatges entre plaques del grup. Si l’editor o el dispositiu no admeten la connexió, feu el diagrama de missatges en paper i anoteu-ho com a simulació.</p>
+<p>Si teniu una tauleta compatible amb l’app oficial de micro:bit, seguiu la <a href="https://microbit.org/get-started/user-guide/mobile/" target="_blank" rel="noopener noreferrer">guia de l’app</a> per emparellar-la i enviar un programa a la placa per Bluetooth. Observeu si la placa executa el programa després de la transferència. Si no teniu l’app, feu la prova per cable i anoteu que no heu comprovat Bluetooth.</p>
+<p>Compareu-ho amb la <a href="../../tutorial/mb-radio-mesh/index.html">guia de ràdio</a>, que envia números entre dues plaques. Per intercanviar dades amb un dispositiu Bluetooth des d’un programa cal una extensió i una aplicació compatibles; afegir l’extensió Bluetooth elimina els blocs de ràdio del mateix projecte. Guardeu cada prova en un projecte separat.</p>
 <figure class="sa-illustration"><img src="../../_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp" alt="Una micro:bit de la dotació en suport de cartó, al costat d’una brúixola i un termòmetre de referència; un telèfon mostra el símbol abstracte de Bluetooth." width="600" height="448" loading="lazy"><figcaption>La brúixola i el termòmetre són instruments de comparació, no accessoris connectats a la placa.</figcaption></figure>
 </section>
 </div></section>
 </section>
 <section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
-<p>Repetiu tres vegades quatre rumbs marcats i dues lectures tèrmiques en condicions anotades. A V2, compareu cinc intents de tacte i cinc de no tacte; en V1, registreu l’entrada alternativa utilitzada. Proveu la connexió Bluetooth una vegada amb dispositiu compatible i documenteu el resultat, o feu la simulació desconnectada. Si la brúixola canvia en acostar-la a un objecte, separeu l’objecte i repetiu abans de canviar el programa.</p>
+<p>Proveu A en quatre direccions i B al costat del termòmetre; anoteu els resultats. Si teniu V2, comproveu també el logotip tàctil. Indiqueu si heu transferit el programa per Bluetooth o per cable. Si la brúixola dona valors inestables, allunyeu-la d’objectes metàl·lics i repetiu.</p>
 <h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
 <ul><li>Què s’ha calibrat i quina font d’interferència heu descartat?</li><li>Per què la temperatura del processador pot diferir de la temperatura de l’aire?</li><li>Quines funcions requereixen micro:bit V2?</li><li>Quina diferència observable hi ha entre emparellar per Bluetooth i enviar dades per ràdio?</li></ul>
 <h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>

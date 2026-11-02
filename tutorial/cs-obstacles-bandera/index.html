@@ -55,7 +55,7 @@
         <p class="detail-intro" data-description>Planificar una ruta del MatataBot que evite obstacles i arribe a una bandera, provar-la i depurar els girs.</p>
       </div>
       <div class="prose" data-content><section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-objectius">🌱 Situació, repte i intenció</h2>
-<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Planifiqueu un trajecte perquè MatataBot arribe a una bandera sense travessar cap obstacle. L’objectiu és distingir un obstacle físic —que delimita el mapa— d’un sensor: en aquesta activitat el robot no el detecta ni l’esquiva automàticament. L’alumnat ha de llegir la graella, anticipar els girs i programar una ruta segura amb les fitxes direccionals del Coding Set.</p></div></aside>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Planifiqueu un camí perquè MatataBot arribe a una bandera sense passar per un obstacle. En aquesta activitat el robot no el detecta ni l’esquiva automàticament: sou vosaltres qui decidiu la ruta.</p></div></aside>
 <p>En acabar, cada equip podrà:</p>
 <ul><li>descriure inici, destinació i caselles prohibides;</li><li>construir una seqüència de moviments que evite les peces d’obstacle;</li><li>comprovar si la ruta arriba a la bandera i corregir-la amb una prova cada vegada;</li><li>explicar per què «girar a l’esquerra» no vol dir «desplaçar-se cap a l’esquerra».</li></ul>
 </section>
@@ -64,7 +64,7 @@
 </section>
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
 <ul><li>Coding Set de la dotació: MatataBot, Control Tower, tauler de control, mapa, fitxes de moviment i bandera.</li><li>Obstacles inclosos amb el conjunt; confirmeu que són les peces del kit base del vostre centre.</li><li>Targetes o quadrícula de paper per a planificar una ruta abans de col·locar les fitxes.</li><li>Registre de predicció, prova i correcció.</li></ul>
-<p>Connecteu la torre, el tauler i el robot segons la guia del fabricant. Marqueu una casella d’inici, col·loqueu la bandera en una altra casella i poseu dos obstacles en caselles intermèdies. Manteniu el mapa pla i deixeu lliure l’espai perquè el robot puga avançar sense que les peces es moguen. Aquesta pràctica usa obstacles com a elements del mapa, no els sensors del complement Sensor Add-on.</p>
+<p>Connecteu la torre, el tauler i el robot. Poseu una targeta d’obstacle davant del punt d’inici i una bandera dues caselles més enllà. Deixeu lliure una columna a la dreta per passar-hi. El Sensor Add-on no és necessari per a aquesta pràctica.</p>
 </section>
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
@@ -78,12 +78,14 @@
     </nav>
 <section class="learning-step" id="1-llegiu-el-mapa-des-del-punt-de-vista-del-robot" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Llegiu el mapa des del punt de vista del robot</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Poseu MatataBot a l’inici i orienteu-lo cap a la primera casella. Identifiqueu la bandera i les caselles ocupades pels obstacles. Dibuixeu la graella en paper i marqueu amb una creu les posicions que el robot no ha de travessar. Abans de programar, feu que cada persona explique cap a on mira el robot: les ordres de gir són relatives a la seua orientació.</p>
+<p>Poseu MatataBot a l’inici, mirant cap a l’obstacle i la bandera. Dibuixeu les tres posicions en una graella. Assenyaleu la dreta del robot: els girs depenen de cap a on mira.</p>
 </section>
 </div></section>
 <section class="learning-step" id="2-planifiqueu-una-ruta-amb-fletxes" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>Planifiqueu una ruta amb fletxes</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Dibuixeu una ruta que faça una volta al voltant dels obstacles i arribe a la bandera. Escriviu les ordres en una llista; useu «gira» abans de l’ordre d’avançar quan canvie la direcció. Representeu un gir a la dreta com <code>↻</code> i un gir a l’esquerra com <code>↺</code>; cap dels dos desplaça el robot de casella. Compteu cada avanç segons la quadrícula del mapa i no afegiu peces numèriques si no les necessiteu.</p>
+<p>Seguiu amb el dit aquesta ruta sobre la graella abans de col·locar les peces. Un gir canvia cap a on mira el robot, però no l’avança:</p>
+<p><strong>Dreta → Endavant → Esquerra → Endavant → Endavant → Esquerra → Endavant</strong></p>
+<p>El recorregut passa pel costat de la targeta i torna a la columna de la bandera. Abans d&#39;usar el robot, seguiu les fletxes amb el dit i comproveu que hi ha prou espai a la graella.</p>
 <figure class="sa-illustration"><img src="../../_assets/tutorials/cs-obstacles-bandera.png" alt="Kit Matatalab Coding Set real amb el MatataBot, la torre, fitxes de moviment, obstacles i una bandera en una ruta sobre el tauler." width="600" height="448" loading="lazy"><figcaption>La il·lustració representa el kit Coding Set de la dotació. Les peces d’obstacle i la bandera delimiten la ruta; no són sensors ni ordres programables.</figcaption></figure>
 </section>
 </div></section>
@@ -99,13 +101,12 @@
 </div></section>
 <section class="learning-step" id="5-depureu-canviant-una-sola-instruccio" data-step="5" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 5</span><h3>Depureu canviant una sola instrucció</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Compareu la ruta prevista amb la ruta real i canvieu només la primera fitxa que explique l’error. Torneu a executar i anoteu què ha canviat. Quan funcione, busqueu una segona ruta que arribe a la mateixa bandera amb una seqüència diferent i expliqueu quina és més fàcil de llegir. Si el centre té el Sensor Add-on, identifiqueu les seues peces «Obstacle/No Obstacle» i contrasteu-les amb les barreres del mapa: només el complement aporta eixes ordres de detecció;</p>
-<p>les barreres físiques del Coding Set base no són llegides pel robot.</p>
+<p>Si el resultat no és el previst, reviseu la primera fitxa que no correspon a la ruta, canvieu-la i torneu a provar des de l’inici. Si ja funciona, busqueu una altra ruta. El Sensor Add-on és un complement diferent: les barreres del kit base no detecten res.</p>
 </section>
 </div></section>
 </section>
 <section class="detail-section" data-section-group="assessment"><h2 id="prova-depura-i-reflexiona">🧪 Evidències i avaluació</h2>
-<p>Feu almenys tres execucions: una ruta inicial, una ruta corregida i una alternativa. En cada cas, registreu inici, orientació, obstacles, seqüència de fitxes i resultat. Comproveu també un programa deliberadament invàlid en paper —per exemple, una ruta que travessaria una casella ocupada— i expliqueu per què s’ha de corregir abans d’executar-lo.</p>
+<p>Feu la ruta i anoteu si arriba a la bandera. Repetiu-la des de la mateixa posició; després proveu una ruta alternativa. Si cal una correcció, anoteu la fitxa canviada i el resultat.</p>
 <h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
 <ul><li>Quines caselles representen restriccions i quina representa la destinació?</li><li>En quin moment un gir canvia l’orientació sense canviar de casella?</li><li>Quin error concret heu trobat i quina única fitxa heu modificat?</li><li>El MatataBot ha detectat l’obstacle o l’hem evitat perquè nosaltres hem planificat la ruta?</li><li>Podeu arribar a la mateixa bandera amb una seqüència diferent?</li></ul>
 <h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>

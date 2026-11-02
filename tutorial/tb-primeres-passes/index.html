@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title id="page-title">Primeres passes: Botons direccionals i la tecla Delete | Robòtica²⁰⁰</title>
-  <meta name="description" content="Descobrir els comandaments bàsics de TaleBot, la mesura del seu pas (10 cm) i la importància de buidar">
+  <meta name="description" content="Descobrir els botons de Tale-Bot Pro, provar un recorregut curt i aprendre a esborrar-lo.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -52,17 +52,17 @@
     </span>
   </div>
         <h1 class="detail-page-title" data-title>Primeres passes: Botons direccionals i la tecla Delete</h1>
-        <p class="detail-intro" data-description>Descobrir els comandaments bàsics de TaleBot, la mesura del seu pas (10 cm) i la importància de buidar</p>
+        <p class="detail-intro" data-description>Descobrir els botons de Tale-Bot Pro, provar un recorregut curt i aprendre a esborrar-lo.</p>
       </div>
       <div class="prose" data-content><section class="detail-section detail-section-intro" data-section-group="intro"><h2 id="repte-i-objectius">🌱 Situació, repte i intenció</h2>
-<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Programa un recorregut curt amb els botons físics i comprova com s’afegeixen i s’esborren les instruccions. La pràctica introdueix la seqüència, l’orientació del robot i la repetició de proves sobre una quadrícula.</p></div></aside>
-<ul><li>Distingir les tecles Endavant, Enrere, Gir Dreta i Gir Esquerra.</li><li>Aprendre la rutina del botó Delete (X) per evitar acumular ordres velles.</li><li>Calcular desplaçaments de casella en casella.</li></ul>
+<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4><p>Programa dos avanços amb els botons físics. Comprova com el robot guarda les ordres i com esborra l’última abans d’iniciar el recorregut.</p></div></aside>
+<ul><li>Distingir les tecles Endavant, Enrere, Gir Dreta i Gir Esquerra.</li><li>Aprendre la rutina del botó Delete (X) per evitar acumular ordres velles.</li><li>Comparar el desplaçament real amb les caselles de la graella.</li></ul>
 </section>
 <section class="detail-section" data-section-group="learning"><h2 id="funcions-del-robot-treballades">🎯 Aprenentatges i vocabulari</h2>
 <ul><li>Botons direccionals, Play, esborrat d’ordres i indicadors de programació.</li><li>La distància nominal de cada ordre s’ha de provar amb el Tale-Bot concret i el mapa utilitzat.</li></ul>
 </section>
 <section class="detail-section" data-section-group="materials"><h2 id="materials-i-preparacio">🧰 Materials i preparació</h2>
-<ul><li>1 robot TaleBot Pro</li><li>Graella al terra o mapa bàsic</li></ul>
+<ul><li>Tale-Bot Pro carregat.</li><li>Graella o mapa pla, amb la distància entre caselles anotada.</li><li>Cinta per marcar el punt de partida.</li></ul>
 </section>
 <section class="detail-section" data-section-group="sequence"><h2 id="sequencia-guiada">📅 Seqüència didàctica</h2>
 <nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
@@ -76,17 +76,19 @@
     </nav>
 <section class="learning-step" id="1-engegar-el-robot" data-step="1"><header class="learning-step-header"><span class="learning-step-kicker">Pas 1</span><h3>Engegar el robot</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Gira la rodeta posterior fins a sentir la salutació sonora de TaleBot. Els ulls LED s&#39;il·luminaran de color blau.</p>
+<p>Encén el Tale-Bot amb el control posterior i espera la salutació. Si no respon, posa’l a carregar i torna a provar-lo.</p>
 </section>
 </div></section>
 <section class="learning-step" id="2-la-regla-d-or-de-la-x" data-step="2" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 2</span><h3>La regla d&#39;or de la X</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Abans de començar un camí nou, prem el botó vermell &#39;X&#39; per esborrar les passes anteriors.</p>
+<p>Abans d’un camí nou, mantín premut el botó X més d’un segon i comprova que els indicadors s’apaguen. Una pulsació breu, de menys d’un segon, elimina només l’última ordre.</p>
 </section>
 </div></section>
 <section class="learning-step" id="3-programar-una-recta" data-step="3" hidden><header class="learning-step-header"><span class="learning-step-kicker">Pas 3</span><h3>Programar una recta</h3></header><div class="learning-step-content">
 <section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>
-<p>Prem dos cops &#39;Endavant&#39; i el botó taronja central &#39;Play&#39;. TaleBot caminarà exactament 2 caselles (20 cm) i s&#39;aturarà amb alegria.</p>
+<p>Marca el punt d’inici i orienta el robot cap endavant. Prem:</p>
+<p><strong>Endavant → Endavant → Play</strong></p>
+<p>Observa on s’atura i mesura la distància recorreguda. Comprova la mida del pas configurada al teu robot; no assumesques que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.</p>
 <aside class="markdown-callout"><p><strong>💡 Consell docent per a la sessió:</strong> Per als girs, ensenya als infants que TaleBot gira sobre si mateix sense avançar casella.</p></aside>
 </section>
 </div></section>
@@ -96,13 +98,13 @@
 <h3 id="preguntes-per-comprovar">Preguntes per comprovar</h3>
 <ul><li>Cap a on mira el robot abans del primer gir?</li><li>Quina instrucció física elimina si ha premut una tecla per error?</li><li>Quantes ordres direccionals heu programat i en quin punt del mapa s’ha aturat el Tale-Bot?</li></ul>
 <h3 class="detail-subsection-title" id="evidencies-d-aprenentatge">✅ Evidències d’aprenentatge</h3>
-<ul><li>Un mapa de la ruta i l&#39;explicació de com comprovar i esborrar una instrucció. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l&#39;activitat.</li></ul>
+<ul><li>Mapa amb el recorregut previst i el real.</li><li>Explicació de com eliminar l’última ordre abans de Play.</li></ul>
 </section>
 <section class="detail-section" data-section-group="access"><h2 id="accessibilitat-i-seguretat">♿ Participació, accessibilitat i seguretat</h2>
-<p>Comença amb una ruta de dues accions i demostra la funció d&#39;eliminar abans d&#39;afegir-hi més peces de seqüència.</p>
+<p>Comenceu amb dues ordres i una graella gran. Una persona pot prémer els botons mentre una altra assenyala i registra el recorregut. Manteniu el robot lluny de vores i atureu-lo abans de corregir ordres.</p>
 </section>
 <section class="detail-section" data-section-group="official"><h2 id="fonts-oficials-i-limits">🔗 Referents i adaptació</h2>
-<p>Matatalab · Tale-Bot Pro guide · <a href="https://matatalab.com/en/lesson4.2" target="_blank" rel="noopener noreferrer">https://matatalab.com/en/lesson4.2</a>. Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.</p>
+<p>La <a href="https://matatalab.com/en/lesson4.2" target="_blank" rel="noopener noreferrer">guia oficial de Tale-Bot Pro</a> mostra els botons direccionals, Play i Clear. El desplaçament de cada ordre pot variar segons la configuració del robot i la superfície; mesureu-lo abans de preparar la quadrícula.</p>
 </section></div>
     </article>
   </main>
