@@ -435,6 +435,10 @@ function buildSituations() {
     const contentHasChallenge = /<h2\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html);
     const showChallenge = Boolean(repte && !contentHasChallenge);
 
+    const imgMatch = source.match(/!\[(.*?)\]\((.*?)\)/);
+    const imatge = (editorial.image || (imgMatch ? imgMatch[2].replace(/^(\.\.\/)+/, '') : '')).trim();
+    const imatgeAlt = imgMatch ? imgMatch[1].trim() : title;
+
     writeHTML(`situacio/${slug}/index.html`, SituationPage({
       slug,
       title,
@@ -463,7 +467,9 @@ function buildSituations() {
       materia,
       materiaLabel,
       sessions: durada,
-      repte
+      repte,
+      imatge,
+      imatgeAlt
     });
   }
 

@@ -88,7 +88,7 @@ assert.equal((playgroundWeather.html.match(/class="sa-illustration"/g) || []).le
 assert.match(playgroundWeather.html, /sa-ce-oratge-pati-v2\.png/, "la portada d'oratge usa una escena 3D del tren i del pati");
 assert.match(playgroundWeather.html, /no mesura ni prediu l’oratge/i, "la portada d'oratge no atribueix sensors meteorològics al tren");
 assert.match(playgroundWeather.html, /no mesura la temperatura ni prediu l’oratge/i, "la il·lustració manté explícits els límits de Coding Express");
-const libraryRoute = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/coding-set-ruta-biblioteca.md"), "utf8"), "https://example.test/_content/situacions/coding-set-ruta-biblioteca.md");
+const libraryRoute = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/cs-ruta-biblioteca.md"), "utf8"), "https://example.test/_content/situacions/cs-ruta-biblioteca.md");
 assert.equal((libraryRoute.html.match(/class="sa-illustration"/g) || []).length, 4, "MatataBot's Guide intercala portada, mapa, codificació de ruta i presentació final");
 assert.match(libraryRoute.html, /el robot no rep coordenades ni transporta llibres/i, "la llegenda diferencia el mapa de les instruccions tangibles i del transport físic");
 assert.equal(libraryRoute.data.official_source, "https://matatalab.com/en/node/95", "la ruta de biblioteca enllaça la font oficial MatataBot's Guide");
@@ -766,8 +766,8 @@ assert.match(caesarCipher.html, /sa-mb-xifres-disc-caesar-v2\.png/, "la sessió 
 assert.match(caesarCipher.html, /marques de la il·lustració són esquemàtiques[\s\S]*les 26 posicions A–Z/i, "la llegenda separa els marcadors esquemàtics del disc real de 26 lletres");
 assert.match(caesarCipher.html, /PLAÇA[\s\S]*la Ç es manté/i, "la convenció local tracta explícitament la Ç sense falsejar l'alfabet A–Z");
 
-const disconnectedCipherSource = fs.readFileSync(path.join(root, "_content/situacions/desendollada-cripto.md"), "utf8");
-const disconnectedCipher = renderer.parse(disconnectedCipherSource, "https://example.test/_content/situacions/desendollada-cripto.md");
+const disconnectedCipherSource = fs.readFileSync(path.join(root, "_content/situacions/pc-cripto.md"), "utf8");
+const disconnectedCipher = renderer.parse(disconnectedCipherSource, "https://example.test/_content/situacions/pc-cripto.md");
 assert.match(disconnectedCipher.html, /sa-xifrat-paper-v2\.png/, "la situació desconnectada usa una il·lustració pròpia de materials de paper en estil 3D");
 assert.match(disconnectedCipher.html, /no un producte oficial/i, "la llegenda identifica la roda com a material didàctic conceptual");
 
@@ -801,8 +801,8 @@ for (const capability of [/blocs d(?:'|&#39;)angle/i, /paràmetres/i, /bucles/i,
   assert.match(codingSetRace.html, capability, `Sequences of Coding manté el contingut oficial ${capability}`);
 }
 assert.match(codingSetRace.html, /Extracurricular%20Curriculum\.pdf/, "la fitxa enllaça el PDF oficial verificat de les lliçons 3 i 4");
-const codingSetMathSource = fs.readFileSync(path.join(root, "_content/situacions/coding-set-fira-matematica.md"), "utf8");
-const codingSetMath = renderer.parse(codingSetMathSource, "https://example.test/_content/situacions/coding-set-fira-matematica.md");
+const codingSetMathSource = fs.readFileSync(path.join(root, "_content/situacions/cs-fira-matematica.md"), "utf8");
+const codingSetMath = renderer.parse(codingSetMathSource, "https://example.test/_content/situacions/cs-fira-matematica.md");
 assert.match(codingSetMath.html, /les deu xifres \(0–9\)/i, "l'adaptació de Draw Arabic Numbers practica totes les xifres del 0 al 9");
 assert.match(codingSetMath.html, /data fictícia[\s\S]*mai una data de naixement/i, "el repte de codificar una data no demana informació personal de l'alumnat");
 assert.match(codingSetMath.html, /no deixa tinta sense el complement de dibuix/i, "la il·lustració no atribueix al kit base una funció de traçat amb retolador");
@@ -815,8 +815,8 @@ assert.match(codingSetMath.html, /Draw triangles[\s\S]*5 minuts[\s\S]*30 minuts[
 assert.match(codingSetMath.html, /180° − 120° = 60°[\s\S]*angle interior[\s\S]*triangle equilàter/i, "l'adaptació explica la relació suplementària i la suma interior oficials");
 assert.match(codingSetMath.html, /triangle rectangle, agut o obtús[\s\S]*canvieu els rols/i, "la sessió practica els tres tipus de triangle i el repte entre parelles");
 assert.match(codingSetMath.html, /sa-cs-triangles-girs-v1\.png/, "la sessió de Draw triangles intercala una imatge IA pròpia");
-const cozyHouseSource = fs.readFileSync(path.join(root, "_content/situacions/coding-set-casa-geometrica.md"), "utf8");
-const cozyHouse = renderer.parse(cozyHouseSource, "https://example.test/_content/situacions/coding-set-casa-geometrica.md");
+const cozyHouseSource = fs.readFileSync(path.join(root, "_content/situacions/cs-casa-geometrica.md"), "utf8");
+const cozyHouse = renderer.parse(cozyHouseSource, "https://example.test/_content/situacions/cs-casa-geometrica.md");
 assert.equal(cozyHouse.data.official_source, "https://matatalab.com/en/node/85", "la situació Cozy House enllaça el pla oficial Matatalab");
 assert.match(cozyHouse.html, /55 minuts \(10 guiats, 30 d’activitat i 15 de retorn\)/i, "la situació distingeix la durada local del pla oficial");
 assert.match(cozyHouse.html, /almenys quatre cases[\s\S]*porta quadrada més menuda/i, "la situació manté les quatre cases i les portes del repte oficial");
@@ -1474,7 +1474,7 @@ assert.match(badgeDesign, /Team Badge Design[\s\S]*Artist Add-On[\s\S]*dibuix ma
 assert.match(badgeDesign, /no traça línies[\s\S]*no és una adaptació de la funció d’Artist\/Animation/i, "la fitxa no atribueix el traçat dels complements al Coding Set base");
 assert.match(badgeDesign, /sa-cs-distintiu-marjal-v1\.png/, "el distintiu té una il·lustració local basada en el Coding Set real");
 assert.equal(badgeParsed.data.official_source, "https://matatalab.com/en/node/82", "la SDA del distintiu enllaça la font primària oficial");
-const accessModel = fs.readFileSync(path.join(root, "_content/situacions/ciutat-accessible.md"), "utf8");
+const accessModel = fs.readFileSync(path.join(root, "_content/situacions/mb-ciutat-accessible.md"), "utf8");
 assert.match(accessModel, /sa-ciutat-accessible-v2\.png/, "la maqueta micro:bit usa la nova il·lustració 3D de la placa real");
 assert.match(accessModel, /no controla ni valida un pas real/, "la llegenda manté els límits del prototip de senyalització");
 const microbitGarden = fs.readFileSync(path.join(root, "_content/situacions/hivernacle-microbit.md"), "utf8");

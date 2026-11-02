@@ -58,7 +58,7 @@ Selecciona sabers i criteris d’avaluació de les àrees implicades i descriu q
 - Adapta la concreció curricular al nivell i al centre.
 
 
-[Exemple: ciutat accessible](../../situacio/index.html?id=sa-ciutat-accessible)
+[Exemple: ciutat accessible](../../situacio/index.html?id=mb-ciutat-accessible)
 
 ### 🗺️ Investigar abans de dissenyar
 
