@@ -39,9 +39,21 @@ En MakeCode, creeu un projecte nou. Abans de descarregar-lo, guardeu les dades a
 
 Pregunteu-vos: «Canvia la lectura de llum quan fem ombra a la placa?». Preparareu dues columnes, `llum` i `temperatura_aproximada`, i premeu A una vegada per cada mostra.
 
+Abans de registrar dades, podeu provar la llum en un **projecte separat**. Guardeu primer qualsevol registre anterior que vulgueu conservar; després, carregueu aquesta prova i premeu A en una zona clara i en una d’ombra:
+
+```makecode
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(input.lightLevel())
+})
+```
+
+La primera lectura pot ser zero mentre s’activa el sensor; premeu A una altra vegada. Aquest programa només mostra un número: encara no guarda cap dada. En el pas següent creareu el programa de registre.
+
 ### 2. Prepareu el registre
 
 Afegiu primer l’extensió **datalogger** des d’«Extensions». Després:
+
+Si preferiu començar veient les peces, [obriu l’exemple oficial de registre manual en MakeCode](https://makecode.microbit.org/#pub:_gHx1MJdJziaE). Aquell exemple registra **so i llum**; per a la nostra prova, substituïu el so per la temperatura i adapteu els noms de les columnes.
 
 1. A **en iniciar**, poseu el bloc de títols i escriviu `llum` i `temperatura_aproximada`.
 2. A **en prémer el botó A**, afegiu el bloc de registrar dades. Associeu `llum` amb el nivell de llum i `temperatura_aproximada` amb la temperatura.
@@ -73,7 +85,7 @@ Transfereix el programa a la V2 i espera que acabe la transferència. Fes tres l
 
 ### 4. Recupera i interpreta les files
 
-Per recuperar les dades, connecta de nou la micro:bit a l’ordinador. Obri la unitat **MICROBIT** i fes doble clic al fitxer **MY_DATA**: s’obrirà una taula al navegador. Compara les files amb les anotacions de paper i, si vols, copia o descarrega les dades. La columna de temps compta des de l’últim reinici de la placa, no indica l’hora del dia.
+Per recuperar les dades, connecta de nou la micro:bit a l’ordinador. Obri la unitat **MICROBIT** i fes doble clic al fitxer **MY_DATA**: s’obrirà una taula al navegador. Compara les files amb les anotacions de paper i, si vols, copia o descarrega les dades. Per veure els gràfics de MY_DATA cal connexió a Internet; sense connexió pots consultar la taula. La columna de temps compta des de l’últim reinici de la placa, no indica l’hora del dia.
 
 ![Placa micro:bit V2 de la dotació amb lectures i una gràfica de dades de llum i temperatura aproximada.](../../_assets/tutorials/mb-data-logging.webp)
 

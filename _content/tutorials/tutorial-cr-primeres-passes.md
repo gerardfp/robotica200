@@ -10,17 +10,16 @@ image: _assets/tutorials/cr-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Dona vida a una expressió de Codey i fes que responga a una acció de l’alumnat. La primera pràctica connecta el dispositiu, la matriu de 16 × 8 LEDs i els botons amb un programa que es pot provar i ajustar.
+Dibuixa una cara a la pantalla de Codey i fes que aparega quan prems A. Després programa B perquè mostre una salutació.
 
 - Connectar el dispositiu per cable USB o Bluetooth a mBlock 5.
-- Dibuixar a la graella de píxels de 16x8 de la pantalla.
-- Gestionar esdeveniments bàsics: 'Quan es prem el botó A'.
+- Dibuixar una cara a la pantalla LED.
+- Assignar una resposta als botons A i B.
 
 ## 🧰 Materials i preparació
 
-- Robot Codey Rocky
-- Ordinador o tauleta amb mBlock 5
-- Cable micro-USB
+- Controlador Codey de la dotació (Rocky és opcional per a aquesta pràctica).
+- Ordinador amb mBlock 5 i cable micro-USB de dades.
 
 ## 🧩 Funcions del robot treballades
 
@@ -32,15 +31,15 @@ Dona vida a una expressió de Codey i fes que responga a una acció de l’alumn
 
 ### 1. Afegir el dispositiu
 
-A mBlock 5, fes clic a 'Dispositius' → 'Afegir' i selecciona 'Codey'. Prem 'Connectar'. Si la versió ofereix el bloc de nivell de bateria, mostra la lectura a la pantalla i registra-la abans de començar; així podeu distingir un programa que no s’executa d’un robot que necessita càrrega.
+A mBlock 5, afegeix el dispositiu **Codey**, connecta’l amb el cable i encén-lo. Comprova que l’estat indica que està connectat. Per aquesta primera prova, no cal muntar-lo sobre Rocky.
 
 ### 2. Dibuixar una cara somrient
 
-Arrossega el bloc de mostrar una imatge i fes clic a la graella per dibuixar els ulls i la boca. En el pas següent el connectaràs al botó A.
+Arrossega el bloc de mostrar una imatge i dibuixa dos ulls i una boca a la graella. Guarda el projecte abans de provar-lo.
 
 ### 3. Interacció amb botons
 
-Programa: 'Quan es prem el botó A' → Mostra cara feliç; 'Quan es prem el botó B' → Mostra text 'Hola'.
+Prepara dues piles separades: quan es prem A, mostra la cara; quan es prem B, mostra el text «Hola».
 
 ```mblock
 quan es prem el botó [A v]
@@ -66,10 +65,11 @@ Amb Codey connectat en mode **En viu**, prem A: ha d'aparéixer la cara que has 
 
 ## ♿ Accessibilitat i seguretat
 
-Proporciona una plantilla de 16 × 8 i deixa triar símbol, seqüència o missatge a cada equip.
+Proporciona una plantilla de la pantalla perquè l’alumnat dibuixe abans de programar. Una persona pot dibuixar la cara i una altra provar els botons. Manteniu el cable allunyat de la zona de pas.
 
 ## ✅ Evidències d’aprenentatge
-- El programa de l'alumne, una predicció abans de prémer el botó i el resultat observat. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Projecte amb les dues piles dels botons A i B.
+- Dibuix de la cara i registre del resultat de cada botó.
 
 ## 🔗 Fonts oficials i límits
 

@@ -22,6 +22,9 @@ Redueix una seqüència llarga de moviments a una instrucció que es repetix. Am
 - Blocs direccionals
 - Fitxa numèrica x4
 - MatataBot, torre de control, tauler i una superfície plana amb espai lliure.
+- Cinta o un full per marcar el punt de partida i la direcció inicial.
+
+Encén el robot i la torre i espera que es connecten. Deixa lliure un quadrat de, com a mínim, una casella per costat al voltant de la ruta.
 
 ## 🧩 Funcions del robot treballades
 
@@ -32,7 +35,7 @@ Redueix una seqüència llarga de moviments a una instrucció que es repetix. Am
 
 ### 1. Obrir el bucle
 
-Posa la fitxa morada d'inici de bucle amb el número 4 a sota.
+Col·loca el robot a la cantonada de la ruta i marca cap a on mira. Al tauler, posa la fitxa morada d'inici de bucle amb el número 4 a sota.
 
 ### 2. Les instruccions interiors
 
@@ -44,13 +47,17 @@ Posa la fitxa morada de final després de Dreta. Comprova que el tauler queda ai
 
 **Inici de bucle (4) → Endavant → Dreta → Final de bucle**
 
-Prem el botó gran i observa els quatre costats. El robot hauria de tornar prop del punt de partida; la posició pot variar segons la superfície.
+Prem el botó gran i observa els quatre costats. El robot hauria de tornar prop del punt de partida mirant en la direcció inicial; la posició pot variar segons la superfície.
 
 > **💡 Consell docent:** Compareu les vuit peces de moviment de la ruta llarga amb les dues peces de moviment de la ruta amb bucle. Aquesta última necessita, a més, les dues peces de bucle i el número 4.
 
 ## 🧪 Prova, depura i reflexiona
 
-Escriu la ruta sencera com una seqüència de moviments i executa-la al tauler. Després substitueix el tram repetit per un bucle físic; comprova l’orientació i la posició final en tres execucions de cada versió. Registra quantes peces has estalviat i si el MatataBot arriba a la mateixa casella. Si no coincideix, revisa el nombre de repeticions i l’ordre de les peces abans de canviar la ruta.
+1. Representa la ruta llarga: **Endavant → Dreta → Endavant → Dreta → Endavant → Dreta → Endavant → Dreta**. Si tens prou peces, col·loca-les al tauler i executa-la; si no, representa-la amb targetes i segueix-la amb el dit.
+2. Torna el robot al punt i a l’orientació inicials. Executa la versió amb el bucle tres vegades, reposicionant-lo abans de cada intent.
+3. Compara la posició i l’orientació finals amb les previstes en la ruta llarga. Si has pogut executar les dues versions, repeteix també la ruta llarga tres vegades.
+
+Compta les peces de moviment de cada versió. Si el resultat no coincideix, revisa el número, l’ordre de les peces i l’orientació inicial.
 
 ### Preguntes per comprovar
 
@@ -60,10 +67,12 @@ Escriu la ruta sencera com una seqüència de moviments i executa-la al tauler. 
 
 ## ♿ Accessibilitat i seguretat
 
-En grups inicials, treballa amb un sol bucle curt. Quan estigui clar, combina'l amb una funció reutilitzada.
+Repartiu els papers: una persona col·loca les peces, una altra assenyala la ruta i una tercera anota el resultat. També es pot seguir el recorregut amb targetes grans sobre la taula. Manteniu les mans fora del trajecte mentre el robot es mou.
 
 ## ✅ Evidències d’aprenentatge
-- El codi físic, una ruta prevista i una explicació de quines ordres s'estalvia el bucle. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Ruta prevista amb les vuit ordres i versió amb repetició.
+- Registre de la posició i l’orientació finals.
+- Explicació de quines peces de moviment s’han estalviat.
 
 ## 🔗 Fonts oficials i límits
 

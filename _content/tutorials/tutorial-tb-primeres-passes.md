@@ -10,16 +10,17 @@ image: _assets/tutorials/tb-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Programa un recorregut curt amb els botons físics i comprova com s’afegeixen i s’esborren les instruccions. La pràctica introdueix la seqüència, l’orientació del robot i la repetició de proves sobre una quadrícula.
+Programa dos avanços amb els botons físics. Comprova com el robot guarda les ordres i com esborra l’última abans d’iniciar el recorregut.
 
 - Distingir les tecles Endavant, Enrere, Gir Dreta i Gir Esquerra.
 - Aprendre la rutina del botó Delete (X) per evitar acumular ordres velles.
-- Calcular desplaçaments de casella en casella.
+- Comparar el desplaçament real amb les caselles de la graella.
 
 ## 🧰 Materials i preparació
 
-- 1 robot TaleBot Pro
-- Graella al terra o mapa bàsic
+- Tale-Bot Pro carregat.
+- Graella o mapa pla, amb la distància entre caselles anotada.
+- Cinta per marcar el punt de partida.
 
 ## 🧩 Funcions del robot treballades
 
@@ -30,7 +31,7 @@ Programa un recorregut curt amb els botons físics i comprova com s’afegeixen 
 
 ### 1. Engegar el robot
 
-Gira la rodeta posterior fins a sentir la salutació sonora de TaleBot. Els ulls LED s'il·luminaran de color blau.
+Encén el Tale-Bot amb el control posterior i espera la salutació. Si no respon, posa’l a carregar i torna a provar-lo.
 
 ### 2. La regla d'or de la X
 
@@ -38,11 +39,11 @@ Abans d’un camí nou, mantín premut el botó X més d’un segon i comprova q
 
 ### 3. Programar una recta
 
-Posa el robot a l’inici i prem els botons en aquest ordre:
+Marca el punt d’inici i orienta el robot cap endavant. Prem:
 
 **Endavant → Endavant → Play**
 
-Observa on s’atura i mesura la distància. El pas habitual és de 10 cm, però el robot pot estar configurat amb un pas de 15 cm; prova’l abans de preparar la graella. La distància real també pot variar segons el terra.
+Observa on s’atura i mesura la distància recorreguda. Comprova la mida del pas configurada al teu robot; no assumesques que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.
 
 > **💡 Consell docent per a la sessió:** Per als girs, ensenya als infants que TaleBot gira sobre si mateix sense avançar casella.
 
@@ -58,11 +59,12 @@ Dibuixa en un mapa gran la posició inicial i la destinació. Una parella crea l
 
 ## ♿ Accessibilitat i seguretat
 
-Comença amb una ruta de dues accions i demostra la funció d'eliminar abans d'afegir-hi més peces de seqüència.
+Comenceu amb dues ordres i una graella gran. Una persona pot prémer els botons mentre una altra assenyala i registra el recorregut. Manteniu el robot lluny de vores i atureu-lo abans de corregir ordres.
 
 ## ✅ Evidències d’aprenentatge
-- Un mapa de la ruta i l'explicació de com comprovar i esborrar una instrucció. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Mapa amb el recorregut previst i el real.
+- Explicació de com eliminar l’última ordre abans de Play.
 
 ## 🔗 Fonts oficials i límits
 
-Matatalab · Tale-Bot Pro guide · [https://matatalab.com/en/lesson4.2](https://matatalab.com/en/lesson4.2). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La [guia oficial de Tale-Bot Pro](https://matatalab.com/en/lesson4.2) mostra els botons direccionals, Play i Clear. El desplaçament de cada ordre pot variar segons la configuració del robot i la superfície; mesureu-lo abans de preparar la quadrícula.

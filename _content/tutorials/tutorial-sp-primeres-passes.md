@@ -33,7 +33,7 @@ Connecta el Hub gran SPIKE Prime i crea el teu primer programa: una cara que apa
 
 ### 1. Enceneu i connecteu el Hub Prime
 
-Comproveu la càrrega de la bateria. Manteniu premut el botó central per encendre el Hub; després premeu el botó Bluetooth i, des de SPIKE App, obriu un projecte i seleccioneu la icona del Hub al llenç per triar-lo. Poseu-li un nom únic si hi ha diversos hubs a l’aula. L’actualització del sistema només cal quan l’app ho demana; per actualitzar, LEGO recomana la connexió USB quan siga possible.
+Comproveu que el Hub té càrrega i enceneu-lo amb el botó central. Obriu SPIKE App, creeu un projecte i seleccioneu **Connecta**. Trieu el Hub que mostra el mateix nom o indicador que el vostre. També podeu connectar-lo amb el cable USB. Si l’app demana una actualització, seguiu les instruccions en pantalla i espereu que acabe abans de desconnectar-lo.
 
 ### 2. Mostreu una icona a la matriu
 
@@ -52,7 +52,7 @@ Poseu el Hub sobre la taula i mostreu una fletxa en respondre a una inclinació 
 
 ### 4. Exploreu els botons i els indicadors
 
-Amb el Hub desconnectat del muntatge, useu els botons esquerre i dret per recórrer els programes disponibles i el botó central per iniciar-ne un. Observeu el color de l’indicador central durant l’estat de connexió i en iniciar un programa. Si l’app i la versió del Hub exposen gestos, proveu una sacsejada o un toc suau i compareu-la amb la lectura d’inclinació; anoteu quines entrades estan disponibles en la configuració real.
+Amb el Hub desconnectat de motors i sensors, useu els botons esquerre i dret per recórrer els programes guardats i el botó central per iniciar-ne un. Observeu l’indicador del Hub mentre es connecta i executa el projecte. Els botons laterals naveguen pels programes del Hub; no són botons A i B d’un controlador separat.
 
 > **💡 Consell docent per a la sessió:** Posa una etiqueta de color o número a cada Hub perquè els alumnes no es connectin per Bluetooth al robot del grup del costat.
 
@@ -68,7 +68,7 @@ Executeu el programa de la cara tres vegades: observeu si apareix, espereu dos s
 
 ## ♿ Accessibilitat i seguretat
 
-Segueix el procediment del hub concret i de la versió de l'aplicació disponible; practica sense connexions addicionals abans de muntar el repte.
+Projecteu els passos de connexió o imprimiu-los amb captures de la versió de l’app del centre. Comenceu amb el Hub sobre la taula i sense motors connectats; desconnecteu el cable agafant-ne el connector.
 
 ## ✅ Evidències d’aprenentatge
 - El programa de la cara, el resultat de les tres proves i una anotació dels ports i botons identificats.

@@ -38,9 +38,7 @@ Obri MakeCode, crea un projecte nou i comprova la simulació. El projecte oficia
 
 Dins de «per sempre», posa una peça «si… aleshores… si no». En la condició, compara **nivell de llum < 100**. Dins de «aleshores», afegeix una icona; dins de «si no», posa «neteja la pantalla». La lectura de llum és a **Entrada** i la comparació a **Lògica**. El valor 100 és un punt de partida que ajustareu després.
 
-Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
-
-```javascript
+```makecode
 basic.forever(function () {
     if (input.lightLevel() < 100) {
         basic.showIcon(IconNames.SmallDiamond)
@@ -52,13 +50,23 @@ basic.forever(function () {
 
 ### 3. Provar i calibrar
 
-Descarrega el programa o usa el simulador. Anota la lectura aproximada en un lloc clar i en un altre més fosc. Tapa suaument la matriu amb la mà i observa què passa. Ajusta el llindar perquè el canvi tinga sentit en l’espai de l’aula. La primera lectura pot ser zero mentre s'activa el sensor; espera i torna a observar abans de decidir el valor.
+Per saber quin valor convé posar, guarda el fanalet i crea **un altre projecte de prova**. En «en prémer el botó A», posa «mostra el número» amb «nivell de llum» dins:
+
+```makecode
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(input.lightLevel())
+})
+```
+
+Descarrega aquest projecte a la placa. Prem A i anota el número en un lloc clar; repeteix fent ombra suaument a la matriu. La primera lectura pot ser zero mentre s’activa el sensor: torna a prémer A per comprovar-la.
+
+Torna a obrir el projecte del fanalet i posa un valor entre les dues lectures. Per exemple, si has anotat 30 amb ombra i 150 amb llum, prova amb 90. Descarrega’l i comprova que la icona apareix quan fas ombra.
 
 > **💡 Consell docent:** els LED que mostren la icona també s’utilitzen per estimar la llum. Comprova el comportament amb la placa concreta del centre i deixa un breu interval entre lectures si la pantalla parpelleja.
 
 ### 4. Dissenyar una versió pròpia
 
-Canvia la lluna per una estrella, una casa o un símbol creat per l’alumnat. Si la placa queda connectada a un portapiles, col·loca-la de manera estable i sense tapar-la completament amb materials que puguen escalfar-se.
+Canvia el diamant per una estrella, una casa o un símbol creat per l’alumnat. Si la placa queda connectada a un portapiles, col·loca-la de manera estable i sense tapar-la completament amb materials que puguen escalfar-se.
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -76,10 +84,12 @@ Prova la placa en un lloc clar i després tapa-la suaument. Anota quan apareix e
 Facilita un projecte inicial amb el bucle preparat i deixa que cada parella trie la icona o el llindar. Com a extensió, recolliu cinc lectures per espai i compareu-les; manteniu la placa en la mateixa orientació per fer una comparació més justa.
 
 ## ✅ Evidències d’aprenentatge
-- Guardeu el projecte MakeCode, la taula de lectures i una explicació del llindar final. La placa només mostra llum en la seua matriu; no és una llum potent per il·luminar una habitació.
+- Projecte del fanalet i projecte de prova de la llum.
+- Dues lectures anotades i una explicació del valor triat entre aquestes.
+- Prova de la icona amb llum i amb ombra. La matriu no il·lumina una habitació.
 
 ## 🔗 Fonts oficials i límits
 
 Proposta pròpia inspirada en [Nightlight de micro:bit](https://www.microbit.org/projects/make-it-code-it/nightlight/) i en la documentació de [lectura del nivell de llum de MakeCode](https://makecode.microbit.org/reference/input/light-level). El recurs oficial explica que la matriu LED actua com a sensor i recomana ajustar el llindar a les condicions locals.
 
-micro:bit · Features overview · [https://microbit.org/get-started/features/overview/](https://microbit.org/get-started/features/overview/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La proposta està adaptada de [Nightlight de micro:bit](https://www.microbit.org/projects/make-it-code-it/nightlight/) i usa el bloc oficial [nivell de llum](https://makecode.microbit.org/reference/input/light-level). La lectura va de 0 a 255 i pot variar segons la llum i la posició de la placa.

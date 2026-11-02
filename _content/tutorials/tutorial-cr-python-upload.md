@@ -68,7 +68,9 @@ Torneu a connectar Codey, obriu el mateix projecte en mode Upload i activeu l’
 
 ### 5. Modifiqueu una instrucció i torneu-la a provar
 
-Canvieu una de les imatges des de l’editor Python si la vostra versió permet editar el codi, o torneu a la vista de blocs i canvieu el dibuix allí. Carregueu una altra vegada el programa i proveu el botó afectat. Compareu el canvi fet al programa amb la resposta de la matriu; no modifiqueu les dues ordres alhora.
+Guardeu primer el projecte. Torneu als blocs i canvieu només el dibuix del botó A; després consulteu de nou la vista Python per observar el canvi. Carregueu el programa una altra vegada i proveu A i B: A ha de mostrar la nova cara i B ha de conservar l’anterior.
+
+En algunes versions és possible editar Python directament. Si ho proveu, feu-ho en una còpia del projecte: la traducció automàtica dels blocs a text no garanteix que els canvis en text tornen a convertir-se en blocs.
 
 ## 🧪 Prova, depura i reflexiona
 

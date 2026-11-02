@@ -10,11 +10,11 @@ image: _assets/tutorials/cr-giroscopi-ir-control.webp
 
 ## 🎯 Repte i objectius
 
-Feu que Codey mostre un número quan gireu la rodeta i una icona quan l’inclineu. Si disposeu de dos robots, proveu també d’enviar un missatge amb infraroig, un senyal que necessita que els dispositius estiguen encarats.
+Feu que Codey mostre el valor de la rodeta i responga amb una icona quan l’inclineu. Si disposeu de dos robots, al final podeu provar d’enviar un missatge per infraroig.
 
-- Comparar el valor variable del potenciòmetre amb una lectura d’orientació.
-- Associar un gest a una resposta visual i sonora.
-- Enviar i rebre un codi IR entre dos Codey Rocky, si n’hi ha dos disponibles.
+- Llegir la rodeta en tres posicions i comparar els valors.
+- Fer que una inclinació active una icona.
+- Com a ampliació opcional, enviar i rebre un missatge IR amb dos robots.
 
 ## 🧰 Materials i preparació
 
@@ -47,7 +47,7 @@ Registreu quina opció heu pogut obrir i amb quin dispositiu. Si la connexió, u
 
 ### 2. Llegiu el potenciòmetre
 
-Mostreu a la pantalla el valor de la rodeta de Codey i gireu-la lentament d’un extrem a l’altre. Comenceu amb aquesta idea, buscant els blocs equivalents a la vostra versió:
+Mostreu a la pantalla el valor de la rodeta de Codey i gireu-la lentament d’un extrem a l’altre. Busqueu els blocs equivalents a la vostra versió:
 
 ```mblock
 quan comença el programa
@@ -60,15 +60,35 @@ Anoteu el valor amb la rodeta en tres posicions: un extrem, el centre i l’altr
 
 ### 3. Calibreu un gest amb la placa estable
 
-Busqueu a mBlock el bloc que detecta la inclinació. Feu que, en inclinar Codey cap a l’esquerra, mostre una fletxa cap a l’esquerra; afegiu una resposta diferent per a la dreta. Torneu-lo a posar recte entre proves i repetiu cada moviment tres vegades. La sacsejada és una acció diferent: no la confongueu amb mantindre Codey inclinat.
+Busqueu a mBlock el bloc que detecta la inclinació cap a l’esquerra. Feu que mostre una fletxa cap a l’esquerra. Torneu Codey a la posició plana abans de cada intent i repetiu tres vegades. Si el bloc també permet provar la inclinació cap a la dreta, afegiu una altra icona. La sacsejada és una acció diferent de mantindre Codey inclinat.
 
 ### 4. Afegiu resposta visual i sonora
 
-Quan es detecte un gest triat, mostreu una icona i feu sonar un to breu amb l’altaveu. Afegiu una pausa perquè el senyal no es repetisca contínuament mentre el robot continua inclinat. Oferiu una resposta només visual si el so no és adequat a l’aula.
+Com a ampliació, feu que la inclinació mostre una icona i reproduïsca un to breu. Afegiu una pausa perquè el senyal no es repetisca mentre Codey continua inclinat. Si el so no és adequat a l’aula, useu només la icona.
 
 ### 5. Envieu un senyal infraroig
 
 Amb dos Codey Rocky, busqueu els blocs d’infraroig que oferisca la versió de mBlock instal·lada. Prepareu el primer perquè envie un missatge de prova en prémer A i el segon perquè mostre una icona quan reba eixe mateix missatge. Carregueu el programa corresponent a cadascun. Poseu-los encarats i pròxims, premeu A i observeu la pantalla del receptor. Després interposeu una cartolina i repetiu. Si falta un bloc o només hi ha un robot, representeu l’enviament amb targetes i marqueu-lo com a simulació.
+
+Per al **primer Codey**, busqueu a «Infraroig» la peça d’enviar missatge i escriviu-hi `HOLA`:
+
+```mblock
+quan es prem el botó [A v]
+envia el missatge IR [HOLA]
+```
+
+Per al **segon Codey**, combineu la peça que comprova el missatge rebut amb «si» i «per sempre». Feu que mostre una cara quan reba `HOLA`:
+
+```mblock
+quan comença el programa
+per sempre
+si <missatge IR [HOLA] rebut?> aleshores
+mostra una cara feliç
+fi
+fi
+```
+
+Els dibuixos resumeixen les accions; els noms i l’aspecte de les peces poden variar. El [quadern oficial de Makeblock](https://qiniu.makeblock.com/education-makeblock-com/studentbook.pdf) mostra les peces d’enviament i de comprovació en l’activitat de comunicació entre Codeys. Si el bloc de recepció no apareix, useu les targetes i indiqueu que no s’ha provat la comunicació real.
 
 ![Dos robots Codey Rocky de la dotació intercanvien un senyal infraroig mentre un mostra una fletxa d’orientació i l’altre una resposta visual.](../../_assets/tutorials/cr-giroscopi-ir-control.webp)
 
@@ -76,7 +96,9 @@ _Els senyals representen una comunicació IR senzilla entre dispositius; no és 
 
 ## 🧪 Prova, depura i reflexiona
 
-Anoteu els tres valors de la rodeta i què mostra Codey en inclinar-lo a cada costat. Si teniu dos robots, envieu cinc missatges IR: primer amb els robots encarats i després amb una cartolina entre ells. Si no podeu fer la prova, anoteu-la com a simulació. Registreu també quines opcions de l’app heu pogut utilitzar.
+Completeu una taula amb els tres valors de la rodeta i el resultat de tres inclinacions cap a l’esquerra. Si proveu la inclinació cap a la dreta, anoteu-la en una columna separada. Registreu quines opcions de l’app heu pogut obrir.
+
+Com a ampliació, si teniu dos robots, envieu cinc missatges IR amb els robots encarats i cinc amb una cartolina al mig. Anoteu quants n’ha rebut el segon robot. Si no teniu dos robots o falta el bloc IR, marqueu la prova com a simulació.
 
 ### Preguntes per comprovar
 
@@ -91,7 +113,9 @@ Anoteu els tres valors de la rodeta i què mostra Codey en inclinar-lo a cada co
 La inclinació i la sacsejada són opcions; permeteu introduir el mateix codi amb botons, potenciòmetre o targetes. Manteniu els robots quiets durant les proves de recepció i no els feu córrer cap a persones. El so és breu i opcional, amb senyal visual equivalent. No envieu missatges personals.
 
 ## ✅ Evidències d’aprenentatge
-- Conserveu la taula de la rodeta i les inclinacions. Si heu fet la prova IR, guardeu els dos programes i els resultats; si no, conserveu l’esquema de la simulació.
+- Taula dels valors de la rodeta i la resposta a les inclinacions.
+- Nota de quines funcions de l’app s’han pogut provar.
+- Si s’ha fet l’ampliació IR, els dos programes i el recompte de missatges rebuts; si s’ha simulat, esquema de la simulació.
 
 ## 🔗 Fonts oficials i límits
 

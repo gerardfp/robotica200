@@ -10,10 +10,10 @@ image: _assets/tutorials/sp-sensor-distancia-alarma.webp
 
 ## 🎯 Repte i objectius
 
-Construïu una base mòbil que s’acoste a un obstacle, s’ature mantenint un espai segur i emeta un senyal curt. Compareu la lectura real del sensor d’ultrasons amb la parada calculada per voltes de roda, i feu un gir controlat amb el giroscopi del Hub. La distància de sensor i l’estimació de moviment són mesures diferents.
+Construïu una base mòbil que s’acoste a una caixa, s’ature abans de tocar-la i emeta un senyal curt. Després feu un gir controlat amb el sensor de moviment del Hub.
 
 - Calibrar les lectures del sensor d’ultrasons a distàncies conegudes.
-- Comparar una parada basada en sensor amb una distància estimada per voltes de roda.
+- Programar una parada a partir de la lectura del sensor.
 - Mesurar un gir aproximat i comunicar l’estat amb un so del Hub.
 
 ## 🧰 Materials i preparació
@@ -23,7 +23,7 @@ Construïu una base mòbil que s’acoste a un obstacle, s’ature mantenint un 
 - Paret de blocs o caixa de cartó estable, regle i cinta per marcar línies de prova.
 - Espai pla lliure de persones i objectes fràgils.
 
-El sensor oficial usa ultrasons i especifica una lectura de 50–2000 mm amb tolerància de ±20 mm (50–300 mm en lectura ràpida, ±15 mm). L’app pot no exposar totes les funcions descrites a la fitxa tècnica. Verifiqueu quin mode i unitat mostra la versió de SPIKE App disponible.
+El sensor fa servir ultrasons. Comproveu quina unitat de distància mostra la vostra versió de SPIKE App i deixeu un marge ampli davant de la caixa: la lectura és aproximada.
 
 ## 🧩 Funcions del robot treballades
 
@@ -36,7 +36,7 @@ El sensor oficial usa ultrasons i especifica una lectura de 50–2000 mm amb tol
 
 ### 1. Comproveu el sensor a distàncies conegudes
 
-Fixeu el sensor al davant de la base, perpendicular a una paret plana. Mesureu 5, 10, 20, 30 i 50 cm amb el regle i llegiu el valor al programa sense moure la base. Repetiu cada lectura tres vegades. Anoteu quan apareix el límit inferior o una lectura absent; no suposeu que el rang declarat es manté igual per a objectes tous, inclinats o estrets.
+Connecteu el sensor al port C i fixeu-lo al davant de la base. Amb el Hub connectat a SPIKE App, obriu la icona del Hub per veure la lectura del sensor. Poseu una caixa plana a 10, 20 i 30 cm, mesurats amb un regle, i anoteu el valor en cada posició. Manteniu la base quieta. Si no apareix cap lectura estable, reviseu la connexió i l’orientació del sensor abans de continuar.
 
 ### 2. Programeu una parada amb marge
 
@@ -53,7 +53,14 @@ Si el sensor està connectat a un altre port, seleccioneu-lo en el bloc. Comprov
 
 ### 3. Mesureu un gir amb el giroscopi
 
-Amb la base quieta, poseu el giroscopi a zero segons els blocs de la vostra app. Programeu un gir lent fins a un angle de referència de 90° i compareu l’orientació final amb una plantilla de paper. Repetiu tres vegades a la mateixa velocitat. Si el valor deriva o el gir se’n passa, calibreu el punt inicial i ajusteu una sola variable, com ara velocitat o llindar d’aturada.
+Feu aquesta prova en **un projecte separat**, amb la caixa apartada:
+
+1. Deixeu el Hub quiet i poseu a zero l’angle de gir amb el bloc corresponent de l’app.
+2. Gireu la base a mà un quart de volta i observeu la lectura de l’angle. Anoteu si s’acosta a **90** o a **−90**; el signe depén del sentit i de la posició del Hub.
+3. Torneu a la posició inicial i poseu l’angle a zero. Programeu un gir lent en el mateix sentit fins que la lectura arribe al valor observat; després atureu els motors.
+4. Compareu l’orientació final amb un angle recte dibuixat en paper. Repetiu tres vegades des de la mateixa marca.
+
+Si el robot gira en el sentit contrari o no s’atura, pareu-lo manualment. Reviseu el sentit del gir i la condició de l’angle abans de tornar a provar.
 
 ### 4. Afegiu un senyal de so
 
@@ -80,8 +87,10 @@ Anoteu en una taula des d’on comença el robot, la distància que mostra el se
 Useu velocitat baixa, un obstacle tou i una zona de prova delimitada. Manteniu el botó d’aturada accessible i no confieu en el sensor com a sistema de protecció. Oferiu taula de dades o simulador si una persona prefereix no conduir el robot; el senyal LED ha d’oferir la mateixa informació que el so.
 
 ## ✅ Evidències d’aprenentatge
-- Guardeu el programa, l’esquema dels ports, la taula de lectures repetides i els resultats de distància i angle. En la conclusió, separeu la mesura ultrasònica, l’estimació basada en les rodes i l’aturada per contacte; expliqueu toleràncies i condicions de prova.
+- Programa de parada i esquema dels ports utilitzats.
+- Taula amb les lectures i l’espai que queda davant de la caixa en tres intents.
+- Dibuix del gir i anotació de l’angle observat en cada prova.
 
 ## 🔗 Fonts oficials i límits
 
-La fitxa tècnica LEGO del [sensor de distància Technic](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt64c2b9534cf10f68/5f8801b8bc43790f5c4389ea/techspecs_technicdistancesensor.pdf?locale=en-us) descriu la tecnologia ultrasònica i els rangs; les [especificacions del Hub Prime](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltf512a371e82f6420/5f8801baf4f4cf0fa39d2feb/techspecs_techniclargehub.pdf?locale=en-us) documenten altaveu i sensor de sis eixos. La lliçó oficial [Going the Distance](https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/) contrasta càlcul per rodes amb aturada per contacte. Les lectures depenen de la superfície i de la versió de l’app; no és un sistema de seguretat certificat.
+La fitxa tècnica LEGO del [sensor de distància Technic](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt64c2b9534cf10f68/5f8801b8bc43790f5c4389ea/techspecs_technicdistancesensor.pdf?locale=en-us) descriu la tecnologia ultrasònica i els rangs; les [especificacions del Hub Prime](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltf512a371e82f6420/5f8801baf4f4cf0fa39d2feb/techspecs_techniclargehub.pdf?locale=en-us) documenten altaveu i sensor de moviment. La lliçó oficial [Going the Distance](https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/) proposa una altra manera d’estimar el moviment amb les rodes. Les lectures depenen de la superfície i de la versió de l’app; no és un sistema de seguretat certificat.

@@ -12,14 +12,14 @@ image: _assets/tutorials/sp-motors-sensors.png
 
 Construeix una transmissió amb engranatges i relaciona els graus del motor amb el moviment de les rodes. La prova combina el muntatge físic i la programació del motor angular del Hub SPIKE Prime.
 
-- Calcular la relació de transmissió entre un engranatge petit de 8 dents i un de gran de 24 dents.
-- Moure el motor exactament un nombre de graus o rotacions determinades.
+- Explicar que l’engranatge de 8 dents fa tres voltes per cada volta del de 24.
+- Fer avançar una base amb dos motors fins que el sensor detecte una targeta roja.
 - Utilitzar el sensor de color en mode detecció de color directe.
 
 ## 🧰 Materials i preparació
 
 - Hub SPIKE
-- 2 motors angulars
+- Base mòbil amb dos motors angulars i rodes, o muntatge equivalent de la guia LEGO.
 - 1 sensor de color
 - Peces Technic i engranatges
 
@@ -34,22 +34,22 @@ Construeix una transmissió amb engranatges i relaciona els graus del motor amb 
 
 Munta un eix que connecte el motor a l'engranatge de 8 dents i aquest al de 24 de la roda. Gira'l a mà amb el Hub apagat i observa que les peces giren sense encallar-se. Amb aquest exemple, el motor gira tres voltes per cada volta de l'engranatge gran.
 
-### 2. Connectar al port B i D
+### 2. Connecteu els motors i el sensor
 
-Connecta els motors als ports B i D, i el sensor de color al port C apuntant cap a terra.
+Connecteu el motor esquerre al port B, el dret al D i el sensor de color al C. Fixeu el sensor a la part davantera, orientat cap a terra i prou prop per llegir la targeta sense tocar-la. En SPIKE App, prepareu la base motriu amb els ports B i D.
 
 ### 3. Condició de parada
 
-Programa: 'Inicia el moviment dels motors' → 'Espera fins que el sensor C sigui [Vermell]' → 'Atura el moviment'.
+Programa la base perquè avance a velocitat baixa i s’ature quan el sensor C detecte roig. En la teua versió de SPIKE App, configura la parella de motors B i D abans d’afegir la condició:
 
 ```spikeapp
 quan comença el programa
-activa els motors de moviment
+activa els motors [B v] i [D v] a velocitat baixa
 espera fins que el sensor de color [C v] detecte [vermell v]
-atura els motors de moviment
+atura els motors [B v] i [D v]
 ```
 
-Aquest dibuix resumeix els passos: tria en SPIKE App els blocs equivalents i configura abans la parella de motors B i D. Comença a velocitat baixa. La parada pot quedar un poc més enllà de la línia; no es promet una posició exacta.
+Aquest dibuix resumeix les ordres: selecciona els blocs equivalents de SPIKE App. Posa el robot darrere de la targeta roja i prem iniciar. La parada pot quedar un poc més enllà de la línia perquè el robot continua avançant mentre la detecta.
 
 > **💡 Consell docent per a la sessió:** Pregunta socràtica: 'Gira més ràpid la roda o el motor?' (El motor gira 3 vegades per cada volta de roda).
 
@@ -65,10 +65,12 @@ Prova primer el sensor quiet sobre una targeta blanca i una roja, a la mateixa a
 
 ## ♿ Accessibilitat i seguretat
 
-Deixa una targeta de prova de cada color i afegeix un registre de falses lectures. Treballa amb les peces del conjunt que s'utilitza al centre.
+Comenceu amb una velocitat baixa, una targeta roja ampla i un trajecte curt. Una persona pot observar el sensor i una altra marcar el punt on s’atura. Manteniu mans i cables lluny de les rodes i atureu el Hub abans de canviar la targeta o l’orientació del sensor.
 
 ## ✅ Evidències d’aprenentatge
-- La taula d'assaigs i la condició del programa triada pel grup. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Muntatge amb engranatges i ports anotats.
+- Programa de parada i registre del punt d’aturada en tres intents.
+- Explicació senzilla de la diferència entre les voltes del motor i les de la roda.
 
 ## 🔗 Fonts oficials i límits
 

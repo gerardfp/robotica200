@@ -19,7 +19,7 @@ Estima quant avançarà la base motriu i compara el resultat amb la distància r
 
 ## 🧰 Materials i preparació
 
-- Conjunt LEGO Education SPIKE Prime amb hub, dos motors i sensor de força.
+- Conjunt LEGO Education SPIKE Prime amb Hub, dos motors i sensor de força opcional per a la comparació final.
 - Peces Technic per muntar una base motriu estable.
 - Un bloc LEGO vertical com a obstacle i cinta de paper per marcar la sortida.
 - Regle o cinta mètrica.
@@ -31,17 +31,17 @@ Estima quant avançarà la base motriu i compara el resultat amb la distància r
 
 ## 👣 Seqüència guiada
 
-### 1. Preparar el recorregut
+### 1. Prepareu la base i el punt de partida
 
-Construeix una base que avance recta amb dos motors connectats als ports que indique el programa. Situa el bloc a un metre de la línia d’eixida i comprova, amb el robot apagat, que l’espai de prova està lliure.
+Construeix una base que avance recta amb dos motors. Anota els ports dels motors i marca la posició inicial del davant de la base. Per a la primera prova, deixa el camí lliure; col·locaràs el bloc després d’haver comprovat quant avança el robot.
 
-### 2. Estimar abans de programar
+### 2. Estimeu el desplaçament
 
-Mesura el diàmetre de la roda. Calcula aproximadament la distància d’una volta (π × diàmetre) i estima quantes voltes fan falta perquè el robot s’ature abans del bloc. En SPIKE App, usa el bloc de moviment per voltes o graus; els noms poden variar segons la versió de l’aplicació.
+Mesura el diàmetre de la roda. Per a una primera estimació, multiplica el diàmetre per 3: això aproxima la distància recorreguda en una volta. Tria quantes voltes vols provar i anota el desplaçament que preveus. En SPIKE App, busca el bloc de moviment per voltes o graus.
 
 ### 3. Fer una prova lenta
 
-Programa l’avanç a velocitat baixa i executa’l des de la marca. Mesura la separació final entre el davant de la base i el bloc. Anota voltes programades, distància real i separació; modifica només una variable en cada prova.
+Programa l’avanç a velocitat baixa i executa’l des de la marca **sense posar encara el bloc davant del robot**. Mesura quant s’ha desplaçat i comprova que la predicció és raonable. Repetiu tres vegades i anoteu voltes, distància real i diferències entre intents.
 
 ```spikeapp
 quan comença el programa
@@ -49,7 +49,7 @@ configura els motors de moviment [B i D v]
 mou endavant (1) voltes a velocitat baixa
 ```
 
-El dibuix és una guia per buscar els blocs equivalents en SPIKE App. Canvia els ports si els motors estan connectats en uns altres, i substitueix una volta per l'estimació del teu equip. Prova primer una volta en un espai lliure.
+El dibuix és una guia per buscar els blocs equivalents en SPIKE App. Canvia els ports si els motors estan connectats en uns altres, i substitueix una volta per l'estimació del teu equip. Prova primer una volta en un espai lliure. Només després de conéixer el desplaçament, situa el bloc a la distància que vols aconseguir i prova el recorregut amb supervisió.
 
 > **💡 Repte d’equip:** aconseguiu quedar-vos tan a prop com pugueu sense tocar el bloc. Quan funcione a un metre, canvieu la distància d’eixida i reutilitzeu les dades per fer una nova predicció.
 
@@ -59,7 +59,7 @@ Si el muntatge incorpora un sensor de força al davant, afegiu-lo com a topall t
 
 ## 🧪 Prova, depura i reflexiona
 
-Repeteix tres vegades des de la mateixa marca i compara la separació final. Si la base toca el bloc abans del previst, redueix les voltes i torna a provar. El sensor de força detecta contacte, però no mesura l’espai que queda ni garanteix una aturada segura.
+Repeteix tres vegades des de la mateixa marca i compara la distància recorreguda amb la predicció. Quan ja conegues el desplaçament, posa el bloc més enllà del punt on preveus que s’aturarà i fes una prova supervisada. Si el robot s’acosta massa, atura’l manualment i redueix les voltes per a l’intent següent. El sensor de força de la comparació detecta contacte, no mesura l’espai que queda.
 
 ### Preguntes per comprovar
 

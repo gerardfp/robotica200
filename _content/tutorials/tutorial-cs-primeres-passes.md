@@ -10,7 +10,7 @@ image: _assets/tutorials/cs-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Prepara una ruta amb peces i comprova com la torre les llig i envia les ordres al MatataBot. Abans de començar, predigueu on arribarà el robot.
+Prepara una ruta de tres ordres i comprova com la torre la llig i l’envia al MatataBot. Abans de prémer Play, prediu on acabarà.
 
 - Entendre que les fitxes es llegeixen com un text: d'esquerra a dreta i de dalt a baix.
 - Emparellar per Bluetooth la torre i el robot.
@@ -18,10 +18,9 @@ Prepara una ruta amb peces i comprova com la torre les llig i envia les ordres a
 
 ## 🧰 Materials i preparació
 
-- Tauler de control
-- Torre Matatalab
-- Robot MatataBot
-- Fitxes de moviment (fletxes)
+- Torre i tauler del Coding Set, amb superfície clara i plana.
+- MatataBot carregat i tres fitxes de moviment: Endavant, Dreta i Enrere.
+- Mapa de quadrícula per a marcar el punt inicial i predir el final.
 
 ## 🧩 Funcions del robot treballades
 
@@ -32,7 +31,7 @@ Prepara una ruta amb peces i comprova com la torre les llig i envia les ordres a
 
 ### 1. Engegar el sistema
 
-Encén el MatataBot i la torre segons el manual del teu model i espera que s’aparellen per Bluetooth; el senyal blau fix i el so de confirmació indiquen que la connexió s’ha completat. Si no s’hi connecten, atura’t i repeteix l’aparellament abans de continuar. No comences a col·locar peces fins que el conjunt estiga preparat.
+Encén la torre i el MatataBot i espera que es connecten. Comprova els indicadors del teu model o segueix el manual del conjunt. Si no es connecten, apaga’ls i torna a engegar-los abans de continuar.
 
 ### 2. Col·locar les fitxes
 
@@ -56,11 +55,12 @@ Compara la casella prevista amb el lloc on s'ha aturat. Torna el robot a la mate
 
 ## ♿ Accessibilitat i seguretat
 
-Fotografia una seqüència curta per recordar-ne l'ordre i comença amb dues peces diferents abans d'allargar-la.
+Mostra les ordres amb targetes grans perquè es puga seguir la seqüència sense manipular les fitxes. Manteniu el tauler estable i retireu objectes de la ruta del robot.
 
 ## ✅ Evidències d’aprenentatge
-- Una ruta dibuixada, la seqüència de peces i una predicció individual. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Dibuix del punt inicial i final previst.
+- Seqüència de tres fitxes i lloc on ha acabat el robot.
 
 ## 🔗 Fonts oficials i límits
 
-Matatalab · Coding Set · [https://matatalab.com/en/coding-set?hl=en-IN](https://matatalab.com/en/coding-set?hl=en-IN). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La pàgina oficial del [Coding Set](https://matatalab.com/en/coding-set?hl=en-IN) descriu la torre, el tauler i el MatataBot. Els indicadors de connexió poden variar segons el model; si no es connecten, seguiu els passos del manual de la torre disponible al centre.

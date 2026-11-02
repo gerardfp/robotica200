@@ -10,7 +10,7 @@ image: _assets/tutorials/ce-bucles.png
 
 ## 🎯 Repte i objectius
 
-La biblioteca mòbil ha de visitar tres parades i tornar a començar la ruta perquè hi puguin pujar nous lectors. Com podem fer que repeteixi el mateix recorregut i com podem demostrar que ha completat una volta?
+La biblioteca mòbil visita diverses parades en un circuit tancat. Predigueu en quin ordre passarà per les estacions i compteu les voltes. El tren no repeteix ordres de codi: és la forma de la via la que el porta de nou al punt de partida.
 
 - Representar una rutina que es repeteix amb una seqüència d’accions.
 - Construir i comparar una via tancada i una via oberta.
@@ -19,7 +19,7 @@ La biblioteca mòbil ha de visitar tres parades i tornar a començar la ruta per
 
 ![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](_assets/imatges/coding-express-bucles.webp)
 
-Aquesta activitat parteix de la idea de repetició que LEGO Education treballa amb la via en forma d’O, però planteja un repte nou: organitzar un servei de biblioteca amb torns i parades. Les instruccions, el relat i la imatge d’aquesta pàgina són propis. Consulta la [lliçó oficial sobre vies en forma d’O i bucles](https://education.lego.com/es-es/lessons/preschool-coding-express/o-shaped-track-looping/) per contrastar-ne la proposta.
+Aquesta activitat adapta la [lliçó oficial sobre vies en forma d’O i repetició](https://education.lego.com/en-us/lessons/preschool-coding-express/o-shaped-track-looping/) a un servei de biblioteca amb estacions i torns.
 
 ## 🧰 Materials i preparació
 
@@ -37,21 +37,21 @@ Comprova que el tren, les vies i les peces d’acció del kit disponible funcion
 
 ## 👣 Seqüència guiada
 
-### 1. Representar una rutina repetida
+### 1. Planifiqueu el recorregut
 
-Abans de muntar les vies, ordeneu tres accions que es repeteixen en una visita a la biblioteca: pujar, triar un conte i tornar-lo. Una parella representa la seqüència; la resta indica en quin punt torna a començar.
+Trieu dues o tres estacions i poseu-les en ordre amb targetes. Assenyaleu el punt de partida i dibuixeu una fletxa que mostre cap a on circularà el tren. Predigueu en quina estació passarà primer, segon i tercer.
 
 ### 2. Dissenyar la línia
 
-Dibuixeu una ruta amb una sortida, tres estacions i un tram que retorni al punt inicial. Munteu-la amb el tren aturat i comproveu que les unions no deixin cap tall ni forcin les peces.
+Dibuixeu i munteu una via tancada que passe per les estacions i torne a l’inici. Comproveu que les unions encaixen i que el tren pot circular sense forçar les peces. Marqueu el punt de partida amb una targeta.
 
 ### 3. Predir i provar
 
-Abans d’engegar, cada equip posa els passatgers a les estacions que vol visitar i prediu l’ordre en què el tren hi passarà. Poseu una fitxa al costat del punt de partida cada vegada que el tren hi passe. Després de dues voltes, atureu-lo amb la mà i compteu les fitxes.
+Abans d’engegar, cada equip prediu l’ordre en què el tren passarà per les estacions. Doneu-li una empenta suau. Cada vegada que torne a passar per la targeta inicial, poseu una fitxa en una columna. Després de dues voltes, atureu el tren amb la mà i compareu el recompte amb la predicció.
 
 ### 4. Comparar amb una ruta oberta
 
-Si el material ho permet, construïu també una via amb inici i final diferents. Compareu què passa en arribar al final de cada disseny. Expliqueu amb paraules, gestos o dibuixos quina estructura permet que el recorregut torni a començar.
+Si teniu prou vies, obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu passar el tren una vegada i observeu què ocorre quan arriba al final. Compareu-la amb la via tancada: el tren no gira ni torna automàticament al principi d’una via oberta.
 
 ### 5. Millorar el servei
 
@@ -59,7 +59,7 @@ Amb el tren aturat, afegiu una estació o canvieu-la de lloc. Repetiu la predicc
 
 ## 🧪 Prova, depura i reflexiona
 
-Compareu les dues voltes del circuit tancat amb el que passa a la via oberta. Anoteu si el tren torna al punt de partida sense moure cap peça. Si s’atura o descarrila, atureu-lo i reviseu les unions abans de tornar a començar.
+Registreu quantes vegades el tren passa pel punt inicial i l’ordre real de les estacions. Compareu el circuit tancat amb la via oberta. Si s’atura o descarrila, atureu-lo i reviseu les unions abans de tornar a començar.
 
 ### Preguntes per comprovar
 
@@ -84,4 +84,4 @@ Munteu les vies en una zona delimitada i manteniu els dits fora del mecanisme me
 
 ## 🔗 Fonts oficials i límits
 
-LEGO Education · Coding Express · [https://education.lego.com/en-us/lessons/preschool-coding-express/](https://education.lego.com/en-us/lessons/preschool-coding-express/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La [lliçó oficial sobre via en forma d’O](https://education.lego.com/en-us/lessons/preschool-coding-express/o-shaped-track-looping/) relaciona el circuit tancat amb la idea de repetició. En aquesta activitat, la repetició és una propietat del recorregut físic; el tren no executa un bucle escrit ni compta voltes.

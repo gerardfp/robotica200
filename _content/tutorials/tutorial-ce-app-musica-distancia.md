@@ -42,9 +42,9 @@ Construïu una via recta o amb un recorregut senzill. Marqueu tres estacions i m
 
 Si la versió de l’app és compatible, connecteu-hi el tren segons les instruccions que mostra i observeu l’acció associada a cada maó. Canvieu una sola resposta d’un maó segons les opcions disponibles i proveu-lo en una ruta curta. Compareu el resultat amb el comportament inicial. Si la connexió o l’app no funciona, passeu a l’alternativa amb targetes: representeu les mateixes respostes com a símbols, sense afirmar que s’han canviat dins del robot.
 
-### 3. Compondreu un concert de parades
+### 3. Componem un concert de parades
 
-Poseu un maó groc i un de blau en una via recta. Feu passar el tren i anoteu quin so sona primer. Atureu-lo, intercanvieu els dos maons i repetiu des del mateix punt. Si teniu un tercer maó de so, afegiu-lo per allargar la seqüència sonora. Si l’app permet canviar les respostes, compareu-les amb les que heu sentit abans.
+Poseu un maó groc i un de blau en una via recta. Feu passar el tren i anoteu quin so sona primer. Atureu-lo, intercanvieu els maons i repetiu des del mateix punt. Compareu l’ordre dels dos sons. Si la vostra app permet canviar-ne les respostes, feu-ho després i repetiu la prova per comprovar què ha canviat.
 
 ### 4. Resoleu una ruta amb senyals
 
@@ -56,7 +56,7 @@ _L’app pot variar o no estar disponible; els pictogrames de la pantalla són n
 
 ## 🧪 Prova, depura i reflexiona
 
-Repetiu el tram curt i el llarg i anoteu la distància mesurada i on s’atura el tren. Compareu l’ordre dels sons abans i després d’intercanviar els dos maons. Si el comportament varia, comproveu la connexió, la posició del maó i les unions de la via. La distància l’heu mesurada amb el regle; el tren no la calcula.
+Repetiu el tram curt i el llarg i anoteu la distància mesurada i on s’atura el tren. Intercanvieu els dos maons i compareu l’ordre dels sons. Si proveu l’app, registreu per separat quina resposta heu canviat i què heu sentit. La distància l’heu mesurada amb el regle; el tren no la calcula.
 
 ### Preguntes per comprovar
 

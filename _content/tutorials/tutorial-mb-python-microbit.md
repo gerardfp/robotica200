@@ -68,7 +68,7 @@ _La placa de la imatge representa la micro:bit de la dotació. La interfície é
 
 Connecteu la placa per USB i useu l’opció «Send to micro:bit» si el navegador i els permisos són compatibles. Si aquesta opció no apareix, descarregueu el `.hex`, obriu la unitat de la micro:bit i copieu-lo. Espereu que la transferència acabe; després proveu A i B en la placa real i compareu el resultat amb el simulador.
 
-### 5. Compareu amb MakeCode Python
+### 5. Compareu amb els blocs de MakeCode
 
 En MakeCode, podeu fer la mateixa prova amb blocs. Aquest exemple mostra una cara per a cada botó:
 
@@ -81,7 +81,9 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-MakeCode i l’editor de MicroPython són eines diferents. Feu cada exemple en el seu editor: no copieu les ordres d’un dins de l’altre. Compareu què apareix quan premeu cada botó.
+Executeu el projecte de MakeCode i premeu primer A i després B. Per veure’n la versió textual, seleccioneu **Python** a la part superior de MakeCode. Compareu-la amb el programa de MicroPython: les dues fan una prova semblant, però usen noms i formes d’organitzar les ordres diferents.
+
+MakeCode i l’editor de MicroPython són eines diferents: no copieu les ordres d’un dins de l’altre. Proveu A+B en cada projecte i anoteu què observeu; no cal que reaccionen igual quan es premen els dos botons alhora.
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -101,7 +103,9 @@ Feu quatre proves al simulador i a la placa: A, B, cap botó i A+B alhora. Regis
 Proporcioneu el codi imprés amb els nivells d’indentació marcats i permeteu arrossegar fragments en lloc d’escriure’ls tots. El simulador és una alternativa per practicar sense dispositiu; una parella pot llegir el codi mentre l’altra prova els botons. Desconnecteu el cable agafant-ne el connector i no pressioneu ni doblegueu la vora daurada de la placa.
 
 ## ✅ Evidències d’aprenentatge
-- Guardeu els dos programes separats i etiquetats com a MicroPython i MakeCode Python, una taula de les quatre proves i una anotació de l’error d’indentació corregit. Indiqueu si l’execució és simulada o s’ha verificat a la placa física i quina versió de micro:bit heu utilitzat.
+- Projecte de MicroPython i projecte de MakeCode, guardats per separat.
+- Taula de les proves dels botons i indicació de si s’han fet en el simulador o a la placa.
+- Una nota sobre l’error d’espais corregit i la versió de micro:bit utilitzada.
 
 ## 🔗 Fonts oficials i límits
 

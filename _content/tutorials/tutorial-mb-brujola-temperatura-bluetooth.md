@@ -41,7 +41,7 @@ Obriu MakeCode i prepareu dos botons:
 1. En **Entrada**, afegiu «en prémer el botó A». Dins, poseu «mostra el número» i, al seu espai, la lectura de brúixola.
 2. Afegiu un altre bloc de botó i canvieu-lo a **B**. Dins, poseu «mostra el número» amb la lectura de temperatura.
 
-El botó A mostrarà la direcció i el B, la temperatura aproximada. Si preferiu copiar el programa, obriu **JavaScript**, enganxeu-lo i torneu a **Blocs**:
+El botó A mostrarà la direcció i el B, la temperatura aproximada. Si preferiu copiar el programa, obriu **JavaScript** en MakeCode, enganxeu aquest text i torneu a **Blocs** per veure les peces:
 
 ```javascript
 input.onButtonPressed(Button.A, function () {

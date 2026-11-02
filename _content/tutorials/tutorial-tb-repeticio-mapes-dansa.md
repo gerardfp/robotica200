@@ -42,7 +42,7 @@ Manteniu X més d’un segon per començar sense ordres anteriors. Prepareu amb 
 
 ### 2. Compareu la dansa predefinida
 
-Activeu el botó de dansa aleatòria tres vegades i anoteu si el moviment canvia entre intents. Compareu-lo amb una seqüència direccional pròpia: la dansa selecciona un patró incorporat, mentre que la ruta depén de les ordres introduïdes. No presenteu els moviments de dansa com una seqüència que l’alumnat haja programat.
+Esborreu les ordres anteriors, premeu una vegada el botó de dansa i després **Play**. Repetiu la prova tres vegades i anoteu si el moviment canvia. Compareu-lo amb una seqüència direccional pròpia: la dansa selecciona un patró incorporat, mentre que la ruta depén de les ordres introduïdes.
 
 ### 3. Exploreu la guia d’un mapa OID
 
@@ -50,7 +50,9 @@ Amb un mapa interactiu compatible, col·loqueu el robot a l’entrada principal 
 
 ### 4. Afegiu una veu gravada o un traç opcional
 
-Graveu una frase fictícia curta amb el botó de gravació, escolteu-la per comprovar-la i inseriu-la a la seqüència perquè es reproduïsca en arribar a una parada. No demaneu dades identificatives ni feu servir la veu d’un infant sense els acords del centre. Si el suport de retoladors és al kit, afegiu-lo i proveu una ruta geomètrica senzilla sobre paper fix; no forceu el suport ni atribuïu el traç al mapa OID.
+Manteniu premut el botó de gravació mentre dieu una frase fictícia curta i solteu-lo. El robot la reproduirà perquè la pugueu comprovar. Esborreu les ordres anteriors i introduïu **Endavant → gravació** amb una pulsació curta del botó de gravació; premeu Play i escolteu el missatge després del moviment.
+
+No demaneu dades identificatives ni feu servir la veu d’un infant sense els acords del centre. Si el suport de retoladors és al kit, també podeu provar una ruta senzilla sobre paper fix.
 
 ![Tale-Bot Pro de la dotació sobre un mapa interactiu de barri, amb targetes direccionals, un escenari de paper i retoladors compatibles al costat.](../../_assets/tutorials/tb-repeticio-mapes-dansa.webp)
 
@@ -58,7 +60,7 @@ _La il·lustració representa una activitat amb mapa i targetes; la lectura OID 
 
 ## 🧪 Prova, depura i reflexiona
 
-Feu tres execucions de la ruta: sense repetició, amb repetició i amb una ordre esborrada abans de Play. Registreu la seqüència prevista, la que indiquen els llums, l’ordre observat i el resultat. Proveu també la dansa tres vegades, una entrada principal i una de secundària del mapa, i una gravació seguida de reproducció. Si una instrucció de veu del mapa no s’interromp com espereu, espereu que acabe o useu Play segons el manual; no premeu ordres aleatòries mentre sona.
+Feu tres execucions de la ruta: sense repetició, amb repetició i amb una ordre esborrada abans de Play. Registreu les ordres previstes i el resultat. Proveu també la dansa i la gravació; si teniu mapa compatible, compareu les entrades que hi haja disponibles. Si no en teniu, anoteu que la guia del mapa s’ha simulat amb targetes.
 
 ### Preguntes per comprovar
 

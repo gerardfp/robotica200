@@ -13,15 +13,14 @@ image: _assets/tutorials/mb-primeres-passes.png
 
 Construeix un dau electrònic que reaccione a una sacsejada i mostra’l tant al simulador com a la placa. La seqüència presenta MakeCode, els esdeveniments de l’acceleròmetre, la matriu de 5 × 5 i la transferència del programa.
 
-- Conèixer l'entorn de programació MakeCode i el seu simulador interactiu.
-- Crear un dau digital que mostri un número a l'atzar en sacsejar la placa.
-- Passar l'arxiu compilat .hex a la unitat micro:bit com si fos un llapis de memòria USB.
+- Obrir un projecte MakeCode i provar-lo al simulador.
+- Mostrar un nombre de l’1 al 6 quan se sacseja la placa.
+- Transferir el programa a una micro:bit amb el mètode que ofereix l’ordinador.
 
 ## 🧰 Materials i preparació
 
-- Placa micro:bit (V1 o V2)
-- Cable micro-USB
-- Ordinador amb navegador web
+- micro:bit V1 o V2 i cable USB de dades.
+- Ordinador amb navegador i accés a MakeCode.
 
 ## 🧩 Funcions del robot treballades
 
@@ -30,9 +29,9 @@ Construeix un dau electrònic que reaccione a una sacsejada i mostra’l tant al
 
 ## 👣 Seqüència guiada
 
-### 1. Obrir MakeCode
+### 1. Creeu el projecte
 
-Entra a makecode.microbit.org i crea un projecte nou anomenat 'El meu dau'.
+Obriu MakeCode, trieu **Nou projecte** i poseu-li el nom «El meu dau». Abans de connectar la placa, comproveu que el simulador mostra la micro:bit.
 
 ### 2. Programar l'esdeveniment sacsejar
 
@@ -47,15 +46,15 @@ input.onGesture(Gesture.Shake, function () {
 
 Els noms de les peces poden aparéixer en una altra llengua segons la configuració de MakeCode. La primera detecta la sacsejada i la segona mostra un nombre entre 1 i 6.
 
-### 3. Descarregar a la placa
+### 3. Proveu i transferiu el programa
 
-Connecta la micro:bit per USB i prem el botó 'Descarregar'. En pocs segons el dau funcionarà de manera autònoma.
+Sacsegeu la micro:bit del simulador i comproveu que mostra un nombre de l’1 al 6. Per provar-ho amb la placa, connecteu-la per USB i premeu **Descarregar**. Si MakeCode desa un fitxer `.hex`, copieu-lo a la unitat **MICROBIT** i espereu que la transferència acabe abans de desconnectar el cable. Sacsegeu la placa i comproveu el resultat.
 
 > **💡 Consell docent per a la sessió:** Recorda als alumnes que el simulador de l'esquerra permet provar el programa abans fins i tot de tenir la placa connectada.
 
 ## 🧪 Prova, depura i reflexiona
 
-Sacseja la placa tres vegades i anota els nombres que apareixen. Comprova que tots estan entre l’1 i el 6. Si no apareix cap nombre, revisa la connexió i que has descarregat el programa correcte.
+Feu tres proves al simulador i tres amb la placa, i anoteu els nombres. Comproveu que tots estan entre l’1 i el 6. Si el simulador funciona i la placa no, reviseu que el fitxer s’ha transferit i que heu provat la placa correcta.
 
 ### Preguntes per comprovar
 
@@ -68,8 +67,8 @@ Sacseja la placa tres vegades i anota els nombres que apareixen. Comprova que to
 Prova primer el dau al simulador. Si sacsejar la placa és difícil, una altra persona pot fer el moviment mentre la parella observa i anota el resultat.
 
 ## ✅ Evidències d’aprenentatge
-- El programa guardat i els resultats de tres sacsejades.
+- Projecte desat i taula amb els resultats del simulador i de la placa.
 
 ## 🔗 Fonts oficials i límits
 
-micro:bit · Features overview · [https://microbit.org/get-started/features/overview/](https://microbit.org/get-started/features/overview/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La [vista general oficial de micro:bit](https://microbit.org/get-started/features/overview/) descriu els botons, la matriu i els sensors integrats. La sacsejada d’aquesta pràctica es detecta amb l’acceleròmetre de la placa.

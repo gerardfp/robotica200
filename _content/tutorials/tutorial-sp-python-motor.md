@@ -34,7 +34,7 @@ Obriu un projecte de Python a SPIKE App i connecteu el Hub. Si la interfície no
 
 - Editor de Python de SPIKE App, basat en MicroPython, a més dels blocs d’icones i de paraules.
 - Control del motor angular connectat a un port del Hub mitjançant `motor.run_for_degrees`.
-- Execució d’una funció asíncrona amb `runloop.run` i `await`.
+- Ordres de Python que inicien el programa i esperen que el motor acabe el moviment.
 - Connexió amb el Hub Prime i observació de l’execució o dels missatges d’error de l’app.
 
 ## 👣 Seqüència guiada
@@ -74,7 +74,7 @@ Canvieu els graus de `360` a `180`, predigueu el nou angle i executeu. Després 
 
 ### 5. Relacioneu Python amb blocs
 
-En un projecte de blocs, representeu la mateixa acció: quan comence el programa, feu girar el motor connectat al port triat durant el nombre de graus i a la velocitat acordada. Compareu quina informació queda explícita en cada format: el bloc agrupa els paràmetres visualment; el text requereix sintaxi, indentació i noms exactes. No cal que les dues interfícies utilitzen exactament el mateix nom intern del bloc.
+En un projecte de blocs, representeu la mateixa acció: quan comence el programa, feu girar el motor del port triat una volta completa. Compareu les dades de cada format: el port i el gir apareixen al bloc i al text. En el text també cal respectar els noms i els espais inicials.
 
 ```spikeapp
 quan comença el programa

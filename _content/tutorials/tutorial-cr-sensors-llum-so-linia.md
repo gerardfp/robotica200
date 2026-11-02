@@ -10,7 +10,7 @@ image: _assets/tutorials/cr-sensors-llum-so-linia.webp
 
 ## 🎯 Repte i objectius
 
-Feu que la llum de Codey responga als canvis de llum i de so. Després proveu el sensor de Rocky sobre una línia negra. Observeu què detecta el robot i què li heu indicat que faça.
+Feu que Codey responga a una palmada suau i investigueu com detecta la llum. Després proveu Rocky sobre una línia negra. Observeu què detecta el robot i què li heu indicat que faça.
 
 - Calibrar els sensors de llum i so amb proves controlades.
 - Relacionar la lectura del sensor infraroig/color amb una línia i els motors.
@@ -52,11 +52,36 @@ Busqueu els blocs equivalents a la vostra versió. En prémer A, observeu la llu
 
 ### 2. Calibrem llum i color
 
-Manteniu Codey en la mateixa orientació i registreu diverses lectures en llum habitual i en una zona més ombrejada. Trieu un llindar entre els valors observats, si les mostres se separen, i feu que l’indicador RGB canvie de color segons la condició. Després compareu una targeta clara, una fosca i dues de colors a la mateixa distància. Registreu què detecta realment el bloc; no suposeu que tots els colors es distingeixen amb la mateixa fiabilitat.
+Manteniu Codey en la mateixa orientació. En mBlock, combineu un bloc de pantalla amb el valor del sensor de llum. Aquesta és la idea que heu de construir amb les peces de la vostra versió:
+
+```mblock
+quan es prem el botó [A v]
+mostra el valor de llum ambiental
+```
+
+Premeu A i anoteu tres lectures amb llum habitual i tres fent ombra al sensor. Si necessiteu ajuda per trobar el sensor, consulteu l’[exemple de llum del fabricant](https://support.makeblock.com/hc/en-us/articles/7463194482839-Case-12-Energy-conserving-RGB-LED-indicator).
+
+Després, amb Rocky aturat i el sensor orientat cap avall, compareu una targeta clara i una fosca a la mateixa distància. Anoteu què detecta el bloc de color de la vostra versió. No suposeu que distingirà tots els colors amb la mateixa fiabilitat.
 
 ### 3. Proveu el sensor de so amb una entrada controlada
 
-Registreu primer el valor en silenci i després feu tres sons breus i voluntaris a una distància fixa (per exemple, picar de mans suaument). Configureu un llindar a partir de les lectures, feu que l’indicador RGB done un senyal visual i afegiu una pausa perquè no es dispare repetidament. El sensor no reconeix instruccions parlades: si no hi ha una lectura estable, substituïu aquesta part per una taula de valors simulats.
+En un projecte de prova, mostreu el nivell de so contínuament a la pantalla de Codey amb el bloc de lectura del sensor dins de «per sempre». Anoteu el valor en silenci i després durant tres palmades suaus, sempre a la mateixa distància. Trieu un valor entre les lectures de silenci i de palmada: serà el **valor de tall**. Per exemple, si obteniu aproximadament 10 i 40, proveu amb 25.
+
+En un projecte nou, construïu aquesta idea amb els blocs equivalents de mBlock. El número 25 és només un exemple: poseu-hi el vostre valor de tall.
+
+```mblock
+quan comença el programa
+per sempre
+si <nivell de so > (25)> aleshores
+encén el llum RGB de color [blau v]
+si no
+apaga el llum RGB
+fi
+espera (0.5) segons
+fi
+```
+
+Aquest dibuix resumeix les accions; els noms dels blocs poden variar. Proveu el programa en silenci i amb una palmada. Si la llum no canvia, reviseu les lectures i ajusteu el valor de tall. El sensor no reconeix paraules.
 
 ### 4. Seguiu una línia i depureu la ruta
 
@@ -85,7 +110,9 @@ Anoteu què mostra el sensor amb llum i amb ombra, i després en silenci i amb u
 Manteniu el robot a velocitat baixa i dins d’un recorregut delimitat, lluny de vores i dits. No useu sons forts, no enregistreu veus i no feu inferències sobre les persones a partir del nivell de so. Oferiu lectures simulades o targetes impreses a qui no vulga participar en una prova sonora; es poden comparar resultats sense conduir el robot.
 
 ## ✅ Evidències d’aprenentatge
-- Conserveu el projecte mBlock, l’esquema entrada–procés–eixida, la taula de proves repetides i una nota sobre el llindar triat i les limitacions del sensor. La verificació del fabricant identifica el sensor de llum, el sensor de veu/so, els botons i l’indicador RGB de Codey, i les funcions de color, obstacle i seguiment de Rocky; la pràctica només afirma les funcions que s’han comprovat en la unitat del centre.
+- Projecte mBlock que encén la llum amb una palmada.
+- Taula amb lectures de llum i so i el valor de tall triat.
+- Nota breu sobre els intents de seguiment de línia i els ajustos realitzats.
 
 ## 🔗 Fonts oficials i límits
 

@@ -10,11 +10,11 @@ image: _assets/tutorials/mb-so-microfon.png
 
 ## 🎯 Repte i objectius
 
-Dissenya un indicador que reaccione al nivell sonor de l’entorn i compare lectures en condicions diferents. La proposta identifica la versió de la placa abans d’utilitzar el micròfon, disponible de manera integrada en micro:bit V2.
+Fes que una micro:bit V2 reaccione a un so i compara les lectures en silenci i després d’una palmada suau. El micròfon i l’altaveu integrats necessaris per a aquesta pràctica són de la versió V2.
 
-- Calibrar el nivell de soroll ambiental de l'aula.
-- Crear un semàfor de silenci que mostri una icona d'alerta si hi ha massa xivarri.
-- Reproduir melodies d'èxit amb l'altaveu integrat.
+- Mostrar una icona quan la placa detecta un so fort.
+- Comparar el nivell de so en dues situacions.
+- Provar l’altaveu integrat amb un to breu.
 
 ## 🧰 Materials i preparació
 
@@ -31,15 +31,13 @@ Dissenya un indicador que reaccione al nivell sonor de l’entorn i compare lect
 
 ### 1. Esdeveniment d'aplaudiment
 
-En una placa micro:bit V2, el micròfon integrat permet provar l’esdeveniment «quan s’escolta un so fort». Fes servir eixe bloc per canviar l’estat d’una variable `llum` entre encés i apagat; en V1 aquesta funció requerix un mòdul extern compatible.
+En MakeCode, crea un projecte nou. En **Entrada**, busca «quan s’escolta un so fort» i posa-hi dins «mostra una icona», una pausa d’un segon i «neteja la pantalla». Descarrega el programa a la V2 i fes una palmada suau: la icona hauria d’aparéixer i desaparèixer. Espera que desaparega abans de repetir la prova. Si no respon, acosta’t una mica o revisa el llindar de so de l’editor, sense fer sons forts. La [referència oficial](https://makecode.microbit.org/reference/input/on-sound) mostra aquesta peça i un exemple.
 
 ### 2. Mostra el nivell de so
 
-Dins de «per sempre», afegeix el bloc de mostrar una barra de llums. En el valor de la barra posa «nivell de so» i deixa el màxim a 255. El número serveix per comparar lectures; no són decibels.
+Crea un segon projecte perquè la barra no tape la icona del primer. Dins de «per sempre», afegeix el bloc de mostrar una barra de llums. En el valor de la barra posa «nivell de so» i deixa el màxim a 255. El número serveix per comparar lectures; no són decibels.
 
-Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
-
-```javascript
+```makecode
 basic.forever(function () {
     led.plotBarGraph(input.soundLevel(), 255)
 })
@@ -47,29 +45,30 @@ basic.forever(function () {
 
 La [referència oficial del nivell de so](https://makecode.microbit.org/reference/input/sound-level) mostra la peça del micròfon i recorda que necessita micro:bit V2.
 
-### 3. Alarma acústica
+### 3. Prova l’altaveu
 
-Com a ampliació, tria un valor a partir de les lectures de la classe i programa un to breu a l’altaveu de la V2 quan se supere. Acorda una alternativa visual per a qui no vulga usar el so. El valor no identifica qui ha parlat.
+En un tercer projecte, posa «reprodueix un to» dins de «quan es prem el botó B». Descarrega’l i prem B per escoltar-lo a l’altaveu de la V2. Tria un volum còmode; també pots mostrar una icona en lloc de reproduir un so.
 
-> **💡 Consell docent per a la sessió:** Els nens i nenes aprendran a autoregular el volum de treball cooperatiu mirant el semàfor.
+> **💡 Consell docent:** Deseu els projectes amb noms diferents per tornar a provar la icona, la barra i el to per separat.
 
 ## 🧪 Prova, depura i reflexiona
 
-Identifica primer si les plaques són V2 i comprova el micròfon i el bloc disponible al programari. A continuació, tria sons voluntaris i mesura'n la resposta per separat.
+Amb el primer projecte, compara tres intents en silenci i tres palmades suaus. Després prova el projecte de la barra i observa si s’ompli més amb la palmada. Finalment, prem B amb el projecte del to. Anota què ha passat en cada cas.
 
 ### Preguntes per comprovar
 
 - La placa detecta parla o només nivells de so?
 - Què passa si varia el soroll de fons?
-- Quin nivell s’ha llegit en silenci i quin després del so, i quantes vegades heu repetit cada mesura?
+- Com ha canviat la barra entre el silenci i la palmada? Quantes vegades heu repetit la prova?
 
 ## ♿ Accessibilitat i seguretat
 
 La sessió no necessita enregistrar veus ni reconèixer paraules. Permet que qui ho prefereixi activi la prova amb un senyal visual o un so generat per l'adult.
 
 ## ✅ Evidències d’aprenentatge
-- Dues mesures de so en condicions definides i una explicació de què pot detectar aquest muntatge. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- Observacions de la barra en silenci i amb una palmada, repetides tres vegades.
+- Explicació de què detecta el micròfon i prova del senyal visual i del to.
 
 ## 🔗 Fonts oficials i límits
 
-micro:bit · Features overview · [https://microbit.org/get-started/features/overview/](https://microbit.org/get-started/features/overview/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La referència de MakeCode explica l’esdeveniment [so fort](https://makecode.microbit.org/reference/input/on-sound) i el bloc [nivell de so](https://makecode.microbit.org/reference/input/sound-level). El micròfon i l’altaveu integrats d’aquesta pràctica requereixen micro:bit V2; el número de la barra no són decibels.
