@@ -1,6 +1,6 @@
 ---
 title: Gravació i reproducció de veu
-description: Gravar pistes d'àudio i diàlegs personalitzats amb la veu de l'alumnat a cada etapa del recorregut.
+description: Gravar un missatge curt i fer que Tale-Bot el reproduïsca durant un recorregut.
 robot: tale-bot
 level: Iniciació
 duration: 40 min
@@ -13,7 +13,7 @@ image: _assets/tutorials/tb-reconeixement-veu.png
 Enregistra missatges breus perquè Tale-Bot els reproduïsca durant una ruta i crea una narració amb veu pròpia. El repte diferencia clarament l’enregistrament d’àudio del reconeixement de parla: el robot no interpreta ordres parlades.
 
 - Treballar l'expressió oral i la dicció clara.
-- Vincular missatges de veu a esdeveniments de programació.
+- Afegir el missatge gravat a una seqüència de botons.
 - Crear rutes narratives de contacontes interactius.
 
 ## 🧰 Materials i preparació
@@ -30,21 +30,21 @@ Enregistra missatges breus perquè Tale-Bot els reproduïsca durant una ruta i c
 
 ### 1. Activar la gravació
 
-Mantingues premut el botó del micròfon fins a sentir el senyal sonor 'Bip'.
+Mantín premut el botó del micròfon mentre parles. Prepara una frase breu, sense noms ni dades personals; cada gravació pot durar fins a 30 segons.
 
 ### 2. Gravar el missatge
 
-L'infant parla a prop del robot: 'Hola, sóc el conill i busco pastanagues!'. En deixar anar el botó, l'àudio queda desat.
+Digues, per exemple, «Hola, sóc el conill!». En acabar, deixa anar el botó. El robot reproduirà el missatge perquè el pugues escoltar i comprovar.
 
 ### 3. Seqüenciar el conte
 
-Programa: Endavant → Reprodueix veu → Gira a la dreta → Endavant.
+Mantín X més d’un segon per buidar les ordres anteriors. Després prem **Endavant → micròfon breument → Dreta → Endavant → Play**. La pulsació breu del micròfon afegeix l’última gravació a la ruta; no inicia una gravació nova.
 
-> **💡 Consell docent per a la sessió:** Molt recomanable per a infants amb dificultats d'escriptura: s'expressen oralment amb total comoditat.
+> **💡 Consell docent:** Si una criatura prefereix no gravar la seua veu, pot triar la frase o ordenar les targetes mentre una persona adulta fa la gravació.
 
 ## 🧪 Prova, depura i reflexiona
 
-Comprova amb el manual del teu model si el micròfon reconeix ordres o grava i reprodueix àudio: enregistrar una frase no és el mateix que reconèixer-la.
+Executa la ruta i comprova que el missatge sona després del primer avanç. Si no sona, revisa que has gravat una frase i que has premut breument el micròfon dins de la seqüència. Repetiu la prova una vegada amb el robot a la mateixa posició inicial.
 
 ### Preguntes per comprovar
 

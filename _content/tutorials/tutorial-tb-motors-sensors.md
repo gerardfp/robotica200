@@ -14,7 +14,7 @@ Dibuixa una forma amb Tale-Bot i investiga com les ordres direccionals es transf
 
 - Relacionar la geometria espacial amb seqüències d'ordres repetitives.
 - Dibuixar quadrats, rectangles i figures simètriques.
-- Ajustar la precisió de gir i velocitat dels motors de tracció.
+- Observar com la superfície i el suport afecten el resultat del dibuix.
 
 ## 🧰 Materials i preparació
 
@@ -32,15 +32,15 @@ Dibuixa una forma amb Tale-Bot i investiga com les ordres direccionals es transf
 
 ### 1. Col·locar els retoladors
 
-Insereix els retoladors als forats laterals de TaleBot assegurant que les puntes toquin suaument el paper.
+Si tens el suport de dibuix compatible, col·loca'l seguint les instruccions del kit i posa-hi un retolador rentable. Ajusta’l perquè la punta toque suaument el paper. Si no tens el suport, segueix el recorregut amb el dit i dibuixa'l a mà.
 
 ### 2. El repte del quadrat
 
-Planifica el codi: (Endavant → Gira 90º) repetit 4 vegades. En prémer Play, TaleBot pintarà un quadrat tancat.
+Esborra el programa anterior mantenint X més d’un segon. Prem **Endavant → Dreta** quatre vegades i després **Play**. Observa si el traç s’assembla a un quadrat i si el final queda prop de l’inici; la posició del retolador i el terra poden fer variar el dibuix.
 
 ### 3. Crear patrons artístics
 
-Combina girs repetits per crear mandales i estrelles geomètriques.
+Canvia un costat: prem dues vegades Endavant abans d’un dels girs. Prediu com canviarà el traç i prova'l en un altre full. Esborra el programa anterior abans d’introduir la nova seqüència.
 
 ### 4. Transportar un objecte amb els braços
 

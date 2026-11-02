@@ -10,7 +10,7 @@ image: _assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp
 
 ## 🎯 Repte i objectius
 
-Construïu una estació de camp que indique orientació, mostre una lectura tèrmica aproximada i comunique un resultat a un dispositiu connectat. Compareu les dades amb instruments de referència i identifiqueu què canvia entre micro:bit V1 i V2. No useu el prototip per a prendre decisions meteorològiques o de seguretat.
+Feu que la micro:bit mostre la direcció i una temperatura aproximada. Compareu-les amb una brúixola i un termòmetre; després exploreu el logotip tàctil de V2 i la connexió Bluetooth si teniu els dispositius necessaris.
 
 - Calibrar la brúixola i comparar rumbs amb una referència.
 - Contrastar la temperatura interna aproximada amb un termòmetre.
@@ -36,11 +36,29 @@ Comproveu la versió impresa a la placa. La brúixola pot requerir calibratge i 
 
 ### 1. Calibreu i compareu el rumb
 
-Obriu un programa que mostre el rumb de la brúixola en graus. Seguiu la indicació de calibratge del dispositiu i feu la prova lluny d’imants, ordinadors i superfícies metàl·liques. Orienteu la placa cap a quatre direccions marcades amb una brúixola de referència; registreu diferències aproximades i repetiu una lectura després de girar la placa. No interpreteu el valor com una direcció fiable si la lectura oscil·la.
+Obriu MakeCode i prepareu dos botons:
+
+1. En **Entrada**, afegiu «en prémer el botó A». Dins, poseu «mostra el número» i, al seu espai, la lectura de brúixola.
+2. Afegiu un altre bloc de botó i canvieu-lo a **B**. Dins, poseu «mostra el número» amb la lectura de temperatura.
+
+El botó A mostrarà la direcció i el B, la temperatura aproximada. Si preferiu copiar el programa, obriu **JavaScript**, enganxeu-lo i torneu a **Blocs**:
+
+```javascript
+input.onButtonPressed(Button.A, function () {
+    basic.showNumber(input.compassHeading())
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showNumber(input.temperature())
+})
+```
+
+Descarregueu-lo a la placa i premeu A. Si demana calibrar-la, seguiu les indicacions de la pantalla. Manteniu-la plana, amb la vora superior cap a la direcció que voleu mesurar. Proveu quatre direccions lluny d’imants i objectes metàl·lics; compareu les lectures amb una brúixola de referència.
+
+Podeu consultar el [bloc i l’exemple oficial de brúixola](https://makecode.microbit.org/reference/input/compass-heading) per identificar la peça en MakeCode.
 
 ### 2. Compareu la temperatura amb un instrument
 
-Mostreu la lectura de temperatura del micro:bit i del termòmetre de referència deixant-los uns minuts al mateix lloc, a l’ombra i sense tocar el processador. Registreu hora, ubicació general i valors, sense dades personals. Repetiu després de canviar de sala només si la temperatura s’ha estabilitzat. Expliqueu que la lectura deriva de la temperatura del xip i pot diferir de la temperatura de l’aire.
+Deixeu la placa i un termòmetre uns minuts al mateix lloc, a l’ombra. Premeu B i compareu els nombres. Anoteu-los sense tocar la placa durant la lectura: la micro:bit mesura la temperatura del xip, que pot ser diferent de la de l’aire.
 
 ### 3. Proveu el logotip tàctil segons la versió
 
@@ -48,7 +66,9 @@ En una micro:bit V2, programeu l’esdeveniment de tocar el logotip per mostrar 
 
 ### 4. Distingiu Bluetooth de ràdio
 
-Seguiu la guia de connexió de l’editor i emparelleu la placa amb un dispositiu compatible. Envieu una lectura fictícia o un número de prova a la interfície disponible i comproveu si arriba. Compareu el procediment amb `radio` entre dues plaques: Bluetooth crea una connexió amb un dispositiu compatible, mentre que el bloc ràdio de MakeCode envia missatges entre plaques del grup. Si l’editor o el dispositiu no admeten la connexió, feu el diagrama de missatges en paper i anoteu-ho com a simulació.
+Si teniu una tauleta compatible amb l’app oficial de micro:bit, seguiu la [guia de l’app](https://microbit.org/get-started/user-guide/mobile/) per emparellar-la i enviar un programa a la placa per Bluetooth. Observeu si la placa executa el programa després de la transferència. Si no teniu l’app, feu la prova per cable i anoteu que no heu comprovat Bluetooth.
+
+Compareu-ho amb la [guia de ràdio](../../tutorial/mb-radio-mesh/index.html), que envia números entre dues plaques. Per intercanviar dades amb un dispositiu Bluetooth des d’un programa cal una extensió i una aplicació compatibles; afegir l’extensió Bluetooth elimina els blocs de ràdio del mateix projecte. Guardeu cada prova en un projecte separat.
 
 ![Una micro:bit de la dotació en suport de cartó, al costat d’una brúixola i un termòmetre de referència; un telèfon mostra el símbol abstracte de Bluetooth.](../../_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp)
 
@@ -56,7 +76,7 @@ _La brúixola i el termòmetre són instruments de comparació, no accessoris co
 
 ## 🧪 Prova, depura i reflexiona
 
-Repetiu tres vegades quatre rumbs marcats i dues lectures tèrmiques en condicions anotades. A V2, compareu cinc intents de tacte i cinc de no tacte; en V1, registreu l’entrada alternativa utilitzada. Proveu la connexió Bluetooth una vegada amb dispositiu compatible i documenteu el resultat, o feu la simulació desconnectada. Si la brúixola canvia en acostar-la a un objecte, separeu l’objecte i repetiu abans de canviar el programa.
+Proveu A en quatre direccions i B al costat del termòmetre; anoteu els resultats. Si teniu V2, comproveu també el logotip tàctil. Indiqueu si heu transferit el programa per Bluetooth o per cable. Si la brúixola dona valors inestables, allunyeu-la d’objectes metàl·lics i repetiu.
 
 ### Preguntes per comprovar
 

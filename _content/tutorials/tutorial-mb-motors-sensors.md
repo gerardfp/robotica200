@@ -1,7 +1,6 @@
 ---
-title: 'Motors i sensors: Sensor d''humitat i servomotors'
-description: Connectar sensors externs als pins de la vora (P0, P1, P2) amb pinces de cocodril per automatitzar
-  una alarma de reg.
+title: 'micro:bit: llegir un sensor extern'
+description: Provar la lectura d’un sensor compatible al pin P0 i explorar un servomotor opcional.
 robot: microbit
 level: Intermedi
 duration: 50 min
@@ -11,18 +10,18 @@ image: _assets/tutorials/mb-motors-sensors.png
 
 ## 🎯 Repte i objectius
 
-Connecta una entrada externa a la micro:bit i transforma les lectures en una resposta visible. La prova compara un senyal digital amb una lectura analògica i deixa clar què mesura la placa i què correspon al circuit afegit.
+Connecta un sensor compatible a la micro:bit i mostra la seua lectura a la pantalla. Si el centre també disposa d’un servo i de l’alimentació adequada, podràs provar-ne el moviment per separat.
 
-- Diferenciar senyals digitals (0 o 1) de senyals analògics continus (0 a 1023).
-- Connectar un sensor resistiu casolà amb 2 claus a P0 i GND.
-- Controlar l'angle d'un servomotor de 0 a 180 graus des del pin P1.
+- Mostrar i comparar dues lectures del sensor.
+- Llegir un sensor extern compatible connectat a P0.
+- Explorar un servomotor opcional amb els components i les instruccions adequats.
 
 ## 🧰 Materials i preparació
 
 - micro:bit amb portapiles
-- 3 cables amb pinces de cocodril
-- 1 sensor d'humitat o claus
-- 1 mini servomotor 9g
+- Sensor d'humitat compatible amb micro:bit i instruccions de connexió del fabricant.
+- Servomotor i placa auxiliar amb alimentació adequada, si el centre en disposa.
+- Cables indicats per les instruccions dels components.
 
 ## 🧩 Funcions del robot treballades
 
@@ -33,34 +32,46 @@ Connecta una entrada externa a la micro:bit i transforma les lectures en una res
 
 ### 1. Cablejar els pins
 
-Connecta el senyal del sensor al pin 0, 3V a l'alimentació i GND a terra.
+Amb l'alimentació desconnectada, segueix l'esquema del fabricant del sensor i de la placa auxiliar. Connecta l'eixida de senyal del sensor a P0 només si és compatible amb la micro:bit. Si no disposes de l'esquema o dels components adequats, fes la pràctica al simulador sense connectar el sensor.
 
 ### 2. Llegir el valor analògic
 
-Programa: 'per sempre' → 'guarda a la variable [humitat] el valor de lectura analògica pin P0'.
+En MakeCode, posa «mostra el número» dins de «per sempre». En l'espai del número, col·loca la peça de **lectura analògica del pin P0**, disponible a Pins. Així veuràs la lectura del sensor a la pantalla.
 
-### 3. Accionar el servo de reg
+Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
 
-Si la humitat és inferior a 300, gira el servomotor a 90 graus per obrir la comporta d'aigua.
+```javascript
+basic.forever(function () {
+    basic.showNumber(pins.analogReadPin(AnalogPin.P0))
+})
+```
 
-> **💡 Consell docent per a la sessió:** Perquè no s'oxidin els claus ràpidament per electròlisi, alimenta el sensor només el mil·lisegon que fas la lectura.
+Anota dues lectures del sensor en les condicions indicades pel fabricant. Sense sensor, la lectura del simulador és una prova del programa, no una mesura real.
+
+La [referència oficial de lectura d'un pin](https://makecode.microbit.org/reference/pins/analog-read-pin) mostra la peça i un exemple de lectura en pantalla.
+
+### 3. Provar un servo opcional
+
+Si tens un servo i una placa auxiliar compatibles, segueix-ne la guia per alimentar-los i provar un moviment curt. Primer acorda quin valor correspon a cada condició del sensor: no tots responen igual. El muntatge és una maqueta; no connectes aigua a l'electrònica.
+
+> **💡 Consell docent:** Si falta algun component o no tens les seues instruccions, mostra les lectures en pantalla i deixa el servo per a una altra sessió.
 
 ## 🧪 Prova, depura i reflexiona
 
-La placa micro:bit no és per si sola una font adequada per alimentar qualsevol servomotor. Comprova el motor, l'alimentació externa, la connexió de terra comuna i la guia de la placa d'expansió abans de connectar-lo.
+Anota dues lectures del sensor en les condicions indicades pel fabricant i compara-les. Si no canvien, revisa el port i les connexions amb l’alimentació desconnectada. Si no tens sensor, fes la prova al simulador i marca les lectures com a simulades.
 
 ### Preguntes per comprovar
 
-- Quina lectura fas servir com a entrada?
-- El servomotor rep energia de la placa o d'una alimentació apropiada?
-- Com has confirmat la connexió comuna?
+- Quins dos valors has observat i en quines condicions?
+- Què comprovaràs si la lectura no canvia?
+- Has provat un sensor real o el simulador?
 
 ## ♿ Accessibilitat i seguretat
 
 Simula primer l'entrada de la humitat amb nombres en pantalla. Reserva la connexió del motor per a grups que segueixin l'esquema de la placa auxiliar del centre.
 
 ## ✅ Evidències d’aprenentatge
-- L'esquema etiquetat, dues lectures repetides i una explicació de la relació entre lectura i moviment. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- L'esquema de connexió, les dues lectures i una nota que indique si són reals o simulades. Si has provat el servo, anota també què ha fet.
 
 ## 🔗 Fonts oficials i límits
 

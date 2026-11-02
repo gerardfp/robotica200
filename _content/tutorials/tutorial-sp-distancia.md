@@ -43,6 +43,14 @@ Mesura el diàmetre de la roda. Calcula aproximadament la distància d’una vol
 
 Programa l’avanç a velocitat baixa i executa’l des de la marca. Mesura la separació final entre el davant de la base i el bloc. Anota voltes programades, distància real i separació; modifica només una variable en cada prova.
 
+```spikeapp
+quan comença el programa
+configura els motors de moviment [B i D v]
+mou endavant (1) voltes a velocitat baixa
+```
+
+El dibuix és una guia per buscar els blocs equivalents en SPIKE App. Canvia els ports si els motors estan connectats en uns altres, i substitueix una volta per l'estimació del teu equip. Prova primer una volta en un espai lliure.
+
 > **💡 Repte d’equip:** aconseguiu quedar-vos tan a prop com pugueu sense tocar el bloc. Quan funcione a un metre, canvieu la distància d’eixida i reutilitzeu les dades per fer una nova predicció.
 
 ### 4. Comparar amb una parada per contacte
@@ -51,7 +59,7 @@ Si el muntatge incorpora un sensor de força al davant, afegiu-lo com a topall t
 
 ## 🧪 Prova, depura i reflexiona
 
-El nombre de voltes dona una parada anticipada que es pot calcular, però depén de les rodes, la velocitat, el muntatge i el lliscament. El sensor de força detecta el contacte i pot fer d’interruptor de seguretat per al repte, però no serveix per mesurar l’espai que queda abans de l’impacte.
+Repeteix tres vegades des de la mateixa marca i compara la separació final. Si la base toca el bloc abans del previst, redueix les voltes i torna a provar. El sensor de força detecta contacte, però no mesura l’espai que queda ni garanteix una aturada segura.
 
 ### Preguntes per comprovar
 

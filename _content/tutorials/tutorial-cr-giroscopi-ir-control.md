@@ -1,6 +1,6 @@
 ---
-title: Codey Rocky: giroscopi, control i comunicació infraroja
-description: Llegir la inclinació i el potenciòmetre, usar l’altaveu i enviar un senyal IR entre robots Codey Rocky.
+title: Codey Rocky: la rodeta, la inclinació i els missatges
+description: Provar la rodeta i la inclinació de Codey i enviar un missatge entre dos robots, si estan disponibles.
 robot: codey-rocky
 level: Avançat
 duration: 60 min
@@ -10,7 +10,7 @@ image: _assets/tutorials/cr-giroscopi-ir-control.webp
 
 ## 🎯 Repte i objectius
 
-Prepareu un comandament gestual que mostre un senyal visual i sonor, i envieu una ordre senzilla a un segon Codey Rocky mitjançant l’infraroig. El repte combina giroscopi/acceleròmetre, potenciòmetre, altaveu i transmissor/receptor IR. La comunicació IR necessita dos dispositius compatibles, orientació adequada i absència d’obstacles opacs entre els sensors.
+Feu que Codey mostre un número quan gireu la rodeta i una icona quan l’inclineu. Si disposeu de dos robots, proveu també d’enviar un missatge amb infraroig, un senyal que necessita que els dispositius estiguen encarats.
 
 - Comparar el valor variable del potenciòmetre amb una lectura d’orientació.
 - Associar un gest a una resposta visual i sonora.
@@ -37,15 +37,30 @@ Comproveu al mBlock instal·lat que els blocs de potenciòmetre, orientació/ges
 
 ### 1. Proveu el control manual de l’app
 
-Si l’app Makeblock està disponible en el dispositiu del centre, connecteu Codey Rocky per Bluetooth i proveu les funcions Drive i Draw & Run documentades pel fabricant. Feu una ruta curta, observeu com canvia la matriu i atureu el robot abans de canviar de mode. Si l’app no és compatible amb el dispositiu actual, planifiqueu la mateixa ruta amb targetes i anoteu que és una alternativa desconnectada.
+Si l’app Makeblock està disponible en el dispositiu del centre, activeu-hi Bluetooth, enceneu Codey i seleccioneu el model Codey Rocky. Apropeu el dispositiu i espereu la confirmació sonora de connexió descrita pel fabricant. Comproveu les tres opcions de l’app, sense donar per fet que totes les versions continuen disponibles:
+
+- **Drive:** feu una ordre curta en una zona delimitada i observeu tant el moviment com el canvi d’imatge de la matriu LED. Atureu Codey abans de canviar de mode.
+- **Draw and Run:** dibuixeu un trajecte senzill o poseu-hi un senyal disponible; prediu el camí i compareu-lo amb el recorregut observat.
+- **Code:** obriu l’opció i comproveu que deriva a mBlock per programar. Distingiu aquest entorn de la conducció manual i de la ruta dibuixada.
+
+Registreu quina opció heu pogut obrir i amb quin dispositiu. Si la connexió, una funció o l’app no està disponible, planifiqueu la mateixa ruta amb targetes i marqueu-la com a simulació; no presenteu aquesta alternativa com una prova del robot.
 
 ### 2. Llegiu el potenciòmetre
 
-Mostreu a la pantalla el valor del gear knob i gireu-lo lentament d’un extrem a l’altre. Anoteu tres posicions (mínima, central i màxima) sense donar per fet un interval numèric concret. Feu que el valor trie entre tres icones o colors del LED RGB. Comproveu que cada posició repetida produeix una resposta coherent.
+Mostreu a la pantalla el valor de la rodeta de Codey i gireu-la lentament d’un extrem a l’altre. Comenceu amb aquesta idea, buscant els blocs equivalents a la vostra versió:
+
+```mblock
+quan comença el programa
+per sempre
+mostra el valor de la rodeta
+fi
+```
+
+Anoteu el valor amb la rodeta en tres posicions: un extrem, el centre i l’altre extrem. Torneu a cadascuna i comproveu si les lectures s’assemblen. Com a ampliació, feu que els valors activen icones diferents.
 
 ### 3. Calibreu un gest amb la placa estable
 
-Definiu l’orientació inicial sobre una superfície plana i mostreu una fletxa per a una inclinació a l’esquerra, una a la dreta i una posició neutra. Separeu els gestos de sacsejada de les lectures d’angle: una sacsejada és un esdeveniment ràpid, mentre que el giroscopi/acceleròmetre també permet observar canvis d’orientació. Proveu cada acció tres vegades sense aixecar la placa per damunt de la zona de treball.
+Busqueu a mBlock el bloc que detecta la inclinació. Feu que, en inclinar Codey cap a l’esquerra, mostre una fletxa cap a l’esquerra; afegiu una resposta diferent per a la dreta. Torneu-lo a posar recte entre proves i repetiu cada moviment tres vegades. La sacsejada és una acció diferent: no la confongueu amb mantindre Codey inclinat.
 
 ### 4. Afegiu resposta visual i sonora
 
@@ -53,7 +68,7 @@ Quan es detecte un gest triat, mostreu una icona i feu sonar un to breu amb l’
 
 ### 5. Envieu un senyal infraroig
 
-Amb dos Codey Rocky, programeu el primer per enviar un dels codis de prova quan es detecte una inclinació o una posició del potenciòmetre. Configureu el segon perquè només quan rep el codi corresponent mostre la icona prevista; no activeu moviments motors en aquesta primera prova. Col·loqueu els robots encarats, a poca distància, i després canvieu l’angle o interposeu una cartolina per observar la pèrdua de senyal. Si només hi ha un robot, feu l’esquema emissor–canal–receptor amb targetes i marqueu-lo com a simulació.
+Amb dos Codey Rocky, busqueu els blocs d’infraroig que oferisca la versió de mBlock instal·lada. Prepareu el primer perquè envie un missatge de prova en prémer A i el segon perquè mostre una icona quan reba eixe mateix missatge. Carregueu el programa corresponent a cadascun. Poseu-los encarats i pròxims, premeu A i observeu la pantalla del receptor. Després interposeu una cartolina i repetiu. Si falta un bloc o només hi ha un robot, representeu l’enviament amb targetes i marqueu-lo com a simulació.
 
 ![Dos robots Codey Rocky de la dotació intercanvien un senyal infraroig mentre un mostra una fletxa d’orientació i l’altre una resposta visual.](../../_assets/tutorials/cr-giroscopi-ir-control.webp)
 
@@ -61,7 +76,7 @@ _Els senyals representen una comunicació IR senzilla entre dispositius; no és 
 
 ## 🧪 Prova, depura i reflexiona
 
-Registreu tres valors del potenciòmetre, tres intents per a cada gest i cinc missatges IR enviats. Proveu el receptor amb codi correcte, codi diferent, robots girats i línia de visió tapada. Anoteu recepcions esperades i observades. No canvieu simultàniament distància, angle i codi; varieu-ne un cada vegada per identificar la causa d’un error.
+Anoteu els tres valors de la rodeta i què mostra Codey en inclinar-lo a cada costat. Si teniu dos robots, envieu cinc missatges IR: primer amb els robots encarats i després amb una cartolina entre ells. Si no podeu fer la prova, anoteu-la com a simulació. Registreu també quines opcions de l’app heu pogut utilitzar.
 
 ### Preguntes per comprovar
 
@@ -76,7 +91,7 @@ Registreu tres valors del potenciòmetre, tres intents per a cada gest i cinc mi
 La inclinació i la sacsejada són opcions; permeteu introduir el mateix codi amb botons, potenciòmetre o targetes. Manteniu els robots quiets durant les proves de recepció i no els feu córrer cap a persones. El so és breu i opcional, amb senyal visual equivalent. No envieu missatges personals.
 
 ## ✅ Evidències d’aprenentatge
-- Conserveu els programes emissor i receptor, la taula de gestos i potenciòmetre, els cinc casos de comunicació i un esquema que identifique transmissió IR i resposta del receptor. Indiqueu quines proves s’han fet amb maquinari i quines s’han simulat.
+- Conserveu la taula de la rodeta i les inclinacions. Si heu fet la prova IR, guardeu els dos programes i els resultats; si no, conserveu l’esquema de la simulació.
 
 ## 🔗 Fonts oficials i límits
 

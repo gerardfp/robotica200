@@ -10,12 +10,12 @@ image: _assets/tutorials/cr-python-upload.webp
 
 ## 🎯 Repte i objectius
 
-Feu que Codey Rocky mostre una cara en prémer A i una altra en prémer B, carregueu el programa al controlador Codey i compareu els blocs amb la traducció Python que genera mBlock 5. Així practicareu la sintaxi amb una acció visible, sense confondre el codi per a Codey Rocky amb Python genèric ni amb el programa del xassís Rocky.
+Feu que Codey mostre una cara en prémer A i una altra en prémer B. Després carregueu el programa al robot i observeu com mBlock el representa en Python. No cal saber Python per fer la primera prova.
 
 - Connectar Codey a mBlock 5 i seleccionar el dispositiu correcte.
 - Distingir l’execució Live de la càrrega Upload.
 - Crear dos esdeveniments de botó amb blocs i executar-los sense connexió permanent.
-- En mode Upload, obrir la vista Python generada pels blocs i identificar imports, esdeveniments i instruccions del dispositiu.
+- En mode Upload, obrir la vista Python generada pels blocs i buscar les accions dels botons.
 - Canviar una acció i comprovar el resultat amb el robot.
 
 ## 🧰 Materials i preparació
@@ -42,7 +42,17 @@ Useu el cable micro-USB per a connectar Codey a l’ordinador i enceneu-lo. A mB
 
 ### 2. Creeu el programa amb blocs
 
-En mode Upload, creeu un esdeveniment «quan es prema el botó A» i afegiu una imatge a la pantalla. Creeu un segon esdeveniment per al botó B amb una imatge diferent. Proveu primer les dues condicions i observeu els indicadors de càrrega; no poseu ordres de moviment motor en aquesta primera pràctica.
+Creeu una pila de blocs per al botó A i una altra per al B. Dibuixeu una cara diferent en cada bloc de pantalla:
+
+```mblock
+quan es prem el botó [A v]
+mostra una cara feliç
+
+quan es prem el botó [B v]
+mostra una cara sorpresa
+```
+
+El dibuix és una guia: els noms dels blocs poden variar. Trieu **Live** i, amb Codey connectat, proveu A i B. Després trieu **Upload** i seguiu les indicacions de mBlock per preparar la càrrega.
 
 ### 3. Carregueu i comproveu el programa
 
@@ -54,7 +64,7 @@ _La imatge mostra el model Codey Rocky de la dotació. La interfície és una re
 
 ### 4. Obriu la vista Python generada
 
-Torneu a connectar Codey, obriu el mateix projecte en mode Upload i activeu l’opció per canviar entre blocs i Python. Localitzeu els imports de les biblioteques Codey/Rocky, les dues funcions d’esdeveniment i les instruccions que mostren les imatges. No copieu aquesta traducció com si fora Python estàndard: depén de les biblioteques i de l’entorn mBlock.
+Torneu a connectar Codey, obriu el mateix projecte en mode Upload i activeu l’opció de veure Python. Compareu la part del botó A amb la del B i busqueu on apareixen les imatges. El text depén de la versió de mBlock; no cal copiar-lo ni entendre totes les línies per continuar.
 
 ### 5. Modifiqueu una instrucció i torneu-la a provar
 
@@ -62,13 +72,13 @@ Canvieu una de les imatges des de l’editor Python si la vostra versió permet 
 
 ## 🧪 Prova, depura i reflexiona
 
-Feu una prova en Live i una altra en Upload. En cada cas, registreu si Codey continua connectat, què passa en prémer A i B i si el programa segueix funcionant després de desconnectar el cable. Si Python no apareix, comproveu primer que heu seleccionat Codey, que esteu en Upload i que la versió de mBlock ofereix la vista de codi per a aquest dispositiu.
+Anoteu què passa amb A i B en la prova Live amb el cable connectat i en la prova Upload després de carregar el programa. Si Python no apareix, comproveu que heu seleccionat Codey, que esteu en Upload i que la vostra versió ofereix la vista de codi.
 
 ### Preguntes per comprovar
 
 - Quina diferència pràctica hi ha entre Live i Upload?
 - Quines línies Python corresponen als botons A i B?
-- Què aporten els imports de les biblioteques Codey i Rocky?
+- Quina cara apareix amb cada botó?
 - Per què un programa carregat continua funcionant quan desconnectem el cable?
 - Quina única instrucció heu canviat i quina prova mostra l’efecte?
 

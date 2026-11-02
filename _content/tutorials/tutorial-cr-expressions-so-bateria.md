@@ -10,7 +10,7 @@ image: _assets/tutorials/cr-expressions-so-bateria.webp
 
 ## 🎯 Repte i objectius
 
-Dissenyeu una salutació robòtica que combine una expressió pròpia, un so breu i un moviment de dansa. Abans d’executar-la, comproveu la bateria i decidiu quina resposta visual mantindreu si l’aula necessita treballar sense so. La proposta parteix dels blocs oficials de Codey; els noms i la disponibilitat poden variar segons la versió de mBlock i el firmware.
+Creeu una salutació amb una cara i una llum de Codey. Després hi podeu afegir un so i provar una dansa. Els noms de les peces poden variar segons la versió de mBlock.
 
 - Dibuixar i mostrar una expressió a la matriu LED de 16 × 8.
 - Vincular una acció als botons i a l’indicador RGB.
@@ -42,7 +42,19 @@ Dibuixeu una expressió pròpia —una cara o un símbol— que es puga reconéi
 
 ### 2. Associeu una resposta al botó i al RGB
 
-Programeu el botó A perquè mostre la primera expressió i encenga l’indicador RGB amb un color triat. Feu que el botó B mostre una icona diferent. Després proveu una lògica d’estalvi: amb llum ambiental alta, el RGB queda apagat; amb poca llum, només s’encén quan el sensor de so supera el llindar que heu calibrat i s’apaga quan el so baixa. Repetiu cada prova tres vegades i comproveu que els botons no depenen de mantindre’ls premuts.
+Programeu el botó A perquè mostre la primera expressió i encenga l’indicador RGB amb un color triat. Feu que el botó B mostre una icona diferent. Premeu cada botó tres vegades i observeu la resposta.
+
+Per començar, prepareu només la resposta del botó A:
+
+```mblock
+quan es prem el botó [A v]
+mostra una cara feliç
+encén el llum RGB de color [blau v]
+```
+
+El dibuix és una guia: trieu els blocs de pantalla i llum equivalents en mBlock. Premeu A tres vegades i comproveu la cara i la llum abans d’afegir el botó B o els sensors.
+
+**Per ampliar:** en un projecte separat, proveu la idea d’estalvi del fabricant. Amb llum ambiental alta, el RGB queda apagat; amb poca llum, s’encén quan el sensor de so supera el valor que heu triat i s’apaga quan el so baixa. Compareu clar/silenci, ombra/silenci i ombra/palmada suau. Mantindre els projectes separats evita que dues ordres diferents controlen el mateix llum alhora.
 
 ### 3. Afegiu un so o una melodia breu
 
@@ -62,7 +74,7 @@ _La imatge representa els elements del repte; els indicadors gràfics no són un
 
 ## 🧪 Prova, depura i reflexiona
 
-Feu tres execucions completes i registreu per a cadascuna l’expressió, la resposta RGB, el so, el moviment i l’estat de bateria abans de començar. Si una part falla, proveu-la sola abans de tornar a unir la seqüència. Compareu la versió amb so i la versió silenciosa i comproveu que les dues transmeten el mateix missatge.
+Premeu A i B tres vegades i anoteu què apareix. Proveu el so i la dansa per separat, amb el robot en una zona lliure. Si una acció falla, reviseu primer el seu bloc i la connexió. Compareu la salutació amb so i sense so.
 
 ### Preguntes per comprovar
 

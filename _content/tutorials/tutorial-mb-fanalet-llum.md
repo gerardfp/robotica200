@@ -36,11 +36,23 @@ Obri MakeCode, crea un projecte nou i comprova la simulació. El projecte oficia
 
 ### 2. Fer que el fanalet decidisca
 
-Dins de «per sempre», crea una condició: si el nivell de llum és inferior a 100, mostra una icona de lluna o una matriu que represente el fanalet encés; altrament, apaga la matriu amb «neteja la pantalla». El valor 100 és un punt de partida, no un valor universal.
+Dins de «per sempre», posa una peça «si… aleshores… si no». En la condició, compara **nivell de llum < 100**. Dins de «aleshores», afegeix una icona; dins de «si no», posa «neteja la pantalla». La lectura de llum és a **Entrada** i la comparació a **Lògica**. El valor 100 és un punt de partida que ajustareu després.
+
+Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
+
+```javascript
+basic.forever(function () {
+    if (input.lightLevel() < 100) {
+        basic.showIcon(IconNames.SmallDiamond)
+    } else {
+        basic.clearScreen()
+    }
+})
+```
 
 ### 3. Provar i calibrar
 
-Descarrega el programa o usa el simulador. Anota la lectura aproximada en un lloc clar i en un altre més fosc. Tapa suaument la matriu amb la mà i observa què passa. Ajusta el llindar perquè el canvi tinga sentit en l’espai de l’aula.
+Descarrega el programa o usa el simulador. Anota la lectura aproximada en un lloc clar i en un altre més fosc. Tapa suaument la matriu amb la mà i observa què passa. Ajusta el llindar perquè el canvi tinga sentit en l’espai de l’aula. La primera lectura pot ser zero mentre s'activa el sensor; espera i torna a observar abans de decidir el valor.
 
 > **💡 Consell docent:** els LED que mostren la icona també s’utilitzen per estimar la llum. Comprova el comportament amb la placa concreta del centre i deixa un breu interval entre lectures si la pantalla parpelleja.
 
@@ -50,7 +62,7 @@ Canvia la lluna per una estrella, una casa o un símbol creat per l’alumnat. S
 
 ## 🧪 Prova, depura i reflexiona
 
-La lectura va de 0 (molt fosc) a 255 (molt clar). L’algoritme revisa contínuament el valor i tria una de dues accions. El llindar depén de l’orientació de la placa i de la llum de l’aula; per això cal mesurar i ajustar, no copiar un número sense provar.
+Prova la placa en un lloc clar i després tapa-la suaument. Anota quan apareix el dibuix. La lectura va de 0 (molt fosc) a 255 (molt clar): si el canvi no es veu, ajusta el valor 100 i torna a provar sense canviar l’orientació de la placa.
 
 ### Preguntes per comprovar
 

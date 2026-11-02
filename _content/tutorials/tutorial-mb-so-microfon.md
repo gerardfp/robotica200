@@ -1,7 +1,6 @@
 ---
 title: 'Micròfon i so: Detector de soroll i aplaudiments (V2)'
-description: Utilitzar el micròfon MEMS de la versió 2 per controlar el nivell de decibels de l'aula o encendre
-  un llum en picar de mans.
+description: Utilitzar el micròfon de micro:bit V2 per observar i comparar el nivell de so de l'aula.
 robot: microbit
 level: Iniciació
 duration: 35 min
@@ -34,13 +33,23 @@ Dissenya un indicador que reaccione al nivell sonor de l’entorn i compare lect
 
 En una placa micro:bit V2, el micròfon integrat permet provar l’esdeveniment «quan s’escolta un so fort». Fes servir eixe bloc per canviar l’estat d’una variable `llum` entre encés i apagat; en V1 aquesta funció requerix un mòdul extern compatible.
 
-### 2. Mesurador continu de decibels
+### 2. Mostra el nivell de so
 
-Fes que una barra de LEDs s'ompli proporcionalment al nivell de so ambiental (0 a 255).
+Dins de «per sempre», afegeix el bloc de mostrar una barra de llums. En el valor de la barra posa «nivell de so» i deixa el màxim a 255. El número serveix per comparar lectures; no són decibels.
+
+Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
+
+```javascript
+basic.forever(function () {
+    led.plotBarGraph(input.soundLevel(), 255)
+})
+```
+
+La [referència oficial del nivell de so](https://makecode.microbit.org/reference/input/sound-level) mostra la peça del micròfon i recorda que necessita micro:bit V2.
 
 ### 3. Alarma acústica
 
-Si el nivell de so supera el llindar que heu calibrat durant més de tres segons, fes sonar un to breu amb l’altaveu integrat de V2 per indicar que cal baixar el volum. El valor no mesura decibels calibrats ni identifica qui ha parlat.
+Com a ampliació, tria un valor a partir de les lectures de la classe i programa un to breu a l’altaveu de la V2 quan se supere. Acorda una alternativa visual per a qui no vulga usar el so. El valor no identifica qui ha parlat.
 
 > **💡 Consell docent per a la sessió:** Els nens i nenes aprendran a autoregular el volum de treball cooperatiu mirant el semàfor.
 

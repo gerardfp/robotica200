@@ -36,7 +36,7 @@ Abans de començar, reviseu les unions de la via, retireu obstacles i localitzeu
 
 ### 1. Llegiu el tren abans d’engegar-lo
 
-Col·loqueu la locomotora sobre una superfície plana, al costat de la via. En grup, localitzeu el control d’encesa sense prémer altres peces i observeu quins indicadors lluminosos o sonors apareixen. Anoteu què heu vist; si el tren no respon, comproveu piles o càrrega i demaneu suport abans de continuar.
+Col·loqueu la locomotora sobre una superfície plana, al costat de la via. Localitzeu el control d’encesa i engegueu-la seguint el dibuix de la guia del kit. Observeu si fa llum o so. Si no respon, comproveu les piles abans de continuar.
 
 ### 2. Construïu i reviseu el trajecte
 
@@ -44,11 +44,11 @@ Dibuixeu una ruta curta entre l’estació i la destinació, amb un inici i un f
 
 ### 3. Proveu Push & Go i l’aturada manual
 
-Activeu el tren segons el seu model i doneu-li una empenta curta i suau en el sentit de la via. Observeu si continua avançant amb el motor. Quan arribeu a una zona lliure, atureu-lo amb la mà de la manera indicada pel fabricant. Repetiu-ho dues vegades, canviant només la força de l’empenta, i compareu el resultat.
+Doneu al tren una empenta curta i suau en el sentit de la via. Observeu si continua avançant tot sol. Atureu-lo amb la mà, tal com mostra la guia del kit. Repetiu la prova des del mateix punt i compareu què passa.
 
 ### 4. Compareu amb un maó d’acció roig
 
-Si el kit inclou el maó roig, col·loqueu-lo sobre un tram recte abans de la destinació i feu una predicció. Executeu la ruta a baixa velocitat i comproveu si el tren s’atura en passar-hi. Si no ho fa, reviseu l’orientació i la posició del maó, l’estat de la via i el model de tren; registreu el resultat real sense donar per feta una resposta que no heu observat.
+Si el kit inclou el maó roig, col·loqueu-lo sobre un tram recte abans de la destinació i feu una predicció. Feu passar el tren i comproveu si s’atura. Si no ho fa, reviseu la posició del maó i repetiu la prova.
 
 ![La locomotora Coding Express real de la dotació inicia el trajecte per una via DUPLO curta entre una estació i una destinació.](../../_assets/tutorials/ce-primeres-passes.png)
 
@@ -76,3 +76,5 @@ Assigneu rols rotatius: muntar la via, comprovar unions, donar la instrucció d�
 ## 🔗 Fonts oficials i límits
 
 La lliçó oficial [First Trip de LEGO Education](https://education.lego.com/en-us/lessons/preschool-coding-express/first-trip/) presenta l’ús dels maons d’acció i diverses formes d’aturar el tren. Aquesta guia és una adaptació pròpia per a la dotació del centre: localitzeu el control d’encesa segons el model i comproveu-ne la resposta física. Push & Go no equival a una seqüència de codi, i el tren no incorpora detecció de destinació ni mesura de distància.
+
+La [guia inicial del conjunt](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt3ea3f99c26f0922c/632c43cfa982bd60a88d7db2/45025_Booklet_Collected_Pages_6259924_%282%29.pdf?locale=es-es) inclou dibuixos d'encesa, moviment i maons d'acció.

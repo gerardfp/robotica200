@@ -10,9 +10,9 @@ image: _assets/tutorials/sp-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Connecta el Hub gran SPIKE Prime i explora els elements que permeten programar un primer prototip. El repte combina la matriu 5 × 5, el sensor d’orientació, els ports A–F i una primera prova amb un component connectat.
+Connecta el Hub gran SPIKE Prime i crea el teu primer programa: una cara que apareix i desapareix. Després identifica els botons, els ports A–F i el sensor d’orientació.
 
-- Comprovar la càrrega del Hub i connectar-lo per BLE amb SPIKE App o USB quan siga necessari.
+- Comprovar la càrrega del Hub i connectar-lo per Bluetooth o USB a SPIKE App.
 - Programar la matriu de 25 píxels per mostrar icones i animacions.
 - Identificar els sis ports d’entrada/eixida A–F i els botons del Hub gran SPIKE Prime.
 - Distingir les lectures d’inclinació del sensor de sis eixos de gestos com sacsejar o tocar el Hub.
@@ -39,9 +39,11 @@ Comproveu la càrrega de la bateria. Manteniu premut el botó central per encend
 
 Creeu un projecte amb blocs de paraules o d’icones. Quan comence el programa, mostreu una icona a la matriu 5 × 5 i esborreu-la. Comproveu que es tracta d’una matriu de llum del Hub i no d’una pantalla de píxels a color.
 
-```spikeapp   
-brick.showImage(Images.HAPPY)
-brick.clearScreen()   
+```spikeapp
+quan comença el programa
+mostra una cara feliç
+espera (2) segons
+esborra la pantalla
 ```
 
 ### 3. Llegiu el sensor d’orientació
@@ -56,20 +58,20 @@ Amb el Hub desconnectat del muntatge, useu els botons esquerre i dret per recór
 
 ## 🧪 Prova, depura i reflexiona
 
-Connecteu un motor angular a un port lliure i llegiu el nom del port a l’app. Escriviu-lo al registre abans d’executar un moviment curt i lent. Desconnecteu-lo només amb els motors aturats. Si els sis ports estan disponibles, identifiqueu-los un per un sense connectar tots els components alhora. Compareu també la connexió BLE amb la connexió USB per transferir o actualitzar el Hub, seguint el missatge de l’app i comprovant abans que la bateria té càrrega suficient.
+Executeu el programa de la cara tres vegades: observeu si apareix, espereu dos segons i comproveu que s'esborra. Si no passa, reviseu la connexió i l’ordre dels blocs. Després identifiqueu els ports A–F mirant les lletres del Hub; encara no cal connectar-hi cap motor.
 
 ### Preguntes per comprovar
 
 - Quins elements mostren informació d’estat mentre el Hub està encés o connectat?
 - Quina diferència hi ha entre orientar el Hub i sacsejar-lo?
-- Quin port ha detectat l’app per al motor i què cal comprovar abans de desconnectar-lo?
+- Quines lletres identifiquen els ports del Hub?
 
 ## ♿ Accessibilitat i seguretat
 
 Segueix el procediment del hub concret i de la versió de l'aplicació disponible; practica sense connexions addicionals abans de muntar el repte.
 
 ## ✅ Evidències d’aprenentatge
-- Un programa executat, el registre dels ports i botons identificats, la predicció de moviment i les entrades de moviment que admet la versió provada. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- El programa de la cara, el resultat de les tres proves i una anotació dels ports i botons identificats.
 
 ## 🔗 Fonts oficials i límits
 

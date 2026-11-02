@@ -13,14 +13,14 @@ image: _assets/tutorials/mb-radio-mesh.png
 
 Fes que dues plaques intercanvien missatges curts i observa com el canal i el grup de ràdio afecten la comunicació. La pràctica tracta la ràdio de micro:bit com a comunicació local entre dispositius, no com una connexió a Internet.
 
-- Entendre què és un canal de ràdio freqüència i com evitar interferències.
-- Enviar paquets de dades (números i cadenes de text).
-- Crear una estació meteorològica exterior que envia dades a una pantalla interior.
+- Posar dues plaques en el mateix grup de ràdio.
+- Enviar un número de prova i mostrar-lo a l’altra placa.
+- Comprovar què passa quan canvia el grup.
 
 ## 🧰 Materials i preparació
 
 - 2 o més plaques micro:bit amb portapiles
-- Ordinador amb MakeCode per preparar i transferir el mateix programa a cada placa.
+- Ordinador amb MakeCode per preparar i transferir un programa a cada placa.
 - Full de registre per anotar grup, missatge enviat i missatge rebut.
 
 ## 🧩 Funcions del robot treballades
@@ -36,17 +36,37 @@ Al bloc 'a l'iniciar', afegeix 'ràdio: fixa grup a [7]'. Totes les plaques del 
 
 ### 2. L'emissor
 
-A la placa de l'hort: 'Quan es prem el botó A' → 'ràdio: envia número [temperatura]'.
+A la primera placa, posa «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegeix «ràdio: envia número 7». Descarrega aquest programa a la placa emissora:
+
+Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
+
+```javascript
+radio.setGroup(7)
+input.onButtonPressed(Button.A, function () {
+    radio.sendNumber(7)
+})
+```
 
 ### 3. El receptor a l'aula
 
-A la placa de classe: 'en rebre per ràdio [receivedNumber]' → 'mostra el número [receivedNumber]' a la matriu de LEDs.
+A la segona placa, posa també el grup 7 a **en iniciar**. Afegeix «en rebre número per ràdio» i, dins, «mostra el número» rebut. Descarrega aquest altre programa a la placa receptora:
+
+Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
+
+```javascript
+radio.setGroup(7)
+radio.onReceivedNumber(function (receivedNumber) {
+    basic.showNumber(receivedNumber)
+})
+```
+
+La [referència oficial de recepció per ràdio](https://makecode.microbit.org/reference/radio/on-received-number) mostra la peça de recepció i enllaça la d'enviament i la de grup.
 
 > **💡 Consell docent per a la sessió:** Assigna un número de grup diferent a cada taula (Grup 1, Grup 2, etc.) perquè les ràdios no es barregin els missatges.
 
 ## 🧪 Prova, depura i reflexiona
 
-Assegura't que l'emissor i el receptor utilitzen el mateix grup de ràdio. Envia una dada inventada cinc vegades des de dos equips separats i registra quants missatges rep el destinatari; canvia després només el grup del receptor i comprova que deixa de rebre'ls. Torna a posar el grup correcte abans de concloure la prova.
+Prem A cinc vegades a l'emissora i compta quantes vegades apareix el 7 a la receptora. Deixa que el número acabe de mostrar-se abans de tornar a prémer. Després canvia només el grup de la receptora, descarrega-li el programa i repeteix. Torna al grup 7 en acabar.
 
 ### Preguntes per comprovar
 

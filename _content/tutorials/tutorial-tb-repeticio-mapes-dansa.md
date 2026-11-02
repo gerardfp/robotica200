@@ -10,7 +10,7 @@ image: _assets/tutorials/tb-repeticio-mapes-dansa.webp
 
 ## 🎯 Repte i objectius
 
-Prepareu una ruta narrativa curta amb una part repetida, una dansa final i un mapa interactiu. L’objectiu és identificar quines ordres executa el robot, quina informació ofereix la superfície OID i com es pot esborrar o corregir un programa. Aquesta guia requereix Tale-Bot Pro; confirmeu que el mapa i els accessoris de la dotació són compatibles.
+Prepareu una ruta curta, proveu la repetició i descobriu què passa sobre un mapa interactiu compatible. Les marques especials del mapa permeten que el robot reproduïsca instruccions; un mapa imprés normal no té aquesta funció.
 
 - Comparar un programa repetit amb un programa que inclou ordres addicionals.
 - Diferenciar una dansa predefinida d’una seqüència programada amb els botons.
@@ -38,7 +38,7 @@ Abans de començar, comproveu les tecles físiques de moviment, Play, esborrat, 
 
 ### 1. Programeu i repetiu una seqüència
 
-Trieu un patró curt que es repetisca, com ara avançar i girar, i escriviu-lo primer amb targetes. Introduïu-lo amb els botons, comproveu els indicadors i useu el comandament de repetició per repetir el programa. El fabricant especifica que la repetició s’aplica quan el programa complet conté unitats d’ordres repetides: no permet seleccionar només un fragment si després hi ha altres ordres. Feu una prova amb un patró repetit com a programa complet i una altra afegint-hi una ordre final; observeu i registreu aquesta limitació abans de dissenyar la ruta.
+Manteniu X més d’un segon per començar sense ordres anteriors. Prepareu amb targetes **Endavant → Dreta**, introduïu eixes dues ordres i premeu el botó de repetició. Observeu els llums de repetició i premeu Play; compteu quantes vegades es fa la seqüència. Canvieu el nombre de repeticions amb el botó i torneu a provar des de l’inici. La repetició s’aplica al programa complet: no permet seleccionar només un fragment si després hi ha altres ordres.
 
 ### 2. Compareu la dansa predefinida
 
@@ -46,7 +46,7 @@ Activeu el botó de dansa aleatòria tres vegades i anoteu si el moviment canvia
 
 ### 3. Exploreu la guia d’un mapa OID
 
-Amb un mapa compatible, col·loqueu primer el robot a l’entrada principal indicada pel fabricant i escolteu la instrucció. Després poseu-lo en una entrada secundària i escolteu com canvia el repte. Programeu una ruta per arribar a una destinació i feu servir Play per iniciar-la. Si només disposeu d’un mapa imprés, simuleu les instruccions amb una targeta docent i identifiqueu clarament que la lectura OID no s’està executant.
+Amb un mapa interactiu compatible, col·loqueu el robot a l’entrada principal i escolteu la instrucció. Després proveu una entrada secundària i compareu el missatge. Programeu una ruta i premeu Play. Per tornar a utilitzar-lo fora del mapa, apagueu el robot i torneu-lo a encendre. Si només disposeu d’un mapa imprés, una persona pot llegir les instruccions d’una targeta: indiqueu que és una simulació.
 
 ### 4. Afegiu una veu gravada o un traç opcional
 

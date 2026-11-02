@@ -47,6 +47,13 @@ Amb el tren apagat o aturat, orienteu l’agulla cap a la primera branca i revis
 
 Traieu una targeta de destí. Abans d’engegar, l’equip ha de verbalitzar la regla: «Si la targeta és biblioteca, posem l’agulla cap a la biblioteca». Orienteu la via i activeu el tren. Registreu si ha seguit la branca prevista; si no, atureu-lo i comproveu l’alineació, les unions i el moment del canvi.
 
+Repetiu amb l'altra targeta:
+
+- **Biblioteca:** poseu l’agulla cap a la biblioteca i feu passar el tren.
+- **Hort:** atureu el tren, poseu l’agulla cap a l’hort i torneu a començar.
+
+Comproveu en cada prova si el tren ha arribat al lloc triat.
+
 ### 4. Investigueu una manera de tornar
 
 Col·loqueu el maó verd només en una configuració segura recomanada per al vostre conjunt i feu una prova curta. Observeu si ajuda el tren a reprendre el trajecte cap a l’estació en aquesta disposició. No pressuposeu que la peça canvia l’agulla ni que crea un retorn automàtic: la via i el sentit del tren determinen què ocorre. Compareu el resultat amb una ruta de retorn dissenyada manualment.

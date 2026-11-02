@@ -36,23 +36,33 @@ A mBlock 5, fes clic a 'Dispositius' → 'Afegir' i selecciona 'Codey'. Prem 'Co
 
 ### 2. Dibuixar una cara somrient
 
-Arrossega el bloc blau 'Mostra la imatge [ ] durant 2 segons' i fes clic per pintar els LEDs dels ulls i la boca.
+Arrossega el bloc de mostrar una imatge i fes clic a la graella per dibuixar els ulls i la boca. En el pas següent el connectaràs al botó A.
 
 ### 3. Interacció amb botons
 
 Programa: 'Quan es prem el botó A' → Mostra cara feliç; 'Quan es prem el botó B' → Mostra text 'Hola'.
 
+```mblock
+quan es prem el botó [A v]
+mostra una cara feliç
+
+quan es prem el botó [B v]
+mostra el text [Hola]
+```
+
+Busca els blocs equivalents en la teua versió de mBlock: els noms poden variar.
+
 > **💡 Consell docent per a la sessió:** En mode 'En viu', el codi s'executa a l'instant sense haver de carregar el programa cada vegada a la memòria.
 
 ## 🧪 Prova, depura i reflexiona
 
-Dibuixa una expressió de cinc píxels a la matriu i lliga una segona expressió a un botó. Prova en mode en viu abans de pensar en desar el programa al dispositiu.
+Amb Codey connectat en mode **En viu**, prem A: ha d'aparéixer la cara que has dibuixat. Prem B: ha d'aparéixer «Hola». Repeteix cada prova tres vegades. Si no passa res, comprova la connexió i que cada bloc estiga unit al botó corresponent.
 
 ### Preguntes per comprovar
 
-- Quina acció comença el programa?
-- La cara es mostra durant el temps esperat?
-- Quina icona apareix en iniciar i quina apareix en prémer el botó assignat?
+- Què mostra Codey quan prems A?
+- Què mostra quan prems B?
+- Què revisaràs si un dels botons no respon?
 
 ## ♿ Accessibilitat i seguretat
 

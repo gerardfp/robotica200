@@ -1,6 +1,6 @@
 ---
-title: Bucles de repetició i estructures de control
-description: Empaquetar conjunts d'instruccions dins de blocs de bucle per crear figures regulars i camins repetitius.
+title: Coding Set: repetir una ruta amb peces de bucle
+description: Repetir una seqüència curta amb les peces físiques de bucle i comparar-ne el resultat.
 robot: coding-set
 level: Intermedi
 duration: 45 min
@@ -14,13 +14,14 @@ Redueix una seqüència llarga de moviments a una instrucció que es repetix. Am
 
 - Comprendre el concepte de bucle (Loop).
 - Distingir el bloc d'inici de bucle i el de tancament.
-- Programar el recorregut d'un quadrat perfecte amb només 4 fitxes.
+- Comparar una ruta quadrada amb i sense repetició.
 
 ## 🧰 Materials i preparació
 
 - Blocs de bucle (morats)
 - Blocs direccionals
 - Fitxa numèrica x4
+- MatataBot, torre de control, tauler i una superfície plana amb espai lliure.
 
 ## 🧩 Funcions del robot treballades
 
@@ -35,13 +36,17 @@ Posa la fitxa morada d'inici de bucle amb el número 4 a sota.
 
 ### 2. Les instruccions interiors
 
-Posa a dins: Avança 1 pas → Gira 90 graus a la dreta.
+Al costat de l'inici de bucle, posa **Endavant → Dreta**. Aquestes són les dues ordres que es repetiran; el gir canvia l'orientació, però no fa avançar el robot.
 
 ### 3. Tancar el bucle
 
-Posa la fitxa morada de tancament. En prémer Play, el robot repetirà 4 cops el patró completant el quadrat.
+Posa la fitxa morada de final després de Dreta. Comprova que el tauler queda així, amb el número sota l'inici:
 
-> **💡 Consell docent per a la sessió:** Fes que els alumnes comparin el tauler sense bucles (8 fitxes) amb el tauler amb bucles (4 fitxes) per veure la diferència d'elegància.
+**Inici de bucle (4) → Endavant → Dreta → Final de bucle**
+
+Prem el botó gran i observa els quatre costats. El robot hauria de tornar prop del punt de partida; la posició pot variar segons la superfície.
+
+> **💡 Consell docent:** Compareu les vuit peces de moviment de la ruta llarga amb les dues peces de moviment de la ruta amb bucle. Aquesta última necessita, a més, les dues peces de bucle i el número 4.
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -62,6 +67,6 @@ En grups inicials, treballa amb un sol bucle curt. Quan estigui clar, combina'l 
 
 ## 🔗 Fonts oficials i límits
 
-La combinació de blocs de moviment, angles i repeticions s’ha contrastat amb l’activitat oficial [MatataBot’s Cozy House](https://matatalab.com/en/node/85). Aquesta fitxa proposa un repte geomètric propi amb les peces del Coding Set; no utilitza les instruccions ni les imatges del fabricant.
+La [guia oficial de bucles](https://matatalab.com/en/node/62) explica com col·locar les peces d'inici i final i el nombre de repeticions. El resultat físic depén de la superfície i de l'alineació inicial.
 
 Matatalab · Coding Set · [https://matatalab.com/en/coding-set?hl=en-IN](https://matatalab.com/en/coding-set?hl=en-IN). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.

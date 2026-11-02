@@ -39,11 +39,11 @@ Dibuixeu una ruta recta de tres caselles i marqueu l’orientació inicial del r
 
 ### 2. Compareu l’ordre repetida amb el nombre
 
-Prepareu una primera seqüència amb tres ordres d’avanç i executeu-la. Esborreu el programa, col·loqueu una ordre d’avanç amb el bloc numèric 3 segons la disposició indicada pel fabricant i torneu a executar. Repetiu la comparació amb retrocedir, mantenint el mateix nombre de caselles i l’orientació inicial. Compareu els resultats i el nombre de peces; el bloc numèric repeteix l’ordre compatible, no representa centímetres ni una velocitat.
+Prepareu **Endavant → Endavant → Endavant** i premeu el botó gran. Torneu el robot a l'inici, retireu les tres peces del tauler i col·loqueu **Endavant** amb el nombre **3** a sota, tal com mostra la guia del kit. Premeu el botó i compareu on s'atura. Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegades es fa el moviment d'avançar o retrocedir, no centímetres ni velocitat.
 
 ### 3. Comproveu el límit dels girs
 
-Afegiu un gir de 90° al final de cada ruta. Proveu de fer servir el bloc numèric amb el gir i observeu que aquesta combinació no és compatible: els blocs numèrics no s’apliquen als girs esquerre/dret. Per fer un quadrat, construïu el patró amb avanç i gir de 90° dins d’un bucle compatible, o repetiu les peces de gir de la manera indicada al manual del kit.
+Afegiu un gir de 90° al final de la ruta i observeu que el robot gira sense avançar de casella. Segons la guia del fabricant, els blocs numèrics no s’apliquen als girs esquerre/dret: per fer dos girs, col·loqueu dues peces de gir o utilitzeu les peces de bucle.
 
 ### 4. Depureu i expliqueu el programa
 

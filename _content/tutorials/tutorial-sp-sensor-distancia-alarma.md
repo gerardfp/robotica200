@@ -1,6 +1,6 @@
 ---
 title: SPIKE Prime: sensor de distància, giroscopi i avisador
-description: Programar una parada basada en ultrasons, mesurar un gir amb el giroscopi i fer sonar l’altaveu del Hub.
+description: Fer que una base s'ature davant d'una caixa, provar un gir i afegir un avís sonor.
 robot: spike
 level: Intermedi
 duration: 55 min
@@ -40,7 +40,16 @@ Fixeu el sensor al davant de la base, perpendicular a una paret plana. Mesureu 5
 
 ### 2. Programeu una parada amb marge
 
-Feu avançar la base molt lentament i llegiu el sensor en un bucle. Quan la lectura siga igual o inferior a un llindar acordat (per exemple, 120 mm, que és només un punt inicial), atureu els motors. Deixeu sempre un marge addicional i proveu amb l’obstacle a tres distàncies d’inici. No executeu la prova cap a una persona ni cap a objectes fràgils; tingueu l’aturada manual accessible.
+Connecteu el sensor al port C i configureu en l’app els ports dels motors. Feu avançar la base molt lentament; quan detecte la caixa a 12 cm o menys, atureu-la. El dibuix següent resumeix els blocs que cal buscar en la vostra versió de SPIKE App:
+
+```spikeapp
+quan comença el programa
+activa els motors de moviment a velocitat baixa
+espera fins que la distància del sensor [C v] siga menor de (12) cm
+atura els motors de moviment
+```
+
+Si el sensor està connectat a un altre port, seleccioneu-lo en el bloc. Comproveu que l’app mostra centímetres: 12 cm equivalen a 120 mm. Proveu primer amb una caixa ampla i l’aturada manual a mà; 12 cm és un valor inicial, no una garantia que el robot s’aturarà a temps.
 
 ### 3. Mesureu un gir amb el giroscopi
 
@@ -56,7 +65,7 @@ _El sensor mira una paret de cartó estable. La imatge il·lustra el marge de pr
 
 ## 🧪 Prova, depura i reflexiona
 
-Prepareu una matriu amb distància inicial, distància llegida, llindar, espai final, angle final i senyal observat. Feu tres intents per a cada distància inicial; compareu la lectura d’ultrasons amb una prova per voltes de roda, mantenint velocitat i muntatge tant constants com siga possible. Proveu una caixa ampla i una superfície inclinada només amb el robot quiet per observar com canvia la lectura. Registreu errors i atureu la prova si la lectura no és estable.
+Anoteu en una taula des d’on comença el robot, la distància que mostra el sensor i l’espai que queda en aturar-se. Repetiu tres vegades des de la mateixa marca. Si no s’atura, pareu-lo manualment i reviseu port, orientació i lectura abans de tornar a provar. Compareu després amb la prova per voltes de roda, si l’heu feta.
 
 ### Preguntes per comprovar
 

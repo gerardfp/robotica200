@@ -47,7 +47,7 @@ Dibuixeu una ruta amb una sortida, tres estacions i un tram que retorni al punt 
 
 ### 3. Predir i provar
 
-Abans d’engegar, cada equip posa els passatgers a les estacions que vol visitar i prediu l’ordre en què el tren hi passarà. Feu una prova sense càrrega; després activeu el tren i anoteu quantes vegades passa per cada estació.
+Abans d’engegar, cada equip posa els passatgers a les estacions que vol visitar i prediu l’ordre en què el tren hi passarà. Poseu una fitxa al costat del punt de partida cada vegada que el tren hi passe. Després de dues voltes, atureu-lo amb la mà i compteu les fitxes.
 
 ### 4. Comparar amb una ruta oberta
 
@@ -55,11 +55,11 @@ Si el material ho permet, construïu també una via amb inici i final diferents.
 
 ### 5. Millorar el servei
 
-Afegiu una parada o canvieu la posició d’una estació. Repetiu la predicció i comproveu si tots els passatgers poden pujar sense aturar el tren en un lloc insegur.
+Amb el tren aturat, afegiu una estació o canvieu-la de lloc. Repetiu la predicció i feu una altra volta. Per pujar o baixar figures, atureu sempre el tren abans de tocar-les.
 
 ## 🧪 Prova, depura i reflexiona
 
-Feu dues execucions del circuit tancat i registreu cada pas per una estació; després repetiu-ho en la via oberta. Compareu l’ordre previst amb el recorregut real i canvieu només una peça de via entre proves. Si el tren s’atura o descarrila, atureu-lo i reviseu les unions abans de tornar a començar.
+Compareu les dues voltes del circuit tancat amb el que passa a la via oberta. Anoteu si el tren torna al punt de partida sense moure cap peça. Si s’atura o descarrila, atureu-lo i reviseu les unions abans de tornar a començar.
 
 ### Preguntes per comprovar
 

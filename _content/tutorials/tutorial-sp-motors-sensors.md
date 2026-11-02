@@ -1,7 +1,6 @@
 ---
 title: 'Motors i sensors: Tren d''engranatges i sensor de color'
-description: Muntar un vehicle amb reductora d'engranatges per guanyar força i aturar-lo exactament davant d'una
-  línia vermella.
+description: Construir una transmissió amb engranatges i provar una parada en detectar una línia vermella.
 robot: spike
 level: Intermedi
 duration: 50 min
@@ -31,9 +30,9 @@ Construeix una transmissió amb engranatges i relaciona els graus del motor amb 
 
 ## 👣 Seqüència guiada
 
-### 1. Muntatge mecatrònic
+### 1. Munteu els engranatges
 
-Munta un eix que connecti el motor a l'engranatge de 8 dents i aquest al de 24 de la roda.
+Munta un eix que connecte el motor a l'engranatge de 8 dents i aquest al de 24 de la roda. Gira'l a mà amb el Hub apagat i observa que les peces giren sense encallar-se. Amb aquest exemple, el motor gira tres voltes per cada volta de l'engranatge gran.
 
 ### 2. Connectar al port B i D
 
@@ -43,11 +42,20 @@ Connecta els motors als ports B i D, i el sensor de color al port C apuntant cap
 
 Programa: 'Inicia el moviment dels motors' → 'Espera fins que el sensor C sigui [Vermell]' → 'Atura el moviment'.
 
+```spikeapp
+quan comença el programa
+activa els motors de moviment
+espera fins que el sensor de color [C v] detecte [vermell v]
+atura els motors de moviment
+```
+
+Aquest dibuix resumeix els passos: tria en SPIKE App els blocs equivalents i configura abans la parella de motors B i D. Comença a velocitat baixa. La parada pot quedar un poc més enllà de la línia; no es promet una posició exacta.
+
 > **💡 Consell docent per a la sessió:** Pregunta socràtica: 'Gira més ràpid la roda o el motor?' (El motor gira 3 vegades per cada volta de roda).
 
 ## 🧪 Prova, depura i reflexiona
 
-Prova el sensor de color amb targetes del mateix material i distància fixos; relaciona la detecció amb un únic canvi de moviment.
+Prova primer el sensor quiet sobre una targeta blanca i una roja, a la mateixa altura. Després executa el vehicle tres vegades des del mateix punt i observa on s'atura. Si no detecta la línia, comprova el port C, l'altura del sensor i la il·luminació abans de repetir.
 
 ### Preguntes per comprovar
 

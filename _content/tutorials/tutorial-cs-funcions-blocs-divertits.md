@@ -10,7 +10,7 @@ image: _assets/tutorials/cs-funcions-fun-blocks.webp
 
 ## 🎯 Repte i objectius
 
-Reduïu una ruta llarga a un programa més curt reutilitzant una funció i acabeu amb una sortida creativa del MatataBot. Aprendreu a distingir una funció definida per l’equip dels blocs divertits preprogramats. El Coding Set base inclou funcions i blocs de moviment aleatori/música/dansa; compondre melodies amb notes pertany al complement Musician.
+Prepareu una ruta curta que repetisca dos moviments. Amb una funció, guardareu eixos moviments i els fareu servir més d’una vegada. Després provareu les peces de música, dansa i moviment aleatori del kit.
 
 - Definir i cridar una funció per reutilitzar una seqüència de moviments.
 - Comparar la versió amb funció amb la seqüència escrita completa.
@@ -39,7 +39,9 @@ Planifiqueu una ruta amb dues parts: una seqüència curta que aparega dues vega
 
 ### 2. Definiu i crideu una funció
 
-Col·loqueu un bloc Call Function a la línia principal i el bloc Define Function a la fila inferior, segons la disposició indicada per Matatalab. Poseu dins de la definició la seqüència que voleu reutilitzar i deixeu la crida a la ruta. Les peces Define i Call s’utilitzen en parella; no afegiu un bloc número a la funció, ja que aquesta combinació no és compatible segons la guia oficial. Feu que la torre llig el programa i executeu-lo a baixa velocitat.
+Col·loqueu la peça **Call Function** a la fila principal. A la fila de sota poseu **Define Function → Endavant → Dreta**, seguint el dibuix de la [guia del fabricant](https://matatalab.com/en/node/63). Premeu el botó gran: el robot hauria d'avançar i girar. Afegiu una segona peça Call Function a la fila principal i repetiu des del mateix punt: ara hauria de fer la parella de moviments dues vegades.
+
+Les peces Define i Call van en files diferents. No afegiu un bloc número a la funció: el fabricant indica que aquesta combinació no és compatible.
 
 ### 3. Compareu els blocs divertits
 

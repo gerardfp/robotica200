@@ -44,11 +44,11 @@ Si la versió de l’app és compatible, connecteu-hi el tren segons les instruc
 
 ### 3. Compondreu un concert de parades
 
-Ordeneu tres maons d’acció per crear una seqüència sonora pròpia. Feu una primera execució i registreu l’ordre dels sons; després intercanvieu dos maons i prediu què canviarà. Relacioneu cada so amb un senyal o una emoció fictícia, sense associar emocions fixes a l’alumnat. Si l’app permet canviar la resposta dels maons, compareu la melodia original amb la personalitzada.
+Poseu un maó groc i un de blau en una via recta. Feu passar el tren i anoteu quin so sona primer. Atureu-lo, intercanvieu els dos maons i repetiu des del mateix punt. Si teniu un tercer maó de so, afegiu-lo per allargar la seqüència sonora. Si l’app permet canviar les respostes, compareu-les amb les que heu sentit abans.
 
 ### 4. Resoleu una ruta amb senyals
 
-Afegiu un senyal de trànsit de paper a cada parada (aturar-se, continuar o tornar) i planifiqueu una ruta segura per al tren. Executeu-la a baixa velocitat; compteu les unitats de via entre estacions i compareu-les amb les mesures en centímetres. Expliqueu quines decisions ha fet el programa físic mitjançant els maons i quines han estat només part de la simulació humana.
+Afegiu un senyal de paper a cada parada i acordeu què representa: aturar-se, continuar o tornar. Feu passar el tren i compteu les peces de via entre estacions; compareu-les amb les mesures en centímetres. Els senyals de paper són indicacions per a les persones: el tren no els llig. Atureu el tren abans de canviar la via o els maons.
 
 ![El tren Coding Express real de la dotació recorre una via amb maons d’acció de colors i estacions mentre una tauleta mostra opcions visuals abstractes de l’app.](../../_assets/tutorials/ce-app-musica-distancia.webp)
 
@@ -56,7 +56,7 @@ _L’app pot variar o no estar disponible; els pictogrames de la pantalla són n
 
 ## 🧪 Prova, depura i reflexiona
 
-Repetiu tres vegades el tram curt i el llarg i anoteu la predicció, la distància mesurada i el punt on el tren s’atura o canvia d’acció. Per a la part sonora, compareu la seqüència de tres maons abans i després d’intercanviar-ne dos. Si el comportament varia, comproveu primer connexió, col·locació del maó i unions de la via; canvieu un factor cada vegada. Distingiu sempre la distància mesurada amb el regle de la resposta que el tren rep dels maons.
+Repetiu el tram curt i el llarg i anoteu la distància mesurada i on s’atura el tren. Compareu l’ordre dels sons abans i després d’intercanviar els dos maons. Si el comportament varia, comproveu la connexió, la posició del maó i les unions de la via. La distància l’heu mesurada amb el regle; el tren no la calcula.
 
 ### Preguntes per comprovar
 

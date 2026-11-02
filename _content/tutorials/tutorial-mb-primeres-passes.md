@@ -45,6 +45,8 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
+Els noms de les peces poden aparéixer en una altra llengua segons la configuració de MakeCode. La primera detecta la sacsejada i la segona mostra un nombre entre 1 i 6.
+
 ### 3. Descarregar a la placa
 
 Connecta la micro:bit per USB i prem el botó 'Descarregar'. En pocs segons el dau funcionarà de manera autònoma.
@@ -53,20 +55,20 @@ Connecta la micro:bit per USB i prem el botó 'Descarregar'. En pocs segons el d
 
 ## 🧪 Prova, depura i reflexiona
 
-Escriu un símbol de 5 × 5, vincula'l al polsador A i transfereix el codi a la placa. Prem A tres vegades i registra si el símbol apareix en cada execució; compara-ho amb una prova del botó B sense associar-hi cap acció. Mantingues la sessió de creació independent de l'activitat opcional de ràdio.
+Sacseja la placa tres vegades i anota els nombres que apareixen. Comprova que tots estan entre l’1 i el 6. Si no apareix cap nombre, revisa la connexió i que has descarregat el programa correcte.
 
 ### Preguntes per comprovar
 
-- Quina entrada activa el programa?
-- El resultat apareix amb cada pulsació o un sol cop?
-- Què mostra la placa quan premeu A, B i A+B, i coincideix amb la predicció del programa?
+- Quina acció fa aparéixer un nombre?
+- Quins nombres poden eixir al dau?
+- Què pots revisar si no apareix cap nombre?
 
 ## ♿ Accessibilitat i seguretat
 
-Dona una icona impresa com a referència; deixa que cada parella triï com modificar-la i anoti la diferència.
+Prova primer el dau al simulador. Si sacsejar la placa és difícil, una altra persona pot fer el moviment mentre la parella observa i anota el resultat.
 
 ## ✅ Evidències d’aprenentatge
-- El codi guardat, el símbol personalitzat i una demostració dels dos polsadors. Afegeix també un breu relat de les proves o una fotografia del procés del kit, evitant registrar noms, cares o veus si no cal per a l'activitat.
+- El programa guardat i els resultats de tres sacsejades.
 
 ## 🔗 Fonts oficials i límits
 

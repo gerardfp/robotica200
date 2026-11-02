@@ -10,13 +10,13 @@ image: _assets/tutorials/spike-prime-python.webp
 
 ## 🎯 Repte i objectius
 
-Programeu un motor angular del SPIKE Prime amb Python i compareu la seqüència amb la idea que representaríeu amb blocs. La pràctica posa en joc un programa curt i observable perquè l’equip entenga imports, funció principal, port, graus, velocitat i execució asíncrona abans d’afegir sensors o una base mòbil.
+Feu girar un motor de SPIKE Prime amb un programa curt de Python. Després canvieu un número i compareu el moviment amb una versió feta amb blocs. No cal saber Python abans de començar: copieu l’exemple i seguiu les proves.
 
 En acabar, podreu:
 
 - obrir un projecte de Python a SPIKE App i connectar el Hub Prime;
 - associar el motor físic al port declarat al codi;
-- interpretar `async`, `await` i la crida `runloop.run(...)` en un exemple curt;
+- reconéixer les parts del programa que indiquen el port, el gir i la velocitat;
 - predir què canvia quan modifiqueu els graus o la velocitat;
 - llegir un error de sintaxi o de connexió i corregir-lo amb una prova controlada.
 
@@ -58,7 +58,7 @@ async def main():
 runloop.run(main())
 ```
 
-`port.A` identifica la connexió física; `360` demana una volta de l’eix; `400` és la velocitat indicada pel paràmetre de l’API. `async def main()` agrupa les instruccions principals, `await` espera que acabe el moviment i `runloop.run(main())` inicia el programa. No afegiu `await` fora de la funció asíncrona.
+`port.A` indica on està connectat el motor; `360` demana una volta completa i `400` indica la velocitat. Copieu també les altres línies i els espais de davant de la instrucció: permeten que el programa s’inicie i espere que el motor acabe.
 
 ### 3. Predigueu i executeu una volta
 
@@ -76,16 +76,23 @@ Canvieu els graus de `360` a `180`, predigueu el nou angle i executeu. Després 
 
 En un projecte de blocs, representeu la mateixa acció: quan comence el programa, feu girar el motor connectat al port triat durant el nombre de graus i a la velocitat acordada. Compareu quina informació queda explícita en cada format: el bloc agrupa els paràmetres visualment; el text requereix sintaxi, indentació i noms exactes. No cal que les dues interfícies utilitzen exactament el mateix nom intern del bloc.
 
+```spikeapp
+quan comença el programa
+motor [A v] gira (360) graus
+```
+
+El dibuix mostra l’acció equivalent; seleccioneu els blocs i les unitats que oferisca la vostra versió de l’app. Si la velocitat s’indica en una escala diferent, ajusteu-la i compareu el moviment, sense assumir que els nombres són equivalents.
+
 ## 🧪 Prova, depura i reflexiona
 
-Feu tres intents: 360° a velocitat 400, 180° a velocitat 400 i 360° a velocitat 200. Registreu predicció, valor modificat, moviment observat i qualsevol missatge de l’app. Per depurar, comproveu en aquest ordre: motor al port correcte, Hub connectat, `import motor`, `port.A` escrit igual que al programa, indentació del cos de `main`, i crida final a `runloop.run(main())`. Corregiu una sola causa cada vegada.
+Feu tres intents: 360° a velocitat 400, 180° a velocitat 400 i 360° a velocitat 200. Anoteu què esperàveu i què ha passat. Si no funciona, comproveu que el Hub està connectat, que el motor és al port A i que heu copiat totes les línies i espais de l’exemple. Corregiu una cosa cada vegada.
 
 ### Preguntes per comprovar
 
 - Quin element del muntatge correspon a `port.A`?
 - Què canvia en passar de 360 a 180 graus? Què canvia en reduir la velocitat?
-- Per què les línies del cos de `main()` estan indentades?
-- Quina diferència hi ha entre `await` i la crida que inicia el programa?
+- Quina diferència observes entre una volta completa i mitja volta?
+- Quina informació apareix tant en el programa de text com en els blocs?
 - Quin error heu trobat i quina prova confirma que la correcció funciona?
 
 

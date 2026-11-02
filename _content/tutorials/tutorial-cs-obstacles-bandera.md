@@ -10,7 +10,7 @@ image: _assets/tutorials/cs-obstacles-bandera.png
 
 ## 🎯 Repte i objectius
 
-Planifiqueu un trajecte perquè MatataBot arribe a una bandera sense travessar cap obstacle. L’objectiu és distingir un obstacle físic —que delimita el mapa— d’un sensor: en aquesta activitat el robot no el detecta ni l’esquiva automàticament. L’alumnat ha de llegir la graella, anticipar els girs i programar una ruta segura amb les fitxes direccionals del Coding Set.
+Planifiqueu un camí perquè MatataBot arribe a una bandera sense passar per un obstacle. En aquesta activitat el robot no el detecta ni l’esquiva automàticament: sou vosaltres qui decidiu la ruta.
 
 En acabar, cada equip podrà:
 
@@ -26,7 +26,7 @@ En acabar, cada equip podrà:
 - Targetes o quadrícula de paper per a planificar una ruta abans de col·locar les fitxes.
 - Registre de predicció, prova i correcció.
 
-Connecteu la torre, el tauler i el robot segons la guia del fabricant. Marqueu una casella d’inici, col·loqueu la bandera en una altra casella i poseu dos obstacles en caselles intermèdies. Manteniu el mapa pla i deixeu lliure l’espai perquè el robot puga avançar sense que les peces es moguen. Aquesta pràctica usa obstacles com a elements del mapa, no els sensors del complement Sensor Add-on.
+Connecteu la torre, el tauler i el robot. Poseu una targeta d’obstacle davant del punt d’inici i una bandera dues caselles més enllà. Deixeu lliure una columna a la dreta per passar-hi. El Sensor Add-on no és necessari per a aquesta pràctica.
 
 ## 🧩 Funcions del robot treballades
 
@@ -39,11 +39,15 @@ Connecteu la torre, el tauler i el robot segons la guia del fabricant. Marqueu u
 
 ### 1. Llegiu el mapa des del punt de vista del robot
 
-Poseu MatataBot a l’inici i orienteu-lo cap a la primera casella. Identifiqueu la bandera i les caselles ocupades pels obstacles. Dibuixeu la graella en paper i marqueu amb una creu les posicions que el robot no ha de travessar. Abans de programar, feu que cada persona explique cap a on mira el robot: les ordres de gir són relatives a la seua orientació.
+Poseu MatataBot a l’inici, mirant cap a l’obstacle i la bandera. Dibuixeu les tres posicions en una graella. Assenyaleu la dreta del robot: els girs depenen de cap a on mira.
 
 ### 2. Planifiqueu una ruta amb fletxes
 
-Dibuixeu una ruta que faça una volta al voltant dels obstacles i arribe a la bandera. Escriviu les ordres en una llista; useu «gira» abans de l’ordre d’avançar quan canvie la direcció. Representeu un gir a la dreta com `↻` i un gir a l’esquerra com `↺`; cap dels dos desplaça el robot de casella. Compteu cada avanç segons la quadrícula del mapa i no afegiu peces numèriques si no les necessiteu.
+Seguiu amb el dit aquesta ruta sobre la graella abans de col·locar les peces. Un gir canvia cap a on mira el robot, però no l’avança:
+
+**Dreta → Endavant → Esquerra → Endavant → Endavant → Esquerra → Endavant**
+
+El recorregut passa pel costat de la targeta i torna a la columna de la bandera. Abans d'usar el robot, seguiu les fletxes amb el dit i comproveu que hi ha prou espai a la graella.
 
 ![Kit Matatalab Coding Set real amb el MatataBot, la torre, fitxes de moviment, obstacles i una bandera en una ruta sobre el tauler.](../../_assets/tutorials/cs-obstacles-bandera.png)
 
@@ -59,11 +63,11 @@ Poseu el robot a l’inici amb la mateixa orientació que al dibuix i executeu e
 
 ### 5. Depureu canviant una sola instrucció
 
-Compareu la ruta prevista amb la ruta real i canvieu només la primera fitxa que explique l’error. Torneu a executar i anoteu què ha canviat. Quan funcione, busqueu una segona ruta que arribe a la mateixa bandera amb una seqüència diferent i expliqueu quina és més fàcil de llegir. Si el centre té el Sensor Add-on, identifiqueu les seues peces «Obstacle/No Obstacle» i contrasteu-les amb les barreres del mapa: només el complement aporta eixes ordres de detecció; les barreres físiques del Coding Set base no són llegides pel robot.
+Si el resultat no és el previst, reviseu la primera fitxa que no correspon a la ruta, canvieu-la i torneu a provar des de l’inici. Si ja funciona, busqueu una altra ruta. El Sensor Add-on és un complement diferent: les barreres del kit base no detecten res.
 
 ## 🧪 Prova, depura i reflexiona
 
-Feu almenys tres execucions: una ruta inicial, una ruta corregida i una alternativa. En cada cas, registreu inici, orientació, obstacles, seqüència de fitxes i resultat. Comproveu també un programa deliberadament invàlid en paper —per exemple, una ruta que travessaria una casella ocupada— i expliqueu per què s’ha de corregir abans d’executar-lo.
+Feu la ruta i anoteu si arriba a la bandera. Repetiu-la des de la mateixa posició; després proveu una ruta alternativa. Si cal una correcció, anoteu la fitxa canviada i el resultat.
 
 ### Preguntes per comprovar
 

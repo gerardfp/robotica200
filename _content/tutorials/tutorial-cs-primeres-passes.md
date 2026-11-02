@@ -10,7 +10,7 @@ image: _assets/tutorials/cs-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Prepara una ruta tangible i comprova com el sistema llig les peces abans d’enviar-la al MatataBot. L’equip anticiparà l’ordre d’execució, identificarà els components del conjunt i verificarà el recorregut amb una seqüència curta.
+Prepara una ruta amb peces i comprova com la torre les llig i envia les ordres al MatataBot. Abans de començar, predigueu on arribarà el robot.
 
 - Entendre que les fitxes es llegeixen com un text: d'esquerra a dreta i de dalt a baix.
 - Emparellar per Bluetooth la torre i el robot.
@@ -36,17 +36,17 @@ Encén el MatataBot i la torre segons el manual del teu model i espera que s’a
 
 ### 2. Col·locar les fitxes
 
-Posa les fletxes sobre les caselles buides del tauler seguint una línia horitzontal contínua.
+Posa tres fitxes a la primera fila, d'esquerra a dreta: **Endavant → Dreta → Endavant**. Col·loca el robot sobre el mapa, mirant cap a una zona lliure. Assenyala amb el dit la casella on creus que acabarà; el gir canvia cap a on mira el robot, però no l’avança.
 
 ### 3. Prémer el gran botó Play
 
-Prem el botó gran taronja de la torre. La càmera escaneja les fitxes i el robot comença a moure's immediatament pel tapís.
+Prem el botó gran taronja. La càmera de la torre llig les fitxes i envia les ordres al robot. Observa si avança, gira a la dreta i torna a avançar. Si no es mou, comprova la connexió i que les peces estan ben col·locades abans de tornar a prémer.
 
 > **💡 Consell docent per a la sessió:** Si la torre no llegeix una fitxa, comprova que la il·luminació no creï ombres intenses sobre el tauler.
 
 ## 🧪 Prova, depura i reflexiona
 
-Presenta el tauler, la torre i dues peces de moviment. Cada parella ordena una ruta curta, prediu la casella final i la registra abans de fer-la interpretar pel set; després compara la predicció amb la lectura de la torre i el recorregut real del MatataBot.
+Compara la casella prevista amb el lloc on s'ha aturat. Torna el robot a la mateixa posició i orientació, canvia l'última fitxa per Enrere i fes una altra predicció abans de prémer el botó. Si no coincideix, reviseu l'ordre de les peces.
 
 ### Preguntes per comprovar
 

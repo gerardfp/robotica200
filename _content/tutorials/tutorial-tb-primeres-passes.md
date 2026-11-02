@@ -1,7 +1,6 @@
 ---
 title: 'Primeres passes: Botons direccionals i la tecla Delete'
-description: Descobrir els comandaments bàsics de TaleBot, la mesura del seu pas (10 cm) i la importància de buidar
-  la memòria.
+description: Descobrir els botons de Tale-Bot Pro, provar un recorregut curt i aprendre a esborrar-lo.
 robot: tale-bot
 level: Iniciació
 duration: 30 min
@@ -35,11 +34,15 @@ Gira la rodeta posterior fins a sentir la salutació sonora de TaleBot. Els ulls
 
 ### 2. La regla d'or de la X
 
-Abans de començar un camí nou, prem el botó vermell 'X' per esborrar les passes anteriors.
+Abans d’un camí nou, mantín premut el botó X més d’un segon i comprova que els indicadors s’apaguen. Una pulsació breu, de menys d’un segon, elimina només l’última ordre.
 
 ### 3. Programar una recta
 
-Prem dos cops 'Endavant' i el botó taronja central 'Play'. TaleBot caminarà exactament 2 caselles (20 cm) i s'aturarà amb alegria.
+Posa el robot a l’inici i prem els botons en aquest ordre:
+
+**Endavant → Endavant → Play**
+
+Observa on s’atura i mesura la distància. El pas habitual és de 10 cm, però el robot pot estar configurat amb un pas de 15 cm; prova’l abans de preparar la graella. La distància real també pot variar segons el terra.
 
 > **💡 Consell docent per a la sessió:** Per als girs, ensenya als infants que TaleBot gira sobre si mateix sense avançar casella.
 

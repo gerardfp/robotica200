@@ -44,6 +44,14 @@ Poseu un únic maó d’acció en un tram recte i deixeu espai lliure després. 
 
 Feu passar el tren pel maó roig i anoteu si s’atura. Després, repetiu amb el groc i el blau per separat. Descriviu els sons que sentiu amb paraules pròpies o pictogrames; no cal imitar exactament un xiulet o un so de càrrega si la resposta del model és diferent. Torneu a provar cada color per comprovar que el resultat es repeteix.
 
+Per exemple, feu aquesta prova amb **un maó cada vegada**:
+
+1. Poseu el maó roig a la via i feu passar el tren: espereu que s'ature.
+2. Atureu el tren, canvieu el roig pel groc i escolteu la resposta.
+3. Repetiu amb el blau i compareu els sons.
+
+Si una resposta és diferent de la prevista, anoteu-la i comproveu la posició del maó abans de repetir.
+
 ### 3. Investigueu el maó blanc
 
 Observeu primer si la llum del tren està encesa. Col·loqueu el maó blanc i registreu si la llum canvia d’estat. Repetiu-lo una vegada més i compteu quantes vegades passa el tren pel maó. Aquesta prova ajuda a descobrir si la resposta alterna en cada pas.

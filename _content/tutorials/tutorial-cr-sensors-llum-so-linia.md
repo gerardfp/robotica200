@@ -10,7 +10,7 @@ image: _assets/tutorials/cr-sensors-llum-so-linia.webp
 
 ## 🎯 Repte i objectius
 
-Dissenyeu una estació de senyalització que reaccione a la llum i al so, i feu que Rocky seguisca una línia de prova. El repte és identificar quina entrada canvia, quina eixida respon i quines condicions fan que la lectura falle. No mesureu ni classifiqueu el soroll de persones: utilitzeu sons breus creats voluntàriament per l’equip o targetes de valors simulats.
+Feu que la llum de Codey responga als canvis de llum i de so. Després proveu el sensor de Rocky sobre una línia negra. Observeu què detecta el robot i què li heu indicat que faça.
 
 - Calibrar els sensors de llum i so amb proves controlades.
 - Relacionar la lectura del sensor infraroig/color amb una línia i els motors.
@@ -39,6 +39,17 @@ Abans de començar, comproveu que el robot es connecta, que les erugues es mouen
 
 Obriu mBlock 5, seleccioneu Codey Rocky i executeu una seqüència curta que mostre un color a l’indicador RGB i faça avançar Rocky a baixa velocitat durant un interval breu. Atureu el programa i verifiqueu que el botó d’aturada del projecte respon. Anoteu quins elements són entrades (llum, so i reflexió infraroja) i quins són eixides (RGB i motors).
 
+Podeu començar amb aquesta prova curta:
+
+```mblock
+quan es prem el botó [A v]
+encén el llum RGB de color [blau v]
+avança a velocitat (20) durant (1) segons
+atura el moviment
+```
+
+Busqueu els blocs equivalents a la vostra versió. En prémer A, observeu la llum i comproveu que Rocky s’atura; si no ho fa, atureu el programa abans de continuar.
+
 ### 2. Calibrem llum i color
 
 Manteniu Codey en la mateixa orientació i registreu diverses lectures en llum habitual i en una zona més ombrejada. Trieu un llindar entre els valors observats, si les mostres se separen, i feu que l’indicador RGB canvie de color segons la condició. Després compareu una targeta clara, una fosca i dues de colors a la mateixa distància. Registreu què detecta realment el bloc; no suposeu que tots els colors es distingeixen amb la mateixa fiabilitat.
@@ -49,7 +60,9 @@ Registreu primer el valor en silenci i després feu tres sons breus i voluntaris
 
 ### 4. Seguiu una línia i depureu la ruta
 
-Col·loqueu Rocky sobre una pista ampla, plana i sense desnivells. Proveu primer el sensor infraroig/color damunt del fons clar i després sobre la línia fosca; anoteu les lectures o estats que expose el bloc disponible. Construïu una correcció lenta: quan detecte la línia, ajusteu els motors perquè el robot torne al centre; quan no la detecte, corregiu cap a l’altre costat. Si el bloc de la vostra versió només ofereix una ordre de seguiment predefinida, feu-la servir i compareu la ruta amb els mateixos criteris, sense inventar una lectura numèrica.
+Atureu el programa i orienteu el sensor infraroig/color de Rocky cap al terra. Poseu-lo primer sobre el fons blanc i després sobre la línia negra; anoteu què mostra mBlock en cada cas. El sensor identifica la superfície que té davall, però no sap a quin costat queda el centre de la línia.
+
+Per provar una correcció pròpia, comenceu amb el sensor sobre la **vora dreta** de la línia, mirant en el sentit del recorregut. Programeu un gir suau a la dreta quan veja negre i a l’esquerra quan veja blanc, de manera que busque la vora. Proveu-ho lentament en un tram recte i atureu-lo si perd la pista. Si comenceu per l’altra vora, intercanvieu els girs. Si la vostra versió ofereix un exemple de seguiment, també podeu provar-lo i comparar-ne el resultat.
 
 ![Codey Rocky de la dotació prova una línia fosca en una pista clara mentre una parella compara targetes de color, llum i so.](../../_assets/tutorials/cr-sensors-llum-so-linia.webp)
 
@@ -57,7 +70,7 @@ _Les targetes i la línia són materials de prova; els resultats depenen del sen
 
 ## 🧪 Prova, depura i reflexiona
 
-Registreu una taula amb condició, lectura/estat, eixida esperada, eixida observada i incidència. Repetiu tres vegades cada prova: llum clara, ombra, so per davall del llindar, so per damunt, targeta fosca, targeta de color i tres trams de pista amb línia. Canvieu només un factor cada vegada. Si els resultats no són repetibles, ajusteu el llindar o l’alineació del sensor; no presenteu una lectura inestable com una mesura exacta.
+Anoteu què mostra el sensor amb llum i amb ombra, i després en silenci i amb una palmada suau. En la pista, registreu si Rocky manté la vora durant tres intents curts. Si falla, reviseu que el sensor mire a terra i que el robot comence a la vora correcta; canvieu una sola cosa abans de repetir.
 
 ### Preguntes per comprovar
 
@@ -76,4 +89,4 @@ Manteniu el robot a velocitat baixa i dins d’un recorregut delimitat, lluny de
 
 ## 🔗 Fonts oficials i límits
 
-[Makeblock · About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) descriu els elements de Codey i Rocky. [Makeblock · Programming Codey Rocky with mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) és el punt de partida per a la connexió; comproveu la compatibilitat del sistema i l’extensió instal·lada. La detecció de so no és reconeixement de parla, i el sensor infraroig/color no és una càmera ni un dispositiu de mesura universal.
+[Makeblock · About Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky) descriu els elements de Codey i Rocky. [Makeblock · Programming Codey Rocky with mBlock 5](https://support.makeblock.com/hc/en-us/articles/1500008637961-Program-Codey-Rocky-with-mBlock-5) és el punt de partida per a la connexió; comproveu la compatibilitat del sistema i l’extensió instal·lada. La detecció de so no és reconeixement de parla, i el sensor infraroig/color no és una càmera ni un dispositiu de mesura universal.

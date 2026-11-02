@@ -10,21 +10,20 @@ image: _assets/tutorials/mb-data-logging.webp
 
 ## 🎯 Repte i objectius
 
-Prepareu un registre curt de condicions de l’aula amb una micro:bit V2. L’equip decidirà quines dades necessita, cada quant les llegirà, com confirmarà que el registre està actiu i com les recuperarà per interpretar-les. El registrador desa valors al dispositiu; no els envia automàticament a Internet ni converteix les lectures en una mesura científica calibrada.
+Amb una micro:bit V2, registreu cinc lectures de llum i temperatura i compareu-les en una taula. Les dades es guarden a la placa i no s’envien a Internet automàticament.
 
 - Crear columnes identificables per a les lectures que es volen recollir.
-- Iniciar i aturar una captura manual amb un control comprensible.
+- Registrar una lectura cada vegada que es prem el botó A.
 - Recuperar les dades de la memòria i representar-les en una taula o gràfic.
 - Diferenciar una variació observada d’una conclusió sobre tota l’aula o el dia.
 
 ## 🧰 Materials i preparació
 
-- micro:bit V2 identificada per la marca de versió i amb firmware compatible amb MakeCode Data logging.
+- micro:bit V2; la V1 no admet aquest registre de dades.
 - Ordinador amb MakeCode i connexió USB per transferir el programa i recuperar les dades.
-- Termòmetre de referència i targetes clara/fosca; són comparadors externs, no sensors connectats.
-- Full de planificació amb variables, unitats o escala, interval de captura i duració de la prova.
+- Una targeta per fer ombra i un full per anotar cada mostra.
 
-En MakeCode, creeu un projecte nou i afegiu l’extensió oficial `datalogger`. Abans de transferir el programa, comproveu que el simulador mostra la funció de registre i assageu el control. Decidiu si la prova durarà pocs minuts i qui podrà consultar el fitxer. Eviteu enregistrar noms, veus, ubicacions personals o dades identificables.
+En MakeCode, creeu un projecte nou. Abans de descarregar-lo, guardeu les dades anteriors que necessiteu: un programa nou pot esborrar el registre visible.
 
 ## 🧩 Funcions del robot treballades
 
@@ -38,27 +37,43 @@ En MakeCode, creeu un projecte nou i afegiu l’extensió oficial `datalogger`. 
 
 ### 1. Planifiqueu les dades
 
-Trieu una pregunta acotada: per exemple, si la lectura de llum canvia entre una taula il·luminada i una zona d’ombra. Escriviu els noms de les columnes, la freqüència i la duració abans de programar. Per a aquesta primera prova, useu una captura manual amb A i registreu una fila cada vegada; així podeu controlar quantes mostres s’han afegit i evitar omplir la memòria sense adonar-vos-en.
+Pregunteu-vos: «Canvia la lectura de llum quan fem ombra a la placa?». Preparareu dues columnes, `llum` i `temperatura_aproximada`, i premeu A una vegada per cada mostra.
 
 ### 2. Prepareu el registre
 
-Afegiu l’extensió `datalogger` i el bloc per establir els títols de columna, com ara `llum` i `temperatura_aproximada`, i un esdeveniment de botó A que afegisca una fila amb les lectures disponibles. Mostreu una icona breu quan la fila s’haja registrat. Si una versió del bloc no permet una de les lectures triades, retireu-la de les columnes i expliqueu-ho: no inventeu un valor de sensor.
+Afegiu primer l’extensió **datalogger** des d’«Extensions». Després:
 
-```blocks
-en iniciar:
-  posa els títols de columna a [llum, temperatura_aproximada]
-en prémer el botó A:
-  registra una fila amb [nivell de llum, temperatura]
-  mostra la icona ✓ durant 1 segon
+1. A **en iniciar**, poseu el bloc de títols i escriviu `llum` i `temperatura_aproximada`.
+2. A **en prémer el botó A**, afegiu el bloc de registrar dades. Associeu `llum` amb el nivell de llum i `temperatura_aproximada` amb la temperatura.
+3. Afegiu una icona de confirmació, una pausa d’un segon i «neteja la pantalla».
+
+Si una lectura no apareix en la versió de l’editor, retireu-la del registre i expliqueu-ho. Per copiar el programa complet en lloc de muntar les peces:
+
+Per usar aquest exemple, obri la pestanya **JavaScript** de MakeCode, copia el text i torna a **Blocs** per veure les peces.
+
+```javascript
+datalogger.includeTimestamp(FlashLogTimeStampFormat.Seconds)
+datalogger.setColumns(["llum", "temperatura_aproximada"])
+input.onButtonPressed(Button.A, function () {
+    datalogger.logData([
+        datalogger.createCV("llum", input.lightLevel()),
+        datalogger.createCV("temperatura_aproximada", input.temperature())
+    ])
+    basic.showIcon(IconNames.Yes)
+    basic.pause(1000)
+    basic.clearScreen()
+})
 ```
+
+El programa registra una fila cada vegada que premeu A i mostra un senyal de confirmació. Espereu que el senyal desaparega abans de fer la mostra següent. A la [guia oficial de registre de dades](https://microbit.org/get-started/user-guide/data-logging/), busqueu l'apartat «Manual logging»: inclou un exemple que podeu obrir en MakeCode per veure les peces.
 
 ### 3. Feu una captura controlada
 
-Transfereix el programa a la placa V2, desconnecta el cable només quan haja acabat la transferència i fes cinc lectures: tres amb la matriu orientada cap a la zona clara i dues amb la targeta d’ombra a la mateixa distància. Prem A una vegada per mostra i anota en paper quina condició correspon a cada fila. Mantén la placa immòbil i no tapes els LED amb la mà durant tota la captura.
+Transfereix el programa a la V2 i espera que acabe la transferència. Fes tres lectures amb llum i dues fent ombra amb la targeta. Prem A una vegada per mostra, espera que desaparega la icona i anota en paper si era una prova amb llum o amb ombra. Mantín la placa en la mateixa posició.
 
 ### 4. Recupera i interpreta les files
 
-Connecta de nou la micro:bit a l’ordinador i recupera les dades registrades obrint la visualització de dades de MakeCode segons la guia oficial. Revisa els títols, l’ordre, els valors i les marques de temps; compara les files amb les anotacions de camp. Si el navegador permet exportar-les, desa una còpia sense dades personals i fes un gràfic. No combines captures si els encapçalaments o el rellotge s’han reiniciat sense documentar-ho.
+Per recuperar les dades, connecta de nou la micro:bit a l’ordinador. Obri la unitat **MICROBIT** i fes doble clic al fitxer **MY_DATA**: s’obrirà una taula al navegador. Compara les files amb les anotacions de paper i, si vols, copia o descarrega les dades. La columna de temps compta des de l’últim reinici de la placa, no indica l’hora del dia.
 
 ![Placa micro:bit V2 de la dotació amb lectures i una gràfica de dades de llum i temperatura aproximada.](../../_assets/tutorials/mb-data-logging.webp)
 
@@ -66,11 +81,11 @@ _El gràfic és una representació per analitzar les mostres; no és una pantall
 
 ### 5. Esborreu només després de conservar l’evidència
 
-Guardeu primer el fitxer o una captura de la taula i confirmeu que les dades corresponen a la prova. La transferència d’un programa nou pot invalidar el registre anterior; per això, no torneu a descarregar codi fins que hàgeu recuperat el que necessiteu. Després d’una còpia verificada, reinicieu el registre amb el procediment de MakeCode i comproveu que apareixen els títols abans de començar una nova sèrie.
+Guardeu una còpia de la taula abans de descarregar un programa nou o esborrar el registre. Per començar una altra prova, seguiu el procediment d’esborrat de la guia oficial i torneu a preparar els títols de les columnes.
 
 ## 🧪 Prova, depura i reflexiona
 
-Compareu les cinc files registrades amb les condicions anotades en paper. Comproveu que hi ha cinc mostres, que cada valor ocupa la columna correcta i que la marca temporal segueix l’ordre de captura. Repetiu una lectura si hi ha una fila buida o una condició anotada incorrectament; no esborreu la memòria fins a haver conservat les dades útils. Si utilitzeu el simulador, identifiqueu-ne clarament les lectures com a simulades i no les barregeu amb les de la placa.
+Compareu les cinc files amb el full: hi ha tres proves amb llum i dues amb ombra? Si falta una fila, torneu a prémer A i anoteu la nova mostra. Les dades del simulador són simulades; distingiu-les de les que recull la placa.
 
 ### Preguntes per comprovar
 

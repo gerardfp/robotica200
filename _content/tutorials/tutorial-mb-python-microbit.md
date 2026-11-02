@@ -10,7 +10,7 @@ image: _assets/tutorials/mb-python-editor.webp
 
 ## 🎯 Repte i objectius
 
-Creeu una insígnia que mostre una cara feliç quan es prem A i una cara pensativa quan es prem B. Primer la provareu al simulador i després a la placa. En paral·lel, comparareu la sintaxi MicroPython de l’editor oficial de micro:bit amb el «Python» de Microsoft MakeCode: tots dos serveixen per programar la placa, però no són la mateixa implementació ni comparteixen la mateixa estructura de codi.
+Creeu una insígnia que mostre una cara feliç quan es prem A i una cara pensativa quan es prem B. Primer la provareu al simulador i després a la placa. No cal saber Python: copieu l’exemple i canvieu una icona per veure’n el resultat.
 
 - Obrir el Python Editor oficial i localitzar el codi, el simulador, la referència i els avisos d’error.
 - Relacionar els botons A/B i la matriu 5 × 5 amb instruccions Python.
@@ -70,15 +70,18 @@ Connecteu la placa per USB i useu l’opció «Send to micro:bit» si el navegad
 
 ### 5. Compareu amb MakeCode Python
 
-Obriu el mateix repte en l’opció Python de MakeCode. La forma orientada a esdeveniments és diferent:
+En MakeCode, podeu fer la mateixa prova amb blocs. Aquest exemple mostra una cara per a cada botó:
 
-```python
-def on_button_pressed_a():
-    basic.show_icon(IconNames.HAPPY)
-input.on_button_pressed(Button.A, on_button_pressed_a)
+```makecode
+input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Happy)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showIcon(IconNames.Confused)
+})
 ```
 
-MakeCode permet canviar entre blocs, JavaScript i la seua sintaxi Python; el Python Editor oficial de micro:bit usa MicroPython amb `from microbit import *` i un bucle que consulta els botons. No copieu ordres `basic` de MakeCode dins del MicroPython ni funcions `display` de MicroPython dins del projecte MakeCode.
+MakeCode i l’editor de MicroPython són eines diferents. Feu cada exemple en el seu editor: no copieu les ordres d’un dins de l’altre. Compareu què apareix quan premeu cada botó.
 
 ## 🧪 Prova, depura i reflexiona
 

@@ -33,7 +33,7 @@ Utilitza el sensor de força SPIKE Prime per detectar una pressió i activar una
 
 ### 1. Muntar el mecanisme de palanca
 
-Crea una pinça que es tanqui quan el motor giri en sentit horari.
+Crea una pinça senzilla amb el motor; prova-la primer amb girs curts i sense objectes. Comprova quin sentit la tanca en el teu muntatge: pot variar segons com col·loques les peces.
 
 ### 2. Col·locar el sensor de força
 
@@ -41,19 +41,28 @@ Situa el sensor de força al punt de contacte de la mandíbula de la pinça.
 
 ### 3. Lògica de control de pressió
 
-Tanca la pinça lentament fins a activar el sensor i atura el motor; a continuació, prova un llindar superior a 4 N i contrasta les mesures amb la fitxa tècnica i l’aplicació utilitzada.
+Connecta el motor i el sensor als ports que tries i indica aquests mateixos ports en SPIKE App. Amb una esponja fixa i el motor a baixa velocitat, prova aquesta seqüència:
 
-> **💡 Consell docent per a la sessió:** Comença amb una esponja o un cub d’escuma fix i un moviment curt. A SPIKE Prime, el rang de força és 2,5–10 N i la tolerància és de ±0,65 N; no facis servir persones ni objectes fràgils com a proves.
+```spikeapp
+quan comença el programa
+activa el motor a velocitat baixa
+espera fins que el sensor de força estiga premut
+atura el motor
+```
+
+El dibuix resumeix el programa: busca els blocs equivalents a la teua versió. Mantín accessible l'aturada manual i limita també el recorregut del motor; el sensor pot no activar-se si està mal col·locat. Quan la prova de contacte funcione, compara les lectures de força només si l'app mostra aquesta opció.
+
+> **💡 Consell docent:** El sensor pot detectar una pressió o mostrar força, segons el bloc. No cal treballar amb nombres per a la primera prova.
 
 ## 🧪 Prova, depura i reflexiona
 
-Fixa la pinça sobre la taula i utilitza un objecte de prova resistent i tou, amb un límit de motor conservador. No facis servir aquest muntatge per agafar persones ni objectes fràgils.
+Fixa la pinça sobre la taula i utilitza una esponja. Fes tres proves curtes: anota si el sensor s'ha premut i si el motor s'ha aturat. Si no s'atura, para'l manualment i revisa ports i posició del sensor. No uses persones ni objectes fràgils.
 
 ### Preguntes per comprovar
 
 - Què indica el sensor de força en aquest model?
 - Quin llindar provaràs i quines unitats permet llegir realment el dispositiu?
-- En quin valor s’ha activat l’aturada i la pinça ha deixat anar l’objecte sense aixafar-lo?
+- Què ha passat quan el sensor s'ha premut? Què has hagut de fer per obrir la pinça?
 
 ## ♿ Accessibilitat i seguretat
 

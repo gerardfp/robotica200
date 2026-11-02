@@ -39,13 +39,23 @@ Comproveu que el mòdul Rocky està connectat amb Codey i que els blocs de senso
 
 Obriu mBlock 5, afegiu Codey Rocky i connecteu el robot per USB o per una connexió Bluetooth compatible. Executeu una prova curta que moga les dues erugues lentament i després les ature. Comproveu que el xassís està ben acoblat i que el sensor es pot orientar cap a davant o cap avall sense forçar el suport.
 
+Comenceu amb una ordre curta, sobre una taula sense vores pròximes:
+
+```mblock
+quan es prem el botó [A v]
+avança a velocitat (20) durant (1) segons
+atura el moviment
+```
+
+El dibuix mostra la idea del programa: busqueu els blocs de moviment equivalents a la vostra versió i comproveu que Rocky s’atura després d’un segon.
+
 ### 2. Observeu la detecció d’un obstacle
 
 Amb el sensor orientat cap al davant, mostreu a la matriu de Codey l’estat «lliure» o «obstacle» segons el bloc disponible. Poseu una caixa de cartó a una distància curta i després més lluny; repetiu amb una superfície clara i una fosca, mantenint l’angle. Registreu el resultat tal com l’exposa mBlock (estat o valor d’aproximació/distància) i no el convertiu a centímetres si el bloc no dona una mesura calibrada.
 
 ### 3. Programeu una maniobra d’esquiva
 
-Feu que Rocky avance a baixa velocitat mentre el sensor indique espai lliure. Si detecta un obstacle, atureu-lo, feu una marxa enrere breu i gireu a un costat abans de reprendre l’avanç. Proveu primer amb una sola caixa al centre d’un passadís ampli; si el gir no deixa espai suficient, modifiqueu només la durada o la velocitat i torneu a provar.
+Feu que Rocky avance a baixa velocitat mentre el sensor indique espai lliure. Si detecta un obstacle, atureu-lo, feu una marxa enrere breu i gireu a un costat abans de reprendre l’avanç. Comenceu amb una sola caixa de cartó: premeu A i observeu si Rocky gira i continua. Si el gir no deixa espai suficient, canvieu només la durada o la velocitat i torneu a provar. El [cas oficial de Makeblock](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) mostra un programa d’exemple amb el sensor mirant endavant.
 
 ### 4. Compareu amb el seguiment d’una línia
 

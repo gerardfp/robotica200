@@ -10,12 +10,12 @@ image: _assets/tutorials/cr-veu-ia.png
 
 ## 🎯 Repte i objectius
 
-Investigueu què pot fer Codey Rocky quan escolta un so i què exigiria una funció de reconeixement de parla. El robot base incorpora un sensor que detecta el nivell sonor, però no inclou un mòdul que reconega paraules. El reconeixement, quan l’editor i el servei en línia encara l’ofereixen, depén del programari, la connexió, el compte i les condicions de privacitat del centre.
+Compareu què passa quan Codey sent una palmada i què caldria perquè interpretara una paraula. El robot pot indicar si un so és més fort o més fluix, però no inclou un mòdul que reconega paraules.
 
 - Comparar una lectura de so ambiental amb una ordre de veu interpretada per programari.
 - Comprovar si l’extensió de serveis cognitius està disponible abans de basar-hi l’activitat.
 - Vincular una entrada de prova a una resposta visible i segura, sense activar moviments inesperats.
-- Reconéixer quines dades ixen del dispositiu quan s’utilitza un servei de veu en línia.
+- Identificar quan una activitat necessita un servei de veu extern.
 
 ## 🧰 Materials i preparació
 
@@ -24,7 +24,7 @@ Investigueu què pot fer Codey Rocky quan escolta un so i què exigiria una func
 - Targetes grans amb les ordres fictícies «marxa», «para» i «gira» per a una simulació sense veu.
 - Un registre per anotar component, programa, resposta i dependències de cada prova.
 
-Obriu el projecte amb el dispositiu Codey i comproveu si la versió de mBlock disponible ofereix una extensió de veu compatible. No creeu un compte ni envieu cap enregistrament fins que el centre haja verificat les condicions del servei i el consentiment necessari. Si l’extensió no hi és, la guia es pot completar sencera amb targetes: la simulació no és una capacitat del robot.
+Comenceu amb el sensor de so de Codey. La prova de paraules és opcional i només es fa si el centre disposa d’un servei compatible i n’autoritza l’ús; si no, useu les targetes.
 
 ## 🧩 Funcions del robot treballades
 
@@ -37,19 +37,28 @@ Obriu el projecte amb el dispositiu Codey i comproveu si la versió de mBlock di
 
 ### 1. Mesureu el so amb el robot base
 
-Programa Codey perquè mostre una lectura del sensor de so o encenga l’indicador RGB quan el nivell supere un llindar. Proveu primer en silenci i després amb un so breu, com una palmada a distància; repetiu tres vegades i anoteu els valors o estats que expose el bloc. Feu servir un volum còmode. Si el bloc només dona un estat de so fort, registreu-lo com a estat i no com a decibels calibrats.
+Connecteu Codey a mBlock i busqueu el bloc que llig el nivell de so. Prepareu un programa que el mostre contínuament a la pantalla. Aquesta representació us ajuda a trobar els blocs equivalents en la vostra versió:
+
+```mblock
+quan comença el programa
+per sempre
+mostra el nivell de so
+fi
+```
+
+Carregueu o executeu el programa segons el mode triat. Anoteu què mostra en silenci i després amb una palmada suau; repetiu tres vegades. El número ajuda a comparar sons: no és una mesura de decibels ni una paraula reconeguda.
 
 ### 2. Reviseu si hi ha reconeixement de parla
 
-Exploreu les extensions disponibles a mBlock sense activar la captura d’àudio. Anoteu el nom exacte, el dispositiu o servei al qual pertany i les llengües que indica la interfície. Si no trobeu una opció funcional, marqueu-la com a «no disponible en aquesta configuració» i passeu a la simulació. No interpreteu una lectura alta del sensor de so com si el robot haguera entés «marxa» o «para».
+Mireu si el centre té una extensió o un servei de reconeixement de parla compatible. Anoteu-ne el nom i la llengua disponible sense activar el micròfon. Si no en teniu, passeu a les targetes del pas 4. Una lectura de so alt no significa que Codey haja entés una paraula.
 
 ### 3. Proveu una resposta controlada, si el servei està autoritzat
 
-Només si el centre autoritza el servei i l’extensió funciona en la versió instal·lada, feu una prova amb una frase fictícia i mostreu una icona quan el resultat coincidisca amb una paraula prevista. Comenceu amb un missatge visual o un so breu: no poseu en marxa els motors, perquè una transcripció errònia podria generar un moviment no previst. Registreu també una frase diferent i un cas sense parlar per observar falsos reconeixements o absència de resultat.
+Si el servei funciona i està autoritzat, proveu una frase fictícia i feu que aparega una icona quan coincidisca amb la paraula prevista. Proveu també una frase diferent i el silenci. Manteniu els motors aturats mentre observeu les respostes.
 
 ### 4. Simuleu les mateixes ordres sense enviar veu
 
-Si el servei no està disponible o no es pot utilitzar, una persona tria una targeta sense mostrar-la al programador. El programador aplica la mateixa lògica a l’entrada de text fictícia —«marxa», «para» o «gira»— i Codey mostra una icona associada. Compareu la resposta amb la prova de veu, si n’hi ha, i etiqueteu clarament quina entrada s’ha simulat. La simulació permet estudiar condicionals, però no comprova el reconeixement acústic.
+Una persona tria una targeta —«marxa», «para» o «gira»— i una altra mostra la icona acordada. Anoteu el resultat com a **simulació**: aquesta prova ajuda a preparar l’activitat, però no comprova que el robot reconega la veu.
 
 ![Codey Rocky de la dotació mostra una resposta visual mentre una entrada de veu es representa com una funció externa de programari.](../../_assets/tutorials/cr-veu-ia.png)
 
@@ -72,7 +81,7 @@ La veu és opcional: oferiu targetes, text fictici o botons com a entrada equiva
 
 ## ✅ Evidències d’aprenentatge
 
-- Programa del sensor de so amb el llindar i la resposta visual.
+- Programa que mostra la lectura del sensor de so i registre dels valors observats.
 - Taula que separa lectura integrada, resultat d’un servei extern i entrada simulada.
 - Registre de tres casos de prova, amb les dependències tècniques disponibles.
 - Explicació breu de per què Codey Rocky no reconeix parla de manera autònoma.
