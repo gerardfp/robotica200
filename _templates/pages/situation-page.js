@@ -30,7 +30,7 @@ function SituationPage({
     activeNav: 'situacions',
     root,
     body: `    ${NavBack({ href: backHref, label: backLabel, preserveFilters: true, slug })}
-    <article class="detail-page-card" data-wizard-container>
+    <article class="detail-page-card situation-page-card" data-wizard-container>
       <div class="detail-page-header">
         ${BadgeList(badges)}
         <h1 class="detail-page-title" data-title>${escapeHTML(title)}</h1>

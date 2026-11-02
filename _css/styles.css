@@ -2892,7 +2892,8 @@ robot-profile[robot="microbit"] .robot-detail-section,
 .prose .sa-challenge { font-size: 1.05rem; padding: 1rem 1.25rem; }
 .prose img { max-width: 100%; height: auto; }
 .prose .sa-illustration {
-  margin: 1.75rem 0 2.25rem;
+  max-width: 600px;
+  margin: 1.75rem auto 2.25rem;
   overflow: hidden;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
@@ -2901,8 +2902,12 @@ robot-profile[robot="microbit"] .robot-detail-section,
 .prose .sa-illustration img {
   display: block;
   width: 100%;
-  max-height: 34rem;
+  max-width: 600px;
+  max-height: 448px;
+  height: auto;
+  aspect-ratio: 600 / 448;
   object-fit: cover;
+  margin-inline: auto;
 }
 .prose .sa-illustration figcaption {
   padding: .8rem 1rem;
@@ -3220,8 +3225,9 @@ robot-profile[robot="microbit"] .robot-detail-section,
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
-.prose .learning-step .sa-illustration { margin: 1.25rem 0; }
-.prose .learning-step .sa-illustration img { display: block; width: min(100%, 42rem); height: auto; margin-inline: auto; border-radius: var(--radius-md); }
+.prose .learning-step .sa-illustration { max-width: 600px; margin: 1.25rem auto; }
+.prose .learning-step .sa-illustration img { display: block; width: 100%; max-width: 600px; max-height: 448px; aspect-ratio: 600 / 448; height: auto; margin-inline: auto; border-radius: var(--radius-md); object-fit: cover; }
+.situation-page-card .prose img { max-width: 600px; max-height: 448px; height: auto; }
 @media (max-width: 640px) {
   .learning-wizard-topbar { flex-direction: column; align-items: stretch; gap: 0.5rem; }
   .learning-wizard-controls { justify-content: flex-end; }
