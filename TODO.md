@@ -7,7 +7,7 @@
 - [ ] Els titols que estan en lletra sora, haurien de ser color #0c1a4a
 - [ ] La lletra en general hauria de ser color blau oscur
 
-- [ ] Les pàgines guia, què fem en elles? Què fem en general en _content/pages?
+- [x] Les pàgines guia estan a _content/guies/ (les no usades de _content/pages s'han esborrat).
 
 - [ ] Les pàgines se descopronen quan se mostra un svg de blocks
 

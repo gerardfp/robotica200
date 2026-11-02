@@ -338,7 +338,7 @@ function buildRobots(tutorials) {
 
 function buildGuides() {
   cleanSubdirectories('guia');
-  const dir = path.join(ROOT_DIR, '_content/pages');
+  const dir = path.join(ROOT_DIR, '_content/guies');
   const files = fs.readdirSync(dir)
     .filter(f => f.startsWith('guia-') && f.endsWith('.md'))
     .sort();
@@ -354,7 +354,7 @@ function buildGuides() {
   for (const file of files) {
     const slug = file.replace(/^guia-/, '').replace(/\.md$/, '');
     const source = fs.readFileSync(path.join(dir, file), 'utf8');
-    const rendered = renderer.parse(source, `https://robotica200.local/_content/pages/${file}`);
+    const rendered = renderer.parse(source, `https://robotica200.local/_content/guies/${file}`);
     const data = rendered.data;
     const title = String(data.title || slug).trim();
     const description = String(data.description || '').trim();

@@ -1,6 +1,6 @@
 # Contingut editorial actiu
 
-El contingut de detall viu en Markdown amb front matter a `activitats/`, `tutorials/`, `robots/`, `pages/` i `situacions/`. Els documents són la font única del text; els Web Components carreguen el document triat des d’una ruta compartida i mostren les metadades, les imatges i els blocs de contingut.
+El contingut de detall viu en Markdown amb front matter a `activitats/`, `tutorials/`, `robots/`, `guies/` i `situacions/`. Els documents són la font única del text; els Web Components carreguen el document triat des d’una ruta compartida i mostren les metadades, les imatges i els blocs de contingut.
 
 Les pàgines compartides són `activitat/index.html?id=slug`, `tutorial/index.html?id=slug`, `robot/index.html?id=slug`, `guia/index.html?id=slug` i `situacio/index.html?id=slug`. No es creen fitxers HTML individuals per a cada document. El catàleg es regenera amb `python3 _scripts/sync-catalog.py`.
 

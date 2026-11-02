@@ -561,7 +561,7 @@ assert.equal(taleBotDiscoveries.steps[0].title, "Hola, Tale-Bot: el coneixem i e
 assert.match(taleBotDiscoveries.html, /sa-tb-coneguem-tale-bot-v2\.webp/, "la sessió d'iniciació usa la il·lustració revisada amb el model real de Tale-Bot");
 assert.match(taleBotDiscoveries.html, /guia\/fira-descobertes\/index\.html/, "la situació principal enllaça els recursos docents en una pàgina separada");
 assert.doesNotMatch(taleBotDiscoveries.html, /Intencions d'aprenentatge i criteris d'èxit|Diari de proves i mostra final/, "els recursos extensos no tornen a carregar-se al final de la situació principal");
-const taleBotFairGuide = renderer.parse(fs.readFileSync(path.join(root, "_content/pages/guia-fira-descobertes.md"), "utf8"), "https://example.test/_content/pages/guia-fira-descobertes.md");
+const taleBotFairGuide = renderer.parse(fs.readFileSync(path.join(root, "_content/guies/guia-fira-descobertes.md"), "utf8"), "https://example.test/_content/guies/guia-fira-descobertes.md");
 assert.match(taleBotFairGuide.html, /aquesta pàgina reuneix els recursos docents ampliats/i, "la guia docent complementària té un context propi");
 assert.match(taleBotFairGuide.html, /Challenge Booklet[\s\S]*tampoc no es considera adaptat fins que se’n puga verificar/i, "la guia manté explícit el límit de verificació del quadern oficial");
 assert.match(taleBotFairGuide.html, /reduïu la ruta a dues destinacions[\s\S]*canvieu només una ordre/i, "la guia ofereix una bastida clara quan l'equip encara no arriba a la fita");
@@ -1204,7 +1204,7 @@ const expectedDetailKinds = [
   ["activitat", "activitats", "activitat-", 10],
   ["tutorial", "tutorials", "tutorial-", 36],
   ["robot", "robots", "robot-", 6],
-  ["guia", "pages", "guia-", 4]
+  ["guia", "guies", "guia-", 4]
 ];
 for (const [route, folder, prefix, minExpected] of expectedDetailKinds) {
   const redirectPage = fs.readFileSync(path.join(dist, route, "index.html"), "utf8");

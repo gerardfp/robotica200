@@ -104,7 +104,7 @@ def main():
         "activitat": ("activity", "activitats", "activitat-"),
         "tutorial": ("tutorial", "tutorials", "tutorial-"),
         "robot": ("robot", "robots", "robot-"),
-        "guia": ("guide", "pages", "guia-"),
+        "guia": ("guide", "guies", "guia-"),
     }
     required_fields = {
         "activity": ("title", "description", "topic", "cycle_label", "duration", "order"),
