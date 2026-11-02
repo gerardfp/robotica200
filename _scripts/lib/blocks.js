@@ -401,10 +401,10 @@ atura-ho tot :: cap #ff8c00
 };
 
 /**
- * Compila tots els exemples de blocs a _assets/blocks/
+ * Compila tots els exemples de blocs a _assets/blocks/ (o a la destinació indicada)
  */
-function buildAllBlocks() {
-  const outDir = path.resolve(__dirname, '../../_assets/blocks');
+function buildAllBlocks(customOutDir = null) {
+  const outDir = customOutDir || path.resolve(__dirname, '../../_assets/blocks');
   if (!fs.existsSync(outDir)) {
     fs.mkdirSync(outDir, { recursive: true });
   }

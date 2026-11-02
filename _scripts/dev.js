@@ -19,6 +19,7 @@ const { execFile } = require('node:child_process');
 const { setCachedMakeCodeSVG, setCachedMakeCodeByHash } = require('./lib/makecode-cache');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
+const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
 const BUILD_SCRIPT = path.join(__dirname, 'build.js');
 const DEFAULT_PORT = Number(process.env.PORT) || 8000;
 
@@ -152,8 +153,9 @@ function setupWatchers() {
   const changedFiles = new Set();
 
   function triggerChange(relPath) {
-    // Evitem reaccionar si s'edita el propi dev.js, la memòria cau o si el build està escrivint SVGs a _assets/blocks
+    // Evitem reaccionar si s'edita el propi dev.js, dist, la memòria cau o si el build està escrivint SVGs a _assets/blocks
     if (relPath === '_scripts/dev.js') return;
+    if (relPath.startsWith('dist' + path.sep)) return;
     if (relPath.startsWith('_cache' + path.sep)) return;
     if (isBuilding && relPath.startsWith(path.join('_assets', 'blocks') + path.sep)) return;
 
@@ -189,9 +191,28 @@ function setupWatchers() {
           broadcast('reload');
         }
       } else if (isCssOnly) {
+        for (const file of files) {
+          if (file.startsWith('_css' + path.sep)) {
+            const dest = path.join(DIST_DIR, file);
+            try {
+              fs.mkdirSync(path.dirname(dest), { recursive: true });
+              fs.copyFileSync(path.join(ROOT_DIR, file), dest);
+            } catch (_) {}
+          }
+        }
         console.log(`🎨 Actualitzant CSS en viu (${clients.size} client/s connectat/s)`);
         broadcast('css');
       } else {
+        for (const file of files) {
+          const src = path.join(ROOT_DIR, file);
+          const dest = path.join(DIST_DIR, file);
+          try {
+            if (fs.existsSync(src) && fs.statSync(src).isFile()) {
+              fs.mkdirSync(path.dirname(dest), { recursive: true });
+              fs.copyFileSync(src, dest);
+            }
+          } catch (_) {}
+        }
         console.log(`🔄 Recarregant navegador (${clients.size} client/s connectat/s)`);
         broadcast('reload');
       }
@@ -252,10 +273,10 @@ function createServer() {
       return;
     }
 
-    // Resolució segura de fitxer dins de ROOT_DIR
+    // Resolució segura de fitxer dins de DIST_DIR
     const safeRel = pathname.replace(/^\/+/, '');
-    let filePath = path.resolve(ROOT_DIR, safeRel);
-    if (!filePath.startsWith(ROOT_DIR)) {
+    let filePath = path.resolve(DIST_DIR, safeRel);
+    if (!filePath.startsWith(DIST_DIR)) {
       res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
       res.end('403 Forbidden');
       return;

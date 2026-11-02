@@ -7,6 +7,7 @@ const path = require("node:path");
 const renderer = require("../lib/markdown.js");
 
 const root = path.resolve(__dirname, "../..");
+const dist = path.join(root, "dist");
 const pilotPath = path.join(root, "_content/situacions/sp-llistes-condicions.md");
 const pilot = renderer.parse(fs.readFileSync(pilotPath, "utf8"), "https://example.test/_content/situacions/sp-llistes-condicions.md");
 assert.equal(pilot.data.title, "Lògica per a una escola oberta");
@@ -566,7 +567,7 @@ assert.match(taleBotFairGuide.html, /Challenge Booklet[\s\S]*tampoc no es consid
 assert.match(taleBotFairGuide.html, /reduïu la ruta a dues destinacions[\s\S]*canvieu només una ordre/i, "la guia ofereix una bastida clara quan l'equip encara no arriba a la fita");
 assert.match(taleBotFairGuide.html, /apague Tale-Bot[\s\S]*retorne les targetes i els accessoris/i, "la guia converteix la cura del robot i els materials en una rutina observable");
 assert.match(taleBotFairGuide.html, /curs docent oficial de Tale-Bot Pro/i, "la guia atribueix els consells de suport docent a una font del fabricant");
-assert.match(fs.readFileSync(path.join(root, "guia/fira-descobertes/index.html"), "utf8"), /href="\.\.\/\.\.\/situacions-aprenentatge\/index\.html"/, "la pàgina docent ofereix una tornada accessible al catàleg de situacions");
+assert.match(fs.readFileSync(path.join(dist, "guia/fira-descobertes/index.html"), "utf8"), /href="\.\.\/\.\.\/situacions-aprenentatge\/index\.html"/, "la pàgina docent ofereix una tornada accessible al catàleg de situacions");
 assert.match(taleBotDiscoveries.html, /no té intencions humanes/i, "la sessió d'iniciació diferencia el comportament programat de la intencionalitat humana");
 assert.match(taleBotDiscoveries.html, /deu gots de paper lleugers/i, "la sessió d'iniciació adapta el material públic dels deu gots com a fites segures");
 assert.match(taleBotDiscoveries.html, /sa-tb-benvigut-gots-v1\.png/, "la sessió inicial intercala un visual propi dels deu gots i el Tale-Bot real");
@@ -1194,9 +1195,9 @@ for (const robot of ["coding-express", "tale-bot", "coding-set", "codey-rocky", 
   assert.ok((robotSituationCounts.get(robot) || 0) >= 5, `${robot} necessita almenys cinc situacions actives pròpies o adaptades`);
 }
 assert.equal(new Set([...imageOwners.values()]).size, activeFiles.length, "cada SDA activa té almenys una imatge pròpia i no compartida amb una altra fitxa");
-const situationCatalogPage = fs.readFileSync(path.join(root, "situacions-aprenentatge/index.html"), "utf8");
+const situationCatalogPage = fs.readFileSync(path.join(dist, "situacions-aprenentatge/index.html"), "utf8");
 for (const slug of slugs) {
-  assert.ok(fs.existsSync(path.join(root, "situacio", slug, "index.html")), `${slug} té la seua pàgina HTML pre-renderitzada`);
+  assert.ok(fs.existsSync(path.join(dist, "situacio", slug, "index.html")), `${slug} té la seua pàgina HTML pre-renderitzada`);
   assert.match(situationCatalogPage, new RegExp(`href="\\.\\./situacio/${slug}/index\\.html"`), `${slug} enllaça des del catàleg d'SDAs`);
 }
 const expectedDetailKinds = [
@@ -1206,7 +1207,7 @@ const expectedDetailKinds = [
   ["guia", "pages", "guia-", 4]
 ];
 for (const [route, folder, prefix, minExpected] of expectedDetailKinds) {
-  const redirectPage = fs.readFileSync(path.join(root, route, "index.html"), "utf8");
+  const redirectPage = fs.readFileSync(path.join(dist, route, "index.html"), "utf8");
   assert.match(redirectPage, /data-legacy-redirect=/, `${route}/index.html ofereix redirecció de compatibilitat per a ?id=slug`);
   assert.match(redirectPage, /_js\/ui\.js\?v=/, `${route} carrega el controlador lleuger d'interfície`);
   const docs = fs.readdirSync(path.join(root, "_content", folder)).filter(file => file.startsWith(prefix) && file.endsWith(".md"));
@@ -1217,7 +1218,7 @@ for (const [route, folder, prefix, minExpected] of expectedDetailKinds) {
   assert.ok(activeDocs.length >= minExpected, `${route} té almenys els ${minExpected} documents Markdown base`);
   for (const file of activeDocs) {
     const slug = file.slice(prefix.length, -3);
-    assert.ok(fs.existsSync(path.join(root, route, slug, "index.html")), `${route}/${slug}/index.html s'ha generat al build`);
+    assert.ok(fs.existsSync(path.join(dist, route, slug, "index.html")), `${route}/${slug}/index.html s'ha generat al build`);
   }
 }
 const activitiesDir = path.join(root, "_content/activitats");
@@ -1257,7 +1258,7 @@ for (const file of activityFiles) {
   assert.doesNotMatch(rendered.html, /class="detail-subsection-title"/, `${file}: no fusiona seccions principals com a subtítols`);
 }
 for (const pageName of ["pensament-computacional", "robotica-educativa", "situacions-aprenentatge"]) {
-  const page = fs.readFileSync(path.join(root, pageName, "index.html"), "utf8");
+  const page = fs.readFileSync(path.join(dist, pageName, "index.html"), "utf8");
   assert.doesNotMatch(page, /alpine-ajax@/, `${pageName} no depén d'Alpine AJAX`);
   assert.doesNotMatch(page, /alpinejs@/, `${pageName} no depén d'Alpine en el client`);
   assert.match(page, /_js\/ui\.js\?v=/, `${pageName} carrega el controlador lleuger d'interfície`);
@@ -1270,12 +1271,12 @@ const robotMarkdown = fs.readFileSync(path.join(root, "_content/robots/robot-spi
 const robotRecord = renderer.parse(robotMarkdown, "https://example.test/_content/robots/robot-spike.md");
 assert.equal(robotRecord.data.specs.length, 5, "les especificacions de robot es llegeixen del front matter");
 assert.equal(robotRecord.data.official_resources.length, 2, "els recursos oficials de robot es llegeixen del front matter");
-const sharedPage = fs.readFileSync(path.join(root, "situacio/index.html"), "utf8");
+const sharedPage = fs.readFileSync(path.join(dist, "situacio/index.html"), "utf8");
 const uiSource = fs.readFileSync(path.join(root, "_js/ui.js"), "utf8");
 const buildSource = fs.readFileSync(path.join(root, "_scripts/build.js"), "utf8");
 const styles = fs.readFileSync(path.join(root, "_css/styles.css"), "utf8");
 assert.match(sharedPage, /data-legacy-redirect=/, "situacio/index.html redirigeix els enllaços antics ?id=slug");
-assert.equal(fs.readdirSync(path.join(root, "situacio")).filter(name => fs.statSync(path.join(root, "situacio", name)).isDirectory()).length, activeFiles.length, "totes les SDAs actives tenen la seua pàgina pre-renderitzada");
+assert.equal(fs.readdirSync(path.join(dist, "situacio")).filter(name => fs.statSync(path.join(dist, "situacio", name)).isDirectory()).length, activeFiles.length, "totes les SDAs actives tenen la seua pàgina pre-renderitzada");
 assert.match(uiSource, /new URLSearchParams\(window\.location\.search\)/, "el controlador gestiona els paràmetres de cerca de la URL");
 assert.doesNotMatch(uiSource, /x-target\./, "la navegació no depén d'Alpine AJAX");
 assert.match(styles, /@view-transition\s*\{\s*navigation:\s*auto;\s*\}/, "el full d'estils activa View Transitions entre pàgines");

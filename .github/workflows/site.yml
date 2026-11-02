@@ -31,17 +31,14 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: robotica200-web
-          path: |
-            .
-            !.git/
-            !.github/
+          path: dist
           include-hidden-files: true
           if-no-files-found: error
       - name: Preparar artefacto de Pages
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PUBLISH_PAGES == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: dist
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && vars.PUBLISH_PAGES == 'true'
