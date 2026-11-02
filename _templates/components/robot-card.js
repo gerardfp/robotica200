@@ -9,7 +9,7 @@ function RobotCard({ item, root = '../' }) {
 
   return `<a id="${escapeAttr(item.id)}" href="${escapeAttr(r + item.url)}" class="robot-card robot-${escapeAttr(item.prefix)}">
     <div class="robot-card-media">
-      <span class="robot-age-badge"><span class="badge-icon">👤</span> <span>${escapeHTML(item.edat)}</span></span>
+      <span class="robot-age-badge"><span class="badge-icon">🎓</span> <span>${escapeHTML(item.cicle || item.edat)}</span></span>
       <img src="${escapeAttr(`${r}_assets/robots/${item.slug}.png`)}" alt="${escapeAttr(item.nom)}" class="robot-card-img" width="400" height="225" loading="lazy">
     </div>
     <div class="robot-card-body">

@@ -8,14 +8,10 @@
 
 - [x] Les pàgines guia estan a _content/guies/ (les no usades de _content/pages s'han esborrat).
 
-- [ ] Les pàgines se descopronen quan se mostra un svg de blocks
+- [ ] ¿Les pàgines se descopronen quan se mostra un svg de blocks?
 
-- [ ] Les temàtiques i les matèries de les situacions s'han de redefinir correctament
+- [ ] Les temàtiques i les matèries de les situacions s'han de redefinir correctament 
 
-- [ ] colors:
-    - coding-express: roig
-    - tale-bot: taronja
-    - coding-set: verd
-    - codey-rocky: blau
-    - spike: groc
-    - microbit: rosa    
+- [ ] En les tarjetes de situacions el sa-challenge no cap en algunes i se talla per baix
+
+- [ ] El site-footer no sap fer-lo el Gemini 3.8 Flash, y els robots han dixat de moure's

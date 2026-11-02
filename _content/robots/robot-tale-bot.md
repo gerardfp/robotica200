@@ -2,7 +2,8 @@
 title: Tale-Bot
 description: El robot narrador que parla, llegeix mapes interactius i dibuixa
 icon: 🦔
-age: Educació Infantil i primer cicle (3-7 anys)
+cicle: Infantil i primer cicle
+age: Infantil i primer cicle
 order: 2
 specs:
 - ✓ Botons superiors direccionals

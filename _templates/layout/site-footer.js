@@ -37,20 +37,25 @@ function SiteFooter() {
   <footer class="site-footer">
     <div class="site-footer-waves" aria-hidden="true">
       <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
-        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,60 L0,60 Z"></path>
-        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,60 L0,60 Z"></path>
+        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,62 L0,62 Z"></path>
+        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,62 L0,62 Z"></path>
+        <path class="footer-wave-line footer-wave-line-top" d="M0,18 C280,36 560,8 840,28 C1120,12 1300,34 1440,20"></path>
+        <path class="footer-wave-line footer-wave-line-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26"></path>
+        <path class="footer-wave-line footer-wave-line-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32"></path>
       </svg>
     </div>
-    <div class="container site-footer-inner">
-      <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
-      <div class="footer-accent-dashes" aria-hidden="true">
-        <span class="dash dash-red"></span>
-        <span class="dash dash-yellow"></span>
-        <span class="dash dash-blue"></span>
-      </div>
-      <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
-      <div class="footer-robots" aria-hidden="true">
-        ${FOOTER_BOTS.map(b => `<div class="fbot">${footerBot(b)}</div>`).join('')}
+    <div class="site-footer-body">
+      <div class="container site-footer-inner">
+        <p class="site-footer-motto">Aprendre fent, programar per a un futur millor.</p>
+        <div class="footer-accent-dashes" aria-hidden="true">
+          <span class="dash dash-red"></span>
+          <span class="dash dash-yellow"></span>
+          <span class="dash dash-blue"></span>
+        </div>
+        <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+        <div class="footer-robots" aria-hidden="true">
+          ${FOOTER_BOTS.map(b => `<div class="fbot">${footerBot(b)}</div>`).join('')}
+        </div>
       </div>
     </div>
   </footer>`;

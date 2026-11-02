@@ -18,10 +18,10 @@ function SiteHeader({ activeNav = '', root = '' } = {}) {
         </div>
       </a>
       <nav class="header-nav" aria-label="Navegació principal">
-        <a href="${r}index.html" class="nav-btn${active === 'inici' ? ' active' : ''}">Inici</a>
-        <a href="${r}pensament-computacional/index.html" class="nav-btn${active === 'pensament' ? ' active' : ''}">Pensament computacional</a>
-        <a href="${r}robotica-educativa/index.html" class="nav-btn${isRobots ? ' active' : ''}">Robòtica educativa</a>
-        <a href="${r}situacions-aprenentatge/index.html" class="nav-btn${active === 'situacions' ? ' active' : ''}">Situacions d'aprenentatge</a>
+        <a href="${r}index.html" class="nav-btn nav-btn-inici${active === 'inici' ? ' active' : ''}" data-nav="inici">Inici</a>
+        <a href="${r}pensament-computacional/index.html" class="nav-btn nav-btn-pensament${active === 'pensament' ? ' active' : ''}" data-nav="pensament">Pensament computacional</a>
+        <a href="${r}robotica-educativa/index.html" class="nav-btn nav-btn-robotica${isRobots ? ' active' : ''}" data-nav="robotica">Robòtica educativa</a>
+        <a href="${r}situacions-aprenentatge/index.html" class="nav-btn nav-btn-situacions${active === 'situacions' ? ' active' : ''}" data-nav="situacions">Situacions d'aprenentatge</a>
       </nav>
     </div>
   </header>`;

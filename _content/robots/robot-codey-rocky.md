@@ -2,7 +2,8 @@
 title: Codey Rocky
 description: El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues
 icon: 🐼
-age: Primària (6-12 anys)
+cicle: Primer i segon cicle
+age: Primer i segon cicle
 order: 4
 specs:
 - ✓ Pantalla matriu 16x8 LEDs
