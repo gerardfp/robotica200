@@ -22,8 +22,6 @@ _El tren Coding Express arriba a una bifurcació entre l’estació del parc i u
 
 Una línia imaginària de barri connecta l’estació amb el parc i la biblioteca. La via en Y ofereix dues branques i la classe dissenya una manera clara d’encaminar una passatgera a una d’elles. El joc comença amb bitllets de colors i, després, combina targetes, pictogrames, vies, agulla roja i passatgers de Coding Express.
 
-<p> nek</p>
-
 La condició «si el bitllet té el símbol del parc, aleshores triem la branca del parc» és primer una regla compartida entre persones. La persona conductora interpreta el bitllet i mou manualment la palanca roja; ni el bitllet ni el color activen l’agulla de manera automàtica. Així separem el concepte d’una decisió condicional de l’acció mecànica real del tren.
 
 ## 🎯 Objectius i paraules clau
