@@ -10,7 +10,7 @@ image: _assets/tutorials/tb-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Programa dos avanços amb els botons físics. Comprova com el robot guarda les ordres i com esborra l’última abans d’iniciar el recorregut.
+Programeu dos avanços amb els botons físics. Comproveu com el robot guarda les ordres i com esborra l’última abans d’iniciar el recorregut.
 
 - Distingir les tecles Endavant, Enrere, Gir Dreta i Gir Esquerra.
 - Aprendre la rutina del botó Delete (X) per evitar acumular ordres velles.
@@ -29,27 +29,27 @@ Programa dos avanços amb els botons físics. Comprova com el robot guarda les o
 
 ## 👣 Seqüència guiada
 
-### 1. Engegar el robot
+### 1. Engegueu el robot
 
-Encén el Tale-Bot amb el control posterior i espera la salutació. Si no respon, posa’l a carregar i torna a provar-lo.
+Enceneu el Tale-Bot amb el control posterior i espereu la salutació. Si no respon, poseu-lo a carregar i torneu a provar-lo.
 
 ### 2. La regla d'or de la X
 
-Abans d’un camí nou, mantín premut el botó X més d’un segon i comprova que els indicadors s’apaguen. Una pulsació breu, de menys d’un segon, elimina només l’última ordre.
+Abans d’un camí nou, manteniu premut el botó X més d’un segon i comproveu que els indicadors s’apaguen. Una pulsació breu, de menys d’un segon, elimina només l’última ordre.
 
 ### 3. Programar una recta
 
-Marca el punt d’inici i orienta el robot cap endavant. Prem:
+Marqueu l’inici i orienteu el robot cap endavant. Premeu:
 
 **Endavant → Endavant → Play**
 
-Observa on s’atura i mesura la distància recorreguda. Comprova la mida del pas configurada al teu robot; no assumesques que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.
+Observeu on s’atura i mesureu la distància recorreguda. Comproveu la mida del pas del vostre robot; no suposeu que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.
 
-> **💡 Consell docent per a la sessió:** Per als girs, ensenya als infants que TaleBot gira sobre si mateix sense avançar casella.
+> **💡 Consell docent per a la sessió:** Mostreu que Tale-Bot gira sobre si mateix: el gir canvia la direcció, però no l’avança cap a una altra casella.
 
 ## 🧪 Prova, depura i reflexiona
 
-Dibuixa en un mapa gran la posició inicial i la destinació. Una parella crea la seqüència i una altra la traça amb el dit abans de prémer els botons; anota la casella final prevista, executa-la i compara-la amb la posició on ha arribat el Tale-Bot. Si difereixen, revisa orientació inicial i una ordre cada vegada.
+Dibuixeu en un mapa gran l’inici i la destinació. Una parella prepara la seqüència i una altra la traça amb el dit abans de prémer els botons. Anoteu on hauria d’acabar, executeu-la i compareu-ho amb la posició real. Si difereixen, reviseu l’orientació inicial i canvieu una ordre cada vegada.
 
 ### Preguntes per comprovar
 

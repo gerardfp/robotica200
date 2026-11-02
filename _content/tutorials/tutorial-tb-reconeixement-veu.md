@@ -10,9 +10,9 @@ image: _assets/tutorials/tb-reconeixement-veu.png
 
 ## 🎯 Repte i objectius
 
-Enregistra missatges breus perquè Tale-Bot els reproduïsca durant una ruta i crea una narració amb veu pròpia. El repte diferencia clarament l’enregistrament d’àudio del reconeixement de parla: el robot no interpreta ordres parlades.
+Enregistreu un missatge breu perquè Tale-Bot el reproduïsca durant una ruta. La pràctica diferencia l’enregistrament d’àudio del reconeixement de parla: el robot no interpreta ordres parlades.
 
-- Treballar l'expressió oral i la dicció clara.
+- Preparar i enregistrar una frase breu, sense dades personals.
 - Afegir el missatge gravat a una seqüència de botons.
 - Crear rutes narratives de contacontes interactius.
 
@@ -29,23 +29,23 @@ Enregistra missatges breus perquè Tale-Bot els reproduïsca durant una ruta i c
 
 ## 👣 Seqüència guiada
 
-### 1. Activar la gravació
+### 1. Trieu i enregistreu un missatge
 
-Mantín premut el botó de gravació i digues una frase breu, sense noms ni dades personals. Solta el botó quan acabes; la gravació pot durar fins a 30 segons.
+Trieu una frase curta, per exemple «Hola, sóc el conill!». Manteniu premut el botó de gravació mentre parleu i deixeu-lo anar en acabar. Cada gravació pot durar fins a 30 segons.
 
-### 2. Gravar el missatge
+### 2. Comproveu que s’ha enregistrat
 
-Digues, per exemple, «Hola, sóc el conill!». En acabar, deixa anar el botó. El robot reproduirà el missatge perquè el pugues escoltar i comprovar.
+Després de deixar anar el botó, escolteu la reproducció. Si no se sent o la frase no s’entén, torneu a gravar-la en un lloc més tranquil. No cal que l’alumnat compartisca la seua veu: una persona adulta pot enregistrar el missatge.
 
 ### 3. Seqüenciar el conte
 
-Mantín X més d’un segon per esborrar les ordres anteriors i comprova que els indicadors s’apaguen. Després prem **Endavant → micròfon breument → Dreta → Endavant → Play**. La pulsació breu del botó de gravació afegeix l’últim missatge a la seqüència; no comença una gravació nova.
+Manteniu X més d’un segon per esborrar les ordres anteriors i comproveu que els indicadors s’apaguen. Després premeu **Endavant → gravació breument → Dreta → Endavant → Play**. La pulsació breu del botó de gravació afegeix el missatge a la seqüència; mantindre’l premut inicia una gravació nova.
 
 > **💡 Consell docent:** Si una criatura prefereix no gravar la seua veu, pot triar la frase o ordenar les targetes mentre una persona adulta fa la gravació.
 
 ## 🧪 Prova, depura i reflexiona
 
-Executa la ruta i comprova que el missatge sona després del primer avanç. Si no sona, revisa que has gravat una frase, que els indicadors mostren l’ordre del botó de gravació i que el volum és audible. Repetiu la prova des de la mateixa posició inicial.
+Executeu la ruta i comproveu que el missatge sona després del primer avanç. Si no sona, reviseu que heu gravat una frase i que heu afegit l’ordre amb una pulsació breu. Repetiu la prova des de la mateixa posició inicial.
 
 ### Preguntes per comprovar
 
@@ -55,7 +55,7 @@ Executa la ruta i comprova que el missatge sona després del primer avanç. Si n
 
 ## ♿ Accessibilitat i seguretat
 
-Ofereix un conjunt de targetes d'ordres i una resposta enregistrada per l'adult. Participar parlant i consentir l'enregistrament són opcions separades.
+Oferiu targetes amb les ordres i un missatge enregistrat per una persona adulta. Parlar i consentir l’enregistrament són opcions diferents.
 
 ## ✅ Evidències d’aprenentatge
 - Mapa amb la ruta i el lloc on sona el missatge.

@@ -10,7 +10,7 @@ image: _assets/tutorials/sp-motors-sensors.png
 
 ## 🎯 Repte i objectius
 
-Construeix una transmissió amb engranatges i relaciona els graus del motor amb el moviment de les rodes. La prova combina el muntatge físic i la programació del motor angular del Hub SPIKE Prime.
+Construïu una transmissió amb engranatges i relacioneu les voltes del motor amb el moviment de les rodes. Després, feu que la base s’ature en detectar una targeta roja.
 
 - Explicar que l’engranatge de 8 dents fa tres voltes per cada volta del de 24.
 - Fer avançar una base amb dos motors fins que el sensor detecte una targeta roja.
@@ -32,15 +32,15 @@ Construeix una transmissió amb engranatges i relaciona els graus del motor amb 
 
 ### 1. Munteu els engranatges
 
-Munta un eix que connecte el motor a l'engranatge de 8 dents i aquest al de 24 de la roda. Gira'l a mà amb el Hub apagat i observa que les peces giren sense encallar-se. Amb aquest exemple, el motor gira tres voltes per cada volta de l'engranatge gran.
+Munteu els engranatges de 8 i 24 dents de manera que encaixen i giren sense encallar-se. Amb el Hub apagat, gireu el menut una volta i observeu el gran: en aquest muntatge, el menut ha de fer tres voltes perquè el gran en faça una. La relació canvia si canvieu la mida o la posició dels engranatges.
 
 ### 2. Connecteu els motors i el sensor
 
-Connecteu el motor esquerre al port B, el dret al D i el sensor de color al C. Fixeu el sensor a la part davantera, orientat cap a terra i prou prop per llegir la targeta sense tocar-la. En SPIKE App, prepareu la base motriu amb els ports B i D.
+Connecteu el motor esquerre al port B, el dret al D i el sensor de color al C. Fixeu el sensor al davant, mirant cap a terra i prou prop per llegir la targeta sense tocar-la. En SPIKE App, seleccioneu B i D com a motors de la base.
 
 ### 3. Condició de parada
 
-Programa la base perquè avance a velocitat baixa i s’ature quan el sensor C detecte roig. En la teua versió de SPIKE App, configura la parella de motors B i D abans d’afegir la condició:
+Programeu la base perquè avance a velocitat baixa i s’ature quan el sensor C detecte el color roig. En SPIKE App, seleccioneu els motors B i D abans d’afegir la condició:
 
 ```spikeapp
 quan comença el programa
@@ -51,7 +51,7 @@ atura els motors [B v] i [D v]
 
 Aquest dibuix resumeix les ordres: selecciona els blocs equivalents de SPIKE App. Posa el robot darrere de la targeta roja i prem iniciar. La parada pot quedar un poc més enllà de la línia perquè el robot continua avançant mentre la detecta.
 
-> **💡 Consell docent per a la sessió:** Pregunta socràtica: 'Gira més ràpid la roda o el motor?' (El motor gira 3 vegades per cada volta de roda).
+> **💡 Consell docent per a la sessió:** Abans de provar, demaneu: «Quantes voltes farà l’engranatge menut mentre el gran en fa una?» Després, comproveu-ho amb el Hub apagat.
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -74,4 +74,4 @@ Comenceu amb una velocitat baixa, una targeta roja ampla i un trajecte curt. Una
 
 ## 🔗 Fonts oficials i límits
 
-LEGO Education · SPIKE Prime technical specifications · [https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+Les [especificacions oficials de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) descriuen el motor angular i el sensor de color. La parada depén de la posició, l’altura i la llum de l’aula; proveu primer amb una targeta ampla i una velocitat baixa.

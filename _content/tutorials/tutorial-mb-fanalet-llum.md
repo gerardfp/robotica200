@@ -9,7 +9,7 @@ image: _assets/tutorials/mb-fanalet-llum.png
 ---
 ## 🎯 Repte i objectius
 
-![Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum.](_assets/imatges/microbit-fanalet.webp)
+![Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum.](../../_assets/imatges/microbit-fanalet.webp)
 
 Construeix un fanalet que responga a la llum ambiental i ajusta el llindar amb proves en espais diferents. La matriu LED de micro:bit pot funcionar alhora com a eixida visual i com a sensor de llum.
 
@@ -32,11 +32,11 @@ Construeix un fanalet que responga a la llum ambiental i ajusta el llindar amb p
 
 ### 1. Crear el projecte
 
-Obri MakeCode, crea un projecte nou i comprova la simulació. El projecte oficial de referència anomena la lectura «light level»; en MakeCode, cerca la lectura del nivell de llum a la categoria Entrada.
+Obriu MakeCode, creeu un projecte nou i comproveu el simulador. En la categoria **Entrada**, busqueu la lectura del nivell de llum. El nom pot aparéixer en anglés («light level») si l’editor no està traduït.
 
 ### 2. Fer que el fanalet decidisca
 
-Dins de «per sempre», posa una peça «si… aleshores… si no». En la condició, compara **nivell de llum < 100**. Dins de «aleshores», afegeix una icona; dins de «si no», posa «neteja la pantalla». La lectura de llum és a **Entrada** i la comparació a **Lògica**. El valor 100 és un punt de partida que ajustareu després.
+Dins de «per sempre», poseu una peça «si… aleshores… si no». En la condició, compareu **nivell de llum < 100**. Dins d’«aleshores», afegiu una icona; dins de «si no», poseu «neteja la pantalla». La lectura de llum és a **Entrada** i la comparació a **Lògica**. El valor 100 és només un punt de partida.
 
 ```makecode
 basic.forever(function () {
@@ -50,7 +50,7 @@ basic.forever(function () {
 
 ### 3. Provar i calibrar
 
-Per saber quin valor convé posar, guarda el fanalet i crea **un altre projecte de prova**. En «en prémer el botó A», posa «mostra el número» amb «nivell de llum» dins:
+Per triar un valor adequat, deseu el fanalet i creeu **un altre projecte de prova**. En «en prémer el botó A», poseu «mostra el número» amb «nivell de llum» dins:
 
 ```makecode
 input.onButtonPressed(Button.A, function () {
@@ -58,19 +58,19 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-Descarrega aquest projecte a la placa. Prem A i anota el número en un lloc clar; repeteix fent ombra suaument a la matriu. La primera lectura pot ser zero mentre s’activa el sensor: torna a prémer A per comprovar-la.
+Descarregueu aquest projecte a la placa. Premeu A i anoteu el nombre en un lloc clar; repetiu fent ombra suaument a la matriu. La primera lectura pot ser zero mentre s’activa el sensor: torneu a prémer A per comprovar-la.
 
-Torna a obrir el projecte del fanalet i posa un valor entre les dues lectures. Per exemple, si has anotat 30 amb ombra i 150 amb llum, prova amb 90. Descarrega’l i comprova que la icona apareix quan fas ombra.
+Torneu a obrir el projecte del fanalet i poseu un valor entre les dues lectures. Per exemple, si heu anotat 30 amb ombra i 150 amb llum, proveu amb 90. Descarregueu-lo i comproveu que la icona apareix quan feu ombra.
 
 > **💡 Consell docent:** els LED que mostren la icona també s’utilitzen per estimar la llum. Comprova el comportament amb la placa concreta del centre i deixa un breu interval entre lectures si la pantalla parpelleja.
 
 ### 4. Dissenyar una versió pròpia
 
-Canvia el diamant per una estrella, una casa o un símbol creat per l’alumnat. Si la placa queda connectada a un portapiles, col·loca-la de manera estable i sense tapar-la completament amb materials que puguen escalfar-se.
+Canvieu el diamant per una estrella, una casa o un símbol creat per l’alumnat. Si la placa queda connectada a un portapiles, col·loqueu-la estable i no la tapeu amb materials que puguen acumular calor.
 
 ## 🧪 Prova, depura i reflexiona
 
-Prova la placa en un lloc clar i després tapa-la suaument. Anota quan apareix el dibuix. La lectura va de 0 (molt fosc) a 255 (molt clar): si el canvi no es veu, ajusta el valor 100 i torna a provar sense canviar l’orientació de la placa.
+Proveu la placa en un lloc clar i després feu-li ombra suaument. Anoteu quan apareix el dibuix. La lectura va de 0 (molt fosc) a 255 (molt clar): si el canvi no es veu, ajusteu el valor 100 i torneu a provar sense canviar l’orientació de la placa.
 
 ### Preguntes per comprovar
 
@@ -81,7 +81,7 @@ Prova la placa en un lloc clar i després tapa-la suaument. Anota quan apareix e
 
 ## ♿ Accessibilitat i seguretat
 
-Facilita un projecte inicial amb el bucle preparat i deixa que cada parella trie la icona o el llindar. Com a extensió, recolliu cinc lectures per espai i compareu-les; manteniu la placa en la mateixa orientació per fer una comparació més justa.
+Faciliteu un projecte inicial amb el bucle preparat i deixeu que cada parella trie la icona o el llindar. Com a ampliació, recolliu cinc lectures per espai i compareu-les; manteniu la placa en la mateixa orientació.
 
 ## ✅ Evidències d’aprenentatge
 - Projecte del fanalet i projecte de prova de la llum.
@@ -90,6 +90,4 @@ Facilita un projecte inicial amb el bucle preparat i deixa que cada parella trie
 
 ## 🔗 Fonts oficials i límits
 
-Proposta pròpia inspirada en [Nightlight de micro:bit](https://www.microbit.org/projects/make-it-code-it/nightlight/) i en la documentació de [lectura del nivell de llum de MakeCode](https://makecode.microbit.org/reference/input/light-level). El recurs oficial explica que la matriu LED actua com a sensor i recomana ajustar el llindar a les condicions locals.
-
-La proposta està adaptada de [Nightlight de micro:bit](https://www.microbit.org/projects/make-it-code-it/nightlight/) i usa el bloc oficial [nivell de llum](https://makecode.microbit.org/reference/input/light-level). La lectura va de 0 a 255 i pot variar segons la llum i la posició de la placa.
+Adaptació pròpia del projecte oficial [Nightlight de micro:bit](https://www.microbit.org/projects/make-it-code-it/nightlight/), que usa el bloc [nivell de llum de MakeCode](https://makecode.microbit.org/reference/input/light-level). La lectura va de 0 a 255 i pot variar segons la llum i la posició de la placa; per això cal ajustar el llindar a l’aula.

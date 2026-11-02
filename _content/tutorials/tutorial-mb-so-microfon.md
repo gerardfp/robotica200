@@ -10,7 +10,7 @@ image: _assets/tutorials/mb-so-microfon.png
 
 ## 🎯 Repte i objectius
 
-Fes que una micro:bit V2 reaccione a un so i compara les lectures en silenci i després d’una palmada suau. El micròfon i l’altaveu integrats necessaris per a aquesta pràctica són de la versió V2.
+Feu que una micro:bit V2 reaccione a un so i compareu les lectures en silenci i després d’una palmada suau. El micròfon i l’altaveu integrats necessaris per a aquesta pràctica són de la versió V2.
 
 - Mostrar una icona quan la placa detecta un so fort.
 - Comparar el nivell de so en dues situacions.
@@ -31,11 +31,21 @@ Fes que una micro:bit V2 reaccione a un so i compara les lectures en silenci i d
 
 ### 1. Esdeveniment d'aplaudiment
 
-En MakeCode, crea un projecte nou. En **Entrada**, busca «quan s’escolta un so fort» i posa-hi dins «mostra una icona», una pausa d’un segon i «neteja la pantalla». Descarrega el programa a la V2 i fes una palmada suau: la icona hauria d’aparéixer i desaparèixer. Espera que desaparega abans de repetir la prova. Si no respon, acosta’t una mica o revisa el llindar de so de l’editor, sense fer sons forts. La [referència oficial](https://makecode.microbit.org/reference/input/on-sound) mostra aquesta peça i un exemple.
+En MakeCode, creeu un projecte nou. En **Entrada**, busqueu «quan s’escolta un so fort» i poseu-hi dins «mostra una icona», una pausa d’un segon i «neteja la pantalla». Aquest exemple mostra l’ordre dels blocs:
+
+```makecode
+input.onSound(DetectedSound.Loud, function () {
+    basic.showIcon(IconNames.Heart)
+    basic.pause(1000)
+    basic.clearScreen()
+})
+```
+
+Descarregueu el programa a la V2 i feu una palmada suau: la icona hauria d’aparéixer i desaparèixer. Espereu que desaparega abans de repetir la prova. Si no respon, apropeu-vos un poc o reviseu el llindar de so de l’editor, sense fer sorolls forts. La [referència oficial](https://makecode.microbit.org/reference/input/on-sound) mostra aquesta peça i un exemple.
 
 ### 2. Mostra el nivell de so
 
-Crea un segon projecte perquè la barra no tape la icona del primer. Dins de «per sempre», afegeix el bloc de mostrar una barra de llums. En el valor de la barra posa «nivell de so» i deixa el màxim a 255. El número serveix per comparar lectures; no són decibels.
+Creeu un segon projecte perquè la barra no tape la icona del primer. Dins de «per sempre», afegiu el bloc de mostrar una barra de llums. En el valor de la barra poseu «nivell de so» i deixeu el màxim a 255. El nombre serveix per comparar lectures; no són decibels.
 
 ```makecode
 basic.forever(function () {
@@ -45,11 +55,11 @@ basic.forever(function () {
 
 La [referència oficial del nivell de so](https://makecode.microbit.org/reference/input/sound-level) mostra la peça del micròfon i recorda que necessita micro:bit V2.
 
-### 3. Prova l’altaveu
+### 3. Proveu l’altaveu
 
-En un tercer projecte, posa «reprodueix un to» dins de «quan es prem el botó B». Descarrega’l i prem B per escoltar-lo a l’altaveu de la V2. Tria un volum còmode; també pots mostrar una icona en lloc de reproduir un so.
+En un tercer projecte, poseu «reprodueix un to» dins de «quan es prem el botó B». Descarregueu-lo i premeu B per escoltar-lo a l’altaveu de la V2. Trieu un volum còmode; també podeu mostrar una icona en lloc de reproduir un so.
 
-> **💡 Consell docent:** Deseu els projectes amb noms diferents per tornar a provar la icona, la barra i el to per separat.
+> **💡 Consell docent:** Deseu els projectes amb noms diferents per provar la icona, la barra i el to per separat.
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -63,7 +73,7 @@ Amb el primer projecte, compara tres intents en silenci i tres palmades suaus. D
 
 ## ♿ Accessibilitat i seguretat
 
-La sessió no necessita enregistrar veus ni reconèixer paraules. Permet que qui ho prefereixi activi la prova amb un senyal visual o un so generat per l'adult.
+La sessió no necessita enregistrar veus ni reconéixer paraules. Oferiu una indicació visual per a qui preferisca no participar en la prova sonora. Manteniu el volum moderat i no demaneu crits ni palmades fortes.
 
 ## ✅ Evidències d’aprenentatge
 - Observacions de la barra en silenci i amb una palmada, repetides tres vegades.

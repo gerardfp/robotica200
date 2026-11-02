@@ -11,7 +11,7 @@ image: _assets/tutorials/sp-brac-sensor-forca.png
 
 ## 🎯 Repte i objectius
 
-Fes que un motor tanque una pinça lentament i s’ature quan es prema el sensor de força. Primer comprova el sensor amb el motor parat; després prova el conjunt amb una esponja.
+Feu que un motor tanque una pinça a poc a poc i s’ature quan es prema el sensor de força. Primer proveu el sensor amb el motor parat; després, feu una prova amb una esponja.
 
 - Comprovar quan el sensor detecta una pressió.
 - Programar un motor que s’ature en prémer el sensor.
@@ -34,15 +34,15 @@ Fes que un motor tanque una pinça lentament i s’ature quan es prema el sensor
 
 ### 1. Muntar el mecanisme de palanca
 
-Crea una pinça senzilla amb el motor; prova-la primer amb girs curts i sense objectes. Comprova quin sentit la tanca en el teu muntatge: pot variar segons com col·loques les peces.
+Munteu una pinça senzilla amb un motor. Amb el motor a baixa velocitat i sense objectes, feu un gir curt per comprovar quin sentit la tanca: depén de com heu col·locat les peces. Atureu el motor abans d’acostar-vos al mecanisme.
 
 ### 2. Col·locar el sensor de força
 
-Connecta el sensor al port B i situa’l al punt de contacte de la mandíbula. Amb el motor aturat, obri la icona del Hub a SPIKE App i comprova si l’estat del sensor canvia quan el prems i el deixes anar. Si no canvia, revisa la connexió abans de continuar.
+Connecteu el sensor al port B i poseu-lo on la pinça puga prémer-lo sense fer força excessiva. Amb el motor aturat, obriu la icona del Hub a SPIKE App i comproveu si l’estat canvia en prémer i deixar anar el sensor. Si no canvia, reviseu el port i el cable abans de continuar.
 
 ### 3. Lògica de control de pressió
 
-Connecta el motor al port A. Amb una esponja fixa i el motor a baixa velocitat, prepara aquesta seqüència a SPIKE App:
+Connecteu el motor al port A. Fixeu una esponja lleugera entre les mordasses i prepareu aquesta seqüència a SPIKE App:
 
 ```spikeapp
 quan comença el programa
@@ -51,13 +51,13 @@ espera fins que el sensor de força [B v] estiga premut
 atura el motor [A v]
 ```
 
-El dibuix resumeix les accions: busca els blocs equivalents a la teua versió. Si uses altres ports, canvia’ls també al programa. Mantín l’aturada manual a mà: el sensor pot no activar-se si està mal col·locat. Quan la prova de contacte funcione, compara les lectures de força només si l’app mostra aquesta opció.
+L’esquema resumeix les accions: busqueu els blocs equivalents en la vostra versió de l’app. Si useu altres ports, canvieu-los també al programa. Manteniu l’aturada manual a mà. Quan la prova de contacte funcione, podeu comparar lectures numèriques només si l’app les ofereix.
 
-> **💡 Consell docent:** El sensor pot detectar una pressió o mostrar força, segons el bloc. No cal treballar amb nombres per a la primera prova.
+> **💡 Consell docent:** Per a la primera prova, feu servir només l’estat «premut/alliberat». La lectura numèrica de força és una ampliació, no és necessària per aconseguir que la pinça s’ature.
 
 ## 🧪 Prova, depura i reflexiona
 
-Fixa la base a la taula i posa una esponja lleugera entre les mordasses. Inicia el motor a baixa velocitat i deixa que la pinça toque l’esponja; quan el sensor es prema, ha d’aturar-se. Repeteix tres vegades. Si no s’atura, para’l manualment i revisa els ports i la posició del sensor abans de tornar a provar. No uses persones ni objectes fràgils.
+Fixeu la base a la taula i poseu l’esponja entre les mordasses. Inicieu el motor a baixa velocitat: quan la pinça prema el sensor, s’ha d’aturar. Repetiu-ho tres vegades. Si no s’atura, pareu el motor manualment i reviseu els ports i la posició del sensor. No useu dits, persones ni objectes fràgils com a prova.
 
 ### Preguntes per comprovar
 
@@ -67,7 +67,7 @@ Fixa la base a la taula i posa una esponja lleugera entre les mordasses. Inicia 
 
 ## ♿ Accessibilitat i seguretat
 
-Una persona pot preparar les peces i una altra observar el sensor o registrar les proves. Mantín els dits fora de la pinça mentre el motor gira. La detecció no substitueix l’aturada manual.
+Una persona pot preparar les peces i una altra observar el sensor o anotar les proves. Manteniu els dits fora de la pinça mentre el motor gira. La detecció no substitueix l’aturada manual.
 
 ## ✅ Evidències d’aprenentatge
 - Esquema dels ports i programa amb la condició d’aturada.

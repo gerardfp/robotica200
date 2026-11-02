@@ -43,7 +43,7 @@ Obriu MakeCode i prepareu dos botons:
 
 El botó A mostrarà la direcció i el B, la temperatura aproximada. Si preferiu copiar el programa, obriu **JavaScript** en MakeCode, enganxeu aquest text i torneu a **Blocs** per veure les peces:
 
-```javascript
+```makecode
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(input.compassHeading())
 })

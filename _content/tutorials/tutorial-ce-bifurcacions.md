@@ -10,11 +10,12 @@ image: _assets/tutorials/ce-bifurcacions.png
 
 ## 🎯 Repte i objectius
 
-Una passatgera ha d’arribar a un dels dos destins que hi ha després d’una bifurcació. Dissenyeu els itineraris i acordeu com orientar l’agulla abans que el tren hi arribe. Després, proveu una manera de fer-lo tornar a l’estació i descriviu quina part de la decisió depén de la via i quina depén del grup.
+Una passatgera ha d’arribar a un de dos destins. Trieu la branca movent l’agulla de la via abans que hi arribe el tren. El retorn i el maó verd són una ampliació opcional.
 
 - Construir una via en Y estable i identificar-ne les dues branques.
 - Explicar que el canvi d’agulla es mou manualment i orienta físicament el tren.
-- Crear un itinerari d’anada i provar amb prudència el retorn utilitzant els maons disponibles.
+- Predir i comprovar a quina branca arriba el tren.
+- Com a ampliació, provar el maó verd en una configuració de retorn recomanada.
 
 ## 🧰 Materials i preparació
 
@@ -45,14 +46,7 @@ Amb el tren apagat o aturat, orienteu l’agulla cap a la primera branca i revis
 
 ### 3. Envieu la passatgera al destí
 
-Traieu una targeta de destí. Abans d’engegar, l’equip ha de verbalitzar la regla: «Si la targeta és biblioteca, posem l’agulla cap a la biblioteca». Orienteu la via i activeu el tren. Registreu si ha seguit la branca prevista; si no, atureu-lo i comproveu l’alineació, les unions i el moment del canvi.
-
-Repetiu amb l'altra targeta:
-
-- **Biblioteca:** poseu l’agulla cap a la biblioteca i feu passar el tren.
-- **Hort:** atureu el tren, poseu l’agulla cap a l’hort i torneu a començar.
-
-Comproveu en cada prova si el tren ha arribat al lloc triat.
+Traieu una targeta de destí. Abans de posar en marxa el tren, orienteu l’agulla cap al destí indicat i digueu la regla en veu alta: «Biblioteca: agulla cap a la biblioteca». Feu passar el tren i anoteu si ha seguit la branca prevista. Atureu-lo abans de moure l’agulla per fer la prova amb l’altra targeta.
 
 ### 4. Investigueu una manera de tornar
 
@@ -60,7 +54,7 @@ Col·loqueu el maó verd només en una configuració segura recomanada per al vo
 
 ## 🧪 Prova, depura i reflexiona
 
-Feu dues proves per destí i canvieu una sola variable cada vegada. Marqueu en el mapa la posició de l’agulla i el lloc on el tren ha passat. Si no arriba al destí previst, reviseu primer si l’agulla estava alineada abans que el tren hi arribara; després comproveu les unions i l’estabilitat de la via.
+Feu dues proves per destí. En cada intent, marqueu al mapa quina branca heu triat i quina ha seguit el tren. Si no arriba al destí previst, reviseu primer l’alineació de l’agulla i les unions de la via.
 
 ### Preguntes per comprovar
 

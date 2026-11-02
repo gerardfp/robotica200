@@ -10,7 +10,7 @@ image: _assets/tutorials/cs-bucles.png
 
 ## 🎯 Repte i objectius
 
-Redueix una seqüència llarga de moviments a una instrucció que es repetix. Amb les peces de bucle del Coding Set, compara el programa inicial amb la seua versió compacta i comprova que totes dues arriben a la mateixa destinació.
+Reduïu una seqüència llarga de moviments a una instrucció que es repeteix. Amb les peces de bucle del Coding Set, compareu la ruta completa amb la versió compacta i comproveu si totes dues arriben a la mateixa destinació.
 
 - Comprendre el concepte de bucle (Loop).
 - Distingir el bloc d'inici de bucle i el de tancament.
@@ -24,7 +24,7 @@ Redueix una seqüència llarga de moviments a una instrucció que es repetix. Am
 - MatataBot, torre de control, tauler i una superfície plana amb espai lliure.
 - Cinta o un full per marcar el punt de partida i la direcció inicial.
 
-Encén el robot i la torre i espera que es connecten. Deixa lliure un quadrat de, com a mínim, una casella per costat al voltant de la ruta.
+Enceneu el robot i la torre i espereu que es connecten. Deixeu lliure una zona quadrada d’almenys una casella per costat al voltant de la ruta.
 
 ## 🧩 Funcions del robot treballades
 
@@ -35,29 +35,29 @@ Encén el robot i la torre i espera que es connecten. Deixa lliure un quadrat de
 
 ### 1. Obrir el bucle
 
-Col·loca el robot a la cantonada de la ruta i marca cap a on mira. Al tauler, posa la fitxa morada d'inici de bucle amb el número 4 a sota.
+Col·loqueu el robot a la cantonada de la ruta i marqueu cap a on mira. Al tauler, poseu la fitxa morada d’inici de bucle amb el número 4 a sota.
 
 ### 2. Les instruccions interiors
 
-Al costat de l'inici de bucle, posa **Endavant → Dreta**. Aquestes són les dues ordres que es repetiran; el gir canvia l'orientació, però no fa avançar el robot.
+Al costat de l’inici de bucle, poseu **Endavant → Dreta**. Aquestes dues ordres es repetiran; el gir canvia l’orientació, però no fa avançar el robot.
 
 ### 3. Tancar el bucle
 
-Posa la fitxa morada de final després de Dreta. Comprova que el tauler queda així, amb el número sota l'inici:
+Poseu la fitxa morada de final després de Dreta. Comproveu que el tauler queda així, amb el número sota l’inici:
 
 **Inici de bucle (4) → Endavant → Dreta → Final de bucle**
 
-Prem el botó gran i observa els quatre costats. El robot hauria de tornar prop del punt de partida mirant en la direcció inicial; la posició pot variar segons la superfície.
+Premeu el botó gran i observeu els quatre costats. El robot hauria de tornar prop del punt de partida, mirant en la direcció inicial; la posició pot variar segons la superfície.
 
 > **💡 Consell docent:** Compareu les vuit peces de moviment de la ruta llarga amb les dues peces de moviment de la ruta amb bucle. Aquesta última necessita, a més, les dues peces de bucle i el número 4.
 
 ## 🧪 Prova, depura i reflexiona
 
-1. Representa la ruta llarga: **Endavant → Dreta → Endavant → Dreta → Endavant → Dreta → Endavant → Dreta**. Si tens prou peces, col·loca-les al tauler i executa-la; si no, representa-la amb targetes i segueix-la amb el dit.
-2. Torna el robot al punt i a l’orientació inicials. Executa la versió amb el bucle tres vegades, reposicionant-lo abans de cada intent.
-3. Compara la posició i l’orientació finals amb les previstes en la ruta llarga. Si has pogut executar les dues versions, repeteix també la ruta llarga tres vegades.
+1. Representeu la ruta llarga: **Endavant → Dreta → Endavant → Dreta → Endavant → Dreta → Endavant → Dreta**. Si teniu prou peces, col·loqueu-les al tauler i executeu-la; si no, seguiu-la amb targetes i el dit.
+2. Torneu el robot al punt i a l’orientació inicials. Executeu la versió amb bucle tres vegades, reposicionant-lo abans de cada intent.
+3. Compareu les posicions i orientacions finals de les dues versions. Si heu pogut executar-les totes dues, repetiu també la ruta llarga tres vegades.
 
-Compta les peces de moviment de cada versió. Si el resultat no coincideix, revisa el número, l’ordre de les peces i l’orientació inicial.
+Compteu les peces de moviment de cada versió. Si el resultat no coincideix, reviseu el nombre, l’ordre de les peces i l’orientació inicial.
 
 ### Preguntes per comprovar
 
@@ -76,6 +76,4 @@ Repartiu els papers: una persona col·loca les peces, una altra assenyala la rut
 
 ## 🔗 Fonts oficials i límits
 
-La [guia oficial de bucles](https://matatalab.com/en/node/62) explica com col·locar les peces d'inici i final i el nombre de repeticions. El resultat físic depén de la superfície i de l'alineació inicial.
-
-Matatalab · Coding Set · [https://matatalab.com/en/coding-set?hl=en-IN](https://matatalab.com/en/coding-set?hl=en-IN). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La [guia oficial de bucles de Matatalab](https://matatalab.com/en/node/62) mostra on col·locar les peces d’inici i final i el nombre de repeticions. El resultat físic pot variar segons la superfície i l’alineació inicial del robot.

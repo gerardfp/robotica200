@@ -1,5 +1,5 @@
 ---
-title: SPIKE Prime: sensor de distància, giroscopi i avisador
+title: SPIKE Prime: sensor de distància, gir i avís
 description: Fer que una base s'ature davant d'una caixa, provar un gir i afegir un avís sonor.
 robot: spike
 level: Intermedi
@@ -12,7 +12,7 @@ image: _assets/tutorials/sp-sensor-distancia-alarma.webp
 
 Construïu una base mòbil que s’acoste a una caixa, s’ature abans de tocar-la i emeta un senyal curt. Després feu un gir controlat amb el sensor de moviment del Hub.
 
-- Calibrar les lectures del sensor d’ultrasons a distàncies conegudes.
+- Comparar la lectura del sensor amb tres distàncies conegudes.
 - Programar una parada a partir de la lectura del sensor.
 - Mesurar un gir aproximat i comunicar l’estat amb un so del Hub.
 
@@ -23,14 +23,14 @@ Construïu una base mòbil que s’acoste a una caixa, s’ature abans de tocar-
 - Paret de blocs o caixa de cartó estable, regle i cinta per marcar línies de prova.
 - Espai pla lliure de persones i objectes fràgils.
 
-El sensor fa servir ultrasons. Comproveu quina unitat de distància mostra la vostra versió de SPIKE App i deixeu un marge ampli davant de la caixa: la lectura és aproximada.
+El sensor calcula la distància amb ultrasons. Comproveu quina unitat mostra SPIKE App i deixeu prou espai davant de la caixa: la lectura és aproximada.
 
 ## 🧩 Funcions del robot treballades
 
-- Sensor de distància ultrasònic per detectar un objecte dins del seu camp de lectura.
-- Giroscopi de sis eixos del Hub per mesurar orientació i completar un gir aproximat.
+- Sensor ultrasònic per saber si hi ha un objecte al davant i estimar-ne la distància.
+- Sensor de moviment del Hub per observar i repetir un gir aproximat.
 - Altaveu integrat del Hub per emetre un to curt com a eixida.
-- Condicionals, aturada de motors i prova dels límits de lectura; el sensor no garanteix una parada de seguretat industrial.
+- Un bloc «si» per decidir quan parar. Manteniu la mà a prop del botó d’aturada: la lectura pot variar.
 
 ## 👣 Seqüència guiada
 
@@ -49,7 +49,7 @@ espera fins que la distància del sensor [C v] siga menor de (12) cm
 atura els motors de moviment
 ```
 
-Si el sensor està connectat a un altre port, seleccioneu-lo en el bloc. Comproveu que l’app mostra centímetres: 12 cm equivalen a 120 mm. Proveu primer amb una caixa ampla i l’aturada manual a mà; 12 cm és un valor inicial, no una garantia que el robot s’aturarà a temps.
+Si el sensor està connectat a un altre port, seleccioneu-lo en el bloc. Comproveu que l’app mostra centímetres: 12 cm equivalen a 120 mm. Proveu primer amb una caixa ampla i manteniu a mà el botó d’aturada. Els 12 cm són una primera referència: no garanteixen que el robot pare abans de tocar la caixa.
 
 ### 3. Mesureu un gir amb el giroscopi
 

@@ -10,7 +10,7 @@ image: _assets/tutorials/mb-radio-mesh.png
 
 ## 🎯 Repte i objectius
 
-Fes que una placa envie el número 7 i que una altra el mostre. Després canvia el grup d’una de les plaques i observa què passa. És una comunicació local: no cal Wi-Fi i no és una conversa de veu.
+Feu que una placa envie el número 7 i que una altra el mostre. Després canvieu el grup d’una placa i observeu què passa. És una comunicació local: no cal Wi-Fi i no transmet veu.
 
 - Posar dues plaques en el mateix grup de ràdio.
 - Enviar un número de prova i mostrar-lo a l’altra placa.
@@ -33,11 +33,11 @@ Prepareu un programa emissor i un de receptor. Si l’aula té més de dues plaq
 
 ### 1. Fixar el grup de ràdio
 
-Al bloc 'a l'iniciar', afegeix 'ràdio: fixa grup a [7]'. Totes les plaques del mateix equip han de compartir grup.
+Al bloc «en iniciar», afegiu «ràdio: fixa grup a [7]». Totes les plaques de l’equip han d’usar el mateix grup.
 
 ### 2. L'emissor
 
-A la primera placa, posa «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegeix «ràdio: envia número 7». Descarrega aquest programa a la placa emissora:
+A la primera placa, poseu «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegiu «ràdio: envia número 7». Descarregueu aquest programa a la placa emissora:
 
 ```makecode
 radio.setGroup(7)
@@ -48,7 +48,7 @@ input.onButtonPressed(Button.A, function () {
 
 ### 3. El receptor a l'aula
 
-A la segona placa, posa també el grup 7 a **en iniciar**. Afegeix «en rebre número per ràdio» i, dins, «mostra el número» rebut. Descarrega aquest altre programa a la placa receptora. Fes aquesta càrrega abans de prémer A a l’emissora:
+A la segona placa, poseu també el grup 7 a **en iniciar**. Afegiu «en rebre número per ràdio» i, dins, «mostra el número» rebut. Descarregueu aquest altre programa a la placa receptora abans de prémer A a l’emissora:
 
 ```makecode
 radio.setGroup(7)
@@ -59,11 +59,11 @@ radio.onReceivedNumber(function (receivedNumber) {
 
 La [referència oficial de recepció per ràdio](https://makecode.microbit.org/reference/radio/on-received-number) mostra la peça de recepció i enllaça la d'enviament i la de grup.
 
-> **💡 Consell docent per a la sessió:** Assigna un número de grup diferent a cada taula (Grup 1, Grup 2, etc.) perquè les ràdios no es barregin els missatges.
+> **💡 Consell docent per a la sessió:** Assigneu un grup diferent a cada taula perquè les plaques d’un equip no reben els missatges de les altres parelles.
 
 ## 🧪 Prova, depura i reflexiona
 
-Prem A cinc vegades a l'emissora i compta quantes vegades apareix el 7 a la receptora. Deixa que el número acabe de mostrar-se abans de tornar a prémer. Després canvia només el grup de la receptora, descarrega-li el programa i repeteix. Torna al grup 7 en acabar.
+Premeu A cinc vegades a l’emissora i compteu quantes vegades apareix el 7 a la receptora. Deixeu que el número acabe de mostrar-se abans de tornar a prémer. Després canvieu només el grup de la receptora, descarregueu-li el programa i repetiu la prova. Torneu al grup 7 en acabar.
 
 ### Preguntes per comprovar
 
@@ -73,7 +73,7 @@ Prem A cinc vegades a l'emissora i compta quantes vegades apareix el 7 a la rece
 
 ## ♿ Accessibilitat i seguretat
 
-Evita enviar dades personals. Una activitat amb missatges públics simulats funciona també sense wi-fi; proporciona les plaques ja carregades si l'objectiu és el protocol.
+No envieu dades personals: qualsevol placa del mateix grup pot rebre el missatge. Si l’objectiu és practicar el protocol, prepareu les plaques abans de la sessió perquè cada equip puga centrar-se en enviar i rebre.
 
 ## ✅ Evidències d’aprenentatge
 - Còpia dels dos programes, amb el grup de ràdio anotat.
@@ -82,4 +82,4 @@ Evita enviar dades personals. Una activitat amb missatges públics simulats func
 
 ## 🔗 Fonts oficials i límits
 
-micro:bit · Features overview · [https://microbit.org/get-started/features/overview/](https://microbit.org/get-started/features/overview/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La [guia oficial de funcions de micro:bit](https://microbit.org/get-started/features/overview/) descriu la ràdio integrada i la diferència amb Bluetooth. La ràdio d’aquest exemple envia un número al grup configurat; no és privada i no necessita connexió a Internet.

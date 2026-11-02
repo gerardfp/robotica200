@@ -9,7 +9,7 @@ image: _assets/tutorials/sp-distancia.png
 ---
 ## 🎯 Repte i objectius
 
-![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](_assets/imatges/spike-parada-distancia.webp)
+![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](../../_assets/imatges/spike-parada-distancia.webp)
 
 Estima quant avançarà la base motriu i compara el resultat amb la distància real al bloc. La pràctica utilitza els graus del motor i la geometria de les rodes per planificar la parada, i reserva el sensor de força per detectar el contacte en una prova comparativa.
 
@@ -33,15 +33,15 @@ Estima quant avançarà la base motriu i compara el resultat amb la distància r
 
 ### 1. Prepareu la base i el punt de partida
 
-Construeix una base que avance recta amb dos motors. Anota els ports dels motors i marca la posició inicial del davant de la base. Per a la primera prova, deixa el camí lliure; col·locaràs el bloc després d’haver comprovat quant avança el robot.
+Construïu una base que avance recta amb dos motors. Anoteu-ne els ports i marqueu la posició inicial del davant de la base. Deixeu el camí lliure en la primera prova; col·locareu el bloc després d’haver comprovat quant avança el robot.
 
 ### 2. Estimeu el desplaçament
 
-Mesura el diàmetre de la roda. Per a una primera estimació, multiplica el diàmetre per 3: això aproxima la distància recorreguda en una volta. Tria quantes voltes vols provar i anota el desplaçament que preveus. En SPIKE App, busca el bloc de moviment per voltes o graus.
+Mesureu el diàmetre de la roda. Per a una primera estimació, multipliqueu-lo per 3: així aproximareu la distància d’una volta completa. Trieu quantes voltes voleu provar i anoteu el desplaçament previst. En SPIKE App, busqueu el bloc de moviment per voltes o graus.
 
 ### 3. Fer una prova lenta
 
-Programa l’avanç a velocitat baixa i executa’l des de la marca **sense posar encara el bloc davant del robot**. Mesura quant s’ha desplaçat i comprova que la predicció és raonable. Repetiu tres vegades i anoteu voltes, distància real i diferències entre intents.
+Programeu l’avanç a velocitat baixa i executeu-lo des de la marca **sense posar encara el bloc davant del robot**. Mesureu quant s’ha desplaçat. Repetiu tres vegades i anoteu les voltes, la distància real i les diferències entre intents.
 
 ```spikeapp
 quan comença el programa
@@ -49,7 +49,7 @@ configura els motors de moviment [B i D v]
 mou endavant (1) voltes a velocitat baixa
 ```
 
-El dibuix és una guia per buscar els blocs equivalents en SPIKE App. Canvia els ports si els motors estan connectats en uns altres, i substitueix una volta per l'estimació del teu equip. Prova primer una volta en un espai lliure. Només després de conéixer el desplaçament, situa el bloc a la distància que vols aconseguir i prova el recorregut amb supervisió.
+L’esquema mostra l’ordre dels blocs; busqueu-ne els equivalents en SPIKE App. Canvieu els ports si els motors estan connectats en uns altres i substituïu una volta pel valor que vulgueu provar. Comenceu en un espai lliure. Quan conegueu el desplaçament real, poseu el bloc més enllà del punt previst i feu una prova supervisada.
 
 > **💡 Repte d’equip:** aconseguiu quedar-vos tan a prop com pugueu sense tocar el bloc. Quan funcione a un metre, canvieu la distància d’eixida i reutilitzeu les dades per fer una nova predicció.
 
@@ -59,7 +59,7 @@ Si el muntatge incorpora un sensor de força al davant, afegiu-lo com a topall t
 
 ## 🧪 Prova, depura i reflexiona
 
-Repeteix tres vegades des de la mateixa marca i compara la distància recorreguda amb la predicció. Quan ja conegues el desplaçament, posa el bloc més enllà del punt on preveus que s’aturarà i fes una prova supervisada. Si el robot s’acosta massa, atura’l manualment i redueix les voltes per a l’intent següent. El sensor de força de la comparació detecta contacte, no mesura l’espai que queda.
+Repetiu tres vegades des de la mateixa marca i compareu la distància amb la predicció. Si el robot s’acosta massa al bloc, atureu-lo manualment i reduïu les voltes per a l’intent següent. El sensor de força de la prova comparativa detecta contacte; no mesura l’espai que queda.
 
 ### Preguntes per comprovar
 
@@ -70,13 +70,13 @@ Repeteix tres vegades des de la mateixa marca i compara la distància recorregud
 
 ## ♿ Accessibilitat i seguretat
 
-Per començar, facilita una taula de conversions roda-voltes-distància o una distància que corresponga a voltes completes. Com a extensió, compareu rodes de diàmetres diferents o representeu les proves en un gràfic. Repartiu els rols: conducció, mesura i registre.
+Per començar, faciliteu una taula de conversions roda-voltes-distància o trieu una distància que corresponga a voltes completes. Com a ampliació, compareu rodes de diàmetres diferents o representeu les proves en un gràfic. Repartiu els rols de conducció, mesura i registre.
 
 ## ✅ Evidències d’aprenentatge
 - Recolliu una taula amb les prediccions i resultats, una explicació de l’ajust triat i una demostració de cada tipus de parada. Eviteu fotografiar cares o dades personals.
 
 ## 🔗 Fonts oficials i límits
 
-Adaptació pròpia del repte [Going the Distance de LEGO Education](https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/), que proposa calcular el recorregut d’un Rhino i comparar-lo després amb una parada per sensor de força. Ací canviem el context i el registre de proves; consulta la lliçó oficial per a les instruccions específiques del model.
+Adaptació pròpia del repte [Going the Distance de LEGO Education](https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/), que calcula un recorregut amb les rodes i el compara amb una parada per contacte. La prova amb sensor de força és opcional i requereix un muntatge adequat.
 
-LEGO Education · SPIKE Prime technical specifications · [https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+Les [especificacions de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) descriuen els motors angulars i el sensor de força. El càlcul és una estimació: la roda, la superfície i la càrrega poden canviar la distància real.

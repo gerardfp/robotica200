@@ -60,7 +60,14 @@ Anoteu el valor amb la rodeta en tres posicions: un extrem, el centre i l’altr
 
 ### 3. Calibreu un gest amb la placa estable
 
-Busqueu a mBlock el bloc que detecta la inclinació cap a l’esquerra. Feu que mostre una fletxa cap a l’esquerra. Torneu Codey a la posició plana abans de cada intent i repetiu tres vegades. Si el bloc també permet provar la inclinació cap a la dreta, afegiu una altra icona. La sacsejada és una acció diferent de mantindre Codey inclinat.
+Busqueu a mBlock l’esdeveniment que detecta la inclinació cap a l’esquerra. Feu que mostre una fletxa cap a l’esquerra:
+
+```mblock
+quan Codey s'inclina cap a l'esquerra
+mostra una fletxa cap a l'esquerra
+```
+
+Torneu Codey a la posició plana abans de cada intent i repetiu tres vegades. Si la vostra versió també ofereix l’esdeveniment d’inclinació cap a la dreta, afegiu una altra icona. La sacsejada és una acció diferent de mantindre Codey inclinat.
 
 ### 4. Afegiu resposta visual i sonora
 

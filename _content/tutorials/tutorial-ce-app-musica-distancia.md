@@ -42,7 +42,7 @@ Construïu una via recta o amb un recorregut senzill. Marqueu tres estacions i m
 
 Si la versió de l’app és compatible, connecteu-hi el tren segons les instruccions que mostra i observeu l’acció associada a cada maó. Canvieu una sola resposta d’un maó segons les opcions disponibles i proveu-lo en una ruta curta. Compareu el resultat amb el comportament inicial. Si la connexió o l’app no funciona, passeu a l’alternativa amb targetes: representeu les mateixes respostes com a símbols, sense afirmar que s’han canviat dins del robot.
 
-### 3. Componem un concert de parades
+### 3. Compareu els sons de les parades
 
 Poseu un maó groc i un de blau en una via recta. Feu passar el tren i anoteu quin so sona primer. Atureu-lo, intercanvieu els maons i repetiu des del mateix punt. Compareu l’ordre dels dos sons. Si la vostra app permet canviar-ne les respostes, feu-ho després i repetiu la prova per comprovar què ha canviat.
 

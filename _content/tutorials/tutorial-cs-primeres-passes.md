@@ -10,7 +10,7 @@ image: _assets/tutorials/cs-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Prepara una ruta de tres ordres i comprova com la torre la llig i l’envia al MatataBot. Abans de prémer Play, prediu on acabarà.
+Prepareu una ruta de tres ordres i comproveu com la torre la llig i l’envia al MatataBot. Abans de prémer Play, predigueu on acabarà.
 
 - Entendre que les fitxes es llegeixen com un text: d'esquerra a dreta i de dalt a baix.
 - Emparellar per Bluetooth la torre i el robot.
@@ -29,23 +29,23 @@ Prepara una ruta de tres ordres i comprova com la torre la llig i l’envia al M
 
 ## 👣 Seqüència guiada
 
-### 1. Engegar el sistema
+### 1. Engegueu el sistema
 
-Encén la torre i el MatataBot i espera que es connecten. Comprova els indicadors del teu model o segueix el manual del conjunt. Si no es connecten, apaga’ls i torna a engegar-los abans de continuar.
+Enceneu la torre i el MatataBot i espereu que es connecten. Comproveu els indicadors del vostre model o seguiu el manual del conjunt. Si no es connecten, apagueu-los i torneu a engegar-los abans de continuar.
 
 ### 2. Col·locar les fitxes
 
-Posa tres fitxes a la primera fila, d'esquerra a dreta: **Endavant → Dreta → Endavant**. Col·loca el robot sobre el mapa, mirant cap a una zona lliure. Assenyala amb el dit la casella on creus que acabarà; el gir canvia cap a on mira el robot, però no l’avança.
+Poseu tres fitxes a la primera fila, d’esquerra a dreta: **Endavant → Dreta → Endavant**. Col·loqueu el robot sobre el mapa, mirant cap a una zona lliure. Assenyaleu la casella on penseu que acabarà; el gir canvia cap a on mira el robot, però no l’avança.
 
 ### 3. Prémer el gran botó Play
 
-Prem el botó gran taronja. La càmera de la torre llig les fitxes i envia les ordres al robot. Observa si avança, gira a la dreta i torna a avançar. Si no es mou, comprova la connexió i que les peces estan ben col·locades abans de tornar a prémer.
+Premeu el botó gran taronja. La torre llig les fitxes i envia les ordres al robot. Observeu si avança, gira a la dreta i torna a avançar. Si no es mou, comproveu la connexió i la posició de les peces abans de tornar a prémer.
 
 > **💡 Consell docent per a la sessió:** Si la torre no llegeix una fitxa, comprova que la il·luminació no creï ombres intenses sobre el tauler.
 
 ## 🧪 Prova, depura i reflexiona
 
-Compara la casella prevista amb el lloc on s'ha aturat. Torna el robot a la mateixa posició i orientació, canvia l'última fitxa per Enrere i fes una altra predicció abans de prémer el botó. Si no coincideix, reviseu l'ordre de les peces.
+Compareu la casella prevista amb el lloc on s’ha aturat. Torneu el robot a la mateixa posició i orientació, canvieu l’última fitxa per Enrere i feu una nova predicció abans de prémer el botó. Si no coincideix, reviseu l’ordre de les peces.
 
 ### Preguntes per comprovar
 
