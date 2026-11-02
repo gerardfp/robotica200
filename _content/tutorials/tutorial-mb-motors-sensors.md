@@ -42,9 +42,11 @@ basic.forever(function () {
 })
 ```
 
-Anoteu tres lectures amb el sensor sec i tres amb el sensor humit, seguint les instruccions del fabricant. Compareu els valors: el nombre és una lectura del pin, no un percentatge universal d’humitat. No submergiu la placa ni els cables. Sense sensor, proveu el programa al simulador i marqueu el resultat com a simulat.
-
 La [referència oficial de lectura d'un pin](https://makecode.microbit.org/reference/pins/analog-read-pin) mostra la peça i un exemple de lectura en pantalla.
+
+### 3. Compareu sec i humit
+
+Anoteu tres lectures amb el sensor sec i tres amb el sensor humit, seguint les instruccions del fabricant. Compareu els valors: el nombre és una lectura del pin, no un percentatge universal d’humitat. No submergiu la placa ni els cables. Sense sensor, proveu el programa al simulador i marqueu el resultat com a simulat.
 
 ## 🧪 Prova, depura i reflexiona
 

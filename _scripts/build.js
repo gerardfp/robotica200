@@ -25,6 +25,7 @@ const { SituationPage } = require('../_templates/pages/situation-page');
 const { RedirectPage } = require('../_templates/pages/redirect-page');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
+const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
 
 function parseOrder(value, defaultOrder = 9999) {
   const n = parseInt(String(value ?? '').trim(), 10);
@@ -39,14 +40,35 @@ function slugifyBadge(text) {
     .replace(/\s+/g, '-');
 }
 
+function prepareDist() {
+  if (fs.existsSync(DIST_DIR)) {
+    fs.rmSync(DIST_DIR, { recursive: true, force: true });
+  }
+  fs.mkdirSync(DIST_DIR, { recursive: true });
+
+  // Copiar actius estàtics necessaris
+  for (const folder of ['_assets', '_css', '_js']) {
+    const src = path.join(ROOT_DIR, folder);
+    const dest = path.join(DIST_DIR, folder);
+    if (fs.existsSync(src)) {
+      fs.cpSync(src, dest, { recursive: true });
+    }
+  }
+
+  const nojekyll = path.join(ROOT_DIR, '.nojekyll');
+  if (fs.existsSync(nojekyll)) {
+    fs.copyFileSync(nojekyll, path.join(DIST_DIR, '.nojekyll'));
+  }
+}
+
 function writeHTML(relPath, html) {
-  const fullPath = path.join(ROOT_DIR, relPath);
+  const fullPath = path.join(DIST_DIR, relPath);
   fs.mkdirSync(path.dirname(fullPath), { recursive: true });
   fs.writeFileSync(fullPath, html, 'utf8');
 }
 
 function cleanSubdirectories(sectionDir) {
-  const fullDir = path.join(ROOT_DIR, sectionDir);
+  const fullDir = path.join(DIST_DIR, sectionDir);
   if (!fs.existsSync(fullDir)) return;
   for (const entry of fs.readdirSync(fullDir, { withFileTypes: true })) {
     if (entry.isDirectory()) {
@@ -479,12 +501,14 @@ function scanMakeCodeSnippets() {
 }
 
 async function main() {
+  prepareDist();
+
   const snippets = scanMakeCodeSnippets();
   if (snippets.length > 0) {
     await warmMakeCodeCache(snippets);
   }
 
-  const blocks = buildAllBlocks();
+  const blocks = buildAllBlocks(path.join(DIST_DIR, '_assets/blocks'));
   const activitats = buildActivities();
   const tutorials = buildTutorials();
   const robots = buildRobots(tutorials);
@@ -536,4 +560,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { main };
+module.exports = { main, DIST_DIR, ROOT_DIR, prepareDist };

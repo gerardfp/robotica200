@@ -8,6 +8,7 @@ import re
 from urllib.parse import unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[2]
+DIST = ROOT / "dist"
 EXPECTED_ROBOTS = {
     "coding-express", "tale-bot", "coding-set", "codey-rocky", "spike", "microbit"
 }
@@ -36,12 +37,15 @@ def local_target(page: Path, ref: str):
     if parsed.scheme or parsed.netloc or ref.startswith(("#", "data:")):
         return None
     path = unquote(parsed.path)
+    is_in_dist = DIST in page.parents or page == DIST
+    root_base = DIST if is_in_dist else ROOT
+
     if path.startswith("_assets/"):
-        return ROOT / path
+        return root_base / path
     if not path:
         return page
     if path.startswith("/"):
-        return ROOT / path.lstrip("/")
+        return root_base / path.lstrip("/")
     return page.parent / path
 
 
@@ -59,7 +63,11 @@ def read_frontmatter(path: Path):
 def main():
     problems = []
     robot_counts = Counter()
-    pages = sorted(p for p in ROOT.rglob("*.html") if not any(part.startswith(".") for part in p.relative_to(ROOT).parts))
+    if not DIST.is_dir():
+        print("Static site validation failed: dist/ directory not found (run node _scripts/build.js)")
+        return 1
+
+    pages = sorted(p for p in DIST.rglob("*.html") if not any(part.startswith(".") for part in p.relative_to(DIST).parts))
 
     redirect_routes = {
         Path("situacio/index.html"),
@@ -72,7 +80,7 @@ def main():
     for page in pages:
         parser = PageParser()
         parser.feed(page.read_text(encoding="utf-8"))
-        relative = page.relative_to(ROOT)
+        relative = page.relative_to(DIST)
         for kind, ref in parser.refs:
             if kind == "FORBIDDEN":
                 problems.append(f"{relative}: {ref}")
@@ -112,7 +120,7 @@ def main():
             if editorial.get("active", "true").lower() != "true":
                 continue
             slug = markdown_path.stem.removeprefix(prefix)
-            rendered_page = ROOT / route / slug / "index.html"
+            rendered_page = DIST / route / slug / "index.html"
             if not rendered_page.is_file():
                 problems.append(f"{markdown_path.relative_to(ROOT)}: missing pre-rendered HTML at {rendered_page.relative_to(ROOT)} (run node _scripts/build.js)")
             for required in required_fields.get(kind, ("title",)):
@@ -126,7 +134,7 @@ def main():
 
     content_dir = ROOT / "_content/situacions"
     active = []
-    situations_catalog_html = (ROOT / "situacions-aprenentatge/index.html").read_text(encoding="utf-8")
+    situations_catalog_html = (DIST / "situacions-aprenentatge/index.html").read_text(encoding="utf-8")
     for markdown_path in sorted(content_dir.glob("*.md")):
         if markdown_path.name.startswith("TEMPLATE-"):
             continue
@@ -135,7 +143,7 @@ def main():
             continue
         active.append(markdown_path)
         slug = markdown_path.stem
-        rendered_page = ROOT / "situacio" / slug / "index.html"
+        rendered_page = DIST / "situacio" / slug / "index.html"
         if not rendered_page.is_file():
             problems.append(f"{markdown_path.relative_to(ROOT)}: missing pre-rendered HTML at {rendered_page.relative_to(ROOT)} (run node _scripts/build.js)")
         if f"../situacio/{slug}/index.html" not in situations_catalog_html:

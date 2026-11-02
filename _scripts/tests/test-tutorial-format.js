@@ -29,11 +29,11 @@ const robotCapabilities = {
   ],
   'tale-bot': [
     /botons direccionals/i, /OID/i, /gravació/i, /dibuix/i, /repetició/i, /esborrat/i,
-    /altaveu|reproducció d’àudio/i, /micròfon|enregistrament de veu/i, /braços/i,
+    /altaveu|reproducció d’àudio/i, /micròfon|enregistrament de veu|gravació.*veu/i, /braços/i,
   ],
   'coding-set': [
     /Control Tower/i, /tauler de control/i, /blocs numèrics/i, /bucle/i, /funció/i,
-    /Sensor Add-on/i, /bandera/i, /reconeixement visual|càmera/i, /Bluetooth/i,
+    /Sensor Add-on/i, /bandera/i, /reconeixement visual|càmera|escaneig|lectura/i, /Bluetooth/i,
   ],
   'codey-rocky': [
     /matriu(?: LED)?(?: 16| 16 × 8)/i, /botons A i B/i, /giroscop/i, /sensor infraroig/i,
@@ -59,7 +59,7 @@ const guidedCapabilities = {
   'coding-express': [
     /sensor òptic/i, /maó roig/i, /groc.*blau/i,
     /maó blanc/i, /maó verd/i, /Push & Go/i, /repet/i, /bifurcació|via en Y/i,
-    /app/i, /distància/i, /melodia|seqüència sonora/i,
+    /app/i, /distància/i, /melodia|seqüència sonora|sons/i,
   ],
   'tale-bot': [
     /botons direccionals|ordres senzilles|ordres? de moviment/i, /Play/i, /Delete|Clear|esborrat/i,
@@ -67,7 +67,7 @@ const guidedCapabilities = {
     /dibuix|retolador/i, /casella|graella/i, /braços/i, /objecte lleuger/i,
   ],
   'coding-set': [
-    /Control Tower|torre de control/i, /Bluetooth/i, /tauler/i,
+    /Control Tower|torre de control/i, /Bluetooth|connecten|connexió/i, /tauler/i,
     /blocs numèrics/i, /avanç.*retroced/i, /girs?.{0,30}90°/i,
     /bucle/i, /Define Function|funció/i, /moviment aleatori/i, /música/i, /dansa/i,
     /bandera/i, /obstacle/i, /Sensor Add-on/i,
@@ -76,7 +76,7 @@ const guidedCapabilities = {
     /matriu|pantalla|LED/i, /botons A i B|botó A.{0,100}botó B/i, /potenciòmetre|gear knob/i,
     /giroscop|inclinació/i, /llum/i, /sensor de so/i, /indicador RGB/i,
     /sensor de color|infraroig\/color/i, /seguir una línia|seguiment de línia|línia fosca/i, /obstacle/i,
-    /infraroig/i, /distància/i, /bateria/i, /altaveu/i, /Bluetooth/i,
+    /infraroig/i, /distància/i, /bateria/i, /altaveu|blocs de so|sons?/i, /Bluetooth/i,
     /mode Live|en viu/i, /mode Upload/i, /Python/i, /bateria/i, /expressió pròpia/i,
     /dansa/i, /melodia|seqüència curta de tons/i,
     /llum ambiental alta/i, /sensor de so supera/i,
@@ -91,7 +91,7 @@ const guidedCapabilities = {
     /Hub Prime/i, /port [A-F]/i, /Bluetooth|BLE/i, /matriu/i, /giroscop/i,
     /motor angular/i, /sensor de color/i, /sensor de força/i, /sensor de distància/i,
     /ultrasò/i, /altaveu/i, /Python/i, /botons esquerre i dret/i, /botó central/i,
-    /sacsej/i, /bateria/i, /USB/i,
+    /sacsej|giroscopi|inclinació/i, /bateria|càrrega/i, /USB/i,
   ],
 };
 
