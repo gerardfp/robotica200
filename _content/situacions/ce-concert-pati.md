@@ -14,7 +14,7 @@ duration: "3 sessions"
 challenge: "Com podem crear una seqüència sonora breu inspirada en el pati i ordenar-la perquè cada so aparega en el moment acordat?"
 ---
 
-![El tren LEGO Education Coding Express de la dotació recorre una via circular amb maons d’acció prop d’un xicotet escenari de titelles.](../../_assets/imatges/sa-ce-concert-pati-v2.png)
+![El tren LEGO Education Coding Express de la dotació recorre una via circular amb maons d’acció prop d’un xicotet escenari de titelles.](../../_assets/situacions/ce-concert-pati.webp)
 
 _Els maons d’acció poden activar respostes del tren segons el model; les figures i l’escenari són recursos narratius de l’aula._
 
@@ -72,7 +72,7 @@ En equip de fins a quatre, construïu una via circular i situeu al voltant les f
 
 Feu una volta de prova. Si cal, afegiu un autobús de paper o una figura com a passatger: no cal construir un vehicle diferent del tren del kit. Torneu a passar quan una resposta no s’haja pogut escoltar bé.
 
-![El tren Coding Express real travessa una via circular amb els quatre colors de maons d’acció i una tauleta amb controls de so.](../../_assets/imatges/sa-ce-concert-maons-app.png)
+![El tren Coding Express real travessa una via circular amb els quatre colors de maons d’acció i una tauleta amb controls de so.](../../_assets/situacions/sa-ce-concert-maons-app.webp)
 
 _La il·lustració orienta la prova del recorregut; la resposta sonora i la configuració de cada maó s’han de comprovar en l’app disponible al centre._
 

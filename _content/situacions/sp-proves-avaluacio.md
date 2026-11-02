@@ -14,7 +14,7 @@ duration: "8 lliçons · 9–12 sessions"
 challenge: "Quines proves i dades necessitem abans de dir que un prototip funciona o que un robot és millor per a una tasca?"
 ---
 
-![Base mòbil LEGO SPIKE Prime pujant per una rampa lleugera al costat d'una regla i un gràfic de proves.](../../_assets/imatges/sa-sp-proves-avaluacio.webp)
+![Base mòbil LEGO SPIKE Prime pujant per una rampa lleugera al costat d'una regla i un gràfic de proves.](../../_assets/situacions/sp-proves-avaluacio.webp)
 
 _Comparar prototips demana controls comuns, mesures útils i conclusions proporcionades a les proves._
 
@@ -97,7 +97,7 @@ Compareu dades en taula o gràfic i determineu quin agafador és més ràpid, fi
 
 **Evidència:** esbossos, criteris, dades completes, gràfic i afirmació amb una dada. Autoavalueu si l’argument usa proves i feedback. No proveu amb persones, aliments o residus reals; el prototip no és una eina de neteja operativa.
 
-![Robot mòbil de LEGO SPIKE Prime amb un braç de peces i una pinça que transfereix un bloc lleuger entre safates.](../../_assets/imatges/sa-sp-proves-agafador.webp)
+![Robot mòbil de LEGO SPIKE Prime amb un braç de peces i una pinça que transfereix un bloc lleuger entre safates.](../../_assets/situacions/sa-sp-proves-agafador.webp)
 
 _Per comparar dos agafadors, manteniu constant el trajecte i registreu cada intent, incloses les caigudes._
 

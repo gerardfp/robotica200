@@ -75,7 +75,7 @@ Construeix una versió inicial de baixa complexitat. Prova-la amb els criteris a
 - Explica què ha canviat a partir de l’evidència.
 
 
-[Exemple: hivernacle amb sensors](../../situacio/index.html?id=sa-hivernacle-microbit)
+[Exemple: hivernacle amb sensors](../../situacio/index.html?id=mb-hivernacle)
 
 ### 📣 Comunicació amb propòsit
 
@@ -85,7 +85,7 @@ El producte final pot ser un prototip, un mapa, una demostració o una proposta 
 - Tanca amb què transferirien a un altre repte.
 
 
-[Exemple: classificació de residus](../../situacio/index.html?id=sa-residus-lego)
+[Exemple: classificació de residus](../../situacio/index.html?id=sp-residus-lego)
 
 ## 02 · PLANIFICACIÓ — Una seqüència flexible de sis moments
 

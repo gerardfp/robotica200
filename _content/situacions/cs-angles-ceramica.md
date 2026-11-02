@@ -15,7 +15,7 @@ challenge: "Com podem programar un gir interior concret i comprovar quin bloc d�
 official_source: "https://matatalab.com/en/node/84"
 ---
 
-![MatataBot i la torre del Coding Set al costat d'una làmina de triangles i una roseta geomètrica inspirada en la ceràmica valenciana.](../../_assets/imatges/sa-cs-angulos-ceramica-v1.png)
+![MatataBot i la torre del Coding Set al costat d'una làmina de triangles i una roseta geomètrica inspirada en la ceràmica valenciana.](../../_assets/situacions/cs-angles-ceramica.webp)
 
 _La làmina és una composició pròpia. El dibuix amb tinta només es fa si el centre disposa de l'Artist Add-On; amb el kit base, MatataBot recorre la seqüència sense dibuixar._
 
@@ -92,7 +92,7 @@ Executeu o simuleu una volta completa i observeu si el robot torna prop del punt
 
 **Evidència:** seqüència anotada, dibuix dels dos angles i comparació entre predicció i resultat. **Criteri:** l'equip explica per què 60° és l'angle interior mentre 120° és el gir exterior del triangle equilàter.
 
-![MatataBot i la torre reals del Coding Set al costat d’un triangle equilàter: el sector interior i la fletxa exterior representen dos angles diferents en el mateix vèrtex.](../../_assets/imatges/sa-cs-angulos-gir-exterior-v1.png)
+![MatataBot i la torre reals del Coding Set al costat d’un triangle equilàter: el sector interior i la fletxa exterior representen dos angles diferents en el mateix vèrtex.](../../_assets/situacions/sa-cs-angulos-gir-exterior-v1.webp)
 
 _Esquema conceptual del gir: el bloc d’angle només es prova amb Artist Add-On; amb el kit base es valida la seqüència com a recorregut, sense dibuix amb tinta._
 

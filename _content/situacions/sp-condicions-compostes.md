@@ -14,7 +14,7 @@ duration: "5 lliçons · 7–9 sessions"
 challenge: "Com podem crear un joc de pistes que responga a una seqüència de condicions sense confondre una simulació amb una protecció real?"
 ---
 
-![Base mòbil LEGO SPIKE Prime al costat d’un joc de pistes de taula amb estacions de colors, targetes i una capsa de paper oberta.](../../_assets/imatges/sa-sp-condicions-compostes.webp)
+![Base mòbil LEGO SPIKE Prime al costat d’un joc de pistes de taula amb estacions de colors, targetes i una capsa de paper oberta.](../../_assets/situacions/sp-condicions-compostes.webp)
 
 _Les condicions compostes coordinen diverses regles; una maqueta permet provar-les sense bloquejar ni protegir res real._
 

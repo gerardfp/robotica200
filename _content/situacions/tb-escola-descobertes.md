@@ -14,7 +14,7 @@ duration: "8 sessions"
 challenge: "Com podem preparar una fira on cada ruta del robot convide a observar, comptar, conversar i crear?"
 ---
 
-![Tale-Bot real recorre una quadrícula de paper entre targetes de direcció, una parada de maduixes, una eruga de paper i una forma geomètrica.](../../_assets/imatges/sa-tb-escola-descobertes.webp)
+![Tale-Bot real recorre una quadrícula de paper entre targetes de direcció, una parada de maduixes, una eruga de paper i una forma geomètrica.](../../_assets/situacions/tb-escola-descobertes.webp)
 
 _Els set estands de la fira es construeixen amb targetes i materials senzills de l'aula._
 
@@ -36,7 +36,7 @@ Presenteu el Tale-Bot Pro del centre com una màquina que respon a instruccions.
 
 Amb un Tale-Bot apagat, observeu-ne el cos, les rodes, els botons i els indicadors lluminosos. Useu una maqueta o silueta de paper pròpia per assenyalar cada part i relacionar-la amb una funció que després comprovareu. Si el kit del centre els inclou, mostreu les ales i el suport per a dibuixar o construir; són peces de caracterització o accessoris, no parts que el robot puga moure de manera autònoma. Prepareu deu gots de paper lleugers com a fites per a una ruta, no com a obstacles per colpejar, i cinta de pintor per a fixar el mapa sense deixar adhesiu al robot. La pàgina pública de la [lliçó 1](https://matatalab.com/en/node/827) enumera el robot, una maqueta de paper, ales, suports per a dibuix/construcció, deu gots i cinta entre els materials; els accessoris s’usen només si formen part de la dotació del centre.
 
-![Tale-Bot Pro real amb targetes visuals de direcció, Play i mapa per a explorar el vocabulari de les seues funcions.](../../_assets/imatges/sa-tb-coneguem-tale-bot-v2.webp)
+![Tale-Bot Pro real amb targetes visuals de direcció, Play i mapa per a explorar el vocabulari de les seues funcions.](../../_assets/situacions/sa-tb-coneguem-tale-bot-v2.webp)
 
 _La silueta i els gots són recursos didàctics propis; el robot il·lustrat correspon al Tale-Bot Pro del kit._
 
@@ -48,7 +48,7 @@ En parelles, ordeneu targetes pròpies de «encendre», «introduir una ordre»,
 
 Prepareu una zona plana, neta i allunyada de vores. Col·loqueu els deu gots com a dues files de fites i creeu una destinació pròpia amb una targeta «hola»; la ruta ha de passar per un corredor ample sense tocar els gots. Una parella tria el punt d’inici, orienta el robot i prediu les ordres; l’altra observa els indicadors i comprova el trajecte. Si no coincideixen, canvieu una sola ordre o corregiu l’orientació i torneu a provar. Qui no manipule el robot pot dirigir la seqüència amb targetes, portar el registre o assenyalar l’accessori que s’està observant.
 
-![Tale-Bot Pro real al començament d’una ruta de paper, amb deu gots lleugers posats com a fites fora del recorregut.](../../_assets/imatges/sa-tb-benvigut-gots-v1.png)
+![Tale-Bot Pro real al començament d’una ruta de paper, amb deu gots lleugers posats com a fites fora del recorregut.](../../_assets/situacions/sa-tb-benvigut-gots-v1.webp)
 
 _Els gots són les deu peces de paper de la lliçó pública, ací convertides en fites segures; Tale-Bot no ha de colpejar-los._
 
@@ -68,7 +68,7 @@ Observeu la planta simplificada de l’aula i les tres destinacions. Trieu una r
 
 Dibuixem una planta senzilla de l'aula amb tres llocs d'interés (biblioteca, hort o pati). Per parelles, triem un destí, escrivim una seqüència d'ordres i expliquem com l'hem calculada. Una persona fa de robot en la graella de paper i després comparem la representació amb el recorregut del Tale-Bot real. Tanquem amb una instrucció per a les visites de la fira.
 
-![Tale-Bot Pro real al costat d’una maqueta de l’escola amb biblioteca, hort, pati i targetes de direcció.](../../_assets/imatges/sa-tb-fira-mapa-escola-v1.png)
+![Tale-Bot Pro real al costat d’una maqueta de l’escola amb biblioteca, hort, pati i targetes de direcció.](../../_assets/situacions/sa-tb-fira-mapa-escola-v1.webp)
 
 _La graella, els edificis i les fletxes són materials de paper; Tale-Bot segueix les ordres i no identifica els espais._
 
@@ -94,7 +94,7 @@ Mireu quatre targetes de repte: arribar a una casella, repetir un moviment, enre
 
 Preparem una ruta curta en paper i assagem ordres bàsiques fins a una destinació. El botó de dansa activa una de les sis danses predefinides a l’atzar: l’activem dues vegades i anotem què observem, sense esperar que repetisca la mateixa coreografia. En un tram pla i delimitat, programem una repetició finita d’una ordre o d’un patró breu i comptem les execucions; el mode infinit només es representa amb targetes i no s’executa amb el robot. Si el kit del centre inclou el suport i el retolador rentable, fem un traç curt en un full fixat; si no, representem el recorregut amb targetes de paper.
 
-![Tale-Bot Pro real amb targetes de ruta, una representació en paper de la dansa i un dibuix fet sobre un full separat.](../../_assets/imatges/sa-tb-fira-respostes-v1.png)
+![Tale-Bot Pro real amb targetes de ruta, una representació en paper de la dansa i un dibuix fet sobre un full separat.](../../_assets/situacions/sa-tb-fira-respostes-v1.webp)
 
 _Les targetes i el dibuix són materials de l’activitat; el suport de retolador només s’usa si el kit del centre el porta._
 
@@ -120,7 +120,7 @@ Trieu tres pictogrames d’estació i decidiu un ordre de visita. Abans de moure
 
 Prepareu cinc estacions amb pictogrames: colors, un so ambiental suau triat pel docent, retalls nets de tela, una imatge de fruita i un recipient tancat amb una herba culinària coneguda. No tasteu aliments ni obriu ni acosteu recipients al nas. Qualsevol infant pot passar una estació o participar mirant i assenyalant. Trieu tres parades, ordeneu-les amb targetes i traceu la ruta sobre el mapa. Tale-Bot només indica el recorregut; les persones observen i descriuen.
 
-![Tale-Bot Pro de la dotació al centre d'una ruta amb cinc estacions visuals: fulles de colors, ones sonores, retalls de tela, una targeta de fruita i un pot tancat amb herbes.](../../_assets/imatges/sa-tb-cinc-sentits.webp)
+![Tale-Bot Pro de la dotació al centre d'una ruta amb cinc estacions visuals: fulles de colors, ones sonores, retalls de tela, una targeta de fruita i un pot tancat amb herbes.](../../_assets/situacions/sa-tb-cinc-sentits.webp)
 
 _Les imatges indiquen llocs d'observació, no instruccions perquè el robot perceba sabors, olors, sons o textures._
 
@@ -146,7 +146,7 @@ Llegiu una comanda de dos productes dibuixats i mireu el plànol de la parada. P
 
 Dissenyem una parada amb imatges de productes de mercat local i fitxes de preus senzills. Una targeta de comanda demana visitar dos productes; l'equip calcula la ruta i, si és adequat al nivell, suma dos preus. El robot lliura una fitxa de paper i una persona comprova que la comanda coincideix. Els aliments són dibuixats o de joguina: no es manipula ni es reparteix menjar real.
 
-![Tale-Bot Pro real al costat d’una botiga de maqueta amb parades de fruita, targetes de productes i una ruta de paper.](../../_assets/imatges/sa-tb-fira-botiga-v1.png)
+![Tale-Bot Pro real al costat d’una botiga de maqueta amb parades de fruita, targetes de productes i una ruta de paper.](../../_assets/situacions/sa-tb-fira-botiga-v1.webp)
 
 _Els productes i les comandes són fitxes de joc; una persona interpreta i comprova la llista._
 
@@ -172,7 +172,7 @@ Observeu les caselles amb grups de maduixes de paper i trieu una ruta. Predigueu
 
 Situem grups de maduixes de paper en diverses caselles. Abans de programar, cada equip prediu quantes trobarà en una ruta i tria com evitar comptar-ne alguna dues vegades. Després segueix el recorregut, marca cada grup visitat i compara predicció i recompte. Com a ampliació, canviem l'ordre dels estands i comprovem si el total es manté.
 
-![Tale-Bot Pro real al costat d’una graella amb tres targetes de maduixes, una ruta i tres fitxes de recompte.](../../_assets/imatges/sa-tb-fira-maduixes-v1.png)
+![Tale-Bot Pro real al costat d’una graella amb tres targetes de maduixes, una ruta i tres fitxes de recompte.](../../_assets/situacions/sa-tb-fira-maduixes-v1.webp)
 
 _Les maduixes es compten amb observació i registre humans; el robot només recorre la seqüència programada._
 
@@ -210,7 +210,7 @@ Intercanvieu la ruta amb una parella que no coneix la forma triada. Si el contor
 
 **Evidència:** targeta seleccionada, ruta marcada, registre de trams/girs i forma reconstruïda per una altra parella. Expliqueu quina observació permet identificar la forma i quin paper ha tingut la persona que ha unit els punts.
 
-![Tale-Bot Pro real de la dotació al costat d’una graella amb targetes de triangle, quadrat, cercle i rectangle i una ruta de fletxes.](../../_assets/imatges/sa-tb-formes-monstre.webp)
+![Tale-Bot Pro real de la dotació al costat d’una graella amb targetes de triangle, quadrat, cercle i rectangle i una ruta de fletxes.](../../_assets/situacions/sa-tb-formes-monstre.webp)
 
 _La imatge mostra una ruta de caselles i targetes geomètriques; les formes les identifica l’alumnat, no el robot._
 
@@ -238,7 +238,7 @@ Una altra parella continua el patró amb una peça tapada i programa una ruta qu
 
 **Ampliació inspirada en un estudi d’aula publicat per Matatalab:** prepareu una quadrícula pròpia amb triangles de paper repartits en diverses caselles. La parella programa Tale-Bot perquè visite les posicions acordades; són els infants qui recullen les fitxes i les compten, perquè el robot no les pot agafar ni reconéixer. Conteu-les en valencià i, si el grup ho tria, en una altra llengua. Amb les fitxes, construïu un avet de paper i expliqueu quina figura plana forma cada peça. Si el model del centre incorpora la targeta de micròfon, podeu enregistrar una frase fictícia breu i reproduir-la; també és vàlid narrar-la en directe o usar un pictograma. No graveu noms ni veus identificables sense autorització i esborreu els enregistraments en acabar.
 
-![Tale-Bot Pro de la dotació recorre un mapa de paper amb triangles; al costat, les fitxes formen un avet i una icona indica la narració opcional.](../../_assets/imatges/sa-tb-triangles-memoria.png)
+![Tale-Bot Pro de la dotació recorre un mapa de paper amb triangles; al costat, les fitxes formen un avet i una icona indica la narració opcional.](../../_assets/situacions/sa-tb-triangles-memoria.webp)
 
 _L'itinerari només guia la visita: són les persones qui compten i arrepleguen les fitxes i munten la figura._
 

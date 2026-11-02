@@ -14,7 +14,7 @@ duration: "4 sessions de 35–40 minuts"
 challenge: "Com podem connectar l'horta, el mercat i l'escola amb un recorregut que el tren puga completar i que totes les persones entenguen?"
 ---
 
-![El tren Coding Express recorre una xarxa pròpia amb un bucle, una bifurcació i dues estacions.](../../_assets/imatges/sa-tren-coding-express.webp)
+![El tren Coding Express recorre una xarxa pròpia amb un bucle, una bifurcació i dues estacions.](../../_assets/situacions/ce-tren-transport.webp)
 
 _La xarxa, les estacions i la càrrega són una maqueta original. L'alumnat observa el tren real i comprova les seues prediccions._
 

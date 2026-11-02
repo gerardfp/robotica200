@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem convertir una idea rítmica en instruccions que altres persones i la micro:bit puguen interpretar?"
 ---
 
-![Una placa micro:bit acompanya una partitura simbòlica de ritmes inventats per l’alumnat.](../../_assets/imatges/sa-mb-ritmes.webp)
+![Una placa micro:bit acompanya una partitura simbòlica de ritmes inventats per l’alumnat.](../../_assets/situacions/mb-ritmes-pati.webp)
 
 _La peça és original i pot escoltar-se amb la placa, instruments d’aula, llum o notació visual._
 

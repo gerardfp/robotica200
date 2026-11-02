@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Podem resoldre els mateixos reptes amb el cos, targetes i paper?"
 ---
 
-![Targetes de paper amb un personatge eruga, una ruta amb desviament, fitxes de ritme i tires per comparar distàncies; no hi ha robots ni dispositius.](../../_assets/imatges/sa-ce-desconnectat.webp)
+![Targetes de paper amb un personatge eruga, una ruta amb desviament, fitxes de ritme i tires per comparar distàncies; no hi ha robots ni dispositius.](../../_assets/situacions/ce-reptes-desconnectats.webp)
 
 _Els reptes es resolen amb instruccions físiques, paper i cooperació, sense aplicació ni tren._
 
@@ -69,7 +69,7 @@ Dibuixeu una quadrícula de 5×5 amb inici, destinació i una casella marcada co
 
 Escriviu una ruta inicial amb fletxes i, després, una alternativa. Una fitxa representa el tren i es mou una casella per instrucció; la persona observadora marca cada pas. La incidència és una targeta, no un obstacle físic a l’aula.
 
-![Targetes amb fletxes ordenades al costat d’una graella de paper amb inici, destinació i caselles tancades.](../../_assets/imatges/sa-ce-reptes-desconnectats-ruta.webp)
+![Targetes amb fletxes ordenades al costat d’una graella de paper amb inici, destinació i caselles tancades.](../../_assets/situacions/sa-ce-reptes-desconnectats-ruta.webp)
 
 _Les targetes fan visible el programa abans que una persona execute la ruta i comprove si evita la zona tancada._
 

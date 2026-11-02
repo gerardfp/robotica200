@@ -15,7 +15,7 @@ challenge: "Com podem planificar i provar una ruta tangible, primer amb ordres s
 official_source: "https://www.matatastudio.com/teaching-materials.html"
 ---
 
-![El Coding Set real de MatataStudio al costat d’un mapa propi en quadrícula que connecta una plantació de l’horta amb la biblioteca de l’escola.](../../_assets/imatges/sa-cs-rutes-horta-v1.png)
+![El Coding Set real de MatataStudio al costat d’un mapa propi en quadrícula que connecta una plantació de l’horta amb la biblioteca de l’escola.](../../_assets/situacions/cs-rutes-laberint-horta.webp)
 
 _Il·lustració IA basada en el Coding Set de la dotació. El mapa és una maqueta pròpia: cal dibuixar-lo a escala de 10 cm per casella si s’hi vol provar el moviment físic._
 
@@ -64,7 +64,7 @@ Organitzeu equips de tres o quatre amb rols rotatius: lector/a del mapa, constru
 
 **De la targeta al programa (10 min):** cada equip ordena targetes amb avançar, retrocedir i girar per arribar a una destinació. Una persona llig la seqüència; la resta la representa amb el cos o sobre la graella, sense robot. Anoteu quina peça representa cada instrucció i qui envia i qui rep el missatge.
 
-![La torre i el tauler del Coding Set al costat d’un laberint de paper amb hortalisses, obstacles de cartó, una bandera i una seqüència repetida de blocs.](../../_assets/imatges/sa-cs-laberint-horta-v1.png)
+![La torre i el tauler del Coding Set al costat d’un laberint de paper amb hortalisses, obstacles de cartó, una bandera i una seqüència repetida de blocs.](../../_assets/situacions/sa-cs-laberint-horta-v1.webp)
 
 _Laberint i marques creats per a aquesta proposta. Els símbols del mapa els interpreta l’alumnat; MatataBot només executa els blocs que la torre ha llegit._
 

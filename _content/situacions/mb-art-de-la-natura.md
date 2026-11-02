@@ -14,7 +14,7 @@ duration: "4 sessions · 180 min"
 challenge: "Quins trets d’una forma natural podem conservar quan la representem primer amb materials i després amb cinc per cinc píxels?"
 ---
 
-![Una placa micro:bit al costat de targetes botàniques amb esbossos senzills de fulla, llavor i flor.](../../_assets/imatges/sa-mb-art-natura.webp)
+![Una placa micro:bit al costat de targetes botàniques amb esbossos senzills de fulla, llavor i flor.](../../_assets/situacions/mb-art-de-la-natura.webp)
 
 _La representació digital és una interpretació d’una observació, no una reproducció exacta de la natura._
 

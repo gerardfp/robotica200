@@ -15,7 +15,7 @@ challenge: "Podem recordar on hem deixat cada animal i programar MatataBot perqu
 official_source: "https://matatalab.com/en/node/86"
 ---
 
-![MatataBot i la torre del Coding Set al costat d’un mapa de poble amb quatre edificis de cartó, butxaques de paper i targetes d’animals de granja.](../../_assets/imatges/sa-cs-animals-visites-v1.png)
+![MatataBot i la torre del Coding Set al costat d’un mapa de poble amb quatre edificis de cartó, butxaques de paper i targetes d’animals de granja.](../../_assets/situacions/cs-animals-visites.webp)
 
 _Les butxaques amaguen les fitxes perquè l’alumnat les recorde; una persona les col·loca o les recupera manualment. MatataBot només executa la ruta programada._
 
@@ -82,7 +82,7 @@ Cada membre de l’equip tria una fitxa d’animal i, abans de programar, invent
 
 Per torns, planifiqueu amb targetes la ruta des de l’inici fins al lloc triat. Compteu els avanços i els girs, poseu els blocs en l’ordre previst i demaneu a una altra persona que els revise abans de prémer *Play*. Repetiu el procés per a les quatre fitxes, mantenint el mateix inici i acordant si el robot torna a l’inici entre trajectes.
 
-![MatataBot i torre reals del Coding Set al costat d’una maqueta de poble amb quatre destinacions, barreres i targetes planes d’animals.](../../_assets/imatges/sa-cs-animals-visites-s2-v1.png)
+![MatataBot i torre reals del Coding Set al costat d’una maqueta de poble amb quatre destinacions, barreres i targetes planes d’animals.](../../_assets/situacions/sa-cs-animals-visites-s2-v1.webp)
 
 _Les destinacions, les barreres i les fitxes són materials de paper. Una persona col·loca cada animal després de l’arribada; el robot només executa les ordres._
 
@@ -106,7 +106,7 @@ Quan les quatre visites funcionen per separat, encadeneu-les com a ampliació en
 
 Tanqueu les butxaques i aparteu el registre. Escolteu les quatre frases-pista sense mostrar els llocs; cada alumne relaciona una frase amb una destinació i explica la seua predicció abans de tocar el robot.
 
-![MatataBot i torre reals al costat d’una maqueta de quatre llocs amb butxaques de paper tancades i targetes de ruta.](../../_assets/imatges/sa-cs-animals-visites-s3-v1.png)
+![MatataBot i torre reals al costat d’una maqueta de quatre llocs amb butxaques de paper tancades i targetes de ruta.](../../_assets/situacions/sa-cs-animals-visites-s3-v1.webp)
 
 _Les fitxes queden amagades en les butxaques. L’alumnat recorda i programa la ruta; una persona obri la butxaca i comprova la predicció._
 

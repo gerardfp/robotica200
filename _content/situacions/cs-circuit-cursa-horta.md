@@ -15,7 +15,7 @@ challenge: "Com podem dissenyar un vehicle lleuger i un circuit de l'horta, i cr
 official_source: "https://matatalab.com/cdn/ff/CrQPo-NarPZLUtZnP3JKbo4oDvbv3Nr4L9nQ_5l4kdc/1653550757/public/2022-05/Extracurricular%20Curriculum.pdf"
 ---
 
-![MatataBot i torre reals del Coding Set, intactes, al costat d’un circuit de paper i d’una carcassa de cotxe desmuntable que no està col·locada sobre el robot.](../../_assets/imatges/sa-cs-circuit-cursa-horta-v2.png)
+![MatataBot i torre reals del Coding Set, intactes, al costat d’un circuit de paper i d’una carcassa de cotxe desmuntable que no està col·locada sobre el robot.](../../_assets/situacions/cs-circuit-cursa-horta.webp)
 
 _Il·lustració IA basada en el Coding Set real de la dotació. MatataBot i la torre es mostren intactes; el cotxe de paper és una maqueta separada, no una modificació del robot._
 
@@ -70,7 +70,7 @@ Abans de la classe, carregueu MatataBot i la torre. Proveu els blocs i el circui
 
 **Tancament (5 min):** cada equip dibuixa la ruta que ha provat i encercla el gir més difícil. Responeu al quadern: què és un angle?, per què és important en una ruta?, i quina prova ha ajudat a decidir si el programa funcionava? **Evidència:** esbós del vehicle i del mapa, seqüència inicial i anotació d'una prova.
 
-![MatataBot i la torre Coding Set reals davant d'un circuit de paper amb inici, meta i girs; la carcassa de paper està separada per mostrar que no s'enganxa al robot.](../../_assets/imatges/sa-cs-circuit-cursa-programa-v1.png)
+![MatataBot i la torre Coding Set reals davant d'un circuit de paper amb inici, meta i girs; la carcassa de paper està separada per mostrar que no s'enganxa al robot.](../../_assets/situacions/sa-cs-circuit-cursa-programa-v1.webp)
 
 _La imatge és una proposta visual de planificació, no una instrucció de muntatge. Comproveu el tauler, els blocs i la lectura real de la torre amb el kit del centre._
 

@@ -15,7 +15,7 @@ challenge: "Com podem guiar MatataBot fins a dos punts de la marjal sense traves
 official_source: "https://matatalab.com/cdn/ff/3ihe_ldu0qGpw6-JNLtdn8UaZVTFje4pO0eRFPIgtcY/1600223266/public/2020-09/%E7%AC%AC3%E8%AF%BE%20%20%E7%8B%BC%E6%9D%A5%E4%BA%86%EF%BC%81.pdf"
 ---
 
-![El Coding Set real de la dotació al costat d’una quadrícula de la marjal: MatataBot té una ruta marcada que evita una zona representada amb una targeta.](../../_assets/imatges/sa-cs-ruta-marjal-obstacles.webp)
+![El Coding Set real de la dotació al costat d’una quadrícula de la marjal: MatataBot té una ruta marcada que evita una zona representada amb una targeta.](../../_assets/situacions/cs-ruta-segura-marjal.webp)
 
 _Il·lustració IA basada en la fotografia del Coding Set del centre. La quadrícula, la ruta i la targeta d’obstacle són materials didàctics; MatataBot no detecta ni esquiva obstacles per si mateix._
 

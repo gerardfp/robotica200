@@ -14,7 +14,7 @@ duration: "6 lliçons · 8–12 sessions"
 challenge: "Com pot una llista Python organitzar dades en ordre, comparar col·leccions i convertir senyals de color en peces d’una història col·laborativa?"
 ---
 
-![Robot LEGO SPIKE Prime amb sensor de color davant de targetes geomètriques ordenades sobre una taula de biblioteca escolar.](../../_assets/imatges/sa-sp-llistes-histories.webp)
+![Robot LEGO SPIKE Prime amb sensor de color davant de targetes geomètriques ordenades sobre una taula de biblioteca escolar.](../../_assets/situacions/sp-python-llistes.webp)
 
 _Les llistes donen ordre i estructura a les dades; les targetes i la lectura del sensor fan visible la seqüència._
 

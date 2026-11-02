@@ -14,7 +14,7 @@ duration: "6 sessions"
 challenge: "Com passem d’un problema quotidià a un algorisme precís, un programa provat i una explicació de com cooperen maquinari i programari?"
 ---
 
-![Micro:bit de la dotació, amb matriu LED, botons A/B i contactes daurats, al costat d’una pantalla amb blocs visuals i un diagrama de flux en paper.](../../_assets/imatges/sa-mb-fonaments-computacio-v2.png)
+![Micro:bit de la dotació, amb matriu LED, botons A/B i contactes daurats, al costat d’una pantalla amb blocs visuals i un diagrama de flux en paper.](../../_assets/situacions/mb-fonaments-computacio.webp)
 
 _La placa és el maquinari; els blocs de la pantalla i el diagrama són representacions del programa, no funcions que la placa detecte automàticament._
 

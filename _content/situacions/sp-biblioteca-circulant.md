@@ -14,7 +14,7 @@ duration: "7 sessions"
 challenge: "Com podem preparar, traçar, protegir i verificar un paquet de llibres en una maqueta sense exposar dades personals?"
 ---
 
-![Un prototip LEGO SPIKE Prime mou fitxes de llibres per una ruta de cartró amb diverses destinacions.](../../_assets/imatges/sa-sp-llibres.webp)
+![Un prototip LEGO SPIKE Prime mou fitxes de llibres per una ruta de cartró amb diverses destinacions.](../../_assets/situacions/sp-biblioteca-circulant.webp)
 
 _Una biblioteca escolar permet explorar rutes, verificació i privacitat amb paquets ficticis._
 
@@ -87,7 +87,7 @@ Presenteu el repte de traçar el mapa de passadissos de la mediateca i predigueu
 
 Munteu un traçador X-Y amb una agulla ampla que llisque sobre paper. En tàndem, una persona construeix la part superior del traçador i l’altra la base i l’agulla; després inspeccionen juntes que el conjunt es moga lliurement. Practiqueu com carregar el full sense arrugar-lo i comproveu primer cada pila de codi per separat. Comenceu amb línies verticals i horitzontals; reserveu diagonals per a una segona prova. Registreu les rotacions del motor i la longitud que ha traçat cada intent.
 
-![Model SPIKE Prime de la dotació al costat d’un traçador X-Y construït amb bigues i motors, amb una ruta de prova dibuixada sobre paper.](../../_assets/imatges/sa-sp-tracador-xy.webp)
+![Model SPIKE Prime de la dotació al costat d’un traçador X-Y construït amb bigues i motors, amb una ruta de prova dibuixada sobre paper.](../../_assets/situacions/sa-sp-tracador-xy.webp)
 
 _Il·lustració conceptual per a entendre els eixos i el traçat; no és una instrucció de muntatge. Comproveu el model i les peces disponibles abans de construir._
 
@@ -166,7 +166,7 @@ En els deu minuts inicials, pregunteu com treballen els robots de fàbrica: què
 
 Durant 35–55 minuts, cada equip identifica les parts clau del problema, genera idees, esbossa almenys dues solucions i en tria una amb criteris explícits: llegir el color assignat, dirigir la fitxa a la safata corresponent, repetir el moviment amb precisió i facilitar la revisió. Escriviu pseudocodi abans de construir i programeu només la detecció de color que permet el sensor. La forma, el text o el símbol de la fitxa són pistes per a les persones i no entren en la decisió automàtica: el sensor no llig paraules ni reconeix formes. Combineu rols i anoteu els problemes en lloc d’amagar-los. Si cal suport, comenceu d’un model base i milloreu-lo.
 
-![Model SPIKE Prime de la dotació comprova targetes de retorn de colors i les deriva cap a tres safates de prova.](../../_assets/imatges/sa-sp-classificador-retorns.webp)
+![Model SPIKE Prime de la dotació comprova targetes de retorn de colors i les deriva cap a tres safates de prova.](../../_assets/situacions/sa-sp-classificador-retorns.webp)
 
 _Prototip conceptual amb fitxes i safates fictícies; el sensor i el mecanisme s’han d’ajustar i calibrar amb les peces reals del centre. No classifica llibres, persones ni dades reals._
 

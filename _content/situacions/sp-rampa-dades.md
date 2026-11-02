@@ -14,7 +14,7 @@ duration: "6 sessions"
 challenge: "Què podem inferir sobre energia i moviment amb un vehicle de maqueta, i com descrivim l’error de les nostres mesures?"
 ---
 
-![Un vehicle LEGO SPIKE Prime puja una rampa baixa al costat d’un gràfic de dades.](../../_assets/imatges/sa-sp-energia.webp)
+![Un vehicle LEGO SPIKE Prime puja una rampa baixa al costat d’un gràfic de dades.](../../_assets/situacions/sp-rampa-dades.webp)
 
 _Les dades descriuen el model mecànic, no l’activitat física ni la salut de l’alumnat._
 
@@ -95,7 +95,7 @@ Feu tres intents per cadascuna de tres altures previstes. Registreu altura previ
 
 Subjecteu al mateix marcador dues masses lleugeres conegudes, d’una en una, i manteniu l’altura final igual. Calculeu Ep amb la massa i l’altura mesurades; compareu els resultats i expliqueu quin factor ha canviat. Si useu acceleració integrada, vídeo o temps, etiqueteu el resultat com a estimació: la integració acumula error i cap d’aquests mètodes dona directament una altura exacta.
 
-![Vehicle SPIKE Prime de la dotació al costat d’un sensor de distància que llig el moviment vertical d’un marcador lleuger; una regla i tres gràfiques buides ajuden a comparar les proves.](../../_assets/imatges/sa-sp-energia-sensor-distancia.webp)
+![Vehicle SPIKE Prime de la dotació al costat d’un sensor de distància que llig el moviment vertical d’un marcador lleuger; una regla i tres gràfiques buides ajuden a comparar les proves.](../../_assets/situacions/sa-sp-energia-sensor-distancia.webp)
 
 _La il·lustració mostra una configuració conceptual del sensor i del marcador. Cal fixar-los de manera estable amb les peces reals disponibles i comprovar el rang abans de mesurar._
 

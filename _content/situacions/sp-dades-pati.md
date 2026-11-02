@@ -14,7 +14,7 @@ duration: "10–12 sessions"
 challenge: "Com podem dissenyar programes amb variables i dades per a un festival escolar, comprovant la fiabilitat de cada decisió?"
 ---
 
-![Un model LEGO SPIKE Prime amb indicador de vent acompanya targetes d’observació i una planta de la maqueta.](../../_assets/imatges/sa-sp-pati-dades.webp)
+![Un model LEGO SPIKE Prime amb indicador de vent acompanya targetes d’observació i una planta de la maqueta.](../../_assets/situacions/sp-dades-pati.webp)
 
 _Les dades de les targetes són registres de prova: qualsevol decisió sobre l’hort correspon al grup i al centre._
 
@@ -87,7 +87,7 @@ Dediqueu cinc minuts a parlar de previsions meteorològiques i dades al núvol: 
 
 Durant 25 minuts, construïu en parelles el *weathercaster* i comproveu que els motors queden a la posició zero quan els braços estan abaixats. Amb connexió a internet, introduïu una ciutat pública i executeu el programa per observar les dades meteorològiques del bloc de l’app SPIKE. Afegiu una condició `IF/ELSE` perquè el model mostre si la previsió indica pluja. Els blocs meteorològics consulten previsions al núvol i només funcionen en línia; no llegeixen la pluja ni la nuvolositat del pati.
 
-![Model SPIKE Prime de la dotació amb un braç indicador davant de fitxes de sol i pluja, com a maqueta de visualització de la previsió.](../../_assets/imatges/sa-sp-weathercaster-clouds.webp)
+![Model SPIKE Prime de la dotació amb un braç indicador davant de fitxes de sol i pluja, com a maqueta de visualització de la previsió.](../../_assets/situacions/sa-sp-weathercaster-clouds.webp)
 
 _Il·lustració pròpia del prototip indicador: la previsió ve del bloc meteorològic de l’app per internet; el model no incorpora cap sensor atmosfèric ni pronostica el temps per si mateix._
 
@@ -157,7 +157,7 @@ Presenteu un repte de memòria cooperatiu: dues persones llegiran seqüències d
 
 Durant 15 minuts, munteu en parella el cap i el cos del model *Game Master*, repartint tasques perquè totes dues persones participen. Comproveu que el sensor de color queda alineat amb la peça abans de programar. La primera persona passa una tira de cinc peces i el programa registra, en ordre, les lectures en `llista_1`; la segona passa la seua tira i ompli `llista_2`. Comenceu amb tres peces si cal i augmenteu a cinc quan les lectures siguen repetibles. Si una peça no es reconeix amb prou estabilitat, repetiu la lectura o useu una seqüència de targetes identificada com a simulació.
 
-![Model SPIKE Prime amb sensor de color al costat de dues seqüències de cinc peces i indicadors que assenyalen les posicions coincidents.](../../_assets/imatges/sa-sp-joc-memoria-llistes.webp)
+![Model SPIKE Prime amb sensor de color al costat de dues seqüències de cinc peces i indicadors que assenyalen les posicions coincidents.](../../_assets/situacions/sa-sp-joc-memoria-llistes.webp)
 
 _Les seqüències són dades de prova pròpies; la fila d’indicadors il·lustra la comparació per posició, no una peça física del robot._
 

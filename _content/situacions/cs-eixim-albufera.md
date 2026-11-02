@@ -15,7 +15,7 @@ challenge: "Com podem completar tots els encàrrecs abans d’eixir, respectar l
 official_source: "https://matatalab.com/en/node/93"
 ---
 
-![MatataBot i la torre de control reals del Coding Set al costat d’un mapa de preparatius amb pictogrames per a l’excursió a l’Albufera.](../../_assets/imatges/sa-cs-excursio-albufera-v1.png)
+![MatataBot i la torre de control reals del Coding Set al costat d’un mapa de preparatius amb pictogrames per a l’excursió a l’Albufera.](../../_assets/situacions/cs-eixim-albufera.webp)
 
 _El mapa, les parades i la llista són materials propis. MatataBot només executa les ordres de moviment: no identifica els pictogrames ni sap si un encàrrec s’ha completat._
 
@@ -103,7 +103,7 @@ Abans de prémer inici, cada equip assenyala on espera que estiga MatataBot desp
 
 Executeu la ruta completa en una superfície plana i amb l’espai lliure. Una persona controla el tauler i l’altra registra les posicions després de cada encàrrec; després intercanvieu els rols. Si el robot se n’ix de la graella, anoteu la primera casella divergent, reviseu el recompte de moviments i l’orientació, i torneu a provar des del punt inicial.
 
-![MatataBot, torre de control i blocs reals del Coding Set durant una prova de ruta al costat d’una targeta de cuina.](../../_assets/imatges/sa-cs-excursio-prova-ruta-v1.png)
+![MatataBot, torre de control i blocs reals del Coding Set durant una prova de ruta al costat d’una targeta de cuina.](../../_assets/situacions/sa-cs-excursio-prova-ruta-v1.webp)
 
 _La imatge acompanya el registre d’una prova: la ruta i les caselles són una maqueta de l’aula, no un mapa oficial ni una lectura automàtica del robot._
 

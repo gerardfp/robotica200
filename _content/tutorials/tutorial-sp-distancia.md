@@ -9,7 +9,7 @@ image: _assets/tutorials/sp-distancia.png
 ---
 ## 🎯 Repte i objectius
 
-![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](../../_assets/imatges/spike-parada-distancia.webp)
+![Robot mòbil SPIKE Prime davant d’un bloc, amb un espai visible entre tots dos.](../../_assets/tutorials/spike-parada-distancia.webp)
 
 Estima quant avançarà la base motriu i compara el resultat amb la distància real al bloc. La pràctica utilitza els graus del motor i la geometria de les rodes per planificar la parada, i reserva el sensor de força per detectar el contacte en una prova comparativa.
 

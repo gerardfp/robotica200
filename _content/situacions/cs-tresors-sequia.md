@@ -15,7 +15,7 @@ challenge: "Com podem dissenyar un laberint clar i programar MatataBot per visit
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i la torre del Coding Set reals al costat d’un laberint de paper inspirat en séquies, amb dos tresors de cartó en punts diferents.](../../_assets/imatges/sa-cs-tresors-sequia-v1.png)
+![MatataBot i la torre del Coding Set reals al costat d’un laberint de paper inspirat en séquies, amb dos tresors de cartó en punts diferents.](../../_assets/situacions/cs-tresors-sequia.webp)
 
 _Il·lustració IA pròpia basada en el kit real. El laberint i els tresors són materials de paper; el robot executa els blocs i no detecta, arreplega ni identifica les peces._
 

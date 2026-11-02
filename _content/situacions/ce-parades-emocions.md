@@ -14,7 +14,7 @@ duration: "3 sessions · 120 min"
 challenge: "Com podem escoltar diferents interpretacions d’un personatge de ficció i representar-les sense decidir què sent una persona real?"
 ---
 
-![El tren Coding Express està al costat de tres targetes iguals de color crema amb diferents il·lustracions d’una erugueta de ficció.](../../_assets/imatges/sa-ce-parades-emocions.webp)
+![El tren Coding Express està al costat de tres targetes iguals de color crema amb diferents il·lustracions d’una erugueta de ficció.](../../_assets/situacions/ce-parades-emocions.webp)
 
 _El personatge és fictici; les targetes no associen una emoció a un color determinat._
 

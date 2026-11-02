@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem dissenyar una targeta digital que ajude a recordar vocabulari amb icones, seqüències i temps d’espera?"
 ---
 
-![Una placa micro:bit al costat de targetes en blanc amb icones senzilles per a practicar vocabulari.](../../_assets/imatges/sa-mb-targetes-paraules.webp)
+![Una placa micro:bit al costat de targetes en blanc amb icones senzilles per a practicar vocabulari.](../../_assets/situacions/mb-targetes-paraules.webp)
 
 _Les paraules i icones es trien amb la classe de llengües i es representen per seqüències LED._
 

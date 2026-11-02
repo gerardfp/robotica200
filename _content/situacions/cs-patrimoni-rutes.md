@@ -15,7 +15,7 @@ challenge: "Com podem usar una targeta de país per trobar el lloc patrimonial c
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i la torre de control reals del Coding Set davant d’un mapa amb imatges de patrimoni i targetes de país.](../../_assets/imatges/sa-cs-patrimoni-rutes-v1.png)
+![MatataBot i la torre de control reals del Coding Set davant d’un mapa amb imatges de patrimoni i targetes de país.](../../_assets/situacions/cs-patrimoni-rutes.webp)
 
 _Il·lustració IA pròpia basada en el kit de la dotació. Les targetes i la ruta són esquemàtiques; persones relacionen país i lloc amb fonts, i MatataBot només executa ordres de moviment._
 

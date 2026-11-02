@@ -14,7 +14,7 @@ duration: "6 lliçons · 6–8 sessions"
 challenge: "Què fa que una màquina siga un robot i com podem combinar maquinari, programa i treball en equip per resoldre una necessitat real?"
 ---
 
-![Prototip mòbil construït amb components SPIKE Prime: hub amb matriu lluminosa, dos motors, sensor de distància i sensor de color.](../../_assets/imatges/sa-sp-fonaments-fisics.webp)
+![Prototip mòbil construït amb components SPIKE Prime: hub amb matriu lluminosa, dos motors, sensor de distància i sensor de color.](../../_assets/situacions/sp-fonaments-fisics.webp)
 
 _Un mateix sistema combina peces, sensors, motors, instruccions i decisions de l’equip._
 
@@ -231,7 +231,7 @@ Feu una prova amb targetes o objectes, reviseu un criteri i anoteu una limitaci�
 
 **Evidència:** concepte de suport, registre de prova i reflexió privada. Cada persona pot anotar què li ha interessat, quina habilitat voldria practicar i quina pregunta investigaria després; compartir-ho és opcional i no s’avalua la preferència professional.
 
-![Un robot mòbil construït amb peces SPIKE Prime acompanya una activitat de lectura en una biblioteca escolar.](../../_assets/imatges/sa-sp-fonaments-carreres.webp)
+![Un robot mòbil construït amb peces SPIKE Prime acompanya una activitat de lectura en una biblioteca escolar.](../../_assets/situacions/sa-sp-fonaments-carreres.webp)
 
 _El prototip és un recurs d’aprenentatge: l’acompanyament educatiu i les decisions continuen en mans de les persones._
 

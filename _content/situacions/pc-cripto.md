@@ -14,7 +14,7 @@ duration: "4 sessions de 50 minuts"
 challenge: "Com podem transmetre un missatge de manera que el destinatari el puga recuperar, i què ens ensenya això sobre la privacitat digital?"
 ---
 
-![Una roda de Cèsar de cartó amb dues capes, un sobre i tires de missatge en blanc, preparats com a materials desconnectats d’aula.](../../_assets/imatges/sa-xifrat-paper-v2.png)
+![Una roda de Cèsar de cartó amb dues capes, un sobre i tires de missatge en blanc, preparats com a materials desconnectats d’aula.](../../_assets/situacions/pc-cripto.webp)
 
 _La roda, el sobre i les tires són una representació pròpia de materials de paper, no un producte oficial. La situació és desconnectada i no demana comptes ni dades personals._
 

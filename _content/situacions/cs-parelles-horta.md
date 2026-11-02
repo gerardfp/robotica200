@@ -15,7 +15,7 @@ challenge: "Com podem programar una ruta que connecte dues fruites iguals i just
 official_source: "https://matatalab.com/en/node/91"
 ---
 
-![MatataBot i la torre reals del Coding Set al costat d'una graella 4 × 4 amb setze pictogrames de fruita en huit parelles iguals.](../../_assets/imatges/sa-cs-parelles-horta-v1.png)
+![MatataBot i la torre reals del Coding Set al costat d'una graella 4 × 4 amb setze pictogrames de fruita en huit parelles iguals.](../../_assets/situacions/cs-parelles-horta.webp)
 
 _Les parelles es veuen en les targetes i les interpreta l'alumnat. MatataBot només recorre la seqüència programada: no reconeix ni tria fruites._
 
@@ -109,7 +109,7 @@ En equips de quatre, repartiu els rols de planificador/a, constructor/a de blocs
 
 Completeu una taula amb longitud en caselles, girs i blocs de cada solució. Expliqueu què heu mantingut igual per fer una comparació justa: mateix inici, mateix destí, mateixa orientació i mateixa escala del mapa. Un pla calculat en paper es marca com a simulat fins que es prova al robot.
 
-![MatataBot i la torre del Coding Set al costat d'un mapa amb huit parelles de fruita i dues rutes de diferent longitud entre dues taronges iguals.](../../_assets/imatges/sa-cs-parelles-rutes-v1.png)
+![MatataBot i la torre del Coding Set al costat d'un mapa amb huit parelles de fruita i dues rutes de diferent longitud entre dues taronges iguals.](../../_assets/situacions/sa-cs-parelles-rutes-v1.webp)
 
 _Les rutes en paper serveixen per comparar distàncies; cap fruita està detectada pel robot._
 

@@ -15,7 +15,7 @@ challenge: "Com planifiquem una ruta que passe al voltant de més d’un objecte
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i torre de control reals del Coding Set recorren una quadrícula al voltant d’un planter i una regadora de maqueta fins a una bandera.](../../_assets/imatges/sa-cs-ronda-viver-marjal-v1.png)
+![MatataBot i torre de control reals del Coding Set recorren una quadrícula al voltant d’un planter i una regadora de maqueta fins a una bandera.](../../_assets/situacions/cs-ronda-viver-marjal.webp)
 
 _Il·lustració IA pròpia basada en el kit real del Coding Set. Els objectes són marques fixes que les persones col·loquen i el robot evita amb una ruta prèviament programada; no hi ha sensor que els detecte._
 

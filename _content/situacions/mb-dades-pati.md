@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem recollir dades de l’entorn del pati i transformar-les en un prototip útil sense exposar informació personal?"
 ---
 
-![Una placa micro:bit, targetes de dades i un gràfic en blanc representen una investigació escolar del pati.](../../_assets/imatges/sa-mb-dades-pati.webp)
+![Una placa micro:bit, targetes de dades i un gràfic en blanc representen una investigació escolar del pati.](../../_assets/situacions/mb-dades-pati.webp)
 
 _Les dades descriuen l’entorn i la prova; no es fan perfils de les persones que l’utilitzen._
 

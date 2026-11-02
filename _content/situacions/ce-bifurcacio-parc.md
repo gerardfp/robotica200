@@ -14,7 +14,7 @@ duration: "3 sessions · 120 min"
 challenge: "Quina informació ens ajuda a decidir per quina branca ha de continuar el tren i com comprovem si ha arribat al destí triat?"
 ---
 
-![El tren Coding Express arriba a una bifurcació entre l’estació del parc i una biblioteca de maqueta.](../../_assets/imatges/sa-ce-bifurcacio.webp)
+![El tren Coding Express arriba a una bifurcació entre l’estació del parc i una biblioteca de maqueta.](../../_assets/situacions/ce-bifurcacio-parc.webp)
 
 _El tren Coding Express arriba a una bifurcació entre l’estació del parc i una biblioteca de maqueta._
 
@@ -80,7 +80,7 @@ Abans de muntar, mostreu el mapa de dues branques i pregunteu quina informació 
 
 Munteu la via en Y, col·loqueu una destinació en cada branca i situeu maons d’acció perquè el tren puga aturar-se, d’acord amb les funcions que el grup ja ha comprovat. La conductora rep un bitllet, verbalitza o assenyala la regla i mou l’agulla roja abans d’engegar el tren.
 
-![El tren Coding Express de la dotació arriba a una bifurcació amb l’agulla manual; un parc i una biblioteca marquen els dos destins.](../../_assets/imatges/sa-ce-bifurcacio-agulla.webp)
+![El tren Coding Express de la dotació arriba a una bifurcació amb l’agulla manual; un parc i una biblioteca marquen els dos destins.](../../_assets/situacions/sa-ce-bifurcacio-agulla.webp)
 
 _La targeta orienta la persona que controla l’agulla: el tren no llig el bitllet ni tria el ramal per si mateix._
 

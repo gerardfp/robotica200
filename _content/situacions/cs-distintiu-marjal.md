@@ -15,7 +15,7 @@ challenge: "Com podem crear un distintiu que represente l’encàrrec del nostre
 official_source: "https://matatalab.com/en/node/82"
 ---
 
-![MatataBot i la torre reals del Coding Set recorren una graella de paper al costat d’un distintiu geomètric dibuixat a mà amb formes de l’Albufera.](../../_assets/imatges/sa-cs-distintiu-marjal-v1.png)
+![MatataBot i la torre reals del Coding Set recorren una graella de paper al costat d’un distintiu geomètric dibuixat a mà amb formes de l’Albufera.](../../_assets/situacions/cs-distintiu-marjal.webp)
 
 _El robot recorre una seqüència de caselles i les persones traslladen el recorregut al distintiu de paper. No hi ha un llapis ni un accessori de dibuix instal·lat._
 

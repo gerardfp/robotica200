@@ -14,7 +14,7 @@ duration: "7 sessions"
 challenge: "Com podem fer que una maqueta reconega patrons de moviment, provar-ne els errors i explicar per a qui funciona?"
 ---
 
-![Una placa micro:bit i targetes d’exemples de moviment acompanyen una maqueta de divulgació científica.](../../_assets/imatges/sa-mb-models-moviment.webp)
+![Una placa micro:bit i targetes d’exemples de moviment acompanyen una maqueta de divulgació científica.](../../_assets/situacions/mb-models-moviment.webp)
 
 _El classificador respon a exemples de moviment i no interpreta el significat d’una gesticulació._
 

@@ -14,7 +14,7 @@ duration: "4 sessions de 20–25 minuts"
 challenge: "Quines formes i espais podem representar perquè el plànol del pati siga fàcil d’entendre i permeta més d’una manera de jugar?"
 ---
 
-![Tale-Bot amb un retolador dibuixa una línia contínua al voltant d’un pla senzill de pati escolar.](../../_assets/imatges/sa-tb-dibuix-pati.webp)
+![Tale-Bot amb un retolador dibuixa una línia contínua al voltant d’un pla senzill de pati escolar.](../../_assets/situacions/tb-dibuix-pati.webp)
 
 _Un esbós amb zones i recorreguts, dibuixat amb Tale-Bot i el suport per a retolador del kit. El mapa és una proposta, no un plànol arquitectònic._
 

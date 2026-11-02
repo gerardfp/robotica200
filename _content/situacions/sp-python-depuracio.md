@@ -14,7 +14,7 @@ duration: "6 lliçons · 5–6 sessions"
 challenge: "Com podem localitzar si un comportament inesperat prové del disseny, d’una connexió, d’un error de sintaxi o de la lògica del programa Python?"
 ---
 
-![Base mòbil LEGO SPIKE Prime aturada en una pista de prova de taula amb sensor de color i targetes de comprovació.](../../_assets/imatges/sa-sp-python-depuracio.webp)
+![Base mòbil LEGO SPIKE Prime aturada en una pista de prova de taula amb sensor de color i targetes de comprovació.](../../_assets/situacions/sp-python-depuracio.webp)
 
 _Depurar és reunir evidència: observar la maqueta, provar el codi i modificar una causa cada vegada._
 
@@ -112,7 +112,7 @@ No suposeu que paper, impressió i llum ambiental produeixen valors exactes: feu
 
 **Prova sistemàtica:** compareu el resultat real amb la taula: cada color esperat; un color no assignat; absència de targeta; targeta girada o amb llum canviada. Si no apareix una excepció però la resposta no correspon a l’especificació, és un possible error de lògica o calibratge, no un error de sintaxi. Canvieu una condició/llindar i repetiu; no retoqueu programa i llum alhora. Registreu cada entrada, valor llegit, branca executada i canvi fet. Acabeu explicant per què “el programa acaba sense error” no prova que faça el que volíem.
 
-![Prototip SPIKE Prime aturat al costat de targetes de color, amb el programa i una alerta de prova a la pantalla de l’ordinador.](../../_assets/imatges/sa-sp-python-depuracio-debug-v1.png)
+![Prototip SPIKE Prime aturat al costat de targetes de color, amb el programa i una alerta de prova a la pantalla de l’ordinador.](../../_assets/situacions/sa-sp-python-depuracio-debug-v1.webp)
 
 _La il·lustració representa una comprovació controlada: el robot no interpreta el missatge de l’ordinador; l’equip contrasta cada entrada amb el resultat esperat._
 

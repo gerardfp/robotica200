@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem preparar una ruta per a cada llavor de paper i contar què necessitarà la planta quan comence a créixer?"
 ---
 
-![Tale-Bot Pro de la dotació segueix una graella fins a tres bancals amb flors, carlotes i raves representats en paper.](../../_assets/imatges/sa-tb-llavors.webp)
+![Tale-Bot Pro de la dotació segueix una graella fins a tres bancals amb flors, carlotes i raves representats en paper.](../../_assets/situacions/tb-cami-llavors.webp)
 
 _Les llavors i els cultius del mapa són símbols de paper; la ruta ajuda a parlar de cura i creixement._
 

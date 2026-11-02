@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem convertir les ordres de MatataBot en una fira on classifiquem formes, escrivim nombres i dibuixem constel·lacions?"
 ---
 
-![La torre i el tauler reals del Coding Set, amb MatataBot sobre una graella de cel nocturn i targetes de formes i recorreguts.](../../_assets/imatges/sa-cs-matematiques-cosmos-v2.png)
+![La torre i el tauler reals del Coding Set, amb MatataBot sobre una graella de cel nocturn i targetes de formes i recorreguts.](../../_assets/situacions/cs-fira-matematica.webp)
 
 _La torre llig els blocs físics del tauler; les formes, els nombres i les figures del mapa són materials de paper que interpreta l’alumnat, no senyals que MatataBot reconega._
 
@@ -79,7 +79,7 @@ Quan el dau coincidisca amb la categoria seleccionada, busqueu en la graella una
 
 Completeu la programació en un sol intent. Si MatataBot arriba a la targeta, una persona l’arreplega manualment i la posa al mòdul de forma corresponent; el robot no reconeix la silueta ni recull l’aliment. Si no hi arriba, registreu la primera diferència i no torneu a programar dins d’eixe torn, tal com indica el repte oficial. Reviseu l’error després de la ronda o en una estació de pràctica sense dau; així es conserva la regla del joc sense penalitzar l’aprenentatge. Si una targeta admet més d’una interpretació, l’equip justifica la seua classificació amb el contorn geomètric acordat.
 
-![MatataBot, torre i tauler reals del Coding Set al costat d’una graella amb pictogrames plans d’aliments i quatre categories geomètriques per al joc cooperatiu del mercat.](../../_assets/imatges/sa-cs-biga-eater-mercat-v1.png)
+![MatataBot, torre i tauler reals del Coding Set al costat d’una graella amb pictogrames plans d’aliments i quatre categories geomètriques per al joc cooperatiu del mercat.](../../_assets/situacions/sa-cs-biga-eater-mercat-v1.webp)
 
 _Les targetes i el dau són materials de paper. Una persona retira la targeta quan el robot hi arriba; MatataBot no reconeix formes ni arreplega aliments._
 
@@ -105,7 +105,7 @@ Registreu els trams, els girs i el nombre d’ordres de cada xifra. Creeu una xi
 
 Executeu cada recorregut des del mateix punt inicial i compareu-lo amb la targeta. Si hi ha Artist Add-On compatible, fixeu-hi el retolador segons les instruccions del fabricant i proveu el traçat sobre paper gran; amb el kit base, MatataBot recorre les caselles sense dibuixar i l’alumnat ressegueix o marca el camí a mà. Identifiqueu una repetició útil —per exemple, els quatre costats d’un contorn quadrat— i compareu la seqüència desplegada amb el bucle. Després, creeu un codi de data fictícia triat per la classe (com ara el número d’una setmana o d’una parada), mai una data de naixement o una altra dada personal.
 
-![MatataBot del Coding Set i les seues peces al costat de deu targetes originals de xifres geomètriques sobre una graella.](../../_assets/imatges/sa-cs-xifres-graella.png)
+![MatataBot del Coding Set i les seues peces al costat de deu targetes originals de xifres geomètriques sobre una graella.](../../_assets/situacions/sa-cs-xifres-graella.webp)
 
 _Les xifres són models didàctics sobre quadrícula; el MatataBot del kit base recorre les caselles, però no deixa tinta sense el complement de dibuix._
 
@@ -129,7 +129,7 @@ _Les xifres són models didàctics sobre quadrícula; el MatataBot del kit base 
 
 #### Fase 3 · Expliquem i registrem
 
-![MatataBot i torre reals del Coding Set al costat d’un triangle equilàter i targetes que representen els girs als vèrtexs.](../../_assets/imatges/sa-cs-triangles-girs-v1.png)
+![MatataBot i torre reals del Coding Set al costat d’un triangle equilàter i targetes que representen els girs als vèrtexs.](../../_assets/situacions/sa-cs-triangles-girs-v1.webp)
 
 _El triangle i les targetes són representacions de paper. El traçat automàtic requereix Artist Add-On o Pro Set; amb el kit base, la figura es dibuixa a mà._
 
@@ -157,7 +157,7 @@ En parelles, una persona planteja un repte —triangle rectangle, agut o obtús�
 
 **Temps orientatiu: 30 minuts.** Repartiu els rols de disseny, programació, observació i acolorit. Amb Artist Add-On o Pro Set disponible, proveu primer cada forma sobre paper esborrable i, quan la ruta siga llegible, traceu-la en el full gran; programeu figures per separat i afegiu-les a una composició conjunta. Sense el complement, useu el robot per a recórrer una ruta en la graella i dibuixeu les formes a mà sobre el mural: aquesta alternativa no presenta el Coding Set base com un robot que dibuixa.
 
-![MatataBot i la torre reals del Coding Set al costat d’un mural de l’univers acolorit a mà amb cercle, triangle, quadrat i estrela.](../../_assets/imatges/sa-cs-univers-mural-v1.png)
+![MatataBot i la torre reals del Coding Set al costat d’un mural de l’univers acolorit a mà amb cercle, triangle, quadrat i estrela.](../../_assets/situacions/sa-cs-univers-mural-v1.webp)
 
 _El mural és una creació manual de l’alumnat. El traçat amb robot requereix Artist Add-On o Pro Set; amb el kit base, MatataBot només recorre una ruta i el dibuix es fa a mà._
 

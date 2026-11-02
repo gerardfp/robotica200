@@ -14,7 +14,7 @@ duration: "7 lliçons · 7–10 sessions"
 challenge: "Com podem recollir dades amb sensors SPIKE, comprovar-les i usar càlculs en Python per planificar un trajecte simulat de manera comprensible?"
 ---
 
-![Base mòbil LEGO SPIKE Prime en una ruta de paper amb marcadors geomètrics, una plaça de parada de cartó i una escala de mesura.](../../_assets/imatges/sa-sp-dades-transport.webp)
+![Base mòbil LEGO SPIKE Prime en una ruta de paper amb marcadors geomètrics, una plaça de parada de cartó i una escala de mesura.](../../_assets/situacions/sp-python-dades.webp)
 
 _El sensor dona una lectura; el programa n’indica les unitats, la transforma i l’usa en una decisió que podem provar._
 

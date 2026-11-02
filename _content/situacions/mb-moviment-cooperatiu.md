@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem crear un selector de jocs de moviment amb variables i atzar sense convertir les dades en puntuacions personals?"
 ---
 
-![Una placa micro:bit mostra un repte de moviment cooperatiu representat amb icones, no amb dades personals.](../../_assets/imatges/sa-mb-moviment.webp)
+![Una placa micro:bit mostra un repte de moviment cooperatiu representat amb icones, no amb dades personals.](../../_assets/situacions/mb-moviment-cooperatiu.webp)
 
 _Els programes són prototips didàctics: no mesuren salut, rendiment ni calories._
 

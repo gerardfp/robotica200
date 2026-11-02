@@ -14,7 +14,7 @@ duration: "8 sessions"
 challenge: "Com podem crear un temporitzador de maqueta amb aprenentatge automàtic i explicar amb honestedat quan falla?"
 ---
 
-![Una placa micro:bit i una maqueta interactiva amb targetes de dades representen un temporitzador d’activitats basat en patrons de moviment.](../../_assets/imatges/sa-mb-ia-exercici-responsable.webp)
+![Una placa micro:bit i una maqueta interactiva amb targetes de dades representen un temporitzador d’activitats basat en patrons de moviment.](../../_assets/situacions/mb-ia-exercici-responsable.webp)
 
 _El sistema és una demostració de classificació i temporització; no és un entrenador ni una eina de salut._
 

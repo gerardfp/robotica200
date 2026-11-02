@@ -21,7 +21,7 @@ Com 'veu' i guarda un ordinador un dibuix? L'alumnat codifica i descodifica imat
 
 Comenceu amb una graella de 5 × 5. Acordeu la convenció «0 és buit, 1 és pintat» i marqueu clarament el punt d'inici de cada fila. Una seqüència curta podria ser `1 1 1 0 0`; llegiu-la d'esquerra a dreta abans de passar a la fila següent.
 
-![El robot Codey Rocky al costat d’una graella física de cinc per cinc amb caselles blaves i grogues que formen un cor.](_assets/imatges/pixels-binaris.webp)
+![El robot Codey Rocky al costat d’una graella física de cinc per cinc amb caselles blaves i grogues que formen un cor.](_assets/activitats/pixels-binaris.webp)
 
 ## 👣 Desenvolupament pas a pas
 

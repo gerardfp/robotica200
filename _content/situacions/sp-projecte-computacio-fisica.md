@@ -14,7 +14,7 @@ duration: "500 min · 10–12 sessions"
 challenge: "Quin problema concret de la comunitat podem investigar i representar amb un prototip SPIKE Prime, i quines proves necessitem per explicar-ne el valor i els límits?"
 ---
 
-![Base mòbil LEGO SPIKE Prime en una maqueta comunitària amb zona de jardí, neteja simulada d’un rierol i caixes de paper.](../../_assets/imatges/sa-sp-projecte-final.webp)
+![Base mòbil LEGO SPIKE Prime en una maqueta comunitària amb zona de jardí, neteja simulada d’un rierol i caixes de paper.](../../_assets/situacions/sp-projecte-computacio-fisica.webp)
 
 _El prototip representa una idea que s’ha d’investigar, provar i situar dins dels seus límits reals._
 

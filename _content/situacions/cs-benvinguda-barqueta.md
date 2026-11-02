@@ -15,7 +15,7 @@ challenge: "Com preparem MatataBot i una barqueta de paper en una mateixa línia
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i la torre reals del Coding Set en una quadrícula, amb una barqueta de paper alineada davant i el bloc de música després dels blocs de moviment.](../../_assets/imatges/sa-cs-benvinguda-barqueta-v1.png)
+![MatataBot i la torre reals del Coding Set en una quadrícula, amb una barqueta de paper alineada davant i el bloc de música després dels blocs de moviment.](../../_assets/situacions/cs-benvinguda-barqueta.webp)
 
 _Il·lustració IA pròpia basada en el model real del Coding Set. La barqueta és una joguina de paper; MatataBot no la reconeix ni l’arreplega, només executa el recorregut i la música programats._
 

@@ -14,7 +14,7 @@ duration: "8–10 sessions"
 challenge: "Com podem identificar una necessitat, prototipar alternatives i millorar una solució accessible amb proves justes?"
 ---
 
-![Model construït amb SPIKE Prime al costat d’un prototip de cartó separat, amb un botó gran, una targeta d’alt contrast i peces tàctils per a una ruta de prova.](../../_assets/imatges/sa-sp-laboratori-accessible-v2.png)
+![Model construït amb SPIKE Prime al costat d’un prototip de cartó separat, amb un botó gran, una targeta d’alt contrast i peces tàctils per a una ruta de prova.](../../_assets/situacions/sp-museu-accessible.webp)
 
 _Il·lustració IA basada en el model SPIKE Prime de la dotació. El botó, la targeta i la ruta són un prototip manual separat: no estan connectats al robot ni validen per si mateixos una solució d’accessibilitat._
 
@@ -41,7 +41,7 @@ Dediqueu cinc minuts a introduir una situació fictícia i a recordar la diferè
 
 En lloc d’interpretar un animal domèstic, fem servir una escultura pròpia de l’aiguamoll i una història de ficció en un espai triat (aiguamoll, museu o camí de l’horta). El sensor de color llig tres fitxes i activa primer una seqüència inicial de referència i després una història nova de tres sons, un per cada color. En un minut, cada parella anota tots els problemes possibles que podria tindre el personatge; no resol encara res. El sensor llig les fitxes: no detecta animals ni interpreta la història. Per donar suport, restringiu l’escenari a un lloc i oferiu exemples de diferència entre fet observat i inferència; per ampliar, elimineu una interpretació evident i demaneu una descripció creativa del problema.
 
-![Prototip SPIKE Prime, escultura de l’aiguamoll i targetes de colors per preparar una història de tres sons.](../../_assets/imatges/sa-sp-help-museu.webp)
+![Prototip SPIKE Prime, escultura de l’aiguamoll i targetes de colors per preparar una història de tres sons.](../../_assets/situacions/sa-sp-help-museu.webp)
 
 _Il·lustració IA d’un muntatge possible amb peces del kit i materials d’aula. La història és fictícia; les targetes representen entrades de color i no són una funció de detecció d’éssers vius._
 
@@ -67,7 +67,7 @@ Dediqueu uns cinc minuts a parlar de prototips: què és una primera versió, pe
 
 Durant uns 25 minuts, construïu el model base amb el muntatge disponible al centre i executeu el programa de partida per observar com es mou. Dissenyeu almenys dos jocs de potes que impulsen el cos cap avant; no useu rodes com a sistema de locomoció. Proveu una alternativa, torneu a la base quan calga i busqueu una segona solució encara que la primera funcione. Una persona pot comparar la longitud de les potes o gambades i una altra el programa o la velocitat del motor; després intercanvien els rols. No cal que tots els prototips funcionen per a aportar evidència.
 
-![Prototip SPIKE Prime amb potes articulades i dues alternatives de mecanisme sense rodes.](../../_assets/imatges/sa-sp-hopper-potes.webp)
+![Prototip SPIKE Prime amb potes articulades i dues alternatives de mecanisme sense rodes.](../../_assets/situacions/sa-sp-hopper-potes.webp)
 
 _Il·lustració IA orientativa d’una prova de *Hopper Race*. Les potes són variants de prototip construïdes amb peces del kit; cal comprovar el muntatge disponible i mantindre el carril lliure._
 
@@ -93,7 +93,7 @@ Dediqueu uns cinc minuts a la pregunta «com decidiríem quin agafador és millo
 
 Durant uns vint minuts, munteu en parella el controlador manual i els dos agafadors de prova. Repartiu la construcció —una persona fa el primer agafador; l’altra, el segon i el controlador— i després intercanvieu qui programa o manipula. El primer disseny flexible s’adapta millor a objectes lleugers; el segon, amb la boca partida, a objectes més grans. Executeu el programa de prova per entendre com s’obri i es tanca cada mecanisme abans de començar a recollir dades. Prepareu materials d’aula no fràgils i sense valor personal: per exemple, peces LEGO o boles de paper de diferents mides. Per variar el pes amb la mateixa forma, useu capsetes iguals tancades amb quantitats diferents de peces LEGO. No utilitzeu vidre, aliments ni objectes personals.
 
-![Dos agafadors SPIKE Prime de formes diferents, amb objectes lleugers i una taula de comparació.](../../_assets/imatges/sa-sp-super-cleanup-agafadors.webp)
+![Dos agafadors SPIKE Prime de formes diferents, amb objectes lleugers i una taula de comparació.](../../_assets/situacions/sa-sp-super-cleanup-agafadors.webp)
 
 _Il·lustració IA de dos prototips de pinça i materials de prova segurs. Les formes són exemples; construïu i compareu els mecanismes reals amb les peces disponibles._
 
@@ -119,7 +119,7 @@ Obriu amb una conversa breu sobre què fem quan un objecte deixa de funcionar i 
 
 Dediqueu fins a 35 minuts a construir per parelles la màquina sabent que ha de quedar inicialment inoperativa. Repartiu les tasques de muntatge del bastidor superior/motors i de la base/carro del llapis; després comproveu que el paper entra per la base i que el suport manté el llapis en contacte. Abans d’activar els motors, escriviu un pseudocodi o expliqueu oralment què fa cada pas del programa. Executeu-lo una vegada a baixa velocitat, observeu la diferència entre el dibuix esperat i el real i documenteu els símptomes; a partir d’eixes observacions, proposeu causes possibles. Useu el paper pautat de prova a escala original, sense redimensionar-lo, o una graella local de mida comprovada.
 
-![Traçadora de dos eixos construïda amb hub, motors i bigues SPIKE Prime, al costat del quadern d’observació.](../../_assets/imatges/sa-sp-broken-tracadora.webp)
+![Traçadora de dos eixos construïda amb hub, motors i bigues SPIKE Prime, al costat del quadern d’observació.](../../_assets/situacions/sa-sp-broken-tracadora.webp)
 
 _Il·lustració IA d’una màquina de paper basada en peces SPIKE Prime. El prototip representat no identifica les avaries: l’alumnat les ha de deduir de les proves._
 
@@ -145,7 +145,7 @@ Dediqueu uns quinze minuts a obrir una conversa sobre disseny assistiu i funcion
 
 En la primera trobada, feu una pluja d’idees individual i en parella sobre funcions possibles d’una eina de taula. En 30 minuts, acoteu la tasca a una funció concreta —per exemple, agafar un objecte gran, subjectar una targeta o girar una maneta de maqueta— i trieu dues idees que vulgueu provar. Descriviu el context, la persona usuària de manera no identificable, els criteris d’èxit i les restriccions. La necessitat pot ser fictícia o aportada voluntàriament per una persona adulta col·laboradora, que pot modificar-la o retirar-se en qualsevol moment.
 
-![Dues idees de prototip per a una taula de treball: un suport per a targetes i una palanca per moure un objecte lleuger.](../../_assets/imatges/sa-sp-design-someone-prototips.webp)
+![Dues idees de prototip per a una taula de treball: un suport per a targetes i una palanca per moure un objecte lleuger.](../../_assets/situacions/sa-sp-design-someone-prototips.webp)
 
 _Il·lustració IA de prototips primerencs fets amb bigues SPIKE Prime, cartó i paper. Són exemples per a provar amb objectes, no pròtesis ni dispositius per a l’ús sobre persones._
 
@@ -171,7 +171,7 @@ Dediqueu deu minuts a conversar sobre d’on venen les idees d’invents i quins
 
 Dins de quinze minuts, dissenyeu individualment un ajudant d’escriptori amb paper, llapis i materials de construcció corrents o reutilitzats. No hi ha instruccions ni model final obligatori; les imatges de referència només inspiren. Feu una pluja d’idees, construïu un prototip ràpid i proveu-lo amb els criteris acordats. Si una idea no funciona, torneu al cicle de disseny una segona o tercera vegada si el temps ho permet. L’activitat híbrida no necessita SPIKE Prime, BricQ ni hub.
 
-![Prototips d’escriptori fets amb blocs de construcció i cartó per a mantindre una etiqueta dreta, ordenar peces i guardar llapis; no hi ha robots ni electrònica.](../../_assets/imatges/sa-sp-ajudant-taula-preparacio.webp)
+![Prototips d’escriptori fets amb blocs de construcció i cartó per a mantindre una etiqueta dreta, ordenar peces i guardar llapis; no hi ha robots ni electrònica.](../../_assets/situacions/sa-sp-ajudant-taula-preparacio.webp)
 
 _Exemple visual d’un prototip obert per a la taula de preparació del museu escolar; és una inspiració, no un model que cal copiar._
 

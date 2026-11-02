@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem comparar la llum de diferents espais amb un procediment repetible i explicar els límits de la mesura?"
 ---
 
-![Codey Rocky de la dotació entre una finestra i un llum de taula, com a punts de comparació de llum.](../../_assets/imatges/sa-cr-llum-aula.webp)
+![Codey Rocky de la dotació entre una finestra i un llum de taula, com a punts de comparació de llum.](../../_assets/situacions/cr-llum-aula.webp)
 
 _El valor del sensor serveix per comparar proves semblants; no és una mesura certificada d’il·luminació._
 

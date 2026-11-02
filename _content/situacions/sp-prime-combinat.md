@@ -14,7 +14,7 @@ duration: "7–8 sessions"
 challenge: "Com podem automatitzar una acció quotidiana de menor impacte i dissenyar una eina que manege el fruit amb suavitat?"
 ---
 
-![Un muntatge LEGO SPIKE Prime acompanya una maqueta de casa amb una pantalla mòbil i una branca amb fruits de paper.](../../_assets/imatges/sa-sp-casa-collita.webp)
+![Un muntatge LEGO SPIKE Prime acompanya una maqueta de casa amb una pantalla mòbil i una branca amb fruits de paper.](../../_assets/situacions/sp-prime-combinat.webp)
 
 _Dos reptes d’enginyeria redissenyats per al centre i per als materials SPIKE Prime disponibles._
 

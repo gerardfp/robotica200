@@ -14,7 +14,7 @@ duration: "6 sessions"
 challenge: "Com podem combinar entrades, eixides, sensors i aleatorietat per crear sis projectes útils i lúdics per a la biblioteca?"
 ---
 
-![Una placa micro:bit entre llibres il·lustra un laboratori de projectes digitals per a la biblioteca escolar.](../../_assets/imatges/sa-mb-raco-lectura.webp)
+![Una placa micro:bit entre llibres il·lustra un laboratori de projectes digitals per a la biblioteca escolar.](../../_assets/situacions/mb-raco-lectura.webp)
 
 _Una mateixa placa dona lloc a sis projectes; la ruta es pot programar amb blocs o amb Python._
 

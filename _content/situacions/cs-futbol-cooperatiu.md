@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem programar una ruta de passada perquè la pilota arribe a una zona acordada i tothom puga participar en el repte?"
 ---
 
-![El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zones de passada.](../../_assets/imatges/sa-cs-futbol.webp)
+![El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zones de passada.](../../_assets/situacions/cs-futbol-cooperatiu.webp)
 
 _El Coding Set i MatataBot en una pista de futbol de taula amb una pilota i zones de passada._
 

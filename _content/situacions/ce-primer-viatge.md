@@ -15,7 +15,7 @@ challenge: "Quins elements necessitem per preparar una ruta clara perquè el tre
 official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/first-trip/"
 ---
 
-![El tren Coding Express de la dotació recorre una via amb una estació i maons d’acció de colors.](../../_assets/imatges/sa-ce-primer-viatge.webp)
+![El tren Coding Express de la dotació recorre una via amb una estació i maons d’acció de colors.](../../_assets/situacions/ce-primer-viatge.webp)
 
 _El tren Coding Express de la dotació recorre una via amb una estació i maons d’acció de colors._
 
@@ -73,7 +73,7 @@ Recupereu la ruta i pregunteu com es pot aturar el tren amb seguretat. En una vi
 
 La persona conductora executa la prova; l’observadora assenyala el lloc real i la registradora marca el resultat amb una icona o una paraula. Repetiu el protocol amb el maó d’acció roig i el maó roig d’aturada només si tots dos formen part de la dotació.
 
-![Tres escenes amb el Coding Express real comparen l’aturada manual, el maó d’acció roig i el maó roig d’aturada.](../../_assets/imatges/sa-ce-primer-viatge-aturades.png)
+![Tres escenes amb el Coding Express real comparen l’aturada manual, el maó d’acció roig i el maó roig d’aturada.](../../_assets/situacions/sa-ce-primer-viatge-aturades.webp)
 
 _Els panells representen les tres modalitats descrites per LEGO; comproveu quines peces roges hi ha en el set del centre i on s’atura realment el tren._
 

@@ -14,7 +14,7 @@ duration: "4 sessions · 200 min"
 challenge: "Com podem explicar els riscos digitals i provar un algorisme de contrasenyes amb dades completament fictícies?"
 ---
 
-![Una placa BBC micro:bit sobre una taula amb targetes en blanc i un cadenat de paper per parlar de contrasenyes.](../../_assets/imatges/sa-mb-clau-segura.webp)
+![Una placa BBC micro:bit sobre una taula amb targetes en blanc i un cadenat de paper per parlar de contrasenyes.](../../_assets/situacions/mb-clau-segura.webp)
 
 _La placa representa estats i passos d’un algorisme; no guarda ni protegeix contrasenyes reals._
 

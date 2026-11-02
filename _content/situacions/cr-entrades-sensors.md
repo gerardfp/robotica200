@@ -14,7 +14,7 @@ duration: "12 sessions"
 challenge: "Com pot Codey Rocky percebre senyals del seu entorn i convertir-los en respostes que siguen útils, clares i comprovables?"
 ---
 
-![Codey Rocky observa targetes de colors i una roda de selecció mentre mostra una expressió a la pantalla LED.](../../_assets/imatges/sa-cr-entrades-sensors.webp)
+![Codey Rocky observa targetes de colors i una roda de selecció mentre mostra una expressió a la pantalla LED.](../../_assets/situacions/cr-entrades-sensors.webp)
 
 _El laboratori combina els components integrats de Codey amb materials de prova de l'aula._
 
@@ -148,7 +148,7 @@ Prepareu dos Codey Rocky i dos ordinadors amb mBlock compatible; si cal, connect
 
 Escriviu un guió de tres moments —inici, missatge i resposta— i executeu-lo amb els dos robots. Registreu per a cada prova el codi enviat, el valor rebut, la variable i la resposta LED; compareu el relat previst amb el que realment s’ha mostrat. La història i els símbols són creació de l’equip, no contingut incorporat al robot.
 
-![Dos Codey Rocky de la dotació intercanvien un senyal IR representat de manera conceptual mentre l’equip prepara targetes de relat sobre un entorn pròxim.](../../_assets/imatges/sa-cr-when-codey-meets-codey-v1.png)
+![Dos Codey Rocky de la dotació intercanvien un senyal IR representat de manera conceptual mentre l’equip prepara targetes de relat sobre un entorn pròxim.](../../_assets/situacions/sa-cr-when-codey-meets-codey-v1.webp)
 
 _El senyal i les targetes són una representació didàctica; cal comprovar l’orientació i la recepció en el maquinari disponible._
 
@@ -214,7 +214,7 @@ Prepareu targetes de colors per a una galeria del pati i predigueu quines podrà
 
 Feu lectures de diverses targetes, manteniu la distància, l’orientació i la llum tan constants com siga possible i creeu una regla inicial de classificació.
 
-![Codey Rocky de la dotació apunta el sensor frontal cap a una targeta roja, amb altres mostres de color i una taula de registre.](../../_assets/imatges/sa-cr-sensor-color-proves.webp)
+![Codey Rocky de la dotació apunta el sensor frontal cap a una targeta roja, amb altres mostres de color i una taula de registre.](../../_assets/situacions/sa-cr-sensor-color-proves.webp)
 
 _La prova classifica lectures de superfícies en condicions controlades; el sensor no identifica què és l’objecte ni garanteix el mateix resultat amb qualsevol llum o distància._
 

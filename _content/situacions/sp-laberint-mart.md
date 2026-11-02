@@ -14,7 +14,7 @@ duration: "12–15 sessions"
 challenge: "Com podem dissenyar un robot fiable que complete missions de cura de l’entorn i explique amb proves les decisions de l’equip?"
 ---
 
-![Robot LEGO SPIKE Prime en un camp de proves amb una ruta marcada i objectes lleugers per a una missió de l'entorn.](../../_assets/imatges/sa-sp-missio-albufera.webp)
+![Robot LEGO SPIKE Prime en un camp de proves amb una ruta marcada i objectes lleugers per a una missió de l'entorn.](../../_assets/situacions/sp-laberint-mart.webp)
 
 _El camp, les peces de missió i la puntuació són originals. La proposta treballa amb una maqueta escolar inspirada en la cura de l’Albufera._
 
@@ -109,7 +109,7 @@ Per al seguiment continu, alterneu detecció de fosc i clar amb moviments ràpid
 
 Munteu la base de conducció amb el sensor de color SPIKE Prime i reviseu-ne l’orientació i l’alçada respecte del camp. Feu una línia negra ampla sobre una pista clara i un model original amb una palanca de cartó articulada: una peça lleugera a la part frontal empeny la palanca perquè eleve el pont; no useu el model ni el tapet LEGO de la temporada. Proveu la palanca a mà i després amb el robot a potència baixa. Afegiu una zona d’eixida a cada costat i marqueu dos punts d’alineament propers al mecanisme. El pont ha de ser lleuger, estable i sense vores tallants.
 
-![Robot SPIKE Prime de la dotació segueix una línia fins a una palanca de cartó que eleva un pont de mostreig entre dues zones de prova.](../../_assets/imatges/sa-sp-missio-pont.webp)
+![Robot SPIKE Prime de la dotació segueix una línia fins a una palanca de cartó que eleva un pont de mostreig entre dues zones de prova.](../../_assets/situacions/sa-sp-missio-pont.webp)
 
 _Il·lustració generada amb IA del prototip local; el muntatge és conceptual i no reprodueix cap model oficial de FIRST LEGO League._
 
@@ -223,7 +223,7 @@ La sessió trasllada al context de l’Albufera el procés de disseny d’enginy
 
 Reserveu 10 minuts. Mostreu la imatge del nus que cal desfer i doneu temps perquè tothom pense abans de parlar. Acordeu una definició compartida de *resoldre creativament* i demaneu que el grup identifique el problema, propose almenys dues maneres d’abordar-lo, trie què provaria primer i anticipe què canviaria si no funciona. Tanqueu amb una definició breu d’**iteració**: repetir un procés per acostar-se al resultat desitjat, avaluant i revisant la solució quan cal.
 
-![Nus de corda, esbós de solució i prototip de cartó amb materials reutilitzats per a representar el procés d’idear, provar i millorar.](../../_assets/imatges/sa-sp-mission-training-prototip.png)
+![Nus de corda, esbós de solució i prototip de cartó amb materials reutilitzats per a representar el procés d’idear, provar i millorar.](../../_assets/situacions/sa-sp-mission-training-prototip.webp)
 
 #### Fase 2 · Explorem i construïm
 

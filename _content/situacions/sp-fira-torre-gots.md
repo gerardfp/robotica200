@@ -15,7 +15,7 @@ challenge: "Com podem planificar, programar i millorar una ruta que evite obstac
 official_source: "https://matatalab.com/en/node/94"
 ---
 
-![Un vehicle SPIKE Prime real de la dotació s'acosta a una torre lleugera de gots de paper; al mapa de taula es veu una ruta que voreja un obstacle.](../../_assets/imatges/sa-sp-fira-torre-gots-v1.png)
+![Un vehicle SPIKE Prime real de la dotació s'acosta a una torre lleugera de gots de paper; al mapa de taula es veu una ruta que voreja un obstacle.](../../_assets/situacions/sp-fira-torre-gots.webp)
 
 _Il·lustració conceptual generada amb IA a partir del model SPIKE Prime del centre. La torre representada és orientativa: munteu cada torre real amb cinc gots a la base, quatre al nivell central i tres al capdamunt._
 

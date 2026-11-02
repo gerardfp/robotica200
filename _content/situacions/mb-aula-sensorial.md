@@ -14,7 +14,7 @@ duration: "4 sessions · 200 min"
 challenge: "Com podem crear un recurs visual opcional i configurable que ajude a fer més previsible una rutina de l’aula?"
 ---
 
-![Micro:bit en un suport de cartó amb interruptor d’aturada i targetes de patrons visuals tranquils.](../../_assets/imatges/sa-mb-aula-sensorial.webp)
+![Micro:bit en un suport de cartó amb interruptor d’aturada i targetes de patrons visuals tranquils.](../../_assets/situacions/mb-aula-sensorial.webp)
 
 _El patró és una opció configurable, no una resposta universal a les necessitats sensorials._
 
@@ -115,7 +115,7 @@ Predigueu com es podrà activar i aturar el prototip abans de muntar-lo. Comprov
 
 Col·loqueu la micro:bit en un suport estable sense tapar botons ni matriu LED, o deixeu-la plana si així és més fàcil controlar-la. Implementeu l’algoritme amb entrades, selecció, una repetició limitada i eixida estàtica; no afegiu automatismes que observen la classe.
 
-![Micro:bit real de la dotació en un suport de cartó, al costat de targetes de paper amb un sol, una fulla i una opció neutra en blanc.](../../_assets/imatges/sa-mb-aula-sensorial-opcions-v2.png)
+![Micro:bit real de la dotació en un suport de cartó, al costat de targetes de paper amb un sol, una fulla i una opció neutra en blanc.](../../_assets/situacions/sa-mb-aula-sensorial-opcions-v2.webp)
 
 _La placa presenta un patró visual triat; no observa l’aula ni interpreta emocions. La persona pot fer servir les targetes de paper o deixar el dispositiu apagat._
 

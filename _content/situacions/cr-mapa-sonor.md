@@ -14,7 +14,7 @@ duration: "5 sessions · 225–250 min"
 challenge: "Com podem descriure i comparar l’ambient sonor d’un espai sense identificar qui parla ni confondre una lectura del sensor amb una mesura clínica o en decibels?"
 ---
 
-![Codey Rocky al costat d’un mapa de l’aula amb zones de colors i ones que representen mostres controlades de so.](../../_assets/imatges/sa-cr-mapa-sonor.webp)
+![Codey Rocky al costat d’un mapa de l’aula amb zones de colors i ones que representen mostres controlades de so.](../../_assets/situacions/cr-mapa-sonor.webp)
 
 _El sensor de so permet comparar mostres en unes condicions acordades; no grava ni identifica què o qui ha produït el so._
 
@@ -142,7 +142,7 @@ Mostreu un plànol fictici amb tres espais: taula de lectura, prestatgeria i zon
 
 Assigneu cada material a una zona fictícia i situeu-hi el codi de mostra, no el nom de cap persona. Enregistreu de nou tres repeticions per material amb el protocol. Traslladeu al mapa una escala de colors acordada pel grup i afegiu-hi la distància i el rang observat.
 
-![Codey Rocky al costat d’un mapa de tres zones fictícies i un gràfic de barres sense dades personals.](../../_assets/imatges/sa-cr-mapa-sonor-zones.webp)
+![Codey Rocky al costat d’un mapa de tres zones fictícies i un gràfic de barres sense dades personals.](../../_assets/situacions/sa-cr-mapa-sonor-zones.webp)
 
 _Les zones de color representen escenaris controlats de prova, no una vigilància de la biblioteca ni una mesura de l’estat de les persones._
 

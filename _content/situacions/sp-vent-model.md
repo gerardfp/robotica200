@@ -14,7 +14,7 @@ duration: "3 sessions de 45–60 min"
 challenge: "Com podem convertir la velocitat prevista del vent en una representació calibrada, comparable i comprensible?"
 ---
 
-![Hub SPIKE Prime i indicador mecànic de vent al costat d'una pantalla que representa dades meteorològiques per categories.](../../_assets/imatges/sa-sp-vent-dades.webp)
+![Hub SPIKE Prime i indicador mecànic de vent al costat d'una pantalla que representa dades meteorològiques per categories.](../../_assets/situacions/sp-vent-model.webp)
 
 _La maqueta mostra dades consultades al núvol; no mesura el vent que fa al pati._
 
@@ -64,7 +64,7 @@ Expliqueu què representa l’agulla i què no permet concloure la maqueta. **Ev
 
 Ordeneu targetes de velocitat i associeu cada banda amb el color acordat. Manteniu les unitats visibles: **calma · força 0:** 0–<0,5 m/s; **blau · forces 1–3:** 0,5–<5,5 m/s; **verd · forces 4–6:** 5,5–<13,8 m/s; **groc · forces 7–9:** 13,8–<24,4 m/s; **roig · forces 10–12:** ≥24,4 m/s. Els quatre colors agrupen forces segons el resum de LEGO; no són els tretze trams complets de l’escala Beaufort. La força 12 no té límit superior. Predigueu el resultat en cada frontera.
 
-![Quatre grups de línies de vent que augmenten d’intensitat, de blau a verd, groc i roig.](../../_assets/imatges/sa-sp-vent-beaufort.webp)
+![Quatre grups de línies de vent que augmenten d’intensitat, de blau a verd, groc i roig.](../../_assets/situacions/sa-sp-vent-beaufort.webp)
 
 _Representació qualitativa dels quatre trams; no és una escala de mesura. Per programar, useu els valors i les unitats._
 
@@ -100,7 +100,7 @@ Abans d’executar el programa, compareu dues velocitats en cadascuna de tres ci
 
 Executeu el mateix programa amb almenys dues velocitats diferents en cadascuna de les tres ciutats. Afegiu la direcció del vent amb fletxes a la matriu LED del hub. Si hi ha temps, amplieu l’indicador fins a 180° i mesureu quant tarda l’equip a recalibrar-lo; un segon motor per al dial és opcional. Per a l’ampliació, convertiu les dades a una altra unitat (per exemple, km/h), feu explícit el factor de conversió i comproveu un valor de frontera.
 
-![Hub SPIKE Prime connectat a un motor que mou una agulla davant de quatre trams de colors: blau, verd, groc i roig; una cinta blanca representa el vent.](../../_assets/imatges/sa-sp-vent-indicador.webp)
+![Hub SPIKE Prime connectat a un motor que mou una agulla davant de quatre trams de colors: blau, verd, groc i roig; una cinta blanca representa el vent.](../../_assets/situacions/sa-sp-vent-indicador.webp)
 
 _L’agulla representa la categoria de la previsió seleccionada; la maqueta no capta el vent de l’aula ni del pati._
 

@@ -14,7 +14,7 @@ duration: "5 sessions · 250 min"
 challenge: "Com podem dissenyar una eina que ajude una persona amb guants a moure peces o guiar un cable en una reparació simulada?"
 ---
 
-![El hub SPIKE Prime, un motor i bigues LEGO mouen una pinça davant d’una volandera lleugera sobre un tauler de maqueta EVA.](../../_assets/imatges/sa-sp-eina-eva.webp)
+![El hub SPIKE Prime, un motor i bigues LEGO mouen una pinça davant d’una volandera lleugera sobre un tauler de maqueta EVA.](../../_assets/situacions/sp-eines-missio-eva.webp)
 
 _La maqueta representa una reparació extravehicular; el prototip és SPIKE Prime i només actua sobre peces de prova lleugeres._
 

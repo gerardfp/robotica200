@@ -14,7 +14,7 @@ duration: "2 sessions · 100 min"
 challenge: "Com podem explicar una observació de la natura amb una icona LED i una animació programada?"
 ---
 
-![Una placa micro:bit mostra una icona de pixel d’un ocell al costat d’un taumàtrop de paper inspirat en l’aiguamoll.](../../_assets/imatges/sa-mb-animacions-aiguamoll.webp)
+![Una placa micro:bit mostra una icona de pixel d’un ocell al costat d’un taumàtrop de paper inspirat en l’aiguamoll.](../../_assets/situacions/mb-animacions-aiguamoll.webp)
 
 _Les icones són representacions pròpies, no imatges realistes ni reclams per a fauna salvatge._
 
@@ -67,7 +67,7 @@ Compareu la predicció amb la matriu i valoreu si el públic ha reconegut el tre
 
 **Construïm i prediem (10 min).** Dibuixeu en les dues cares d’un disc de cartolina una figura i un canvi menut —per exemple, una au quieta i l’au amb l’ala en una altra posició—. Alineeu el centre de les imatges abans d’enganxar el pal o les nanses de paper; proveu el gir lentament i anoteu quan costa llegir el canvi.
 
-![Placa micro:bit real de la dotació, dues graelles 5 × 5 amb una au en dos fotogrames i un taumàtrop de paper amb una escena de l’aiguamoll.](../../_assets/imatges/sa-mb-animacions-taumatrop-v2.png)
+![Placa micro:bit real de la dotació, dues graelles 5 × 5 amb una au en dos fotogrames i un taumàtrop de paper amb una escena de l’aiguamoll.](../../_assets/situacions/sa-mb-animacions-taumatrop-v2.webp)
 
 _La placa i les graelles representen l’animació LED; el taumàtrop és una manualitat de paper separada, no un accessori electrònic._
 

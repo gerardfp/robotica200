@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem planificar la compra de fruites i verdures de temporada al mercat gastant el pressupost just i fent el camí més curt?"
 ---
 
-![MatataBot de cúpula taronja i Control Tower reals del Coding Set recorren una graella pròpia amb dues parades de mercat.](../../_assets/imatges/sa-mercat-codingset-v2.webp)
+![MatataBot de cúpula taronja i Control Tower reals del Coding Set recorren una graella pròpia amb dues parades de mercat.](../../_assets/situacions/cs-mercat-tangible.webp)
 
 _La graella i les parades són una adaptació pròpia; els preus ficticis permeten practicar càlcul sense jutjar cap família._
 

@@ -15,7 +15,7 @@ challenge: "Com podem comunicar una paraula, localitzar-ne la imatge en un mapa 
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i la torre de control reals del Coding Set davant d’un mapa de targetes il·lustrades amb vocabulari de la marjal.](../../_assets/imatges/sa-cs-vocabulari-marjal-v1.png)
+![MatataBot i la torre de control reals del Coding Set davant d’un mapa de targetes il·lustrades amb vocabulari de la marjal.](../../_assets/situacions/cs-vocabulari-marjal.webp)
 
 _Il·lustració IA pròpia basada en el Coding Set de la dotació. Les targetes són materials de paper i la persona tria i llig la imatge: MatataBot no reconeix dibuixos ni paraules._
 

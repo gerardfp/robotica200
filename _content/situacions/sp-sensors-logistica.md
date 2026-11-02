@@ -14,7 +14,7 @@ duration: "8 lliçons · 10–14 sessions"
 challenge: "Com pot un robot detectar condicions, actuar amb seguretat i coordinar-se amb altres equips sense confondre la simulació amb un servei real?"
 ---
 
-![Base mòbil real SPIKE Prime amb sensor de color orientat cap a una ruta de paper que passa per paquets de maqueta.](../../_assets/imatges/sa-sp-sensors-logistica.webp)
+![Base mòbil real SPIKE Prime amb sensor de color orientat cap a una ruta de paper que passa per paquets de maqueta.](../../_assets/situacions/sp-sensors-logistica.webp)
 
 _Els sensors proporcionen entrades concretes; les regles i decisions del programa les defineix l’equip._
 
@@ -207,7 +207,7 @@ Relacioneu classificació, ruta i coordinació amb el treball real. Feu visibles
 
 **Evidència:** representació del procés i presentació. La fitxa individual d’interessos professionals és voluntària i privada.
 
-![Robot mòbil SPIKE Prime amb el sensor de color sobre una targeta roja i una capsa lleugera al costat d’una safata de destinació roja.](../../_assets/imatges/sa-sp-sensors-triatge.webp)
+![Robot mòbil SPIKE Prime amb el sensor de color sobre una targeta roja i una capsa lleugera al costat d’una safata de destinació roja.](../../_assets/situacions/sa-sp-sensors-triatge.webp)
 
 _La targeta de color identifica la càrrega; el repte és programar la base perquè la classifique, la trasllade i torne a l’origen de manera autònoma._
 

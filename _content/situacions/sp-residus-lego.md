@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Podem crear una màquina que classifique mostres de prova i explicar amb honestedat què no sap identificar?"
 ---
 
-![Prototip SPIKE Prime amb sensor de color, mostres de maons i safates de classificació per colors.](../../_assets/imatges/sa-classificador-residus.webp)
+![Prototip SPIKE Prime amb sensor de color, mostres de maons i safates de classificació per colors.](../../_assets/situacions/sp-residus-lego.webp)
 
 _El prototip classifica mostres de prova segons el color; no determina per si mateix el material ni el contenidor correcte._
 

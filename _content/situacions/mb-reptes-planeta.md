@@ -14,7 +14,7 @@ duration: "10–15 sessions · selecció de reptes"
 challenge: "Quin prototip podem dissenyar per a respondre a un repte real sense prometre una protecció que la tecnologia no pot garantir?"
 ---
 
-![Micro:bit real de la dotació al centre de quatre maquetes de taula: aiguamoll, mapa oceànic, camí costaner i pista escolar de proves.](../../_assets/imatges/sa-mb-reptes-planeta-v2.png)
+![Micro:bit real de la dotació al centre de quatre maquetes de taula: aiguamoll, mapa oceànic, camí costaner i pista escolar de proves.](../../_assets/situacions/mb-reptes-planeta.webp)
 
 _Les escenes són maquetes de paper i cartó al voltant de la placa real; no representen dispositius instal·lats, proves en trànsit o protecció de fauna._
 
@@ -58,7 +58,7 @@ input.onGesture(Gesture.Shake, function () {
 })
 ```
 
-![Una micro:bit real de la dotació amb targetes de dues espècies de la marjal, una clau d’identificació i una fitxa de registre de botons A i B.](../../_assets/imatges/sa-mb-comptador-especies.png)
+![Una micro:bit real de la dotació amb targetes de dues espècies de la marjal, una clau d’identificació i una fitxa de registre de botons A i B.](../../_assets/situacions/sa-mb-comptador-especies.webp)
 
 _La placa només suma les observacions que introdueix una persona; les targetes i la llegenda són materials propis._
 
@@ -102,7 +102,7 @@ radio.onReceivedString(function (message) {
 })
 ```
 
-![Dues plaques micro:bit de la dotació es comuniquen per ràdio entre una estació de cartó i una taula de control; al fons hi ha un mapa esquemàtic i una silueta de fauna, sense cap dispositiu sobre l’animal.](../../_assets/imatges/sa-mb-radio-estacio-fauna-v2.webp)
+![Dues plaques micro:bit de la dotació es comuniquen per ràdio entre una estació de cartó i una taula de control; al fons hi ha un mapa esquemàtic i una silueta de fauna, sense cap dispositiu sobre l’animal.](../../_assets/situacions/sa-mb-radio-estacio-fauna-v2.webp)
 
 _És una maqueta escolar de comunicació activada manualment: no es col·loca cap dispositiu sobre la fauna i el sistema no detecta animals ni incidents._
 
@@ -132,7 +132,7 @@ Llegiu la descripció oficial del repte i definiu *captura accidental* amb un ex
 
 Construïu una xarxa de paper o cordill damunt d’una safata seca i feu servir fitxes planes per a representar espècies; no hi poseu animals vius ni acerqueu la placa a l’aigua. Programeu la lectura ambiental amb `input.lightLevel()` —la matriu LED fa també de sensor de llum— i comenceu amb el llindar oficial `50`: si la lectura és menor, mostreu un patró de LEDs; altrament, esborreu la pantalla. Llegiu la llum abans d’encendre el patró, perquè la mateixa matriu fa també d’entrada i d’eixida. Cada grup pot cobrir parcialment la placa amb una cartolina per simular menys llum, sense embolicar-la ni tapar-la completament.
 
-![Una micro:bit de la dotació mostra un senyal LED al costat d’una maqueta seca de xarxa amb fitxes de peix, tortuga i au, i una cartolina que simula ombra.](../../_assets/imatges/sa-mb-xarxes-llum-prototip.webp)
+![Una micro:bit de la dotació mostra un senyal LED al costat d’una maqueta seca de xarxa amb fitxes de peix, tortuga i au, i una cartolina que simula ombra.](../../_assets/situacions/sa-mb-xarxes-llum-prototip.webp)
 
 _És un model de taula amb fitxes planes: no prova ni demostra l’eficàcia d’una xarxa real._
 
@@ -158,7 +158,7 @@ Llegiu la proposta oficial: les cries de tortuga utilitzen la llum de la lluna p
 
 En una maqueta seca, col·loqueu la micro:bit a nivell del camí, al costat d’una fitxa que represente una persona caminant. Llegiu la llum ambiental amb la matriu LED i useu `input.lightLevel() < 100` com a llindar inicial oficial: en foscor, mostreu una icona pròpia de tortuga en la matriu; amb llum igual o superior a 100, esborreu-la. Preneu la lectura abans de mostrar la icona i repetiu el cicle cada dos segons, com en el projecte de referència. No afegiu una llum alta, pampallugues ni una llanterna real; la pantalla és un indicador de maqueta, no un llum de camí homologat.
 
-![Una micro:bit de la dotació mostra una icona roja de tortuga al costat d’un marcador baix en una maqueta seca de camí costaner.](../../_assets/imatges/sa-mb-tortugues-platja-microbit.webp)
+![Una micro:bit de la dotació mostra una icona roja de tortuga al costat d’un marcador baix en una maqueta seca de camí costaner.](../../_assets/situacions/sa-mb-tortugues-platja-microbit.webp)
 
 _La imatge representa un prototip de taula; no és un dispositiu desplegable ni una llum validada per a platges._
 
@@ -213,7 +213,7 @@ basic.forever(function () {
 })
 ```
 
-![Una micro:bit de la dotació en un suport ample de cartó amb botons visuals d’inici i aturada i una seqüència de pictogrames que ofereix una pausa o un estirament assegut.](../../_assets/imatges/sa-mb-fitness-friend-control.webp)
+![Una micro:bit de la dotació en un suport ample de cartó amb botons visuals d’inici i aturada i una seqüència de pictogrames que ofereix una pausa o un estirament assegut.](../../_assets/situacions/sa-mb-fitness-friend-control.webp)
 
 _Prototip de taula amb inici i aturada voluntaris; no mesura l’activitat ni recomana una rutina de salut._
 
@@ -263,7 +263,7 @@ basic.forever(function () {
 })
 ```
 
-![Una micro:bit de la dotació, fixa en un suport de cartó, registra tocs simulats a la taula mentre la pantalla LED i un full mostren un patró d’acceleració de prova.](../../_assets/imatges/sa-mb-heart-rate-accelerometre.webp)
+![Una micro:bit de la dotació, fixa en un suport de cartó, registra tocs simulats a la taula mentre la pantalla LED i un full mostren un patró d’acceleració de prova.](../../_assets/situacions/sa-mb-heart-rate-accelerometre.webp)
 
 _Prova de moviment sobre una taula. El nombre mostrat és una extrapolació de tocs simulats, no una freqüència cardíaca._
 
@@ -303,7 +303,7 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-![Una micro:bit de la dotació al costat d’un itinerari de paper amb fitxes de polsos i gotes d’aigua, preparat com a simulació de taula.](../../_assets/imatges/sa-mb-comptador-trajecte.png)
+![Una micro:bit de la dotació al costat d’un itinerari de paper amb fitxes de polsos i gotes d’aigua, preparat com a simulació de taula.](../../_assets/situacions/sa-mb-comptador-trajecte.webp)
 
 _Cada pols és una entrada manual de prova; no representa els passos ni l’experiència real de cap persona._
 
@@ -355,7 +355,7 @@ basic.forever(function () {
 
 La icona només queda encesa breument després de cada lectura per no mantindre la matriu il·luminada mentre es torna a mesurar. Aquesta seqüència és una demostració de llindar, no una llum portàtil contínua ni un dispositiu per a circular.
 
-![Una micro:bit de la dotació mesura la llum sobre la taula al costat d’una bossa de paper i una maqueta de pas de vianants; una targeta crea una ombra controlada.](../../_assets/imatges/sa-mb-night-sensor-maqueta.webp)
+![Una micro:bit de la dotació mesura la llum sobre la taula al costat d’una bossa de paper i una maqueta de pas de vianants; una targeta crea una ombra controlada.](../../_assets/situacions/sa-mb-night-sensor-maqueta.webp)
 
 _La maqueta permet provar el llindar en condicions controlades; no s’utilitza en cap trajecte real._
 
@@ -404,7 +404,7 @@ basic.forever(function () {
 })
 ```
 
-![Micro:bit de la dotació sobre una maqueta de cadira de rodes de cartó, al costat de mostres reflectores i una fitxa de comprovació d’angles.](../../_assets/imatges/sa-mb-flashing-wheels-maqueta.webp)
+![Micro:bit de la dotació sobre una maqueta de cadira de rodes de cartó, al costat de mostres reflectores i una fitxa de comprovació d’angles.](../../_assets/situacions/sa-mb-flashing-wheels-maqueta.webp)
 
 _La placa i les mostres només es proven en un model de taula, mai sobre una cadira real o en circulació._
 
@@ -441,7 +441,7 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-![Micro:bit de la dotació al costat d’una bossa de cartó, materials reflectors i un itinerari escolar fictici dibuixat com a maqueta.](../../_assets/imatges/sa-mb-bag-juliane-prototip.webp)
+![Micro:bit de la dotació al costat d’una bossa de cartó, materials reflectors i un itinerari escolar fictici dibuixat com a maqueta.](../../_assets/situacions/sa-mb-bag-juliane-prototip.webp)
 
 _El mapa i la bossa són models didàctics; no mostren una adreça ni un recorregut real de Juliane o de cap alumne._
 
@@ -486,7 +486,7 @@ radio.onReceivedValue(function (name, value) {
 })
 ```
 
-![Dues micro:bit de la dotació funcionen com a nodes amb dades simulades d’onatge i oratge i envien mostres per ràdio a una tercera placa en una maqueta seca de passarel·la cap a Internet.](../../_assets/imatges/sa-mb-ocean-health-network.webp)
+![Dues micro:bit de la dotació funcionen com a nodes amb dades simulades d’onatge i oratge i envien mostres per ràdio a una tercera placa en una maqueta seca de passarel·la cap a Internet.](../../_assets/situacions/sa-mb-ocean-health-network.webp)
 
 _El mapa, les icones i els valors són una simulació escolar; no s’ha connectat cap sensor marí ni cap servei d’Internet._
 
@@ -512,7 +512,7 @@ La font oficial divideix *Oil spill cleaner-upper* en dues parts: primer, un rep
 
 Prepareu dues rutes diferents amb targetes de fletxes i escriviu-les també com a instruccions pas a pas. Un marcador de cartó representa el vehicle i una fitxa blanca seca, el material de recollida; l’alumnat mou el model només quan l’algorisme ho indica. No useu oli, aigua, detergents ni altres líquids. Si el centre vol explorar un vehicle motoritzat, tracteu-lo com una ampliació separada: cal identificar abans el controlador, els motors, l’alimentació i la compatibilitat reals, i cap d’aquests accessoris s’atribueix a la placa micro:bit sola.
 
-![Una micro:bit de la dotació al costat d’una quadrícula seca amb fitxes planes que representen una taca fictícia, una zona protegida i dues rutes de neteja comparables.](../../_assets/imatges/sa-mb-vessament-rutes-grid.webp)
+![Una micro:bit de la dotació al costat d’una quadrícula seca amb fitxes planes que representen una taca fictícia, una zona protegida i dues rutes de neteja comparables.](../../_assets/situacions/sa-mb-vessament-rutes-grid.webp)
 
 _La il·lustració mostra un algorisme de taula amb peces de paper, no un vessament ni un vehicle autònom funcional._
 

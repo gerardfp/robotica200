@@ -14,7 +14,7 @@ duration: "15 activitats · 20–30 min cadascuna"
 challenge: "Com podem utilitzar una ruta programada per a observar, ordenar i contar històries sobre el nostre entorn?"
 ---
 
-![Tale-Bot Pro real, amb panell lateral taronja i botons direccionals, sobre un mapa de quadrícula amb animals, plantes i espais comunitaris.](../../_assets/imatges/sa-tb-exploracions-v2.png)
+![Tale-Bot Pro real, amb panell lateral taronja i botons direccionals, sobre un mapa de quadrícula amb animals, plantes i espais comunitaris.](../../_assets/situacions/tb-explora-el-barri.webp)
 
 _Les imatges del mapa són targetes manuals perquè l’alumnat les interprete; Tale-Bot només executa el recorregut programat._
 
@@ -25,7 +25,7 @@ La classe crea un mapa d’exploració del municipi: jardí, mercat, escola, pla
 ## 🗺️ Seqüència · 15 activitats d’exploració
 
 ### **B-1 · Els cinc sentits.**
-![Tale-Bot Pro real recorre una graella de paper entre targetes de l’oïda, el tacte, l’olfacte, el gust i una fulla.](../../_assets/imatges/sa-tb-sentits-b1-v1.webp)
+![Tale-Bot Pro real recorre una graella de paper entre targetes de l’oïda, el tacte, l’olfacte, el gust i una fulla.](../../_assets/situacions/sa-tb-sentits-b1-v1.webp)
 
 _Les targetes representen pistes per a l’alumnat; Tale-Bot no percep olors, gustos, sons ni textures._
 
@@ -51,7 +51,7 @@ Programeu una de les rutes i comproveu-la sobre el mapa. Si no arriba a la desti
 **Evidència:** dues rutes representades i una comparació explicada. Les propostes de gust i olfacte es resolen amb imatges o records, sense tastar ni olorar materials desconeguts.
 
 ### **B-2 · Comptem al mercat.**
-![Tale-Bot Pro real arriba a una parada de maduixes de paper mentre una mà ordena fitxes de recompte.](../../_assets/imatges/sa-tb-mercat-b2-v1.webp)
+![Tale-Bot Pro real arriba a una parada de maduixes de paper mentre una mà ordena fitxes de recompte.](../../_assets/situacions/sa-tb-mercat-b2-v1.webp)
 
 _Les maduixes i les quantitats són materials de paper: el recompte i la tria els fa l’alumnat._
 
@@ -77,7 +77,7 @@ Si el robot no arriba, decidiu si l’error és de recompte, orientació o ordre
 **Evidència:** targeta numèrica, casella i ruta comprovada. Com a extensió, inventeu una pregunta oral de recompte per al grup.
 
 ### **B-3 · El monstre de les formes.**
-![Tale-Bot Pro real segueix un camí de paper al costat d’un monstre fet amb formes geomètriques i targetes de cercle, triangle, quadrat i rectangle.](../../_assets/imatges/sa-tb-formes-b3-v1.webp)
+![Tale-Bot Pro real segueix un camí de paper al costat d’un monstre fet amb formes geomètriques i targetes de cercle, triangle, quadrat i rectangle.](../../_assets/situacions/sa-tb-formes-b3-v1.webp)
 
 _El monstre i les formes són materials de paper; el robot segueix la ruta programada i no reconeix figures._
 
@@ -103,7 +103,7 @@ Programeu la ruta. Si no és correcta, expliqueu i depureu el programa sense don
 **Evidència:** una classificació justificada i una ruta revisada. Expliqueu quina propietat heu utilitzat per distingir la forma.
 
 ### **B-4 · Fruites i verdures de colors.**
-![Tale-Bot Pro real recorre un mapa amb targetes de fruites i verdures agrupades sobre fons de colors.](../../_assets/imatges/sa-tb-colors-b4-v1.webp)
+![Tale-Bot Pro real recorre un mapa amb targetes de fruites i verdures agrupades sobre fons de colors.](../../_assets/situacions/sa-tb-colors-b4-v1.webp)
 
 _La classificació per color és una decisió humana; Tale-Bot no identifica aliments ni colors._
 
@@ -129,7 +129,7 @@ Executeu la ruta i comproveu que arriba a la casella. Si una altra parella ha tr
 **Evidència:** classificació, ruta i explicació de les alternatives. L’activitat treballa observació, no associa colors amb salut, qualitat o preferències alimentàries.
 
 ### **B-5 · El cicle de vida de la granota.**
-![Tale-Bot Pro real segueix una ruta entre cinc targetes de paper que representen les etapes del cicle de vida d’una granota.](../../_assets/imatges/sa-tb-granota-b5-v1.webp)
+![Tale-Bot Pro real segueix una ruta entre cinc targetes de paper que representen les etapes del cicle de vida d’una granota.](../../_assets/situacions/sa-tb-granota-b5-v1.webp)
 
 _Les targetes mostren contingut científic preparat pel grup; el robot només recorre les ordres programades._
 
@@ -155,7 +155,7 @@ Programeu Tale-Bot perquè visite les imatges en ordre. Si una parada queda fora
 **Evidència:** ruta ordenada i seqüència explicada. Distingiu els canvis biològics de l’animal del simple desplaçament del robot.
 
 ### **B-6 · El cicle del gira-sol.**
-![Tale-Bot Pro real recorre targetes de paper amb llavor, arrel, plàntula i gira-sol adult sobre un mapa escolar.](../../_assets/imatges/sa-tb-girasol-b6-v1.webp)
+![Tale-Bot Pro real recorre targetes de paper amb llavor, arrel, plàntula i gira-sol adult sobre un mapa escolar.](../../_assets/situacions/sa-tb-girasol-b6-v1.webp)
 
 _Les etapes i l’explicació del creixement les aporta el grup; Tale-Bot no detecta el desenvolupament de la planta._
 
@@ -181,7 +181,7 @@ Programeu Tale-Bot perquè visite les imatges en ordre. Feu una segona ronda i e
 **Evidència:** ruta i seqüència justificades. Distingiu el creixement biològic del moviment del robot.
 
 ### **B-7 · Parc musical I.**
-![Tale-Bot Pro real segueix una ruta de paper cap a targetes d’un tambor, un xilòfon i una flauta, al costat d’una seqüència de notes.](../../_assets/imatges/sa-tb-musica-b7-v1.webp)
+![Tale-Bot Pro real segueix una ruta de paper cap a targetes d’un tambor, un xilòfon i una flauta, al costat d’una seqüència de notes.](../../_assets/situacions/sa-tb-musica-b7-v1.webp)
 
 _L’alumnat interpreta les notes amb veu o instruments; el robot només es desplaça fins a la casella programada._
 
@@ -211,7 +211,7 @@ Programeu el trajecte fins a l’instrument i interpreteu la melodia amb veu o i
 **Evidència:** targeta de notes, ruta i interpretació. Tale-Bot només es desplaça, llevat que una funció musical concreta s’haja comprovat.
 
 ### **B-8 · Parc musical II.**
-![Tale-Bot Pro real recorre un mapa de paper amb lluna i estrelles mentre l’alumnat canta una melodia.](../../_assets/imatges/sa-tb-estels-b8-v1.webp)
+![Tale-Bot Pro real recorre un mapa de paper amb lluna i estrelles mentre l’alumnat canta una melodia.](../../_assets/situacions/sa-tb-estels-b8-v1.webp)
 
 _La música s’interpreta a banda; Tale-Bot no llig partitures ni reprodueix la cançó._
 
@@ -241,7 +241,7 @@ Creeu o busqueu una segona targeta musical, interpreteu-la i repetiu el recorreg
 **Evidència:** dues targetes, dues rutes i una comparació de notes. No atribuïu al robot una reproducció musical si el model no la fa.
 
 ### **B-9 · Viatge pel sistema solar.**
-![Tale-Bot Pro real recorre un tauler de paper amb targetes dels planetes i del Sol.](../../_assets/imatges/sa-tb-sistema-solar-b9-v1.webp)
+![Tale-Bot Pro real recorre un tauler de paper amb targetes dels planetes i del Sol.](../../_assets/situacions/sa-tb-sistema-solar-b9-v1.webp)
 
 _El tauler és una representació de joc, no està a escala ni mostra òrbites reals; el robot no identifica planetes._
 
@@ -267,7 +267,7 @@ Programeu Tale-Bot fins al planeta objectiu sense entrar en les caselles dels al
 **Evidència:** mapa i ruta provada. La quadrícula és un mapa de joc: no representa a escala distàncies ni òrbites reals.
 
 ### **B-10 · Recollida magnètica, amb adaptació segura.**
-![Tale-Bot Pro real segueix una ruta al costat de mostres de fusta, plàstic i metall mentre una persona adulta prova una volandera amb un imant de mà.](../../_assets/imatges/sa-tb-magnetisme-b10-v1.webp)
+![Tale-Bot Pro real segueix una ruta al costat de mostres de fusta, plàstic i metall mentre una persona adulta prova una volandera amb un imant de mà.](../../_assets/situacions/sa-tb-magnetisme-b10-v1.webp)
 
 _La prova magnètica la fa una persona adulta; Tale-Bot no porta imant ni detecta materials._
 
@@ -293,7 +293,7 @@ Compareu prediccions i resultats i reviseu les classificacions amb evidències. 
 **Evidència:** taula de prediccions i resultats amb una explicació. Tale-Bot no detecta magnetisme; la prova magnètica la fa una persona adulta.
 
 ### **B-11 · Paranys i tresors.**
-![Tale-Bot Pro real avança per una ruta segura dibuixada en una quadrícula entre caselles d’obstacle i una targeta de tresor.](../../_assets/imatges/sa-tb-tresor-b11-v1.webp)
+![Tale-Bot Pro real avança per una ruta segura dibuixada en una quadrícula entre caselles d’obstacle i una targeta de tresor.](../../_assets/situacions/sa-tb-tresor-b11-v1.webp)
 
 _L’alumnat planifica les caselles segures; el robot no detecta obstacles ni arreplega el tresor._
 
@@ -319,7 +319,7 @@ Programeu la ruta. Si falla, identifiqueu la primera ordre que la desvia i canvi
 **Evidència:** ruta segura i una correcció explicada. Els obstacles representen zones tancades del mapa, no persones ni animals en perill.
 
 ### **B-12 · Persones que fan servei al barri.**
-![Tale-Bot Pro real segueix una ruta entre targetes de paper d’una bibliotecària, una jardinera i una persona repartidora.](../../_assets/imatges/sa-tb-serveis-b12-v1.webp)
+![Tale-Bot Pro real segueix una ruta entre targetes de paper d’una bibliotecària, una jardinera i una persona repartidora.](../../_assets/situacions/sa-tb-serveis-b12-v1.webp)
 
 _Les persones, les eines i els serveis són una maqueta respectuosa del barri; Tale-Bot no els reconeix._
 
@@ -354,7 +354,7 @@ Programeu Tale-Bot i compareu el recorregut amb la predicció. Si entra en una c
 
 Representem les tres distàncies amb fitxes de colors damunt de tres tires iguals de temps. Compteu caselles i ordeneu els vehicles de la menor a la major distància recorreguda en el mateix interval. Després, en una quadrícula nova, situeu les fitxes dels tres vehicles i una destinació —l’estació— en una ruta pròpia que connecte l’horta, el servei de bombers i el tren. Comenceu al tractor i traceu amb llapis un itinerari continu fins a la destinació.
 
-![Tale-Bot sense accessoris sobre un mapa de l’horta i l’estació, amb fitxes de tractor, camió de bombers i tren i una ruta traçada a mà.](../../_assets/imatges/sa-tb-velocitats-relatives.webp)
+![Tale-Bot sense accessoris sobre un mapa de l’horta i l’estació, amb fitxes de tractor, camió de bombers i tren i una ruta traçada a mà.](../../_assets/situacions/sa-tb-velocitats-relatives.webp)
 
 _Les fitxes i els comptadors representen un model de distància en intervals iguals; el robot estàndard només segueix les ordres de la ruta._
 
@@ -380,7 +380,7 @@ Observeu el suport multifunció, els punts on es pot subjectar un retolador i la
 
 Comproveu físicament que el kit del centre inclou el suport de dibuix i que el retolador queda subjecte sense tocar les rodes. Fixeu un full gran perquè no llisque i feu una prova d’un sol tram amb el robot aturat abans d’iniciar el programa. Si el centre té una versió diferent del suport o no el té, no forceu peces: prepareu una quadrícula i representeu la mateixa seqüència amb una fitxa.
 
-![Tale-Bot Pro traça una forma quadrada amb un retolador subjecte al suport de dibuix.](../../_assets/imatges/sa-tb-artista-un-retolador.webp)
+![Tale-Bot Pro traça una forma quadrada amb un retolador subjecte al suport de dibuix.](../../_assets/situacions/sa-tb-artista-un-retolador.webp)
 
 _La primera exploració prova el muntatge i relaciona cada tram del traç amb una ordre planificada._
 
@@ -408,7 +408,7 @@ Comproveu si el suport disponible permet fixar dos retoladors alhora i si les du
 
 #### Fase 3 · Expliquem i registrem
 
-![Tale-Bot Pro traça una composició de formes amb dos retoladors de colors subjectes al suport.](../../_assets/imatges/sa-tb-artista-dos-retoladors.webp)
+![Tale-Bot Pro traça una composició de formes amb dos retoladors de colors subjectes al suport.](../../_assets/situacions/sa-tb-artista-dos-retoladors.webp)
 
 _La segona activitat contrasta el traç d’un retolador amb una composició de dos colors abans d’afegir-hi detalls a mà._
 

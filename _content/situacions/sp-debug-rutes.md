@@ -14,7 +14,7 @@ duration: "6 lliçons · 7–10 sessions"
 challenge: "Com distingim un error de muntatge d’un error de programa i com demostrem que una ruta autònoma funciona de manera fiable?"
 ---
 
-![Base mòbil SPIKE Prime amb sensor de color davant d'una ruta de quadrícula dissenyada amb paper i una barrera baixa.](../../_assets/imatges/sa-sp-debug-rutes.webp)
+![Base mòbil SPIKE Prime amb sensor de color davant d'una ruta de quadrícula dissenyada amb paper i una barrera baixa.](../../_assets/situacions/sp-debug-rutes.webp)
 
 _Una bona depuració redueix el problema, prova hipòtesis i documenta els canvis._
 

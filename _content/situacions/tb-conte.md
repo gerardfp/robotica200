@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem ordenar les escenes i les ordres perquè Tale-Bot travesse el pont i altres persones puguen seguir el nostre conte?"
 ---
 
-![Tale-Bot Pro de la dotació recorre un camí amb pont de paper mentre un personatge de conte espera a l’altra banda.](../../_assets/imatges/sa-conte-talebot.webp)
+![Tale-Bot Pro de la dotació recorre un camí amb pont de paper mentre un personatge de conte espera a l’altra banda.](../../_assets/situacions/tb-conte.webp)
 
 _El grup crea els personatges i la narració; el robot ajuda a ordenar i representar el recorregut._
 

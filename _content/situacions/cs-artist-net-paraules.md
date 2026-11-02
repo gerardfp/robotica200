@@ -15,7 +15,7 @@ challenge: "Com podem passar d’una xarxa plana a una forma 3D i representar un
 official_source: "https://matatalab.com/cdn/ff/2HgegdEsgGGg2k9OhY4VH1UCq-RXiPAr0YQxIO0n3KQ/1596512886/public/2020-08/The%C2%A0Teacher%C2%A0Resource%C2%A0Guide.pdf"
 ---
 
-![MatataBot i la torre reals del Coding Set al costat d’una xarxa de sis quadrats plegada en un cub i una graella amb recorreguts de lletres.](../../_assets/imatges/sa-cs-artist-net-paraules-v1.png)
+![MatataBot i la torre reals del Coding Set al costat d’una xarxa de sis quadrats plegada en un cub i una graella amb recorreguts de lletres.](../../_assets/situacions/cs-artist-net-paraules.webp)
 
 _La xarxa i les lletres són materials de paper. El robot recorre ordres de moviment; no dibuixa ni plega la cartolina._
 
@@ -91,7 +91,7 @@ Traduïu la ruta a blocs físics del Coding Set i associeu cada parada a una car
 
 Executeu el programa amb la xarxa plana ben fixada i l’espai lliure. El robot només recorre la graella: no llig nombres, no reconeix cares i no plega paper. Si la posició observada divergeix, localitzeu la primera ordre incorrecta, canvieu-ne una i repetiu la prova des del mateix inici.
 
-![Un únic MatataBot de la dotació recorre una graella de paper al costat d’una xarxa de sis cares i d’un cub plegat a mà.](../../_assets/imatges/sa-cs-artist-net-ruta-v1.png)
+![Un únic MatataBot de la dotació recorre una graella de paper al costat d’una xarxa de sis cares i d’un cub plegat a mà.](../../_assets/situacions/sa-cs-artist-net-ruta-v1.webp)
 
 _La ruta és una representació de paper; MatataBot no dibuixa les línies ni munta la forma 3D._
 

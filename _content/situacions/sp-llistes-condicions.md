@@ -14,7 +14,7 @@ duration: "6 lliçons · 8–10 sessions"
 challenge: "Com pot una maqueta llegir una seqüència, aplicar regles explícites i respondre a una ruta sense tractar-la com un sistema de seguretat real?"
 ---
 
-![Base mòbil LEGO SPIKE Prime segueix una pista de colors cap a una estació de classificació escolar de paper.](../../_assets/imatges/sa-sp-llistes-condicions.webp)
+![Base mòbil LEGO SPIKE Prime segueix una pista de colors cap a una estació de classificació escolar de paper.](../../_assets/situacions/sp-llistes-condicions.webp)
 
 _Una llista guarda una seqüència; les condicions decideixen quina acció correspon a cada lectura._
 
@@ -126,7 +126,7 @@ Useu dades en directe per comprovar què detecta el sensor, feu una primera volt
 
 Modifiqueu una sola cosa per prova. Afegiu deliberadament una línia de color no acordada i observeu si la regla la confon. Descomponeu el programa en blocs propis amb noms funcionals —per exemple `SeguirPista` i `AturarEnMarca`— i torneu a cridar-los des del programa principal.
 
-![SPIKE Prime de la dotació al costat de dues seqüències de targetes de color; una targeta diferent es revisa amb una lupa abans de provar la ruta.](../../_assets/imatges/sa-sp-llistes-condicions-sequencies.webp)
+![SPIKE Prime de la dotació al costat de dues seqüències de targetes de color; una targeta diferent es revisa amb una lupa abans de provar la ruta.](../../_assets/situacions/sa-sp-llistes-condicions-sequencies.webp)
 
 _Les targetes modelen dues llistes ordenades; la lupa assenyala la primera diferència que cal comprovar. No és una lectura automàtica del robot._
 

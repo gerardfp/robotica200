@@ -14,7 +14,7 @@ duration: "3 sessions"
 challenge: "Quina ruta pot seguir el robot per visitar tres espais de lectura, i com podem inventar una història diferent en cada parada?"
 ---
 
-![Tale-Bot segueix una graella pròpia que connecta una prestatgeria, un racó de lectura i un cercle de contes.](../../_assets/imatges/sa-tb-biblioteca.webp)
+![Tale-Bot segueix una graella pròpia que connecta una prestatgeria, un racó de lectura i un cercle de contes.](../../_assets/situacions/tb-biblioteca-barri.webp)
 
 _Tale-Bot segueix una graella pròpia que connecta una prestatgeria, un racó de lectura i un cercle de contes._
 

@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Quina seqüència d’ordres permet contar una història clara amb el tren?"
 ---
 
-![El tren Coding Express avança per una via amb estació i figures de paper per construir una història seqüenciada.](../../_assets/imatges/sa-ce-sequencia-histories.webp)
+![El tren Coding Express avança per una via amb estació i figures de paper per construir una història seqüenciada.](../../_assets/situacions/ce-sequencia-histories.webp)
 
 _Una mateixa ruta pot explicar històries diferents si canviem l’ordre, les parades o els sons._
 

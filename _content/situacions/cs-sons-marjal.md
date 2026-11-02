@@ -15,7 +15,7 @@ challenge: "Com podem representar i ordenar sons més aguts i més greus perquè
 official_source: "https://matatalab.com/cdn/ff/Ecee9VUTy4hPQNW2Vq3TPoDZ5mjzubwFIH9Hvla33oE/1637739674/public/2021-11/Musician%20Add-on%20Activity%20Cards.pdf"
 ---
 
-![MatataBot i torre del Coding Set al costat d’una partitura de paper i targetes de notes per a una melodia pròpia.](../../_assets/imatges/sa-cs-musician-notes-v2.png)
+![MatataBot i torre del Coding Set al costat d’una partitura de paper i targetes de notes per a una melodia pròpia.](../../_assets/situacions/cs-sons-marjal.webp)
 
 _Les targetes i la partitura són materials de paper creats per a la proposta. El Musician Add-On és opcional i només amb aquest accessori el MatataBot reprodueix les notes programades._
 

@@ -15,7 +15,7 @@ challenge: "Com podem dissenyar i programar en Python un prototip SPIKE que tran
 official_source: "https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt5436c2a0ac31fc17/65e9d0ef2a3929468f30be14/File_2_Units_678910_Intro_to_Python_Course_TG_Course_2.pdf?locale=en-us"
 ---
 
-![Base mòbil LEGO SPIKE Prime amb una càrrega de targetes de paper que segueix una ruta de maqueta fins a una aula i una biblioteca.](../../_assets/imatges/sa-sp-python-projecte-transport.webp)
+![Base mòbil LEGO SPIKE Prime amb una càrrega de targetes de paper que segueix una ruta de maqueta fins a una aula i una biblioteca.](../../_assets/situacions/sp-python-projecte-transport.webp)
 
 _El projecte final integra mecànica, Python, sensors, dades, proves iteratives i comunicació de límits._
 
@@ -109,7 +109,7 @@ Cada membre dibuixa una idea individual sense discutir-la ni jutjar-la. Predigue
 
 Combineu aportacions i prepareu almenys tres conceptes diferents, inclosa una opció no motoritzada. Feu esbossos prou clars per comparar-los.
 
-![Robot SPIKE Prime de la dotació al costat de tres prototips de cartó separats: safata, empenyedor i plataforma, amb targetes de ruta i criteris visuals.](../../_assets/imatges/sa-sp-python-projecte-transport-disseny.webp)
+![Robot SPIKE Prime de la dotació al costat de tres prototips de cartó separats: safata, empenyedor i plataforma, amb targetes de ruta i criteris visuals.](../../_assets/situacions/sa-sp-python-projecte-transport-disseny.webp)
 
 _Els tres conceptes són maquetes pròpies per comparar; no són accessoris ni mecanismes inclosos en el set._
 
@@ -157,7 +157,7 @@ Abans de muntar, prediu què podria fer inestable la càrrega o dificultar un gi
 
 Construïu per subsistemes la base, el suport de càrrega i el sensor si escau. Proveu la safata buida i després amb càrrega de cartó molt lleugera; observeu recta i gir. No subjecteu la càrrega amb persones ni useu pinces que tanquen sobre dits.
 
-![Base mòbil SPIKE Prime de la dotació amb una safata buida de cartó, un carril pla i un regle per a comprovar estabilitat i espai.](../../_assets/imatges/sa-sp-python-projecte-transport-mecanica.webp)
+![Base mòbil SPIKE Prime de la dotació amb una safata buida de cartó, un carril pla i un regle per a comprovar estabilitat i espai.](../../_assets/situacions/sa-sp-python-projecte-transport-mecanica.webp)
 
 _La safata és un prototip de l’equip; la imatge no pressuposa cap accessori oficial de transport._
 
@@ -191,7 +191,7 @@ Programeu un tram, una aturada controlada i la seqüència cap al tram següent.
 
 Useu una llista per a punts o accions si redueix repeticions i afegiu una condició per a dades no reconegudes. Executeu una ruta curta amb velocitat baixa, zona lliure i una persona responsable d’aturar; no feu el programa tan llarg que siga difícil de depurar.
 
-![SPIKE Prime real de la dotació sobre una ruta de proves de colors, al costat d’un ordinador amb editor textual de Python i targetes de test.](../../_assets/imatges/sa-sp-python-projecte-transport-python.webp)
+![SPIKE Prime real de la dotació sobre una ruta de proves de colors, al costat d’un ordinador amb editor textual de Python i targetes de test.](../../_assets/situacions/sa-sp-python-projecte-transport-python.webp)
 
 _La pantalla representa codi textual; el programa, els ports i l’API s’han de comprovar en la versió d’app instal·lada al centre._
 
@@ -217,7 +217,7 @@ Anoteu lectura del sensor, valor esperat, resposta, aturada i variació. Classif
 
 Canvieu una sola causa i repetiu. Si la consola no mostra error però el robot falla, reviseu l’especificació i la lectura abans d’assumir que el codi és correcte. Decidiu si cal continuar o simplificar l’abast.
 
-![Base mòbil SPIKE Prime de la dotació amb una targeta lleugera en una ruta plana entre aula i biblioteca de maqueta; al costat hi ha un regle i un registre de proves sense text.](../../_assets/imatges/sa-sp-python-projecte-transport-proves.webp)
+![Base mòbil SPIKE Prime de la dotació amb una targeta lleugera en una ruta plana entre aula i biblioteca de maqueta; al costat hi ha un regle i un registre de proves sense text.](../../_assets/situacions/sa-sp-python-projecte-transport-proves.webp)
 
 _La ruta de prova és plana; la rampa que apareix apartada no forma part de l’assaig. Es comparen el punt de partida, l’aturada i la càrrega lleugera._
 
@@ -283,7 +283,7 @@ Prepareu l’estació i comproveu que l’aturada manual és fàcil de trobar. M
 
 Presenteu almenys un cas d’èxit i una condició que el sistema no resol. Accepteu preguntes sobre dades, sensors, decisions, mecanisme i proves; no compareu equips per rapidesa ni per nombre de peces.
 
-![Prototip SPIKE Prime de la dotació amb una càrrega lleugera recorre un carril de maqueta fins a una zona de parada mentre un quadern mostra un gràfic de proves.](../../_assets/imatges/sa-sp-python-projecte-transport-fira.webp)
+![Prototip SPIKE Prime de la dotació amb una càrrega lleugera recorre un carril de maqueta fins a una zona de parada mentre un quadern mostra un gràfic de proves.](../../_assets/situacions/sa-sp-python-projecte-transport-fira.webp)
 
 _La demostració és de taula i no representa un sistema autònom per a passadissos ni transport real._
 

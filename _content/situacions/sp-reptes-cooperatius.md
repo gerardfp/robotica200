@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem generar idees, explicar per a què serveixen i convertir-les en un repte mecànic cooperatiu?"
 ---
 
-![Un model LEGO SPIKE Prime impulsa una pilota lleugera cap a una porteria de taula, amb targetes en blanc per planificar idees.](../../_assets/imatges/sa-sp-reptes-cooperatius.webp)
+![Un model LEGO SPIKE Prime impulsa una pilota lleugera cap a una porteria de taula, amb targetes en blanc per planificar idees.](../../_assets/situacions/sp-reptes-cooperatius.webp)
 
 _Cinc reptes propis per practicar cooperació, ideació, programació i revisió en equip._
 

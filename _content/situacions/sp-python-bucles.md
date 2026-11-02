@@ -14,7 +14,7 @@ duration: "7 lliçons · 7–10 sessions"
 challenge: "Com podem programar una màquina de mosaic de taula amb patrons repetibles, controlar quantes vegades actua i evitar que un bucle continue quan ja ha acabat la tasca?"
 ---
 
-![Mecanisme real construït amb LEGO SPIKE Prime, hub i motor, que col·loca peces planes per crear un mosaic geomètric inspirat en l’horta valenciana.](../../_assets/imatges/sa-sp-python-bucles.webp)
+![Mecanisme real construït amb LEGO SPIKE Prime, hub i motor, que col·loca peces planes per crear un mosaic geomètric inspirat en l’horta valenciana.](../../_assets/situacions/sp-python-bucles.webp)
 
 _Un bucle fa que una mateixa acció es repetisca; el comptador i la condició determinen quan toca parar._
 

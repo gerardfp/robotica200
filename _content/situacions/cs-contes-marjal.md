@@ -15,7 +15,7 @@ challenge: "Com podem contar una història amb una ruta que el robot puga execut
 official_source: "https://matatalab.com/en/node/89"
 ---
 
-![MatataBot i la torre reals del Coding Set recorren una maqueta de l’Albufera amb escenes de paper, camins i targetes de relat.](../../_assets/imatges/sa-cs-historia-marjal-v1.png)
+![MatataBot i la torre reals del Coding Set recorren una maqueta de l’Albufera amb escenes de paper, camins i targetes de relat.](../../_assets/situacions/cs-contes-marjal.webp)
 
 _La maqueta, les escenes i les targetes són materials narratius propis. MatataBot no reconeix els paisatges ni interpreta la història: només executa les ordres programades._
 

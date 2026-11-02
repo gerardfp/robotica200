@@ -14,7 +14,7 @@ duration: "4 sessions · 195 min"
 challenge: "Com dissenyem una ruta pel nostre poble i la millorem quan apareix un problema?"
 ---
 
-![El tren Coding Express arriba a una bifurcació en una maqueta de barri amb una ruta alternativa marcada.](../../_assets/imatges/sa-ce-reptes-rutes.webp)
+![El tren Coding Express arriba a una bifurcació en una maqueta de barri amb una ruta alternativa marcada.](../../_assets/situacions/ce-reptes-rutes.webp)
 
 _Una bifurcació ofereix opcions: cal conéixer el mapa, justificar una tria i provar-la._
 
@@ -95,7 +95,7 @@ Al costat d’una via Y i de models propis, col·loqueu a l’atzar els maons d�
 
 Feu circular el tren per torns. Quan aparega un problema fictici en l’app o una targeta d’incidència, identifiqueu què ha passat i registreu la predicció, el senyal triat, el maó/app que l’equip ha programat i la resposta observada. Els senyals físics són models per a interpretar una situació: el tren llig el color dels maons, no reconeix ni interpreta els senyals de trànsit.
 
-![El tren Coding Express de la dotació recorre una via en Y amb maons d’acció, mentre targetes de senyal i una tauleta serveixen de recursos per a planificar la ruta.](../../_assets/imatges/sa-ce-reptes-rutes-senyals-app.png)
+![El tren Coding Express de la dotació recorre una via en Y amb maons d’acció, mentre targetes de senyal i una tauleta serveixen de recursos per a planificar la ruta.](../../_assets/situacions/sa-ce-reptes-rutes-senyals-app.webp)
 
 _Les targetes representen senyals per a la conversa de classe; el tren detecta els maons de color de la via, no les targetes._
 

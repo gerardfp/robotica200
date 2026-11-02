@@ -15,7 +15,7 @@ challenge: "Com podem preparar un mapa amb files, columnes i una orientació ini
 official_source: "https://matatalab.com/zh-hans/node/829"
 ---
 
-![Tale-Bot Pro de la dotació comença una ruta en una graella amb cinc targetes de destí: ovella, gallina, cavall, vaca i ànec.](../../_assets/imatges/sa-tb-granja-prova.webp)
+![Tale-Bot Pro de la dotació comença una ruta en una graella amb cinc targetes de destí: ovella, gallina, cavall, vaca i ànec.](../../_assets/situacions/tb-rastre-corral.webp)
 
 _El mapa i les cinc targetes d’animals són materials propis; Tale-Bot conserva el disseny del robot real._
 
@@ -58,7 +58,7 @@ Marqueu files i columnes amb lletres, nombres o un altre codi visual. Practiqueu
 
 Col·loqueu cinc animals i una marca d’inici orientada. Si trieu fauna valenciana, contrasteu els noms amb una font local fiable. Torneu a col·locar el mapa igual després de cada ronda.
 
-![Tale-Bot Pro real al costat d’una quadrícula en blanc, targetes originals d’animals i fletxes de paper per preparar el mapa de l’aula.](../../_assets/imatges/sa-tb-rastre-corral-mapa-aula-v1.png)
+![Tale-Bot Pro real al costat d’una quadrícula en blanc, targetes originals d’animals i fletxes de paper per preparar el mapa de l’aula.](../../_assets/situacions/sa-tb-rastre-corral-mapa-aula-v1.webp)
 
 _La graella, les targetes i la maqueta són recursos propis; el robot no reconeix els adhesius ni els animals._
 
@@ -84,7 +84,7 @@ Verbalitzeu la predicció. Abans de prémer *Play*, compteu els indicadors llumi
 
 Executeu la ruta, recolliu un marcador en arribar i repetiu amb els altres quatre animals, reiniciant des de la marca orientada. Si Tale-Bot no arriba, compareu la posició final amb la predicció abans de canviar el programa.
 
-![Tale-Bot Pro real segueix fletxes de moviment cap avant sobre una graella amb cinc targetes pròpies d’animals de granja.](../../_assets/imatges/sa-tb-rastre-corral-mapa-v1.png)
+![Tale-Bot Pro real segueix fletxes de moviment cap avant sobre una graella amb cinc targetes pròpies d’animals de granja.](../../_assets/situacions/sa-tb-rastre-corral-mapa-v1.webp)
 
 _El robot executa la seqüència de moviment; les persones identifiquen la targeta de destí i comproven l’arribada._
 

@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem usar una entrada de micro:bit i una condició per investigar quins materials condueixen electricitat?"
 ---
 
-![Una placa micro:bit al costat de mostres seques de paper, plàstic, fusta i paper d’alumini per a una investigació de conductivitat.](../../_assets/imatges/sa-mb-provador-conductivitat.webp)
+![Una placa micro:bit al costat de mostres seques de paper, plàstic, fusta i paper d’alumini per a una investigació de conductivitat.](../../_assets/situacions/mb-provador-conductivitat.webp)
 
 _La prova és de baixa tensió i només usa mostres aïllades i circuits revisats pel docent._
 

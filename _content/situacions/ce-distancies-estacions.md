@@ -15,7 +15,7 @@ challenge: "Quin nombre de l’app necessita el tren per arribar a cada estació
 official_source: "https://education.lego.com/en-us/lessons/preschool-coding-express/math-distance/"
 ---
 
-![El tren Coding Express de la dotació, amb locomotora groga i blava, vagó blau de sostre roig i via grisa, entre maquetes de biblioteca i mercat.](../../_assets/imatges/sa-ce-distancia-estacions-v2.png)
+![El tren Coding Express de la dotació, amb locomotora groga i blava, vagó blau de sostre roig i via grisa, entre maquetes de biblioteca i mercat.](../../_assets/situacions/ce-distancies-estacions.webp)
 
 _El tren es mesura sobre la via de maqueta; les peces blaves són unitats de referència col·locades per l’alumnat, no un sensor de distància del tren._
 
@@ -73,7 +73,7 @@ Abans de moure el tren, connecteu-lo a l’app i mireu quins nombres es poden se
 
 En grup menut, construïu dos o tres models senzills de parada i una via de doble extrem. Poseu les destinacions al costat de la via, des de prop de l’origen fins a més lluny. Ordeneu els nombres amb targetes només si coincideix amb la interfície observada.
 
-![El Coding Express real, tres destinacions de maqueta, unitats de paper iguals i una tauleta amb opcions abstractes de moviment.](../../_assets/imatges/sa-ce-distancies-unitats-app.png)
+![El Coding Express real, tres destinacions de maqueta, unitats de paper iguals i una tauleta amb opcions abstractes de moviment.](../../_assets/situacions/sa-ce-distancies-unitats-app.webp)
 
 _Les unitats comparen trams de la maqueta; les opcions de l’app s’han de provar en la via del centre i no equivalen a metres._
 

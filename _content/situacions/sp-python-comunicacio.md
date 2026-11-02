@@ -14,7 +14,7 @@ duration: "6 lliçons oficials + 1 ampliació · 7–9 sessions"
 challenge: "Com podem crear un senyal escolar inclusiu amb Python, llum i so, i comprovar que el missatge s’entén en diferents condicions d’ús?"
 ---
 
-![Robot LEGO SPIKE Prime real amb hub i base de dues rodes al costat d’un senyal escolar de targetes de colors, sobre una taula de prova.](../../_assets/imatges/sa-sp-python-comunicacio.webp)
+![Robot LEGO SPIKE Prime real amb hub i base de dues rodes al costat d’un senyal escolar de targetes de colors, sobre una taula de prova.](../../_assets/situacions/sp-python-comunicacio.webp)
 
 _El hub, els sensors i els actuadors són maquinari; Python descriu les instruccions que els coordinen._
 
@@ -95,7 +95,7 @@ Formeu parelles amb rols que canvien a cada sessió: *pilota* (escriu o manipula
 
 **Disseny en paper (8 min):** dibuixeu una graella de 5 × 5 al diari i retalleu 25 quadrats de paper de colors per poder representar cada píxel. Proveu una figura senzilla —rectangle, triangle o símbol propi del centre— i marqueu només les caselles que s’han d’il·luminar. Escriviu un pseudocodi de quatre passos: netejar la matriu, mostrar la figura, esperar i esborrar-la. No cal utilitzar alhora les 25 peces.
 
-![Hub SPIKE Prime i una graella de cinc per cinc amb el mateix patró geomètric representat en paper i en la matriu lluminosa.](../../_assets/imatges/sa-sp-python-matriu-llum.webp)
+![Hub SPIKE Prime i una graella de cinc per cinc amb el mateix patró geomètric representat en paper i en la matriu lluminosa.](../../_assets/situacions/sa-sp-python-matriu-llum.webp)
 
 _La graella de paper permet predir i revisar el patró abans d’escriure el programa._
 

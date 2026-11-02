@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com pot un vehicle programat avançar per una ruta de repartiment i reaccionar davant d’un obstacle previsible?"
 ---
 
-![Codey Rocky de la dotació al costat d’una ruta de taula amb obstacles de cartó i una capsa de paper separada a la meta.](../../_assets/imatges/sa-cr-repartiment-v2.png)
+![Codey Rocky de la dotació al costat d’una ruta de taula amb obstacles de cartó i una capsa de paper separada a la meta.](../../_assets/situacions/cr-repartiment.webp)
 
 _El robot no transporta la capsa: és una maqueta independent. La ruta i els obstacles serveixen per a provar el sensor en condicions controlades, no per a garantir un repartiment autònom._
 

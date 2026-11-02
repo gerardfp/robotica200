@@ -14,7 +14,7 @@ duration: "6 lliçons · 6–8 sessions"
 challenge: "Com podem combinar comprovacions en Python per decidir quan una maqueta de préstec de material pot mostrar una resposta, i com provem que no confon casos?"
 ---
 
-![Robot LEGO SPIKE Prime real al costat d'una maqueta de cartó amb un passadís de fitxes geomètriques i dos controls de prova.](../../_assets/imatges/sa-sp-logica-acces.webp)
+![Robot LEGO SPIKE Prime real al costat d'una maqueta de cartó amb un passadís de fitxes geomètriques i dos controls de prova.](../../_assets/situacions/sp-python-condicions.webp)
 
 _Una decisió composta és més fàcil d’explicar si fem visibles les condicions i provem cada combinació._
 

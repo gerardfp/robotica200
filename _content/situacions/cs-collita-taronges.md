@@ -15,7 +15,7 @@ challenge: "Com podem programar una ruta perquè MatataBot arribe a una o més p
 official_source: "https://matatalab.com/cdn/ff/IhHZwon10hgweb9Aqf4zXOcRD2XjU0s9E0F2sWyqps4/1637739725/public/2021-11/Coding%20Activity%20Cards.pdf"
 ---
 
-![El MatataBot i la torre reals del Coding Set en una graella de collita; una taronja de paper avança cap a una cistella i el programa acaba amb el bloc de música.](../../_assets/imatges/sa-cs-collita-taronges-v1.png)
+![El MatataBot i la torre reals del Coding Set en una graella de collita; una taronja de paper avança cap a una cistella i el programa acaba amb el bloc de música.](../../_assets/situacions/cs-collita-taronges.webp)
 
 _Il·lustració IA pròpia basada en el model real del Coding Set. La fruita és una peça lleugera de maqueta que el robot empeny; una persona la col·loca a la cistella. El robot no té pinça ni recull objectes de manera autònoma._
 

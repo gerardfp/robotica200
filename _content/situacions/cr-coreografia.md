@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem convertir un ritme propi en una seqüència de moviments, expressions i llums que el robot puga repetir?"
 ---
 
-![Codey Rocky real de la dotació sobre una taula, amb quatre targetes de colors que representen pulsacions d’una coreografia.](../../_assets/imatges/sa-coreografia-codey-v2.png)
+![Codey Rocky real de la dotació sobre una taula, amb quatre targetes de colors que representen pulsacions d’una coreografia.](../../_assets/situacions/cr-coreografia.webp)
 
 _Les quatre targetes de color ofereixen una representació visual del ritme; les accions concretes es decideixen i es programen a classe._
 

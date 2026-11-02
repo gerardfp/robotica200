@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem programar una ruta que visite diversos espais i ens ajude a observar-los sense tocar ni molestar els éssers vius?"
 ---
 
-![MatataBot i la torre del Coding Set al costat d’un mapa de parc amb camins, arbre, font i estany.](../../_assets/imatges/sa-cs-parc.webp)
+![MatataBot i la torre del Coding Set al costat d’un mapa de parc amb camins, arbre, font i estany.](../../_assets/situacions/cs-parc-observadors.webp)
 
 _El mapa és una maqueta didàctica: cada parada convida a observar, representar i cuidar l’entorn._
 

@@ -14,7 +14,7 @@ duration: "3 sessions"
 challenge: "Quines situacions poden interrompre un trajecte i com podem representar decisions prudents en una maqueta sense confondre-la amb una senyalització real?"
 ---
 
-![El tren LEGO Education Coding Express de la dotació s’acosta a una barrera i un pas de vianants de maqueta, sobre una taula d’aula.](../../_assets/imatges/sa-ce-ruta-segura-v2.png)
+![El tren LEGO Education Coding Express de la dotació s’acosta a una barrera i un pas de vianants de maqueta, sobre una taula d’aula.](../../_assets/situacions/ce-cami-segur.webp)
 
 _La maqueta serveix per conversar sobre una ruta segura; el tren no detecta vianants ni controla la barrera._
 
@@ -50,7 +50,7 @@ Inicieu una conversa curta sobre els senyals que l’alumnat recorda haver vist 
 
 Mostreu els quatre senyals de la dotació Coding Express, un per un. Observeu-ne forma i color abans de proposar una interpretació. El docent contrasta les idees amb informació fiable i explica qualsevol diferència entre la peça de joguina i un senyal real.
 
-![Maqueta de ciutat amb el tren Coding Express, un pas de joguina, una barrera i fitxes de senyals inventades per a observar i predir.](../../_assets/imatges/sa-ce-cami-segur-senyals.webp)
+![Maqueta de ciutat amb el tren Coding Express, un pas de joguina, una barrera i fitxes de senyals inventades per a observar i predir.](../../_assets/situacions/sa-ce-cami-segur-senyals.webp)
 
 _Les fitxes de la imatge són pictogrames per al joc de maqueta; no substitueixen ni reprodueixen la senyalització viària oficial._
 

@@ -15,7 +15,7 @@ challenge: "Com podem representar, programar i explicar el recorregut dels alime
 official_source: "https://matatalab.com/en/node/90"
 ---
 
-![MatataBot i la torre reals del Coding Set al costat d'un mapa de graella amb pictogrames del recorregut digestiu i una fitxa de fruita.](../../_assets/imatges/sa-cs-viatge-digestiu-v1.png)
+![MatataBot i la torre reals del Coding Set al costat d'un mapa de graella amb pictogrames del recorregut digestiu i una fitxa de fruita.](../../_assets/situacions/cs-cami-digestiu.webp)
 
 _El mapa és un model didàctic de paper: el robot només executa moviments programats. No interpreta òrgans ni simula el procés biològic._
 
@@ -91,7 +91,7 @@ Abans d'executar, una persona llig la seqüència en veu alta i l'altra assenyal
 
 Programeu i executeu una vegada. L'observador marca la primera casella on la posició real se separa de la prevista. Depureu primer la interpretació de gir i avanç; després, si cal, reviseu l'alineació física. Canvieu una instrucció cada vegada i repetiu la prova des del mateix punt inicial.
 
-![MatataBot, la torre i els blocs tangibles al costat d'una graella amb estacions digestives connectades per una ruta de caselles.](../../_assets/imatges/sa-cs-viatge-digestiu-ruta-v1.png)
+![MatataBot, la torre i els blocs tangibles al costat d'una graella amb estacions digestives connectades per una ruta de caselles.](../../_assets/situacions/sa-cs-viatge-digestiu-ruta-v1.webp)
 
 _Les fletxes i pictogrames representen un mapa preparat per l'alumnat; el robot només executa les ordres físiques._
 
@@ -113,7 +113,7 @@ Afegiu al mapa targetes d'esdeveniment per a «mastegar», «moviment muscular»
 
 Cada parella crea una llegenda de dos nivells: **què fa MatataBot** (avança, gira, s'atura perquè una persona el para) i **què explica la ciència** (funció aproximada de cada òrgan). Marqueu amb una vora discontínua les idees que el mapa no representa, com la digestió química, els sucs digestius i l'absorció a través de les parets intestinals.
 
-![Fitxes didàctiques separades mostren funcions generals de l'estómac i els intestins, amb el fetge i el pàncrees situats fora del trajecte de la fruita.](../../_assets/imatges/sa-cs-viatge-digestiu-funcions-v1.png)
+![Fitxes didàctiques separades mostren funcions generals de l'estómac i els intestins, amb el fetge i el pàncrees situats fora del trajecte de la fruita.](../../_assets/situacions/sa-cs-viatge-digestiu-funcions-v1.webp)
 
 _Les icones són un recurs per a conversar sobre funcions; no descriuen tots els processos digestius ni són un mapa de sensors._
 

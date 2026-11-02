@@ -14,7 +14,7 @@ duration: "4 sessions de 30–40 minuts"
 challenge: "Com convertim llocs del nostre entorn en una història circular i expliquem quan acaba?"
 ---
 
-![El tren LEGO Education Coding Express de la dotació recorre una via tancada, amb targetes pròpies de seqüència i un jardí de paper.](../../_assets/imatges/sa-ce-bucles-relats-v2.png)
+![El tren LEGO Education Coding Express de la dotació recorre una via tancada, amb targetes pròpies de seqüència i un jardí de paper.](../../_assets/situacions/ce-bucles-relats.webp)
 
 _La via mostra el bucle físic i les targetes representen la història; el tren no tria la ruta ni detecta els elements del jardí._
 
@@ -119,7 +119,7 @@ Col·loqueu un maó de bucle on comença la tornada i proveu de contar el relat 
 
 Si la història es trenca —falta una escena, una parada queda fora d’ordre o no s’entén on torna a començar— localitzeu el problema, canvieu la posició d’un maó o una instrucció i torneu a contar-la. En grup menut, inventeu un conte circular propi amb escenari original del municipi o del barri i decidiu quantes voltes fareu abans de tancar-lo.
 
-![El tren Coding Express real de la dotació recorre una via circular amb maons d’acció i targetes de paper que representen escenes d’un conte local.](../../_assets/imatges/sa-ce-bucles-relats-conte-circular.png)
+![El tren Coding Express real de la dotació recorre una via circular amb maons d’acció i targetes de paper que representen escenes d’un conte local.](../../_assets/situacions/sa-ce-bucles-relats-conte-circular.webp)
 
 _Les targetes ajuden a ordenar i narrar les escenes; el tren no les llig ni decideix quan acaba el relat. El grup limita manualment les voltes._
 

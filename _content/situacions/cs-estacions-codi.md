@@ -15,7 +15,7 @@ challenge: "Com podem passar d’unes ordres tangibles a una història i un mapa
 official_source: "https://matatalab.com/zh-hans/node/66"
 ---
 
-![MatataBot, la torre de control, els blocs tangibles, una graella de mapa amb bandera i targetes de creació artística representen les dotze sessions de Learning Station.](../../_assets/imatges/sa-cs-learning-station.webp)
+![MatataBot, la torre de control, els blocs tangibles, una graella de mapa amb bandera i targetes de creació artística representen les dotze sessions de Learning Station.](../../_assets/situacions/cs-estacions-codi.webp)
 
 _Les peces i el MatataBot de la dotació connecten seqüències, mapes i propostes creatives; els complements artístics només s’utilitzen si el centre en disposa._
 
@@ -70,7 +70,7 @@ Presenteu el repte de preparar una ruta perquè una altra classe puga descobrir 
 
 En equips de quatre, identifiqueu robot, torre i tauler. Repartiu i roteu els rols de programador/a, inspector/a, responsable del mapa i portaveu; observeu quines peces necessiten càrrega i quines ordres tangibles reconeix el kit. Cada membre dibuixa o escriu un símbol propi per a una paraula del vocabulari i l’explica al grup abans de provar res.
 
-![MatataBot i torre reals del Coding Set amb els blocs de moviment, d’acció i de repetició, més una targeta de fletxa feta a classe.](../../_assets/imatges/sa-cs-parts-coding-set.png)
+![MatataBot i torre reals del Coding Set amb els blocs de moviment, d’acció i de repetició, més una targeta de fletxa feta a classe.](../../_assets/situacions/sa-cs-parts-coding-set.webp)
 
 _La targeta és una representació de l’alumnat; les peces i el robot corresponen al kit real._
 
@@ -110,7 +110,7 @@ En equips de quatre, situeu dues persones a cada costat d’un espai ampli: una 
 
 Representeu una ruta amb blocs en el tauler. La torre llig la disposició i envia instruccions al robot; una parella fa de programadora i l’altra d’inspectora: abans d’executar, la receptora descriu què espera que faça el robot. Repetiu amb una sola ordre canviada i identifiqueu el missatge diferent.
 
-![Un equip prepara targetes de fletxa, la torre Coding Set real llig els blocs i MatataBot espera en una casella d’inici.](../../_assets/imatges/sa-cs-missatge-torre-matata.png)
+![Un equip prepara targetes de fletxa, la torre Coding Set real llig els blocs i MatataBot espera en una casella d’inici.](../../_assets/situacions/sa-cs-missatge-torre-matata.webp)
 
 _Les fletxes grans són una ajuda visual de paper. La torre llig els blocs físics; el robot no llig les targetes._
 
@@ -142,7 +142,7 @@ Mostreu el Coding Set preparat sobre una taula plana. Abans de tocar les peces, 
 
 Repartiu targetes pròpies amb aquestes categories: moviment/direcció, nombres/paràmetres, repetició, funcions, música/dansa i obstacles/banderes. En grups de quatre, classifiqueu les peces que realment hi ha al kit i poseu cada targeta al costat del grup corresponent. Si una categoria depén d’un accessori absent, deixeu la targeta com a «no disponible en aquesta dotació»; no la completeu amb peces imaginàries.
 
-![MatataBot i torre reals del Coding Set amb blocs tangibles agrupats per moviment i repetició; les banderes i els obstacles apareixen en targetes dibuixades.](../../_assets/imatges/sa-cs-classifica-peces.png)
+![MatataBot i torre reals del Coding Set amb blocs tangibles agrupats per moviment i repetició; les banderes i els obstacles apareixen en targetes dibuixades.](../../_assets/situacions/sa-cs-classifica-peces.webp)
 
 _Els dibuixos de bandera i obstacle són targetes de paper, no accessoris addicionals mostrats com a peces del kit._
 
@@ -184,7 +184,7 @@ En grups de quatre, repartiu els rols de programador/a, inspector/a, responsable
 
 Cada equip dibuixa una ruta original amb blocs i bandera per a un altre equip. Qui la rep la programa sense que l’equip autor li done instruccions orals. Registreu la predicció, les ordres col·locades, el destí observat i la primera diferència entre el mapa i l’execució; si la ruta no funciona, identifiqueu la primera instrucció que cal revisar abans de canviar-la.
 
-![El MatataBot i la torre Coding Set de la dotació resolen una targeta pròpia de graella: bandera blava com a destí i obstacles físics fora del camí programat.](../../_assets/imatges/sa-cs-aprenentatge-bandera-v2.webp)
+![El MatataBot i la torre Coding Set de la dotació resolen una targeta pròpia de graella: bandera blava com a destí i obstacles físics fora del camí programat.](../../_assets/situacions/sa-cs-aprenentatge-bandera-v2.webp)
 
 _La ruta i els marcadors són una maqueta pròpia; l’equip planifica els obstacles perquè el robot no els detecta automàticament._
 
@@ -230,7 +230,7 @@ Intercanvieu mapes i demaneu a una altra parella que trace un camí possible sen
 
 **Evidència:** Laberint amb llegenda, dos camins identificats i una explicació de per què un és viable.
 
-![Laberint de paper en una graella amb inici, obstacles baixos i una bandera de destinació.](../../_assets/imatges/sa-cs-laberint-paper.webp)
+![Laberint de paper en una graella amb inici, obstacles baixos i una bandera de destinació.](../../_assets/situacions/sa-cs-laberint-paper.webp)
 
 _La ruta es planifica i es revisa en paper abans de provar el robot._
 ### Sessió 6 · Afegir obstacles i banderes
@@ -254,7 +254,7 @@ Recupereu el laberint de la sessió anterior i distingiu un obstacle, una bander
 
 Cada equip observa i classifica les peces d’obstacle i les banderes reals del set. Col·loqueu una peça d’obstacle en una casella i la bandera en una altra com a destí; si el grup no té alguna peça, substituïu-la per una targeta plana i registreu la diferència. Comproveu que la quadrícula deixa espai perquè el robot puga girar i que cap peça queda enganxada a les rodes.
 
-![El MatataBot real del Coding Set recorre una graella amb obstacles baixos i una bandera de destinació; els blocs tangibles es veuen al marge.](../../_assets/imatges/sa-cs-learning-station-laberint.webp)
+![El MatataBot real del Coding Set recorre una graella amb obstacles baixos i una bandera de destinació; els blocs tangibles es veuen al marge.](../../_assets/situacions/sa-cs-learning-station-laberint.webp)
 
 _L’obstacle i la bandera són peces físiques del kit; MatataBot no les detecta, de manera que l’equip planifica i verifica el recorregut._
 
@@ -290,7 +290,7 @@ Cada equip tria un espai valencià imaginari —una marjal, un jardí escolar o 
 
 Dissenyeu un laberint propi amb carrers amples i dos o tres obstacles reals del set; afegiu una bandera de destí i comproveu amb una fitxa que hi ha almenys una ruta completa. Si no disposeu de les peces, les targetes planes són l’alternativa. Una altra parella revisa que inici, obstacle, bandera i llegenda siguen inequívocs abans de programar. Trieu tres parades i escriviu una frase o un vers breu per a cadascuna; les frases han de poder-se llegir en l’ordre del recorregut.
 
-![MatataBot i la torre de control Coding Set de la dotació al costat d’un laberint de paper de l’Albufera, amb ruta marcada i una bandera final.](../../_assets/imatges/sa-cs-laberint-amb-matata.png)
+![MatataBot i la torre de control Coding Set de la dotació al costat d’un laberint de paper de l’Albufera, amb ruta marcada i una bandera final.](../../_assets/situacions/sa-cs-laberint-amb-matata.webp)
 
 _Il·lustració IA pròpia amb el model de MatataBot de la dotació; el mapa, la ruta i les peces de cartó són una proposta de classe._
 
@@ -342,11 +342,11 @@ Expliqueu una decisió de representació i una limitació del mapa. Deseu la ver
 
 **Evidència:** mapa original amb llegenda, ruta verbalitzada per una altra parella i una nota que diferencia representació esquemàtica de distància real.
 
-![El MatataBot i la torre del Coding Set al costat d’un mapa didàctic de la marjal cobert amb una quadrícula transparent; una alumna completa la llegenda.](../../_assets/imatges/sa-cs-mapa-graella.webp)
+![El MatataBot i la torre del Coding Set al costat d’un mapa didàctic de la marjal cobert amb una quadrícula transparent; una alumna completa la llegenda.](../../_assets/situacions/sa-cs-mapa-graella.webp)
 
 _La graella és una eina de representació creada per a l’aula; el mapa no és geogràfic ni inclou coordenades reals._
 
-![Mapa esquemàtic de la marjal amb graella, camins, nucli habitat i camps, sense coordenades reals.](../../_assets/imatges/sa-cs-mapa-marjal.webp)
+![Mapa esquemàtic de la marjal amb graella, camins, nucli habitat i camps, sense coordenades reals.](../../_assets/situacions/sa-cs-mapa-marjal.webp)
 
 _El mapa és una maqueta didàctica: no representa rutes reals ni dades de cap infant._
 ### Sessió 9 · Convertir el mapa en una graella (45 min)
@@ -376,7 +376,7 @@ Poseu una quadrícula transparent o de paper damunt del mapa. Marqueu files i co
 
 Descriviu tres llocs amb referències de fila/columna i practiqueu una ruta amb davant, darrere i gir. Acordeu el punt de vista del robot; una coordenada assenyala una casella, però no indica cap a on mira ni substitueix els blocs de moviment.
 
-![MatataBot i la torre reals del Coding Set al costat d’una graella didàctica de la marjal, amb una fletxa d’orientació, targetes de ruta i una mà que prepara un bloc de moviment.](../../_assets/imatges/sa-cs-graella-matata.png)
+![MatataBot i la torre reals del Coding Set al costat d’una graella didàctica de la marjal, amb una fletxa d’orientació, targetes de ruta i una mà que prepara un bloc de moviment.](../../_assets/situacions/sa-cs-graella-matata.webp)
 
 _La quadrícula, la llegenda i els símbols són materials de classe; no són un mapa geogràfic ni funcions automàtiques del robot._
 
@@ -416,7 +416,7 @@ Amb els blocs disponibles, observeu que un bucle es forma amb inici i final en p
 
 Representeu el mateix tram repetit com una seqüència explícita i com un bucle, anotant quines ordres queden dins del parell. Després, identifiqueu un recorregut que puga encapsular-se en una funció i dibuixeu on apareix la definició i on es crida. Si falta algun bloc, feu aquesta comparació amb targetes pròpies i marqueu-la com a simulació.
 
-![El MatataBot i la torre del Coding Set amb tres representacions de paper d’una ruta equivalent: seqüència explícita, repetició agrupada i patró reutilitzable.](../../_assets/imatges/sa-cs-sequencia-bucle-funcio.webp)
+![El MatataBot i la torre del Coding Set amb tres representacions de paper d’una ruta equivalent: seqüència explícita, repetició agrupada i patró reutilitzable.](../../_assets/situacions/sa-cs-sequencia-bucle-funcio.webp)
 
 _Les targetes agrupades són una explicació visual pròpia; no substitueixen la disposició física dels blocs de funció del kit._
 
@@ -452,7 +452,7 @@ Mostreu una roseta dibuixada per l’equip docent i pregunteu quines repeticions
 
 Amb paper, regle i transportador opcional, compareu un gir recte amb girs més oberts o més tancats. Dibuixeu un pentagrama (estrela de cinc puntes) amb els vèrtexs marcats i traceu l’ordre que seguix el llapis. Si el centre disposa de l’Artist Add-On compatible, inventarieu-ne els 20 blocs d’angle, els tres llapis de colors i les tres targetes d’escalfament (sis mostres) que realment hi ha. Trieu-ne una mostra de triangle o quadrat per comprovar el muntatge i la relació entre ordre i traçat abans de crear una forma pròpia; reviseu les instruccions abans de muntar el llapis. La guia del fabricant enumera deu valors d’angle (30°, 36°, 45°, 60°, 72°, 108°, 120°, 135°, 144° i 150°), cadascun amb dos blocs; useu només els valors presents i feu una plantilla original de prova. La fitxa de Learning Station no és accessible completa, així que aquesta mostra es pren de la guia tècnica oficial Artist i no es presenta com el pas exacte del pla de la lliçó 11.
 
-![MatataBot real al costat d’una estrella i una roseta dibuixades sobre paper amb fletxes que indiquen els girs; els blocs tangibles estan separats del dibuix.](../../_assets/imatges/sa-cs-angulos-estrella.webp)
+![MatataBot real al costat d’una estrella i una roseta dibuixades sobre paper amb fletxes que indiquen els girs; els blocs tangibles estan separats del dibuix.](../../_assets/situacions/sa-cs-angulos-estrella.webp)
 
 _La il·lustració mostra l’alternativa de paper del kit base: el robot no porta cap llapis ni accessori Artist._
 
@@ -496,7 +496,7 @@ Feu un esbós amb inici, fites i final o amb les parts del patró. Assigneu rols
 
 Convertiu el disseny en una seqüència llegible: ordre de blocs, repeticions que el kit base admeta, girs, obstacles representats i missatge final. Si hi ha Musician, distingiu la nota (tria de to) de la melodia predefinida; per a les notes, barregeu els blocs de Do a Ti per seleccionar l’escala i comproveu l’ordre amb una targeta de pràctica. La guia oficial indica que cada bloc de música té un valor rítmic predeterminat d’1/4; combinat amb el bloc numèric 2, passa a 2/4. Ací «1/4» i «2/4» indiquen el valor que descriu la guia, no un compàs complet. Registreu el patró curt de notes i ritmes com a creació original i contrasteu què canvia en variar només el nombre. En una fitxa pròpia, distingiu «funció comprovada», «simulació» i «idea per provar». Abans d’executar, una parella predix què farà el robot o com recorrerà el visitant l’obra.
 
-![MatataBot i torre Coding Set reals al costat d’un mapa creat per l’alumnat amb aiguamoll, camins i targetes de símbols; les ordres tangibles es veuen sobre la torre.](../../_assets/imatges/sa-cs-creacio-oberta.png)
+![MatataBot i torre Coding Set reals al costat d’un mapa creat per l’alumnat amb aiguamoll, camins i targetes de símbols; les ordres tangibles es veuen sobre la torre.](../../_assets/situacions/sa-cs-creacio-oberta.webp)
 
 _El mapa i les targetes són una creació pròpia de paper. La il·lustració no pressuposa els complements Artist o Musician: el MatataBot només executa les ordres de moviment programades._
 
@@ -504,7 +504,7 @@ _El mapa i les targetes són una creació pròpia de paper. La il·lustració no
 
 Feu una prova amb MatataBot si el disseny usa rutes; manteniu el mateix inici i compareu predicció/resultat. Si és una composició sonora i hi ha Musician Add-On, proveu primer un patró curt amb un bloc de música (valor rítmic 1/4); repetiu-lo amb el bloc numèric 2 (valor 2/4) i compareu la duració percebuda. Després, compareu-lo amb un bloc de melodia predefinida i expliqueu què podeu modificar i què ja ve fixat. No copieu una cançó publicada. Si no hi ha complement, representeu el patró amb paper, ritme silenciós i símbols. Una classe visitant prova o interpreta la proposta sense indicacions de l’equip autor; el grup registra un comentari i aplica una millora concreta.
 
-![MatataBot, torre i tauler reals del Coding Set al costat d’una tira de colors creada en paper i d’uns blocs abstractes sense símbols per representar el Musician Add-On opcional.](../../_assets/imatges/sa-cs-composicio-musical-v1.png)
+![MatataBot, torre i tauler reals del Coding Set al costat d’una tira de colors creada en paper i d’uns blocs abstractes sense símbols per representar el Musician Add-On opcional.](../../_assets/situacions/sa-cs-composicio-musical-v1.webp)
 
 _La tira de colors és una partitura visual pròpia i els blocs abstractes només representen l’accessori opcional: no són peces Musician exactes ni formen part del kit base._
 

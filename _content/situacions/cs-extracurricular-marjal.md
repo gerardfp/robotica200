@@ -15,7 +15,7 @@ challenge: "Com podem crear una experiència de joc i descoberta del marjal amb 
 official_source: "https://matatalab.com/zh-hans/node/67"
 ---
 
-![El MatataBot, la torre i el tauler reals del Coding Set al costat d’un mapa de la marjal, targetes d’història i un prototip de joc de paper.](../../_assets/imatges/sa-cs-extracurricular-marjal-v1.png)
+![El MatataBot, la torre i el tauler reals del Coding Set al costat d’un mapa de la marjal, targetes d’història i un prototip de joc de paper.](../../_assets/situacions/cs-extracurricular-marjal.webp)
 
 _El mapa, les targetes i el joc són materials creats a mà; el robot executa les ordres tangibles i no interpreta imatges ni construeix els materials._
 
@@ -233,7 +233,7 @@ Intercanvieu les partitures. El grup que les rep les interpreta sense explicaci�
 
 **Connexió amb el món real:** Busqueu patrons rítmics en una activitat musical o una cançó de domini públic coneguda per la classe.
 
-![El MatataBot i la torre de la dotació al costat d’una partitura de ritme dibuixada a mà i un mapa de graella.](../../_assets/imatges/sa-cs-extracurricular-musica-v1.png)
+![El MatataBot i la torre de la dotació al costat d’una partitura de ritme dibuixada a mà i un mapa de graella.](../../_assets/situacions/sa-cs-extracurricular-musica-v1.webp)
 
 _La partitura és de paper; només s’usa Musician Add-On si el centre en confirma el model i la disponibilitat._
 
@@ -381,7 +381,7 @@ Proveu una figura i compareu la predicció amb el paper final o amb la ruta obse
 
 **Connexió amb el món real:** Observeu formes geomètriques en rajoles o elements de l’arquitectura local sense atribuir-ne l’autoria si no es coneix.
 
-![El MatataBot i la torre de la dotació al costat d’una figura geomètrica i d’una xarxa de paper dibuixades manualment.](../../_assets/imatges/sa-cs-extracurricular-arte-v1.png)
+![El MatataBot i la torre de la dotació al costat d’una figura geomètrica i d’una xarxa de paper dibuixades manualment.](../../_assets/situacions/sa-cs-extracurricular-arte-v1.webp)
 
 _Sense Artist Add-On, la figura es dibuixa a mà; el Coding Set base no porta llapis ni traça formes._
 

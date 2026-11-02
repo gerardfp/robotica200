@@ -14,7 +14,7 @@ duration: "5 sessions · 225 min"
 challenge: "Com podem descompondre un procés en fotogrames i repetir-los en una animació LED comprensible?"
 ---
 
-![Una placa micro:bit al costat d’una maqueta de volcà de paper i un flipbook abstracte de plomall ascendent.](../../_assets/imatges/sa-mb-animacio-volca.webp)
+![Una placa micro:bit al costat d’una maqueta de volcà de paper i un flipbook abstracte de plomall ascendent.](../../_assets/situacions/mb-animacio-volca.webp)
 
 _És una maqueta d’aula per parlar d’animació, no una simulació de risc ni un model predictiu._
 

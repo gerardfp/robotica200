@@ -15,7 +15,7 @@ challenge: "Com podem enviar un avís de protecció i representar un sensor de c
 official_source: "https://microbit.org/teach/lessons/helping-plants-grow-trees/"
 ---
 
-![Dues plaques micro:bit reals sobre suports secs al costat d’una maqueta de jardí i de targetes de llum i aigua per a simular proves de ràdio.](../../_assets/imatges/sa-hivernacle-microbit-v2.png)
+![Dues plaques micro:bit reals sobre suports secs al costat d’una maqueta de jardí i de targetes de llum i aigua per a simular proves de ràdio.](../../_assets/situacions/mb-hivernacle.webp)
 
 _Il·lustració IA pròpia basada en la placa micro:bit de la dotació. Les plantes i targetes són materials de maqueta; no hi ha cap sensor de sòl integrat, les plaques es mantenen seques i el muntatge no vigila boscos ni controla el reg real._
 
@@ -117,7 +117,7 @@ Representeu un planter de maqueta i decidiu quina placa fa de node de dades i qu
 
 Combineu les dues entrades simulades o externes amb les regles de llum i humitat; representeu els dos relés del repte oficial amb targetes o icones LED. Una eixida de maqueta no encén una làmpada ni activa el reg. Afegiu un interruptor d’aturada del prototip: mantindre premuts A+B activa un estat de parada que força les dues eixides a «OFF»; reinicieu el programa per a tornar a provar. Només si el centre té relés compatibles verificats es pot estudiar el circuit de baixa tensió segons les instruccions del fabricant; no són components integrats i no es connecten a bombes ni a la xarxa elèctrica.
 
-![Dues micro:bit de la dotació representen un avís de ràdio amb identificador fictici i un prototip d’hort amb dues eixides simulades i un botó d’aturada.](../../_assets/imatges/sa-hivernacle-nodes-relle.png)
+![Dues micro:bit de la dotació representen un avís de ràdio amb identificador fictici i un prototip d’hort amb dues eixides simulades i un botó d’aturada.](../../_assets/situacions/sa-hivernacle-nodes-relle.webp)
 
 _La passarel·la, les eixides, l’identificador i l’aturada són elements de maqueta o representació; les plaques no controlen relés ni identifiquen una ubicació real._
 

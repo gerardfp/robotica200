@@ -14,7 +14,7 @@ duration: "4 sessions de 20–25 minuts"
 challenge: "Com podem representar sons i veus d’un barri imaginari sense confondre el mapa amb una gravació real del nostre entorn?"
 ---
 
-![Tale-Bot recorre un mapa inventat amb una font, un arbre amb un ocell i una parada d’autobús.](../../_assets/imatges/sa-tb-mapa-sonor.webp)
+![Tale-Bot recorre un mapa inventat amb una font, un arbre amb un ocell i una parada d’autobús.](../../_assets/situacions/tb-mapa-sonor.webp)
 
 _Mapa de ficció amb tres punts sonors. Els sons es representen amb pictogrames o missatges preparats; no es graven converses del barri._
 

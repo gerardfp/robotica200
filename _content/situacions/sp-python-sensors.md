@@ -14,7 +14,7 @@ duration: "6 lliçons · 6–8 sessions"
 challenge: "Com podem fer que un prototip SPIKE prime una ordre amb sensor de força, reconega una zona d’aturada amb distància i transporte una càrrega lleugera sense eixir del recorregut?"
 ---
 
-![Robot real LEGO SPIKE Prime amb sensor de força i sensor de distància, transportant un paquetet de llavors per una maqueta de viver escolar.](../../_assets/imatges/sa-sp-python-sensors.webp)
+![Robot real LEGO SPIKE Prime amb sensor de força i sensor de distància, transportant un paquetet de llavors per una maqueta de viver escolar.](../../_assets/situacions/sp-python-sensors.webp)
 
 _Una decisió automatitzada necessita una entrada ben provada, un llindar justificat i una aturada segura._
 

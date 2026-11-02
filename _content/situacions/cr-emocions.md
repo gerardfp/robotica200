@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com pot una expressió digital ajudar-nos a contar una història, i per què no és suficient per saber com se sent una persona?"
 ---
 
-![Codey Rocky de la dotació acompanya targetes amb expressions diferents de personatges ficticis.](../../_assets/imatges/sa-emocions-codey.webp)
+![Codey Rocky de la dotació acompanya targetes amb expressions diferents de personatges ficticis.](../../_assets/situacions/cr-emocions.webp)
 
 _Una expressió programada representa una idea del relat; no llig l’estat emocional de ningú._
 

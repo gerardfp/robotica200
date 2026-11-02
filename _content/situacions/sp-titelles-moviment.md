@@ -14,7 +14,7 @@ duration: "5 sessions · 250 min"
 challenge: "Com podem transformar el gir d’un motor en el moviment expressiu d’una titella que conta una història local?"
 ---
 
-![Un hub SPIKE Prime amb matriu de llums, un motor i bigues LEGO mou una titella plana d’ocell de paper.](../../_assets/imatges/sa-sp-titelles.webp)
+![Un hub SPIKE Prime amb matriu de llums, un motor i bigues LEGO mou una titella plana d’ocell de paper.](../../_assets/situacions/sp-titelles-moviment.webp)
 
 _La silueta de paper és un personatge escènic; el hub i el motor visibles són components del set SPIKE Prime._
 

@@ -9,7 +9,7 @@ image: _assets/tutorials/mb-fanalet-llum.png
 ---
 ## 🎯 Repte i objectius
 
-![Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum.](../../_assets/imatges/microbit-fanalet.webp)
+![Placa BBC micro:bit amb la matriu LED parcialment tapada per comprovar la lectura de llum.](../../_assets/tutorials/microbit-fanalet.webp)
 
 Construeix un fanalet que responga a la llum ambiental i ajusta el llindar amb proves en espais diferents. La matriu LED de micro:bit pot funcionar alhora com a eixida visual i com a sensor de llum.
 

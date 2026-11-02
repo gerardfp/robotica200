@@ -14,7 +14,7 @@ duration: "6 sessions"
 challenge: "Què ens diuen les lectures de llum sobre l’ús de la il·luminació i quina proposta podem defensar amb dades?"
 ---
 
-![Una placa micro:bit sobre la taula acompanya un llum de sobretaula i un gràfic de barres en blanc.](../../_assets/imatges/sa-mb-energia-aula.webp)
+![Una placa micro:bit sobre la taula acompanya un llum de sobretaula i un gràfic de barres en blanc.](../../_assets/situacions/mb-energia-aula.webp)
 
 _El sensor de llum registra lectures ambientals; cal separar-les del consum elèctric real._
 

@@ -14,7 +14,7 @@ duration: "10 activitats · 20–30 min cadascuna"
 challenge: "Com podem donar instruccions clares perquè Tale-Bot arribe, salude, dance i complete una missió?"
 ---
 
-![Tale-Bot Pro real al costat d’una quadrícula i targetes de fletxes mentre una mà prepara una ordre amb els botons físics del robot.](../../_assets/imatges/sa-tb-instruccions-v2.webp)
+![Tale-Bot Pro real al costat d’una quadrícula i targetes de fletxes mentre una mà prepara una ordre amb els botons físics del robot.](../../_assets/situacions/tb-ordres-en-accio.webp)
 
 _Les instruccions es planifiquen amb targetes i es comproven al mapa; els materials i la història són propis._
 
@@ -26,7 +26,7 @@ La classe organitza una fira de jocs de barri. Els equips aprenen a llegir els b
 
 ### **A-1 · Hola, Tale-Bot i al repte.**
 
-![Tale-Bot Pro real al costat d’un esquema propi dels controls i de targetes de moviment i recompte de l’1 al 10.](../../_assets/imatges/sa-tb-targetes-a1-v1.webp)
+![Tale-Bot Pro real al costat d’un esquema propi dels controls i de targetes de moviment i recompte de l’1 al 10.](../../_assets/situacions/sa-tb-targetes-a1-v1.webp)
 
 _L’esquema i les targetes són materials de paper per observar i representar ordres; el robot no els llig._
 
@@ -56,7 +56,7 @@ Si els recomptes no coincideixen, esborreu i corregiu només el tram necessari. 
 **Evidència:** esquema de parts i controls, nombre triat, seqüència comptada, predicció, resultat i norma de cura. Expliqueu que un programa és un conjunt ordenat d’instruccions. La torre de gots pertany a A-2.
 ### **A-2 · Avança, avança.**
 
-![Tale-Bot Pro real avança per una franja lliure de paper cap a una torre de deu gots buits i lleugers.](../../_assets/imatges/sa-tb-gots-a2-v1.webp)
+![Tale-Bot Pro real avança per una franja lliure de paper cap a una torre de deu gots buits i lleugers.](../../_assets/situacions/sa-tb-gots-a2-v1.webp)
 
 _Els gots representen la fita de la prova; si es comprova el contacte, useu material lleuger i una zona supervisada. La imatge no implica que el robot detecte els gots._
 
@@ -83,7 +83,7 @@ Recol·loqueu els gots i reinicieu Tale-Bot des de la mateixa línia per fer una
 
 ### **A-3 · Quants avanços?**
 
-![Tale-Bot Pro real al costat d’una graella de paper amb cinc punts d’inici, metes i piles de targetes d’avanç.](../../_assets/imatges/sa-tb-avanços-a3-v1.webp)
+![Tale-Bot Pro real al costat d’una graella de paper amb cinc punts d’inici, metes i piles de targetes d’avanç.](../../_assets/situacions/sa-tb-avanços-a3-v1.webp)
 
 _Les metes, la graella i les ordres són representacions preparades per l’alumnat; el robot només executa les ordres programades._
 
@@ -110,7 +110,7 @@ Executeu les cinc rutes i compareu les distàncies en ordres. Si un trajecte no 
 
 ### **A-4 · Codi de l’aula I.**
 
-![Tale-Bot Pro real al costat de seqüències visuals de fletxes i targetes de colors per comparar programes.](../../_assets/imatges/sa-tb-programes-a4-v1.webp)
+![Tale-Bot Pro real al costat de seqüències visuals de fletxes i targetes de colors per comparar programes.](../../_assets/situacions/sa-tb-programes-a4-v1.webp)
 
 _Les tires de fletxes i les fitxes de colors són codis de paper creats per a la pràctica, no targetes oficials ni una lectura automàtica del robot._
 
@@ -149,7 +149,7 @@ Manteniu premut el botó de gravació mentre parleu i deixeu-lo anar en acabar; 
 
 Primer feu la tasca de salutació: programeu l’arribada a un personatge de joguet o de paper i inseriu una pulsació curta del botó de gravació perquè reproduïsca el missatge que acabeu de provar. Després, sense tornar a gravar, programeu l’arribada a dues parades de carlota i inseriu una pulsació curta en cada parada per reutilitzar el mateix àudio. Marqueu en el registre les tres ordres de reproducció i distingiu-les de l’enregistrament inicial. Com a alternativa accessible, l’equip pot fer servir una salutació no gravada amb pictograma o veu en directe.
 
-![Tale-Bot Pro de la dotació arriba a dues targetes de carlota en una ruta de l’hort escolar i reprodueix un missatge enregistrat.](../../_assets/imatges/sa-tb-missatge-carlotes.png)
+![Tale-Bot Pro de la dotació arriba a dues targetes de carlota en una ruta de l’hort escolar i reprodueix un missatge enregistrat.](../../_assets/situacions/sa-tb-missatge-carlotes.webp)
 
 _La persona i les carlotes són targetes de paper; el robot executa la ruta i el missatge, no arreplega ni reconeix aliments._
 
@@ -175,7 +175,7 @@ Planifiqueu les ordres cap avant i arrere i afegiu el botó de dansa aleatòria 
 
 Dibuixeu la ruta i registreu la distància de cada tram en ordres. Indiqueu quina ordre activa la dansa i anoteu que el resultat no és determinista.
 
-![Tale-Bot Pro real de la dotació sobre una ruta de quadrícula, al costat de sis targetes de paper amb traces de moviment; una targeta assenyala la dansa observada en aquesta prova.](../../_assets/imatges/sa-tb-dansa-aleatoria-v2.png)
+![Tale-Bot Pro real de la dotació sobre una ruta de quadrícula, al costat de sis targetes de paper amb traces de moviment; una targeta assenyala la dansa observada en aquesta prova.](../../_assets/situacions/sa-tb-dansa-aleatoria-v2.webp)
 
 _Les targetes són un registre visual creat per a l’activitat; no són accessoris ni coreografies programables del robot._
 
@@ -189,7 +189,7 @@ Proveu quatre disposicions de distància diferent i reinicieu sempre des de la m
 
 ### **A-7 · Gir a esquerra o dreta?**
 
-![Tale-Bot Pro real en una bifurcació de paper entre dues metes, amb targetes de gir a esquerra i a dreta.](../../_assets/imatges/sa-tb-girs-a7-v1.webp)
+![Tale-Bot Pro real en una bifurcació de paper entre dues metes, amb targetes de gir a esquerra i a dreta.](../../_assets/situacions/sa-tb-girs-a7-v1.webp)
 
 _Les metes i les fletxes grans són targetes pròpies; l’equip determina el gir des de la perspectiva inicial del robot._
 
@@ -216,7 +216,7 @@ Executeu les quatre rutes. Si hi ha desviació, canvieu només el gir que la cau
 
 ### **A-8 · Codi de l’aula II.**
 
-![Tale-Bot Pro real al costat d’un mapa de fira escolar amb parades de paper i sis seqüències de moviment.](../../_assets/imatges/sa-tb-programes-a8-v1.webp)
+![Tale-Bot Pro real al costat d’un mapa de fira escolar amb parades de paper i sis seqüències de moviment.](../../_assets/situacions/sa-tb-programes-a8-v1.webp)
 
 _Les parades i les seqüències són una maqueta de paper; el robot no reconeix els llocs ni els missatges, sinó que executa les ordres introduïdes._
 
@@ -251,7 +251,7 @@ Trieu una fruita de temporada per al mapa propi i predigueu quina ruta arriba de
 
 Dibuixeu el recorregut amb retolador esborrable, traduïu-lo a targetes d’ordre i marqueu el punt d’inici.
 
-![Tale-Bot Pro real de la dotació segueix una ruta de paper cap a targetes il·lustrades de taronja i caqui en una maqueta d’hort valencià.](../../_assets/imatges/sa-tb-collim-fruita-v2.png)
+![Tale-Bot Pro real de la dotació segueix una ruta de paper cap a targetes il·lustrades de taronja i caqui en una maqueta d’hort valencià.](../../_assets/situacions/sa-tb-collim-fruita-v2.webp)
 
 _Les fruites són destins representats amb targetes; l’alumnat les mou i les registra, però Tale-Bot no les arreplega ni les identifica._
 
@@ -281,7 +281,7 @@ Dibuixeu el camí i representeu les instruccions amb targetes. Comproveu que el 
 
 Anoteu les ordres de cada tram al voltant de l’objecte i indiqueu el punt on el robot ha de reprendre la direcció inicial.
 
-![Tale-Bot Pro real de la dotació recorre una quadrícula amb una ruta dibuixada que passa al voltant d’un arbre i d’un banc de maqueta, entre inici i destí.](../../_assets/imatges/sa-tb-guardes-parc-v2.png)
+![Tale-Bot Pro real de la dotació recorre una quadrícula amb una ruta dibuixada que passa al voltant d’un arbre i d’un banc de maqueta, entre inici i destí.](../../_assets/situacions/sa-tb-guardes-parc-v2.webp)
 
 _El recorregut està planificat per l’alumnat i deixa marge als objectes; el robot no els detecta._
 

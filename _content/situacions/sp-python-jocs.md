@@ -14,7 +14,7 @@ duration: "8 lliçons · 8–12 sessions"
 challenge: "Com podem crear un joc de fira amb regles transparents en què una condició Python canvie una resposta del model, el marcador siga fiable i tothom puga participar?"
 ---
 
-![Mecanisme de joc fet amb LEGO SPIKE Prime, hub, motor i urpa lleugera que juga amb fitxes grans i símbols en un tauler de taula.](../../_assets/imatges/sa-sp-python-jocs.webp)
+![Mecanisme de joc fet amb LEGO SPIKE Prime, hub, motor i urpa lleugera que juga amb fitxes grans i símbols en un tauler de taula.](../../_assets/situacions/sp-python-jocs.webp)
 
 _Una regla de joc és un contracte: cal poder anticipar la resposta, provar-la i entendre la puntuació._
 

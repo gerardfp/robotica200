@@ -15,7 +15,7 @@ challenge: "Com podem programar MatataBot per a visitar quatre espais mentre pre
 official_source: "https://matatalab.com/en/node/95"
 ---
 
-![MatataBot i el Coding Set recorren caselles entre un punt de préstec, un racó de lectura i una prestatgeria.](../../_assets/imatges/sa-cs-biblioteca.webp)
+![MatataBot i el Coding Set recorren caselles entre un punt de préstec, un racó de lectura i una prestatgeria.](../../_assets/situacions/cs-ruta-biblioteca.webp)
 
 _MatataBot i el Coding Set recorren caselles entre un punt de préstec, un racó de lectura i una prestatgeria._
 
@@ -82,7 +82,7 @@ Creeu maquetes tridimensionals simples de paper per als edificis o espais repres
 
 Feu que cada persona trobe una destinació a partir d’una parella ordenada. Contrasteu que les maquetes i els símbols conserven la posició relativa al mapa i que l’escala no ha canviat.
 
-![MatataBot, la torre i el tauler Coding Set de la dotació al costat d’un mapa miniatura de biblioteca, racó de lectura i hort escolar.](../../_assets/imatges/sa-cs-ruta-biblioteca-plano.webp)
+![MatataBot, la torre i el tauler Coding Set de la dotació al costat d’un mapa miniatura de biblioteca, racó de lectura i hort escolar.](../../_assets/situacions/sa-cs-ruta-biblioteca-plano.webp)
 
 _La graella localitza els espais al mapa; l’alumnat tradueix la ruta a fitxes físiques perquè MatataBot es moga, ja que el robot no rep coordenades ni transporta llibres._
 
@@ -100,7 +100,7 @@ Trieu un punt d’inici, l’ordre de les quatre parades i una ruta que el robot
 
 Convertiu la ruta dibuixada en blocs de moviment. Col·loqueu la seqüència d’esquerra a dreta i proveu un tram cada vegada.
 
-![MatataBot i torre reals del Coding Set al costat d’un mapa miniatura amb ruta i d’una seqüència de blocs físics.](../../_assets/imatges/sa-cs-biblioteca-codi-mapa-v1.png)
+![MatataBot i torre reals del Coding Set al costat d’un mapa miniatura amb ruta i d’una seqüència de blocs físics.](../../_assets/situacions/sa-cs-biblioteca-codi-mapa-v1.webp)
 
 _El mapa guia les persones; el programa tangible envia ordres de moviment al robot. Les coordenades no són una entrada directa del Coding Set._
 
@@ -126,7 +126,7 @@ Situeu mapa, maquetes i senyal d’inici; assigneu qui programa, qui narra i qui
 
 Cada equip mostra el codi, fa el recorregut i presenta els espais amb el discurs. El públic segueix el mapa i marca les quatre parades.
 
-![MatataBot i torre reals del Coding Set al costat del mapa final de quatre espais i de targetes visuals per a la presentació.](../../_assets/imatges/sa-cs-biblioteca-visita-v1.png)
+![MatataBot i torre reals del Coding Set al costat del mapa final de quatre espais i de targetes visuals per a la presentació.](../../_assets/situacions/sa-cs-biblioteca-visita-v1.webp)
 
 _La persona guia narra les parades i el públic consulta les targetes; MatataBot només recorre la ruta programada i no transporta el llibre fictici._
 

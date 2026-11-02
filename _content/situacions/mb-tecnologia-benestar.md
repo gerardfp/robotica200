@@ -14,7 +14,7 @@ duration: "5 sessions"
 challenge: "Com podem dissenyar una ajuda tecnològica senzilla que facilite una rutina de benestar sense vigilar ni diagnosticar ningú?"
 ---
 
-![Prototip de cartó amb micro:bit i polsador gran per demanar ajuda o una pausa a l’aula.](../../_assets/imatges/sa-mb-tecnologia-benestar.webp)
+![Prototip de cartó amb micro:bit i polsador gran per demanar ajuda o una pausa a l’aula.](../../_assets/situacions/mb-tecnologia-benestar.webp)
 
 _El prototip comunica una petició triada per l’usuari; no avalua salut ni substitueix l’acompanyament humà._
 

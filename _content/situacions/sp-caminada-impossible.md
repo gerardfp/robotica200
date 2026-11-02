@@ -14,7 +14,7 @@ duration: "5 sessions · 250 min"
 challenge: "Com podem fer avançar un model LEGO SPIKE Prime sense rodes i quins canvis de les potes n’alteren el moviment?"
 ---
 
-![Un hub SPIKE Prime amb matriu de llums i bigues LEGO impulsa dues potes articulades que avancen sense rodes.](../../_assets/imatges/sa-sp-caminades.webp)
+![Un hub SPIKE Prime amb matriu de llums i bigues LEGO impulsa dues potes articulades que avancen sense rodes.](../../_assets/situacions/sp-caminada-impossible.webp)
 
 _El model caminador usa el hub, les peces estructurals i els mecanismes de pota del set SPIKE Prime, sense rodes ni cara fictícia._
 

@@ -14,7 +14,7 @@ duration: "6 lliçons · 6–8 sessions"
 challenge: "Com podem programar un mecanisme SPIKE que complete moviments útils i repetibles en una ruta de transport simulada, i demostrar-ne la precisió amb proves?"
 ---
 
-![Base de dues rodes construïda amb peces LEGO SPIKE Prime i el seu hub, en una pista de taula amb girs i una fita de destinació.](../../_assets/imatges/sa-sp-python-motors.webp)
+![Base de dues rodes construïda amb peces LEGO SPIKE Prime i el seu hub, en una pista de taula amb girs i una fita de destinació.](../../_assets/situacions/sp-python-motors.webp)
 
 _El moviment només es considera repetible després de mesurar-lo en la mateixa superfície i amb el mateix muntatge._
 

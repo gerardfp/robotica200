@@ -14,7 +14,7 @@ duration: "6 lliçons · 7–9 sessions"
 challenge: "Com transformem una idea útil en un prototip provat i en una explicació que ajude altres persones a valorar-la?"
 ---
 
-![Prototip SPIKE Prime al costat de targetes visuals pròpies per a ideació, iteració i registre de proves.](../../_assets/imatges/sa-sp-disseny-iteratiu.webp)
+![Prototip SPIKE Prime al costat de targetes visuals pròpies per a ideació, iteració i registre de proves.](../../_assets/situacions/sp-disseny-iteratiu.webp)
 
 _Una idea millora quan definim criteris, fem proves i escoltem comentaris concrets._
 
@@ -41,7 +41,7 @@ Una cooperativa escolar prepara una fira de solucions útils per al centre. Els 
 
 Per parelles, munteu un saltador SPIKE Prime amb el mecanisme disponible a l’app com a punt de partida o amb una solució pròpia de potes articulades; no pot usar rodes ni peces que facen de roda. Executeu el programa inicial i registreu si arriba a la meta, el temps i si es desvia. Feu tres proves comparables amb dos valors de velocitat/potència (per exemple, 50% i 100%) i manteniu la mateixa línia, superfície i posició inicial. Modifiqueu després la geometria de les potes (una variable cada vegada) i observeu si la llargària de la gambada, l’adherència o la fricció canvien el desplaçament. Anoteu cada versió amb esbós o fotografia, canvi, predicció, resultat i explicació; useu la taula per decidir quin disseny és més eficient, no sols quin arriba primer.
 
-![Prototip saltador de SPIKE Prime amb potes articulades, sense rodes, sobre una pista de proves amb fites.](../../_assets/imatges/sa-sp-disseny-saltador.webp)
+![Prototip saltador de SPIKE Prime amb potes articulades, sense rodes, sobre una pista de proves amb fites.](../../_assets/situacions/sa-sp-disseny-saltador.webp)
 
 _El repte compara prototips sense rodes i documenta com canvien amb cada iteració._
 

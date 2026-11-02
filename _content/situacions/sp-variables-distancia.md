@@ -14,7 +14,7 @@ duration: "6 lliçons · 7–9 sessions"
 challenge: "Com fem servir variables i mesures repetibles per a decidir quina ruta de servei escolar convé en una maqueta?"
 ---
 
-![Base mòbil real LEGO SPIKE Prime en una pista curta de taula, amb un objectiu de paper i una regla per mesurar el recorregut.](../../_assets/imatges/sa-sp-variables-distancia.webp)
+![Base mòbil real LEGO SPIKE Prime en una pista curta de taula, amb un objectiu de paper i una regla per mesurar el recorregut.](../../_assets/situacions/sp-variables-distancia.webp)
 
 _Una mesura només és útil si sabem què representa, com s’ha obtingut i quina incertesa té._
 
@@ -107,7 +107,7 @@ Llegiu les targetes d’una en una amb el sensor de color. Repetiu deu lectures,
 
 **Evidència:** codi comentat, traça de deu targetes i recompte final amb casos desconeguts. Com a ampliació, creeu un joc fictici de bibliobús amb `punts`: una categoria suma un punt, una altra dos i un retorn incorrecte en resta un. Valideu-lo amb una seqüència coneguda. No useu préstecs reals ni noms d’alumnes; el so del hub és una confirmació opcional.
 
-![Hub SPIKE Prime connectat a un sensor de color que llig una fitxa blava davant de cinc safates de color i una safata grisa de revisió.](../../_assets/imatges/sa-sp-variables-comptadors.webp)
+![Hub SPIKE Prime connectat a un sensor de color que llig una fitxa blava davant de cinc safates de color i una safata grisa de revisió.](../../_assets/situacions/sa-sp-variables-comptadors.webp)
 
 _Cada lectura actualitza un comptador amb nom; el color imprevist s’envia a revisió manual._
 
@@ -133,7 +133,7 @@ Llegiu la corba de distància i mesureu el temps entre dos passos consecutius pe
 
 **Evidència:** circumferència mitjana, tres registres i estimacions de distància i velocitat. Amb massa en kg i velocitat inicial en m/s, calculeu `Ec = ½ × massa × velocitat²`; és una estimació matemàtica, no una mesura del sensor. Expliqueu com el temps, la superfície i la interpretació de la velocitat afecten la comparació.
 
-![Carretó amb rodes i hub SPIKE Prime, sensor de color davant d’una marca blanca en la roda, sensor de força al damunt i gràfic de dades al costat.](../../_assets/imatges/sa-sp-distancia-sensors.webp)
+![Carretó amb rodes i hub SPIKE Prime, sensor de color davant d’una marca blanca en la roda, sensor de força al damunt i gràfic de dades al costat.](../../_assets/situacions/sa-sp-distancia-sensors.webp)
 
 _El carretó es desplaça amb una empenta manual; els sensors registren les voltes i el temps per a estimar distància i velocitat._
 
@@ -159,7 +159,7 @@ Després dels tres intents, moveu la diana a 3 m i repetiu; feu una ronda a 4 m 
 
 **Evidència:** errors dels tres intents a cada distància, error acumulat i estratègia revisada. Guanya qui acumula menys error absolut, no qui fa un llançament més llarg. Compareu l’energia estimada amb la distància i expliqueu per què superfície, fregament i variació de l’empenta impedeixen tractar-la com una predicció exacta.
 
-![Carretó SPIKE Prime empés suaument pel carril cap a una diana de paper, amb cinta mètrica i un gràfic de tres intents.](../../_assets/imatges/sa-sp-joc-distancia.webp)
+![Carretó SPIKE Prime empés suaument pel carril cap a una diana de paper, amb cinta mètrica i un gràfic de tres intents.](../../_assets/situacions/sa-sp-joc-distancia.webp)
 
 _En cada ronda es mesura la distància al centre de la diana i se suma l’error dels tres intents._
 
@@ -185,7 +185,7 @@ Amb peces SPIKE, representeu una via professional —flux de pressupost, planifi
 
 **Evidència:** matriu de les dues vies, fonts datades, comparació de costos i model explicat. Després de les presentacions, compareu habilitats compartides i diferències. Tanqueu amb una autoavaluació individual; no exposeu els interessos personals.
 
-![Hub SPIKE Prime subjectat en un marc amb nansa i inclinat al costat d’un gràfic de línia amb un pic que representa un canvi de pitch.](../../_assets/imatges/sa-sp-variable-grafic.webp)
+![Hub SPIKE Prime subjectat en un marc amb nansa i inclinat al costat d’un gràfic de línia amb un pic que representa un canvi de pitch.](../../_assets/situacions/sa-sp-variable-grafic.webp)
 
 _El traç registra el canvi d’orientació mentre es mou el hub; no representa l’altura ni la posició del model._
 

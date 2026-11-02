@@ -14,7 +14,7 @@ duration: "3 lliçons · 5–6 sessions"
 challenge: "Quines persones, competències i itineraris formatius fan possible una fira tecnològica accessible, i com podem investigar opcions sense predir el futur de ningú?"
 ---
 
-![Robot LEGO SPIKE Prime al costat d’una maqueta modular de fira de ciència i tecnologia feta amb peces de construcció.](../../_assets/imatges/sa-sp-itineraris-professionals.webp)
+![Robot LEGO SPIKE Prime al costat d’una maqueta modular de fira de ciència i tecnologia feta amb peces de construcció.](../../_assets/situacions/sp-itineraris-professionals.webp)
 
 _La fira és un mapa de tasques connectades: cap professió ni itinerari és l’únic camí possible._
 

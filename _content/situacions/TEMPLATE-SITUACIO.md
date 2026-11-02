@@ -14,7 +14,7 @@ duration: "5 sessions · 300 minuts"
 challenge: "Quina pregunta investigable guiarà el repte?"
 ---
 
-![Il·lustració pertinent, amb robot real de la dotació o cap robot si la tasca és desconnectada.](../../_assets/imatges/nom-imatge.webp)
+![Il·lustració pertinent, amb robot real de la dotació o cap robot si la tasca és desconnectada.](../../_assets/situacions/nom-imatge.webp)
 
 _Peu que explica què ha de mirar l’alumnat en la imatge._
 
@@ -53,7 +53,7 @@ quan comença
     decideix l’acció
 ```
 
-![Il·lustració de suport per a l’exploració o el muntatge.](../../_assets/imatges/nom-imatge-pas.webp)
+![Il·lustració de suport per a l’exploració o el muntatge.](../../_assets/situacions/nom-imatge-pas.webp)
 
 _Peu breu que connecta la imatge amb la decisió o el material que s’està provant._
 

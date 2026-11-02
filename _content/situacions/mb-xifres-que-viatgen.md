@@ -14,7 +14,7 @@ duration: "4 sessions · 200 min"
 challenge: "Com podem codificar i descodificar un missatge amb un algorisme, i quins límits té el xifrat de Cèsar?"
 ---
 
-![Una placa micro:bit acompanya un disc de xifrat de paper i un missatge plegat sense text llegible.](../../_assets/imatges/sa-mb-xifres-viatgen.webp)
+![Una placa micro:bit acompanya un disc de xifrat de paper i un missatge plegat sense text llegible.](../../_assets/situacions/mb-xifres-que-viatgen.webp)
 
 _Els missatges són inventats i els xifrats històrics s’estudien com a algoritmes, no com a protecció moderna._
 
@@ -70,7 +70,7 @@ Abans de construir el disc, decidiu quines lletres i signes es transformaran. Ac
 
 Fabriqueu dos cercles de cartó amb les lletres A–Z i marqueu un desplaçament acordat. Xifreu una frase breu inventada i intercanvieu-la amb un altre equip, que l’ha de desxifrar amb la mateixa clau. En «PLAÇA», per exemple, només es transformen P, L i A; la Ç es manté.
 
-![Disc de Cèsar de paper en una il·lustració 3D, amb dos cercles superposats, marques de colors esquemàtiques, una fletxa i tires de missatge en blanc.](../../_assets/imatges/sa-mb-xifres-disc-caesar-v2.png)
+![Disc de Cèsar de paper en una il·lustració 3D, amb dos cercles superposats, marques de colors esquemàtiques, una fletxa i tires de missatge en blanc.](../../_assets/situacions/sa-mb-xifres-disc-caesar-v2.webp)
 
 _Les marques de la il·lustració són esquemàtiques i no s’han de comptar; el disc de classe es construeix amb les 26 posicions A–Z acordades._
 

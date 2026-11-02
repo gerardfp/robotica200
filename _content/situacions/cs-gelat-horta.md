@@ -15,7 +15,7 @@ challenge: "Com podem programar un triangle de mida adequada i convertir-lo en u
 official_source: "https://matatalab.com/cdn/ff/2q_dQv1osUKaw0BMsYzU0OrcYKrDurepGWE2ilUKZF4/1637830742/public/2021-11/Artist%20Add-On%20Set%20Curriculum.pdf"
 ---
 
-![MatataBot i la torre del Coding Set, representats segons el model de la dotació, al costat d’un con triangular i boles de gelat fets amb paper.](../../_assets/imatges/sa-cs-gelat-horta-v2.png)
+![MatataBot i la torre del Coding Set, representats segons el model de la dotació, al costat d’un con triangular i boles de gelat fets amb paper.](../../_assets/situacions/cs-gelat-horta.webp)
 
 _MatataBot programa el recorregut; les boles, les decoracions i el muntatge del gelat són peces manuals. La imatge no mostra cap accessori de dibuix instal·lat._
 
@@ -73,7 +73,7 @@ Una parella llig el programa de l’altra i assenyala on espera cada vèrtex. Ex
 
 **Evidència:** pla del triangle amb tres costats, girs i punt d’inici; registre de la predicció i el resultat. **Pregunta docent:** com sabem que hem recorregut un triangle tancat?
 
-![MatataBot i la torre del Coding Set al costat d’un traçat triangular, les peces físiques i un esquema de gir exterior.](../../_assets/imatges/sa-cs-traca-triangle-v1.png)
+![MatataBot i la torre del Coding Set al costat d’un traçat triangular, les peces físiques i un esquema de gir exterior.](../../_assets/situacions/sa-cs-traca-triangle-v1.webp)
 
 _La il·lustració representa una prova amb l’Artist Add-On. Sense el suport de retolador, el robot només recorre la ruta._
 

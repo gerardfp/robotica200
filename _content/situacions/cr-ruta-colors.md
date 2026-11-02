@@ -14,7 +14,7 @@ duration: "4 sessions"
 challenge: "Com podem descriure i classificar els colors que observem a l’horta sense confondre una lectura del sensor amb la identificació d’un objecte?"
 ---
 
-![Codey Rocky observa targetes de colors preparades com a punts d’una ruta.](../../_assets/imatges/sa-cr-ruta-colors.webp)
+![Codey Rocky observa targetes de colors preparades com a punts d’una ruta.](../../_assets/situacions/cr-ruta-colors.webp)
 
 _Les targetes de prova permeten comparar lectures conegudes abans d’observar objectes reals._
 

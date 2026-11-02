@@ -14,7 +14,7 @@ duration: "5 sessions · 250 min"
 challenge: "Com podem dissenyar una màquina amb SPIKE Prime que reba les persones amb un moviment amable i fàcil d’entendre?"
 ---
 
-![Un hub SPIKE Prime amb matriu lluminosa, motor i bigues LEGO mou un braç articulat que alça una bandera sense text sobre una taula clara.](../../_assets/imatges/sa-sp-benvinguda.webp)
+![Un hub SPIKE Prime amb matriu lluminosa, motor i bigues LEGO mou un braç articulat que alça una bandera sense text sobre una taula clara.](../../_assets/situacions/sp-benvinguda.webp)
 
 _El gest s’activa a distància; el hub, el motor i les bigues representen components SPIKE Prime de la dotació._
 

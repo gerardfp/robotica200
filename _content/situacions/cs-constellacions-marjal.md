@@ -15,7 +15,7 @@ challenge: "Com podem representar una idea inspirada en la marjal com una conste
 official_source: "https://matatalab.com/cdn/ff/8WH9-onMKYze-IoBs5maVP6sFW3Yq0SrSJWVzSehBjs/1637739616/public/2021-11/Artist%20Add-on%20Activity%20Cards.pdf"
 ---
 
-![La torre i el MatataBot reals del Coding Set al costat d’una constel·lació de paper creada per l’alumnat, inspirada en la marjal.](../../_assets/imatges/sa-cs-constellacions-marjal-v1.png)
+![La torre i el MatataBot reals del Coding Set al costat d’una constel·lació de paper creada per l’alumnat, inspirada en la marjal.](../../_assets/situacions/cs-constellacions-marjal.webp)
 
 _Il·lustració IA pròpia basada en el model real del Coding Set. La constel·lació és una representació artística inventada per a l’aula, no un mapa astronòmic ni una funció de reconeixement del robot._
 

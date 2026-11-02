@@ -14,7 +14,7 @@ duration: "2 sessions"
 challenge: "Com podem explicar què és la IA i provar si un model reconeix dos moviments que no ha vist abans?"
 ---
 
-![Una placa micro:bit i targetes de classificar patrons representen una introducció a la IA i l’aprenentatge automàtic.](../../_assets/imatges/sa-mb-ia-tastet.webp)
+![Una placa micro:bit i targetes de classificar patrons representen una introducció a la IA i l’aprenentatge automàtic.](../../_assets/situacions/mb-ia-tastet.webp)
 
 _El model classifica patrons de moviment del dispositiu; no pensa, entén ni coneix les persones._
 

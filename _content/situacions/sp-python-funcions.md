@@ -14,7 +14,7 @@ duration: "6 lliçons · 6–8 sessions"
 challenge: "Com podem dividir el triatge d’una jornada escolar en accions reutilitzables i ensenyar un prototip SPIKE a executar-les amb dades diferents?"
 ---
 
-![Robot LEGO SPIKE Prime real amb pinça mecànica classificant fitxes de materials de colors sobre una taula de prova.](../../_assets/imatges/sa-sp-funcions-reciclatge.webp)
+![Robot LEGO SPIKE Prime real amb pinça mecànica classificant fitxes de materials de colors sobre una taula de prova.](../../_assets/situacions/sp-python-funcions.webp)
 
 _Una funció concentra una acció; els paràmetres permeten reutilitzar-la amb valors diferents._
 

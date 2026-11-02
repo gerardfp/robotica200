@@ -14,7 +14,7 @@ duration: "5 sessions · 250 min"
 challenge: "Com podem prototipar un ajudant mecànic per a una tasca de cuina i fer que siga fàcil i segur d’utilitzar?"
 ---
 
-![Un muntatge LEGO SPIKE Prime mou targetes de recepta i fitxes de menjar sobre una maqueta de taula.](../../_assets/imatges/sa-sp-receptes.webp)
+![Un muntatge LEGO SPIKE Prime mou targetes de recepta i fitxes de menjar sobre una maqueta de taula.](../../_assets/situacions/sp-ajudant-receptes.webp)
 
 _El prototip treballa amb targetes i aliments simulats; no toca menjar ni prepara receptes reals._
 

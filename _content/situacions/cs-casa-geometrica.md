@@ -15,7 +15,7 @@ challenge: "Quantes ordres necessitem per dibuixar el contorn d’una casa i com
 official_source: "https://matatalab.com/en/node/85"
 ---
 
-![El Coding Set i MatataBot acompanyen un mapa de caselles amb una casa geomètrica i una ruta tancada.](../../_assets/imatges/sa-cs-casa-geometrica.webp)
+![El Coding Set i MatataBot acompanyen un mapa de caselles amb una casa geomètrica i una ruta tancada.](../../_assets/situacions/cs-casa-geometrica.webp)
 
 _El Coding Set i MatataBot acompanyen un mapa de caselles amb una casa geomètrica i una ruta tancada._
 
@@ -98,7 +98,7 @@ Dissenyeu almenys quatre cases A–D. En cadascuna manteniu un cos quadrat, un s
 
 Proveu els quatre recorreguts sobre la graella o amb l’Artist Add-On disponible. Traslladeu els contorns a cartó recuperat, retalleu les quatre cases i les seues portes quadrades, i uniu les peces amb cinta o cola per muntar una maqueta de barri. Registreu la quantitat de cartó recuperat que heu utilitzat —per nombre de peces o per àrea aproximada— i separeu els retalls nets que encara es puguen reutilitzar.
 
-![Quatre cases de cartó recuperat amb cos quadrat, sostre triangular i porta menuda al costat del MatataBot i la torre reals del Coding Set.](../../_assets/imatges/sa-cs-casa-geometrica-maquetes-v1.png)
+![Quatre cases de cartó recuperat amb cos quadrat, sostre triangular i porta menuda al costat del MatataBot i la torre reals del Coding Set.](../../_assets/situacions/sa-cs-casa-geometrica-maquetes-v1.webp)
 
 _Les cases són manualitats de l’alumnat; MatataBot programa recorreguts geomètrics i no talla, munta ni transporta les peces._
 

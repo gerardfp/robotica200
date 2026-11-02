@@ -14,7 +14,7 @@ duration: "3 sessions · 150 min"
 challenge: "Com podem dissenyar un comptador de micro:bit que registre residus per categoria i ens ajude a fer una proposta responsable?"
 ---
 
-![Una placa micro:bit acompanya una llibreta de recompte, pinces de recollida i exemples nets de residus de paper separats per tipus.](../../_assets/imatges/sa-mb-comptador-residus.webp)
+![Una placa micro:bit acompanya una llibreta de recompte, pinces de recollida i exemples nets de residus de paper separats per tipus.](../../_assets/situacions/mb-comptador-residus.webp)
 
 _El registre és anònim i se centra en objectes; la placa no identifica qui els ha deixat._
 
@@ -71,7 +71,7 @@ Useu una situació inventada de recollida del pati. Consulteu la guia local de s
 
 Dissenyeu la interfície: A canvia la categoria, B suma una unitat i una combinació d’ordres reinicia el recompte; associeu una icona constant a cada categoria. Creeu variables independents per categoria i, si és útil, un total derivat. Eviteu que canviar de categoria incremente el recompte.
 
-![Una micro:bit de la dotació mostra una icona mentre l’alumnat tria una categoria en una graella de recompte amb mostres netes i un apartat per a casos dubtosos.](../../_assets/imatges/sa-mb-comptador-residus-prova.png)
+![Una micro:bit de la dotació mostra una icona mentre l’alumnat tria una categoria en una graella de recompte amb mostres netes i un apartat per a casos dubtosos.](../../_assets/situacions/sa-mb-comptador-residus-prova.webp)
 
 _La placa registra la categoria que tria una persona amb els botons; no identifica ni classifica els residus automàticament._
 

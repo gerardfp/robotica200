@@ -15,7 +15,7 @@ challenge: "Com podem programar MatataBot fins a dues quantitats diferents i jus
 official_source: "https://matatalab.com/en/node/92"
 ---
 
-![MatataBot i la torre reals del Coding Set al costat d'una graella de mercat amb dues zones de targetes de nombre encara per completar.](../../_assets/imatges/sa-cs-compara-nombres-mercat-v1.png)
+![MatataBot i la torre reals del Coding Set al costat d'una graella de mercat amb dues zones de targetes de nombre encara per completar.](../../_assets/situacions/cs-compara-nombres-mercat.webp)
 
 _Les targetes de la imatge són espais en blanc: el professorat hi col·loca els nombres exactes. MatataBot no llig ni tria les targetes._
 
@@ -86,7 +86,7 @@ Situeu dos jocs dels numerals 1–10, un per zona, i manteniu les altres caselle
 
 Abans d'executar, la persona programadora llig la seqüència i l'observadora recorre-la amb el dit. Anoteu la posició i orientació inicials, el nombre de caselles i cada gir. Comproveu també si el programa continua des de l'última destinació o si algú ha tornat el robot a l'inici per error.
 
-![El MatataBot i la torre del Coding Set al costat d'una ruta ortogonal entre la casella actual i una targeta de destí en la graella compartida.](../../_assets/imatges/sa-cs-compara-nombres-ruta-v1.png)
+![El MatataBot i la torre del Coding Set al costat d'una ruta ortogonal entre la casella actual i una targeta de destí en la graella compartida.](../../_assets/situacions/sa-cs-compara-nombres-ruta-v1.webp)
 
 _La ruta de caselles és una representació per a planificar les ordres; una persona selecciona el destí i comprova quan s'hi arriba._
 
