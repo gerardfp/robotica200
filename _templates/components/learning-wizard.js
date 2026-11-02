@@ -15,13 +15,17 @@ function LearningWizard(steps = []) {
   }).join('');
 
   return `<nav class="learning-step-index learning-wizard" data-learning-wizard aria-label="Passos de la situació">
-      <strong>Seqüència de treball</strong>
-      <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de ${total} · ${escapeHTML(firstTitle)}</p>
+      <div class="learning-wizard-topbar">
+        <div class="learning-wizard-meta">
+          <strong class="learning-wizard-kicker">Seqüència de treball</strong>
+          <p class="learning-wizard-status" data-wizard-status role="status" aria-live="polite" aria-atomic="true">Pas 1 de ${total} · ${escapeHTML(firstTitle)}</p>
+        </div>
+        <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next${total <= 1 ? ' disabled' : ''}>Pas següent →</button></div>
+      </div>
       <div class="learning-wizard-progress" data-wizard-progress role="progressbar" aria-label="Progrés de la seqüència" aria-valuemin="1" aria-valuemax="${total}" aria-valuenow="1" aria-valuetext="Pas 1 de ${total}">
         <span data-wizard-bar style="width: ${initialPct}%" aria-hidden="true"></span>
       </div>
       <ol class="learning-wizard-picker" aria-label="Tria un pas">${itemsHTML}</ol>
-      <div class="learning-wizard-controls"><button type="button" class="btn-wizard-step" data-step-prev disabled>← Pas anterior</button><button type="button" class="btn-wizard-step primary" data-step-next${total <= 1 ? ' disabled' : ''}>Pas següent →</button></div>
     </nav>`;
 }
 

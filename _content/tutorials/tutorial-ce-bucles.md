@@ -5,7 +5,7 @@ robot: coding-express
 level: Iniciació
 duration: 40 min
 order: 4
-image: _assets/tutorials/ce-bucles.png
+image: _assets/tutorials/ce-bucles.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -15,9 +15,6 @@ La biblioteca mòbil visita diverses parades en un circuit tancat. Predigueu en 
 - Representar una rutina que es repeteix amb una seqüència d’accions.
 - Construir i comparar una via tancada i una via oberta.
 - Registrar les voltes sense atribuir al tren un comptador que no té.
-
-
-![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](../../_assets/imatges/coding-express-bucles.webp)
 
 Aquesta activitat adapta la [lliçó oficial sobre vies en forma d’O i repetició](https://education.lego.com/en-us/lessons/preschool-coding-express/o-shaped-track-looping/) a un servei de biblioteca amb estacions i torns.
 
