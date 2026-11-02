@@ -29,15 +29,13 @@ Programeu dos avanços amb els botons físics. Comproveu com el robot guarda les
 
 ## 👣 Seqüència guiada
 
-### 1. Engegueu el robot
+### 1. Engegueu i netegeu la seqüència
 
 Enceneu el Tale-Bot amb el control posterior i espereu la salutació. Si no respon, poseu-lo a carregar i torneu a provar-lo.
 
-### 2. La regla d'or de la X
+Abans d’un camí nou, manteniu premut el botó X més d’un segon i comproveu que els indicadors s’apaguen. Una pulsació breu, de menys d’un segon, elimina només l’última ordre; reserveu-la per corregir una seqüència que vulgueu conservar.
 
-Abans d’un camí nou, manteniu premut el botó X més d’un segon i comproveu que els indicadors s’apaguen. Una pulsació breu, de menys d’un segon, elimina només l’última ordre.
-
-### 3. Programar una recta
+### 2. Programeu i proveu una recta
 
 Marqueu l’inici i orienteu el robot cap endavant. Premeu:
 

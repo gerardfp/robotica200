@@ -48,15 +48,11 @@ fi
 
 Carregueu o executeu el programa segons el mode triat. Anoteu què mostra en silenci i després amb una palmada suau; repetiu tres vegades. El número ajuda a comparar sons: no és una mesura de decibels ni una paraula reconeguda.
 
-### 2. Reviseu si hi ha reconeixement de parla
+### 2. Comproveu i, si podeu, proveu el servei de veu
 
-Mireu si el centre té una extensió o un servei de reconeixement de parla compatible. Anoteu-ne el nom i la llengua disponible sense activar el micròfon. Si no en teniu, passeu a les targetes del pas 4. Una lectura de so alt no significa que Codey haja entés una paraula.
+Mireu si el centre té una extensió o un servei de reconeixement de parla compatible. Anoteu-ne el nom i la llengua disponible abans d’activar el micròfon. Si el servei funciona i està autoritzat, proveu una frase fictícia i feu que aparega una icona quan coincidisca amb la paraula prevista; proveu també una frase diferent i el silenci. Manteniu els motors aturats. Una lectura de so alt no significa que Codey haja entés una paraula.
 
-### 3. Proveu una resposta controlada, si el servei està autoritzat
-
-Si el servei funciona i està autoritzat, proveu una frase fictícia i feu que aparega una icona quan coincidisca amb la paraula prevista. Proveu també una frase diferent i el silenci. Manteniu els motors aturats mentre observeu les respostes.
-
-### 4. Simuleu les mateixes ordres sense enviar veu
+### 3. Simuleu les ordres si no hi ha servei
 
 Una persona tria una targeta —«marxa», «para» o «gira»— i una altra mostra la icona acordada. Anoteu el resultat com a **simulació**: aquesta prova ajuda a preparar l’activitat, però no comprova que el robot reconega la veu.
 

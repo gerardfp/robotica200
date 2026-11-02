@@ -29,15 +29,13 @@ Prepareu una ruta de tres ordres i comproveu com la torre la llig i l’envia al
 
 ## 👣 Seqüència guiada
 
-### 1. Engegueu el sistema
+### 1. Engegueu el sistema i prepareu la seqüència
 
 Enceneu la torre i el MatataBot i espereu que es connecten. Comproveu els indicadors del vostre model o seguiu el manual del conjunt. Si no es connecten, apagueu-los i torneu a engegar-los abans de continuar.
 
-### 2. Col·locar les fitxes
-
 Poseu tres fitxes a la primera fila, d’esquerra a dreta: **Endavant → Dreta → Endavant**. Col·loqueu el robot sobre el mapa, mirant cap a una zona lliure. Assenyaleu la casella on penseu que acabarà; el gir canvia cap a on mira el robot, però no l’avança.
 
-### 3. Prémer el gran botó Play
+### 2. Executeu i comproveu la ruta
 
 Premeu el botó gran taronja. La torre llig les fitxes i envia les ordres al robot. Observeu si avança, gira a la dreta i torna a avançar. Si no es mou, comproveu la connexió i la posició de les peces abans de tornar a prémer.
 

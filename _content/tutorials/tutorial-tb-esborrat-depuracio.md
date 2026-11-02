@@ -37,13 +37,9 @@ Trieu una ruta segura de quatre ordres. Abans d’encendre el robot, acordeu qui
 
 ### 1. Introduïu una ruta i llegiu-ne els indicadors
 
-Planifiqueu quatre ordres senzilles que facen arribar Tale-Bot a una destinació. Esborreu el programa anterior mantenint X més d’un segon. Introduïu només les tres primeres ordres; després de cada pulsació, assenyaleu l’indicador encés i afegiu una fletxa a la tira de paper. Encara no premeu Play.
+Planifiqueu quatre ordres senzilles que facen arribar Tale-Bot a una destinació. Esborreu el programa anterior mantenint X més d’un segon. Introduïu les tres primeres ordres, assenyaleu cada indicador i afegiu una fletxa a la tira de paper. Després, introduïu a propòsit una quarta ordre incorrecta i anoteu-la. Compareu la ruta prevista amb els indicadors i decidiu què convé conservar abans de prémer Play.
 
-### 2. Simuleu un error en l’última ordre
-
-Introduïu a propòsit una quarta ordre incorrecta i anoteu-la a la tira. Feu que una altra parella compare la ruta prevista amb els quatre indicadors. Abans de corregir-la, expliqueu què convé conservar: les tres ordres inicials.
-
-### 3. Retireu només l’última ordre
+### 2. Corregiu l’última ordre
 
 Premeu Clear breument, menys d’un segon. Comproveu que desapareix l’últim indicador i que els tres anteriors continuen visibles. Introduïu l’ordre correcta i confirmeu que la seqüència torna a tindre quatre passos. Si el resultat no és clar, pareu i reviseu els indicadors abans de continuar.
 
@@ -51,13 +47,9 @@ Premeu Clear breument, menys d’un segon. Comproveu que desapareix l’últim i
 
 _La il·lustració mostra el Tale-Bot Pro de la dotació. Les fletxes del mapa són una representació del programa, no una pantalla del robot._
 
-### 4. Executeu la seqüència corregida
+### 3. Executeu la seqüència i proveu l’esborrat complet
 
-Premeu Play una sola vegada i observeu si el recorregut arriba a la destinació. Compareu-lo amb la tira de paper. Si l’error és en una ordre anterior, retireu amb pulsacions curtes les ordres des del final fins arribar-hi i torneu-les a introduir en ordre; també podeu esborrar-ho tot i començar de nou.
-
-### 5. Proveu l’esborrat complet
-
-Després de la prova, manteniu Clear premut més d’un segon. Confirmeu que s’apaguen tots els indicadors. Introduïu tres ordres noves, comproveu-les amb la tira i executeu-les. Compareu quan és més útil esborrar només l’última ordre i quan convé buidar-ho tot.
+Premeu Play una sola vegada i observeu si el recorregut arriba a la destinació. Compareu-lo amb la tira de paper. Si l’error és en una ordre anterior, retireu amb pulsacions curtes les ordres des del final fins arribar-hi i torneu-les a introduir en ordre. Després, manteniu Clear premut més d’un segon i comproveu que s’apaguen tots els indicadors. Introduïu tres ordres noves, executeu-les i compareu quan convé corregir una ordre i quan és millor començar de nou.
 
 ## 🧪 Prova, depura i reflexiona
 

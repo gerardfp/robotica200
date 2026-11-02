@@ -31,15 +31,13 @@ Estima quant avançarà la base motriu i compara el resultat amb la distància r
 
 ## 👣 Seqüència guiada
 
-### 1. Prepareu la base i el punt de partida
+### 1. Prepareu la base i estimeu el desplaçament
 
 Construïu una base que avance recta amb dos motors. Anoteu-ne els ports i marqueu la posició inicial del davant de la base. Deixeu el camí lliure en la primera prova; col·locareu el bloc després d’haver comprovat quant avança el robot.
 
-### 2. Estimeu el desplaçament
-
 Mesureu el diàmetre de la roda. Per a una primera estimació, multipliqueu-lo per 3: així aproximareu la distància d’una volta completa. Trieu quantes voltes voleu provar i anoteu el desplaçament previst. En SPIKE App, busqueu el bloc de moviment per voltes o graus.
 
-### 3. Fer una prova lenta
+### 2. Feu una prova lenta
 
 Programeu l’avanç a velocitat baixa i executeu-lo des de la marca **sense posar encara el bloc davant del robot**. Mesureu quant s’ha desplaçat. Repetiu tres vegades i anoteu les voltes, la distància real i les diferències entre intents.
 
@@ -53,7 +51,7 @@ L’esquema mostra l’ordre dels blocs; busqueu-ne els equivalents en SPIKE App
 
 > **💡 Repte d’equip:** aconseguiu quedar-vos tan a prop com pugueu sense tocar el bloc. Quan funcione a un metre, canvieu la distància d’eixida i reutilitzeu les dades per fer una nova predicció.
 
-### 4. Comparar amb una parada per contacte
+### 3. Compareu amb una parada per contacte
 
 Si el muntatge incorpora un sensor de força al davant, afegiu-lo com a topall tou contra una paret feta amb blocs. Programeu el moviment perquè s’ature quan el sensor detecte el contacte. Feu aquesta comparació a velocitat baixa i amb un obstacle estable; el sensor de força no és un sensor de distància i aquesta segona prova sí que acaba en contacte.
 

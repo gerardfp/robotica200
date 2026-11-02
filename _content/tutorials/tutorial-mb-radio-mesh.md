@@ -31,13 +31,9 @@ Prepareu un programa emissor i un de receptor. Si l’aula té més de dues plaq
 
 ## 👣 Seqüència guiada
 
-### 1. Fixar el grup de ràdio
+### 1. Prepareu i envieu el missatge
 
-Al bloc «en iniciar», afegiu «ràdio: fixa grup a [7]». Totes les plaques de l’equip han d’usar el mateix grup.
-
-### 2. L'emissor
-
-A la primera placa, poseu «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegiu «ràdio: envia número 7». Descarregueu aquest programa a la placa emissora:
+A la placa emissora, poseu «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegiu «ràdio: envia número 7». Descarregueu el programa. Totes les plaques de la parella han d’usar el mateix grup.
 
 ```makecode
 radio.setGroup(7)
@@ -46,7 +42,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-### 3. El receptor a l'aula
+### 2. Prepareu el receptor i feu la prova
 
 A la segona placa, poseu també el grup 7 a **en iniciar**. Afegiu «en rebre número per ràdio» i, dins, «mostra el número» rebut. Descarregueu aquest altre programa a la placa receptora abans de prémer A a l’emissora:
 
@@ -57,7 +53,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 ```
 
-La [referència oficial de recepció per ràdio](https://makecode.microbit.org/reference/radio/on-received-number) mostra la peça de recepció i enllaça la d'enviament i la de grup.
+La [referència oficial de recepció per ràdio](https://makecode.microbit.org/reference/radio/on-received-number) mostra la peça de recepció i enllaça les peces d’enviament i de grup.
 
 > **💡 Consell docent per a la sessió:** Assigneu un grup diferent a cada taula perquè les plaques d’un equip no reben els missatges de les altres parelles.
 

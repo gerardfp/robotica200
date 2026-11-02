@@ -29,15 +29,13 @@ Dibuixeu una cara a la pantalla de Codey i feu que aparega en prémer A. Despré
 
 ## 👣 Seqüència guiada
 
-### 1. Afegir el dispositiu
+### 1. Connecteu Codey i prepareu la pantalla
 
 A mBlock 5, afegiu el dispositiu **Codey**, connecteu-lo amb el cable i enceneu-lo. Comproveu que l’estat indica que està connectat. Per a aquesta primera prova, no cal muntar-lo sobre Rocky.
 
-### 2. Dibuixar una cara somrient
-
 Obriu la categoria de pantalla i afegiu el bloc per mostrar una imatge. Dibuixeu dos ulls i una boca a la graella de 16 × 8 punts. Deseu el projecte abans de provar-lo.
 
-### 3. Interacció amb botons
+### 2. Feu que els botons mostren dues respostes
 
 Prepareu dues piles separades: quan es prem A, mostreu la cara; quan es prem B, mostreu el text «Hola».
 

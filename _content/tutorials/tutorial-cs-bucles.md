@@ -33,15 +33,13 @@ Enceneu el robot i la torre i espereu que es connecten. Deixeu lliure una zona q
 
 ## 👣 Seqüència guiada
 
-### 1. Obrir el bucle
+### 1. Prepareu el bucle i les instruccions
 
 Col·loqueu el robot a la cantonada de la ruta i marqueu cap a on mira. Al tauler, poseu la fitxa morada d’inici de bucle amb el número 4 a sota.
 
-### 2. Les instruccions interiors
-
 Al costat de l’inici de bucle, poseu **Endavant → Dreta**. Aquestes dues ordres es repetiran; el gir canvia l’orientació, però no fa avançar el robot.
 
-### 3. Tancar el bucle
+### 2. Tanqueu i executeu el bucle
 
 Poseu la fitxa morada de final després de Dreta. Comproveu que el tauler queda així, amb el número sota l’inici:
 

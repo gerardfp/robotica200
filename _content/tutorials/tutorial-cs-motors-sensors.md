@@ -33,19 +33,17 @@ Carregueu el robot i la torre. Poseu el MatataBot a la casella d’inici, alinea
 
 ## 👣 Seqüència guiada
 
-### 1. Predigueu una ruta de tres caselles
+### 1. Planifiqueu i compareu dues rutes
 
 Dibuixeu una ruta recta de tres caselles i marqueu l’orientació inicial del robot. Representeu-la primer amb tres blocs d’avanç, sense posar les peces al tauler. Cada persona de l’equip ha de poder llegir l’ordre i anticipar la destinació abans de passar al robot.
 
-### 2. Compareu l’ordre repetida amb el nombre
-
 Prepareu **Endavant → Endavant → Endavant** i premeu el botó gran. Torneu el robot a l'inici, retireu les tres peces del tauler i col·loqueu **Endavant** amb el nombre **3** a sota, tal com mostra la guia del kit. Premeu el botó i compareu on s'atura. Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegades es fa el moviment d'avançar o retrocedir, no centímetres ni velocitat.
 
-### 3. Comproveu el límit dels girs
+### 2. Comproveu el límit dels girs
 
 Afegiu un gir de 90° al final de la ruta i observeu que el robot gira sense avançar de casella. Segons la guia del fabricant, els blocs numèrics no s’apliquen als girs esquerre/dret: per fer dos girs, col·loqueu dues peces de gir o utilitzeu les peces de bucle.
 
-### 4. Depureu i expliqueu el programa
+### 3. Depureu i expliqueu el programa
 
 Canvieu només el valor del nombre i feu una nova predicció abans de cada execució. Si el resultat no coincideix, reviseu l’orientació de la peça, la posició del nombre al tauler, l’ordre de lectura i l’alineació inicial del robot. Anoteu si l’error provenia del programa, de la lectura o de la col·locació sobre la graella.
 

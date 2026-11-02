@@ -37,25 +37,17 @@ Comproveu que el tren, les vies i les peces d’acció del kit funcionen. Coding
 
 ## 👣 Seqüència guiada
 
-### 1. Planifiqueu el recorregut
+### 1. Planifiqueu i munteu el circuit
 
-Trieu dues o tres estacions i ordeneu-les amb targetes. Assenyaleu l’inici i dibuixeu una fletxa que mostre cap a on circularà el tren. Predigueu per quina estació passarà primer, segon i tercer.
+Trieu dues o tres estacions i ordeneu-les amb targetes. Assenyaleu l’inici i dibuixeu una fletxa que mostre cap a on circularà el tren. Predigueu per quina estació passarà primer, segon i tercer. Després dibuixeu i munteu una via tancada que passe per les estacions i torne a l’inici. Comproveu les unions i marqueu el punt de partida amb una targeta.
 
-### 2. Dissenyeu la via
-
-Dibuixeu i munteu una via tancada que passe per les estacions i torne a l’inici. Comproveu que les unions encaixen i que el tren pot circular sense forçar les peces. Marqueu el punt de partida amb una targeta.
-
-### 3. Predir i provar
+### 2. Predigueu i proveu les voltes
 
 Abans d’engegar, cada equip prediu l’ordre en què el tren passarà per les estacions. Doneu-li una empenta suau. Cada vegada que torne a passar per la targeta inicial, poseu una fitxa en una columna. Després de dues voltes, atureu el tren amb la mà i compareu el recompte amb la predicció.
 
-### 4. Comparar amb una ruta oberta
+### 3. Compareu amb una ruta oberta i milloreu-la
 
-Si teniu prou vies, obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu passar el tren una vegada i observeu què ocorre quan arriba al final. Compareu la via oberta amb la tancada: el tren no gira ni torna automàticament al principi.
-
-### 5. Millorar el servei
-
-Amb el tren aturat, afegiu una estació o canvieu-la de lloc. Repetiu la predicció i feu una altra volta. Per pujar o baixar figures, atureu sempre el tren abans de tocar-les.
+Si teniu prou vies, obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu passar el tren una vegada i observeu què ocorre quan arriba al final. Compareu-la amb la via tancada: el tren no gira ni torna automàticament a l’inici. Amb el tren aturat, afegiu una estació o canvieu-la de lloc i repetiu la predicció. Atureu sempre la locomotora abans de moure figures o peces.
 
 ## 🧪 Prova, depura i reflexiona
 

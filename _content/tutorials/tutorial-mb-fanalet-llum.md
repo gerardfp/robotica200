@@ -30,11 +30,9 @@ Construeix un fanalet que responga a la llum ambiental i ajusta el llindar amb p
 
 ## 👣 Seqüència guiada
 
-### 1. Crear el projecte
+### 1. Creeu el projecte i programeu el fanalet
 
 Obriu MakeCode, creeu un projecte nou i comproveu el simulador. En la categoria **Entrada**, busqueu la lectura del nivell de llum. El nom pot aparéixer en anglés («light level») si l’editor no està traduït.
-
-### 2. Fer que el fanalet decidisca
 
 Dins de «per sempre», poseu una peça «si… aleshores… si no». En la condició, compareu **nivell de llum < 100**. Dins d’«aleshores», afegiu una icona; dins de «si no», poseu «neteja la pantalla». La lectura de llum és a **Entrada** i la comparació a **Lògica**. El valor 100 és només un punt de partida.
 
@@ -48,7 +46,7 @@ basic.forever(function () {
 })
 ```
 
-### 3. Provar i calibrar
+### 2. Calibreu i personalitzeu la resposta
 
 Per triar un valor adequat, deseu el fanalet i creeu **un altre projecte de prova**. En «en prémer el botó A», poseu «mostra el número» amb «nivell de llum» dins:
 
@@ -62,9 +60,7 @@ Descarregueu aquest projecte a la placa. Premeu A i anoteu el nombre en un lloc 
 
 Torneu a obrir el projecte del fanalet i poseu un valor entre les dues lectures. Per exemple, si heu anotat 30 amb ombra i 150 amb llum, proveu amb 90. Descarregueu-lo i comproveu que la icona apareix quan feu ombra.
 
-> **💡 Consell docent:** els LED que mostren la icona també s’utilitzen per estimar la llum. Comprova el comportament amb la placa concreta del centre i deixa un breu interval entre lectures si la pantalla parpelleja.
-
-### 4. Dissenyar una versió pròpia
+> **💡 Consell docent:** els LED que mostren la icona també s’utilitzen per estimar la llum. Comproveu el comportament amb la placa del centre i deixeu un breu interval entre lectures si la pantalla parpelleja.
 
 Canvieu el diamant per una estrella, una casa o un símbol creat per l’alumnat. Si la placa queda connectada a un portapiles, col·loqueu-la estable i no la tapeu amb materials que puguen acumular calor.
 

@@ -29,15 +29,11 @@ Enregistreu un missatge breu perquè Tale-Bot el reproduïsca durant una ruta. L
 
 ## 👣 Seqüència guiada
 
-### 1. Trieu i enregistreu un missatge
+### 1. Enregistreu i comproveu el missatge
 
-Trieu una frase curta, per exemple «Hola, sóc el conill!». Manteniu premut el botó de gravació mentre parleu i deixeu-lo anar en acabar. Cada gravació pot durar fins a 30 segons.
+Trieu una frase curta, per exemple «Hola, sóc el conill!». Manteniu premut el botó de gravació mentre parleu i deixeu-lo anar en acabar. Cada gravació pot durar fins a 30 segons; en deixar anar el botó, escolteu la reproducció. Si no se sent o no s’entén, torneu a gravar-la en un lloc més tranquil. Una persona adulta pot enregistrar el missatge si l’alumnat no vol compartir la seua veu.
 
-### 2. Comproveu que s’ha enregistrat
-
-Després de deixar anar el botó, escolteu la reproducció. Si no se sent o la frase no s’entén, torneu a gravar-la en un lloc més tranquil. No cal que l’alumnat compartisca la seua veu: una persona adulta pot enregistrar el missatge.
-
-### 3. Seqüenciar el conte
+### 2. Afegiu el missatge a una ruta
 
 Manteniu X més d’un segon per esborrar les ordres anteriors i comproveu que els indicadors s’apaguen. Després premeu **Endavant → gravació breument → Dreta → Endavant → Play**. La pulsació breu del botó de gravació afegeix el missatge a la seqüència; mantindre’l premut inicia una gravació nova.
 

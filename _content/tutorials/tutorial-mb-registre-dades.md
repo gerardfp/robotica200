@@ -76,17 +76,13 @@ El programa registra una fila cada vegada que premeu A i mostra un senyal de con
 
 Transferiu el programa a la V2 i espereu que acabe la transferència. Feu tres lectures amb llum i dues fent ombra amb la targeta. Premeu A una vegada per mostra, espereu que desaparega la icona i anoteu en paper si era una prova amb llum o amb ombra. Manteniu la placa en la mateixa posició.
 
-### 4. Recupera i interpreta les files
+### 4. Recupereu les dades i conserveu-les
 
-Per recuperar les dades, connecteu de nou la micro:bit a l’ordinador. Obriu la unitat **MICROBIT** i feu doble clic al fitxer **MY_DATA**: s’obrirà una taula al navegador. Compareu les files amb les anotacions i, si voleu, copieu o descarregueu les dades. Per veure els gràfics de MY_DATA cal connexió a Internet; sense connexió podeu consultar la taula. La columna de temps compta des de l’últim reinici de la placa, no indica l’hora del dia.
+Per recuperar les dades, connecteu de nou la micro:bit a l’ordinador. Obriu la unitat **MICROBIT** i feu doble clic al fitxer **MY_DATA**: s’obrirà una taula al navegador. Compareu les files amb les anotacions i, si voleu, copieu o descarregueu les dades. Per veure els gràfics de MY_DATA cal connexió a Internet; sense connexió podeu consultar la taula. La columna de temps compta des de l’últim reinici de la placa, no indica l’hora del dia. Abans de descarregar un programa nou o esborrar el registre, guardeu una còpia de la taula. Per començar una altra prova, seguiu el procediment d’esborrat de la guia oficial i torneu a preparar els títols de les columnes.
 
 ![Placa micro:bit V2 de la dotació amb lectures i una gràfica de dades de llum.](../../_assets/tutorials/mb-data-logging.webp)
 
 _El gràfic és una representació per analitzar les mostres; no és una pantalla ni una funció visual integrada a la placa._
-
-### 5. Esborreu només després de conservar l’evidència
-
-Guardeu una còpia de la taula abans de descarregar un programa nou o esborrar el registre. Per començar una altra prova, seguiu el procediment d’esborrat de la guia oficial i torneu a preparar els títols de les columnes.
 
 ## 🧪 Prova, depura i reflexiona
 

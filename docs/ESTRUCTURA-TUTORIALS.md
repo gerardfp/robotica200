@@ -7,7 +7,7 @@ Les metadades inicials indiquen, en aquest ordre, `title`, `description`, `robot
 1. **Repte i objectius:** què farà el robot i dos o tres resultats observables.
 2. **Materials i preparació:** llista del que cal i què s'ha de comprovar abans de començar.
 3. **Funcions del robot treballades:** les funcions que s'utilitzen i els seus límits.
-4. **Seqüència guiada:** passos numerats, cadascun amb una acció clara; inclou una imatge o un exemple de programa al punt on ajuda a fer-la.
+4. **Seqüència guiada:** passos numerats que agrupen accions curtes en fases de treball; inclou una imatge o un exemple de programa al punt on ajuda a fer-les.
 5. **Prova, depura i reflexiona:** com comprovar el resultat, què revisar si falla i preguntes breus sobre la mateixa pràctica.
 6. **Accessibilitat i seguretat:** alternatives de participació i cura del material, aplicades a la pràctica.
 7. **Evidències d'aprenentatge:** allò que es pot guardar o observar, sense recollir dades personals innecessàries.
@@ -18,6 +18,7 @@ Les metadades inicials indiquen, en aquest ordre, `title`, `description`, `robot
 - Parleu directament al docent amb verbs d'acció i una instrucció cada vegada. Expliqueu el nom d'una peça o funció quan aparega per primera vegada.
 - Manteniu el repte curt: què es prepara, què es prova i què s'observarà. No repetiu la mateixa explicació en objectius, seqüència i reflexió.
 - En cada pas, indiqueu què cal fer, què hauria de passar i què revisar si no passa. Separeu les ampliacions opcionals de la pràctica principal.
+- Agrupeu en un mateix pas les accions breus que formen una fase (per exemple, connectar i preparar el primer programa). Obriu un pas nou quan canvie el repte o calga parar per observar i prendre una decisió; eviteu pantalles que només contenen una instrucció curta.
 - Feu que les preguntes, les evidències i la depuració comproven el mateix repte. Proposeu resultats observables, no expressions vagues com «entendre el robot».
 - Poseu una imatge al costat del pas que ajuda a entendre. La llegenda ha d'explicar què s'hi veu i no donar per fet que la imatge és una instrucció de muntatge.
 - No atribuïu al robot una funció que depén d'un accessori, d'una versió concreta o d'una aplicació externa. Digueu-ho abans de la prova.

@@ -39,11 +39,9 @@ Obriu un projecte de Python a SPIKE App i connecteu el Hub. Si la interfície no
 
 ## 👣 Seqüència guiada
 
-### 1. Prepareu un motor observable
+### 1. Prepareu el motor i llegiu el codi
 
 Connecteu un motor angular al port A i fixeu-lo a una base. Si munteu un braç lleuger, deixeu espai al voltant i una posició inicial marcada. Obriu el projecte Python i comproveu que l’app reconeix el Hub i que el port A apareix disponible.
-
-### 2. Llegiu el codi abans d’executar-lo
 
 Copieu el programa següent. Si el motor està en un altre port, substituïu `port.A` pel port real.
 
@@ -60,7 +58,7 @@ runloop.run(main())
 
 `port.A` indica on està connectat el motor; `360` demana una volta completa i `400` indica la velocitat. Copieu també les altres línies i els espais de davant de la instrucció: permeten que el programa s’inicie i espere que el motor acabe.
 
-### 3. Predigueu i executeu una volta
+### 2. Predigueu i executeu una volta
 
 Abans de prémer Run, dibuixeu la posició final esperada. Executeu el programa una sola vegada i compareu-la amb la marca inicial. Si l’eix gira en sentit diferent del que volíeu, no forceu el mecanisme: reviseu el sentit, el muntatge i la configuració de la versió de l’API que mostra l’editor.
 
@@ -68,11 +66,11 @@ Abans de prémer Run, dibuixeu la posició final esperada. Executeu el programa 
 
 _La imatge representa el model SPIKE Prime de la dotació; el codi executable és el de l’exemple de dalt._
 
-### 4. Canvieu un paràmetre cada vegada
+### 3. Canvieu un paràmetre cada vegada
 
 Canvieu els graus de `360` a `180`, predigueu el nou angle i executeu. Després restaureu `360` i canvieu només la velocitat de `400` a `200`. Registreu si canvia la distància angular, el temps de moviment o tots dos. No canvieu el port i els paràmetres en una mateixa prova.
 
-### 5. Relacioneu Python amb blocs
+### 4. Relacioneu Python amb blocs
 
 En un projecte de blocs, representeu la mateixa acció: quan comence el programa, feu girar el motor del port triat una volta completa. Compareu les dades de cada format: el port i el gir apareixen al bloc i al text. En el text també cal respectar els noms i els espais inicials.
 

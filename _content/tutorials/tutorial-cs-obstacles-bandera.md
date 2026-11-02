@@ -37,11 +37,9 @@ Connecteu la torre, el tauler i el robot. Poseu una targeta d’obstacle davant 
 
 ## 👣 Seqüència guiada
 
-### 1. Llegiu el mapa des del punt de vista del robot
+### 1. Llegiu el mapa i planifiqueu la ruta
 
 Poseu MatataBot a l’inici, mirant cap a l’obstacle i la bandera. Dibuixeu les tres posicions en una graella. Assenyaleu la dreta del robot: els girs depenen de cap a on mira.
-
-### 2. Planifiqueu una ruta amb fletxes
 
 Seguiu amb el dit aquesta ruta sobre la graella abans de col·locar les peces. Un gir canvia cap a on mira el robot, però no l’avança:
 
@@ -53,15 +51,15 @@ El recorregut passa pel costat de la targeta i torna a la columna de la bandera.
 
 _La il·lustració representa el kit Coding Set de la dotació. Les peces d’obstacle i la bandera delimiten la ruta; no són sensors ni ordres programables._
 
-### 3. Traduïu el pla a fitxes físiques
+### 2. Traduïu el pla a fitxes físiques
 
 Col·loqueu les fitxes en l’ordre de lectura del tauler. Reviseu cada moviment assenyalant alhora la fitxa i el tram dibuixat. Un company o companya farà de verificador/a: comprovarà que no hi ha un gir confós amb un moviment lateral i que la seqüència acaba quan MatataBot arriba a la bandera.
 
-### 4. Executeu i observeu el trajecte
+### 3. Executeu i observeu el trajecte
 
 Poseu el robot a l’inici amb la mateixa orientació que al dibuix i executeu el programa. No mogueu els obstacles mentre es desplaça. En arribar a la bandera, confirmeu si ha seguit el camí previst; si topa amb una peça o passa de llarg, atureu la prova, localitzeu la primera diferència i torneu al tauler de control.
 
-### 5. Depureu canviant una sola instrucció
+### 4. Depureu canviant una sola instrucció
 
 Si el resultat no és el previst, reviseu la primera fitxa que no correspon a la ruta, canvieu-la i torneu a provar des de l’inici. Si ja funciona, busqueu una altra ruta. El Sensor Add-on és un complement diferent: les barreres del kit base no detecten res.
 

@@ -56,15 +56,13 @@ Descarregueu-lo a la placa i premeu A. Si demana calibrar-la, seguiu les indicac
 
 Podeu consultar el [bloc i l’exemple oficial de brúixola](https://makecode.microbit.org/reference/input/compass-heading) per identificar la peça en MakeCode.
 
-### 2. Compareu la temperatura amb un instrument
+### 2. Compareu temperatura i tacte segons la versió
 
 Deixeu la placa i un termòmetre uns minuts al mateix lloc, a l’ombra. Premeu B i compareu els nombres. Anoteu-los sense tocar la placa durant la lectura: la micro:bit mesura la temperatura del xip, que pot ser diferent de la de l’aire.
 
-### 3. Proveu el logotip tàctil segons la versió
-
 En una micro:bit V2, programeu l’esdeveniment de tocar el logotip per mostrar una icona o alternar un estat. Proveu tocar, deixar anar i mantenir el contacte com a esdeveniments diferents si l’editor els ofereix. En V1, substituïu l’entrada per A/B o un pin tàctil extern adequat; no presenteu la placa V1 com si tinguera logotip sensible al tacte.
 
-### 4. Distingiu Bluetooth de ràdio
+### 3. Distingiu Bluetooth de ràdio
 
 Si teniu una tauleta compatible amb l’app oficial de micro:bit, seguiu la [guia de l’app](https://microbit.org/get-started/user-guide/mobile/) per emparellar-la i enviar un programa a la placa per Bluetooth. Observeu si la placa executa el programa després de la transferència. Si no teniu l’app, feu la prova per cable i anoteu que no heu comprovat Bluetooth.
 

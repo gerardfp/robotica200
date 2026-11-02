@@ -58,7 +58,7 @@ fi
 
 Anoteu el valor amb la rodeta en tres posicions: un extrem, el centre i l’altre extrem. Torneu a cadascuna i comproveu si les lectures s’assemblen. Com a ampliació, feu que els valors activen icones diferents.
 
-### 3. Calibreu un gest amb la placa estable
+### 3. Calibreu la inclinació i afegiu una resposta
 
 Busqueu a mBlock l’esdeveniment que detecta la inclinació cap a l’esquerra. Feu que mostre una fletxa cap a l’esquerra:
 
@@ -69,11 +69,9 @@ mostra una fletxa cap a l'esquerra
 
 Torneu Codey a la posició plana abans de cada intent i repetiu tres vegades. Si la vostra versió també ofereix l’esdeveniment d’inclinació cap a la dreta, afegiu una altra icona. La sacsejada és una acció diferent de mantindre Codey inclinat.
 
-### 4. Afegiu resposta visual i sonora
-
 Com a ampliació, feu que la inclinació mostre una icona i reproduïsca un to breu. Afegiu una pausa perquè el senyal no es repetisca mentre Codey continua inclinat. Si el so no és adequat a l’aula, useu només la icona.
 
-### 5. Envieu un senyal infraroig
+### 4. Envieu un senyal infraroig
 
 Amb dos Codey Rocky, busqueu els blocs d’infraroig que oferisca la versió de mBlock instal·lada. Prepareu el primer perquè envie un missatge de prova en prémer A i el segon perquè mostre una icona quan reba eixe mateix missatge. Carregueu el programa corresponent a cadascun. Poseu-los encarats i pròxims, premeu A i observeu la pantalla del receptor. Després interposeu una cartolina i repetiu. Si falta un bloc o només hi ha un robot, representeu l’enviament amb targetes i marqueu-lo com a simulació.
 

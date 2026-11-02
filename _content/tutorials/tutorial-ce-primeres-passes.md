@@ -34,21 +34,15 @@ Abans de començar, reviseu les unions de la via, retireu obstacles i localitzeu
 
 ## 👣 Seqüència guiada
 
-### 1. Llegiu el tren abans d’engegar-lo
+### 1. Prepareu el tren i la via
 
-Col·loqueu la locomotora sobre una superfície plana, al costat de la via. Localitzeu el control d’encesa i engegueu-la seguint el dibuix de la guia del kit. Observeu si fa llum o so. Si no respon, comproveu les piles abans de continuar.
+Col·loqueu la locomotora sobre una superfície plana i localitzeu el control d’encesa seguint la guia del kit. Engegueu-la i observeu si fa llum o so; si no respon, comproveu les piles abans de continuar. Després, dibuixeu una ruta curta entre l’estació i la destinació. Munteu-la, reviseu amb el dit que les unions encaixen i poseu-hi el tren. Abans d’engegar-lo, prediu per on circularà i on voleu aturar-lo.
 
-### 2. Construïu i reviseu el trajecte
-
-Dibuixeu una ruta curta entre l’estació i la destinació, amb un inici i un final clars. Munteu-la amb les peces disponibles i passeu un dit per les unions per comprovar que encaixen. Poseu el tren a la via i, encara sense activar-lo, prediu per on circularà i on voleu aturar-lo.
-
-### 3. Proveu Push & Go i l’aturada manual
+### 2. Feu el trajecte i compareu les aturades
 
 Doneu al tren una empenta curta i suau en el sentit de la via. Observeu si continua avançant tot sol. Atureu-lo amb la mà, tal com mostra la guia del kit. Repetiu la prova des del mateix punt i compareu què passa.
 
-### 4. Compareu amb un maó d’acció roig
-
-Si el kit inclou el maó roig, col·loqueu-lo sobre un tram recte abans de la destinació i feu una predicció. Feu passar el tren i comproveu si s’atura. Si no ho fa, reviseu la posició del maó i repetiu la prova.
+Si el kit inclou el maó roig, col·loqueu-lo sobre un tram recte abans de la destinació. Predigueu què passarà, feu passar el tren i comproveu si s’atura. Si no ho fa, reviseu la posició del maó i repetiu la prova. No empenyeu la locomotora mentre el motor funciona.
 
 ![La locomotora Coding Express real de la dotació inicia el trajecte per una via DUPLO curta entre una estació i una destinació.](../../_assets/tutorials/ce-primeres-passes.png)
 

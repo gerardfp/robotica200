@@ -34,21 +34,17 @@ Carregueu torre i robot, col·loqueu la torre estable davant del tauler i confir
 
 ## 👣 Seqüència guiada
 
-### 1. Dissenyeu una seqüència que es repetisca
+### 1. Planifiqueu, definiu i crideu una funció
 
-Planifiqueu una ruta amb dues parts: una seqüència curta que aparega dues vegades i un tram final diferent. Dibuixeu-la a la graella i escriviu totes les ordres de moviment en ordre. Compteu els blocs que farien falta si repetíreu la seqüència completa cada vegada.
-
-### 2. Definiu i crideu una funció
-
-Col·loqueu la peça **Call Function** a la fila principal. A la fila de funció poseu **Define Function → Endavant → Dreta**, seguint la [guia del fabricant](https://matatalab.com/en/node/63). Premeu el botó gran i comproveu que el robot avança i gira. Torneu-lo al punt i a l’orientació inicials. Poseu una segona peça **Call Function** al programa principal i torneu a executar: ara farà la parella de moviments dues vegades.
+Planifiqueu una ruta amb una seqüència curta que aparega dues vegades i un tram final diferent. Dibuixeu-la a la graella i escriviu les ordres en ordre. Col·loqueu **Call Function** a la fila principal i, a la fila de funció, poseu **Define Function → Endavant → Dreta**, seguint la [guia del fabricant](https://matatalab.com/en/node/63). Afegiu la crida, executeu i comproveu el moviment. Torneu el robot al punt i orientació inicials, afegiu una segona crida i compareu el resultat.
 
 Les peces Define i Call van en files diferents. No afegiu un bloc número a la funció: el fabricant indica que aquesta combinació no és compatible.
 
-### 3. Compareu els blocs divertits
+### 2. Compareu els blocs divertits
 
 Si el kit inclou aquests blocs, proveu per separat el moviment aleatori, la música i la dansa. Abans de cada prova, prediu què passarà i anoteu el resultat. Són comportaments incorporats al robot, no seqüències creades per l’alumnat. La música permet escoltar una resposta predefinida; per a compondre una melodia amb notes pròpies cal el Musician Add-on.
 
-### 4. Depureu la lectura del tauler
+### 3. Depureu la lectura del tauler
 
 Canvieu una sola peça de la funció o de la ruta i torneu a executar. Si el MatataBot no fa la ruta esperada, comproveu ordre de lectura, orientació de les peces, posició de Define/Call i connexió de la torre. Registreu quin canvi ha resolt l’error; no mogueu peces mentre la torre està llegint.
 

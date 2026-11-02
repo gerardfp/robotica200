@@ -30,19 +30,15 @@ Dibuixeu una forma amb Tale-Bot i observeu com les ordres direccionals es transf
 
 ## 👣 Seqüència guiada
 
-### 1. Col·loqueu el retolador
-
-Si teniu el suport de dibuix, col·loqueu-lo segons les instruccions del kit i fixeu-hi un retolador rentable. Ajusteu-lo perquè la punta toque suaument el paper. Sense el suport, seguiu la ruta amb el dit i dibuixeu-la a mà.
-
-### 2. Dibuixeu un quadrat
+### 1. Prepareu el suport i dibuixeu un quadrat
 
 Marqueu un punt inicial i orienteu el robot paral·lel a una vora del paper. Esborreu el programa anterior mantenint X més d’un segon. Premeu **Endavant → Dreta** quatre vegades i després **Play**. Cada avanç dibuixa un costat i cada gir canvia l’orientació; el gir no dibuixa un costat. Observeu si el traç s’assembla a un quadrat i acaba prop del punt inicial.
 
-### 3. Creeu un patró rectangular
+### 2. Creeu un patró rectangular
 
 Esborreu la seqüència. Per allargar un costat, introduïu **Endavant → Endavant → Dreta** en lloc d’**Endavant → Dreta**. Completeu els altres tres costats amb **Endavant → Dreta**. Abans de prémer Play, dibuixeu la forma prevista i comproveu que els quatre girs tanquen el recorregut. Useu un full nou per distingir els intents.
 
-### 4. Proveu el transport amb els braços
+### 3. Proveu el transport amb els braços
 
 Si el kit inclou els dos braços, instal·leu-los en els punts indicats pel fabricant i comproveu manualment que queden subjectes. Trieu un objecte lleuger i ample, col·loqueu-lo entre els braços i programeu un recorregut curt fins a una zona de lliurament. Observeu si l’objecte es manté estable; reduïu el nombre de girs abans d’augmentar la distància. Sense els braços de la caixa, simuleu el transport amb una targeta i no presenteu l’accessori com a part garantida de tots els kits.
 

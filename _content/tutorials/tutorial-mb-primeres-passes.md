@@ -29,13 +29,11 @@ Construeix un dau electrònic que reaccione a una sacsejada i mostra’l tant al
 
 ## 👣 Seqüència guiada
 
-### 1. Creeu el projecte
+### 1. Creeu el projecte i el dau
 
 Obriu MakeCode, trieu **Nou projecte** i poseu-li el nom «El meu dau». Abans de connectar la placa, comproveu que el simulador mostra la micro:bit.
 
-### 2. Programar l'esdeveniment sacsejar
-
-A la categoria 'Entrada', agafa 'si es sacseja' i a dins posa 'mostra el número [tria a l'atzar de l'1 al 6]'.
+En **Entrada**, afegiu «si es sacseja» i, dins, «mostra el número» amb «tria a l’atzar de l’1 al 6». Aquest exemple mostra l’ordre dels blocs:
 
 
 ```makecode
@@ -46,7 +44,7 @@ input.onGesture(Gesture.Shake, function () {
 
 Els noms de les peces poden aparéixer en una altra llengua segons la configuració de MakeCode. La primera detecta la sacsejada i la segona mostra un nombre entre 1 i 6.
 
-### 3. Proveu i transferiu el programa
+### 2. Proveu i transferiu el programa
 
 Sacsegeu la micro:bit del simulador i comproveu que mostra un nombre de l’1 al 6. Per provar-ho amb la placa, connecteu-la per USB i premeu **Descarregar**. Si MakeCode desa un fitxer `.hex`, copieu-lo a la unitat **MICROBIT** i espereu que la transferència acabe abans de desconnectar el cable. Sacsegeu la placa i comproveu el resultat.
 

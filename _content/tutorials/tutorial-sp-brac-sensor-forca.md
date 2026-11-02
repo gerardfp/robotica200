@@ -32,15 +32,13 @@ Feu que un motor tanque una pinça a poc a poc i s’ature quan es prema el sens
 
 ## 👣 Seqüència guiada
 
-### 1. Muntar el mecanisme de palanca
+### 1. Munteu la pinça i comproveu el sensor
 
 Munteu una pinça senzilla amb un motor. Amb el motor a baixa velocitat i sense objectes, feu un gir curt per comprovar quin sentit la tanca: depén de com heu col·locat les peces. Atureu el motor abans d’acostar-vos al mecanisme.
 
-### 2. Col·locar el sensor de força
-
 Connecteu el sensor al port B i poseu-lo on la pinça puga prémer-lo sense fer força excessiva. Amb el motor aturat, obriu la icona del Hub a SPIKE App i comproveu si l’estat canvia en prémer i deixar anar el sensor. Si no canvia, reviseu el port i el cable abans de continuar.
 
-### 3. Lògica de control de pressió
+### 2. Programeu l’aturada en prémer
 
 Connecteu el motor al port A. Fixeu una esponja lleugera entre les mordasses i prepareu aquesta seqüència a SPIKE App:
 

@@ -36,19 +36,15 @@ Munteu la bifurcació sobre una superfície plana i feu una prova amb el tren at
 
 ## 👣 Seqüència guiada
 
-### 1. Marqueu les dues destinacions
+### 1. Prepareu les destinacions i l’agulla
 
-Construïu un destí a cada extrem de la Y, per exemple una biblioteca i un hort. Assigneu a cada un una targeta o pictograma clar. Dibuixeu l’esquema i feu que una persona explique amb el dit el recorregut des de l’estació fins als dos destins possibles.
+Construïu un destí a cada extrem de la Y, per exemple una biblioteca i un hort. Assigneu a cada un una targeta clara i dibuixeu l’esquema de la via. Amb el tren apagat o aturat, orienteu l’agulla cap a una branca i comproveu que les peces queden alineades; repetiu-ho amb l’altra. Anoteu quina posició correspon a cada destí i canvieu l’agulla abans que el tren arribe a la bifurcació.
 
-### 2. Proveu cada posició de l’agulla
-
-Amb el tren apagat o aturat, orienteu l’agulla cap a la primera branca i reviseu que les peces queden ben alineades. Repetiu-ho per a la segona. Anoteu quina posició correspon a cada destí; canvieu l’agulla sempre abans que el tren arribe a la bifurcació.
-
-### 3. Envieu la passatgera al destí
+### 2. Envieu la passatgera al destí
 
 Traieu una targeta de destí. Abans de posar en marxa el tren, orienteu l’agulla cap al destí indicat i digueu la regla en veu alta: «Biblioteca: agulla cap a la biblioteca». Feu passar el tren i anoteu si ha seguit la branca prevista. Atureu-lo abans de moure l’agulla per fer la prova amb l’altra targeta.
 
-### 4. Investigueu una manera de tornar
+### 3. Investigueu una manera de tornar
 
 Col·loqueu el maó verd només en una configuració segura recomanada per al vostre conjunt i feu una prova curta. Observeu si ajuda el tren a reprendre el trajecte cap a l’estació en aquesta disposició. No pressuposeu que la peça canvia l’agulla ni que crea un retorn automàtic: la via i el sentit del tren determinen què ocorre. Compareu el resultat amb una ruta de retorn dissenyada manualment.
 
