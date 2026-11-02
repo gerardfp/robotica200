@@ -10,6 +10,8 @@
 
 - [ ] Les pàgines se descopronen quan se mostra un svg de blocks
 
+- [ ] Les temàtiques i les matèries de les situacions s'han de redefinir correctament
+
 - [ ] colors:
     - coding-express: roig
     - tale-bot: taronja

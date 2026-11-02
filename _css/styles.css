@@ -1656,7 +1656,7 @@ accent-dashes {
   box-shadow: 0 4px 16px rgba(16, 42, 86, 0.04);
   display: flex;
   flex-direction: column;
-  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+  transition: transform 0.28s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.28s ease, border-color 0.28s ease, background-color 0.28s ease;
   scroll-margin-top: 7rem;
   text-decoration: none;
   color: inherit;
@@ -1668,13 +1668,72 @@ accent-dashes {
   border-color: #cbd5e1;
 }
 
-/* Paletes de vora al hover per robot oficial */
-.sa-card[data-robot="spike"]:hover { border-color: #d82098; }
-.sa-card[data-robot="coding-express"]:hover { border-color: #e4242b; }
-.sa-card[data-robot="tale-bot"]:hover { border-color: #fc8439; }
-.sa-card[data-robot="coding-set"]:hover { border-color: #fc7813; }
-.sa-card[data-robot="codey-rocky"]:hover { border-color: #0079dc; }
-.sa-card[data-robot="microbit"]:hover { border-color: #047fdf; }
+/* Fons subtils i accents per robot oficial a les targetes de situacions */
+.sa-card[data-robot="coding-express"] {
+  background-color: #fef2f2;
+  border-color: #fee2e2;
+  --sa-robot-accent: #dc2626;
+  --sa-robot-badge-bg: #fee2e2;
+  --sa-robot-badge-text: #991b1b;
+}
+.sa-card[data-robot="coding-express"]:hover {
+  border-color: #f87171;
+}
+
+.sa-card[data-robot="tale-bot"] {
+  background-color: #fff7ed;
+  border-color: #ffedd5;
+  --sa-robot-accent: #ea580c;
+  --sa-robot-badge-bg: #ffedd5;
+  --sa-robot-badge-text: #9a3412;
+}
+.sa-card[data-robot="tale-bot"]:hover {
+  border-color: #fb923c;
+}
+
+.sa-card[data-robot="coding-set"] {
+  background-color: #f0fdf4;
+  border-color: #dcfce7;
+  --sa-robot-accent: #16a34a;
+  --sa-robot-badge-bg: #dcfce7;
+  --sa-robot-badge-text: #166534;
+}
+.sa-card[data-robot="coding-set"]:hover {
+  border-color: #4ade80;
+}
+
+.sa-card[data-robot="codey-rocky"] {
+  background-color: #eff6ff;
+  border-color: #dbeafe;
+  --sa-robot-accent: #2563eb;
+  --sa-robot-badge-bg: #dbeafe;
+  --sa-robot-badge-text: #1e40af;
+}
+.sa-card[data-robot="codey-rocky"]:hover {
+  border-color: #60a5fa;
+}
+
+.sa-card[data-robot="spike"] {
+  background-color: #fefce8;
+  border-color: #fef9c3;
+  --sa-robot-accent: #ca8a04;
+  --sa-robot-badge-bg: #fef9c3;
+  --sa-robot-badge-text: #854d0e;
+}
+.sa-card[data-robot="spike"]:hover {
+  border-color: #facc15;
+}
+
+.sa-card[data-robot="microbit"] {
+  background-color: #fdf2f8;
+  border-color: #fce7f3;
+  --sa-robot-accent: #db2777;
+  --sa-robot-badge-bg: #fce7f3;
+  --sa-robot-badge-text: #9d174d;
+}
+.sa-card[data-robot="microbit"]:hover {
+  border-color: #f472b6;
+}
 
 .sa-card .card-top {
   display: flex;
@@ -1697,8 +1756,21 @@ accent-dashes {
   transform: scale(1.12);
 }
 
+.sa-card .card-robot-info .tag-badge.primary {
+  background-color: var(--sa-robot-badge-bg, var(--primary-subtle));
+  color: var(--sa-robot-badge-text, var(--primary));
+}
+
 .sa-cicle-badge {
   background-color: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.sa-card .sa-cicle-badge {
+  background-color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   color: #475569;
   font-weight: 600;
   font-size: 0.75rem;
@@ -1710,11 +1782,11 @@ accent-dashes {
   border-radius: 14px;
   overflow: hidden;
   margin-bottom: 1rem;
-  background: #f8fafc;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #edf2f7;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .sa-card-img {
@@ -1741,7 +1813,7 @@ accent-dashes {
 }
 
 .sa-card:hover .sa-card-title {
-  color: var(--primary);
+  color: var(--sa-robot-accent, var(--primary));
 }
 
 .sa-challenge {
@@ -1757,6 +1829,9 @@ accent-dashes {
 }
 
 .sa-card .sa-challenge {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-left: 3px solid var(--sa-robot-accent, var(--primary));
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -1783,13 +1858,18 @@ accent-dashes {
   transition: background 0.15s ease, color 0.15s ease;
 }
 
+.sa-card .tag-pill {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
 .sa-card:hover .tag-pill {
-  background: #eaf0f8;
+  background: #ffffff;
   color: #1e293b;
 }
 
 .sa-card-action {
-  color: var(--primary);
+  color: var(--sa-robot-accent, var(--primary));
   font-weight: 700;
   display: inline-flex;
   align-items: center;
