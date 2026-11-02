@@ -55,7 +55,22 @@ Amb el sensor orientat cap al davant, mostreu a la matriu de Codey l’estat «l
 
 ### 3. Programeu una maniobra d’esquiva
 
-Feu que Rocky avance a baixa velocitat mentre el sensor indique espai lliure. Si detecta un obstacle, atureu-lo, feu una marxa enrere breu i gireu a un costat abans de reprendre l’avanç. Comenceu amb una sola caixa de cartó: premeu A i observeu si Rocky gira i continua. Si el gir no deixa espai suficient, canvieu només la durada o la velocitat i torneu a provar. El [cas oficial de Makeblock](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) mostra un programa d’exemple amb el sensor mirant endavant.
+Feu que Rocky avance a baixa velocitat mentre el sensor indique espai lliure. Si detecta un obstacle, atureu-lo, feu una marxa enrere breu i gireu a un costat abans de reprendre l’avanç. Busqueu els blocs equivalents en mBlock:
+
+```mblock
+quan es prem el botó [A v]
+per sempre
+si <el sensor detecta un obstacle> aleshores
+atura el moviment
+ves arrere durant (0.5) segons
+gira a la dreta durant (0.5) segons
+si no
+avança a velocitat (20)
+fi
+fi
+```
+
+Comenceu amb una sola caixa de cartó i una velocitat baixa. Si el sensor no ofereix un bloc d’obstacle en la vostra versió, no inventeu el llindar: proveu el cas oficial de Makeblock amb el dispositiu i els blocs disponibles. Si el gir no deixa espai suficient, canvieu només la durada o la velocitat. El [cas oficial](https://support.makeblock.com/hc/en-us/articles/7463724329879-Case-18-Codey-Rocky-avoids-obstacles) mostra un exemple amb el sensor mirant endavant.
 
 ### 4. Compareu amb el seguiment d’una línia
 

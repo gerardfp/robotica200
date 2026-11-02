@@ -10,7 +10,7 @@ image: _assets/tutorials/cs-funcions-fun-blocks.webp
 
 ## 🎯 Repte i objectius
 
-Prepareu una ruta curta que repetisca dos moviments. Amb una funció, guardareu eixos moviments i els fareu servir més d’una vegada. Després provareu les peces de música, dansa i moviment aleatori del kit.
+Prepareu una ruta curta amb dos moviments que es repetisquen. Guardareu eixa parella de moviments en una funció i la cridareu dues vegades. Després, si el vostre kit té els blocs divertits, en provareu els comportaments predefinits.
 
 - Definir i cridar una funció per reutilitzar una seqüència de moviments.
 - Comparar la versió amb funció amb la seqüència escrita completa.
@@ -18,7 +18,8 @@ Prepareu una ruta curta que repetisca dos moviments. Amb una funció, guardareu 
 
 ## 🧰 Materials i preparació
 
-- Matatalab Coding Set complet: torre de control, tauler, MatataBot i blocs de moviment, funció, bucle, número i diversió.
+- Coding Set amb torre de control, tauler, MatataBot i blocs de moviment i funció.
+- Blocs divertits del kit, si estan disponibles; no cal el Musician Add-on per a les proves incloses.
 - Mapa o graella plana amb una ruta senzilla.
 - Full per anotar la seqüència i comptar els blocs utilitzats.
 
@@ -39,13 +40,13 @@ Planifiqueu una ruta amb dues parts: una seqüència curta que aparega dues vega
 
 ### 2. Definiu i crideu una funció
 
-Col·loqueu la peça **Call Function** a la fila principal. A la fila de sota poseu **Define Function → Endavant → Dreta**, seguint el dibuix de la [guia del fabricant](https://matatalab.com/en/node/63). Premeu el botó gran: el robot hauria d'avançar i girar. Afegiu una segona peça Call Function a la fila principal i repetiu des del mateix punt: ara hauria de fer la parella de moviments dues vegades.
+Col·loqueu la peça **Call Function** a la fila principal. A la fila de funció poseu **Define Function → Endavant → Dreta**, seguint la [guia del fabricant](https://matatalab.com/en/node/63). Premeu el botó gran i comproveu que el robot avança i gira. Torneu-lo al punt i a l’orientació inicials. Poseu una segona peça **Call Function** al programa principal i torneu a executar: ara farà la parella de moviments dues vegades.
 
 Les peces Define i Call van en files diferents. No afegiu un bloc número a la funció: el fabricant indica que aquesta combinació no és compatible.
 
 ### 3. Compareu els blocs divertits
 
-Proveu, separadament, el bloc de moviment aleatori, el de música predefinida i el de dansa predefinida. Abans de cada intent, feu una predicció i marqueu què no controla l’alumnat: el robot selecciona un comportament incorporat, no una seqüència detallada que haja programat la classe. Si combineu un bloc número amb un bloc divertit, observeu la selecció que indica la documentació del fabricant i no n’inferiu una cançó concreta sense comprovar-la.
+Si el kit inclou aquests blocs, proveu per separat el moviment aleatori, la música i la dansa. Abans de cada prova, prediu què passarà i anoteu el resultat. Són comportaments incorporats al robot, no seqüències creades per l’alumnat. La música permet escoltar una resposta predefinida; per a compondre una melodia amb notes pròpies cal el Musician Add-on.
 
 ### 4. Depureu la lectura del tauler
 
@@ -57,7 +58,7 @@ _La imatge representa el Control Tower i el robot del Coding Set; els símbols d
 
 ## 🧪 Prova, depura i reflexiona
 
-Executeu tres vegades la ruta amb totes les ordres escrites i tres vegades amb funció. Anoteu blocs utilitzats, destinació i errors. Després feu tres proves de cadascun dels blocs divertits i marqueu si el resultat és determinista o aleatori/predefinit. Si una execució falla, confirmeu primer el muntatge del tauler abans de reescriure el programa.
+Executeu tres vegades la ruta escrita i tres vegades la ruta amb funció, tornant el robot al mateix punt cada vegada. Anoteu les peces i la posició final. Si heu provat els blocs divertits, registreu separadament el que ha fet cadascun. Si una execució falla, comproveu primer l’ordre de lectura i el muntatge abans de canviar el programa.
 
 ### Preguntes per comprovar
 

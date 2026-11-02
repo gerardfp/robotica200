@@ -10,14 +10,14 @@ image: _assets/tutorials/ce-bucles.png
 
 ## 🎯 Repte i objectius
 
-La biblioteca mòbil visita diverses parades en un circuit tancat. Predigueu en quin ordre passarà per les estacions i compteu les voltes. El tren no repeteix ordres de codi: és la forma de la via la que el porta de nou al punt de partida.
+La biblioteca mòbil visita diverses parades en un circuit tancat. Predigueu en quin ordre passarà per les estacions i compteu les voltes. El tren no repeteix ordres de codi: la forma de la via el porta de nou al punt de partida.
 
 - Representar una rutina que es repeteix amb una seqüència d’accions.
 - Construir i comparar una via tancada i una via oberta.
 - Registrar les voltes sense atribuir al tren un comptador que no té.
 
 
-![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](_assets/imatges/coding-express-bucles.webp)
+![La locomotora real de Coding Express recorre un circuit oval tancat amb trams de via DUPLO.](../../_assets/imatges/coding-express-bucles.webp)
 
 Aquesta activitat adapta la [lliçó oficial sobre vies en forma d’O i repetició](https://education.lego.com/en-us/lessons/preschool-coding-express/o-shaped-track-looping/) a un servei de biblioteca amb estacions i torns.
 
@@ -28,7 +28,7 @@ Aquesta activitat adapta la [lliçó oficial sobre vies en forma d’O i repetic
 - Fitxes de passatgers i una targeta de registre per comptar les voltes.
 - Llapis de colors per dibuixar la ruta abans de construir-la.
 
-Comprova que el tren, les vies i les peces d’acció del kit disponible funcionen. Coding Express està retirat comercialment; aquesta proposta és per als centres que ja disposen del conjunt.
+Comproveu que el tren, les vies i les peces d’acció del kit funcionen. Coding Express està retirat comercialment; aquesta proposta és per als centres que ja disposen del conjunt.
 
 ## 🧩 Funcions del robot treballades
 
@@ -39,9 +39,9 @@ Comprova que el tren, les vies i les peces d’acció del kit disponible funcion
 
 ### 1. Planifiqueu el recorregut
 
-Trieu dues o tres estacions i poseu-les en ordre amb targetes. Assenyaleu el punt de partida i dibuixeu una fletxa que mostre cap a on circularà el tren. Predigueu en quina estació passarà primer, segon i tercer.
+Trieu dues o tres estacions i ordeneu-les amb targetes. Assenyaleu l’inici i dibuixeu una fletxa que mostre cap a on circularà el tren. Predigueu per quina estació passarà primer, segon i tercer.
 
-### 2. Dissenyar la línia
+### 2. Dissenyeu la via
 
 Dibuixeu i munteu una via tancada que passe per les estacions i torne a l’inici. Comproveu que les unions encaixen i que el tren pot circular sense forçar les peces. Marqueu el punt de partida amb una targeta.
 
@@ -51,7 +51,7 @@ Abans d’engegar, cada equip prediu l’ordre en què el tren passarà per les 
 
 ### 4. Comparar amb una ruta oberta
 
-Si teniu prou vies, obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu passar el tren una vegada i observeu què ocorre quan arriba al final. Compareu-la amb la via tancada: el tren no gira ni torna automàticament al principi d’una via oberta.
+Si teniu prou vies, obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu passar el tren una vegada i observeu què ocorre quan arriba al final. Compareu la via oberta amb la tancada: el tren no gira ni torna automàticament al principi.
 
 ### 5. Millorar el servei
 
@@ -80,7 +80,7 @@ Munteu les vies en una zona delimitada i manteniu els dits fora del mecanisme me
 - Una predicció de l’ordre de les parades i un registre del que ha passat.
 - Una explicació que distingeix el cicle de la via d’una repetició escrita en un programa.
 
-> **Per transferir-ho:** demana a cada infant que identifiqui una rutina diària que torna a començar i la representi amb tres imatges en cercle.
+> **Per transferir-ho:** demaneu que cada infant identifique una rutina diària que torna a començar i la represente amb tres imatges en cercle.
 
 ## 🔗 Fonts oficials i límits
 

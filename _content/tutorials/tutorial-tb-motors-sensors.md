@@ -10,7 +10,7 @@ image: _assets/tutorials/tb-motors-sensors.png
 
 ## 🎯 Repte i objectius
 
-Dibuixa una forma amb Tale-Bot i investiga com les ordres direccionals es transformen en trajectòria. La classe prediu els girs i les distàncies, registra el resultat i diferencia el moviment del robot de les marques del mapa.
+Dibuixeu una forma amb Tale-Bot i observeu com les ordres direccionals es transformen en trajectòria. Predigueu els girs, registreu el resultat i compareu el dibuix amb la forma prevista.
 
 - Relacionar la geometria espacial amb seqüències d'ordres repetitives.
 - Dibuixar quadrats, rectangles i figures simètriques.
@@ -30,17 +30,17 @@ Dibuixa una forma amb Tale-Bot i investiga com les ordres direccionals es transf
 
 ## 👣 Seqüència guiada
 
-### 1. Col·locar els retoladors
+### 1. Col·loqueu el retolador
 
-Si tens el suport de dibuix compatible, col·loca'l seguint les instruccions del kit i posa-hi un retolador rentable. Ajusta’l perquè la punta toque suaument el paper. Si no tens el suport, segueix el recorregut amb el dit i dibuixa'l a mà.
+Si teniu el suport de dibuix, col·loqueu-lo segons les instruccions del kit i fixeu-hi un retolador rentable. Ajusteu-lo perquè la punta toque suaument el paper. Sense el suport, seguiu la ruta amb el dit i dibuixeu-la a mà.
 
 ### 2. Dibuixeu un quadrat
 
-Marca un punt inicial i orienta el robot paral·lel a una vora del paper. Esborra el programa anterior mantenint X més d’un segon. Prem **Endavant → Dreta** quatre vegades i després **Play**. Cada avanç dibuixa un costat i cada gir canvia l’orientació; el gir no dibuixa un costat. Observa si el traç s’assembla a un quadrat i si acaba prop del punt inicial.
+Marqueu un punt inicial i orienteu el robot paral·lel a una vora del paper. Esborreu el programa anterior mantenint X més d’un segon. Premeu **Endavant → Dreta** quatre vegades i després **Play**. Cada avanç dibuixa un costat i cada gir canvia l’orientació; el gir no dibuixa un costat. Observeu si el traç s’assembla a un quadrat i acaba prop del punt inicial.
 
-### 3. Crear patrons artístics
+### 3. Creeu un patró rectangular
 
-Esborra la seqüència. Per allargar un costat, introdueix **Endavant → Endavant → Dreta** en lloc d’**Endavant → Dreta**. Completa després els altres tres costats amb **Endavant → Dreta**. Abans de prémer Play, dibuixa la forma prevista i comprova que els quatre girs tanquen el recorregut. Usa un full nou per distingir els dos intents.
+Esborreu la seqüència. Per allargar un costat, introduïu **Endavant → Endavant → Dreta** en lloc d’**Endavant → Dreta**. Completeu els altres tres costats amb **Endavant → Dreta**. Abans de prémer Play, dibuixeu la forma prevista i comproveu que els quatre girs tanquen el recorregut. Useu un full nou per distingir els intents.
 
 ### 4. Proveu el transport amb els braços
 
@@ -50,7 +50,7 @@ Si el kit inclou els dos braços, instal·leu-los en els punts indicats pel fabr
 
 ## 🧪 Prova, depura i reflexiona
 
-Fixa el paper a una taula plana. Primer prova un avanç i un gir per comprovar el contacte del retolador. Després executa el quadrat i anota si torna prop de la marca inicial. Per al transport, fes una prova curta sense objecte i una amb un objecte ample i lleuger. No force els braços si l’objecte cau o el robot no el pot moure.
+Fixeu el paper a una taula plana. Proveu un avanç i un gir per comprovar el contacte del retolador. Després executeu el quadrat i anoteu si torna prop de la marca inicial. Per al transport, feu una prova curta amb un objecte ample i lleuger. No forceu els braços si l’objecte cau o el robot no el pot moure.
 
 ### Preguntes per comprovar
 
@@ -61,7 +61,7 @@ Fixa el paper a una taula plana. Primer prova un avanç i un gir per comprovar e
 
 ## ♿ Accessibilitat i seguretat
 
-Dona formes retallades com a model de partida o permet una successió de moviments fets amb botons. Canvia només el traç, la superfície o la ruta a cada intent.
+Doneu formes retallades com a model o permeteu planificar la ruta amb targetes abans de prémer els botons. Canvieu només el traç, la superfície o la ruta en cada intent.
 
 ## ✅ Evidències d’aprenentatge
 - Dibuixos dels dos recorreguts amb el punt inicial marcat.

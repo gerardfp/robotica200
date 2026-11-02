@@ -50,7 +50,7 @@ Els noms de les peces poden aparéixer en una altra llengua segons la configurac
 
 Sacsegeu la micro:bit del simulador i comproveu que mostra un nombre de l’1 al 6. Per provar-ho amb la placa, connecteu-la per USB i premeu **Descarregar**. Si MakeCode desa un fitxer `.hex`, copieu-lo a la unitat **MICROBIT** i espereu que la transferència acabe abans de desconnectar el cable. Sacsegeu la placa i comproveu el resultat.
 
-> **💡 Consell docent per a la sessió:** Recorda als alumnes que el simulador de l'esquerra permet provar el programa abans fins i tot de tenir la placa connectada.
+> **💡 Consell docent per a la sessió:** Mostreu el simulador de MakeCode: permet provar el programa abans de connectar la placa.
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -64,7 +64,7 @@ Feu tres proves al simulador i tres amb la placa, i anoteu els nombres. Comprove
 
 ## ♿ Accessibilitat i seguretat
 
-Prova primer el dau al simulador. Si sacsejar la placa és difícil, una altra persona pot fer el moviment mentre la parella observa i anota el resultat.
+Proveu primer el dau al simulador. Si sacsejar la placa és difícil, una altra persona pot fer el moviment mentre la parella observa i anota el resultat.
 
 ## ✅ Evidències d’aprenentatge
 - Projecte desat i taula amb els resultats del simulador i de la placa.

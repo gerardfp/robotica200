@@ -12,7 +12,7 @@ image: _assets/tutorials/cr-sensors-llum-so-linia.webp
 
 Feu que Codey responga a una palmada suau i investigueu com detecta la llum. Després proveu Rocky sobre una línia negra. Observeu què detecta el robot i què li heu indicat que faça.
 
-- Calibrar els sensors de llum i so amb proves controlades.
+- Comparar lectures de llum i so en condicions repetibles.
 - Relacionar la lectura del sensor infraroig/color amb una línia i els motors.
 - Explicar per què els llindars depenen de la superfície i de la llum de l’aula.
 
@@ -95,7 +95,7 @@ _Les targetes i la línia són materials de prova; els resultats depenen del sen
 
 ## 🧪 Prova, depura i reflexiona
 
-Anoteu què mostra el sensor amb llum i amb ombra, i després en silenci i amb una palmada suau. En la pista, registreu si Rocky manté la vora durant tres intents curts. Si falla, reviseu que el sensor mire a terra i que el robot comence a la vora correcta; canvieu una sola cosa abans de repetir.
+Registreu sis lectures de llum (tres amb llum i tres amb ombra) i les lectures de so en silenci i amb palmades. En la pista, anoteu si Rocky manté la vora en tres intents curts. Si falla, reviseu que el sensor mire a terra i que el robot comence a la vora correcta; canvieu una sola cosa abans de repetir.
 
 ### Preguntes per comprovar
 
@@ -110,9 +110,9 @@ Anoteu què mostra el sensor amb llum i amb ombra, i després en silenci i amb u
 Manteniu el robot a velocitat baixa i dins d’un recorregut delimitat, lluny de vores i dits. No useu sons forts, no enregistreu veus i no feu inferències sobre les persones a partir del nivell de so. Oferiu lectures simulades o targetes impreses a qui no vulga participar en una prova sonora; es poden comparar resultats sense conduir el robot.
 
 ## ✅ Evidències d’aprenentatge
-- Projecte mBlock que encén la llum amb una palmada.
-- Taula amb lectures de llum i so i el valor de tall triat.
-- Nota breu sobre els intents de seguiment de línia i els ajustos realitzats.
+- Projecte mBlock amb la resposta visual al nivell de so.
+- Taula de lectures de llum i so, amb les condicions i el valor de tall triat.
+- Resultat de tres intents de seguiment de la vora i l’ajust provat.
 
 ## 🔗 Fonts oficials i límits
 

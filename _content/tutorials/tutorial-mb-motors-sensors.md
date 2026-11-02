@@ -1,6 +1,6 @@
 ---
 title: 'micro:bit: llegir un sensor extern'
-description: Provar la lectura d’un sensor compatible al pin P0 i explorar un servomotor opcional.
+description: Llegir amb MakeCode un sensor d’humitat compatible i comparar dues lectures.
 robot: microbit
 level: Intermedi
 duration: 50 min
@@ -14,29 +14,27 @@ Connecta un sensor d’humitat compatible a P0 i observa com canvia la lectura q
 
 - Connectar el sensor segons l’esquema del fabricant.
 - Mostrar i comparar lectures en dues condicions conegudes.
-- Explorar un servomotor opcional amb els components i les instruccions adequats.
 
 ## 🧰 Materials i preparació
 
 - micro:bit amb portapiles
 - Sensor d'humitat compatible amb micro:bit i instruccions de connexió del fabricant.
-- Servomotor i placa auxiliar amb alimentació adequada, si el centre en disposa.
 - Cables indicats per les instruccions dels components.
 
 ## 🧩 Funcions del robot treballades
 
-- Pins GPIO com a interfície per a un sensor resistiu i un servomotor externs.
-- Aquests elements no formen part de la placa micro:bit: cal una alimentació, interfície i muntatge compatibles; no alimenteu el servo des del pin de 3 V.
+- Pin P0 per llegir el senyal analògic d’un sensor extern.
+- El sensor no forma part de la micro:bit. La placa no pot alimentar ni llegir qualsevol sensor sense comprovar-ne abans la compatibilitat i l’esquema.
 
 ## 👣 Seqüència guiada
 
 ### 1. Comproveu el sensor i els cables
 
-Abans de connectar res, identifica el model exacte del sensor i llig-ne l’esquema. Amb la placa sense alimentació, connecta senyal a P0 i els altres cables als pins que indique el fabricant. No uses aquesta activitat si no tens l’esquema o si el sensor necessita una placa auxiliar que falta.
+Abans de connectar res, identifiqueu el model exacte del sensor i llegiu-ne l’esquema. Amb la placa desconnectada, connecteu el senyal a P0 i els altres cables als pins que indique el fabricant. No feu la connexió si no teniu l’esquema o si falta una placa auxiliar necessària.
 
 ### 2. Llegir el valor analògic
 
-En MakeCode, posa «mostra el número» dins de «per sempre». En l'espai del número, col·loca la peça de **lectura analògica del pin P0**, disponible a Pins. Així veuràs la lectura del sensor a la pantalla.
+En MakeCode, poseu «mostra el número» dins de «per sempre». En l’espai del nombre, col·loqueu la peça de **lectura analògica del pin P0**, disponible a Pins. Així veureu la lectura del sensor a la pantalla.
 
 ```makecode
 basic.forever(function () {
@@ -44,33 +42,27 @@ basic.forever(function () {
 })
 ```
 
-Anota la lectura amb el sensor sec i després amb el sensor humit tal com indica el seu fabricant. No submergisques la placa ni els cables. Sense sensor, prova el programa al simulador, però marca el resultat com a simulat.
+Anoteu tres lectures amb el sensor sec i tres amb el sensor humit, seguint les instruccions del fabricant. Compareu els valors: el nombre és una lectura del pin, no un percentatge universal d’humitat. No submergiu la placa ni els cables. Sense sensor, proveu el programa al simulador i marqueu el resultat com a simulat.
 
 La [referència oficial de lectura d'un pin](https://makecode.microbit.org/reference/pins/analog-read-pin) mostra la peça i un exemple de lectura en pantalla.
 
-### 3. Provar un servo opcional
-
-Si tens un servo i una placa auxiliar compatibles, segueix-ne la guia per alimentar-los i provar un moviment curt. Primer acorda quin valor correspon a cada condició del sensor: no tots responen igual. El muntatge és una maqueta; no connectes aigua a l'electrònica.
-
-> **💡 Consell docent:** Si falta algun component o no tens les seues instruccions, mostra les lectures en pantalla i deixa el servo per a una altra sessió.
-
 ## 🧪 Prova, depura i reflexiona
 
-Anota dues lectures del sensor en les condicions indicades pel fabricant i compara-les. Si no canvien, revisa el port i les connexions amb l’alimentació desconnectada. Si no tens sensor, fes la prova al simulador i marca les lectures com a simulades.
+Compareu les tres lectures de cada condició. Si no canvien, confirmeu al manual quin pin proporciona el senyal i reviseu els cables amb la placa desconnectada. Si el sensor requereix una placa auxiliar, no el connecteu directament a P0. Sense sensor, feu la prova al simulador i marqueu les lectures com a simulades.
 
 ### Preguntes per comprovar
 
-- Quins dos valors has observat i en quines condicions?
+- Quin rang de valors has observat amb el sensor sec i quin amb el sensor humit?
 - Què comprovaràs si la lectura no canvia?
 - Has provat un sensor real o el simulador?
 
 ## ♿ Accessibilitat i seguretat
 
-Una persona pot llegir la pantalla i una altra anotar les lectures. Manteniu l’aigua allunyada de la micro:bit, els cables i la placa auxiliar; mulleu només el sensor de la manera indicada pel fabricant. Desconnecteu l’alimentació abans de canviar cables. El servo no és necessari per a aquesta prova.
+Una persona pot llegir la pantalla i una altra anotar les lectures. Manteniu l’aigua allunyada de la micro:bit, els cables i la placa auxiliar; mulleu només el sensor, segons les indicacions del fabricant. Desconnecteu l’alimentació abans de canviar cables. El servo no és necessari per a aquesta prova.
 
 ## ✅ Evidències d’aprenentatge
-- L'esquema de connexió, les dues lectures i una nota que indique si són reals o simulades. Si has provat el servo, anota també què ha fet.
+- Esquema de connexió, sis lectures (tres per condició) i indicació de si provenen del sensor real o del simulador.
 
 ## 🔗 Fonts oficials i límits
 
-micro:bit · Features overview · [https://microbit.org/get-started/features/overview/](https://microbit.org/get-started/features/overview/). Consulteu aquesta documentació per distingir les funcions del model base de les que depenen de complements, accessoris o versions de programari.
+La [referència oficial de MakeCode per a la lectura analògica](https://makecode.microbit.org/reference/pins/analog-read-pin) descriu el bloc utilitzat. La connexió i la interpretació dels valors depenen del model concret del sensor; seguiu-ne el manual.
