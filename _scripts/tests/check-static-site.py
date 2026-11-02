@@ -46,7 +46,16 @@ def local_target(page: Path, ref: str):
         return page
     if path.startswith("/"):
         return root_base / path.lstrip("/")
-    return page.parent / path
+    target = page.parent / path
+    if not is_in_dist and not target.exists() and DIST.is_dir():
+        try:
+            rel = target.resolve().relative_to(ROOT.resolve())
+            dist_candidate = DIST / rel
+            if dist_candidate.exists():
+                return dist_candidate
+        except ValueError:
+            pass
+    return target
 
 
 def read_frontmatter(path: Path):

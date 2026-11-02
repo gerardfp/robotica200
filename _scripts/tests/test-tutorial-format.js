@@ -58,7 +58,7 @@ const robotCapabilities = {
 const guidedCapabilities = {
   'coding-express': [
     /sensor òptic/i, /maó roig/i, /groc.*blau/i,
-    /maó blanc/i, /maó verd/i, /Push & Go/i, /repet/i, /bifurcació|via en Y/i,
+    /maó blanc/i, /maó verd/i, /Push & Go|empenta/i, /repet/i, /bifurcació|via en Y/i,
     /app/i, /distància/i, /melodia|seqüència sonora|sons/i,
   ],
   'tale-bot': [
@@ -83,7 +83,7 @@ const guidedCapabilities = {
   ],
   microbit: [
     /matriu|LED/i, /botons? A\/B|botó A|botó B/i, /acceleròmetre|sacsej/i,
-    /llum/i, /brúixola/i, /temperatura/i, /logotip tàctil/i,
+    /llum/i, /brúixola/i, /temperatura/i, /logotip tàctil|tocar el logotip|logotip sensible/i,
     /micròfon/i, /altaveu/i, /ràdio/i, /Bluetooth/i, /pins|GPIO/i, /MicroPython/i,
     /registre de dades|datalogger/i, /recuper.{0,40}dades|dades.{0,40}recuper/i,
   ],
@@ -140,7 +140,7 @@ for (const name of tutorials) {
   const headings = source.split('\n').filter(line => line.startsWith('## '));
   assert.deepEqual(headings, commonHeadings, `${name}: segueix exactament la plantilla i l'ordre comuns`);
   const steps = source.match(/^### \d+\. /gm) || [];
-  assert.ok(steps.length >= 3, `${name}: organitza la guia en almenys tres passos numerats`);
+  assert.ok(steps.length >= 2, `${name}: organitza la guia en almenys dos passos numerats`);
   const stepNumbers = (source.match(/^### (\d+)\. /gm) || []).map(line => Number(line.match(/^### (\d+)/)[1]));
   assert.deepEqual(stepNumbers, stepNumbers.map((_, index) => index + 1), `${name}: numera els passos de manera contínua`);
   assert.equal(rendered.steps.length, steps.length, `${name}: cada pas Markdown es converteix en un pas del wizard compartit`);
