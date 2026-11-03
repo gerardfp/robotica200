@@ -5,7 +5,7 @@ robot: codey-rocky
 level: Avançat
 duration: 60 min
 order: 5
-image: _assets/tutorials/cr-giroscopi-ir-control.webp
+image: _assets/tutorials/cr-giroscopi-ir-control.png
 ---
 
 ## 🎯 Repte i objectius

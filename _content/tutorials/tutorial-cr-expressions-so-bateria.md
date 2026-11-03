@@ -5,7 +5,7 @@ robot: codey-rocky
 level: Intermedi
 duration: 50 min
 order: 7
-image: _assets/tutorials/cr-expressions-so-bateria.webp
+image: _assets/tutorials/cr-expressions-so-bateria.png
 ---
 
 ## 🎯 Repte i objectius

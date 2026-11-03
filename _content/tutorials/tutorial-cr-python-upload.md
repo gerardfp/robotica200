@@ -5,7 +5,7 @@ robot: codey-rocky
 level: Avançat
 duration: 50 min
 order: 6
-image: _assets/tutorials/cr-python-upload.webp
+image: _assets/tutorials/cr-python-upload.png
 ---
 
 ## 🎯 Repte i objectius

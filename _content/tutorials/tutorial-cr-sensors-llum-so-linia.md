@@ -5,7 +5,7 @@ robot: codey-rocky
 level: Intermedi
 duration: 55 min
 order: 4
-image: _assets/tutorials/cr-sensors-llum-so-linia.webp
+image: _assets/tutorials/cr-sensors-llum-so-linia.png
 ---
 
 ## 🎯 Repte i objectius
@@ -36,6 +36,8 @@ Abans de començar, comproveu que el robot es connecta, que les erugues es mouen
 ## 👣 Seqüència guiada
 
 ### 1. Comprovem les entrades i eixides
+
+![Codey Rocky detectant un colors i infraroig.](../../_assets/tutorials/cr-sensors-llum-so-linia.png)
 
 Obriu mBlock 5, seleccioneu Codey Rocky i executeu una seqüència curta que mostre un color a l’indicador RGB i faça avançar Rocky a baixa velocitat durant un interval breu. Atureu el programa i verifiqueu que el botó d’aturada del projecte respon. Anoteu quins elements són entrades (llum, so i reflexió infraroja) i quins són eixides (RGB i motors).
 
