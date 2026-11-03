@@ -25,7 +25,7 @@ En acabar, podreu:
 - Hub gran LEGO Education SPIKE Prime i SPIKE App en ordinador o tauleta compatible.
 - Un motor angular connectat al port A; si useu un altre port, canvieu també la constant al codi.
 - Cable USB o Bluetooth BLE i bateria carregada.
-- Base de muntatge estable per subjectar el motor o un braç lleuger que puga girar sense atrapar dits.
+- Superfície plana on recolzar el motor de manera estable, amb la part giratòria visible i lliure. No cal encaixar peces LEGO ni afegir-hi accessoris.
 - Targeta de paper amb les equivalències «port», «angle en graus» i «velocitat».
 
 Obriu un projecte de Python a SPIKE App i connecteu el Hub. Si la interfície no ofereix l’editor Python en el dispositiu o la versió instal·lada, feu el mateix repte amb blocs de paraules i anoteu aquesta diferència; no instal·leu programari alié al flux oficial del centre. Manteniu lliure la zona de gir del motor i no subjecteu l’eix amb els dits mentre s’executa.
@@ -41,7 +41,7 @@ Obriu un projecte de Python a SPIKE App i connecteu el Hub. Si la interfície no
 
 ### 1. Prepareu el motor i llegiu el codi
 
-Connecteu un motor angular al port A i fixeu-lo a una base. Si munteu un braç lleuger, deixeu espai al voltant i una posició inicial marcada. Obriu el projecte Python i comproveu que l’app reconeix el Hub i que el port A apareix disponible.
+Connecteu un motor angular al port A i recolzeu-lo de manera estable sobre la taula, sense rodes, braços ni eixos afegits. Observeu la marca de la part giratòria per identificar la posició inicial. Obriu el projecte Python i comproveu que l’app reconeix el Hub i que el port A apareix disponible.
 
 Copieu el programa següent. Si el motor està en un altre port, substituïu `port.A` pel port real.
 
@@ -60,11 +60,7 @@ runloop.run(main())
 
 ### 2. Predigueu i executeu una volta
 
-Abans de prémer Run, dibuixeu la posició final esperada. Executeu el programa una sola vegada i compareu-la amb la marca inicial. Si l’eix gira en sentit diferent del que volíeu, no forceu el mecanisme: reviseu el sentit, el muntatge i la configuració de la versió de l’API que mostra l’editor.
-
-![Il·lustració d’un muntatge de peces i un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/spike-prime-python.webp)
-
-_Il·lustració decorativa: no mostra el motor, els ports ni l’editor de la prova. El codi executable és el de l’exemple de dalt._
+Abans de prémer Run, dibuixeu la posició final esperada. Executeu el programa una sola vegada i compareu-la amb la marca inicial. Si l’eix gira en sentit diferent del que volíeu, atureu la prova i reviseu el sentit, la posició del motor i la configuració de la versió de l’API que mostra l’editor.
 
 ### 3. Canvieu un paràmetre cada vegada
 
@@ -87,7 +83,7 @@ Feu tres intents: 360° a velocitat 400, 180° a velocitat 400 i 360° a velocit
 
 ### Preguntes per comprovar
 
-- Quin element del muntatge correspon a `port.A`?
+- Quin port físic correspon a `port.A`?
 - Què canvia en passar de 360 a 180 graus? Què canvia en reduir la velocitat?
 - Quina diferència observes entre una volta completa i mitja volta?
 - Quina informació apareix tant en el programa de text com en els blocs?
@@ -96,7 +92,7 @@ Feu tres intents: 360° a velocitat 400, 180° a velocitat 400 i 360° a velocit
 
 ## ♿ Accessibilitat i seguretat
 
-Oferiu el programa imprés amb indentació marcada i el mateix moviment representat amb blocs. Es poden assignar rols de lectura de codi, comprovació del port, predicció i registre sense exigir que tothom escriga al teclat. Subjecteu el muntatge, treballeu a baixa velocitat i manteniu mans, cabells i roba fora de l’eix i de les peces mòbils. Atureu l’execució abans de modificar el programa o desconnectar el cable.
+Oferiu el programa imprés amb indentació marcada i el mateix moviment representat amb blocs. Es poden assignar rols de lectura de codi, comprovació del port, predicció i registre sense exigir que tothom escriga al teclat. Comproveu que el motor queda estable i manteniu mans, cabells, roba i cables fora de la part giratòria. Si el motor es desplaça, atureu-lo abans de recol·locar-lo. Atureu l’execució abans de modificar el programa o desconnectar el cable.
 
 ## ✅ Evidències d’aprenentatge
 - Conserveu el programa final, les tres prediccions i observacions, la correspondència entre port del codi i port físic, i una explicació breu d’un error corregit. Si feu captures, retalleu noms d’usuari i qualsevol dada personal; una transcripció del programa i la taula de proves són suficients.

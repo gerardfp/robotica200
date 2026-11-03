@@ -5,7 +5,7 @@ robot: microbit
 level: Intermedi
 duration: 45 min
 order: 3
-image: _assets/tutorials/mb-radio-mesh.png
+image: _assets/tutorials/mb-radio-mesh-flat.png
 ---
 
 ## 🎯 Repte i objectius

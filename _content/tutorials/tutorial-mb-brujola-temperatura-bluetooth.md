@@ -5,7 +5,7 @@ robot: microbit
 level: Intermedi
 duration: 50 min
 order: 6
-image: _assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp
+image: _assets/tutorials/mb-brujola-temperatura-bluetooth-flat.png
 ---
 
 ## 🎯 Repte i objectius

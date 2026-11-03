@@ -1,46 +1,42 @@
 ---
-title: Braç robòtic i sensor de força
-description: Construir una pinça que detecti el contacte i utilitzar les lectures del sensor de força per provar
-  un límit programat.
+title: 'Sensor de força: un botó per aturar el motor'
+description: Utilitzar el sensor de força com a control manual d’aturada d’un motor sense accessoris.
 robot: spike
 level: Avançat
-duration: 55 min
+duration: 40 min
 order: 3
 image: _assets/tutorials/sp-brac-sensor-forca.png
 ---
 
 ## 🎯 Repte i objectius
 
-Feu que un motor tanque una pinça a poc a poc i s’ature quan es prema el sensor de força. Primer proveu el sensor amb el motor parat; després, feu una prova amb una esponja.
+Programeu un motor solt perquè s’ature en prémer el sensor de força amb el dit. No cal construir cap braç ni pinça, ni encaixar peces LEGO.
 
-- Comprovar quan el sensor detecta una pressió.
-- Programar un motor que s’ature en prémer el sensor.
-- Observar què passa i saber com aturar manualment la prova.
+- Distingir els estats premut i alliberat.
+- Relacionar una entrada del sensor amb una ordre al motor.
+- Provar una condició i explicar el resultat.
 
 ## 🧰 Materials i preparació
 
-- Hub SPIKE Prime
-- 1 motor mitjà
-- 1 sensor de força
-- Elements de palanca Technic
-- Ordinador o tauleta amb SPIKE App i una esponja.
+- Hub SPIKE Prime, un motor angular i un sensor de força.
+- Ordinador o tauleta amb SPIKE App i connexió USB o Bluetooth.
+
+Connecteu només els cables. Recolzeu el motor de manera estable sobre la taula, amb l’eix lliure i sense cap peça afegida. Deixeu el sensor separat del motor i fàcil d’abastar.
 
 ## 🧩 Funcions del robot treballades
 
-- Hub SPIKE Prime, motor angular i sensor de força.
-- Lectura de força/contacte i control del motor; el sensor no mesura distància ni substitueix un límit mecànic.
+- Lectura de contacte del sensor de força i control d’un motor angular.
+- Espera condicional; el sensor no mesura distància.
 
 ## 👣 Seqüència guiada
 
-### 1. Munteu la pinça i comproveu el sensor
+### 1. Comproveu el sensor amb el motor parat
 
-Munteu una pinça senzilla amb un motor. Amb el motor a baixa velocitat i sense objectes, feu un gir curt per comprovar quin sentit la tanca: depén de com heu col·locat les peces. Atureu el motor abans d’acostar-vos al mecanisme.
-
-Connecteu el sensor al port B i poseu-lo on la pinça puga prémer-lo sense fer força excessiva. Amb el motor aturat, obriu la icona del Hub a SPIKE App i comproveu si l’estat canvia en prémer i deixar anar el sensor. Si no canvia, reviseu el port i el cable abans de continuar.
+Connecteu el motor al port A i el sensor de força al B. Obriu la informació del Hub a SPIKE App. Premeu suaument la superfície del sensor amb el dit i deixeu-la anar: comproveu si l’estat canvia entre premut i alliberat. Si no canvia, reviseu el cable i el port.
 
 ### 2. Programeu l’aturada en prémer
 
-Connecteu el motor al port A. Fixeu una esponja lleugera entre les mordasses i prepareu aquesta seqüència a SPIKE App:
+Busqueu els blocs equivalents de la vostra versió de SPIKE App:
 
 ```spikeapp
 quan comença el programa
@@ -49,27 +45,30 @@ espera fins que el sensor de força [B v] estiga premut
 atura el motor [A v]
 ```
 
-L’esquema resumeix les accions: busqueu els blocs equivalents en la vostra versió de l’app. Si useu altres ports, canvieu-los també al programa. Manteniu l’aturada manual a mà. Quan la prova de contacte funcione, podeu comparar lectures numèriques només si l’app les ofereix.
+Inicieu el programa amb el sensor alliberat. Premeu-lo sense acostar la mà al motor i observeu l’aturada. Deixar anar el sensor no reinicia aquest programa: cal tornar-lo a executar. Manteniu també accessible l’aturada manual del Hub o de l’app.
 
-> **💡 Consell docent:** Per a la primera prova, feu servir només l’estat «premut/alliberat». La lectura numèrica de força és una ampliació, no és necessària per aconseguir que la pinça s’ature.
+### 3. Compareu dos estats inicials
+
+Repetiu tres vegades començant amb el sensor alliberat. Després predigueu què passarà si l’inicieu amb el sensor ja premut i comproveu-ho. Si l’app ofereix una lectura numèrica de força, observeu com varia amb una pressió suau; no cal fer força elevada ni canviar el programa.
 
 ## 🧪 Prova, depura i reflexiona
 
-Fixeu la base a la taula i poseu l’esponja entre les mordasses. Inicieu el motor a baixa velocitat: quan la pinça prema el sensor, s’ha d’aturar. Repetiu-ho tres vegades. Si no s’atura, pareu el motor manualment i reviseu els ports i la posició del sensor. No useu dits, persones ni objectes fràgils com a prova.
+Registreu l’estat inicial, si heu premut el sensor i si el motor s’ha aturat. Si continua girant, atureu-lo manualment i reviseu els ports i la condició.
 
 ### Preguntes per comprovar
 
-- Què indica el sensor de força en aquest model?
-- Com saps que el sensor ha detectat la pressió?
-- Què ha passat quan el sensor s'ha premut? Què has hagut de fer per obrir la pinça?
+- Quina acció sobre el sensor activa la parada?
+- Per què el motor no torna a girar en deixar anar el sensor?
+- Què canvia quan el sensor ja està premut a l’inici?
 
 ## ♿ Accessibilitat i seguretat
 
-Una persona pot preparar les peces i una altra observar el sensor o anotar les proves. Manteniu els dits fora de la pinça mentre el motor gira. La detecció no substitueix l’aturada manual.
+Situeu el sensor on siga còmode prémer-lo; una altra persona pot fer la pressió mentre l’alumne programa o registra. No toqueu l’eix en moviment. Aquesta condició programada no substitueix l’aturada manual ni és un sistema de protecció.
 
 ## ✅ Evidències d’aprenentatge
+
 - Esquema dels ports i programa amb la condició d’aturada.
-- Resultat de tres proves amb l’esponja i una nota sobre si el sensor s’ha activat cada vegada.
+- Resultat de tres proves i comparació dels dos estats inicials.
 
 ## 🔗 Fonts oficials i límits
 

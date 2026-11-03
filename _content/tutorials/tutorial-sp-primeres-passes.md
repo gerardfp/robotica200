@@ -10,7 +10,7 @@ image: _assets/tutorials/sp-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Connecta el Hub gran SPIKE Prime i crea el teu primer programa: una cara que apareix i desapareix. Després identifica els botons, els ports A–F i el sensor d’orientació.
+Connecta el Hub gran SPIKE Prime i crea el teu primer programa: una cara que apareix i desapareix. Després identifica els botons, els ports A–F i el sensor d’orientació. Només necessites el Hub: no cal encaixar peces LEGO ni construir cap model.
 
 - Comprovar la càrrega del Hub i connectar-lo per Bluetooth o USB a SPIKE App.
 - Programar la matriu de 25 píxels per mostrar icones i animacions.
@@ -26,7 +26,7 @@ Connecta el Hub gran SPIKE Prime i crea el teu primer programa: una cara que apa
 ## 🧩 Funcions del robot treballades
 
 - Hub SPIKE Prime: matriu LED 5 × 5, botó central, botons laterals, ports i sensor d’orientació de sis eixos.
-- Connexió i programació amb SPIKE App; els ports i elements connectats s’han d’identificar en cada muntatge.
+- Connexió i programació amb SPIKE App; els ports i elements connectats s’han d’identificar en cada prova.
 - Bateria recarregable del Hub; l’estat de càrrega i els indicadors poden variar segons la versió de l’app.
 
 ## 👣 Seqüència guiada

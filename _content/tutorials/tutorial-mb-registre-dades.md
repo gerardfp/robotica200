@@ -5,7 +5,7 @@ robot: microbit
 level: Intermedi
 duration: 50 min
 order: 7
-image: _assets/tutorials/mb-data-logging.webp
+image: _assets/tutorials/mb-registre-dades-flat.png
 ---
 
 ## 🎯 Repte i objectius

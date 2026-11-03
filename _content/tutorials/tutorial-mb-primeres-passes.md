@@ -6,7 +6,7 @@ robot: microbit
 level: Iniciació
 duration: 30 min
 order: 1
-image: _assets/tutorials/mb-primeres-passes.png
+image: _assets/tutorials/mb-primeres-passes-flat.png
 ---
 
 ## 🎯 Repte i objectius

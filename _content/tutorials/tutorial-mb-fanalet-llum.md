@@ -5,7 +5,7 @@ robot: microbit
 level: Iniciació
 duration: 35 min
 order: 5
-image: _assets/tutorials/mb-fanalet-llum.png
+image: _assets/tutorials/mb-fanalet-llum-flat.png
 ---
 ## 🎯 Repte i objectius
 

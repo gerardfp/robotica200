@@ -1,77 +1,75 @@
 ---
-title: 'Motors i sensors: Tren d''engranatges i sensor de color'
-description: Construir una transmissió amb engranatges i provar una parada en detectar una línia vermella.
+title: 'Motors i sensors: parada amb una targeta de color'
+description: Programar un motor sense accessoris perquè s’ature quan el sensor detecte una targeta vermella.
 robot: spike
 level: Intermedi
-duration: 50 min
+duration: 40 min
 order: 2
 image: _assets/tutorials/sp-motors-sensors.png
 ---
 
 ## 🎯 Repte i objectius
 
-Construïu i observeu una parella d’engranatges. Després, amb una base mòbil preparada, feu que s’ature en detectar una targeta roja. Les dues proves són independents: no cal connectar els engranatges a les rodes.
+Feu girar un motor solt i atureu-lo quan acosteu una targeta vermella al sensor de color. No cal construir cap model ni encaixar peces LEGO: només connectar els cables al Hub.
 
-- Explicar que l’engranatge de 8 dents fa tres voltes per cada volta del de 24.
-- Fer avançar una base amb dos motors fins que el sensor detecte una targeta roja.
-- Utilitzar el sensor de color en mode detecció de color directe.
+- Controlar un motor angular i programar una condició de parada.
+- Comparar lectures del sensor de color.
+- Comprovar com influeixen la llum i la distància de la targeta.
 
 ## 🧰 Materials i preparació
 
-- Hub SPIKE
-- Base mòbil amb dos motors angulars i rodes, o muntatge equivalent de la guia LEGO.
-- 1 sensor de color
-- Peces Technic i engranatges
-- Ordinador o tauleta amb SPIKE App, cable USB o connexió Bluetooth compatible i targetes blanca i roja.
+- Hub SPIKE Prime carregat, un motor angular i un sensor de color.
+- Targetes blanca i vermella de paper o cartolina.
+- Ordinador o tauleta amb SPIKE App i connexió USB o Bluetooth.
+
+Deixeu el motor recolzat de manera estable sobre la taula, amb l’eix lliure i sense rodes, eixos afegits ni engranatges.
 
 ## 🧩 Funcions del robot treballades
 
-- Motors angulars amb engranatges i sensor de color SPIKE Prime.
-- Lectura de color per condicionar una parada; llindars i orientació depenen del muntatge.
+- Motor angular i sensor de color SPIKE Prime.
+- Lectura de color i espera condicional per aturar el motor.
 
 ## 👣 Seqüència guiada
 
-### 1. Munteu els engranatges
+### 1. Connecteu i comproveu el sensor
 
-Fixeu els engranatges de 8 i 24 dents en dos eixos paral·lels sobre una estructura estable, de manera que les dents engranen i giren sense encallar-se. Marqueu una dent de cadascun. Amb el Hub apagat, gireu el menut una volta i observeu el gran: el menut ha de fer tres voltes perquè el gran en faça una. Els engranatges giren en sentits oposats. Aquesta prova es fa a mà i no exigeix que estiguen acoblats a la base mòbil.
+Amb el programa aturat, connecteu el motor al port A i el sensor de color al C. Deixeu el sensor sobre la taula amb la finestra de lectura descoberta. Obriu la informació del Hub en SPIKE App i acosteu successivament les targetes blanca i vermella a la finestra, sense tocar-la. Busqueu una posició que done lectures estables i manteniu-la durant les proves.
 
-### 2. Connecteu els motors i el sensor
+### 2. Programeu la condició de parada
 
-Connecteu el motor esquerre al port B, el dret al D i el sensor de color al C. Fixeu el sensor al davant, mirant cap a terra i prou prop per llegir la targeta sense tocar-la. En SPIKE App, seleccioneu B i D com a motors de la base.
-
-### 3. Condició de parada
-
-Programeu la base perquè avance a velocitat baixa i s’ature quan el sensor C detecte el color roig. En SPIKE App, seleccioneu els motors B i D abans d’afegir la condició:
+Prepareu aquesta seqüència amb els blocs equivalents de la vostra versió de SPIKE App:
 
 ```spikeapp
 quan comença el programa
-activa els motors [B v] i [D v] a velocitat baixa
+activa el motor [A v] a velocitat baixa
 espera fins que el sensor de color [C v] detecte [vermell v]
-atura els motors [B v] i [D v]
+atura el motor [A v]
 ```
 
-Aquest dibuix resumeix les ordres: selecciona els blocs equivalents de SPIKE App. Posa el robot darrere de la targeta roja i prem iniciar. La parada pot quedar un poc més enllà de la línia perquè el robot continua avançant mentre la detecta.
+Comenceu amb la targeta blanca davant del sensor. Executeu el programa i substituïu-la per la vermella sense acostar les mans al motor. Observeu si l’eix deixa de girar. Manteniu accessible el botó d’aturada i pareu manualment si no es detecta el color.
 
-> **💡 Consell docent per a la sessió:** Abans de provar, demaneu: «Quantes voltes farà l’engranatge menut mentre el gran en fa una?» Després, comproveu-ho amb el Hub apagat.
+### 3. Canvieu una condició
+
+Repetiu tres vegades a la mateixa distància. Després canvieu només la distància de la targeta o la il·luminació i compareu les lectures. Atureu el programa abans de recol·locar el motor o el sensor.
 
 ## 🧪 Prova, depura i reflexiona
 
-Prova primer el sensor quiet sobre una targeta blanca i una roja, a la mateixa altura. Després executa el vehicle tres vegades des del mateix punt i observa on s'atura. Si no detecta la línia, comprova el port C, l'altura del sensor i la il·luminació abans de repetir.
+Anoteu el color mostrat per l’app i si el motor s’ha aturat en cada intent. Si falla, reviseu els ports, la llum i la posició de la targeta, una cosa cada vegada.
 
 ### Preguntes per comprovar
 
-- Quins colors s'han detectat en les mateixes condicions?
-- Què passa quan canviem llum o distància?
-- Quina lectura ha activat el canvi de moviment i quina variable heu mantingut constant?
+- Quina lectura activa la parada?
+- Què passa si la targeta vermella ja és davant del sensor en començar?
+- Quin canvi ha fet més estable la detecció?
 
 ## ♿ Accessibilitat i seguretat
 
-Comenceu amb una velocitat baixa, una targeta roja ampla i un trajecte curt. Una persona pot observar el sensor i una altra marcar el punt on s’atura. Manteniu mans i cables lluny de les rodes i atureu el Hub abans de canviar la targeta o l’orientació del sensor.
+Oferiu targetes grans amb el nom del color escrit. Repartiu els rols de programació, presentació de targetes i registre. Manteniu mans, cabells, roba i cables lluny de l’eix; no el freneu amb els dits.
 
 ## ✅ Evidències d’aprenentatge
-- Muntatge amb engranatges i ports anotats.
-- Programa de parada i registre del punt d’aturada en tres intents.
-- Explicació senzilla de la relació entre les voltes dels dos engranatges observats.
+
+- Programa i esquema dels ports.
+- Registre de tres proves i explicació de la condició de parada.
 
 ## 🔗 Fonts oficials i límits
 

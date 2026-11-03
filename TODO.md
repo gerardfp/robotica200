@@ -9,7 +9,7 @@
 
 - [x] Les pàgines guia estan a _content/guies/ (les no usades de _content/pages s'han esborrat).
 
-- [ ] ¿Les pàgines se descopronen quan se mostra un svg de blocks?
+- [ ] ¿Les pàgines se descopronen quan se mostra un svg de blocks !makecode! ?
 
 - [ ] Les temàtiques i les matèries de les situacions s'han de redefinir correctament 
 
@@ -20,6 +20,10 @@
 - [ ] Convertir totes les imatges a webp ¿?¿?¿?¿?
 
 - [ ] En les tarjetes de tutorials , ¿fa falta la icona del robot? (en tots cas, llevar les isometriques antigues)
+
+- [ ] La part de recrsos oficials del frabricant es horrible
+
+- [ ] I les etiquetes de característiques dels robots pitjor encara (sobren)
 
 - [ ] Coses xungues en el contingut
     - tutorials/tb-motors-sensors.md (crec que no parla de sensors, només de motors i dibuix)
