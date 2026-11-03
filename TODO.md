@@ -16,6 +16,8 @@
 
 - [ ] El site-footer no sap fer-lo el Gemini 3.8 Flash, y els robots han dixat de moure's
 
+- [ ] Convertir totes les imatges a webp ¿?¿?¿?¿?
+
 - [ ] Coses xungues en el contingut
     - tutorials/tb-motors-sensors.md (crec que no parla de sensors, només de motors i dibuix)
     - n'hi han molts que no coincideixen els titols de la pàgina amb el nom del fitxer (p. ex. tutorial-tb-reconeixement-veu.md té com a títol "Gravació i reproducció de veu"). S'han de canviar també els noms de les imatges asociades.
