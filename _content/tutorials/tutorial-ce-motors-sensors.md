@@ -52,6 +52,8 @@ Per exemple, feu aquesta prova amb **un maó cada vegada**:
 
 Si una resposta és diferent de la prevista, anoteu-la i comproveu la posició del maó abans de repetir.
 
+![El tren Coding Express de la dotació passa per maons d’acció de colors en una via de prova preparada per observar sons, llums i aturades.](../../_assets/tutorials/ce-motors-sensors.png)
+
 ### 3. Investigueu el maó blanc
 
 Observeu primer si la llum del tren està encesa. Col·loqueu el maó blanc i registreu si la llum canvia d’estat. Repetiu-lo una vegada més i compteu quantes vegades passa el tren pel maó. Aquesta prova ajuda a descobrir si la resposta alterna en cada pas.
@@ -59,8 +61,6 @@ Observeu primer si la llum del tren està encesa. Col·loqueu el maó blanc i re
 ### 4. Exploreu el maó verd amb una ruta
 
 Si el vostre kit inclou el maó verd, dissenyeu un recorregut amb estació i punt de retorn. Feu una predicció, proveu el maó i observeu com afecta el trajecte. Canvieu la posició del maó només després d’aturar el tren. Registreu la resposta sense afirmar que sempre inverteix el motor: la guia oficial el presenta com una ajuda per tornar i el comportament observat depén de la disposició de la via.
-
-![El tren Coding Express de la dotació passa per maons d’acció de colors en una via de prova preparada per observar sons, llums i aturades.](../../_assets/tutorials/ce-motors-sensors.png)
 
 ## 🧪 Prova, depura i reflexiona
 

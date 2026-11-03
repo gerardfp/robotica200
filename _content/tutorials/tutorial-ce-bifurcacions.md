@@ -40,6 +40,8 @@ Munteu la bifurcació sobre una superfície plana i feu una prova amb el tren at
 
 Construïu un destí a cada extrem de la Y, per exemple una biblioteca i un hort. Assigneu a cada un una targeta clara i dibuixeu l’esquema de la via. Amb el tren apagat o aturat, orienteu l’agulla cap a una branca i comproveu que les peces queden alineades; repetiu-ho amb l’altra. Anoteu quina posició correspon a cada destí i canvieu l’agulla abans que el tren arribe a la bifurcació.
 
+![El tren Coding Express passa per una bifurcació en Y.](../../_assets/tutorials/ce-bifurcacions.png)
+
 ### 2. Envieu la passatgera al destí
 
 Traieu una targeta de destí. Abans de posar en marxa el tren, orienteu l’agulla cap al destí indicat i digueu la regla en veu alta: «Biblioteca: agulla cap a la biblioteca». Feu passar el tren i anoteu si ha seguit la branca prevista. Atureu-lo abans de moure l’agulla per fer la prova amb l’altra targeta.

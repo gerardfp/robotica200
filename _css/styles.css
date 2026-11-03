@@ -3110,7 +3110,6 @@ robot-profile[robot="microbit"] .robot-detail-section,
   max-width: 600px;
   max-height: 448px;
   height: auto;
-  aspect-ratio: 600 / 448;
   object-fit: cover;
   margin-inline: auto;
 }
@@ -3431,7 +3430,7 @@ robot-profile[robot="microbit"] .robot-detail-section,
   outline-offset: 2px;
 }
 .prose .learning-step .sa-illustration { max-width: 600px; margin: 1.25rem auto; }
-.prose .learning-step .sa-illustration img { display: block; width: 100%; max-width: 600px; max-height: 448px; aspect-ratio: 600 / 448; height: auto; margin-inline: auto; border-radius: var(--radius-md); object-fit: cover; }
+.prose .learning-step .sa-illustration img { display: block; width: 100%; max-width: 600px; max-height: 448px; height: auto; margin-inline: auto; border-radius: var(--radius-md); object-fit: cover; }
 .situation-page-card .prose img { max-width: 600px; max-height: 448px; height: auto; }
 @media (max-width: 640px) {
   .learning-wizard-topbar { flex-direction: column; align-items: stretch; gap: 0.5rem; }

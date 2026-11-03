@@ -37,6 +37,9 @@ Trieu una frase curta, per exemple «Hola, sóc el conill!». Manteniu premut el
 
 Manteniu X més d’un segon per esborrar les ordres anteriors i comproveu que els indicadors s’apaguen. Després premeu **Endavant → gravació breument → Dreta → Endavant → Play**. La pulsació breu del botó de gravació afegeix el missatge a la seqüència; mantindre’l premut inicia una gravació nova.
 
+![El Tale-Bot reproduint un missatge de veu.](../../_assets/tutorials/tb-reconeixement-veu.png)
+
+
 > **💡 Consell docent:** Si una criatura prefereix no gravar la seua veu, pot triar la frase o ordenar les targetes mentre una persona adulta fa la gravació.
 
 ## 🧪 Prova, depura i reflexiona

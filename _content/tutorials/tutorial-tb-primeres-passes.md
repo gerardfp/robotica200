@@ -43,6 +43,9 @@ Marqueu l’inici i orienteu el robot cap endavant. Premeu:
 
 Observeu on s’atura i mesureu la distància recorreguda. Comproveu la mida del pas del vostre robot; no suposeu que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.
 
+![El Tale-Bot programat amb dos avanços.](../../_assets/tutorials/tb-primeres-passes.png)
+
+
 > **💡 Consell docent per a la sessió:** Mostreu que Tale-Bot gira sobre si mateix: el gir canvia la direcció, però no l’avança cap a una altra casella.
 
 ## 🧪 Prova, depura i reflexiona

@@ -34,6 +34,8 @@ Dibuixeu una forma amb Tale-Bot i observeu com les ordres direccionals es transf
 
 Marqueu un punt inicial i orienteu el robot paral·lel a una vora del paper. Esborreu el programa anterior mantenint X més d’un segon. Premeu **Endavant → Dreta** quatre vegades i després **Play**. Cada avanç dibuixa un costat i cada gir canvia l’orientació; el gir no dibuixa un costat. Observeu si el traç s’assembla a un quadrat i acaba prop del punt inicial.
 
+![El Tale-Bot dibuixant un quadrat.](../../_assets/tutorials/tb-motors-sensors.png)
+
 ### 2. Creeu un patró rectangular
 
 Esborreu la seqüència. Per allargar un costat, introduïu **Endavant → Endavant → Dreta** en lloc d’**Endavant → Dreta**. Completeu els altres tres costats amb **Endavant → Dreta**. Abans de prémer Play, dibuixeu la forma prevista i comproveu que els quatre girs tanquen el recorregut. Useu un full nou per distingir els intents.

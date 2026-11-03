@@ -5,7 +5,7 @@ robot: coding-express
 level: Iniciació
 duration: 40 min
 order: 4
-image: _assets/tutorials/ce-bucles.webp
+image: _assets/tutorials/ce-bucles.png
 ---
 
 ## 🎯 Repte i objectius
@@ -37,6 +37,8 @@ Comproveu que el tren, les vies i les peces d’acció del kit funcionen. Coding
 ### 1. Planifiqueu i munteu el circuit
 
 Trieu dues o tres estacions i ordeneu-les amb targetes. Assenyaleu l’inici i dibuixeu una fletxa que mostre cap a on circularà el tren. Predigueu per quina estació passarà primer, segon i tercer. Després dibuixeu i munteu una via tancada que passe per les estacions i torne a l’inici. Comproveu les unions i marqueu el punt de partida amb una targeta.
+
+![El tren Coding Express passa per una via tancada.](../../_assets/tutorials/ce-bucles.png)
 
 ### 2. Predigueu i proveu les voltes
 

@@ -5,7 +5,7 @@ robot: coding-express
 level: Intermedi
 duration: 50 min
 order: 5
-image: _assets/tutorials/ce-app-musica-distancia.webp
+image: _assets/tutorials/ce-app-musica-distancia.png
 ---
 
 ## 🎯 Repte i objectius
@@ -46,13 +46,12 @@ Si la versió de l’app és compatible, connecteu-hi el tren segons les instruc
 
 Poseu un maó groc i un de blau en una via recta. Feu passar el tren i anoteu quin so sona primer. Atureu-lo, intercanvieu els maons i repetiu des del mateix punt. Compareu l’ordre dels dos sons. Si la vostra app permet canviar-ne les respostes, feu-ho després i repetiu la prova per comprovar què ha canviat.
 
+![El tren Coding Express recorre una via amb maons d’acció de colors.](../../_assets/tutorials/ce-app-musica-distancia.png)
+
 ### 4. Resoleu una ruta amb senyals
 
 Afegiu un senyal de paper a cada parada i acordeu què representa: aturar-se, continuar o tornar. Feu passar el tren i compteu les peces de via entre estacions; compareu-les amb les mesures en centímetres. Els senyals de paper són indicacions per a les persones: el tren no els llig. Atureu el tren abans de canviar la via o els maons.
 
-![El tren Coding Express real de la dotació recorre una via amb maons d’acció de colors i estacions mentre una tauleta mostra opcions visuals abstractes de l’app.](../../_assets/tutorials/ce-app-musica-distancia.webp)
-
-_L’app pot variar o no estar disponible; els pictogrames de la pantalla són només una representació visual, no instruccions literals de programació._
 
 ## 🧪 Prova, depura i reflexiona
 
