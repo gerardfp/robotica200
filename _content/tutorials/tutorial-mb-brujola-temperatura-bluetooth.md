@@ -68,7 +68,7 @@ Si teniu una tauleta compatible amb l’app oficial de micro:bit, seguiu la [gui
 
 Compareu-ho amb la [guia de ràdio](../../tutorial/mb-radio-mesh/index.html), que envia números entre dues plaques. Per intercanviar dades amb un dispositiu Bluetooth des d’un programa cal una extensió i una aplicació compatibles; afegir l’extensió Bluetooth elimina els blocs de ràdio del mateix projecte. Guardeu cada prova en un projecte separat.
 
-![Il·lustració d’una placa, una brúixola, un termòmetre i un telèfon.](../../_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp)
+![Il·lustració d’una placa, una brúixola, un termòmetre i un telèfon.](../../_assets/tutorials/mb-brujola-temperatura-bluetooth-flat.png)
 
 _Il·lustració decorativa: els instruments són de comparació i la imatge no mostra el material de l’aula ni una connexió real._
 

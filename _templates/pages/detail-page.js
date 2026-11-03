@@ -1,6 +1,6 @@
 'use strict';
 
-const { escapeHTML } = require('../layout/utils');
+const { escapeHTML, escapeAttr } = require('../layout/utils');
 const { Document } = require('../layout/document');
 const { NavBack } = require('../layout/nav-back');
 const { BadgeList } = require('../components/badge-list');
@@ -13,6 +13,7 @@ function DetailPage({
   backHref = '../../index.html',
   backLabel = 'Inici',
   badges = [],
+  printHref = '',
   content = ''
 } = {}) {
   return Document({
@@ -27,6 +28,7 @@ function DetailPage({
         <h1 class="detail-page-title" data-title>${escapeHTML(title)}</h1>
         ${description ? `<p class="detail-intro" data-description>${escapeHTML(description)}</p>` : ''}
       </div>
+      ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descarrega la versió imprimible (PDF)</a></p>` : ''}
       <div class="prose" data-content>${content}</div>
     </article>`
   });

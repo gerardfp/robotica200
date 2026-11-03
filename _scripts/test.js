@@ -19,7 +19,7 @@ function runStep(label, cmd, args) {
   process.stdout.write(`▶ ${label}... `);
   const start = Date.now();
   try {
-    const out = execFileSync(cmd, args, { cwd: ROOT_DIR, encoding: 'utf8' });
+    const out = execFileSync(cmd, args, { cwd: ROOT_DIR, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
     const elapsed = Date.now() - start;
     console.log(`✓ (${elapsed} ms)`);
     if (out && out.trim()) {

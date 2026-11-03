@@ -11,6 +11,7 @@
 
 const fs = require('node:fs');
 const path = require('node:path');
+const { spawnSync } = require('node:child_process');
 const renderer = require('./lib/markdown');
 const { buildAllBlocks } = require('./lib/blocks');
 const { warmMakeCodeCache } = require('./lib/makecode-cache');
@@ -23,6 +24,8 @@ const { DetailPage } = require('../_templates/pages/detail-page');
 const { RobotPage } = require('../_templates/pages/robot-page');
 const { SituationPage } = require('../_templates/pages/situation-page');
 const { RedirectPage } = require('../_templates/pages/redirect-page');
+const { Document } = require('../_templates/layout/document');
+const { escapeHTML, escapeAttr } = require('../_templates/layout/utils');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
@@ -106,6 +109,7 @@ function buildActivities() {
       root: '../../',
       backHref: '../../pensament-computacional/index.html',
       backLabel: 'Pensament computacional',
+      printHref: `../../imprimir/activitats/${slug}.pdf`,
       badges,
       content: rendered.html
     }));
@@ -186,6 +190,7 @@ function buildTutorials() {
       root: '../../',
       backHref: `../../robot/${robot}/index.html`,
       backLabel: robotLabel || robot || 'robots',
+      printHref: `../../imprimir/tutorials/${slug}.pdf`,
       badges,
       content: rendered.html
     }));
@@ -308,6 +313,7 @@ function buildRobots(tutorials) {
 
     writeHTML(`robot/${slug}/index.html`, RobotPage({
       robotSlug: slug,
+      printHref: `../../imprimir/robots/${slug}.pdf`,
       title: nom,
       description: descripcio,
       root: '../../',
@@ -374,6 +380,7 @@ function buildGuides() {
       root: '../../',
       backHref,
       backLabel,
+      printHref: `../../imprimir/guies/${slug}.pdf`,
       badges: [{ text: data.tag || 'Guia docent', primary: true }],
       content: rendered.html
     }));
@@ -453,6 +460,7 @@ function buildSituations() {
       root: '../../',
       backHref: `../../situacions-aprenentatge/index.html#situacio-sa-${slug}`,
       backLabel: "Situacions d'Aprenentatge",
+      printHref: `../../imprimir/situacions/${slug}.pdf`,
       badges,
       themeLabel: tematicaLabel,
       challenge: repte,
@@ -488,6 +496,43 @@ function buildSituations() {
   }));
 
   return situations;
+}
+
+function buildPrintables() {
+  const cacheDir = process.env.ROBOTICA_PDF_CACHE || path.join(ROOT_DIR, '.cache/print-pdfs');
+  const result = spawnSync('python3', [path.join(__dirname, 'md_to_typst.py'), '--output', DIST_DIR, '--cache-dir', cacheDir], {
+    cwd: ROOT_DIR,
+    encoding: 'utf8',
+    maxBuffer: 8 * 1024 * 1024
+  });
+  if (result.status !== 0) {
+    throw new Error((result.stderr || result.stdout || 'No s’han pogut generar els materials imprimibles.').trim());
+  }
+  const payload = JSON.parse(result.stdout);
+  console.log(`  - PDF: ${payload.stats.reused} reutilitzats, ${payload.stats.generated} regenerats; recull global ${payload.stats.globalCached ? 'reutilitzat' : 'regenerat'}`);
+  const groups = new Map();
+  for (const item of payload.items) {
+    if (!groups.has(item.category)) groups.set(item.category, { label: item.categoryLabel, items: [] });
+    groups.get(item.category).items.push(item);
+  }
+  const groupHTML = Array.from(groups.values()).map(group => `
+    <section class="printable-group">
+      <h2>${escapeHTML(group.label)}</h2>
+      <ul>${group.items.map(item => `<li><span>${escapeHTML(item.title)}</span><a href="../${escapeAttr(item.pdf)}" download>Descarrega el PDF</a></li>`).join('')}</ul>
+    </section>`).join('\n');
+  writeHTML('imprimir/index.html', Document({
+    title: 'Materials imprimibles | Robòtica²⁰⁰',
+    description: 'Descarrega activitats, tutorials, guies i situacions d’aprenentatge en PDF.',
+    activeNav: 'imprimir',
+    root: '../',
+    body: `<article class="detail-page-card printables-page">
+      <div class="detail-page-header"><h1 class="detail-page-title">Materials imprimibles</h1>
+      <p class="detail-intro">Versions preparades per imprimir, generades directament des dels continguts Markdown.</p>
+      <p class="printables-all"><a class="btn-primary" href="../imprimir/robotica200-complet.pdf" download>Descarrega el recull complet (PDF)</a></p></div>
+      ${groupHTML}
+    </article>`
+  }));
+  return payload.items;
 }
 
 function scanMakeCodeSnippets() {
@@ -527,6 +572,7 @@ async function main() {
   const robots = buildRobots(tutorials);
   const guidesCount = buildGuides();
   const situacions = buildSituations();
+  const printables = buildPrintables();
 
   const robotOptions = [
     ['coding-express', 'Coding Express'],
@@ -563,6 +609,7 @@ async function main() {
   console.log(`  - ${robots.length} robots (/robot/<slug>/index.html)`);
   console.log(`  - ${guidesCount} guies docents (/guia/<slug>/index.html)`);
   console.log(`  - ${situacions.length} situacions d'aprenentatge (/situacio/<slug>/index.html)`);
+  console.log(`  - ${printables.length} documents imprimibles i recull global (/imprimir/)`);
   console.log(`  - ${blocks.length} diagrames de blocs SVG (_assets/blocks/*.svg)`);
 }
 
