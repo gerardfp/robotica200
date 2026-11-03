@@ -8,14 +8,27 @@ Portal educatiu obert de robòtica educativa, pensament computacional i situacio
 
 Els 6 robots oficials del projecte i els seus identificadors únics (slugs) normalitzats a tot el repositori:
 
-| Robot | Slug Oficial | Prefix Tutorials | Ruta Fitxa | Rutes de Tutorials |
-| :--- | :--- | :--- | :--- | :--- |
-| **Coding Express** | `coding-express` | `ce-` | `robot/coding-express/index.html` | `tutorial/ce-*/index.html` |
-| **Tale-Bot** | `tale-bot` | `tb-` | `robot/tale-bot/index.html` | `tutorial/tb-*/index.html` |
-| **Coding Set** | `coding-set` | `cs-` | `robot/coding-set/index.html` | `tutorial/cs-*/index.html` |
-| **Codey Rocky** | `codey-rocky` | `cr-` | `robot/codey-rocky/index.html` | `tutorial/cr-*/index.html` |
-| **Spike** | `spike` | `sp-` | `robot/spike/index.html` | `tutorial/sp-*/index.html` |
-| **Micro:bit** | `microbit` | `mb-` | `robot/microbit/index.html` | `tutorial/mb-*/index.html` |
+| Robot | Slug Oficial | Color Primari | Color Secundari | Fons Subtil (Hero / Targetes) | Prefix | Ruta Fitxa | Rutes de Tutorials |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Coding Express** | `coding-express` | Roig / Rojo (`#e4242b`) | Groc / Amarillo (`#fec002`) | `#fef2f2` | `ce-` | `robot/coding-express/index.html` | `tutorial/ce-*/index.html` |
+| **Tale-Bot** | `tale-bot` | Taronja / Naranja (`#ea580c`) | Lila (`#804cbd`) | `#fff7ed` | `tb-` | `robot/tale-bot/index.html` | `tutorial/tb-*/index.html` |
+| **Coding Set** | `coding-set` | Verd / Verde (`#16a34a`) | Taronja / Naranja (`#fc7813`) | `#f0fdf4` | `cs-` | `robot/coding-set/index.html` | `tutorial/cs-*/index.html` |
+| **Codey Rocky** | `codey-rocky` | Blau / Azul (`#0079dc`) | Gris (`#64748b`) | `#eff6ff` | `cr-` | `robot/codey-rocky/index.html` | `tutorial/cr-*/index.html` |
+| **Spike** | `spike` | Groc / Amarillo (`#ca8a04`) | Blau / Azul (`#0284c7`) | `#fefce8` | `sp-` | `robot/spike/index.html` | `tutorial/sp-*/index.html` |
+| **Micro:bit** | `microbit` | Rosa (`#db2777`) | Groc / Amarillo (`#facc15`) | `#fdf2f8` | `mb-` | `robot/microbit/index.html` | `tutorial/mb-*/index.html` |
+
+---
+
+## 🎨 Paleta Oficial de Colors per Robot
+
+Cadascun dels 6 robots disposa d'una parella oficial de colors identificatius (primari i secundari) per a les targetes, punts d'accent (`.dot-1`, `.dot-2`) i fons subtil (`--robot-hero-bg`) utilitzat a les capçaleres `robot-hero`, blocs destacats i targetes de situacions d'aprenentatge:
+
+- **Coding Express:** Primari: Roig / Rojo (`#e4242b`) · Secundari: Groc / Amarillo (`#fec002`) · Fons subtil: `#fef2f2`
+- **Tale-Bot:** Primari: Taronja / Naranja (`#ea580c`) · Secundari: Lila (`#804cbd`) · Fons subtil: `#fff7ed`
+- **Coding Set:** Primari: Verd / Verde (`#16a34a`) · Secundari: Taronja / Naranja (`#fc7813`) · Fons subtil: `#f0fdf4`
+- **Codey Rocky:** Primari: Blau / Azul (`#0079dc`) · Secundari: Gris (`#64748b`) · Fons subtil: `#eff6ff`
+- **Spike:** Primari: Groc / Amarillo (`#ca8a04`) · Secundari: Blau / Azul (`#0284c7`) · Fons subtil: `#fefce8`
+- **Micro:bit:** Primari: Rosa (`#db2777`) · Secundari: Groc / Amarillo (`#facc15`) · Fons subtil: `#fdf2f8`
 
 ---
 

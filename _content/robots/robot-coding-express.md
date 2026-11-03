@@ -2,7 +2,8 @@
 title: Coding Express
 description: El tren interactiu dels colors i el pensament computacional primerenc
 icon: 🚂
-age: Educació Infantil (2-5 anys)
+cicle: Infantil
+age: Infantil
 order: 1
 specs:
 - ✓ Sensor de color inferior

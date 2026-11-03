@@ -2,7 +2,8 @@
 title: Spike
 description: Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education
 icon: ⚙️
-age: Tercer cicle (10-12 anys)
+cicle: Segon cicle
+age: Segon cicle
 order: 5
 specs:
 - ✓ Smart Hub amb giroscopi de 6 eixos

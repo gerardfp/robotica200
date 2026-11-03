@@ -230,7 +230,8 @@ function buildRobots(tutorials) {
       slug: 'coding-express',
       prefix: 'ce',
       nom: 'Coding Express',
-      edat: '2-5 anys',
+      cicle: 'Infantil',
+      edat: 'Infantil',
       descripcio: 'El tren interactiu dels colors i el pensament computacional primerenc.',
       colors: ['#e4242b', '#fec002'],
       order: 1
@@ -240,9 +241,10 @@ function buildRobots(tutorials) {
       slug: 'tale-bot',
       prefix: 'tb',
       nom: 'Tale-Bot',
-      edat: '3-7 anys',
+      cicle: 'Infantil i primer cicle',
+      edat: 'Infantil i primer cicle',
       descripcio: 'El robot narrador que parla, llegeix mapes interactius i dibuixa.',
-      colors: ['#fc8439', '#804cbd'],
+      colors: ['#ea580c', '#804cbd'],
       order: 2
     },
     {
@@ -250,9 +252,10 @@ function buildRobots(tutorials) {
       slug: 'coding-set',
       prefix: 'cs',
       nom: 'Coding Set',
-      edat: '4-9 anys',
+      cicle: 'Infantil i primer cicle',
+      edat: 'Infantil i primer cicle',
       descripcio: 'Programació tangible sense pantalles amb Matatalab.',
-      colors: ['#fc7813', '#60a62d'],
+      colors: ['#16a34a', '#fc7813'],
       order: 3
     },
     {
@@ -260,9 +263,10 @@ function buildRobots(tutorials) {
       slug: 'codey-rocky',
       prefix: 'cr',
       nom: 'Codey Rocky',
-      edat: '6-12 anys',
+      cicle: 'Primer i segon cicle',
+      edat: 'Primer i segon cicle',
       descripcio: 'El robot amb pantalla LED 16 × 8, sensors i moviment amb orugues.',
-      colors: ['#0079dc', '#fdc80a'],
+      colors: ['#0079dc', '#64748b'],
       order: 4
     },
     {
@@ -270,9 +274,10 @@ function buildRobots(tutorials) {
       slug: 'spike',
       prefix: 'sp',
       nom: 'Spike',
-      edat: '10-16 anys',
+      cicle: 'Segon cicle',
+      edat: 'Segon cicle',
       descripcio: "Mecatrònica, engranatges i sensors d'alta precisió de LEGO Education.",
-      colors: ['#d82098', '#fddc3e'],
+      colors: ['#ca8a04', '#0284c7'],
       order: 5
     },
     {
@@ -280,9 +285,10 @@ function buildRobots(tutorials) {
       slug: 'microbit',
       prefix: 'mb',
       nom: 'Micro:bit',
-      edat: '9-18 anys',
+      cicle: 'Segon i tercer cicle',
+      edat: 'Segon i tercer cicle',
       descripcio: 'La placa microcontroladora per a projectes oberts i ciutadans.',
-      colors: ['#047fdf', '#4a515d'],
+      colors: ['#db2777', '#facc15'],
       order: 6
     }
   ];
@@ -297,7 +303,7 @@ function buildRobots(tutorials) {
     const robotTutorials = tutorials.filter(t => t.robot === slug);
 
     const nom = data.title || r.nom;
-    const edat = data.age || r.edat;
+    const cicle = data.cicle || data.age || r.cicle || r.edat;
     const descripcio = data.description || r.descripcio;
 
     writeHTML(`robot/${slug}/index.html`, RobotPage({
@@ -319,7 +325,8 @@ function buildRobots(tutorials) {
     robots.push({
       ...r,
       nom,
-      edat,
+      cicle,
+      edat: cicle,
       descripcio,
       url: `robot/${slug}/index.html`,
       tutorials: robotTutorials.length

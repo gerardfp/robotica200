@@ -2,7 +2,8 @@
 title: Coding Set
 description: Programació tangible sense pantalles amb Matatalab
 icon: 🧩
-age: Educació Infantil i primària (4-9 anys)
+cicle: Infantil i primer cicle
+age: Infantil i primer cicle
 order: 3
 specs:
 - ✓ Torre de reconeixement visual
