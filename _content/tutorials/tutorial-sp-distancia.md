@@ -23,6 +23,7 @@ Estima quant avançarà la base motriu i compara el resultat amb la distància r
 - Peces Technic per muntar una base motriu estable.
 - Un bloc LEGO vertical com a obstacle i cinta de paper per marcar la sortida.
 - Regle o cinta mètrica.
+- Ordinador o tauleta amb SPIKE App i cable USB o connexió Bluetooth compatible.
 
 ## 🧩 Funcions del robot treballades
 
@@ -33,7 +34,7 @@ Estima quant avançarà la base motriu i compara el resultat amb la distància r
 
 ### 1. Prepareu la base i estimeu el desplaçament
 
-Construïu una base que avance recta amb dos motors. Anoteu-ne els ports i marqueu la posició inicial del davant de la base. Deixeu el camí lliure en la primera prova; col·locareu el bloc després d’haver comprovat quant avança el robot.
+Construïu una base que avance recta amb dos motors. Podeu seguir el model de la lliçó [Going the Distance](https://education.lego.com/en-us/lessons/prime-extra-resources/going-the-distance/) i les instruccions de construcció de SPIKE App. Anoteu-ne els ports i marqueu la posició inicial del davant de la base. Deixeu el camí lliure en la primera prova; col·locareu el bloc després d’haver comprovat quant avança el robot.
 
 Mesureu el diàmetre de la roda. Per a una primera estimació, multipliqueu-lo per 3: així aproximareu la distància d’una volta completa. Trieu quantes voltes voleu provar i anoteu el desplaçament previst. En SPIKE App, busqueu el bloc de moviment per voltes o graus.
 
@@ -51,7 +52,7 @@ L’esquema mostra l’ordre dels blocs; busqueu-ne els equivalents en SPIKE App
 
 > **💡 Repte d’equip:** aconseguiu quedar-vos tan a prop com pugueu sense tocar el bloc. Quan funcione a un metre, canvieu la distància d’eixida i reutilitzeu les dades per fer una nova predicció.
 
-### 3. Compareu amb una parada per contacte
+### 3. Ampliació opcional: compareu amb una parada per contacte
 
 Si el muntatge incorpora un sensor de força al davant, afegiu-lo com a topall tou contra una paret feta amb blocs. Programeu el moviment perquè s’ature quan el sensor detecte el contacte. Feu aquesta comparació a velocitat baixa i amb un obstacle estable; el sensor de força no és un sensor de distància i aquesta segona prova sí que acaba en contacte.
 
@@ -62,8 +63,8 @@ Repetiu tres vegades des de la mateixa marca i compareu la distància amb la pre
 ### Preguntes per comprovar
 
 - Quantes voltes havíeu previst i quantes n’han calgut després de provar?
-- Què ha canviat quan heu modificat la velocitat?
-- En quin cas el robot s’atura abans del contacte i en quin cas espera a tocar?
+- Si heu modificat la velocitat, què ha canviat?
+- Si heu fet la prova opcional, en quin cas el robot s’atura abans del contacte i en quin cas espera a tocar?
 
 
 ## ♿ Accessibilitat i seguretat
@@ -71,7 +72,7 @@ Repetiu tres vegades des de la mateixa marca i compareu la distància amb la pre
 Per començar, faciliteu una taula de conversions roda-voltes-distància o trieu una distància que corresponga a voltes completes. Com a ampliació, compareu rodes de diàmetres diferents o representeu les proves en un gràfic. Repartiu els rols de conducció, mesura i registre.
 
 ## ✅ Evidències d’aprenentatge
-- Recolliu una taula amb les prediccions i resultats, una explicació de l’ajust triat i una demostració de cada tipus de parada. Eviteu fotografiar cares o dades personals.
+- Recolliu una taula amb les prediccions i resultats i una explicació de l’ajust triat. Si heu fet la prova opcional, afegiu-hi la comparació amb la parada per contacte.
 
 ## 🔗 Fonts oficials i límits
 

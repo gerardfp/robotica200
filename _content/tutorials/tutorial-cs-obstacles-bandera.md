@@ -47,9 +47,9 @@ Seguiu amb el dit aquesta ruta sobre la graella abans de col·locar les peces. U
 
 El recorregut passa pel costat de la targeta i torna a la columna de la bandera. Abans d'usar el robot, seguiu les fletxes amb el dit i comproveu que hi ha prou espai a la graella.
 
-![Kit Matatalab Coding Set real amb el MatataBot, la torre, fitxes de moviment, obstacles i una bandera en una ruta sobre el tauler.](../../_assets/tutorials/cs-obstacles-bandera.png)
+![Il·lustració d’un robot, una torre, peces de colors i una bandera.](../../_assets/tutorials/cs-obstacles-bandera.png)
 
-_La il·lustració representa el kit Coding Set de la dotació. Les peces d’obstacle i la bandera delimiten la ruta; no són sensors ni ordres programables._
+_Il·lustració decorativa: no representa el muntatge de la ruta ni el kit real. Les barreres i la bandera de la pràctica no són sensors ni ordres programables._
 
 ### 2. Traduïu el pla a fitxes físiques
 
@@ -71,7 +71,7 @@ Feu la ruta i anoteu si arriba a la bandera. Repetiu-la des de la mateixa posici
 
 - Quines caselles representen restriccions i quina representa la destinació?
 - En quin moment un gir canvia l’orientació sense canviar de casella?
-- Quin error concret heu trobat i quina única fitxa heu modificat?
+- Si heu necessitat corregir la ruta, quina ha sigut la primera diferència i quina fitxa heu modificat?
 - El MatataBot ha detectat l’obstacle o l’hem evitat perquè nosaltres hem planificat la ruta?
 - Podeu arribar a la mateixa bandera amb una seqüència diferent?
 

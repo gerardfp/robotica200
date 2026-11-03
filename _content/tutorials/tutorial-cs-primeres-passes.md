@@ -19,7 +19,7 @@ Prepareu una ruta de tres ordres i comproveu com la torre la llig i l’envia al
 ## 🧰 Materials i preparació
 
 - Torre i tauler del Coding Set, amb superfície clara i plana.
-- MatataBot carregat i tres fitxes de moviment: Endavant, Dreta i Enrere.
+- MatataBot carregat, dues fitxes Endavant, una Dreta i una Enrere.
 - Mapa de quadrícula per a marcar el punt inicial i predir el final.
 
 ## 🧩 Funcions del robot treballades
@@ -31,7 +31,7 @@ Prepareu una ruta de tres ordres i comproveu com la torre la llig i l’envia al
 
 ### 1. Engegueu el sistema i prepareu la seqüència
 
-Enceneu la torre i el MatataBot i espereu que es connecten. Comproveu els indicadors del vostre model o seguiu el manual del conjunt. Si no es connecten, apagueu-los i torneu a engegar-los abans de continuar.
+Enceneu la torre de control i el MatataBot i espereu que es connecten. Comproveu els indicadors del vostre model o seguiu el manual del conjunt. Si no es connecten, apagueu-los i torneu a engegar-los abans de continuar.
 
 Poseu tres fitxes a la primera fila, d’esquerra a dreta: **Endavant → Dreta → Endavant**. Col·loqueu el robot sobre el mapa, mirant cap a una zona lliure. Assenyaleu la casella on penseu que acabarà; el gir canvia cap a on mira el robot, però no l’avança.
 

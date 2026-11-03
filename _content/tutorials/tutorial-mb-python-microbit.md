@@ -60,9 +60,9 @@ while True:
 
 Executeu primer el codi al simulador. Canvieu una icona i torneu a provar A i B. Després elimineu temporalment els espais d’una línia interior per veure com el ressaltat o el missatge d’error ajuda a localitzar la indentació incorrecta; desfeu el canvi i comproveu que el programa torna a executar-se. No descarregueu la versió amb error a la placa.
 
-![Placa BBC micro:bit real de la dotació al costat d’un editor Python amb codi abstracte i ressaltat visual de l’estructura.](../../_assets/tutorials/mb-python-editor.webp)
+![Il·lustració d’una placa i un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/mb-python-editor.webp)
 
-_La placa de la imatge representa la micro:bit de la dotació. La interfície és esquemàtica; l’editor real mostra el text i els avisos de la versió instal·lada._
+_Il·lustració decorativa: no mostra la placa de l’aula ni la interfície real de l’editor._
 
 ### 4. Transferiu el programa a una micro:bit
 

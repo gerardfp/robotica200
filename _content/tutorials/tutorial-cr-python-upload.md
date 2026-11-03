@@ -58,9 +58,9 @@ El dibuix és una guia: els noms dels blocs poden variar. Trieu **Live** i, amb 
 
 Seleccioneu Upload i transferiu el projecte a Codey. Quan la càrrega acabe, desconnecteu el cable només si el programa ja s’ha transferit i proveu A i B. El programa carregat continua funcionant sense connexió a mBlock. En Live, en canvi, el controlador ha de mantindre la connexió amb l’ordinador perquè les ordres s’executen en temps real.
 
-![Codey Rocky real de la dotació al costat d’un ordinador amb una representació abstracta del programa Python de mBlock.](../../_assets/tutorials/cr-python-upload.webp)
+![Il·lustració d’un robot al costat d’un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/cr-python-upload.webp)
 
-_La imatge mostra el model Codey Rocky de la dotació. La interfície és una representació visual; el codi concret es genera des de mBlock 5._
+_Il·lustració decorativa: no mostra el robot de l’aula ni la interfície real. El codi concret es genera des de mBlock 5._
 
 ### 4. Obriu la vista Python generada
 

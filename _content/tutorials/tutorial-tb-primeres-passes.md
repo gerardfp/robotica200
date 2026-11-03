@@ -21,6 +21,7 @@ Programeu dos avanços amb els botons físics. Comproveu com el robot guarda les
 - Tale-Bot Pro carregat.
 - Graella o mapa pla, amb la distància entre caselles anotada.
 - Cinta per marcar el punt de partida.
+- Regle o cinta mètrica per mesurar el recorregut.
 
 ## 🧩 Funcions del robot treballades
 
@@ -43,6 +44,8 @@ Marqueu l’inici i orienteu el robot cap endavant. Premeu:
 
 Observeu on s’atura i mesureu la distància recorreguda. Comproveu la mida del pas del vostre robot; no suposeu que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.
 
+Per comprovar l’esborrat parcial, manteniu X més d’un segon, introduïu **Endavant → Dreta**, premeu X breument i afegiu **Endavant**. Reviseu les ordres amb les targetes o els indicadors i premeu Play: el robot hauria de fer dos avanços. Si gira, buideu la seqüència i repetiu amb una pulsació breu més clara.
+
 > **💡 Consell docent per a la sessió:** Mostreu que Tale-Bot gira sobre si mateix: el gir canvia la direcció, però no l’avança cap a una altra casella.
 
 ## 🧪 Prova, depura i reflexiona
@@ -51,7 +54,7 @@ Dibuixeu en un mapa gran l’inici i la destinació. Una parella prepara la seq�
 
 ### Preguntes per comprovar
 
-- Cap a on mira el robot abans del primer gir?
+- Cap a on mira el robot abans de començar els dos avanços?
 - Quina instrucció física elimina si ha premut una tecla per error?
 - Quantes ordres direccionals heu programat i en quin punt del mapa s’ha aturat el Tale-Bot?
 

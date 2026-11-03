@@ -44,7 +44,7 @@ Construïu un destí a cada extrem de la Y, per exemple una biblioteca i un hort
 
 Traieu una targeta de destí. Abans de posar en marxa el tren, orienteu l’agulla cap al destí indicat i digueu la regla en veu alta: «Biblioteca: agulla cap a la biblioteca». Feu passar el tren i anoteu si ha seguit la branca prevista. Atureu-lo abans de moure l’agulla per fer la prova amb l’altra targeta.
 
-### 3. Investigueu una manera de tornar
+### 3. Ampliació opcional: investigueu una manera de tornar
 
 Col·loqueu el maó verd només en una configuració segura recomanada per al vostre conjunt i feu una prova curta. Observeu si ajuda el tren a reprendre el trajecte cap a l’estació en aquesta disposició. No pressuposeu que la peça canvia l’agulla ni que crea un retorn automàtic: la via i el sentit del tren determinen què ocorre. Compareu el resultat amb una ruta de retorn dissenyada manualment.
 
@@ -56,7 +56,7 @@ Feu dues proves per destí. En cada intent, marqueu al mapa quina branca heu tri
 
 - Quina peça física ha fet possible triar entre les dues branques?
 - Qui o què ha seleccionat la ruta en cada prova?
-- Què hem observat en provar el maó verd? Ha funcionat igual en totes les configuracions?
+- Si heu fet l’ampliació, què heu observat en provar el maó verd?
 - Com canviaria la ruta si afegírem una tercera destinació?
 
 
@@ -68,7 +68,7 @@ Feu servir pictogrames grans i diferenciats per als destins i accepteu respostes
 - Mapa de la via amb les dues branques, els destins i les posicions de l’agulla.
 - Taula de prediccions i resultats per a cada ruta.
 - Explicació d’una regla «si… aleshores…» que distingisca la decisió humana del moviment del tren.
-- Registre del que s’ha observat amb el maó verd, incloent-hi qualsevol límit de la configuració provada.
+- Si s’ha fet l’ampliació, registre del que s’ha observat amb el maó verd i dels límits de la configuració provada.
 
 ## 🔗 Fonts oficials i límits
 

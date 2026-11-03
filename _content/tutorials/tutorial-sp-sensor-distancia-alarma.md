@@ -22,6 +22,7 @@ Construïu una base mòbil que s’acoste a una caixa, s’ature abans de tocar-
 - Sensor de distància Technic i cables connectats als ports identificats en el programa.
 - Paret de blocs o caixa de cartó estable, regle i cinta per marcar línies de prova.
 - Espai pla lliure de persones i objectes fràgils.
+- Ordinador o tauleta amb SPIKE App i cable USB o connexió Bluetooth compatible.
 
 El sensor calcula la distància amb ultrasons. Comproveu quina unitat mostra SPIKE App i deixeu prou espai davant de la caixa: la lectura és aproximada.
 
@@ -36,7 +37,7 @@ El sensor calcula la distància amb ultrasons. Comproveu quina unitat mostra SPI
 
 ### 1. Comproveu el sensor a distàncies conegudes
 
-Connecteu el sensor al port C i fixeu-lo al davant de la base. Amb el Hub connectat a SPIKE App, obriu la icona del Hub per veure la lectura del sensor. Poseu una caixa plana a 10, 20 i 30 cm, mesurats amb un regle, i anoteu el valor en cada posició. Manteniu la base quieta. Si no apareix cap lectura estable, reviseu la connexió i l’orientació del sensor abans de continuar.
+Connecteu el sensor ultrasònic al port C i fixeu-lo al davant de la base. Amb el Hub connectat a SPIKE App, obriu la icona del Hub per veure la lectura del sensor. Poseu una caixa plana a 10, 20 i 30 cm, mesurats amb un regle, i anoteu el valor en cada posició. Manteniu la base quieta. Si no apareix cap lectura estable, reviseu la connexió i l’orientació del sensor abans de continuar.
 
 ### 2. Programeu una parada amb marge
 
@@ -66,9 +67,9 @@ Si el robot gira en el sentit contrari o no s’atura, pareu-lo manualment. Revi
 
 Quan el programa s’ature per distància, feu sonar un to breu amb l’altaveu del Hub i mostreu alhora una icona a la matriu LED. Proveu el comportament amb so activat i amb el volum desconnectat/silenciat si l’app o la configuració ho permeten; manteniu una alternativa visual equivalent. No utilitzeu l’avís com a alarma real de seguretat.
 
-![Base mòbil LEGO SPIKE Prime amb sensor ultrasònic al davant, aturada abans d’una caixa i Hub amb una icona LED.](../../_assets/tutorials/sp-sensor-distancia-alarma.webp)
+![Il·lustració d’una base amb rodes i un sensor davant d’una caixa.](../../_assets/tutorials/sp-sensor-distancia-alarma.webp)
 
-_El sensor mira una paret de cartó estable. La imatge il·lustra el marge de prova; no és una instrucció de muntatge exacte._
+_Il·lustració decorativa: no és una guia de muntatge ni mostra una mesura real del marge._
 
 ## 🧪 Prova, depura i reflexiona
 

@@ -44,7 +44,7 @@ Abans d’engegar, cada equip prediu l’ordre en què el tren passarà per les 
 
 ### 3. Compareu amb una ruta oberta i milloreu-la
 
-Si teniu prou vies, obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu passar el tren una vegada i observeu què ocorre quan arriba al final. Compareu-la amb la via tancada: el tren no gira ni torna automàticament a l’inici. Amb el tren aturat, afegiu una estació o canvieu-la de lloc i repetiu la predicció. Atureu sempre la locomotora abans de moure figures o peces.
+Atureu el tren i obriu un tram del circuit per convertir-lo en una via amb inici i final diferents. Feu avançar el tren i atureu-lo abans que arribe al final de la via. Compareu-la amb la via tancada: el recorregut obert no porta el tren de nou a l’inici. Amb el tren aturat, afegiu una estació o canvieu-la de lloc i repetiu la predicció. Atureu sempre la locomotora abans de moure figures o peces.
 
 ## 🧪 Prova, depura i reflexiona
 

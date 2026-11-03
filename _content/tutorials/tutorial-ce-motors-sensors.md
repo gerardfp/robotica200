@@ -60,7 +60,9 @@ Observeu primer si la llum del tren està encesa. Col·loqueu el maó blanc i re
 
 Si el vostre kit inclou el maó verd, dissenyeu un recorregut amb estació i punt de retorn. Feu una predicció, proveu el maó i observeu com afecta el trajecte. Canvieu la posició del maó només després d’aturar el tren. Registreu la resposta sense afirmar que sempre inverteix el motor: la guia oficial el presenta com una ajuda per tornar i el comportament observat depén de la disposició de la via.
 
-![El tren Coding Express de la dotació passa per maons d’acció de colors en una via de prova preparada per observar sons, llums i aturades.](../../_assets/tutorials/ce-motors-sensors.png)
+![Il·lustració d’un tren de joguet sobre una via amb peces de colors.](../../_assets/tutorials/ce-motors-sensors.png)
+
+_Il·lustració decorativa; no mostra la posició real dels maons d’acció._
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -70,7 +72,7 @@ Completeu una taula per als colors que tingueu. Si una prova no coincideix amb l
 
 - Quins colors han fet que el tren s’ature, emeta un so o canvie la llum?
 - Quina resposta s’ha mantingut igual en les repeticions?
-- Què ha passat amb el maó verd en la nostra via? Quina part de la configuració podria canviar el resultat?
+- Si heu provat el maó verd, què ha passat en la vostra via?
 - El tren ha detectat un obstacle o ha respost a una ordre codificada en un maó d’acció?
 
 

@@ -63,7 +63,7 @@ Premeu A cinc vegades a l’emissora i compteu quantes vegades apareix el 7 a la
 
 ### Preguntes per comprovar
 
-- Com sabeu a qui pertany un missatge?
+- Aquest programa identifica quina placa ha enviat el 7? Què passa si dues emissores del mateix grup envien el mateix número?
 - Què passaria si dos equips comparteixen el grup?
 - Pot rebre'l algú que no esperàvem?
 

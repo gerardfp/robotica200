@@ -10,7 +10,7 @@ image: _assets/tutorials/sp-motors-sensors.png
 
 ## 🎯 Repte i objectius
 
-Construïu una transmissió amb engranatges i relacioneu les voltes del motor amb el moviment de les rodes. Després, feu que la base s’ature en detectar una targeta roja.
+Construïu i observeu una parella d’engranatges. Després, amb una base mòbil preparada, feu que s’ature en detectar una targeta roja. Les dues proves són independents: no cal connectar els engranatges a les rodes.
 
 - Explicar que l’engranatge de 8 dents fa tres voltes per cada volta del de 24.
 - Fer avançar una base amb dos motors fins que el sensor detecte una targeta roja.
@@ -22,6 +22,7 @@ Construïu una transmissió amb engranatges i relacioneu les voltes del motor am
 - Base mòbil amb dos motors angulars i rodes, o muntatge equivalent de la guia LEGO.
 - 1 sensor de color
 - Peces Technic i engranatges
+- Ordinador o tauleta amb SPIKE App, cable USB o connexió Bluetooth compatible i targetes blanca i roja.
 
 ## 🧩 Funcions del robot treballades
 
@@ -32,7 +33,7 @@ Construïu una transmissió amb engranatges i relacioneu les voltes del motor am
 
 ### 1. Munteu els engranatges
 
-Munteu els engranatges de 8 i 24 dents de manera que encaixen i giren sense encallar-se. Amb el Hub apagat, gireu el menut una volta i observeu el gran: en aquest muntatge, el menut ha de fer tres voltes perquè el gran en faça una. La relació canvia si canvieu la mida o la posició dels engranatges.
+Fixeu els engranatges de 8 i 24 dents en dos eixos paral·lels sobre una estructura estable, de manera que les dents engranen i giren sense encallar-se. Marqueu una dent de cadascun. Amb el Hub apagat, gireu el menut una volta i observeu el gran: el menut ha de fer tres voltes perquè el gran en faça una. Els engranatges giren en sentits oposats. Aquesta prova es fa a mà i no exigeix que estiguen acoblats a la base mòbil.
 
 ### 2. Connecteu els motors i el sensor
 
@@ -70,7 +71,7 @@ Comenceu amb una velocitat baixa, una targeta roja ampla i un trajecte curt. Una
 ## ✅ Evidències d’aprenentatge
 - Muntatge amb engranatges i ports anotats.
 - Programa de parada i registre del punt d’aturada en tres intents.
-- Explicació senzilla de la diferència entre les voltes del motor i les de la roda.
+- Explicació senzilla de la relació entre les voltes dels dos engranatges observats.
 
 ## 🔗 Fonts oficials i límits
 

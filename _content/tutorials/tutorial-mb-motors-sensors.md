@@ -18,6 +18,7 @@ Connecta un sensor d’humitat compatible a P0 i observa com canvia la lectura q
 ## 🧰 Materials i preparació
 
 - micro:bit amb portapiles
+- Ordinador amb MakeCode i cable USB de dades per transferir el programa.
 - Sensor d'humitat compatible amb micro:bit i instruccions de connexió del fabricant.
 - Cables indicats per les instruccions dels components.
 

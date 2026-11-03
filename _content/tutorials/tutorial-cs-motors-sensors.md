@@ -47,9 +47,9 @@ Afegiu un gir de 90° al final de la ruta i observeu que el robot gira sense ava
 
 Canvieu només el valor del nombre i feu una nova predicció abans de cada execució. Si el resultat no coincideix, reviseu l’orientació de la peça, la posició del nombre al tauler, l’ordre de lectura i l’alineació inicial del robot. Anoteu si l’error provenia del programa, de la lectura o de la col·locació sobre la graella.
 
-![MatataBot de la dotació davant d’un tauler de programació amb blocs de moviment i una ruta recta marcada en una quadrícula.](../../_assets/tutorials/cs-motors-sensors.png)
+![Il·lustració d’un robot, una torre i un tauler amb peces de colors.](../../_assets/tutorials/cs-motors-sensors.png)
 
-_La quadrícula ajuda a comparar el desplaçament; el MatataBot base no llig la graella ni detecta les caselles._
+_Il·lustració decorativa: no mostra la ruta de la prova ni la disposició real dels blocs. El MatataBot base no llig la graella ni detecta les caselles._
 
 ## 🧪 Prova, depura i reflexiona
 

@@ -60,7 +60,7 @@ Podeu consultar el [bloc i l’exemple oficial de brúixola](https://makecode.mi
 
 Deixeu la placa i un termòmetre uns minuts al mateix lloc, a l’ombra. Premeu B i compareu els nombres. Anoteu-los sense tocar la placa durant la lectura: la micro:bit mesura la temperatura del xip, que pot ser diferent de la de l’aire.
 
-En una micro:bit V2, programeu l’esdeveniment de tocar el logotip per mostrar una icona o alternar un estat. Proveu tocar, deixar anar i mantenir el contacte com a esdeveniments diferents si l’editor els ofereix. En V1, substituïu l’entrada per A/B o un pin tàctil extern adequat; no presenteu la placa V1 com si tinguera logotip sensible al tacte.
+En una micro:bit V2, creeu un projecte separat. En **Entrada**, afegiu l’esdeveniment «en tocar el logotip» i poseu-hi dins «mostra una icona». Transferiu-lo i toqueu el logotip metàl·lic: hauria d’aparéixer la icona. Si no apareix, confirmeu que la placa és V2 i que heu transferit aquest projecte. Com a ampliació, proveu els esdeveniments de deixar anar i mantindre el contacte si l’editor els ofereix. En V1, substituïu l’entrada per A/B; no presenteu la placa V1 com si tinguera logotip sensible al tacte.
 
 ### 3. Distingiu Bluetooth de ràdio
 
@@ -68,9 +68,9 @@ Si teniu una tauleta compatible amb l’app oficial de micro:bit, seguiu la [gui
 
 Compareu-ho amb la [guia de ràdio](../../tutorial/mb-radio-mesh/index.html), que envia números entre dues plaques. Per intercanviar dades amb un dispositiu Bluetooth des d’un programa cal una extensió i una aplicació compatibles; afegir l’extensió Bluetooth elimina els blocs de ràdio del mateix projecte. Guardeu cada prova en un projecte separat.
 
-![Una micro:bit de la dotació en suport de cartó, al costat d’una brúixola i un termòmetre de referència; un telèfon mostra el símbol abstracte de Bluetooth.](../../_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp)
+![Il·lustració d’una placa, una brúixola, un termòmetre i un telèfon.](../../_assets/tutorials/mb-compass-temperatura-touch-bluetooth.webp)
 
-_La brúixola i el termòmetre són instruments de comparació, no accessoris connectats a la placa._
+_Il·lustració decorativa: els instruments són de comparació i la imatge no mostra el material de l’aula ni una connexió real._
 
 ## 🧪 Prova, depura i reflexiona
 

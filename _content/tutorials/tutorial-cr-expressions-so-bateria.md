@@ -68,9 +68,9 @@ Afegiu una dansa o una seqüència de moviments predefinida a una activació sep
 
 Abans de la prova final, consulteu el bloc o indicador de nivell de bateria de mBlock i anoteu què mostra. Executeu la salutació tres vegades i torneu a consultar l’estat. Compareu la lectura sense interpretar diferències menudes com una predicció exacta d’autonomia. Si el robot es desconnecta o respon irregularment, carregueu-lo i repetiu la mateixa prova.
 
-![Codey Rocky real de la dotació mostra una expressió LED mentre es prepara una prova curta de so i bateria.](../../_assets/tutorials/cr-expressions-so-bateria.webp)
+![Il·lustració d’un robot amb símbols de so i bateria.](../../_assets/tutorials/cr-expressions-so-bateria.webp)
 
-_La imatge representa els elements del repte; els indicadors gràfics no són una captura literal de l’aplicació._
+_Il·lustració decorativa: els símbols no són indicadors reals de l’aplicació ni una lectura de bateria._
 
 ## 🧪 Prova, depura i reflexiona
 

@@ -14,7 +14,7 @@ Prepareu una ruta curta amb dos moviments que es repetisquen. Guardareu eixa par
 
 - Definir i cridar una funció per reutilitzar una seqüència de moviments.
 - Comparar la versió amb funció amb la seqüència escrita completa.
-- Provar els tres blocs divertits i distingir-los d’un programa creat per l’equip.
+- Si el kit els inclou, provar els tres blocs divertits i distingir-los d’un programa creat per l’equip.
 
 ## 🧰 Materials i preparació
 
@@ -36,7 +36,9 @@ Carregueu torre i robot, col·loqueu la torre estable davant del tauler i confir
 
 ### 1. Planifiqueu, definiu i crideu una funció
 
-Planifiqueu una ruta amb una seqüència curta que aparega dues vegades i un tram final diferent. Dibuixeu-la a la graella i escriviu les ordres en ordre. Col·loqueu **Call Function** a la fila principal i, a la fila de funció, poseu **Define Function → Endavant → Dreta**, seguint la [guia del fabricant](https://matatalab.com/en/node/63). Afegiu la crida, executeu i comproveu el moviment. Torneu el robot al punt i orientació inicials, afegiu una segona crida i compareu el resultat.
+Una funció és un grup d’ordres que podem utilitzar més d’una vegada. Dibuixeu una ruta amb **Endavant → Dreta → Endavant → Dreta** i marqueu el punt i l’orientació inicials. Poseu aquestes quatre peces a la fila principal, executeu-les i anoteu on acaba el robot i cap on mira. Repetiu des de la mateixa posició.
+
+Retireu les quatre peces del tauler. A la fila principal poseu les dues peces **Call Function → Call Function**; a la fila inferior poseu **Define Function → Endavant → Dreta**, seguint la [guia del fabricant](https://matatalab.com/en/node/63). Cada crida executa les dues ordres de la definició. Torneu el robot a l’inici amb la mateixa orientació, executeu i compareu-ne la posició final amb la del programa anterior. Si no coincideixen, reviseu les dues files i la posició inicial abans de tornar a provar.
 
 Les peces Define i Call van en files diferents. No afegiu un bloc número a la funció: el fabricant indica que aquesta combinació no és compatible.
 
@@ -48,9 +50,9 @@ Si el kit inclou aquests blocs, proveu per separat el moviment aleatori, la mús
 
 Canvieu una sola peça de la funció o de la ruta i torneu a executar. Si el MatataBot no fa la ruta esperada, comproveu ordre de lectura, orientació de les peces, posició de Define/Call i connexió de la torre. Registreu quin canvi ha resolt l’error; no mogueu peces mentre la torre està llegint.
 
-![La torre de lectura, el tauler amb blocs físics i el MatataBot de la dotació sobre una graella de ruta.](../../_assets/tutorials/cs-funcions-fun-blocks.webp)
+![Il·lustració d’una torre, un tauler amb peces i un robot sobre un mapa.](../../_assets/tutorials/cs-funcions-fun-blocks.webp)
 
-_La imatge representa el Control Tower i el robot del Coding Set; els símbols del mapa són decoratius i no codis oficials._
+_Il·lustració decorativa: les peces i la seua disposició no són una guia del material real. Consulteu la imatge de la guia oficial per a col·locar la funció._
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -60,8 +62,7 @@ Executeu tres vegades la ruta escrita i tres vegades la ruta amb funció, tornan
 
 - Quines ordres formen la funció i quantes vegades es crida?
 - Quina posició física han d’ocupar Define Function i Call Function?
-- Quina diferència hi ha entre una funció creada per vosaltres i una dansa predefinida?
-- Quin complement caldria per compondre una melodia amb notes pròpies?
+- Si heu provat la dansa, quina diferència hi ha entre aquesta acció predefinida i una funció creada per vosaltres?
 
 
 ## ♿ Accessibilitat i seguretat
@@ -69,7 +70,7 @@ Executeu tres vegades la ruta escrita i tres vegades la ruta amb funció, tornan
 Permeteu planificar primer amb targetes grans o dir les ordres a una persona que les col·loca. Manteniu la torre i el tauler en una superfície estable, sense peces soltes prop de la trajectòria del robot. Si la música incomoda, silencieu-la o substituïu l’observació sonora per un registre visual del bloc i del moviment.
 
 ## ✅ Evidències d’aprenentatge
-- Guardeu els dos programes comparats, el recompte de peces, les sis execucions de ruta i el registre dels blocs divertits. Expliqueu quina seqüència s’ha creat amb funcions pròpies i quins comportaments venen preprogramats; anoteu explícitament si la caixa del centre inclou algun complement.
+- Guardeu els dos programes comparats, el recompte de peces i les sis execucions de ruta. Si heu provat els blocs divertits, registreu-ne el resultat i distingiu els comportaments preprogramats de la funció creada per l’equip.
 
 ## 🔗 Fonts oficials i límits
 

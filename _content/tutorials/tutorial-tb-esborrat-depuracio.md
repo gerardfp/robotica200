@@ -43,9 +43,9 @@ Planifiqueu quatre ordres senzilles que facen arribar Tale-Bot a una destinació
 
 Premeu Clear breument, menys d’un segon. Comproveu que desapareix l’últim indicador i que els tres anteriors continuen visibles. Introduïu l’ordre correcta i confirmeu que la seqüència torna a tindre quatre passos. Si el resultat no és clar, pareu i reviseu els indicadors abans de continuar.
 
-![Tale-Bot Pro real sobre una quadrícula amb indicadors de colors i una seqüència de fletxes, per explicar la revisió d’una ordre.](../../_assets/tutorials/tb-esborrat-depuracio.png)
+![Il·lustració d’un robot sobre una quadrícula amb targetes de fletxes.](../../_assets/tutorials/tb-esborrat-depuracio.png)
 
-_La il·lustració mostra el Tale-Bot Pro de la dotació. Les fletxes del mapa són una representació del programa, no una pantalla del robot._
+_Il·lustració decorativa: les fletxes i els llums dibuixats no mostren el programa ni els indicadors reals del robot._
 
 ### 3. Executeu la seqüència i proveu l’esborrat complet
 

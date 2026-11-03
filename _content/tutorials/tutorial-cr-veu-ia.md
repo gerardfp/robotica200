@@ -56,9 +56,9 @@ Mireu si el centre té una extensió o un servei de reconeixement de parla compa
 
 Una persona tria una targeta —«marxa», «para» o «gira»— i una altra mostra la icona acordada. Anoteu el resultat com a **simulació**: aquesta prova ajuda a preparar l’activitat, però no comprova que el robot reconega la veu.
 
-![Codey Rocky de la dotació mostra una resposta visual mentre una entrada de veu es representa com una funció externa de programari.](../../_assets/tutorials/cr-veu-ia.png)
+![Il·lustració d’un robot i un símbol abstracte de cervell.](../../_assets/tutorials/cr-veu-ia.png)
 
-_El núvol és una dependència de programari: el robot base no incorpora reconeixement de parla._
+_Il·lustració decorativa: el símbol no representa un servei concret. El robot base no incorpora reconeixement de parla._
 
 ## 🧪 Prova, depura i reflexiona
 
