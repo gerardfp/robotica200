@@ -34,6 +34,8 @@ A mBlock 5, afegiu el dispositiu **Codey**, connecteu-lo amb el cable i enceneu-
 
 Obriu la categoria de pantalla i afegiu el bloc per mostrar una imatge. Dibuixeu dos ulls i una boca a la graella de 16 × 8 punts. Deseu el projecte abans de provar-lo.
 
+![Codey connectat a mBlock 5 amb la pantalla LED programada amb una cara feliç.](../../_assets/tutorials/cr-primeres-passes.png)
+
 ### 2. Feu que els botons mostren dues respostes
 
 Prepareu dues piles separades: quan es prem A, mostreu la cara; quan es prem B, mostreu el text «Hola».

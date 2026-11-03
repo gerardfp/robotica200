@@ -53,6 +53,8 @@ El dibuix mostra la idea del programa: busqueu els blocs de moviment equivalents
 
 Amb el sensor orientat cap al davant, mostreu a la matriu de Codey l’estat «lliure» o «obstacle» segons el bloc disponible. Poseu una caixa de cartó a una distància curta i després més lluny; repetiu amb una superfície clara i una fosca, mantenint l’angle. Registreu el resultat tal com l’exposa mBlock (estat o valor d’aproximació/distància) i no el convertiu a centímetres si el bloc no dona una mesura calibrada.
 
+![Codey Rocky detectant un obstacle.](../../_assets/tutorials/cr-motors-sensors.png)
+
 ### 3. Programeu una maniobra d’esquiva
 
 Feu que Rocky avance a baixa velocitat mentre el sensor indique espai lliure. Si detecta un obstacle, atureu-lo, feu una marxa enrere breu i gireu a un costat abans de reprendre l’avanç. Busqueu els blocs equivalents en mBlock:

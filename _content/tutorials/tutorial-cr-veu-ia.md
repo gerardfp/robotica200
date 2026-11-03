@@ -52,11 +52,10 @@ Carregueu o executeu el programa segons el mode triat. Anoteu què mostra en sil
 
 Mireu si el centre té una extensió o un servei de reconeixement de parla compatible. Anoteu-ne el nom i la llengua disponible abans d’activar el micròfon. Si el servei funciona i està autoritzat, proveu una frase fictícia i feu que aparega una icona quan coincidisca amb la paraula prevista; proveu també una frase diferent i el silenci. Manteniu els motors aturats. Una lectura de so alt no significa que Codey haja entés una paraula.
 
+![El Codey Rocky reconeix la veu i realitza les accions.](../../_assets/tutorials/cr-veu-ia.png)
 ### 3. Simuleu les ordres si no hi ha servei
 
 Una persona tria una targeta —«marxa», «para» o «gira»— i una altra mostra la icona acordada. Anoteu el resultat com a **simulació**: aquesta prova ajuda a preparar l’activitat, però no comprova que el robot reconega la veu.
-
-![Il·lustració d’un robot i un símbol abstracte de cervell.](../../_assets/tutorials/cr-veu-ia.png)
 
 _Il·lustració decorativa: el símbol no representa un servei concret. El robot base no incorpora reconeixement de parla._
 

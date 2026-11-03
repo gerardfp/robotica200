@@ -19,3 +19,5 @@
 - [ ] Coses xungues en el contingut
     - tutorials/tb-motors-sensors.md (crec que no parla de sensors, només de motors i dibuix)
     - n'hi han molts que no coincideixen els titols de la pàgina amb el nom del fitxer (p. ex. tutorial-tb-reconeixement-veu.md té com a títol "Gravació i reproducció de veu"). S'han de canviar també els noms de les imatges asociades.
+    - El Coding-Set igual li diu MatataBot que com li ix dels ous
+    - La del Codey Rocky - Veu i IA, la podran fer?

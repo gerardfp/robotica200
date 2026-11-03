@@ -5,7 +5,7 @@ robot: coding-set
 level: Intermedi
 duration: 45 min
 order: 4
-image: _assets/tutorials/cs-funcions-fun-blocks.webp
+image: _assets/tutorials/cs-funcions-blocs-divertits.png
 ---
 
 ## 🎯 Repte i objectius
@@ -41,6 +41,8 @@ Una funció és un grup d’ordres que podem utilitzar més d’una vegada. Dibu
 Retireu les quatre peces del tauler. A la fila principal poseu les dues peces **Call Function → Call Function**; a la fila inferior poseu **Define Function → Endavant → Dreta**, seguint la [guia del fabricant](https://matatalab.com/en/node/63). Cada crida executa les dues ordres de la definició. Torneu el robot a l’inici amb la mateixa orientació, executeu i compareu-ne la posició final amb la del programa anterior. Si no coincideixen, reviseu les dues files i la posició inicial abans de tornar a provar.
 
 Les peces Define i Call van en files diferents. No afegiu un bloc número a la funció: el fabricant indica que aquesta combinació no és compatible.
+
+![Crida a funcions amb Coding Set.](../../_assets/tutorials/cs-funcions-blocs-divertits.png)
 
 ### 2. Compareu els blocs divertits
 
