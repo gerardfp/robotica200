@@ -5,7 +5,7 @@ robot: coding-express
 level: Iniciació
 duration: 45 min
 order: 2
-image: _assets/tutorials/ce-motors-sensors.png
+image: _assets/tutorials/ce-motors-sensors.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -52,7 +52,7 @@ Per exemple, feu aquesta prova amb **un maó cada vegada**:
 
 Si una resposta és diferent de la prevista, anoteu-la i comproveu la posició del maó abans de repetir.
 
-![El tren Coding Express de la dotació passa per maons d’acció de colors en una via de prova preparada per observar sons, llums i aturades.](../../_assets/tutorials/ce-motors-sensors.png)
+![El tren Coding Express de la dotació passa per maons d’acció de colors en una via de prova preparada per observar sons, llums i aturades.](../../_assets/tutorials/ce-motors-sensors.webp)
 
 ### 3. Investigueu el maó blanc
 

@@ -5,7 +5,7 @@ robot: microbit
 level: Iniciació
 duration: 35 min
 order: 4
-image: _assets/tutorials/mb-so-microfon-flat.png
+image: _assets/tutorials/mb-so-microfon-flat.webp
 ---
 
 ## 🎯 Repte i objectius

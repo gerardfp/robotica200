@@ -3,7 +3,7 @@
  * _scripts/dev.js
  *
  * Servidor de desenvolupament local amb Live Reload (0 dependències externes).
- * - Executa el build inicial (_scripts/build.js).
+ * - Executa el build inicial sense PDF (_scripts/build.js).
  * - Observa canvis a _content/, _templates/, _scripts/, _css/, _js/ i _assets/.
  * - Recompila automàticament quan canvia el Markdown o les plantilles.
  * - Actualitza el navegador en temps real via Server-Sent Events (/__livereload):
@@ -87,6 +87,7 @@ function runBuild() {
     }
     isBuilding = true;
     const start = Date.now();
+    // Sense --pdf: el desenvolupament no genera materials imprimibles.
     execFile(process.execPath, [BUILD_SCRIPT], { cwd: ROOT_DIR }, (error, stdout, stderr) => {
       isBuilding = false;
       const elapsed = Date.now() - start;

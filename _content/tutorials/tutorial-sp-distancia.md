@@ -5,7 +5,7 @@ robot: spike
 level: Intermedi
 duration: 40 min
 order: 4
-image: _assets/tutorials/sp-distancia-flat.png
+image: _assets/tutorials/sp-distancia-flat.webp
 ---
 
 ## 🎯 Repte i objectius

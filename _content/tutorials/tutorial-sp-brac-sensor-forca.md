@@ -5,7 +5,7 @@ robot: spike
 level: Avançat
 duration: 40 min
 order: 3
-image: _assets/tutorials/sp-brac-sensor-forca-flat.png
+image: _assets/tutorials/sp-brac-sensor-forca-flat.webp
 ---
 
 ## 🎯 Repte i objectius

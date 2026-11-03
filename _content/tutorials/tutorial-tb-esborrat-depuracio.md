@@ -5,7 +5,7 @@ robot: tale-bot
 level: Iniciació
 duration: 35 min
 order: 5
-image: _assets/tutorials/tb-esborrat-depuracio.png
+image: _assets/tutorials/tb-esborrat-depuracio.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -39,7 +39,7 @@ Trieu una ruta segura de quatre ordres. Abans d’encendre el robot, acordeu qui
 
 Planifiqueu quatre ordres senzilles que facen arribar Tale-Bot a una destinació. Esborreu el programa anterior mantenint X més d’un segon. Introduïu les tres primeres ordres, assenyaleu cada indicador i afegiu una fletxa a la tira de paper. Després, introduïu a propòsit una quarta ordre incorrecta i anoteu-la. Compareu la ruta prevista amb els indicadors i decidiu què convé conservar abans de prémer Play.
 
-![El Tale-Bot programat amb quatre avanços.](../../_assets/tutorials/tb-esborrat-depuracio.png)
+![El Tale-Bot programat amb quatre avanços.](../../_assets/tutorials/tb-esborrat-depuracio.webp)
 
 ### 2. Corregiu l’última ordre
 

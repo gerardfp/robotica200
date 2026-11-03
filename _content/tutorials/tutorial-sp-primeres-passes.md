@@ -5,7 +5,7 @@ robot: spike
 level: Iniciació
 duration: 35 min
 order: 1
-image: _assets/tutorials/sp-primeres-passes-flat.png
+image: _assets/tutorials/sp-primeres-passes-flat.webp
 ---
 
 ## 🎯 Repte i objectius

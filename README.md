@@ -38,3 +38,18 @@ Cadascun dels 6 robots disposa d'una parella oficial de colors identificatius (p
 - **Tipografia:** **Sora** per a títols i encapçalaments; **Plus Jakarta Sans** per a textos de lectura, controls i botons.
 - **Marca:** `Robòtica<sup>200</sup>` (Robòtica²⁰⁰) amb interlineat ajustat a CSS.
 - **Estil visual de les imatges:** Lineless (sense línies de contorn), acabat mat (sense brillantors, ni degradats, ni ombrejats), fons bicolor pla i sense ombres al terra. Consulta [`STYLE_GUIDE.md`](STYLE_GUIDE.md) i [`AGENTS.md`](AGENTS.md) per a més detalls.
+
+## Imatges WebP
+
+La web utilitza còpies WebP dels PNG i JPEG d’`_assets/`, conservant els originals.
+Per convertir nous recursos, instal·la Pillow i executa `python3 _scripts/convert-images-webp.py`.
+El procés conserva dimensions i transparència, utilitza qualitat 88 i no sobreescriu WebP existents.
+Els SVG, inclòs el logotip oficial, es mantenen en format vectorial.
+
+## Compilació del web i PDF
+
+- `node _scripts/build.js`: genera el web sense PDF; no necessita Typst ni Ghostscript.
+- `node _scripts/build.js --pdf`: genera també els PDF individuals i el recull complet, amb la memòria cau incremental. Necessita Typst; Ghostscript optimitza els PDF si està instal·lat.
+- `node _scripts/dev.js`: desenvolupament amb recàrrega automàtica, sempre sense PDF.
+
+Cada compilació reconstrueix `dist/`. Sense `--pdf`, no s’hi conserven PDF anteriors ni es mostren enllaços de descàrrega. La publicació automàtica utilitza `--pdf`.

@@ -5,7 +5,7 @@ robot: codey-rocky
 level: Intermedi
 duration: 50 min
 order: 7
-image: _assets/tutorials/cr-expressions-so-bateria.png
+image: _assets/tutorials/cr-expressions-so-bateria.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -68,7 +68,7 @@ Afegiu una dansa o una seqüència de moviments predefinida a una activació sep
 
 Abans de la prova final, consulteu el bloc o indicador de nivell de bateria de mBlock i anoteu què mostra. Executeu la salutació tres vegades i torneu a consultar l’estat. Compareu la lectura sense interpretar diferències menudes com una predicció exacta d’autonomia. Si el robot es desconnecta o respon irregularment, carregueu-lo i repetiu la mateixa prova.
 
-![Il·lustració d’un robot amb símbols de so i bateria.](../../_assets/tutorials/cr-expressions-so-bateria.png)
+![Il·lustració d’un robot amb símbols de so i bateria.](../../_assets/tutorials/cr-expressions-so-bateria.webp)
 
 _Il·lustració decorativa: els símbols no són indicadors reals de l’aplicació ni una lectura de bateria._
 

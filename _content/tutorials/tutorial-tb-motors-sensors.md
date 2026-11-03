@@ -5,7 +5,7 @@ robot: tale-bot
 level: Intermedi
 duration: 45 min
 order: 3
-image: _assets/tutorials/tb-motors-sensors.png
+image: _assets/tutorials/tb-motors-sensors.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -36,7 +36,7 @@ Fixeu un full gran sobre una superfície plana i poseu-hi una cartolina a sota. 
 
 Marqueu un punt inicial i orienteu el robot paral·lel a una vora del paper. Esborreu el programa anterior mantenint X més d’un segon. Premeu **Endavant → Dreta** quatre vegades i després **Play**. Cada avanç dibuixa un costat i cada gir canvia l’orientació; el gir no dibuixa un costat. Observeu si el traç s’assembla a un quadrat i acaba prop del punt inicial.
 
-![El Tale-Bot dibuixant un quadrat.](../../_assets/tutorials/tb-motors-sensors.png)
+![El Tale-Bot dibuixant un quadrat.](../../_assets/tutorials/tb-motors-sensors.webp)
 
 ### 2. Creeu un patró rectangular
 

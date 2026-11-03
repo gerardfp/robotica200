@@ -5,7 +5,7 @@ robot: microbit
 level: Avançat
 duration: 50 min
 order: 7
-image: _assets/tutorials/mb-python-microbit-flat.png
+image: _assets/tutorials/mb-python-microbit-flat.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -60,7 +60,7 @@ while True:
 
 Executeu primer el codi al simulador. Canvieu una icona i torneu a provar A i B. Després elimineu temporalment els espais d’una línia interior per veure com el ressaltat o el missatge d’error ajuda a localitzar la indentació incorrecta; desfeu el canvi i comproveu que el programa torna a executar-se. No descarregueu la versió amb error a la placa.
 
-![Il·lustració d’una placa i un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/mb-python-microbit-flat.png)
+![Il·lustració d’una placa i un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/mb-python-microbit-flat.webp)
 
 _Il·lustració decorativa: no mostra la placa de l’aula ni la interfície real de l’editor._
 

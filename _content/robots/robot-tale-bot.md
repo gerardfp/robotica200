@@ -10,7 +10,7 @@ specs:
 - ✓ Sensor OID de lectura de mapes
 - ✓ Micròfon i altaveu integrats
 - ✓ Suport de retoladors per dibuix
-image: _assets/robots/tale-bot.png
+image: _assets/robots/tale-bot.webp
 official_resources:
 - title: Curs oficial de Tale-Bot Pro
   href: https://matatalab.com/en/node/808

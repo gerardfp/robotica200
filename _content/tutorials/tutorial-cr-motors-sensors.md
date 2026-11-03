@@ -5,7 +5,7 @@ robot: codey-rocky
 level: Intermedi
 duration: 50 min
 order: 2
-image: _assets/tutorials/cr-motors-sensors.png
+image: _assets/tutorials/cr-motors-sensors.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -53,7 +53,7 @@ El dibuix mostra la idea del programa: busqueu els blocs de moviment equivalents
 
 Amb el sensor orientat cap al davant, mostreu a la matriu de Codey l’estat «lliure» o «obstacle» segons el bloc disponible. Poseu una caixa de cartó a una distància curta i després més lluny; repetiu amb una superfície clara i una fosca, mantenint l’angle. Registreu el resultat tal com l’exposa mBlock (estat o valor d’aproximació/distància) i no el convertiu a centímetres si el bloc no dona una mesura calibrada.
 
-![Codey Rocky detectant un obstacle.](../../_assets/tutorials/cr-motors-sensors.png)
+![Codey Rocky detectant un obstacle.](../../_assets/tutorials/cr-motors-sensors.webp)
 
 ### 3. Programeu una maniobra d’esquiva
 
@@ -80,7 +80,7 @@ Atureu el programa, gireu el sensor perquè mire cap avall i col·loqueu Rocky s
 
 Per a una primera prova de seguiment, situeu el sensor sobre la vora dreta de la cinta, mirant en el sentit del recorregut. En un programa nou, repetiu aquesta decisió: si detecta fosc, feu un gir curt a la dreta; si detecta clar, un gir curt a l’esquerra. Després de cada correcció, avanceu un interval curt a velocitat baixa i torneu a llegir el sensor. Ajusteu la durada dels girs i dels avanços amb proves breus. Invertiu els girs si comenceu a l’altra vora. Useu els blocs de condició, detecció i moviment disponibles a la vostra versió i atureu-lo si perd la pista. Si no podeu distingir les superfícies o el programa no manté la vora, conserveu la prova de lectura i anoteu que el seguiment queda pendent.
 
-![Il·lustració de robots educatius sobre una superfície blava.](../../_assets/tutorials/cr-motors-sensors.png)
+![Il·lustració de robots educatius sobre una superfície blava.](../../_assets/tutorials/cr-motors-sensors.webp)
 
 _Il·lustració decorativa: no representa el muntatge ni l’orientació del sensor d’aquesta pràctica._
 

@@ -70,7 +70,7 @@ function RobotPage({
     body: `${SectionHero({
       title,
       description,
-      bannerSrc: `${r}_assets/robots/${robotSlug}.png`,
+      bannerSrc: `${r}_assets/robots/${robotSlug}.webp`,
       bannerAlt: title,
       backHref: `${r}robotica-educativa/index.html`,
       backLabel: 'Robòtica educativa',

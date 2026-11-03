@@ -5,13 +5,13 @@ const { escapeHTML, escapeAttr, cleanRoot } = require('../layout/utils');
 function SituationCard({ item, root = '../' }) {
   const r = cleanRoot(root);
   const href = `${r}${item.url}`;
-  const imgSrc = item.imatge ? `${r}${item.imatge}` : `${r}_assets/banners/situacions-aprenentatge.png`;
+  const imgSrc = item.imatge ? `${r}${item.imatge}` : `${r}_assets/banners/situacions-aprenentatge.webp`;
   const imgAlt = item.imatgeAlt || item.titol;
 
   return `<a id="${escapeAttr(item.id)}" href="${escapeAttr(href)}" data-base-href="${escapeAttr(href)}" class="item-card sa-card" data-robot="${escapeAttr(item.robot)}" data-cicle="${escapeAttr(item.cicle)}" data-tematica="${escapeAttr(item.tematica)}" data-materia="${escapeAttr(item.materia)}">
     <div class="card-top">
       <div class="card-robot-info">
-        ${item.robot ? `<img src="${escapeAttr(`${r}_assets/icons/${item.robot}.png`)}" alt="" class="card-robot-sa-icon" width="28" height="28">` : ''}
+        ${item.robot ? `<img src="${escapeAttr(`${r}_assets/icons/${item.robot}.webp`)}" alt="" class="card-robot-sa-icon" width="28" height="28">` : ''}
         <span class="tag-badge primary">${escapeHTML(item.robotLabel)}</span>
       </div>
       <span class="tag-badge sa-cicle-badge">${escapeHTML(item.cicleLabel)}</span>

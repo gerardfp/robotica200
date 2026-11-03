@@ -5,7 +5,7 @@ robot: coding-express
 level: Intermedi
 duration: 50 min
 order: 5
-image: _assets/tutorials/ce-app-musica-distancia.png
+image: _assets/tutorials/ce-app-musica-distancia.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -46,7 +46,7 @@ Si la versió de l’app és compatible, connecteu-hi el tren segons les instruc
 
 Poseu un maó groc i un de blau en una via recta. Feu passar el tren i anoteu quin so sona primer. Atureu-lo, intercanvieu els maons i repetiu des del mateix punt. Compareu l’ordre dels dos sons. Si la vostra app permet canviar-ne les respostes, feu-ho després i repetiu la prova per comprovar què ha canviat.
 
-![El tren Coding Express recorre una via amb maons d’acció de colors.](../../_assets/tutorials/ce-app-musica-distancia.png)
+![El tren Coding Express recorre una via amb maons d’acció de colors.](../../_assets/tutorials/ce-app-musica-distancia.webp)
 
 ### 4. Resoleu una ruta amb senyals
 

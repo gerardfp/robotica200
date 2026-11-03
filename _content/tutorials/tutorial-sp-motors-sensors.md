@@ -5,7 +5,7 @@ robot: spike
 level: Intermedi
 duration: 40 min
 order: 2
-image: _assets/tutorials/sp-motors-sensors-flat.png
+image: _assets/tutorials/sp-motors-sensors-flat.webp
 ---
 
 ## 🎯 Repte i objectius

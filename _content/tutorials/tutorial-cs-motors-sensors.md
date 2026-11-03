@@ -5,7 +5,7 @@ robot: coding-set
 level: Intermedi
 duration: 40 min
 order: 2
-image: _assets/tutorials/cs-motors-sensors.png
+image: _assets/tutorials/cs-motors-sensors.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -39,7 +39,7 @@ Dibuixeu una ruta recta de tres caselles i marqueu l’orientació inicial del r
 
 Prepareu **Endavant → Endavant → Endavant** i premeu el botó gran. Torneu el robot a l'inici, retireu les tres peces del tauler i col·loqueu **Endavant** amb el nombre **3** a sota, tal com mostra la guia del kit. Premeu el botó i compareu on s'atura. 
 
-![El Coding Set programat amb un bucle de tres avanços.](../../_assets/tutorials/cs-motors-sensors.png)
+![El Coding Set programat amb un bucle de tres avanços.](../../_assets/tutorials/cs-motors-sensors.webp)
 
 Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegades es fa el moviment d'avançar o retrocedir, no centímetres ni velocitat.
 
@@ -51,7 +51,7 @@ Afegiu un gir de 90° al final de la ruta i observeu que el robot gira sense ava
 
 Canvieu només el valor del nombre i feu una nova predicció abans de cada execució. Si el resultat no coincideix, reviseu l’orientació de la peça, la posició del nombre al tauler, l’ordre de lectura i l’alineació inicial del robot. Anoteu si l’error provenia del programa, de la lectura o de la col·locació sobre la graella.
 
-![Il·lustració d’un robot, una torre i un tauler amb peces de colors.](../../_assets/tutorials/cs-motors-sensors.png)
+![Il·lustració d’un robot, una torre i un tauler amb peces de colors.](../../_assets/tutorials/cs-motors-sensors.webp)
 
 _Il·lustració decorativa: no mostra la ruta de la prova ni la disposició real dels blocs. El MatataBot base no llig la graella ni detecta les caselles._
 

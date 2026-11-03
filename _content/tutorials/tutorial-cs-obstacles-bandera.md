@@ -5,7 +5,7 @@ robot: coding-set
 level: Intermedi
 duration: 45 min
 order: 5
-image: _assets/tutorials/cs-obstacles-bandera.png
+image: _assets/tutorials/cs-obstacles-bandera.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -47,7 +47,7 @@ Seguiu amb el dit aquesta ruta sobre la graella abans de col·locar les peces. U
 
 El recorregut passa pel costat de la targeta i torna a la columna de la bandera. Abans d'usar el robot, seguiu les fletxes amb el dit i comproveu que hi ha prou espai a la graella.
 
-![Il·lustració d’un robot, una torre, peces de colors i una bandera.](../../_assets/tutorials/cs-obstacles-bandera.png)
+![Il·lustració d’un robot, una torre, peces de colors i una bandera.](../../_assets/tutorials/cs-obstacles-bandera.webp)
 
 _Il·lustració decorativa: no representa el muntatge de la ruta ni el kit real. Les barreres i la bandera de la pràctica no són sensors ni ordres programables._
 

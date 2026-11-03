@@ -5,7 +5,7 @@ robot: microbit
 level: Intermedi
 duration: 50 min
 order: 2
-image: _assets/tutorials/mb-motors-sensors-flat.png
+image: _assets/tutorials/mb-motors-sensors-flat.webp
 ---
 
 ## 🎯 Repte i objectius

@@ -5,7 +5,7 @@ robot: coding-set
 level: Intermedi
 duration: 45 min
 order: 4
-image: _assets/tutorials/cs-funcions-blocs-divertits.png
+image: _assets/tutorials/cs-funcions-blocs-divertits.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -42,7 +42,7 @@ Retireu les quatre peces del tauler. A la fila principal poseu les dues peces **
 
 Les peces Define i Call van en files diferents. No afegiu un bloc número a la funció: el fabricant indica que aquesta combinació no és compatible.
 
-![Crida a funcions amb Coding Set.](../../_assets/tutorials/cs-funcions-blocs-divertits.png)
+![Crida a funcions amb Coding Set.](../../_assets/tutorials/cs-funcions-blocs-divertits.webp)
 
 ### 2. Compareu els blocs divertits
 

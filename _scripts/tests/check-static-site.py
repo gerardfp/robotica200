@@ -180,11 +180,11 @@ def main():
     for robot in sorted(EXPECTED_ROBOTS):
         if robot_counts[robot] < 5:
             problems.append(f"robot {robot}: expected at least 5 situations, found {robot_counts[robot]}")
-        icon = ROOT / "_assets/icons" / f"{robot}.png"
+        icon = ROOT / "_assets/icons" / f"{robot}.webp"
         if not icon.is_file():
-            problems.append(f"robot {robot}: missing PNG icon at {icon.relative_to(ROOT)}")
-    if not (ROOT / "_assets/icons/desendollat.png").is_file():
-        problems.append("disconnected activities: missing PNG icon _assets/icons/desendollat.png")
+            problems.append(f"robot {robot}: missing WebP icon at {icon.relative_to(ROOT)}")
+    if not (ROOT / "_assets/icons/desendollat.webp").is_file():
+        problems.append("disconnected activities: missing WebP icon _assets/icons/desendollat.webp")
 
     if problems:
         print("Static site validation failed:")

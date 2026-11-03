@@ -29,19 +29,19 @@ function HomePage() {
 </div>
 <div class="three-pillars">
   <a href="pensament-computacional/index.html" class="pillar-card">
-    <div class="pillar-media"><img src="_assets/banners/pensament-computacional.png" alt="" class="pillar-banner-img" width="800" height="600"></div>
+    <div class="pillar-media"><img src="_assets/banners/pensament-computacional.webp" alt="" class="pillar-banner-img" width="800" height="600"></div>
     <h2 class="pillar-title">Pensament computacional</h2>
     <p class="pillar-desc">Activitats desendollades de PC per treballar la lògica, els algorismes i la resolució de problemes sense pantalles.</p>
     <div class="pillar-action">Explorar activitats →</div>
   </a>
   <a href="robotica-educativa/index.html" class="pillar-card">
-    <div class="pillar-media"><img src="_assets/banners/robotica.png" alt="" class="pillar-banner-img" width="800" height="600"></div>
+    <div class="pillar-media"><img src="_assets/banners/robotica.webp" alt="" class="pillar-banner-img" width="800" height="600"></div>
     <h2 class="pillar-title">Robòtica educativa</h2>
     <p class="pillar-desc">Tutorials i guies dels 6 robots d'aula.</p>
     <div class="pillar-action">Veure els 6 robots →</div>
   </a>
   <a href="situacions-aprenentatge/index.html" class="pillar-card">
-    <div class="pillar-media"><img src="_assets/banners/situacions-aprenentatge.png" alt="" class="pillar-banner-img" width="800" height="600"></div>
+    <div class="pillar-media"><img src="_assets/banners/situacions-aprenentatge.webp" alt="" class="pillar-banner-img" width="800" height="600"></div>
     <h2 class="pillar-title">Situacions d'aprenentatge</h2>
     <p class="pillar-desc">Catàleg curricular filtrable per robot, cicle educatiu, temàtica transversal i matèria d'aprenentatge.</p>
     <div class="pillar-action">Obrir catàleg →</div>

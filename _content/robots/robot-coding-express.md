@@ -10,7 +10,7 @@ specs:
 - ✓ Llums LED frontals
 - ✓ Altaveu amb sons reals de tren
 - ✓ Motor elèctric suau Push & Go
-image: _assets/robots/coding-express.png
+image: _assets/robots/coding-express.webp
 url: robot-coding-express.html
 aliases:
   - robot-coding-express.html

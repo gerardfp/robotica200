@@ -14,7 +14,7 @@ function ActivitiesCatalogPage({ activitats = [] } = {}) {
     body: `${SectionHero({
       title: 'Pensament Computacional',
       description: "Activitats desendollades per treballar instruccions, patrons, decisions i dades amb el cos i materials d'aula.",
-      bannerSrc: '../_assets/banners/pensament-computacional.png',
+      bannerSrc: '../_assets/banners/pensament-computacional.webp',
       bannerAlt: 'Pensament Computacional',
       backHref: '../index.html',
       backLabel: 'inici'

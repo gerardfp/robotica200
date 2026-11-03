@@ -5,7 +5,7 @@ robot: codey-rocky
 level: Avançat
 duration: 50 min
 order: 6
-image: _assets/tutorials/cr-python-upload.png
+image: _assets/tutorials/cr-python-upload.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -58,7 +58,7 @@ El dibuix és una guia: els noms dels blocs poden variar. Trieu **Live** i, amb 
 
 Seleccioneu Upload i transferiu el projecte a Codey. Quan la càrrega acabe, desconnecteu el cable només si el programa ja s’ha transferit i proveu A i B. El programa carregat continua funcionant sense connexió a mBlock. En Live, en canvi, el controlador ha de mantindre la connexió amb l’ordinador perquè les ordres s’executen en temps real.
 
-![Il·lustració d’un robot al costat d’un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/cr-python-upload.png)
+![Il·lustració d’un robot al costat d’un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/cr-python-upload.webp)
 
 _Il·lustració decorativa: no mostra el robot de l’aula ni la interfície real. El codi concret es genera des de mBlock 5._
 

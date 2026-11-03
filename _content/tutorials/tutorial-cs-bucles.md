@@ -5,7 +5,7 @@ robot: coding-set
 level: Intermedi
 duration: 45 min
 order: 3
-image: _assets/tutorials/cs-bucles.png
+image: _assets/tutorials/cs-bucles.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -39,7 +39,7 @@ Col·loqueu el robot a la cantonada de la ruta i marqueu cap a on mira. Al taule
 
 Al costat de l’inici de bucle, poseu **Endavant → Dreta**. Aquestes dues ordres es repetiran; el gir canvia l’orientació, però no fa avançar el robot.
 
-![El Coding Set programat amb un bucle de quatre.](../../_assets/tutorials/cs-bucles.png)
+![El Coding Set programat amb un bucle de quatre.](../../_assets/tutorials/cs-bucles.webp)
 
 ### 2. Tanqueu i executeu el bucle
 

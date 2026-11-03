@@ -5,7 +5,7 @@ const { escapeHTML, escapeAttr, cleanRoot } = require('../layout/utils');
 function TutorialCard({ item, root = '../../' }) {
   const r = cleanRoot(root);
   const href = `${r}${item.url}`;
-  const imgSrc = `${r}${item.imatge || `_assets/robots/${item.robot}.png`}`;
+  const imgSrc = `${r}${item.imatge || `_assets/robots/${item.robot}.webp`}`;
 
   return `<article class="tutorial-card" id="${escapeAttr(item.id)}">
     <div class="card-top">

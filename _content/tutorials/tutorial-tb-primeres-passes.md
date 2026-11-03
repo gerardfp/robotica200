@@ -5,7 +5,7 @@ robot: tale-bot
 level: Iniciació
 duration: 30 min
 order: 1
-image: _assets/tutorials/tb-primeres-passes.png
+image: _assets/tutorials/tb-primeres-passes.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -44,7 +44,7 @@ Marqueu l’inici i orienteu el robot cap endavant. Premeu:
 
 Observeu on s’atura i mesureu la distància recorreguda. Comproveu la mida del pas del vostre robot; no suposeu que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.
 
-![El Tale-Bot programat amb dos avanços.](../../_assets/tutorials/tb-primeres-passes.png)
+![El Tale-Bot programat amb dos avanços.](../../_assets/tutorials/tb-primeres-passes.webp)
 
 Per comprovar l’esborrat parcial, manteniu X més d’un segon, introduïu **Endavant → Dreta**, premeu X breument i afegiu **Endavant**. Reviseu les ordres amb les targetes o els indicadors i premeu Play: el robot hauria de fer dos avanços. Si gira, buideu la seqüència i repetiu amb una pulsació breu més clara.
 

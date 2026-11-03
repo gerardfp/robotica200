@@ -5,7 +5,7 @@ robot: spike
 level: Avançat
 duration: 50 min
 order: 6
-image: _assets/tutorials/sp-python-motor-flat.png
+image: _assets/tutorials/sp-python-motor-flat.webp
 ---
 
 ## 🎯 Repte i objectius

@@ -29,6 +29,7 @@ const { escapeHTML, escapeAttr } = require('../_templates/layout/utils');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DIST_DIR = path.resolve(ROOT_DIR, 'dist');
+let includePDFs = false;
 
 function parseOrder(value, defaultOrder = 9999) {
   const n = parseInt(String(value ?? '').trim(), 10);
@@ -109,7 +110,7 @@ function buildActivities() {
       root: '../../',
       backHref: '../../pensament-computacional/index.html',
       backLabel: 'Pensament computacional',
-      printHref: `../../imprimir/activitats/${slug}.pdf`,
+      printHref: includePDFs ? `../../imprimir/activitats/${slug}.pdf` : '',
       badges,
       content: rendered.html
     }));
@@ -173,9 +174,9 @@ function buildTutorials() {
 
     let image = data.image || '';
     if (!image) {
-      const exts = ['.png', '.webp', '.jpg', '.jpeg'];
+      const exts = ['.webp', '.png', '.jpg', '.jpeg'];
       const found = exts.find(ext => fs.existsSync(path.join(ROOT_DIR, `_assets/tutorials/${slug}${ext}`)));
-      image = found ? `_assets/tutorials/${slug}${found}` : `_assets/tutorials/${slug}.png`;
+      image = found ? `_assets/tutorials/${slug}${found}` : `_assets/tutorials/${slug}.webp`;
     }
 
     const badges = [];
@@ -190,7 +191,7 @@ function buildTutorials() {
       root: '../../',
       backHref: `../../robot/${robot}/index.html`,
       backLabel: robotLabel || robot || 'robots',
-      printHref: `../../imprimir/tutorials/${slug}.pdf`,
+      printHref: includePDFs ? `../../imprimir/tutorials/${slug}.pdf` : '',
       badges,
       content: rendered.html
     }));
@@ -313,7 +314,7 @@ function buildRobots(tutorials) {
 
     writeHTML(`robot/${slug}/index.html`, RobotPage({
       robotSlug: slug,
-      printHref: `../../imprimir/robots/${slug}.pdf`,
+      printHref: includePDFs ? `../../imprimir/robots/${slug}.pdf` : '',
       title: nom,
       description: descripcio,
       root: '../../',
@@ -380,7 +381,7 @@ function buildGuides() {
       root: '../../',
       backHref,
       backLabel,
-      printHref: `../../imprimir/guies/${slug}.pdf`,
+      printHref: includePDFs ? `../../imprimir/guies/${slug}.pdf` : '',
       badges: [{ text: data.tag || 'Guia docent', primary: true }],
       content: rendered.html
     }));
@@ -439,8 +440,8 @@ function buildSituations() {
     const repte = editorial.challenge || '';
 
     const badges = [];
-    const robotIcon = editorial.robot_icon || (robot ? `${robot}.png` : '');
-    const safeIcon = robotIcon && /^[a-z0-9-]+\.(?:png|svg)$/i.test(robotIcon) ? `../../_assets/icons/${robotIcon}` : '';
+    const robotIcon = editorial.robot_icon || (robot ? `${robot}.webp` : '');
+    const safeIcon = robotIcon && /^[a-z0-9-]+\.(?:webp|png|svg)$/i.test(robotIcon) ? `../../_assets/icons/${robotIcon}` : '';
     if (robotLabel || robot) badges.push({ text: robotLabel || robot, primary: true, icon: safeIcon });
     if (cicleLabel) badges.push({ text: cicleLabel, primary: false });
     if (materiaLabel) badges.push({ text: materiaLabel, primary: false });
@@ -460,7 +461,7 @@ function buildSituations() {
       root: '../../',
       backHref: `../../situacions-aprenentatge/index.html#situacio-sa-${slug}`,
       backLabel: "Situacions d'Aprenentatge",
-      printHref: `../../imprimir/situacions/${slug}.pdf`,
+      printHref: includePDFs ? `../../imprimir/situacions/${slug}.pdf` : '',
       badges,
       themeLabel: tematicaLabel,
       challenge: repte,
@@ -558,7 +559,8 @@ function scanMakeCodeSnippets() {
   return snippets;
 }
 
-async function main() {
+async function main({ pdf = false } = {}) {
+  includePDFs = pdf;
   prepareDist();
 
   const snippets = scanMakeCodeSnippets();
@@ -572,7 +574,16 @@ async function main() {
   const robots = buildRobots(tutorials);
   const guidesCount = buildGuides();
   const situacions = buildSituations();
-  const printables = buildPrintables();
+  const printables = includePDFs ? buildPrintables() : [];
+  if (!includePDFs) {
+    writeHTML('imprimir/index.html', Document({
+      title: 'Materials imprimibles | Robòtica²⁰⁰',
+      activeNav: 'imprimir',
+      root: '../',
+      body: `<article class="detail-page-card"><h1>Materials imprimibles</h1>
+        <p>Aquesta versió del web no inclou els materials imprimibles.</p></article>`
+    }));
+  }
 
   const robotOptions = [
     ['coding-express', 'Coding Express'],
@@ -609,12 +620,19 @@ async function main() {
   console.log(`  - ${robots.length} robots (/robot/<slug>/index.html)`);
   console.log(`  - ${guidesCount} guies docents (/guia/<slug>/index.html)`);
   console.log(`  - ${situacions.length} situacions d'aprenentatge (/situacio/<slug>/index.html)`);
-  console.log(`  - ${printables.length} documents imprimibles i recull global (/imprimir/)`);
+  console.log(includePDFs
+    ? `  - ${printables.length} documents imprimibles i recull global (/imprimir/)`
+    : '  - PDF omesos (utilitza --pdf per generar-los)');
   console.log(`  - ${blocks.length} diagrames de blocs SVG (_assets/blocks/*.svg)`);
 }
 
 if (require.main === module) {
-  main().catch(err => {
+  const args = process.argv.slice(2);
+  if (args.some(arg => arg !== '--pdf')) {
+    console.error('Ús: node _scripts/build.js [--pdf]');
+    process.exit(1);
+  }
+  main({ pdf: args.includes('--pdf') }).catch(err => {
     console.error('✗ Error durant el build:', err);
     process.exit(1);
   });

@@ -5,7 +5,7 @@ robot: coding-express
 level: Intermedi
 duration: 45 min
 order: 3
-image: _assets/tutorials/ce-bifurcacions.png
+image: _assets/tutorials/ce-bifurcacions.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -40,7 +40,7 @@ Munteu la bifurcació sobre una superfície plana i feu una prova amb el tren at
 
 Construïu un destí a cada extrem de la Y, per exemple una biblioteca i un hort. Assigneu a cada un una targeta clara i dibuixeu l’esquema de la via. Amb el tren apagat o aturat, orienteu l’agulla cap a una branca i comproveu que les peces queden alineades; repetiu-ho amb l’altra. Anoteu quina posició correspon a cada destí i canvieu l’agulla abans que el tren arribe a la bifurcació.
 
-![El tren Coding Express passa per una bifurcació en Y.](../../_assets/tutorials/ce-bifurcacions.png)
+![El tren Coding Express passa per una bifurcació en Y.](../../_assets/tutorials/ce-bifurcacions.webp)
 
 ### 2. Envieu la passatgera al destí
 

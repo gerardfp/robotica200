@@ -5,7 +5,7 @@ robot: coding-express
 level: Iniciació
 duration: 35 min
 order: 1
-image: _assets/tutorials/ce-primeres-passes.png
+image: _assets/tutorials/ce-primeres-passes.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -44,7 +44,7 @@ Doneu al tren una empenta curta i suau en el sentit de la via. Observeu si conti
 
 Si el kit inclou el maó roig, col·loqueu-lo sobre un tram recte abans de la destinació. Predigueu què passarà, feu passar el tren i comproveu si s’atura. Si no ho fa, reviseu la posició del maó i repetiu la prova. No empenyeu la locomotora mentre el motor funciona.
 
-![Il·lustració d’un tren de joguet sobre una via curta.](../../_assets/tutorials/ce-primeres-passes.png)
+![Il·lustració d’un tren de joguet sobre una via curta.](../../_assets/tutorials/ce-primeres-passes.webp)
 
 _Il·lustració decorativa; consulteu la guia del conjunt per identificar la locomotora i els controls reals._
 

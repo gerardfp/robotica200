@@ -5,7 +5,7 @@ robot: tale-bot
 level: Intermedi
 duration: 50 min
 order: 4
-image: _assets/tutorials/tb-repeticio-mapes-dansa.png
+image: _assets/tutorials/tb-repeticio-mapes-dansa.webp
 ---
 
 ## 🎯 Repte i objectius
@@ -53,7 +53,7 @@ Amb un mapa interactiu compatible, col·loqueu el robot a l’entrada principal 
 Manteniu premut el botó de gravació mentre dieu una frase fictícia curta i solteu-lo. El robot la reproduirà perquè la pugueu comprovar. Esborreu les ordres anteriors i introduïu **Endavant → gravació** amb una pulsació curta del botó de gravació; premeu Play i escolteu el missatge després del moviment.
 
 
-![Tale-Bot Pro sobre un mapa interactiu.](../../_assets/tutorials/tb-repeticio-mapes-dansa.png)
+![Tale-Bot Pro sobre un mapa interactiu.](../../_assets/tutorials/tb-repeticio-mapes-dansa.webp)
 
 _Il·lustració decorativa: no identifica un mapa ni uns retoladors compatibles. La lectura OID només funciona amb un mapa compatible del conjunt._
 

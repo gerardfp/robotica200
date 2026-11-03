@@ -34,7 +34,7 @@ jobs:
       - name: Compilar només els PDF modificats
         env:
           ROBOTICA_PDF_CACHE: ${{ runner.temp }}/robotica200-print-pdf-cache
-        run: node _scripts/build.js
+        run: node _scripts/build.js --pdf
       - name: Guardar memòria cau actualitzada dels PDF
         if: github.event_name != 'pull_request' && steps.printable-cache.outputs.cache-hit != 'true'
         uses: actions/cache/save@v4

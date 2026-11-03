@@ -11,7 +11,7 @@ specs:
 - ✓ Tracció per erugues
 - ✓ Sensor infraroig i de color
 - ✓ Connexió USB/Bluetooth
-image: _assets/robots/codey-rocky.png
+image: _assets/robots/codey-rocky.webp
 official_resources:
 - title: Guies i casos de Codey Rocky
   href: https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky

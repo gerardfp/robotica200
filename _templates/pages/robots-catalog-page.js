@@ -14,7 +14,7 @@ function RobotsCatalogPage({ robots = [] } = {}) {
     body: `${SectionHero({
       title: 'Robòtica educativa',
       description: "Selecciona un robot per accedir a la seva pàgina d'aprenentatge i tutorials específics.",
-      bannerSrc: '../_assets/banners/robotica.png',
+      bannerSrc: '../_assets/banners/robotica.webp',
       bannerAlt: "Robots d'Aula",
       backHref: '../index.html',
       backLabel: 'inici'
