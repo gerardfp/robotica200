@@ -83,15 +83,15 @@ fi
 
 Aquest dibuix resumeix les accions; els noms dels blocs poden variar. Proveu el programa en silenci i amb una palmada. Si la llum no canvia, reviseu les lectures i ajusteu el valor de tall. El sensor no reconeix paraules.
 
-### 4. Seguiu una línia i depureu la ruta
+### 4. Proveu el seguiment de línia i depureu la ruta
 
 Atureu el programa i orienteu el sensor infraroig/color de Rocky cap al terra. Poseu-lo primer sobre el fons blanc i després sobre la línia negra; anoteu què mostra mBlock en cada cas. El sensor identifica la superfície que té davall, però no sap a quin costat queda el centre de la línia.
 
-Per provar una correcció pròpia, comenceu amb el sensor sobre la **vora dreta** de la línia, mirant en el sentit del recorregut. Programeu un gir suau a la dreta quan veja negre i a l’esquerra quan veja blanc, de manera que busque la vora. Proveu-ho lentament en un tram recte i atureu-lo si perd la pista. Si comenceu per l’altra vora, intercanvieu els girs. Si la vostra versió ofereix un exemple de seguiment, també podeu provar-lo i comparar-ne el resultat.
+Per provar una correcció pròpia, comenceu amb el sensor sobre la **vora dreta** de la línia, mirant en el sentit del recorregut. Programeu un gir curt a la dreta quan veja negre i a l’esquerra quan veja blanc; després de cada gir, avanceu un interval curt a baixa velocitat i torneu a llegir el sensor. Ajusteu la durada dels girs i dels avanços en un tram recte i atureu-lo si perd la pista. Si comenceu per l’altra vora, intercanvieu els girs. Si la vostra versió ofereix un exemple de seguiment, també podeu provar-lo i comparar-ne el resultat. Si la lectura no distingeix les superfícies, anoteu que el seguiment queda pendent.
 
-![Codey Rocky de la dotació prova una línia fosca en una pista clara mentre una parella compara targetes de color, llum i so.](../../_assets/tutorials/cr-sensors-llum-so-linia.webp)
+![Il·lustració d’un robot amb una línia i targetes de colors.](../../_assets/tutorials/cr-sensors-llum-so-linia.webp)
 
-_Les targetes i la línia són materials de prova; els resultats depenen del sensor, la superfície, la llum i la versió de mBlock._
+_Il·lustració decorativa: no mostra el sensor ni el muntatge real. Els resultats depenen de la superfície, la llum i la versió de mBlock._
 
 ## 🧪 Prova, depura i reflexiona
 

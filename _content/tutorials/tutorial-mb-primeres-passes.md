@@ -11,7 +11,7 @@ image: _assets/tutorials/mb-primeres-passes.png
 
 ## 🎯 Repte i objectius
 
-Construeix un dau electrònic que reaccione a una sacsejada i mostra’l tant al simulador com a la placa. La seqüència presenta MakeCode, els esdeveniments de l’acceleròmetre, la matriu de 5 × 5 i la transferència del programa.
+Construïu un dau electrònic que reaccione a una sacsejada i mostreu-lo tant al simulador com a la placa. La seqüència presenta MakeCode, l’acceleròmetre (el sensor que detecta canvis de moviment), la matriu de 5 × 5 llums i la transferència del programa.
 
 - Obrir un projecte MakeCode i provar-lo al simulador.
 - Mostrar un nombre de l’1 al 6 quan se sacseja la placa.
@@ -24,8 +24,8 @@ Construeix un dau electrònic que reaccione a una sacsejada i mostra’l tant al
 
 ## 🧩 Funcions del robot treballades
 
-- MakeCode, matriu 5 × 5 i botons A/B.
-- Gestos detectats per l’acceleròmetre; els components de so integrat només estan presents en micro:bit V2.
+- MakeCode i matriu de 5 × 5 llums LED.
+- Sacsejada detectada per l’acceleròmetre en les versions V1 i V2.
 
 ## 👣 Seqüència guiada
 

@@ -62,9 +62,9 @@ runloop.run(main())
 
 Abans de prémer Run, dibuixeu la posició final esperada. Executeu el programa una sola vegada i compareu-la amb la marca inicial. Si l’eix gira en sentit diferent del que volíeu, no forceu el mecanisme: reviseu el sentit, el muntatge i la configuració de la versió de l’API que mostra l’editor.
 
-![Model LEGO Education SPIKE Prime real de la dotació al costat d’un ordinador amb blocs de codi abstractes, sense text inventat.](../../_assets/tutorials/spike-prime-python.webp)
+![Il·lustració d’un muntatge de peces i un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/spike-prime-python.webp)
 
-_La imatge representa el model SPIKE Prime de la dotació; el codi executable és el de l’exemple de dalt._
+_Il·lustració decorativa: no mostra el motor, els ports ni l’editor de la prova. El codi executable és el de l’exemple de dalt._
 
 ### 3. Canvieu un paràmetre cada vegada
 

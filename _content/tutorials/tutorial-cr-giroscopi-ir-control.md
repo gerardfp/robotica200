@@ -71,7 +71,7 @@ Torneu Codey a la posició plana abans de cada intent i repetiu tres vegades. Si
 
 Com a ampliació, feu que la inclinació mostre una icona i reproduïsca un to breu. Afegiu una pausa perquè el senyal no es repetisca mentre Codey continua inclinat. Si el so no és adequat a l’aula, useu només la icona.
 
-### 4. Envieu un senyal infraroig
+### 4. Ampliació opcional: envieu un senyal infraroig
 
 Amb dos Codey Rocky, busqueu els blocs d’infraroig que oferisca la versió de mBlock instal·lada. Prepareu el primer perquè envie un missatge de prova en prémer A i el segon perquè mostre una icona quan reba eixe mateix missatge. Carregueu el programa corresponent a cadascun. Poseu-los encarats i pròxims, premeu A i observeu la pantalla del receptor. Després interposeu una cartolina i repetiu. Si falta un bloc o només hi ha un robot, representeu l’enviament amb targetes i marqueu-lo com a simulació.
 
@@ -95,21 +95,21 @@ fi
 
 Els dibuixos resumeixen les accions; els noms i l’aspecte de les peces poden variar. El [quadern oficial de Makeblock](https://qiniu.makeblock.com/education-makeblock-com/studentbook.pdf) mostra les peces d’enviament i de comprovació en l’activitat de comunicació entre Codeys. Si el bloc de recepció no apareix, useu les targetes i indiqueu que no s’ha provat la comunicació real.
 
-![Dos robots Codey Rocky de la dotació intercanvien un senyal infraroig mentre un mostra una fletxa d’orientació i l’altre una resposta visual.](../../_assets/tutorials/cr-giroscopi-ir-control.webp)
+![Il·lustració de dos robots amb senyals dibuixats entre ells.](../../_assets/tutorials/cr-giroscopi-ir-control.webp)
 
-_Els senyals representen una comunicació IR senzilla entre dispositius; no és Wi-Fi ni una connexió privada._
+_Il·lustració decorativa: els senyals no mostren la posició real dels emissors i receptors infrarojos._
 
 ## 🧪 Prova, depura i reflexiona
 
 Completeu una taula amb els tres valors de la rodeta i el resultat de tres inclinacions cap a l’esquerra. Si proveu la inclinació cap a la dreta, anoteu-la en una columna separada. Registreu quines opcions de l’app heu pogut obrir.
 
-Com a ampliació, si teniu dos robots, envieu cinc missatges IR amb els robots encarats i cinc amb una cartolina al mig. Anoteu quants n’ha rebut el segon robot. Si no teniu dos robots o falta el bloc IR, marqueu la prova com a simulació.
+Com a ampliació, si teniu dos robots, feu una prova amb els robots encarats i una altra amb una cartolina al mig. Abans de cada enviament, comproveu que la pantalla del receptor està neta i que una indicació anterior no es manté activa. Anoteu si apareix una resposta nova. Si no podeu distingir una recepció nova d’una indicació anterior, no compteu missatges: anoteu el límit i consulteu el comportament dels blocs de la versió instal·lada. Si no teniu dos robots o falta el bloc IR, marqueu la prova com a simulació.
 
 ### Preguntes per comprovar
 
 - Quin component produeix cada lectura i quin programa transforma la lectura en una resposta?
 - Quina diferència hi ha entre el valor del potenciòmetre i una inclinació del robot?
-- En quines condicions s’ha rebut el missatge IR amb més fiabilitat?
+- Si heu fet la prova IR, en quines condicions heu observat una resposta nova?
 - Què hauria de fer el programa si no arriba cap missatge?
 
 
@@ -120,7 +120,7 @@ La inclinació i la sacsejada són opcions; permeteu introduir el mateix codi am
 ## ✅ Evidències d’aprenentatge
 - Taula dels valors de la rodeta i la resposta a les inclinacions.
 - Nota de quines funcions de l’app s’han pogut provar.
-- Si s’ha fet l’ampliació IR, els dos programes i el recompte de missatges rebuts; si s’ha simulat, esquema de la simulació.
+- Si s’ha fet l’ampliació IR, els dos programes i les observacions de recepció; si s’ha simulat, esquema de la simulació.
 
 ## 🔗 Fonts oficials i límits
 

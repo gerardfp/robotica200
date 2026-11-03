@@ -21,7 +21,7 @@ Prepareu una ruta curta perquè Rocky avance, detecte un obstacle i canvie de di
 - Codey Rocky de la dotació, acoblat i amb càrrega suficient.
 - Ordinador amb mBlock 5 i la versió de firmware del centre.
 - Obstacles amples, tous i no reflectants, com caixes de cartó.
-- Cinta fosca ample i una base clara per fer una pista de contrast.
+- Cinta fosca ampla i una base clara per fer una pista de contrast.
 - Graella de registre per anotar l’estat del sensor, la condició i el resultat.
 
 Comproveu que el mòdul Rocky està connectat amb Codey i que els blocs de sensor i motors apareixen a mBlock. Orienteu el sensor infraroig/color cap al davant per a la prova d’obstacles; abans de provar la línia, reorienteu-lo cap al terra segons el muntatge del fabricant. Manteniu el programa aturat mentre canvieu la posició del sensor.
@@ -74,11 +74,13 @@ Comenceu amb una sola caixa de cartó i una velocitat baixa. Si el sensor no ofe
 
 ### 4. Compareu amb el seguiment d’una línia
 
-Atureu el programa, gireu el sensor perquè mire cap avall i col·loqueu Rocky sobre la pista de contrast. Mostreu les lectures sobre el fons clar i sobre la cinta fosca abans d’activar els motors. Després programeu una correcció lenta cap a la línia i observeu si el sensor la manté; si la pista es perd, reduïu la velocitat, eixampleu la cinta o reviseu la distància del sensor al terra.
+Atureu el programa, gireu el sensor perquè mire cap avall i col·loqueu Rocky sobre la pista de contrast. Seguiu el [cas oficial de detecció de colors](https://support.makeblock.com/hc/en-us/articles/7484512467223-Case-19-Codey-Rocky-identifies-colors) per mostrar la lectura a l’indicador lluminós. Poseu el sensor primer sobre el fons clar i després sobre la cinta fosca, sense moure els motors, i anoteu si les lectures es diferencien. Si no es diferencien, reviseu l’orientació del sensor i proveu altres superfícies.
 
-![Codey Rocky de la dotació amb el sensor orientat cap a un obstacle de cartó i, al costat, una pista de línia fosca sobre fons clar.](../../_assets/tutorials/cr-motors-sensors.png)
+Per a una primera prova de seguiment, situeu el sensor sobre la vora dreta de la cinta, mirant en el sentit del recorregut. En un programa nou, repetiu aquesta decisió: si detecta fosc, feu un gir curt a la dreta; si detecta clar, un gir curt a l’esquerra. Després de cada correcció, avanceu un interval curt a velocitat baixa i torneu a llegir el sensor. Ajusteu la durada dels girs i dels avanços amb proves breus. Invertiu els girs si comenceu a l’altra vora. Useu els blocs de condició, detecció i moviment disponibles a la vostra versió i atureu-lo si perd la pista. Si no podeu distingir les superfícies o el programa no manté la vora, conserveu la prova de lectura i anoteu que el seguiment queda pendent.
 
-_La mateixa peça sensora canvia de tasca segons la seua orientació. La lectura i el control del moviment depenen dels blocs disponibles a mBlock i del muntatge._
+![Il·lustració de robots educatius sobre una superfície blava.](../../_assets/tutorials/cr-motors-sensors.png)
+
+_Il·lustració decorativa: no representa el muntatge ni l’orientació del sensor d’aquesta pràctica._
 
 ## 🧪 Prova, depura i reflexiona
 

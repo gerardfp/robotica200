@@ -44,7 +44,9 @@ Doneu al tren una empenta curta i suau en el sentit de la via. Observeu si conti
 
 Si el kit inclou el maó roig, col·loqueu-lo sobre un tram recte abans de la destinació. Predigueu què passarà, feu passar el tren i comproveu si s’atura. Si no ho fa, reviseu la posició del maó i repetiu la prova. No empenyeu la locomotora mentre el motor funciona.
 
-![La locomotora Coding Express real de la dotació inicia el trajecte per una via DUPLO curta entre una estació i una destinació.](../../_assets/tutorials/ce-primeres-passes.png)
+![Il·lustració d’un tren de joguet sobre una via curta.](../../_assets/tutorials/ce-primeres-passes.png)
+
+_Il·lustració decorativa; consulteu la guia del conjunt per identificar la locomotora i els controls reals._
 
 ## 🧪 Prova, depura i reflexiona
 
@@ -53,7 +55,7 @@ Feu tres proves i registreu per a cadascuna el tipus d’inici, la manera d’at
 ### Preguntes per comprovar
 
 - Què hem fet perquè el tren comence a avançar?
-- Quina diferència hem observat entre aturar-lo amb la mà i fer servir el maó roig?
+- Si heu provat el maó roig, quina diferència heu observat respecte d’aturar el tren amb la mà?
 - Quina prova ha sigut més repetible? Quines condicions hem mantingut iguals?
 - El tren sap quin lloc és l’estació o ho hem representat nosaltres amb la via i les peces?
 

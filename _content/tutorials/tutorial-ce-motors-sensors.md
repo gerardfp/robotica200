@@ -70,7 +70,7 @@ Completeu una taula per als colors que tingueu. Si una prova no coincideix amb l
 
 - Quins colors han fet que el tren s’ature, emeta un so o canvie la llum?
 - Quina resposta s’ha mantingut igual en les repeticions?
-- Què ha passat amb el maó verd en la nostra via? Quina part de la configuració podria canviar el resultat?
+- Si heu provat el maó verd, què ha passat en la vostra via?
 - El tren ha detectat un obstacle o ha respost a una ordre codificada en un maó d’acció?
 
 

@@ -24,7 +24,6 @@ Dibuixeu una cara a la pantalla de Codey i feu que aparega en prémer A. Despré
 ## 🧩 Funcions del robot treballades
 
 - Connexió a mBlock 5, pantalla LED 16 × 8 i botons programables A/B.
-- Lectura del nivell de bateria disponible a mBlock per comprovar l’estat d’alimentació abans d’una prova.
 - Execució en viu i càrrega de codi segons la connexió triada.
 
 ## 👣 Seqüència guiada

@@ -38,7 +38,7 @@ Abans de començar, comproveu les tecles físiques de moviment, Play, esborrat, 
 
 ### 1. Programeu i repetiu una seqüència
 
-Manteniu X més d’un segon per començar sense ordres anteriors. Prepareu amb targetes **Endavant → Dreta**, introduïu eixes dues ordres i premeu el botó de repetició. Observeu els llums de repetició i premeu Play; compteu quantes vegades es fa la seqüència. Canvieu el nombre de repeticions amb el botó i torneu a provar des de l’inici. La repetició s’aplica al programa complet: no permet seleccionar només un fragment si després hi ha altres ordres.
+Manteniu X més d’un segon per començar sense ordres anteriors. Prepareu amb targetes **Endavant → Dreta**, introduïu eixes dues ordres i premeu Play sense activar la repetició. Compteu els moviments i torneu el robot a la posició i orientació inicials. Introduïu de nou la seqüència si cal, premeu el botó de repetició, observeu els llums i premeu Play. Compteu quantes vegades es fa la seqüència. Canvieu el nombre de repeticions amb el botó i torneu a provar des de l’inici. La repetició s’aplica al programa complet: no permet seleccionar només un fragment si després hi ha altres ordres. Si no sabeu quina opció de repetició està activa, comenceu amb una prova curta en un espai ampli i atureu el robot si continua més del previst.
 
 ### 2. Compareu la dansa predefinida
 
@@ -55,7 +55,7 @@ Manteniu premut el botó de gravació mentre dieu una frase fictícia curta i so
 
 ![Tale-Bot Pro sobre un mapa interactiu.](../../_assets/tutorials/tb-repeticio-mapes-dansa.png)
 
-_La il·lustració representa una activitat amb mapa i targetes; la lectura OID només funciona amb un mapa compatible del conjunt._
+_Il·lustració decorativa: no identifica un mapa ni uns retoladors compatibles. La lectura OID només funciona amb un mapa compatible del conjunt._
 
 No demaneu dades identificatives ni feu servir la veu d’un infant sense els acords del centre.
 
@@ -65,7 +65,7 @@ Feu tres execucions de la ruta: sense repetició, amb repetició i amb una ordre
 
 ### Preguntes per comprovar
 
-- Què passa quan el programa complet és el patró repetit? I quan hi afegim una ordre final?
+- Què canvia entre executar la seqüència una vegada i activar-ne la repetició?
 - Per què no podem demanar al botó que repetisca només un fragment intermedi?
 - La dansa és programada amb les targetes o és un moviment predefinit?
 - Quina diferència hi ha entre la veu gravada per l’usuari i la instrucció OID del mapa?

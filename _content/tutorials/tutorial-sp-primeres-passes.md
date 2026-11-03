@@ -48,7 +48,7 @@ esborra la pantalla
 
 ### 3. Llegiu el sensor d’orientació
 
-Poseu el Hub sobre la taula i mostreu una fletxa en respondre a una inclinació o gir detectat. Proveu una sola orientació cada vegada, torneu el Hub a una posició estable i compareu l’indicador amb el moviment físic. Aquest sensor de sis eixos combina giroscopi i acceleròmetre; no és una brúixola que indique el nord.
+En un projecte nou, busqueu a l’app l’esdeveniment que detecta una inclinació del Hub i afegiu-hi una ordre per mostrar una fletxa. Transferiu i executeu el programa. Poseu el Hub sobre la taula i inclineu-lo en la direcció triada: hauria d’aparéixer la fletxa. Torneu-lo a una posició estable abans de repetir. Si no respon, reviseu el sentit seleccionat en l’esdeveniment i que el projecte siga el que heu executat. El sensor de sis eixos combina giroscopi i acceleròmetre; no és una brúixola que indique el nord.
 
 ### 4. Exploreu els botons i els indicadors
 
