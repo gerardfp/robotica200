@@ -37,7 +37,11 @@ Carregueu el robot i la torre. Poseu el MatataBot a la casella d’inici, alinea
 
 Dibuixeu una ruta recta de tres caselles i marqueu l’orientació inicial del robot. Representeu-la primer amb tres blocs d’avanç, sense posar les peces al tauler. Cada persona de l’equip ha de poder llegir l’ordre i anticipar la destinació abans de passar al robot.
 
-Prepareu **Endavant → Endavant → Endavant** i premeu el botó gran. Torneu el robot a l'inici, retireu les tres peces del tauler i col·loqueu **Endavant** amb el nombre **3** a sota, tal com mostra la guia del kit. Premeu el botó i compareu on s'atura. Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegades es fa el moviment d'avançar o retrocedir, no centímetres ni velocitat.
+Prepareu **Endavant → Endavant → Endavant** i premeu el botó gran. Torneu el robot a l'inici, retireu les tres peces del tauler i col·loqueu **Endavant** amb el nombre **3** a sota, tal com mostra la guia del kit. Premeu el botó i compareu on s'atura. 
+
+![El Coding Set programat amb un bucle de tres avanços.](../../_assets/tutorials/cs-motors-sensors.png)
+
+Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegades es fa el moviment d'avançar o retrocedir, no centímetres ni velocitat.
 
 ### 2. Comproveu el límit dels girs
 

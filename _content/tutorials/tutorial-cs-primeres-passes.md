@@ -35,6 +35,9 @@ Enceneu la torre de control i el MatataBot i espereu que es connecten. Comproveu
 
 Poseu tres fitxes a la primera fila, d’esquerra a dreta: **Endavant → Dreta → Endavant**. Col·loqueu el robot sobre el mapa, mirant cap a una zona lliure. Assenyaleu la casella on penseu que acabarà; el gir canvia cap a on mira el robot, però no l’avança.
 
+![El Coding Set programat amb tres avanços.](../../_assets/tutorials/cs-primeres-passes.png)
+
+
 ### 2. Executeu i comproveu la ruta
 
 Premeu el botó gran taronja. La torre llig les fitxes i envia les ordres al robot. Observeu si avança, gira a la dreta i torna a avançar. Si no es mou, comproveu la connexió i la posició de les peces abans de tornar a prémer.

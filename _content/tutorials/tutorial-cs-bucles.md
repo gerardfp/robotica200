@@ -39,6 +39,8 @@ Col·loqueu el robot a la cantonada de la ruta i marqueu cap a on mira. Al taule
 
 Al costat de l’inici de bucle, poseu **Endavant → Dreta**. Aquestes dues ordres es repetiran; el gir canvia l’orientació, però no fa avançar el robot.
 
+![El Coding Set programat amb un bucle de quatre.](../../_assets/tutorials/cs-bucles.png)
+
 ### 2. Tanqueu i executeu el bucle
 
 Poseu la fitxa morada de final després de Dreta. Comproveu que el tauler queda així, amb el número sota l’inici:
