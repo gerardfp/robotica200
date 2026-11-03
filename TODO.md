@@ -18,6 +18,8 @@
 
 - [ ] Convertir totes les imatges a webp ¿?¿?¿?¿?
 
+- [ ] En les tarjetes de tutorials , ¿fa falta la icona del robot? (en tots cas, llevar les isometriques antigues)
+
 - [ ] Coses xungues en el contingut
     - tutorials/tb-motors-sensors.md (crec que no parla de sensors, només de motors i dibuix)
     - n'hi han molts que no coincideixen els titols de la pàgina amb el nom del fitxer (p. ex. tutorial-tb-reconeixement-veu.md té com a títol "Gravació i reproducció de veu"). S'han de canviar també els noms de les imatges asociades.
