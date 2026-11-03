@@ -39,13 +39,11 @@ Trieu una ruta segura de quatre ordres. Abans d’encendre el robot, acordeu qui
 
 Planifiqueu quatre ordres senzilles que facen arribar Tale-Bot a una destinació. Esborreu el programa anterior mantenint X més d’un segon. Introduïu les tres primeres ordres, assenyaleu cada indicador i afegiu una fletxa a la tira de paper. Després, introduïu a propòsit una quarta ordre incorrecta i anoteu-la. Compareu la ruta prevista amb els indicadors i decidiu què convé conservar abans de prémer Play.
 
+![Il·lustració d’un robot sobre una quadrícula amb targetes de fletxes.](../../_assets/tutorials/tb-esborrat-depuracio.png)
+
 ### 2. Corregiu l’última ordre
 
 Premeu Clear breument, menys d’un segon. Comproveu que desapareix l’últim indicador i que els tres anteriors continuen visibles. Introduïu l’ordre correcta i confirmeu que la seqüència torna a tindre quatre passos. Si el resultat no és clar, pareu i reviseu els indicadors abans de continuar.
-
-![Il·lustració d’un robot sobre una quadrícula amb targetes de fletxes.](../../_assets/tutorials/tb-esborrat-depuracio.png)
-
-_Il·lustració decorativa: les fletxes i els llums dibuixats no mostren el programa ni els indicadors reals del robot._
 
 ### 3. Executeu la seqüència i proveu l’esborrat complet
 

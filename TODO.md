@@ -15,3 +15,6 @@
 - [ ] En les tarjetes de situacions el sa-challenge no cap en algunes i se talla per baix
 
 - [ ] El site-footer no sap fer-lo el Gemini 3.8 Flash, y els robots han dixat de moure's
+
+- [ ] Coses xungues en el contingut
+    - tutorials/tb-motors-sensors.md (crec que no parla de sensors, només de motors i dibuix)
