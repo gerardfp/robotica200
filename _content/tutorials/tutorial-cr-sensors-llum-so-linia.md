@@ -91,7 +91,7 @@ Atureu el programa i orienteu el sensor infraroig/color de Rocky cap al terra. P
 
 Per provar una correcció pròpia, comenceu amb el sensor sobre la **vora dreta** de la línia, mirant en el sentit del recorregut. Programeu un gir curt a la dreta quan veja negre i a l’esquerra quan veja blanc; després de cada gir, avanceu un interval curt a baixa velocitat i torneu a llegir el sensor. Ajusteu la durada dels girs i dels avanços en un tram recte i atureu-lo si perd la pista. Si comenceu per l’altra vora, intercanvieu els girs. Si la vostra versió ofereix un exemple de seguiment, també podeu provar-lo i comparar-ne el resultat. Si la lectura no distingeix les superfícies, anoteu que el seguiment queda pendent.
 
-![Il·lustració d’un robot amb una línia i targetes de colors.](../../_assets/tutorials/cr-sensors-llum-so-linia.webp)
+![Il·lustració d’un robot amb una línia i targetes de colors.](../../_assets/tutorials/cr-sensors-llum-so-linia.png)
 
 _Il·lustració decorativa: no mostra el sensor ni el muntatge real. Els resultats depenen de la superfície, la llum i la versió de mBlock._
 

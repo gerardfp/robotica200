@@ -52,10 +52,6 @@ Si el kit inclou aquests blocs, proveu per separat el moviment aleatori, la mús
 
 Canvieu una sola peça de la funció o de la ruta i torneu a executar. Si el MatataBot no fa la ruta esperada, comproveu ordre de lectura, orientació de les peces, posició de Define/Call i connexió de la torre. Registreu quin canvi ha resolt l’error; no mogueu peces mentre la torre està llegint.
 
-![Il·lustració d’una torre, un tauler amb peces i un robot sobre un mapa.](../../_assets/tutorials/cs-funcions-fun-blocks.webp)
-
-_Il·lustració decorativa: les peces i la seua disposició no són una guia del material real. Consulteu la imatge de la guia oficial per a col·locar la funció._
-
 ## 🧪 Prova, depura i reflexiona
 
 Executeu tres vegades la ruta escrita i tres vegades la ruta amb funció, tornant el robot al mateix punt cada vegada. Anoteu les peces i la posició final. Si heu provat els blocs divertits, registreu separadament el que ha fet cadascun. Si una execució falla, comproveu primer l’ordre de lectura i el muntatge abans de canviar el programa.

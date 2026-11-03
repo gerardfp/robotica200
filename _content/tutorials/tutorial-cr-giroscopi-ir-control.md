@@ -95,7 +95,7 @@ fi
 
 Els dibuixos resumeixen les accions; els noms i l’aspecte de les peces poden variar. El [quadern oficial de Makeblock](https://qiniu.makeblock.com/education-makeblock-com/studentbook.pdf) mostra les peces d’enviament i de comprovació en l’activitat de comunicació entre Codeys. Si el bloc de recepció no apareix, useu les targetes i indiqueu que no s’ha provat la comunicació real.
 
-![Il·lustració de dos robots amb senyals dibuixats entre ells.](../../_assets/tutorials/cr-giroscopi-ir-control.webp)
+![Il·lustració de dos robots amb senyals dibuixats entre ells.](../../_assets/tutorials/cr-giroscopi-ir-control.png)
 
 _Il·lustració decorativa: els senyals no mostren la posició real dels emissors i receptors infrarojos._
 
