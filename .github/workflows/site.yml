@@ -17,8 +17,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Compilar pàgines HTML des de Markdown
+      - name: Instal·lar Typst per generar els PDF imprimibles
+        uses: typst-community/setup-typst@v5
+        with:
+          typst-version: ^0.14.0
+      - name: Instal·lar Ghostscript per optimitzar els PDF
+        run: sudo apt-get update && sudo apt-get install --yes ghostscript
+      - name: Recuperar memòria cau dels PDF imprimibles
+        id: printable-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/robotica200-print-pdf-cache
+          key: robotica200-print-pdfs-${{ runner.os }}-${{ hashFiles('_content/**/*.md', '_assets/**/*', '_scripts/md_to_typst.py') }}
+          restore-keys: |
+            robotica200-print-pdfs-${{ runner.os }}-
+      - name: Compilar només els PDF modificats
+        env:
+          ROBOTICA_PDF_CACHE: ${{ runner.temp }}/robotica200-print-pdf-cache
         run: node _scripts/build.js
+      - name: Guardar memòria cau actualitzada dels PDF
+        if: github.event_name != 'pull_request' && steps.printable-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/robotica200-print-pdf-cache
+          key: robotica200-print-pdfs-${{ runner.os }}-${{ hashFiles('_content/**/*.md', '_assets/**/*', '_scripts/md_to_typst.py') }}
       - name: Comprovar JavaScript
         run: |
           node --check _js/ui.js

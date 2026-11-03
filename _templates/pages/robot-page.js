@@ -18,7 +18,8 @@ function RobotPage({
   statusNote = '',
   statusSource = '',
   statusSourceLabel = '',
-  specs = []
+  specs = [],
+  printHref = ''
 } = {}) {
   const r = cleanRoot(root);
 
@@ -80,6 +81,7 @@ function RobotPage({
     <div class="robot-overview-grid">
       <div class="robot-overview-lead">
         <p>${robotLead}</p>
+        ${printHref ? `<p class="print-version-link"><a href="${escapeAttr(printHref)}" download>Descarrega la fitxa imprimible (PDF)</a></p>` : ''}
       </div>${highlightHTML}
     </div>
   </section>

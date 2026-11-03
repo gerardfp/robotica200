@@ -32,7 +32,7 @@ const FOOTER_BOTS = [
   { c: ['#7a828f', '#4a515d', '#30353d'], accent: '#047fdf' }
 ];
 
-function SiteFooter() {
+function SiteFooter({ root = '' } = {}) {
   return `
   <footer class="site-footer">
     <div class="site-footer-waves" aria-hidden="true">
@@ -53,6 +53,7 @@ function SiteFooter() {
           <span class="dash dash-blue"></span>
         </div>
         <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
+        <p class="site-footer-print"><a href="${root}imprimir/index.html">Materials imprimibles · PDF individual i recull complet</a></p>
         <div class="footer-robots" aria-hidden="true">
           ${FOOTER_BOTS.map(b => `<div class="fbot">${footerBot(b)}</div>`).join('')}
         </div>

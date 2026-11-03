@@ -81,7 +81,7 @@ Transferiu el programa a la V2 i espereu que acabe la transferència. Feu tres l
 
 Per recuperar les dades, connecteu de nou la micro:bit a l’ordinador. Obriu la unitat **MICROBIT** i feu doble clic al fitxer **MY_DATA**: s’obrirà una taula al navegador. Compareu les files amb les anotacions i, si voleu, copieu o descarregueu les dades. Per veure els gràfics de MY_DATA cal connexió a Internet; sense connexió podeu consultar la taula. La columna de temps compta des de l’últim reinici de la placa, no indica l’hora del dia. Abans de descarregar un programa nou o esborrar el registre, guardeu una còpia de la taula. Per començar una altra prova, seguiu el procediment d’esborrat de la guia oficial i torneu a preparar els títols de les columnes.
 
-![Il·lustració d’una placa, un gràfic, un termòmetre i dues targetes.](../../_assets/tutorials/mb-data-logging.webp)
+![Il·lustració d’una placa, un gràfic, un termòmetre i dues targetes.](../../_assets/tutorials/mb-registre-dades-flat.png)
 
 _Il·lustració decorativa: no mostra la placa de l’aula ni les dades d’aquesta prova. El gràfic no és una pantalla integrada a la placa._
 

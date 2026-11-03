@@ -32,7 +32,7 @@ function Document({
 <body>${SiteHeader({ activeNav, root: r })}
   <main id="page-content" class="container page-content${heroLayout ? ' page-content-hero' : ''}">
 ${body}
-  </main>${SiteFooter()}
+  </main>${SiteFooter({ root: r })}
 </body>
 </html>
 `;
