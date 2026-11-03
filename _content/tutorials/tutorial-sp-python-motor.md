@@ -5,7 +5,7 @@ robot: spike
 level: Avançat
 duration: 50 min
 order: 6
-image: _assets/tutorials/spike-prime-python.webp
+image: _assets/tutorials/sp-python-motor-flat.png
 ---
 
 ## 🎯 Repte i objectius

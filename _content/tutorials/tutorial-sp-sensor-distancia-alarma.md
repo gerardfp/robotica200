@@ -5,7 +5,7 @@ robot: spike
 level: Intermedi
 duration: 45 min
 order: 5
-image: _assets/tutorials/sp-sensor-distancia-alarma.webp
+image: _assets/tutorials/sp-sensor-distancia-alarma-flat.png
 ---
 
 ## 🎯 Repte i objectius
