@@ -179,7 +179,7 @@ def markdown_to_typst(source: str, md_path: Path, typ_dir: Path) -> str:
                 language = {"makecode": "js"}.get(fence, fence if fence not in labels else "")
                 raw = "\n".join(code)
                 label = labels.get(fence, "Codi")
-                out.append(f"#block(fill: rgb(\"#f1f5f9\"), stroke: rgb(\"#dbe3ee\"), radius: 4pt, inset: 10pt)[#text(size: 8pt, weight: \"bold\", fill: rgb(\"#1764c0\"))[{label}] #v(3pt) #raw({typst_string(raw)}, lang: {typst_string(language)})]")
+                out.append(f"#block(breakable: false, fill: rgb(\"#f4f6f8\"), stroke: (left: 2.5pt + rgb(\"#2563eb\"), rest: 0.6pt + rgb(\"#e5e9ee\")), radius: 7pt, inset: (x: 12pt, y: 10pt))[#text(size: 8pt, weight: \"bold\", fill: rgb(\"#2563eb\"))[ {label.upper()} ] #v(4pt) #raw({typst_string(raw)}, lang: {typst_string(language)})]")
                 out.append("")
                 fence = None
             continue
@@ -235,24 +235,29 @@ def markdown_to_typst(source: str, md_path: Path, typ_dir: Path) -> str:
     return "\n".join(out).strip()
 
 
-def document_typst(title: str, description: str, body: str) -> str:
-    description_block = f'#text(size: 11pt, fill: luma(90))[{typst_text(description)}]\n#v(8pt)' if description else ''
+def document_typst(title: str, description: str, body: str, eyebrow: str = "") -> str:
+    description_block = f'#v(5pt)\n#text(size: 11pt, fill: rgb("#64748b"))[{typst_text(description)}]\n#v(10pt)' if description else ''
+    eyebrow_block = f'#text(size: 8pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.7pt)[{typst_text(eyebrow.upper())}]' if eyebrow else '#text(size: 8pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.7pt)[ROBÒTICA PER A DOCENTS]'
     return f'''#set document(title: {typst_string(title)}, author: "Robòtica²⁰⁰")
-#set page(paper: "a4", margin: (top: 19mm, bottom: 18mm, left: 20mm, right: 20mm), footer: context [#text(size: 8pt, fill: luma(100))[Robòtica²⁰⁰ · {typst_text(title)}] #h(1fr) #text(size: 8pt, fill: luma(100))[#counter(page).display() / #counter(page).final().at(0)]])
-#set text(font: "DejaVu Sans", size: 10.5pt, fill: rgb("#17243a"), lang: "ca")
-#set par(leading: 0.68em, justify: true, spacing: 0.65em)
-#show heading.where(level: 1): set text(font: "DejaVu Sans", size: 21pt, weight: "bold", fill: rgb("#12305a"))
-#show heading.where(level: 2): set text(size: 15pt, weight: "bold", fill: rgb("#1764c0"))
-#show heading.where(level: 3): set text(size: 12pt, weight: "bold", fill: rgb("#1764c0"))
-#show heading.where(level: 4): set text(size: 11pt, weight: "bold", fill: rgb("#1764c0"))
-#set list(indent: 1.2em, body-indent: 0.4em, spacing: 0.35em)
-#set enum(indent: 1.2em, body-indent: 0.4em, spacing: 0.35em)
-#align(center)[#text(size: 8pt, weight: "bold", fill: rgb("#1764c0"))[ROBÒTICA PER A DOCENTS]]
-#v(8pt)
-#heading(level: 1)[{typst_text(title)}]
-{description_block}
-#line(length: 100%, stroke: 1pt + rgb("#2b67e8"))
-#v(8pt)
+#set page(paper: "a4", margin: (top: 20mm, bottom: 19mm, left: 20mm, right: 20mm), header: context [#text(size: 7pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.5pt)[ROBÒTICA²⁰⁰] #h(1fr) #text(size: 7pt, fill: rgb("#64748b"))[{typst_text(eyebrow or "MATERIALS PER A DOCENTS")} ] #line(length: 100%, stroke: 0.5pt + rgb("#e5e9ee"))], footer: context [#line(length: 100%, stroke: 0.5pt + rgb("#e5e9ee")) #v(5pt) #text(size: 8pt, weight: "semibold", fill: rgb("#2563eb"))[ROBÒTICA²⁰⁰] #text(size: 8pt, fill: rgb("#64748b"))[ · {typst_text(title)}] #h(1fr) #text(size: 8pt, fill: rgb("#64748b"))[#counter(page).display() / #counter(page).final().at(0)]])
+#set text(font: "DejaVu Sans", size: 10.5pt, fill: rgb("#111827"), lang: "ca")
+#set par(leading: 0.72em, justify: true, spacing: 0.72em)
+#set heading(numbering: none)
+#show heading.where(level: 1): set text(font: "DejaVu Sans", size: 19pt, weight: "bold", fill: rgb("#0f172a"))
+#show heading.where(level: 2): set text(size: 14pt, weight: "bold", fill: rgb("#1d4ed8"))
+#show heading.where(level: 3): set text(size: 11.5pt, weight: "bold", fill: rgb("#1d4ed8"))
+#show heading.where(level: 4): set text(size: 10.5pt, weight: "bold", fill: rgb("#1d4ed8"))
+#show heading: set block(above: 1.05em, below: 0.48em)
+#show heading.where(level: 2): set block(sticky: true, fill: rgb("#eff6ff"), stroke: (left: 2pt + rgb("#2563eb"), rest: 0.5pt + rgb("#dbeafe")), radius: 5pt, inset: (x: 8pt, y: 5pt), above: 1.15em, below: 0.5em)
+#show link: set text(fill: rgb("#1d4ed8"))
+#set list(indent: 1.2em, body-indent: 0.4em, spacing: 0.48em)
+#set enum(indent: 1.2em, body-indent: 0.4em, spacing: 0.48em)
+#block(breakable: false, fill: rgb("#eff6ff"), stroke: (left: 3pt + rgb("#2563eb"), rest: 0.6pt + rgb("#dbeafe")), radius: 9pt, inset: (x: 16pt, y: 13pt))[
+{eyebrow_block}
+#v(7pt)
+#text(size: 21pt, weight: "bold", fill: rgb("#0f172a"))[{typst_text(title)}]
+{description_block}]
+#v(12pt)
 {body}
 '''
 
@@ -354,12 +359,14 @@ def collect() -> list[dict[str, str]]:
                 continue
             slug = slug_for(folder, md_path.name)
             title = meta.get("title", slug).strip()
+            metadata = [value for value in (meta.get("robot", "").replace("-", " ").title(), meta.get("level", ""), meta.get("duration", "")) if value]
             docs.append({
                 "category": category,
                 "categoryLabel": label,
                 "slug": slug,
                 "title": title,
                 "description": meta.get("description", "").strip(),
+                "metadata": " · ".join(metadata),
                 "source": str(md_path.relative_to(ROOT)),
                 "body": body,
             })
@@ -389,7 +396,7 @@ def write_printables(out: Path, compile_pdf: bool, cache_dir: Path | None = None
         group_dir.mkdir(parents=True, exist_ok=True)
         md_path = ROOT / doc["source"]
         body = markdown_to_typst(doc["body"], md_path, group_dir)
-        typ_source = document_typst(doc["title"], doc["description"], body)
+        typ_source = document_typst(doc["title"], doc["description"], body, f'{doc["categoryLabel"]} · {doc["metadata"]}' if doc["metadata"] else doc["categoryLabel"])
         typ_path = group_dir / f'{doc["slug"]}.typ'
         pdf_path = group_dir / f'{doc["slug"]}.pdf'
         typ_path.write_text(typ_source, encoding="utf-8")
@@ -413,13 +420,12 @@ def write_printables(out: Path, compile_pdf: bool, cache_dir: Path | None = None
     for index, doc in enumerate(docs):
         if index:
             global_body.append("#pagebreak()")
-        global_body.append(f'#align(center)[#text(size: 8pt, weight: "bold", fill: rgb("#1764c0"))[{doc["categoryLabel"].upper()}]]')
-        global_body.append(f'#heading(level: 1)[{typst_text(doc["title"])}]')
+        global_body.append(f'#block(breakable: false, fill: rgb("#eff6ff"), stroke: (left: 3pt + rgb("#2563eb"), rest: 0.6pt + rgb("#dbeafe")), radius: 9pt, inset: (x: 16pt, y: 13pt))[#text(size: 8pt, weight: "bold", fill: rgb("#2563eb"), tracking: 0.7pt)[{typst_text(doc["categoryLabel"].upper())}] #v(6pt) #text(size: 18pt, weight: "bold", fill: rgb("#0f172a"))[{typst_text(doc["title"])}] #v(4pt) #text(size: 8pt, fill: rgb("#64748b"))[{typst_text(doc["metadata"])}]]')
         if doc["description"]:
             global_body.append(f'#text(size: 11pt, fill: luma(90))[{typst_text(doc["description"])}]')
         global_body.append('#line(length: 100%, stroke: 1pt + rgb("#2b67e8"))')
         global_body.append(markdown_to_typst(doc["body"], ROOT / doc["source"], global_typ_dir))
-    global_source = document_typst("Recull complet de recursos", "Activitats, tutorials, guies docents, fitxes de robots i situacions d’aprenentatge.", "\n\n".join(global_body))
+    global_source = document_typst("Recull complet de recursos", "Activitats, tutorials, guies docents, fitxes de robots i situacions d’aprenentatge.", "\n\n".join(global_body), "Robòtica per a docents · Recull")
     global_typ = output_root / "robotica200-complet.typ"
     global_pdf = output_root / "robotica200-complet.pdf"
     global_typ.write_text(global_source, encoding="utf-8")
