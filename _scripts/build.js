@@ -323,6 +323,7 @@ function buildRobots(tutorials) {
       robotHighlightBody: rendered.robotHighlightBody,
       tutorialItems: robotTutorials,
       resources: data.official_resources || [],
+      techInfo: data.tech_info || '',
       statusNote: data.status_note || '',
       statusSource: data.status_source || '',
       statusSourceLabel: data.status_source_label || '',

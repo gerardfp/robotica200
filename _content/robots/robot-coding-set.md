@@ -11,6 +11,10 @@ specs:
 - ✓ Blocs físics de moviment, números i bucles
 - ✓ Robot mòbil amb ulls expressius
 image: _assets/robots/coding-set.webp
+
+# Informació i recursos oficials del fabricant
+tech_info: >
+  Els conjunts i la distribució de peces varien segons l'edició. Consulta el [recurs oficial de Coding Set](https://matatalab.com/en/node/60) i comprova la torre, el tauler, la connexió i la càrrega abans de l'activitat.
 official_resources:
 - title: Catàleg d’activitats de Matatalab
   href: https://matatalab.com/en/activity
@@ -21,7 +25,6 @@ official_resources:
 - title: MatataBot’s Cozy House
   href: https://matatalab.com/en/node/85
   description: Exemple de formes, angles i repeticions amb blocs tangibles.
-tech_info: Els conjunts i la distribució de peces varien segons l'edició. Consulta el [recurs oficial de Coding Set](https://matatalab.com/en/node/60) i comprova la torre, el tauler, la connexió i la càrrega abans de l'activitat.
 ---
 
 El Coding Set de Matatalab elimina la necessitat d'ordinadors o tauletes mitjançant un tauler físic on els alumnes col·loquen fitxes de plàstic dures. Una torre amb càmera escaneja els blocs i envia les instruccions al robot mòbil MatataBot per Bluetooth.

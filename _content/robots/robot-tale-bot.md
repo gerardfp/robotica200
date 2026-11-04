@@ -11,6 +11,10 @@ specs:
 - ✓ Micròfon i altaveu integrats
 - ✓ Suport de retoladors per dibuix
 image: _assets/robots/tale-bot.webp
+
+# Informació i recursos oficials del fabricant
+tech_info: >
+  Les ordres físiques, la seqüenciació, els bucles, els indicadors de color i l'enregistrament de veu depenen del model. Confirma quina versió tens i no enregistres cap veu sense acordar-ho amb els infants i el centre. [Informació oficial de Tale-Bot Pro](https://matatalab.com/en/node/774).
 official_resources:
 - title: Curs oficial de Tale-Bot Pro
   href: https://matatalab.com/en/node/808
@@ -18,7 +22,6 @@ official_resources:
 - title: Catàleg d’activitats de Matatalab
   href: https://matatalab.com/en/activity
   description: Filtra les activitats i comprova per a quin producte s’han dissenyat.
-tech_info: Les ordres físiques, la seqüenciació, els bucles, els indicadors de color i l'enregistrament de veu depenen del model. Confirma quina versió tens i no enregistres cap veu sense acordar-ho amb els infants i el centre. [Informació oficial de Tale-Bot Pro](https://matatalab.com/en/node/774).
 ---
 
 TaleBot Pro és un robot tangible pensat per desenvolupar el pensament computacional, el llenguatge oral i la creativitat. Reconeix mapes temàtics mitjançant un sensor òptic OID, permet enregistrar la pròpia veu a cada casella i dibuixa figures geomètriques amb retoladors.

@@ -1270,7 +1270,7 @@ assert.doesNotMatch(situationCatalogPage, /filters\.js/, "el catàleg no carrega
 const robotMarkdown = fs.readFileSync(path.join(root, "_content/robots/robot-spike.md"), "utf8");
 const robotRecord = renderer.parse(robotMarkdown, "https://example.test/_content/robots/robot-spike.md");
 assert.equal(robotRecord.data.specs.length, 5, "les especificacions de robot es llegeixen del front matter");
-assert.equal(robotRecord.data.official_resources.length, 2, "els recursos oficials de robot es llegeixen del front matter");
+assert.equal(robotRecord.data.official_resources.length, 3, "els recursos oficials de robot es llegeixen del front matter");
 const sharedPage = fs.readFileSync(path.join(dist, "situacio/index.html"), "utf8");
 const uiSource = fs.readFileSync(path.join(root, "_js/ui.js"), "utf8");
 const buildSource = fs.readFileSync(path.join(root, "_scripts/build.js"), "utf8");
