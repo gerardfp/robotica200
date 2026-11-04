@@ -513,14 +513,22 @@ function buildPrintables() {
   console.log(`  - PDF: ${payload.stats.reused} reutilitzats, ${payload.stats.generated} regenerats; recull global ${payload.stats.globalCached ? 'reutilitzat' : 'regenerat'}`);
   const groups = new Map();
   for (const item of payload.items) {
-    if (!groups.has(item.category)) groups.set(item.category, { label: item.categoryLabel, items: [] });
-    groups.get(item.category).items.push(item);
+    const key = item.webGroup || item.categoryLabel;
+    if (!groups.has(key)) groups.set(key, { label: key, categories: new Map() });
+    const group = groups.get(key);
+    if (!group.categories.has(item.category)) group.categories.set(item.category, { label: item.categoryLabel, items: [] });
+    group.categories.get(item.category).items.push(item);
   }
-  const groupHTML = Array.from(groups.values()).map(group => `
+  const groupHTML = Array.from(groups.values()).map(group => {
+    const categoryHTML = Array.from(group.categories.values()).map(category => `
+      ${group.categories.size > 1 ? `<h3>${escapeHTML(category.label)}</h3>` : ''}
+      <ul>${category.items.map(item => `<li><span>${escapeHTML(item.title)}</span><a href="../${escapeAttr(item.pdf)}" download>Descarrega el PDF</a></li>`).join('')}</ul>`).join('\n');
+    return `
     <section class="printable-group">
       <h2>${escapeHTML(group.label)}</h2>
-      <ul>${group.items.map(item => `<li><span>${escapeHTML(item.title)}</span><a href="../${escapeAttr(item.pdf)}" download>Descarrega el PDF</a></li>`).join('')}</ul>
-    </section>`).join('\n');
+      ${categoryHTML}
+    </section>`;
+  }).join('\n');
   writeHTML('imprimir/index.html', Document({
     title: 'Materials imprimibles | Robòtica²⁰⁰',
     description: 'Descarrega activitats, tutorials, guies i situacions d’aprenentatge en PDF.',

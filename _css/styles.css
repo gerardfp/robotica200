@@ -3037,6 +3037,7 @@ robot-profile[robot="microbit"] .robot-detail-section,
 .printables-all { margin: 1.25rem 0 2rem; }
 .printable-group { margin-top: 2rem; }
 .printable-group h2 { color: #12305a; font-family: var(--font-heading); }
+.printable-group h3 { margin: 1.25rem 0 .5rem; color: #345477; font-family: var(--font-heading); font-size: 1rem; }
 .printable-group ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid #dce5ef; }
 .printable-group li { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .8rem .25rem; border-bottom: 1px solid #dce5ef; }
 .printable-group li a { flex: none; color: #1556bc; font-weight: 700; }
