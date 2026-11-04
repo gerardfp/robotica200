@@ -1,47 +1,55 @@
 'use strict';
 
-const isoBox = (cx, ty, s, h, [top, left, right]) => {
-  const w = +(s * 0.866).toFixed(1), hh = s / 2;
-  return `<polygon fill="${top}" points="${cx},${ty - hh} ${cx + w},${ty} ${cx},${ty + hh} ${cx - w},${ty}"/>` +
-    `<polygon fill="${left}" points="${cx - w},${ty} ${cx},${ty + hh} ${cx},${ty + hh + h} ${cx - w},${ty + h}"/>` +
-    `<polygon fill="${right}" points="${cx},${ty + hh} ${cx + w},${ty} ${cx + w},${ty + h} ${cx},${ty + hh + h}"/>`;
-};
+const fs = require('node:fs');
+const path = require('node:path');
 
-const footerBot = ({ c, accent }) => `
-  <svg class="fbot-svg" viewBox="0 0 48 60" focusable="false">
-    ${isoBox(24, 44, 13, 4, ['#475569', '#334155', '#1e293b'])}
-    ${isoBox(24, 30, 12, 14, c)}
-    <g><polygon fill="${accent}" points="33,33.5 36.5,31.5 36.5,40.5 33,42.5"/></g>
-    <g>
-      ${isoBox(24, 21, 8, 9, c)}
-      <g fill="#e0f2fe">
-        <polygon points="25.4,27.2 29.5,24.8 29.5,27.8 25.4,30.2"/>
-        <polygon points="18.5,24.8 22.6,27.2 22.6,30.2 18.5,27.8"/>
-      </g>
-      <polygon fill="#334155" points="23.4,17 24.6,17 24.6,11 23.4,11"/>
-      <polygon fill="${accent}" points="24,7 26.2,9.5 24,12 21.8,9.5"/>
-    </g>
-  </svg>`;
+const ISO_DIR = path.join(__dirname, '..', '..', '_assets', 'icons', 'isometric');
 
+// Els 6 robots oficials. `lights` són els colors de les peces que s'encenen i s'apaguen
+// (ulls, LEDs, botons...) i `walk` indica quant li agrada passejar a cada robot.
 const FOOTER_BOTS = [
-  { c: ['#ff5a5f', '#e4242b', '#b3151b'], accent: '#fec002' },
-  { c: ['#ffa368', '#fc8439', '#d4621c'], accent: '#804cbd' },
-  { c: ['#8bd152', '#60a62d', '#437a1c'], accent: '#fc7813' },
-  { c: ['#3d9cf0', '#0079dc', '#005aa6'], accent: '#fdc80a' },
-  { c: ['#ef54b8', '#d82098', '#a3126f'], accent: '#fddc3e' },
-  { c: ['#7a828f', '#4a515d', '#30353d'], accent: '#047fdf' }
+  { slug: 'coding-express', name: 'Coding Express', lights: ['#f60000', '#f14644'], walk: 6 },
+  { slug: 'tale-bot', name: 'Tale-Bot', lights: ['#5ec0ea', '#e42d2f', '#ff6900', '#38e239', '#f7f700'], walk: 4 },
+  { slug: 'coding-set', name: 'Coding Set', lights: ['#ff9344'], walk: 4 },
+  { slug: 'codey-rocky', name: 'Codey Rocky', lights: ['#4ad4ed'], walk: 5 },
+  { slug: 'spike', name: 'Spike', lights: ['#06cbd6'], walk: 3 },
+  { slug: 'microbit', name: 'Micro:bit', lights: ['#ff2c00'], walk: 2 }
 ];
+
+const round = d => d.replace(/-?\d*\.\d+(?:e-?\d+)?/gi, n => String(+(+n).toFixed(2)));
+
+// Extreu els <path> dels SVG d'Inkscape i en genera un SVG net i compacte (es manté l'ordre de pintat)
+function isoRobotSVG({ slug, lights }) {
+  let src = '';
+  try {
+    src = fs.readFileSync(path.join(ISO_DIR, `${slug}.svg`), 'utf8');
+  } catch {
+    return '';
+  }
+  const lightSet = new Set(lights.map(c => c.toLowerCase()));
+  const paths = [];
+  for (const [, attrs] of src.matchAll(/<path\b([\s\S]*?)\/>/g)) {
+    const d = (attrs.match(/\sd="([^"]+)"/) || [])[1];
+    const fill = ((attrs.match(/fill:(#[0-9a-f]{3,6})/i) || [])[1] || '#000000').toLowerCase();
+    if (!d) continue;
+    const light = lightSet.has(fill) ? ' data-light' : '';
+    paths.push(`<path fill="${fill}"${light} d="${round(d)}"/>`);
+  }
+  return `<svg class="fbot-svg" viewBox="-6 -24 222 240" focusable="false"><g data-part="body">${paths.join('')}</g></svg>`;
+}
+
+const FOOTER_ROBOTS_HTML = FOOTER_BOTS
+  .map((b, i) => `<div class="fbot" style="--i:${i}" data-robot="${b.slug}" data-walk="${b.walk}" title="${b.name}"><span class="fbot-emote"></span>${isoRobotSVG(b)}</div>`)
+  .join('');
 
 function SiteFooter({ root = '' } = {}) {
   return `
   <footer class="site-footer">
     <div class="site-footer-waves" aria-hidden="true">
-      <svg class="footer-wave-svg" viewBox="0 0 1440 60" preserveAspectRatio="none">
-        <path class="footer-wave-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26 L1440,62 L0,62 Z"></path>
-        <path class="footer-wave-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32 L1440,62 L0,62 Z"></path>
-        <path class="footer-wave-line footer-wave-line-top" d="M0,18 C280,36 560,8 840,28 C1120,12 1300,34 1440,20"></path>
-        <path class="footer-wave-line footer-wave-line-back" d="M0,24 C320,54 640,6 960,36 C1200,52 1340,20 1440,26"></path>
-        <path class="footer-wave-line footer-wave-line-front" d="M0,36 C280,10 560,48 840,20 C1120,46 1320,16 1440,32"></path>
+      <svg class="footer-wave-svg" viewBox="0 0 1440 120" preserveAspectRatio="none" focusable="false">
+        <path class="footer-wave-warm" d="M0 65 C120 5 240 5 380 55 S640 115 810 55 S1080 0 1220 45 S1370 85 1440 50 L1440 120 L0 120 Z"/>
+        <path class="footer-wave-back" d="M0 45 C160 110 280 110 450 50 S720 5 900 65 S1210 115 1440 35 L1440 120 L0 120 Z"/>
+        <path class="footer-wave-front" d="M0 85 C160 35 300 35 470 85 S760 120 940 70 S1240 40 1440 85 L1440 120 L0 120 Z"/>
       </svg>
     </div>
     <div class="site-footer-body">
@@ -54,8 +62,8 @@ function SiteFooter({ root = '' } = {}) {
         </div>
         <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
         <p class="site-footer-print"><a href="${root}imprimir/index.html">Materials imprimibles · PDF individual i recull complet</a></p>
-        <div class="footer-robots" aria-hidden="true">
-          ${FOOTER_BOTS.map(b => `<div class="fbot">${footerBot(b)}</div>`).join('')}
+        <div class="footer-robots" aria-hidden="true" data-footer-robots>
+          ${FOOTER_ROBOTS_HTML}
         </div>
       </div>
     </div>

@@ -208,9 +208,198 @@
     });
   }
 
+  // Motor de comportament: cada robot tria accions aleatòries i s'anima amb requestAnimationFrame
+  // 6. Els 6 robots oficials passegen i fan coses de robot al peu de pàgina
+  function initFooterRobots() {
+    const stage = document.querySelector('[data-footer-robots]');
+    if (!stage) return;
+    const reduceMotion = Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+    const rand = (a, b) => a + Math.random() * (b - a);
+    const ease = t => (t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2);
+    const env = p => Math.min(1, Math.sin(Math.PI * p) * 3); // entrada/sortida suau
+    const PIVOT = '105 210'; // base del robot (unitats del viewBox)
+    const DUR = {
+      walk: [1600, 3400], hop: [850, 850], turn: [1400, 2000], dance: [2200, 3400],
+      beep: [1400, 2400], nod: [1600, 2400], greet: [1300, 1300], idle: [700, 2200]
+    };
+    const EMOTES = { beep: ['♪', '!', '•••'], dance: ['♫'], greet: ['♥'], turn: ['?'] };
+
+    const bots = Array.from(stage.querySelectorAll('.fbot')).map((el, i, all) => {
+      const home = (i + 0.5) / all.length;
+      return {
+        el, home, x: home, x0: home, x1: home,
+        dir: Math.random() < 0.5 ? 1 : -1,
+        svg: el.querySelector('.fbot-svg'),
+        body: el.querySelector('[data-part="body"]'),
+        emote: el.querySelector('.fbot-emote'),
+        lights: Array.from(el.querySelectorAll('[data-light]')),
+        walkW: Number(el.dataset.walk) || 3,
+        action: 'idle', t0: 0, dur: rand(200, 1500), target: null,
+        nextBlink: rand(800, 5000), lightsOn: true
+      };
+    });
+    if (!bots.length) return;
+
+    // Moviment reduït: els robots es queden quiets al seu lloc (CSS) i només parpellegen els llums
+    if (reduceMotion) {
+      setInterval(() => {
+        bots.forEach(b => {
+          if (Math.random() < 0.25) {
+            b.lights.forEach(l => { l.style.opacity = '0.3'; });
+            setTimeout(() => b.lights.forEach(l => { l.style.opacity = '1'; }), 180);
+          }
+        });
+      }, 1500);
+      return;
+    }
+
+    let width = stage.clientWidth;
+    let visible = true;
+    let rafId = null;
+
+    if ('ResizeObserver' in window) new ResizeObserver(() => { width = stage.clientWidth; }).observe(stage);
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => {
+        visible = entry.isIntersecting;
+        if (visible && rafId === null) rafId = requestAnimationFrame(frame);
+      }).observe(stage);
+    }
+
+    const nearest = b => bots.reduce((best, o) => (o !== b && (!best || Math.abs(o.x - b.x) < Math.abs(best.x - b.x)) ? o : best), null);
+
+    function pick(b) {
+      const near = nearest(b);
+      const options = [
+        ['walk', b.walkW], ['hop', 2], ['turn', 1.5], ['dance', 1.2],
+        ['beep', 2], ['nod', 1.5], ['idle', 2.5],
+        ['greet', near && Math.abs(near.x - b.x) < 1.6 / bots.length ? 2 : 0]
+      ];
+      const total = options.reduce((s, o) => s + o[1], 0);
+      let r = Math.random() * total;
+      for (const [name, w] of options) { if ((r -= w) <= 0) return name; }
+      return 'idle';
+    }
+
+    function showEmote(b, text) {
+      b.emote.textContent = text || '';
+      b.emote.classList.toggle('is-visible', Boolean(text));
+    }
+
+    function begin(b, now) {
+      b.action = b.action === 'idle' ? pick(b) : 'idle';
+      b.t0 = now;
+      const [lo, hi] = DUR[b.action];
+      b.dur = rand(lo, hi);
+      if (b.action === 'walk') {
+        const span = 0.5 / bots.length + 0.04;
+        b.x0 = b.x;
+        b.x1 = Math.max(0.03, Math.min(0.97, b.home + rand(-span, span)));
+        b.dir = b.x1 >= b.x0 ? 1 : -1;
+      }
+      if (b.action === 'greet') {
+        const near = nearest(b);
+        b.dir = near && near.x > b.x ? 1 : -1;
+      }
+      const pool = EMOTES[b.action];
+      showEmote(b, pool && Math.random() < 0.85 ? pool[Math.floor(Math.random() * pool.length)] : '');
+    }
+
+    function setLights(b, fn) {
+      b.lights.forEach((l, i) => { l.style.opacity = fn(i) ? '1' : '0.3'; });
+    }
+
+    function animate(b, now) {
+      let p = (now - b.t0) / b.dur;
+      if (p >= 1) { begin(b, now); p = 0; }
+
+      const e = env(p);
+      let ty = 0, rot = 0, sx = 1, sy = 1, tx = 0, face = 1;
+      let lightMode = 'steady';
+
+      switch (b.action) {
+        case 'walk': {
+          const steps = p * b.dur / 220;
+          b.x = b.x0 + (b.x1 - b.x0) * ease(p);
+          ty = -Math.abs(Math.sin(steps * Math.PI)) * 7;
+          rot = Math.sin(steps * Math.PI) * 3;
+          break;
+        }
+        case 'hop': {
+          if (p < 0.18) { const q = p / 0.18; sx = 1 + 0.1 * q; sy = 1 - 0.14 * q; }
+          else if (p < 0.82) { const q = Math.sin(Math.PI * (p - 0.18) / 0.64); ty = -60 * q; sx = 1 - 0.05 * q; sy = 1 + 0.08 * q; rot = -6 * q; }
+          else { const q = 1 - (p - 0.82) / 0.18; sx = 1 + 0.08 * q; sy = 1 - 0.1 * q; }
+          break;
+        }
+        case 'turn': // mira enrere i torna a mirar endavant
+          face = Math.cos(2 * Math.PI * p);
+          if (Math.abs(face) < 0.08) face = face < 0 ? -0.08 : 0.08;
+          break;
+        case 'dance': {
+          const s = Math.sin(p * b.dur / 320 * Math.PI);
+          ty = -Math.abs(s) * 14 * e;
+          rot = s * 9 * e;
+          lightMode = 'chase';
+          break;
+        }
+        case 'beep':
+          tx = Math.sin(now / 28) * 2.5 * e;
+          lightMode = 'random';
+          break;
+        case 'nod': // s'inclina endavant per inspeccionar el terra
+          rot = -9 * e * (0.7 + 0.3 * Math.sin(p * Math.PI * 4));
+          break;
+        case 'greet': {
+          const q = Math.sin(Math.PI * Math.min(1, p / 0.5));
+          ty = p < 0.5 ? -38 * q : 0;
+          rot = p >= 0.5 ? -7 * Math.sin(Math.PI * (p - 0.5) / 0.5) : 0;
+          lightMode = 'chase';
+          break;
+        }
+        default: // idle: respiració suau
+          sy = 1 + 0.018 * Math.sin(now / 420 + b.home * 10);
+          sx = 2 - sy;
+      }
+
+      // Llums: parpelleig ocasional, aleatori (bip) o en seqüència (ball/salutació)
+      if (b.lights.length) {
+        if (lightMode === 'random') {
+          const tick = Math.floor(now / 120);
+          setLights(b, i => ((i * 7 + tick * 13) % 5) > 1);
+        } else if (lightMode === 'chase') {
+          const tick = Math.floor(now / 160);
+          setLights(b, i => (i + tick) % 3 !== 0);
+        } else {
+          let on = true;
+          if (now > b.nextBlink) {
+            if (now - b.nextBlink > 160) b.nextBlink = now + rand(2500, 7000);
+            else on = false;
+          }
+          setLights(b, () => on);
+        }
+      }
+
+      const botW = b.el.offsetWidth || 60;
+      const px = b.x * Math.max(0, width - botW) + tx * botW / 240;
+      b.el.style.transform = `translateX(${px.toFixed(1)}px)`;
+      b.svg.style.transform = `scaleX(${(-b.dir * face).toFixed(3)})`;
+      b.body.setAttribute('transform',
+        `translate(0 ${ty.toFixed(2)}) rotate(${rot.toFixed(2)} ${PIVOT}) translate(105 210) scale(${sx.toFixed(3)} ${sy.toFixed(3)}) translate(-105 -210)`);
+    }
+
+    function frame(now) {
+      if (!visible) { rafId = null; return; }
+      bots.forEach(b => animate(b, now));
+      rafId = requestAnimationFrame(frame);
+    }
+    stage.classList.add('is-animated');
+    rafId = requestAnimationFrame(frame);
+  }
+
   initLegacyRedirect();
   initBackFilters();
   initLearningWizards();
   initSituationsCatalog();
   initHomeRobot();
+  initFooterRobots();
 })();
