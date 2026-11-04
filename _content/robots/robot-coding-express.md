@@ -14,10 +14,14 @@ image: _assets/robots/coding-express.webp
 url: robot-coding-express.html
 aliases:
   - robot-coding-express.html
-status_note: El fabricant marca Coding Express com a producte retirat. Les propostes són per als centres
-  que ja tenen el tren; comprova l’estat de l’app i els recursos disponibles per al teu dispositiu.
+
+# Informació i recursos oficials del fabricant
+status_note: >
+  El fabricant marca Coding Express com a producte retirat. Les propostes són per als centres que ja tenen el tren; comprova l’estat de l’app i els recursos disponibles per al teu dispositiu.
 status_source: https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/
 status_source_label: Fitxa oficial de Coding Express
+tech_info: >
+  El kit es va dissenyar per a educació infantil i el fabricant ofereix activitats de seqüència, bucles i condicions. LEGO Education el marca com a producte retirat, de manera que aquesta pàgina és especialment útil per als centres que ja en disposen. Comprova els components del teu kit i l'app o recursos instal·lats abans de preparar la sessió: [estat i recursos oficials de Coding Express](https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/).
 official_resources:
 - title: Unitat Coding Express (castellà)
   href: https://education.lego.com/es-es/lessons/preschool-coding-express/
@@ -28,7 +32,6 @@ official_resources:
 - title: Vies en forma de Y i condicions
   href: https://education.lego.com/es-es/lessons/preschool-coding-express/y-shaped-track/
   description: Lliçó sobre rutes alternatives i decisions.
-tech_info: El kit es va dissenyar per a educació infantil i el fabricant ofereix activitats de seqüència, bucles i condicions. LEGO Education el marca com a producte retirat, de manera que aquesta pàgina és especialment útil per als centres que ja en disposen. Comprova els components del teu kit i l'app o recursos instal·lats abans de preparar la sessió: [estat i recursos oficials de Coding Express](https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/).
 ---
 
 Coding Express combina les clàssiques vies i peces DUPLO amb una locomotora intel·ligent equipada amb un sensor de llum inferior. Mitjançant maons d'acció de colors col·locats a la via, els infants controlen parades, canvis de sentit, xiulets i llums sense necessitat de pantalles.

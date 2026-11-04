@@ -4,6 +4,8 @@ const { escapeHTML, escapeAttr, cleanRoot } = require('../layout/utils');
 const { Document } = require('../layout/document');
 const { SectionHero } = require('../components/section-hero');
 const { TutorialCard } = require('../components/tutorial-card');
+const MarkdownIt = require('../../_scripts/vendor/markdown-it.min.js');
+const infoMarkdown = new MarkdownIt({ html: false });
 
 function RobotPage({
   robotSlug = '',
@@ -15,10 +17,10 @@ function RobotPage({
   robotHighlightBody = '',
   tutorialItems = [],
   resources = [],
+  techInfo = '',
   statusNote = '',
   statusSource = '',
   statusSourceLabel = '',
-  specs = [],
   printHref = ''
 } = {}) {
   const r = cleanRoot(root);
@@ -40,26 +42,26 @@ function RobotPage({
         </div>
       </aside>` : '';
 
-  const resourcesHTML = (resources && resources.length) ? `
-    <section class="robot-official-resources" data-official-resources>
-      <h2>Recursos oficials del fabricant</h2>
-      <p>Materials, compatibilitat i instruccions actualitzades.</p>
-      <ul>
-        ${resources.map(res => `<li><a href="${escapeAttr(res.href)}" target="_blank" rel="noopener noreferrer">${escapeHTML(res.title)}</a><span>${escapeHTML(res.description || '')}</span></li>`).join('')}
-      </ul>
-    </section>` : '';
-
   const statusHTML = statusNote ? `
-    <p class="robot-status-note" data-status>
-      <strong>Estat i disponibilitat del kit:</strong>
-      <span>${escapeHTML(statusNote)}</span>
-      ${statusSource ? `<a href="${escapeAttr(statusSource)}" target="_blank" rel="noopener noreferrer">${escapeHTML(statusSourceLabel || 'Font oficial')}</a>` : ''}
-    </p>` : '';
+      <aside class="manufacturer-status" data-status>
+        <span class="manufacturer-kicker">Estat i disponibilitat</span>
+        <p>${escapeHTML(statusNote)}</p>
+        ${statusSource ? `<a href="${escapeAttr(statusSource)}" target="_blank" rel="noopener noreferrer">${escapeHTML(statusSourceLabel || 'Font oficial')} <span aria-hidden="true">↗</span></a>` : ''}
+      </aside>` : '';
 
-  const specsHTML = (specs && specs.length) ? `
-    <div class="robot-specs-list" data-specs>
-      ${specs.map(spec => `<span class="robot-spec-pill">${escapeHTML(spec)}</span>`).join('')}
-    </div>` : '';
+  const resourcesHTML = (resources.length || statusNote || techInfo) ? `
+    <section class="robot-official-resources" data-official-resources aria-labelledby="manufacturer-heading">
+      <header class="manufacturer-heading">
+        <h2 id="manufacturer-heading">Recursos oficials del fabricant</h2>
+        <p>Explora noves possibilitats amb la documentació oficial i les guies del fabricant.</p>
+      </header>
+      <div class="manufacturer-info">
+        ${(techInfo || statusNote) ? `<div class="manufacturer-tech" data-tech-info><h3>Informació tècnica i compatibilitat</h3>${techInfo ? `<div>${infoMarkdown.render(techInfo)}</div>` : ''}${statusHTML}</div>` : ''}
+      </div>
+      ${resources.length ? `<ul class="manufacturer-resource-grid">
+        ${resources.map((res, index) => `<li><a class="manufacturer-resource" href="${escapeAttr(res.href)}" target="_blank" rel="noopener noreferrer"><span class="manufacturer-resource-top"><span class="manufacturer-resource-number">${String(index + 1).padStart(2, '0')}</span><span aria-hidden="true">↗</span></span><h3>${escapeHTML(res.title)}</h3>${res.description ? `<p>${escapeHTML(res.description)}</p>` : ''}<span class="manufacturer-resource-action">Consulta el recurs <span aria-hidden="true">→</span></span></a></li>`).join('')}
+      </ul>` : ''}
+    </section>` : '';
 
   return Document({
     title: `${title} | Robòtica²⁰⁰`,
@@ -96,7 +98,7 @@ function RobotPage({
     </div>
     <div class="clean-grid tutorial-grid" data-tutorial-grid>
       ${tutorialItems.map(item => TutorialCard({ item, root: r })).join('\n      ')}
-    </div>${resourcesHTML}${statusHTML}${specsHTML}
+    </div>${resourcesHTML}
   </section>`
   });
 }

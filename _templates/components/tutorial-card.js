@@ -13,7 +13,7 @@ function TutorialCard({ item, root = '../../' }) {
         <span class="tag-badge badge-${escapeAttr(item.dificultatSlug)}">${escapeHTML(item.dificultat)}</span>
         <span class="tag-badge badge-durada">⏱️ ${escapeHTML(item.durada)}</span>
       </div>
-      <img src="${escapeAttr(`${r}_assets/icons/${item.robot}.svg`)}" alt="" class="card-robot-icon" width="28" height="28">
+      <img src="${escapeAttr(`${r}_assets/icons/${item.robot}.webp`)}" alt="" class="card-robot-icon" width="28" height="28">
     </div>
     <a href="${escapeAttr(href)}" class="tutorial-card-media-link" aria-label="${escapeAttr(item.titol)}">
       <div class="tutorial-card-media">

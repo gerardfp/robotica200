@@ -13,15 +13,15 @@
 
 - [ ] El site-footer no sap fer-lo el Gemini 3.8 Flash, y els robots han dixat de moure's
 
-- [ ] Convertir totes les imatges a webp ¿?¿?¿?¿?
+- [x] Convertir totes les imatges a webp ¿?¿?¿?¿?
 
-- [ ] En les tarjetes de tutorials , ¿fa falta la icona del robot? (en tots cas, llevar les isometriques antigues)
+- [ ] En les tarjetes de tutorials , ¿fa falta la icona del robot?
 
 - [ ] La part de recrsos oficials del frabricant es horrible
 
 - [ ] I les etiquetes de característiques dels robots pitjor encara (sobren)
 
-- [ ] En lego spike falta un enllaç a https://spike.legoeducation.com/prime/models/
+- [x] En lego spike falta un enllaç a https://spike.legoeducation.com/prime/models/
 
 - [ ] Coses xungues en el contingut
     - tutorials/tb-motors-sensors.md (crec que no parla de sensors, només de motors i dibuix)

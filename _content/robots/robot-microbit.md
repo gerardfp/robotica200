@@ -12,6 +12,10 @@ specs:
 - ✓ Antena de ràdio 2.4GHz
 - ✓ Pins d’entrada/sortida i connexió a circuits
 image: _assets/robots/microbit.webp
+
+# Informació i recursos oficials del fabricant
+tech_info: >
+  El disseny dels pins i les funcions varien entre micro:bit V1 i V2; la V2 afegeix, entre altres funcions, micròfon, altaveu i logotip tàctil. Abans d'introduir so, orientació o accessoris, identifica el model de la placa i revisa els requisits de connexió i d'alimentació. El codi pot compartir-se en blocs, Python o explicació oral. Consulta la [guia oficial de funcions de la micro:bit](https://microbit.org/get-started/features/overview/).
 official_resources:
 - title: Lliçons de micro:bit
   href: https://microbit.org/teach/lessons/
@@ -25,7 +29,6 @@ official_resources:
 - title: 'Make it: code it'
   href: https://www.microbit.org/projects/make-it-code-it/
   description: Projectes filtrables per nivell, tema, llenguatge i característica de la placa.
-tech_info: El disseny dels pins i les funcions varien entre micro:bit V1 i V2; la V2 afegeix, entre altres funcions, micròfon, altaveu i logotip tàctil. Abans d'introduir so, orientació o accessoris, identifica el model de la placa i revisa els requisits de connexió i d'alimentació. El codi pot compartir-se en blocs, Python o explicació oral. Consulta la [guia oficial de funcions de la micro:bit](https://microbit.org/get-started/features/overview/).
 ---
 
 La BBC micro:bit és una petita placa programable amb una matriu de 25 LEDs, dos polsadors, acceleròmetre, brúixola i ràdio. Les funcions de maquinari depenen de la revisió: la V2 incorpora logotip tàctil, micròfon, altaveu i registre persistent de dades de sensors amb MakeCode; altres funcions i connexions poden variar. Identifica la versió abans de dissenyar una activitat.

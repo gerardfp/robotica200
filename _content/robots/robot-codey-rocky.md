@@ -12,6 +12,10 @@ specs:
 - ✓ Sensor infraroig i de color
 - ✓ Connexió USB/Bluetooth
 image: _assets/robots/codey-rocky.webp
+
+# Informació i recursos oficials del fabricant
+tech_info: >
+  La fitxa del fabricant descriu programació amb blocs i Python, botons, matriu, sensors de so i llum, giroscopi i funcions infraroges; els accessoris i comportaments exactes depenen de la configuració. [Fitxa oficial del fabricant](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky).
 official_resources:
 - title: Guies i casos de Codey Rocky
   href: https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky
@@ -20,7 +24,6 @@ official_resources:
   href: https://support.makeblock.com/hc/en-us/articles/25494707612823-Codey-Rocky-Neuron-Discovery
   description: Curs amb seqüències, bucles, condicions, sensors i activitats desendollades; algunes parts
     requereixen Neuron.
-tech_info: La fitxa del fabricant descriu programació amb blocs i Python, botons, matriu, sensors de so i llum, giroscopi i funcions infraroges; els accessoris i comportaments exactes depenen de la configuració. [Fitxa oficial del fabricant](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky).
 ---
 
 Codey Rocky està format per dues parts desacoblables: 'Codey' (el cervell amb pantalla matriu de 128 LEDs, sensor de llum, micròfon, altaveu i giroscopi) i 'Rocky' (el xassís oruga amb sensors de color i d'infrarojos). Es programa amb blocs tipus Scratch o Python a través del software mBlock5.
