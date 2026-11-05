@@ -3480,19 +3480,6 @@ robot-profile .robot-detail-section,
   min-width: 0;
   flex: 1 1 auto;
 }
-.learning-wizard-kicker {
-  display: inline-flex;
-  align-items: center;
-  padding: 0.2rem 0.55rem;
-  border-radius: 999px;
-  background: #e0f2fe;
-  color: #0369a1;
-  font: 700 0.7rem/1.2 var(--font-sans);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
 .learning-wizard-status {
   margin: 0;
   color: #1e293b;
@@ -3809,6 +3796,7 @@ robot-profile .robot-detail-section,
   justify-content: space-between;
 }
 .blocks-visual-frame {
+  margin: 1.5rem 0;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
@@ -3884,4 +3872,15 @@ robot-profile .robot-detail-section,
   padding: 2.5rem 1rem;
   color: #64748b;
   font: 500 0.88rem var(--font-sans);
+}
+
+/* Les seqüències físiques mantenen les peces llegibles i permeten desplaçament horitzontal. */
+.blocks-visual-frame:has(> .tangible-sequence) {
+  min-height: 0;
+  justify-content: safe center;
+}
+.blocks-visual-frame svg.tangible-sequence {
+  max-width: none;
+  flex-shrink: 0;
+  margin-inline: auto;
 }

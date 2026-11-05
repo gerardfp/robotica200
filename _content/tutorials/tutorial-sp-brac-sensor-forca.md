@@ -8,13 +8,15 @@ order: 3
 image: _assets/tutorials/sp-brac-sensor-forca-flat.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
 Programeu un motor solt perquè s’ature en prémer el sensor de força amb el dit. No cal construir cap braç ni pinça, ni encaixar peces LEGO.
 
 - Distingir els estats premut i alliberat.
 - Relacionar una entrada del sensor amb una ordre al motor.
 - Provar una condició i explicar el resultat.
+
+![](../../_assets/tutorials/sp-brac-sensor-forca-flat.webp)
 
 ## 🧰 Materials i preparació
 
@@ -23,12 +25,12 @@ Programeu un motor solt perquè s’ature en prémer el sensor de força amb el 
 
 Connecteu només els cables. Recolzeu el motor de manera estable sobre la taula, amb l’eix lliure i sense cap peça afegida. Deixeu el sensor separat del motor i fàcil d’abastar.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Lectura de contacte del sensor de força i control d’un motor angular.
 - Espera condicional; el sensor no mesura distància.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Comproveu el sensor amb el motor parat
 
@@ -49,27 +51,16 @@ Inicieu el programa amb el sensor alliberat. Premeu-lo sense acostar la mà al m
 
 ### 3. Compareu dos estats inicials
 
-Repetiu tres vegades començant amb el sensor alliberat. Després predigueu què passarà si l’inicieu amb el sensor ja premut i comproveu-ho. Si l’app ofereix una lectura numèrica de força, observeu com varia amb una pressió suau; no cal fer força elevada ni canviar el programa.
+Repetiu tres vegades començant amb el sensor alliberat. Després inicieu el programa amb el sensor ja premut i comproveu la resposta. Si l’app ofereix una lectura numèrica de força, observeu com varia amb una pressió suau; no cal fer força elevada ni canviar el programa.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
 Registreu l’estat inicial, si heu premut el sensor i si el motor s’ha aturat. Si continua girant, atureu-lo manualment i reviseu els ports i la condició.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Quina acció sobre el sensor activa la parada?
-- Per què el motor no torna a girar en deixar anar el sensor?
-- Què canvia quan el sensor ja està premut a l’inici?
+Situeu el sensor on siga còmode prémer-lo. No toqueu l’eix del motor en moviment. La condició programada no substitueix l’aturada manual ni és un sistema de protecció.
 
-## ♿ Accessibilitat i seguretat
-
-Situeu el sensor on siga còmode prémer-lo; una altra persona pot fer la pressió mentre l’alumne programa o registra. No toqueu l’eix en moviment. Aquesta condició programada no substitueix l’aturada manual ni és un sistema de protecció.
-
-## ✅ Evidències d’aprenentatge
-
-- Esquema dels ports i programa amb la condició d’aturada.
-- Resultat de tres proves i comparació dels dos estats inicials.
-
-## 🔗 Fonts oficials i límits
+## 🔗 Fonts i límits
 
 La [fitxa tècnica del sensor](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt23df304b05e587b2/5f8801ba721f8178f2e5e626/techspecs_technicforcesensor.pdf?locale=en-us) diferencia detecció de contacte i mesura de força. LEGO també ofereix una [pràctica de sensor i motor](https://education.lego.com/en-us/lessons/spike-python-u3-sensor-control/spike-python-u3l1-start-sensing/); aquella lliçó usa Python, mentre que aquest tutorial fa servir blocs.

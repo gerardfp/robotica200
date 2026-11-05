@@ -8,7 +8,7 @@ order: 1
 image: _assets/tutorials/sp-primeres-passes-flat.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
 Connecta el Hub gran SPIKE Prime i crea el teu primer programa: una cara que apareix i desapareix. Després identifica els botons, els ports A–F i el sensor d’orientació. Només necessites el Hub: no cal encaixar peces LEGO ni construir cap model.
 
@@ -17,19 +17,21 @@ Connecta el Hub gran SPIKE Prime i crea el teu primer programa: una cara que apa
 - Identificar els sis ports d’entrada/eixida A–F i els botons del Hub gran SPIKE Prime.
 - Distingir les lectures d’inclinació del sensor de sis eixos de gestos com sacsejar o tocar el Hub.
 
+![](../../_assets/tutorials/sp-primeres-passes-flat.webp)
+
 ## 🧰 Materials i preparació
 
 - Hub gran SPIKE Prime (model 45601)
 - App LEGO SPIKE instal·lada
 - Cable USB
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Hub SPIKE Prime: matriu LED 5 × 5, botó central, botons laterals, ports i sensor d’orientació de sis eixos.
 - Connexió i programació amb SPIKE App; els ports i elements connectats s’han d’identificar en cada prova.
 - Bateria recarregable del Hub; l’estat de càrrega i els indicadors poden variar segons la versió de l’app.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Enceneu i connecteu el Hub Prime
 
@@ -54,25 +56,16 @@ En un projecte nou, busqueu a l’app l’esdeveniment que detecta una inclinaci
 
 Amb el Hub desconnectat de motors i sensors, useu els botons esquerre i dret per recórrer els programes guardats i el botó central per iniciar-ne un. Observeu l’indicador del Hub mentre es connecta i executa el projecte. Els botons laterals naveguen pels programes del Hub; no són botons A i B d’un controlador separat.
 
-> **💡 Consell docent per a la sessió:** Posa una etiqueta de color o número a cada Hub perquè els alumnes no es connectin per Bluetooth al robot del grup del costat.
+> **💡 Consell d’ús:** Identifiqueu el nom del Hub abans de connectar-lo per Bluetooth, especialment si hi ha altres dispositius encesos a prop.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
-Executeu el programa de la cara tres vegades: observeu si apareix, espereu dos segons i comproveu que s'esborra. Si no passa, reviseu la connexió i l’ordre dels blocs. Després identifiqueu els ports A–F mirant les lletres del Hub; encara no cal connectar-hi cap motor.
+Executeu el programa i comproveu que la cara apareix, es manté dos segons i s’esborra. Si no passa, reviseu la connexió i l’ordre dels blocs. Identifiqueu els ports A–F per les lletres del Hub abans de connectar accessoris.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Quins elements mostren informació d’estat mentre el Hub està encés o connectat?
-- Quina diferència hi ha entre orientar el Hub i sacsejar-lo?
-- Quines lletres identifiquen els ports del Hub?
+Comenceu amb el Hub sobre la taula i sense motors connectats. No interrompeu una actualització del firmware. Desconnecteu el cable USB agafant-ne el connector.
 
-## ♿ Accessibilitat i seguretat
-
-Projecteu els passos de connexió o imprimiu-los amb captures de la versió de l’app del centre. Comenceu amb el Hub sobre la taula i sense motors connectats; desconnecteu el cable agafant-ne el connector.
-
-## ✅ Evidències d’aprenentatge
-- El programa de la cara, el resultat de les tres proves i una anotació dels ports i botons identificats.
-
-## 🔗 Fonts oficials i límits
+## 🔗 Fonts i límits
 
 La [fitxa tècnica i guia oficial de SPIKE Prime](https://education.lego.com/en-us/teacher-resources/lego-education-spike-prime/support-technical-info/lego-education-spike-prime-support-technical-info-product-info/) descriu el Hub gran amb sis ports, matriu 5 × 5, BLE, altaveu, sensor de sis eixos i bateria recarregable, així com els passos de connexió i actualització. Aquesta guia és per al Hub gran SPIKE Prime; SPIKE Essential té un hub diferent amb només dos ports. LEGO indica que continuarà donant suport a SPIKE App fins al 30 de juny de 2031 ([actualització de LEGO Education](https://education.lego.com/en-us/spike-update-2026/)).

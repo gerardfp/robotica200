@@ -20,6 +20,7 @@ const { LearningWizard } = require('../../_templates/components/learning-wizard'
 const { MarkdownNote } = require('../../_templates/components/markdown-note');
 const { CodePanel, VisualBlocksPanel } = require('../../_templates/components/code-panel');
 const { renderScratchBlocks, renderMakeCodeFallbackSVG } = require('./blocks');
+const { DIALECTS, renderTangibleBlocks } = require('./tangible-blocks');
 const { renderOrGetMakeCodeSVG } = require('./makecode-cache');
 const {
   decodeEntities,
@@ -377,6 +378,14 @@ function transformPreCodeElement(preEl) {
   const lowerLang = lang.toLowerCase();
   const rawCode = codeEl.textContent.replace(/\r?\n$/, '');
 
+  if (DIALECTS[lowerLang]) {
+    try {
+      return VisualBlocksPanel({ lang: DIALECTS[lowerLang], svgHTML: renderTangibleBlocks(rawCode, lowerLang) });
+    } catch (error) {
+      return `<aside class="markdown-callout"><p>${escapeHTML(error.message)}</p></aside>${CodePanel({ lang, codeHTML: escapeHTML(rawCode) })}`;
+    }
+  }
+
   // Suport natiu per a blocs visuals: MakeCode, mBlock 5 i LEGO SPIKE App
   if (['mblock', 'mblocks', 'spikeapp', 'spike-app', 'spike', 'scratchblocks'].includes(lowerLang)) {
     const svgHTML = renderScratchBlocks(rawCode, { dialect: lowerLang });
@@ -515,6 +524,7 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
  * 3. Agrupació semàntica de seccions <h2>, passos <h3> (learning-step) i fases <h4> (learning-phase)
  */
 function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
+  const isTutorial = /(?:^|\/)tutorials\/tutorial-[^/]+\.md(?:[?#]|$)/.test(sourceURL);
   const root = parseHTML(rawHTML);
   sanitizeAndRewriteDOM(root, sourceURL);
 
@@ -531,7 +541,17 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
     if (node.type === 'element' && node.tagName === 'h2') {
       if (currentGroup) h2Groups.push(currentGroup);
       const plainTitle = node.textContent.trim();
-      const section = canonicalSection(plainTitle);
+      const tutorialSections = {
+        'Què aprendrem?': ['intro', '🎯 Què aprendrem?'],
+        'Materials i preparació': ['materials', '🧰 Materials i preparació'],
+        'Funcions i controls': ['learning', '🧩 Funcions i controls'],
+        'Pas a pas': ['sequence', '👣 Pas a pas'],
+        'Comprovació i resolució de problemes': ['assessment', '🧪 Comprovació i resolució de problemes'],
+        'Ús i seguretat': ['access', '🛡️ Ús i seguretat'],
+        'Fonts i límits': ['official', '🔗 Fonts i límits']
+      };
+      const tutorialSection = isTutorial && tutorialSections[plainTitle.replace(/^[^\p{L}]+/u, '')];
+      const section = tutorialSection ? { key: tutorialSection[0], title: tutorialSection[1] } : canonicalSection(plainTitle);
       currentGroup = {
         key: section.key || 'other',
         section,
@@ -583,7 +603,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
     const sectionClass = `detail-section${merged.key === 'intro' ? ' detail-section-intro' : ''}`;
     output.push(`<section class="${sectionClass}" data-section-group="${merged.key || 'other'}"><h2 id="${firstId}">${merged.section.title}</h2>`);
 
-    const state = { introPending: merged.key === 'intro' };
+    const state = { introPending: merged.key === 'intro' && !isTutorial };
 
     for (let gIdx = 0; gIdx < merged.subGroups.length; gIdx++) {
       const sub = merged.subGroups[gIdx];
@@ -596,7 +616,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
       const isSequenceSub =
         sub.key === 'sequence' &&
         !/oficial|adaptació|adaptacio|referent/i.test(sub.plainTitle) &&
-        /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|activitats|desenvolupament|projecte en|reptes|estands|fases|àmbits|repte\s+\d)/i.test(sub.plainTitle);
+        (isTutorial || /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|activitats|desenvolupament|projecte en|reptes|estands|fases|àmbits|repte\s+\d)/i.test(sub.plainTitle));
 
       // Processar els nodes dins d'aquest bloc <h2>
       let openStep = false;
@@ -667,7 +687,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
           openStep = true;
           steps.push({ id, title: displayTitlePlain });
 
-          if (!hasPhaseInStep) {
+          if (!isTutorial && !hasPhaseInStep) {
             output.push('<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>');
             openPhase = true;
           }
@@ -679,8 +699,8 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
           const plainH4 = node.textContent.trim();
           const phaseMatch = plainH4.match(/^(Fase [1-5] · (?:Activem i prediem|Explorem i construïm|Expliquem i registrem|Apliquem i millorem|Comprovem i reflexionem))(?:\s*\(([^)]+)\))?$/);
           const phaseHeading = phaseMatch ? escapeHTML(phaseMatch[1]) : node.innerHTML.trim();
-          output.push(`<section class="learning-phase"><h4>${phaseHeading}</h4>`);
-          openPhase = true;
+          output.push(isTutorial ? `<h4>${phaseHeading}</h4>` : `<section class="learning-phase"><h4>${phaseHeading}</h4>`);
+          openPhase = !isTutorial;
           continue;
         }
 

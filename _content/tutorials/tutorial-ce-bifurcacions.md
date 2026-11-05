@@ -8,70 +8,56 @@ order: 3
 image: _assets/tutorials/ce-bifurcacions.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
-Una passatgera ha d’arribar a un de dos destins. Trieu la branca movent l’agulla de la via abans que hi arribe el tren. El retorn i el maó verd són una ampliació opcional.
+Munteu una bifurcació en Y i trieu la branca movent manualment l’agulla abans de posar el tren en marxa. El retorn amb el maó verd és una prova opcional.
 
 - Construir una via en Y estable i identificar-ne les dues branques.
 - Explicar que el canvi d’agulla es mou manualment i orienta físicament el tren.
-- Predir i comprovar a quina branca arriba el tren.
+- Seleccionar una branca i comprovar el recorregut del tren.
 - Com a ampliació, provar el maó verd en una configuració de retorn recomanada.
+
+![](../../_assets/tutorials/ce-bifurcacions.webp)
 
 ## 🧰 Materials i preparació
 
-- Tren Coding Express i trams de via DUPLO del conjunt del centre.
+- Tren Coding Express i trams de via DUPLO del conjunt disponible.
 - Peça de via en Y amb agulla mòbil; comproveu que es pot orientar suaument abans d’engegar el tren.
-- Dos destins diferenciats amb peces, pictogrames o figures, i una figura passatgera.
+- Dues marques per identificar els extrems de la bifurcació.
 - Maons d’acció del kit, especialment el roig i el verd, només si són presents i funcionen.
-- Targetes de ruta i full de registre per anotar l’agulla, el destí i el resultat de cada prova.
+- Dues marques per identificar les branques de la via.
 
 Munteu la bifurcació sobre una superfície plana i feu una prova amb el tren aturat per comprovar l’alineació de cada branca. La palanca de la via no és un sensor ni un commutador electrònic: una persona ha de seleccionar físicament el camí.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Desplaçament motoritzat per una via en Y.
 - Selecció manual de la branca mitjançant el canvi d’agulla.
 - Ús d’un maó roig per aturar el tren, si el reconeix el kit.
 - Prova del maó verd per ajudar el tren a tornar cap a una estació; el resultat depén de la disposició de la via i s’ha de comprovar.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Prepareu les destinacions i l’agulla
 
-Construïu un destí a cada extrem de la Y, per exemple una biblioteca i un hort. Assigneu a cada un una targeta clara i dibuixeu l’esquema de la via. Amb el tren apagat o aturat, orienteu l’agulla cap a una branca i comproveu que les peces queden alineades; repetiu-ho amb l’altra. Anoteu quina posició correspon a cada destí i canvieu l’agulla abans que el tren arribe a la bifurcació.
+Marqueu els dos extrems de la Y com a A i B. Amb el tren apagat o aturat, orienteu l’agulla cap a una branca i comproveu que les peces queden alineades; repetiu-ho amb l’altra. Anoteu quina posició correspon a cada destí i canvieu l’agulla abans que el tren arribe a la bifurcació.
 
-![El tren Coding Express passa per una bifurcació en Y.](../../_assets/tutorials/ce-bifurcacions.webp)
+### 2. Proveu les dues branques
 
-### 2. Envieu la passatgera al destí
-
-Traieu una targeta de destí. Abans de posar en marxa el tren, orienteu l’agulla cap al destí indicat i digueu la regla en veu alta: «Biblioteca: agulla cap a la biblioteca». Feu passar el tren i anoteu si ha seguit la branca prevista. Atureu-lo abans de moure l’agulla per fer la prova amb l’altra targeta.
+Amb el tren aturat, orienteu l’agulla cap a la branca A. Feu passar el tren i anoteu si ha seguit la branca prevista. Atureu-lo abans de moure l’agulla i repetiu la prova amb la branca B.
 
 ### 3. Ampliació opcional: investigueu una manera de tornar
 
 Col·loqueu el maó verd només en una configuració segura recomanada per al vostre conjunt i feu una prova curta. Observeu si ajuda el tren a reprendre el trajecte cap a l’estació en aquesta disposició. No pressuposeu que la peça canvia l’agulla ni que crea un retorn automàtic: la via i el sentit del tren determinen què ocorre. Compareu el resultat amb una ruta de retorn dissenyada manualment.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
-Feu dues proves per destí. En cada intent, marqueu al mapa quina branca heu triat i quina ha seguit el tren. Si no arriba al destí previst, reviseu primer l’alineació de l’agulla i les unions de la via.
+Proveu les branques A i B canviant l’agulla amb el tren aturat. Si no segueix la branca seleccionada, reviseu l’alineació de l’agulla i les unions de la via abans de tornar-lo a posar en marxa.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Quina peça física ha fet possible triar entre les dues branques?
-- Qui o què ha seleccionat la ruta en cada prova?
-- Si heu fet l’ampliació, què heu observat en provar el maó verd?
-- Com canviaria la ruta si afegírem una tercera destinació?
+Atureu el tren abans de moure la palanca del canvi d’agulla o tocar els rails. Comproveu que la via queda alineada i no poseu els dits entre les rodes i les vies.
 
-
-## ♿ Accessibilitat i seguretat
-
-Feu servir pictogrames grans i diferenciats per als destins i accepteu respostes assenyalades, orals o amb una targeta. Repartiu els rols de planificació, canvi d’agulla i registre. Atureu el tren abans de moure la palanca o tocar els rails; no poseu els dits entre les rodes i les vies.
-
-## ✅ Evidències d’aprenentatge
-- Mapa de la via amb les dues branques, els destins i les posicions de l’agulla.
-- Taula de prediccions i resultats per a cada ruta.
-- Explicació d’una regla «si… aleshores…» que distingisca la decisió humana del moviment del tren.
-- Si s’ha fet l’ampliació, registre del que s’ha observat amb el maó verd i dels límits de la configuració provada.
-
-## 🔗 Fonts oficials i límits
+## 🔗 Fonts i límits
 
 La lliçó [Y Shaped Track de LEGO Education](https://education.lego.com/en-us/lessons/preschool-coding-express/y-shaped-track/) demana guiar el tren movent l’agulla roja i utilitza els maons d’acció per a les parades; també proposa el maó verd per ajudar el tren a tornar. La selecció de branca és manual: aquesta via no llegeix una condició ni canvia l’agulla de manera automàtica.

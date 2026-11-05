@@ -8,7 +8,7 @@ order: 7
 image: _assets/tutorials/mb-python-microbit-flat.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
 Creeu una insígnia que mostre una cara feliç quan es prem A i una cara pensativa quan es prem B. Primer la provareu al simulador i després a la placa. No cal saber Python: copieu l’exemple i canvieu una icona per veure’n el resultat.
 
@@ -17,6 +17,8 @@ Creeu una insígnia que mostre una cara feliç quan es prem A i una cara pensati
 - Reconéixer `import`, un bucle `while`, les condicions `if` i la indentació.
 - Provar el comportament al simulador abans de transferir el programa.
 - Comparar MicroPython i MakeCode Python sense barrejar-ne les biblioteques.
+
+![](../../_assets/tutorials/mb-python-microbit-flat.webp)
 
 ## 🧰 Materials i preparació
 
@@ -27,20 +29,20 @@ Creeu una insígnia que mostre una cara feliç quan es prem A i una cara pensati
 
 Obriu un projecte nou al Python Editor i llegiu el tutorial de referència integrat. El simulador permet començar sense placa. El V1 i el V2 comparteixen els botons i la matriu necessaris per a aquesta pràctica; no useu micròfon, altaveu ni logotip tàctil, que depenen del V2. Si voleu enviar el codi directament a la placa des del navegador, seguiu la compatibilitat i els passos que l’editor indica; si no, descarregueu el fitxer `.hex` i transferiu-lo per USB.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Python Editor oficial amb MicroPython, simulador, autocompleció, referència i ressaltat d’estructura i errors.
 - MicroPython sobre la placa: `button_a`, `button_b` i `display` amb la matriu LED.
 - Transferència del programa a la micro:bit o prova prèvia sense maquinari.
 - Diferència entre MicroPython i MakeCode Python, que usa funcions d’esdeveniment i una biblioteca pròpia de MakeCode.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Explorem el simulador i el panell de referència
 
 Obriu el Python Editor i localitzeu les pestanyes de referència, idees i API, l’àrea d’edició i el simulador. Trieu una instrucció de pantalla a la referència i arrossegueu-la a l’editor. Executeu un exemple amb el botó de reproducció del simulador i proveu els controls que simulen els botons de la placa.
 
-### 2. Llegiu i prediu el programa
+### 2. Copieu i executeu el programa
 
 Copieu el programa següent. Abans d’executar-lo, marqueu quines línies es repeteixen i quina eixida correspon a cada botó.
 
@@ -59,10 +61,6 @@ while True:
 ### 3. Depureu al Python Editor
 
 Executeu primer el codi al simulador. Canvieu una icona i torneu a provar A i B. Després elimineu temporalment els espais d’una línia interior per veure com el ressaltat o el missatge d’error ajuda a localitzar la indentació incorrecta; desfeu el canvi i comproveu que el programa torna a executar-se. No descarregueu la versió amb error a la placa.
-
-![Il·lustració d’una placa i un ordinador amb formes de colors a la pantalla.](../../_assets/tutorials/mb-python-microbit-flat.webp)
-
-_Il·lustració decorativa: no mostra la placa de l’aula ni la interfície real de l’editor._
 
 ### 4. Transferiu el programa a una micro:bit
 
@@ -85,28 +83,14 @@ Executeu el projecte de MakeCode i premeu primer A i després B. Per veure’n l
 
 MakeCode i l’editor de MicroPython són eines diferents: no copieu les ordres d’un dins de l’altre. Proveu A+B en cada projecte i anoteu què observeu; no cal que reaccionen igual quan es premen els dos botons alhora.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
-Feu quatre proves al simulador i a la placa: A, B, cap botó i A+B alhora. Registreu la predicció, l’eixida i les diferències entre simulador i maquinari. Per a depurar, comproveu importació, indentació, nom d’imatge, transferència acabada i editor triat. Canvieu una única cosa cada vegada; si el simulador respon però la placa no, reviseu primer que el fitxer s’ha transferit a la micro:bit correcta.
+Feu quatre proves al simulador i a la placa: A, B, cap botó i A+B alhora. Comproveu la resposta de cada botó al simulador i a la placa. Per a depurar, comproveu importació, indentació, nom d’imatge, transferència acabada i editor triat. Canvieu una única cosa cada vegada; si el simulador respon però la placa no, reviseu primer que el fitxer s’ha transferit a la micro:bit correcta.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Quina part del codi manté el programa escoltant els botons?
-- Per què les ordres de cada `if` tenen sagnat?
-- Què diferencia l’esdeveniment de MakeCode del bucle de MicroPython?
-- Quins errors pot detectar l’editor abans de transferir el fitxer?
-- Quines diferències heu observat entre simulador i placa real?
+Podeu comprovar el programa al simulador abans de transferir-lo. Desconnecteu el cable agafant-ne el connector i no pressioneu ni doblegueu la vora daurada de la placa.
 
-
-## ♿ Accessibilitat i seguretat
-
-Proporcioneu el codi imprés amb els nivells d’indentació marcats i permeteu arrossegar fragments en lloc d’escriure’ls tots. El simulador és una alternativa per practicar sense dispositiu; una parella pot llegir el codi mentre l’altra prova els botons. Desconnecteu el cable agafant-ne el connector i no pressioneu ni doblegueu la vora daurada de la placa.
-
-## ✅ Evidències d’aprenentatge
-- Projecte de MicroPython i projecte de MakeCode, guardats per separat.
-- Taula de les proves dels botons i indicació de si s’han fet en el simulador o a la placa.
-- Una nota sobre l’error d’espais corregit i la versió de micro:bit utilitzada.
-
-## 🔗 Fonts oficials i límits
+## 🔗 Fonts i límits
 
 La [guia oficial del Python Editor](https://microbit.org/get-started/user-guide/python-editor/) descriu referència, fragments, ressaltat, errors, autocompleció, simulador i transferència. L’article de la fundació [MakeCode Python i MicroPython](https://support.microbit.org/support/solutions/articles/19000111744-makecode-python-and-micropython) compara les dues sintaxis i els seus models d’execució. L’editor Python necessita haver-se carregat inicialment; després pot funcionar fora de línia en les condicions indicades a la [guia oficial d’ús sense connexió](https://microbit.org/get-started/user-guide/offline/). Les funcions de micròfon, altaveu i logotip tàctil no formen part d’aquesta pràctica i requereixen micro:bit V2.
