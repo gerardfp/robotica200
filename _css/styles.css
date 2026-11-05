@@ -2233,6 +2233,108 @@ accent-dashes {
   transform: translate(-50%, 0) scale(1);
 }
 
+/* ----- Robots en 3D real (CSS 3D, projecció isomètrica) ----- */
+.fbot-pose {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50% 100%;
+}
+
+.v3 {
+  --u: calc(var(--fbot-w) / 8);
+  position: absolute;
+  inset: 0;
+  /* Sombrejat per cara (el JS l'actualitza quan el robot gira) */
+  --b-t: 0.97;
+  --b-py: 1;
+  --b-px: 0.8;
+  --b-ny: 0.8;
+  --b-nx: 0.8;
+}
+
+.v3-iso {
+  position: absolute;
+  left: 50%;
+  bottom: calc(var(--u) * 2.1);
+  width: 0;
+  height: 0;
+  transform-style: preserve-3d;
+  transform: rotateX(54.7356deg) rotateZ(45deg);
+}
+
+.v3-yaw {
+  position: absolute;
+  left: calc(var(--u) * var(--fw) / -2);
+  top: calc(var(--u) * var(--fd) / -2);
+  width: calc(var(--u) * var(--fw));
+  height: calc(var(--u) * var(--fd));
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  transform: rotateZ(var(--yaw, 0deg));
+}
+
+.v3-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-style: preserve-3d;
+  transform: translate3d(calc(var(--x) * var(--u)), calc(var(--y) * var(--u)), calc(var(--z) * var(--u)));
+}
+
+.v3-f {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+  background: color-mix(in srgb, var(--c) calc(var(--b) * var(--lit, 1) * 100%), #000);
+}
+
+.v3-box[data-light].is-off { --lit: 0.55; }
+
+.v3-wheel .v3-px,
+.v3-wheel .v3-nx {
+  border-radius: 35%;
+}
+
+
+.v3-t {
+  --b: var(--b-t);
+  width: calc(var(--w) * var(--u));
+  height: calc(var(--d) * var(--u));
+  background: color-mix(in srgb, var(--ct, var(--c)) calc(var(--b) * var(--lit, 1) * 100%), #000);
+  transform: translateZ(calc(var(--h) * var(--u)));
+}
+
+.v3-py {
+  --b: var(--b-py);
+  width: calc(var(--w) * var(--u));
+  height: calc(var(--h) * var(--u));
+  transform: translate3d(0, calc(var(--d) * var(--u)), calc(var(--h) * var(--u))) rotateX(-90deg);
+}
+
+.v3-ny {
+  --b: var(--b-ny);
+  width: calc(var(--w) * var(--u));
+  height: calc(var(--h) * var(--u));
+  transform: rotateX(90deg);
+}
+
+.v3-px {
+  --b: var(--b-px);
+  width: calc(var(--h) * var(--u));
+  height: calc(var(--d) * var(--u));
+  transform: translate3d(calc(var(--w) * var(--u)), 0, calc(var(--h) * var(--u))) rotateY(90deg);
+}
+
+.v3-nx {
+  --b: var(--b-nx);
+  width: calc(var(--h) * var(--u));
+  height: calc(var(--d) * var(--u));
+  transform: rotateY(-90deg);
+}
+
 /* Footer sobri retrocompatible */
 .footer {
   margin-top: auto;

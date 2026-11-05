@@ -1,9 +1,6 @@
 'use strict';
 
-const fs = require('node:fs');
-const path = require('node:path');
-
-const ISO_DIR = path.join(__dirname, '..', '..', '_assets', 'icons', 'isometric');
+const { robot3D } = require('./footer-robots-3d');
 
 // Els 6 robots oficials. `lights` són els colors de les peces que s'encenen i s'apaguen
 // (ulls, LEDs, botons...) i `walk` indica quant li agrada passejar a cada robot.
@@ -16,30 +13,11 @@ const FOOTER_BOTS = [
   { slug: 'microbit', name: 'Micro:bit', lights: ['#ff2c00'], walk: 2 }
 ];
 
-const round = d => d.replace(/-?\d*\.\d+(?:e-?\d+)?/gi, n => String(+(+n).toFixed(2)));
-
-// Extreu els <path> dels SVG d'Inkscape i en genera un SVG net i compacte (es manté l'ordre de pintat)
-function isoRobotSVG({ slug, lights }) {
-  let src = '';
-  try {
-    src = fs.readFileSync(path.join(ISO_DIR, `${slug}.svg`), 'utf8');
-  } catch {
-    return '';
-  }
-  const lightSet = new Set(lights.map(c => c.toLowerCase()));
-  const paths = [];
-  for (const [, attrs] of src.matchAll(/<path\b([\s\S]*?)\/>/g)) {
-    const d = (attrs.match(/\sd="([^"]+)"/) || [])[1];
-    const fill = ((attrs.match(/fill:(#[0-9a-f]{3,6})/i) || [])[1] || '#000000').toLowerCase();
-    if (!d) continue;
-    const light = lightSet.has(fill) ? ' data-light' : '';
-    paths.push(`<path fill="${fill}"${light} d="${round(d)}"/>`);
-  }
-  return `<svg class="fbot-svg" viewBox="-6 -24 222 240" focusable="false"><g data-part="body">${paths.join('')}</g></svg>`;
-}
-
 const FOOTER_ROBOTS_HTML = FOOTER_BOTS
-  .map((b, i) => `<div class="fbot" style="--i:${i}" data-robot="${b.slug}" data-walk="${b.walk}" title="${b.name}"><span class="fbot-emote"></span>${isoRobotSVG(b)}</div>`)
+  .map((b, i) => {
+    const model = robot3D(b.slug);
+    return `<div class="fbot${model ? ' fbot-is-3d' : ''}" style="--i:${i}" data-robot="${b.slug}" data-walk="${b.walk}" title="${b.name}"><span class="fbot-emote"></span>${model}</div>`;
+  })
   .join('');
 
 function SiteFooter({ root = '' } = {}) {

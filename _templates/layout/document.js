@@ -25,9 +25,9 @@ function Document({
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="${r}_css/styles.css?v=9">
+  <link rel="stylesheet" href="${r}_css/styles.css?v=10">
   <link rel="icon" type="image/svg+xml" href="${r}_assets/icons/logo.svg">
-  <script defer src="${r}_js/ui.js?v=4"></script>
+  <script defer src="${r}_js/ui.js?v=5"></script>
 </head>
 <body>${SiteHeader({ activeNav, root: r })}
   <main id="page-content" class="container page-content${heroLayout ? ' page-content-hero' : ''}">

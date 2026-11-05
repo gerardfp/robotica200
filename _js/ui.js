@@ -232,6 +232,10 @@
         dir: Math.random() < 0.5 ? 1 : -1,
         svg: el.querySelector('.fbot-svg'),
         body: el.querySelector('[data-part="body"]'),
+        pose: el.querySelector('.fbot-pose'),
+        v3: el.querySelector('.v3'),
+        yawEl: el.querySelector('.v3-yaw'),
+        yaw: 0, lastYaw: null,
         emote: el.querySelector('.fbot-emote'),
         lights: Array.from(el.querySelectorAll('[data-light]')),
         walkW: Number(el.dataset.walk) || 3,
@@ -306,7 +310,25 @@
     }
 
     function setLights(b, fn) {
-      b.lights.forEach((l, i) => { l.style.opacity = fn(i) ? '1' : '0.3'; });
+      b.lights.forEach((l, i) => {
+        if (b.yawEl) l.classList.toggle('is-off', !fn(i));
+        else l.style.opacity = fn(i) ? '1' : '0.3';
+      });
+    }
+
+    // Robots 3D: gir real sobre l'eix vertical i ombrejat de cada cara segons cap on mira
+    const LIGHT = [-0.24, 0.97]; // llum que ve del davant-esquerra, com als SVG
+    function shade3D(b) {
+      if (b.lastYaw !== null && Math.abs(b.lastYaw - b.yaw) < 0.2) return;
+      b.lastYaw = b.yaw;
+      const a = b.yaw * Math.PI / 180;
+      const lit = (nx, ny) => (0.8 + 0.2 * Math.max(0, nx * LIGHT[0] + ny * LIGHT[1])).toFixed(3);
+      const c = Math.cos(a), s = Math.sin(a);
+      b.yawEl.style.setProperty('--yaw', `${b.yaw.toFixed(2)}deg`);
+      b.v3.style.setProperty('--b-py', lit(-s, c));
+      b.v3.style.setProperty('--b-ny', lit(s, -c));
+      b.v3.style.setProperty('--b-px', lit(c, s));
+      b.v3.style.setProperty('--b-nx', lit(-c, -s));
     }
 
     function animate(b, now) {
@@ -314,7 +336,7 @@
       if (p >= 1) { begin(b, now); p = 0; }
 
       const e = env(p);
-      let ty = 0, rot = 0, sx = 1, sy = 1, tx = 0, face = 1;
+      let ty = 0, rot = 0, sx = 1, sy = 1, tx = 0, face = 1, spin = 0;
       let lightMode = 'steady';
 
       switch (b.action) {
@@ -331,7 +353,8 @@
           else { const q = 1 - (p - 0.82) / 0.18; sx = 1 + 0.08 * q; sy = 1 - 0.1 * q; }
           break;
         }
-        case 'turn': // mira enrere i torna a mirar endavant
+        case 'turn': // mira enrere i torna a mirar endavant (els 3D fan una volta sencera)
+          if (b.yawEl) { spin = 360 * ease(p); break; }
           face = Math.cos(2 * Math.PI * p);
           if (Math.abs(face) < 0.08) face = face < 0 ? -0.08 : 0.08;
           break;
@@ -346,7 +369,8 @@
           tx = Math.sin(now / 28) * 2.5 * e;
           lightMode = 'random';
           break;
-        case 'nod': // s'inclina endavant per inspeccionar el terra
+        case 'nod': // s'inclina endavant per inspeccionar el terra (els 3D miren a banda i banda)
+          if (b.yawEl) { spin = 40 * e * Math.sin(p * Math.PI * 4); rot = -4 * e; break; }
           rot = -9 * e * (0.7 + 0.3 * Math.sin(p * Math.PI * 4));
           break;
         case 'greet': {
@@ -382,6 +406,18 @@
       const botW = b.el.offsetWidth || 60;
       const px = b.x * Math.max(0, width - botW) + tx * botW / 240;
       b.el.style.transform = `translateX(${px.toFixed(1)}px)`;
+
+      if (b.yawEl) {
+        // Mira cap al davant-esquerra (0°) o cap al davant-dreta (-90°) i hi gira suaument
+        const target = (b.dir > 0 ? -90 : 0) - spin * b.dir;
+        b.yaw += (target - b.yaw) * (spin ? 1 : 0.12);
+        shade3D(b);
+        const k = botW / 240;
+        b.pose.style.transform =
+          `translateY(${(ty * k).toFixed(2)}px) rotate(${(rot * -b.dir).toFixed(2)}deg) scale(${sx.toFixed(3)}, ${sy.toFixed(3)})`;
+        return;
+      }
+
       b.svg.style.transform = `scaleX(${(-b.dir * face).toFixed(3)})`;
       b.body.setAttribute('transform',
         `translate(0 ${ty.toFixed(2)}) rotate(${rot.toFixed(2)} ${PIVOT}) translate(105 210) scale(${sx.toFixed(3)} ${sy.toFixed(3)}) translate(-105 -210)`);
