@@ -41,6 +41,7 @@ function SiteFooter({ root = '' } = {}) {
         <p class="site-footer-brand">Robòtica<sup>200</sup> • Robòtica per a docents</p>
         <p class="site-footer-print"><a href="${root}imprimir/index.html">Materials imprimibles · PDF individual i recull complet</a></p>
         <div class="footer-robots" aria-hidden="true" data-footer-robots>
+          <img class="footer-desks" src="${root}_assets/extra/pupitres.svg" alt="" width="831" height="68" loading="lazy" decoding="async">
           ${FOOTER_ROBOTS_HTML}
         </div>
       </div>

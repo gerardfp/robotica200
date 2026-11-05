@@ -448,7 +448,7 @@ function buildSituations() {
     if (materiaLabel) badges.push({ text: materiaLabel, primary: false });
     if (durada) badges.push({ text: `⏱️ ${durada}`, primary: false });
 
-    const contentHasChallenge = /<h2\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html);
+    const contentHasChallenge = /data-section-group="intro"/.test(parsed.html);
     const showChallenge = Boolean(repte && !contentHasChallenge);
 
     const imgMatch = source.match(/!\[(.*?)\]\((.*?)\)/);

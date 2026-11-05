@@ -1960,10 +1960,8 @@ accent-dashes {
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid rgba(0, 0, 0, 0.04);
   border-left: 3px solid var(--sa-robot-accent, var(--primary));
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  flex-shrink: 0;
+  overflow-wrap: anywhere;
 }
 
 .card-tags {
@@ -2143,7 +2141,7 @@ accent-dashes {
 .site-footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1.25rem 1.5rem 3rem;
+  padding: 1.25rem 1.5rem 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -2175,17 +2173,29 @@ accent-dashes {
 
 /* ===== Els 6 robots oficials animats del peu ===== */
 .footer-robots {
+  --desk-height: clamp(58px, 7.23vw, 72.33px);
   position: relative;
   width: 100%;
   max-width: 880px;
-  height: clamp(64px, 11vw, 92px);
+  height: calc(clamp(64px, 11vw, 92px) + var(--desk-height));
   margin: 0.5rem auto 0;
+}
+
+.footer-desks {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: max(100%, 706px);
+  max-width: none;
+  height: var(--desk-height);
+  transform: translateX(-50%);
+  pointer-events: none;
 }
 
 .fbot {
   --fbot-w: clamp(44px, 10vw, 68px);
   position: absolute;
-  bottom: 0;
+  bottom: calc(var(--desk-height) * 0.82);
   /* Posició de repòs repartida (sense JS o amb moviment reduït) */
   left: calc((100% - var(--fbot-w)) * (var(--i, 0) + 0.5) / 6);
   width: var(--fbot-w);
@@ -3260,6 +3270,7 @@ robot-profile .robot-detail-section,
   font-weight: 700;
   margin-bottom: 0.6rem;
 }
+.prose .detail-section > h3,
 .prose .detail-section .detail-subsection-title {
   margin: 1.25rem 0 0.55rem;
   font-family: var(--font-heading);
@@ -3308,10 +3319,8 @@ robot-profile .robot-detail-section,
 .prose .sa-illustration img {
   display: block;
   width: 100%;
-  max-width: 600px;
-  max-height: 448px;
+  max-width: 100%;
   height: auto;
-  object-fit: cover;
   margin-inline: auto;
 }
 .prose .sa-illustration figcaption {
@@ -3617,8 +3626,7 @@ robot-profile .robot-detail-section,
   outline-offset: 2px;
 }
 .prose .learning-step .sa-illustration { max-width: 600px; margin: 1.25rem auto; }
-.prose .learning-step .sa-illustration img { display: block; width: 100%; max-width: 600px; max-height: 448px; height: auto; margin-inline: auto; border-radius: var(--radius-md); object-fit: cover; }
-.situation-page-card .prose img { max-width: 600px; max-height: 448px; height: auto; }
+.prose .learning-step .sa-illustration img { border-radius: var(--radius-md); }
 @media (max-width: 640px) {
 .learning-wizard-topbar { flex-direction: column; align-items: stretch; gap: 0.5rem; }
 .learning-wizard-controls { justify-content: flex-end; }
@@ -3883,4 +3891,86 @@ robot-profile .robot-detail-section,
   max-width: none;
   flex-shrink: 0;
   margin-inline: auto;
+}
+
+/* Icones del pack compartit als apartats i avisos del contingut. */
+.prose .detail-section > h2 {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.prose img.section-icon {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin: 0;
+}
+.prose img.note-pack-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  max-width: none;
+  object-fit: contain;
+  margin: 0;
+}
+
+/* Les cinc fases de les situacions formen un recorregut vertical. */
+.prose .learning-phase[data-phase] {
+  --phase-color: #0284c7;
+  --phase-axis: 2.25rem;
+  position: relative;
+  margin: 0;
+  padding: .4rem 0 2rem calc(var(--phase-axis) * 2 + .9rem);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.prose .learning-phase[data-phase="1"] { --phase-color: #d99a00; }
+.prose .learning-phase[data-phase="2"] { --phase-color: #1683db; }
+.prose .learning-phase[data-phase="3"] { --phase-color: #16a06b; }
+.prose .learning-phase[data-phase="4"] { --phase-color: #8b5cc7; }
+.prose .learning-phase[data-phase="5"] { --phase-color: #ef6a44; }
+.prose .learning-phase[data-phase]:last-child { padding-bottom: 0; }
+.phase-timeline-marker {
+  position: absolute;
+  z-index: 1;
+  inset: 0 auto auto 0;
+  display: grid;
+  place-items: center;
+  width: calc(var(--phase-axis) * 2);
+  height: 2.65rem;
+  border: 0;
+  border-radius: 0;
+  background: #fff;
+}
+.prose img.phase-timeline-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: contain;
+}
+.prose .learning-phase[data-phase]:has(~ .learning-phase[data-phase])::before {
+  content: '';
+  position: absolute;
+  left: calc(var(--phase-axis) - 1px);
+  top: 2.65rem;
+  bottom: .4rem;
+  width: 2px;
+  background: linear-gradient(var(--phase-color), color-mix(in srgb, var(--phase-color) 35%, white));
+}
+.prose .learning-phase[data-phase]:has(~ .learning-phase[data-phase])::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--phase-axis) - 4px);
+  bottom: .4rem;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--phase-color);
+  border-bottom: 2px solid var(--phase-color);
+  transform: rotate(45deg);
+}
+@media (max-width: 600px) {
+  .prose .learning-phase[data-phase] { --phase-axis: 2rem; }
 }

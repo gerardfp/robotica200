@@ -3,6 +3,7 @@
 const { escapeHTML, escapeAttr } = require('../layout/utils');
 const { Document } = require('../layout/document');
 const { NavBack } = require('../layout/nav-back');
+const { SectionHeading } = require('../components/section-icon');
 const { BadgeList } = require('../components/badge-list');
 
 function SituationPage({
@@ -21,7 +22,7 @@ function SituationPage({
 } = {}) {
   const challengeSection = showChallenge ? `
       <section class="detail-section" data-challenge-section>
-        <h2>Repte o pregunta guia</h2>
+        <h2>${SectionHeading('Repte o pregunta guia', 'intro')}</h2>
         <p class="sa-challenge" data-challenge>${escapeHTML(challenge)}</p>
       </section>` : '';
 

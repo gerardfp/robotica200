@@ -17,6 +17,8 @@
 
 const { escapeHTML } = require('../../_templates/layout/utils');
 const { LearningWizard } = require('../../_templates/components/learning-wizard');
+const { SectionIcon, SectionHeading, stripHeadingIcon } = require('../../_templates/components/section-icon');
+const { PhaseMarker } = require('../../_templates/components/phase-marker');
 const { MarkdownNote } = require('../../_templates/components/markdown-note');
 const { CodePanel, VisualBlocksPanel } = require('../../_templates/components/code-panel');
 const { renderScratchBlocks, renderMakeCodeFallbackSVG } = require('./blocks');
@@ -471,7 +473,7 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
         if (state.introPending) {
           state.introPending = false;
           if (!rendered.includes('markdown-note')) {
-            rendered = `<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4>${rendered}</div></aside>`;
+            rendered = `<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">${SectionIcon('idea', 'note-pack-icon')}</span><div><h4>Punt de partida</h4>${rendered}</div></aside>`;
           }
         }
         out.push(rendered);
@@ -517,6 +519,13 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
     out.push(node.outerHTML);
   }
 
+  if (state.introCoverHTML?.length) {
+    const situationIndex = out.findIndex(html => html.includes('class="markdown-note markdown-note-situation"'));
+    if (situationIndex !== -1) {
+      out.splice(situationIndex + 1, 0, ...state.introCoverHTML);
+      state.introCoverHTML = [];
+    }
+  }
   return out;
 }
 
@@ -524,7 +533,9 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
  * 3. Agrupació semàntica de seccions <h2>, passos <h3> (learning-step) i fases <h4> (learning-phase)
  */
 function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
+  const isSituation = /(?:^|\/)situacions\/[^/]+\.md(?:[?#]|$)/.test(sourceURL);
   const isTutorial = /(?:^|\/)tutorials\/tutorial-[^/]+\.md(?:[?#]|$)/.test(sourceURL);
+  const isActivity = /(?:^|\/)activitats\/activitat-[^/]+\.md(?:[?#]|$)/.test(sourceURL);
   const root = parseHTML(rawHTML);
   sanitizeAndRewriteDOM(root, sourceURL);
 
@@ -567,6 +578,20 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
   }
   if (currentGroup) h2Groups.push(currentGroup);
 
+  // La portada i el peu pertanyen a la introducció, no al preàmbul de la pàgina.
+  const introGroup = h2Groups.find(group => group.key === 'intro');
+  if (introGroup && /(?:^|\/)situacions\/[^/]+\.md(?:[?#]|$)/.test(sourceURL)) {
+    introGroup.coverNodes = [];
+    for (let i = 0; i < preambleNodes.length; i++) {
+      const node = preambleNodes[i];
+      if (node.type !== 'element' || node.tagName !== 'p' || !isSingleChildElement(node, 'img')) continue;
+      const next = preambleNodes[i + 1];
+      const hasCaption = next?.type === 'element' && next.tagName === 'p' && isSingleChildElement(next, 'em');
+      introGroup.coverNodes.push(...preambleNodes.splice(i, hasCaption ? 2 : 1));
+      i--;
+    }
+  }
+
   const priority = { intro: 0, learning: 1, materials: 2, sequence: 3, other: 4, assessment: 5, access: 6, official: 7 };
   const orderedGroups = h2Groups
     .map((group, index) => ({ ...group, index }))
@@ -601,16 +626,19 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
     const first = merged.firstGroup;
     const firstId = slugify(first.plainTitle);
     const sectionClass = `detail-section${merged.key === 'intro' ? ' detail-section-intro' : ''}`;
-    output.push(`<section class="${sectionClass}" data-section-group="${merged.key || 'other'}"><h2 id="${firstId}">${merged.section.title}</h2>`);
+    output.push(`<section class="${sectionClass}" data-section-group="${merged.key || 'other'}"><h2 id="${firstId}">${SectionHeading(merged.section.title, merged.key, isTutorial)}</h2>`);
 
-    const state = { introPending: merged.key === 'intro' && !isTutorial };
+    const state = {
+      introPending: merged.key === 'intro' && !isTutorial,
+      introCoverHTML: merged.subGroups.flatMap(group => renderSemanticBlocks(group.coverNodes || [], { introPending: false }))
+    };
 
     for (let gIdx = 0; gIdx < merged.subGroups.length; gIdx++) {
       const sub = merged.subGroups[gIdx];
       if (gIdx > 0) {
         const subId = slugify(sub.plainTitle);
         const cleanSubHtml = sub.h2Node.innerHTML.trim().replace(/[.!?]+$/, '').replace(/^\d+\s*/, '');
-        output.push(`<h3 class="detail-subsection-title" id="${subId}">${cleanSubHtml}</h3>`);
+        output.push(`<h3 class="detail-subsection-title" id="${subId}">${stripHeadingIcon(cleanSubHtml)}</h3>`);
       }
 
       const isSequenceSub =
@@ -682,12 +710,12 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
 
           const hiddenAttr = steps.length > 0 ? ' hidden' : '';
           output.push(
-            `<section class="learning-step" id="${id}" data-step="${stepNumber}"${hiddenAttr}><header class="learning-step-header"><span class="learning-step-kicker">Pas ${stepNumber}</span><h3>${displayTitleHTML}</h3></header><div class="learning-step-content">`
+            `<section class="learning-step" id="${id}" data-step="${stepNumber}"${hiddenAttr}><header class="learning-step-header"><span class="learning-step-kicker">Pas ${stepNumber}</span><h3>${stripHeadingIcon(displayTitleHTML)}</h3></header><div class="learning-step-content">`
           );
           openStep = true;
           steps.push({ id, title: displayTitlePlain });
 
-          if (!isTutorial && !hasPhaseInStep) {
+          if (!isTutorial && !isActivity && !hasPhaseInStep) {
             output.push('<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>');
             openPhase = true;
           }
@@ -698,8 +726,11 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
           closePhase();
           const plainH4 = node.textContent.trim();
           const phaseMatch = plainH4.match(/^(Fase [1-5] · (?:Activem i prediem|Explorem i construïm|Expliquem i registrem|Apliquem i millorem|Comprovem i reflexionem))(?:\s*\(([^)]+)\))?$/);
-          const phaseHeading = phaseMatch ? escapeHTML(phaseMatch[1]) : node.innerHTML.trim();
-          output.push(isTutorial ? `<h4>${phaseHeading}</h4>` : `<section class="learning-phase"><h4>${phaseHeading}</h4>`);
+          const phaseHeading = phaseMatch ? escapeHTML(phaseMatch[1]) : stripHeadingIcon(node.innerHTML.trim());
+          const phaseNumber = phaseMatch ? Number(plainH4.match(/^Fase ([1-5])/)[1]) : 0;
+          const timelineAttr = isSituation && phaseNumber ? ` data-phase="${phaseNumber}"` : '';
+          const markerHTML = timelineAttr ? PhaseMarker(phaseNumber) : '';
+          output.push(isTutorial ? `<h4>${phaseHeading}</h4>` : `<section class="learning-phase"${timelineAttr}>${markerHTML}<h4>${phaseHeading}</h4>`);
           openPhase = !isTutorial;
           continue;
         }
