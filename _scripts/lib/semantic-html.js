@@ -17,9 +17,12 @@
 
 const { escapeHTML } = require('../../_templates/layout/utils');
 const { LearningWizard } = require('../../_templates/components/learning-wizard');
+const { SectionIcon, SectionHeading, stripHeadingIcon } = require('../../_templates/components/section-icon');
+const { PhaseMarker } = require('../../_templates/components/phase-marker');
 const { MarkdownNote } = require('../../_templates/components/markdown-note');
 const { CodePanel, VisualBlocksPanel } = require('../../_templates/components/code-panel');
 const { renderScratchBlocks, renderMakeCodeFallbackSVG } = require('./blocks');
+const { DIALECTS, renderTangibleBlocks } = require('./tangible-blocks');
 const { renderOrGetMakeCodeSVG } = require('./makecode-cache');
 const {
   decodeEntities,
@@ -228,40 +231,7 @@ function extractRobotOverview(root) {
   return { robotLead, robotHighlightTitle, robotHighlightBody };
 }
 
-function countWordsInHTML(html) {
-  const plain = decodeEntities(String(html).replace(/<[^>]+>/g, ' '));
-  return (plain.match(/\S+/g) || []).length;
-}
-
-function tagsBalancedInHTML(html) {
-  for (const tag of ['strong', 'em', 'code', 'a']) {
-    const opens = (html.match(new RegExp(`<${tag}\\b[^>]*>`, 'gi')) || []).length;
-    const closes = (html.match(new RegExp(`</${tag}>`, 'gi')) || []).length;
-    if (opens !== closes) return false;
-  }
-  return true;
-}
-
-function splitLongParagraphHTML(innerHtml, limit = 82) {
-  const normalized = innerHtml.replace(/\s*\n\s*/g, ' ').trim();
-  if (countWordsInHTML(normalized) <= limit) return [normalized];
-  const sentences = normalized.split(/(?<=[.!?;])\s+/);
-  const chunks = [];
-  let current = '';
-  for (const sentence of sentences) {
-    const candidate = current ? `${current} ${sentence}` : sentence;
-    if (current && countWordsInHTML(candidate) > limit && tagsBalancedInHTML(current)) {
-      chunks.push(current.trim());
-      current = sentence;
-    } else {
-      current = candidate;
-    }
-  }
-  if (current.trim()) chunks.push(current.trim());
-  return chunks.length > 1 ? chunks : [normalized];
-}
-
-function transformParagraphHTML(pInnerHtml) {
+function transformParagraphHTML(pInnerHtml, { plainEvidence = false } = {}) {
   const labels = [...pInnerHtml.matchAll(/<(strong|em)>([^<]+)<\/\1>/g)];
   const labelled = labels
     .map(match => {
@@ -278,6 +248,7 @@ function transformParagraphHTML(pInnerHtml) {
 
   const { match, label, type } = labelled;
   const [, kind, icon] = type;
+  if (plainEvidence && kind === 'evidence') return `<p>${pInnerHtml}</p>`;
   const title = label.replace(/:$/, '');
   const before = pInnerHtml.slice(0, match.index).trim();
   const after = pInnerHtml.slice(match.index + match[0].length).trim();
@@ -340,7 +311,7 @@ function transformListElement(listEl) {
   return `<${tag}${listClass}>${renderedItems.join('')}</${tag}>`;
 }
 
-function transformBlockquoteElement(bqEl) {
+function transformBlockquoteElement(bqEl, { plainEvidence = false } = {}) {
   const pElements = bqEl.children.filter(c => c.type === 'element' && c.tagName === 'p');
   const linesHtml = [];
   for (const p of pElements) {
@@ -356,6 +327,7 @@ function transformBlockquoteElement(bqEl) {
   const note = label && noteTypes.find(([pattern]) => pattern.test(labelText));
   if (note) {
     const [, kind, icon] = note;
+    if (plainEvidence && kind === 'evidence') return content;
     return MarkdownNote({
       kind,
       icon,
@@ -376,6 +348,14 @@ function transformPreCodeElement(preEl) {
   const lang = langMatch ? langMatch[1] : 'text';
   const lowerLang = lang.toLowerCase();
   const rawCode = codeEl.textContent.replace(/\r?\n$/, '');
+
+  if (DIALECTS[lowerLang]) {
+    try {
+      return VisualBlocksPanel({ lang: DIALECTS[lowerLang], svgHTML: renderTangibleBlocks(rawCode, lowerLang) });
+    } catch (error) {
+      return `<aside class="markdown-callout"><p>${escapeHTML(error.message)}</p></aside>${CodePanel({ lang, codeHTML: escapeHTML(rawCode) })}`;
+    }
+  }
 
   // Suport natiu per a blocs visuals: MakeCode, mBlock 5 i LEGO SPIKE App
   if (['mblock', 'mblocks', 'spikeapp', 'spike-app', 'spike', 'scratchblocks'].includes(lowerLang)) {
@@ -455,14 +435,14 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
         continue;
       }
 
-      // 2. Paràgraf de text (amb divisió si > 82 paraules i detecció de MarkdownNote)
-      const chunks = splitLongParagraphHTML(node.innerHTML);
+      // 2. Respectar els paràgrafs del Markdown i detectar MarkdownNote.
+      const chunks = [node.innerHTML];
       for (const chunk of chunks) {
-        let rendered = transformParagraphHTML(chunk);
+        let rendered = transformParagraphHTML(chunk, state);
         if (state.introPending) {
           state.introPending = false;
           if (!rendered.includes('markdown-note')) {
-            rendered = `<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">🧭</span><div><h4>Punt de partida</h4>${rendered}</div></aside>`;
+            rendered = `<aside class="markdown-note markdown-note-situation"><span class="markdown-note-icon" aria-hidden="true">${SectionIcon('idea', 'note-pack-icon')}</span><div><h4>Punt de partida</h4>${rendered}</div></aside>`;
           }
         }
         out.push(rendered);
@@ -478,7 +458,7 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
 
     // 4. Cites <blockquote>
     if (node.tagName === 'blockquote') {
-      out.push(transformBlockquoteElement(node));
+      out.push(transformBlockquoteElement(node, state));
       continue;
     }
 
@@ -508,6 +488,13 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
     out.push(node.outerHTML);
   }
 
+  if (state.introCoverHTML?.length) {
+    const situationIndex = out.findIndex(html => html.includes('class="markdown-note markdown-note-situation"'));
+    if (situationIndex !== -1) {
+      out.splice(situationIndex + 1, 0, ...state.introCoverHTML);
+      state.introCoverHTML = [];
+    }
+  }
   return out;
 }
 
@@ -515,6 +502,9 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
  * 3. Agrupació semàntica de seccions <h2>, passos <h3> (learning-step) i fases <h4> (learning-phase)
  */
 function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
+  const isSituation = /(?:^|\/)situacions\/[^/]+\.md(?:[?#]|$)/.test(sourceURL);
+  const isTutorial = /(?:^|\/)tutorials\/tutorial-[^/]+\.md(?:[?#]|$)/.test(sourceURL);
+  const isActivity = /(?:^|\/)activitats\/activitat-[^/]+\.md(?:[?#]|$)/.test(sourceURL);
   const root = parseHTML(rawHTML);
   sanitizeAndRewriteDOM(root, sourceURL);
 
@@ -531,7 +521,17 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
     if (node.type === 'element' && node.tagName === 'h2') {
       if (currentGroup) h2Groups.push(currentGroup);
       const plainTitle = node.textContent.trim();
-      const section = canonicalSection(plainTitle);
+      const tutorialSections = {
+        'Què aprendrem?': ['intro', '🎯 Què aprendrem?'],
+        'Materials i preparació': ['materials', '🧰 Materials i preparació'],
+        'Funcions i controls': ['learning', '🧩 Funcions i controls'],
+        'Pas a pas': ['sequence', '👣 Pas a pas'],
+        'Comprovació i resolució de problemes': ['assessment', '🧪 Comprovació i resolució de problemes'],
+        'Ús i seguretat': ['access', '🛡️ Ús i seguretat'],
+        'Fonts i límits': ['official', '🔗 Fonts i límits']
+      };
+      const tutorialSection = isTutorial && tutorialSections[plainTitle.replace(/^[^\p{L}]+/u, '')];
+      const section = tutorialSection ? { key: tutorialSection[0], title: tutorialSection[1] } : canonicalSection(plainTitle);
       currentGroup = {
         key: section.key || 'other',
         section,
@@ -546,6 +546,20 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
     }
   }
   if (currentGroup) h2Groups.push(currentGroup);
+
+  // La portada i el peu pertanyen a la introducció, no al preàmbul de la pàgina.
+  const introGroup = h2Groups.find(group => group.key === 'intro');
+  if (introGroup && /(?:^|\/)situacions\/[^/]+\.md(?:[?#]|$)/.test(sourceURL)) {
+    introGroup.coverNodes = [];
+    for (let i = 0; i < preambleNodes.length; i++) {
+      const node = preambleNodes[i];
+      if (node.type !== 'element' || node.tagName !== 'p' || !isSingleChildElement(node, 'img')) continue;
+      const next = preambleNodes[i + 1];
+      const hasCaption = next?.type === 'element' && next.tagName === 'p' && isSingleChildElement(next, 'em');
+      introGroup.coverNodes.push(...preambleNodes.splice(i, hasCaption ? 2 : 1));
+      i--;
+    }
+  }
 
   const priority = { intro: 0, learning: 1, materials: 2, sequence: 3, other: 4, assessment: 5, access: 6, official: 7 };
   const orderedGroups = h2Groups
@@ -581,22 +595,25 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
     const first = merged.firstGroup;
     const firstId = slugify(first.plainTitle);
     const sectionClass = `detail-section${merged.key === 'intro' ? ' detail-section-intro' : ''}`;
-    output.push(`<section class="${sectionClass}" data-section-group="${merged.key || 'other'}"><h2 id="${firstId}">${merged.section.title}</h2>`);
+    output.push(`<section class="${sectionClass}" data-section-group="${merged.key || 'other'}"><h2 id="${firstId}">${SectionHeading(merged.section.title, merged.key, isTutorial)}</h2>`);
 
-    const state = { introPending: merged.key === 'intro' };
+    const state = {
+      introPending: merged.key === 'intro' && !isTutorial,
+      introCoverHTML: merged.subGroups.flatMap(group => renderSemanticBlocks(group.coverNodes || [], { introPending: false }))
+    };
 
     for (let gIdx = 0; gIdx < merged.subGroups.length; gIdx++) {
       const sub = merged.subGroups[gIdx];
       if (gIdx > 0) {
         const subId = slugify(sub.plainTitle);
         const cleanSubHtml = sub.h2Node.innerHTML.trim().replace(/[.!?]+$/, '').replace(/^\d+\s*/, '');
-        output.push(`<h3 class="detail-subsection-title" id="${subId}">${cleanSubHtml}</h3>`);
+        output.push(`<h3 class="detail-subsection-title" id="${subId}">${stripHeadingIcon(cleanSubHtml)}</h3>`);
       }
 
       const isSequenceSub =
         sub.key === 'sequence' &&
         !/oficial|adaptació|adaptacio|referent/i.test(sub.plainTitle) &&
-        /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|activitats|desenvolupament|projecte en|reptes|estands|fases|àmbits|repte\s+\d)/i.test(sub.plainTitle);
+        (isTutorial || /(seqüèn|seqüen|itinerari|sessions|passos|lliçons|activitats|desenvolupament|projecte en|reptes|estands|fases|àmbits|repte\s+\d)/i.test(sub.plainTitle));
 
       // Processar els nodes dins d'aquest bloc <h2>
       let openStep = false;
@@ -615,6 +632,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
         if (openPhase) {
           output.push('</section>');
           openPhase = false;
+          state.plainEvidence = false;
         }
       };
 
@@ -662,12 +680,12 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
 
           const hiddenAttr = steps.length > 0 ? ' hidden' : '';
           output.push(
-            `<section class="learning-step" id="${id}" data-step="${stepNumber}"${hiddenAttr}><header class="learning-step-header"><span class="learning-step-kicker">Pas ${stepNumber}</span><h3>${displayTitleHTML}</h3></header><div class="learning-step-content">`
+            `<section class="learning-step" id="${id}" data-step="${stepNumber}"${hiddenAttr}><header class="learning-step-header"><span class="learning-step-kicker">Pas ${stepNumber}</span><h3>${stripHeadingIcon(displayTitleHTML)}</h3></header><div class="learning-step-content">`
           );
           openStep = true;
           steps.push({ id, title: displayTitlePlain });
 
-          if (!hasPhaseInStep) {
+          if (!isTutorial && !isActivity && !hasPhaseInStep) {
             output.push('<section class="learning-phase learning-phase-default"><h4>Desenvolupament del pas</h4>');
             openPhase = true;
           }
@@ -678,9 +696,13 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
           closePhase();
           const plainH4 = node.textContent.trim();
           const phaseMatch = plainH4.match(/^(Fase [1-5] · (?:Activem i prediem|Explorem i construïm|Expliquem i registrem|Apliquem i millorem|Comprovem i reflexionem))(?:\s*\(([^)]+)\))?$/);
-          const phaseHeading = phaseMatch ? escapeHTML(phaseMatch[1]) : node.innerHTML.trim();
-          output.push(`<section class="learning-phase"><h4>${phaseHeading}</h4>`);
-          openPhase = true;
+          const phaseHeading = phaseMatch ? escapeHTML(phaseMatch[1]) : stripHeadingIcon(node.innerHTML.trim());
+          const phaseNumber = phaseMatch ? Number(plainH4.match(/^Fase ([1-5])/)[1]) : 0;
+          state.plainEvidence = isSituation && phaseNumber === 5;
+          const timelineAttr = isSituation && phaseNumber ? ` data-phase="${phaseNumber}"` : '';
+          const markerHTML = timelineAttr ? PhaseMarker(phaseNumber) : '';
+          output.push(isTutorial ? `<h4>${phaseHeading}</h4>` : `<section class="learning-phase"${timelineAttr}>${markerHTML}<h4>${phaseHeading}</h4>`);
+          openPhase = !isTutorial;
           continue;
         }
 

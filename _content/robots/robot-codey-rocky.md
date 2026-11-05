@@ -15,7 +15,7 @@ image: _assets/robots/codey-rocky.webp
 
 # Informació i recursos oficials del fabricant
 tech_info: >
-  La fitxa del fabricant descriu programació amb blocs i Python, botons, matriu, sensors de so i llum, giroscopi i funcions infraroges; els accessoris i comportaments exactes depenen de la configuració. [Fitxa oficial del fabricant](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky).
+  Codey Rocky es programa amb blocs o Python a mBlock 5. Permet controlar el moviment del xassís amb erugues, mostrar patrons a la matriu LED de 16 × 8, emetre sons i modificar la il·luminació RGB. Els programes poden respondre als botons, al potenciòmetre, al so, a la llum i a l’orientació de Codey. El sensor infraroig/de color de Rocky permet detectar obstacles, identificar colors i seguir línies; l’emissor i receptor infraroig de Codey permeten intercanviar senyals. Disposa de connexió USB i Bluetooth segons l’entorn utilitzat. Consulta la [documentació tècnica de Codey Rocky](https://support.makeblock.com/hc/en-us/articles/1500004392242-About-Codey-Rocky).
 official_resources:
 - title: Guies i casos de Codey Rocky
   href: https://support.makeblock.com/hc/en-us/sections/360001829193-Codey-Rocky

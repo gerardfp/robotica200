@@ -10,14 +10,13 @@ const tutorials = fs.readdirSync(tutorialsDir)
   .sort();
 
 const commonHeadings = [
-  '## 🎯 Repte i objectius',
+  '## 🎯 Què aprendrem?',
   '## 🧰 Materials i preparació',
-  '## 🧩 Funcions del robot treballades',
-  '## 👣 Seqüència guiada',
-  '## 🧪 Prova, depura i reflexiona',
-  '## ♿ Accessibilitat i seguretat',
-  '## ✅ Evidències d’aprenentatge',
-  '## 🔗 Fonts oficials i límits',
+  '## 🧩 Funcions i controls',
+  '## 👣 Pas a pas',
+  '## 🧪 Comprovació i resolució de problemes',
+  '## 🛡️ Ús i seguretat',
+  '## 🔗 Fonts i límits',
 ];
 
 // Inventari mínim de funcions que han d'aparéixer explicades en alguna fitxa de cada robot.
@@ -115,7 +114,7 @@ for (const [robot, capabilities] of Object.entries(guidedCapabilities)) {
   const guidedCorpus = tutorials
     .map(name => fs.readFileSync(path.join(tutorialsDir, name), 'utf8'))
     .filter(source => source.match(/^robot:\s*(.+)$/m)?.[1].trim() === robot)
-    .map(source => source.split('## 👣 Seqüència guiada', 2)[1].split('\n## ', 1)[0])
+    .map(source => source.split('## 👣 Pas a pas', 2)[1].split('\n## ', 1)[0])
     .join('\n');
   for (const capability of capabilities) {
     assert.match(guidedCorpus, capability, `${robot}: hi ha una pràctica guiada per a ${capability}`);
@@ -126,6 +125,8 @@ for (const name of tutorials) {
   const source = fs.readFileSync(path.join(tutorialsDir, name), 'utf8');
   const rendered = renderer.parse(source, `https://example.test/_content/tutorials/${name}`);
   assert.ok(rendered.data.title && rendered.html, `${name}: el Markdown es parsejable per la plantilla compartida`);
+  assert.doesNotMatch(rendered.html, /Desenvolupament del pas|<section class="learning-phase/, `${name}: el contingut del pas no té cap embolcall de fase`);
+  assert.match(rendered.html, /<div class="learning-step-content">\s*<(?:p|figure|aside|ul|ol)/, `${name}: el contingut és fill directe del pas`);
   const frontMatter = source.match(/^---\n([\s\S]*?)\n---\n/);
   assert.ok(frontMatter, `${name}: té metadades YAML`);
   const metadataKeys = frontMatter[1].match(/^[a-z][a-z0-9_-]*:/gm) || [];
@@ -136,6 +137,15 @@ for (const name of tutorials) {
   }
   const image = frontMatter[1].match(/^image:\s*(.+)$/m)[1].trim();
   assert.ok(fs.existsSync(path.join(root, image)), `${name}: la portada local existe`);
+
+  const introHTML = rendered.html.match(/<section[^>]*data-section-group="intro"[^>]*>([\s\S]*?)<\/section>/)[1];
+  assert.equal((rendered.html.match(/<figure class="sa-illustration">/g) || []).length, 1, `${name}: la portada decorativa només apareix una vegada`);
+  assert.match(introHTML, /<img[^>]*alt=""/, `${name}: la portada decorativa pertany a la introducció`);
+  assert.ok(introHTML.includes(image), `${name}: la introducció usa la portada de les metadades`);
+  assert.doesNotMatch(rendered.html, /Instrucció no reconeguda|Falta «fi»/, `${name}: totes les instruccions físiques es renderitzen`);
+  if (['tale-bot', 'coding-set'].includes(rendered.data.robot)) {
+    assert.match(rendered.html, /class="tangible-sequence"/, `${name}: inclou instruccions físiques SVG`);
+  }
 
   const headings = source.split('\n').filter(line => line.startsWith('## '));
   assert.deepEqual(headings, commonHeadings, `${name}: segueix exactament la plantilla i l'ordre comuns`);
@@ -160,11 +170,8 @@ for (const name of tutorials) {
   assert.ok((materialsSection.match(/^- .+/gm) || []).length >= 2, `${name}: presenta els materials com a llista`);
   const functionsSection = source.split(commonHeadings[2], 2)[1].split('\n## ', 1)[0];
   assert.ok((functionsSection.match(/^- .+/gm) || []).length >= 2, `${name}: presenta les funcions com a llista`);
-  assert.match(source, /^### Preguntes per comprovar$/m, `${name}: incorpora preguntes de comprovació`);
-  const questionSection = source.split('### Preguntes per comprovar', 2)[1].split('\n## ', 1)[0];
-  assert.ok((questionSection.match(/^- .+\?$/gm) || []).length >= 3, `${name}: presenta almenys tres preguntes en llista`);
-  assert.doesNotMatch(questionSection, /Quina prova faríeu a continuació per comprovar-ho\?/i,
-    `${name}: les preguntes comproven la funció concreta del tutorial`);
+  assert.doesNotMatch(source, /Evidències d’aprenentatge|Preguntes per comprovar|Consell docent|\b(?:alumnat|alumnes|parelles|rols)\b/, `${name}: és un manual d’ús sense consignes d’aula`);
+  assert.match(introHTML, /Què aprendrem\?/, `${name}: la introducció té el títol propi dels tutorials`);
   const proofSection = source.split(commonHeadings[4], 2)[1].split('\n## ', 1)[0];
   const proofProtocol = proofSection.split('### Preguntes per comprovar', 1)[0].trim();
   assert.ok(proofProtocol.length >= 80, `${name}: descriu una prova observable abans de les preguntes`);
@@ -174,9 +181,6 @@ for (const name of tutorials) {
     const section = source.split(heading, 2)[1].split('\n## ', 1)[0].trim();
     assert.ok(section.length > 0, `${name}: completa l'apartat ${heading}`);
   }
-  const evidenceSection = source.split(commonHeadings[6], 2)[1].split('\n## ', 1)[0];
-  assert.ok((evidenceSection.match(/^- .+/gm) || []).length >= 1,
-    `${name}: presenta les evidències en una llista`);
   assert.match(source, /https:\/\//, `${name}: inclou una font externa consultable`);
 }
 
@@ -191,7 +195,7 @@ assert.doesNotMatch(codeyVoice, /controlar el moviment del robot mitjançant ord
 
 const codingSetRoute = fs.readFileSync(path.join(tutorialsDir, 'tutorial-cs-obstacles-bandera.md'), 'utf8');
 assert.match(codingSetRoute, /Obstacle Add-on|Sensor Add-on/, 'la guia diferencia els obstacles físics del complement de sensors');
-assert.match(codingSetRoute, /el robot no el detecta ni l’esquiva automàticament/, 'la guia no atribueix detecció al Coding Set base');
+assert.match(codingSetRoute, /MatataBot base no detecta ni esquiva obstacles automàticament/, 'la guia no atribueix detecció al Coding Set base');
 assert.match(codingSetRoute, /bandera com a destinació/i, 'la guia treballa la bandera del conjunt base com a destinació');
 const codingSetNumbers = fs.readFileSync(path.join(tutorialsDir, 'tutorial-cs-motors-sensors.md'), 'utf8');
 assert.match(codingSetNumbers, /no s’apliquen als girs esquerre\/dret/i, 'Coding Set explica que els nombres no es combinen amb girs');
@@ -226,3 +230,7 @@ for (const capability of [/expressió pròpia/i, /botó A/i, /indicador RGB/i, /
 assert.match(codeyExpressions, /^(?:### )\d+\. /m, 'la guia de Codey Rocky conserva la seqüència de passos comuna');
 
 console.log(`Format comú correcte: ${tutorials.length} tutorials, ${commonHeadings.length} apartats en el mateix ordre.`);
+
+const tutorialWithHeading = renderer.parse('## Pas a pas\n### 1. Prepareu\nText inicial.\n#### Comprovació\nText de comprovació.', 'https://example.test/_content/tutorials/tutorial-prova.md');
+assert.doesNotMatch(tutorialWithHeading.html, /learning-phase|Desenvolupament del pas/, 'els subtítols explícits tampoc creen fases en tutorials');
+assert.match(tutorialWithHeading.html, /<h4>Comprovació<\/h4>\s*<p>Text de comprovació\.<\/p>/, 'es conserva el subtítol i el seu contingut directament dins del pas');

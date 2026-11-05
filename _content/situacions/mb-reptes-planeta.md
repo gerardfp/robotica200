@@ -34,7 +34,11 @@ Trieu un hàbitat pròxim i una pregunta sobre espècies que el grup puga invest
 
 #### Fase 2 · Explorem i construïm
 
-Consulteu fonts seleccionades i creeu una clau d’identificació amb observacions accessibles, com forma, mida aproximada o nombre de fulles, sempre que la font les documente. Trieu dues espècies observables en un hàbitat pròxim —o dues espècies de fitxes docents si no hi ha eixida— i feu una targeta de llegenda. En MakeCode, creeu dos comptadors: el botó A suma una observació de l’espècie 1 i el botó B suma una observació de l’espècie 2. La micro:bit registra l’acció humana; no reconeix ni identifica l’espècie.
+Consulteu fonts seleccionades i creeu una clau d’identificació amb observacions accessibles, com forma, mida aproximada o nombre de fulles, sempre que la font les documente. Trieu dues espècies observables en un hàbitat pròxim —o dues espècies de fitxes docents si no hi ha eixida— i feu una targeta de llegenda. 
+
+En MakeCode, creeu dos comptadors: el botó A suma una observació de l’espècie 1 i el botó B suma una observació de l’espècie 2. 
+
+La micro:bit registra l’acció de polsar els botons; no reconeix ni identifica l’espècie.
 
 ```javascript
 let especie1 = 0

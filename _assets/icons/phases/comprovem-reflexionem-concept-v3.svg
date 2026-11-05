@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg2"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <title
+     id="title1">Comprovem i reflexionem</title>
+  <path
+     fill="#087fe8"
+     d="M47 16a49 49 0 1 0 46 7l-7 12A35 35 0 1 1 49 30l6 12 23-27L44 8Z"
+     id="path1" />
+  <path
+     fill="#20b567"
+     d="M 41.383979,60.12671 56.500097,72.723474 84.212979,43.331023 93.450607,51.728866 57.339881,90.358945 32.986136,69.364337 Z"
+     id="path2"
+     style="stroke-width:0.839784" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Comprovem i reflexionem</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

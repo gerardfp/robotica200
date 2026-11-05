@@ -14,7 +14,7 @@ image: _assets/robots/tale-bot.webp
 
 # Informació i recursos oficials del fabricant
 tech_info: >
-  Les ordres físiques, la seqüenciació, els bucles, els indicadors de color i l'enregistrament de veu depenen del model. Confirma quina versió tens i no enregistres cap veu sense acordar-ho amb els infants i el centre. [Informació oficial de Tale-Bot Pro](https://matatalab.com/en/node/774).
+  Tale-Bot Pro emmagatzema i executa seqüències de desplaçaments i girs introduïdes amb els botons del robot, sense editor extern ni pantalla. Permet repetir seqüències, enregistrar i reproduir veu amb el micròfon i l’altaveu integrats i dibuixar trajectòries amb el suport de retolador. El sensor òptic OID identifica les zones codificades dels mapes interactius compatibles i activa les respostes associades. Aquesta lectura depèn de mapes específics: no és una càmera de visió artificial ni un sensor genèric de seguiment de línies. Les prestacions descrites corresponen al model Pro. Consulta la [documentació tècnica de Tale-Bot Pro](https://matatalab.com/en/node/774).
 official_resources:
 - title: Curs oficial de Tale-Bot Pro
   href: https://matatalab.com/en/node/808

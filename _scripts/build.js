@@ -448,7 +448,7 @@ function buildSituations() {
     if (materiaLabel) badges.push({ text: materiaLabel, primary: false });
     if (durada) badges.push({ text: `⏱️ ${durada}`, primary: false });
 
-    const contentHasChallenge = /<h2\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html);
+    const contentHasChallenge = /data-section-group="intro"/.test(parsed.html);
     const showChallenge = Boolean(repte && !contentHasChallenge);
 
     const imgMatch = source.match(/!\[(.*?)\]\((.*?)\)/);
@@ -568,7 +568,7 @@ function scanMakeCodeSnippets() {
   return snippets;
 }
 
-async function main({ pdf = false } = {}) {
+async function build({ pdf = false } = {}) {
   includePDFs = pdf;
   prepareDist();
 
@@ -633,6 +633,59 @@ async function main({ pdf = false } = {}) {
     ? `  - ${printables.length} documents imprimibles i recull global (/imprimir/)`
     : '  - PDF omesos (utilitza --pdf per generar-los)');
   console.log(`  - ${blocks.length} diagrames de blocs SVG (_assets/blocks/*.svg)`);
+}
+
+// Compartit entre builds manuals i servidors dev del mateix projecte.
+async function main(options = {}) {
+  const os = require('node:os');
+  const crypto = require('node:crypto');
+  const key = crypto.createHash('sha256').update(ROOT_DIR).digest('hex').slice(0, 20);
+  const lockPath = path.join(os.tmpdir(), `robotica200-build-${key}.lock`);
+  let lock;
+  while (lock === undefined) {
+    try {
+      lock = fs.openSync(lockPath, 'wx');
+      fs.writeFileSync(lock, String(process.pid));
+    } catch (err) {
+      if (err.code !== 'EEXIST') throw err;
+      try {
+        const pid = Number(fs.readFileSync(lockPath, 'utf8'));
+        if (pid > 0) {
+          try { process.kill(pid, 0); }
+          catch (probeError) {
+            if (probeError.code === 'ESRCH') fs.unlinkSync(lockPath);
+          }
+        }
+      } catch (readError) {
+        if (readError.code !== 'ENOENT') throw readError;
+      }
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
+  }
+  const ownedLock = fs.fstatSync(lock);
+  let released = false;
+  const release = () => {
+    if (released) return;
+    released = true;
+    try {
+      // No eliminem un bloqueig nou si el nostre ja ha desaparegut.
+      const current = fs.statSync(lockPath);
+      if (current.dev === ownedLock.dev && current.ino === ownedLock.ino) {
+        fs.unlinkSync(lockPath);
+      }
+    } catch (err) {
+      if (err.code !== 'ENOENT') throw err;
+    } finally {
+      fs.closeSync(lock);
+    }
+  };
+  process.once('exit', release);
+  try {
+    return await build(options);
+  } finally {
+    process.removeListener('exit', release);
+    release();
+  }
 }
 
 if (require.main === module) {

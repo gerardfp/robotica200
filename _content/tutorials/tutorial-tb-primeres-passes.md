@@ -8,13 +8,15 @@ order: 1
 image: _assets/tutorials/tb-primeres-passes.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
 Programeu dos avanços amb els botons físics. Comproveu com el robot guarda les ordres i com esborra l’última abans d’iniciar el recorregut.
 
 - Distingir les tecles Endavant, Enrere, Gir Dreta i Gir Esquerra.
 - Aprendre la rutina del botó Delete (X) per evitar acumular ordres velles.
 - Comparar el desplaçament real amb les caselles de la graella.
+
+![](../../_assets/tutorials/tb-primeres-passes.webp)
 
 ## 🧰 Materials i preparació
 
@@ -23,12 +25,12 @@ Programeu dos avanços amb els botons físics. Comproveu com el robot guarda les
 - Cinta per marcar el punt de partida.
 - Regle o cinta mètrica per mesurar el recorregut.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Botons direccionals, Play, esborrat d’ordres i indicadors de programació.
 - La distància nominal de cada ordre s’ha de provar amb el Tale-Bot concret i el mapa utilitzat.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Engegueu i netegeu la seqüència
 
@@ -40,34 +42,28 @@ Abans d’un camí nou, manteniu premut el botó X més d’un segon i comproveu
 
 Marqueu l’inici i orienteu el robot cap endavant. Premeu:
 
-**Endavant → Endavant → Play**
+```talebot
+avançar -> avançar -> executa
+```
 
 Observeu on s’atura i mesureu la distància recorreguda. Comproveu la mida del pas del vostre robot; no suposeu que cada ordre equival a una casella de la graella. El moviment també pot variar segons el terra.
 
-![El Tale-Bot programat amb dos avanços.](../../_assets/tutorials/tb-primeres-passes.webp)
+```talebot
+avançar -> girar dreta -> esborra -> avançar -> executa
+```
 
 Per comprovar l’esborrat parcial, manteniu X més d’un segon, introduïu **Endavant → Dreta**, premeu X breument i afegiu **Endavant**. Reviseu les ordres amb les targetes o els indicadors i premeu Play: el robot hauria de fer dos avanços. Si gira, buideu la seqüència i repetiu amb una pulsació breu més clara.
 
-> **💡 Consell docent per a la sessió:** Mostreu que Tale-Bot gira sobre si mateix: el gir canvia la direcció, però no l’avança cap a una altra casella.
+> **💡 Consell d’ús:** Mostreu que Tale-Bot gira sobre si mateix: el gir canvia la direcció, però no l’avança cap a una altra casella.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
-Dibuixeu en un mapa gran l’inici i la destinació. Una parella prepara la seqüència i una altra la traça amb el dit abans de prémer els botons. Anoteu on hauria d’acabar, executeu-la i compareu-ho amb la posició real. Si difereixen, reviseu l’orientació inicial i canvieu una ordre cada vegada.
+Comproveu que el robot fa dos avanços sense girar. Si gira, buideu la seqüència i torneu a introduir les ordres. Reviseu l’orientació inicial i mesureu la distància real abans d’adaptar-la a una graella.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Cap a on mira el robot abans de començar els dos avanços?
-- Quina instrucció física elimina si ha premut una tecla per error?
-- Quantes ordres direccionals heu programat i en quin punt del mapa s’ha aturat el Tale-Bot?
+Manteniu el robot lluny de vores i deixeu lliure el recorregut. Atureu-lo abans de corregir les ordres o canviar-ne la posició inicial.
 
-## ♿ Accessibilitat i seguretat
-
-Comenceu amb dues ordres i una graella gran. Una persona pot prémer els botons mentre una altra assenyala i registra el recorregut. Manteniu el robot lluny de vores i atureu-lo abans de corregir ordres.
-
-## ✅ Evidències d’aprenentatge
-- Mapa amb el recorregut previst i el real.
-- Explicació de com eliminar l’última ordre abans de Play.
-
-## 🔗 Fonts oficials i límits
+## 🔗 Fonts i límits
 
 La [guia oficial de Tale-Bot Pro](https://matatalab.com/en/lesson4.2) mostra els botons direccionals, Play i Clear. El desplaçament de cada ordre pot variar segons la configuració del robot i la superfície; mesureu-lo abans de preparar la quadrícula.

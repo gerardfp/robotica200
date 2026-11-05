@@ -17,11 +17,11 @@ aliases:
 
 # Informació i recursos oficials del fabricant
 status_note: >
-  El fabricant marca Coding Express com a producte retirat. Les propostes són per als centres que ja tenen el tren; comprova l’estat de l’app i els recursos disponibles per al teu dispositiu.
+  El fabricant marca Coding Express com a producte retirat. Comprova l’estat de l’app i els recursos disponibles.
 status_source: https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/
 status_source_label: Fitxa oficial de Coding Express
 tech_info: >
-  El kit es va dissenyar per a educació infantil i el fabricant ofereix activitats de seqüència, bucles i condicions. LEGO Education el marca com a producte retirat, de manera que aquesta pàgina és especialment útil per als centres que ja en disposen. Comprova els components del teu kit i l'app o recursos instal·lats abans de preparar la sessió: [estat i recursos oficials de Coding Express](https://education.lego.com/en-us/products/coding-express-by-lego-education/45025/).
+  Coding Express combina una locomotora motoritzada amb un sensor inferior que reconeix els maons d’acció de colors de la via. Aquests activen respostes predefinides del motor, les llums i l’altaveu: aturades, efectes de llum i sons, entre altres comportaments. El motor s’activa amb una empenta mitjançant Push & Go. El control físic es basa en la lectura dels maons al llarg del recorregut; no disposa d’un editor de programació general per definir lliurement el comportament de cada sensor o motor. L’app compatible amplia el control i la personalització de les interaccions. Consulta la [documentació de Coding Express](https://education.lego.com/en-us/lessons/preschool-coding-express/).
 official_resources:
 - title: Unitat Coding Express (castellà)
   href: https://education.lego.com/es-es/lessons/preschool-coding-express/

@@ -8,38 +8,48 @@ order: 2
 image: _assets/tutorials/cs-motors-sensors.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
-Planifiqueu una ruta en una graella i feu que el MatataBot avance diverses caselles amb el mínim de blocs possible. Compareu les ordres amb i sense nombre, i investigueu per què els girs es programen d’una altra manera. El Coding Set no incorpora sensors al robot base: en aquesta pràctica el grup observa el desplaçament sobre el mapa.
+Feu avançar el MatataBot tres caselles amb tres peces de moviment i després amb una sola peça i el nombre 3. Els nombres modifiquen l’avanç i el retrocés, però no els girs. El robot base no mesura caselles ni detecta la graella.
 
 - Relacionar els blocs numèrics amb les ordres de moviment que poden modificar.
 - Comparar una seqüència d’avanç amb diverses ordres i una ordre amb paràmetre.
 - Explicar el límit dels blocs numèrics: s’apliquen a avançar o retrocedir, no als girs.
 
+![](../../_assets/tutorials/cs-motors-sensors.webp)
+
 ## 🧰 Materials i preparació
 
 - Coding Set de la dotació: MatataBot, Control Tower, tauler i blocs de moviment i números.
-- Mapa o quadrícula plana amb caselles de 10 cm, si el model del centre usa aquesta escala.
-- Targetes de fletxes i una graella de registre amb previsió, ordre i resultat.
+- Mapa o quadrícula plana amb caselles de 10 cm, si el model disponible usa aquesta escala.
+- Una marca per identificar el punt i l’orientació inicials.
 
 Carregueu el robot i la torre. Poseu el MatataBot a la casella d’inici, alineat amb la quadrícula; emparelleu-lo amb la torre i confirmeu el senyal de connexió. Abans de començar, identifiqueu les peces de moviment i comproveu com es disposa el nombre al tauler segons la guia del vostre model.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Torre de control que llig visualment les peces del tauler i envia el programa al MatataBot per Bluetooth.
 - Ordres de moviment tangible: avançar, retrocedir i girar 90° a esquerra o dreta.
 - Blocs numèrics com a paràmetre per repetir un nombre de vegades una ordre d’avanç o retrocés.
 - Execució ordenada del programa després de llegir el tauler i prémer el botó d’inici.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
-### 1. Planifiqueu i compareu dues rutes
+### 1. Compareu dues disposicions de peces
 
-Dibuixeu una ruta recta de tres caselles i marqueu l’orientació inicial del robot. Representeu-la primer amb tres blocs d’avanç, sense posar les peces al tauler. Cada persona de l’equip ha de poder llegir l’ordre i anticipar la destinació abans de passar al robot.
+Dibuixeu una ruta recta de tres caselles i marqueu l’orientació inicial del robot. Representeu-la primer amb tres blocs d’avanç, sense posar les peces al tauler. Comproveu l’ordre de lectura de les peces abans de prémer el botó d’inici.
 
 Prepareu **Endavant → Endavant → Endavant** i premeu el botó gran. Torneu el robot a l'inici, retireu les tres peces del tauler i col·loqueu **Endavant** amb el nombre **3** a sota, tal com mostra la guia del kit. Premeu el botó i compareu on s'atura. 
 
-![El Coding Set programat amb un bucle de tres avanços.](../../_assets/tutorials/cs-motors-sensors.webp)
+Compareu les dues disposicions del tauler:
+
+```coding-set
+avançar -> avançar -> avançar
+```
+
+```coding-set
+avançar -> 3
+```
 
 Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegades es fa el moviment d'avançar o retrocedir, no centímetres ni velocitat.
 
@@ -47,35 +57,22 @@ Repetiu amb Enrere si hi ha espai lliure darrere. El nombre indica quantes vegad
 
 Afegiu un gir de 90° al final de la ruta i observeu que el robot gira sense avançar de casella. Segons la guia del fabricant, els blocs numèrics no s’apliquen als girs esquerre/dret: per fer dos girs, col·loqueu dues peces de gir o utilitzeu les peces de bucle.
 
-### 3. Depureu i expliqueu el programa
+```coding-set
+avançar -> 3 -> girar dreta
+```
 
-Canvieu només el valor del nombre i feu una nova predicció abans de cada execució. Si el resultat no coincideix, reviseu l’orientació de la peça, la posició del nombre al tauler, l’ordre de lectura i l’alineació inicial del robot. Anoteu si l’error provenia del programa, de la lectura o de la col·locació sobre la graella.
+### 3. Corregiu el programa
 
-![Il·lustració d’un robot, una torre i un tauler amb peces de colors.](../../_assets/tutorials/cs-motors-sensors.webp)
+Canvieu només el valor del nombre i comproveu el desplaçament després de cada execució. Si el resultat no coincideix, reviseu l’orientació de la peça, la posició del nombre al tauler, l’ordre de lectura i l’alineació inicial del robot. Anoteu si l’error provenia del programa, de la lectura o de la col·locació sobre la graella.
 
-_Il·lustració decorativa: no mostra la ruta de la prova ni la disposició real dels blocs. El MatataBot base no llig la graella ni detecta les caselles._
+## 🧪 Comprovació i resolució de problemes
 
-## 🧪 Prova, depura i reflexiona
+Comproveu que tres peces Endavant i una peça Endavant amb el nombre 3 produeixen el mateix desplaçament. Si difereixen, reviseu la posició del nombre, l’ordre de lectura i l’alineació inicial del robot. No canvieu alhora el programa i la superfície.
 
-Executeu tres vegades la ruta curta i tres vegades la ruta amb paràmetre. Registreu les caselles previstes i observades, així com qualsevol desviació. Repetiu una prova amb el robot alineat de nou a l’inici; no canvieu alhora la superfície, el programa i la posició inicial.
+## 🛡️ Ús i seguretat
 
-### Preguntes per comprovar
+Manteniu les mans fora del recorregut quan el MatataBot estiga en marxa. Atureu-lo abans de reposicionar-lo o canviar el tauler i deixeu espai lliure darrere abans de provar Enrere.
 
-- Quina diferència hi ha entre repetir físicament una ordre i donar-li un paràmetre numèric?
-- Quines ordres de moviment admeten el bloc numèric segons la guia oficial?
-- Per què el gir no es pot multiplicar amb el mateix bloc numèric?
-- Quins factors del mapa o de l’alineació poden alterar el desplaçament observat?
-
-## ♿ Accessibilitat i seguretat
-
-Oferiu una ruta de dues caselles amb targetes grans i deixeu que una persona llig el programa mentre una altra col·loca les peces. Es pot predir el resultat assenyalant la graella, sense manipular el robot. Manteniu les mans fora del recorregut quan el MatataBot estiga en marxa i atureu-lo abans de canviar el tauler.
-
-## ✅ Evidències d’aprenentatge
-- Dues seqüències comparables: ordres repetides i ordre amb bloc numèric.
-- Taula de previsió i resultat per a les sis execucions.
-- Explicació visual o oral de quines ordres accepten el paràmetre i de la limitació dels girs.
-- Nota sobre l’alineació i les condicions de la superfície utilitzada.
-
-## 🔗 Fonts oficials i límits
+## 🔗 Fonts i límits
 
 La lliçó oficial Matatalab [Sequence](https://matatalab.com/en/node/61) indica que els blocs numèrics s’utilitzen amb ordres d’avanç i retrocés i que no es poden combinar amb els girs esquerre/dret. [Get to Know Matatalab Coding Set](https://matatalab.com/en/node/60) descriu la torre, el tauler, la connexió Bluetooth i les peces de moviment del conjunt. La quadrícula és una guia externa; el conjunt base no conté un sensor que mesure caselles o distàncies.

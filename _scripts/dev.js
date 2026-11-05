@@ -7,7 +7,7 @@
  * - Observa canvis a _content/, _templates/, _scripts/, _css/, _js/ i _assets/.
  * - Recompila automàticament quan canvia el Markdown o les plantilles.
  * - Actualitza el navegador en temps real via Server-Sent Events (/__livereload):
- *   · Hot-reload instantani sense perdre l'estat ni l'scroll si només canvia _css/.
+ *   · Hot-reload sense perdre l'estat ni l'scroll si només canvia _css/.
  *   · Recàrrega automàtica de la pàgina si canvia el contingut, plantilles o JS.
  */
 'use strict';
@@ -185,37 +185,12 @@ function setupWatchers() {
       const label = files.length === 1 ? files[0] : `${files[0]} (+${files.length - 1} més)`;
       console.log(`\n📝 Canvi detectat: ${label}`);
 
-      if (shouldBuild) {
-        const ok = await runBuild();
-        if (ok) {
-          console.log(`🔄 Recarregant navegador (${clients.size} client/s connectat/s)`);
-          broadcast('reload');
-        }
-      } else if (isCssOnly) {
-        for (const file of files) {
-          if (file.startsWith('_css' + path.sep)) {
-            const dest = path.join(DIST_DIR, file);
-            try {
-              fs.mkdirSync(path.dirname(dest), { recursive: true });
-              fs.copyFileSync(path.join(ROOT_DIR, file), dest);
-            } catch (_) {}
-          }
-        }
-        console.log(`🎨 Actualitzant CSS en viu (${clients.size} client/s connectat/s)`);
-        broadcast('css');
-      } else {
-        for (const file of files) {
-          const src = path.join(ROOT_DIR, file);
-          const dest = path.join(DIST_DIR, file);
-          try {
-            if (fs.existsSync(src) && fs.statSync(src).isFile()) {
-              fs.mkdirSync(path.dirname(dest), { recursive: true });
-              fs.copyFileSync(src, dest);
-            }
-          } catch (_) {}
-        }
-        console.log(`🔄 Recarregant navegador (${clients.size} client/s connectat/s)`);
-        broadcast('reload');
+      // Totes les escriptures a dist passen pel build i el seu bloqueig compartit.
+      // Això evita copiar actius mentre un altre procés neteja el directori.
+      const ok = await runBuild();
+      if (ok) {
+        console.log(`🔄 Actualitzant navegador (${clients.size} client/s connectat/s)`);
+        broadcast(isCssOnly ? 'css' : 'reload');
       }
     }, 80);
   }

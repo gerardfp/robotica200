@@ -8,13 +8,15 @@ order: 2
 image: _assets/tutorials/sp-motors-sensors-flat.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
 Feu girar un motor solt i atureu-lo quan acosteu una targeta vermella al sensor de color. No cal construir cap model ni encaixar peces LEGO: només connectar els cables al Hub.
 
 - Controlar un motor angular i programar una condició de parada.
 - Comparar lectures del sensor de color.
 - Comprovar com influeixen la llum i la distància de la targeta.
+
+![](../../_assets/tutorials/sp-motors-sensors-flat.webp)
 
 ## 🧰 Materials i preparació
 
@@ -24,12 +26,12 @@ Feu girar un motor solt i atureu-lo quan acosteu una targeta vermella al sensor 
 
 Deixeu el motor recolzat de manera estable sobre la taula, amb l’eix lliure i sense rodes, eixos afegits ni engranatges.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Motor angular i sensor de color SPIKE Prime.
 - Lectura de color i espera condicional per aturar el motor.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Connecteu i comproveu el sensor
 
@@ -52,25 +54,14 @@ Comenceu amb la targeta blanca davant del sensor. Executeu el programa i substit
 
 Repetiu tres vegades a la mateixa distància. Després canvieu només la distància de la targeta o la il·luminació i compareu les lectures. Atureu el programa abans de recol·locar el motor o el sensor.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
 Anoteu el color mostrat per l’app i si el motor s’ha aturat en cada intent. Si falla, reviseu els ports, la llum i la posició de la targeta, una cosa cada vegada.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Quina lectura activa la parada?
-- Què passa si la targeta vermella ja és davant del sensor en començar?
-- Quin canvi ha fet més estable la detecció?
+Manteniu mans, cabells, roba i cables lluny de l’eix del motor. No el freneu amb els dits. Atureu el programa abans de moure el motor o canviar els cables de port.
 
-## ♿ Accessibilitat i seguretat
+## 🔗 Fonts i límits
 
-Oferiu targetes grans amb el nom del color escrit. Repartiu els rols de programació, presentació de targetes i registre. Manteniu mans, cabells, roba i cables lluny de l’eix; no el freneu amb els dits.
-
-## ✅ Evidències d’aprenentatge
-
-- Programa i esquema dels ports.
-- Registre de tres proves i explicació de la condició de parada.
-
-## 🔗 Fonts oficials i límits
-
-Les [especificacions oficials de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) descriuen el motor angular i el sensor de color. La parada depén de la posició, l’altura i la llum de l’aula; proveu primer amb una targeta ampla i una velocitat baixa.
+Les [especificacions oficials de SPIKE Prime](https://education.lego.com/it-it/product-resources/spike-prime/downloads/technical-specifications/) descriuen el motor angular i el sensor de color. La parada depén de la posició, l’altura i la llum ambiental; proveu primer amb una targeta ampla i una velocitat baixa.

@@ -8,7 +8,7 @@ order: 3
 image: _assets/tutorials/mb-radio-mesh-flat.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
 Feu que una placa envie el número 7 i que una altra el mostre. Després canvieu el grup d’una placa i observeu què passa. És una comunicació local: no cal Wi-Fi i no transmet veu.
 
@@ -16,24 +16,26 @@ Feu que una placa envie el número 7 i que una altra el mostre. Després canvieu
 - Enviar un número de prova i mostrar-lo a l’altra placa.
 - Comprovar què passa quan canvia el grup.
 
+![](../../_assets/tutorials/mb-radio-mesh-flat.webp)
+
 ## 🧰 Materials i preparació
 
 - 2 o més plaques micro:bit amb portapiles
 - Ordinador amb MakeCode per preparar i transferir un programa a cada placa.
 - Full de registre per anotar grup, missatge enviat i missatge rebut.
 
-Prepareu un programa emissor i un de receptor. Si l’aula té més de dues plaques, assigneu un grup diferent a cada parella per evitar rebre els missatges de la resta.
+Prepareu un programa emissor i un de receptor. Si hi ha altres plaques a prop, trieu un grup de ràdio que no utilitzen per evitar interferències.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Ràdio integrada per enviar i rebre missatges dins d’un grup configurat.
 - Comunicació per ràdio entre plaques sense Wi-Fi; és difusió local, no un canal privat ni un servei meteorològic.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Prepareu i envieu el missatge
 
-A la placa emissora, poseu «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegiu «ràdio: envia número 7». Descarregueu el programa. Totes les plaques de la parella han d’usar el mateix grup.
+A la placa emissora, poseu «ràdio: fixa grup a 7» a **en iniciar**. Dins de «en prémer el botó A», afegiu «ràdio: envia número 7». Descarregueu el programa. Les plaques emissora i receptora han d’usar el mateix grup de ràdio.
 
 ```makecode
 radio.setGroup(7)
@@ -55,27 +57,16 @@ radio.onReceivedNumber(function (receivedNumber) {
 
 La [referència oficial de recepció per ràdio](https://makecode.microbit.org/reference/radio/on-received-number) mostra la peça de recepció i enllaça les peces d’enviament i de grup.
 
-> **💡 Consell docent per a la sessió:** Assigneu un grup diferent a cada taula perquè les plaques d’un equip no reben els missatges de les altres parelles.
+> **💡 Consell d’ús:** Useu el mateix grup de ràdio en les dues plaques de prova i un grup diferent del d’altres dispositius propers.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
 Premeu A cinc vegades a l’emissora i compteu quantes vegades apareix el 7 a la receptora. Deixeu que el número acabe de mostrar-se abans de tornar a prémer. Després canvieu només el grup de la receptora, descarregueu-li el programa i repetiu la prova. Torneu al grup 7 en acabar.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Aquest programa identifica quina placa ha enviat el 7? Què passa si dues emissores del mateix grup envien el mateix número?
-- Què passaria si dos equips comparteixen el grup?
-- Pot rebre'l algú que no esperàvem?
+No envieu dades personals: qualsevol placa del mateix grup de ràdio pot rebre el missatge. Useu números de prova i comproveu el grup configurat en cada dispositiu abans de transmetre.
 
-## ♿ Accessibilitat i seguretat
-
-No envieu dades personals: qualsevol placa del mateix grup pot rebre el missatge. Si l’objectiu és practicar el protocol, prepareu les plaques abans de la sessió perquè cada equip puga centrar-se en enviar i rebre.
-
-## ✅ Evidències d’aprenentatge
-- Còpia dels dos programes, amb el grup de ràdio anotat.
-- Registre dels cinc intents amb el mateix grup i dels intents amb grups diferents.
-- Una frase que explique per què el grup de ràdio no fa privat el missatge.
-
-## 🔗 Fonts oficials i límits
+## 🔗 Fonts i límits
 
 La [guia oficial de funcions de micro:bit](https://microbit.org/get-started/features/overview/) descriu la ràdio integrada i la diferència amb Bluetooth. La ràdio d’aquest exemple envia un número al grup configurat; no és privada i no necessita connexió a Internet.

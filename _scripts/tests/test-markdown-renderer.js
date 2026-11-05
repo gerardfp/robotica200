@@ -51,7 +51,8 @@ assert.match(veggieLove.html, /sa-sp-reg-hort-dades\.webp/, "Veggie Love il·lus
 assert.match(veggieLove.html, /sa-sp-reg-hort-calibratge\.webp/, "Veggie Love il·lustra la prova de calibratge de l’agulla");
 assert.match(veggieLove.html, /sa-sp-reg-hort-recalibratge-v2\.webp/, "Veggie Love mostra la recalibració i separa visualment precipitació i temperatura");
 assert.match(wind.html, /markdown-note-materials/, "els materials es presenten en un bloc identificable");
-assert.match(wind.html, /markdown-note-evidence/, "les evidències es presenten en un bloc identificable");
+assert.doesNotMatch(wind.html, /markdown-note-evidence/, "les evidències de la fase 5 es presenten com a text normal");
+assert.match(wind.html, /<p>[^<]*<strong>Evidència:<\/strong>/, "la fase 5 conserva l’etiqueta i el text de l’evidència");
 const trainingTrackers = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/sp-rampa-dades.md"), "utf8"), "https://example.test/_content/situacions/sp-rampa-dades.md");
 assert.equal(trainingTrackers.steps.length, 6, "Training Trackers conserva les sis lliçons oficials");
 assert.equal((trainingTrackers.html.match(/class="learning-phase"/g) || []).length, 30, "les sis lliçons de Training Trackers es desglossen en cinc fases llegibles cadascuna");
@@ -526,7 +527,7 @@ for (const step of codingSetStation.steps) {
   const end = codingSetStation.html.indexOf('<section class="learning-step"', start + 10);
   const markup = codingSetStation.html.slice(start, end < 0 ? undefined : end);
   assert.equal((markup.match(/class="learning-phase(?: learning-phase-default)?"/g) || []).length, 5, `${step.title} presenta exactament les cinc fases comunes`);
-  assert.equal((markup.match(/class="markdown-note markdown-note-evidence"/g) || []).length, 1, `${step.title} identifica una evidència pròpia`);
+  assert.equal((markup.match(/class="markdown-note markdown-note-evidence"/g) || []).length, 0, `${step.title} presenta l’evidència com a text normal`);
 }
 assert.match(codingSetStation.html, /pentagrama \(estrela de cinc puntes\)/i, "la creació d'angles adapta explícitament el contingut oficial de pentagrames o estrelles");
 assert.match(codingSetStation.html, /Introduïm|Introducing Maps/i, "la sessió 8 aborda la introducció de mapes abans de les graelles");
@@ -538,7 +539,7 @@ assert.equal(waste.steps.length, 5, "la situació de residus conserva les cinc s
 assert.equal(waste.steps[0].title, "Auditem un problema sense tocar residus (50 min)", "els noms dels passos no acaben amb puntuació sobrant");
 assert.match(waste.html, /class="learning-wizard-step-number" aria-hidden="true">1<\/span><span class="learning-wizard-step-title"><span class="learning-wizard-step-separator" aria-hidden="true">&#160;·&#160;<\/span><span>/, "el número i el títol dels botons tenen espais no separables al voltant del punt");
 assert.equal((waste.html.match(/class="learning-phase"/g) || []).length, 25, "les cinc sessions comparteixen exactament les cinc fases comunes");
-assert.equal((waste.html.match(/class="markdown-note markdown-note-evidence"/g) || []).length, 5, "cada sessió té la seua evidència destacada");
+assert.equal((waste.html.match(/class="markdown-note markdown-note-evidence"/g) || []).length, 0, "cada sessió presenta l’evidència com a text normal");
 assert.equal((waste.html.match(/class="markdown-note markdown-note-question"/g) || []).length, 5, "cada sessió té la seua pregunta docent destacada");
 const accessibleMuseum = renderer.parse(fs.readFileSync(path.join(root, "_content/situacions/sp-museu-accessible.md"), "utf8"), "https://example.test/_content/situacions/sp-museu-accessible.md");
 assert.match(accessibleMuseum.html, /sp-museu-accessible\.webp/, "la portada del laboratori accessible usa la nova il·lustració IA pròpia");
@@ -1089,11 +1090,11 @@ assert.match(kickstartBusiness.html, /executeu el programa inicial/i, "Keep It S
 assert.match(kickstartBusiness.html, /prova creuada/i, "Keep It Safe adapta el desafiament entre equips");
 const longText = Array.from({ length: 34 }, (_, index) => `L'equip registra l'observació ${index + 1} i explica com comprova cada decisió amb una prova concreta.`).join(" ");
 const consistentFormat = renderer.parse(`## Situació i intenció\n\n${longText}\n\n## Materials docents\n\n**Exploració · 10 min:** Prepareu el mapa i les targetes.`, "https://example.test/_content/situacions/prova.md");
-assert.match(consistentFormat.html, /<h2 id="situacio-i-intencio">🌱 Situació, repte i intenció<\/h2>/, "els títols equivalents es normalitzen sense canviar l'àncora original");
+assert.match(consistentFormat.html, /<h2 id="situacio-i-intencio"><img[^>]+class="section-icon"[^>]*><span>Situació, repte i intenció<\/span><\/h2>/, "els títols equivalents es normalitzen sense canviar l'àncora original");
 assert.match(consistentFormat.html, /markdown-note-situation/, "la primera explicació de la situació es destaca automàticament");
 assert.match(consistentFormat.html, /markdown-note-phase/, "les fases amb duració comparteixen un format visual");
-assert.ok((consistentFormat.html.match(/<p>/g) || []).length > 2, "els paràgrafs extensos es divideixen per millorar-ne la lectura");
-assert.match(consistentFormat.html, /prova concreta\. L&#39;equip registra l&#39;observació 2/, "la divisió de paràgrafs llargs conserva l'espai entre frases");
+assert.equal((consistentFormat.html.match(/<p>/g) || []).length, 2, "els paràgrafs extensos respecten els límits del Markdown");
+assert.match(consistentFormat.html, /prova concreta\. L&#39;equip registra l&#39;observació 2/, "el paràgraf conserva l'espai entre frases");
 const structuredSteps = renderer.parse(`## Itinerari\n### Sessió 1 · Provar\n- Evidència: registre de la prova.\n- **Pregunta docent:** Què canviaríeu?\n- Criteri d'èxit: el recorregut es pot repetir.\n- [ ] Compareu els dos resultats.`, "https://example.test/_content/situacions/prova.md");
 assert.match(structuredSteps.html, /learning-step-kicker">Pas 1</, "cada pas té un marcador visual ordenat");
 assert.match(structuredSteps.html, /markdown-list-label-evidence/, "les evidències de les llistes queden etiquetades");
@@ -1159,6 +1160,10 @@ for (const item of activeFiles) {
   assert.equal((rendered.html.match(/class="learning-step"/g) || []).length, rendered.steps.length, `${slug} representa cada pas amb la mateixa plantilla visual`);
   assert.equal((rendered.html.match(/class="learning-step-content"/g) || []).length, rendered.steps.length, `${slug} embolcalla cada pas amb el contenidor comú`);
   assert.ok((rendered.html.match(/class="learning-phase(?: learning-phase-default)?"/g) || []).length >= rendered.steps.length, `${slug} presenta cada pas dins d'una fase visual`);
+  for (let phase = 1; phase <= 5; phase++) {
+    assert.equal((rendered.html.match(new RegExp(`data-phase="${phase}"`, 'g')) || []).length, rendered.steps.length, `${slug}: la fase ${phase} té un punt a la línia de temps en cada pas`);
+  }
+  assert.equal((rendered.html.match(/class="phase-timeline-marker"/g) || []).length, rendered.steps.length * 5, `${slug}: cada fase té una icona del pack`);
   assert.ok(rendered.steps.every(step => !/^\d+\s*/.test(step.title)), `${slug} no duplica la numeració al nom dels passos`);
   assert.match(rendered.html, /class="sa-illustration"/, `${slug} necessita una imatge editorial`);
   assert.match(rendered.html, /markdown-note-situation/, `${slug} necessita una introducció destacada`);
@@ -1169,16 +1174,16 @@ for (const item of activeFiles) {
   const standardGroups = ["intro", "learning", "materials", "sequence", "assessment", "access", "official"];
   assert.deepEqual(sectionGroups, standardGroups, `${slug} ha de tindre exactament els set apartats comuns i en el mateix ordre`);
   const standardHeadings = [
-    "🌱 Situació, repte i intenció",
-    "🎯 Aprenentatges i vocabulari",
-    "🧰 Materials i preparació",
-    "📅 Seqüència didàctica",
-    "🧪 Evidències i avaluació",
-    "♿ Participació, accessibilitat i seguretat",
-    "🔗 Referents i adaptació"
+    "Situació, repte i intenció",
+    "Aprenentatges i vocabulari",
+    "Materials i preparació",
+    "Seqüència didàctica",
+    "Evidències i avaluació",
+    "Participació, accessibilitat i seguretat",
+    "Referents i adaptació"
   ];
   assert.deepEqual(
-    [...rendered.html.matchAll(/<section class="detail-section(?: detail-section-intro)?" data-section-group="[a-z]+"[^>]*><h2[^>]*>(.*?)<\/h2>/g)].map(match => match[1]),
+    [...rendered.html.matchAll(/<section class="detail-section(?: detail-section-intro)?" data-section-group="[a-z]+"[^>]*><h2[^>]*>(.*?)<\/h2>/g)].map(match => match[1].replace(/<[^>]*>/g, "")),
     standardHeadings,
     `${slug} usa els mateixos set títols de secció, sense afegir durades variables al títol de la seqüència`
   );
@@ -1186,10 +1191,7 @@ for (const item of activeFiles) {
     assert.equal(sectionGroups.filter(item => item === group).length, 1, `${slug} ha d’unificar tots els blocs ${group} en un únic apartat`);
   }
   assert.doesNotMatch(rendered.html, /data-section-group="other"/, `${slug} no deixa contingut fora de l’estructura editorial comuna`);
-  for (const [, paragraph] of rendered.html.matchAll(/<p\b[^>]*>([\s\S]*?)<\/p>/g)) {
-    const plainText = paragraph.replace(/<[^>]*>/g, "").replace(/&(?:amp|lt|gt|quot|#39);/g, " ");
-    assert.ok((plainText.match(/\S+/g) || []).length <= 100, `${slug} té un paràgraf massa llarg després del renderitzat`);
-  }
+
 }
 for (const robot of ["coding-express", "tale-bot", "coding-set", "codey-rocky", "spike", "microbit"]) {
   assert.ok((robotSituationCounts.get(robot) || 0) >= 5, `${robot} necessita almenys cinc situacions actives pròpies o adaptades`);
@@ -1246,6 +1248,8 @@ for (const file of activityFiles) {
     : requiredActivityHeadings;
   assert.deepEqual(h2Headings, expectedHeadings, `${file}: manté exactament els encapçalaments canònics d'activitat`);
   assert.match(source, /^### Preguntes per fer pensar$/m, `${file}: inclou la subsecció de preguntes de reflexió`);
+  assert.doesNotMatch(rendered.html, /Desenvolupament del pas|learning-phase-default/, `${file}: el pas no té cap fase automàtica`);
+  assert.match(rendered.html, /<div class="learning-step-content">\s*<(?:p|aside|figure|ul|ol)/, `${file}: el contingut és directament dins del pas`);
   assert.ok(rendered.steps.length >= 3, `${file}: organitza l'activitat en almenys tres passos al wizard`);
   const expectedGroups = h2Headings.includes("## 🔗 Referent consultat")
     ? ["learning", "materials", "sequence", "assessment", "access", "official"]
@@ -1338,7 +1342,7 @@ assert.equal(activeSituations.length, activeFiles.length, "el format comú es co
 for (const robot of equippedRobots) {
   assert.ok(situationCountByRobot[robot] >= 5, `${robot}: la dotació té almenys cinc SDAs pròpies actives`);
 }
-assert.ok(buildSource.includes('contentHasChallenge = /<h2\\b[^>]*>[^<]*(?:repte|pregunta guia)/i.test(parsed.html)'), "el repte no es duplica si ja té una secció pròpia");
+assert.ok(buildSource.includes('const contentHasChallenge = /data-section-group="intro"/.test(parsed.html);'), "el repte no es duplica quan la introducció ja té una secció, encara que el títol continga una icona");
 assert.match(styles, /\.learning-step\[hidden\]/, "els passos no actius es retiren de la lectura visual");
 
 const artistNet = fs.readFileSync(path.join(root, "_content/situacions/cs-artist-net-paraules.md"), "utf8");
@@ -1482,3 +1486,20 @@ assert.match(microbitGarden, /mb-hivernacle\.webp/, "el projecte d'hort usa una 
 assert.match(microbitGarden, /no hi ha cap sensor de sòl integrat/, "la nova llegenda no atribueix sensor de sòl a micro:bit");
 
 console.log(`Markdown renderer tests passed: ${activeFiles.length} active situations, ${activeFiles.reduce((total, item) => total + renderer.parse(item.source, "https://example.test/source.md").steps.length, 0)} navigable steps, template states, accessible wizard, code, images, links and escaping.`);
+
+const coverInsideIntro = renderer.parse('![Portada](../../_assets/situacions/prova.webp)\n\n_Peu de la portada._\n\n## Repte i intenció\n\nText introductori.\n\nSegon paràgraf.\n\n## Aprenentatges\n\n- Objectiu.', 'https://example.test/_content/situacions/prova.md');
+assert.match(coverInsideIntro.html, /data-section-group="intro"[\s\S]*?<figure class="sa-illustration">[\s\S]*?<figcaption>Peu de la portada\.<\/figcaption>[\s\S]*?<\/section>/, 'la portada i el peu es mostren dins de la introducció');
+assert.equal((coverInsideIntro.html.match(/class="sa-illustration"/g) || []).length, 1, 'la portada no es duplica en moure-la a la introducció');
+assert.doesNotMatch(coverInsideIntro.html.split('data-section-group="intro"')[0], /sa-illustration/, 'la portada no queda fora de la introducció');
+
+assert.match(coverInsideIntro.html, /markdown-note-situation[\s\S]*?<\/aside>\s*<figure class="sa-illustration">[\s\S]*?<\/figure>\s*<p>Segon paràgraf\.<\/p>/, 'la portada queda immediatament després de la nota de situació i abans del segon paràgraf');
+
+// Un punt i coma no és un límit de paràgraf, encara que el text siga llarg.
+const semicolonParagraph = `${'paraula '.repeat(83).trim()}; ${'continuació '.repeat(20).trim()}`;
+const semicolonRendered = renderer.parse(semicolonParagraph, 'https://example.test/_content/tutorials/tutorial-prova.md');
+assert.equal((semicolonRendered.html.match(/<p>/g) || []).length, 1, 'el punt i coma conserva un únic paràgraf');
+assert.match(semicolonRendered.html, /paraula; continuació/, 'es conserva el punt i coma amb el seu espai');
+
+const planetSource = fs.readFileSync(path.join(root, '_content/situacions/mb-reptes-planeta.md'), 'utf8');
+const planetRendered = renderer.parse(planetSource, 'https://example.test/_content/situacions/mb-reptes-planeta.md');
+assert.match(planetRendered.html, /<p>Consulteu fonts seleccionades[^<]+La micro:bit registra l’acció humana; no reconeix ni identifica l’espècie\.<\/p>/, 'el paràgraf de les espècies es conserva complet, sense divisions automàtiques');

@@ -8,13 +8,15 @@ order: 5
 image: _assets/tutorials/sp-sensor-distancia-alarma-flat.webp
 ---
 
-## 🎯 Repte i objectius
+## 🎯 Què aprendrem?
 
-Creeu un avís de proximitat amb el sensor quiet sobre la taula. Moveu una caixa a mà per activar-lo i exploreu després el gir del Hub, també a mà. No cal construir cap base ni encaixar peces LEGO; aquesta activitat no utilitza motors.
+Creeu un avís de proximitat amb el sensor quiet sobre la taula. Moveu una caixa a mà per activar-lo i exploreu després el gir del Hub, també a mà. No cal construir cap base ni encaixar peces LEGO; aquest exemple no utilitza motors.
 
 - Comparar lectures amb tres distàncies conegudes.
 - Programar un avís condicionat per la distància.
 - Observar un angle de gir amb el sensor de moviment del Hub.
+
+![](../../_assets/tutorials/sp-sensor-distancia-alarma-flat.webp)
 
 ## 🧰 Materials i preparació
 
@@ -24,13 +26,13 @@ Creeu un avís de proximitat amb el sensor quiet sobre la taula. Moveu una caixa
 
 Deixeu el sensor recolzat sobre la taula, amb les finestres orientades cap a la caixa i sense obstruccions. Només cal connectar-ne el cable al Hub. Comproveu la unitat de lectura que mostra l’app.
 
-## 🧩 Funcions del robot treballades
+## 🧩 Funcions i controls
 
 - Sensor ultrasònic per estimar distància.
 - Giroscopi del Hub per observar un gir manual.
 - Altaveu integrat i matriu LED com a avisos complementaris.
 
-## 👣 Seqüència guiada
+## 👣 Pas a pas
 
 ### 1. Comproveu tres distàncies
 
@@ -58,27 +60,14 @@ Feu aquesta prova en un projecte separat. Deixeu el Hub pla i quiet, i poseu a z
 
 Repetiu la prova de proximitat amb un altre llindar, per exemple 20 cm. Manteniu la icona com a alternativa al so i compareu a quina distància s’activa. Ajusteu el volum a un nivell còmode amb les opcions disponibles en l’app.
 
-## 🧪 Prova, depura i reflexiona
+## 🧪 Comprovació i resolució de problemes
 
-Anoteu el llindar programat i la distància mesurada amb el regle quan apareix l’avís en tres intents. Si no s’activa, reviseu port, unitats, orientació i lectura. Registreu també els tres angles de la prova manual del Hub.
+Comproveu que l’avís s’activa quan la caixa travessa el llindar programat. Si no ho fa, reviseu el port, les unitats, l’orientació i la lectura del sensor. En la prova manual del Hub, poseu a zero l’angle abans de girar-lo.
 
-### Preguntes per comprovar
+## 🛡️ Ús i seguretat
 
-- Què canvia en passar d’un llindar de 12 a 20 cm?
-- Per què cal allunyar la caixa abans de tornar a iniciar el programa?
-- Quin signe té el gir del Hub en cada sentit?
-- Quina informació ofereix la icona si no sentiu el so?
+Manipuleu el Hub sense estirar els cables i deixeu espai per moure la caixa. Useu un avís breu a volum moderat. L’exemple no és una alarma real de seguretat.
 
-## ♿ Accessibilitat i seguretat
+## 🔗 Fonts i límits
 
-Una persona pot moure la caixa i una altra llegir o registrar les dades. Oferiu una taula amb les distàncies marcades i manteniu un avís visual equivalent al sonor. Manipuleu el Hub sense estirar els cables. L’avís és una pràctica de programació, no una alarma real de seguretat.
-
-## ✅ Evidències d’aprenentatge
-
-- Programa d’avís i esquema dels ports.
-- Taula de distàncies i comparació dels dos llindars.
-- Dibuix del gir manual i registre dels angles observats.
-
-## 🔗 Fonts oficials i límits
-
-La fitxa tècnica LEGO del [sensor de distància Technic](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt64c2b9534cf10f68/5f8801b8bc43790f5c4389ea/techspecs_technicdistancesensor.pdf?locale=en-us) descriu la tecnologia ultrasònica i els rangs; les [especificacions del Hub Prime](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltf512a371e82f6420/5f8801baf4f4cf0fa39d2feb/techspecs_techniclargehub.pdf?locale=en-us) documenten altaveu i sensor de moviment. Les lectures són aproximades; aquesta activitat no és un sistema de seguretat.
+La fitxa tècnica LEGO del [sensor de distància Technic](https://assets.education.lego.com/v3/assets/blt293eea581807678a/blt64c2b9534cf10f68/5f8801b8bc43790f5c4389ea/techspecs_technicdistancesensor.pdf?locale=en-us) descriu la tecnologia ultrasònica i els rangs; les [especificacions del Hub Prime](https://assets.education.lego.com/v3/assets/blt293eea581807678a/bltf512a371e82f6420/5f8801baf4f4cf0fa39d2feb/techspecs_techniclargehub.pdf?locale=en-us) documenten altaveu i sensor de moviment. Les lectures són aproximades; aquest exemple no és un sistema de seguretat.

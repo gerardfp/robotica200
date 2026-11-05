@@ -4,25 +4,17 @@ const { escapeHTML } = require('../layout/utils');
 
 function CodePanel({ lang, codeHTML }) {
   const safeLang = escapeHTML(lang || 'text');
+  if (['python', 'py', 'python3', 'javascript', 'js'].includes(String(lang).toLowerCase())) {
+    return `<div class="code-panel"><pre class="code-block" tabindex="0"><code class="language-${safeLang}">${codeHTML}</code></pre></div>`;
+  }
   return `<figure class="code-panel"><figcaption>Exemple de programació · ${safeLang}</figcaption><pre class="code-block" tabindex="0"><code class="language-${safeLang}">${codeHTML}</code></pre></figure>`;
 }
 
-const DIALECT_LABELS = {
-  makecode: 'MakeCode (micro:bit)',
-  mblock: 'mBlock 5 (Codey Rocky)',
-  mblocks: 'mBlock 5 (Codey Rocky)',
-  spike: 'SPIKE App (LEGO SPIKE)',
-  spikeapp: 'SPIKE App (LEGO SPIKE)',
-  'spike-app': 'SPIKE App (LEGO SPIKE)',
-  scratchblocks: 'Blocs visuals'
-};
-
-function VisualBlocksPanel({ lang, rawCode, svgHTML, hash }) {
+function VisualBlocksPanel({ lang, svgHTML, hash }) {
   const normalizedLang = String(lang || 'scratchblocks').toLowerCase();
-  const label = DIALECT_LABELS[normalizedLang] || escapeHTML(lang);
   const hashAttr = hash ? ` data-block-hash="${escapeHTML(hash)}"` : '';
 
-  return `<figure class="code-panel code-panel-blocks" data-block-engine="${escapeHTML(normalizedLang)}"${hashAttr}><figcaption>Programa de blocs · ${label}</figcaption><div class="blocks-visual-frame">${svgHTML}</div></figure>`;
+  return `<div class="blocks-visual-frame" data-block-engine="${escapeHTML(normalizedLang)}"${hashAttr}>${svgHTML}</div>`;
 }
 
 module.exports = { CodePanel, VisualBlocksPanel };
