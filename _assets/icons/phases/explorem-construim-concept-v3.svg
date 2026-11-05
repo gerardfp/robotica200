@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="128"
+   height="128"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg4"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs4" />
+  <title
+     id="title1">Explorem i construïm</title>
+  <rect
+     x="37"
+     y="24"
+     width="49"
+     height="20"
+     rx="3"
+     fill="#ffbd16"
+     id="rect1" />
+  <rect
+     x="14"
+     y="48"
+     width="45"
+     height="20"
+     rx="3"
+     fill="#ff5555"
+     id="rect2" />
+  <rect
+     x="63"
+     y="48"
+     width="45"
+     height="20"
+     rx="3"
+     fill="#20b567"
+     id="rect3" />
+  <path
+     fill="#087fe8"
+     fill-rule="evenodd"
+     d="m 74.435995,10.691552 a 34.591539,34.591539 0 1 1 0,69.183077 34.591539,34.591539 0 0 1 0,-69.183077 z m 0,8.647884 a 25.943655,25.943655 0 1 0 0,51.887309 25.943655,25.943655 0 0 0 0,-51.887309 z"
+     id="path3"
+     style="stroke-width:0.960876" />
+  <path
+     fill="#087fe8"
+     d="m 45.609713,67.38324 12.49139,12.491389 -31.708911,32.669791 a 4.8043803,4.8043803 0 0 1 -6.726132,0 l -7.687008,-7.68701 a 4.8043803,4.8043803 0 0 1 0,-6.726131 z"
+     id="path4"
+     style="stroke-width:0.960876" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Explorem i construïm</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

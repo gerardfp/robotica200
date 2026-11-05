@@ -231,40 +231,7 @@ function extractRobotOverview(root) {
   return { robotLead, robotHighlightTitle, robotHighlightBody };
 }
 
-function countWordsInHTML(html) {
-  const plain = decodeEntities(String(html).replace(/<[^>]+>/g, ' '));
-  return (plain.match(/\S+/g) || []).length;
-}
-
-function tagsBalancedInHTML(html) {
-  for (const tag of ['strong', 'em', 'code', 'a']) {
-    const opens = (html.match(new RegExp(`<${tag}\\b[^>]*>`, 'gi')) || []).length;
-    const closes = (html.match(new RegExp(`</${tag}>`, 'gi')) || []).length;
-    if (opens !== closes) return false;
-  }
-  return true;
-}
-
-function splitLongParagraphHTML(innerHtml, limit = 82) {
-  const normalized = innerHtml.replace(/\s*\n\s*/g, ' ').trim();
-  if (countWordsInHTML(normalized) <= limit) return [normalized];
-  const sentences = normalized.split(/(?<=[.!?;])\s+/);
-  const chunks = [];
-  let current = '';
-  for (const sentence of sentences) {
-    const candidate = current ? `${current} ${sentence}` : sentence;
-    if (current && countWordsInHTML(candidate) > limit && tagsBalancedInHTML(current)) {
-      chunks.push(current.trim());
-      current = sentence;
-    } else {
-      current = candidate;
-    }
-  }
-  if (current.trim()) chunks.push(current.trim());
-  return chunks.length > 1 ? chunks : [normalized];
-}
-
-function transformParagraphHTML(pInnerHtml) {
+function transformParagraphHTML(pInnerHtml, { plainEvidence = false } = {}) {
   const labels = [...pInnerHtml.matchAll(/<(strong|em)>([^<]+)<\/\1>/g)];
   const labelled = labels
     .map(match => {
@@ -281,6 +248,7 @@ function transformParagraphHTML(pInnerHtml) {
 
   const { match, label, type } = labelled;
   const [, kind, icon] = type;
+  if (plainEvidence && kind === 'evidence') return `<p>${pInnerHtml}</p>`;
   const title = label.replace(/:$/, '');
   const before = pInnerHtml.slice(0, match.index).trim();
   const after = pInnerHtml.slice(match.index + match[0].length).trim();
@@ -343,7 +311,7 @@ function transformListElement(listEl) {
   return `<${tag}${listClass}>${renderedItems.join('')}</${tag}>`;
 }
 
-function transformBlockquoteElement(bqEl) {
+function transformBlockquoteElement(bqEl, { plainEvidence = false } = {}) {
   const pElements = bqEl.children.filter(c => c.type === 'element' && c.tagName === 'p');
   const linesHtml = [];
   for (const p of pElements) {
@@ -359,6 +327,7 @@ function transformBlockquoteElement(bqEl) {
   const note = label && noteTypes.find(([pattern]) => pattern.test(labelText));
   if (note) {
     const [, kind, icon] = note;
+    if (plainEvidence && kind === 'evidence') return content;
     return MarkdownNote({
       kind,
       icon,
@@ -466,10 +435,10 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
         continue;
       }
 
-      // 2. Paràgraf de text (amb divisió si > 82 paraules i detecció de MarkdownNote)
-      const chunks = splitLongParagraphHTML(node.innerHTML);
+      // 2. Respectar els paràgrafs del Markdown i detectar MarkdownNote.
+      const chunks = [node.innerHTML];
       for (const chunk of chunks) {
-        let rendered = transformParagraphHTML(chunk);
+        let rendered = transformParagraphHTML(chunk, state);
         if (state.introPending) {
           state.introPending = false;
           if (!rendered.includes('markdown-note')) {
@@ -489,7 +458,7 @@ function renderSemanticBlocks(nodes, state = { introPending: false }) {
 
     // 4. Cites <blockquote>
     if (node.tagName === 'blockquote') {
-      out.push(transformBlockquoteElement(node));
+      out.push(transformBlockquoteElement(node, state));
       continue;
     }
 
@@ -663,6 +632,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
         if (openPhase) {
           output.push('</section>');
           openPhase = false;
+          state.plainEvidence = false;
         }
       };
 
@@ -728,6 +698,7 @@ function transformSemanticHTML(rawHTML, { data = {}, sourceURL = '' } = {}) {
           const phaseMatch = plainH4.match(/^(Fase [1-5] · (?:Activem i prediem|Explorem i construïm|Expliquem i registrem|Apliquem i millorem|Comprovem i reflexionem))(?:\s*\(([^)]+)\))?$/);
           const phaseHeading = phaseMatch ? escapeHTML(phaseMatch[1]) : stripHeadingIcon(node.innerHTML.trim());
           const phaseNumber = phaseMatch ? Number(plainH4.match(/^Fase ([1-5])/)[1]) : 0;
+          state.plainEvidence = isSituation && phaseNumber === 5;
           const timelineAttr = isSituation && phaseNumber ? ` data-phase="${phaseNumber}"` : '';
           const markerHTML = timelineAttr ? PhaseMarker(phaseNumber) : '';
           output.push(isTutorial ? `<h4>${phaseHeading}</h4>` : `<section class="learning-phase"${timelineAttr}>${markerHTML}<h4>${phaseHeading}</h4>`);

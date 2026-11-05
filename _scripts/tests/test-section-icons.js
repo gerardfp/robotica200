@@ -27,7 +27,7 @@ console.log(`Section icons: ${count} seccions verificades`);
 const { PHASE_ICONS, PhaseMarker } = require('../../_templates/components/phase-marker');
 assert.equal(new Set(PHASE_ICONS).size, 5, 'cada fase té una icona original diferent');
 for (const [index, icon] of PHASE_ICONS.entries()) {
-  assert.ok(fs.existsSync(path.join(root, '_assets/icons/phases', icon + '.webp')), `existeix la parella d’icones ${icon}`);
+  assert.ok(fs.existsSync(path.join(root, '_assets/icons/phases', icon + '.svg')), `existeix la parella d’icones ${icon}`);
   assert.match(PhaseMarker(index + 1), /icons\/phases\//, 'els marcadors usen les icones noves de dos verbs');
   assert.doesNotMatch(PhaseMarker(index + 1), /icons\/pack\//, 'els marcadors no reutilitzen el pack general');
 }

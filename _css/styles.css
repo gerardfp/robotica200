@@ -3918,10 +3918,10 @@ robot-profile .robot-detail-section,
 /* Les cinc fases de les situacions formen un recorregut vertical. */
 .prose .learning-phase[data-phase] {
   --phase-color: #0284c7;
-  --phase-axis: 2.25rem;
+  --phase-axis: 1.65rem;
   position: relative;
   margin: 0;
-  padding: .4rem 0 2rem calc(var(--phase-axis) * 2 + .9rem);
+  padding: .7rem 0 2rem calc(var(--phase-axis) * 2 + .9rem);
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -3939,7 +3939,7 @@ robot-profile .robot-detail-section,
   display: grid;
   place-items: center;
   width: calc(var(--phase-axis) * 2);
-  height: 2.65rem;
+  height: calc(var(--phase-axis) * 2);
   border: 0;
   border-radius: 0;
   background: #fff;
@@ -3955,7 +3955,7 @@ robot-profile .robot-detail-section,
   content: '';
   position: absolute;
   left: calc(var(--phase-axis) - 1px);
-  top: 2.65rem;
+  top: calc(var(--phase-axis) * 2);
   bottom: .4rem;
   width: 2px;
   background: linear-gradient(var(--phase-color), color-mix(in srgb, var(--phase-color) 35%, white));
@@ -3972,5 +3972,5 @@ robot-profile .robot-detail-section,
   transform: rotate(45deg);
 }
 @media (max-width: 600px) {
-  .prose .learning-phase[data-phase] { --phase-axis: 2rem; }
+  .prose .learning-phase[data-phase] { --phase-axis: 1.5rem; }
 }
