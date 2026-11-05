@@ -19,7 +19,7 @@ status_note: >
 status_source: https://www.education.lego.com/en-us/spike-update-2026/
 status_source_label: Informació de LEGO Education
 tech_info: >
-  La denominació «SPIKE» cobreix diferents conjunts. Aquestes propostes de motors angulars i sensors parteixen de SPIKE Prime: comprova la versió del hub i les peces disponibles. LEGO Education ha anunciat la retirada comercial de SPIKE Essential i Prime, però mantindrà el suport de l’aplicació fins al 30 de juny de 2031. Si el centre ja té el kit, pot continuar fent-lo servir a l’aula. Consulta la [fitxa de disponibilitat i suport de LEGO Education](https://www.education.lego.com/en-us/spike-update-2026/) i la [pàgina tècnica oficial de SPIKE Prime](https://education.lego.com/en-us/product-resources/spike-prime/downloads/technical-specifications/).
+  SPIKE Prime permet controlar motors angulars per potència, velocitat, posició i angle de gir, i combinar-los amb lectures dels sensors de color, distància i força. El hub gran disposa de sis ports, sensor de moviment de sis eixos, matriu LED de 5 × 5, botons i altaveu. Es poden programar moviments coordinats, respostes condicionades pels sensors i correccions basades en les lectures del motor o del hub. La programació es fa amb blocs o Python a l’app SPIKE, amb connexió USB o Bluetooth. Aquestes característiques corresponen a Prime; SPIKE Essential utilitza un hub i una dotació diferents. Consulta les [especificacions tècniques de SPIKE Prime](https://education.lego.com/en-us/product-resources/spike-prime/downloads/technical-specifications/).
 official_resources:
 - title: Models de construcció de SPIKE Prime
   href: https://spike.legoeducation.com/prime/models/

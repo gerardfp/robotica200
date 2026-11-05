@@ -18,6 +18,7 @@ function RobotPage({
   tutorialItems = [],
   resources = [],
   techInfo = '',
+  specs = [],
   statusNote = '',
   statusSource = '',
   statusSourceLabel = '',
@@ -49,14 +50,14 @@ function RobotPage({
         ${statusSource ? `<a href="${escapeAttr(statusSource)}" target="_blank" rel="noopener noreferrer">${escapeHTML(statusSourceLabel || 'Font oficial')} <span aria-hidden="true">↗</span></a>` : ''}
       </aside>` : '';
 
-  const resourcesHTML = (resources.length || statusNote || techInfo) ? `
+  const resourcesHTML = (resources.length || statusNote || techInfo || specs.length) ? `
     <section class="robot-official-resources" data-official-resources aria-labelledby="manufacturer-heading">
       <header class="manufacturer-heading">
         <h2 id="manufacturer-heading">Recursos oficials del fabricant</h2>
         <p>Explora noves possibilitats amb la documentació oficial i les guies del fabricant.</p>
       </header>
       <div class="manufacturer-info">
-        ${(techInfo || statusNote) ? `<div class="manufacturer-tech" data-tech-info><h3>Informació tècnica i compatibilitat</h3>${techInfo ? `<div>${infoMarkdown.render(techInfo)}</div>` : ''}${statusHTML}</div>` : ''}
+        ${(techInfo || specs.length || statusNote) ? `<div class="manufacturer-tech" data-tech-info><h3>Informació tècnica i compatibilitat</h3>${techInfo ? `<div>${infoMarkdown.render(techInfo)}</div>` : ''}${specs.length ? `<h4>Especificacions tècniques</h4><ul class="manufacturer-specs">${specs.map(spec => `<li>${escapeHTML(String(spec).replace(/^✓\s*/, ''))}</li>`).join('')}</ul>` : ''}${statusHTML}</div>` : ''}
       </div>
       ${resources.length ? `<ul class="manufacturer-resource-grid">
         ${resources.map((res, index) => `<li><a class="manufacturer-resource" href="${escapeAttr(res.href)}" target="_blank" rel="noopener noreferrer"><span class="manufacturer-resource-top"><span class="manufacturer-resource-number">${String(index + 1).padStart(2, '0')}</span><span aria-hidden="true">↗</span></span><h3>${escapeHTML(res.title)}</h3>${res.description ? `<p>${escapeHTML(res.description)}</p>` : ''}<span class="manufacturer-resource-action">Consulta el recurs <span aria-hidden="true">→</span></span></a></li>`).join('')}

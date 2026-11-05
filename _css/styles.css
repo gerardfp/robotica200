@@ -2193,6 +2193,12 @@ accent-dashes {
   will-change: transform;
 }
 
+@media (min-width: 861px) {
+  .fbot {
+    --fbot-w: 47.6px;
+  }
+}
+
 .footer-robots.is-animated .fbot {
   left: 0;
 }
@@ -2573,7 +2579,11 @@ robot-profile .robot-detail-section,
 .manufacturer-info:empty { display: none; }
 .manufacturer-tech { flex: 1 1 18rem; min-width: 0; padding: 1.25rem; border-radius: 1rem; }
 .manufacturer-tech { background: #ffffff; }
-.manufacturer-status { margin-top: 1.25rem; padding: .9rem 1rem; border-left: 4px solid #bf8700; border-radius: 0 .5rem .5rem 0; background: #fff8e9; }
+.manufacturer-tech h4 { margin: 1.25rem 0 .65rem; font-family: var(--font-heading); font-size: .9rem; color: #0f172a; }
+.manufacturer-specs { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0; padding: 0; list-style: none; color: #404040; font-size: .8rem; line-height: 1.45; }
+.manufacturer-specs li { display: flex; align-items: center; gap: .4rem; max-width: 100%; min-width: 0; padding: .35rem .75rem; border-radius: 999px; background: #f0f0f0; }
+.manufacturer-specs li::before { content: "✓"; flex: 0 0 auto; color: #525252; font-size: .7rem; line-height: 1; }
+.manufacturer-status { margin: 1.25rem 0 0; padding: .9rem 1rem; border-left: 4px solid #bf8700; border-radius: 0 .5rem .5rem 0; background: #fff8e9; }
 .manufacturer-status .manufacturer-kicker { color: #85520c; }
 .manufacturer-info h3 { margin: 0 0 .65rem; font-size: 1rem; line-height: 1.4; color: #0f172a; }
 .manufacturer-info p,

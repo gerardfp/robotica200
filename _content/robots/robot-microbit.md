@@ -15,7 +15,7 @@ image: _assets/robots/microbit.webp
 
 # Informació i recursos oficials del fabricant
 tech_info: >
-  El disseny dels pins i les funcions varien entre micro:bit V1 i V2; la V2 afegeix, entre altres funcions, micròfon, altaveu i logotip tàctil. Abans d'introduir so, orientació o accessoris, identifica el model de la placa i revisa els requisits de connexió i d'alimentació. El codi pot compartir-se en blocs, Python o explicació oral. Consulta la [guia oficial de funcions de la micro:bit](https://microbit.org/get-started/features/overview/).
+  La micro:bit és una placa programable amb MakeCode o Python que permet llegir entrades, processar-les i controlar sortides. Pot mostrar text i patrons a la matriu LED de 5 × 5, detectar pulsacions, moviment i orientació, estimar la llum ambiental i consultar la temperatura del processador. La ràdio permet intercanviar missatges entre plaques; els pins permeten llegir senyals i controlar circuits externs compatibles. La V2 incorpora micròfon, altaveu i logotip tàctil. No inclou motors ni xassís: el moviment i el control de càrregues requereixen perifèrics, controladors i alimentació adequats. Consulta les [funcions de cada versió de micro:bit](https://microbit.org/get-started/features/overview/).
 official_resources:
 - title: Lliçons de micro:bit
   href: https://microbit.org/teach/lessons/

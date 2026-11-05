@@ -14,7 +14,7 @@ image: _assets/robots/coding-set.webp
 
 # Informació i recursos oficials del fabricant
 tech_info: >
-  Els conjunts i la distribució de peces varien segons l'edició. Consulta el [recurs oficial de Coding Set](https://matatalab.com/en/node/60) i comprova la torre, el tauler, la connexió i la càrrega abans de l'activitat.
+  Matatalab Coding Set executa programes formats amb blocs físics que una torre reconeix visualment sobre el tauler. Permet definir desplaçaments i girs, ajustar-los amb paràmetres numèrics i repetir seqüències amb blocs de bucle. La torre envia les ordres al MatataBot perquè executi el recorregut, sense ordinador ni tauleta. El robot pot traçar les trajectòries amb un retolador i el suport corresponent. Les funcions de música i altres ampliacions depenen dels blocs i accessoris inclosos en l’edició; el sistema base no equival a un robot amb sensors d’obstacles o de seguiment de línies programables. Consulta la [documentació de Coding Set](https://matatalab.com/en/node/60).
 official_resources:
 - title: Catàleg d’activitats de Matatalab
   href: https://matatalab.com/en/activity
