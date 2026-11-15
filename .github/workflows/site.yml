@@ -15,6 +15,8 @@ concurrency:
 jobs:
   site:
     runs-on: ubuntu-latest
+    env:
+      PRESENCIAL_ENABLED: ${{ secrets.PRESENCIAL_PASSWORD != '' }}
     steps:
       - uses: actions/checkout@v4
       - name: Instal·lar Typst per generar els PDF imprimibles
@@ -31,8 +33,27 @@ jobs:
           key: robotica200-print-pdfs-${{ runner.os }}-${{ hashFiles('_content/**/*.md', '_assets/**/*', '_scripts/md_to_typst.py') }}
           restore-keys: |
             robotica200-print-pdfs-${{ runner.os }}-
+      - name: Preparar Node per a la formació presencial
+        if: env.PRESENCIAL_ENABLED == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: formacio/package-lock.json
+      - name: Instal·lar Marp per a la formació presencial
+        if: env.PRESENCIAL_ENABLED == 'true'
+        run: npm --prefix formacio ci
+      - name: Recuperar PDF xifrats de la formació presencial
+        if: env.PRESENCIAL_ENABLED == 'true'
+        uses: actions/cache@v4
+        with:
+          path: .cache/presencial-encrypted-pdfs
+          key: presencial-pdfs-${{ runner.os }}-${{ hashFiles('formacio/presentacions/**', 'formacio/fonts/**', 'formacio/tema.css', 'formacio/sessions.json', '_scripts/build-training.js', '_scripts/lib/**', '_templates/components/code-panel.js', '_templates/layout/utils.js', '_assets/**', '_cache/makecode/**') }}
+          restore-keys: |
+            presencial-pdfs-${{ runner.os }}-
       - name: Compilar només els PDF modificats
         env:
+          PRESENCIAL_PASSWORD: ${{ secrets.PRESENCIAL_PASSWORD }}
           ROBOTICA_PDF_CACHE: ${{ runner.temp }}/robotica200-print-pdf-cache
         run: node _scripts/build.js --pdf
       - name: Guardar memòria cau actualitzada dels PDF

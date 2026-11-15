@@ -73,3 +73,16 @@ Typst; no hi ha una segona versió dels continguts. Consulta
 - `node _scripts/dev.js`: desenvolupament amb recàrrega automàtica, sempre sense PDF.
 
 Cada compilació reconstrueix `dist/`. Sense `--pdf`, no s’hi conserven PDF anteriors ni es mostren enllaços de descàrrega. La publicació automàtica utilitza `--pdf`.
+
+## Formació presencial
+
+Les presentacions Marp, el tema corporatiu, els dos itineraris de 3 i 4 sessions i la fitxa de treball estan en [`formacio/`](formacio/README.md). Cada sessió dura dues hores i es pot conduir amb projector, amb alternatives quan no hi ha robots.
+
+- `npm --prefix formacio ci`: instal·la les eines de generació.
+- `node _scripts/build-training.js`: genera el catàleg i les sis presentacions HTML amb Marp.
+- `node _scripts/build-training.js --pdf`: exporta també els sis PDF.
+- `node _scripts/tests/check-training.cjs`: revisa totes les diapositives al navegador.
+
+La formació es genera independentment del web i dels reculls Typst.
+
+La ruta independent `/presencial/` publica la formació amb contrasenya, sense enllaç des de la portada. La configuració i els límits de protecció estan documentats en [`docs/PRESENCIAL.md`](docs/PRESENCIAL.md).

@@ -623,6 +623,10 @@ async function build({ pdf = false } = {}) {
     subjectOptions
   }));
 
+  const { publishPresencial, configuredPassword } = require('./lib/presencial');
+  const presencial = publishPresencial({ root: ROOT_DIR, dist: DIST_DIR, password: configuredPassword(ROOT_DIR) });
+  console.log(presencial.enabled ? `  - /presencial/: ${presencial.count} documents xifrats` : '  - /presencial/: pendent de configurar (sense contingut públic)');
+
   console.log('✓ Build estàtic completat amb èxit:');
   console.log(`  - ${activitats.length} activitats (/activitat/<slug>/index.html)`);
   console.log(`  - ${tutorials.length} tutorials (/tutorial/<slug>/index.html)`);
