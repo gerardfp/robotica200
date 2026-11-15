@@ -1502,4 +1502,4 @@ assert.match(semicolonRendered.html, /paraula; continuació/, 'es conserva el pu
 
 const planetSource = fs.readFileSync(path.join(root, '_content/situacions/mb-reptes-planeta.md'), 'utf8');
 const planetRendered = renderer.parse(planetSource, 'https://example.test/_content/situacions/mb-reptes-planeta.md');
-assert.match(planetRendered.html, /<p>Consulteu fonts seleccionades[^<]+La micro:bit registra l’acció humana; no reconeix ni identifica l’espècie\.<\/p>/, 'el paràgraf de les espècies es conserva complet, sense divisions automàtiques');
+assert.match(planetRendered.html, /<p>Consulteu fonts seleccionades[^<]+feu una targeta de llegenda\.<\/p>\s*<p>En MakeCode, creeu dos comptadors:[^<]+espècie 2\.<\/p>\s*<p>La micro:bit registra l’acció de polsar els botons; no reconeix ni identifica l’espècie\.<\/p>/, 'els paràgrafs de les espècies es conserven complets i en l’ordre original');
