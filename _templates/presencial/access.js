@@ -19,8 +19,11 @@
  if(!payloadName){form.hidden=true;status.textContent='Aquests materials encara no estan disponibles.';return}
  if(!window.crypto?.subtle){form.hidden=true;status.textContent='Obriu aquesta pàgina amb HTTPS o des del servidor local.';return}
  function toolbar(){
+  const view=new URLSearchParams(location.search).get('view');
+  if(view==='next')return; // Marp's preview frame must contain only the next slide.
   const bar=document.createElement('nav');bar.id='presencial-controls';bar.setAttribute('aria-label','Formació presencial');
   bar.style.cssText='position:fixed;top:10px;right:14px;z-index:100000;display:flex;align-items:center;gap:14px;padding:8px 12px;background:#ffffffed;border:1px solid #dbe5ef;border-radius:10px;font:14px "Plus Jakarta Sans",Jakarta,sans-serif';
+  if(view==='presenter'){bar.style.left='20px';bar.style.right='auto'}
   const home=document.createElement('a');home.href=base.href;home.textContent='Materials';home.style.color='#1d4ed8';
   const logout=document.createElement('button');logout.textContent='Tancar sessió';logout.onclick=window.__presencialLogout;logout.style.cssText='font:inherit;padding:6px 10px;border:0;border-radius:6px;background:#eff6ff;color:#1d4ed8;cursor:pointer';
   bar.append(home,logout);document.body.append(bar);window.addEventListener('pageshow',event=>{if(event.persisted&&!get())location.reload()});

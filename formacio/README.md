@@ -13,11 +13,11 @@ Sis presentacions Marp per a docents de primària sense experiència. Es poden c
 
 Les dues sessions finals de disseny comparteixen continguts: canvien la identificació i el lloc dins de l’itinerari. La versió de tres sessions concentra rutes i sensors en una mateixa sessió; la versió de quatre dona més temps a la programació tangible i a les demostracions.
 
-Cada sessió té blocs consecutius que sumen 120 minuts, inclosa una pausa de cinc minuts. El temps de cada bloc inclou explicar, pensar, provar i compartir; no són minuts d’exposició per diapositiva. Les activitats amb robot substitueixen la simulació en paper. Els temps són una planificació docent, pendent d’ajustar després d’impartir la primera edició.
+Cada sessió té blocs consecutius que sumen 120 minuts, inclosa una pausa de cinc minuts. Les temporalitzacions es consulten en les notes del presentador, no en la projecció. El temps de cada bloc inclou explicar, pensar, provar i compartir; no són minuts d’exposició per diapositiva. Les activitats amb robot substitueixen la simulació en paper. Els temps són una planificació docent, pendent d’ajustar després d’impartir la primera edició.
 
 ## Obrir les presentacions
 
-Obriu `html/index.html`, trieu l’itinerari i inicieu la primera sessió. Les fletxes permeten navegar. Els controls de Marp ofereixen pantalla completa, vista general i mode de presentació.
+Obriu `html/index.html`, trieu l’itinerari i inicieu la primera sessió. Les fletxes permeten navegar. Els controls de Marp ofereixen pantalla completa, vista general i vista del presentador. Premeu **P** per obrir la vista del presentador: mostra les notes i el control de la sessió. Manteniu aquesta finestra al portàtil i projecteu la finestra principal amb les diapositives. El bloqueig per contrasenya també funciona amb aquesta vista en `/presencial/`.
 
 Les fonts Sora i Plus Jakarta Sans estan incorporades a l’HTML i als PDF. Les imatges són locals: per compartir HTML, conserveu la carpeta `formacio/` al costat de `_assets/`, com en aquest repositori. Per enviar un únic fitxer, utilitzeu els PDF de `export/`.
 
@@ -74,3 +74,21 @@ Després, les generacions ordinàries tornen a funcionar sense connexió. Si fal
 ## Accés separat en el web
 
 La publicació de les sessions es fa en `/presencial/`, sense enllaçar-la des de la portada. Els HTML i PDF d’aquesta ruta es xifren amb la contrasenya configurada. Consulteu [`docs/PRESENCIAL.md`](../docs/PRESENCIAL.md) per a la clau local, el secret de GitHub Actions, les proves i els límits d’accés en un repositori públic.
+
+### Notes natives del presentador
+
+S’escriuen sota la diapositiva amb comentaris HTML normals de Marp, separats de les directives de disseny:
+
+```markdown
+## Escriviu una ruta
+
+Acordeu les ordres i comproveu la destinació.
+
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió.
+Temps orientatiu de la dinàmica: 3 minuts.
+Deixeu que les parelles anticipen el final abans de mostrar la solució.
+-->
+```
+
+La vista del presentador les mostra en HTML. El PDF ordinari conté les transparències, sense aquestes notes. Els temps que formen part d’un exemple didàctic (com esperar un segon en un programa) es conserven a la diapositiva.

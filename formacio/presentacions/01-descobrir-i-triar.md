@@ -19,15 +19,21 @@ Formació presencial per a docents de primària
 
 Robòtica per a docents
 
+<!--
+Preparació: comproveu projector i navegació. Només està garantida la projecció; les activitats admeten resposta oral o en paper. Si hi ha dispositius, assageu abans les demostracions i substituïu les simulacions per proves curtes.
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Començarem amb un repte
 
-**00–15 min · 15 minuts**
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -39,27 +45,41 @@ Una primera activitat que puguem explicar i preparar.
 
 Una pauta per organitzar equips i observar què aprenen.
 
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
+-->
+
 ---
 
 ## Com treballarem
 
-Projector i conversa, amb reptes breus en parelles.
+Treballarem en parelles: llegirem, anticiparem i compartirem les nostres decisions.
 
-Podem resoldre’ls oralment; si tenim paper, hi representarem les proves.
+Podeu respondre oralment o representar les proves en paper.
 
-Si hi ha robots, una prova assajada substituirà la simulació.
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
+
+Si hi ha robots disponibles i preparats, substituïu la simulació per una demostració assajada; no afegiu temps extra al bloc.
+-->
 
 ---
 
 <!-- _class: activity -->
 
-## Abans de començar · 2 minuts
+## Abans de començar
 
 Penseu en un contingut que ja treballeu amb el vostre grup.
 
 Expliqueu-lo a la persona del costat.
 
 Conserveu aquest exemple: al final triarem si algun material ens ajuda a treballar-lo.
+
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
+
+Temps orientatiu de la dinàmica: 2 minuts.
+-->
 
 ---
 
@@ -71,17 +91,27 @@ Conserveu aquest exemple: al final triarem si algun material ens ajuda a treball
 
 **A1 ↑ → biblioteca B3.** Una ordre «avant» avança una casella; un gir canvia l’orientació sense moure la fitxa.
 
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
 
-## Escriviu una ruta · 3 minuts
+## Escriviu una ruta
 
 1. Acordeu les ordres per arribar a la biblioteca.
 2. Una persona les escriu o les diu.
 3. L’altra les executa amb el dit o mentalment.
 
 Comproveu també **cap on mira al final**.
+
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
+
+Temps orientatiu de la dinàmica: 3 minuts.
+-->
 
 ---
 
@@ -97,6 +127,10 @@ Comproveu també **cap on mira al final**.
 | Dreta | A3 | Dreta |
 | Avant | B3 | Dreta |
 
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -107,15 +141,21 @@ Comproveu també **cap on mira al final**.
 
 El recorregut arriba a B3 i acaba mirant a la dreta. **El tercer pas és un gir: no avança de casella.**
 
+<!--
+Bloc «Començarem amb un repte»: 00–15 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Què podem aprendre?
 
-**15–30 min · 15 minuts**
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -127,6 +167,10 @@ Hem necessitat un inici, una orientació i ordres compartides.
 
 Una altra ruta també pot ser correcta: cal executar-la i justificar-la.
 
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -137,6 +181,10 @@ Una altra ruta també pot ser correcta: cal executar-la i justificar-la.
 
 La dreta és la del personatge segons cap on mira. **Després d’un gir, continuem a la mateixa casella.**
 
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
+-->
+
 ---
 
 ## Pensament computacional, amb un exemple
@@ -146,6 +194,10 @@ La dreta és la del personatge segons cap on mira. **Després d’un gir, contin
 **Depurar:** localitzar i corregir una ordre.
 
 El vocabulari posa nom a decisions que ja hem pres.
+
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -161,6 +213,10 @@ La il·lustració mostra versions d’una seqüència.
 
 **Després:** quina ordre hem revisat i quin efecte té?
 
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
+-->
+
 ---
 
 ## Quin aprenentatge guia la proposta?
@@ -170,6 +226,10 @@ La il·lustració mostra versions d’una seqüència.
 **Matemàtiques:** descriure posicions i canvis d’orientació.
 
 **Medi:** comparar dades obtingudes amb el mateix procediment.
+
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -181,17 +241,27 @@ Arribar al destí és un resultat.
 
 Podem recollir una ruta anotada, una conversa o dues versions del programa.
 
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
 
-## De la pantalla a la conversa · 3 minuts
+## De la pantalla a la conversa
 
 Recupereu el contingut que heu triat en començar.
 
 Què hauria de fer o explicar l’alumnat per demostrar que l’ha entés?
 
-Compartim dues respostes concretes.
+<!--
+Bloc «Què podem aprendre?»: 15–30 min de sessió (15 minuts).
+
+Temps orientatiu de la dinàmica: 3 minuts.
+
+Recolliu dues respostes concretes i relacioneu-les amb el contingut triat a l’inici.
+-->
 
 ---
 
@@ -199,9 +269,11 @@ Compartim dues respostes concretes.
 
 ## Coneixem les possibilitats
 
-**30–55 min · 25 minuts**
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -215,6 +287,10 @@ Programem moviments amb els botons del robot.
 
 **Una proposta:** Una ruta entre tres llocs d’un conte.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Tale-Bot · Primera decisió
@@ -225,6 +301,10 @@ Els mapes interactius necessiten zones codificades compatibles; una quadrícula 
 
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
+
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -242,6 +322,10 @@ executa
 
 Preparem les ordres i després premem **executa**. El gir canvia l’orientació: no avança. Les icones representen la seqüència, no la disposició física dels botons.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -254,6 +338,10 @@ Construïm el programa amb peces al tauler; la torre el llig i el MatataBot el s
 
 **Una proposta:** Comparar dues seqüències movent una peça.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Coding Set · Primera decisió
@@ -264,6 +352,10 @@ Cal preparar torre, tauler i robot; no són botons sobre el mateix robot.
 
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
+
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -280,6 +372,10 @@ endavant
 
 Al tauler, llegim les peces **d’esquerra a dreta i de dalt a baix**. Aquesta fila representa una ruta; la torre ha de poder llegir-la abans d’executar-la.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -289,6 +385,10 @@ Al tauler, llegim les peces **d’esquerra a dreta i de dalt a baix**. Aquesta f
 <img class="explanatory-diagram" src="../diagrames/coding-set-sistema.svg" alt="Coding Set · Com circulen les ordres?">
 
 El tauler manté el programa visible. La torre el llig i envia les ordres; el MatataBot les executa.
+
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -302,6 +402,10 @@ La via defineix el recorregut; els maons d’acció provoquen respostes del tren
 
 **Una proposta:** Una història amb estació, parada i destinació.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Coding Express · Primera decisió
@@ -313,6 +417,10 @@ El tren no tria una destinació. Els girs de la via no són ordres de gir com en
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -322,6 +430,10 @@ El tren no tria una destinació. Els girs de la via no són ordres de gir com en
 <img class="explanatory-diagram" src="../diagrames/tren-via-accio.svg" alt="Coding Express · Via i resposta">
 
 La via resol el recorregut. El maó introdueix una resposta. **No és una ordre de gir en una quadrícula.**
+
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -335,6 +447,10 @@ Programem amb mBlock una pantalla, els botons i altres respostes.
 
 **Una proposta:** Prémer A perquè mostre una cara dibuixada.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Codey Rocky · Primera decisió
@@ -345,6 +461,10 @@ Una expressió programada no implica que el robot senta ni reconega emocions.
 
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
+
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -358,6 +478,10 @@ Relacionem botons o lectures de sensors amb respostes en la matriu LED.
 
 **Una proposta:** Un fanalet que mostra una icona quan baixa la llum.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 ## micro:bit · Primera decisió
@@ -368,6 +492,10 @@ La lectura de llum és relativa i depén de la posició; no és una mesura en lu
 
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
+
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -381,6 +509,10 @@ Connectem i programem motors i sensors; podem construir mecanismes.
 
 **Una proposta:** Aturar un motor quan el sensor detecta una targeta roja.
 
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
+
 ---
 
 ## SPIKE Prime · Primera decisió
@@ -392,25 +524,27 @@ Reserveu temps per al muntatge, els ports, la connexió i les proves.
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
 
----
-
-<!-- _class: section -->
-
-## Pausa
-
-**55–60 min · 5 minuts**
-
-Una pausa abans de continuar.
+<!--
+Bloc «Coneixem les possibilitats»: 30–55 min de sessió (25 minuts).
+-->
 
 ---
 
 <!-- _class: pause -->
 
-## Pausa · 5 minuts
+## Pausa
 
 En tornar, continuarem amb el bloc següent.
 
 Deixeu anotada una pregunta que vulgueu recuperar.
+
+<!--
+Bloc «Pausa»: 55–60 min de sessió (5 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+
+Respecteu els cinc minuts de pausa; recupereu una de les preguntes anotades en reprendre la sessió.
+-->
 
 ---
 
@@ -418,9 +552,11 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 
 ## Del programa a la resposta
 
-**60–85 min · 25 minuts**
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -435,6 +571,10 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 Primer llegim el programa. Després anticipem la pantalla.
 
 Codey pot fer aquesta prova sense moure Rocky.
+
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -451,6 +591,10 @@ esborra la pantalla
 
 **Què inicia la seqüència? Què ocorre durant l’espera?**
 
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
@@ -465,6 +609,10 @@ Quan premem A, què veurem…
 
 En parelles, acordeu les tres respostes.
 
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -475,6 +623,10 @@ En parelles, acordeu les tres respostes.
 
 Suposem que només premem A una vegada. L’espera manté el cor abans d’apagar la pantalla.
 
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Codey · Una modificació, una predicció
@@ -483,9 +635,15 @@ Suposem que només premem A una vegada. L’espera manté el cor abans d’apaga
 
 Quin bloc canvia? Quins es conserven?
 
-**Resposta:** canvia l’espera d’1 a 3 segons. El botó i el dibuix continuen igual.
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+
+Solució per a la posada en comú: canvia l’espera d’1 a 3 segons. El botó i el dibuix continuen igual.
 
 Pregunta docent: «Com ho sabies abans de provar?»
+
+Deixeu que les parelles justifiquen el canvi abans de donar la resposta. El resultat es pot comprovar amb el diagrama temporal anterior.
+-->
 
 ---
 
@@ -496,6 +654,10 @@ Pregunta docent: «Com ho sabies abans de provar?»
 <img class="explanatory-diagram" src="../diagrames/entrada-programa-eixida.svg" alt="Un botó i un sensor aporten informació">
 
 El programa el dissenyem nosaltres. Un botó activa un esdeveniment; un sensor aporta una lectura que podem comparar.
+
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -511,6 +673,10 @@ La matriu LED pot mostrar dibuixos i estimar la llum.
 
 Primer observem lectures; després triem una condició.
 
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -521,15 +687,21 @@ Primer observem lectures; després triem una condició.
 
 El programa segueix **una branca en cada comprovació**. 80 és un exemple: primer cal observar les lectures reals.
 
+<!--
+Bloc «Del programa a la resposta»: 60–85 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Com ho organitzem?
 
-**85–100 min · 15 minuts**
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -542,6 +714,10 @@ El programa segueix **una branca en cada comprovació**. 80 és un exemple: prim
 **Tercer cicle:** dades amb micro:bit o mecanismes amb SPIKE.
 
 Són punts de partida flexibles, segons experiència i material.
+
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -557,6 +733,10 @@ Són punts de partida flexibles, segons experiència i material.
 
 **Ampliar:** afegir un gir quan el grup puga explicar les primeres proves.
 
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -571,6 +751,10 @@ Quin lloc seria l’inici?
 Quina parada tindria sentit en el relat?
 Què explicaria l’alumnat en arribar-hi?
 
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -580,6 +764,10 @@ Què explicaria l’alumnat en arribar-hi?
 <img class="explanatory-diagram" src="../diagrames/equips-torns.svg" alt="Una prova amb treball per a tothom">
 
 Cada equip conserva la seua tasca mentre espera. El torn acaba amb una observació que els altres poden aprofitar.
+
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -592,6 +780,10 @@ Cada equip conserva la seua tasca mentre espera. El torn acaba amb una observaci
 
 En equips de tres, uniu comprovació i explicació.
 
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
+-->
+
 ---
 
 ## Participar també és anticipar i explicar
@@ -601,6 +793,10 @@ Fletxes grans, consignes orals i temps per pensar.
 Podem explicar amb veu, dibuix o demostració.
 
 Una altra persona pot manipular el dispositiu seguint les nostres instruccions.
+
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -612,21 +808,27 @@ Una altra persona pot manipular el dispositiu seguint les nostres instruccions.
 
 Preguntem què esperàvem i què ha passat. Després canviem **una sola cosa** i tornem a provar.
 
+<!--
+Bloc «Com ho organitzem?»: 85–100 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Preparem una primera proposta
 
-**100–120 min · 20 minuts**
+<!--
+Bloc «Preparem una primera proposta»: 100–120 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
 <!-- _class: activity -->
 
-## La proposta que m’emporte · 5 minuts
+## La proposta que m’emporte
 
 Completeu oralment o en paper:
 
@@ -634,6 +836,12 @@ Completeu oralment o en paper:
 **El repte seria…**
 **La primera prova consistiria en…**
 **Sabria que han aprés perquè…**
+
+<!--
+Bloc «Preparem una primera proposta»: 100–120 min de sessió (20 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+-->
 
 ---
 
@@ -645,6 +853,10 @@ Qui escolta pregunta: **«Què farà l’alumnat per demostrar-ho?»**
 
 Reviseu un element abans de donar-la per preparada.
 
+<!--
+Bloc «Preparem una primera proposta»: 100–120 min de sessió (20 minuts).
+-->
+
 ---
 
 ## Abans de la primera prova a l’aula
@@ -654,6 +866,10 @@ Prepareu una alternativa en paper.
 Reserveu temps per explicar una millora.
 
 **Una primera experiència curta i comprensible és suficient per començar.**
+
+<!--
+Bloc «Preparem una primera proposta»: 100–120 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -671,6 +887,10 @@ Reserveu temps per explicar una millora.
 
 Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden variar segons l’idioma de l’aplicació.
 
+<!--
+Aquests enllaços són per a consulta posterior. No cal obrir-los durant la sessió ni disposar de connexió per completar les activitats.
+-->
+
 ---
 
 ## Recursos per continuar
@@ -682,3 +902,7 @@ Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden vari
 [Robòtica per a docents](https://gerardfp.github.io/robotica200/) · [Escola 4.0 · GVA](https://portal.edu.gva.es/escola40/va/inici/)
 
 Les imatges reutilitzen il·lustracions del projecte.
+
+<!--
+Bloc «Preparem una primera proposta»: 100–120 min de sessió (20 minuts).
+-->

@@ -3,7 +3,7 @@
     "id": "01-descobrir-i-triar",
     "title": "Per on comencem amb la robòtica?",
     "label": "Sessió 1 · Comuna als dos formats",
-    "slideCount": 59,
+    "slideCount": 58,
     "schedule": [
       {
         "title": "Començarem amb un repte",
@@ -46,7 +46,7 @@
     "id": "02-format3-programar",
     "title": "Entendre com es programa",
     "label": "Sessió 2 · Format de tres sessions",
-    "slideCount": 52,
+    "slideCount": 51,
     "schedule": [
       {
         "title": "Llegir i comprovar una ruta",
@@ -89,7 +89,7 @@
     "id": "02-format4-rutes",
     "title": "Rutes i programació tangible",
     "label": "Sessió 2 · Format de quatre sessions",
-    "slideCount": 51,
+    "slideCount": 50,
     "schedule": [
       {
         "title": "Situar-nos i escriure ordres",
@@ -132,7 +132,7 @@
     "id": "03-format3-aula",
     "title": "Dissenyar una proposta per a l’aula",
     "label": "Sessió 3 · Format de tres sessions",
-    "slideCount": 38,
+    "slideCount": 37,
     "schedule": [
       {
         "title": "Del tema al repte",
@@ -175,7 +175,7 @@
     "id": "03-format4-sensors",
     "title": "Blocs, sensors i respostes",
     "label": "Sessió 3 · Format de quatre sessions",
-    "slideCount": 41,
+    "slideCount": 40,
     "schedule": [
       {
         "title": "Un programa que s’inicia amb un botó",
@@ -213,7 +213,7 @@
     "id": "04-format4-proposta",
     "title": "Dissenyar una proposta per a l’aula",
     "label": "Sessió 4 · Format de quatre sessions",
-    "slideCount": 38,
+    "slideCount": 37,
     "schedule": [
       {
         "title": "Del tema al repte",

@@ -19,15 +19,21 @@ Formació presencial per a docents de primària
 
 Robòtica per a docents
 
+<!--
+Preparació: comproveu projector i navegació. Només està garantida la projecció; les activitats admeten resposta oral o en paper. Si hi ha dispositius, assageu abans les demostracions i substituïu les simulacions per proves curtes.
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Situar-nos i escriure ordres
 
-**00–20 min · 20 minuts**
+<!--
+Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -39,17 +45,27 @@ Robòtica per a docents
 
 **A1 ↑ → biblioteca B3.** Una ordre «avant» avança una casella; un gir canvia l’orientació sense moure la fitxa.
 
+<!--
+Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
 
-## Escriviu una ruta · 3 minuts
+## Escriviu una ruta
 
 1. Acordeu les ordres per arribar a la biblioteca.
 2. Una persona les escriu o les diu.
 3. L’altra les executa amb el dit o mentalment.
 
 Comproveu també **cap on mira al final**.
+
+<!--
+Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).
+
+Temps orientatiu de la dinàmica: 3 minuts.
+-->
 
 ---
 
@@ -65,6 +81,10 @@ Comproveu també **cap on mira al final**.
 | Dreta | A3 | Dreta |
 | Avant | B3 | Dreta |
 
+<!--
+Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -74,6 +94,10 @@ Comproveu també **cap on mira al final**.
 <img class="explanatory-diagram" src="../diagrames/ruta-solucio.svg" alt="La solució, vista sobre el mapa">
 
 El recorregut arriba a B3 i acaba mirant a la dreta. **El tercer pas és un gir: no avança de casella.**
+
+<!--
+Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -85,6 +109,10 @@ Hem necessitat un inici, una orientació i ordres compartides.
 
 Una altra ruta també pot ser correcta: cal executar-la i justificar-la.
 
+<!--
+Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -95,15 +123,21 @@ Una altra ruta també pot ser correcta: cal executar-la i justificar-la.
 
 La dreta és la del personatge segons cap on mira. **Després d’un gir, continuem a la mateixa casella.**
 
+<!--
+Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Comprovar i corregir
 
-**20–40 min · 20 minuts**
+<!--
+Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -117,6 +151,10 @@ Inici: A1 mirant amunt. Destí previst: B3.
 
 Seguiu-la. On acaba? Quina ordre canviaríeu de lloc?
 
+<!--
+Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -126,6 +164,10 @@ Seguiu-la. On acaba? Quina ordre canviaríeu de lloc?
 <img class="explanatory-diagram" src="../diagrames/ruta-error.svg" alt="Localitzem la diferència">
 
 Acabem a **C2**, no a B3. Si movem el segon «avant» abans del gir, obtenim la ruta prevista.
+
+<!--
+Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -139,6 +181,10 @@ A acaba mirant a la dreta; B acaba mirant amunt.
 
 Quina convé si després volem continuar cap a B4?
 
+<!--
+Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: explanation -->
@@ -149,15 +195,25 @@ Quina convé si després volem continuar cap a B4?
 
 La destinació anterior coincideix, però l’orientació final canvia les ordres següents.
 
+<!--
+Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
 
-## Una casella tancada · 5 minuts
+## Una casella tancada
 
 <img class="explanatory-diagram" src="../diagrames/ruta-obstacle.svg" alt="Graella amb inici A1, destí B3 i casella A2 tancada">
 
 **Ara A2 està tancada.** Busqueu una ruta fins a B3. Conserveu l’inici A1 ↑ i el significat de les ordres.
+
+<!--
+Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+-->
 
 ---
 
@@ -169,15 +225,21 @@ La destinació anterior coincideix, però l’orientació final canvia les ordre
 
 **Dreta · avant · esquerra · avant · avant.** Passem per B1 i B2 fins a B3, mirant amunt. La casella A2 queda fora del recorregut.
 
+<!--
+Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Repetir una seqüència
 
-**40–55 min · 15 minuts**
+<!--
+Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -191,6 +253,10 @@ Quin fragment es repeteix? Quantes vegades?
 
 Acordeu la resposta amb una altra persona.
 
+<!--
+Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -201,6 +267,10 @@ Acordeu la resposta amb una altra persona.
 
 El patró té dues accions. Repetir-lo tres vegades dona **sis accions**, no tres.
 
+<!--
+Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).
+-->
+
 ---
 
 ## Representació i programació
@@ -210,6 +280,10 @@ Podem representar un bucle amb fletxes i una targeta «×3».
 Per executar-lo, cal comprovar com s’expressa en el dispositiu disponible.
 
 Una notació en paper ajuda a pensar; no garanteix que tots els robots tinguen els mateixos blocs.
+
+<!--
+Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -226,11 +300,15 @@ fi
 
 Dins del bucle hi ha **endavant · dreta**. El repetim quatre vegades. La dansa anterior repetia un altre patró tres vegades.
 
+<!--
+Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
 
-## Proveu una variació · 4 minuts
+## Proveu una variació
 
 Ara volem dues repeticions.
 
@@ -239,6 +317,12 @@ Què canvia en la representació?
 Què es manté?
 
 Expliqueu la resposta abans de representar-la.
+
+<!--
+Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).
+
+Temps orientatiu de la dinàmica: 4 minuts.
+-->
 
 ---
 
@@ -250,25 +334,27 @@ Expliqueu la resposta abans de representar-la.
 
 Amb **dues** repeticions, fem quatre accions. Es conserva el patró; canvia el nombre de vegades.
 
----
-
-<!-- _class: section -->
-
-## Pausa
-
-**55–60 min · 5 minuts**
-
-Una pausa abans de continuar.
+<!--
+Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).
+-->
 
 ---
 
 <!-- _class: pause -->
 
-## Pausa · 5 minuts
+## Pausa
 
 En tornar, continuarem amb el bloc següent.
 
 Deixeu anotada una pregunta que vulgueu recuperar.
+
+<!--
+Bloc «Pausa»: 55–60 min de sessió (5 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+
+Respecteu els cinc minuts de pausa; recupereu una de les preguntes anotades en reprendre la sessió.
+-->
 
 ---
 
@@ -276,9 +362,11 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 
 ## Del paper als materials
 
-**60–80 min · 20 minuts**
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -292,6 +380,10 @@ Programem moviments amb els botons del robot.
 
 **Una proposta:** Una ruta entre tres llocs d’un conte.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 ## Tale-Bot · Primera decisió
@@ -302,6 +394,10 @@ Els mapes interactius necessiten zones codificades compatibles; una quadrícula 
 
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
+
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -319,6 +415,10 @@ executa
 
 Preparem les ordres i després premem **executa**. El gir canvia l’orientació: no avança. Les icones representen la seqüència, no la disposició física dels botons.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -333,6 +433,10 @@ Observeu quant avança **una ordre** i ajusteu les caselles.
 
 Esborreu les ordres anteriors i proveu una ruta curta.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -345,6 +449,10 @@ Construïm el programa amb peces al tauler; la torre el llig i el MatataBot el s
 
 **Una proposta:** Comparar dues seqüències movent una peça.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 ## Coding Set · Primera decisió
@@ -355,6 +463,10 @@ Cal preparar torre, tauler i robot; no són botons sobre el mateix robot.
 
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
+
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -371,6 +483,10 @@ endavant
 
 Al tauler, llegim les peces **d’esquerra a dreta i de dalt a baix**. Aquesta fila representa una ruta; la torre ha de poder llegir-la abans d’executar-la.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -380,6 +496,10 @@ Al tauler, llegim les peces **d’esquerra a dreta i de dalt a baix**. Aquesta f
 <img class="explanatory-diagram" src="../diagrames/coding-set-sistema.svg" alt="Coding Set · Com circulen les ordres?">
 
 El tauler manté el programa visible. La torre el llig i envia les ordres; el MatataBot les executa.
+
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -395,6 +515,10 @@ Llegiu les peces en ordre abans de prémer Play.
 
 La imatge mostra un exemple: comprovem què fa cada peça del nostre programa.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -407,6 +531,10 @@ La via defineix el recorregut; els maons d’acció provoquen respostes del tren
 
 **Una proposta:** Una història amb estació, parada i destinació.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 ## Coding Express · Primera decisió
@@ -418,6 +546,10 @@ El tren no tria una destinació. Els girs de la via no són ordres de gir com en
 **Abans de la prova:** què esperem observar?
 **Després:** quina decisió podrà explicar l’alumnat?
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -427,6 +559,10 @@ El tren no tria una destinació. Els girs de la via no són ordres de gir com en
 <img class="explanatory-diagram" src="../diagrames/tren-via-accio.svg" alt="Coding Express · Via i resposta">
 
 La via resol el recorregut. El maó introdueix una resposta. **No és una ordre de gir en una quadrícula.**
+
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -442,6 +578,10 @@ Primer dibuixem i muntem la via. Després anticipem el viatge.
 
 Un maó d’acció pot introduir una resposta; comprovem-la amb el kit.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -456,21 +596,27 @@ Enceneu i doneu una empenta suau segons la guia del kit.
 
 Compareu aturada manual i resposta al maó roig disponible.
 
+<!--
+Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Una història en equip
 
-**80–100 min · 20 minuts**
+<!--
+Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
 <!-- _class: activity -->
 
-## Una història amb tres parades · 6 minuts
+## Una història amb tres parades
 
 **Estació:** qui viatja i per què?
 **Parada:** què ha de recollir?
@@ -478,6 +624,12 @@ Compareu aturada manual i resposta al maó roig disponible.
 
 En parelles, dibuixeu el recorregut i una frase per lloc.
 Una altra parella ha de poder explicar el viatge.
+
+<!--
+Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).
+
+Temps orientatiu de la dinàmica: 6 minuts.
+-->
 
 ---
 
@@ -491,6 +643,10 @@ L’alumnat justifica una parada o una modificació.
 
 La narració i la programació comparteixen una seqüència.
 
+<!--
+Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -503,6 +659,10 @@ La via situa les parades. El relat explica per què hi anem.
 
 **Pregunta docent:** «Què passaria en la història si canviàrem l’ordre de les parades?»
 
+<!--
+Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -512,6 +672,10 @@ La via situa les parades. El relat explica per què hi anem.
 <img class="explanatory-diagram" src="../diagrames/equips-torns.svg" alt="Una prova amb treball per a tothom">
 
 Cada equip conserva la seua tasca mentre espera. El torn acaba amb una observació que els altres poden aprofitar.
+
+<!--
+Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -524,21 +688,27 @@ Cada equip conserva la seua tasca mentre espera. El torn acaba amb una observaci
 
 En equips de tres, uniu comprovació i explicació.
 
+<!--
+Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Preparar la primera aplicació
 
-**100–120 min · 20 minuts**
+<!--
+Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
 <!-- _class: activity -->
 
-## La proposta que m’emporte · 5 minuts
+## La proposta que m’emporte
 
 Completeu oralment o en paper:
 
@@ -546,6 +716,12 @@ Completeu oralment o en paper:
 **El repte seria…**
 **La primera prova consistiria en…**
 **Sabria que han aprés perquè…**
+
+<!--
+Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+-->
 
 ---
 
@@ -557,6 +733,10 @@ Qui escolta pregunta: **«Què farà l’alumnat per demostrar-ho?»**
 
 Reviseu un element abans de donar-la per preparada.
 
+<!--
+Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).
+-->
+
 ---
 
 ## Abans de la primera prova a l’aula
@@ -566,6 +746,10 @@ Prepareu una alternativa en paper.
 Reserveu temps per explicar una millora.
 
 **Una primera experiència curta i comprensible és suficient per començar.**
+
+<!--
+Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -583,6 +767,10 @@ Reserveu temps per explicar una millora.
 
 Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden variar segons l’idioma de l’aplicació.
 
+<!--
+Aquests enllaços són per a consulta posterior. No cal obrir-los durant la sessió ni disposar de connexió per completar les activitats.
+-->
+
 ---
 
 ## Recursos per continuar
@@ -594,3 +782,7 @@ Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden vari
 [Robòtica per a docents](https://gerardfp.github.io/robotica200/) · [Escola 4.0 · GVA](https://portal.edu.gva.es/escola40/va/inici/)
 
 Les imatges reutilitzen il·lustracions del projecte.
+
+<!--
+Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).
+-->

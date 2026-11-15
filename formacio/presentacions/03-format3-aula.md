@@ -19,15 +19,21 @@ Formació presencial per a docents de primària
 
 Robòtica per a docents
 
+<!--
+Preparació: comproveu projector i navegació. Només està garantida la projecció; les activitats admeten resposta oral o en paper. Si hi ha dispositius, assageu abans les demostracions i substituïu les simulacions per proves curtes.
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Del tema al repte
 
-**00–20 min · 20 minuts**
+<!--
+Bloc «Del tema al repte»: 00–20 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -39,6 +45,10 @@ Robòtica per a docents
 
 **Aprenentatge:** ordenar instruccions i revisar-les amb una prova.
 
+<!--
+Bloc «Del tema al repte»: 00–20 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -48,6 +58,10 @@ Robòtica per a docents
 <img class="explanatory-diagram" src="../diagrames/repte-evidencia.svg" alt="De l’aprenentatge a l’evidència">
 
 Completem la proposta triant **material, temps i participació**. L’evidència ha de respondre a l’aprenentatge.
+
+<!--
+Bloc «Del tema al repte»: 00–20 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -63,6 +77,10 @@ Un recorregut amb parades permet narrar i ordenar.
 
 La il·lustració és un context; el grup concreta el seu mapa.
 
+<!--
+Bloc «Del tema al repte»: 00–20 min de sessió (20 minuts).
+-->
+
 ---
 
 ## La primera versió ha de cabre en una sessió
@@ -76,15 +94,21 @@ La il·lustració és un context; el grup concreta el seu mapa.
 
 Trenta minuts per a una primera experiència.
 
+<!--
+Bloc «Del tema al repte»: 00–20 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Evidències i participació
 
-**20–40 min · 20 minuts**
+<!--
+Bloc «Evidències i participació»: 20–40 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -98,6 +122,10 @@ Trenta minuts per a una primera experiència.
 
 **Resposta amb evidència:** «He mogut l’avant abans del gir perquè ens faltava una casella cap amunt».
 
+<!--
+Bloc «Evidències i participació»: 20–40 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: explanation -->
@@ -107,6 +135,10 @@ Trenta minuts per a una primera experiència.
 <div class="compare"><div><h3>Producte</h3><p>Una ruta dibuixada o un programa que arriba al destí.</p></div><div><h3>Evidència del procés</h3><p>Anticipar el final, localitzar una diferència i explicar una correcció.</p></div></div>
 
 No tot s’ha d’escriure: una conversa breu també aporta evidència.
+
+<!--
+Bloc «Evidències i participació»: 20–40 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -119,6 +151,10 @@ No tot s’ha d’escriure: una conversa breu també aporta evidència.
 | Revisa | Canvia una ordre i explica el motiu |
 
 Preneu una nota breu durant la conversa.
+
+<!--
+Bloc «Evidències i participació»: 20–40 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -134,6 +170,10 @@ Preneu una nota breu durant la conversa.
 
 **Ampliació:** comparar dues rutes possibles.
 
+<!--
+Bloc «Evidències i participació»: 20–40 min de sessió (20 minuts).
+-->
+
 ---
 
 ## Participar també és anticipar i explicar
@@ -143,6 +183,10 @@ Fletxes grans, consignes orals i temps per pensar.
 Podem explicar amb veu, dibuix o demostració.
 
 Una altra persona pot manipular el dispositiu seguint les nostres instruccions.
+
+<!--
+Bloc «Evidències i participació»: 20–40 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -154,15 +198,21 @@ Una altra persona pot manipular el dispositiu seguint les nostres instruccions.
 
 Preguntem què esperàvem i què ha passat. Després canviem **una sola cosa** i tornem a provar.
 
+<!--
+Bloc «Evidències i participació»: 20–40 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Triar i preparar els recursos
 
-**40–55 min · 15 minuts**
+<!--
+Bloc «Triar i preparar els recursos»: 40–55 min de sessió (15 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -178,6 +228,10 @@ Preguntem què esperàvem i què ha passat. Després canviem **una sola cosa** i
 
 **Evidència:** registre i conclusió. La imatge contextualitza la proposta.
 
+<!--
+Bloc «Triar i preparar els recursos»: 40–55 min de sessió (15 minuts).
+-->
+
 ---
 
 ## Triem el material amb quatre preguntes
@@ -189,6 +243,10 @@ Quina alternativa hi ha si falla la connexió?
 
 La tria ha de permetre provar i explicar el repte dins del temps.
 
+<!--
+Bloc «Triar i preparar els recursos»: 40–55 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: gallery -->
@@ -199,6 +257,10 @@ La tria ha de permetre provar i explicar el repte dins del temps.
 
 Trieu segons el repte, el temps de preparació i la dotació real. Cap material és una obligació.
 
+<!--
+Bloc «Triar i preparar els recursos»: 40–55 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -208,6 +270,10 @@ Trieu segons el repte, el temps de preparació i la dotació real. Cap material 
 <img class="explanatory-diagram" src="../diagrames/equips-torns.svg" alt="Una prova amb treball per a tothom">
 
 Cada equip conserva la seua tasca mentre espera. El torn acaba amb una observació que els altres poden aprofitar.
+
+<!--
+Bloc «Triar i preparar els recursos»: 40–55 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -220,25 +286,27 @@ Cada equip conserva la seua tasca mentre espera. El torn acaba amb una observaci
 
 En equips de tres, uniu comprovació i explicació.
 
----
-
-<!-- _class: section -->
-
-## Pausa
-
-**55–60 min · 5 minuts**
-
-Una pausa abans de continuar.
+<!--
+Bloc «Triar i preparar els recursos»: 40–55 min de sessió (15 minuts).
+-->
 
 ---
 
 <!-- _class: pause -->
 
-## Pausa · 5 minuts
+## Pausa
 
 En tornar, continuarem amb el bloc següent.
 
 Deixeu anotada una pregunta que vulgueu recuperar.
+
+<!--
+Bloc «Pausa»: 55–60 min de sessió (5 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+
+Respecteu els cinc minuts de pausa; recupereu una de les preguntes anotades en reprendre la sessió.
+-->
 
 ---
 
@@ -246,9 +314,11 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 
 ## Dissenyar una proposta
 
-**60–85 min · 25 minuts**
+<!--
+Bloc «Dissenyar una proposta»: 60–85 min de sessió (25 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -263,6 +333,10 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 **Seqüència i minuts:** …
 **Evidència i pregunta final:** …
 
+<!--
+Bloc «Dissenyar una proposta»: 60–85 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -272,6 +346,10 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 <img class="explanatory-diagram" src="../diagrames/repte-evidencia.svg" alt="Comprovem que les decisions encaixen">
 
 Si volem ordenar instruccions, la prova ha de permetre executar-les i revisar-les. **Una activitat atractiva també necessita un aprenentatge explícit.**
+
+<!--
+Bloc «Dissenyar una proposta»: 60–85 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -286,18 +364,30 @@ Si volem ordenar instruccions, la prova ha de permetre executar-les i revisar-le
 **Evidència:** una altra parella segueix les ordres.
 **Pregunta:** quina ordre has canviat i per què?
 
+<!--
+Bloc «Dissenyar una proposta»: 60–85 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
 
-## Disseny en parelles · 15 minuts
+## Disseny en parelles
 
-**3 min:** aprenentatge i repte.
-**5 min:** consigna, material i seqüència.
-**4 min:** participació i evidències.
-**3 min:** comprovar si una altra persona ho podria aplicar.
+1. Acordeu l’aprenentatge i el repte.
+2. Escriviu la consigna, el material i la seqüència.
+3. Decidiu com participarà tothom i quines evidències recollireu.
+4. Comproveu si una altra persona ho podria aplicar.
 
 Podeu reutilitzar la biblioteca, el mapa sonor o les dades de llum.
+
+<!--
+Bloc «Dissenyar una proposta»: 60–85 min de sessió (25 minuts).
+
+Temps orientatiu de la dinàmica: 15 minuts.
+
+Distribució dels 15 minuts de treball: 3 min per a aprenentatge i repte; 5 min per a consigna, material i seqüència; 4 min per a participació i evidències; 3 min per a comprovar si una altra persona ho podria aplicar.
+-->
 
 ---
 
@@ -305,15 +395,17 @@ Podeu reutilitzar la biblioteca, el mapa sonor o les dades de llum.
 
 ## Revisar i millorar
 
-**85–105 min · 20 minuts**
+<!--
+Bloc «Revisar i millorar»: 85–105 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
 <!-- _class: activity -->
 
-## Revisió entre parelles · 8 minuts
+## Revisió entre parelles
 
 Intercanvieu la proposta.
 
@@ -322,6 +414,12 @@ Intercanvieu la proposta.
 3. Proposeu una millora concreta.
 
 Retorneu-la amb un canvi que els autors puguen aplicar.
+
+<!--
+Bloc «Revisar i millorar»: 85–105 min de sessió (20 minuts).
+
+Temps orientatiu de la dinàmica: 8 minuts.
+-->
 
 ---
 
@@ -333,6 +431,10 @@ Retorneu-la amb un canvi que els autors puguen aplicar.
 
 Els autors decideixen què canvien i expliquen el motiu.
 
+<!--
+Bloc «Revisar i millorar»: 85–105 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -342,6 +444,10 @@ Els autors decideixen què canvien i expliquen el motiu.
 <img class="explanatory-diagram" src="../diagrames/revisio-cicle.svg" alt="Una revisió és una nova oportunitat de prova">
 
 La proposta millora quan podem dir **què canviem, per què i com ho comprovarem**, mantenint la meta d’aprenentatge.
+
+<!--
+Bloc «Revisar i millorar»: 85–105 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -357,15 +463,21 @@ Acordeu què mantindreu igual entre proves.
 
 Prepareu un registre senzill i una alternativa en paper.
 
+<!--
+Bloc «Revisar i millorar»: 85–105 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Acordar la primera aplicació
 
-**105–120 min · 15 minuts**
+<!--
+Bloc «Acordar la primera aplicació»: 105–120 min de sessió (15 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -381,11 +493,15 @@ Quin dubte s’ha repetit?
 
 Què canviaríem en el repte, els suports o el temps?
 
+<!--
+Bloc «Acordar la primera aplicació»: 105–120 min de sessió (15 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
 
-## La proposta que m’emporte · 5 minuts
+## La proposta que m’emporte
 
 Completeu oralment o en paper:
 
@@ -393,6 +509,12 @@ Completeu oralment o en paper:
 **El repte seria…**
 **La primera prova consistiria en…**
 **Sabria que han aprés perquè…**
+
+<!--
+Bloc «Acordar la primera aplicació»: 105–120 min de sessió (15 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+-->
 
 ---
 
@@ -404,6 +526,10 @@ Qui escolta pregunta: **«Què farà l’alumnat per demostrar-ho?»**
 
 Reviseu un element abans de donar-la per preparada.
 
+<!--
+Bloc «Acordar la primera aplicació»: 105–120 min de sessió (15 minuts).
+-->
+
 ---
 
 ## Abans de la primera prova a l’aula
@@ -413,6 +539,10 @@ Prepareu una alternativa en paper.
 Reserveu temps per explicar una millora.
 
 **Una primera experiència curta i comprensible és suficient per començar.**
+
+<!--
+Bloc «Acordar la primera aplicació»: 105–120 min de sessió (15 minuts).
+-->
 
 ---
 
@@ -430,6 +560,10 @@ Reserveu temps per explicar una millora.
 
 Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden variar segons l’idioma de l’aplicació.
 
+<!--
+Aquests enllaços són per a consulta posterior. No cal obrir-los durant la sessió ni disposar de connexió per completar les activitats.
+-->
+
 ---
 
 ## Recursos per continuar
@@ -441,3 +575,7 @@ Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden vari
 [Robòtica per a docents](https://gerardfp.github.io/robotica200/) · [Escola 4.0 · GVA](https://portal.edu.gva.es/escola40/va/inici/)
 
 Les imatges reutilitzen il·lustracions del projecte.
+
+<!--
+Bloc «Acordar la primera aplicació»: 105–120 min de sessió (15 minuts).
+-->

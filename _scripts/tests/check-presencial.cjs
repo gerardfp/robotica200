@@ -7,6 +7,7 @@ const http=require('node:http');
 const os=require('node:os');
 const crypto=require('node:crypto');
 const root=path.resolve(__dirname,'../..');
+const firstSlideCount=JSON.parse(fs.readFileSync(path.join(root,'formacio/sessions.json'),'utf8')).find(s=>s.id==='01-descobrir-i-triar').slideCount;
 const {chromium}=require(require.resolve('playwright',{paths:[path.join(root,'formacio')]}));
 const {publishPresencial,configuredPassword,encrypt,decrypt:decryptCached,sourceDigest,ITERATIONS}=require('../lib/presencial');
 (async()=>{
@@ -77,9 +78,18 @@ const {publishPresencial,configuredPassword,encrypt,decrypt:decryptCached,source
   assert.equal(await page.getByRole('link',{name:'Obrir presentació →',exact:true}).count(),6);
   assert.equal(await page.getByRole('link',{name:'PDF',exact:true}).count(),6);
   await page.getByRole('link',{name:'Obrir presentació →',exact:true}).first().click();
-  await page.locator('section[id="1"]').waitFor();assert.equal(await page.locator('section[id]').count(),59);
+  await page.locator('section[id="1"]').waitFor();assert.equal(await page.locator('section[id]').count(),firstSlideCount);
   await page.waitForFunction(()=>[...document.querySelectorAll('img')].every(i=>i.complete&&i.naturalWidth));
   assert.equal(await page.locator('#password').count(),0);
+  assert.equal(await page.locator('.bespoke-marp-note').first().isVisible(),false,'Les notes no han de veure’s en la projecció.');
+  const pendingPresenter=page.waitForEvent('popup');await page.keyboard.press('p');
+  const presenter=await pendingPresenter;
+  await presenter.locator('body[data-bespoke-view="presenter"]').waitFor();
+  await page.keyboard.press('ArrowRight');
+  await presenter.locator('.bespoke-marp-note[data-index="1"]').waitFor({state:'visible'});
+  assert((await presenter.locator('.bespoke-marp-note[data-index="1"]').innerText()).includes('00–15 min de sessió'));
+  await presenter.screenshot({path:path.join(root,'formacio/.revisio/presencial-presenter-notes.png')});
+  await presenter.close();
   await page.getByRole('link',{name:'Materials',exact:true}).click();await page.getByRole('heading',{name:'Format de 3 sessions · 6 hores'}).waitFor();
   await page.getByRole('link',{name:'PDF',exact:true}).first().click();await page.locator('.pdf-viewer').waitFor();
   const pending=page.waitForEvent('download');await page.getByRole('link',{name:'Descarrega el PDF',exact:true}).click();
@@ -93,6 +103,6 @@ const {publishPresencial,configuredPassword,encrypt,decrypt:decryptCached,source
   const mobile=await browser.newPage({viewport:{width:390,height:844}});await mobile.goto(url);await mobile.locator('#password').waitFor();
   assert(await mobile.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await mobile.screenshot({path:path.join(root,'formacio/.revisio/presencial-login-mobile.png')});
-  console.log('✓ Xifrat, clau incorrecta, integritat, accés directe, navegació amb subruta, sessió, eixida, PDF descarregable i mòbil.');
+  console.log('✓ Xifrat, clau incorrecta, integritat, accés directe, navegació amb subruta, sessió, notes natives de Marp, eixida, PDF descarregable i mòbil.');
  }finally{await browser.close();await new Promise(resolve=>server.close(resolve));fs.rmSync(temporary,{recursive:true,force:true})}
 })().catch(error=>{console.error(error.message);process.exitCode=1});

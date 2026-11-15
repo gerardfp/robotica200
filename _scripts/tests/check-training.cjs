@@ -20,6 +20,21 @@ const {chromium}=require(require.resolve('playwright',{paths:[path.join(root,'fo
   if(actual!==expected)throw Error('El programa no coincideix amb el renderitzador del web: '+program.lang);
  }
  console.log(`${programManifest.length} programes: mateix resultat que el pipeline del web.`);
+ const {Marp}=require(require.resolve('@marp-team/marp-core',{paths:[path.join(root,'formacio')]}));
+ const engine=new Marp({html:true});engine.themeSet.add(fs.readFileSync(path.join(dir,'robotica.css'),'utf8'));
+ for(const session of sessions){
+  const source=fs.readFileSync(path.join(dir,session.id+'.md'),'utf8');
+  const rendered=engine.render(source);
+  if(rendered.comments.length!==session.slideCount || rendered.comments.some(notes=>!notes.length))throw Error('Falten notes natives de Marp: '+session.id);
+  const notes=rendered.comments.flat().join('\n');
+  for(const block of session.schedule){
+   const marker=String(block.start).padStart(2,'0')+'–'+String(block.end).padStart(2,'0')+' min de sessió';
+   if(!notes.includes(marker))throw Error('Falta la temporalització en les notes: '+session.id+' '+block.title);
+  }
+  const projected=source.replace(/<!--[\s\S]*?-->/g,'');
+  if(/^## .*· \d+ minuts?$/m.test(projected) || /\*\*\d+–\d+ min ·/.test(projected))throw Error('Temporalització de conducció visible: '+session.id);
+ }
+ console.log('Notes natives de Marp en totes les diapositives; horaris complets fora de la projecció.');
  const report=[];
  for(const session of sessions){
   let end=0;
@@ -43,7 +58,8 @@ const {chromium}=require(require.resolve('playwright',{paths:[path.join(root,'fo
      const outside= r.left < rect.left+48*scale || r.right > rect.right-36*scale;
      return top<52||bottom>655||outside?[{tag:e.tagName,top,bottom,outside,text:e.textContent.slice(0,100)}]:[];
     });
-    return {title:s.querySelector('h2')?.textContent,issues,fonts:document.fonts.check('28px Sora')&&document.fonts.check('28px "Plus Jakarta Sans"'),broken:[...s.querySelectorAll('img')].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src)};
+    const notesVisible=/Bloc «[^»]+»: \d+–\d+ min de sessió|Temps orientatiu de la dinàmica|Distribució dels 15 minuts/.test(s.textContent);
+    return {title:s.querySelector('h2')?.textContent,issues,notesVisible,fonts:document.fonts.check('28px Sora')&&document.fonts.check('28px "Plus Jakarta Sans"'),broken:[...s.querySelectorAll('img')].filter(i=>!i.complete||!i.naturalWidth).map(i=>i.src)};
    });
    await page.screenshot({path:path.join(dir,`${session.id}-${String(n).padStart(3,'0')}.png`),animations:'disabled'});
    report.push({session:session.id,slide:n,...result});
@@ -67,7 +83,7 @@ const {chromium}=require(require.resolve('playwright',{paths:[path.join(root,'fo
  console.log(`${diagrams.length} diagrames explicatius; ${diagramFailures.length} amb etiquetes fora dels límits.`);
  if(diagramFailures.length){for(const d of diagramFailures)console.log(JSON.stringify(d));process.exitCode=1;}
  fs.writeFileSync(path.join(dir,'report.json'),JSON.stringify(report,null,2));
- const failed=report.filter(r=>r.issues.length||r.broken.length||!r.fonts);
+ const failed=report.filter(r=>r.issues.length||r.broken.length||!r.fonts||r.notesVisible);
  console.log(`${report.length} diapositives; ${failed.length} incidències de composició, fonts o imatges.`);
  for(const f of failed)console.log(JSON.stringify(f));
  if(failed.length)process.exitCode=1;

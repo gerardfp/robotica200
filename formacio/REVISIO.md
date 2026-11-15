@@ -6,18 +6,18 @@ Revisió de publicació: 15 de novembre de 2026.
 
 | Presentació | Transparències | Durada planificada |
 |---|---:|---:|
-| Descobrir i triar | 59 | 120 min |
-| Programar · format de tres sessions | 52 | 120 min |
-| Rutes · format de quatre sessions | 51 | 120 min |
-| Aula · format de tres sessions | 38 | 120 min |
-| Sensors · format de quatre sessions | 41 | 120 min |
-| Proposta · format de quatre sessions | 38 | 120 min |
+| Descobrir i triar | 58 | 120 min |
+| Programar · format de tres sessions | 51 | 120 min |
+| Rutes · format de quatre sessions | 50 | 120 min |
+| Aula · format de tres sessions | 37 | 120 min |
+| Sensors · format de quatre sessions | 40 | 120 min |
+| Proposta · format de quatre sessions | 37 | 120 min |
 
-Total: 279 transparències. Les dues versions de la sessió final comparteixen contingut i diferencien la posició dins de cada itinerari.
+Total: 273 transparències. Les dues versions de la sessió final comparteixen contingut i diferencien la posició dins de cada itinerari.
 
 ## Contingut
 
-- Les consignes, dades, programes, solucions i plantilles necessàries estan dins de les transparències. No s’han de consultar notes ocultes per conduir les activitats.
+- Les consignes, dades, programes, solucions i plantilles necessàries estan dins de les transparències. La projecció conté el contingut i les consignes; les notes natives de Marp contenen la temporalització, les pautes de conducció i les alternatives de demostració.
 - Els exemples de rutes expliciten inici, orientació i significat del gir. Les respostes s’han comprovat ordre a ordre.
 - Els exemples de llum identifiquen les dades simulades, la lectura relativa, el valor límit i la necessitat de calibrar amb material real.
 - Les funcions dels sis dispositius es diferencien i es limiten a prestacions descrites en el contingut del web.
@@ -49,7 +49,7 @@ Els programes visuals són representacions simplificades amb el renderitzador de
 
 ## Verificació tècnica
 
-`node _scripts/tests/check-training.cjs` renderitza les 279 transparències amb Chrome a 1280 × 720. La passada final no detecta desbordaments verticals o horitzontals, fonts absents ni imatges trencades. Els recomptes coincideixen amb `sessions.json`.
+`node _scripts/tests/check-training.cjs` renderitza les 273 transparències amb Chrome a 1280 × 720. La passada final no detecta desbordaments verticals o horitzontals, fonts absents ni imatges trencades. Els recomptes coincideixen amb `sessions.json`.
 
 Els sis PDF s’han generat amb Marp CLI 4.5.1. El nombre de pàgines de cada PDF coincideix amb el seu Markdown. Les fonts corporatives estan incorporades. Les imatges i els enllaços interns al catàleg de recursos es corresponen amb fitxers existents del web generat.
 
@@ -74,3 +74,9 @@ Els programes de les transparències s’escriuen en Markdown amb `mblock`, `spi
 La prova de regressió compara tots els SVG de programa generats amb el resultat del mateix pipeline del web. El programa MakeCode usa una lectura menor que 80, la icona de diamant i neteja de pantalla a l’altra branca, coherent amb les explicacions i dades de les transparències.
 
 Les seqüències de botons Tale-Bot, les peces de Coding Set i el seu bucle es generen amb `_scripts/lib/tangible-blocks.js` a través del mateix pipeline Markdown del web. La presentació explicita que la seqüència de botons no representa la disposició física del panell.
+
+## Notes del presentador
+
+Les temporalitzacions de blocs i dinàmiques, la distribució del treball i les pautes de facilitació estan en comentaris HTML de Marp (`<!-- ... -->`). Les directives com `<!-- _class: section -->` es mantenen separades. Cada diapositiva incorpora notes i el context del seu bloc. Els exemples didàctics conserven els temps que formen part del contingut (esperes del programa o distribució d’una sessió d’aula). S’han fusionat les dues diapositives consecutives de pausa de cada presentació.
+
+La verificació comprova amb el motor Marp que les notes són reconegudes, que inclouen tots els horaris i que no apareixen en el contingut projectat ni en el text dels PDF.

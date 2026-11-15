@@ -19,15 +19,21 @@ Formació presencial per a docents de primària
 
 Robòtica per a docents
 
+<!--
+Preparació: comproveu projector i navegació. Només està garantida la projecció; les activitats admeten resposta oral o en paper. Si hi ha dispositius, assageu abans les demostracions i substituïu les simulacions per proves curtes.
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Un programa que s’inicia amb un botó
 
-**00–25 min · 25 minuts**
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -43,6 +49,10 @@ Primer llegim el programa. Després anticipem la pantalla.
 
 Codey pot fer aquesta prova sense moure Rocky.
 
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Codey · Preparar la prova
@@ -52,7 +62,11 @@ Codey pot fer aquesta prova sense moure Rocky.
 3. Comproveu la connexió en mode **En viu**.
 4. Prepareu el programa abans de prémer A.
 
-Sense dispositiu: representem la pantalla en paper.
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+
+Si no hi ha Codey, representeu la pantalla en paper o demaneu que anticipen oralment les respostes.
+-->
 
 ---
 
@@ -63,6 +77,10 @@ Sense dispositiu: representem la pantalla en paper.
 <div class="compare"><div><h3>En viu</h3><p>Provem els canvis amb Codey connectat. Comprovem que mBlock indica connexió.</p></div><div><h3>Càrrega</h3><p>Transferim el programa al dispositiu perquè puga funcionar sense l’ordinador.</p></div></div>
 
 Per començar, seguim la prova en viu del tutorial. Un cable de càrrega sense dades no permet aquesta connexió.
+
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -79,6 +97,10 @@ esborra la pantalla
 
 **Què inicia la seqüència? Què ocorre durant l’espera?**
 
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
@@ -93,6 +115,10 @@ Quan premem A, què veurem…
 
 En parelles, acordeu les tres respostes.
 
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -103,6 +129,10 @@ En parelles, acordeu les tres respostes.
 
 Suposem que només premem A una vegada. L’espera manté el cor abans d’apagar la pantalla.
 
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Codey · Una modificació, una predicció
@@ -111,9 +141,15 @@ Suposem que només premem A una vegada. L’espera manté el cor abans d’apaga
 
 Quin bloc canvia? Quins es conserven?
 
-**Resposta:** canvia l’espera d’1 a 3 segons. El botó i el dibuix continuen igual.
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+
+Solució per a la posada en comú: canvia l’espera d’1 a 3 segons. El botó i el dibuix continuen igual.
 
 Pregunta docent: «Com ho sabies abans de provar?»
+
+Deixeu que les parelles justifiquen el canvi abans de donar la resposta. El resultat es pot comprovar amb el diagrama temporal anterior.
+-->
 
 ---
 
@@ -125,15 +161,21 @@ Pregunta docent: «Com ho sabies abans de provar?»
 
 El programa el dissenyem nosaltres. Un botó activa un esdeveniment; un sensor aporta una lectura que podem comparar.
 
+<!--
+Bloc «Un programa que s’inicia amb un botó»: 00–25 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Observar i comparar lectures
 
-**25–50 min · 25 minuts**
+<!--
+Bloc «Observar i comparar lectures»: 25–50 min de sessió (25 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -149,6 +191,10 @@ La matriu LED pot mostrar dibuixos i estimar la llum.
 
 Primer observem lectures; després triem una condició.
 
+<!--
+Bloc «Observar i comparar lectures»: 25–50 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: visual -->
@@ -162,6 +208,10 @@ La matriu LED mostra imatges i pot estimar la llum.
 A MakeCode, busquem la lectura a **Entrada**.
 
 Una primera prova mostra el valor en prémer A.
+
+<!--
+Bloc «Observar i comparar lectures»: 25–50 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -177,6 +227,10 @@ Una primera prova mostra el valor en prémer A.
 **Dades simulades; lectura relativa de 0 a 255.**
 Quin lloc dona valors més alts? Què mantindríeu igual?
 
+<!--
+Bloc «Observar i comparar lectures»: 25–50 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: solution -->
@@ -189,6 +243,10 @@ Mantindríem la placa i l’orientació per comparar els llocs.
 
 No podem concloure que B siga «tres vegades millor per a llegir».
 
+<!--
+Bloc «Observar i comparar lectures»: 25–50 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -199,25 +257,27 @@ No podem concloure que B siga «tres vegades millor per a llegir».
 
 En el fanalet: **llum → comparar amb el llindar → icona o pantalla neta**. La placa no decideix què volem dir amb la icona.
 
----
-
-<!-- _class: section -->
-
-## Pausa
-
-**50–55 min · 5 minuts**
-
-Una pausa abans de continuar.
+<!--
+Bloc «Observar i comparar lectures»: 25–50 min de sessió (25 minuts).
+-->
 
 ---
 
 <!-- _class: pause -->
 
-## Pausa · 5 minuts
+## Pausa
 
 En tornar, continuarem amb el bloc següent.
 
 Deixeu anotada una pregunta que vulgueu recuperar.
+
+<!--
+Bloc «Pausa»: 50–55 min de sessió (5 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+
+Respecteu els cinc minuts de pausa; recupereu una de les preguntes anotades en reprendre la sessió.
+-->
 
 ---
 
@@ -225,9 +285,11 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 
 ## Una decisió que s’actualitza
 
-**55–75 min · 20 minuts**
+<!--
+Bloc «Una decisió que s’actualitza»: 55–75 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -238,6 +300,10 @@ Deixeu anotada una pregunta que vulgueu recuperar.
 <img class="explanatory-diagram" src="../diagrames/decisio-llum.svg" alt="La llum obri dues possibilitats">
 
 El programa segueix **una branca en cada comprovació**. 80 és un exemple: primer cal observar les lectures reals.
+
+<!--
+Bloc «Una decisió que s’actualitza»: 55–75 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -257,6 +323,10 @@ basic.forever(function () {
 
 El bloc «per sempre» torna a llegir i comparar la llum.
 
+<!--
+Bloc «Una decisió que s’actualitza»: 55–75 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -266,6 +336,10 @@ El bloc «per sempre» torna a llegir i comparar la llum.
 <img class="explanatory-diagram" src="../diagrames/llum-llindar.svg" alt="El llindar també es comprova">
 
 «Menor que 80» no inclou el 80. Comprovem un valor per davall, el límit i un valor per damunt.
+
+<!--
+Bloc «Una decisió que s’actualitza»: 55–75 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -277,6 +351,10 @@ Després reviseu el llindar i el programa.
 
 No canvieu llum, posició i llindar al mateix temps: no sabríem què explica la diferència.
 
+<!--
+Bloc «Una decisió que s’actualitza»: 55–75 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: explanation -->
@@ -287,15 +365,21 @@ No canvieu llum, posició i llindar al mateix temps: no sabríem què explica la
 
 El fanalet necessita revisar la llum repetidament.
 
+<!--
+Bloc «Una decisió que s’actualitza»: 55–75 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Un motor que s’atura amb color
 
-**75–95 min · 20 minuts**
+<!--
+Bloc «Un motor que s’atura amb color»: 75–95 min de sessió (20 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -311,6 +395,10 @@ Eix lliure, sense accessoris, sobre una superfície estable.
 
 Comprovem la lectura de les targetes abans de moure el motor.
 
+<!--
+Bloc «Un motor que s’atura amb color»: 75–95 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: diagram -->
@@ -320,6 +408,10 @@ Comprovem la lectura de les targetes abans de moure el motor.
 <img class="explanatory-diagram" src="../diagrames/spike-ports.svg" alt="SPIKE · Què connectem a cada port?">
 
 En aquesta prova, el motor va a **A** i el sensor de color a **C**. Si canviem el port físic, hem de revisar també el programa.
+
+<!--
+Bloc «Un motor que s’atura amb color»: 75–95 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -336,6 +428,10 @@ atura el motor [A v]
 
 Targeta blanca al principi; després acostem la roja al sensor.
 
+<!--
+Bloc «Un motor que s’atura amb color»: 75–95 min de sessió (20 minuts).
+-->
+
 ---
 
 ## SPIKE · Tres comprovacions
@@ -348,6 +444,10 @@ Targeta blanca al principi; després acostem la roja al sensor.
 
 Manteniu l’aturada accessible i les mans lluny de l’eix.
 
+<!--
+Bloc «Un motor que s’atura amb color»: 75–95 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: explanation -->
@@ -357,6 +457,10 @@ Manteniu l’aturada accessible i les mans lluny de l’eix.
 <div class="checks"><div><b>1 · Aturem</b><p>Utilitzem l’aturada accessible.</p></div><div><b>2 · Observem</b><p>Quin color indica l’app?</p></div><div><b>3 · Revisem</b><p>Port, distància i llum, una cosa cada vegada.</p></div></div>
 
 No frenem l’eix amb els dits. Aturem abans de recol·locar peces o cables.
+
+<!--
+Bloc «Un motor que s’atura amb color»: 75–95 min de sessió (20 minuts).
+-->
 
 ---
 
@@ -370,15 +474,21 @@ Atureu abans de recol·locar peces o cables.
 
 La pregunta és què explica el canvi en la lectura, no només si «funciona».
 
+<!--
+Bloc «Un motor que s’atura amb color»: 75–95 min de sessió (20 minuts).
+-->
+
 ---
 
 <!-- _class: section -->
 
 ## Dissenyar una resposta i comprovar-la
 
-**95–120 min · 25 minuts**
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
 
-
+Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.
+-->
 
 ---
 
@@ -394,6 +504,10 @@ La pregunta és què explica el canvi en la lectura, no només si «funciona».
 
 **Evidència:** registre i conclusió. La imatge contextualitza la proposta.
 
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Triem el material amb quatre preguntes
@@ -405,6 +519,10 @@ Quina alternativa hi ha si falla la connexió?
 
 La tria ha de permetre provar i explicar el repte dins del temps.
 
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: gallery -->
@@ -414,6 +532,10 @@ La tria ha de permetre provar i explicar el repte dins del temps.
 <div class="robot-strip"><figure><img src="../../_assets/robots/tale-bot.webp" alt="Tale-Bot"><figcaption>Ruta tangible</figcaption></figure><figure><img src="../../_assets/robots/codey-rocky.webp" alt="Codey Rocky"><figcaption>Botó i pantalla</figcaption></figure><figure><img src="../../_assets/robots/microbit.webp" alt="Micro:bit"><figcaption>Lectures i dades</figcaption></figure></div>
 
 Trieu segons el repte, el temps de preparació i la dotació real. Cap material és una obligació.
+
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -425,11 +547,15 @@ Trieu segons el repte, el temps de preparació i la dotació real. Cap material 
 
 Preguntem què esperàvem i què ha passat. Després canviem **una sola cosa** i tornem a provar.
 
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+-->
+
 ---
 
 <!-- _class: activity -->
 
-## La proposta que m’emporte · 5 minuts
+## La proposta que m’emporte
 
 Completeu oralment o en paper:
 
@@ -437,6 +563,12 @@ Completeu oralment o en paper:
 **El repte seria…**
 **La primera prova consistiria en…**
 **Sabria que han aprés perquè…**
+
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+
+Temps orientatiu de la dinàmica: 5 minuts.
+-->
 
 ---
 
@@ -448,6 +580,10 @@ Qui escolta pregunta: **«Què farà l’alumnat per demostrar-ho?»**
 
 Reviseu un element abans de donar-la per preparada.
 
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+-->
+
 ---
 
 ## Abans de la primera prova a l’aula
@@ -457,6 +593,10 @@ Prepareu una alternativa en paper.
 Reserveu temps per explicar una millora.
 
 **Una primera experiència curta i comprensible és suficient per començar.**
+
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+-->
 
 ---
 
@@ -474,6 +614,10 @@ Reserveu temps per explicar una millora.
 
 Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden variar segons l’idioma de l’aplicació.
 
+<!--
+Aquests enllaços són per a consulta posterior. No cal obrir-los durant la sessió ni disposar de connexió per completar les activitats.
+-->
+
 ---
 
 ## Recursos per continuar
@@ -485,3 +629,7 @@ Les demostracions simplifiquen aquests tutorials. Els noms dels blocs poden vari
 [Robòtica per a docents](https://gerardfp.github.io/robotica200/) · [Escola 4.0 · GVA](https://portal.edu.gva.es/escola40/va/inici/)
 
 Les imatges reutilitzen il·lustracions del projecte.
+
+<!--
+Bloc «Dissenyar una resposta i comprovar-la»: 95–120 min de sessió (25 minuts).
+-->
