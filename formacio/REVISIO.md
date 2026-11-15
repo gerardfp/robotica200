@@ -80,3 +80,9 @@ Les seqüències de botons Tale-Bot, les peces de Coding Set i el seu bucle es g
 Les temporalitzacions de blocs i dinàmiques, la distribució del treball i les pautes de facilitació estan en comentaris HTML de Marp (`<!-- ... -->`). Les directives com `<!-- _class: section -->` es mantenen separades. Cada diapositiva incorpora notes i el context del seu bloc. Els exemples didàctics conserven els temps que formen part del contingut (esperes del programa o distribució d’una sessió d’aula). S’han fusionat les dues diapositives consecutives de pausa de cada presentació.
 
 La verificació comprova amb el motor Marp que les notes són reconegudes, que inclouen tots els horaris i que no apareixen en el contingut projectat ni en el text dels PDF.
+
+## Desenvolupament del guió de conducció
+
+Les 273 transparències disposen d’explicacions específiques, exemples orals o demostracions, preguntes amb resposta orientativa i aclariments. S’han desenvolupat especialment les rutes, els girs, les repeticions, les branques dels programes, la lectura de dades i les evidències d’aprenentatge. Les activitats inclouen com presentar la consigna, acompanyar-la i comentar les respostes.
+
+Els sis guions HTML es generen dels comentaris natius que reconeix Marp, amb correspondència entre cada nota i la seua transparència. La projecció manté exactament el contingut anterior; les ampliacions estan en les notes. El catàleg presencial ofereix un accés separat al guió de cada sessió.

@@ -46,7 +46,7 @@ const {publishPresencial,configuredPassword,encrypt,decrypt:decryptCached,source
   assert(fs.readFileSync(path.join(fixture,'formacio/export',payload.filename)).equals(fs.readFileSync(path.join(root,'formacio/export',payload.filename))));
  }
  const files=fs.readdirSync(dir);
- assert.equal(files.filter(f=>f.endsWith('.enc.json')).length,13);
+ assert.equal(files.filter(f=>f.endsWith('.enc.json')).length,19);
  assert(!files.some(f=>/\.(pdf|md)$/.test(f)));
  for(const file of files.filter(f=>f.endsWith('.html'))){
   const html=fs.readFileSync(path.join(dir,file),'utf8');assert(html.includes('noindex,nofollow,noarchive'));assert(!html.includes(password));assert(!html.includes('Codey · Llegim el programa'));
@@ -77,6 +77,13 @@ const {publishPresencial,configuredPassword,encrypt,decrypt:decryptCached,source
   await page.getByRole('heading',{name:'Format de 3 sessions · 6 hores'}).waitFor();
   assert.equal(await page.getByRole('link',{name:'Obrir presentació →',exact:true}).count(),6);
   assert.equal(await page.getByRole('link',{name:'PDF',exact:true}).count(),6);
+  assert.equal(await page.getByRole('link',{name:'Guió de la sessió',exact:true}).count(),6);
+  await page.getByRole('link',{name:'Guió de la sessió',exact:true}).first().click();
+  await page.locator('#slide-1').waitFor();
+  assert.equal(await page.locator('main section').count(),firstSlideCount);
+  assert((await page.locator('main').innerText()).includes('Pregunta i resposta esperable'));
+  await page.getByRole('link',{name:'Materials',exact:true}).last().click();
+  await page.getByRole('heading',{name:'Format de 3 sessions · 6 hores'}).waitFor();
   await page.getByRole('link',{name:'Obrir presentació →',exact:true}).first().click();
   await page.locator('section[id="1"]').waitFor();assert.equal(await page.locator('section[id]').count(),firstSlideCount);
   await page.waitForFunction(()=>[...document.querySelectorAll('img')].every(i=>i.complete&&i.naturalWidth));

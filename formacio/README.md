@@ -19,6 +19,8 @@ Cada sessió té blocs consecutius que sumen 120 minuts, inclosa una pausa de ci
 
 Obriu `html/index.html`, trieu l’itinerari i inicieu la primera sessió. Les fletxes permeten navegar. Els controls de Marp ofereixen pantalla completa, vista general i vista del presentador. Premeu **P** per obrir la vista del presentador: mostra les notes i el control de la sessió. Manteniu aquesta finestra al portàtil i projecteu la finestra principal amb les diapositives. El bloqueig per contrasenya també funciona amb aquesta vista en `/presencial/`.
 
+Cada targeta ofereix també **Guió de la sessió**: una pàgina amb índex de transparències, explicacions i enllaç directe a cadascuna. Es genera amb les mateixes notes de Marp, sense mantindre un segon text. Podeu llegir-la en mòbil o imprimir-la amb el navegador.
+
 Les fonts Sora i Plus Jakarta Sans estan incorporades a l’HTML i als PDF. Les imatges són locals: per compartir HTML, conserveu la carpeta `formacio/` al costat de `_assets/`, com en aquest repositori. Per enviar un únic fitxer, utilitzeu els PDF de `export/`.
 
 ## Preparació presencial
@@ -92,3 +94,11 @@ Deixeu que les parelles anticipen el final abans de mostrar la solució.
 ```
 
 La vista del presentador les mostra en HTML. El PDF ordinari conté les transparències, sense aquestes notes. Els temps que formen part d’un exemple didàctic (com esperar un segon en un programa) es conserven a la diapositiva.
+
+### Estructura del guió detallat
+
+Totes les transparències tenen notes desenvolupades. En les de contingut, es distingeixen **Què explicar**, **Com mostrar-ho**, **Pregunta i resposta esperable**, **Si apareix aquest dubte** i **Enllaç amb el pas següent**. Les portades preparen l’obertura; els separadors expliquen l’objectiu, la conducció i el resultat del bloc; la pausa indica com reprendre el fil.
+
+Els exemples concreten com llegir les graelles i els diagrames, executar els programes, interpretar els resultats i acompanyar el treball docent sense robots. Les notes són suport per conduir: no cal llegir-les senceres en veu alta. Els horaris corresponen al bloc complet.
+
+El generador usa els comentaris reconeguts pel motor Marp per crear `html/*-guio.html`. Editeu només `presentacions/*.md` i regenereu. Les notes continuen disponibles amb **P** i no entren en els PDF de transparències.

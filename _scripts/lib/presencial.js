@@ -87,7 +87,7 @@ function publishPresencial({root,dist,password,compile=true}){
   fs.writeFileSync(path.join(output,payload),JSON.stringify(encrypt(bytes,key,salt,id,mime,filename)));
   fs.writeFileSync(path.join(output,id+'.html'),template.replace('{{PAYLOAD}}',payload));count++;
  }
- for(const id of ['index',...sessions.map(s=>s.id)]){
+ for(const id of ['index',...sessions.flatMap(s=>[s.id,s.id+'-guio'])]){
   const html=prepareHTML(fs.readFileSync(path.join(training,'html',id+'.html'),'utf8'),training,sessions);
   write(id,Buffer.from(html),'text/html',id+'.html');
  }

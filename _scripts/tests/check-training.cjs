@@ -27,6 +27,9 @@ const {chromium}=require(require.resolve('playwright',{paths:[path.join(root,'fo
   const rendered=engine.render(source);
   if(rendered.comments.length!==session.slideCount || rendered.comments.some(notes=>!notes.length))throw Error('Falten notes natives de Marp: '+session.id);
   const notes=rendered.comments.flat().join('\n');
+  if(rendered.comments.some(parts=>!parts.join('\n').includes('Guió de conducció')))throw Error('Falta el guió detallat: '+session.id);
+  const guide=fs.readFileSync(path.join(root,'formacio/html',session.id+'-guio.html'),'utf8');
+  if((guide.match(/<section id="slide-/g)||[]).length!==session.slideCount)throw Error('Guió incomplet: '+session.id);
   for(const block of session.schedule){
    const marker=String(block.start).padStart(2,'0')+'–'+String(block.end).padStart(2,'0')+' min de sessió';
    if(!notes.includes(marker))throw Error('Falta la temporalització en les notes: '+session.id+' '+block.title);

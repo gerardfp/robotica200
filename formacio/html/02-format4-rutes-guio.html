@@ -1,0 +1,647 @@
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Guió · Rutes i programació tangible</title><style>
+ @font-face{font-family:Sora;src:url('../fonts/Sora.ttf')}@font-face{font-family:Jakarta;src:url('../fonts/PlusJakartaSans.ttf')}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8fafc;color:#0f172a;font:17px/1.75 Jakarta,sans-serif}header{background:#ebf5fd;padding:48px max(24px,calc((100vw - 900px)/2))}header img{width:52px}header p{max-width:70ch}main{max-width:950px;margin:auto;padding:32px 24px}h1,h2,h3{font-family:Sora,sans-serif;line-height:1.3}h1{font-size:clamp(28px,4vw,42px)}h2{font-size:25px}a{color:#1d4ed8}a:focus-visible{outline:3px solid #2563eb;outline-offset:4px}nav{display:flex;gap:20px;flex-wrap:wrap}.eyebrow{color:#64748b;font-size:14px}details,section{background:white;border:1px solid #dce5ef;border-radius:16px;padding:28px;margin-bottom:28px}summary{cursor:pointer;font-family:Sora,sans-serif;font-weight:600}ol{padding-left:28px}li{margin:8px 0}section{scroll-margin-top:24px}.notes{margin-top:28px;max-width:76ch}.notes p:has(>strong:only-child){margin-top:28px;margin-bottom:8px;color:#163b70}.notes p{margin:12px 0}.slide-link{font-size:14px}.notes blockquote{border-left:4px solid #2563eb;padding-left:20px;margin-left:0}
+ @media(max-width:600px){header{padding-top:80px}main{padding:20px 12px}details,section{padding:20px}}
+ @media print{@page{margin:18mm}body{background:white;font-size:10.5pt;line-height:1.55}header{padding:0;background:white}header img{width:34px}main{padding:0;max-width:none}nav,details,.slide-link,#presencial-controls{display:none!important}section{border:0;border-top:1px solid #cbd5e1;border-radius:0;padding:16px 0;margin:16px 0;scroll-margin:0}h1{font-size:22pt}h2{font-size:16pt;break-after:avoid}.notes p:has(>strong:only-child){break-after:avoid}.notes{max-width:none}.eyebrow{font-size:9pt}p{orphans:3;widows:3}a{color:inherit;text-decoration:none}}
+ </style></head><body><header><img src="../../_assets/icons/logo.svg" alt=""><p>Robòtica per a docents · Sessió 2 · Format de quatre sessions</p><h1>Guió de la sessió<br>Rutes i programació tangible</h1><p>Aquest guió recull les notes del presentador de les 50 transparències. Inclou explicacions, exemples, preguntes i aclariments per preparar i conduir la sessió. Les franges de temps corresponen a blocs complets: trieu els aclariments segons els dubtes del grup.</p><nav><a href="index.html">← Materials</a><a href="02-format4-rutes.html">Obrir presentació →</a></nav></header><main><details><summary>Índex de transparències</summary><ol><li><a href="#slide-1">Rutes i programació tangible</a></li><li><a href="#slide-2">Situar-nos i escriure ordres</a></li><li><a href="#slide-3">El repte de la biblioteca</a></li><li><a href="#slide-4">Escriviu una ruta</a></li><li><a href="#slide-5">Una solució, ordre a ordre</a></li><li><a href="#slide-6">La solució, vista sobre el mapa</a></li><li><a href="#slide-7">Què ens ha obligat a pensar?</a></li><li><a href="#slide-8">Girar i avançar són accions diferents</a></li><li><a href="#slide-9">Comprovar i corregir</a></li><li><a href="#slide-10">Una ruta que no arriba al mateix lloc</a></li><li><a href="#slide-11">Localitzem la diferència</a></li><li><a href="#slide-12">Dues rutes correctes poden ser diferents</a></li><li><a href="#slide-13">Si volem continuar fins a B4…</a></li><li><a href="#slide-14">Una casella tancada</a></li><li><a href="#slide-15">Una ruta alternativa</a></li><li><a href="#slide-16">Repetir una seqüència</a></li><li><a href="#slide-17">Un patró que torna a començar</a></li><li><a href="#slide-18">Un patró, tres repeticions</a></li><li><a href="#slide-19">Representació i programació</a></li><li><a href="#slide-20">Coding Set · La repetició amb peces</a></li><li><a href="#slide-21">Proveu una variació</a></li><li><a href="#slide-22">Què canvia quan repetim?</a></li><li><a href="#slide-23">Pausa</a></li><li><a href="#slide-24">Del paper als materials</a></li><li><a href="#slide-25">Tale-Bot</a></li><li><a href="#slide-26">Tale-Bot · Primera decisió</a></li><li><a href="#slide-27">Tale-Bot · Llegim els botons en ordre</a></li><li><a href="#slide-28">Tale-Bot · Del paper al robot</a></li><li><a href="#slide-29">Coding Set</a></li><li><a href="#slide-30">Coding Set · Primera decisió</a></li><li><a href="#slide-31">Coding Set · Llegim les peces</a></li><li><a href="#slide-32">Coding Set · Com circulen les ordres?</a></li><li><a href="#slide-33">Coding Set · El programa es pot llegir</a></li><li><a href="#slide-34">Coding Express</a></li><li><a href="#slide-35">Coding Express · Primera decisió</a></li><li><a href="#slide-36">Coding Express · Via i resposta</a></li><li><a href="#slide-37">Coding Express · La via és part del problema</a></li><li><a href="#slide-38">Coding Express · Impuls i aturada</a></li><li><a href="#slide-39">Una història en equip</a></li><li><a href="#slide-40">Una història amb tres parades</a></li><li><a href="#slide-41">Què podem observar en la història?</a></li><li><a href="#slide-42">Una història té recorregut i sentit</a></li><li><a href="#slide-43">Una prova amb treball per a tothom</a></li><li><a href="#slide-44">Rols rotatius</a></li><li><a href="#slide-45">Preparar la primera aplicació</a></li><li><a href="#slide-46">La proposta que m’emporte</a></li><li><a href="#slide-47">Compartim una decisió</a></li><li><a href="#slide-48">Abans de la primera prova a l’aula</a></li><li><a href="#slide-49">Les propostes de partida del web</a></li><li><a href="#slide-50">Recursos per continuar</a></li></ol></details><section id="slide-1"><p class="eyebrow">Transparència 1 de 50</p><h2>Rutes i programació tangible</h2><a class="slide-link" href="02-format4-rutes.html#1">Veure aquesta transparència →</a><div class="notes"><p>Preparació: comproveu projector i navegació. Només està garantida la projecció; les activitats admeten resposta oral o en paper. Si hi ha dispositius, assageu abans les demostracions i substituïu les simulacions per proves curtes.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Obertura suggerida</strong>
+«Aquesta és la sessió segona del format de quatre sessions. Hui volem planificar, revisar i comunicar rutes. No cal conéixer tots els dispositius per participar».</p>
+<p><strong>Fil conductor</strong>
+Partirem d’un mapa amb regles compartides, afegirem restriccions i repeticions i després compararem botons, peces i vies.</p>
+<p><strong>Preparació abans de projectar</strong>
+Obriu les diapositives i la vista del presentador, comproveu que es veuen les imatges i identifiqueu les activitats en parelles. Només tenim garantit projector o PDI. Si disposeu de robots, prepareu una demostració curta abans; no dediqueu l’obertura a una instal·lació improvisada.</p>
+<p><strong>Què observar en començar</strong>
+Pregunteu si el grup recorda una idea de la sessió anterior o, en la primera, quina necessitat d’aula vol treballar. Ajusteu els aclariments a les respostes sense afegir més objectius.</p>
+</div></section>
+<section id="slide-2"><p class="eyebrow">Transparència 2 de 50</p><h2>Situar-nos i escriure ordres</h2><a class="slide-link" href="02-format4-rutes.html#2">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Compartir regles per comunicar rutes.</p>
+<p><strong>Com conduir-lo</strong>
+Llegiu la graella, escriviu una seqüència en parelles i comproveu posició i orientació. Si apareix el dubte del gir, representeu-lo abans de continuar.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Una ruta que puguem seguir sense completar instruccions a ull.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-3"><p class="eyebrow">Transparència 3 de 50</p><h2>El repte de la biblioteca</h2><a class="slide-link" href="02-format4-rutes.html#3">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu com es llig el mapa abans de demanar cap programa: les lletres identifiquen columnes i els nombres, files. A1 és baix a l’esquerra; B3 està una columna a la dreta i dues files més amunt. La fletxa inicial indica cap on mira la fitxa.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu A1, després B3 i finalment la fletxa ↑. Amb el dit, mostreu només un avançament d’A1 a A2. Acordeu dues regles: avançar mou una casella; girar canvia l’orientació sense canviar de casella. No traceu encara la ruta completa.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si la fitxa està a A1 mirant amunt, on queda després d’un avant?» Resposta: A2, encara mirant amunt. «Un gir a la dreta l’envia a B1?» No: continua a A1, ara mirant a la dreta.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La dreta és la de la fitxa, no sempre la de qui mira la pantalla. Aquesta graella és un model: amb un robot real cal ajustar la mida de les caselles al seu desplaçament.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Ara que compartim les regles, podem escriure ordres sense improvisar-ne el significat.</p>
+</div></section>
+<section id="slide-4"><p class="eyebrow">Transparència 4 de 50</p><h2>Escriviu una ruta</h2><a class="slide-link" href="02-format4-rutes.html#4">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 3 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Formuleu la consigna completa: «Porteu la fitxa d’A1 a B3, començant cap amunt. Escriviu les ordres i indiqueu l’orientació final». Una persona dicta i l’altra executa exactament allò que escolta, sense completar ordres que falten.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu una primera passada per les parelles per comprovar que mantenen el mateix inici. Si treballen oralment, poden marcar els passos amb els dits. No corregiu la ruta mentre l’executen: deixeu que comparen el final amb la predicció.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Una solució és avant, avant, dreta, avant. També hi ha altres rutes vàlides; no exigiu la més curta. Demaneu «on acabes i cap on mires?» per distingir posició i orientació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si una parella gira i avança en una sola ordre, torneu a les dues regles pactades. Si corregeix sobre la marxa, proposeu repetir la seqüència escrita des del principi.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>En acabar, conserveu almenys una proposta per llegir-la ordre a ordre a la transparència següent.</p>
+</div></section>
+<section id="slide-5"><p class="eyebrow">Transparència 5 de 50</p><h2>Una solució, ordre a ordre</h2><a class="slide-link" href="02-format4-rutes.html#5">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu cada fila com una foto de l’estat de la fitxa després d’una ordre. Comencem a A1 ↑; el primer avant porta a A2 ↑ i el segon a A3 ↑. El gir conserva A3 i canvia ↑ per →. L’últim avant porta a B3 →.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Tapeu amb la mà o assenyaleu només la fila actual. Abans de passar a la següent, deixeu que algú anticipe què canviarà: la casella, l’orientació o totes dues. La taula no és un registre de botons premuts simultàniament.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Per què A3 apareix dues vegades?» Perquè entre aquestes files hem girat, però no ens hem desplaçat. «Quantes ordres de moviment hem escrit?» Quatre; tres avançaments i un gir.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Arribar a B3 no garanteix haver entés la ruta: algú pot haver-la endevinada. La justificació de les files ens permet comprovar la comprensió.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu després el mateix procés al mapa: canvia la representació, no el programa.</p>
+</div></section>
+<section id="slide-6"><p class="eyebrow">Transparència 6 de 50</p><h2>La solució, vista sobre el mapa</h2><a class="slide-link" href="02-format4-rutes.html#6">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>«La taula anterior i aquest dibuix expliquen la mateixa seqüència». El traç blau resumeix els desplaçaments; la llista de la dreta conserva les quatre ordres. El gir no crea una casella nova, per això no apareix com un tram de recorregut.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Seguiu amb el dit A1 → A2 → A3, atureu-vos per representar el gir i continueu a B3. Acabeu orientant el dit a la dreta. Relacioneu cada parada amb el número d’ordre de la llista.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Podríem reconstruir tot el programa mirant només la línia blava?» Caldria conéixer també inici, orientació i significat de les ordres. El dibuix del camí, tot sol, no diu tots els girs.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No confongueu la fletxa del traç, que indica el sentit del recorregut, amb una ordre independent afegida al programa. Hi ha les quatre ordres de la llista.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Feu explícit que hem passat de representar un camí a comunicar instruccions comprovables.</p>
+</div></section>
+<section id="slide-7"><p class="eyebrow">Transparència 7 de 50</p><h2>Què ens ha obligat a pensar?</h2><a class="slide-link" href="02-format4-rutes.html#7">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Poseu nom al procés viscut: ens hem situat en un mapa, hem ordenat accions, hem imaginat el resultat i l’hem contrastat. Això és el nucli que ens interessa traslladar a l’aula; prémer botons és només una manera d’executar-lo.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Recorreu el diagrama d’esquerra a dreta. Per a cada etapa, recupereu una acció real del grup: acordar A1 ↑, escriure les ordres, dir B3 → abans de moure i comprovar el final.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«En quin moment hem pensat abans d’actuar?» Quan hem anticipat el resultat. «Si una ruta diferent també funciona, com ho sabem?» Executant-la amb les mateixes regles i explicant el final.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No convertiu aquestes quatre paraules en un nou vocabulari per memoritzar. Si el grup pot explicar què ha fet, ja tenim una base per introduir termes més específics.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Deteniu-vos en la confusió que sol donar més informació: girar i avançar no són el mateix.</p>
+</div></section>
+<section id="slide-8"><p class="eyebrow">Transparència 8 de 50</p><h2>Girar i avançar són accions diferents</h2><a class="slide-link" href="02-format4-rutes.html#8">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Situar-nos i escriure ordres»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu els dos panells per separat. A l’esquerra, A2 es repeteix: la fitxa gira d’amunt a dreta sense deixar la casella. A la dreta, A2 canvia a B2 perquè la fitxa, que ja mira a la dreta, avança una casella.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu de fitxa amb una mà: un gir és canviar cap on apunta el dit; avançar és desplaçar la mà mantenint aquella direcció. Aquesta representació es pot fer asseguts i sense material.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si ara mirem avall, on apunta un gir a la dreta?» Cap a l’esquerra de la pantalla. Demaneu que es posen en el lloc del personatge abans de respondre.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Un avançament no significa sempre pujar en el dibuix. Significa moure’s en la direcció que té la fitxa. Eviteu dir simplement «dreta de la pantalla» com si fora una regla del robot.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Useu aquesta distinció per seguir una ruta que gira abans d’hora i explicar on es desvia.</p>
+</div></section>
+<section id="slide-9"><p class="eyebrow">Transparència 9 de 50</p><h2>Comprovar i corregir</h2><a class="slide-link" href="02-format4-rutes.html#9">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Revisar ordres amb una causa i una restricció explícites.</p>
+<p><strong>Com conduir-lo</strong>
+Compareu la ruta que acaba a C2, dues rutes que arriben a B3 i el cas amb A2 tancada. Feu justificar les solucions abans de mostrar els mapes.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Explicar què ha canviat en el programa o en el problema i per què.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-10"><p class="eyebrow">Transparència 10 de 50</p><h2>Una ruta que no arriba al mateix lloc</h2><a class="slide-link" href="02-format4-rutes.html#10">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Feu servir exactament l’inici A1 ↑ i el destí B3. Llegim avant, dreta, avant, avant. No dieu encara que el gir és massa prompte: la tasca és reconstruir on acaba aquesta versió.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu una pausa després de cada ordre i conserveu la posició i orientació. Si una persona es perd, torneu a A1 en lloc de continuar des d’un estat dubtós.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Esperem A2 ↑ després del primer avant, A2 → després del gir, B2 → i finalment C2 →. Pregunteu en quin punt deixa de coincidir amb la ruta prevista.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No és una prova d’atenció ràpida. El valor és justificar el canvi. Arribar a C2 també és executar correctament aquest programa, encara que no resolga el repte B3.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu el mapa de l’error i identifiqueu la primera decisió que convé revisar.</p>
+</div></section>
+<section id="slide-11"><p class="eyebrow">Transparència 11 de 50</p><h2>Localitzem la diferència</h2><a class="slide-link" href="02-format4-rutes.html#11">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>La línia acaba a C2 perquè hem girat quan encara faltava pujar una fila. El dispositiu hauria executat les ordres que li hem donat; la discrepància és entre el nostre programa i la destinació que volíem.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu A2, lloc del gir, i compareu-lo amb A3, on giràvem en la solució anterior. Moveu verbalment un avant perquè quede abans de dreta i torneu a seguir la seqüència.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Hem necessitat afegir una ordre?» No necessàriament: reordenar les quatre ordres dona avant, avant, dreta, avant. «Quina causa explica la diferència?» El moment en què hem canviat d’orientació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Eviteu dir simplement «el robot s’ha equivocat». Aquesta frase amaga la causa que volem investigar. També convé comprovar que hem conservat l’inici abans d’atribuir-ho al programa.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Amplieu la idea: dues seqüències diferents poden acabar al mateix lloc i orientar-se de manera diferent.</p>
+</div></section>
+<section id="slide-12"><p class="eyebrow">Transparència 12 de 50</p><h2>Dues rutes correctes poden ser diferents</h2><a class="slide-link" href="02-format4-rutes.html#12">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Compareu dos criteris: arribada i orientació final. A fa avant, avant, dreta, avant i acaba a B3 →. B fa dreta, avant, esquerra, avant, avant i acaba a B3 ↑. Les dues compleixen arribar a B3.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Reconstruïu B amb calma: el primer gir deixa A1 →; avancem a B1; girem a B1 ↑; avancem a B2 i B3. No representeu el gir esquerre com un avançament cap a la columna A.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si després volem anar a B4, quina deixa la fitxa millor orientada?» B, perquè ja mira amunt. La justificació interessa més que triar la ruta amb menys ordres inicials.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La ruta més curta per a una primera destinació no és sempre la més convenient per al problema complet. Cal llegir totes les condicions abans d’avaluar una solució.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La comparació següent explicita les ordres que caldria afegir en cada cas.</p>
+</div></section>
+<section id="slide-13"><p class="eyebrow">Transparència 13 de 50</p><h2>Si volem continuar fins a B4…</h2><a class="slide-link" href="02-format4-rutes.html#13">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu cada continuació a partir de l’estat final, sense tornar a A1. Després d’A som a B3 →: girar a l’esquerra ens deixa B3 ↑ i un avant porta a B4. Després de B som a B3 ↑: basta un avant.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu primer la casella, comuna als dos panells, i després l’orientació, que és diferent. Aquesta és la informació que decideix què escrivim a continuació.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Podem copiar la mateixa continuació sense revisar l’orientació?» No. Un avant després d’A portaria a C3; després de B portaria a B4.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No confongueu esquerra del personatge amb anar a la columna de l’esquerra. El gir només prepara la direcció del pròxim desplaçament.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Afegiu una restricció al mapa per mostrar que el context també pot obligar a revisar la ruta.</p>
+</div></section>
+<section id="slide-14"><p class="eyebrow">Transparència 14 de 50</p><h2>Una casella tancada</h2><a class="slide-link" href="02-format4-rutes.html#14">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 5 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>El punt inicial i el destí no canvien, però ara no podem entrar a A2. La creu roja representa una restricció del problema en paper; no significa que el robot la detecte automàticament.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu A2 i feu observar que la ruta inicial avançava justament cap a aquella casella. Demaneu una altra ruta, mantenint totes les regles de moviment.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Una resposta possible és dreta, avant, esquerra, avant, avant. No la doneu abans de deixar buscar. Demaneu que nombren les caselles visitades per justificar que eviten A2.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No afegiu una suposada funció d’evitar obstacles si no l’hem programada ni comprovat en el model. El repte actual el resol l’equip planificant el camí.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Contrasteu una proposta amb la ruta alternativa representada a continuació.</p>
+</div></section>
+<section id="slide-15"><p class="eyebrow">Transparència 15 de 50</p><h2>Una ruta alternativa</h2><a class="slide-link" href="02-format4-rutes.html#15">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comprovar i corregir»: 20–40 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Recorreu la solució: A1 ↑, gir dreta en A1, avanç a B1, gir esquerra en B1, avanç a B2 i avanç a B3. La casella marcada A2 no forma part del recorregut i el final queda orientat amunt.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Useu el traç per comprovar les caselles i la frase de baix per conservar les ordres. Atureu-vos als dos girs, perquè no afegeixen cap casella al camí.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què hem mantingut igual respecte del repte anterior?» Inici, destí i significat de les ordres. «Què ha canviat?» Una casella que no podem ocupar i, per tant, la ruta.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Una altra ruta també pot ser vàlida. Comproveu-la amb les mateixes condicions i eviteu presentar el dibuix com l’única resposta correcta.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Passeu als patrons repetits per buscar estructures que podem descriure de manera més curta.</p>
+</div></section>
+<section id="slide-16"><p class="eyebrow">Transparència 16 de 50</p><h2>Repetir una seqüència</h2><a class="slide-link" href="02-format4-rutes.html#16">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Reconéixer un fragment repetit i modificar-ne el nombre de vegades.</p>
+<p><strong>Com conduir-lo</strong>
+Comenceu amb gestos o paraules i passeu al bucle tangible. Feu comptar accions i repeticions per separat i contrasteu una variació.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Distingir el contingut del patró del nombre de repeticions.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-17"><p class="eyebrow">Transparència 17 de 50</p><h2>Un patró que torna a començar</h2><a class="slide-link" href="02-format4-rutes.html#17">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Feu llegir pas, palmada, pas, palmada, pas, palmada. Busquem el fragment que torna a aparéixer sencer: pas i palmada, no només la palmada.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Marqueu tres parelles d’accions amb els dits o amb separadors al paper. Es pot representar amb dos gestos de mans si moure’s no és adequat al grup.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quantes accions té el fragment?» Dues. «Quantes vegades apareix?» Tres. «Quantes accions hi ha en total?» Sis.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Comptar repeticions i comptar accions són preguntes diferents. Si algú diu que es repeteix sis vegades, demaneu quin fragment concret considera que es repeteix.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu la notació que agrupa les accions dins d’una repetició.</p>
+</div></section>
+<section id="slide-18"><p class="eyebrow">Transparència 18 de 50</p><h2>Un patró, tres repeticions</h2><a class="slide-link" href="02-format4-rutes.html#18">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu que les tres caixes són tres execucions del mateix patró. No són tres programes diferents: a cada vegada fem pas i després palmada. La frase inferior relaciona dues accions per tres vegades amb sis accions totals.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Recorreu una caixa i representeu-ne les dues accions abans de passar a la següent. Després feu llegir la instrucció compacta «repeteix tres vegades pas i palmada».</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Podríem canviar el nombre de vegades sense canviar el patró?» Sí. «Si repetim dues vegades, quantes accions farem?» Quatre; ho comprovarem després.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No presenteu el bucle només com una manera d’escriure menys. Agrupar un patró ajuda també a entendre, revisar i modificar el programa.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Distingiu aquest model en paper de les peces o blocs concrets que permeten executar-lo.</p>
+</div></section>
+<section id="slide-19"><p class="eyebrow">Transparència 19 de 50</p><h2>Representació i programació</h2><a class="slide-link" href="02-format4-rutes.html#19">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Una targeta amb «×3» i dues fletxes és una manera de representar el pensament, però no implica que qualsevol robot entenga aquella notació. Per executar-la hem de traduir-la a les funcions del dispositiu disponible.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Compareu una instrucció oral, una representació en paper i un programa de peces: les tres poden expressar la mateixa repetició amb símbols diferents.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si dibuixem un bucle al costat de Tale-Bot, el robot el llig?» No per aquest fet. «Què cal revisar abans d’executar amb Coding Set?» Les peces compatibles i com es delimita el fragment repetit.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No traslladeu automàticament una estructura de MakeCode o mBlock als botons d’un altre kit. La idea de repetir és comuna; les possibilitats i la manera de programar-la poden ser diferents.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Llegiu ara un bucle tangible concret del Coding Set.</p>
+</div></section>
+<section id="slide-20"><p class="eyebrow">Transparència 20 de 50</p><h2>Coding Set · La repetició amb peces</h2><a class="slide-link" href="02-format4-rutes.html#20">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Assenyaleu la peça d’inici del bucle amb el nombre 4, les peces endavant i dreta que queden dins i la peça que el tanca. El fragment que es repeteix és endavant i després gir a la dreta.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu una lectura expandida d’una vegada i demaneu una segona. Cal arribar a quatre parelles d’accions: vuit ordres dins de les repeticions. El marcador de repetició no és una ordre d’avançar quatre caselles.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què compta el 4?» Les vegades que s’executa tot el fragment delimitat. «És el mateix que la dansa anterior?» No: allí el patró era pas i palmada, repetit tres vegades.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La representació mostra un programa de peces, no garanteix un recorregut físic concret si no hem preparat el model i la superfície. Comproveu el material del kit abans de demostrar-lo.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Torneu al model senzill per anticipar l’efecte de canviar el nombre de repeticions.</p>
+</div></section>
+<section id="slide-21"><p class="eyebrow">Transparència 21 de 50</p><h2>Proveu una variació</h2><a class="slide-link" href="02-format4-rutes.html#21">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 4 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Manteniu el patró pas i palmada, però proposeu repetir-lo dues vegades. Demaneu predir abans de representar-lo. Una persona compta les repeticions i l’altra les accions, i després comparen.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Podeu dir «primera vegada: pas, palmada; segona vegada: pas, palmada». Marqueu el final: no afegim automàticament una tercera vegada perquè era la versió anterior.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Esperem quatre accions totals. El patró no ha canviat; només el nombre de repeticions. La justificació ha d’identificar aquestes dues parts.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si responen dues accions, feu distingir una execució del patró de dues execucions. Si responen sis, comproveu que han substituït el nombre inicial.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu el diagrama de dues repeticions per contrastar les respostes.</p>
+</div></section>
+<section id="slide-22"><p class="eyebrow">Transparència 22 de 50</p><h2>Què canvia quan repetim?</h2><a class="slide-link" href="02-format4-rutes.html#22">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Repetir una seqüència»: 40–55 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>El diagrama conserva pas i palmada dins de cada caixa, però ara només hi ha dues caixes. Aquesta comparació mostra una modificació controlada: el contingut del patró és el mateix i la quantitat de vegades és diferent.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Recupereu les prediccions anteriors i feu correspondre cada gest amb una acció. Escriviu, si cal, dues accions per dues vegades igual a quatre.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què hauríem de canviar per obtenir una altra dansa sense canviar la durada en nombre d’accions?» Podríem canviar una acció del patró i mantindre dues repeticions; això seria una modificació diferent.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No barregeu totes les variacions en la primera prova. Convindrà comparar versions canviant una cosa cada vegada perquè la causa siga explicable.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Passeu de les seqüències preparades a una resposta iniciada per un botó.</p>
+</div></section>
+<section id="slide-23"><p class="eyebrow">Transparència 23 de 50</p><h2>Pausa</h2><a class="slide-link" href="02-format4-rutes.html#23">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Pausa»: 55–60 min de sessió (5 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 5 minuts.</p>
+<p>Respecteu els cinc minuts de pausa; recupereu una de les preguntes anotades en reprendre la sessió.</p>
+<p><strong>Guió de conducció</strong></p>
+<p>Conducció de la pausa
+Doneu un punt clar de retorn i conserveu les preguntes pendents. Podeu demanar que cada parella trie quin dubte voldria recuperar després, sense convertir la pausa en una nova tasca obligatòria.</p>
+<p>Abans de reprendre
+Recordeu en una frase què ja hem comprovat i quin canvi introduirem ara. Si hi ha hagut una incidència tècnica, manteniu l’alternativa en paper per preservar el temps d’aprenentatge. No intenteu recuperar tota la pausa accelerant les explicacions següents.</p>
+</div></section>
+<section id="slide-24"><p class="eyebrow">Transparència 24 de 50</p><h2>Del paper als materials</h2><a class="slide-link" href="02-format4-rutes.html#24">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Entendre què afegeix l’execució física.</p>
+<p><strong>Com conduir-lo</strong>
+Compareu botons, peces i via. Per a cada material identifiqueu què prepara el grup i què comprova després. No intenteu una connexió no assajada amb tots els dispositius.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Una primera prova física curta i una alternativa que conserve el repte.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-25"><p class="eyebrow">Transparència 25 de 50</p><h2>Tale-Bot</h2><a class="slide-link" href="02-format4-rutes.html#25">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Presenteu-lo com un robot amb botons al mateix aparell. «Per començar, podem fer una ruta curta entre dos llocs d’un conte». Escrivim primer les ordres i després les introduïm. No necessita un editor de blocs en pantalla per a aquesta prova.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu en la imatge els elements que intervenen en aquesta proposta, sense repassar tots els accessoris del kit. La il·lustració identifica el material; no és una prova del programa que expliquem.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quina acció de l’alumnat ens permet aquest material?» Busquem planificar, anticipar una resposta o comparar una prova, segons l’exemple. Demaneu una justificació de la tria, no una preferència per l’aparença del robot.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No atribuïu lectura automàtica a qualsevol mapa de paper ni detecció genèrica d’obstacles. Si no disposeu del dispositiu físic, no improviseu una connexió: llegiu i representeu la seqüència amb el grup.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La transparència següent acota una primera decisió i els límits que convé tindre clars.</p>
+</div></section>
+<section id="slide-26"><p class="eyebrow">Transparència 26 de 50</p><h2>Tale-Bot · Primera decisió</h2><a class="slide-link" href="02-format4-rutes.html#26">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Recupereu la proposta anterior i llegiu-ne el límit: No atribuïu lectura automàtica a qualsevol mapa de paper ni detecció genèrica d’obstacles. L’objectiu d’aquesta pantalla és evitar començar amb una expectativa que el material no pot complir.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Plantegeu una ruta curta entre dos llocs d’un conte i feu distingir allò que prepara la persona docent d’allò que executa el dispositiu. Useu el programa o el recorregut, no una resposta atribuïda a una voluntat del robot.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Abans de provar, què esperem observar? Després, quina decisió podrà explicar l’alumnat?» Accepteu una resposta concreta vinculada a l’exemple: ordre, botó, lectura o condició.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si algú proposa una funció diferent, anoteu-la per consultar el tutorial del model disponible. No deduïu prestacions a partir de l’aspecte del robot o d’un altre kit.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Continueu amb la representació del programa si n’hi ha una; en cas contrari, compareu aquesta opció amb el material següent.</p>
+</div></section>
+<section id="slide-27"><p class="eyebrow">Transparència 27 de 50</p><h2>Tale-Bot · Llegim els botons en ordre</h2><a class="slide-link" href="02-format4-rutes.html#27">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu endavant, endavant, dreta, endavant i, al final, executa. Les primeres quatre icones preparen ordres; l’última posa en marxa la seqüència. El dibuix és una fila per llegir, no la disposició real del panell.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu una icona cada vegada i relacioneu-la amb la ruta A1 ↑ fins a B3 →. Diferencieu preparar el programa i veure’l executar: no esperem un desplaçament físic en cada lectura de la fila projectada.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Executa afegeix una casella a la ruta?» No: inicia la seqüència preparada. «El tercer símbol desplaça el robot?» No, és un gir.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Amb material, reviseu abans les ordres guardades i la distància real d’un avançament. Els colors i la disposició s’han d’identificar en el model disponible.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Compareu amb Coding Set: la seqüència també existeix, però les ordres són peces externes.</p>
+</div></section>
+<section id="slide-28"><p class="eyebrow">Transparència 28 de 50</p><h2>Tale-Bot · Del paper al robot</h2><a class="slide-link" href="02-format4-rutes.html#28">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>El pas al material afegeix condicions que el model de paper simplificava. Abans de preparar una ruta llarga, provem un avant per saber quant es desplaça el robot sobre aquella superfície i ajustar les caselles.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Marqueu inici i orientació, prepareu poques ordres i reviseu que no quede una seqüència anterior. Executeu només després d’haver dit on hauria d’acabar.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si es queda entre caselles, és segur que hem escrit malament la ruta?» No: pot caldre revisar mida de la graella, superfície o posició inicial, a més de les ordres.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La il·lustració no aporta una escala de mesura fiable. Comproveu el model disponible i eviteu deduir una distància exacta a partir del dibuix.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Compareu aquest programa de botons amb un programa de peces que podem llegir a la vista.</p>
+</div></section>
+<section id="slide-29"><p class="eyebrow">Transparència 29 de 50</p><h2>Coding Set</h2><a class="slide-link" href="02-format4-rutes.html#29">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Presenteu-lo com un sistema amb tauler, torre de lectura i MatataBot. «Per començar, podem fer comparar una seqüència inicial i una versió amb una peça canviada». Les peces mantenen el programa a la vista. La torre el llig i comunica les ordres al MatataBot.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu en la imatge els elements que intervenen en aquesta proposta, sense repassar tots els accessoris del kit. La il·lustració identifica el material; no és una prova del programa que expliquem.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quina acció de l’alumnat ens permet aquest material?» Busquem planificar, anticipar una resposta o comparar una prova, segons l’exemple. Demaneu una justificació de la tria, no una preferència per l’aparença del robot.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Una peça és una ordre del programa; no és un botó situat damunt del robot. Si no disposeu del dispositiu físic, no improviseu una connexió: llegiu i representeu la seqüència amb el grup.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La transparència següent acota una primera decisió i els límits que convé tindre clars.</p>
+</div></section>
+<section id="slide-30"><p class="eyebrow">Transparència 30 de 50</p><h2>Coding Set · Primera decisió</h2><a class="slide-link" href="02-format4-rutes.html#30">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Recupereu la proposta anterior i llegiu-ne el límit: Una peça és una ordre del programa; no és un botó situat damunt del robot. L’objectiu d’aquesta pantalla és evitar començar amb una expectativa que el material no pot complir.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Plantegeu comparar una seqüència inicial i una versió amb una peça canviada i feu distingir allò que prepara la persona docent d’allò que executa el dispositiu. Useu el programa o el recorregut, no una resposta atribuïda a una voluntat del robot.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Abans de provar, què esperem observar? Després, quina decisió podrà explicar l’alumnat?» Accepteu una resposta concreta vinculada a l’exemple: ordre, botó, lectura o condició.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si algú proposa una funció diferent, anoteu-la per consultar el tutorial del model disponible. No deduïu prestacions a partir de l’aspecte del robot o d’un altre kit.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Continueu amb la representació del programa si n’hi ha una; en cas contrari, compareu aquesta opció amb el material següent.</p>
+</div></section>
+<section id="slide-31"><p class="eyebrow">Transparència 31 de 50</p><h2>Coding Set · Llegim les peces</h2><a class="slide-link" href="02-format4-rutes.html#31">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Les quatre peces representen endavant, endavant, dreta i endavant. El tauler fa de suport del programa; no cal recordar una fila de botons perquè les peces queden visibles. La torre ha de poder llegir la seqüència segons les instruccions del kit.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu llegir la fila d’esquerra a dreta abans de simular cap moviment. Després proposeu moure la tercera peça a una altra posició i anticipeu que no tindrem necessàriament el mateix resultat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què ens facilita deixar el programa a la vista?» Revisar una ordre, comparar dues versions i explicar el canvi a una altra persona.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No suposeu que la lectura ocorre només perquè les peces estan prop del robot. Tauler, torre, robot i ordre de lectura s’han de preparar i comprovar.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>El diagrama següent separa el paper de cada element del sistema.</p>
+</div></section>
+<section id="slide-32"><p class="eyebrow">Transparència 32 de 50</p><h2>Coding Set · Com circulen les ordres?</h2><a class="slide-link" href="02-format4-rutes.html#32">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu el diagrama com tres funcions: al tauler escrivim amb peces; la torre llig el programa i envia les ordres; el MatataBot les executa. Les fletxes representen aquest flux de lectura i comunicació, no un recorregut del robot damunt de tres caixes.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu cada caixa i feu la correspondència amb la imatge anterior. Per a una seqüència equivocada, reviseu primer les peces; per a un sistema que no respon, comproveu també alimentació i connexió del kit.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si canviem una peça, què ha de passar abans que canvie la ruta?» Cal tornar a llegir i executar el programa preparat. El robot no interpreta allò que una persona volia escriure.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No presenteu la torre com un sensor del recorregut o de la destinació. En aquesta prova intervé en la lectura del programa.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Passeu al tren per mostrar un altre model: allí la via mateixa condiciona per on es mou.</p>
+</div></section>
+<section id="slide-33"><p class="eyebrow">Transparència 33 de 50</p><h2>Coding Set · El programa es pot llegir</h2><a class="slide-link" href="02-format4-rutes.html#33">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>La imatge mostra una relació entre una fila de peces i un recorregut. Useu-la per identificar que el programa existeix abans d’executar-lo i que podem revisar-ne l’ordre.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu distingir tauler, torre i MatataBot. Llegiu una seqüència curta amb el grup i demaneu una predicció; si hi ha material, comprovem primer que el sistema respon amb una sola ordre coneguda.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què ens permet comparar dues versions?» Conservar les peces o una representació de la primera seqüència i indicar quina hem mogut.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La imatge és un exemple, no una consigna que s’haja de copiar sense revisar-la. El mapa, les unitats de moviment i l’orientació han d’estar definits en la prova real.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>El tren ens permet veure un altre cas en què també el muntatge físic participa en la solució.</p>
+</div></section>
+<section id="slide-34"><p class="eyebrow">Transparència 34 de 50</p><h2>Coding Express</h2><a class="slide-link" href="02-format4-rutes.html#34">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Presenteu-lo com un tren que circula per vies i respon a maons d’acció. «Per començar, podem fer ordenar una història amb estació, parada i destinació». Muntem la via per decidir el recorregut i situem un maó per provocar una resposta en passar.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu en la imatge els elements que intervenen en aquesta proposta, sense repassar tots els accessoris del kit. La il·lustració identifica el material; no és una prova del programa que expliquem.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quina acció de l’alumnat ens permet aquest material?» Busquem planificar, anticipar una resposta o comparar una prova, segons l’exemple. Demaneu una justificació de la tria, no una preferència per l’aparença del robot.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>El tren no comprén el relat ni tria el destí. Via i maó tenen funcions diferents. Si no disposeu del dispositiu físic, no improviseu una connexió: llegiu i representeu la seqüència amb el grup.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La transparència següent acota una primera decisió i els límits que convé tindre clars.</p>
+</div></section>
+<section id="slide-35"><p class="eyebrow">Transparència 35 de 50</p><h2>Coding Express · Primera decisió</h2><a class="slide-link" href="02-format4-rutes.html#35">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Recupereu la proposta anterior i llegiu-ne el límit: El tren no comprén el relat ni tria el destí. Via i maó tenen funcions diferents. L’objectiu d’aquesta pantalla és evitar començar amb una expectativa que el material no pot complir.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Plantegeu ordenar una història amb estació, parada i destinació i feu distingir allò que prepara la persona docent d’allò que executa el dispositiu. Useu el programa o el recorregut, no una resposta atribuïda a una voluntat del robot.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Abans de provar, què esperem observar? Després, quina decisió podrà explicar l’alumnat?» Accepteu una resposta concreta vinculada a l’exemple: ordre, botó, lectura o condició.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si algú proposa una funció diferent, anoteu-la per consultar el tutorial del model disponible. No deduïu prestacions a partir de l’aspecte del robot o d’un altre kit.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Continueu amb la representació del programa si n’hi ha una; en cas contrari, compareu aquesta opció amb el material següent.</p>
+</div></section>
+<section id="slide-36"><p class="eyebrow">Transparència 36 de 50</p><h2>Coding Express · Via i resposta</h2><a class="slide-link" href="02-format4-rutes.html#36">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu el panell esquerre com una decisió de construcció: la via determina per on pot passar el tren. Llegiu el dret com una relació entre lectura d’un maó i resposta. Són dues decisions que sovint es confonen en començar.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu el recorregut estació-parc i imagineu canviar una corba: canviaria el camí. Després manteniu la via i situeu un maó d’acció: canviaríem què passa en un punt del viatge.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Un maó que provoca un so decideix a quina estació anem?» No. «Canviar la via pot canviar el recorregut sense afegir cap ordre de gir?» Sí.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Comproveu les respostes dels maons del kit abans de fer una demostració. El diagrama no diu que qualsevol peça de color tinga una funció ni que el tren trie una branca per comprendre el relat.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Relacioneu aquest model amb una història: l’alumnat dona sentit a les parades i comprova l’ordre.</p>
+</div></section>
+<section id="slide-37"><p class="eyebrow">Transparència 37 de 50</p><h2>Coding Express · La via és part del problema</h2><a class="slide-link" href="02-format4-rutes.html#37">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu el repte narratiu: viatjar de l’estació al parc passant per una parada. Primer decidim on ha d’anar el tren i muntem una via que ho permeta. Després decidim si volem una resposta en algun punt.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Dibuixeu mentalment o en paper l’ordre estació-parada-parc. Assenyaleu on té sentit un maó d’acció, però no l’associeu a una funció concreta si no l’heu comprovat en el kit.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què passaria si muntem la via amb la parada després del parc?» El recorregut ja no coincideix amb l’ordre del relat. Afegir un maó de so no ho resol necessàriament.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No doneu al tren capacitat d’escollir una destinació pel significat de la història. El grup dissenya i comprova la via i les respostes.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Abans de narrar el viatge, mostreu com preparar-ne el moviment i l’aturada.</p>
+</div></section>
+<section id="slide-38"><p class="eyebrow">Transparència 38 de 50</p><h2>Coding Express · Impuls i aturada</h2><a class="slide-link" href="02-format4-rutes.html#38">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Del paper als materials»: 60–80 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>La prova diferencia l’impuls inicial i el moviment motoritzat. Reviseu la via, enceneu segons el model i doneu una empenta curta i suau. Després compareu l’aturada manual indicada a la guia amb la resposta al maó roig compatible.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu en la imatge inici, tren i zona d’aturada. Si hi ha material, manteniu la prova curta i assajada. Sense kit, feu moure una fitxa sobre una via dibuixada i verbalitzeu què comprovaríeu.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Com sabem que el maó ha produït una resposta?» Repetim des del mateix punt i observem el pas pel maó, diferenciant-ho d’una intervenció manual.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No empenyeu el tren mentre el motor ja funciona ni forceu peces. Si el maó no respon, atureu i reviseu la preparació del model; no convertiu-ho en una carrera.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Useu les parades per construir una seqüència narrativa que una altra parella puga explicar.</p>
+</div></section>
+<section id="slide-39"><p class="eyebrow">Transparència 39 de 50</p><h2>Una història en equip</h2><a class="slide-link" href="02-format4-rutes.html#39">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Relacionar ordre del relat i ordre del recorregut.</p>
+<p><strong>Com conduir-lo</strong>
+Demaneu tres llocs, una frase per lloc i una ruta que una altra parella puga seguir. Observeu com l’ordre afecta el sentit de la història.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Una narració i una ruta coherents, amb una decisió explicada.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-40"><p class="eyebrow">Transparència 40 de 50</p><h2>Una història amb tres parades</h2><a class="slide-link" href="02-format4-rutes.html#40">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 6 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Doneu un relat mínim com a model: un personatge ix de l’estació, recull una cosa en una parada i arriba al parc per a una finalitat. El grup tria els detalls, però el recorregut i les frases han de conservar l’ordre.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Demaneu un dibuix simple i una frase per lloc. No cal una maqueta acabada. Una altra parella haurà de seguir el viatge amb la fitxa i contar què ocorre en arribar a cada parada.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Podem canviar l’ordre de les parades i mantindre la història?» Depén del relat: si encara no hem recollit allò que necessitem al parc, haurem de revisar-lo.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No confongueu tres llocs d’una història amb tres funcions del robot. La tasca principal pot ser ordenar i comunicar, amb una funció tècnica molt senzilla.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La posada en comú ha d’explicar com sabrem si el relat i la ruta són comprensibles.</p>
+</div></section>
+<section id="slide-41"><p class="eyebrow">Transparència 41 de 50</p><h2>Què podem observar en la història?</h2><a class="slide-link" href="02-format4-rutes.html#41">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Busquem tres coses: ordre comprensible, correspondència entre relat i recorregut i una decisió justificada. No estem avaluant la bellesa de la maqueta o si el tren completa un trajecte sense intervenció.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Escolteu una parella i pregunteu en quin punt de la ruta ocorre cada fet. Després feu que una altra parella la conte amb les instruccions rebudes.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Una resposta amb evidència és «hem posat la parada abans del parc perquè primer cal recollir el llibre». Si només diuen «és més bonic», demaneu què canvia en el sentit de la història.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Una història imaginativa pot tindre una ruta confusa, i una ruta correcta pot no comunicar el relat. Cal mirar les dues relacions segons l’objectiu triat.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Reforceu la idea amb la pregunta sobre què passa quan canviem les parades.</p>
+</div></section>
+<section id="slide-42"><p class="eyebrow">Transparència 42 de 50</p><h2>Una història té recorregut i sentit</h2><a class="slide-link" href="02-format4-rutes.html#42">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu que el tren recorre una estructura preparada, però el sentit de les parades prové del relat del grup. L’aprenentatge lingüístic apareix quan l’alumnat ha de comunicar aquest sentit a una altra persona.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Useu una modificació concreta: col·locar la destinació abans de la recollida. Demaneu si cal canviar la via, la història o totes dues per mantindre coherència.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quina informació necessita la parella que escolta?» Inici, ordre dels llocs i què passa en cadascun. No hauria d’haver d’endevinar la intenció dels autors.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No atribuïu al robot la capacitat de detectar incoherències narratives. Les persones comparen, expliquen i decideixen què modificar.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Passeu a l’organització dels torns perquè aquests processos continuen també fora de la prova amb el tren.</p>
+</div></section>
+<section id="slide-43"><p class="eyebrow">Transparència 43 de 50</p><h2>Una prova amb treball per a tothom</h2><a class="slide-link" href="02-format4-rutes.html#43">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu que disposar d’una sola unitat no obliga a una classe sencera a esperar. El diagrama diferencia l’equip que executa i observa del treball dels altres: planificar, anticipar o comparar versions en paper.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Imagineu quatre equips. L’equip que prova té una seqüència curta preparada; els altres anoten on acabarà o revisen la pròpia ruta. En acabar, comparteix una observació útil i cedeix el torn.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quina tasca concreta tenen els equips que esperen?» No basta «mirar»: poden predir la casella final i justificar-la, o detectar una diferència respecte de la ruta prevista.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No convertiu el canvi de torn en una prova de rapidesa. Si un equip no està preparat, ha de poder seguir treballant en paper sense perdre la possibilitat d’aprendre.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Concreteu els rols perquè manipular el robot no siga l’única forma visible de participar.</p>
+</div></section>
+<section id="slide-44"><p class="eyebrow">Transparència 44 de 50</p><h2>Rols rotatius</h2><a class="slide-link" href="02-format4-rutes.html#44">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Una història en equip»: 80–100 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu que els rols distribueixen responsabilitats, no etiqueten capacitats. Planificar proposa i justifica; programar introdueix allò acordat; comprovar compara amb la predicció; explicar deixa constància d’una decisió.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Useu una mateixa ruta i demaneu què faria cada rol abans, durant i després de la prova. En equips de tres es poden unir comprovació i explicació. Acordeu una rotació després de cada prova o repte curt.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Qui pensa el programa?» Tot l’equip, encara que una persona introduïsca les ordres. «Qui ha de saber explicar-lo?» Tothom; el rol de portaveu no eximeix les altres persones de comprendre.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Eviteu que la persona amb més experiència es quede sempre el dispositiu. Tampoc interpreteu una dificultat de manipulació com una dificultat de comprensió.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Reforceu les diverses maneres de participar i explicar l’aprenentatge.</p>
+</div></section>
+<section id="slide-45"><p class="eyebrow">Transparència 45 de 50</p><h2>Preparar la primera aplicació</h2><a class="slide-link" href="02-format4-rutes.html#45">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Transferir les rutes a la pràctica docent.</p>
+<p><strong>Com conduir-lo</strong>
+Feu triar un grup, una consigna curta i una prova que es puga repetir. La revisió entre parelles ha d’ajudar a preparar, no a competir per complexitat.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Una proposta amb material, torns i una pregunta d’aprenentatge.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-46"><p class="eyebrow">Transparència 46 de 50</p><h2>La proposta que m’emporte</h2><a class="slide-link" href="02-format4-rutes.html#46">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 5 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Demaneu una proposta breu, no una programació completa. Les quatre frases han de formar una cadena: aprenentatge, repte, primera prova i evidència. La mateixa ruta de la biblioteca és vàlida si poden justificar com l’adaptarien.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Modeleu una resposta: «Treballaria instruccions clares; una parella guiaria una altra a un llibre; provaríem dues ordres; escoltaria si expliquen què han corregit». Després deixeu que cada parella concrete el seu grup i material.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Com sabrem que no hem triat primer el robot i després inventat l’objectiu?» L’aprenentatge i la prova continuen tenint sentit encara que representem la solució en paper.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si la proposta inclou moltes funcions, demaneu quina és imprescindible per a la primera prova. Si l’evidència és «que funcione», afegiu què haurà d’explicar l’alumnat.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La parella següent escoltarà la proposta per comprovar si una altra persona la podria entendre.</p>
+</div></section>
+<section id="slide-47"><p class="eyebrow">Transparència 47 de 50</p><h2>Compartim una decisió</h2><a class="slide-link" href="02-format4-rutes.html#47">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Organitzeu un intercanvi curt. Qui explica ha de dir què aprendria el grup, què faria i què observaria. Qui escolta no puntua la idea: formula una pregunta que permeta preparar-la millor.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Proposeu la pregunta projectada i doneu un exemple: «Si el robot arriba però no poden explicar el gir, què et faltaria comprovar?». En acabar, cada parella fa una modificació concreta.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Esperem que l’evidència es concrete: «demanarem que anticipen el final abans de provar i expliquen una correcció». No cal que totes les propostes utilitzen el mateix material.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No convertiu el compartir en sis exposicions llargues si el temps és curt. Prioritzeu que totes les parelles reben una pregunta i revisen la pròpia proposta.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Tanqueu amb la preparació mínima per al primer dia, no amb una nova llista de funcions.</p>
+</div></section>
+<section id="slide-48"><p class="eyebrow">Transparència 48 de 50</p><h2>Abans de la primera prova a l’aula</h2><a class="slide-link" href="02-format4-rutes.html#48">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Recapituleu tres decisions operatives: material que funciona, alternativa preparada i temps reservat per explicar. La primera aplicació és una prova docent que després revisarem; no ha de desplegar totes les possibilitats del kit.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Demaneu que cadascú identifique què ha de comprovar abans d’entrar a classe. Amb dispositiu: alimentació, connexió i resposta prevista. Sense dispositiu: mapa, regles i consigna que una altra persona entenga.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què és més important afegir ara: una funció nova o una pregunta que ens mostre la comprensió?» En aquesta primera proposta, normalment la pregunta i la comprovació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No sacrifiqueu el tancament perquè el muntatge o la connexió s’allarguen. Si cal, completeu la conversa amb la representació en paper.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Presenteu els recursos com a ajuda per continuar, no com a contingut que s’haja de llegir ara.</p>
+</div></section>
+<section id="slide-49"><p class="eyebrow">Transparència 49 de 50</p><h2>Les propostes de partida del web</h2><a class="slide-link" href="02-format4-rutes.html#49">Veure aquesta transparència →</a><div class="notes"><p>Aquests enllaços són per a consulta posterior. No cal obrir-los durant la sessió ni disposar de connexió per completar les activitats.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu què aporta cada tipus de recurs: el tutorial resol l’ús concret del dispositiu; una situació d’aprenentatge situa aquell ús dins d’un repte, una seqüència i unes evidències. Escola 4.0 és el referent institucional del projecte.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu un enllaç relacionat amb una demostració que ja hàgem entés. No navegueu per tot el catàleg durant el tancament: l’objectiu és que sàpien on tornar quan preparen una activitat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si vull saber com connectar Codey, què consultaria?» El tutorial. «Si vull adaptar un repte a diverses sessions?» Una SDA, revisant-ne grup, temps i material.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Els noms dels blocs poden variar segons l’idioma i la versió de l’aplicació. Els exemples visuals de la formació ajuden a raonar, però no substitueixen la comprovació del model real.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Tanqueu recuperant una decisió que cada parella s’emporta i la pregunta que voldria provar a l’aula.</p>
+</div></section>
+<section id="slide-50"><p class="eyebrow">Transparència 50 de 50</p><h2>Recursos per continuar</h2><a class="slide-link" href="02-format4-rutes.html#50">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Preparar la primera aplicació»: 100–120 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu què aporta cada tipus de recurs: el tutorial resol l’ús concret del dispositiu; una situació d’aprenentatge situa aquell ús dins d’un repte, una seqüència i unes evidències. Escola 4.0 és el referent institucional del projecte.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu un enllaç relacionat amb una demostració que ja hàgem entés. No navegueu per tot el catàleg durant el tancament: l’objectiu és que sàpien on tornar quan preparen una activitat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si vull saber com connectar Codey, què consultaria?» El tutorial. «Si vull adaptar un repte a diverses sessions?» Una SDA, revisant-ne grup, temps i material.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Els noms dels blocs poden variar segons l’idioma i la versió de l’aplicació. Els exemples visuals de la formació ajuden a raonar, però no substitueixen la comprovació del model real.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Tanqueu recuperant una decisió que cada parella s’emporta i la pregunta que voldria provar a l’aula.</p>
+</div></section></main></body></html>

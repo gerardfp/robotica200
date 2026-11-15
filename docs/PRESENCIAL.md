@@ -4,6 +4,8 @@ La formació es publica en una ruta independent: `/presencial/` (en GitHub Pages
 
 ## Accés amb contrasenya
 
+El catàleg inclou sis presentacions, els sis guions de conducció i els sis PDF. Els guions es generen amb les notes natives de Marp i tenen un índex i enllaços a les transparències. També es poden imprimir des del navegador.
+
 Els HTML i els PDF es xifren abans de copiar-los a `dist/presencial/`. El navegador demana la contrasenya i desxifra el document que es vol obrir. No es publiquen còpies dels PDF ni de les presentacions en clar dins d’aquesta ruta. Els diagrames privats s’incorporen dins dels HTML xifrats; les il·lustracions ja públiques del web es reutilitzen des d’`_assets/`.
 
 La protecció usa AES-256-GCM amb una clau derivada amb PBKDF2-SHA-256 (600.000 iteracions), sal aleatòria per publicació i nonce aleatori per document. La identitat, el format i el nom del document també s’autentiquen. Una contrasenya incorrecta o una alteració del fitxer impedeixen el desxifrat.
