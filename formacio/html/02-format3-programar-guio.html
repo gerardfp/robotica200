@@ -1,0 +1,662 @@
+<!doctype html><html lang="ca"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Guió · Entendre com es programa</title><style>
+ @font-face{font-family:Sora;src:url('../fonts/Sora.ttf')}@font-face{font-family:Jakarta;src:url('../fonts/PlusJakartaSans.ttf')}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f8fafc;color:#0f172a;font:17px/1.75 Jakarta,sans-serif}header{background:#ebf5fd;padding:48px max(24px,calc((100vw - 900px)/2))}header img{width:52px}header p{max-width:70ch}main{max-width:950px;margin:auto;padding:32px 24px}h1,h2,h3{font-family:Sora,sans-serif;line-height:1.3}h1{font-size:clamp(28px,4vw,42px)}h2{font-size:25px}a{color:#1d4ed8}a:focus-visible{outline:3px solid #2563eb;outline-offset:4px}nav{display:flex;gap:20px;flex-wrap:wrap}.eyebrow{color:#64748b;font-size:14px}details,section{background:white;border:1px solid #dce5ef;border-radius:16px;padding:28px;margin-bottom:28px}summary{cursor:pointer;font-family:Sora,sans-serif;font-weight:600}ol{padding-left:28px}li{margin:8px 0}section{scroll-margin-top:24px}.notes{margin-top:28px;max-width:76ch}.notes p:has(>strong:only-child){margin-top:28px;margin-bottom:8px;color:#163b70}.notes p{margin:12px 0}.slide-link{font-size:14px}.notes blockquote{border-left:4px solid #2563eb;padding-left:20px;margin-left:0}
+ @media(max-width:600px){header{padding-top:80px}main{padding:20px 12px}details,section{padding:20px}}
+ @media print{@page{margin:18mm}body{background:white;font-size:10.5pt;line-height:1.55}header{padding:0;background:white}header img{width:34px}main{padding:0;max-width:none}nav,details,.slide-link,#presencial-controls{display:none!important}section{border:0;border-top:1px solid #cbd5e1;border-radius:0;padding:16px 0;margin:16px 0;scroll-margin:0}h1{font-size:22pt}h2{font-size:16pt;break-after:avoid}.notes p:has(>strong:only-child){break-after:avoid}.notes{max-width:none}.eyebrow{font-size:9pt}p{orphans:3;widows:3}a{color:inherit;text-decoration:none}}
+ </style></head><body><header><img src="../../_assets/icons/logo.svg" alt=""><p>Robòtica per a docents · Sessió 2 · Format de tres sessions</p><h1>Guió de la sessió<br>Entendre com es programa</h1><p>Aquest guió recull les notes del presentador de les 51 transparències. Inclou explicacions, exemples, preguntes i aclariments per preparar i conduir la sessió. Les franges de temps corresponen a blocs complets: trieu els aclariments segons els dubtes del grup.</p><nav><a href="index.html">← Materials</a><a href="02-format3-programar.html">Obrir presentació →</a></nav></header><main><details><summary>Índex de transparències</summary><ol><li><a href="#slide-1">Entendre com es programa</a></li><li><a href="#slide-2">Llegir i comprovar una ruta</a></li><li><a href="#slide-3">El repte de la biblioteca</a></li><li><a href="#slide-4">Escriviu una ruta</a></li><li><a href="#slide-5">Una solució, ordre a ordre</a></li><li><a href="#slide-6">La solució, vista sobre el mapa</a></li><li><a href="#slide-7">Què ens ha obligat a pensar?</a></li><li><a href="#slide-8">Girar i avançar són accions diferents</a></li><li><a href="#slide-9">Una ruta que no arriba al mateix lloc</a></li><li><a href="#slide-10">Localitzem la diferència</a></li><li><a href="#slide-11">Identificar una repetició</a></li><li><a href="#slide-12">Un patró que torna a començar</a></li><li><a href="#slide-13">Un patró, tres repeticions</a></li><li><a href="#slide-14">Representació i programació</a></li><li><a href="#slide-15">Coding Set · La repetició amb peces</a></li><li><a href="#slide-16">Proveu una variació</a></li><li><a href="#slide-17">Què canvia quan repetim?</a></li><li><a href="#slide-18">Un botó inicia una resposta</a></li><li><a href="#slide-19">Demostració · Una resposta al botó A</a></li><li><a href="#slide-20">Codey · Preparar la prova</a></li><li><a href="#slide-21">Codey · En viu i càrrega no són iguals</a></li><li><a href="#slide-22">Codey · Llegim el programa</a></li><li><a href="#slide-23">Codey · Predicció abans de provar</a></li><li><a href="#slide-24">Codey · La seqüència en el temps</a></li><li><a href="#slide-25">Codey · Una modificació, una predicció</a></li><li><a href="#slide-26">Un botó i un sensor aporten informació</a></li><li><a href="#slide-27">Pausa</a></li><li><a href="#slide-28">De les dades a una decisió</a></li><li><a href="#slide-29">Demostració · Un fanalet amb micro:bit</a></li><li><a href="#slide-30">micro:bit · Què mostrem i què llegim?</a></li><li><a href="#slide-31">Lectures per a una prova sense material</a></li><li><a href="#slide-32">Quina conclusió podem justificar?</a></li><li><a href="#slide-33">De la lectura a la resposta</a></li><li><a href="#slide-34">La llum obri dues possibilitats</a></li><li><a href="#slide-35">micro:bit · El programa per blocs</a></li><li><a href="#slide-36">El llindar també es comprova</a></li><li><a href="#slide-37">Canviar el programa o canviar la prova?</a></li><li><a href="#slide-38">Una lectura inicial o una revisió contínua?</a></li><li><a href="#slide-39">Comparar amb un mecanisme</a></li><li><a href="#slide-40">SPIKE · Una parada amb color</a></li><li><a href="#slide-41">SPIKE · Què connectem a cada port?</a></li><li><a href="#slide-42">SPIKE · Llegim la seqüència</a></li><li><a href="#slide-43">SPIKE · Tres comprovacions</a></li><li><a href="#slide-44">Si el motor no s’atura, per on comencem?</a></li><li><a href="#slide-45">Explicar i transferir</a></li><li><a href="#slide-46">Com acompanyem una revisió?</a></li><li><a href="#slide-47">La proposta que m’emporte</a></li><li><a href="#slide-48">Compartim una decisió</a></li><li><a href="#slide-49">Abans de la primera prova a l’aula</a></li><li><a href="#slide-50">Les propostes de partida del web</a></li><li><a href="#slide-51">Recursos per continuar</a></li></ol></details><section id="slide-1"><p class="eyebrow">Transparència 1 de 51</p><h2>Entendre com es programa</h2><a class="slide-link" href="02-format3-programar.html#1">Veure aquesta transparència →</a><div class="notes"><p>Preparació: comproveu projector i navegació. Només està garantida la projecció; les activitats admeten resposta oral o en paper. Si hi ha dispositius, assageu abans les demostracions i substituïu les simulacions per proves curtes.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Obertura suggerida</strong>
+«Aquesta és la sessió segona del format de tres sessions. Hui volem entendre seqüències, repeticions i respostes sense dominar un editor. No cal conéixer tots els dispositius per participar».</p>
+<p><strong>Fil conductor</strong>
+El format concentra diferents models en una sessió. Useu un exemple per concepte i conserveu temps perquè les parelles expliquen què han entés.</p>
+<p><strong>Preparació abans de projectar</strong>
+Obriu les diapositives i la vista del presentador, comproveu que es veuen les imatges i identifiqueu les activitats en parelles. Només tenim garantit projector o PDI. Si disposeu de robots, prepareu una demostració curta abans; no dediqueu l’obertura a una instal·lació improvisada.</p>
+<p><strong>Què observar en començar</strong>
+Pregunteu si el grup recorda una idea de la sessió anterior o, en la primera, quina necessitat d’aula vol treballar. Ajusteu els aclariments a les respostes sense afegir més objectius.</p>
+</div></section>
+<section id="slide-2"><p class="eyebrow">Transparència 2 de 51</p><h2>Llegir i comprovar una ruta</h2><a class="slide-link" href="02-format3-programar.html#2">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Recuperar seqüència i orientació abans de parlar de blocs.</p>
+<p><strong>Com conduir-lo</strong>
+Acordeu A1 ↑ i B3, deixeu escriure la ruta i compareu una versió que gira massa prompte. No passeu a les repeticions sense distingir gir i desplaçament.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Localitzar una causa concreta de la diferència entre predicció i resultat.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-3"><p class="eyebrow">Transparència 3 de 51</p><h2>El repte de la biblioteca</h2><a class="slide-link" href="02-format3-programar.html#3">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu com es llig el mapa abans de demanar cap programa: les lletres identifiquen columnes i els nombres, files. A1 és baix a l’esquerra; B3 està una columna a la dreta i dues files més amunt. La fletxa inicial indica cap on mira la fitxa.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu A1, després B3 i finalment la fletxa ↑. Amb el dit, mostreu només un avançament d’A1 a A2. Acordeu dues regles: avançar mou una casella; girar canvia l’orientació sense canviar de casella. No traceu encara la ruta completa.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si la fitxa està a A1 mirant amunt, on queda després d’un avant?» Resposta: A2, encara mirant amunt. «Un gir a la dreta l’envia a B1?» No: continua a A1, ara mirant a la dreta.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La dreta és la de la fitxa, no sempre la de qui mira la pantalla. Aquesta graella és un model: amb un robot real cal ajustar la mida de les caselles al seu desplaçament.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Ara que compartim les regles, podem escriure ordres sense improvisar-ne el significat.</p>
+</div></section>
+<section id="slide-4"><p class="eyebrow">Transparència 4 de 51</p><h2>Escriviu una ruta</h2><a class="slide-link" href="02-format3-programar.html#4">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 3 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Formuleu la consigna completa: «Porteu la fitxa d’A1 a B3, començant cap amunt. Escriviu les ordres i indiqueu l’orientació final». Una persona dicta i l’altra executa exactament allò que escolta, sense completar ordres que falten.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu una primera passada per les parelles per comprovar que mantenen el mateix inici. Si treballen oralment, poden marcar els passos amb els dits. No corregiu la ruta mentre l’executen: deixeu que comparen el final amb la predicció.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Una solució és avant, avant, dreta, avant. També hi ha altres rutes vàlides; no exigiu la més curta. Demaneu «on acabes i cap on mires?» per distingir posició i orientació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si una parella gira i avança en una sola ordre, torneu a les dues regles pactades. Si corregeix sobre la marxa, proposeu repetir la seqüència escrita des del principi.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>En acabar, conserveu almenys una proposta per llegir-la ordre a ordre a la transparència següent.</p>
+</div></section>
+<section id="slide-5"><p class="eyebrow">Transparència 5 de 51</p><h2>Una solució, ordre a ordre</h2><a class="slide-link" href="02-format3-programar.html#5">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu cada fila com una foto de l’estat de la fitxa després d’una ordre. Comencem a A1 ↑; el primer avant porta a A2 ↑ i el segon a A3 ↑. El gir conserva A3 i canvia ↑ per →. L’últim avant porta a B3 →.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Tapeu amb la mà o assenyaleu només la fila actual. Abans de passar a la següent, deixeu que algú anticipe què canviarà: la casella, l’orientació o totes dues. La taula no és un registre de botons premuts simultàniament.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Per què A3 apareix dues vegades?» Perquè entre aquestes files hem girat, però no ens hem desplaçat. «Quantes ordres de moviment hem escrit?» Quatre; tres avançaments i un gir.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Arribar a B3 no garanteix haver entés la ruta: algú pot haver-la endevinada. La justificació de les files ens permet comprovar la comprensió.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu després el mateix procés al mapa: canvia la representació, no el programa.</p>
+</div></section>
+<section id="slide-6"><p class="eyebrow">Transparència 6 de 51</p><h2>La solució, vista sobre el mapa</h2><a class="slide-link" href="02-format3-programar.html#6">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>«La taula anterior i aquest dibuix expliquen la mateixa seqüència». El traç blau resumeix els desplaçaments; la llista de la dreta conserva les quatre ordres. El gir no crea una casella nova, per això no apareix com un tram de recorregut.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Seguiu amb el dit A1 → A2 → A3, atureu-vos per representar el gir i continueu a B3. Acabeu orientant el dit a la dreta. Relacioneu cada parada amb el número d’ordre de la llista.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Podríem reconstruir tot el programa mirant només la línia blava?» Caldria conéixer també inici, orientació i significat de les ordres. El dibuix del camí, tot sol, no diu tots els girs.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No confongueu la fletxa del traç, que indica el sentit del recorregut, amb una ordre independent afegida al programa. Hi ha les quatre ordres de la llista.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Feu explícit que hem passat de representar un camí a comunicar instruccions comprovables.</p>
+</div></section>
+<section id="slide-7"><p class="eyebrow">Transparència 7 de 51</p><h2>Què ens ha obligat a pensar?</h2><a class="slide-link" href="02-format3-programar.html#7">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Poseu nom al procés viscut: ens hem situat en un mapa, hem ordenat accions, hem imaginat el resultat i l’hem contrastat. Això és el nucli que ens interessa traslladar a l’aula; prémer botons és només una manera d’executar-lo.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Recorreu el diagrama d’esquerra a dreta. Per a cada etapa, recupereu una acció real del grup: acordar A1 ↑, escriure les ordres, dir B3 → abans de moure i comprovar el final.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«En quin moment hem pensat abans d’actuar?» Quan hem anticipat el resultat. «Si una ruta diferent també funciona, com ho sabem?» Executant-la amb les mateixes regles i explicant el final.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No convertiu aquestes quatre paraules en un nou vocabulari per memoritzar. Si el grup pot explicar què ha fet, ja tenim una base per introduir termes més específics.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Deteniu-vos en la confusió que sol donar més informació: girar i avançar no són el mateix.</p>
+</div></section>
+<section id="slide-8"><p class="eyebrow">Transparència 8 de 51</p><h2>Girar i avançar són accions diferents</h2><a class="slide-link" href="02-format3-programar.html#8">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu els dos panells per separat. A l’esquerra, A2 es repeteix: la fitxa gira d’amunt a dreta sense deixar la casella. A la dreta, A2 canvia a B2 perquè la fitxa, que ja mira a la dreta, avança una casella.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu de fitxa amb una mà: un gir és canviar cap on apunta el dit; avançar és desplaçar la mà mantenint aquella direcció. Aquesta representació es pot fer asseguts i sense material.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si ara mirem avall, on apunta un gir a la dreta?» Cap a l’esquerra de la pantalla. Demaneu que es posen en el lloc del personatge abans de respondre.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Un avançament no significa sempre pujar en el dibuix. Significa moure’s en la direcció que té la fitxa. Eviteu dir simplement «dreta de la pantalla» com si fora una regla del robot.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Useu aquesta distinció per seguir una ruta que gira abans d’hora i explicar on es desvia.</p>
+</div></section>
+<section id="slide-9"><p class="eyebrow">Transparència 9 de 51</p><h2>Una ruta que no arriba al mateix lloc</h2><a class="slide-link" href="02-format3-programar.html#9">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Feu servir exactament l’inici A1 ↑ i el destí B3. Llegim avant, dreta, avant, avant. No dieu encara que el gir és massa prompte: la tasca és reconstruir on acaba aquesta versió.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu una pausa després de cada ordre i conserveu la posició i orientació. Si una persona es perd, torneu a A1 en lloc de continuar des d’un estat dubtós.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Esperem A2 ↑ després del primer avant, A2 → després del gir, B2 → i finalment C2 →. Pregunteu en quin punt deixa de coincidir amb la ruta prevista.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No és una prova d’atenció ràpida. El valor és justificar el canvi. Arribar a C2 també és executar correctament aquest programa, encara que no resolga el repte B3.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu el mapa de l’error i identifiqueu la primera decisió que convé revisar.</p>
+</div></section>
+<section id="slide-10"><p class="eyebrow">Transparència 10 de 51</p><h2>Localitzem la diferència</h2><a class="slide-link" href="02-format3-programar.html#10">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Llegir i comprovar una ruta»: 00–20 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>La línia acaba a C2 perquè hem girat quan encara faltava pujar una fila. El dispositiu hauria executat les ordres que li hem donat; la discrepància és entre el nostre programa i la destinació que volíem.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu A2, lloc del gir, i compareu-lo amb A3, on giràvem en la solució anterior. Moveu verbalment un avant perquè quede abans de dreta i torneu a seguir la seqüència.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Hem necessitat afegir una ordre?» No necessàriament: reordenar les quatre ordres dona avant, avant, dreta, avant. «Quina causa explica la diferència?» El moment en què hem canviat d’orientació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Eviteu dir simplement «el robot s’ha equivocat». Aquesta frase amaga la causa que volem investigar. També convé comprovar que hem conservat l’inici abans d’atribuir-ho al programa.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Amplieu la idea: dues seqüències diferents poden acabar al mateix lloc i orientar-se de manera diferent.</p>
+</div></section>
+<section id="slide-11"><p class="eyebrow">Transparència 11 de 51</p><h2>Identificar una repetició</h2><a class="slide-link" href="02-format3-programar.html#11">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Identificar una repetició»: 20–35 min de sessió (15 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Separar el patró del nombre de vegades.</p>
+<p><strong>Com conduir-lo</strong>
+Representeu pas i palmada, compteu tres repeticions i després dues. Compareu la notació en paper amb les peces del Coding Set, sense atribuir les mateixes funcions a tots els robots.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Explicar per què dues accions repetides tres vegades fan sis accions.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-12"><p class="eyebrow">Transparència 12 de 51</p><h2>Un patró que torna a començar</h2><a class="slide-link" href="02-format3-programar.html#12">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Identificar una repetició»: 20–35 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Feu llegir pas, palmada, pas, palmada, pas, palmada. Busquem el fragment que torna a aparéixer sencer: pas i palmada, no només la palmada.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Marqueu tres parelles d’accions amb els dits o amb separadors al paper. Es pot representar amb dos gestos de mans si moure’s no és adequat al grup.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quantes accions té el fragment?» Dues. «Quantes vegades apareix?» Tres. «Quantes accions hi ha en total?» Sis.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Comptar repeticions i comptar accions són preguntes diferents. Si algú diu que es repeteix sis vegades, demaneu quin fragment concret considera que es repeteix.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu la notació que agrupa les accions dins d’una repetició.</p>
+</div></section>
+<section id="slide-13"><p class="eyebrow">Transparència 13 de 51</p><h2>Un patró, tres repeticions</h2><a class="slide-link" href="02-format3-programar.html#13">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Identificar una repetició»: 20–35 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu que les tres caixes són tres execucions del mateix patró. No són tres programes diferents: a cada vegada fem pas i després palmada. La frase inferior relaciona dues accions per tres vegades amb sis accions totals.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Recorreu una caixa i representeu-ne les dues accions abans de passar a la següent. Després feu llegir la instrucció compacta «repeteix tres vegades pas i palmada».</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Podríem canviar el nombre de vegades sense canviar el patró?» Sí. «Si repetim dues vegades, quantes accions farem?» Quatre; ho comprovarem després.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No presenteu el bucle només com una manera d’escriure menys. Agrupar un patró ajuda també a entendre, revisar i modificar el programa.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Distingiu aquest model en paper de les peces o blocs concrets que permeten executar-lo.</p>
+</div></section>
+<section id="slide-14"><p class="eyebrow">Transparència 14 de 51</p><h2>Representació i programació</h2><a class="slide-link" href="02-format3-programar.html#14">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Identificar una repetició»: 20–35 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Una targeta amb «×3» i dues fletxes és una manera de representar el pensament, però no implica que qualsevol robot entenga aquella notació. Per executar-la hem de traduir-la a les funcions del dispositiu disponible.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Compareu una instrucció oral, una representació en paper i un programa de peces: les tres poden expressar la mateixa repetició amb símbols diferents.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si dibuixem un bucle al costat de Tale-Bot, el robot el llig?» No per aquest fet. «Què cal revisar abans d’executar amb Coding Set?» Les peces compatibles i com es delimita el fragment repetit.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No traslladeu automàticament una estructura de MakeCode o mBlock als botons d’un altre kit. La idea de repetir és comuna; les possibilitats i la manera de programar-la poden ser diferents.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Llegiu ara un bucle tangible concret del Coding Set.</p>
+</div></section>
+<section id="slide-15"><p class="eyebrow">Transparència 15 de 51</p><h2>Coding Set · La repetició amb peces</h2><a class="slide-link" href="02-format3-programar.html#15">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Identificar una repetició»: 20–35 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Assenyaleu la peça d’inici del bucle amb el nombre 4, les peces endavant i dreta que queden dins i la peça que el tanca. El fragment que es repeteix és endavant i després gir a la dreta.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu una lectura expandida d’una vegada i demaneu una segona. Cal arribar a quatre parelles d’accions: vuit ordres dins de les repeticions. El marcador de repetició no és una ordre d’avançar quatre caselles.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què compta el 4?» Les vegades que s’executa tot el fragment delimitat. «És el mateix que la dansa anterior?» No: allí el patró era pas i palmada, repetit tres vegades.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La representació mostra un programa de peces, no garanteix un recorregut físic concret si no hem preparat el model i la superfície. Comproveu el material del kit abans de demostrar-lo.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Torneu al model senzill per anticipar l’efecte de canviar el nombre de repeticions.</p>
+</div></section>
+<section id="slide-16"><p class="eyebrow">Transparència 16 de 51</p><h2>Proveu una variació</h2><a class="slide-link" href="02-format3-programar.html#16">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Identificar una repetició»: 20–35 min de sessió (15 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 4 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Manteniu el patró pas i palmada, però proposeu repetir-lo dues vegades. Demaneu predir abans de representar-lo. Una persona compta les repeticions i l’altra les accions, i després comparen.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Podeu dir «primera vegada: pas, palmada; segona vegada: pas, palmada». Marqueu el final: no afegim automàticament una tercera vegada perquè era la versió anterior.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Esperem quatre accions totals. El patró no ha canviat; només el nombre de repeticions. La justificació ha d’identificar aquestes dues parts.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si responen dues accions, feu distingir una execució del patró de dues execucions. Si responen sis, comproveu que han substituït el nombre inicial.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu el diagrama de dues repeticions per contrastar les respostes.</p>
+</div></section>
+<section id="slide-17"><p class="eyebrow">Transparència 17 de 51</p><h2>Què canvia quan repetim?</h2><a class="slide-link" href="02-format3-programar.html#17">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Identificar una repetició»: 20–35 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>El diagrama conserva pas i palmada dins de cada caixa, però ara només hi ha dues caixes. Aquesta comparació mostra una modificació controlada: el contingut del patró és el mateix i la quantitat de vegades és diferent.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Recupereu les prediccions anteriors i feu correspondre cada gest amb una acció. Escriviu, si cal, dues accions per dues vegades igual a quatre.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què hauríem de canviar per obtenir una altra dansa sense canviar la durada en nombre d’accions?» Podríem canviar una acció del patró i mantindre dues repeticions; això seria una modificació diferent.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No barregeu totes les variacions en la primera prova. Convindrà comparar versions canviant una cosa cada vegada perquè la causa siga explicable.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Passeu de les seqüències preparades a una resposta iniciada per un botó.</p>
+</div></section>
+<section id="slide-18"><p class="eyebrow">Transparència 18 de 51</p><h2>Un botó inicia una resposta</h2><a class="slide-link" href="02-format3-programar.html#18">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Entendre una pila de blocs iniciada per un esdeveniment.</p>
+<p><strong>Com conduir-lo</strong>
+Prepareu conceptualment Codey, distingiu en viu i càrrega, llegiu el programa i feu predir la pantalla en tres instants. Doneu la resposta després que les parelles l’hagen justificada.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Relacionar botó, seqüència i durada de la resposta.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-19"><p class="eyebrow">Transparència 19 de 51</p><h2>Demostració · Una resposta al botó A</h2><a class="slide-link" href="02-format3-programar.html#19">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>«Ara el programa no indica una ruta: associa un fet concret a una resposta. El fet és prémer A i la resposta és mostrar una imatge». Codey és la part amb pantalla i botons; el moviment de la base no intervé en aquesta prova.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu el botó A en la il·lustració i després la pantalla. Si no hi ha dispositiu, feu de pantalla amb un cor dibuixat que puguem mostrar i tapar. No executeu encara la seqüència: primer la llegirem.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què hauria d’ocórrer perquè comence?» Prémer A. Encendre el dispositiu i prémer A són fets diferents en aquest exemple.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Una cara dibuixada és una resposta programada. No s’està llegint una emoció de cap persona ni detectant si algú està content.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu els blocs per explicar com s’ha construït aquesta relació.</p>
+</div></section>
+<section id="slide-20"><p class="eyebrow">Transparència 20 de 51</p><h2>Codey · Preparar la prova</h2><a class="slide-link" href="02-format3-programar.html#20">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p>Si no hi ha Codey, representeu la pantalla en paper o demaneu que anticipen oralment les respostes.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu la preparació com una comprovació prèvia, no com una navegació improvisada per menús. Cal seleccionar el dispositiu Codey, connectar-lo amb un cable USB de dades i comprovar que mBlock 5 indica connexió abans d’executar.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Si feu la demostració física, tingueu el projecte obert i assajat. Manteniu el robot quiet; per a pantalla i botons no cal moure la base. Sense material, feu que el grup represente la resposta en paper.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si el cable carrega però no connecta, què revisaríem?» Que siga de dades, el dispositiu seleccionat i l’estat de connexió. No sabem que el programa està malament només perquè no hi ha resposta.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Els passos exactes depenen de la instal·lació i els permisos de l’equip. Si hi ha un problema tècnic no previst, conserveu el repte amb la simulació i anoteu la incidència.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Distingiu mode en viu i transferència del programa abans de llegir els blocs.</p>
+</div></section>
+<section id="slide-21"><p class="eyebrow">Transparència 21 de 51</p><h2>Codey · En viu i càrrega no són iguals</h2><a class="slide-link" href="02-format3-programar.html#21">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>En viu, l’ordinador manté la comunicació amb Codey per provar les ordres. En mode de càrrega, transferim el programa perquè puga executar-se al dispositiu segons les condicions d’aquell programa. Són dues maneres de treballar, no dos cables diferents.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Compareu la situació «canvie una imatge i la prove amb el dispositiu connectat» amb «vull desconnectar l’ordinador i conservar el programa carregat». Per a la primera demostració seguim el mode en viu del tutorial.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si desconnectem el cable, tot el que havíem provat en viu queda necessàriament carregat?» No. Cal haver transferit el programa per al funcionament autònom.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Eviteu resoldre problemes canviant de mode sense saber què esperàvem. Primer confirmeu la connexió i el mode acordat per a la prova.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La pila següent ens permet centrar-nos en la lògica, amb independència de la preparació física.</p>
+</div></section>
+<section id="slide-22"><p class="eyebrow">Transparència 22 de 51</p><h2>Codey · Llegim el programa</h2><a class="slide-link" href="02-format3-programar.html#22">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu de dalt a baix: quan es prem A, mostra un cor, espera un segon i esborra la pantalla. El primer bloc indica quan s’inicia la pila; els altres indiquen què passa i en quin ordre. No cal executar cada bloc amb una pulsació nova.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu el bloc inicial i després recorreu la pila amb el dit. En arribar a espera, manteniu visible el cor imaginari; no l’amagueu fins a esborra. Expliqueu un segon com a durada de la imatge en aquesta seqüència.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Durant l’espera es veu el cor o la pantalla està buida?» Es veu el cor, perquè encara no hem arribat a l’ordre d’esborrar. «Cal prémer A per a cada bloc?» No.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La lectura d’esquerra a dreta d’una frase no substitueix l’ordre vertical de la pila. Els noms exactes poden variar en mBlock, però la relació entre inici i accions és la mateixa.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Demaneu ara prediccions en diferents instants abans de mostrar la comprovació temporal.</p>
+</div></section>
+<section id="slide-23"><p class="eyebrow">Transparència 23 de 51</p><h2>Codey · Predicció abans de provar</h2><a class="slide-link" href="02-format3-programar.html#23">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Preciseu dues condicions: premem A una sola vegada i no hi ha altres programes modificant la pantalla. Demaneu tres respostes, una per a cada instant, amb el motiu. La meta és seguir la seqüència mentalment, no endevinar una animació.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Doneu un breu temps individual i després feu comparar la parella. Podeu marcar el temps dient «premem A ara» i comptant un segon; eviteu que aquesta teatralització substituïsca l’explicació dels blocs.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Esperem cor just després de prémer i mig segon després; pantalla apagada dos segons després. La justificació és que l’espera manté el dibuix durant un segon i després s’executa esborra.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si algú pensa que esperar significa deixar la pantalla buida, demaneu en quin bloc s’ha donat l’ordre d’esborrar. No avancen la resposta els qui ja coneixen el robot.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Useu el diagrama temporal per contrastar les tres prediccions, també les que no coincideixen.</p>
+</div></section>
+<section id="slide-24"><p class="eyebrow">Transparència 24 de 51</p><h2>Codey · La seqüència en el temps</h2><a class="slide-link" href="02-format3-programar.html#24">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu que la fila superior mostra accions i la línia inferior ajuda a situar-les en el temps. Prémer A inicia el programa. Mostrar el cor ocorre abans de l’espera; després d’un segon, la pantalla es neteja i aquesta pila acaba.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Recorreu la línia del temps i representeu el cor amb la mà durant l’interval central. Compareu amb les tres respostes de la parella. Aquesta és una representació conceptual, no una mesura precisa del temps d’arrencada del dispositiu.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si ja hem premut A, què fa que s’acabe l’espera?» El pas del temps previst al programa; no una altra pulsació. «Què queda després?» La pantalla neta, si no s’executa cap altra acció.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>El dibuix del cor no desapareix simplement perquè deixem de prémer A. Desapareix per una ordre posterior. Aquest detall ajuda a distingir un programa d’un comandament mantingut.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Plantegeu una modificació mínima: augmentar quant de temps veiem el cor.</p>
+</div></section>
+<section id="slide-25"><p class="eyebrow">Transparència 25 de 51</p><h2>Codey · Una modificació, una predicció</h2><a class="slide-link" href="02-format3-programar.html#25">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p>Solució per a la posada en comú: canvia l’espera d’1 a 3 segons. El botó i el dibuix continuen igual.</p>
+<p>Pregunta docent: «Com ho sabies abans de provar?»</p>
+<p>Deixeu que les parelles justifiquen el canvi abans de donar la resposta. El resultat es pot comprovar amb el diagrama temporal anterior.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>«Volem mantindre exactament el mateix comportament, però veure el cor durant tres segons». Feu que identifiquen què és constant: el botó A, la imatge i l’ordre d’esborrar. Només canvia la durada de l’espera.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Torneu a la pila anterior si cal i demaneu que assenyalen un únic bloc. No proposeu afegir tres cors o prémer el botó tres vegades: aquestes opcions introdueixen altres accions.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>La resposta esperada és canviar espera 1 segon per espera 3 segons. Pregunteu «com ho sabies abans de provar?» i accepteu una justificació que relacione l’interval amb la pantalla visible.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si proposen repetir tot el programa, compareu: esborrar i tornar a mostrar no és necessàriament mantindre la mateixa imatge de manera contínua. Canviar una variable ens permet predir millor l’efecte.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Feu el pont amb els sensors: el botó és una entrada que hem accionat nosaltres; altres entrades aporten lectures.</p>
+</div></section>
+<section id="slide-26"><p class="eyebrow">Transparència 26 de 51</p><h2>Un botó i un sensor aporten informació</h2><a class="slide-link" href="02-format3-programar.html#26">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Un botó inicia una resposta»: 35–55 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu les tres caixes amb verbs: una entrada aporta informació; el programa aplica les ordres o regles que hem escrit; una eixida produeix una resposta observable. Eixida no significa una porta física: pot ser la pantalla, el so o un motor.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Llegiu primer l’exemple del botó: A premut → executar la pila → mostrar el cor. Després canvieu només l’entrada: lectura de llum → comparar amb un valor → mostrar una icona o netejar la pantalla.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«La pantalla és el sensor de la nostra intenció?» No. «Qui ha triat què vol dir el cor?» La persona que programa. El dispositiu executa aquella relació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Botó i sensor no funcionen exactament igual en tots els programes: un esdeveniment de botó inicia una seqüència, mentre que una lectura es pot consultar una vegada o repetidament.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Introduïu el fanalet com un exemple de resposta a una lectura que pot anar canviant.</p>
+</div></section>
+<section id="slide-27"><p class="eyebrow">Transparència 27 de 51</p><h2>Pausa</h2><a class="slide-link" href="02-format3-programar.html#27">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Pausa»: 55–60 min de sessió (5 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 5 minuts.</p>
+<p>Respecteu els cinc minuts de pausa; recupereu una de les preguntes anotades en reprendre la sessió.</p>
+<p><strong>Guió de conducció</strong></p>
+<p>Conducció de la pausa
+Doneu un punt clar de retorn i conserveu les preguntes pendents. Podeu demanar que cada parella trie quin dubte voldria recuperar després, sense convertir la pausa en una nova tasca obligatòria.</p>
+<p>Abans de reprendre
+Recordeu en una frase què ja hem comprovat i quin canvi introduirem ara. Si hi ha hagut una incidència tècnica, manteniu l’alternativa en paper per preservar el temps d’aprenentatge. No intenteu recuperar tota la pausa accelerant les explicacions següents.</p>
+</div></section>
+<section id="slide-28"><p class="eyebrow">Transparència 28 de 51</p><h2>De les dades a una decisió</h2><a class="slide-link" href="02-format3-programar.html#28">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Construir una condició a partir d’observacions.</p>
+<p><strong>Com conduir-lo</strong>
+Compareu les lectures simulades, limiteu la conclusió i llegiu el fanalet. Comproveu 40, 80 i 120 i distingiu lectura inicial de revisió contínua.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Justificar una branca del programa amb una lectura i una comparació.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-29"><p class="eyebrow">Transparència 29 de 51</p><h2>Demostració · Un fanalet amb micro:bit</h2><a class="slide-link" href="02-format3-programar.html#29">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>«Farem servir una lectura de llum per decidir quan es veu una icona». La micro:bit no ha d’entendre què és la nit: compara un nombre amb un valor que triem. La proposta connecta una observació del medi amb una resposta visible.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu la matriu de LED de la placa a la il·lustració. Expliqueu que participa en l’estimació de llum i també mostra dibuixos. La imatge del fanalet és un context creatiu, no un sistema real d’il·luminació automàtica.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què necessitem conéixer abans de triar el valor de comparació?» Algunes lectures en les condicions de la prova. Si no hi ha placa, usarem dades simulades identificades com a exemple.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La lectura és relativa, de 0 a 255, i no és una mesura en lux. No tapeu components ni presenteu una lectura simulada com si fora una mesura real del centre.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Mostreu les dues branques de la decisió i feu explícit què passa en cadascuna.</p>
+</div></section>
+<section id="slide-30"><p class="eyebrow">Transparència 30 de 51</p><h2>micro:bit · Què mostrem i què llegim?</h2><a class="slide-link" href="02-format3-programar.html#30">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Separeu dues funcions de la matriu LED: pot mostrar una icona i també participa en l’estimació de llum ambiental. Per observar el sensor comencem amb una prova que mostre el valor quan premem A.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>En MakeCode, localitzeu la lectura a Entrada i situeu-la dins de mostrar nombre en un esdeveniment del botó. Si només projecteu, expliqueu aquesta relació assenyalant entrada i resultat; no cal obrir una configuració nova.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«El nombre que apareix és la icona del fanalet?» No: ara estem observant una lectura per poder triar després la condició. «Per què repetir la lectura?» Per comprovar si és estable i com varia entre llocs.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La primera lectura pot requerir una nova comprovació quan s’activa el sensor; no conclogueu amb un únic valor. No presenteu aquestes lectures com a lux ni com una certificació d’il·luminació.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Sense plaques, la taula de dades simulades permet discutir el mateix procediment.</p>
+</div></section>
+<section id="slide-31"><p class="eyebrow">Transparència 31 de 51</p><h2>Lectures per a una prova sense material</h2><a class="slide-link" href="02-format3-programar.html#31">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Declareu primer que les dades són simulades. A i B representen dos llocs observats amb un procediment que volem mantindre igual. Cada fila conté tres lectures, no tres sensors diferents ni tres unitats de lux.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Feu llegir A: 40, 43, 41, i B: 120, 125, 122. Busqueu què es manté i què varia una mica dins de cada lloc. No cal calcular mitjanes per observar que totes les lectures de B són més altes.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Quin lloc dona lectures més altes? Què mantindríem igual?» B; usaríem la mateixa placa, orientació i manera de fer ombra o exposar-la, en condicions comparables.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No digueu que hem mesurat aquests valors al centre. Si comparem plaques, orientacions o moments molt diferents, podríem confondre el canvi de lloc amb altres causes.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Demaneu una conclusió que no afirme més del que permet la taula.</p>
+</div></section>
+<section id="slide-32"><p class="eyebrow">Transparència 32 de 51</p><h2>Quina conclusió podem justificar?</h2><a class="slide-link" href="02-format3-programar.html#32">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>La conclusió ajustada és que B dona lectures més altes que A en aquestes proves. Encara no hem mesurat confort visual, salut, aptitud per a llegir o consum energètic. Una lectura relativa no permet multiplicar directament aquestes propietats.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Compareu «B dona valors més alts» amb «B és tres vegades millor per a llegir». La primera frase es pot justificar amb la taula; la segona introdueix una qualitat que no hem mesurat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què necessitaríem per generalitzar a altres dies?» Repetir el procediment i observar les condicions. «Una lectura sola és suficient?» Convindria repetir-la i comprovar-ne l’estabilitat.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La finalitat no és desautoritzar una hipòtesi, sinó distingir hipòtesi i conclusió. Podem formular noves preguntes sense presentar-les com una resposta ja comprovada.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Useu aquestes lectures per explicar una decisió programada amb dues respostes.</p>
+</div></section>
+<section id="slide-33"><p class="eyebrow">Transparència 33 de 51</p><h2>De la lectura a la resposta</h2><a class="slide-link" href="02-format3-programar.html#33">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Repreneu les tres funcions: informació, regla i resposta. En el fanalet, la informació és un nombre de llum; la regla compara aquell nombre amb un llindar; la resposta és mostrar una icona o netejar la pantalla.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Poseu la lectura 40 a l’entrada i recorreu el diagrama. Canvieu-la per 120 mantenint el programa: ara la mateixa regla dona una altra resposta. Així mostrem què canvia sense atribuir intencions a la placa.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Qui decideix que la icona representa foscor?» Nosaltres, en dissenyar el projecte. La placa només compara i executa les ordres.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Entrada i eixida són funcions, no necessàriament components sempre separats: la matriu LED pot participar en la lectura i mostrar informació. No afegiu un sensor extern que aquesta prova no necessita.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Després de la pausa llegirem la condició i el bucle que fan que la resposta s’actualitze.</p>
+</div></section>
+<section id="slide-34"><p class="eyebrow">Transparència 34 de 51</p><h2>La llum obri dues possibilitats</h2><a class="slide-link" href="02-format3-programar.html#34">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu el rombe com una pregunta amb dues respostes: «la lectura és menor que 80?». Si és sí, es mostra una icona. Si és no, es neteja la pantalla. Una branca és simplement un dels camins que pot seguir el programa després d’aquesta pregunta.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Seguiu amb el dit el camí d’una lectura 40: entrada, pregunta i branca sí. Repetiu amb 120 per la branca no. Finalment seguiu la fletxa discontínua: tornem a llegir, no ens quedem per sempre en la primera decisió.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«I si la lectura és exactament 80?» No és menor que 80; segueix la branca no. «Es fan les dues respostes en la mateixa comprovació?» No, se’n tria una segons la condició.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>80 és un exemple. No és un llindar universal de nit, foscor o confort visual. Amb placa real, observem lectures abans de triar-lo i controlem posició i ombra.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Llegiu ara els blocs per relacionar la pregunta del rombe amb el programa que s’executa repetidament.</p>
+</div></section>
+<section id="slide-35"><p class="eyebrow">Transparència 35 de 51</p><h2>micro:bit · El programa per blocs</h2><a class="slide-link" href="02-format3-programar.html#35">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu el render oficial: «para siempre» correspon a per sempre; «nivel de luz» és la lectura de llum. Dins hi ha una pregunta, menor que 80, i dues branques: mostrar la icona de diamant o netejar la pantalla.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu primer la peça exterior, després la comparació i finalment les dues accions. Feu dues passades amb lectures diferents per mostrar que el bucle no repeteix sempre la mateixa resposta: torna a consultar la condició.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Amb 40, què farà? Amb 120?» Mostra icona i neteja pantalla, respectivament. «Si canvia la llum després de començar, podem obtenir una altra resposta?» Sí, perquè llegim repetidament.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No cal explicar TypeScript ni memoritzar els noms de categories. El codi del Markdown genera el dibuix, però ací volem entendre la relació entre lectura, condició i acció.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Comproveu el valor límit, que sovint revela una confusió en llegir menor que.</p>
+</div></section>
+<section id="slide-36"><p class="eyebrow">Transparència 36 de 51</p><h2>El llindar també es comprova</h2><a class="slide-link" href="02-format3-programar.html#36">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llindar vol dir el valor amb què decidim separar dos casos. En aquest exemple, la pregunta és estricta: menor que 80. Per això el mateix 80 pertany al grup de 80 o més i no mostra la icona.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu el 40, després el 80 i finalment el 120. En cada cas feu respondre sí o no a la mateixa pregunta abans de dir l’acció. La línia central no representa una zona intermèdia amb una tercera resposta.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què canviaria si escrivírem menor o igual que 80?» La lectura 80 passaria a la branca de la icona. No canvieu el programa ara: useu-ho només per aclarir la lectura de la condició.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Llindar no vol dir un valor oficial correcte per a qualsevol aula. Cal triar-lo després d’observar lectures i repetir la prova en les condicions reals.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Expliqueu com revisar una resposta inesperada sense tocar totes les variables alhora.</p>
+</div></section>
+<section id="slide-37"><p class="eyebrow">Transparència 37 de 51</p><h2>Canviar el programa o canviar la prova?</h2><a class="slide-link" href="02-format3-programar.html#37">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Proposeu una incidència concreta: fem ombra però no veiem la icona. Primer volem saber quina lectura obté la placa; després si aquella lectura compleix la condició i, finalment, si s’executa l’acció esperada.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Useu un exemple hipotètic identificat com a tal: si amb ombra llegim 95, un llindar 80 no activarà la icona. Això no demostra un error del bucle; cal revisar la lectura i el criteri triat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si alhora movem la placa, canviem la llum i posem un altre llindar, sabrem què ho ha resolt?» No amb claredat. Trieu un canvi i anoteu la predicció.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No useu una única lectura com a certesa permanent. La posició de la mà o de la placa pot modificar la prova i convé repetir-la.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>El contrast següent explica per què una resposta pot quedar desactualitzada encara que la condició siga correcta.</p>
+</div></section>
+<section id="slide-38"><p class="eyebrow">Transparència 38 de 51</p><h2>Una lectura inicial o una revisió contínua?</h2><a class="slide-link" href="02-format3-programar.html#38">Veure aquesta transparència →</a><div class="notes"><p>Bloc «De les dades a una decisió»: 60–85 min de sessió (25 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Compareu quan es consulta la llum. Si només ho fem a l’inici, la resposta es basa en aquell primer instant. Si posem lectura, comparació i resposta dins de per sempre, el programa torna a consultar l’estat i pot canviar la resposta.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Imagineu que iniciem amb lectura 120 i després fem ombra fins a 40. En la lectura única, la pantalla pot continuar com estava; en la revisió contínua, s’aplicarà la branca de la icona en una nova comprovació.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Cal tornar a prémer un botó perquè el bucle faça la comprovació següent?» No. «La repetició garanteix una resposta si el valor mai travessa el llindar?» Tampoc: continua aplicant la mateixa regla.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No és una lectura simultània de tot el futur. És una seqüència que es repeteix mentre el programa funciona.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Passeu al mecanisme SPIKE per conservar la mateixa lògica amb una resposta motora.</p>
+</div></section>
+<section id="slide-39"><p class="eyebrow">Transparència 39 de 51</p><h2>Comparar amb un mecanisme</h2><a class="slide-link" href="02-format3-programar.html#39">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comparar amb un mecanisme»: 85–100 min de sessió (15 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Transferir la condició d’una pantalla a un motor.</p>
+<p><strong>Com conduir-lo</strong>
+Identifiqueu ports i components, llegiu espera fins que i contrasteu targetes. Si el muntatge no està preparat, manteniu la demostració en el diagrama i expliqueu l’aturada accessible.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Explicar què fa que s’execute el bloc d’aturar i què cal comprovar si no passa.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-40"><p class="eyebrow">Transparència 40 de 51</p><h2>SPIKE · Una parada amb color</h2><a class="slide-link" href="02-format3-programar.html#40">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comparar amb un mecanisme»: 85–100 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Presentem una prova sense vehicle: un motor solt gira lentament i el programa l’atura quan el sensor llig el color acordat. El motor va al port A i el sensor al C perquè així ho indicarà el programa.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu els tres elements a la imatge: hub, sensor i motor. Amb material, prepareu l’eix lliure, sense rodes ni accessoris, i comproveu el color indicat per l’app abans d’iniciar el moviment.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què ha de detectar el sensor perquè pare?» El color programat, en aquest exemple roig. «La targeta frena el motor físicament?» No: la lectura permet que el programa execute atura.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>La distància i la llum poden afectar la lectura. Manteniu l’aturada accessible i mans, cabells, roba i cables lluny de l’eix; no el freneu amb els dits.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>El diagrama de ports ajuda a comprovar que programa i connexions parlen dels mateixos components.</p>
+</div></section>
+<section id="slide-41"><p class="eyebrow">Transparència 41 de 51</p><h2>SPIKE · Què connectem a cada port?</h2><a class="slide-link" href="02-format3-programar.html#41">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comparar amb un mecanisme»: 85–100 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu els ports com adreces del hub: A identifica el motor d’aquesta prova i C, el sensor de color. Les fletxes mostren la funció de control cap al motor i la informació que arriba del sensor; no representen un recorregut ni una connexió sense cable.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Compareu el port físic amb la lletra escrita als blocs. Si el motor es connectara a un altre port, caldria revisar aquell valor al programa, amb el sistema aturat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Podem donar per bo el programa sense mirar els cables?» No: una lletra correcta al dibuix pot no coincidir amb el muntatge real.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Les lletres A i C són les triades per aquest exemple, no una regla que reserve aquells ports per sempre a aquests components. Seguiu la preparació del kit disponible.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Llegiu la seqüència completa abans d’activar cap moviment.</p>
+</div></section>
+<section id="slide-42"><p class="eyebrow">Transparència 42 de 51</p><h2>SPIKE · Llegim la seqüència</h2><a class="slide-link" href="02-format3-programar.html#42">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comparar amb un mecanisme»: 85–100 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>La pila fa quatre coses en ordre: comença el programa, activa el motor A lentament, espera fins que el sensor del port C detecte roig i atura A. Espera fins que és diferent d’esperar un segon: depén d’una condició, no d’un temps fix.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu el bloc groc inicial, el motor, la condició de color i l’aturada. Mentre espera la condició, el motor que ja hem activat pot continuar girant; per això necessitem supervisió i aturada accessible.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si el sensor no reconeix mai roig, s’executa necessàriament l’últim bloc?» No; en aquest esquema pot quedar esperant i caldria aturar manualment.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No interpreteu el color dibuixat a la targeta com una lectura garantida. Observeu què informa l’app i manteniu la distància de prova acordada.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Contrastem el comportament amb tres casos en lloc de donar-lo per comprovat amb una sola passada.</p>
+</div></section>
+<section id="slide-43"><p class="eyebrow">Transparència 43 de 51</p><h2>SPIKE · Tres comprovacions</h2><a class="slide-link" href="02-format3-programar.html#43">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comparar amb un mecanisme»: 85–100 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu què ens informa cada cas. La targeta blanca inicial permet veure el motor activat mentre la condició encara no es compleix. La roja hauria de provocar la parada quan el sensor la reconeix. Una altra targeta ajuda a comprovar que la condició no és qualsevol objecte.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Abans de cada prova, acordeu què esperem i què observarem: color mostrat per l’app i estat del motor. Repetiu des d’un inici comparable; no acosteu les mans a l’eix.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si para amb una altra targeta, què revisaríem?» La lectura del sensor, la condició i els ports. «Si no para amb roja?» Primer aturem i observem què està llegint.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Un únic resultat correcte no garanteix que el muntatge siga estable en totes les condicions. Aquesta és una prova educativa de condició i resposta.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La pantalla següent ordena una revisió segura d’un resultat inesperat.</p>
+</div></section>
+<section id="slide-44"><p class="eyebrow">Transparència 44 de 51</p><h2>Si el motor no s’atura, per on comencem?</h2><a class="slide-link" href="02-format3-programar.html#44">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Comparar amb un mecanisme»: 85–100 min de sessió (15 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Prioritzeu l’ordre proposat: aturar, observar i revisar. No intentem diagnosticar acostant els dits a un motor en moviment. Una vegada parat, mirem la lectura de color i la correspondència dels ports.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Formuleu una hipòtesi senzilla, com «el sensor no està llegint roig a aquesta distància». Manteniu la resta igual, ajusteu una condició amb el programa aturat i torneu a provar amb una predicció.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si canviem el port al programa sense revisar el cable, què sabem?» Encara no hem identificat la causa. La comprovació ha d’enllaçar una observació amb una modificació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No presenteu aquesta parada com un mecanisme de protecció real. Si la prova no respon, manteniu-la aturada i continueu el raonament amb el diagrama.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Conserveu aquesta pauta quan proposeu una resposta útil per a l’aula.</p>
+</div></section>
+<section id="slide-45"><p class="eyebrow">Transparència 45 de 51</p><h2>Explicar i transferir</h2><a class="slide-link" href="02-format3-programar.html#45">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Explicar i transferir»: 100–120 min de sessió (20 minuts).</p>
+<p>Aquest temps inclou explicacions, treball dels participants i posada en comú. Controleu el tancament del bloc sense avançar les solucions abans de la predicció.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Objectiu d’aquest bloc</strong>
+Aplicar la lectura de programes a una proposta pròpia.</p>
+<p><strong>Com conduir-lo</strong>
+Demaneu una entrada o seqüència senzilla, una resposta esperada i una prova. La parella que escolta ha de poder formular què observaria per saber si s’ha entés.</p>
+<p><strong>Resultat que convé recollir abans d’avançar</strong>
+Una proposta que puguen preparar abans de la sessió de disseny.</p>
+<p><strong>Gestió del temps</strong>
+Useu la franja indicada al començament de la nota com a límit del bloc complet, no com a durada d’aquesta pantalla. Les aclaracions del guió són un banc de suport: seleccioneu-les segons les respostes del grup, sense llegir-les totes literalment.</p>
+</div></section>
+<section id="slide-46"><p class="eyebrow">Transparència 46 de 51</p><h2>Com acompanyem una revisió?</h2><a class="slide-link" href="02-format3-programar.html#46">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Explicar i transferir»: 100–120 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Llegiu el cicle com una conversa: abans, què esperes? Després de provar, què ha passat? En comparar, on es diferencien? En revisar, què canviaràs? La darrera fletxa indica que la modificació necessita una nova comprovació.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Torneu a una ruta que acabaria a C2. En lloc de dir immediatament l’ordre correcta, demaneu que localitzen el gir i comparen el camí amb la destinació B3.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Una resposta útil és «hem girat massa prompte; provarem d’avançar una vegada més abans de girar». Si diuen «està malament», demaneu quin fet concret els ho fa pensar.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Canviar una sola cosa és una pauta per entendre la causa, no una prohibició absoluta. Si el programa té diversos errors, aneu resolent-los de manera que es puga explicar cada canvi.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Conserveu aquestes preguntes en preparar la proposta pròpia del final.</p>
+</div></section>
+<section id="slide-47"><p class="eyebrow">Transparència 47 de 51</p><h2>La proposta que m’emporte</h2><a class="slide-link" href="02-format3-programar.html#47">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Explicar i transferir»: 100–120 min de sessió (20 minuts).</p>
+<p>Temps orientatiu de la dinàmica: 5 minuts.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Demaneu una proposta breu, no una programació completa. Les quatre frases han de formar una cadena: aprenentatge, repte, primera prova i evidència. La mateixa ruta de la biblioteca és vàlida si poden justificar com l’adaptarien.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Modeleu una resposta: «Treballaria instruccions clares; una parella guiaria una altra a un llibre; provaríem dues ordres; escoltaria si expliquen què han corregit». Després deixeu que cada parella concrete el seu grup i material.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Com sabrem que no hem triat primer el robot i després inventat l’objectiu?» L’aprenentatge i la prova continuen tenint sentit encara que representem la solució en paper.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Si la proposta inclou moltes funcions, demaneu quina és imprescindible per a la primera prova. Si l’evidència és «que funcione», afegiu què haurà d’explicar l’alumnat.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>La parella següent escoltarà la proposta per comprovar si una altra persona la podria entendre.</p>
+</div></section>
+<section id="slide-48"><p class="eyebrow">Transparència 48 de 51</p><h2>Compartim una decisió</h2><a class="slide-link" href="02-format3-programar.html#48">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Explicar i transferir»: 100–120 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Organitzeu un intercanvi curt. Qui explica ha de dir què aprendria el grup, què faria i què observaria. Qui escolta no puntua la idea: formula una pregunta que permeta preparar-la millor.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Proposeu la pregunta projectada i doneu un exemple: «Si el robot arriba però no poden explicar el gir, què et faltaria comprovar?». En acabar, cada parella fa una modificació concreta.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>Esperem que l’evidència es concrete: «demanarem que anticipen el final abans de provar i expliquen una correcció». No cal que totes les propostes utilitzen el mateix material.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No convertiu el compartir en sis exposicions llargues si el temps és curt. Prioritzeu que totes les parelles reben una pregunta i revisen la pròpia proposta.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Tanqueu amb la preparació mínima per al primer dia, no amb una nova llista de funcions.</p>
+</div></section>
+<section id="slide-49"><p class="eyebrow">Transparència 49 de 51</p><h2>Abans de la primera prova a l’aula</h2><a class="slide-link" href="02-format3-programar.html#49">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Explicar i transferir»: 100–120 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Recapituleu tres decisions operatives: material que funciona, alternativa preparada i temps reservat per explicar. La primera aplicació és una prova docent que després revisarem; no ha de desplegar totes les possibilitats del kit.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Demaneu que cadascú identifique què ha de comprovar abans d’entrar a classe. Amb dispositiu: alimentació, connexió i resposta prevista. Sense dispositiu: mapa, regles i consigna que una altra persona entenga.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Què és més important afegir ara: una funció nova o una pregunta que ens mostre la comprensió?» En aquesta primera proposta, normalment la pregunta i la comprovació.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>No sacrifiqueu el tancament perquè el muntatge o la connexió s’allarguen. Si cal, completeu la conversa amb la representació en paper.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Presenteu els recursos com a ajuda per continuar, no com a contingut que s’haja de llegir ara.</p>
+</div></section>
+<section id="slide-50"><p class="eyebrow">Transparència 50 de 51</p><h2>Les propostes de partida del web</h2><a class="slide-link" href="02-format3-programar.html#50">Veure aquesta transparència →</a><div class="notes"><p>Aquests enllaços són per a consulta posterior. No cal obrir-los durant la sessió ni disposar de connexió per completar les activitats.</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu què aporta cada tipus de recurs: el tutorial resol l’ús concret del dispositiu; una situació d’aprenentatge situa aquell ús dins d’un repte, una seqüència i unes evidències. Escola 4.0 és el referent institucional del projecte.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu un enllaç relacionat amb una demostració que ja hàgem entés. No navegueu per tot el catàleg durant el tancament: l’objectiu és que sàpien on tornar quan preparen una activitat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si vull saber com connectar Codey, què consultaria?» El tutorial. «Si vull adaptar un repte a diverses sessions?» Una SDA, revisant-ne grup, temps i material.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Els noms dels blocs poden variar segons l’idioma i la versió de l’aplicació. Els exemples visuals de la formació ajuden a raonar, però no substitueixen la comprovació del model real.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Tanqueu recuperant una decisió que cada parella s’emporta i la pregunta que voldria provar a l’aula.</p>
+</div></section>
+<section id="slide-51"><p class="eyebrow">Transparència 51 de 51</p><h2>Recursos per continuar</h2><a class="slide-link" href="02-format3-programar.html#51">Veure aquesta transparència →</a><div class="notes"><p>Bloc «Explicar i transferir»: 100–120 min de sessió (20 minuts).</p>
+<p><strong>Guió de conducció</strong></p>
+<p><strong>Què explicar</strong></p>
+<p>Expliqueu què aporta cada tipus de recurs: el tutorial resol l’ús concret del dispositiu; una situació d’aprenentatge situa aquell ús dins d’un repte, una seqüència i unes evidències. Escola 4.0 és el referent institucional del projecte.</p>
+<p><strong>Com mostrar-ho</strong></p>
+<p>Assenyaleu un enllaç relacionat amb una demostració que ja hàgem entés. No navegueu per tot el catàleg durant el tancament: l’objectiu és que sàpien on tornar quan preparen una activitat.</p>
+<p><strong>Pregunta i resposta esperable</strong></p>
+<p>«Si vull saber com connectar Codey, què consultaria?» El tutorial. «Si vull adaptar un repte a diverses sessions?» Una SDA, revisant-ne grup, temps i material.</p>
+<p><strong>Si apareix aquest dubte</strong></p>
+<p>Els noms dels blocs poden variar segons l’idioma i la versió de l’aplicació. Els exemples visuals de la formació ajuden a raonar, però no substitueixen la comprovació del model real.</p>
+<p><strong>Enllaç amb el pas següent</strong></p>
+<p>Tanqueu recuperant una decisió que cada parella s’emporta i la pregunta que voldria provar a l’aula.</p>
+</div></section></main></body></html>
