@@ -1,6 +1,0 @@
-{
-  "name": "robotica200-formacio",
-  "private": true,
-  "scripts": { "build": "node ../_scripts/build-training.js", "pdf": "node ../_scripts/build-training.js --pdf" },
-  "devDependencies": { "@marp-team/marp-cli": "4.5.1", "playwright": "1.56.1" }
-}
